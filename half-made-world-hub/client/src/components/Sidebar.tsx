@@ -14,7 +14,6 @@ interface SidebarProps {
   onSearch: (q: string) => void;
   onSelectCategory: (category: string) => void;
   onAdd: () => void;
-  onDeleteCategory: (category: string) => void;
   onOpenMap: () => void;
   onOpenWeb: () => void;
 }
@@ -29,7 +28,6 @@ export function Sidebar({
   onSearch,
   onSelectCategory,
   onAdd,
-  onDeleteCategory,
   onOpenMap,
   onOpenWeb,
 }: SidebarProps) {
@@ -115,24 +113,15 @@ export function Sidebar({
         </button>
 
         {categories.map((cat) => (
-          <div key={cat.name} className="category-item-wrap">
-            <button
-              className={`category-item${activeCategory === cat.name && view === 'browse' ? ' active' : ''}`}
-              onClick={() => onSelectCategory(cat.name)}
-            >
-              <span className="category-dot" style={{ background: categoryColor(cat.name) }} />
-              <span className="category-name">{cat.name}</span>
-              <span className="category-count">{cat.count}</span>
-            </button>
-            <button
-              className="category-delete"
-              onClick={() => onDeleteCategory(cat.name)}
-              title={`Delete the “${cat.name}” category`}
-              aria-label={`Delete the “${cat.name}” category`}
-            >
-              ×
-            </button>
-          </div>
+          <button
+            key={cat.name}
+            className={`category-item${activeCategory === cat.name && view === 'browse' ? ' active' : ''}`}
+            onClick={() => onSelectCategory(cat.name)}
+          >
+            <span className="category-dot" style={{ background: categoryColor(cat.name) }} />
+            <span className="category-name">{cat.name}</span>
+            <span className="category-count">{cat.count}</span>
+          </button>
         ))}
       </nav>
     </aside>

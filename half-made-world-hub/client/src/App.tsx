@@ -489,7 +489,6 @@ export default function App() {
         onSearch={setSearch}
         onSelectCategory={selectCategory}
         onAdd={openAdd}
-        onDeleteCategory={handleDeleteCategory}
         onOpenMap={() => setView('map')}
         onOpenWeb={() => setView('web')}
       />
@@ -513,6 +512,11 @@ export default function App() {
             </p>
           </div>
           <div className="header-actions">
+            {!isMapView && !isWebView && activeCategory !== 'All' && (
+              <button className="btn btn-danger btn-sm" onClick={() => handleDeleteCategory(activeCategory)}>
+                🗑 Delete “{activeCategory}”
+              </button>
+            )}
             {isMapView && (
               <button className="btn btn-primary btn-sm" onClick={openAddRel}>
                 ＋ Add Relationship
@@ -587,7 +591,6 @@ export default function App() {
             onSelectTag={selectTag}
             onOpenEntry={openEntryByName}
             onAdd={openAdd}
-            onDeleteCategory={handleDeleteCategory}
           />
         ) : filtered.length === 0 ? (
           <div className="empty-state">
