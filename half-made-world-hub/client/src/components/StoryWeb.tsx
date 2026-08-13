@@ -691,7 +691,11 @@ export function StoryWeb({
 
   const presentCategories = useMemo(() => {
     const set = new Set(nodes.map((n) => n.category));
-    return CATEGORY_ORDER.filter((c) => set.has(c));
+    const known = CATEGORY_ORDER.filter((c) => set.has(c));
+    // Include categories that aren't in the canonical order (e.g. user-created
+    // categories like "Clan") so they show up in the filter chips and picker.
+    const extra = [...set].filter((c) => !CATEGORY_ORDER.includes(c)).sort((a, b) => a.localeCompare(b));
+    return [...known, ...extra];
   }, [nodes]);
 
   const categoryCounts = useMemo(() => {
