@@ -449,7 +449,7 @@ export function RelationshipMap({
                       width={labelText.length * 6.6 + 16}
                       height={19}
                       rx={9.5}
-                      fill="rgba(10, 13, 20, 0.9)"
+                      fill="rgba(253, 251, 245, 0.94)"
                       stroke={type.color}
                       strokeOpacity={0.55}
                     />
@@ -488,18 +488,18 @@ export function RelationshipMap({
                   if (entry) onNodeClick(entry);
                 }}
               >
-                {hoverId === name && <circle cx={pos.x} cy={pos.y} r={NODE_R + 7} fill="transparent" stroke="#8fd0e8" strokeWidth="1.5" strokeDasharray="3 3" />}
+                {hoverId === name && <circle cx={pos.x} cy={pos.y} r={NODE_R + 7} fill="transparent" stroke="#2f6f8f" strokeWidth="1.5" strokeDasharray="3 3" />}
                 <circle
                   cx={pos.x}
                   cy={pos.y}
                   r={NODE_R}
-                  fill="#121827"
-                  stroke={isChar ? '#e8c56a' : '#5a6b8c'}
+                  fill="#fdfbf5"
+                  stroke={isChar ? '#a9781f' : '#8a8273'}
                   strokeWidth={isChar ? 2.5 : 1.5}
-                  style={{ filter: active ? 'drop-shadow(0 0 6px rgba(232, 197, 106, 0.55))' : undefined }}
+                  style={{ filter: active ? 'drop-shadow(0 0 6px rgba(169, 120, 31, 0.4))' : undefined }}
                 />
                 {!isChar && (
-                  <circle cx={pos.x} cy={pos.y} r={NODE_R} fill="none" stroke="#5a6b8c" strokeDasharray="3 3" strokeWidth="1.2" />
+                  <circle cx={pos.x} cy={pos.y} r={NODE_R} fill="none" stroke="#8a8273" strokeDasharray="3 3" strokeWidth="1.2" />
                 )}
                 <text x={pos.x} y={pos.y + 5} textAnchor="middle" className="map-node-initial">
                   {name.charAt(0).toUpperCase()}
@@ -566,7 +566,7 @@ export function RelationshipMap({
           );
         })}
         <span className="legend-item">
-          <span className="legend-dot" style={{ background: 'transparent', border: '2px solid #e8c56a' }} />
+          <span className="legend-dot" style={{ background: 'transparent', border: '2px solid #a9781f' }} />
           Character
         </span>
       </div>

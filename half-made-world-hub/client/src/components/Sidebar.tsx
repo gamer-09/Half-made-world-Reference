@@ -40,8 +40,8 @@ export function Sidebar({
             <circle cx="32" cy="32" r="5" fill="url(#brandGrad)" />
             <defs>
               <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stopColor="#8fd0e8" />
-                <stop offset="1" stopColor="#a06cd5" />
+                <stop offset="0" stopColor="#e8c06a" />
+                <stop offset="1" stopColor="#e06a55" />
               </linearGradient>
             </defs>
           </svg>

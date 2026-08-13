@@ -986,7 +986,7 @@ export function StoryWeb({
                         width={w}
                         height={20}
                         rx={10}
-                        fill="rgba(10, 13, 20, 0.92)"
+                        fill="rgba(253, 251, 245, 0.95)"
                         stroke={e.color}
                         strokeOpacity={0.6}
                       />
@@ -1018,8 +1018,8 @@ export function StoryWeb({
               : dim && !active
                 ? 0.25
                 : 1;
-            const stroke = isOther ? '#5a6b8c' : categoryColor(node.category);
-            const fill = isOther ? '#121827' : `${stroke}2b`;
+            const stroke = isOther ? '#8a8273' : categoryColor(node.category);
+            const fill = isOther ? '#fdfbf5' : `${stroke}2b`;
             return (
               <g
                 key={node.name}
@@ -1060,7 +1060,7 @@ export function StoryWeb({
                   strokeDasharray={isOther ? '3 3' : undefined}
                   style={{ filter: active ? `drop-shadow(0 0 7px ${stroke}88)` : undefined }}
                 />
-                <text x={pos.x} y={pos.y + 5} textAnchor="middle" className="map-node-initial" fill={isOther ? '#8b93a7' : stroke}>
+                <text x={pos.x} y={pos.y + 5} textAnchor="middle" className="map-node-initial" fill={isOther ? '#6f6a5e' : stroke}>
                   {node.name.charAt(0).toUpperCase()}
                 </text>
                 {nodeLabels.has(node.name) && (
