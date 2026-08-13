@@ -494,9 +494,9 @@ export default function App() {
       />
 
       <main className="main">
-        <header className="main-header" style={{ borderBottom: '1px solid rgba(96,165,250,0.16)' }}>
-          <div>
-            <h2 className="main-title" style={{ color: '#e8f1ff' }}>
+        <header className="main-header" style={{ borderBottom: '1px solid rgba(96,165,250,0.16)', position: 'relative', zIndex: 10, display: 'flex', visibility: 'visible', opacity: 1 }}>
+          <div style={{ visibility: 'visible', opacity: 1, display: 'block' }}>
+            <h2 className="main-title" style={{ color: 'white', visibility: 'visible', opacity: 1 }}>
               {isWebView ? 'Story Web' : isMapView ? 'Relationship Map' : activeCategory === 'All' ? 'All Entries' : activeCategory}
               {!isMapView && !isWebView && (
                 <span className="main-count" style={{ color: '#22d3ee', background: 'rgba(34,211,238,0.14)', border: '1px solid rgba(34,211,238,0.4)' }}>

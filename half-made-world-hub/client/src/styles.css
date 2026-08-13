@@ -382,7 +382,9 @@ body {
   letter-spacing: 0.05em;
   text-transform: uppercase;
   line-height: 1.05;
-  color: var(--text);
+  color: var(--text) !important;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .main-count {
@@ -412,6 +414,8 @@ body {
   align-items: center;
   gap: 8px;
   flex-wrap: wrap;
+  opacity: 1 !important;
+  visibility: visible !important;
 }
 
 .view-transition { animation: viewIn 0.3s ease both; }
