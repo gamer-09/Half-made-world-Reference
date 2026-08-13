@@ -652,7 +652,7 @@ module.exports = [
     'Auralis Ruby',
     'The pendant that sealed the MC’s forms',
     'A pendant crafted by the MC’s mom (Lisa), who then gave it to Sofia. The pendant has 5 seals to seal the MC’s 5 forms. It seals both of his auras (angelic and demonic), which makes him look human.',
-    [{ label: 'Crafted by', value: 'Lisa (Jaiden’s mother), a Bloodward demon' }, { label: 'Keeper', value: 'Sofia' }],
+    [{ label: 'Crafted by', value: 'Lisa, a Bloodward demon' }, { label: 'Keeper', value: 'Sofia' }],
     ['artifact', 'pendant', 'ruby', 'jaiden', 'seals'],
   ),
   e(
@@ -681,7 +681,7 @@ module.exports = [
   ),
   e(
     'Characters',
-    'Lisa (Jaiden’s Mom)',
+    'Lisa',
     'Bloodward demon — most powerful after the Mordrach',
     'She had a child for Ordium, and due to their ranks and positions they could not stay together and were separated to their various Realms: Lisa went to her realm, the Demon Realm, and Ordium went to the Angel Realm. Her rank was Bloodward. She was known to bring cruelty upon people who fight her and is the most powerful demon in the Demon Realm after the Mordrach. After realizing she was pregnant with Jaiden and found his aura very abnormal — carrying both an angelic aura and a demonic aura — she knew he would be killed off and she could not bear it, so she gave the child to her personal maid, not before giving her a ruby pendant called the Auralis Ruby to seal all his auras, which makes him look human.',
     [

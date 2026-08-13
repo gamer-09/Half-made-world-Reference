@@ -111,9 +111,9 @@ module.exports = [
   s("Ordium’s Plot", 'Ordium', 'story of', 'Story of', 'Love at first sight — left unfinished.'),
 
   // --- Gifts, finders, and ownership ---------------------------------------
-  // Auralis Ruby: crafted by Lisa (the Mc's mother) and given to her maid Sofia,
+  // Auralis Ruby: crafted by Lisa and given to her maid Sofia,
   // who passed the pendant on to Lisa's son Jaiden to seal his auras.
-  s('Auralis Ruby', 'Sofia', 'given to', 'Given to', 'Crafted by Lisa (Jaiden’s mother) and given to her personal maid Sofia.'),
+  s('Auralis Ruby', 'Sofia', 'given to', 'Given to', 'Crafted by Lisa and given to her personal maid Sofia.'),
   s('Auralis Ruby', 'Jaiden Marlock', 'given to', 'Given to', 'Lisa gave the pendant to her son through her maid Sofia — its five seals hide Jaiden’s five forms and both auras.'),
   s('Jaiden Marlock', 'Sofia', 'given to', 'Given to', 'Lisa gave her newborn son to her personal maid Sofia to raise in the Human Realm.'),
   // Treasures found in the chamber beneath Lethmoor's throne chair.

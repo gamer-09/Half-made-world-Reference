@@ -81,14 +81,6 @@
         "value": "The portal forms by drawing in all the Veyn from its surroundings until the area is fully drained, then uses what it absorbed to relocate somewhere new that is rich in Veyn. It takes roughly a leap year for enough Veyn to concentrate, which is why the portal only reappears that often. Someone with a strong enough sense of Veyn density could theoretically predict where it will appear next."
       },
       {
-        "label": "Notable places",
-        "value": "Thornlost Forest, Sentient River, Lethmoor Kingdom"
-      },
-      {
-        "label": "Inhabitants",
-        "value": "Pixies, the Wanderer, Dragons, Sirens"
-      },
-      {
         "label": "Time",
         "value": "Time is slowed down by 10 times — you do not feel hungry or get tired easily."
       },
@@ -99,6 +91,14 @@
       {
         "label": "Location",
         "value": "In between all the other realms."
+      },
+      {
+        "label": "Notable places",
+        "value": "Thornlost Forest, Sentient River, Lethmoor Kingdom"
+      },
+      {
+        "label": "Inhabitants",
+        "value": "Pixies, the Wanderer, Dragons, Sirens"
       }
     ],
     "tags": [
@@ -1876,12 +1876,12 @@
     "description": "Lost somewhere in the ruins scattered across the Hidden Realm, no longer in anyone’s possession. Unlike Vireth, its blade is untouched, still holding a clean, steady light along its edge — closer to moonlight than sunlight. Where Vireth feels heavy and restless, Virastra is said to feel almost weightless in the hand, an ease that reflects its uncorrupted nature. Being lost among ruins rather than deliberately sealed, its exact location isn’t guarded the way Vireth’s is — it’s simply forgotten, waiting for someone to stumble upon it rather than seek it out. Extremely effective against demons and halts a demon’s regeneration unless the user releases the effect.",
     "fields": [
       {
-        "label": "Location",
-        "value": "Lost somewhere in the ruins scattered across the Hidden Realm"
-      },
-      {
         "label": "Weapon type",
         "value": "Divine Sword"
+      },
+      {
+        "label": "Location",
+        "value": "Lost somewhere in the ruins scattered across the Hidden Realm"
       }
     ],
     "tags": [
@@ -1901,12 +1901,12 @@
     "description": "The only one of the two Divine Weapons still in someone’s possession rather than lost or sealed away. Unlike Vireth’s restless darkness or Virastra’s weightless calm, Solvane carries itself with quiet authority — its head long and narrow, more piercing than cutting, forged for a single decisive strike rather than a prolonged exchange. The metal holds a steady, clean light along its edge, similar in tone to Virastra’s, since neither has ever been corrupted — but where Virastra’s light feels ambient and calm, Solvane’s feels focused, almost gathered to a point, fitting a weapon built to be thrown or thrust with precision rather than swung. Will always return to the owner when thrown. A user bound weapon that can be passed down.",
     "fields": [
       {
-        "label": "Notable",
-        "value": "Always returns to the owner when thrown; user bound weapon that can be passed down."
-      },
-      {
         "label": "Weapon type",
         "value": "Divine Spear"
+      },
+      {
+        "label": "Notable",
+        "value": "Always returns to the owner when thrown; user bound weapon that can be passed down."
       },
       {
         "label": "User-bound",
@@ -1994,7 +1994,7 @@
     "fields": [
       {
         "label": "Crafted by",
-        "value": "Lisa (Jaiden’s mother), a Bloodward demon"
+        "value": "Lisa, a Bloodward demon"
       },
       {
         "label": "Keeper",
@@ -2071,7 +2071,7 @@
   {
     "id": "seed-097",
     "category": "Characters",
-    "name": "Lisa (Jaiden’s Mom)",
+    "name": "Lisa",
     "subtitle": "Bloodward demon — most powerful after the Mordrach",
     "description": "She had a child for Ordium, and due to their ranks and positions they could not stay together and were separated to their various Realms: Lisa went to her realm, the Demon Realm, and Ordium went to the Angel Realm. Her rank was Bloodward. She was known to bring cruelty upon people who fight her and is the most powerful demon in the Demon Realm after the Mordrach. After realizing she was pregnant with Jaiden and found his aura very abnormal — carrying both an angelic aura and a demonic aura — she knew he would be killed off and she could not bear it, so she gave the child to her personal maid, not before giving her a ruby pendant called the Auralis Ruby to seal all his auras, which makes him look human.",
     "fields": [
@@ -2099,7 +2099,7 @@
     "category": "Characters",
     "name": "Ordium",
     "subtitle": "Jaiden’s Father — Aetherblade Lord Angel",
-    "description": "He is an Aetherblade Lord Rank Angel. He fell in love with Lisa — love at first sight. So he left his post and spent the next 9 months with Lisa in a secret place in the Human Realm, since it is large and it would take time for them to be found. They were expecting a child, but unexpectedly they were called back by their rulers and was ordered to be executed when it was know that he was with a demon",
+    "description": "He is an Aetherblade Lord Rank Angel. He fell in love with Lisa — love at first sight. So he left his post and spent the next 9 months with Lisa in a secret place in the Human Realm, since it is large and it would take time for them to be found. They were expecting a child, but unexpectedly they were called back by their rulers… (the document cuts off here)",
     "fields": [
       {
         "label": "Rank",
@@ -2110,11 +2110,10 @@
       "character",
       "ordium",
       "father",
-      "angel",
-      "executed"
+      "angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-13T16:20:30.747Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
     "id": "seed-099",
@@ -2225,11 +2224,10 @@
     "tags": [
       "plot",
       "lisa",
-      "betrayal",
-      "killed"
+      "betrayal"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-13T16:50:04.207Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
     "id": "seed-105",
@@ -2257,16 +2255,15 @@
     "category": "Plot",
     "name": "Ordium’s Plot",
     "subtitle": "Love at first sight — left unfinished",
-    "description": "Ordium, an Aetherblade Lord Rank Angel, fell in love with Lisa at first sight. He left his post and spent the next 9 months with Lisa in a secret place in the Human Realm, since it is large and it would take time for them to be found. They were expecting a child, but unexpectedly they were called back by their rulers and was ordered to be executed when it was know that he was with a demon",
+    "description": "Ordium, an Aetherblade Lord Rank Angel, fell in love with Lisa at first sight. He left his post and spent the next 9 months with Lisa in a secret place in the Human Realm, since it is large and it would take time for them to be found. They were expecting a child, but unexpectedly they were called back by their rulers… (the document cuts off here — “but as…”)",
     "fields": [],
     "tags": [
       "plot",
       "ordium",
-      "father",
-      "killed"
+      "father"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-13T16:50:14.212Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
     "id": "seed-107",
@@ -3349,24 +3346,6 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "f6d3b336-da98-4b07-a32c-9e93a596e621",
-    "category": "Clan",
-    "name": "Dark Moon",
-    "subtitle": "Hidden and Dangerous group of people",
-    "description": "A group of people that want domination of the world and want to dominate the Realms",
-    "fields": [
-      {
-        "label": "Race",
-        "value": "Can consist of any race from the realms"
-      }
-    ],
-    "tags": [
-      "Evil"
-    ],
-    "createdAt": "2026-08-13T17:03:13.050Z",
-    "updatedAt": "2026-08-13T17:03:13.050Z"
-  },
-  {
     "id": "seed-179",
     "category": "Angel Skills",
     "name": "Angelic Aura",
@@ -3499,5 +3478,23 @@
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "f6d3b336-da98-4b07-a32c-9e93a596e621",
+    "category": "Clan",
+    "name": "Dark Moon",
+    "subtitle": "Hidden and Dangerous group of people",
+    "description": "A group of people that want domination of the world and want to dominate the Realms",
+    "fields": [
+      {
+        "label": "Race",
+        "value": "Can consist of any race from the realms"
+      }
+    ],
+    "tags": [
+      "Evil"
+    ],
+    "createdAt": "2026-08-13T17:03:13.050Z",
+    "updatedAt": "2026-08-13T17:03:13.050Z"
   }
 ]

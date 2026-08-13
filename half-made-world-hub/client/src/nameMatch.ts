@@ -1,8 +1,8 @@
 import type { Entry } from './types';
 
 /**
- * Match a raw name (e.g. "Lisa") to a character entry whose name may carry
- * a suffix (e.g. "Lisa (Jaiden's Mom)"). Case-insensitive prefix match.
+ * Match a raw name (e.g. "Jaiden") to a character entry whose name may carry
+ * a suffix (e.g. "Jaiden Marlock — Normal"). Case-insensitive prefix match.
  */
 export function findCharacter(entries: Entry[], name: string): Entry | undefined {
   const n = name.toLowerCase().trim();
