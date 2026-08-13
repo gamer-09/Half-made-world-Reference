@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "link-seed-001",
+    "source": "Angels (Overview)",
+    "target": "Angel Realm",
+    "type": "home of",
+    "label": "Home of",
+    "description": "The Angel Realm is home to all four angel ranks.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-002",
+    "source": "Demons (Overview)",
+    "target": "Demon Realm",
+    "type": "home of",
+    "label": "Home of",
+    "description": "The Demon Realm is home to all four demon ranks.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-003",
+    "source": "Humans",
+    "target": "Human Realm",
+    "type": "home of",
+    "label": "Home of",
+    "description": "The Human Realm is home to humanity.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-004",
+    "source": "Arubian Forest",
+    "target": "Ether Forest",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Arubian is the light half of the Ether Forest.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-005",
+    "source": "Umbrage Forest",
+    "target": "Ether Forest",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Umbrage is the dark half of the Ether Forest.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-006",
+    "source": "Arubian Forest",
+    "target": "Human Realm",
+    "type": "located in",
+    "label": "Located in",
+    "description": "The light half of the forest lies within the Human Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-007",
+    "source": "Umbrage Forest",
+    "target": "Demon Realm",
+    "type": "located in",
+    "label": "Located in",
+    "description": "The dark half of the forest lies within the Demon Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-008",
+    "source": "Umbrage Forest",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "portal to",
+    "label": "Portal to",
+    "description": "At the beginning of the story, the portal to the Hidden Realm is located here.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-009",
+    "source": "Thornlost Forest",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "located in",
+    "label": "Located in",
+    "description": "A forest of the Hidden Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-010",
+    "source": "Sentient River",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "located in",
+    "label": "Located in",
+    "description": "The living river of the Shadow Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-011",
+    "source": "Lethmoor Kingdom",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "located in",
+    "label": "Located in",
+    "description": "A replicated fallen kingdom within the Hidden Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-012",
+    "source": "Pixies",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "Pixies stay in the Hidden Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-013",
+    "source": "Fairies",
+    "target": "Arubian Forest",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "Fairies roam the Arubian Forest.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-014",
+    "source": "Trolls",
+    "target": "Umbrage Forest",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "Trolls stay on the darker side of the forest.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-015",
+    "source": "Minotaur",
+    "target": "Umbrage Forest",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "Minotaurs stay in the Umbrage Forest.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-016",
+    "source": "Elves",
+    "target": "Arubian Forest",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "Pallantine Elves stay in the Arubian Forest.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-017",
+    "source": "Elves",
+    "target": "Umbrage Forest",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "Veilborn Elves stay in the Umbrage Forest.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-018",
+    "source": "Coilmane",
+    "target": "Thornlost Forest",
+    "type": "guards",
+    "label": "Guards",
+    "description": "The guardian of the Thornlost Forest.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-019",
+    "source": "Harpies",
+    "target": "Umbrage Forest",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "Harpies stay in the Umbrage Forest.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-020",
+    "source": "Dragons",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "Dragons stay in the Shadow Realm and guard high mountain tops in the Hidden Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-021",
+    "source": "Sirens",
+    "target": "Sentient River",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "Sirens make their home in the Sentient River.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-022",
+    "source": "Shudon",
+    "target": "Human Realm",
+    "type": "guards",
+    "label": "Guards",
+    "description": "A Shudon guards every realm entrance.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-023",
+    "source": "Shudon",
+    "target": "Angel Realm",
+    "type": "guards",
+    "label": "Guards",
+    "description": "A Shudon guards every realm entrance.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-024",
+    "source": "Shudon",
+    "target": "Demon Realm",
+    "type": "guards",
+    "label": "Guards",
+    "description": "A Shudon guards every realm entrance.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-025",
+    "source": "Shudon",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "guards",
+    "label": "Guards",
+    "description": "A Shudon guards every realm entrance.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-026",
+    "source": "Leviathan",
+    "target": "Lethmoor Kingdom",
+    "type": "guards",
+    "label": "Guards",
+    "description": "The lava-adapted serpent guards the approach to the kingdom.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-027",
+    "source": "Cindergrave Wraith Lord",
+    "target": "Lethmoor Kingdom",
+    "type": "rules",
+    "label": "Rules",
+    "description": "The Wraith Lord rules from Lethmoor’s throne room.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-028",
+    "source": "Lesser Cindergrave Wraiths",
+    "target": "Cindergrave Wraith Lord",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Lesser wraiths rally under their lord.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-029",
+    "source": "The Wanderer",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "home of",
+    "label": "Home of",
+    "description": "The Wanderer mainly stays in the Hidden Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-030",
+    "source": "The Seer",
+    "target": "Humans",
+    "type": "part of",
+    "label": "Part of",
+    "description": "The Seer is the one human who knows who the next Healer will be.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-031",
+    "source": "Serapharch",
+    "target": "Angels (Overview)",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Rank 1 of the angel hierarchy.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-032",
+    "source": "Aetherblade Lord Angel",
+    "target": "Angels (Overview)",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Rank 2 of the angel hierarchy.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-033",
+    "source": "Virtue",
+    "target": "Angels (Overview)",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Rank 3 of the angel hierarchy.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-034",
+    "source": "Lumen",
+    "target": "Angels (Overview)",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Rank 4 of the angel hierarchy.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-035",
+    "source": "Fallen Angel",
+    "target": "Angels (Overview)",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Angels cast out for breaking the Veyn Vow.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-036",
+    "source": "The Angel Veyn Vow",
+    "target": "Angels (Overview)",
+    "type": "part of",
+    "label": "Part of",
+    "description": "The bond that regulates every angel’s Veyn.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-037",
+    "source": "Clint Ashborn",
+    "target": "Angel Realm",
+    "type": "rules",
+    "label": "Rules",
+    "description": "The Serapharch ruler of the Angel Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-038",
+    "source": "Vireth, the Fallen Grace",
+    "target": "Serapharch",
+    "type": "kills",
+    "label": "Can kill",
+    "description": "A corrupted Divine Weapon — one of the only things that can kill a Serapharch.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-039",
+    "source": "Solvane, the Hallowed Edge",
+    "target": "Serapharch",
+    "type": "kills",
+    "label": "Can kill",
+    "description": "A Divine Weapon — one of the only things that can kill a Serapharch.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-040",
+    "source": "Mordrach",
+    "target": "Demons (Overview)",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Rank 1 of the demon hierarchy.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-041",
+    "source": "Bloodward",
+    "target": "Demons (Overview)",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Rank 2 of the demon hierarchy.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-042",
+    "source": "Scourge",
+    "target": "Demons (Overview)",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Rank 3 of the demon hierarchy.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-043",
+    "source": "Gnash",
+    "target": "Demons (Overview)",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Rank 4 of the demon hierarchy.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-044",
+    "source": "Duskveil",
+    "target": "Demons (Overview)",
+    "type": "part of",
+    "label": "Part of",
+    "description": "The innate demonic disguise ability.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-045",
+    "source": "Tera Morage",
+    "target": "Demon Realm",
+    "type": "rules",
+    "label": "Rules",
+    "description": "The Mordrach ruler of the Demon Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-046",
+    "source": "Tera Morage",
+    "target": "Mordrach",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Tera Morage holds the Mordrach rank.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-047",
+    "source": "Shudonkeeper",
+    "target": "Shudon",
+    "type": "studies",
+    "label": "Studies",
+    "description": "The class exists to preserve and study the Shudon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-048",
+    "source": "Restoration Potion",
+    "target": "Veyn Stone",
+    "type": "made from",
+    "label": "Made from",
+    "description": "Brewed with Veyn stones to restore Veyn.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-049",
+    "source": "Lucent Stone",
+    "target": "Veyn Stone",
+    "type": "refined from",
+    "label": "Refined from",
+    "description": "A purified, far more potent form of a Veyn Stone.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-050",
+    "source": "Lucent Reserve",
+    "target": "Lucent Stone",
+    "type": "made from",
+    "label": "Made from",
+    "description": "A potion made from the Lucent Stone.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-051",
+    "source": "Iron-will Ring",
+    "target": "Lethmoor Kingdom",
+    "type": "needed for",
+    "label": "Needed for",
+    "description": "Required to pass safely through Lethmoor’s unstable Veyn terrain.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-052",
+    "source": "Pixies",
+    "target": "Pixie Dust",
+    "type": "produces",
+    "label": "Produces",
+    "description": "Pixies produce the rare pixie dust.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-053",
+    "source": "Ethereal Potion",
+    "target": "Pixie Dust",
+    "type": "ingredient of",
+    "label": "Ingredient of",
+    "description": "Pixie dust is one of the potion’s core ingredients.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-054",
+    "source": "Ethereal Potion",
+    "target": "Grimbough Tree",
+    "type": "ingredient of",
+    "label": "Ingredient of",
+    "description": "Grinded Grimbough leaves are an ingredient.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-055",
+    "source": "Ethereal Potion",
+    "target": "Kaelroot Tree",
+    "type": "ingredient of",
+    "label": "Ingredient of",
+    "description": "Grinded Kaelroot bark is an ingredient.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-056",
+    "source": "Ethereal Potion",
+    "target": "Dragons",
+    "type": "ingredient of",
+    "label": "Ingredient of",
+    "description": "The heart of a dragon is the final ingredient.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-057",
+    "source": "Rejuvenating Elixir",
+    "target": "Kaelroot Tree",
+    "type": "made from",
+    "label": "Made from",
+    "description": "The leaves of the Kaelroot tree brew this elixir.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-058",
+    "source": "Vireth, the Fallen Grace",
+    "target": "Sentient River",
+    "type": "sealed in",
+    "label": "Sealed in",
+    "description": "Held beneath the river under two seals.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-059",
+    "source": "Virastra, the Ascendant Vow",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "lost in",
+    "label": "Lost in",
+    "description": "Lost somewhere in the ruins across the Hidden Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-060",
+    "source": "Aerendrel, the Skybound Wrath",
+    "target": "Lethmoor Kingdom",
+    "type": "found in",
+    "label": "Found in",
+    "description": "Kept in the chamber beneath the throne chair.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-061",
+    "source": "Liework’s Fallen Crown",
+    "target": "Lethmoor Kingdom",
+    "type": "found in",
+    "label": "Found in",
+    "description": "Kept in the chamber beneath the throne chair.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-062",
+    "source": "Sael’s Luck",
+    "target": "Lethmoor Kingdom",
+    "type": "found in",
+    "label": "Found in",
+    "description": "Kept in the chamber beneath the throne chair.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-063",
+    "source": "Auralis Ruby",
+    "target": "Lisa",
+    "type": "crafted by",
+    "label": "Crafted by",
+    "description": "Made by Lisa and given to Sofia to seal Jaiden’s auras.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-064",
+    "source": "Auralis Ruby",
+    "target": "Jaiden Marlock",
+    "type": "seals",
+    "label": "Seals",
+    "description": "Its five seals hide Jaiden’s five forms — and both of his auras.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-065",
+    "source": "Lisa’s Plot",
+    "target": "Lisa",
+    "type": "story of",
+    "label": "Story of",
+    "description": "A forbidden love, a hidden child, and a death sentence.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-066",
+    "source": "Lisa’s Plot",
+    "target": "Licent Varak",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Licent’s betrayal is the pivot of Lisa’s fate.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-067",
+    "source": "Lisa’s Plot",
+    "target": "Ordium",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Ordium is Lisa’s forbidden love.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-068",
+    "source": "Licent Varak’s Plot",
+    "target": "Licent Varak",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Jealousy that cost Lisa her life.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-069",
+    "source": "Ordium’s Plot",
+    "target": "Ordium",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Love at first sight — left unfinished.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-070",
+    "source": "Auralis Ruby",
+    "target": "Sofia",
+    "type": "given to",
+    "label": "Given to",
+    "description": "Crafted by Lisa and given to her personal maid Sofia.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-071",
+    "source": "Auralis Ruby",
+    "target": "Jaiden Marlock",
+    "type": "given to",
+    "label": "Given to",
+    "description": "Lisa gave the pendant to her son through her maid Sofia — its five seals hide Jaiden’s five forms and both auras.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-072",
+    "source": "Jaiden Marlock",
+    "target": "Sofia",
+    "type": "given to",
+    "label": "Given to",
+    "description": "Lisa gave her newborn son to her personal maid Sofia to raise in the Human Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-073",
+    "source": "Aerendrel, the Skybound Wrath",
+    "target": "Jaiden Marlock",
+    "type": "found by",
+    "label": "Found by",
+    "description": "Among the treasures found in the chamber beneath Lethmoor’s throne chair — the Mc’s to claim.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-074",
+    "source": "Liework’s Fallen Crown",
+    "target": "Jaiden Marlock",
+    "type": "found by",
+    "label": "Found by",
+    "description": "Among the treasures found in the chamber beneath Lethmoor’s throne chair.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-075",
+    "source": "Sael’s Luck",
+    "target": "Jaiden Marlock",
+    "type": "found by",
+    "label": "Found by",
+    "description": "Among the treasures found in the chamber beneath Lethmoor’s throne chair.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-076",
+    "source": "Solvane, the Hallowed Edge",
+    "target": "Clint Ashborn",
+    "type": "passed down",
+    "label": "Passed down",
+    "description": "The Divine Spear held by the Angel Realm’s ruler — a user-bound weapon that can be passed down.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-077",
+    "source": "Vireth, the Fallen Grace",
+    "target": "Jaiden Marlock",
+    "type": "owned by",
+    "label": "Owned by",
+    "description": "The Mc becomes the owner of the corrupted divine sword.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-078",
+    "source": "The Truthstone",
+    "target": "The Seer",
+    "type": "owned by",
+    "label": "Owned by",
+    "description": "The Seer is entrusted with the gem that locates the next Healer — and is the only one who knows where it lies.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-079",
+    "source": "Kings Record",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-080",
+    "source": "Sixth Sense",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-081",
+    "source": "Time Reversal",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-082",
+    "source": "Chronos Fury",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-083",
+    "source": "Will Mastery",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-084",
+    "source": "Holy Rain",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-085",
+    "source": "Dignified Presence",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-086",
+    "source": "Angelic Aura (Serapharch)",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-087",
+    "source": "Holy Flame",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-088",
+    "source": "God's Index Finger",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-089",
+    "source": "God Chain",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-090",
+    "source": "Holy Grail",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-091",
+    "source": "Warpstep",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-092",
+    "source": "Dawnveil (Serapharch)",
+    "target": "Serapharch",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Serapharch skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-093",
+    "source": "Skyward Chains",
+    "target": "Aetherblade Lord Angel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Aetherblade Lord Angel skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-094",
+    "source": "Vanguard's Cry",
+    "target": "Aetherblade Lord Angel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Aetherblade Lord Angel skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-095",
+    "source": "Aegis Ward",
+    "target": "Aetherblade Lord Angel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Aetherblade Lord Angel skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-096",
+    "source": "Holy Mend",
+    "target": "Aetherblade Lord Angel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Aetherblade Lord Angel skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-097",
+    "source": "Angelic Aura (Aetherblade)",
+    "target": "Aetherblade Lord Angel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Aetherblade Lord Angel skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-098",
+    "source": "Swiftstep",
+    "target": "Aetherblade Lord Angel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Aetherblade Lord Angel skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-099",
+    "source": "Dawnveil (Aetherblade)",
+    "target": "Aetherblade Lord Angel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Aetherblade Lord Angel skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-100",
+    "source": "Guiding Light",
+    "target": "Virtue",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Virtue skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-101",
+    "source": "Radiant Strike",
+    "target": "Virtue",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Virtue skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-102",
+    "source": "Formation Discipline",
+    "target": "Virtue",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Virtue skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-103",
+    "source": "Angelic Aura (Virtue)",
+    "target": "Virtue",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Virtue skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-104",
+    "source": "Dawnveil (Virtue)",
+    "target": "Virtue",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Virtue skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-105",
+    "source": "Warmth of the Realm",
+    "target": "Lumen",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Lumen skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-106",
+    "source": "Faint Ward",
+    "target": "Lumen",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Lumen skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-107",
+    "source": "Angelic Aura (Lumen)",
+    "target": "Lumen",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Lumen skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-108",
+    "source": "Dawnveil (Lumen)",
+    "target": "Lumen",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Lumen skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-109",
+    "source": "Death Scythe",
+    "target": "Mordrach",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mordrach skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-110",
+    "source": "Chain Reaper Scythe",
+    "target": "Mordrach",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mordrach skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-111",
+    "source": "Call of the Dead",
+    "target": "Mordrach",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mordrach skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-112",
+    "source": "Dominating Will",
+    "target": "Mordrach",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mordrach skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-113",
+    "source": "Soul Oath",
+    "target": "Mordrach",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mordrach skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-114",
+    "source": "Veyn Decomposition (Mordrach)",
+    "target": "Mordrach",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mordrach skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-115",
+    "source": "Hands of Death",
+    "target": "Mordrach",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mordrach skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-116",
+    "source": "Purgatory Flames",
+    "target": "Mordrach",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mordrach skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-117",
+    "source": "Charm",
+    "target": "Mordrach",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mordrach skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-118",
+    "source": "Soul-Sight",
+    "target": "Mordrach",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mordrach skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-119",
+    "source": "Berserk (Mordrach)",
+    "target": "Mordrach",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mordrach skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-120",
+    "source": "Demonic Aura (Mordrach)",
+    "target": "Mordrach",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mordrach skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-121",
+    "source": "Duskveil (Mordrach)",
+    "target": "Mordrach",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mordrach skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-122",
+    "source": "Blood Chains",
+    "target": "Bloodward",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bloodward skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-123",
+    "source": "Warcry of Dominion",
+    "target": "Bloodward",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bloodward skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-124",
+    "source": "Crimson Ward",
+    "target": "Bloodward",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bloodward skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-125",
+    "source": "Blood Pact",
+    "target": "Bloodward",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bloodward skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-126",
+    "source": "Veyn Decomposition (Bloodward)",
+    "target": "Bloodward",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bloodward skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-127",
+    "source": "Demonic Aura (Bloodward)",
+    "target": "Bloodward",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bloodward skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-128",
+    "source": "Berserk (Bloodward)",
+    "target": "Bloodward",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bloodward skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-129",
+    "source": "Duskveil (Bloodward)",
+    "target": "Bloodward",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bloodward skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-130",
+    "source": "Vitality Surge",
+    "target": "Scourge",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Scourge skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-131",
+    "source": "Rend Claws",
+    "target": "Scourge",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Scourge skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-132",
+    "source": "Pack Tactics",
+    "target": "Scourge",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Scourge skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-133",
+    "source": "Veyn Decomposition (Scourge)",
+    "target": "Scourge",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Scourge skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-134",
+    "source": "Berserk (Scourge)",
+    "target": "Scourge",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Scourge skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-135",
+    "source": "Demonic Aura (Scourge)",
+    "target": "Scourge",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Scourge skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-136",
+    "source": "Duskveil (Scourge)",
+    "target": "Scourge",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Scourge skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-137",
+    "source": "Binding Contract",
+    "target": "Gnash",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Gnash skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-138",
+    "source": "Veyn Decomposition (Gnash)",
+    "target": "Gnash",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Gnash skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-139",
+    "source": "Instinctive Bargaining",
+    "target": "Gnash",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Gnash skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-140",
+    "source": "Demonic Aura (Gnash)",
+    "target": "Gnash",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Gnash skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-141",
+    "source": "Duskveil (Gnash)",
+    "target": "Gnash",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Gnash skill.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-142",
+    "source": "Jaiden Marlock — Normal",
+    "target": "Jaiden Marlock",
+    "type": "form of",
+    "label": "Form of",
+    "description": "One of Jaiden's forms.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-143",
+    "source": "Jaiden Marlock — Halo & Horns",
+    "target": "Jaiden Marlock",
+    "type": "form of",
+    "label": "Form of",
+    "description": "One of Jaiden's forms.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-144",
+    "source": "Jaiden Marlock — Full Angel Form",
+    "target": "Jaiden Marlock",
+    "type": "form of",
+    "label": "Form of",
+    "description": "One of Jaiden's forms.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-145",
+    "source": "Jaiden Marlock — Full Demon Form",
+    "target": "Jaiden Marlock",
+    "type": "form of",
+    "label": "Form of",
+    "description": "One of Jaiden's forms.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-146",
+    "source": "Jaiden Marlock — True Hybrid Form",
+    "target": "Jaiden Marlock",
+    "type": "form of",
+    "label": "Form of",
+    "description": "One of Jaiden's forms.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-147",
+    "source": "Graceless Edge",
+    "target": "Vireth, the Fallen Grace",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A skill of the corrupted divine sword.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-148",
+    "source": "Split Grace",
+    "target": "Vireth, the Fallen Grace",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A skill of the corrupted divine sword.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-149",
+    "source": "Pallantine",
+    "target": "Elves",
+    "type": "class of",
+    "label": "Class of",
+    "description": "One of the two types of Elves stated in the doc - a class of Elf.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-150",
+    "source": "Veilborn",
+    "target": "Elves",
+    "type": "class of",
+    "label": "Class of",
+    "description": "One of the two types of Elves stated in the doc - a class of Elf.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-151",
+    "source": "Mage",
+    "target": "Veyn",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Magic/Veyn class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-152",
+    "source": "Alchemist",
+    "target": "Veyn",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Magic/Veyn class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-153",
+    "source": "Beastmaster",
+    "target": "Ren",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Ren class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-154",
+    "source": "Smithing",
+    "target": "Veyn",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Magic/Veyn and Ren class - the Veyn half of Smithing.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-155",
+    "source": "Smithing",
+    "target": "Ren",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Magic/Veyn and Ren class - the Ren half of Smithing.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-156",
+    "source": "Enchanter",
+    "target": "Veyn",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Magic/Veyn class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-157",
+    "source": "Diviner",
+    "target": "Veyn",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Magic/Veyn class - channels holy energy, a purified form of Veyn.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-158",
+    "source": "Exorcist",
+    "target": "Veyn",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A slight use of Veyn/Magic class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-159",
+    "source": "Broker",
+    "target": "Ren",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Ren class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-160",
+    "source": "Saintess",
+    "target": "Veyn",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Magic/Veyn class, Holy class - channels holy energy, a purified form of Veyn.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-161",
+    "source": "Healer",
+    "target": "Veyn",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Magic/Veyn class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-162",
+    "source": "Archer",
+    "target": "Veyn",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Magic/Veyn class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-163",
+    "source": "Paladin",
+    "target": "Ren",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Ren class - the physical half of Paladin.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-164",
+    "source": "Paladin",
+    "target": "Veyn",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Holy class - heals and protects using holy energy, a purified form of Veyn.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-165",
+    "source": "Grimtender",
+    "target": "Veyn",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Magic/Veyn class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-166",
+    "source": "Bladesinger",
+    "target": "Ren",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Ren class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-167",
+    "source": "Berserker",
+    "target": "Ren",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Ren class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-168",
+    "source": "Sentinel",
+    "target": "Ren",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Ren class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-169",
+    "source": "Ren Archer",
+    "target": "Ren",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Ren class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-170",
+    "source": "Veilrunner",
+    "target": "Ren",
+    "type": "class of",
+    "label": "Class of",
+    "description": "A Ren class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-171",
+    "source": "Angelic Aura (Serapharch)",
+    "target": "Angelic Aura",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Serapharch rank version of the shared angelic aura.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-172",
+    "source": "Angelic Aura (Aetherblade)",
+    "target": "Angelic Aura",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Aetherblade Lord Angel rank version of the shared angelic aura.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-173",
+    "source": "Angelic Aura (Virtue)",
+    "target": "Angelic Aura",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Virtue rank version of the shared angelic aura.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-174",
+    "source": "Angelic Aura (Lumen)",
+    "target": "Angelic Aura",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Lumen rank version of the shared angelic aura.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-175",
+    "source": "Dawnveil (Serapharch)",
+    "target": "Dawnveil",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Serapharch rank version of the innate angelic disguise.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-176",
+    "source": "Dawnveil (Aetherblade)",
+    "target": "Dawnveil",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Aetherblade Lord Angel rank version of the innate angelic disguise.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-177",
+    "source": "Dawnveil (Virtue)",
+    "target": "Dawnveil",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Virtue rank version of the innate angelic disguise.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-178",
+    "source": "Dawnveil (Lumen)",
+    "target": "Dawnveil",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Lumen rank version of the innate angelic disguise.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-179",
+    "source": "Veyn Decomposition (Mordrach)",
+    "target": "Veyn Decomposition",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Mordrach rank version of the innate demonic miasma.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-180",
+    "source": "Veyn Decomposition (Bloodward)",
+    "target": "Veyn Decomposition",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Bloodward rank version of the innate demonic miasma.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-181",
+    "source": "Veyn Decomposition (Scourge)",
+    "target": "Veyn Decomposition",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Scourge rank version of the innate demonic miasma.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-182",
+    "source": "Veyn Decomposition (Gnash)",
+    "target": "Veyn Decomposition",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Gnash rank version of the innate demonic miasma.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-183",
+    "source": "Berserk (Mordrach)",
+    "target": "Berserk",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Mordrach rank version of the berserk state.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-184",
+    "source": "Berserk (Bloodward)",
+    "target": "Berserk",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Bloodward rank version of the berserk state.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-185",
+    "source": "Berserk (Scourge)",
+    "target": "Berserk",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Scourge rank version of the berserk state.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-186",
+    "source": "Demonic Aura (Mordrach)",
+    "target": "Demonic Aura",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Mordrach rank version of the shared demonic aura.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-187",
+    "source": "Demonic Aura (Bloodward)",
+    "target": "Demonic Aura",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Bloodward rank version of the shared demonic aura.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-188",
+    "source": "Demonic Aura (Scourge)",
+    "target": "Demonic Aura",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Scourge rank version of the shared demonic aura.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-189",
+    "source": "Demonic Aura (Gnash)",
+    "target": "Demonic Aura",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Gnash rank version of the shared demonic aura.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-190",
+    "source": "Duskveil (Mordrach)",
+    "target": "Duskveil",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Mordrach rank version of the innate demonic disguise.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-191",
+    "source": "Duskveil (Bloodward)",
+    "target": "Duskveil",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Bloodward rank version of the innate demonic disguise.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-192",
+    "source": "Duskveil (Scourge)",
+    "target": "Duskveil",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Scourge rank version of the innate demonic disguise.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-193",
+    "source": "Duskveil (Gnash)",
+    "target": "Duskveil",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Gnash rank version of the innate demonic disguise.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-194",
+    "source": "Ren Archer",
+    "target": "Archer",
+    "type": "class of",
+    "label": "Class of",
+    "description": "The Ren-based counterpart to Archer.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-195",
+    "source": "Jaiden Marlock",
+    "target": "Mage",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Per the doc comment: the Mc's class is a mage.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-196",
+    "source": "Head Master of the Academy",
+    "target": "Human Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "The Head Master stays in the Human Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-197",
+    "source": "Head Master of the Academy",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "hides in",
+    "label": "Hides in",
+    "description": "He was only hiding in the Hidden Realm to hide.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-198",
+    "source": "Head Master of the Academy",
+    "target": "Academy",
+    "type": "head master of",
+    "label": "Head Master of",
+    "description": "The sole survivor of the old race killed by the former Human Realm ruler is the academy’s Head Master (comment 126).",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "3eb92be2-7c78-48dd-83ad-1dc4486cc8ef",
+    "source": "Virastra, the Ascendant Vow",
+    "target": "Mordrach",
+    "type": "kills",
+    "label": "Can kill",
+    "description": "strong enough to injure a mordrach demon",
+    "createdAt": "2026-08-13T14:21:35.403Z",
+    "updatedAt": "2026-08-13T14:21:35.403Z"
+  },
+  {
+    "id": "060e2232-e9a1-4109-8142-5058e87274ee",
+    "source": "Saturation Sickness",
+    "target": "Concentrated Veyn",
+    "type": "made from",
+    "label": "Made from",
+    "description": "The sickness is made staying in concentrated veyn for too long",
+    "createdAt": "2026-08-13T18:55:12.115Z",
+    "updatedAt": "2026-08-13T18:55:12.115Z"
+  }
+]

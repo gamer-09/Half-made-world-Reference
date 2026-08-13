@@ -1,0 +1,172 @@
+[
+  {
+    "id": "rel-seed-001",
+    "source": "Jaiden Marlock",
+    "target": "Lisa",
+    "type": "child of",
+    "label": "Child of",
+    "description": "Jaiden is the son of Lisa and Ordium — the first angel-demon hybrid in the world.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-002",
+    "source": "Jaiden Marlock",
+    "target": "Ordium",
+    "type": "child of",
+    "label": "Child of",
+    "description": "Jaiden is the son of Lisa and Ordium — the first angel-demon hybrid in the world.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-003",
+    "source": "Ordium",
+    "target": "Lisa",
+    "type": "loves",
+    "label": "Loves",
+    "description": "Love at first sight. He left his post and spent 9 months with her in a secret place in the Human Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-004",
+    "source": "Lisa",
+    "target": "Tera Morage",
+    "type": "right-hand of",
+    "label": "Right-hand of",
+    "description": "The most powerful demon in the Demon Realm after the Mordrach; held the top Bloodward position as the ruler’s right-hand.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-005",
+    "source": "Ordium",
+    "target": "Clint Ashborn",
+    "type": "right-hand of",
+    "label": "Right-hand of",
+    "description": "Ordium is the right-hand man of the Angel Realm’s ruler.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-006",
+    "source": "Licent Varak",
+    "target": "Tera Morage",
+    "type": "right-hand of",
+    "label": "Right-hand of",
+    "description": "The second right-hand man to Tera Morage in the Demon Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-007",
+    "source": "Sofia",
+    "target": "Lisa",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Lisa’s personal maid — she received the child Jaiden and the Auralis Ruby from Lisa.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-008",
+    "source": "Licent Varak",
+    "target": "Lisa",
+    "type": "rival of",
+    "label": "Rival of",
+    "description": "Always hated Lisa for being stronger than him and holding the top Bloodward position; constantly looked for a way to take her power and rank away.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-009",
+    "source": "Licent Varak",
+    "target": "Lisa",
+    "type": "betrayed",
+    "label": "Betrayed",
+    "description": "Saw Lisa meet with an angel, discovered the pregnancy, and reported her to Tera Morage — which enraged the ruler.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-010",
+    "source": "Tera Morage",
+    "target": "Lisa",
+    "type": "demoted",
+    "label": "Demoted",
+    "description": "Demoted Lisa to Gnash rank after Licent Varak reported her relationship with an angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-011",
+    "source": "Licent Varak",
+    "target": "Lisa",
+    "type": "ordered killed",
+    "label": "Ordered killed",
+    "description": "After her demotion, Lisa was killed by Licent’s men on his orders.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-012",
+    "source": "Sofia",
+    "target": "Jaiden Marlock",
+    "type": "guardian of",
+    "label": "Guardian of",
+    "description": "Raised Jaiden in the Human Realm after receiving him from Lisa, with the Auralis Ruby sealing his auras so he looks human.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-013",
+    "source": "Licent Varak",
+    "target": "Sofia",
+    "type": "knows",
+    "label": "Knows",
+    "description": "Saw Sofia heading to an unknown location and tried to follow her, but lost track of her.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-014",
+    "source": "Jaiden Marlock",
+    "target": "Lisa",
+    "type": "unaware of",
+    "label": "Unaware of",
+    "description": "Given away as a baby with his auras sealed by the Auralis Ruby — he has no idea who his parents are.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-015",
+    "source": "Jaiden Marlock",
+    "target": "Ordium",
+    "type": "unaware of",
+    "label": "Unaware of",
+    "description": "Given away as a baby with his auras sealed by the Auralis Ruby — he has no idea who his parents are.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-016",
+    "source": "Head Master of the Academy",
+    "target": "Jaiden Marlock",
+    "type": "takes",
+    "label": "Takes to the Hidden Realm",
+    "description": "The Head Master is the character who takes the MC, Jaiden, to the Hidden Realm (comment 126).",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "50936b74-368c-47e9-a410-28c00b9b615b",
+    "source": "Clint Ashborn",
+    "target": "Ordium",
+    "type": "ordered killed",
+    "label": "Ordered killed",
+    "description": "after have a child with a demon lisa, clint was enraged and ordered the execution of Ordium",
+    "createdAt": "2026-08-13T00:31:35.988Z",
+    "updatedAt": "2026-08-13T00:31:35.988Z"
+  }
+]
