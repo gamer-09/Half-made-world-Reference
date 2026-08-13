@@ -1380,4 +1380,16 @@ module.exports = [
     ],
     ['character', 'head master', 'academy', 'hidden realm'],
   ),
+
+  e(
+    'Locations',
+    'Academy',
+    'The unnamed school led by the Head Master of the Academy',
+    'The school led by the Head Master of the Academy, the sole survivor of the old race killed off by the former Human Realm ruler. Its name has not yet been decided.',
+    [
+      { label: 'Head Master', value: 'Head Master of the Academy' },
+      { label: 'Name', value: 'Not yet decided.' },
+    ],
+    ['academy', 'school', 'head master', 'hidden realm'],
+  ),
 ];

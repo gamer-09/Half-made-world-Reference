@@ -1978,5 +1978,15 @@
     "description": "The sickness is made staying in concentrated veyn for too long",
     "createdAt": "2026-08-13T18:55:12.115Z",
     "updatedAt": "2026-08-13T18:55:12.115Z"
+  },
+  {
+    "id": "link-seed-197",
+    "source": "Head Master of the Academy",
+    "target": "Academy",
+    "type": "head master of",
+    "label": "Head Master of",
+    "description": "The sole survivor of the old race killed by the former Human Realm ruler is the academy’s Head Master (comment 126).",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

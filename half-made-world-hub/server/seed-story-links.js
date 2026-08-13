@@ -256,4 +256,7 @@ module.exports = [
 
   // --- Head Master: the only survivor, takes the MC to the Hidden Realm (doc comment) ---
   s('Head Master of the Academy', 'Hidden Realm (Shadow Realm)', 'lives in', 'Lives in', 'The only survivor of the Hidden Realm’s creation — he stays there as the Head Master of the academy.'),
+
+  // --- Head Master of the Academy (doc: "the Head master of the academy" + comment 126) ---
+  s('Head Master of the Academy', 'Academy', 'head master of', 'Head Master of', 'The sole survivor of the old race killed by the former Human Realm ruler is the academy’s Head Master (comment 126).'),
 ];

@@ -3469,5 +3469,30 @@
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-185",
+    "category": "Locations",
+    "name": "Academy",
+    "subtitle": "The unnamed school led by the Head Master of the Academy",
+    "description": "The school led by the Head Master of the Academy, the sole survivor of the old race killed off by the former Human Realm ruler. Its name has not yet been decided.",
+    "fields": [
+      {
+        "label": "Head Master",
+        "value": "Head Master of the Academy"
+      },
+      {
+        "label": "Name",
+        "value": "Not yet decided."
+      }
+    ],
+    "tags": [
+      "academy",
+      "school",
+      "head master",
+      "hidden realm"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]
