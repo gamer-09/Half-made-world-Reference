@@ -1,0 +1,417 @@
+[0] Table of Contents
+[1] Mc name: Jaiden Marlock
+[2] REALMS
+[3] There are four realms in the world:
+[4] Human Realm
+[5] Angel Realm
+[6] Demon Realm
+[7] Hidden Realm (Shadow Realm)
+[8] Note: The Human Realm has a large population, likely in the hundreds of thousands, which is part of why only having 7 Healers at any given time is considered so rare and significant.
+[9] Monsters
+[10] Pixies → The are smaller than Fairies. The produce “pixie dust” which can be used to make a potion. They stay in the Hidden Realm
+[11] Fairies → They are friendly creatures that roam in the Arubian Forest. They can help you find treasures that may be hidden in the forest for a valuable trade.
+[12] Trolls→ They stay at the darker side of the Arubian Forest, they always move in groups. The darker side of the forest is called Umbrage Forest.
+[13] Minotaur→ They stay in the Umbrage Forest and the aggressive towards humans.
+[14] Elf→ They stay in the Arubian Forest or the Umbrage Forest, and they become aggressive to those who destroy the part of the forest in their territory. There are two types of Elves:
+[15] Pallantine→ They stay in the Arubian Forest.
+[16] Veilborn→ They stay in the Umbrage Forest, they only trust themselves.
+[17] Griffen→ They are used as transport by the Pallantine, they live on the highest part of mountains.
+[18] Coilmane→ They have a snake as a tail which uses a powerful venom and a lion as the main body, and they have a strong skin which is great for defense. It is the guardian of the forest in the Hidden Realm called Thornlost Forest.
+[19] Harpies→ They use a fiery whip as a weapon in combat and they can shapeshift; they are shapeshifting winged beasts. They are staying in the Umbrage Forest.
+[20] Dragons→ They stay in the Shadow Realm. They are very protective of their territory.
+[21] Sirens→ They are humanoid fish women; they stay in the Sentient River in the Shadow Realm. They can hypnotize you when you hear them sing.
+[22] Ether Forest
+[23] It is a forest that is grouped into two parts, the light area where it can still be visible with the daylight and where some neutral monsters stay. The two parts are called:
+[24] Arubian Forest→ The light half of the forest, located within the Human Realm, where some neutral monsters stay.
+[25] Umbrage Forest→ The dark half of the forest, located within the Demon Realm, where all the hostile monsters stay. At the beginning of the story, the portal to the Hidden Realm is located there.
+[26] Angels Ranking
+[27] There are four ranks of angels:
+[28] Serapharch→
+[29] The ruler of the Angel Realm, they are essentially immortal and can only be killed by A Corrupted Divine Weapon (Vireth, the Fallen Grace) or A Divine Weapon. They have a very strong regenerative ability and a very strong natural defense.
+[30] Aetherblade Lord Angel→
+[31] A high-ranking angel- A high-ranking angel and commander of the angel army, answering only to the Serapharch. They never age and are nearly impossible to bring down in battle through conventional means. Only a consecrated weapon, a blood-forged blade, or the venom of a Coilmane carries enough power to wound them fatally. Their regeneration works on Veyn if there is Veyn in their body they can heal.
+[32] Virtue→
+[33] A mid-ranking angel with regenerative ability lesser than the Aetherblade Lord Angel. They serve as soldiers under the Aetherblade Lord Angel, forming the disciplined core of the angel army. Unlike Aetherblade Lord Angels above them, a Virtue can be killed by conventional blessed or consecrated weapons — they do not require a Divine Weapon or blood-forged blade to bring down. Though their regeneration is weaker, if they have stamina they can heal. Their healing cannot work with Veyn.
+[34] Lumen→
+[35] They can be killed with regular weapons, and they are they citizens of the Angel Realm, they don’t have regenerative abilities and are weak they always stay in the Angel Realm, and they only leave if the need something outside their realm.
+[36] Demons Ranking
+[37] There are four ranks of demons:
+[38] Mordrach→
+[39] They are the rulers of the Demon Realm, and they highest rank of authority in the Demon Realm, they can’t be killed by regular weapons or holy imbued weapon. They can only be harmed and killed by a Divine weapon.
+[40] Bloodward→
+[41] They are the commanders of the Demon army in the Demon Realm, their regenerative ability is less than the Mordrach, their regenerative ability runs on Veyn.
+[42] Scourge→
+[43] They are demon soldiers that are under the Bloodward, they have a lesser regenerative that runs on Vitality.
+[44] Gnash→
+[45] They are regular demons at the age of 15 they are taken to The Sundering Altar for their awakening; they can make contracts with anyone and once the contract is signed, they are bound by it and can’t break free from it till it has been fulfilled. Making a contract with a Gnash is very risky since most of the time they are not friendly, and they want to increase their rank for more power.
+[46] Note: a rank can be passed down to an offspring though not all the time, so they would have to work their way up the ranks
+[47] The Sundering Altar
+[48] At 15, every person in the world is brought to The Sundering Altar, where their latent connection to Veyn is unlocked for the first time. Before this, no one — human, elf, angel, demon — can consciously access magic. The altar doesn't teach them to use it; it simply opens the channel.
+[49] The moment Veyn awakens in them, it manifests visibly in a way that reveals their affinity — the specific path/discipline they are suited to (e.g., combat-magic, healing, elemental control, beast-bonding, etc.). This is not a choice the person makes consciously in the moment; it is revealed to them, based on what's already latent inside them — which is why it works well as "awakening" rather than "selection." The path-choosing comes after once someone knows their affinity, they then choose how to pursue it (which order, mentor, discipline, or role to commit to).
+[50] Appearances
+[51] Angels→
+[52] They have pure white feathery wings and a glowing halo on top of their heads. The number of wings indicates their rank, the higher the rank the more wings they have. Appearance of their halo also changes slightly by rank, the higher the rank the more powerful and bright they look, the lower ranks halo glow very dimly. They have an angelic aura around them all the time, the stronger the aura the stronger they are.
+[53] Serapharch→
+[54] They have 8 wings, large and almost covering their whole body, the feathers glow gold. Their halo is a solid ring of light, it's too bright to look at directly. They have the strongest aura among all the angels. Their wing color is light pale gold and have a bright but dim glow.
+[55] Aetherblade Lord Angel→
+[56] They have 6 wings, big but with scars on them from battle that never fully heal. Their halo is bright but steady but not as dazzling(bright) as it is for the Serapharch's. They look more like warriors, with sharper features and always in a battle-ready stance. Their aura is strong but not too strong though they can improve it. Their wings are pure white and they glow.
+[57] Virtue→
+[58] They have 4 wings, smaller and duller than the ranks above them. Their halo flickers instead of staying solid. Their aura is just normal. They have cream colored wings.
+[59] Lumen→
+[60] They have 2 wings, small and delicate, their halo is faint, barely visible. Their aura is the weakest. They have a light gray colored wing.
+[61] NOTE: Both demons and angels can retract their wings or hide their wings if they want
+[62] Demons →
+[63] They have horns on their forehead and feathery black wings. The number of horns and wings both indicate their rank, the higher the rank the more horns and wings they have. They always have a demonic aura around them.
+[64] Mordrach→
+[65] They have 8 horns and 8 wings, the horns curling back and fused together at the base like a crown. Their wings are massive, tattered at the edges but still powerful, the black feathers seem to absorb light rather than reflect it. They have the strongest aura amongst all the demons in the Demon Realm. They have deep-purple-colored wings.
+[66] Bloodward→
+[67] They have 6 horns and 6 wings, the horns sharp and jagged, some cracked from old battles. Their wings are broad and scarred, mirroring how the Aetherblade Lord Angel's wings carry battle-scars that never fully heal. They carry themselves like commanders, always poised for a fight. Their aura is strong but not too strong like the Mordrach. They have dark, purple-colored wings.
+[68] Scourge→
+[69] They have 4 horns and 4 wings, shorter and less refined than the ranks above. Their wings are smaller, feathers rougher and less full. Their aura is just normal. They have wine purple-colored wings.
+[70] Gnash→
+[71] They have 2 horns and 2 wings, small and stubby, barely more than bumps. Their wings are the smallest of all demon ranks, thin and often kept retracted. They look the most human out of all the ranks, which fits since they're the ones taken to the Sundering Altar and still closest to an ordinary life before their power grows. Their aura is the weakest and gives an ominous feeling. They have mauve, purple-colored wings.
+[72] Mc: Jaiden Marlock, Forms
+[73] A Hybrid of an angel and demon as a result became the first hybrid in the world. His parents were the right-hand man of the rulers of the angel and the demon realm, respectively.
+[74] First form→ Normal, looks fully human. No visible wings, horns, or halo.
+[75] Second form→ A halo appears above his head, and two horns emerge from his forehead, using partial abilities of both an angel and a demon.
+[76] Third form→ His full angel form. 6 pure feathery white wings and a halo that glows brightly on top of his head, along with the angelic aura all angels carry.
+[77] Fourth form→ His full demon form. 6 horns and 6 dark purple feathery wings, along with the demonic aura all demons carry.
+[78] Fifth form→ His true hybrid form. 3 pure white feathery wings on one half of his body and 3 black feathery wings on the other, 6 horns, and a halo split in half floating above his head. Both the angelic and demonic auras surround him at the same time.
+[79] Angelic rank→ Aetherblade Lord Angel
+[80] Demonic rank→ Bloodward
+[81] Humans
+[82] Unlike other races, humans aren't locked into one Veyn affinity for life. When an elf, angel, or demon is revealed at the altar, that affinity stays fixed forever, but a human's affinity can change or grow over time through training. This means a human could eventually learn more than one affinity, something no other race can do.
+[83] The catch is that switching or adding a new affinity is extremely hard. Most humans try and give up, choosing to stick with the one affinity they got at the altar instead. Even if the ones who succeed never become as powerful in any single affinity as a race built specifically for it, they trade raw power for versatility.
+[84] Veyn
+[85] It is what allows people to use magic in the world. It is drawn from the core of the world and everything around us. Veyn naturally glows a pale silver-blue, like faint moonlight. This is its raw, neutral form before it's shaped into something else, holy energy brightens it into gold, while corrupted Veyn (like a demon's miasma) darkens it into deep purple or black.
+[86] Ren
+[87] It is what swordsmen use in place for Veyn. It is the inner energy from our body brought out of our body to enhance our strength. Ren glows a deep crimson red since it is drawn from a person's own Vitality rather than an outside source. Where Veyn feels cool and ambient, Ren feels warm and physical, more like a pulse than a light.
+[88] Healer
+[89] There are only seven healers in the Human Realm. When one dies, a new healer is chosen within the next two years. One person in the Human Realm knows who the next healer will be; this role is called The Seer. The Seer is entrusted with a gem known as The Truthstone which has the power to locate who the new healer is. The Seer is the only one who knows the gem’s location.
+[90] Fallen Angel
+[91] They have black spotted white wings or black cherry spotted white wings and a broken halo on top of their head.
+[92] Once the vow breaks, the angel is cast out of the Angel Realm and rejected by their own race, this is what makes them a Fallen Angel. They keep their wings and whatever power they had, but can never take another Veyn Vow again, so their connection to Veyn stays unstable and unregulated. This makes them strong in bursts but dangerous even to themselves since nothing filters how much Veyn moves through them anymore.
+[93] The Angel Veyn Vow
+[94] Every angel takes a Veyn Vow when their halo first forms, it binds their access to Veyn to their obedience to the angelic hierarchy. It's not just spoken, it's a magical bond, the halo is the physical seal of it. If the vow holds, an angel can freely use Veyn within their rank's limit, and the halo regulates it, so it doesn't overwhelm them.
+[95] The vow is the reason angels can hold as much power as they do, without it their body can't safely filter raw Veyn on its own. Rank affects the vow too, a higher rank means a stronger vow and halo, so they can channel more Veyn without breaking.
+[96] An Angel Breaking the vow.
+[97] The vow breaks when an angel disobeys someone above their rank or pulls more Veyn than their vow allows to act against an order. Once it breaks the halo can't hold the channel steady and shatters, becoming the broken halo Fallen Angels are known for.
+[98] The wings get affected too. The uncontrolled Veyn surging through them at that moment leaves permanent black spotting on the feathers, some end up with plain black spots, others with black cherry spotting depending on how much Veyn surged through when it broke.
+[99] Note:  Abilities learnt can be passed down to your offspring though not all the time
+[100] Ruler of the Demon Realm (Mordrach) is Tera Morage (Female)
+[101] Innate abilities of Demons (Duskveil) at a rank
+[102] Duskveil→ Innate to all demons. Let’s blend them into any society, hiding their true form and aura. The higher the rank, the more effective the disguise and the less power it costs to maintain, the lower the rank, the weaker the disguise and the more it cuts into their true strength.
+[103] Mordrach→
+[104] Can pass flawlessly, even under scrutiny. Cuts their true strength by half while active.
+[105] Bloodward→
+[106] Holds up well, though subtle tells (eyes, a shadow at the wrong angle) could give them away under close or magical scrutiny. Cuts their true strength by roughly 60%.
+[107] Scourge→
+[108] Rougher and less convincing, more likely to slip under stress or in combat. Cuts their true strength by roughly 70%.
+[109] Gnash→
+[110] The weakest version, thin enough to break under any real scrutiny. Cuts their true strength by roughly 80%, though since Gnash already look close to human naturally, they rely on it the least out of any rank.
+[111] Innate abilities of Demons at a rank
+[112] Current Mordrach Skills
+[113] Death Scythe→
+[114] A scythe formed from Veyn, enchanted with an instant death attribute. Its destructive power is where their true strength lies.
+[115] Their main weapon is a Chain Reaper Scythe→ Their main weapon, a chain scythe controlled purely by will. It can be shrunk down into an accessory for easy carrying.
+[116] Call of the Dead→
+[117] Opens a hell's gate that releases an undead army to fight for them.
+[118] Dominating Will→
+[119] Thickens the Veyn in their surroundings, making it hard for others to breathe or use their own Veyn. Making it denser costs more than their own Veyn.
+[120] Soul Oath→
+[121] Let’s them form contracts with anyone, binding the other person's soul until the deal is fulfilled or they choose to release it.
+[122] Veyn Decomposition→
+[123] Innate to all demons. Let’s them turn their Veyn into a toxic miasma that harms humans and can contaminate holy auras or holy energy.
+[124] Hands of Death→
+[125] An innate ability of high-ranking demons, extremely hard to use so very few demons can. Erases part of a person's memory on touch, though never all of it. Can be blocked for a moment by covering your whole body in Veyn, stronger than theirs.
+[126] Purgatory Flames→
+[127] Purple flames that burn a target until they die or the caster releases them. It can be blocked by using a strong Holy Rain.
+[128] Charm→
+[129] Forces someone to do what they want, though it doesn't work on anyone stronger than them and can be resisted. Only female demons have this skill.
+[130] Soul-Sight→
+[131] Let’s them see where a person's soul will move next, effectively predicting their next attack. Doesn't work on angels of any rank.
+[132] Berserk→
+[133] Triggers automatically at low health. Boosts attack power and magic attacks by 20x but sharply reduces reasoning.
+[134] Demonic Aura→
+[135] This is always active, it makes those weaker than you want to bow before you, they would not have the will or strength to oppose you, this can be cloaked by Duskveil.
+[136] Duskveil→ See above.
+[137] Bloodward Skills
+[138] Blood Chains→
+[139] Conjures chains from their own blood infused with Veyn, used to bind, drag, or crush an opponent. The stronger the blood, the stronger the chain.
+[140] Warcry of Dominion→
+[141] A battle-shout that temporarily boosts the strength and resolve of every demon under their command.
+[142] Crimson Ward→
+[143] Forms a barrier of hardened blood and Veyn to block incoming attacks, though holding it drains their own regeneration.
+[144] Blood Pact→
+[145] A lesser version of Soul Oath. Can bind a person to a task or promise, but unlike Soul Oath, the pact breaks if the Bloodward dies.
+[146] Veyn Decomposition→
+[147] Same innate demon ability as Mordrach, though the miasma they produce is noticeably weaker.
+[148] Demonic Aura→
+[149] This is always active, it makes those weaker than you want to bow before you, this can be cloaked by Duskveil but only a little
+[150] Berserk→
+[151] Same trigger as Mordrach's, but the boost is smaller, 10x instead of 20x.
+[152] Duskveil→ See above.
+[153] Scourge Skills
+[154] Vitality Surge→
+[155] Burns their own Vitality to temporarily boost physical strength and speed.
+[156] Rend Claws→
+[157] Their claws are naturally sharp enough to tear through most conventional armor.
+[158] Pack Tactics→
+[159] Fight best in numbers, gaining strength and defense boost when near another Scourge.
+[160] Veyn Decomposition→
+[161] Same innate ability, though weak enough that it only irritates humans rather than truly poisoning them. It also causes confusion and loss of direction.
+[162] Berserk→
+[163] Same trigger, weaker boost, 5x instead of 20x.
+[164] Demonic Aura→
+[165] This is always active, it makes those weaker than you want to bow before you, this can be cloaked by Duskveil. Their aura is weak.
+[166] Duskveil→ See above.
+[167] Gnash Skills
+[168] Binding Contract→
+[169] Their signature ability. Let’s them make contracts with anyone, once signed both parties are bound until the deal is fulfilled.
+[170] Veyn Decomposition→
+[171] Barely perceptible at this rank, more of an unsettling presence than actual miasma but it can cause hallucinations.
+[172] Instinctive Bargaining→
+[173] A natural pull toward making contracts that could raise their rank, though most backfire since Gnash aren't strong enough yet to enforce favorable terms.
+[174] Demonic Aura→
+[175] This is always active, it makes those weaker than you want to bow before you, this can be cloaked by Duskveil.
+[176] Duskveil→ See above.
+[177] The ruler of the Angel Realm is Clint Ashborn (Male)
+[178] Innate abilities of Angels at a rank
+[179] Serapharch Skills
+[180] Kings Record→
+[181] Let’s them see a glimpse of someone's memories and past just by touching them.
+[182] Sixth Sense→
+[183] Sharpens all their senses, smell, hearing, sight, and touch, letting them perceive what can't be seen with the naked eye.
+[184] Time Reversal→
+[185] Reverses time for up to 20 seconds.
+[186] Chronos Fury→
+[187] Summons a barrage of lightning down on a location of their choosing.
+[188] Will Mastery→
+[189] Forms any weapon out of Veyn and can send out air blades to strike from a distance.
+[190] Holy Rain→
+[191] Deals damage to the undead while healing and restoring Veyn to allies.
+[192] Dignified Presence→
+[193] Thickens the surrounding Veyn, making it hard to breathe or move. Uses their own Veyn, the more used, the denser it gets.
+[194] Angelic Aura→
+[195] Always active. It makes anyone weaker than them want to bow, stripping away the will to oppose them.
+[196] Holy Flame→
+[197] A signature skill of the Serapharch, flames made from pure holy energy that burn corruption on contact. Unlike Purgatory Flames, which simply burns until released, Holy Flame actively consumes anything tied to corrupted Veyn, demons, undead, or miasma take heavy damage from it, while anything untouched by corruption barely feels it at all. It's one of the few things capable of matching Purgatory Flames head-on, the two effectively cancel each other out if they clash directly.
+[198] God's Index Finger→
+[199] Summons a giant golden index finger to suppress an opponent or shrinks it down into an extension of their own hand.
+[200] God Chain→
+[201] Forms chains of light to lock down an opponent.
+[202] Holy Grail→
+[203] Forms a sun as hot as the real one. Size can be shrunk down to a pebble for more concentrated power, but the larger it is, the weaker and more Veyn-costly it becomes.
+[204] Warpstep→
+[205] Instantly moves anywhere within 6 meters using Veyn.
+[206] Dawnveil→
+[207] Innate to all angels. Let’s them blend into any society, hiding their true form and aura. The higher the rank, the more effective the disguise and the less it costs to maintain, the lower the rank, the weaker it is and the more it cuts into their true strength.
+[208] Aetherblade Lord Angel Skills
+[209] Skyward Chains→
+[210] A lesser version of God Chain, forms light chains to restrain an opponent, though weaker and easier to break free from.
+[211] Vanguard's Cry→
+[212] A battle-shout that temporarily boosts the strength and resolve of every angel under their command.
+[213] Aegis Ward→
+[214] Forms a barrier of solidified light and Veyn to block incoming attacks, though holding it drains their own regeneration.
+[215] Holy Mend→
+[216] A lesser version of Holy Rain heals allies and damages undead, but with a smaller range and weaker potency.
+[217] Angelic Aura→
+[218] Same trait as the Serapharch's, though noticeably weaker.
+[219] Swiftstep→
+[220] A lesser version of Warpstep, instantly moves anywhere within 3 meters using Veyn.
+[221] Dawnveil→
+[222] Same innate ability, though the disguise holds up a bit weaker under scrutiny.
+[223] Virtue Skills
+[224] Guiding Light→
+[225] A basic healing touch that closes minor wounds, far weaker than Holy Mend and unable to affect undead.
+[226] Radiant Strike→
+[227] Their weapon carries a faint holy charge, dealing bonus damage against undead and demons.
+[228] Formation Discipline→
+[229] Fight best in disciplined groups, gaining strength and defense boost when near other Virtues.
+[230] Angelic Aura→
+[231] Same trait, weaker still, more of a passive unease in those nearby than true submission.
+[232] Dawnveil→
+[233] Same innate ability, though the disguise is rougher and more likely to slip under pressure.
+[234] Lumen Skills
+[235] Warmth of the Realm→
+[236] A passive, gentle ability to ease minor pain or fear in those nearby. Not a combat skill, it reflects their role as ordinary citizens rather than soldiers.
+[237] Faint Ward→
+[238] Can form a very weak shield, enough to block a single low-power attack.
+[239] Angelic Aura→
+[240] The weakest version, barely perceptible to anyone nearby.
+[241] Dawnveil→
+[242] The weakest version of the disguise, thin enough to break under any real scrutiny, though Lumen already looks the most human of any rank, so they rely on it least.
+[243] The portal to the Hidden Realm changes its location every leap year. All the entrances to the different realms are guarded by a Shudon.
+[244] Shudon
+[245] They are highly intelligent stone golems that are skilled in combat. They are made from the core of the world to protect the realms from collapse. Though they have been inactive for a long time.
+[246] Hidden Realm
+[247] This is an artificially created realm, time is slowed down by 10 times, you won’t feel hungry or get tired easily. It was made by an old race that has killed off by the former Human Realm ruler. The realm was made as a form of escape, some managed to escape but as a result of the forceful creation of the Realm it nearly destroyed the whole world so along with drawing power from the untouched world core the world barrier was made to split the world and stop the destruction, in the newly made realm all sorts of creatures where beginning to form in the realm and as a result of not knowing how to hunt them down to survive there all the survivors from the Human Realm ruler died except the Head master of the academy .It is located in between all the realms. The portal forms by drawing in all the Veyn from its surroundings until the area is fully drained, then uses what it absorbed to relocate itself somewhere new that's rich in Veyn. The amount of time it takes for enough Veyn to concentrate in a new location happens to be roughly a leap year, which is why the portal only reappears that often. Since it's drawn to wherever Veyn is rich rather than moving randomly, someone with a strong enough sense of Veyn density could theoretically predict roughly where it might appear next.
+[248] The ruler of the Human Realm currently is Ruby Divina (Female)
+[249] The ruler of the Demon Realm currently is Tera Morage (Female), a Mordrach rank.
+[250] The ruler of the Angel Realm currently is Clint Ashborn (Male), a Serapharch Rank
+[251] Note: all races can use skills of their chosen class but since in the 2 realms they have innate skills already the max skills they can learn from their class is 5 while humans can learn all the skills of that class
+[252] Occupations (Classes)
+[253] Mage→ A general Veyn-caster with access to the widest range of spells out of any class. Not specialized in anything specific, they use raw Veyn for offense, defense, or utility depending on the situation. A Magic/Veyn Class.
+[254] Alchemist→
+[255] Combines Veyn with physical ingredients to make potions, poisons, or explosives. They can use pixie dust as one of their core ingredients since it reacts well with Veyn. Though pixie dust is quite rare and can only be gotten by going to the hidden realm. A Magic/Veyn Class
+[256] Beastmaster→
+[257] Bonds with a living creature and fights alongside it in battle. The bond is built on trust, not force, so the creature must accept the bond for it to work. A non-magic/Veyn class, A Ren class
+[258] Smithing→
+[259] Crafts weapons and armor using Veyn to reinforce or enchant them during the forging process. Blood-forging (using demon or angel blood in the forge) is one of the hardest skills in this class to learn, not every Smith can do it since a demon and angel blood is reactive to Veyn, and a mistake can cause the death of the smith. A Magic/Veyn and non-magic/non-Veyn class, A Ren class a
+[260] Enchanter→
+[261] Imbues ordinary items with Veyn, giving them lasting magical properties. Unlike Smithing, they do not make the item, they just enhance one that already exists. A Magic/Veyn class
+[262] Diviner→
+[263] Channels holy energy, the same purified Veyn that Holy Rain and Holy Flame are made from, to read fragments of the future or uncover hidden truths. A subtle, passive class, most Diviners are not fighters, they are consulted rather than deployed in battle. There are only 3 Diviners per century. The have the innate ability to see through any lies or disguises called True-Sight. A Magic/ Veyn Class
+[264] Exorcist→
+[265] Trained to deal with corrupted or unstable Veyn, this includes handling Fallen Angels or miasma contamination from demons. A dangerous but necessary profession. A slight use of Veyn/Magic class
+[266] Broker→
+[267] A guild-regulated occupation that safely handles and mediates contracts, especially with Gnash demons. Going to a Gnash directly without one is considered risky. A non-magic/non-Veyn class, A Ren class
+[268] Saintess→
+[269] Unlike a Mage who draws on raw Veyn, a Saintess channels holy energy, the same energy Diviners, Holy Rain, and Holy Flame use. This makes her spells naturally effective against undead, miasma, and other corrupted Veyn, but weaker against things that have nothing to do with corruption. Her magic leans almost entirely toward healing, protection, and cleansing rather than direct offense. A Magic/Veyn class, Holy class
+[270] Healer→
+[271] Trained in restoring injuries and health using Veyn. Anyone can train as a Healer, though only seven at a time hold the actual title in the Human Realm. A Magic/Veyn class
+[272] Archer→
+[273] Uses Veyn to enchant their arrows or shots, giving them extra effects like piercing, explosive, or homing properties. A Magic/Veyn class
+[274] Paladin→
+[275] Blends physical strength with holy energy, giving them the fighting capability of a warrior alongside the ability to heal or protect using Pure version of Veyn (holy energy). Common among those who protect others directly, like guards or knights. A Ren class, Holy class
+[276] Grimtender→
+[277] Reanimates and commands the remains of fallen creatures, using the residual Veyn still left in bones after death. The bigger or stronger the creature was in life, the more Veyn its bones hold, and the stronger the reanimated servant becomes. A Magic/Veyn class
+[278] Bladesinger→
+[279] Refines Ren into precise, elegant swordplay. Focused on control and technique over raw power. Practically a swordsman. A Ren class
+[280] Berserker→
+[281] Burns Ren recklessly for a huge boost in power, at the cost of control and clear thinking. A Ren class
+[282] Sentinel→
+[283] Uses Ren purely for defense and endurance, built to hold a line rather than deal heavy damage. A Ren class
+[284] Ren Archer→
+[285] The Ren-based counterpart to Archer. No Veyn involved, just pure skill, precision, and physical technique. A Ren class
+[286] Veilrunner→
+[287] A stealth and infiltration class built on Ren, relying on trained instinct and body control to move unseen rather than any disguising magic. A Ren class
+[288] Shudonkeeper→
+[289] Studies and maintains the Shudon, the stone golems guarding the realm entrances. Since the Shudon has been inactive for a long time and no one currently knows how to reactivate them, this class has no real combat use yet, it exists purely to preserve and study what's left of them until that changes. A Classless class
+[290] Items
+[291] Restoration potion→
+[292] can be brewed with Veyn stones to make a potion that restores the person’s Veyn.
+[293] Veyn stones→
+[294] They are a condensed version of Veyn that has been crystalized.
+[295] Lucent Stone→
+[296] A refined form of a Veyn Stone, created by purifying the crystallized Veyn even further until it becomes clear and stable. Unlike a raw Veyn Stone, a Lucent Stone holds a much higher concentration of Veyn in a much smaller size, making it far more potent, but also far harder and more costly to produce. It's used in stronger brews and enchantments where a regular Veyn Stone wouldn't be enough, a single Lucent Stone can be worth several raw Veyn Stones combined.
+[297] Veyn Stone (appearance)→
+[298] A rough, unpolished crystal, cloudy and slightly milky rather than clear, with a faint silver-blue glow visible just beneath the surface. It looks closer to a raw mineral pulled straight from the ground than a finished gem.
+[299] Lucent Stone (appearance)→
+[300] Where a Veyn Stone is cloudy, a Lucent Stone is clear and smooth, almost glass-like, with the silver-blue glow fully visible and much brighter, since all the impurities have been refined out of it. It looks like a finished gemstone rather than a raw crystal, small, dense, and noticeably brighter than the stone it was made from.
+[301] Lucent Reserve→
+[302] a potion made from the Lucent Stone; it can do a full restoration of the person either Veyn or Ren
+[303] Wraithcloth→
+[304] allows you to hide your presence and scent which makes it difficult to detect you though it can be seen through with a Diviner's True-Sight
+[305] Healing potion→
+[306] a potion brewed to heal minor injuries and can partially heal serious injuries though not fully or completely.
+[307] Ring of Foundation→
+[308] It is used store any amount of Veyn and can be released back into the body to refresh the reserves of Veyn in the body.
+[309] Remy’s Bracelet→
+[310] allows the user to store up to 10 items in the bracelet. To use pour in your Veyn or Ren into the bracelet and thing of the item you want to bring out and the item would come out, if you want to put in an item think of the item already being inside the storage and the item would enter all the while you’re using your Ren or Veyn to bring in or pull-out items.
+[311] Hermes Robe→
+[312] It enhances your speed by 20 times.
+[313] Note: The amount of Veyn someone can use from birth is already set and if you want to increase it then finish it and keep replenishing your Veyn for it to increase. Joining of magic and Bladesinger is not possible since Veyn and Ren is not compatible; you can’t have Ren and Veyn together in your body since it can kill you due to extreme incompatibility with each other (Veyn and Ren)
+[314] Hidden realm- After being stable.
+[315] Wanderer→
+[316] a mysterious creature who walks between Realms but mainly stays in the Hidden Realm. It sells artifacts that can’t be seen anywhere. It is an immortal being not bound to one realm.
+[317] Items the Wanderer sells.
+[318] Wraithcloth→
+[319] allows you to hide your presence and scent which makes it difficult to detect you though it can be seen through with a Diviner's True-Sight
+[320] Ring of Foundation→
+[321] It is used store any amount of Veyn and can be released back into the body to refresh the reserves of Veyn in the body.
+[322] Remy’s Bracelet→
+[323] allows the user to store up to 10 items in the bracelet. To use pour in your Veyn or Ren into the bracelet and thing of the item you want to bring out and the item would come out, if you want to put in an item think of the item already being inside the storage and the item would enter all the while you’re using your Ren or Veyn to bring in or pull-out items.
+[324] Hermes Robe→
+[325] It enhances your speed by 20 times.
+[326] Iron-will Ring→
+[327] used to increase your resistance to poison, mental attacks, and fatal injuries. Though for the fatal injuries function has a year cooldown. It also has partial though little resistance for to unstable Veyn and little resistance to the Sentient River current and pull.
+[328] Things in the Hidden Realm
+[329] Pixie→
+[330] They are smaller than Fairies, their pixie dust can be used to make someone younger or give a permanent boost in Veyn and a little for Ren. They can be brewed with:
+[331] Pixie dust
+[332] Grinded leaves of the Grimbough tree
+[333] Grinded powder from the bark of the Kaelroot tree
+[334] The heart of a dragon
+[335] The name of the potion made with this ingredients is called Ethereal potion.
+[336] Grimbough tree→
+[337] It is a slanting tree. Its wood is thick and strong which has a strong resistance to magic. The leaves are thin and can be grinded into dust to be used for the brewing of Ethereal potion.
+[338] Kaelroot tree→
+[339] It is found and grows near the nest of a dragon. It is 100-year-old tree, the leaves can be used to make an elixir named Rejuvenating elixir while the bark when grinded to powder can be used in making the Ethereal potion.
+[340] Ethereal potion→
+[341] A legendary-rank elixir, difficult to brew correctly, a single miscalculation wastes the rare ingredients entirely. Rather than restoring or boosting Veyn or Ren, it halts the drinker's aging completely for a long, fixed stretch of time rather than reversing it like pixie dust does.
+[342] Rejuvenating Elixir→
+[343] a potion that does a complete heal of the person who drinks it. Can even heal broken legs or lost arms.
+[344] Dragons→
+[345] They can be found in high mountain tops; they become hostile to anyone who invades their territory. Very difficult to deal with due to having tough scales and slightly strong magic resistance.
+[346] Lethmoor kingdom→
+[347] it is surrounded by lava, and surrounding Terraine is of unstable Veyn which is dangerous. You can pass safely if you have the Iron-will Ring, though you won’t be safe for a long time. It is then guarded by the Leviathan. It is a replicated city gotten from a recorded fallen kingdom in from the Angel Realm. At the throne room the Cindergrave Wraith Lord. Since the kingdom is replicated then there has to be treasures too which would be found in the chamber beneath the throne chair.
+[348] Cindergrave Wraith Lord→
+[349] The ruler of Lethmoor's ruins, formed from the strongest fragment of will, pulled from the fallen kingdom when the city was replicated. It's not a dead body turned undead; it's an unfinished will given shape by the unstable Veyn in Lethmoor's terrain. It hungers for Veyn from anything living that enters the ruins and feeding is what keeps its half-replicated form from falling apart. It rules from the throne room but can move through the ruins to rally the lesser Cindergrave wraiths if intruders get deep enough into the city. Its touch drains Veyn directly from a target to sustain itself, the more it feeds, the stronger and more solid it gets for a while before fading back down. Destroying it means disrupting the Veyn holding it together, not just physical damage, so a Diviner or Exorcist hits it far harder than a regular weapon would.
+[350] Lesser Cindergrave wraiths→
+[351] Weaker fragments of will formed the same way the Cindergrave Wraith Lord was, pulled from the fallen kingdom when Lethmoor was replicated, just without enough strength or Veyn to hold a fully solid form. They drift through the ruins and only fully mobilize when the Cindergrave Wraith Lord rallies them against intruders who get too deep into the city. Like their lord, they feed on Veyn from the living to stay together, though far less efficiently, a lesser Cindergrave wraith can be worn down and dispersed by regular weapons, they just reform again over time as long as Lethmoor's unstable Veyn remains in the terrain to rebuild them from.
+[352] Things in the vault of Lethmoor kingdom
+[353] Aerendrel, the Skybound Wrath→
+[354] A unique divine-adjacent bow, said to have been strung with a fragment of storm itself rather than ordinary sinew or Veyn. They loosed from it don't just pierce, they carry a violent surge of raw elemental force, lightning, wind, or pressure, which detonates on impact rather than simply striking true. Unlike a standard Archer's Veyn-enchanted arrows, which are shaped and controlled, Aerendrel's power is closer to a contained storm, difficult to fully master, and even harder to wield without some of that raw force spilling back onto the archer themselves. A bow
+[355] Liework's Fallen Crown→
+[356] Shaped like a twisted ring of black thorned vines rather than a traditional band of gold, more a wreath of dead growth than a symbol of triumph. Wherever the true crown once looked like, this is what remained after the kingdom fell, thorns in place of jewels, black in place of gleaming metal, as if the crown itself decayed alongside the throne it once sat on. Wearing it doesn't grant strength so much as command, faint traces of the authority its last wearer held still cling to it, enough to lean on an Angelic Aura-style effect, making those weaker than the wearer more inclined to submit, though nowhere near as absolute as a true Serapharch's presence.
+[357] Rejuvenating elixir→
+[358] a potion that can heal the impossible except a severed head or heal a missing heart passes 10 mins.
+[359] Sael's Luck→
+[360] a luck pendent that blocks a critical/fatal strike that can kill you once and then breaks
+[361] Note: the use of the Aerendrel won’t need arrows since the bow forms arrows from the users Veyn.
+[362] Virastra, the Ascendant Vow (a sword)
+[363] Lost somewhere in the ruins scattered across the Hidden Realm, no longer in anyone's possession. Unlike Vireth, its blade is untouched, still holding a clean, steady light along its edge, closer to moonlight than sunlight. Where Vireth feels heavy and restless, Virastra is said to feel almost weightless in the hand, an ease that reflects its uncorrupted nature. Being lost among ruins rather than deliberately sealed, its exact location isn't guarded the way Vireth's is, it's simply forgotten, waiting for someone to stumble upon it rather than seek it out. Extremely effective against demons and halts a demon’s regeneration unless the user releases the effect.
+[364] Vireth, the Fallen Grace (a sword)
+[365] Sealed within the depths of the Sentient River, held down by two separate seals rather than one, as though whoever bound it there didn't trust a single ward to be enough. The blade itself is dark, almost absorbing the light around it rather than reflecting it, with faint cracks of dim gold light bleeding through along the fuller, like the last remnants of what it used to be before it fell. Even sealed, it's said the water around it never fully settles, the current near it moves like something is still restless beneath the surface. Strangely, the blade doesn't feel like something purely angelic or purely demonic, whatever corruption twisted it seems to have left behind a blade that belongs fully to neither side. Very effective against an angel or a demon, it can stop the regeneration of both races effectively unless the user releases the effect. A user bound weapon.
+[366] Vireth skills
+[367] Graceless Edge→
+[368] Cuts through both holy wards and demonic wards equally, treating corrupted and uncorrupted Veyn as the same thing to sever, essentially cutting magic if you have enough Veyn to cut it. Where most weapons are either blessed or unholy and struggle against the opposite type, Vireth doesn't distinguish between the two at all.
+[369] Split Grace→
+[370] Channels both a holy(angelic) and a corrupted(demonic) aura through the blade at the same time, striking with both auras layered into one attack. For most wielders this is dangerous to hold even briefly, since angelic and demonic energy naturally resist coexisting in the same space, let alone the same blade. As a result of the this it causes a force splitting explosion of the cut area.
+[371] Sentient River
+[372] The Sentient River is aware, and it doesn't take kindly to being disturbed. The water reacts to intent, calm and clear for those who simply pass by, but violent and resistant towards anyone who tries to take something from it, especially the thing sealed in its depths. Currents shift on their own, pulling and dragging with a will rather than gravity, and it's said the river can sense a person's purpose the moment they touch it. Combined with the Sirens who make their home there, hypnotizing anyone who hears them sing, the river isn't just a body of water guarding Vireth, it's an active participant in keeping it buried, one that punishes anyone who comes looking for the wrong reasons.
+[373] Sirens
+[374] see the top for detail on this
+[375] Leviathan
+[376] A massive sea-serpent by nature, not something born of fire or lava, but forced to adapt after being drawn into Lethmoor's territory by its unstable Veyn. Its scales have hardened and darkened over time, taking on a scorched, obsidian-like sheen to withstand the heat, and what was likely once a creature built for deep water now moves through lava the way its kind would normally move through the sea, coiling and submerging beneath the surface rather than swimming through it. It's unclear whether it was drawn in by the concentrated Veyn the way the Hidden Realm's portal is, trapped after the terrain destabilized around it, or simply never left once it adapted, but either way, it's been down there long enough that Lethmoor's ruins are as much its territory now as the throne room is the Cindergrave Wraith Lord's. It surfaces to guard the approach to the kingdom, and its sheer size and adapted resilience to heat make it one of the first real obstacles anyone has to survive before ever reaching the ruins themselves.
+[377] Concentrated Veyn
+[378] Matches the color of a Lucent Stone: the same silver-blue as raw Veyn, just far brighter and more vivid, clear rather than faint or hazy.
+[379] Saturation Sickness
+[380] Caused by staying near or within concentrated Veyn for too long. The body can't regulate the overwhelming amount of ambient Veyn, causing a person's own Veyn to leak out constantly rather than being properly contained. This leaves them unable to perform any real magic, at most just basic spells, along with constant weakness, vomiting, and excessive sleep as the body struggles against the imbalance.
+[381] Artifacts
+[382] Vireth, the Fallen Grace→
+[383] See above for detail
+[384] Virastra, the Ascendant Vow →
+[385] See above for detail
+[386] Solvane, the Hallowed Edge→
+[387] It's the only one of the two Divine Weapons still in someone's possession rather than lost or sealed away. Unlike Vireth's restless darkness or Virastra's weightless calm, Solvane carries itself with quiet authority, its head long and narrow, more piercing than cutting, forged for a single decisive strike rather than a prolonged exchange. The metal holds a steady, clean light along its edge, similar in tone to Virastra's, since neither has ever been corrupted, but where Virastra's light feels ambient and calm, Solvane's feels focused, almost gathered to a point, fitting a weapon built to be thrown or thrust with precision rather than swung. Will always return to the owner when thrown. A user bound weapon that can be passed down
+[388] Agro totem→
+[389] A totem made to attract a storm of monsters to it, make all the monsters angry and boost power of monsters by 10. For it to work 2 must be made, the first to be set in the monster area and the other to the desired location when infuse Veyn once at the designed location into the second totem. It can be crafted with:
+[390] Blood of a siren
+[391] Lucent stone
+[392] Blood of a Veilborn
+[393] A hay doll on a stick
+[394] Liework’s Fallen Crown→
+[395] See details above
+[396] Sael’s Luck→
+[397] See details above
+[398] Rejuvenating Elixir→
+[399] See details above
+[400] Aerendrel, the Skybound Wrath→
+[401] See details above
+[402] Ethereal potion→
+[403] see details above (this can be made normally but extremely hard to do like in the description but can still be considered an artifact).
+[404] Auralis Ruby→
+[405] A pendant crafted by the Mc’s mom who then gave it to Sofia. Pendant has 5 seals to seal the Mc’s 5 forms.
+[406] Lisa (Mc’s Mom) Plot
+[407] She had a child for Ordium and due to their ranks and positions they could not stay together and were separated to their various Realms Lisa went to her realm The Demon Realm and Ordium went to The Angel Realm. Her rank was Bloodward Rank. She was known to bring cruelty upon people who fight her and is the most powerful demon in The Demon Realm after The Mordrach. After realizing that she was pregnant with Jaiden and found his aura very abnormal, which carries both an angelic aura and a demonic aura. She knew that he would be killed off and she could not bear it, so she gave the child to her personal maid not before giving her a ruby pendent called Auralis ruby to seal all his 2 auras which makes him look human. He then lives in the human realm with Sofia.
+[408] Lisa is a Demon
+[409] Rank is Bloodward Rank
+[410] Plot Twist for Lisa
+[411] As she returned and Sofia left to the Human Realm, she was called to the chamber of the ruler throne room of the Demon Realm. Next to Tera Morage (on the throne) is her second right-hand man Licent Varak, who reported to the king for having an intercourse with an angel which enraged Tera and so Lisa was demoted to a Gnash Rank and was later killed off by Licent men since he had always hated Lisa.
+[412] Licent Varak Plot
+[413] He is the second right-hand man to Tera Morage in The Demon Realm. He had always hated Lisa for being stronger than him and holding the top Bloodward position, so he was constantly looking for a way to take her power and rank away. When he saw Sofia heading to an unknown location, he tried to follow her but lost track of her. He then saw Lisa meet with an angel. After that, he discovered they had intercourse and that she had become pregnant with a child. He used this information to report her to Tera Morage, which enraged the ruler. As a result, Lisa was demoted to Gnash rank and later killed by His men (which he ordered them to do).
+[414] His rank is Bloodward rank
+[415] Ordium Plot
+[416] He is an Aetherblade Lord Rank Angel. He fell in love with Lisa, love at first sight. So, he left his post and spent the next 9 months with Lisa in a Secret place in the Human realm since it is large and it would take time for them to be found. They were expecting a child but unexpectedly the were called back by their rulers but as

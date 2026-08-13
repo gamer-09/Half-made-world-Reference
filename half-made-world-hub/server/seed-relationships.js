@@ -1,0 +1,39 @@
+/**
+ * Seed relationships between characters — grounded in "Half_made world ideas.docx".
+ * Stored separately from entries so the archive stays pristine.
+ * source -> target (directed). type drives the color/legend in the UI.
+ */
+const seededAt = '2026-08-12T00:00:00.000Z';
+
+let n = 0;
+function r(source, target, type, label, description) {
+  n += 1;
+  return {
+    id: 'rel-seed-' + String(n).padStart(3, '0'),
+    source,
+    target,
+    type,
+    label,
+    description,
+    createdAt: seededAt,
+    updatedAt: seededAt,
+  };
+}
+
+module.exports = [
+  r('Jaiden Marlock', 'Lisa', 'child of', 'Child of', 'Jaiden is the son of Lisa and Ordium — the first angel-demon hybrid in the world.'),
+  r('Jaiden Marlock', 'Ordium', 'child of', 'Child of', 'Jaiden is the son of Lisa and Ordium — the first angel-demon hybrid in the world.'),
+  r('Ordium', 'Lisa', 'loves', 'Loves', 'Love at first sight. He left his post and spent 9 months with her in a secret place in the Human Realm.'),
+  r('Lisa', 'Tera Morage', 'right-hand of', 'Right-hand of', 'The most powerful demon in the Demon Realm after the Mordrach; held the top Bloodward position as the ruler’s right-hand.'),
+  r('Ordium', 'Clint Ashborn', 'right-hand of', 'Right-hand of', 'Ordium is the right-hand man of the Angel Realm’s ruler.'),
+  r('Licent Varak', 'Tera Morage', 'right-hand of', 'Right-hand of', 'The second right-hand man to Tera Morage in the Demon Realm.'),
+  r('Sofia', 'Lisa', 'serves', 'Serves', 'Lisa’s personal maid — she received the child Jaiden and the Auralis Ruby from Lisa.'),
+  r('Licent Varak', 'Lisa', 'rival of', 'Rival of', 'Always hated Lisa for being stronger than him and holding the top Bloodward position; constantly looked for a way to take her power and rank away.'),
+  r('Licent Varak', 'Lisa', 'betrayed', 'Betrayed', 'Saw Lisa meet with an angel, discovered the pregnancy, and reported her to Tera Morage — which enraged the ruler.'),
+  r('Tera Morage', 'Lisa', 'demoted', 'Demoted', 'Demoted Lisa to Gnash rank after Licent Varak reported her relationship with an angel.'),
+  r('Licent Varak', 'Lisa', 'ordered killed', 'Ordered killed', 'After her demotion, Lisa was killed by Licent’s men on his orders.'),
+  r('Sofia', 'Jaiden Marlock', 'guardian of', 'Guardian of', 'Raised Jaiden in the Human Realm after receiving him from Lisa, with the Auralis Ruby sealing his auras so he looks human.'),
+  r('Licent Varak', 'Sofia', 'knows', 'Knows', 'Saw Sofia heading to an unknown location and tried to follow her, but lost track of her.'),
+  r('Jaiden Marlock', 'Lisa', 'unaware of', 'Unaware of', 'Given away as a baby with his auras sealed by the Auralis Ruby — he has no idea who his parents are.'),
+  r('Jaiden Marlock', 'Ordium', 'unaware of', 'Unaware of', 'Given away as a baby with his auras sealed by the Auralis Ruby — he has no idea who his parents are.'),
+];
