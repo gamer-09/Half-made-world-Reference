@@ -36,12 +36,13 @@ export function Sidebar({
       <div className="brand">
         <div className="brand-mark" aria-hidden="true">
           <svg viewBox="0 0 64 64" width="34" height="34">
-            <circle cx="32" cy="32" r="13" fill="none" stroke="url(#brandGrad)" strokeWidth="3.5" />
-            <circle cx="32" cy="32" r="5" fill="url(#brandGrad)" />
+            <circle cx="32" cy="32" r="16" fill="none" stroke="url(#brandGrad)" strokeWidth="2.5" />
+            <circle cx="32" cy="32" r="6" fill="url(#brandGrad)" />
+            <path d="M32 8 L35 26 L50 26 L37 36 L42 56 L32 42 L22 56 L27 36 L14 26 L29 26 Z" fill="none" stroke="#22d3ee" strokeWidth="1.5" opacity="0.6" />
             <defs>
               <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stopColor="#e8c06a" />
-                <stop offset="1" stopColor="#e06a55" />
+                <stop offset="0" stopColor="#22d3ee" />
+                <stop offset="1" stopColor="#8b5cf6" />
               </linearGradient>
             </defs>
           </svg>
@@ -107,7 +108,7 @@ export function Sidebar({
           className={`category-item${activeCategory === 'All' && view === 'browse' ? ' active' : ''}`}
           onClick={() => onSelectCategory('All')}
         >
-          <span className="category-dot" style={{ background: '#8b93a7' }} />
+          <span className="category-dot" style={{ background: '#94a3b8' }} />
           <span className="category-name">All Entries</span>
           <span className="category-count">{total}</span>
         </button>
