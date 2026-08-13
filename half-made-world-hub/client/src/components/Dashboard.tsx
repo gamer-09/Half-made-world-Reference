@@ -11,6 +11,7 @@ interface DashboardProps {
   onSelectTag: (tag: string) => void;
   onOpenEntry: (name: string) => void;
   onAdd: () => void;
+  onDeleteCategory: (category: string) => void;
 }
 
 const HIGHLIGHTS = ['Artifacts', 'Classes', 'Characters', 'Plot', 'Monsters', 'Realms'];
@@ -24,6 +25,7 @@ export function Dashboard({
   onSelectTag,
   onOpenEntry,
   onAdd,
+  onDeleteCategory,
 }: DashboardProps) {
   return (
     <div className="dashboard">
@@ -58,15 +60,24 @@ export function Dashboard({
             const color = categoryColor(cat.name);
             const highlight = HIGHLIGHTS.includes(cat.name);
             return (
-              <button
-                key={cat.name}
-                className={`tile${highlight ? ' tile--highlight' : ''}`}
-                style={{ '--tile': color } as CSSProperties}
-                onClick={() => onSelectCategory(cat.name)}
-              >
-                <span className="tile-count">{cat.count}</span>
-                <span className="tile-name">{cat.name}</span>
-              </button>
+              <div key={cat.name} className="tile-wrap">
+                <button
+                  className={`tile${highlight ? ' tile--highlight' : ''}`}
+                  style={{ '--tile': color } as CSSProperties}
+                  onClick={() => onSelectCategory(cat.name)}
+                >
+                  <span className="tile-count">{cat.count}</span>
+                  <span className="tile-name">{cat.name}</span>
+                </button>
+                <button
+                  className="tile-delete"
+                  onClick={() => onDeleteCategory(cat.name)}
+                  title={`Delete the “${cat.name}” category`}
+                  aria-label={`Delete the “${cat.name}” category`}
+                >
+                  ×
+                </button>
+              </div>
             );
           })}
         </div>

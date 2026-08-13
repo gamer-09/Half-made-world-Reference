@@ -58,6 +58,41 @@ app.get('/api/categories', (req, res) => {
   res.json(list);
 });
 
+// Delete a category and all of its entries, plus any relationships/story
+// links that reference the removed entries.
+app.delete('/api/categories/:name', (req, res) => {
+  const name = decodeURIComponent(req.params.name);
+  const world = loadWorld();
+  const removed = world.filter((e) => e.category === name);
+  if (removed.length === 0) {
+    return res.status(404).json({ error: 'Category not found or already empty' });
+  }
+  const removedNames = new Set(removed.map((e) => e.name));
+  saveWorld(world.filter((e) => e.category !== name));
+
+  let relationshipsRemoved = 0;
+  const rels = loadRelationships();
+  saveRelationships(
+    rels.filter((r) => {
+      const drop = removedNames.has(r.source) || removedNames.has(r.target);
+      if (drop) relationshipsRemoved += 1;
+      return !drop;
+    }),
+  );
+
+  let storyLinksRemoved = 0;
+  const links = loadStoryLinks();
+  saveStoryLinks(
+    links.filter((l) => {
+      const drop = removedNames.has(l.source) || removedNames.has(l.target);
+      if (drop) storyLinksRemoved += 1;
+      return !drop;
+    }),
+  );
+
+  res.json({ ok: true, deleted: removed.length, relationshipsRemoved, storyLinksRemoved });
+});
+
 // --- Entries --------------------------------------------------------------
 app.get('/api/entries', (req, res) => {
   let world = loadWorld();

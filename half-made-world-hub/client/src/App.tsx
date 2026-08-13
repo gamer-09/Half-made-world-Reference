@@ -13,6 +13,7 @@ import {
   createEntry,
   createRelationship,
   createStoryLink,
+  deleteCategory,
   deleteEntry,
   deleteRelationship,
   deleteStoryLink,
@@ -332,6 +333,26 @@ export default function App() {
     }
   };
 
+  const handleDeleteCategory = async (category: string) => {
+    const count = categories.find((c) => c.name === category)?.count ?? 0;
+    if (
+      !window.confirm(
+        `Delete the “${category}” category and all ${count} of its entries?\n\n` +
+          `Any relationship or story links pointing at those entries will be removed too. This can’t be undone.`,
+      )
+    ) {
+      return;
+    }
+    try {
+      await deleteCategory(category);
+      if (activeCategory === category) setActiveCategory('All');
+      showToast(`Deleted the “${category}” category and its ${count} entries.`);
+      await load();
+    } catch (err) {
+      showToast(err instanceof Error ? err.message : 'Delete failed.');
+    }
+  };
+
   // --- Relationship CRUD --------------------------------------------------
   const openAddRel = () => {
     setEditingRel(null);
@@ -468,6 +489,7 @@ export default function App() {
         onSearch={setSearch}
         onSelectCategory={selectCategory}
         onAdd={openAdd}
+        onDeleteCategory={handleDeleteCategory}
         onOpenMap={() => setView('map')}
         onOpenWeb={() => setView('web')}
       />
@@ -565,6 +587,7 @@ export default function App() {
             onSelectTag={selectTag}
             onOpenEntry={openEntryByName}
             onAdd={openAdd}
+            onDeleteCategory={handleDeleteCategory}
           />
         ) : filtered.length === 0 ? (
           <div className="empty-state">

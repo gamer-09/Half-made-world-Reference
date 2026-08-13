@@ -22,6 +22,13 @@ export async function fetchCategories(): Promise<CategoryInfo[]> {
   return handle<CategoryInfo[]>(res);
 }
 
+export async function deleteCategory(
+  name: string,
+): Promise<{ ok: boolean; deleted: number; relationshipsRemoved: number; storyLinksRemoved: number }> {
+  const res = await fetch(`/api/categories/${encodeURIComponent(name)}`, { method: 'DELETE' });
+  return handle(res);
+}
+
 export async function fetchEntries(params?: { category?: string; search?: string }): Promise<Entry[]> {
   const qs = new URLSearchParams();
   if (params?.category) qs.set('category', params.category);
