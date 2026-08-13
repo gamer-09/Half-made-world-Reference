@@ -356,13 +356,19 @@ export function RelationshipMap({
 
   const markerColors = useMemo(() => {
     const set = new Set<string>();
-    for (const r of relationships) set.add(relationshipType(r.type).color);
+    for (const r of relationships) set.add(r.color || relationshipType(r.type).color);
     return [...set];
   }, [relationships]);
 
   const usedTypes = useMemo(() => {
-    const seen = new Map<string, number>();
-    for (const r of relationships) seen.set(r.type, (seen.get(r.type) ?? 0) + 1);
+    const seen = new Map<string, { count: number; color: string }>();
+    for (const r of relationships) {
+      const cur = seen.get(r.type) ?? { count: 0, color: r.color || relationshipType(r.type).color };
+      seen.set(r.type, {
+        count: cur.count + 1,
+        color: cur.color || r.color || relationshipType(r.type).color,
+      });
+    }
     return [...seen.entries()];
   }, [relationships]);
 
@@ -409,6 +415,7 @@ export function RelationshipMap({
             const g = edgeGeom.find((e) => e.id === r.id);
             if (!g) return null;
             const type = relationshipType(r.type);
+            const color = r.color || type.color;
             const labelText = r.label || type.label;
             const active = hoverSet.has(r.id) || selectedEdge?.id === r.id;
             const opacity = dim && !active ? 0.14 : 1;
@@ -427,10 +434,10 @@ export function RelationshipMap({
                   y1={g.ay}
                   x2={g.bx}
                   y2={g.by}
-                  stroke={type.color}
+                  stroke={color}
                   strokeWidth={active ? 3 : 1.8}
                   strokeDasharray={type.dashed ? '6 5' : undefined}
-                  markerEnd={`url(#arrow-${type.color.replace('#', '')})`}
+                  markerEnd={`url(#arrow-${color.replace('#', '')})`}
                 />
                 <line
                   x1={g.ax}
@@ -450,10 +457,10 @@ export function RelationshipMap({
                       height={19}
                       rx={9.5}
                       fill="rgba(253, 251, 245, 0.94)"
-                      stroke={type.color}
+                      stroke={color}
                       strokeOpacity={0.55}
                     />
-                    <text x={g.lx} y={g.ly - 11} textAnchor="middle" className="map-edge-label" fill={type.color}>
+                    <text x={g.lx} y={g.ly - 11} textAnchor="middle" className="map-edge-label" fill={color}>
                       {labelText}
                     </text>
                   </g>
@@ -518,12 +525,12 @@ export function RelationshipMap({
               <span
                 className="chip"
                 style={{
-                  color: relationshipType(selectedEdge.type).color,
-                  borderColor: `${relationshipType(selectedEdge.type).color}55`,
-                  background: `${relationshipType(selectedEdge.type).color}14`,
+                  color: selectedEdge.color || relationshipType(selectedEdge.type).color,
+                  borderColor: `${selectedEdge.color || relationshipType(selectedEdge.type).color}55`,
+                  background: `${selectedEdge.color || relationshipType(selectedEdge.type).color}14`,
                 }}
               >
-                {relationshipType(selectedEdge.type).label}
+                {selectedEdge.label || relationshipType(selectedEdge.type).label}
               </span>
               <button
                 className="modal-close"
@@ -552,16 +559,17 @@ export function RelationshipMap({
 
       <div className="map-legend">
         <span className="legend-title">Legend</span>
-        {usedTypes.map(([type, count]) => {
+        {usedTypes.map(([type, info]) => {
           const t = relationshipType(type);
+          const color = info.color || t.color;
           return (
             <span key={type} className="legend-item">
               <span
                 className="legend-dot"
-                style={{ background: t.color, border: t.dashed ? `2px dashed ${t.color}` : 'none' }}
+                style={{ background: color, border: t.dashed ? `2px dashed ${color}` : 'none' }}
               />
               {t.label}
-              <span className="legend-count">{count}</span>
+              <span className="legend-count">{info.count}</span>
             </span>
           );
         })}

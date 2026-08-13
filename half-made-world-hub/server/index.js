@@ -153,10 +153,11 @@ app.delete('/api/entries/:id', (req, res) => {
 
 // --- Generic link validation (relationships + story links) ----------------
 function validateLink(body, partial) {
-  const { source, target, type, label, description } = body || {};
+  const { source, target, type, label, description, color } = body || {};
   const nextSource = source !== undefined ? String(source).trim() : null;
   const nextTarget = target !== undefined ? String(target).trim() : null;
   const nextType = type !== undefined ? String(type).trim() : null;
+  const nextColor = color !== undefined ? String(color).trim() : '';
   if (partial) {
     if (nextSource !== null && !nextSource) return { error: 'A source is required' };
     if (nextTarget !== null && !nextTarget) return { error: 'A target is required' };
@@ -176,6 +177,7 @@ function validateLink(body, partial) {
       type: nextType,
       label: label !== undefined ? String(label).trim() : '',
       description: description !== undefined ? String(description).trim() : '',
+      ...(color !== undefined ? { color: nextColor } : {}),
     },
   };
 }

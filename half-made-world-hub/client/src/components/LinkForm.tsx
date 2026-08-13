@@ -7,6 +7,7 @@ export interface LinkFormItem {
   type: string;
   label: string;
   description: string;
+  color?: string;
 }
 
 export interface LinkFormInput {
@@ -15,6 +16,7 @@ export interface LinkFormInput {
   type: string;
   label: string;
   description: string;
+  color?: string;
 }
 
 interface LinkFormProps {
@@ -26,14 +28,40 @@ interface LinkFormProps {
   onCancel: () => void;
 }
 
+const NEW_TYPE = '__new__';
+
+/** Arrow colors offered when creating a custom link type. */
+const CUSTOM_COLORS = [
+  '#b23a2c', // cinnabar
+  '#3a5a8c', // lapis
+  '#1f7a68', // emerald
+  '#7a4fb0', // violet
+  '#a9781f', // ochre
+  '#b0365c', // rose
+  '#2f6f8f', // teal
+  '#8a3fb0', // amethyst
+  '#c2473a', // terracotta
+  '#3a8a46', // green
+  '#a5602a', // amber
+  '#4a5f9e', // indigo
+];
+
 export function LinkForm({ title, names, types, editing, onSave, onCancel }: LinkFormProps) {
+  const isEditingCustom =
+    !!editing && editing.type && !Object.prototype.hasOwnProperty.call(types, editing.type);
+
   const [source, setSource] = useState(editing?.source ?? '');
   const [target, setTarget] = useState(editing?.target ?? '');
-  const [type, setType] = useState(editing?.type ?? '');
+  const [type, setType] = useState(isEditingCustom ? NEW_TYPE : editing?.type ?? '');
+  const [customType, setCustomType] = useState(isEditingCustom ? editing.type : '');
+  const [customColor, setCustomColor] = useState(editing?.color || CUSTOM_COLORS[0]);
   const [label, setLabel] = useState(editing?.label ?? '');
   const [description, setDescription] = useState(editing?.description ?? '');
   const [error, setError] = useState('');
   const [saving, setSaving] = useState(false);
+
+  const isNewType = type === NEW_TYPE;
+  const finalType = isNewType ? customType.trim() : type;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -43,15 +71,16 @@ export function LinkForm({ title, names, types, editing, onSave, onCancel }: Lin
     if (!s) return setError('Who is the source?');
     if (!t) return setError('Who is the target?');
     if (s.toLowerCase() === t.toLowerCase()) return setError('Source and target must be different.');
-    if (!type) return setError('Pick a link type.');
+    if (!finalType) return setError(isNewType ? 'Give the new type a name.' : 'Pick a link type.');
 
     setSaving(true);
     onSave({
       source: s,
       target: t,
-      type,
-      label: label.trim() || types[type]?.label || type,
+      type: finalType,
+      label: label.trim() || types[finalType]?.label || finalType,
       description: description.trim(),
+      color: isNewType ? customColor : '',
     });
   };
 
@@ -107,7 +136,10 @@ export function LinkForm({ title, names, types, editing, onSave, onCancel }: Lin
           name="type"
           className="input"
           value={type}
-          onChange={(e) => setType(e.target.value)}
+          onChange={(e) => {
+            setType(e.target.value);
+            setError('');
+          }}
         >
           <option value="">Select a type…</option>
           {Object.entries(types).map(([key, t]) => (
@@ -115,8 +147,49 @@ export function LinkForm({ title, names, types, editing, onSave, onCancel }: Lin
               {t.label}
             </option>
           ))}
+          <option value={NEW_TYPE}>＋ New arrow type…</option>
         </select>
       </label>
+
+      {isNewType && (
+        <div className="custom-type">
+          <label className="form-label" htmlFor="link-custom-type">
+            New arrow type *
+            <input
+              id="link-custom-type"
+              name="customType"
+              className="input"
+              value={customType}
+              placeholder="e.g. mentor of"
+              onChange={(e) => setCustomType(e.target.value)}
+            />
+          </label>
+
+          <div className="form-label">
+            <span>Arrow color</span>
+            <div className="color-swatches">
+              {CUSTOM_COLORS.map((c) => (
+                <button
+                  key={c}
+                  type="button"
+                  className={`color-swatch${customColor === c ? ' on' : ''}`}
+                  style={{ background: c }}
+                  onClick={() => setCustomColor(c)}
+                  aria-label={`Arrow color ${c}`}
+                  title={c}
+                />
+              ))}
+              <label className="color-custom" title="Custom color">
+                <input
+                  type="color"
+                  value={customColor}
+                  onChange={(e) => setCustomColor(e.target.value)}
+                />
+              </label>
+            </div>
+          </div>
+        </div>
+      )}
 
       <label className="form-label" htmlFor="link-label">
         Label

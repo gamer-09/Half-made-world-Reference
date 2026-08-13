@@ -325,7 +325,7 @@ export function StoryWeb({
         type: s.type,
         label: s.label,
         description: s.description,
-        color: type.color,
+        color: s.color || type.color,
         dashed: !!type.dashed,
       });
     }
@@ -339,7 +339,7 @@ export function StoryWeb({
         type: r.type,
         label: r.label,
         description: r.description,
-        color: type.color,
+        color: r.color || type.color,
         dashed: !!type.dashed,
       });
     }
@@ -681,9 +681,8 @@ export function StoryWeb({
   const usedTypes = useMemo(() => {
     const seen = new Map<string, { count: number; color: string }>();
     for (const e of displayEdges) {
-      const t = e.kind === 'story' ? storyLinkType(e.type) : relationshipType(e.type);
       const label = edgeLabelText(e);
-      const cur = seen.get(label) ?? { count: 0, color: t.color };
+      const cur = seen.get(label) ?? { count: 0, color: e.color };
       cur.count += 1;
       seen.set(label, cur);
     }

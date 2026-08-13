@@ -52,6 +52,7 @@ export interface Relationship {
   type: string;
   label: string;
   description: string;
+  color?: string;
   createdAt: string;
   updatedAt: string;
 }
@@ -62,6 +63,7 @@ export interface RelationshipInput {
   type: string;
   label: string;
   description: string;
+  color?: string;
 }
 
 export interface StoryLink {
@@ -71,6 +73,7 @@ export interface StoryLink {
   type: string;
   label: string;
   description: string;
+  color?: string;
   createdAt: string;
   updatedAt: string;
 }
@@ -81,4 +84,5 @@ export interface StoryLinkInput {
   type: string;
   label: string;
   description: string;
+  color?: string;
 }
