@@ -3453,6 +3453,10 @@
         "value": "Takes the MC to the Hidden Realm; Head Master of the academy."
       },
       {
+        "label": "Location",
+        "value": "Stays in the Human Realm; was only hiding in the Hidden Realm."
+      },
+      {
         "label": "Race",
         "value": "Extinct — name not yet decided."
       },
@@ -3465,7 +3469,8 @@
       "character",
       "head master",
       "academy",
-      "hidden realm"
+      "hidden realm",
+      "human realm"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"

@@ -1375,10 +1375,11 @@ module.exports = [
     'The only survivor of the old race that was killed off by the former Human Realm ruler when the Hidden Realm was forcefully created. He is the Head Master of the academy, and he is the character who takes the MC, Jaiden, to the Hidden Realm. His extinct race has no name yet, and neither does the academy.',
     [
       { label: 'Role', value: 'Takes the MC to the Hidden Realm; Head Master of the academy.' },
+      { label: 'Location', value: 'Stays in the Human Realm; was only hiding in the Hidden Realm.' },
       { label: 'Race', value: 'Extinct — name not yet decided.' },
       { label: 'Academy', value: 'Name not yet decided.' },
     ],
-    ['character', 'head master', 'academy', 'hidden realm'],
+    ['character', 'head master', 'academy', 'hidden realm', 'human realm'],
   ),
 
   e(

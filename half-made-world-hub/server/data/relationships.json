@@ -150,6 +150,16 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
+    "id": "rel-seed-016",
+    "source": "Head Master of the Academy",
+    "target": "Jaiden Marlock",
+    "type": "takes",
+    "label": "Takes to the Hidden Realm",
+    "description": "The Head Master is the character who takes the MC, Jaiden, to the Hidden Realm (comment 126).",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
     "id": "50936b74-368c-47e9-a410-28c00b9b615b",
     "source": "Clint Ashborn",
     "target": "Ordium",

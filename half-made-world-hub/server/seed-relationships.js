@@ -36,4 +36,5 @@ module.exports = [
   r('Licent Varak', 'Sofia', 'knows', 'Knows', 'Saw Sofia heading to an unknown location and tried to follow her, but lost track of her.'),
   r('Jaiden Marlock', 'Lisa', 'unaware of', 'Unaware of', 'Given away as a baby with his auras sealed by the Auralis Ruby — he has no idea who his parents are.'),
   r('Jaiden Marlock', 'Ordium', 'unaware of', 'Unaware of', 'Given away as a baby with his auras sealed by the Auralis Ruby — he has no idea who his parents are.'),
+  r('Head Master of the Academy', 'Jaiden Marlock', 'takes', 'Takes to the Hidden Realm', 'The Head Master is the character who takes the MC, Jaiden, to the Hidden Realm (comment 126).'),
 ];
