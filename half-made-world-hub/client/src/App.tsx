@@ -494,13 +494,17 @@ export default function App() {
       />
 
       <main className="main">
-        <header className="main-header">
+        <header className="main-header" style={{ borderBottom: '1px solid rgba(96,165,250,0.16)' }}>
           <div>
-            <h2 className="main-title">
+            <h2 className="main-title" style={{ color: '#e8f1ff' }}>
               {isWebView ? 'Story Web' : isMapView ? 'Relationship Map' : activeCategory === 'All' ? 'All Entries' : activeCategory}
-              {!isMapView && !isWebView && <span className="main-count">{filtered.length}</span>}
+              {!isMapView && !isWebView && (
+                <span className="main-count" style={{ color: '#22d3ee', background: 'rgba(34,211,238,0.14)', border: '1px solid rgba(34,211,238,0.4)' }}>
+                  {filtered.length}
+                </span>
+              )}
             </h2>
-            <p className="main-sub">
+            <p className="main-sub" style={{ color: '#9fb0cc' }}>
               {isWebView
                 ? 'The whole world at a glance — every realm, monster, artifact, and thread'
                 : isMapView
@@ -513,24 +517,46 @@ export default function App() {
           </div>
           <div className="header-actions">
             {!isMapView && !isWebView && activeCategory !== 'All' && (
-              <button className="btn btn-danger btn-sm" onClick={() => handleDeleteCategory(activeCategory)}>
+              <button
+                className="btn btn-danger btn-sm"
+                style={{ color: '#f87171', border: '1px solid rgba(248,113,113,0.4)', background: 'rgba(248,113,113,0.08)' }}
+                onClick={() => handleDeleteCategory(activeCategory)}
+              >
                 🗑 Delete “{activeCategory}”
               </button>
             )}
             {isMapView && (
-              <button className="btn btn-primary btn-sm" onClick={openAddRel}>
+              <button
+                className="btn btn-primary btn-sm"
+                style={{ color: '#e8f1ff', border: '1px solid rgba(34,211,238,0.4)', background: 'rgba(34,211,238,0.16)' }}
+                onClick={openAddRel}
+              >
                 ＋ Add Relationship
               </button>
             )}
             {isWebView && (
-              <button className="btn btn-primary btn-sm" onClick={openAddLink}>
+              <button
+                className="btn btn-primary btn-sm"
+                style={{ color: '#e8f1ff', border: '1px solid rgba(34,211,238,0.4)', background: 'rgba(34,211,238,0.16)' }}
+                onClick={openAddLink}
+              >
                 ＋ Add Link
               </button>
             )}
-            <button className="btn btn-ghost btn-sm" onClick={exportMarkdown} title="Download the archive as Markdown">
+            <button
+              className="btn btn-ghost btn-sm"
+              style={{ color: '#9fb0cc', border: '1px solid transparent' }}
+              onClick={exportMarkdown}
+              title="Download the archive as Markdown"
+            >
               ⬇ MD
             </button>
-            <button className="btn btn-ghost btn-sm" onClick={exportJson} title="Download the archive as JSON">
+            <button
+              className="btn btn-ghost btn-sm"
+              style={{ color: '#9fb0cc', border: '1px solid transparent' }}
+              onClick={exportJson}
+              title="Download the archive as JSON"
+            >
               ⬇ JSON
             </button>
           </div>
