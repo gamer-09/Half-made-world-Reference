@@ -2742,5 +2742,75 @@
     "description": "The Sixth Pillar is the personal guard of the Serapharch, the first-rank ruler of the Angel Realm.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-265",
+    "source": "Glut",
+    "target": "Demon of Abundance",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of Abundance’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-266",
+    "source": "Cornucopia",
+    "target": "Demon of Abundance",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of Abundance’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-267",
+    "source": "Reap",
+    "target": "Demon of Abundance",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of Abundance’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-268",
+    "source": "Sovereign Aura",
+    "target": "Demon of Abundance",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of Abundance’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-269",
+    "source": "Auralis Seal",
+    "target": "Demon of Abundance",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of Abundance’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-270",
+    "source": "Time’s Grasp",
+    "target": "First Pillar, Chronous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the First Pillar, Chronous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-271",
+    "source": "The Stolen Hour",
+    "target": "First Pillar, Chronous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the First Pillar, Chronous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

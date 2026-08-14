@@ -325,4 +325,13 @@ module.exports = [
   // --- Pillar duties ---
   s('Thalor Elwin', 'The Sundering Altar', 'guards', 'Guards', 'The Fifth Pillar guards the Sundering Altar, where vows are sworn and halos form.'),
   s('Aranweis', 'Clint Ashborn', 'guards', 'Guards', 'The Sixth Pillar is the personal guard of the Serapharch, the first-rank ruler of the Angel Realm.'),
+
+  // --- Lisa + Ordium mastered/personalized skills ---
+  s('Glut', 'Demon of Abundance', 'skill of', 'Skill of', 'One of the Demon of Abundance’s abilities.'),
+  s('Cornucopia', 'Demon of Abundance', 'skill of', 'Skill of', 'One of the Demon of Abundance’s abilities.'),
+  s('Reap', 'Demon of Abundance', 'skill of', 'Skill of', 'One of the Demon of Abundance’s abilities.'),
+  s('Sovereign Aura', 'Demon of Abundance', 'skill of', 'Skill of', 'One of the Demon of Abundance’s abilities.'),
+  s('Auralis Seal', 'Demon of Abundance', 'skill of', 'Skill of', 'One of the Demon of Abundance’s abilities.'),
+  s('Time’s Grasp', 'First Pillar, Chronous', 'skill of', 'Skill of', 'One of the First Pillar, Chronous’s abilities.'),
+  s('The Stolen Hour', 'First Pillar, Chronous', 'skill of', 'Skill of', 'One of the First Pillar, Chronous’s abilities.'),
 ];

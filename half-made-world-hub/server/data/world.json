@@ -2090,6 +2090,18 @@
       {
         "label": "Fate",
         "value": "Demoted to Gnash rank and killed by Licent Varak’s men after he reported her relationship with an angel."
+      },
+      {
+        "label": "Skills",
+        "value": "Glut, Cornucopia, Reap"
+      },
+      {
+        "label": "Mastered Skill",
+        "value": "Sovereign Aura"
+      },
+      {
+        "label": "Personalized Skill",
+        "value": "Auralis Seal"
       }
     ],
     "tags": [
@@ -2125,6 +2137,14 @@
       {
         "label": "Skills",
         "value": "Lapse, Rewind, Still Hour"
+      },
+      {
+        "label": "Mastered Skill",
+        "value": "Time’s Grasp"
+      },
+      {
+        "label": "Personalized Skill",
+        "value": "The Stolen Hour"
       }
     ],
     "tags": [
@@ -4787,6 +4807,128 @@
       "skill",
       "angel",
       "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-263",
+    "category": "Demon Skills",
+    "name": "Glut",
+    "subtitle": "Bloodward skill",
+    "description": "Overloads a single target with far more Veyn than their body can hold, breaking them apart from the inside.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-264",
+    "category": "Demon Skills",
+    "name": "Cornucopia",
+    "subtitle": "Bloodward skill",
+    "description": "A surge of her surplus Veyn pours out in every direction at once, overwhelming whatever is weaker than her around it.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-265",
+    "category": "Demon Skills",
+    "name": "Reap",
+    "subtitle": "Bloodward skill",
+    "description": "Pulls the Veyn from everything weaker in the area, adding it to her own.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-266",
+    "category": "Demon Skills",
+    "name": "Sovereign Aura",
+    "subtitle": "Mastered skill",
+    "description": "Her Demonic Aura refined to a peak that forces even other Bloodwards to their knees.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Mastered"
+      }
+    ],
+    "tags": [
+      "skill",
+      "demon",
+      "mastered"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-267",
+    "category": "Demon Skills",
+    "name": "Auralis Seal",
+    "subtitle": "Personalized skill",
+    "description": "The sealing craft she used to make the Auralis Ruby — seals auras and forms away entirely.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Personalized"
+      }
+    ],
+    "tags": [
+      "skill",
+      "demon",
+      "personalized"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-268",
+    "category": "Angel Skills",
+    "name": "Time’s Grasp",
+    "subtitle": "Mastered skill",
+    "description": "Halts a single target’s flow of time for a few heartbeats.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Mastered"
+      }
+    ],
+    "tags": [
+      "skill",
+      "angel",
+      "mastered"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-269",
+    "category": "Angel Skills",
+    "name": "The Stolen Hour",
+    "subtitle": "Personalized skill",
+    "description": "A skill forged during the nine months hidden with Lisa — erases a moment so it never happened.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Personalized"
+      }
+    ],
+    "tags": [
+      "skill",
+      "angel",
+      "personalized"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
