@@ -168,5 +168,49 @@
     "description": "after have a child with a demon lisa, clint was enraged and ordered the execution of Ordium",
     "createdAt": "2026-08-13T00:31:35.988Z",
     "updatedAt": "2026-08-13T00:31:35.988Z"
+  },
+  {
+    "id": "7ca019ed-5e90-4f61-a72f-3b8dd2243829",
+    "source": "Carin",
+    "target": "Lisa",
+    "type": "serves",
+    "label": "Serves",
+    "description": "she used to work for Lisa",
+    "color": "",
+    "createdAt": "2026-08-14T00:46:14.287Z",
+    "updatedAt": "2026-08-14T00:46:14.287Z"
+  },
+  {
+    "id": "c7f9c608-6073-4c7a-bc69-82256c256407",
+    "source": "Carin",
+    "target": "Jaiden Marlock",
+    "type": "Demon trainer for",
+    "label": "Demon trainer for",
+    "description": "she trained Jaiden further on how to use his demonic powers",
+    "color": "#38bdf8",
+    "createdAt": "2026-08-14T00:51:18.857Z",
+    "updatedAt": "2026-08-14T00:51:18.857Z"
+  },
+  {
+    "id": "ce778c65-0033-4aaf-a12e-43c78bdc581e",
+    "source": "Sofia Marlock",
+    "target": "Jaiden Marlock",
+    "type": "Trainer of",
+    "label": "Trainer of",
+    "description": "She trained Jaiden on how to use some of his angelic powers since she was once an angel too",
+    "color": "#8b5cf6",
+    "createdAt": "2026-08-14T11:32:33.191Z",
+    "updatedAt": "2026-08-14T11:32:33.191Z"
+  },
+  {
+    "id": "3450dbca-a234-4a2a-aa04-02e97d8ba4f4",
+    "source": "Licent Varak",
+    "target": "Tera Morage",
+    "type": "Going to kill",
+    "label": "Going to kill",
+    "description": "planning to kill her for her position and become the new ruler of the demon realm",
+    "color": "#f87171",
+    "createdAt": "2026-08-14T12:25:15.248Z",
+    "updatedAt": "2026-08-14T12:25:31.846Z"
   }
 ]

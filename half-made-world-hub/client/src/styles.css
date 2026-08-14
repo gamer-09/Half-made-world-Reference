@@ -1429,3 +1429,51 @@ select.input {
   .main-header { flex-direction: column; align-items: flex-start; }
   .toast { width: calc(100% - 32px); text-align: center; }
 }
+
+
+.category-nav::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.category-nav::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+.category-nav::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan);
+}
+
+/* Firefox */
+.category-nav {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+
+
+/* ============ Global Neon Scrollbar ============ */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--line-strong);
+  border-radius: 10px;
+  transition: background 0.2s;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}

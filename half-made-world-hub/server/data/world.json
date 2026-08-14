@@ -2118,18 +2118,28 @@
   {
     "id": "seed-099",
     "category": "Characters",
-    "name": "Sofia",
+    "name": "Sofia Marlock",
     "subtitle": "Lisa’s personal maid — Jaiden’s guardian",
     "description": "Lisa’s personal maid. Lisa gave her the child Jaiden along with the Auralis Ruby pendant to seal his auras. She then left for the Human Realm with Jaiden, where she raised him.",
-    "fields": [],
+    "fields": [
+      {
+        "label": "Angel type",
+        "value": "Fallen angel"
+      },
+      {
+        "label": "Rank",
+        "value": "Scourge"
+      }
+    ],
     "tags": [
       "character",
       "sofia",
       "maid",
-      "guardian"
+      "guardian",
+      "fallen angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-14T00:53:39.211Z"
   },
   {
     "id": "seed-100",
@@ -3496,5 +3506,70 @@
     ],
     "createdAt": "2026-08-13T17:03:13.050Z",
     "updatedAt": "2026-08-13T17:03:13.050Z"
+  },
+  {
+    "id": "d728d6e9-bbdb-47f2-9b42-874920ee012a",
+    "category": "Characters",
+    "name": "Carin",
+    "subtitle": "Demon trainer",
+    "description": "she used to serve Lisa and later when she discovered that Lisa had a child with an angel she decided to teach the child about his demon powers. The mc met her when he visited the demon realm",
+    "fields": [
+      {
+        "label": "Rank",
+        "value": "Scourge"
+      }
+    ],
+    "tags": [
+      "trainer",
+      "demon",
+      "carin",
+      "character"
+    ],
+    "createdAt": "2026-08-14T00:44:18.744Z",
+    "updatedAt": "2026-08-14T11:43:02.065Z"
+  },
+  {
+    "id": "9c5916bc-7997-4388-a29d-c5229c4a3d4d",
+    "category": "Plot",
+    "name": "Jaiden Marlock Plot",
+    "subtitle": "Plot for Mc",
+    "description": "His class is Mage. he has a much higher amount of Veyn than other Angels and Demons. He stays in a small house with Sofia who takes care of him and protects him. Later Sofia took him meet with Carin who then train him to be better at his demonic power. Sofia also trained Jaiden on how to use his angelic powers",
+    "fields": [],
+    "tags": [
+      "Protagonist",
+      "plot",
+      "Jaiden"
+    ],
+    "createdAt": "2026-08-14T00:52:22.427Z",
+    "updatedAt": "2026-08-14T11:42:27.965Z"
+  },
+  {
+    "id": "bd19a14c-d2d0-4bea-a7e0-becaafd51a8a",
+    "category": "Characters",
+    "name": "Wener Leger",
+    "subtitle": "Leader of Dark Moon",
+    "description": "The true leader of the Dark moon clan",
+    "fields": [
+      {
+        "label": "Disguise",
+        "value": "Teacher of Swordsmanship class at the academy"
+      },
+      {
+        "label": "Race",
+        "value": "Angel"
+      },
+      {
+        "label": "Rank",
+        "value": "Aetherblade Lord Angel"
+      }
+    ],
+    "tags": [
+      "character",
+      "leader",
+      "angel",
+      "wener"
+    ],
+    "createdAt": "2026-08-14T12:16:11.428Z",
+    "updatedAt": "2026-08-14T12:16:31.116Z"
   }
 ]

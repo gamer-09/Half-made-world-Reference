@@ -92,12 +92,13 @@
   {
     "id": "link-seed-010",
     "source": "Sentient River",
-    "target": "Hidden Realm (Shadow Realm)",
+    "target": "Thornlost Forest",
     "type": "located in",
     "label": "Located in",
     "description": "The living river of the Shadow Realm.",
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-14T00:21:40.415Z",
+    "color": ""
   },
   {
     "id": "link-seed-011",
@@ -1483,21 +1484,23 @@
     "id": "link-seed-149",
     "source": "Pallantine",
     "target": "Elves",
-    "type": "class of",
-    "label": "Class of",
+    "type": "part of",
+    "label": "Part of",
     "description": "One of the two types of Elves stated in the doc - a class of Elf.",
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-13T23:56:34.666Z",
+    "color": ""
   },
   {
     "id": "link-seed-150",
     "source": "Veilborn",
     "target": "Elves",
-    "type": "class of",
-    "label": "Class of",
+    "type": "part of",
+    "label": "Part of",
     "description": "One of the two types of Elves stated in the doc - a class of Elf.",
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-13T23:56:26.149Z",
+    "color": ""
   },
   {
     "id": "link-seed-151",
@@ -1998,5 +2001,236 @@
     "description": "The sickness is made staying in concentrated veyn for too long",
     "createdAt": "2026-08-13T18:55:12.115Z",
     "updatedAt": "2026-08-13T18:55:12.115Z"
+  },
+  {
+    "id": "a5d43fc6-fc57-4a65-8750-3606ebc24143",
+    "source": "Academy",
+    "target": "Human Realm",
+    "type": "located in",
+    "label": "Located in",
+    "description": "It is built in the human realm",
+    "color": "",
+    "createdAt": "2026-08-13T23:59:35.240Z",
+    "updatedAt": "2026-08-13T23:59:35.240Z"
+  },
+  {
+    "id": "c1e22fdb-0efd-4f2a-89f9-8edcfe70f3c7",
+    "source": "Griffen",
+    "target": "Pallantine",
+    "type": "Used by",
+    "label": "Used by",
+    "description": "they are used by Pallantine as a form of transportation",
+    "color": "#fbbf24",
+    "createdAt": "2026-08-14T00:01:55.949Z",
+    "updatedAt": "2026-08-14T00:01:55.950Z"
+  },
+  {
+    "id": "aee467af-c895-434c-9117-e11e3918acbd",
+    "source": "Veyn & Ren Incompatibility",
+    "target": "Veyn",
+    "type": "Can't",
+    "label": "Can't",
+    "description": "They are incompatible and has a high probability of killing that person that tries",
+    "color": "#f87171",
+    "createdAt": "2026-08-14T00:04:17.958Z",
+    "updatedAt": "2026-08-14T00:04:17.958Z"
+  },
+  {
+    "id": "621ec778-5f36-4843-b041-15a989609b0b",
+    "source": "Veyn & Ren Incompatibility",
+    "target": "Ren",
+    "type": "Can't",
+    "label": "Can't",
+    "description": "Not compatible with Veyn and due to this it can cause death",
+    "color": "#f87171",
+    "createdAt": "2026-08-14T00:05:58.427Z",
+    "updatedAt": "2026-08-14T00:05:58.427Z"
+  },
+  {
+    "id": "ed31eb24-3bd3-401f-8459-b2f605079b38",
+    "source": "The Sundering Altar",
+    "target": "Affinity & Awakening",
+    "type": "needed for",
+    "label": "Needed for",
+    "description": "Meant to be used at the coming-of-age ceremony",
+    "color": "",
+    "createdAt": "2026-08-14T00:07:16.913Z",
+    "updatedAt": "2026-08-14T00:07:47.556Z"
+  },
+  {
+    "id": "649fcd08-bc8c-4173-8de7-47cdd1b0b2d8",
+    "source": "Growing Your Veyn Capacity",
+    "target": "Veyn",
+    "type": "needed for",
+    "label": "Needed for",
+    "description": "finish your reserve to increase it",
+    "color": "",
+    "createdAt": "2026-08-14T00:09:09.088Z",
+    "updatedAt": "2026-08-14T00:09:09.088Z"
+  },
+  {
+    "id": "714ee292-eea2-498b-9534-6a5c9561e3b1",
+    "source": "The Hidden Realm Portal",
+    "target": "Concentrated Veyn",
+    "type": "Used by",
+    "label": "Used by",
+    "description": "They suck the concentrate Veyn to stabilize then use the remaining to move to the next area once it has finished all the concentrated Veyn in the area it was before",
+    "color": "#fb923c",
+    "createdAt": "2026-08-14T00:14:36.659Z",
+    "updatedAt": "2026-08-14T00:14:36.659Z"
+  },
+  {
+    "id": "68069a00-7a0d-478d-9686-051ad23679ca",
+    "source": "The Hidden Realm Portal",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "About",
+    "label": "About",
+    "description": "information about the portal for the hidden realm",
+    "color": "#38bdf8",
+    "createdAt": "2026-08-14T00:19:21.650Z",
+    "updatedAt": "2026-08-14T00:19:21.650Z"
+  },
+  {
+    "id": "495588ea-9d13-4084-8895-901e1b72b8c6",
+    "source": "Hermes Robe",
+    "target": "The Wanderer",
+    "type": "Sold by",
+    "label": "Sold by",
+    "description": "An item sold in the hidden realm by the wanderer",
+    "color": "#818cf8",
+    "createdAt": "2026-08-14T00:27:18.748Z",
+    "updatedAt": "2026-08-14T00:27:40.859Z"
+  },
+  {
+    "id": "f799c332-2142-4b7c-bcb6-5e018d10ff07",
+    "source": "Ring of Foundation",
+    "target": "Veyn",
+    "type": "Used by",
+    "label": "Used by",
+    "description": "stores veyn inside it",
+    "color": "#f472b6",
+    "createdAt": "2026-08-14T00:29:53.511Z",
+    "updatedAt": "2026-08-14T00:29:53.512Z"
+  },
+  {
+    "id": "aadebb9f-b6da-48c8-8fc9-e76d0f792276",
+    "source": "Ring of Foundation",
+    "target": "The Wanderer",
+    "type": "Sold by",
+    "label": "Sold by",
+    "description": "sells this item in the hidden realm",
+    "color": "#818cf8",
+    "createdAt": "2026-08-14T00:30:43.553Z",
+    "updatedAt": "2026-08-14T00:30:43.554Z"
+  },
+  {
+    "id": "8bb647b6-1707-4312-b73f-52390a85ae98",
+    "source": "Iron-will Ring",
+    "target": "The Wanderer",
+    "type": "Sold by",
+    "label": "Sold by",
+    "description": "sells this item in the hidden realm",
+    "color": "#818cf8",
+    "createdAt": "2026-08-14T00:31:44.173Z",
+    "updatedAt": "2026-08-14T00:32:05.433Z"
+  },
+  {
+    "id": "a91359fc-b825-41ca-b8af-3d282b60efa8",
+    "source": "Remy’s Bracelet",
+    "target": "The Wanderer",
+    "type": "Sold by",
+    "label": "Sold by",
+    "description": "sells this item in the hidden realm",
+    "color": "#818cf8",
+    "createdAt": "2026-08-14T00:33:11.384Z",
+    "updatedAt": "2026-08-14T00:33:11.385Z"
+  },
+  {
+    "id": "0b03b24c-b482-4001-9b6b-d215cf936a11",
+    "source": "Wraithcloth",
+    "target": "The Wanderer",
+    "type": "Sold by",
+    "label": "Sold by",
+    "description": "sells this item in the hidden realm",
+    "color": "#818cf8",
+    "createdAt": "2026-08-14T00:33:48.233Z",
+    "updatedAt": "2026-08-14T00:33:48.233Z"
+  },
+  {
+    "id": "9dd5c9fc-2e58-408e-bfed-309cfd87a1ed",
+    "source": "Grimbough Tree",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "located in",
+    "label": "Located in",
+    "description": "can be found in the hidden realm",
+    "color": "",
+    "createdAt": "2026-08-14T00:34:59.863Z",
+    "updatedAt": "2026-08-14T00:34:59.863Z"
+  },
+  {
+    "id": "fb30ea36-7429-43d7-a06a-9a167255cc25",
+    "source": "Kaelroot Tree",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "located in",
+    "label": "Located in",
+    "description": "can be found in the hidden realm",
+    "color": "",
+    "createdAt": "2026-08-14T00:36:43.976Z",
+    "updatedAt": "2026-08-14T00:36:43.976Z"
+  },
+  {
+    "id": "3205dea0-07bf-4411-a4e8-fca1d12ee508",
+    "source": "Jaiden Marlock Plot",
+    "target": "Jaiden Marlock",
+    "type": "story of",
+    "label": "Story of",
+    "description": "story about the mc",
+    "color": "",
+    "createdAt": "2026-08-14T01:04:07.659Z",
+    "updatedAt": "2026-08-14T01:05:19.203Z"
+  },
+  {
+    "id": "f1206b05-c98b-4c8c-9f0e-fb64b554b4fa",
+    "source": "Wener Leger",
+    "target": "Dark Moon",
+    "type": "Leader of",
+    "label": "Leader of",
+    "description": "The ring leader of the clan",
+    "color": "#f87171",
+    "createdAt": "2026-08-14T12:17:33.053Z",
+    "updatedAt": "2026-08-14T12:17:33.053Z"
+  },
+  {
+    "id": "e8bb92d9-55dc-442b-8327-7cb88d616707",
+    "source": "Wener Leger",
+    "target": "Academy",
+    "type": "Teacher at",
+    "label": "Teacher at",
+    "description": "teaches swordsmanship at the academy",
+    "color": "#fbbf24",
+    "createdAt": "2026-08-14T12:18:45.471Z",
+    "updatedAt": "2026-08-14T12:18:45.471Z"
+  },
+  {
+    "id": "064f1175-75f5-403d-832b-8fee87109221",
+    "source": "Licent Varak",
+    "target": "Dark Moon",
+    "type": "Joined",
+    "label": "Joined",
+    "description": "joined then to gain enough power to become the new ruler of the demon realm and kill the current one",
+    "color": "#34d399",
+    "createdAt": "2026-08-14T12:20:26.113Z",
+    "updatedAt": "2026-08-14T12:20:26.113Z"
+  },
+  {
+    "id": "2d601cef-3800-403c-9197-63a01776d7b9",
+    "source": "The Sundering Altar",
+    "target": "Academy",
+    "type": "located in",
+    "label": "Located in",
+    "description": "it is at the academy where all children at the age of 15 come to awaken there classes and for angels there halo",
+    "color": "",
+    "createdAt": "2026-08-14T12:27:51.787Z",
+    "updatedAt": "2026-08-14T12:27:51.787Z"
   }
 ]
