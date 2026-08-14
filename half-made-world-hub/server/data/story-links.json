@@ -2242,5 +2242,265 @@
     "description": "The title “Crown-less” is borne by Lisa — the strongest Bloodward after the Mordrach, who never wore the crown herself.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-200",
+    "source": "Demon of Abundance",
+    "target": "Lisa",
+    "type": "held by",
+    "label": "Held by",
+    "description": "A title borne by Lisa — the strongest demon in the Demon Realm after the Mordrach, whose power overflows beyond a single body.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-201",
+    "source": "Angel of Sovereignty",
+    "target": "Ordium",
+    "type": "held by",
+    "label": "Held by",
+    "description": "A title borne by Ordium — supreme authority, the right hand of the Angel Realm’s ruler.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-202",
+    "source": "Angel of the Zenith",
+    "target": "Serapharch",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The highest point of heaven’s light — the Serapharch alone stands at the zenith.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-203",
+    "source": "Angel of the Vast",
+    "target": "Aetherblade Lord Angel",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The widest reach beneath the throne, held by the Aetherblade Lord Angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-204",
+    "source": "Angel of the Steadfast",
+    "target": "Virtue",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The unbroken, disciplined line — the Virtue who holds formation when all else breaks.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-205",
+    "source": "Angel of the First Light",
+    "target": "Lumen",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The faint dawn of the ranks — first and dimmest, the Lumen’s quiet glow.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-206",
+    "source": "Demon of Dominion",
+    "target": "Mordrach",
+    "type": "held by",
+    "label": "Held by",
+    "description": "Absolute rule over the Demon Realm — the Mordrach’s crown and dominion.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-207",
+    "source": "Demon of the Overflow",
+    "target": "Bloodward",
+    "type": "held by",
+    "label": "Held by",
+    "description": "Power beyond a single vessel — the Bloodward’s surfeit of Veyn.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-208",
+    "source": "Demon of the Wane",
+    "target": "Scourge",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The fading middle — the Scourge whose light runs low on Vitality.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-209",
+    "source": "Demon of the Pact",
+    "target": "Gnash",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The binding contract that only a Gnash can offer — and none may break.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-210",
+    "source": "Demon of the Whisper",
+    "target": "Licent Varak",
+    "type": "held by",
+    "label": "Held by",
+    "description": "A title borne by Licent Varak — the secret told in the dark that undid a life.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-211",
+    "source": "Demon of the Sentence",
+    "target": "Tera Morage",
+    "type": "held by",
+    "label": "Held by",
+    "description": "A title borne by Tera Morage — the ruler’s judgment, spoken once and never reversed.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-212",
+    "source": "Angel of the Final Word",
+    "target": "Clint Ashborn",
+    "type": "held by",
+    "label": "Held by",
+    "description": "A title borne by Clint Ashborn — heaven’s last decree, from which there is no appeal.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-213",
+    "source": "Angel of the Halved",
+    "target": "Jaiden Marlock",
+    "type": "held by",
+    "label": "Held by",
+    "description": "A title borne by Jaiden Marlock — split between two natures, angel and demon in one.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-214",
+    "source": "Demon of the Toll",
+    "target": "Kael Vornath",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Demon of the Toll” is borne by Kael Vornath — Exacts a price from every soul that crosses the Demon army’s path.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-215",
+    "source": "Demon of the Harvest",
+    "target": "Sythra Kaelis",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Demon of the Harvest” is borne by Sythra Kaelis — Reaps what the war sows, and keeps the best of it.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-216",
+    "source": "Demon of Silence",
+    "target": "Drevos Malak",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Demon of Silence” is borne by Drevos Malak — Where he walks, battle-cries die in the throat.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-217",
+    "source": "Demon of the Thirst",
+    "target": "Nyra Thessan",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Demon of the Thirst” is borne by Nyra Thessan — An endless hunger that no victory has ever slaked.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-218",
+    "source": "Demon of the Hollow",
+    "target": "Othrek Veyne",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Demon of the Hollow” is borne by Othrek Veyne — What remains after everything has been taken away.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-219",
+    "source": "Demon of the Debt",
+    "target": "Ilsa Marrek",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Demon of the Debt” is borne by Ilsa Marrek — Collects what is owed — in blood, always.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-220",
+    "source": "Angel of the Distant",
+    "target": "Cyrion",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Angel of the Distant” is borne by Cyrion — Guards the far edge of heaven where the host does not march.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-221",
+    "source": "Angel of the Unspent",
+    "target": "Serathiel",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Angel of the Unspent” is borne by Serathiel — Her strength never depletes while a drop of Veyn remains.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-222",
+    "source": "Angel of the Quiet",
+    "target": "Liora Veyne",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Angel of the Quiet” is borne by Liora Veyne — The stillness that settles over a field before the host arrives.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-223",
+    "source": "Angel of the Unkept",
+    "target": "Thalor Elwin",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Angel of the Unkept” is borne by Thalor Elwin — Keeper of oaths no one remembers, and one he broke himself.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-224",
+    "source": "Angel of the Still",
+    "target": "Aranweis",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Angel of the Still” is borne by Aranweis — Watches without moving; his vigil never ends.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-225",
+    "source": "Angel of the Long Fall",
+    "target": "Caedric Auroth",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Angel of the Long Fall” is borne by Caedric Auroth — Fell slowly from grace, and has been falling since.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

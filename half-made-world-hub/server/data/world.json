@@ -3634,5 +3634,852 @@
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-188",
+    "category": "Titles",
+    "name": "Demon of Abundance",
+    "subtitle": "The overfull one",
+    "description": "A title borne by Lisa — the strongest demon in the Demon Realm after the Mordrach, whose power overflows beyond a single body.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Lisa"
+      }
+    ],
+    "tags": [
+      "title",
+      "abundance",
+      "lisa",
+      "demon"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-189",
+    "category": "Titles",
+    "name": "Angel of Sovereignty",
+    "subtitle": "Supreme authority",
+    "description": "A title borne by Ordium — supreme authority, the right hand of the Angel Realm’s ruler.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Ordium"
+      }
+    ],
+    "tags": [
+      "title",
+      "sovereignty",
+      "ordium",
+      "angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-190",
+    "category": "Titles",
+    "name": "Angel of the Zenith",
+    "subtitle": "The Serapharch’s height",
+    "description": "The highest point of heaven’s light — the Serapharch alone stands at the zenith.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Serapharch"
+      }
+    ],
+    "tags": [
+      "title",
+      "zenith",
+      "serapharch",
+      "angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-191",
+    "category": "Titles",
+    "name": "Angel of the Vast",
+    "subtitle": "The Aetherblade’s reach",
+    "description": "The widest reach beneath the throne, held by the Aetherblade Lord Angel.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Aetherblade Lord Angel"
+      }
+    ],
+    "tags": [
+      "title",
+      "vast",
+      "aetherblade",
+      "angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-192",
+    "category": "Titles",
+    "name": "Angel of the Steadfast",
+    "subtitle": "The Virtue’s line",
+    "description": "The unbroken, disciplined line — the Virtue who holds formation when all else breaks.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Virtue"
+      }
+    ],
+    "tags": [
+      "title",
+      "steadfast",
+      "virtue",
+      "angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-193",
+    "category": "Titles",
+    "name": "Angel of the First Light",
+    "subtitle": "The Lumen’s dawn",
+    "description": "The faint dawn of the ranks — first and dimmest, the Lumen’s quiet glow.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Lumen"
+      }
+    ],
+    "tags": [
+      "title",
+      "first light",
+      "lumen",
+      "angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-194",
+    "category": "Titles",
+    "name": "Demon of Dominion",
+    "subtitle": "The Mordrach’s rule",
+    "description": "Absolute rule over the Demon Realm — the Mordrach’s crown and dominion.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Mordrach"
+      }
+    ],
+    "tags": [
+      "title",
+      "dominion",
+      "mordrach",
+      "demon"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-195",
+    "category": "Titles",
+    "name": "Demon of the Overflow",
+    "subtitle": "The Bloodward’s surfeit",
+    "description": "Power beyond a single vessel — the Bloodward’s surfeit of Veyn.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Bloodward"
+      }
+    ],
+    "tags": [
+      "title",
+      "overflow",
+      "bloodward",
+      "demon"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-196",
+    "category": "Titles",
+    "name": "Demon of the Wane",
+    "subtitle": "The Scourge’s fading",
+    "description": "The fading middle — the Scourge whose light runs low on Vitality.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Scourge"
+      }
+    ],
+    "tags": [
+      "title",
+      "wane",
+      "scourge",
+      "demon"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-197",
+    "category": "Titles",
+    "name": "Demon of the Pact",
+    "subtitle": "The Gnash’s binding",
+    "description": "The binding contract that only a Gnash can offer — and none may break.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Gnash"
+      }
+    ],
+    "tags": [
+      "title",
+      "pact",
+      "gnash",
+      "demon"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-198",
+    "category": "Titles",
+    "name": "Demon of the Whisper",
+    "subtitle": "Licent Varak’s secret",
+    "description": "A title borne by Licent Varak — the secret told in the dark that undid a life.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Licent Varak"
+      }
+    ],
+    "tags": [
+      "title",
+      "whisper",
+      "licent varak",
+      "demon"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-199",
+    "category": "Titles",
+    "name": "Demon of the Sentence",
+    "subtitle": "Tera Morage’s judgment",
+    "description": "A title borne by Tera Morage — the ruler’s judgment, spoken once and never reversed.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Tera Morage"
+      }
+    ],
+    "tags": [
+      "title",
+      "sentence",
+      "tera morage",
+      "demon"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-200",
+    "category": "Titles",
+    "name": "Angel of the Final Word",
+    "subtitle": "Clint Ashborn’s decree",
+    "description": "A title borne by Clint Ashborn — heaven’s last decree, from which there is no appeal.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Clint Ashborn"
+      }
+    ],
+    "tags": [
+      "title",
+      "final word",
+      "clint ashborn",
+      "angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-201",
+    "category": "Titles",
+    "name": "Angel of the Halved",
+    "subtitle": "Jaiden’s two natures",
+    "description": "A title borne by Jaiden Marlock — split between two natures, angel and demon in one.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Jaiden Marlock"
+      }
+    ],
+    "tags": [
+      "title",
+      "halved",
+      "jaiden marlock",
+      "angel",
+      "demon"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-202",
+    "category": "Characters",
+    "name": "Kael Vornath",
+    "subtitle": "Demon general of the Demon army",
+    "description": "Demon general — Demon of the Toll. Exacts a price from every soul that crosses the Demon army’s path.",
+    "fields": [
+      {
+        "label": "Rank",
+        "value": "Bloodward"
+      },
+      {
+        "label": "Title",
+        "value": "Demon of the Toll"
+      }
+    ],
+    "tags": [
+      "demon",
+      "general",
+      "bloodward",
+      "demon of the toll"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-203",
+    "category": "Characters",
+    "name": "Sythra Kaelis",
+    "subtitle": "Demon general of the Demon army",
+    "description": "Demon general — Demon of the Harvest. Reaps what the war sows, and keeps the best of it.",
+    "fields": [
+      {
+        "label": "Rank",
+        "value": "Bloodward"
+      },
+      {
+        "label": "Title",
+        "value": "Demon of the Harvest"
+      }
+    ],
+    "tags": [
+      "demon",
+      "general",
+      "bloodward",
+      "demon of the harvest"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-204",
+    "category": "Characters",
+    "name": "Drevos Malak",
+    "subtitle": "Demon general of the Demon army",
+    "description": "Demon general — Demon of Silence. Where he walks, battle-cries die in the throat.",
+    "fields": [
+      {
+        "label": "Rank",
+        "value": "Bloodward"
+      },
+      {
+        "label": "Title",
+        "value": "Demon of Silence"
+      }
+    ],
+    "tags": [
+      "demon",
+      "general",
+      "bloodward",
+      "demon of silence"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-205",
+    "category": "Characters",
+    "name": "Nyra Thessan",
+    "subtitle": "Demon general of the Demon army",
+    "description": "Demon general — Demon of the Thirst. An endless hunger that no victory has ever slaked.",
+    "fields": [
+      {
+        "label": "Rank",
+        "value": "Bloodward"
+      },
+      {
+        "label": "Title",
+        "value": "Demon of the Thirst"
+      }
+    ],
+    "tags": [
+      "demon",
+      "general",
+      "bloodward",
+      "demon of the thirst"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-206",
+    "category": "Characters",
+    "name": "Othrek Veyne",
+    "subtitle": "Demon general of the Demon army",
+    "description": "Demon general — Demon of the Hollow. What remains after everything has been taken away.",
+    "fields": [
+      {
+        "label": "Rank",
+        "value": "Bloodward"
+      },
+      {
+        "label": "Title",
+        "value": "Demon of the Hollow"
+      }
+    ],
+    "tags": [
+      "demon",
+      "general",
+      "bloodward",
+      "demon of the hollow"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-207",
+    "category": "Characters",
+    "name": "Ilsa Marrek",
+    "subtitle": "Demon general of the Demon army",
+    "description": "Demon general — Demon of the Debt. Collects what is owed — in blood, always.",
+    "fields": [
+      {
+        "label": "Rank",
+        "value": "Bloodward"
+      },
+      {
+        "label": "Title",
+        "value": "Demon of the Debt"
+      }
+    ],
+    "tags": [
+      "demon",
+      "general",
+      "bloodward",
+      "demon of the debt"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-208",
+    "category": "Characters",
+    "name": "Cyrion",
+    "subtitle": "Angel general of the Angel army",
+    "description": "Angel general — Angel of the Distant. Guards the far edge of heaven where the host does not march.",
+    "fields": [
+      {
+        "label": "Rank",
+        "value": "Aetherblade Lord Angel"
+      },
+      {
+        "label": "Title",
+        "value": "Angel of the Distant"
+      }
+    ],
+    "tags": [
+      "angel",
+      "general",
+      "aetherblade lord angel",
+      "angel of the distant"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-209",
+    "category": "Characters",
+    "name": "Serathiel",
+    "subtitle": "Angel general of the Angel army",
+    "description": "Angel general — Angel of the Unspent. Her strength never depletes while a drop of Veyn remains.",
+    "fields": [
+      {
+        "label": "Rank",
+        "value": "Aetherblade Lord Angel"
+      },
+      {
+        "label": "Title",
+        "value": "Angel of the Unspent"
+      }
+    ],
+    "tags": [
+      "angel",
+      "general",
+      "aetherblade lord angel",
+      "angel of the unspent"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-210",
+    "category": "Characters",
+    "name": "Liora Veyne",
+    "subtitle": "Angel general of the Angel army",
+    "description": "Angel general — Angel of the Quiet. The stillness that settles over a field before the host arrives.",
+    "fields": [
+      {
+        "label": "Rank",
+        "value": "Aetherblade Lord Angel"
+      },
+      {
+        "label": "Title",
+        "value": "Angel of the Quiet"
+      }
+    ],
+    "tags": [
+      "angel",
+      "general",
+      "aetherblade lord angel",
+      "angel of the quiet"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-211",
+    "category": "Characters",
+    "name": "Thalor Elwin",
+    "subtitle": "Angel general of the Angel army",
+    "description": "Angel general — Angel of the Unkept. Keeper of oaths no one remembers, and one he broke himself.",
+    "fields": [
+      {
+        "label": "Rank",
+        "value": "Aetherblade Lord Angel"
+      },
+      {
+        "label": "Title",
+        "value": "Angel of the Unkept"
+      }
+    ],
+    "tags": [
+      "angel",
+      "general",
+      "aetherblade lord angel",
+      "angel of the unkept"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-212",
+    "category": "Characters",
+    "name": "Aranweis",
+    "subtitle": "Angel general of the Angel army",
+    "description": "Angel general — Angel of the Still. Watches without moving; his vigil never ends.",
+    "fields": [
+      {
+        "label": "Rank",
+        "value": "Aetherblade Lord Angel"
+      },
+      {
+        "label": "Title",
+        "value": "Angel of the Still"
+      }
+    ],
+    "tags": [
+      "angel",
+      "general",
+      "aetherblade lord angel",
+      "angel of the still"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-213",
+    "category": "Characters",
+    "name": "Caedric Auroth",
+    "subtitle": "Angel general of the Angel army",
+    "description": "Angel general — Angel of the Long Fall. Fell slowly from grace, and has been falling since.",
+    "fields": [
+      {
+        "label": "Rank",
+        "value": "Aetherblade Lord Angel"
+      },
+      {
+        "label": "Title",
+        "value": "Angel of the Long Fall"
+      }
+    ],
+    "tags": [
+      "angel",
+      "general",
+      "aetherblade lord angel",
+      "angel of the long fall"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-214",
+    "category": "Titles",
+    "name": "Demon of the Toll",
+    "subtitle": "The title of Kael Vornath",
+    "description": "The title of Kael Vornath — Exacts a price from every soul that crosses the Demon army’s path.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Kael Vornath"
+      }
+    ],
+    "tags": [
+      "title",
+      "demon",
+      "general",
+      "kael vornath"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-215",
+    "category": "Titles",
+    "name": "Demon of the Harvest",
+    "subtitle": "The title of Sythra Kaelis",
+    "description": "The title of Sythra Kaelis — Reaps what the war sows, and keeps the best of it.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Sythra Kaelis"
+      }
+    ],
+    "tags": [
+      "title",
+      "demon",
+      "general",
+      "sythra kaelis"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-216",
+    "category": "Titles",
+    "name": "Demon of Silence",
+    "subtitle": "The title of Drevos Malak",
+    "description": "The title of Drevos Malak — Where he walks, battle-cries die in the throat.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Drevos Malak"
+      }
+    ],
+    "tags": [
+      "title",
+      "demon",
+      "general",
+      "drevos malak"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-217",
+    "category": "Titles",
+    "name": "Demon of the Thirst",
+    "subtitle": "The title of Nyra Thessan",
+    "description": "The title of Nyra Thessan — An endless hunger that no victory has ever slaked.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Nyra Thessan"
+      }
+    ],
+    "tags": [
+      "title",
+      "demon",
+      "general",
+      "nyra thessan"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-218",
+    "category": "Titles",
+    "name": "Demon of the Hollow",
+    "subtitle": "The title of Othrek Veyne",
+    "description": "The title of Othrek Veyne — What remains after everything has been taken away.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Othrek Veyne"
+      }
+    ],
+    "tags": [
+      "title",
+      "demon",
+      "general",
+      "othrek veyne"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-219",
+    "category": "Titles",
+    "name": "Demon of the Debt",
+    "subtitle": "The title of Ilsa Marrek",
+    "description": "The title of Ilsa Marrek — Collects what is owed — in blood, always.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Ilsa Marrek"
+      }
+    ],
+    "tags": [
+      "title",
+      "demon",
+      "general",
+      "ilsa marrek"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-220",
+    "category": "Titles",
+    "name": "Angel of the Distant",
+    "subtitle": "The title of Cyrion",
+    "description": "The title of Cyrion — Guards the far edge of heaven where the host does not march.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Cyrion"
+      }
+    ],
+    "tags": [
+      "title",
+      "angel",
+      "general",
+      "cyrion"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-221",
+    "category": "Titles",
+    "name": "Angel of the Unspent",
+    "subtitle": "The title of Serathiel",
+    "description": "The title of Serathiel — Her strength never depletes while a drop of Veyn remains.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Serathiel"
+      }
+    ],
+    "tags": [
+      "title",
+      "angel",
+      "general",
+      "serathiel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-222",
+    "category": "Titles",
+    "name": "Angel of the Quiet",
+    "subtitle": "The title of Liora Veyne",
+    "description": "The title of Liora Veyne — The stillness that settles over a field before the host arrives.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Liora Veyne"
+      }
+    ],
+    "tags": [
+      "title",
+      "angel",
+      "general",
+      "liora veyne"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-223",
+    "category": "Titles",
+    "name": "Angel of the Unkept",
+    "subtitle": "The title of Thalor Elwin",
+    "description": "The title of Thalor Elwin — Keeper of oaths no one remembers, and one he broke himself.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Thalor Elwin"
+      }
+    ],
+    "tags": [
+      "title",
+      "angel",
+      "general",
+      "thalor elwin"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-224",
+    "category": "Titles",
+    "name": "Angel of the Still",
+    "subtitle": "The title of Aranweis",
+    "description": "The title of Aranweis — Watches without moving; his vigil never ends.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Aranweis"
+      }
+    ],
+    "tags": [
+      "title",
+      "angel",
+      "general",
+      "aranweis"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-225",
+    "category": "Titles",
+    "name": "Angel of the Long Fall",
+    "subtitle": "The title of Caedric Auroth",
+    "description": "The title of Caedric Auroth — Fell slowly from grace, and has been falling since.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Caedric Auroth"
+      }
+    ],
+    "tags": [
+      "title",
+      "angel",
+      "general",
+      "caedric auroth"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

@@ -263,4 +263,32 @@ module.exports = [
 
   // --- Title: Crown-less, borne by Lisa ---
   s('Crown-less', 'Lisa', 'held by', 'Held by', 'The title “Crown-less” is borne by Lisa — the strongest Bloodward after the Mordrach, who never wore the crown herself.'),
+
+  // --- Titles & generals ---
+  s('Demon of Abundance', 'Lisa', 'held by', 'Held by', 'A title borne by Lisa — the strongest demon in the Demon Realm after the Mordrach, whose power overflows beyond a single body.'),
+  s('Angel of Sovereignty', 'Ordium', 'held by', 'Held by', 'A title borne by Ordium — supreme authority, the right hand of the Angel Realm’s ruler.'),
+  s('Angel of the Zenith', 'Serapharch', 'held by', 'Held by', 'The highest point of heaven’s light — the Serapharch alone stands at the zenith.'),
+  s('Angel of the Vast', 'Aetherblade Lord Angel', 'held by', 'Held by', 'The widest reach beneath the throne, held by the Aetherblade Lord Angel.'),
+  s('Angel of the Steadfast', 'Virtue', 'held by', 'Held by', 'The unbroken, disciplined line — the Virtue who holds formation when all else breaks.'),
+  s('Angel of the First Light', 'Lumen', 'held by', 'Held by', 'The faint dawn of the ranks — first and dimmest, the Lumen’s quiet glow.'),
+  s('Demon of Dominion', 'Mordrach', 'held by', 'Held by', 'Absolute rule over the Demon Realm — the Mordrach’s crown and dominion.'),
+  s('Demon of the Overflow', 'Bloodward', 'held by', 'Held by', 'Power beyond a single vessel — the Bloodward’s surfeit of Veyn.'),
+  s('Demon of the Wane', 'Scourge', 'held by', 'Held by', 'The fading middle — the Scourge whose light runs low on Vitality.'),
+  s('Demon of the Pact', 'Gnash', 'held by', 'Held by', 'The binding contract that only a Gnash can offer — and none may break.'),
+  s('Demon of the Whisper', 'Licent Varak', 'held by', 'Held by', 'A title borne by Licent Varak — the secret told in the dark that undid a life.'),
+  s('Demon of the Sentence', 'Tera Morage', 'held by', 'Held by', 'A title borne by Tera Morage — the ruler’s judgment, spoken once and never reversed.'),
+  s('Angel of the Final Word', 'Clint Ashborn', 'held by', 'Held by', 'A title borne by Clint Ashborn — heaven’s last decree, from which there is no appeal.'),
+  s('Angel of the Halved', 'Jaiden Marlock', 'held by', 'Held by', 'A title borne by Jaiden Marlock — split between two natures, angel and demon in one.'),
+  s('Demon of the Toll', 'Kael Vornath', 'held by', 'Held by', 'The title “Demon of the Toll” is borne by Kael Vornath — Exacts a price from every soul that crosses the Demon army’s path.'),
+  s('Demon of the Harvest', 'Sythra Kaelis', 'held by', 'Held by', 'The title “Demon of the Harvest” is borne by Sythra Kaelis — Reaps what the war sows, and keeps the best of it.'),
+  s('Demon of Silence', 'Drevos Malak', 'held by', 'Held by', 'The title “Demon of Silence” is borne by Drevos Malak — Where he walks, battle-cries die in the throat.'),
+  s('Demon of the Thirst', 'Nyra Thessan', 'held by', 'Held by', 'The title “Demon of the Thirst” is borne by Nyra Thessan — An endless hunger that no victory has ever slaked.'),
+  s('Demon of the Hollow', 'Othrek Veyne', 'held by', 'Held by', 'The title “Demon of the Hollow” is borne by Othrek Veyne — What remains after everything has been taken away.'),
+  s('Demon of the Debt', 'Ilsa Marrek', 'held by', 'Held by', 'The title “Demon of the Debt” is borne by Ilsa Marrek — Collects what is owed — in blood, always.'),
+  s('Angel of the Distant', 'Cyrion', 'held by', 'Held by', 'The title “Angel of the Distant” is borne by Cyrion — Guards the far edge of heaven where the host does not march.'),
+  s('Angel of the Unspent', 'Serathiel', 'held by', 'Held by', 'The title “Angel of the Unspent” is borne by Serathiel — Her strength never depletes while a drop of Veyn remains.'),
+  s('Angel of the Quiet', 'Liora Veyne', 'held by', 'Held by', 'The title “Angel of the Quiet” is borne by Liora Veyne — The stillness that settles over a field before the host arrives.'),
+  s('Angel of the Unkept', 'Thalor Elwin', 'held by', 'Held by', 'The title “Angel of the Unkept” is borne by Thalor Elwin — Keeper of oaths no one remembers, and one he broke himself.'),
+  s('Angel of the Still', 'Aranweis', 'held by', 'Held by', 'The title “Angel of the Still” is borne by Aranweis — Watches without moving; his vigil never ends.'),
+  s('Angel of the Long Fall', 'Caedric Auroth', 'held by', 'Held by', 'The title “Angel of the Long Fall” is borne by Caedric Auroth — Fell slowly from grace, and has been falling since.'),
 ];

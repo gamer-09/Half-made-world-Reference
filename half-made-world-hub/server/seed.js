@@ -1417,4 +1417,397 @@ module.exports = [
     ],
     ['title', 'crown-less', 'lisa', 'bloodward'],
   ),
+
+  e(
+    'Titles',
+    'Demon of Abundance',
+    'The overfull one',
+    'A title borne by Lisa — the strongest demon in the Demon Realm after the Mordrach, whose power overflows beyond a single body.',
+    [
+      { label: 'Held by', value: 'Lisa' },
+    ],
+    ['title', 'abundance', 'lisa', 'demon'],
+  ),
+  e(
+    'Titles',
+    'Angel of Sovereignty',
+    'Supreme authority',
+    'A title borne by Ordium — supreme authority, the right hand of the Angel Realm’s ruler.',
+    [
+      { label: 'Held by', value: 'Ordium' },
+    ],
+    ['title', 'sovereignty', 'ordium', 'angel'],
+  ),
+  e(
+    'Titles',
+    'Angel of the Zenith',
+    'The Serapharch’s height',
+    'The highest point of heaven’s light — the Serapharch alone stands at the zenith.',
+    [
+      { label: 'Held by', value: 'Serapharch' },
+    ],
+    ['title', 'zenith', 'serapharch', 'angel'],
+  ),
+  e(
+    'Titles',
+    'Angel of the Vast',
+    'The Aetherblade’s reach',
+    'The widest reach beneath the throne, held by the Aetherblade Lord Angel.',
+    [
+      { label: 'Held by', value: 'Aetherblade Lord Angel' },
+    ],
+    ['title', 'vast', 'aetherblade', 'angel'],
+  ),
+  e(
+    'Titles',
+    'Angel of the Steadfast',
+    'The Virtue’s line',
+    'The unbroken, disciplined line — the Virtue who holds formation when all else breaks.',
+    [
+      { label: 'Held by', value: 'Virtue' },
+    ],
+    ['title', 'steadfast', 'virtue', 'angel'],
+  ),
+  e(
+    'Titles',
+    'Angel of the First Light',
+    'The Lumen’s dawn',
+    'The faint dawn of the ranks — first and dimmest, the Lumen’s quiet glow.',
+    [
+      { label: 'Held by', value: 'Lumen' },
+    ],
+    ['title', 'first light', 'lumen', 'angel'],
+  ),
+  e(
+    'Titles',
+    'Demon of Dominion',
+    'The Mordrach’s rule',
+    'Absolute rule over the Demon Realm — the Mordrach’s crown and dominion.',
+    [
+      { label: 'Held by', value: 'Mordrach' },
+    ],
+    ['title', 'dominion', 'mordrach', 'demon'],
+  ),
+  e(
+    'Titles',
+    'Demon of the Overflow',
+    'The Bloodward’s surfeit',
+    'Power beyond a single vessel — the Bloodward’s surfeit of Veyn.',
+    [
+      { label: 'Held by', value: 'Bloodward' },
+    ],
+    ['title', 'overflow', 'bloodward', 'demon'],
+  ),
+  e(
+    'Titles',
+    'Demon of the Wane',
+    'The Scourge’s fading',
+    'The fading middle — the Scourge whose light runs low on Vitality.',
+    [
+      { label: 'Held by', value: 'Scourge' },
+    ],
+    ['title', 'wane', 'scourge', 'demon'],
+  ),
+  e(
+    'Titles',
+    'Demon of the Pact',
+    'The Gnash’s binding',
+    'The binding contract that only a Gnash can offer — and none may break.',
+    [
+      { label: 'Held by', value: 'Gnash' },
+    ],
+    ['title', 'pact', 'gnash', 'demon'],
+  ),
+  e(
+    'Titles',
+    'Demon of the Whisper',
+    'Licent Varak’s secret',
+    'A title borne by Licent Varak — the secret told in the dark that undid a life.',
+    [
+      { label: 'Held by', value: 'Licent Varak' },
+    ],
+    ['title', 'whisper', 'licent varak', 'demon'],
+  ),
+  e(
+    'Titles',
+    'Demon of the Sentence',
+    'Tera Morage’s judgment',
+    'A title borne by Tera Morage — the ruler’s judgment, spoken once and never reversed.',
+    [
+      { label: 'Held by', value: 'Tera Morage' },
+    ],
+    ['title', 'sentence', 'tera morage', 'demon'],
+  ),
+  e(
+    'Titles',
+    'Angel of the Final Word',
+    'Clint Ashborn’s decree',
+    'A title borne by Clint Ashborn — heaven’s last decree, from which there is no appeal.',
+    [
+      { label: 'Held by', value: 'Clint Ashborn' },
+    ],
+    ['title', 'final word', 'clint ashborn', 'angel'],
+  ),
+  e(
+    'Titles',
+    'Angel of the Halved',
+    'Jaiden’s two natures',
+    'A title borne by Jaiden Marlock — split between two natures, angel and demon in one.',
+    [
+      { label: 'Held by', value: 'Jaiden Marlock' },
+    ],
+    ['title', 'halved', 'jaiden marlock', 'angel', 'demon'],
+  ),
+  e(
+    'Characters',
+    'Kael Vornath',
+    'Demon general of the Demon army',
+    'Demon general — Demon of the Toll. Exacts a price from every soul that crosses the Demon army’s path.',
+    [
+      { label: 'Rank', value: 'Bloodward' },
+      { label: 'Title', value: 'Demon of the Toll' },
+    ],
+    ['demon', 'general', 'bloodward', 'demon of the toll'],
+  ),
+  e(
+    'Characters',
+    'Sythra Kaelis',
+    'Demon general of the Demon army',
+    'Demon general — Demon of the Harvest. Reaps what the war sows, and keeps the best of it.',
+    [
+      { label: 'Rank', value: 'Bloodward' },
+      { label: 'Title', value: 'Demon of the Harvest' },
+    ],
+    ['demon', 'general', 'bloodward', 'demon of the harvest'],
+  ),
+  e(
+    'Characters',
+    'Drevos Malak',
+    'Demon general of the Demon army',
+    'Demon general — Demon of Silence. Where he walks, battle-cries die in the throat.',
+    [
+      { label: 'Rank', value: 'Bloodward' },
+      { label: 'Title', value: 'Demon of Silence' },
+    ],
+    ['demon', 'general', 'bloodward', 'demon of silence'],
+  ),
+  e(
+    'Characters',
+    'Nyra Thessan',
+    'Demon general of the Demon army',
+    'Demon general — Demon of the Thirst. An endless hunger that no victory has ever slaked.',
+    [
+      { label: 'Rank', value: 'Bloodward' },
+      { label: 'Title', value: 'Demon of the Thirst' },
+    ],
+    ['demon', 'general', 'bloodward', 'demon of the thirst'],
+  ),
+  e(
+    'Characters',
+    'Othrek Veyne',
+    'Demon general of the Demon army',
+    'Demon general — Demon of the Hollow. What remains after everything has been taken away.',
+    [
+      { label: 'Rank', value: 'Bloodward' },
+      { label: 'Title', value: 'Demon of the Hollow' },
+    ],
+    ['demon', 'general', 'bloodward', 'demon of the hollow'],
+  ),
+  e(
+    'Characters',
+    'Ilsa Marrek',
+    'Demon general of the Demon army',
+    'Demon general — Demon of the Debt. Collects what is owed — in blood, always.',
+    [
+      { label: 'Rank', value: 'Bloodward' },
+      { label: 'Title', value: 'Demon of the Debt' },
+    ],
+    ['demon', 'general', 'bloodward', 'demon of the debt'],
+  ),
+  e(
+    'Characters',
+    'Cyrion',
+    'Angel general of the Angel army',
+    'Angel general — Angel of the Distant. Guards the far edge of heaven where the host does not march.',
+    [
+      { label: 'Rank', value: 'Aetherblade Lord Angel' },
+      { label: 'Title', value: 'Angel of the Distant' },
+    ],
+    ['angel', 'general', 'aetherblade lord angel', 'angel of the distant'],
+  ),
+  e(
+    'Characters',
+    'Serathiel',
+    'Angel general of the Angel army',
+    'Angel general — Angel of the Unspent. Her strength never depletes while a drop of Veyn remains.',
+    [
+      { label: 'Rank', value: 'Aetherblade Lord Angel' },
+      { label: 'Title', value: 'Angel of the Unspent' },
+    ],
+    ['angel', 'general', 'aetherblade lord angel', 'angel of the unspent'],
+  ),
+  e(
+    'Characters',
+    'Liora Veyne',
+    'Angel general of the Angel army',
+    'Angel general — Angel of the Quiet. The stillness that settles over a field before the host arrives.',
+    [
+      { label: 'Rank', value: 'Aetherblade Lord Angel' },
+      { label: 'Title', value: 'Angel of the Quiet' },
+    ],
+    ['angel', 'general', 'aetherblade lord angel', 'angel of the quiet'],
+  ),
+  e(
+    'Characters',
+    'Thalor Elwin',
+    'Angel general of the Angel army',
+    'Angel general — Angel of the Unkept. Keeper of oaths no one remembers, and one he broke himself.',
+    [
+      { label: 'Rank', value: 'Aetherblade Lord Angel' },
+      { label: 'Title', value: 'Angel of the Unkept' },
+    ],
+    ['angel', 'general', 'aetherblade lord angel', 'angel of the unkept'],
+  ),
+  e(
+    'Characters',
+    'Aranweis',
+    'Angel general of the Angel army',
+    'Angel general — Angel of the Still. Watches without moving; his vigil never ends.',
+    [
+      { label: 'Rank', value: 'Aetherblade Lord Angel' },
+      { label: 'Title', value: 'Angel of the Still' },
+    ],
+    ['angel', 'general', 'aetherblade lord angel', 'angel of the still'],
+  ),
+  e(
+    'Characters',
+    'Caedric Auroth',
+    'Angel general of the Angel army',
+    'Angel general — Angel of the Long Fall. Fell slowly from grace, and has been falling since.',
+    [
+      { label: 'Rank', value: 'Aetherblade Lord Angel' },
+      { label: 'Title', value: 'Angel of the Long Fall' },
+    ],
+    ['angel', 'general', 'aetherblade lord angel', 'angel of the long fall'],
+  ),
+  e(
+    'Titles',
+    'Demon of the Toll',
+    'The title of Kael Vornath',
+    'The title of Kael Vornath — Exacts a price from every soul that crosses the Demon army’s path.',
+    [
+      { label: 'Held by', value: 'Kael Vornath' },
+    ],
+    ['title', 'demon', 'general', 'kael vornath'],
+  ),
+  e(
+    'Titles',
+    'Demon of the Harvest',
+    'The title of Sythra Kaelis',
+    'The title of Sythra Kaelis — Reaps what the war sows, and keeps the best of it.',
+    [
+      { label: 'Held by', value: 'Sythra Kaelis' },
+    ],
+    ['title', 'demon', 'general', 'sythra kaelis'],
+  ),
+  e(
+    'Titles',
+    'Demon of Silence',
+    'The title of Drevos Malak',
+    'The title of Drevos Malak — Where he walks, battle-cries die in the throat.',
+    [
+      { label: 'Held by', value: 'Drevos Malak' },
+    ],
+    ['title', 'demon', 'general', 'drevos malak'],
+  ),
+  e(
+    'Titles',
+    'Demon of the Thirst',
+    'The title of Nyra Thessan',
+    'The title of Nyra Thessan — An endless hunger that no victory has ever slaked.',
+    [
+      { label: 'Held by', value: 'Nyra Thessan' },
+    ],
+    ['title', 'demon', 'general', 'nyra thessan'],
+  ),
+  e(
+    'Titles',
+    'Demon of the Hollow',
+    'The title of Othrek Veyne',
+    'The title of Othrek Veyne — What remains after everything has been taken away.',
+    [
+      { label: 'Held by', value: 'Othrek Veyne' },
+    ],
+    ['title', 'demon', 'general', 'othrek veyne'],
+  ),
+  e(
+    'Titles',
+    'Demon of the Debt',
+    'The title of Ilsa Marrek',
+    'The title of Ilsa Marrek — Collects what is owed — in blood, always.',
+    [
+      { label: 'Held by', value: 'Ilsa Marrek' },
+    ],
+    ['title', 'demon', 'general', 'ilsa marrek'],
+  ),
+  e(
+    'Titles',
+    'Angel of the Distant',
+    'The title of Cyrion',
+    'The title of Cyrion — Guards the far edge of heaven where the host does not march.',
+    [
+      { label: 'Held by', value: 'Cyrion' },
+    ],
+    ['title', 'angel', 'general', 'cyrion'],
+  ),
+  e(
+    'Titles',
+    'Angel of the Unspent',
+    'The title of Serathiel',
+    'The title of Serathiel — Her strength never depletes while a drop of Veyn remains.',
+    [
+      { label: 'Held by', value: 'Serathiel' },
+    ],
+    ['title', 'angel', 'general', 'serathiel'],
+  ),
+  e(
+    'Titles',
+    'Angel of the Quiet',
+    'The title of Liora Veyne',
+    'The title of Liora Veyne — The stillness that settles over a field before the host arrives.',
+    [
+      { label: 'Held by', value: 'Liora Veyne' },
+    ],
+    ['title', 'angel', 'general', 'liora veyne'],
+  ),
+  e(
+    'Titles',
+    'Angel of the Unkept',
+    'The title of Thalor Elwin',
+    'The title of Thalor Elwin — Keeper of oaths no one remembers, and one he broke himself.',
+    [
+      { label: 'Held by', value: 'Thalor Elwin' },
+    ],
+    ['title', 'angel', 'general', 'thalor elwin'],
+  ),
+  e(
+    'Titles',
+    'Angel of the Still',
+    'The title of Aranweis',
+    'The title of Aranweis — Watches without moving; his vigil never ends.',
+    [
+      { label: 'Held by', value: 'Aranweis' },
+    ],
+    ['title', 'angel', 'general', 'aranweis'],
+  ),
+  e(
+    'Titles',
+    'Angel of the Long Fall',
+    'The title of Caedric Auroth',
+    'The title of Caedric Auroth — Fell slowly from grace, and has been falling since.',
+    [
+      { label: 'Held by', value: 'Caedric Auroth' },
+    ],
+    ['title', 'angel', 'general', 'caedric auroth'],
+  ),
 ];
