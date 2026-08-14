@@ -3605,5 +3605,30 @@
     ],
     "createdAt": "2026-08-14T00:00:00.000Z",
     "updatedAt": "2026-08-14T00:00:00.000Z"
+  },
+  {
+    "id": "seed-187",
+    "category": "Titles",
+    "name": "Crown-less",
+    "subtitle": "A title for Lisa, the top Bloodward who never wore the crown",
+    "description": "A title borne by Lisa: she held the highest Bloodward seat, the strongest demon in the Demon Realm after the Mordrach, yet never wore the Mordrach’s crown herself. “Crown-less” names the one who stands just beneath the throne — powerful enough to be feared, but denied the crown, and who ultimately chose her son over the rank.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Lisa"
+      },
+      {
+        "label": "Meaning",
+        "value": "The one beneath the Mordrach’s crown — second only to the ruler, yet never crowned."
+      }
+    ],
+    "tags": [
+      "title",
+      "crown-less",
+      "lisa",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

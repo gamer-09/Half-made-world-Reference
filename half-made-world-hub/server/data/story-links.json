@@ -2232,5 +2232,15 @@
     "color": "",
     "createdAt": "2026-08-14T12:27:51.787Z",
     "updatedAt": "2026-08-14T12:27:51.787Z"
+  },
+  {
+    "id": "link-seed-199",
+    "source": "Crown-less",
+    "target": "Lisa",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Crown-less” is borne by Lisa — the strongest Bloodward after the Mordrach, who never wore the crown herself.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

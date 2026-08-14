@@ -260,4 +260,7 @@ module.exports = [
 
   // --- Head Master of the Academy (doc: "the Head master of the academy" + comment 126) ---
   s('Head Master of the Academy', 'Academy', 'head master of', 'Head Master of', 'The sole survivor of the old race killed by the former Human Realm ruler is the academy’s Head Master (comment 126).'),
+
+  // --- Title: Crown-less, borne by Lisa ---
+  s('Crown-less', 'Lisa', 'held by', 'Held by', 'The title “Crown-less” is borne by Lisa — the strongest Bloodward after the Mordrach, who never wore the crown herself.'),
 ];

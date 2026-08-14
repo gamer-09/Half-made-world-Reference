@@ -1405,4 +1405,16 @@ module.exports = [
     ],
     ['angel', 'vow', 'fallen', 'broken halo', 'breaking'],
   ),
+
+  e(
+    'Titles',
+    'Crown-less',
+    'A title for Lisa, the top Bloodward who never wore the crown',
+    'A title borne by Lisa: she held the highest Bloodward seat, the strongest demon in the Demon Realm after the Mordrach, yet never wore the Mordrach’s crown herself. “Crown-less” names the one who stands just beneath the throne — powerful enough to be feared, but denied the crown, and who ultimately chose her son over the rank.',
+    [
+      { label: 'Held by', value: 'Lisa' },
+      { label: 'Meaning', value: 'The one beneath the Mordrach’s crown — second only to the ruler, yet never crowned.' },
+    ],
+    ['title', 'crown-less', 'lisa', 'bloodward'],
+  ),
 ];
