@@ -1579,7 +1579,7 @@ module.exports = [
     'Characters',
     'Aranweis',
     'Angel general — Sixth Pillar',
-    'The Sixth Pillar — the watcher who keeps vigil over the realms’ gates from afar. Where the Shudon, the stone golems made from the world’s core, once stood guard over every realm entrance before they fell still, Aranweis watches on from a distance, his hundred-eyed gaze missing nothing that passes through a gate. He sees everything that enters or leaves a realm, and he forgets none of it.',
+    'The Sixth Pillar — the personal guard of the Serapharch, the first-rank ruler of the Angel Realm. Aranweis is the king’s own watcher, standing always within reach of the throne, his hundred-eyed gaze missing nothing. He has seen every supplicant, every messenger, and every traitor who ever came before the king, and he forgets none of them.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
       { label: 'Title', value: 'Sixth Pillar, Argous' },
