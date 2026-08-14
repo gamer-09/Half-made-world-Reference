@@ -2121,6 +2121,10 @@
       {
         "label": "Pillar",
         "value": "First Pillar"
+      },
+      {
+        "label": "Skills",
+        "value": "Lapse, Rewind, Still Hour"
       }
     ],
     "tags": [
@@ -3899,6 +3903,10 @@
       {
         "label": "Pillar",
         "value": "Second Pillar"
+      },
+      {
+        "label": "Skills",
+        "value": "Long Sight, Burning Path, Second Sun"
       }
     ],
     "tags": [
@@ -3929,6 +3937,10 @@
       {
         "label": "Pillar",
         "value": "Third Pillar"
+      },
+      {
+        "label": "Skills",
+        "value": "Battle Trance, Ravager’s Grasp, War-Worn"
       }
     ],
     "tags": [
@@ -3959,6 +3971,10 @@
       {
         "label": "Pillar",
         "value": "Fourth Pillar"
+      },
+      {
+        "label": "Skills",
+        "value": "Dread-Herald, Unheralded, Kneel"
       }
     ],
     "tags": [
@@ -3989,6 +4005,10 @@
       {
         "label": "Pillar",
         "value": "Fifth Pillar"
+      },
+      {
+        "label": "Skills",
+        "value": "Altar-Rite, Oath-Curse, True-Witness"
       }
     ],
     "tags": [
@@ -4019,6 +4039,10 @@
       {
         "label": "Pillar",
         "value": "Sixth Pillar"
+      },
+      {
+        "label": "Skills",
+        "value": "All-Seeing Eye, Warden’s Recall, Warden’s Mark"
       }
     ],
     "tags": [
@@ -4483,6 +4507,276 @@
       "skill",
       "demon",
       "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-245",
+    "category": "Angel Skills",
+    "name": "Lapse",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Slows the flow of a single moment around a target.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-246",
+    "category": "Angel Skills",
+    "name": "Rewind",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Undoes the last few seconds of a wound he just took.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-247",
+    "category": "Angel Skills",
+    "name": "Still Hour",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Locks a target in the instant between one breath and the next.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-248",
+    "category": "Angel Skills",
+    "name": "Long Sight",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Sees clearly across the far edge of the realm, spotting a threat before it draws near.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-249",
+    "category": "Angel Skills",
+    "name": "Burning Path",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Leaves a line of light on the ground that scorches whoever crosses it.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-250",
+    "category": "Angel Skills",
+    "name": "Second Sun",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Conjures a hovering light that blinds and marks a single target.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-251",
+    "category": "Angel Skills",
+    "name": "Battle Trance",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Enters a trance where pain cannot slow her.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-252",
+    "category": "Angel Skills",
+    "name": "Ravager’s Grasp",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Wrenches a weapon or shield from an enemy’s grip.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-253",
+    "category": "Angel Skills",
+    "name": "War-Worn",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Her body grows harder with every wound she takes.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-254",
+    "category": "Angel Skills",
+    "name": "Dread-Herald",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Speaks a single word that plants a growing fear in a target.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-255",
+    "category": "Angel Skills",
+    "name": "Unheralded",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Appears without warning where she is least expected.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-256",
+    "category": "Angel Skills",
+    "name": "Kneel",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Forces a target to their knees under the weight of pure dread.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-257",
+    "category": "Angel Skills",
+    "name": "Altar-Rite",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Allows him to call upon the Sundering Altar to bind a spoken vow.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-258",
+    "category": "Angel Skills",
+    "name": "Oath-Curse",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Curses whoever breaks a vow sworn before him.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-259",
+    "category": "Angel Skills",
+    "name": "True-Witness",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Senses the moment a vow is spoken falsely.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-260",
+    "category": "Angel Skills",
+    "name": "All-Seeing Eye",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Sees everything within his watch at once, missing nothing.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-261",
+    "category": "Angel Skills",
+    "name": "Warden’s Recall",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Recalls in perfect detail anything he has ever witnessed.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-262",
+    "category": "Angel Skills",
+    "name": "Warden’s Mark",
+    "subtitle": "Aetherblade Lord Angel skill",
+    "description": "Marks an intruder so he can track them anywhere in the realm.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "angel",
+      "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"

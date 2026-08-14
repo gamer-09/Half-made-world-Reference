@@ -2542,5 +2542,185 @@
     "description": "One of the Demon of usurpation’s abilities.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-245",
+    "source": "Lapse",
+    "target": "First Pillar, Chronous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the First Pillar, Chronous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-246",
+    "source": "Rewind",
+    "target": "First Pillar, Chronous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the First Pillar, Chronous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-247",
+    "source": "Still Hour",
+    "target": "First Pillar, Chronous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the First Pillar, Chronous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-248",
+    "source": "Long Sight",
+    "target": "Second Pillar, Helious",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Second Pillar, Helious’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-249",
+    "source": "Burning Path",
+    "target": "Second Pillar, Helious",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Second Pillar, Helious’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-250",
+    "source": "Second Sun",
+    "target": "Second Pillar, Helious",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Second Pillar, Helious’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-251",
+    "source": "Battle Trance",
+    "target": "Third Pillar, Areous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Third Pillar, Areous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-252",
+    "source": "Ravager’s Grasp",
+    "target": "Third Pillar, Areous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Third Pillar, Areous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-253",
+    "source": "War-Worn",
+    "target": "Third Pillar, Areous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Third Pillar, Areous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-254",
+    "source": "Dread-Herald",
+    "target": "Fourth Pillar, Deimous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Fourth Pillar, Deimous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-255",
+    "source": "Unheralded",
+    "target": "Fourth Pillar, Deimous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Fourth Pillar, Deimous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-256",
+    "source": "Kneel",
+    "target": "Fourth Pillar, Deimous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Fourth Pillar, Deimous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-257",
+    "source": "Altar-Rite",
+    "target": "Fifth Pillar, Horkous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Fifth Pillar, Horkous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-258",
+    "source": "Oath-Curse",
+    "target": "Fifth Pillar, Horkous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Fifth Pillar, Horkous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-259",
+    "source": "True-Witness",
+    "target": "Fifth Pillar, Horkous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Fifth Pillar, Horkous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-260",
+    "source": "All-Seeing Eye",
+    "target": "Sixth Pillar, Argous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Sixth Pillar, Argous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-261",
+    "source": "Warden’s Recall",
+    "target": "Sixth Pillar, Argous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Sixth Pillar, Argous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-262",
+    "source": "Warden’s Mark",
+    "target": "Sixth Pillar, Argous",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Sixth Pillar, Argous’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]
