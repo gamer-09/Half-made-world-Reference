@@ -1566,7 +1566,7 @@ module.exports = [
     'Characters',
     'Thalor Elwin',
     'Angel general — Fifth Pillar',
-    'The Fifth Pillar. He keeps the Angel Realm’s oaths — the one who records every Veyn Vow sworn and watches for the first sign that one is fraying. He saw the signs in Ordium long before he left: a vow pulled thin by something it was never meant to contain. He said nothing then, and has spent every day since wondering whether a single word from him could have stopped all of it.',
+    'The Fifth Pillar — the guardian of the Sundering Altar, where every person in the world is brought at fifteen to have their latent connection to Veyn unlocked for the first time. Angels swear their Veyn Vow there, and it is where each halo first forms. Thalor records every vow sworn at the altar and watches for the first sign that one is fraying. He saw the signs in Ordium long before he left: a vow pulled thin by something it was never meant to contain. He said nothing then, and has spent every day since wondering whether a single word from him could have stopped all of it.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
       { label: 'Title', value: 'Fifth Pillar, Horkous' },
@@ -1579,7 +1579,7 @@ module.exports = [
     'Characters',
     'Aranweis',
     'Angel general — Sixth Pillar',
-    'The Sixth Pillar. He stands watch over the Sundering Altar, where every angel’s vow is sworn at fifteen. He has seen a thousand halos form and a handful shatter, and he is the only one in the realm who has watched both.',
+    'The Sixth Pillar — the watcher who keeps vigil over the realms’ gates from afar. Where the Shudon, the stone golems made from the world’s core, once stood guard over every realm entrance before they fell still, Aranweis watches on from a distance, his hundred-eyed gaze missing nothing that passes through a gate. He sees everything that enters or leaves a realm, and he forgets none of it.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
       { label: 'Title', value: 'Sixth Pillar, Argous' },
