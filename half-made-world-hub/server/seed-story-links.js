@@ -266,7 +266,7 @@ module.exports = [
 
   // --- Titles & generals ---
   s('Demon of Abundance', 'Lisa', 'held by', 'Held by', 'A title borne by Lisa — the strongest demon in the Demon Realm after the Mordrach, whose power overflows beyond a single body.'),
-  s('Chronous', 'Ordium', 'held by', 'Held by', 'The First Pillar of the Six Pillars of Angels — borne by Ordium, referencing Chronos, god of time.'),
+  s('First Pillar, Chronous', 'Ordium', 'held by', 'Held by', 'The First Pillar of the Six Pillars of Angels — borne by Ordium, referencing Chronos, god of time.'),
   s('Angel of the Vast', 'Aetherblade Lord Angel', 'held by', 'Held by', 'The widest reach beneath the throne, held by the Aetherblade Lord Angel.'),
   s('Demon of the Overflow', 'Bloodward', 'held by', 'Held by', 'Power beyond a single vessel — the Bloodward’s surfeit of Veyn.'),
   s('Jester demon', 'Kael Vornath', 'held by', 'Held by', 'The title “Demon of the Toll” is borne by Kael Vornath — Exacts a price from every soul that crosses the Demon army’s path.'),
@@ -274,11 +274,11 @@ module.exports = [
   s('Demon of gluttony', 'Nyra Thessan', 'held by', 'Held by', 'The title “Demon of gluttony” is borne by Nyra Thessan — the general who devours magic and is never filled.'),
   s('Demon of usurpation', 'Othrek Veyne', 'held by', 'Held by', 'The title “Demon of usurpation” is borne by Othrek Veyne — the general who rose by taking what belonged to others.'),
   s('Demon of love', 'Isella Marrek', 'held by', 'Held by', 'The title “Demon of the Debt” is borne by Ilsa Marrek — Collects what is owed — in blood, always.'),
-  s('Helious', 'Cyrion', 'held by', 'Held by', 'The title “Helious” is borne by Cyrion — the Second Pillar of the Six Pillars of Angels.'),
-  s('Areous', 'Serathiel', 'held by', 'Held by', 'The title “Areous” is borne by Serathiel — the Third Pillar of the Six Pillars of Angels.'),
-  s('Deimous', 'Liora Veyne', 'held by', 'Held by', 'The title “Deimous” is borne by Liora Veyne — the Fourth Pillar of the Six Pillars of Angels.'),
-  s('Horkous', 'Thalor Elwin', 'held by', 'Held by', 'The title “Horkous” is borne by Thalor Elwin — the Fifth Pillar of the Six Pillars of Angels.'),
-  s('Argous', 'Aranweis', 'held by', 'Held by', 'The title “Argous” is borne by Aranweis — the Sixth Pillar of the Six Pillars of Angels.'),
+  s('Second Pillar, Helious', 'Cyrion', 'held by', 'Held by', 'The title “Helious” is borne by Cyrion — the Second Pillar of the Six Pillars of Angels.'),
+  s('Third Pillar, Areous', 'Serathiel', 'held by', 'Held by', 'The title “Areous” is borne by Serathiel — the Third Pillar of the Six Pillars of Angels.'),
+  s('Fourth Pillar, Deimous', 'Liora Veyne', 'held by', 'Held by', 'The title “Deimous” is borne by Liora Veyne — the Fourth Pillar of the Six Pillars of Angels.'),
+  s('Fifth Pillar, Horkous', 'Thalor Elwin', 'held by', 'Held by', 'The title “Horkous” is borne by Thalor Elwin — the Fifth Pillar of the Six Pillars of Angels.'),
+  s('Sixth Pillar, Argous', 'Aranweis', 'held by', 'Held by', 'The title “Argous” is borne by Aranweis — the Sixth Pillar of the Six Pillars of Angels.'),
 
   // --- Title: Demon of the Bloodhound, borne by Licent Varak ---
   s('Demon of the Bloodhound', 'Licent Varak', 'held by', 'Held by', 'The title “Demon of the Bloodhound” is borne by Licent Varak — he hunts a scent to its end and never lets it go.'),

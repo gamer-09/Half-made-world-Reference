@@ -697,7 +697,7 @@ module.exports = [
     'The First Pillar — the highest-ranked of the six angel generals, the one the others took their orders from. He met Lisa and left his post for nine months. When the rulers called him back, they ordered him executed for lying with a demon. The First Pillar fell, and the five beneath him were never the same after.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
-      { label: 'Title', value: 'Chronous' },
+      { label: 'Title', value: 'First Pillar, Chronous' },
       { label: 'Pillar', value: 'First Pillar' },
     ],
     ['character', 'ordium', 'father', 'angel', 'general', 'pillar'],
@@ -1434,8 +1434,8 @@ module.exports = [
   ),
   e(
     'Titles',
-    'Chronous',
-    'First Pillar',
+    'First Pillar, Chronous',
+    'Chronos, god of time',
     'The First Pillar of the Six Pillars of Angels — borne by Ordium, referencing Chronos, god of time.',
     [
       { label: 'Held by', value: 'Ordium' },
@@ -1529,7 +1529,7 @@ module.exports = [
     'The Second Pillar. He watches the far edge of the Angel Realm, where the host does not march. He saw Ordium slip away the first time and said nothing — and he has kept the secret of Jaiden’s parentage ever since, not out of loyalty, but because he doesn’t report what he hasn’t decided to act on.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
-      { label: 'Title', value: 'Helious' },
+      { label: 'Title', value: 'Second Pillar, Helious' },
       { label: 'Pillar', value: 'Second Pillar' },
     ],
     ['angel', 'general', 'aetherblade lord angel', 'helious', 'pillar'],
@@ -1541,7 +1541,7 @@ module.exports = [
     'The Third Pillar — the bulwark who never retreats, and no one has ever thanked her for it. When Ordium abandoned his post, she was next in line for his seat, and she resents that he threw away a rank she would have bled to hold.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
-      { label: 'Title', value: 'Areous' },
+      { label: 'Title', value: 'Third Pillar, Areous' },
       { label: 'Pillar', value: 'Third Pillar' },
     ],
     ['angel', 'general', 'aetherblade lord angel', 'areous', 'pillar'],
@@ -1553,7 +1553,7 @@ module.exports = [
     'The Fourth Pillar. She carries the bad news, and she is never wrong. It was Liora who brought the execution order to Ordium’s door, in the same soft voice she uses to announce a dawn. The soldiers say the dread before a battle is her, arriving first.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
-      { label: 'Title', value: 'Deimous' },
+      { label: 'Title', value: 'Fourth Pillar, Deimous' },
       { label: 'Pillar', value: 'Fourth Pillar' },
     ],
     ['angel', 'general', 'aetherblade lord angel', 'deimous', 'pillar'],
@@ -1565,7 +1565,7 @@ module.exports = [
     'The Fifth Pillar. He keeps the Angel Realm’s oaths — the one who records every Veyn Vow sworn and watches for the first sign that one is fraying. He saw the signs in Ordium long before he left: a vow pulled thin by something it was never meant to contain. He said nothing then, and has spent every day since wondering whether a single word from him could have stopped all of it.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
-      { label: 'Title', value: 'Horkous' },
+      { label: 'Title', value: 'Fifth Pillar, Horkous' },
       { label: 'Pillar', value: 'Fifth Pillar' },
     ],
     ['angel', 'general', 'aetherblade lord angel', 'horkous', 'pillar'],
@@ -1577,7 +1577,7 @@ module.exports = [
     'The Sixth Pillar. He stands watch over the Sundering Altar, where every angel’s vow is sworn at fifteen. He has seen a thousand halos form and a handful shatter, and he is the only one in the realm who has watched both.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
-      { label: 'Title', value: 'Argous' },
+      { label: 'Title', value: 'Sixth Pillar, Argous' },
       { label: 'Pillar', value: 'Sixth Pillar' },
     ],
     ['angel', 'general', 'aetherblade lord angel', 'argous', 'pillar'],
@@ -1634,8 +1634,8 @@ module.exports = [
   ),
   e(
     'Titles',
-    'Helious',
-    'Second Pillar',
+    'Second Pillar, Helious',
+    'Helios, the all-seeing sun',
     'The Second Pillar of the Six Pillars of Angels — borne by Cyrion, referencing Helios, the all-seeing sun.',
     [
       { label: 'Held by', value: 'Cyrion' },
@@ -1644,8 +1644,8 @@ module.exports = [
   ),
   e(
     'Titles',
-    'Areous',
-    'Third Pillar',
+    'Third Pillar, Areous',
+    'Ares, god of war',
     'The Third Pillar of the Six Pillars of Angels — borne by Serathiel, referencing Ares, god of war.',
     [
       { label: 'Held by', value: 'Serathiel' },
@@ -1654,8 +1654,8 @@ module.exports = [
   ),
   e(
     'Titles',
-    'Deimous',
-    'Fourth Pillar',
+    'Fourth Pillar, Deimous',
+    'Deimos, dread personified',
     'The Fourth Pillar of the Six Pillars of Angels — borne by Liora Veyne, referencing Deimos, dread personified.',
     [
       { label: 'Held by', value: 'Liora Veyne' },
@@ -1664,8 +1664,8 @@ module.exports = [
   ),
   e(
     'Titles',
-    'Horkous',
-    'Fifth Pillar',
+    'Fifth Pillar, Horkous',
+    'Horkos, god of oaths',
     'The Fifth Pillar of the Six Pillars of Angels — borne by Thalor Elwin, referencing Horkos, god of oaths.',
     [
       { label: 'Held by', value: 'Thalor Elwin' },
@@ -1674,8 +1674,8 @@ module.exports = [
   ),
   e(
     'Titles',
-    'Argous',
-    'Sixth Pillar',
+    'Sixth Pillar, Argous',
+    'Argus, the hundred-eyed watcher',
     'The Sixth Pillar of the Six Pillars of Angels — borne by Aranweis, referencing Argus, the hundred-eyed watcher.',
     [
       { label: 'Held by', value: 'Aranweis' },

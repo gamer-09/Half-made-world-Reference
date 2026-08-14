@@ -2116,7 +2116,7 @@
       },
       {
         "label": "Title",
-        "value": "Chronous"
+        "value": "First Pillar, Chronous"
       },
       {
         "label": "Pillar",
@@ -3671,8 +3671,8 @@
   {
     "id": "seed-189",
     "category": "Titles",
-    "name": "Chronous",
-    "subtitle": "First Pillar",
+    "name": "First Pillar, Chronous",
+    "subtitle": "Chronos, god of time",
     "description": "The First Pillar of the Six Pillars of Angels — borne by Ordium, referencing Chronos, god of time.",
     "fields": [
       {
@@ -3894,7 +3894,7 @@
       },
       {
         "label": "Title",
-        "value": "Helious"
+        "value": "Second Pillar, Helious"
       },
       {
         "label": "Pillar",
@@ -3924,7 +3924,7 @@
       },
       {
         "label": "Title",
-        "value": "Areous"
+        "value": "Third Pillar, Areous"
       },
       {
         "label": "Pillar",
@@ -3954,7 +3954,7 @@
       },
       {
         "label": "Title",
-        "value": "Deimous"
+        "value": "Fourth Pillar, Deimous"
       },
       {
         "label": "Pillar",
@@ -3984,7 +3984,7 @@
       },
       {
         "label": "Title",
-        "value": "Horkous"
+        "value": "Fifth Pillar, Horkous"
       },
       {
         "label": "Pillar",
@@ -4014,7 +4014,7 @@
       },
       {
         "label": "Title",
-        "value": "Argous"
+        "value": "Sixth Pillar, Argous"
       },
       {
         "label": "Pillar",
@@ -4139,8 +4139,8 @@
   {
     "id": "seed-220",
     "category": "Titles",
-    "name": "Helious",
-    "subtitle": "Second Pillar",
+    "name": "Second Pillar, Helious",
+    "subtitle": "Helios, the all-seeing sun",
     "description": "The Second Pillar of the Six Pillars of Angels — borne by Cyrion, referencing Helios, the all-seeing sun.",
     "fields": [
       {
@@ -4160,8 +4160,8 @@
   {
     "id": "seed-221",
     "category": "Titles",
-    "name": "Areous",
-    "subtitle": "Third Pillar",
+    "name": "Third Pillar, Areous",
+    "subtitle": "Ares, god of war",
     "description": "The Third Pillar of the Six Pillars of Angels — borne by Serathiel, referencing Ares, god of war.",
     "fields": [
       {
@@ -4181,8 +4181,8 @@
   {
     "id": "seed-222",
     "category": "Titles",
-    "name": "Deimous",
-    "subtitle": "Fourth Pillar",
+    "name": "Fourth Pillar, Deimous",
+    "subtitle": "Deimos, dread personified",
     "description": "The Fourth Pillar of the Six Pillars of Angels — borne by Liora Veyne, referencing Deimos, dread personified.",
     "fields": [
       {
@@ -4202,8 +4202,8 @@
   {
     "id": "seed-223",
     "category": "Titles",
-    "name": "Horkous",
-    "subtitle": "Fifth Pillar",
+    "name": "Fifth Pillar, Horkous",
+    "subtitle": "Horkos, god of oaths",
     "description": "The Fifth Pillar of the Six Pillars of Angels — borne by Thalor Elwin, referencing Horkos, god of oaths.",
     "fields": [
       {
@@ -4223,8 +4223,8 @@
   {
     "id": "seed-224",
     "category": "Titles",
-    "name": "Argous",
-    "subtitle": "Sixth Pillar",
+    "name": "Sixth Pillar, Argous",
+    "subtitle": "Argus, the hundred-eyed watcher",
     "description": "The Sixth Pillar of the Six Pillars of Angels — borne by Aranweis, referencing Argus, the hundred-eyed watcher.",
     "fields": [
       {

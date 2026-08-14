@@ -2255,7 +2255,7 @@
   },
   {
     "id": "link-seed-201",
-    "source": "Chronous",
+    "source": "First Pillar, Chronous",
     "target": "Ordium",
     "type": "held by",
     "label": "Held by",
@@ -2335,7 +2335,7 @@
   },
   {
     "id": "link-seed-220",
-    "source": "Helious",
+    "source": "Second Pillar, Helious",
     "target": "Cyrion",
     "type": "held by",
     "label": "Held by",
@@ -2345,7 +2345,7 @@
   },
   {
     "id": "link-seed-221",
-    "source": "Areous",
+    "source": "Third Pillar, Areous",
     "target": "Serathiel",
     "type": "held by",
     "label": "Held by",
@@ -2355,7 +2355,7 @@
   },
   {
     "id": "link-seed-222",
-    "source": "Deimous",
+    "source": "Fourth Pillar, Deimous",
     "target": "Liora Veyne",
     "type": "held by",
     "label": "Held by",
@@ -2365,7 +2365,7 @@
   },
   {
     "id": "link-seed-223",
-    "source": "Horkous",
+    "source": "Fifth Pillar, Horkous",
     "target": "Thalor Elwin",
     "type": "held by",
     "label": "Held by",
@@ -2375,7 +2375,7 @@
   },
   {
     "id": "link-seed-224",
-    "source": "Argous",
+    "source": "Sixth Pillar, Argous",
     "target": "Aranweis",
     "type": "held by",
     "label": "Held by",
