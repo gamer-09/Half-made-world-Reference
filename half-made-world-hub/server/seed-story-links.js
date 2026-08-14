@@ -266,21 +266,19 @@ module.exports = [
 
   // --- Titles & generals ---
   s('Demon of Abundance', 'Lisa', 'held by', 'Held by', 'A title borne by Lisa — the strongest demon in the Demon Realm after the Mordrach, whose power overflows beyond a single body.'),
-  s('Angel of Sovereignty', 'Ordium', 'held by', 'Held by', 'A title borne by Ordium — supreme authority, the right hand of the Angel Realm’s ruler.'),
+  s('Chronous', 'Ordium', 'held by', 'Held by', 'The First Pillar of the Six Pillars of Angels — borne by Ordium, referencing Chronos, god of time.'),
   s('Angel of the Vast', 'Aetherblade Lord Angel', 'held by', 'Held by', 'The widest reach beneath the throne, held by the Aetherblade Lord Angel.'),
   s('Demon of the Overflow', 'Bloodward', 'held by', 'Held by', 'Power beyond a single vessel — the Bloodward’s surfeit of Veyn.'),
   s('Jester demon', 'Kael Vornath', 'held by', 'Held by', 'The title “Demon of the Toll” is borne by Kael Vornath — Exacts a price from every soul that crosses the Demon army’s path.'),
   s('Demon of melancholy', 'Sythra Kaelis', 'held by', 'Held by', 'The title “Demon of the Harvest” is borne by Sythra Kaelis — Reaps what the war sows, and keeps the best of it.'),
-  s('Demon of the Veiled', 'Drevos Malak', 'held by', 'Held by', 'The title “Demon of the Veiled” is borne by Drevos Malak — the assassin-general who fights from behind the veil, unseen.'),
   s('Demon of gluttony', 'Nyra Thessan', 'held by', 'Held by', 'The title “Demon of gluttony” is borne by Nyra Thessan — the general who devours magic and is never filled.'),
   s('Demon of usurpation', 'Othrek Veyne', 'held by', 'Held by', 'The title “Demon of usurpation” is borne by Othrek Veyne — the general who rose by taking what belonged to others.'),
   s('Demon of love', 'Isella Marrek', 'held by', 'Held by', 'The title “Demon of the Debt” is borne by Ilsa Marrek — Collects what is owed — in blood, always.'),
-  s('Angel of the Distant', 'Cyrion', 'held by', 'Held by', 'The title “Angel of the Distant” is borne by Cyrion — Guards the far edge of heaven where the host does not march.'),
-  s('Angel of the Unspent', 'Serathiel', 'held by', 'Held by', 'The title “Angel of the Unspent” is borne by Serathiel — Her strength never depletes while a drop of Veyn remains.'),
-  s('Angel of the Quiet', 'Liora Veyne', 'held by', 'Held by', 'The title “Angel of the Quiet” is borne by Liora Veyne — The stillness that settles over a field before the host arrives.'),
-  s('Angel of the Unkept', 'Thalor Elwin', 'held by', 'Held by', 'The title “Angel of the Unkept” is borne by Thalor Elwin — Keeper of oaths no one remembers, and one he broke himself.'),
-  s('Angel of the Still', 'Aranweis', 'held by', 'Held by', 'The title “Angel of the Still” is borne by Aranweis — Watches without moving; his vigil never ends.'),
-  s('Angel of the Long Fall', 'Caedric Auroth', 'held by', 'Held by', 'The title “Angel of the Long Fall” is borne by Caedric Auroth — Fell slowly from grace, and has been falling since.'),
+  s('Helious', 'Cyrion', 'held by', 'Held by', 'The title “Helious” is borne by Cyrion — the Second Pillar of the Six Pillars of Angels.'),
+  s('Areous', 'Serathiel', 'held by', 'Held by', 'The title “Areous” is borne by Serathiel — the Third Pillar of the Six Pillars of Angels.'),
+  s('Deimous', 'Liora Veyne', 'held by', 'Held by', 'The title “Deimous” is borne by Liora Veyne — the Fourth Pillar of the Six Pillars of Angels.'),
+  s('Horkous', 'Thalor Elwin', 'held by', 'Held by', 'The title “Horkous” is borne by Thalor Elwin — the Fifth Pillar of the Six Pillars of Angels.'),
+  s('Argous', 'Aranweis', 'held by', 'Held by', 'The title “Argous” is borne by Aranweis — the Sixth Pillar of the Six Pillars of Angels.'),
 
   // --- Title: Demon of the Bloodhound, borne by Licent Varak ---
   s('Demon of the Bloodhound', 'Licent Varak', 'held by', 'Held by', 'The title “Demon of the Bloodhound” is borne by Licent Varak — he hunts a scent to its end and never lets it go.'),
@@ -297,9 +295,6 @@ module.exports = [
   s('Bond-Sight', 'Demon of love', 'skill of', 'Skill of', 'One of Isella Marrek’s abilities — the Demon of love.'),
 
   // --- General skills, linked to their titles ---
-  s('Grey Step', 'Demon of the Veiled', 'skill of', 'Skill of', 'One of the Demon of the Veiled’s abilities.'),
-  s('False Stillness', 'Demon of the Veiled', 'skill of', 'Skill of', 'One of the Demon of the Veiled’s abilities.'),
-  s('Venom Edge', 'Demon of the Veiled', 'skill of', 'Skill of', 'One of the Demon of the Veiled’s abilities.'),
   s('Siphon', 'Demon of gluttony', 'skill of', 'Skill of', 'One of the Demon of gluttony’s abilities.'),
   s('Unslaked', 'Demon of gluttony', 'skill of', 'Skill of', 'One of the Demon of gluttony’s abilities.'),
   s('Seal', 'Demon of gluttony', 'skill of', 'Skill of', 'One of the Demon of gluttony’s abilities.'),

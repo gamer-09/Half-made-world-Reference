@@ -2097,7 +2097,8 @@
       "lisa",
       "mother",
       "bloodward",
-      "demon"
+      "demon",
+      "general"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -2112,13 +2113,24 @@
       {
         "label": "Rank",
         "value": "Aetherblade Lord Angel"
+      },
+      {
+        "label": "Title",
+        "value": "Chronous"
+      },
+      {
+        "label": "Pillar",
+        "value": "First Pillar"
       }
     ],
     "tags": [
       "character",
       "ordium",
       "father",
-      "angel"
+      "angel",
+      "chronous",
+      "pillar",
+      "general"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -3659,9 +3671,9 @@
   {
     "id": "seed-189",
     "category": "Titles",
-    "name": "Angel of Sovereignty",
-    "subtitle": "Supreme authority",
-    "description": "A title borne by Ordium — supreme authority, the right hand of the Angel Realm’s ruler.",
+    "name": "Chronous",
+    "subtitle": "First Pillar",
+    "description": "The First Pillar of the Six Pillars of Angels — borne by Ordium, referencing Chronos, god of time.",
     "fields": [
       {
         "label": "Held by",
@@ -3670,9 +3682,9 @@
     ],
     "tags": [
       "title",
-      "sovereignty",
-      "ordium",
-      "angel"
+      "angel",
+      "pillar",
+      "ordium"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -3780,36 +3792,6 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-204",
-    "category": "Characters",
-    "name": "Drevos Malak",
-    "subtitle": "Demon general of the Demon army",
-    "description": "An assassin-general who fights in the space between the battle and the dark. He doesn’t win battles — he ends them before they begin, removing the one voice that could have rallied the rest, all from behind the veil where no one ever sees him.",
-    "fields": [
-      {
-        "label": "Rank",
-        "value": "Bloodward"
-      },
-      {
-        "label": "Title",
-        "value": "Demon of the Veiled"
-      },
-      {
-        "label": "Skills",
-        "value": "Grey Step, False Stillness, Venom Edge"
-      }
-    ],
-    "tags": [
-      "demon",
-      "general",
-      "bloodward",
-      "veiled",
-      "drevos malak"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
     "id": "seed-205",
     "category": "Characters",
     "name": "Nyra Thessan",
@@ -3912,14 +3894,19 @@
       },
       {
         "label": "Title",
-        "value": "Angel of the Distant"
+        "value": "Helious"
+      },
+      {
+        "label": "Pillar",
+        "value": "Second Pillar"
       }
     ],
     "tags": [
       "angel",
       "general",
       "aetherblade lord angel",
-      "angel of the distant"
+      "helious",
+      "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -3937,14 +3924,19 @@
       },
       {
         "label": "Title",
-        "value": "Angel of the Unspent"
+        "value": "Areous"
+      },
+      {
+        "label": "Pillar",
+        "value": "Third Pillar"
       }
     ],
     "tags": [
       "angel",
       "general",
       "aetherblade lord angel",
-      "angel of the unspent"
+      "areous",
+      "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -3962,14 +3954,19 @@
       },
       {
         "label": "Title",
-        "value": "Angel of the Quiet"
+        "value": "Deimous"
+      },
+      {
+        "label": "Pillar",
+        "value": "Fourth Pillar"
       }
     ],
     "tags": [
       "angel",
       "general",
       "aetherblade lord angel",
-      "angel of the quiet"
+      "deimous",
+      "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -3987,14 +3984,19 @@
       },
       {
         "label": "Title",
-        "value": "Angel of the Unkept"
+        "value": "Horkous"
+      },
+      {
+        "label": "Pillar",
+        "value": "Fifth Pillar"
       }
     ],
     "tags": [
       "angel",
       "general",
       "aetherblade lord angel",
-      "angel of the unkept"
+      "horkous",
+      "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -4012,39 +4014,19 @@
       },
       {
         "label": "Title",
-        "value": "Angel of the Still"
-      }
-    ],
-    "tags": [
-      "angel",
-      "general",
-      "aetherblade lord angel",
-      "angel of the still"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "seed-213",
-    "category": "Characters",
-    "name": "Caedric Auroth",
-    "subtitle": "Angel general of the Angel army",
-    "description": "Angel general — Angel of the Long Fall. Fell slowly from grace, and has been falling since.",
-    "fields": [
-      {
-        "label": "Rank",
-        "value": "Aetherblade Lord Angel"
+        "value": "Argous"
       },
       {
-        "label": "Title",
-        "value": "Angel of the Long Fall"
+        "label": "Pillar",
+        "value": "Sixth Pillar"
       }
     ],
     "tags": [
       "angel",
       "general",
       "aetherblade lord angel",
-      "angel of the long fall"
+      "argous",
+      "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -4087,27 +4069,6 @@
       "demon",
       "general",
       "sythra kaelis"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "seed-216",
-    "category": "Titles",
-    "name": "Demon of the Veiled",
-    "subtitle": "The title of Drevos Malak",
-    "description": "A title borne by Drevos Malak — the assassin-general who fights from behind the veil, unseen.",
-    "fields": [
-      {
-        "label": "Held by",
-        "value": "Drevos Malak"
-      }
-    ],
-    "tags": [
-      "title",
-      "demon",
-      "general",
-      "drevos malak"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -4178,9 +4139,9 @@
   {
     "id": "seed-220",
     "category": "Titles",
-    "name": "Angel of the Distant",
-    "subtitle": "The title of Cyrion",
-    "description": "The title of Cyrion — Guards the far edge of heaven where the host does not march.",
+    "name": "Helious",
+    "subtitle": "Second Pillar",
+    "description": "The Second Pillar of the Six Pillars of Angels — borne by Cyrion, referencing Helios, the all-seeing sun.",
     "fields": [
       {
         "label": "Held by",
@@ -4190,7 +4151,7 @@
     "tags": [
       "title",
       "angel",
-      "general",
+      "pillar",
       "cyrion"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
@@ -4199,9 +4160,9 @@
   {
     "id": "seed-221",
     "category": "Titles",
-    "name": "Angel of the Unspent",
-    "subtitle": "The title of Serathiel",
-    "description": "The title of Serathiel — Her strength never depletes while a drop of Veyn remains.",
+    "name": "Areous",
+    "subtitle": "Third Pillar",
+    "description": "The Third Pillar of the Six Pillars of Angels — borne by Serathiel, referencing Ares, god of war.",
     "fields": [
       {
         "label": "Held by",
@@ -4211,7 +4172,7 @@
     "tags": [
       "title",
       "angel",
-      "general",
+      "pillar",
       "serathiel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
@@ -4220,9 +4181,9 @@
   {
     "id": "seed-222",
     "category": "Titles",
-    "name": "Angel of the Quiet",
-    "subtitle": "The title of Liora Veyne",
-    "description": "The title of Liora Veyne — The stillness that settles over a field before the host arrives.",
+    "name": "Deimous",
+    "subtitle": "Fourth Pillar",
+    "description": "The Fourth Pillar of the Six Pillars of Angels — borne by Liora Veyne, referencing Deimos, dread personified.",
     "fields": [
       {
         "label": "Held by",
@@ -4232,7 +4193,7 @@
     "tags": [
       "title",
       "angel",
-      "general",
+      "pillar",
       "liora veyne"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
@@ -4241,9 +4202,9 @@
   {
     "id": "seed-223",
     "category": "Titles",
-    "name": "Angel of the Unkept",
-    "subtitle": "The title of Thalor Elwin",
-    "description": "The title of Thalor Elwin — Keeper of oaths no one remembers, and one he broke himself.",
+    "name": "Horkous",
+    "subtitle": "Fifth Pillar",
+    "description": "The Fifth Pillar of the Six Pillars of Angels — borne by Thalor Elwin, referencing Horkos, god of oaths.",
     "fields": [
       {
         "label": "Held by",
@@ -4253,7 +4214,7 @@
     "tags": [
       "title",
       "angel",
-      "general",
+      "pillar",
       "thalor elwin"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
@@ -4262,9 +4223,9 @@
   {
     "id": "seed-224",
     "category": "Titles",
-    "name": "Angel of the Still",
-    "subtitle": "The title of Aranweis",
-    "description": "The title of Aranweis — Watches without moving; his vigil never ends.",
+    "name": "Argous",
+    "subtitle": "Sixth Pillar",
+    "description": "The Sixth Pillar of the Six Pillars of Angels — borne by Aranweis, referencing Argus, the hundred-eyed watcher.",
     "fields": [
       {
         "label": "Held by",
@@ -4274,29 +4235,8 @@
     "tags": [
       "title",
       "angel",
-      "general",
+      "pillar",
       "aranweis"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "seed-225",
-    "category": "Titles",
-    "name": "Angel of the Long Fall",
-    "subtitle": "The title of Caedric Auroth",
-    "description": "The title of Caedric Auroth — Fell slowly from grace, and has been falling since.",
-    "fields": [
-      {
-        "label": "Held by",
-        "value": "Caedric Auroth"
-      }
-    ],
-    "tags": [
-      "title",
-      "angel",
-      "general",
-      "caedric auroth"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -4448,51 +4388,6 @@
     "name": "Bond-Sight",
     "subtitle": "Bloodward skill",
     "description": "She perceives the emotional bonds between people, seeing who loves whom.",
-    "fields": [],
-    "tags": [
-      "skill",
-      "demon",
-      "bloodward"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "seed-236",
-    "category": "Demon Skills",
-    "name": "Grey Step",
-    "subtitle": "Bloodward skill",
-    "description": "Allows him to move silently in the shadows.",
-    "fields": [],
-    "tags": [
-      "skill",
-      "demon",
-      "bloodward"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "seed-237",
-    "category": "Demon Skills",
-    "name": "False Stillness",
-    "subtitle": "Bloodward skill",
-    "description": "Makes an enclosed space that seems normal on the outside.",
-    "fields": [],
-    "tags": [
-      "skill",
-      "demon",
-      "bloodward"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "seed-238",
-    "category": "Demon Skills",
-    "name": "Venom Edge",
-    "subtitle": "Bloodward skill",
-    "description": "Creates daggers with poisoning effects on them.",
     "fields": [],
     "tags": [
       "skill",

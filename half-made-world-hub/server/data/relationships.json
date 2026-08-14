@@ -234,16 +234,6 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "rel-seed-019",
-    "source": "Drevos Malak",
-    "target": "Tera Morage",
-    "type": "serves",
-    "label": "Serves",
-    "description": "Drevos Malak is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
     "id": "rel-seed-020",
     "source": "Nyra Thessan",
     "target": "Tera Morage",
@@ -320,16 +310,6 @@
     "type": "serves",
     "label": "Serves",
     "description": "Aranweis is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "rel-seed-028",
-    "source": "Caedric Auroth",
-    "target": "Clint Ashborn",
-    "type": "serves",
-    "label": "Serves",
-    "description": "Caedric Auroth is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   }

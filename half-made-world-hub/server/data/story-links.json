@@ -2255,11 +2255,11 @@
   },
   {
     "id": "link-seed-201",
-    "source": "Angel of Sovereignty",
+    "source": "Chronous",
     "target": "Ordium",
     "type": "held by",
     "label": "Held by",
-    "description": "A title borne by Ordium — supreme authority, the right hand of the Angel Realm’s ruler.",
+    "description": "The title “Chronous” is borne by Ordium.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -2304,16 +2304,6 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "link-seed-216",
-    "source": "Demon of the Veiled",
-    "target": "Drevos Malak",
-    "type": "held by",
-    "label": "Held by",
-    "description": "The title “Demon of the Veiled” is borne by Drevos Malak.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
     "id": "link-seed-217",
     "source": "Demon of gluttony",
     "target": "Nyra Thessan",
@@ -2345,61 +2335,51 @@
   },
   {
     "id": "link-seed-220",
-    "source": "Angel of the Distant",
+    "source": "Helious",
     "target": "Cyrion",
     "type": "held by",
     "label": "Held by",
-    "description": "The title “Angel of the Distant” is borne by Cyrion — Guards the far edge of heaven where the host does not march.",
+    "description": "The title “Helious” is borne by Cyrion.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
     "id": "link-seed-221",
-    "source": "Angel of the Unspent",
+    "source": "Areous",
     "target": "Serathiel",
     "type": "held by",
     "label": "Held by",
-    "description": "The title “Angel of the Unspent” is borne by Serathiel — Her strength never depletes while a drop of Veyn remains.",
+    "description": "The title “Areous” is borne by Serathiel.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
     "id": "link-seed-222",
-    "source": "Angel of the Quiet",
+    "source": "Deimous",
     "target": "Liora Veyne",
     "type": "held by",
     "label": "Held by",
-    "description": "The title “Angel of the Quiet” is borne by Liora Veyne — The stillness that settles over a field before the host arrives.",
+    "description": "The title “Deimous” is borne by Liora Veyne.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
     "id": "link-seed-223",
-    "source": "Angel of the Unkept",
+    "source": "Horkous",
     "target": "Thalor Elwin",
     "type": "held by",
     "label": "Held by",
-    "description": "The title “Angel of the Unkept” is borne by Thalor Elwin — Keeper of oaths no one remembers, and one he broke himself.",
+    "description": "The title “Horkous” is borne by Thalor Elwin.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
     "id": "link-seed-224",
-    "source": "Angel of the Still",
+    "source": "Argous",
     "target": "Aranweis",
     "type": "held by",
     "label": "Held by",
-    "description": "The title “Angel of the Still” is borne by Aranweis — Watches without moving; his vigil never ends.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-225",
-    "source": "Angel of the Long Fall",
-    "target": "Caedric Auroth",
-    "type": "held by",
-    "label": "Held by",
-    "description": "The title “Angel of the Long Fall” is borne by Caedric Auroth — Fell slowly from grace, and has been falling since.",
+    "description": "The title “Argous” is borne by Aranweis.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -2500,36 +2480,6 @@
     "type": "skill of",
     "label": "Skill of",
     "description": "One of Isella Marrek’s abilities — the Demon of love.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-236",
-    "source": "Grey Step",
-    "target": "Demon of the Veiled",
-    "type": "skill of",
-    "label": "Skill of",
-    "description": "One of the Demon of the Veiled’s abilities.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-237",
-    "source": "False Stillness",
-    "target": "Demon of the Veiled",
-    "type": "skill of",
-    "label": "Skill of",
-    "description": "One of the Demon of the Veiled’s abilities.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-238",
-    "source": "Venom Edge",
-    "target": "Demon of the Veiled",
-    "type": "skill of",
-    "label": "Skill of",
-    "description": "One of the Demon of the Veiled’s abilities.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
