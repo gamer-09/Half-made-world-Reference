@@ -620,7 +620,7 @@ module.exports = [
     'Solvane, the Hallowed Edge',
     'The divine spear still in someone’s possession',
     'The only one of the two Divine Weapons still in someone’s possession rather than lost or sealed away. Unlike Vireth’s restless darkness or Virastra’s weightless calm, Solvane carries itself with quiet authority — its head long and narrow, more piercing than cutting, forged for a single decisive strike rather than a prolonged exchange. The metal holds a steady, clean light along its edge, similar in tone to Virastra’s, since neither has ever been corrupted — but where Virastra’s light feels ambient and calm, Solvane’s feels focused, almost gathered to a point, fitting a weapon built to be thrown or thrust with precision rather than swung. Will always return to the owner when thrown. A user bound weapon that can be passed down.',
-    [{ label: 'Weapon type', value: 'Divine Spear' }, { label: 'Notable', value: 'Always returns to the owner when thrown; user bound weapon that can be passed down.' }, { label: 'User-bound', value: 'Binds to the user’s soul — anyone else who tries to use it finds it becomes nothing more than a piece of metal.' }],
+    [{ label: 'Weapon type', value: 'Divine Spear' }, { label: 'Owner', value: 'Clint Ashborn — the current ruler of the Angel Realm.' }, { label: 'Notable', value: 'Always returns to the owner when thrown; user bound weapon that can be passed down.' }, { label: 'User-bound', value: 'Binds to the user’s soul — anyone else who tries to use it finds it becomes nothing more than a piece of metal.' }],
     ['artifact', 'spear', 'solvane', 'divine weapon'],
   ),
   e(
@@ -628,7 +628,7 @@ module.exports = [
     'Aerendrel, the Skybound Wrath',
     'The storm-strung bow of the Lethmoor vault',
     'A unique divine-adjacent bow, said to have been strung with a fragment of storm itself rather than ordinary sinew or Veyn. Those loosed from it don’t just pierce — they carry a violent surge of raw elemental force (lightning, wind, or pressure), which detonates on impact rather than simply striking true. Unlike a standard Archer’s Veyn-enchanted arrows, which are shaped and controlled, Aerendrel’s power is closer to a contained storm — difficult to fully master, and even harder to wield without some of that raw force spilling back onto the archer themselves. It doesn’t need arrows: the bow forms arrows from the user’s Veyn. Found in the chamber beneath Lethmoor’s throne chair.',
-    [{ label: 'Location', value: 'Vault of Lethmoor Kingdom (chamber beneath the throne chair)' }],
+    [{ label: 'Location', value: 'Vault of Lethmoor Kingdom (chamber beneath the throne chair)' }, { label: 'Note', value: '"Sinew" refers to a tendon — the tough, fibrous connective tissue that attaches muscle to bone.' }],
     ['artifact', 'bow', 'aerendrel', 'lethmoor'],
   ),
   e(
@@ -1392,5 +1392,17 @@ module.exports = [
       { label: 'Name', value: 'Not yet decided.' },
     ],
     ['academy', 'school', 'head master', 'hidden realm'],
+  ),
+
+  e(
+    'Angels',
+    'An Angel Breaking the vow',
+    'What happens when an angel’s vow shatters',
+    'The vow breaks when an angel disobeys someone above their rank, or pulls more Veyn than their vow allows to act against an order. Once it breaks, the halo can’t hold the channel steady and shatters, becoming the broken halo Fallen Angels are known for. The wings get affected too — the uncontrolled Veyn surging through them at that moment leaves permanent black spotting on the feathers: some end up with plain black spots, others with black cherry spotting, depending on how much Veyn surged through when it broke.',
+    [
+      { label: 'Trigger', value: 'Disobeying someone above their rank, or pulling more Veyn than the vow allows to act against an order.' },
+      { label: 'Result', value: 'The halo shatters, and the uncontrolled Veyn leaves permanent black or black-cherry spotting on the wings.' },
+    ],
+    ['angel', 'vow', 'fallen', 'broken halo', 'breaking'],
   ),
 ];

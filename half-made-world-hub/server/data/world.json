@@ -1905,6 +1905,10 @@
         "value": "Divine Spear"
       },
       {
+        "label": "Owner",
+        "value": "Clint Ashborn — the current ruler of the Angel Realm."
+      },
+      {
         "label": "Notable",
         "value": "Always returns to the owner when thrown; user bound weapon that can be passed down."
       },
@@ -1932,6 +1936,10 @@
       {
         "label": "Location",
         "value": "Vault of Lethmoor Kingdom (chamber beneath the throne chair)"
+      },
+      {
+        "label": "Note",
+        "value": "\"Sinew\" refers to a tendon — the tough, fibrous connective tissue that attaches muscle to bone."
       }
     ],
     "tags": [
@@ -3571,5 +3579,31 @@
     ],
     "createdAt": "2026-08-14T12:16:11.428Z",
     "updatedAt": "2026-08-14T12:16:31.116Z"
+  },
+  {
+    "id": "seed-186",
+    "category": "Angels",
+    "name": "An Angel Breaking the vow",
+    "subtitle": "What happens when an angel’s vow shatters",
+    "description": "The vow breaks when an angel disobeys someone above their rank, or pulls more Veyn than their vow allows to act against an order. Once it breaks, the halo can’t hold the channel steady and shatters, becoming the broken halo Fallen Angels are known for. The wings get affected too — the uncontrolled Veyn surging through them at that moment leaves permanent black spotting on the feathers: some end up with plain black spots, others with black cherry spotting, depending on how much Veyn surged through when it broke.",
+    "fields": [
+      {
+        "label": "Trigger",
+        "value": "Disobeying someone above their rank, or pulling more Veyn than the vow allows to act against an order."
+      },
+      {
+        "label": "Result",
+        "value": "The halo shatters, and the uncontrolled Veyn leaves permanent black or black-cherry spotting on the wings."
+      }
+    ],
+    "tags": [
+      "angel",
+      "vow",
+      "fallen",
+      "broken halo",
+      "breaking"
+    ],
+    "createdAt": "2026-08-14T00:00:00.000Z",
+    "updatedAt": "2026-08-14T00:00:00.000Z"
   }
 ]
