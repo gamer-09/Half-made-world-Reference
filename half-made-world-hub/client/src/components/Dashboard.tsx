@@ -1,4 +1,4 @@
-import type { CSSProperties } from 'react';
+import { useState, type CSSProperties } from 'react';
 import type { CategoryInfo, RecentEntry } from '../types';
 import { categoryColor } from '../theme';
 
@@ -25,6 +25,14 @@ export function Dashboard({
   onOpenEntry,
   onAdd,
 }: DashboardProps) {
+  const [tagQuery, setTagQuery] = useState('');
+
+  const filteredTags = (() => {
+    const q = tagQuery.trim().toLowerCase();
+    if (!q) return tags;
+    return tags.filter((t) => t.name.toLowerCase().includes(q));
+  })();
+
   return (
     <div className="dashboard">
       <section className="hero">
@@ -75,25 +83,36 @@ export function Dashboard({
       {tags.length > 0 && (
         <section className="dashboard-section">
           <h3 className="section-title">Tag Cloud</h3>
-          <p className="section-hint">Click a tag to filter the archive.</p>
-          <div className="tag-cloud">
-            {tags.map((tag) => {
-              const max = tags[0].count || 1;
-              const size = 0.85 + Math.min(0.65, (tag.count / max) * 0.65);
-              return (
-                <button
-                  key={tag.name}
-                  className="tag-cloud-item"
-                  style={{ fontSize: `${size}rem` }}
-                  onClick={() => onSelectTag(tag.name)}
-                  title={`${tag.count} entr${tag.count === 1 ? 'y' : 'ies'} tagged`}
-                >
-                  #{tag.name}
-                  <span className="tag-cloud-count">{tag.count}</span>
-                </button>
-              );
-            })}
-          </div>
+          <p className="section-hint">Search tags, or click one to filter the archive.</p>
+          <input
+            type="search"
+            className="input tag-search"
+            placeholder="Search tags…"
+            value={tagQuery}
+            onChange={(e) => setTagQuery(e.target.value)}
+          />
+          {filteredTags.length === 0 ? (
+            <p className="section-hint">No tags match “{tagQuery.trim()}”.</p>
+          ) : (
+            <div className="tag-cloud">
+              {filteredTags.map((tag) => {
+                const max = tags[0].count || 1;
+                const size = 0.85 + Math.min(0.65, (tag.count / max) * 0.65);
+                return (
+                  <button
+                    key={tag.name}
+                    className="tag-cloud-item"
+                    style={{ fontSize: `${size}rem` }}
+                    onClick={() => onSelectTag(tag.name)}
+                    title={`${tag.count} entr${tag.count === 1 ? 'y' : 'ies'} tagged`}
+                  >
+                    #{tag.name}
+                    <span className="tag-cloud-count">{tag.count}</span>
+                  </button>
+                );
+              })}
+            </div>
+          )}
         </section>
       )}
 
