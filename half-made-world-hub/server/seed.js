@@ -1473,7 +1473,7 @@ module.exports = [
       { label: 'Title', value: 'Jester demon' },
       { label: 'Skills', value: 'Red Whisper, Blood Jape, Traitor’s Step' },
     ],
-    ['demon', 'general', 'bloodward', 'jester demon', 'kael vornath'],
+    ['character', 'demon', 'general', 'bloodward', 'jester demon', 'kael vornath'],
   ),
   e(
     'Characters',
@@ -1485,7 +1485,7 @@ module.exports = [
       { label: 'Title', value: 'Demon of melancholy' },
       { label: 'Skills', value: 'Grey Miasma, Widow’s Toll, Fading Wound' },
     ],
-    ['demon', 'general', 'bloodward', 'melancholy', 'sythra kaelis'],
+    ['character', 'demon', 'general', 'bloodward', 'melancholy', 'sythra kaelis'],
   ),
   e(
     'Characters',
@@ -1497,7 +1497,7 @@ module.exports = [
       { label: 'Title', value: 'Demon of gluttony' },
       { label: 'Skills', value: 'Siphon, Unslaked, Seal' },
     ],
-    ['demon', 'general', 'bloodward', 'gluttony', 'nyra thessan'],
+    ['character', 'demon', 'general', 'bloodward', 'gluttony', 'nyra thessan'],
   ),
   e(
     'Characters',
@@ -1509,7 +1509,7 @@ module.exports = [
       { label: 'Title', value: 'Demon of usurpation' },
       { label: 'Skills', value: 'Mirror, Hollow Step, Voided' },
     ],
-    ['demon', 'general', 'bloodward', 'usurpation', 'othrek veyne'],
+    ['character', 'demon', 'general', 'bloodward', 'usurpation', 'othrek veyne'],
   ),
   e(
     'Characters',
@@ -1521,7 +1521,7 @@ module.exports = [
       { label: 'Title', value: 'Demon of love' },
       { label: 'Skills', value: 'Heart-Bind, Lover’s Step, Bond-Sight' },
     ],
-    ['demon', 'general', 'bloodward', 'love', 'isella marrek'],
+    ['character', 'demon', 'general', 'bloodward', 'love', 'isella marrek'],
   ),
   e(
     'Characters',
@@ -1534,7 +1534,7 @@ module.exports = [
       { label: 'Pillar', value: 'Second Pillar' },
       { label: 'Skills', value: 'Long Sight, Burning Path, Second Sun' },
     ],
-    ['angel', 'general', 'aetherblade lord angel', 'helious', 'pillar'],
+    ['character', 'angel', 'general', 'aetherblade lord angel', 'helious', 'pillar'],
   ),
   e(
     'Characters',
@@ -1547,7 +1547,7 @@ module.exports = [
       { label: 'Pillar', value: 'Third Pillar' },
       { label: 'Skills', value: 'Battle Trance, Ravager’s Grasp, War-Worn' },
     ],
-    ['angel', 'general', 'aetherblade lord angel', 'areous', 'pillar'],
+    ['character', 'angel', 'general', 'aetherblade lord angel', 'areous', 'pillar'],
   ),
   e(
     'Characters',
@@ -1560,7 +1560,7 @@ module.exports = [
       { label: 'Pillar', value: 'Fourth Pillar' },
       { label: 'Skills', value: 'Dread-Herald, Unheralded, Kneel' },
     ],
-    ['angel', 'general', 'aetherblade lord angel', 'deimous', 'pillar'],
+    ['character', 'angel', 'general', 'aetherblade lord angel', 'deimous', 'pillar'],
   ),
   e(
     'Characters',
@@ -1573,7 +1573,7 @@ module.exports = [
       { label: 'Pillar', value: 'Fifth Pillar' },
       { label: 'Skills', value: 'Altar-Rite, Oath-Curse, True-Witness' },
     ],
-    ['angel', 'general', 'aetherblade lord angel', 'horkous', 'pillar'],
+    ['character', 'angel', 'general', 'aetherblade lord angel', 'horkous', 'pillar'],
   ),
   e(
     'Characters',
@@ -1586,7 +1586,7 @@ module.exports = [
       { label: 'Pillar', value: 'Sixth Pillar' },
       { label: 'Skills', value: 'All-Seeing Eye, Warden’s Recall, Warden’s Mark' },
     ],
-    ['angel', 'general', 'aetherblade lord angel', 'argous', 'pillar'],
+    ['character', 'angel', 'general', 'aetherblade lord angel', 'argous', 'pillar'],
   ),
   e(
     'Titles',
