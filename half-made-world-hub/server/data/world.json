@@ -3519,12 +3519,16 @@
     "id": "d728d6e9-bbdb-47f2-9b42-874920ee012a",
     "category": "Characters",
     "name": "Carin",
-    "subtitle": "Demon trainer",
+    "subtitle": "Female Demon trainer",
     "description": "she used to serve Lisa and later when she discovered that Lisa had a child with an angel she decided to teach the child about his demon powers. The mc met her when he visited the demon realm",
     "fields": [
       {
         "label": "Rank",
         "value": "Scourge"
+      },
+      {
+        "label": "Race",
+        "value": "Demon"
       }
     ],
     "tags": [
@@ -3534,22 +3538,22 @@
       "character"
     ],
     "createdAt": "2026-08-14T00:44:18.744Z",
-    "updatedAt": "2026-08-14T11:43:02.065Z"
+    "updatedAt": "2026-08-14T14:42:54.219Z"
   },
   {
     "id": "9c5916bc-7997-4388-a29d-c5229c4a3d4d",
     "category": "Plot",
     "name": "Jaiden Marlock Plot",
     "subtitle": "Plot for Mc",
-    "description": "His class is Mage. he has a much higher amount of Veyn than other Angels and Demons. He stays in a small house with Sofia who takes care of him and protects him. Later Sofia took him meet with Carin who then train him to be better at his demonic power. Sofia also trained Jaiden on how to use his angelic powers",
+    "description": "His class is Mage. he has a much higher amount of Veyn than other Angels and Demons. He stays in a small house with Sofia who takes care of him and protects him. Later Sofia took him meet with Carin who then train him to be better at his demonic power. Sofia also trained Jaiden on how to use his angelic powers.",
     "fields": [],
     "tags": [
-      "Protagonist",
+      "protagonist",
       "plot",
       "Jaiden"
     ],
     "createdAt": "2026-08-14T00:52:22.427Z",
-    "updatedAt": "2026-08-14T11:42:27.965Z"
+    "updatedAt": "2026-08-14T14:58:01.960Z"
   },
   {
     "id": "bd19a14c-d2d0-4bea-a7e0-becaafd51a8a",
