@@ -4270,5 +4270,26 @@
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-226",
+    "category": "Titles",
+    "name": "Demon of the Bloodhound",
+    "subtitle": "The title of Licent Varak",
+    "description": "The title of Licent Varak — he hunts a scent to its end and never lets it go, tracking the one thread that undid a life.",
+    "fields": [
+      {
+        "label": "Held by",
+        "value": "Licent Varak"
+      }
+    ],
+    "tags": [
+      "title",
+      "demon",
+      "bloodhound",
+      "licent varak"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

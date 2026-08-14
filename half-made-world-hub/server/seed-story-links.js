@@ -281,4 +281,7 @@ module.exports = [
   s('Angel of the Unkept', 'Thalor Elwin', 'held by', 'Held by', 'The title “Angel of the Unkept” is borne by Thalor Elwin — Keeper of oaths no one remembers, and one he broke himself.'),
   s('Angel of the Still', 'Aranweis', 'held by', 'Held by', 'The title “Angel of the Still” is borne by Aranweis — Watches without moving; his vigil never ends.'),
   s('Angel of the Long Fall', 'Caedric Auroth', 'held by', 'Held by', 'The title “Angel of the Long Fall” is borne by Caedric Auroth — Fell slowly from grace, and has been falling since.'),
+
+  // --- Title: Demon of the Bloodhound, borne by Licent Varak ---
+  s('Demon of the Bloodhound', 'Licent Varak', 'held by', 'Held by', 'The title “Demon of the Bloodhound” is borne by Licent Varak — he hunts a scent to its end and never lets it go.'),
 ];

@@ -2402,5 +2402,15 @@
     "description": "The title “Angel of the Long Fall” is borne by Caedric Auroth — Fell slowly from grace, and has been falling since.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-226",
+    "source": "Demon of the Bloodhound",
+    "target": "Licent Varak",
+    "type": "held by",
+    "label": "Held by",
+    "description": "The title “Demon of the Bloodhound” is borne by Licent Varak — he hunts a scent to its end and never lets it go.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

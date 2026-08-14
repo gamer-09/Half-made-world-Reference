@@ -1710,4 +1710,15 @@ module.exports = [
     ],
     ['title', 'angel', 'general', 'caedric auroth'],
   ),
+
+  e(
+    'Titles',
+    'Demon of the Bloodhound',
+    'The title of Licent Varak',
+    'The title of Licent Varak — he hunts a scent to its end and never lets it go, tracking the one thread that undid a life.',
+    [
+      { label: 'Held by', value: 'Licent Varak' },
+    ],
+    ['title', 'demon', 'bloodhound', 'licent varak'],
+  ),
 ];
