@@ -271,9 +271,9 @@ module.exports = [
   s('Demon of the Overflow', 'Bloodward', 'held by', 'Held by', 'Power beyond a single vessel — the Bloodward’s surfeit of Veyn.'),
   s('Jester demon', 'Kael Vornath', 'held by', 'Held by', 'The title “Demon of the Toll” is borne by Kael Vornath — Exacts a price from every soul that crosses the Demon army’s path.'),
   s('Demon of melancholy', 'Sythra Kaelis', 'held by', 'Held by', 'The title “Demon of the Harvest” is borne by Sythra Kaelis — Reaps what the war sows, and keeps the best of it.'),
-  s('Demon of Silence', 'Drevos Malak', 'held by', 'Held by', 'The title “Demon of Silence” is borne by Drevos Malak — Where he walks, battle-cries die in the throat.'),
-  s('Demon of the Thirst', 'Nyra Thessan', 'held by', 'Held by', 'The title “Demon of the Thirst” is borne by Nyra Thessan — An endless hunger that no victory has ever slaked.'),
-  s('Demon of the Hollow', 'Othrek Veyne', 'held by', 'Held by', 'The title “Demon of the Hollow” is borne by Othrek Veyne — What remains after everything has been taken away.'),
+  s('Demon of the Veiled', 'Drevos Malak', 'held by', 'Held by', 'The title “Demon of the Veiled” is borne by Drevos Malak — the assassin-general who fights from behind the veil, unseen.'),
+  s('Demon of gluttony', 'Nyra Thessan', 'held by', 'Held by', 'The title “Demon of gluttony” is borne by Nyra Thessan — the general who devours magic and is never filled.'),
+  s('Demon of usurpation', 'Othrek Veyne', 'held by', 'Held by', 'The title “Demon of usurpation” is borne by Othrek Veyne — the general who rose by taking what belonged to others.'),
   s('Demon of love', 'Isella Marrek', 'held by', 'Held by', 'The title “Demon of the Debt” is borne by Ilsa Marrek — Collects what is owed — in blood, always.'),
   s('Angel of the Distant', 'Cyrion', 'held by', 'Held by', 'The title “Angel of the Distant” is borne by Cyrion — Guards the far edge of heaven where the host does not march.'),
   s('Angel of the Unspent', 'Serathiel', 'held by', 'Held by', 'The title “Angel of the Unspent” is borne by Serathiel — Her strength never depletes while a drop of Veyn remains.'),
@@ -295,4 +295,13 @@ module.exports = [
   s('Heart-Bind', 'Demon of love', 'skill of', 'Skill of', 'One of Isella Marrek’s abilities — the Demon of love.'),
   s('Lover’s Step', 'Demon of love', 'skill of', 'Skill of', 'One of Isella Marrek’s abilities — the Demon of love.'),
   s('Bond-Sight', 'Demon of love', 'skill of', 'Skill of', 'One of Isella Marrek’s abilities — the Demon of love.'),
+
+  // --- General skills, linked to their titles ---
+  s('Grey Step', 'Demon of the Veiled', 'skill of', 'Skill of', 'One of the Demon of the Veiled’s abilities.'),
+  s('False Stillness', 'Demon of the Veiled', 'skill of', 'Skill of', 'One of the Demon of the Veiled’s abilities.'),
+  s('Venom Edge', 'Demon of the Veiled', 'skill of', 'Skill of', 'One of the Demon of the Veiled’s abilities.'),
+  s('Siphon', 'Demon of gluttony', 'skill of', 'Skill of', 'One of the Demon of gluttony’s abilities.'),
+  s('Unslaked', 'Demon of gluttony', 'skill of', 'Skill of', 'One of the Demon of gluttony’s abilities.'),
+  s('Seal', 'Demon of gluttony', 'skill of', 'Skill of', 'One of the Demon of gluttony’s abilities.'),
+  s('Mirror', 'Demon of usurpation', 'skill of', 'Skill of', 'One of the Demon of usurpation’s abilities.'),
 ];

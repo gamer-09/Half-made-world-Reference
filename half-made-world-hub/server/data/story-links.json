@@ -2305,31 +2305,31 @@
   },
   {
     "id": "link-seed-216",
-    "source": "Demon of Silence",
+    "source": "Demon of the Veiled",
     "target": "Drevos Malak",
     "type": "held by",
     "label": "Held by",
-    "description": "The title “Demon of Silence” is borne by Drevos Malak — Where he walks, battle-cries die in the throat.",
+    "description": "The title “Demon of the Veiled” is borne by Drevos Malak.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
     "id": "link-seed-217",
-    "source": "Demon of the Thirst",
+    "source": "Demon of gluttony",
     "target": "Nyra Thessan",
     "type": "held by",
     "label": "Held by",
-    "description": "The title “Demon of the Thirst” is borne by Nyra Thessan — An endless hunger that no victory has ever slaked.",
+    "description": "The title “Demon of gluttony” is borne by Nyra Thessan.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
     "id": "link-seed-218",
-    "source": "Demon of the Hollow",
+    "source": "Demon of usurpation",
     "target": "Othrek Veyne",
     "type": "held by",
     "label": "Held by",
-    "description": "The title “Demon of the Hollow” is borne by Othrek Veyne — What remains after everything has been taken away.",
+    "description": "The title “Demon of usurpation” is borne by Othrek Veyne.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -2500,6 +2500,76 @@
     "type": "skill of",
     "label": "Skill of",
     "description": "One of Isella Marrek’s abilities — the Demon of love.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-236",
+    "source": "Grey Step",
+    "target": "Demon of the Veiled",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of the Veiled’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-237",
+    "source": "False Stillness",
+    "target": "Demon of the Veiled",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of the Veiled’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-238",
+    "source": "Venom Edge",
+    "target": "Demon of the Veiled",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of the Veiled’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-239",
+    "source": "Siphon",
+    "target": "Demon of gluttony",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of gluttony’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-240",
+    "source": "Unslaked",
+    "target": "Demon of gluttony",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of gluttony’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-241",
+    "source": "Seal",
+    "target": "Demon of gluttony",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of gluttony’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-242",
+    "source": "Mirror",
+    "target": "Demon of usurpation",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of usurpation’s abilities.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   }

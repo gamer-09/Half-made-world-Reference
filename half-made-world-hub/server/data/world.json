@@ -3784,7 +3784,7 @@
     "category": "Characters",
     "name": "Drevos Malak",
     "subtitle": "Demon general of the Demon army",
-    "description": "Demon general — Demon of Silence. Where he walks, battle-cries die in the throat.",
+    "description": "An assassin-general who fights in the space between the battle and the dark. He doesn’t win battles — he ends them before they begin, removing the one voice that could have rallied the rest, all from behind the veil where no one ever sees him.",
     "fields": [
       {
         "label": "Rank",
@@ -3792,14 +3792,19 @@
       },
       {
         "label": "Title",
-        "value": "Demon of Silence"
+        "value": "Demon of the Veiled"
+      },
+      {
+        "label": "Skills",
+        "value": "Grey Step, False Stillness, Venom Edge"
       }
     ],
     "tags": [
       "demon",
       "general",
       "bloodward",
-      "demon of silence"
+      "veiled",
+      "drevos malak"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -3809,7 +3814,7 @@
     "category": "Characters",
     "name": "Nyra Thessan",
     "subtitle": "Demon general of the Demon army",
-    "description": "Demon general — Demon of the Thirst. An endless hunger that no victory has ever slaked.",
+    "description": "She devours magic the way others eat bread. The more she consumes, the stronger she grows, and no battlefield has ever been enough to fill her. She fights not for the realm but because stopping means feeling the hunger again.",
     "fields": [
       {
         "label": "Rank",
@@ -3817,14 +3822,19 @@
       },
       {
         "label": "Title",
-        "value": "Demon of the Thirst"
+        "value": "Demon of gluttony"
+      },
+      {
+        "label": "Skills",
+        "value": "Siphon, Unslaked, Seal"
       }
     ],
     "tags": [
       "demon",
       "general",
       "bloodward",
-      "demon of the thirst"
+      "gluttony",
+      "nyra thessan"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -3834,7 +3844,7 @@
     "category": "Characters",
     "name": "Othrek Veyne",
     "subtitle": "Demon general of the Demon army",
-    "description": "Demon general — Demon of the Hollow. What remains after everything has been taken away.",
+    "description": "He rose through the ranks by taking what belonged to others — their victories, their titles, their strength. A usurper by nature, he has never won a thing on his own, only claimed it from the one who did. Now he holds a general’s seat, and every skill thrown at him is one more thing to make his own.",
     "fields": [
       {
         "label": "Rank",
@@ -3842,14 +3852,19 @@
       },
       {
         "label": "Title",
-        "value": "Demon of the Hollow"
+        "value": "Demon of usurpation"
+      },
+      {
+        "label": "Skills",
+        "value": "Mirror"
       }
     ],
     "tags": [
       "demon",
       "general",
       "bloodward",
-      "demon of the hollow"
+      "usurpation",
+      "othrek veyne"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -4079,9 +4094,9 @@
   {
     "id": "seed-216",
     "category": "Titles",
-    "name": "Demon of Silence",
+    "name": "Demon of the Veiled",
     "subtitle": "The title of Drevos Malak",
-    "description": "The title of Drevos Malak — Where he walks, battle-cries die in the throat.",
+    "description": "A title borne by Drevos Malak — the assassin-general who fights from behind the veil, unseen.",
     "fields": [
       {
         "label": "Held by",
@@ -4100,9 +4115,9 @@
   {
     "id": "seed-217",
     "category": "Titles",
-    "name": "Demon of the Thirst",
+    "name": "Demon of gluttony",
     "subtitle": "The title of Nyra Thessan",
-    "description": "The title of Nyra Thessan — An endless hunger that no victory has ever slaked.",
+    "description": "A title borne by Nyra Thessan — the general who devours magic and is never filled.",
     "fields": [
       {
         "label": "Held by",
@@ -4121,9 +4136,9 @@
   {
     "id": "seed-218",
     "category": "Titles",
-    "name": "Demon of the Hollow",
+    "name": "Demon of usurpation",
     "subtitle": "The title of Othrek Veyne",
-    "description": "The title of Othrek Veyne — What remains after everything has been taken away.",
+    "description": "A title borne by Othrek Veyne — the general who rose by taking what belonged to others.",
     "fields": [
       {
         "label": "Held by",
@@ -4433,6 +4448,111 @@
     "name": "Bond-Sight",
     "subtitle": "Bloodward skill",
     "description": "She perceives the emotional bonds between people, seeing who loves whom.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-236",
+    "category": "Demon Skills",
+    "name": "Grey Step",
+    "subtitle": "Bloodward skill",
+    "description": "Allows him to move silently in the shadows.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-237",
+    "category": "Demon Skills",
+    "name": "False Stillness",
+    "subtitle": "Bloodward skill",
+    "description": "Makes an enclosed space that seems normal on the outside.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-238",
+    "category": "Demon Skills",
+    "name": "Venom Edge",
+    "subtitle": "Bloodward skill",
+    "description": "Creates daggers with poisoning effects on them.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-239",
+    "category": "Demon Skills",
+    "name": "Siphon",
+    "subtitle": "Bloodward skill",
+    "description": "Drains away magic weaker than her.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-240",
+    "category": "Demon Skills",
+    "name": "Unslaked",
+    "subtitle": "Bloodward skill",
+    "description": "The more magic she eats, the stronger she gets.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-241",
+    "category": "Demon Skills",
+    "name": "Seal",
+    "subtitle": "Bloodward skill",
+    "description": "Locks an opponent’s special ability for 1 minute.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-242",
+    "category": "Demon Skills",
+    "name": "Mirror",
+    "subtitle": "Bloodward skill",
+    "description": "Copies one of the skills thrown at him.",
     "fields": [],
     "tags": [
       "skill",
