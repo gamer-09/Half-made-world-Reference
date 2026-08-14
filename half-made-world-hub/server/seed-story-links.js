@@ -284,4 +284,15 @@ module.exports = [
 
   // --- Title: Demon of the Bloodhound, borne by Licent Varak ---
   s('Demon of the Bloodhound', 'Licent Varak', 'held by', 'Held by', 'The title “Demon of the Bloodhound” is borne by Licent Varak — he hunts a scent to its end and never lets it go.'),
+
+  // --- General skills, linked to their titles ---
+  s('Red Whisper', 'Jester demon', 'skill of', 'Skill of', 'One of Kael Vornath’s abilities — the Jester demon.'),
+  s('Blood Jape', 'Jester demon', 'skill of', 'Skill of', 'One of Kael Vornath’s abilities — the Jester demon.'),
+  s('Traitor’s Step', 'Jester demon', 'skill of', 'Skill of', 'One of Kael Vornath’s abilities — the Jester demon.'),
+  s('Grey Miasma', 'Demon of melancholy', 'skill of', 'Skill of', 'One of Sythra Kaelis’s abilities — the Demon of melancholy.'),
+  s('Widow’s Toll', 'Demon of melancholy', 'skill of', 'Skill of', 'One of Sythra Kaelis’s abilities — the Demon of melancholy.'),
+  s('Fading Wound', 'Demon of melancholy', 'skill of', 'Skill of', 'One of Sythra Kaelis’s abilities — the Demon of melancholy.'),
+  s('Heart-Bind', 'Demon of love', 'skill of', 'Skill of', 'One of Isella Marrek’s abilities — the Demon of love.'),
+  s('Lover’s Step', 'Demon of love', 'skill of', 'Skill of', 'One of Isella Marrek’s abilities — the Demon of love.'),
+  s('Bond-Sight', 'Demon of love', 'skill of', 'Skill of', 'One of Isella Marrek’s abilities — the Demon of love.'),
 ];

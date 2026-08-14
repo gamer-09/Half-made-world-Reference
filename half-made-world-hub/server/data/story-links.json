@@ -2412,5 +2412,95 @@
     "description": "The title “Demon of the Bloodhound” is borne by Licent Varak — he hunts a scent to its end and never lets it go.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-227",
+    "source": "Red Whisper",
+    "target": "Jester demon",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of Kael Vornath’s abilities — the Jester demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-228",
+    "source": "Blood Jape",
+    "target": "Jester demon",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of Kael Vornath’s abilities — the Jester demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-229",
+    "source": "Traitor’s Step",
+    "target": "Jester demon",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of Kael Vornath’s abilities — the Jester demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-230",
+    "source": "Grey Miasma",
+    "target": "Demon of melancholy",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of Sythra Kaelis’s abilities — the Demon of melancholy.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-231",
+    "source": "Widow’s Toll",
+    "target": "Demon of melancholy",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of Sythra Kaelis’s abilities — the Demon of melancholy.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-232",
+    "source": "Fading Wound",
+    "target": "Demon of melancholy",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of Sythra Kaelis’s abilities — the Demon of melancholy.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-233",
+    "source": "Heart-Bind",
+    "target": "Demon of love",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of Isella Marrek’s abilities — the Demon of love.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-234",
+    "source": "Lover’s Step",
+    "target": "Demon of love",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of Isella Marrek’s abilities — the Demon of love.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-235",
+    "source": "Bond-Sight",
+    "target": "Demon of love",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of Isella Marrek’s abilities — the Demon of love.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]
