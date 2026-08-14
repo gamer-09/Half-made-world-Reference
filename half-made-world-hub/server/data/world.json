@@ -2108,7 +2108,7 @@
     "category": "Characters",
     "name": "Ordium",
     "subtitle": "Jaiden’s Father — Aetherblade Lord Angel",
-    "description": "He is an Aetherblade Lord Rank Angel. He fell in love with Lisa — love at first sight. So he left his post and spent the next 9 months with Lisa in a secret place in the Human Realm, since it is large and it would take time for them to be found. They were expecting a child, but unexpectedly they were called back by their rulers… (the document cuts off here)",
+    "description": "The First Pillar — the highest-ranked of the six angel generals, the one the others took their orders from. He met Lisa and left his post for nine months. When the rulers called him back, they ordered him executed for lying with a demon. The First Pillar fell, and the five beneath him were never the same after.",
     "fields": [
       {
         "label": "Rank",
@@ -3886,7 +3886,7 @@
     "category": "Characters",
     "name": "Cyrion",
     "subtitle": "Angel general of the Angel army",
-    "description": "Angel general — Angel of the Distant. Guards the far edge of heaven where the host does not march.",
+    "description": "The Second Pillar. He watches the far edge of the Angel Realm, where the host does not march. He saw Ordium slip away the first time and said nothing — and he has kept the secret of Jaiden’s parentage ever since, not out of loyalty, but because he doesn’t report what he hasn’t decided to act on.",
     "fields": [
       {
         "label": "Rank",
@@ -3916,7 +3916,7 @@
     "category": "Characters",
     "name": "Serathiel",
     "subtitle": "Angel general of the Angel army",
-    "description": "Angel general — Angel of the Unspent. Her strength never depletes while a drop of Veyn remains.",
+    "description": "The Third Pillar — the bulwark who never retreats, and no one has ever thanked her for it. When Ordium abandoned his post, she was next in line for his seat, and she resents that he threw away a rank she would have bled to hold.",
     "fields": [
       {
         "label": "Rank",
@@ -3946,7 +3946,7 @@
     "category": "Characters",
     "name": "Liora Veyne",
     "subtitle": "Angel general of the Angel army",
-    "description": "Angel general — Angel of the Quiet. The stillness that settles over a field before the host arrives.",
+    "description": "The Fourth Pillar. She carries the bad news, and she is never wrong. It was Liora who brought the execution order to Ordium’s door, in the same soft voice she uses to announce a dawn. The soldiers say the dread before a battle is her, arriving first.",
     "fields": [
       {
         "label": "Rank",
@@ -3976,7 +3976,7 @@
     "category": "Characters",
     "name": "Thalor Elwin",
     "subtitle": "Angel general of the Angel army",
-    "description": "Angel general — Angel of the Unkept. Keeper of oaths no one remembers, and one he broke himself.",
+    "description": "The Fifth Pillar. He keeps the Angel Realm’s oaths — the one who records every Veyn Vow sworn and watches for the first sign that one is fraying. He saw the signs in Ordium long before he left: a vow pulled thin by something it was never meant to contain. He said nothing then, and has spent every day since wondering whether a single word from him could have stopped all of it.",
     "fields": [
       {
         "label": "Rank",
@@ -4006,7 +4006,7 @@
     "category": "Characters",
     "name": "Aranweis",
     "subtitle": "Angel general of the Angel army",
-    "description": "Angel general — Angel of the Still. Watches without moving; his vigil never ends.",
+    "description": "The Sixth Pillar. He stands watch over the Sundering Altar, where every angel’s vow is sworn at fifteen. He has seen a thousand halos form and a handful shatter, and he is the only one in the realm who has watched both.",
     "fields": [
       {
         "label": "Rank",

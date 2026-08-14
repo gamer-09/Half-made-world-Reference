@@ -694,7 +694,7 @@ module.exports = [
     'Characters',
     'Ordium',
     'Jaiden’s Father — First Pillar',
-    'He is an Aetherblade Lord Rank Angel. He fell in love with Lisa — love at first sight. So he left his post and spent the next 9 months with Lisa in a secret place in the Human Realm, since it is large and it would take time for them to be found. They were expecting a child, but unexpectedly they were called back by their rulers… (the document cuts off here)',
+    'The First Pillar — the highest-ranked of the six angel generals, the one the others took their orders from. He met Lisa and left his post for nine months. When the rulers called him back, they ordered him executed for lying with a demon. The First Pillar fell, and the five beneath him were never the same after.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
       { label: 'Title', value: 'Chronous' },
@@ -1526,7 +1526,7 @@ module.exports = [
     'Characters',
     'Cyrion',
     'Angel general — Second Pillar',
-    'Angel general — Helious. Guards the far edge of heaven where the host does not march.',
+    'The Second Pillar. He watches the far edge of the Angel Realm, where the host does not march. He saw Ordium slip away the first time and said nothing — and he has kept the secret of Jaiden’s parentage ever since, not out of loyalty, but because he doesn’t report what he hasn’t decided to act on.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
       { label: 'Title', value: 'Helious' },
@@ -1538,7 +1538,7 @@ module.exports = [
     'Characters',
     'Serathiel',
     'Angel general — Third Pillar',
-    'Angel general — Areous. Her strength never depletes while a drop of Veyn remains.',
+    'The Third Pillar — the bulwark who never retreats, and no one has ever thanked her for it. When Ordium abandoned his post, she was next in line for his seat, and she resents that he threw away a rank she would have bled to hold.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
       { label: 'Title', value: 'Areous' },
@@ -1550,7 +1550,7 @@ module.exports = [
     'Characters',
     'Liora Veyne',
     'Angel general — Fourth Pillar',
-    'Angel general — Deimous. The stillness that settles over a field before the host arrives.',
+    'The Fourth Pillar. She carries the bad news, and she is never wrong. It was Liora who brought the execution order to Ordium’s door, in the same soft voice she uses to announce a dawn. The soldiers say the dread before a battle is her, arriving first.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
       { label: 'Title', value: 'Deimous' },
@@ -1562,7 +1562,7 @@ module.exports = [
     'Characters',
     'Thalor Elwin',
     'Angel general — Fifth Pillar',
-    'Angel general — Horkous. Keeper of oaths no one remembers, and one he broke himself.',
+    'The Fifth Pillar. He keeps the Angel Realm’s oaths — the one who records every Veyn Vow sworn and watches for the first sign that one is fraying. He saw the signs in Ordium long before he left: a vow pulled thin by something it was never meant to contain. He said nothing then, and has spent every day since wondering whether a single word from him could have stopped all of it.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
       { label: 'Title', value: 'Horkous' },
@@ -1574,7 +1574,7 @@ module.exports = [
     'Characters',
     'Aranweis',
     'Angel general — Sixth Pillar',
-    'Angel general — Argous. Watches without moving; his vigil never ends.',
+    'The Sixth Pillar. He stands watch over the Sundering Altar, where every angel’s vow is sworn at fifteen. He has seen a thousand halos form and a handful shatter, and he is the only one in the realm who has watched both.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
       { label: 'Title', value: 'Argous' },
