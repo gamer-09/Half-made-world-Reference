@@ -2722,5 +2722,25 @@
     "description": "One of the Sixth Pillar, Argous’s abilities.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-263",
+    "source": "Thalor Elwin",
+    "target": "The Sundering Altar",
+    "type": "guards",
+    "label": "Guards",
+    "description": "The Fifth Pillar guards the Sundering Altar, where vows are sworn and halos form.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-264",
+    "source": "Aranweis",
+    "target": "Clint Ashborn",
+    "type": "guards",
+    "label": "Guards",
+    "description": "The Sixth Pillar is the personal guard of the Serapharch, the first-rank ruler of the Angel Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]
