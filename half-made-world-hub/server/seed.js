@@ -1440,16 +1440,6 @@ module.exports = [
   ),
   e(
     'Titles',
-    'Angel of the Zenith',
-    'The Serapharch’s height',
-    'The highest point of heaven’s light — the Serapharch alone stands at the zenith.',
-    [
-      { label: 'Held by', value: 'Serapharch' },
-    ],
-    ['title', 'zenith', 'serapharch', 'angel'],
-  ),
-  e(
-    'Titles',
     'Angel of the Vast',
     'The Aetherblade’s reach',
     'The widest reach beneath the throne, held by the Aetherblade Lord Angel.',
@@ -1460,36 +1450,6 @@ module.exports = [
   ),
   e(
     'Titles',
-    'Angel of the Steadfast',
-    'The Virtue’s line',
-    'The unbroken, disciplined line — the Virtue who holds formation when all else breaks.',
-    [
-      { label: 'Held by', value: 'Virtue' },
-    ],
-    ['title', 'steadfast', 'virtue', 'angel'],
-  ),
-  e(
-    'Titles',
-    'Angel of the First Light',
-    'The Lumen’s dawn',
-    'The faint dawn of the ranks — first and dimmest, the Lumen’s quiet glow.',
-    [
-      { label: 'Held by', value: 'Lumen' },
-    ],
-    ['title', 'first light', 'lumen', 'angel'],
-  ),
-  e(
-    'Titles',
-    'Demon of Dominion',
-    'The Mordrach’s rule',
-    'Absolute rule over the Demon Realm — the Mordrach’s crown and dominion.',
-    [
-      { label: 'Held by', value: 'Mordrach' },
-    ],
-    ['title', 'dominion', 'mordrach', 'demon'],
-  ),
-  e(
-    'Titles',
     'Demon of the Overflow',
     'The Bloodward’s surfeit',
     'Power beyond a single vessel — the Bloodward’s surfeit of Veyn.',
@@ -1497,66 +1457,6 @@ module.exports = [
       { label: 'Held by', value: 'Bloodward' },
     ],
     ['title', 'overflow', 'bloodward', 'demon'],
-  ),
-  e(
-    'Titles',
-    'Demon of the Wane',
-    'The Scourge’s fading',
-    'The fading middle — the Scourge whose light runs low on Vitality.',
-    [
-      { label: 'Held by', value: 'Scourge' },
-    ],
-    ['title', 'wane', 'scourge', 'demon'],
-  ),
-  e(
-    'Titles',
-    'Demon of the Pact',
-    'The Gnash’s binding',
-    'The binding contract that only a Gnash can offer — and none may break.',
-    [
-      { label: 'Held by', value: 'Gnash' },
-    ],
-    ['title', 'pact', 'gnash', 'demon'],
-  ),
-  e(
-    'Titles',
-    'Demon of the Whisper',
-    'Licent Varak’s secret',
-    'A title borne by Licent Varak — the secret told in the dark that undid a life.',
-    [
-      { label: 'Held by', value: 'Licent Varak' },
-    ],
-    ['title', 'whisper', 'licent varak', 'demon'],
-  ),
-  e(
-    'Titles',
-    'Demon of the Sentence',
-    'Tera Morage’s judgment',
-    'A title borne by Tera Morage — the ruler’s judgment, spoken once and never reversed.',
-    [
-      { label: 'Held by', value: 'Tera Morage' },
-    ],
-    ['title', 'sentence', 'tera morage', 'demon'],
-  ),
-  e(
-    'Titles',
-    'Angel of the Final Word',
-    'Clint Ashborn’s decree',
-    'A title borne by Clint Ashborn — heaven’s last decree, from which there is no appeal.',
-    [
-      { label: 'Held by', value: 'Clint Ashborn' },
-    ],
-    ['title', 'final word', 'clint ashborn', 'angel'],
-  ),
-  e(
-    'Titles',
-    'Angel of the Halved',
-    'Jaiden’s two natures',
-    'A title borne by Jaiden Marlock — split between two natures, angel and demon in one.',
-    [
-      { label: 'Held by', value: 'Jaiden Marlock' },
-    ],
-    ['title', 'halved', 'jaiden marlock', 'angel', 'demon'],
   ),
   e(
     'Characters',

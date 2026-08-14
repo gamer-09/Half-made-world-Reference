@@ -2264,16 +2264,6 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "link-seed-202",
-    "source": "Angel of the Zenith",
-    "target": "Serapharch",
-    "type": "held by",
-    "label": "Held by",
-    "description": "The highest point of heaven’s light — the Serapharch alone stands at the zenith.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
     "id": "link-seed-203",
     "source": "Angel of the Vast",
     "target": "Aetherblade Lord Angel",
@@ -2284,102 +2274,12 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "link-seed-204",
-    "source": "Angel of the Steadfast",
-    "target": "Virtue",
-    "type": "held by",
-    "label": "Held by",
-    "description": "The unbroken, disciplined line — the Virtue who holds formation when all else breaks.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-205",
-    "source": "Angel of the First Light",
-    "target": "Lumen",
-    "type": "held by",
-    "label": "Held by",
-    "description": "The faint dawn of the ranks — first and dimmest, the Lumen’s quiet glow.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-206",
-    "source": "Demon of Dominion",
-    "target": "Mordrach",
-    "type": "held by",
-    "label": "Held by",
-    "description": "Absolute rule over the Demon Realm — the Mordrach’s crown and dominion.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
     "id": "link-seed-207",
     "source": "Demon of the Overflow",
     "target": "Bloodward",
     "type": "held by",
     "label": "Held by",
     "description": "Power beyond a single vessel — the Bloodward’s surfeit of Veyn.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-208",
-    "source": "Demon of the Wane",
-    "target": "Scourge",
-    "type": "held by",
-    "label": "Held by",
-    "description": "The fading middle — the Scourge whose light runs low on Vitality.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-209",
-    "source": "Demon of the Pact",
-    "target": "Gnash",
-    "type": "held by",
-    "label": "Held by",
-    "description": "The binding contract that only a Gnash can offer — and none may break.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-210",
-    "source": "Demon of the Whisper",
-    "target": "Licent Varak",
-    "type": "held by",
-    "label": "Held by",
-    "description": "A title borne by Licent Varak — the secret told in the dark that undid a life.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-211",
-    "source": "Demon of the Sentence",
-    "target": "Tera Morage",
-    "type": "held by",
-    "label": "Held by",
-    "description": "A title borne by Tera Morage — the ruler’s judgment, spoken once and never reversed.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-212",
-    "source": "Angel of the Final Word",
-    "target": "Clint Ashborn",
-    "type": "held by",
-    "label": "Held by",
-    "description": "A title borne by Clint Ashborn — heaven’s last decree, from which there is no appeal.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-213",
-    "source": "Angel of the Halved",
-    "target": "Jaiden Marlock",
-    "type": "held by",
-    "label": "Held by",
-    "description": "A title borne by Jaiden Marlock — split between two natures, angel and demon in one.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
