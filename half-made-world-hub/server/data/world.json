@@ -3724,7 +3724,7 @@
     "category": "Characters",
     "name": "Kael Vornath",
     "subtitle": "Demon general of the Demon army",
-    "description": "Demon general — Demon of the Toll. Exacts a price from every soul that crosses the Demon army’s path.",
+    "description": "A general who fights with misdirection, never taken seriously until the feint lands. Tolerated because he wins, and his cruelty is a performance — but the performance is the point, and he has never once shown fear, which is why no one trusts him. Tera Morage keeps him for his usefulness but does not trust him.",
     "fields": [
       {
         "label": "Rank",
@@ -3732,14 +3732,19 @@
       },
       {
         "label": "Title",
-        "value": "Demon of the Toll"
+        "value": "Jester demon"
+      },
+      {
+        "label": "Skills",
+        "value": "Red Whisper, Blood Jape, Traitor’s Step"
       }
     ],
     "tags": [
       "demon",
       "general",
       "bloodward",
-      "demon of the toll"
+      "jester demon",
+      "kael vornath"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -3749,7 +3754,7 @@
     "category": "Characters",
     "name": "Sythra Kaelis",
     "subtitle": "Demon general of the Demon army",
-    "description": "Demon general — Demon of the Harvest. Reaps what the war sows, and keeps the best of it.",
+    "description": "Her cruelty wears the face of mercy. She kills not in anger but in pity — she tells her victims she is relieving them of their sadness as her miasma drains the will and Veyn from them, leaving behind empty, obedient shells. The grief she carries is real, but it is a grief she now administers to others. She was the one sent to “comfort” Lisa after her demotion to Gnash, draining what remained of her before Licent Varak’s men finished it.",
     "fields": [
       {
         "label": "Rank",
@@ -3757,14 +3762,19 @@
       },
       {
         "label": "Title",
-        "value": "Demon of the Harvest"
+        "value": "Demon of melancholy"
+      },
+      {
+        "label": "Skills",
+        "value": "Grey Miasma, Widow’s Toll, Fading Wound"
       }
     ],
     "tags": [
       "demon",
       "general",
       "bloodward",
-      "demon of the harvest"
+      "demon of melancholy",
+      "sythra kaelis"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -3847,9 +3857,9 @@
   {
     "id": "seed-207",
     "category": "Characters",
-    "name": "Ilsa Marrek",
+    "name": "Isella Marrek",
     "subtitle": "Demon general of the Demon army",
-    "description": "Demon general — Demon of the Debt. Collects what is owed — in blood, always.",
+    "description": "A general who has never once loved anyone back. She treats love as a resource — the devotion and affection of others is something she harvests and hoards to fuel her power. The more people love her, the stronger she grows, so she cultivates followers endlessly, and it is entirely transactional on her end. She recruits and binds the Demon army’s soldiers, which is why their ranks hold together even when the cause is lost, keeping her in Tera Morage’s orbit.",
     "fields": [
       {
         "label": "Rank",
@@ -3857,14 +3867,19 @@
       },
       {
         "label": "Title",
-        "value": "Demon of the Debt"
+        "value": "Demon of love"
+      },
+      {
+        "label": "Skills",
+        "value": "Heart-Bind, Lover’s Step, Bond-Sight"
       }
     ],
     "tags": [
       "demon",
       "general",
       "bloodward",
-      "demon of the debt"
+      "demon of love",
+      "isella marrek"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -4022,9 +4037,9 @@
   {
     "id": "seed-214",
     "category": "Titles",
-    "name": "Demon of the Toll",
+    "name": "Jester demon",
     "subtitle": "The title of Kael Vornath",
-    "description": "The title of Kael Vornath — Exacts a price from every soul that crosses the Demon army’s path.",
+    "description": "A title borne by Kael Vornath — the Demon army’s misdirection general, whose cruelty is a performance and who has never once shown fear.",
     "fields": [
       {
         "label": "Held by",
@@ -4043,9 +4058,9 @@
   {
     "id": "seed-215",
     "category": "Titles",
-    "name": "Demon of the Harvest",
+    "name": "Demon of melancholy",
     "subtitle": "The title of Sythra Kaelis",
-    "description": "The title of Sythra Kaelis — Reaps what the war sows, and keeps the best of it.",
+    "description": "A title borne by Sythra Kaelis — the general whose cruelty wears the face of mercy, draining sadness and will alike.",
     "fields": [
       {
         "label": "Held by",
@@ -4127,20 +4142,20 @@
   {
     "id": "seed-219",
     "category": "Titles",
-    "name": "Demon of the Debt",
-    "subtitle": "The title of Ilsa Marrek",
-    "description": "The title of Ilsa Marrek — Collects what is owed — in blood, always.",
+    "name": "Demon of love",
+    "subtitle": "The title of Isella Marrek",
+    "description": "A title borne by Isella Marrek — the general who has never loved anyone back, only collected the love of others.",
     "fields": [
       {
         "label": "Held by",
-        "value": "Ilsa Marrek"
+        "value": "Isella Marrek"
       }
     ],
     "tags": [
       "title",
       "demon",
       "general",
-      "ilsa marrek"
+      "isella marrek"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -4288,6 +4303,141 @@
       "demon",
       "bloodhound",
       "licent varak"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-227",
+    "category": "Demon Skills",
+    "name": "Red Whisper",
+    "subtitle": "Bloodward skill",
+    "description": "A Veyn-laced whisper that breaks an enemy’s spell mid-cast.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-228",
+    "category": "Demon Skills",
+    "name": "Blood Jape",
+    "subtitle": "Bloodward skill",
+    "description": "Conjures a moving double of himself from blood-Veyn; it takes a hit meant for him, then collapses when spent.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-229",
+    "category": "Demon Skills",
+    "name": "Traitor’s Step",
+    "subtitle": "Bloodward skill",
+    "description": "Swaps position with an enemy he’s already wounded, leaving them where he stood.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-230",
+    "category": "Demon Skills",
+    "name": "Grey Miasma",
+    "subtitle": "Bloodward skill",
+    "description": "Bleeds a faint grey Veyn-mist that clings to a field, slowing anyone who breathes it.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-231",
+    "category": "Demon Skills",
+    "name": "Widow’s Toll",
+    "subtitle": "Bloodward skill",
+    "description": "A single tolling note that echoes in the bones; it makes the affected start crying and lose the will to fight her, obeying her instead.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-232",
+    "category": "Demon Skills",
+    "name": "Fading Wound",
+    "subtitle": "Bloodward skill",
+    "description": "A wound she gives doesn’t hurt so much as exhaust; the victim’s Veyn drains away.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-233",
+    "category": "Demon Skills",
+    "name": "Heart-Bind",
+    "subtitle": "Bloodward skill",
+    "description": "Binds a target to her with Veyn so they cannot kill her, and any damage done to her is transferred back onto the one bound.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-234",
+    "category": "Demon Skills",
+    "name": "Lover’s Step",
+    "subtitle": "Bloodward skill",
+    "description": "Makes the affected fall in love with her, listening to her and doing whatever she asks.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-235",
+    "category": "Demon Skills",
+    "name": "Bond-Sight",
+    "subtitle": "Bloodward skill",
+    "description": "She perceives the emotional bonds between people, seeing who loves whom.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"

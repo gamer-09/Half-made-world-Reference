@@ -2285,21 +2285,21 @@
   },
   {
     "id": "link-seed-214",
-    "source": "Demon of the Toll",
+    "source": "Jester demon",
     "target": "Kael Vornath",
     "type": "held by",
     "label": "Held by",
-    "description": "The title “Demon of the Toll” is borne by Kael Vornath — Exacts a price from every soul that crosses the Demon army’s path.",
+    "description": "The title “Jester demon” is borne by Kael Vornath.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
     "id": "link-seed-215",
-    "source": "Demon of the Harvest",
+    "source": "Demon of melancholy",
     "target": "Sythra Kaelis",
     "type": "held by",
     "label": "Held by",
-    "description": "The title “Demon of the Harvest” is borne by Sythra Kaelis — Reaps what the war sows, and keeps the best of it.",
+    "description": "The title “Demon of melancholy” is borne by Sythra Kaelis.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -2335,11 +2335,11 @@
   },
   {
     "id": "link-seed-219",
-    "source": "Demon of the Debt",
-    "target": "Ilsa Marrek",
+    "source": "Demon of love",
+    "target": "Isella Marrek",
     "type": "held by",
     "label": "Held by",
-    "description": "The title “Demon of the Debt” is borne by Ilsa Marrek — Collects what is owed — in blood, always.",
+    "description": "The title “Demon of love” is borne by Isella Marrek.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
