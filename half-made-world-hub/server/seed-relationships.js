@@ -37,4 +37,18 @@ module.exports = [
   r('Jaiden Marlock', 'Lisa', 'unaware of', 'Unaware of', 'Given away as a baby with his auras sealed by the Auralis Ruby — he has no idea who his parents are.'),
   r('Jaiden Marlock', 'Ordium', 'unaware of', 'Unaware of', 'Given away as a baby with his auras sealed by the Auralis Ruby — he has no idea who his parents are.'),
   r('Head Master of the Academy', 'Jaiden Marlock', 'takes', 'Takes to the Hidden Realm', 'The Head Master is the character who takes the MC, Jaiden, to the Hidden Realm (comment 126).'),
+
+  // --- Generals: serve their realms' rulers ---
+  r('Kael Vornath', 'Tera Morage', 'serves', 'Serves', 'Kael Vornath is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.'),
+  r('Sythra Kaelis', 'Tera Morage', 'serves', 'Serves', 'Sythra Kaelis is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.'),
+  r('Drevos Malak', 'Tera Morage', 'serves', 'Serves', 'Drevos Malak is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.'),
+  r('Nyra Thessan', 'Tera Morage', 'serves', 'Serves', 'Nyra Thessan is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.'),
+  r('Othrek Veyne', 'Tera Morage', 'serves', 'Serves', 'Othrek Veyne is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.'),
+  r('Isella Marrek', 'Tera Morage', 'serves', 'Serves', 'Isella Marrek is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.'),
+  r('Cyrion', 'Clint Ashborn', 'serves', 'Serves', 'Cyrion is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.'),
+  r('Serathiel', 'Clint Ashborn', 'serves', 'Serves', 'Serathiel is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.'),
+  r('Liora Veyne', 'Clint Ashborn', 'serves', 'Serves', 'Liora Veyne is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.'),
+  r('Thalor Elwin', 'Clint Ashborn', 'serves', 'Serves', 'Thalor Elwin is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.'),
+  r('Aranweis', 'Clint Ashborn', 'serves', 'Serves', 'Aranweis is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.'),
+  r('Caedric Auroth', 'Clint Ashborn', 'serves', 'Serves', 'Caedric Auroth is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.'),
 ];

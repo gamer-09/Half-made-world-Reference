@@ -212,5 +212,125 @@
     "color": "#f87171",
     "createdAt": "2026-08-14T12:25:15.248Z",
     "updatedAt": "2026-08-14T12:25:31.846Z"
+  },
+  {
+    "id": "rel-seed-017",
+    "source": "Kael Vornath",
+    "target": "Tera Morage",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Kael Vornath is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-018",
+    "source": "Sythra Kaelis",
+    "target": "Tera Morage",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Sythra Kaelis is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-019",
+    "source": "Drevos Malak",
+    "target": "Tera Morage",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Drevos Malak is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-020",
+    "source": "Nyra Thessan",
+    "target": "Tera Morage",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Nyra Thessan is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-021",
+    "source": "Othrek Veyne",
+    "target": "Tera Morage",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Othrek Veyne is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-022",
+    "source": "Isella Marrek",
+    "target": "Tera Morage",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Isella Marrek is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-023",
+    "source": "Cyrion",
+    "target": "Clint Ashborn",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Cyrion is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-024",
+    "source": "Serathiel",
+    "target": "Clint Ashborn",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Serathiel is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-025",
+    "source": "Liora Veyne",
+    "target": "Clint Ashborn",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Liora Veyne is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-026",
+    "source": "Thalor Elwin",
+    "target": "Clint Ashborn",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Thalor Elwin is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-027",
+    "source": "Aranweis",
+    "target": "Clint Ashborn",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Aranweis is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-028",
+    "source": "Caedric Auroth",
+    "target": "Clint Ashborn",
+    "type": "serves",
+    "label": "Serves",
+    "description": "Caedric Auroth is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]
