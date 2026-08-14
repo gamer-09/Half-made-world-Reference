@@ -207,8 +207,10 @@ export function RelationshipMap({
   };
 
   const names = useMemo(() => {
+    // Only show characters that are actually part of a relationship, so
+    // characters without any links (e.g. newly-added generals) don't float
+    // around the chart as isolated nodes.
     const set = new Set<string>();
-    for (const e of characterEntries) set.add(e.name);
     for (const r of relationships) {
       set.add(resolveName(r.source));
       set.add(resolveName(r.target));
