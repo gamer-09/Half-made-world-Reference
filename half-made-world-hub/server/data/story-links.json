@@ -2572,5 +2572,25 @@
     "description": "One of the Demon of usurpation’s abilities.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-243",
+    "source": "Hollow Step",
+    "target": "Demon of usurpation",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of usurpation’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-244",
+    "source": "Voided",
+    "target": "Demon of usurpation",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of usurpation’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

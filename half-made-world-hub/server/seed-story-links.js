@@ -304,4 +304,6 @@ module.exports = [
   s('Unslaked', 'Demon of gluttony', 'skill of', 'Skill of', 'One of the Demon of gluttony’s abilities.'),
   s('Seal', 'Demon of gluttony', 'skill of', 'Skill of', 'One of the Demon of gluttony’s abilities.'),
   s('Mirror', 'Demon of usurpation', 'skill of', 'Skill of', 'One of the Demon of usurpation’s abilities.'),
+  s('Hollow Step', 'Demon of usurpation', 'skill of', 'Skill of', 'One of the Demon of usurpation’s abilities.'),
+  s('Voided', 'Demon of usurpation', 'skill of', 'Skill of', 'One of the Demon of usurpation’s abilities.'),
 ];
