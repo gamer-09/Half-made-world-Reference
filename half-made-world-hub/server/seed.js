@@ -2149,4 +2149,13 @@ module.exports = [
     [],
     ['evolution', 'angel', 'cherubim', 'serapharch', 'rule'],
   ),
+
+  e(
+    'Rules & Notes',
+    'Demon Evolution',
+    'How a new Mordrach is made',
+    'To evolve from a Dregs demon to a Fiend — the Mordrach — the first rank must die. When that happens, all the Veyn the first rank held while alive is passed on to the next heir; if the heir can withstand it, they become the new king of the Demon Realm.',
+    [],
+    ['evolution', 'demon', 'dregs', 'fiends', 'mordrach', 'rule'],
+  ),
 ];

@@ -5203,5 +5203,23 @@
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-15T17:41:19.037Z"
+  },
+  {
+    "id": "seed-288",
+    "category": "Rules & Notes",
+    "name": "Demon Evolution",
+    "subtitle": "How a new Mordrach is made",
+    "description": "To evolve from a Dregs demon to a Fiend — the Mordrach — the first rank must die. When that happens, all the Veyn the first rank held while alive is passed on to the next heir; if the heir can withstand it, they become the new king of the Demon Realm.",
+    "fields": [],
+    "tags": [
+      "evolution",
+      "demon",
+      "dregs",
+      "fiends",
+      "mordrach",
+      "rule"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]
