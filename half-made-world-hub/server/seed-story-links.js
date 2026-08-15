@@ -356,4 +356,11 @@ module.exports = [
   s('Inheritance of Ranks & Abilities', 'Demons (Overview)', 'about', 'About', "A demon’s rank can be passed down to an offspring."),
   s('The Hidden Realm Portal', 'Shudon', 'about', 'About', 'The entrances to the different realms are guarded by a Shudon.'),
   s('Nyra Thessan', 'Cindergrave Wraith Lord', 'hungers like', 'Hungers like', 'She hungers the way the Cindergrave wraiths do, drawing Veyn from the living.'),
+
+  // --- Character realm homes ---
+  s('Ruby Divina', 'Human Realm', 'rules', 'Rules', 'The current ruler of the Human Realm (from the doc).'),
+  s('Jaiden Marlock', 'Human Realm', 'lives in', 'Lives in', 'He lives in the Human Realm with Sofia.'),
+  s('Sofia', 'Human Realm', 'lives in', 'Lives in', 'She raised Jaiden in the Human Realm.'),
+  s('Lisa', 'Demon Realm', 'lives in', 'Lives in', 'Her realm is the Demon Realm.'),
+  s('Ordium', 'Angel Realm', 'lives in', 'Lives in', 'His realm is the Angel Realm.'),
 ];

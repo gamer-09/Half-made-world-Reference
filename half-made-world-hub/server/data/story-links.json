@@ -3012,5 +3012,55 @@
     "description": "She hungers the way the Cindergrave wraiths do, drawing Veyn from the living.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-292",
+    "source": "Ruby Divina",
+    "target": "Human Realm",
+    "type": "rules",
+    "label": "Rules",
+    "description": "The current ruler of the Human Realm (from the doc).",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-293",
+    "source": "Jaiden Marlock",
+    "target": "Human Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "He lives in the Human Realm with Sofia.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-294",
+    "source": "Sofia Marlock",
+    "target": "Human Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "She raised Jaiden in the Human Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-295",
+    "source": "Lisa",
+    "target": "Demon Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "Her realm is the Demon Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-296",
+    "source": "Ordium",
+    "target": "Angel Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "His realm is the Angel Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]
