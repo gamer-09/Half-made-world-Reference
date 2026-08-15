@@ -304,7 +304,6 @@ module.exports = [
     'Rank 1 — Ruler of the Angel Realm',
     'The ruler of the Angel Realm. They are essentially immortal and can only be killed by A Corrupted Divine Weapon (Vireth, the Fallen Grace) or A Divine Weapon. They have a very strong regenerative ability and a very strong natural defense.',
     [      { label: 'Type', value: 'Cherubim' },
-      { label: 'Evolution', value: 'To become the first rank — the Serapharch — the heir is flooded with a massive amount of Veyn, then exposed to ten days of raw, concentrated Veyn. If they survive, they evolve into the Cherubim apex and become the new ruler of the Angel Realm. This rite is performed on the heir, and only after the king has died.' },
 
       { label: 'Appearance', value: '8 wings, large and almost covering their whole body, the feathers glow gold. Their halo is a solid ring of light, too bright to look at directly. They have the strongest aura among all the angels. Their wing color is light pale gold with a bright but dim glow.' },
       { label: 'Skills', value: 'Kings Record, Sixth Sense, Time Reversal, Chronos Fury, Will Mastery, Holy Rain, Dignified Presence, Angelic Aura (Serapharch), Holy Flame, God’s Index Finger, God Chain, Holy Grail, Warpstep, Dawnveil (Serapharch) — each skill has its own entry in the Angel Skills / Demon Skills categories.' },
@@ -2042,7 +2041,7 @@ module.exports = [
     'Cherubim',
     'The throne-guardians — the apex angels',
     'The highest type of angel, the guardians of the throne. The Serapharch — the ruler of the Angel Realm — is of this type. They are essentially immortal and can only be killed by a Divine Weapon or a Corrupted Divine Weapon (Vireth, the Fallen Grace).',
-    [{ label: 'Innate Ability', value: 'Imperishable' }, { label: 'Evolution', value: 'To become the first rank — the Serapharch — the heir is flooded with a massive amount of Veyn, then exposed to ten days of raw, concentrated Veyn. If they survive, they evolve into the Cherubim apex and become the new ruler of the Angel Realm. This rite is performed on the heir, and only after the king has died.' }],
+    [{ label: 'Innate Ability', value: 'Imperishable' }],
     ['race', 'angel', 'cherubim', 'apex'],
   ),
   e(
