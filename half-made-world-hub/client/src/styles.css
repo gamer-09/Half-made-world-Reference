@@ -47,6 +47,11 @@
   --font-head: 'Rajdhani', 'Segoe UI', system-ui, sans-serif;
   --font-body: 'Segoe UI', system-ui, -apple-system, sans-serif;
   --font-mono: 'JetBrains Mono', ui-monospace, 'Consolas', monospace;
+
+  /* motion */
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-snap: cubic-bezier(0.68, -0.4, 0.32, 1.4);
 }
 
 * { box-sizing: border-box; }
@@ -74,6 +79,7 @@ body {
     radial-gradient(820px 640px at 102% 0%, rgba(139, 92, 246, 0.12), transparent 60%),
     radial-gradient(700px 700px at 50% 120%, rgba(34, 211, 238, 0.05), transparent 60%),
     var(--bg);
+  animation: nebulaDrift 26s ease-in-out infinite alternate;
 }
 
 .bg-aurora::after {
@@ -85,6 +91,7 @@ body {
     linear-gradient(90deg, rgba(96, 165, 250, 0.05) 1px, transparent 1px);
   background-size: 42px 42px;
   mask-image: radial-gradient(75% 65% at 50% 0%, #000 20%, transparent 90%);
+  animation: gridPulse 7s ease-in-out infinite;
 }
 
 /* ---------- layout ---------- */
@@ -1481,4 +1488,238 @@ select.input {
 * {
   scrollbar-width: thin;
   scrollbar-color: var(--line-strong) transparent;
+}
+
+/* ==========================================================================
+   MOTION & EFFECTS
+   Neon Archive animation system — background drift, staggered entrances,
+   glow pulses, shimmer, node/edge motion. Uses transform/opacity only.
+   ========================================================================== */
+
+/* ---------- keyframes ---------- */
+@keyframes nebulaDrift {
+  0%   { transform: translate3d(0, 0, 0) scale(1); }
+  50%  { transform: translate3d(-2%, 2%, 0) scale(1.06); }
+  100% { transform: translate3d(2%, -1%, 0) scale(1.03); }
+}
+
+@keyframes gridPulse {
+  0%, 100% { opacity: 1; }
+  50%      { opacity: 0.55; }
+}
+
+@keyframes glowBreathe {
+  0%, 100% { box-shadow: 0 0 12px rgba(34, 211, 238, 0.35), 0 0 24px rgba(34, 211, 238, 0.12); }
+  50%      { box-shadow: 0 0 22px rgba(34, 211, 238, 0.6), 0 0 44px rgba(34, 211, 238, 0.22); }
+}
+
+@keyframes riseIn {
+  from { opacity: 0; transform: translateY(14px) scale(0.98); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+
+@keyframes popIn {
+  from { opacity: 0; transform: scale(0.92); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes fadeSlide {
+  from { opacity: 0; transform: translateX(12px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes nodeIn {
+  from { opacity: 0; transform: scale(0.6); }
+  to   { opacity: 1; transform: scale(1); }
+}
+
+@keyframes dotPulse {
+  0%, 100% { transform: scale(1);   box-shadow: 0 0 6px currentColor; }
+  50%      { transform: scale(1.45); box-shadow: 0 0 14px currentColor; }
+}
+
+@keyframes scanline {
+  0%   { transform: translateX(-100%); }
+  100% { transform: translateX(100%); }
+}
+
+/* ---------- brand mark breathing glow ---------- */
+.brand-mark {
+  animation: glowBreathe 4.5s ease-in-out infinite;
+}
+
+/* ---------- primary button glow pulse ---------- */
+.btn-primary {
+  position: relative;
+  overflow: hidden;
+  animation: glowBreathe 5s ease-in-out infinite;
+}
+
+.btn-primary::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 40%;
+  left: 0;
+  background: linear-gradient(100deg, transparent, rgba(255, 255, 255, 0.14), transparent);
+  transform: translateX(-120%) skewX(-18deg);
+  pointer-events: none;
+}
+
+.btn-primary:hover::after {
+  animation: scanline 0.9s var(--ease-out);
+}
+
+/* ---------- entry cards: staggered entrance + hover glow ---------- */
+.entry-card {
+  animation: riseIn 0.5s var(--ease-out) both;
+}
+
+.entry-card:nth-child(1)  { animation-delay: 0.02s; }
+.entry-card:nth-child(2)  { animation-delay: 0.05s; }
+.entry-card:nth-child(3)  { animation-delay: 0.08s; }
+.entry-card:nth-child(4)  { animation-delay: 0.11s; }
+.entry-card:nth-child(5)  { animation-delay: 0.14s; }
+.entry-card:nth-child(6)  { animation-delay: 0.17s; }
+.entry-card:nth-child(7)  { animation-delay: 0.20s; }
+.entry-card:nth-child(8)  { animation-delay: 0.23s; }
+.entry-card:nth-child(n+9) { animation-delay: 0.26s; }
+
+.entry-card {
+  transition: transform 0.28s var(--ease-out), border-color 0.28s var(--ease-out),
+              box-shadow 0.28s var(--ease-out);
+}
+
+.entry-card:hover {
+  transform: translateY(-4px) scale(1.012);
+  border-color: var(--line-strong);
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.25), 0 0 32px rgba(34, 211, 238, 0.18),
+              0 18px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* ---------- dashboard tiles: staggered entrance + hover glow ---------- */
+.tile {
+  animation: riseIn 0.45s var(--ease-out) both;
+}
+
+.tile:nth-child(1)  { animation-delay: 0.03s; }
+.tile:nth-child(2)  { animation-delay: 0.06s; }
+.tile:nth-child(3)  { animation-delay: 0.09s; }
+.tile:nth-child(4)  { animation-delay: 0.12s; }
+.tile:nth-child(5)  { animation-delay: 0.15s; }
+.tile:nth-child(6)  { animation-delay: 0.18s; }
+.tile:nth-child(n+7) { animation-delay: 0.21s; }
+
+.tile {
+  transition: transform 0.26s var(--ease-out), border-color 0.26s var(--ease-out),
+              box-shadow 0.26s var(--ease-out);
+}
+
+.tile:hover {
+  transform: translateY(-3px) scale(1.03);
+  border-color: var(--line-strong);
+  box-shadow: 0 0 24px rgba(34, 211, 238, 0.16), 0 14px 34px rgba(0, 0, 0, 0.45);
+}
+
+/* ---------- category dots: active pulse ---------- */
+.category-item.active .category-dot,
+.filter-chip.on .filter-dot {
+  animation: dotPulse 2.2s ease-in-out infinite;
+}
+
+/* ---------- hero title shimmer ---------- */
+.hero-title .grad {
+  color: var(--cyan);
+  animation: titleGlow 3.5s ease-in-out infinite;
+}
+
+@keyframes titleGlow {
+  0%, 100% { text-shadow: 0 0 6px rgba(34, 211, 238, 0.35); }
+  50%      { text-shadow: 0 0 20px rgba(34, 211, 238, 0.75), 0 0 34px rgba(139, 92, 246, 0.4); }
+}
+
+/* ---------- stats glow in ---------- */
+.stat {
+  animation: fadeSlide 0.5s var(--ease-out) both;
+}
+.stat:nth-child(2) { animation-delay: 0.08s; }
+.stat:nth-child(3) { animation-delay: 0.16s; }
+
+.stat-num {
+  transition: text-shadow 0.3s var(--ease-out);
+}
+.stat:hover .stat-num {
+  text-shadow: 0 0 22px rgba(34, 211, 238, 0.8);
+}
+
+/* ---------- tag cloud + recent items entrance ---------- */
+.tag-cloud-item { animation: popIn 0.35s var(--ease-spring) both; }
+.recent-item   { animation: fadeSlide 0.4s var(--ease-out) both; }
+
+/* ---------- detail field rows: stagger on modal open ---------- */
+.detail-field { animation: fadeSlide 0.35s var(--ease-out) both; }
+.detail-field:nth-child(1) { animation-delay: 0.03s; }
+.detail-field:nth-child(2) { animation-delay: 0.06s; }
+.detail-field:nth-child(3) { animation-delay: 0.09s; }
+.detail-field:nth-child(4) { animation-delay: 0.12s; }
+.detail-field:nth-child(5) { animation-delay: 0.15s; }
+.detail-field:nth-child(n+6) { animation-delay: 0.18s; }
+
+/* ---------- loading orb: spin + pulse ---------- */
+.loading-orb {
+  animation: spin 0.8s linear infinite, glowBreathe 2.4s ease-in-out infinite;
+}
+
+/* ---------- toast glow ---------- */
+.toast {
+  box-shadow: 0 0 0 1px rgba(34, 211, 238, 0.3), 0 0 30px rgba(34, 211, 238, 0.22), 0 12px 34px rgba(0,0,0,0.5);
+}
+
+/* ---------- map nodes + edges ---------- */
+.map-node {
+  animation: nodeIn 0.5s var(--ease-spring) both;
+}
+
+.map-edge {
+  transition: opacity 0.2s var(--ease-out), stroke-width 0.2s var(--ease-out);
+}
+
+.map-edge-detail {
+  animation: panelIn 0.3s var(--ease-spring) both;
+}
+
+/* ---------- filter chips + picker options ---------- */
+.filter-chip,
+.web-picker-opt {
+  transition: border-color 0.2s var(--ease-out), color 0.2s var(--ease-out),
+              background 0.2s var(--ease-out), transform 0.2s var(--ease-out),
+              box-shadow 0.2s var(--ease-out);
+}
+
+.filter-chip:hover,
+.web-picker-opt:hover {
+  transform: translateY(-1px);
+}
+
+.filter-chip.on {
+  box-shadow: 0 0 16px rgba(34, 211, 238, 0.25);
+}
+
+/* ---------- conn rows + links ---------- */
+.conn-row { animation: fadeSlide 0.3s var(--ease-out) both; }
+
+.conn-other {
+  transition: color 0.2s var(--ease-out), transform 0.2s var(--ease-out);
+}
+.conn-other:hover { transform: translateX(3px); }
+
+/* ---------- reduced motion: respect user preference ---------- */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.001s !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001s !important;
+    scroll-behavior: auto !important;
+  }
 }
