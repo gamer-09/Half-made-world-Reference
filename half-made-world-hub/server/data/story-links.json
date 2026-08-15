@@ -3142,5 +3142,35 @@
     "description": "A Bloodward demon and general of the Demon army.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-310",
+    "source": "Blood-Scent",
+    "target": "Demon of the Bloodhound",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of the Bloodhound’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-311",
+    "source": "The Chase",
+    "target": "Demon of the Bloodhound",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of the Bloodhound’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-312",
+    "source": "Snare",
+    "target": "Demon of the Bloodhound",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "One of the Demon of the Bloodhound’s abilities.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

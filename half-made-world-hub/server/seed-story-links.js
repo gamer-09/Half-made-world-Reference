@@ -376,4 +376,9 @@ module.exports = [
 
   // --- Licent Varak is a demon general ---
   s('Licent Varak', 'Demon Realm', 'lives in', 'Lives in', 'A Bloodward demon and general of the Demon army.'),
+
+  // --- Licent Varak (Demon of the Bloodhound) skills ---
+  s('Blood-Scent', 'Demon of the Bloodhound', 'skill of', 'Skill of', 'One of the Demon of the Bloodhound’s abilities.'),
+  s('The Chase', 'Demon of the Bloodhound', 'skill of', 'Skill of', 'One of the Demon of the Bloodhound’s abilities.'),
+  s('Snare', 'Demon of the Bloodhound', 'skill of', 'Skill of', 'One of the Demon of the Bloodhound’s abilities.'),
 ];

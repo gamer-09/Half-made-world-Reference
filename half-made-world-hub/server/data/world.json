@@ -2203,6 +2203,10 @@
       {
         "label": "Title",
         "value": "Demon of the Bloodhound"
+      },
+      {
+        "label": "Skills",
+        "value": "Blood-Scent, The Chase, Snare"
       }
     ],
     "tags": [
@@ -4843,6 +4847,51 @@
       "skill",
       "angel",
       "personalized"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-270",
+    "category": "Demon Skills",
+    "name": "Blood-Scent",
+    "subtitle": "Bloodward skill",
+    "description": "Tastes a trace of a target’s blood to track them across any distance.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-271",
+    "category": "Demon Skills",
+    "name": "The Chase",
+    "subtitle": "Bloodward skill",
+    "description": "Once on a scent, he cannot be shaken off until he chooses to stop.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-272",
+    "category": "Demon Skills",
+    "name": "Snare",
+    "subtitle": "Bloodward skill",
+    "description": "A marked target’s own steps tighten into a trap around them.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "demon",
+      "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
