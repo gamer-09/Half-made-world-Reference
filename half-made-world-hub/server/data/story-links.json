@@ -2314,16 +2314,6 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "link-seed-218",
-    "source": "Demon of usurpation",
-    "target": "Othrek Veyne",
-    "type": "held by",
-    "label": "Held by",
-    "description": "The title “Demon of usurpation” is borne by Othrek Veyne.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
     "id": "link-seed-219",
     "source": "Demon of love",
     "target": "Isella Marrek",
@@ -2510,36 +2500,6 @@
     "type": "skill of",
     "label": "Skill of",
     "description": "One of the Demon of gluttony’s abilities.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-242",
-    "source": "Mirror",
-    "target": "Demon of usurpation",
-    "type": "skill of",
-    "label": "Skill of",
-    "description": "One of the Demon of usurpation’s abilities.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-243",
-    "source": "Hollow Step",
-    "target": "Demon of usurpation",
-    "type": "skill of",
-    "label": "Skill of",
-    "description": "One of the Demon of usurpation’s abilities.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-244",
-    "source": "Voided",
-    "target": "Demon of usurpation",
-    "type": "skill of",
-    "label": "Skill of",
-    "description": "One of the Demon of usurpation’s abilities.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -3086,16 +3046,6 @@
   {
     "id": "link-seed-299",
     "source": "Nyra Thessan",
-    "target": "Demon Realm",
-    "type": "lives in",
-    "label": "Lives in",
-    "description": "A Bloodward general of the Demon army.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-300",
-    "source": "Othrek Veyne",
     "target": "Demon Realm",
     "type": "lives in",
     "label": "Lives in",

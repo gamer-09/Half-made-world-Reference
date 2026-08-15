@@ -272,7 +272,6 @@ module.exports = [
   s('Jester demon', 'Kael Vornath', 'held by', 'Held by', 'The title “Demon of the Toll” is borne by Kael Vornath — Exacts a price from every soul that crosses the Demon army’s path.'),
   s('Demon of melancholy', 'Sythra Kaelis', 'held by', 'Held by', 'The title “Demon of the Harvest” is borne by Sythra Kaelis — Reaps what the war sows, and keeps the best of it.'),
   s('Demon of gluttony', 'Nyra Thessan', 'held by', 'Held by', 'The title “Demon of gluttony” is borne by Nyra Thessan — the general who devours magic and is never filled.'),
-  s('Demon of usurpation', 'Othrek Veyne', 'held by', 'Held by', 'The title “Demon of usurpation” is borne by Othrek Veyne — the general who rose by taking what belonged to others.'),
   s('Demon of love', 'Isella Marrek', 'held by', 'Held by', 'The title “Demon of the Debt” is borne by Ilsa Marrek — Collects what is owed — in blood, always.'),
   s('Second Pillar, Helious', 'Cyrion', 'held by', 'Held by', 'The title “Helious” is borne by Cyrion — the Second Pillar of the Six Pillars of Angels.'),
   s('Third Pillar, Areous', 'Serathiel', 'held by', 'Held by', 'The title “Areous” is borne by Serathiel — the Third Pillar of the Six Pillars of Angels.'),
@@ -298,9 +297,6 @@ module.exports = [
   s('Siphon', 'Demon of gluttony', 'skill of', 'Skill of', 'One of the Demon of gluttony’s abilities.'),
   s('Unslaked', 'Demon of gluttony', 'skill of', 'Skill of', 'One of the Demon of gluttony’s abilities.'),
   s('Seal', 'Demon of gluttony', 'skill of', 'Skill of', 'One of the Demon of gluttony’s abilities.'),
-  s('Mirror', 'Demon of usurpation', 'skill of', 'Skill of', 'One of the Demon of usurpation’s abilities.'),
-  s('Hollow Step', 'Demon of usurpation', 'skill of', 'Skill of', 'One of the Demon of usurpation’s abilities.'),
-  s('Voided', 'Demon of usurpation', 'skill of', 'Skill of', 'One of the Demon of usurpation’s abilities.'),
 
   // --- Pillar skills, linked to their titles ---
   s('Lapse', 'First Pillar, Chronous', 'skill of', 'Skill of', 'One of the First Pillar, Chronous’s abilities.'),
@@ -368,7 +364,6 @@ module.exports = [
   s('Kael Vornath', 'Demon Realm', 'lives in', 'Lives in', 'A Bloodward general of the Demon army.'),
   s('Sythra Kaelis', 'Demon Realm', 'lives in', 'Lives in', 'A Bloodward general of the Demon army.'),
   s('Nyra Thessan', 'Demon Realm', 'lives in', 'Lives in', 'A Bloodward general of the Demon army.'),
-  s('Othrek Veyne', 'Demon Realm', 'lives in', 'Lives in', 'A Bloodward general of the Demon army.'),
   s('Isella Marrek', 'Demon Realm', 'lives in', 'Lives in', 'A Bloodward general of the Demon army.'),
   s('Cyrion', 'Angel Realm', 'lives in', 'Lives in', 'An Aetherblade Lord Angel of the Angel army.'),
   s('Serathiel', 'Angel Realm', 'lives in', 'Lives in', 'An Aetherblade Lord Angel of the Angel army.'),

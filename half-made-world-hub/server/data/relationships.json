@@ -244,16 +244,6 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "rel-seed-021",
-    "source": "Othrek Veyne",
-    "target": "Tera Morage",
-    "type": "serves",
-    "label": "Serves",
-    "description": "Othrek Veyne is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
     "id": "rel-seed-022",
     "source": "Isella Marrek",
     "target": "Tera Morage",

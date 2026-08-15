@@ -3860,37 +3860,6 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-206",
-    "category": "Characters",
-    "name": "Othrek Veyne",
-    "subtitle": "Demon general of the Demon army",
-    "description": "He rose through the ranks by taking what belonged to others — their victories, their titles, their strength. A usurper by nature, he has never won a thing on his own, only claimed it from the one who did. Now he holds a general’s seat, and every skill thrown at him is one more thing to make his own.",
-    "fields": [
-      {
-        "label": "Rank",
-        "value": "Bloodward"
-      },
-      {
-        "label": "Title",
-        "value": "Demon of usurpation"
-      },
-      {
-        "label": "Skills",
-        "value": "Mirror, Hollow Step, Voided"
-      }
-    ],
-    "tags": [
-      "character",
-      "demon",
-      "general",
-      "bloodward",
-      "usurpation",
-      "othrek veyne"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
     "id": "seed-207",
     "category": "Characters",
     "name": "Isella Marrek",
@@ -4155,27 +4124,6 @@
       "demon",
       "general",
       "nyra thessan"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "seed-218",
-    "category": "Titles",
-    "name": "Demon of usurpation",
-    "subtitle": "The title of Othrek Veyne",
-    "description": "A title borne by Othrek Veyne — the general who rose by taking what belonged to others.",
-    "fields": [
-      {
-        "label": "Held by",
-        "value": "Othrek Veyne"
-      }
-    ],
-    "tags": [
-      "title",
-      "demon",
-      "general",
-      "othrek veyne"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -4498,51 +4446,6 @@
     "name": "Seal",
     "subtitle": "Bloodward skill",
     "description": "Locks an opponent’s special ability for 1 minute.",
-    "fields": [],
-    "tags": [
-      "skill",
-      "demon",
-      "bloodward"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "seed-242",
-    "category": "Demon Skills",
-    "name": "Mirror",
-    "subtitle": "Bloodward skill",
-    "description": "Copies one of the skills thrown at him.",
-    "fields": [],
-    "tags": [
-      "skill",
-      "demon",
-      "bloodward"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "seed-243",
-    "category": "Demon Skills",
-    "name": "Hollow Step",
-    "subtitle": "Bloodward skill",
-    "description": "Leaves no trace, no scent, as if he was never there.",
-    "fields": [],
-    "tags": [
-      "skill",
-      "demon",
-      "bloodward"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "seed-244",
-    "category": "Demon Skills",
-    "name": "Voided",
-    "subtitle": "Bloodward skill",
-    "description": "Briefly erases himself from an enemy’s sight and memory.",
     "fields": [],
     "tags": [
       "skill",

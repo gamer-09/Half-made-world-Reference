@@ -42,7 +42,6 @@ module.exports = [
   r('Kael Vornath', 'Tera Morage', 'serves', 'Serves', 'Kael Vornath is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.'),
   r('Sythra Kaelis', 'Tera Morage', 'serves', 'Serves', 'Sythra Kaelis is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.'),
   r('Nyra Thessan', 'Tera Morage', 'serves', 'Serves', 'Nyra Thessan is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.'),
-  r('Othrek Veyne', 'Tera Morage', 'serves', 'Serves', 'Othrek Veyne is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.'),
   r('Isella Marrek', 'Tera Morage', 'serves', 'Serves', 'Isella Marrek is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.'),
   r('Cyrion', 'Clint Ashborn', 'serves', 'Serves', 'Cyrion is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.'),
   r('Serathiel', 'Clint Ashborn', 'serves', 'Serves', 'Serathiel is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.'),
