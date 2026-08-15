@@ -2053,7 +2053,7 @@ module.exports = [
     'Fallen Angels',
     'The broken — cast out for breaking the vow',
     'The type of angel who broke the Veyn Vow and was cast out of the Angel Realm. They keep their wings and power but can never take another vow, leaving their connection to Veyn unstable and unregulated.',
-    [{ label: 'Innate Ability', value: 'Faster Regen' }],
+    [{ label: 'Innate Ability', value: 'Rapid-Mend' }],
     ['race', 'angel', 'fallen angels', 'fallen'],
   ),
 
@@ -2075,7 +2075,7 @@ module.exports = [
   ),
   e(
     'Innate Abilities',
-    'Faster Regen',
+    'Rapid-Mend',
     'Innate ability',
     'Their regeneration speeds up in bursts, mending wounds quicker than it should.',
     [],

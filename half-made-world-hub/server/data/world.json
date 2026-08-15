@@ -4998,7 +4998,7 @@
     "fields": [
       {
         "label": "Innate Ability",
-        "value": "Faster Regen"
+        "value": "Rapid-Mend"
       }
     ],
     "tags": [
@@ -5043,7 +5043,7 @@
   {
     "id": "seed-280",
     "category": "Innate Abilities",
-    "name": "Faster Regen",
+    "name": "Rapid-Mend",
     "subtitle": "Innate ability",
     "description": "Their regeneration speeds up in bursts, mending wounds quicker than it should.",
     "fields": [],

@@ -395,5 +395,5 @@ module.exports = [
   // --- Angel type innate abilities ---
   s('Imperishable', 'Cherubim', 'innate of', 'Innate of', 'Imperishable is the innate ability of the Cherubim.'),
   s('Veyn-Regen', 'Malakhim', 'innate of', 'Innate of', 'Veyn-Regen is the innate ability of the Malakhim.'),
-  s('Faster Regen', 'Fallen Angels', 'innate of', 'Innate of', 'Faster Regen is the innate ability of the Fallen Angels.'),
+  s('Rapid-Mend', 'Fallen Angels', 'innate of', 'Innate of', 'Faster Regen is the innate ability of the Fallen Angels.'),
 ];
