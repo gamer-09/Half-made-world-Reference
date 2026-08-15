@@ -338,4 +338,22 @@ module.exports = [
   // --- Inherited skills passed down to the MC ---
   s('Auralis Seal', 'Jaiden Marlock', 'passed down', 'Passed down', 'Inherited from Lisa — the sealing craft she used to make the Auralis Ruby that seals his forms and auras.'),
   s('The Stolen Hour', 'Jaiden Marlock', 'passed down', 'Passed down', 'Inherited from Ordium — a time-warping skill passed down through his father’s line.'),
+
+  // --- Plot & Rules/Notes cross-links ---
+  s("Lisa’s Plot", 'Sofia', 'story of', 'Story of', 'Lisa gave the child to her maid Sofia to raise in the Human Realm.'),
+  s("Lisa’s Plot", 'Jaiden Marlock', 'story of', 'Story of', "The plot is the story of Jaiden’s birth and hidden parentage."),
+  s("Lisa’s Plot", 'Auralis Ruby', 'story of', 'Story of', "Lisa sealed Jaiden’s auras with the Auralis Ruby."),
+  s("Licent Varak’s Plot", 'Lisa', 'story of', 'Story of', "Licent Varak’s plot is the story of how he reported Lisa’s affair."),
+  s("Licent Varak’s Plot", 'Tera Morage', 'story of', 'Story of', 'He reported Lisa to Tera Morage, which enraged the ruler.'),
+  s("Licent Varak’s Plot", 'Sofia', 'story of', 'Story of', 'He followed Sofia heading to an unknown location.'),
+  s("Ordium’s Plot", 'Lisa', 'story of', 'Story of', "Ordium’s plot is the story of his love for Lisa."),
+  s('Affinity & Awakening', 'Veyn', 'about', 'About', "The Sundering Altar unlocks a person’s latent connection to Veyn."),
+  s('Class Skill Limits', 'Angels (Overview)', 'about', 'About', 'Angel-realm beings are limited to 5 class skills because of their innate skills.'),
+  s('Class Skill Limits', 'Demons (Overview)', 'about', 'About', 'Demon-realm beings are limited to 5 class skills because of their innate skills.'),
+  s('Class Skill Limits', 'Humans', 'about', 'About', 'Humans can learn all the skills of their chosen class.'),
+  s('Veyn & Ren Incompatibility', 'Bladesinger', 'about', 'About', 'Bladesinger — a Ren class — cannot be joined with magic, since Veyn and Ren are incompatible.'),
+  s('Inheritance of Ranks & Abilities', 'Angels (Overview)', 'about', 'About', "An angel’s rank can be passed down to an offspring."),
+  s('Inheritance of Ranks & Abilities', 'Demons (Overview)', 'about', 'About', "A demon’s rank can be passed down to an offspring."),
+  s('The Hidden Realm Portal', 'Shudon', 'about', 'About', 'The entrances to the different realms are guarded by a Shudon.'),
+  s('Nyra Thessan', 'Cindergrave Wraith Lord', 'hungers like', 'Hungers like', 'She hungers the way the Cindergrave wraiths do, drawing Veyn from the living.'),
 ];

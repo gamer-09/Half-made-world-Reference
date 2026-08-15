@@ -49,4 +49,12 @@ module.exports = [
   r('Liora Veyne', 'Clint Ashborn', 'serves', 'Serves', 'Liora Veyne is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.'),
   r('Thalor Elwin', 'Clint Ashborn', 'serves', 'Serves', 'Thalor Elwin is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.'),
   r('Aranweis', 'Clint Ashborn', 'serves', 'Serves', 'Aranweis is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.'),
+
+  // --- New-character ties to existing cast ---
+  r('Sythra Kaelis', 'Lisa', 'drained', 'Drained', "She was sent to “comfort” Lisa after her demotion to Gnash, draining what remained of her before Licent Varak’s men finished it."),
+  r('Cyrion', 'Ordium', 'knows', 'Knows', 'Saw Ordium slip away and has kept the secret of his parentage ever since.'),
+  r('Cyrion', 'Jaiden Marlock', 'knows', 'Knows', "Kept the secret of Jaiden’s parentage."),
+  r('Serathiel', 'Ordium', 'rival of', 'Rival of', 'Resents that Ordium threw away the seat she would have bled to hold.'),
+  r('Liora Veyne', 'Ordium', 'knows', 'Knows', "Brought the execution order to Ordium’s door."),
+  r('Thalor Elwin', 'Ordium', 'knows', 'Knows', "Saw Ordium’s vow fraying and said nothing."),
 ];

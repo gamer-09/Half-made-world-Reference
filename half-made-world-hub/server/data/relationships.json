@@ -61,7 +61,7 @@
   },
   {
     "id": "rel-seed-007",
-    "source": "Sofia",
+    "source": "Sofia Marlock",
     "target": "Lisa",
     "type": "serves",
     "label": "Serves",
@@ -111,7 +111,7 @@
   },
   {
     "id": "rel-seed-012",
-    "source": "Sofia",
+    "source": "Sofia Marlock",
     "target": "Jaiden Marlock",
     "type": "guardian of",
     "label": "Guardian of",
@@ -122,7 +122,7 @@
   {
     "id": "rel-seed-013",
     "source": "Licent Varak",
-    "target": "Sofia",
+    "target": "Sofia Marlock",
     "type": "knows",
     "label": "Knows",
     "description": "Saw Sofia heading to an unknown location and tried to follow her, but lost track of her.",
@@ -310,6 +310,66 @@
     "type": "serves",
     "label": "Serves",
     "description": "Aranweis is an Aetherblade Lord Angel general serving under Clint Ashborn, the Serapharch ruler of the Angel Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-028",
+    "source": "Sythra Kaelis",
+    "target": "Lisa",
+    "type": "drained",
+    "label": "Drained",
+    "description": "She was sent to “comfort” Lisa after her demotion to Gnash, draining what remained of her before Licent Varak’s men finished it.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-029",
+    "source": "Cyrion",
+    "target": "Ordium",
+    "type": "knows",
+    "label": "Knows",
+    "description": "Saw Ordium slip away and has kept the secret of his parentage ever since.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-030",
+    "source": "Cyrion",
+    "target": "Jaiden Marlock",
+    "type": "knows",
+    "label": "Knows",
+    "description": "Kept the secret of Jaiden’s parentage.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-031",
+    "source": "Serathiel",
+    "target": "Ordium",
+    "type": "rival of",
+    "label": "Rival of",
+    "description": "Resents that Ordium threw away the seat she would have bled to hold.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-032",
+    "source": "Liora Veyne",
+    "target": "Ordium",
+    "type": "knows",
+    "label": "Knows",
+    "description": "Brought the execution order to Ordium’s door.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-033",
+    "source": "Thalor Elwin",
+    "target": "Ordium",
+    "type": "knows",
+    "label": "Knows",
+    "description": "Saw Ordium’s vow fraying and said nothing.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   }

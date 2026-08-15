@@ -693,7 +693,7 @@
   {
     "id": "link-seed-070",
     "source": "Auralis Ruby",
-    "target": "Sofia",
+    "target": "Sofia Marlock",
     "type": "given to",
     "label": "Given to",
     "description": "Crafted by Lisa and given to her personal maid Sofia.",
@@ -713,7 +713,7 @@
   {
     "id": "link-seed-072",
     "source": "Jaiden Marlock",
-    "target": "Sofia",
+    "target": "Sofia Marlock",
     "type": "given to",
     "label": "Given to",
     "description": "Lisa gave her newborn son to her personal maid Sofia to raise in the Human Realm.",
@@ -2830,6 +2830,186 @@
     "type": "passed down",
     "label": "Passed down",
     "description": "Inherited from Ordium — a time-warping skill passed down through his father’s line.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-274",
+    "source": "Lisa’s Plot",
+    "target": "Sofia Marlock",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Lisa gave the child to her maid Sofia to raise in the Human Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-275",
+    "source": "Lisa’s Plot",
+    "target": "Jaiden Marlock",
+    "type": "story of",
+    "label": "Story of",
+    "description": "The plot is the story of Jaiden’s birth and hidden parentage.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-276",
+    "source": "Lisa’s Plot",
+    "target": "Auralis Ruby",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Lisa sealed Jaiden’s auras with the Auralis Ruby.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-277",
+    "source": "Licent Varak’s Plot",
+    "target": "Lisa",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Licent Varak’s plot is the story of how he reported Lisa’s affair.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-278",
+    "source": "Licent Varak’s Plot",
+    "target": "Tera Morage",
+    "type": "story of",
+    "label": "Story of",
+    "description": "He reported Lisa to Tera Morage, which enraged the ruler.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-279",
+    "source": "Licent Varak’s Plot",
+    "target": "Sofia Marlock",
+    "type": "story of",
+    "label": "Story of",
+    "description": "He followed Sofia heading to an unknown location.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-280",
+    "source": "Ordium’s Plot",
+    "target": "Lisa",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Ordium’s plot is the story of his love for Lisa.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-281",
+    "source": "Jaiden Marlock Plot",
+    "target": "Sofia Marlock",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Sofia raised and trained Jaiden in the Human Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-282",
+    "source": "Jaiden Marlock Plot",
+    "target": "Carin",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Carin trained Jaiden to control his demonic power.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-283",
+    "source": "Affinity & Awakening",
+    "target": "Veyn",
+    "type": "about",
+    "label": "About",
+    "description": "The Sundering Altar unlocks a person’s latent connection to Veyn.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-284",
+    "source": "Class Skill Limits",
+    "target": "Angels (Overview)",
+    "type": "about",
+    "label": "About",
+    "description": "Angel-realm beings are limited to 5 class skills because of their innate skills.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-285",
+    "source": "Class Skill Limits",
+    "target": "Demons (Overview)",
+    "type": "about",
+    "label": "About",
+    "description": "Demon-realm beings are limited to 5 class skills because of their innate skills.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-286",
+    "source": "Class Skill Limits",
+    "target": "Humans",
+    "type": "about",
+    "label": "About",
+    "description": "Humans can learn all the skills of their chosen class.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-287",
+    "source": "Veyn & Ren Incompatibility",
+    "target": "Bladesinger",
+    "type": "about",
+    "label": "About",
+    "description": "Bladesinger — a Ren class — cannot be joined with magic, since Veyn and Ren are incompatible.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-288",
+    "source": "Inheritance of Ranks & Abilities",
+    "target": "Angels (Overview)",
+    "type": "about",
+    "label": "About",
+    "description": "An angel’s rank can be passed down to an offspring.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-289",
+    "source": "Inheritance of Ranks & Abilities",
+    "target": "Demons (Overview)",
+    "type": "about",
+    "label": "About",
+    "description": "A demon’s rank can be passed down to an offspring.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-290",
+    "source": "The Hidden Realm Portal",
+    "target": "Shudon",
+    "type": "about",
+    "label": "About",
+    "description": "The entrances to the different realms are guarded by a Shudon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-291",
+    "source": "Nyra Thessan",
+    "target": "Cindergrave Wraith Lord",
+    "type": "hungers like",
+    "label": "Hungers like",
+    "description": "She hungers the way the Cindergrave wraiths do, drawing Veyn from the living.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   }
