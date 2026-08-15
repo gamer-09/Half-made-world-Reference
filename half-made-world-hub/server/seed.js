@@ -2037,7 +2037,7 @@ module.exports = [
   ),
 
   e(
-    'Races',
+    'Species',
     'Cherubim',
     'The throne-guardians — the apex angels',
     'The highest type of angel, the guardians of the throne. The Serapharch — the ruler of the Angel Realm — is of this type. They are essentially immortal and can only be killed by a Divine Weapon or a Corrupted Divine Weapon (Vireth, the Fallen Grace).',
@@ -2045,7 +2045,7 @@ module.exports = [
     ['race', 'angel', 'cherubim', 'apex'],
   ),
   e(
-    'Races',
+    'Species',
     'Malakhim',
     'The messenger host — the common true angels',
     'The common type of true angel, the faithful host who take the Veyn Vow. The Aetherblade Lord Angels, Virtues, and Lumen all belong to this type.',
@@ -2053,7 +2053,7 @@ module.exports = [
     ['race', 'angel', 'malakhim', 'host'],
   ),
   e(
-    'Races',
+    'Species',
     'Fallen Angels',
     'The broken — cast out for breaking the vow',
     'The type of angel who broke the Veyn Vow and was cast out of the Angel Realm. They keep their wings and power but can never take another vow, leaving their connection to Veyn unstable and unregulated.',
@@ -2087,7 +2087,7 @@ module.exports = [
   ),
 
   e(
-    'Races',
+    'Species',
     'Fiends',
     'The apex demons',
     'The highest type of demon, the rulers of the Demon Realm. The Mordrach are of this type — they cannot be killed by regular or holy weapons, only by a Divine Weapon.',
@@ -2097,7 +2097,7 @@ module.exports = [
     ['race', 'demon', 'fiends', 'apex'],
   ),
   e(
-    'Races',
+    'Species',
     'Dregs',
     'The common demons',
     'The common type of demon, the rank-and-file of the Demon Realm. The Bloodward, Scourge, and Gnash all belong to this type.',
@@ -2107,7 +2107,7 @@ module.exports = [
     ['race', 'demon', 'dregs', 'common'],
   ),
   e(
-    'Races',
+    'Species',
     'Shades',
     'The Veyn-formed',
     'The type of demon given shape by unstable Veyn rather than born of the Demon Realm’s ranks. The Cindergrave Wraith Lord and the Lesser Cindergrave Wraiths belong to this type.',
@@ -2139,5 +2139,14 @@ module.exports = [
     'Can drain the Veyn of others without them knowing or feeling it — only a slight discomfort.',
     [],
     ['innate', 'ability', 'demon'],
+  ),
+
+  e(
+    'Rules & Notes',
+    'Angel Evolution',
+    'How a new Serapharch is made',
+    'To become the first rank — the Serapharch — the heir is flooded with a massive amount of Veyn, then exposed to ten days of raw, concentrated Veyn. If they survive, they evolve into the Cherubim apex and become the new ruler of the Angel Realm. This rite is performed on the heir, and only after the king has died.',
+    [],
+    ['evolution', 'angel', 'cherubim', 'serapharch', 'rule'],
   ),
 ];
