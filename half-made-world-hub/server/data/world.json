@@ -2206,7 +2206,7 @@
       },
       {
         "label": "Skills",
-        "value": "Blood-Scent, The Chase, Snare"
+        "value": "Blood-Oath, Disinter, Fox-Tongue"
       }
     ],
     "tags": [
@@ -4854,9 +4854,9 @@
   {
     "id": "seed-270",
     "category": "Demon Skills",
-    "name": "Blood-Scent",
+    "name": "Blood-Oath",
     "subtitle": "Bloodward skill",
-    "description": "Tastes a trace of a target’s blood to track them across any distance.",
+    "description": "A contract sealed in the breaker’s own blood. Deadlier than a Blood Pact — it does not break when he dies, and whoever breaks it forfeits their Veyn to him.",
     "fields": [],
     "tags": [
       "skill",
@@ -4869,9 +4869,9 @@
   {
     "id": "seed-271",
     "category": "Demon Skills",
-    "name": "The Chase",
+    "name": "Disinter",
     "subtitle": "Bloodward skill",
-    "description": "Once on a scent, he cannot be shaken off until he chooses to stop.",
+    "description": "Digs up what a target buried, dragging the hidden truth into the light.",
     "fields": [],
     "tags": [
       "skill",
@@ -4884,9 +4884,9 @@
   {
     "id": "seed-272",
     "category": "Demon Skills",
-    "name": "Snare",
+    "name": "Fox-Tongue",
     "subtitle": "Bloodward skill",
-    "description": "A marked target’s own steps tighten into a trap around them.",
+    "description": "What he speaks rings true; a lie from him is believed as fact, like a swindling fox.",
     "fields": [],
     "tags": [
       "skill",

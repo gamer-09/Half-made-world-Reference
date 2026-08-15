@@ -3145,7 +3145,7 @@
   },
   {
     "id": "link-seed-310",
-    "source": "Blood-Scent",
+    "source": "Blood-Oath",
     "target": "Demon of the Bloodhound",
     "type": "skill of",
     "label": "Skill of",
@@ -3155,7 +3155,7 @@
   },
   {
     "id": "link-seed-311",
-    "source": "The Chase",
+    "source": "Disinter",
     "target": "Demon of the Bloodhound",
     "type": "skill of",
     "label": "Skill of",
@@ -3165,7 +3165,7 @@
   },
   {
     "id": "link-seed-312",
-    "source": "Snare",
+    "source": "Fox-Tongue",
     "target": "Demon of the Bloodhound",
     "type": "skill of",
     "label": "Skill of",
