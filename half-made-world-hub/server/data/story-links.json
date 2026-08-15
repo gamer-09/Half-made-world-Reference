@@ -3172,5 +3172,27 @@
     "description": "One of the Demon of the Bloodhound’s abilities.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "7cfe8b09-5223-4a64-80b1-3cbcfc4168d6",
+    "source": "Auralis Ruby",
+    "target": "Jaiden Marlock",
+    "type": "owned by",
+    "label": "Owned by",
+    "description": "Jaiden is the owner of the necklace",
+    "color": "",
+    "createdAt": "2026-08-15T13:32:32.541Z",
+    "updatedAt": "2026-08-15T13:32:32.541Z"
+  },
+  {
+    "id": "e314a44f-a0f0-4047-a362-4fad628cb85a",
+    "source": "Wener Leger",
+    "target": "Human Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "He lives in the human realm since he was casted out of the angel realm",
+    "color": "",
+    "createdAt": "2026-08-15T16:04:04.351Z",
+    "updatedAt": "2026-08-15T16:04:04.351Z"
   }
 ]

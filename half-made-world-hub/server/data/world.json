@@ -3596,7 +3596,7 @@
     "category": "Plot",
     "name": "Jaiden Marlock Plot",
     "subtitle": "Plot for Mc",
-    "description": "His class is Mage. he has a much higher amount of Veyn than other Angels and Demons. He stays in a small house with Sofia who takes care of him and protects him. Later Sofia took him meet with Carin who then train him to be better at his demonic power. Sofia also trained Jaiden on how to use his angelic powers.",
+    "description": "His class is Mage. he has a much higher amount of Veyn than other Angels and Demons. He stays in a small house with Sofia who takes care of him and protects him. Later Sofia took him meet with Carin who then train him to be better at his demonic power. Sofia also trained Jaiden on how to use his angelic powers. Sofia also gave him the Auralis Ruby from his mother which would seal his true appearance, he can release the seal though for a limited time",
     "fields": [],
     "tags": [
       "protagonist",
@@ -3604,7 +3604,7 @@
       "Jaiden"
     ],
     "createdAt": "2026-08-14T00:52:22.427Z",
-    "updatedAt": "2026-08-14T14:58:01.960Z"
+    "updatedAt": "2026-08-15T13:31:42.544Z"
   },
   {
     "id": "bd19a14c-d2d0-4bea-a7e0-becaafd51a8a",
@@ -3619,11 +3619,11 @@
       },
       {
         "label": "Race",
-        "value": "Angel"
+        "value": "Fallen Angel"
       },
       {
         "label": "Rank",
-        "value": "Aetherblade Lord Angel"
+        "value": "formally Aetherblade Lord Angel"
       }
     ],
     "tags": [
@@ -3633,7 +3633,7 @@
       "wener"
     ],
     "createdAt": "2026-08-14T12:16:11.428Z",
-    "updatedAt": "2026-08-14T12:16:31.116Z"
+    "updatedAt": "2026-08-15T16:03:04.629Z"
   },
   {
     "id": "seed-186",
