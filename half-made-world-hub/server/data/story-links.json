@@ -1486,7 +1486,7 @@
     "target": "Elves",
     "type": "part of",
     "label": "Part of",
-    "description": "One of the two types of Elves stated in the doc - a class of Elf.",
+    "description": "One of the two types of Elves — the Pallantine stay in the Arubian Forest.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-13T23:56:34.666Z",
     "color": ""
@@ -1497,7 +1497,7 @@
     "target": "Elves",
     "type": "part of",
     "label": "Part of",
-    "description": "One of the two types of Elves stated in the doc - a class of Elf.",
+    "description": "One of the two types of Elves — the Veilborn stay in the Umbrage Forest and only trust themselves.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-13T23:56:26.149Z",
     "color": ""
@@ -3194,5 +3194,15 @@
     "color": "",
     "createdAt": "2026-08-15T16:04:04.351Z",
     "updatedAt": "2026-08-15T16:04:04.351Z"
+  },
+  {
+    "id": "link-seed-313",
+    "source": "Elves",
+    "target": "Humans",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Elves are a race under humanity — the forest-dwelling kin of the human line, with two types: Pallantine and Veilborn.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

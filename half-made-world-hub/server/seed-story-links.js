@@ -25,6 +25,7 @@ module.exports = [
   s('Angels (Overview)', 'Angel Realm', 'home of', 'Home of', 'The Angel Realm is home to all four angel ranks.'),
   s('Demons (Overview)', 'Demon Realm', 'home of', 'Home of', 'The Demon Realm is home to all four demon ranks.'),
   s('Humans', 'Human Realm', 'home of', 'Home of', 'The Human Realm is home to humanity.'),
+  s('Elves', 'Humans', 'part of', 'Part of', 'Elves are a race under humanity — the forest-dwelling kin of the human line, with two types: Pallantine and Veilborn.'),
   s('Arubian Forest', 'Ether Forest', 'part of', 'Part of', 'Arubian is the light half of the Ether Forest.'),
   s('Umbrage Forest', 'Ether Forest', 'part of', 'Part of', 'Umbrage is the dark half of the Ether Forest.'),
   s('Arubian Forest', 'Human Realm', 'located in', 'Located in', 'The light half of the forest lies within the Human Realm.'),
@@ -198,8 +199,8 @@ module.exports = [
   s("Jaiden Marlock — True Hybrid Form", 'Jaiden Marlock', 'form of', 'Form of', 'One of Jaiden\'s forms.', 'A transformation Jaiden can take.'),
   s("Graceless Edge", 'Vireth, the Fallen Grace', 'skill of', 'Skill of', 'A skill of the corrupted divine sword.', 'One of Vireth\'s signature abilities.'),
   s("Split Grace", 'Vireth, the Fallen Grace', 'skill of', 'Skill of', 'A skill of the corrupted divine sword.', 'One of Vireth\'s signature abilities.'),
-  s("Pallantine", 'Elves', 'class of', 'Class of', 'One of the two types of Elves stated in the doc - a class of Elf.', 'The doc says there are two types of Elves.'),
-  s("Veilborn", 'Elves', 'class of', 'Class of', 'One of the two types of Elves stated in the doc - a class of Elf.', 'The doc says there are two types of Elves.'),
+  s("Pallantine", 'Elves', 'part of', 'Part of', 'One of the two types of Elves — the Pallantine stay in the Arubian Forest.'),
+  s("Veilborn", 'Elves', 'part of', 'Part of', 'One of the two types of Elves — the Veilborn stay in the Umbrage Forest and only trust themselves.'),
 
   // --- Class of: occupations -> the magic system they are a class of -------------
   s('Mage', 'Veyn', 'class of', 'Class of', 'A Magic/Veyn class.'),
