@@ -266,7 +266,7 @@ module.exports = [
     'Cindergrave Wraith Lord',
     'Ruler of Lethmoor’s ruins',
     'The ruler of Lethmoor’s ruins, formed from the strongest fragment of will pulled from the fallen kingdom when the city was replicated. It is not a dead body turned undead; it is an unfinished will given shape by the unstable Veyn in Lethmoor’s terrain. It hungers for Veyn from anything living that enters the ruins, and feeding is what keeps its half-replicated form from falling apart. It rules from the throne room but can move through the ruins to rally the lesser Cindergrave wraiths if intruders get deep enough. Its touch drains Veyn directly from a target to sustain itself — the more it feeds, the stronger and more solid it gets before fading back down. Destroying it means disrupting the Veyn holding it together, not just physical damage, so a Diviner or Exorcist hits it far harder than a regular weapon would.',
-    [{ label: 'Location', value: 'Lethmoor Kingdom — throne room' }],
+    [{ label: 'Type', value: 'Shades' }, { label: 'Location', value: 'Lethmoor Kingdom — throne room' }],
     ['cindergrave', 'wraith', 'lethmoor', 'boss'],
   ),
   e(
@@ -274,7 +274,7 @@ module.exports = [
     'Lesser Cindergrave Wraiths',
     'Drifting fragments of will',
     'Weaker fragments of will formed the same way the Cindergrave Wraith Lord was, pulled from the fallen kingdom when Lethmoor was replicated, just without enough strength or Veyn to hold a fully solid form. They drift through the ruins and only fully mobilize when the Cindergrave Wraith Lord rallies them against intruders who get too deep into the city. Like their lord, they feed on Veyn from the living to stay together, though far less efficiently. A lesser Cindergrave wraith can be worn down and dispersed by regular weapons; they just reform again over time as long as Lethmoor’s unstable Veyn remains in the terrain.',
-    [{ label: 'Location', value: 'Lethmoor Kingdom ruins' }],
+    [{ label: 'Type', value: 'Shades' }, { label: 'Location', value: 'Lethmoor Kingdom ruins' }],
     ['cindergrave', 'wraith', 'lethmoor'],
   ),
   e(
@@ -387,7 +387,8 @@ module.exports = [
     'Mordrach',
     'Rank 1 — Rulers of the Demon Realm',
     'They are the rulers of the Demon Realm and the highest rank of authority there. They can’t be killed by regular weapons or holy imbued weapons. They can only be harmed and killed by a Divine weapon.',
-    [
+    [      { label: 'Type', value: 'Fiends' },
+
       { label: 'Appearance', value: '8 horns and 8 wings, the horns curling back and fused together at the base like a crown. Their wings are massive, tattered at the edges but still powerful, the black feathers seeming to absorb light rather than reflect it. They have the strongest aura amongst all the demons. Deep-purple colored wings.' },
       { label: 'Skills', value: 'Death Scythe, Chain Reaper Scythe, Call of the Dead, Dominating Will, Soul Oath, Veyn Decomposition (Mordrach), Hands of Death, Purgatory Flames, Charm, Soul-Sight, Berserk (Mordrach), Demonic Aura (Mordrach), Duskveil (Mordrach) — each skill has its own entry in the Angel Skills / Demon Skills categories.' },
       { label: 'Known Mordrach', value: 'Tera Morage (Female) — current ruler of the Demon Realm.' },
@@ -399,7 +400,8 @@ module.exports = [
     'Bloodward',
     'Rank 2 — Commanders of the Demon Army',
     'They are the commanders of the Demon army in the Demon Realm. Their regenerative ability is less than the Mordrach, and their regenerative ability runs on Veyn.',
-    [
+    [      { label: 'Type', value: 'Dregs' },
+
       { label: 'Appearance', value: '6 horns and 6 wings, the horns sharp and jagged, some cracked from old battles. Their wings are broad and scarred, mirroring how the Aetherblade Lord Angel’s wings carry battle-scars that never fully heal. They carry themselves like commanders, always poised for a fight. Their aura is strong but not too strong like the Mordrach. Dark, purple colored wings.' },
       { label: 'Skills', value: 'Blood Chains, Warcry of Dominion, Crimson Ward, Blood Pact, Veyn Decomposition (Bloodward), Demonic Aura (Bloodward), Berserk (Bloodward), Duskveil (Bloodward) — each skill has its own entry in the Angel Skills / Demon Skills categories.' },
     ],
@@ -410,7 +412,8 @@ module.exports = [
     'Scourge',
     'Rank 3 — Demon Soldiers',
     'They are demon soldiers that are under the Bloodward. They have a lesser regeneration that runs on Vitality.',
-    [
+    [      { label: 'Type', value: 'Dregs' },
+
       { label: 'Appearance', value: '4 horns and 4 wings, shorter and less refined than the ranks above. Their wings are smaller, feathers rougher and less full. Their aura is just normal. Wine purple colored wings.' },
       { label: 'Skills', value: 'Vitality Surge, Rend Claws, Pack Tactics, Veyn Decomposition (Scourge), Berserk (Scourge), Demonic Aura (Scourge), Duskveil (Scourge) — each skill has its own entry in the Angel Skills / Demon Skills categories.' },
     ],
@@ -421,7 +424,8 @@ module.exports = [
     'Gnash',
     'Rank 4 — Regular Demons',
     'They are regular demons. At the age of 15 they are taken to The Sundering Altar for their awakening. They can make contracts with anyone, and once the contract is signed, they are bound by it and can’t break free from it until it has been fulfilled. Making a contract with a Gnash is very risky since most of the time they are not friendly, and they want to increase their rank for more power.',
-    [
+    [      { label: 'Type', value: 'Dregs' },
+
       { label: 'Appearance', value: '2 horns and 2 wings, small and stubby, barely more than bumps. Their wings are the smallest of all demon ranks, thin and often kept retracted. They look the most human out of all the ranks, which fits since they’re the ones taken to the Sundering Altar and still closest to an ordinary life before their power grows. Their aura is the weakest and gives an ominous feeling. Mauve, purple colored wings.' },
       { label: 'Skills', value: 'Binding Contract, Veyn Decomposition (Gnash), Instinctive Bargaining, Demonic Aura (Gnash), Duskveil (Gnash) — each skill has its own entry in the Angel Skills / Demon Skills categories.' },
     ],
@@ -2080,5 +2084,60 @@ module.exports = [
     'Their regeneration speeds up in bursts, mending wounds quicker than it should.',
     [],
     ['innate', 'ability', 'angel'],
+  ),
+
+  e(
+    'Races',
+    'Fiends',
+    'The apex demons',
+    'The highest type of demon, the rulers of the Demon Realm. The Mordrach are of this type — they cannot be killed by regular or holy weapons, only by a Divine Weapon.',
+    [
+      { label: 'Innate Ability', value: 'Sovereign Resilience' },
+    ],
+    ['race', 'demon', 'fiends', 'apex'],
+  ),
+  e(
+    'Races',
+    'Dregs',
+    'The common demons',
+    'The common type of demon, the rank-and-file of the Demon Realm. The Bloodward, Scourge, and Gnash all belong to this type.',
+    [
+      { label: 'Innate Ability', value: 'Vitality-Regen' },
+    ],
+    ['race', 'demon', 'dregs', 'common'],
+  ),
+  e(
+    'Races',
+    'Shades',
+    'The Veyn-formed',
+    'The type of demon given shape by unstable Veyn rather than born of the Demon Realm’s ranks. The Cindergrave Wraith Lord and the Lesser Cindergrave Wraiths belong to this type.',
+    [
+      { label: 'Innate Ability', value: 'Veyn-Touch' },
+    ],
+    ['race', 'demon', 'shades', 'veyn-formed'],
+  ),
+  e(
+    'Innate Abilities',
+    'Sovereign Resilience',
+    'Innate ability',
+    'Cannot be harmed or killed by regular or holy weapons — only a Divine Weapon can end them.',
+    [],
+    ['innate', 'ability', 'demon'],
+  ),
+  e(
+    'Innate Abilities',
+    'Vitality-Regen',
+    'Innate ability',
+    'Their regeneration runs on Veyn or Vitality, replenishing faster than it drains.',
+    [],
+    ['innate', 'ability', 'demon'],
+  ),
+  e(
+    'Innate Abilities',
+    'Veyn-Touch',
+    'Innate ability',
+    'Can drain the Veyn of others without them knowing or feeling it — only a slight discomfort.',
+    [],
+    ['innate', 'ability', 'demon'],
   ),
 ];

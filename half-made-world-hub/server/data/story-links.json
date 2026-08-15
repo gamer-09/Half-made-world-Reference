@@ -3284,5 +3284,95 @@
     "description": "Faster Regen is the innate ability of the Fallen Angels.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-322",
+    "source": "Mordrach",
+    "target": "Fiends",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Mordrach is a Fiends demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-323",
+    "source": "Bloodward",
+    "target": "Dregs",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Bloodward is a Dregs demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-324",
+    "source": "Scourge",
+    "target": "Dregs",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Scourge is a Dregs demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-325",
+    "source": "Gnash",
+    "target": "Dregs",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Gnash is a Dregs demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-326",
+    "source": "Cindergrave Wraith Lord",
+    "target": "Shades",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Cindergrave Wraith Lord is a Shades demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-327",
+    "source": "Lesser Cindergrave Wraiths",
+    "target": "Shades",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Lesser Cindergrave Wraiths is a Shades demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-328",
+    "source": "Sovereign Resilience",
+    "target": "Fiends",
+    "type": "innate of",
+    "label": "Innate of",
+    "description": "Sovereign Resilience is the innate ability of the Fiends.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-329",
+    "source": "Vitality-Regen",
+    "target": "Dregs",
+    "type": "innate of",
+    "label": "Innate of",
+    "description": "Vitality-Regen is the innate ability of the Dregs.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-330",
+    "source": "Veyn-Touch",
+    "target": "Shades",
+    "type": "innate of",
+    "label": "Innate of",
+    "description": "Veyn-Touch is the innate ability of the Shades.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

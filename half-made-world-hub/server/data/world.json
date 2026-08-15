@@ -544,6 +544,10 @@
       {
         "label": "Location",
         "value": "Lethmoor Kingdom — throne room"
+      },
+      {
+        "label": "Type",
+        "value": "Shades"
       }
     ],
     "tags": [
@@ -565,6 +569,10 @@
       {
         "label": "Location",
         "value": "Lethmoor Kingdom ruins"
+      },
+      {
+        "label": "Type",
+        "value": "Shades"
       }
     ],
     "tags": [
@@ -833,6 +841,10 @@
       {
         "label": "Known Mordrach",
         "value": "Tera Morage (Female) — current ruler of the Demon Realm."
+      },
+      {
+        "label": "Type",
+        "value": "Fiends"
       }
     ],
     "tags": [
@@ -858,6 +870,10 @@
       {
         "label": "Skills",
         "value": "Blood Chains, Warcry of Dominion, Crimson Ward, Blood Pact, Veyn Decomposition (Bloodward), Demonic Aura (Bloodward), Berserk (Bloodward), Duskveil (Bloodward) — each skill has its own entry in the Angel Skills / Demon Skills categories."
+      },
+      {
+        "label": "Type",
+        "value": "Dregs"
       }
     ],
     "tags": [
@@ -883,6 +899,10 @@
       {
         "label": "Skills",
         "value": "Vitality Surge, Rend Claws, Pack Tactics, Veyn Decomposition (Scourge), Berserk (Scourge), Demonic Aura (Scourge), Duskveil (Scourge) — each skill has its own entry in the Angel Skills / Demon Skills categories."
+      },
+      {
+        "label": "Type",
+        "value": "Dregs"
       }
     ],
     "tags": [
@@ -908,6 +928,10 @@
       {
         "label": "Skills",
         "value": "Binding Contract, Veyn Decomposition (Gnash), Instinctive Bargaining, Demonic Aura (Gnash), Duskveil (Gnash) — each skill has its own entry in the Angel Skills / Demon Skills categories."
+      },
+      {
+        "label": "Type",
+        "value": "Dregs"
       }
     ],
     "tags": [
@@ -5051,6 +5075,114 @@
       "innate",
       "ability",
       "angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-281",
+    "category": "Races",
+    "name": "Fiends",
+    "subtitle": "The apex demons",
+    "description": "The highest type of demon, the rulers of the Demon Realm. The Mordrach are of this type — they cannot be killed by regular or holy weapons, only by a Divine Weapon.",
+    "fields": [
+      {
+        "label": "Innate Ability",
+        "value": "Sovereign Resilience"
+      }
+    ],
+    "tags": [
+      "race",
+      "demon",
+      "fiends",
+      "apex"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-282",
+    "category": "Races",
+    "name": "Dregs",
+    "subtitle": "The common demons",
+    "description": "The common type of demon, the rank-and-file of the Demon Realm. The Bloodward, Scourge, and Gnash all belong to this type.",
+    "fields": [
+      {
+        "label": "Innate Ability",
+        "value": "Vitality-Regen"
+      }
+    ],
+    "tags": [
+      "race",
+      "demon",
+      "dregs",
+      "common"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-283",
+    "category": "Races",
+    "name": "Shades",
+    "subtitle": "The Veyn-formed",
+    "description": "The type of demon given shape by unstable Veyn rather than born of the Demon Realm’s ranks. The Cindergrave Wraith Lord and the Lesser Cindergrave Wraiths belong to this type.",
+    "fields": [
+      {
+        "label": "Innate Ability",
+        "value": "Veyn-Touch"
+      }
+    ],
+    "tags": [
+      "race",
+      "demon",
+      "shades",
+      "veyn-formed"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-284",
+    "category": "Innate Abilities",
+    "name": "Sovereign Resilience",
+    "subtitle": "Innate ability",
+    "description": "Cannot be harmed or killed by regular or holy weapons — only a Divine Weapon can end them.",
+    "fields": [],
+    "tags": [
+      "innate",
+      "ability",
+      "demon"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-285",
+    "category": "Innate Abilities",
+    "name": "Vitality-Regen",
+    "subtitle": "Innate ability",
+    "description": "Their regeneration runs on Veyn or Vitality, replenishing faster than it drains.",
+    "fields": [],
+    "tags": [
+      "innate",
+      "ability",
+      "demon"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-286",
+    "category": "Innate Abilities",
+    "name": "Veyn-Touch",
+    "subtitle": "Innate ability",
+    "description": "Can drain the Veyn of others without them knowing or feeling it — only a slight discomfort.",
+    "fields": [],
+    "tags": [
+      "innate",
+      "ability",
+      "demon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"

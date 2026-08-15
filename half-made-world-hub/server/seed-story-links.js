@@ -396,4 +396,15 @@ module.exports = [
   s('Imperishable', 'Cherubim', 'innate of', 'Innate of', 'Imperishable is the innate ability of the Cherubim.'),
   s('Veyn-Regen', 'Malakhim', 'innate of', 'Innate of', 'Veyn-Regen is the innate ability of the Malakhim.'),
   s('Rapid-Mend', 'Fallen Angels', 'innate of', 'Innate of', 'Faster Regen is the innate ability of the Fallen Angels.'),
+
+  // --- Demon types (Fiends / Dregs / Shades) + innates ---
+  s('Mordrach', 'Fiends', 'part of', 'Part of', 'Mordrach is a Fiends demon.'),
+  s('Bloodward', 'Dregs', 'part of', 'Part of', 'Bloodward is a Dregs demon.'),
+  s('Scourge', 'Dregs', 'part of', 'Part of', 'Scourge is a Dregs demon.'),
+  s('Gnash', 'Dregs', 'part of', 'Part of', 'Gnash is a Dregs demon.'),
+  s('Cindergrave Wraith Lord', 'Shades', 'part of', 'Part of', 'The Cindergrave Wraith Lord is a Shades demon.'),
+  s('Lesser Cindergrave Wraiths', 'Shades', 'part of', 'Part of', 'The Lesser Cindergrave Wraiths are Shades demons.'),
+  s('Sovereign Resilience', 'Fiends', 'innate of', 'Innate of', 'Sovereign Resilience is the innate ability of the Fiends.'),
+  s('Vitality-Regen', 'Dregs', 'innate of', 'Innate of', 'Vitality-Regen is the innate ability of the Dregs.'),
+  s('Veyn-Touch', 'Shades', 'innate of', 'Innate of', 'Veyn-Touch is the innate ability of the Shades.'),
 ];
