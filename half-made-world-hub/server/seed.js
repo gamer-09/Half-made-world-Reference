@@ -557,7 +557,7 @@ module.exports = [
     'Rules & Notes',
     'Titles and Their Skills',
     'Every title carries its own skills',
-    'A title is more than a name — each one carries its own set of skills, mastered by the one who holds it. A title\u2019s skills are distinct from a character\u2019s innate rank abilities, and they can be passed down along with the title itself.',
+    'A title is more than a name — each one carries its own set of skills, mastered by the one who holds it. A title\u2019s skills are distinct from a character\u2019s innate rank abilities. Titles cannot be passed down; only a ruler of the first rank can grant a title to another, and only if they see that person as worthy of it. What can be passed down is a mastered, personalized skill \u2014 like Ordium\u2019s The Stolen Hour or Lisa\u2019s Auralis Seal \u2014 which flows from parent to offspring.',
     [],
     ['title', 'skills', 'title skills'],
   ),
