@@ -391,4 +391,9 @@ module.exports = [
   s('Virtue', 'Malakhim', 'part of', 'Part of', 'Virtue is a Malakhim angel.'),
   s('Lumen', 'Malakhim', 'part of', 'Part of', 'Lumen is a Malakhim angel.'),
   s('Fallen Angel', 'Fallen Angels', 'part of', 'Part of', 'Fallen Angel is a Fallen Angels type.'),
+
+  // --- Angel type innate abilities ---
+  s('Imperishable', 'Cherubim', 'innate of', 'Innate of', 'Imperishable is the innate ability of the Cherubim.'),
+  s('Veyn-Regen', 'Malakhim', 'innate of', 'Innate of', 'Veyn-Regen is the innate ability of the Malakhim.'),
+  s('Faster Regen', 'Fallen Angels', 'innate of', 'Innate of', 'Faster Regen is the innate ability of the Fallen Angels.'),
 ];

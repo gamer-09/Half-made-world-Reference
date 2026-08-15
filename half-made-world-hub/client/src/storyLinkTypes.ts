@@ -28,6 +28,7 @@ export const STORY_LINK_TYPES: Record<string, StoryLinkType> = {
   'ingredient of': { label: 'Ingredient of', color: '#4ade80' },
   'needed for': { label: 'Needed for', color: '#fb923c' },
   'story of': { label: 'Story of', color: '#c084fc' },
+  'innate of': { label: 'Innate of', color: '#2dd4bf' },
   about: { label: 'About', color: '#94a3b8' },
   'hungers like': { label: 'Hungers like', color: '#fbbf24' },
   'given to': { label: 'Given to', color: '#fb923c' },

@@ -3254,5 +3254,35 @@
     "description": "Fallen Angel is a Fallen Angels angel.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-319",
+    "source": "Imperishable",
+    "target": "Cherubim",
+    "type": "innate of",
+    "label": "Innate of",
+    "description": "Imperishable is the innate ability of the Cherubim.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-320",
+    "source": "Veyn-Regen",
+    "target": "Malakhim",
+    "type": "innate of",
+    "label": "Innate of",
+    "description": "Veyn-Regen is the innate ability of the Malakhim.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-321",
+    "source": "Faster Regen",
+    "target": "Fallen Angels",
+    "type": "innate of",
+    "label": "Innate of",
+    "description": "Faster Regen is the innate ability of the Fallen Angels.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

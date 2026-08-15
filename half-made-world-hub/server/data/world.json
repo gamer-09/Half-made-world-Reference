@@ -4953,7 +4953,12 @@
     "name": "Cherubim",
     "subtitle": "The throne-guardians — the apex angels",
     "description": "The highest type of angel, the guardians of the throne. The Serapharch — the ruler of the Angel Realm — is of this type. They are essentially immortal and can only be killed by a Divine Weapon or a Corrupted Divine Weapon (Vireth, the Fallen Grace).",
-    "fields": [],
+    "fields": [
+      {
+        "label": "Innate Ability",
+        "value": "Imperishable"
+      }
+    ],
     "tags": [
       "race",
       "angel",
@@ -4969,7 +4974,12 @@
     "name": "Malakhim",
     "subtitle": "The messenger host — the common true angels",
     "description": "The common type of true angel, the faithful host who take the Veyn Vow. The Aetherblade Lord Angels, Virtues, and Lumen all belong to this type.",
-    "fields": [],
+    "fields": [
+      {
+        "label": "Innate Ability",
+        "value": "Veyn-Regen"
+      }
+    ],
     "tags": [
       "race",
       "angel",
@@ -4985,12 +4995,62 @@
     "name": "Fallen Angels",
     "subtitle": "The broken — cast out for breaking the vow",
     "description": "The type of angel who broke the Veyn Vow and was cast out of the Angel Realm. They keep their wings and power but can never take another vow, leaving their connection to Veyn unstable and unregulated.",
-    "fields": [],
+    "fields": [
+      {
+        "label": "Innate Ability",
+        "value": "Faster Regen"
+      }
+    ],
     "tags": [
       "race",
       "angel",
       "fallen angels",
       "fallen"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-278",
+    "category": "Innate Abilities",
+    "name": "Imperishable",
+    "subtitle": "Innate ability",
+    "description": "Cannot be struck down by ordinary means — only a Divine Weapon or a Corrupted Divine Weapon can end them.",
+    "fields": [],
+    "tags": [
+      "innate",
+      "ability",
+      "angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-279",
+    "category": "Innate Abilities",
+    "name": "Veyn-Regen",
+    "subtitle": "Innate ability",
+    "description": "Their Veyn replenishes on its own, faster than it drains.",
+    "fields": [],
+    "tags": [
+      "innate",
+      "ability",
+      "angel"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-280",
+    "category": "Innate Abilities",
+    "name": "Faster Regen",
+    "subtitle": "Innate ability",
+    "description": "Their regeneration speeds up in bursts, mending wounds quicker than it should.",
+    "fields": [],
+    "tags": [
+      "innate",
+      "ability",
+      "angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"

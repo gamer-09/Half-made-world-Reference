@@ -2037,7 +2037,7 @@ module.exports = [
     'Cherubim',
     'The throne-guardians — the apex angels',
     'The highest type of angel, the guardians of the throne. The Serapharch — the ruler of the Angel Realm — is of this type. They are essentially immortal and can only be killed by a Divine Weapon or a Corrupted Divine Weapon (Vireth, the Fallen Grace).',
-    [],
+    [{ label: 'Innate Ability', value: 'Imperishable' }],
     ['race', 'angel', 'cherubim', 'apex'],
   ),
   e(
@@ -2045,7 +2045,7 @@ module.exports = [
     'Malakhim',
     'The messenger host — the common true angels',
     'The common type of true angel, the faithful host who take the Veyn Vow. The Aetherblade Lord Angels, Virtues, and Lumen all belong to this type.',
-    [],
+    [{ label: 'Innate Ability', value: 'Veyn-Regen' }],
     ['race', 'angel', 'malakhim', 'host'],
   ),
   e(
@@ -2053,7 +2053,32 @@ module.exports = [
     'Fallen Angels',
     'The broken — cast out for breaking the vow',
     'The type of angel who broke the Veyn Vow and was cast out of the Angel Realm. They keep their wings and power but can never take another vow, leaving their connection to Veyn unstable and unregulated.',
-    [],
+    [{ label: 'Innate Ability', value: 'Faster Regen' }],
     ['race', 'angel', 'fallen angels', 'fallen'],
+  ),
+
+  e(
+    'Innate Abilities',
+    'Imperishable',
+    'Innate ability',
+    'Cannot be struck down by ordinary means — only a Divine Weapon or a Corrupted Divine Weapon can end them.',
+    [],
+    ['innate', 'ability', 'angel'],
+  ),
+  e(
+    'Innate Abilities',
+    'Veyn-Regen',
+    'Innate ability',
+    'Their Veyn replenishes on its own, faster than it drains.',
+    [],
+    ['innate', 'ability', 'angel'],
+  ),
+  e(
+    'Innate Abilities',
+    'Faster Regen',
+    'Innate ability',
+    'Their regeneration speeds up in bursts, mending wounds quicker than it should.',
+    [],
+    ['innate', 'ability', 'angel'],
   ),
 ];
