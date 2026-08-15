@@ -3374,5 +3374,27 @@
     "description": "Veyn-Touch is the innate ability of the Shades.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "f1aa3f78-3e0a-4433-b82d-400f73fa3378",
+    "source": "Dregs",
+    "target": "Fiends",
+    "type": "Evolve to",
+    "label": "Evolve to",
+    "description": "they heir evolve to a higher demon → Fiends",
+    "color": "#34d399",
+    "createdAt": "2026-08-15T18:29:00.749Z",
+    "updatedAt": "2026-08-15T18:29:00.750Z"
+  },
+  {
+    "id": "9e96f7d2-6ca5-4d7e-bab7-a52f3d68e4b2",
+    "source": "Malakhim",
+    "target": "Cherubim",
+    "type": "Evolve to",
+    "label": "Evolve to",
+    "description": "The heir is a Malakhim and can only evolve to a Cherubim when the king dies or passes it on to him",
+    "color": "#34d399",
+    "createdAt": "2026-08-15T18:34:18.510Z",
+    "updatedAt": "2026-08-15T18:34:18.510Z"
   }
 ]
