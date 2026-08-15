@@ -676,6 +676,7 @@ module.exports = [
       { label: 'Demonic rank', value: 'Bloodward' },
       { label: 'Parents', value: 'Lisa (Bloodward demon) and Ordium (Aetherblade Lord Angel)' },
       { label: 'Raised by', value: 'Sofia, in the Human Realm' },
+      { label: 'Inherited Skills', value: 'Auralis Seal, The Stolen Hour' },
     ],
     ['character', 'protagonist', 'jaiden', 'hybrid'],
   ),

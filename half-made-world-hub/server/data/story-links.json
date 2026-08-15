@@ -2812,5 +2812,25 @@
     "description": "One of the First Pillar, Chronous’s abilities.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-272",
+    "source": "Auralis Seal",
+    "target": "Jaiden Marlock",
+    "type": "passed down",
+    "label": "Passed down",
+    "description": "Inherited from Lisa — the sealing craft she used to make the Auralis Ruby that seals his forms and auras.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-273",
+    "source": "The Stolen Hour",
+    "target": "Jaiden Marlock",
+    "type": "passed down",
+    "label": "Passed down",
+    "description": "Inherited from Ordium — a time-warping skill passed down through his father’s line.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

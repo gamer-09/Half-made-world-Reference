@@ -334,4 +334,8 @@ module.exports = [
   s('Auralis Seal', 'Demon of Abundance', 'skill of', 'Skill of', 'One of the Demon of Abundance’s abilities.'),
   s('Time’s Grasp', 'First Pillar, Chronous', 'skill of', 'Skill of', 'One of the First Pillar, Chronous’s abilities.'),
   s('The Stolen Hour', 'First Pillar, Chronous', 'skill of', 'Skill of', 'One of the First Pillar, Chronous’s abilities.'),
+
+  // --- Inherited skills passed down to the MC ---
+  s('Auralis Seal', 'Jaiden Marlock', 'passed down', 'Passed down', 'Inherited from Lisa — the sealing craft she used to make the Auralis Ruby that seals his forms and auras.'),
+  s('The Stolen Hour', 'Jaiden Marlock', 'passed down', 'Passed down', 'Inherited from Ordium — a time-warping skill passed down through his father’s line.'),
 ];
