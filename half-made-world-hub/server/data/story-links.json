@@ -3204,5 +3204,55 @@
     "description": "Elves are a race under humanity — the forest-dwelling kin of the human line, with two types: Pallantine and Veilborn.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-314",
+    "source": "Serapharch",
+    "target": "Cherubim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Serapharch is a Seraphim angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-315",
+    "source": "Aetherblade Lord Angel",
+    "target": "Malakhim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Aetherblade Lord Angel is a Malakhim angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-316",
+    "source": "Virtue",
+    "target": "Malakhim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Virtue is a Malakhim angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-317",
+    "source": "Lumen",
+    "target": "Malakhim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Lumen is a Malakhim angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-318",
+    "source": "Fallen Angel",
+    "target": "Fallen Angels",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Fallen Angel is a Fallen Angels angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

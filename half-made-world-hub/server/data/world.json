@@ -634,6 +634,10 @@
       {
         "label": "Skills",
         "value": "Kings Record, Sixth Sense, Time Reversal, Chronos Fury, Will Mastery, Holy Rain, Dignified Presence, Angelic Aura (Serapharch), Holy Flame, God’s Index Finger, God Chain, Holy Grail, Warpstep, Dawnveil (Serapharch) — each skill has its own entry in the Angel Skills / Demon Skills categories."
+      },
+      {
+        "label": "Type",
+        "value": "Cherubim"
       }
     ],
     "tags": [
@@ -659,6 +663,10 @@
       {
         "label": "Skills",
         "value": "Skyward Chains, Vanguard’s Cry, Aegis Ward, Holy Mend, Angelic Aura (Aetherblade), Swiftstep, Dawnveil (Aetherblade) — each skill has its own entry in the Angel Skills / Demon Skills categories."
+      },
+      {
+        "label": "Type",
+        "value": "Malakhim"
       }
     ],
     "tags": [
@@ -688,6 +696,10 @@
       {
         "label": "Can be killed by",
         "value": "Conventional blessed or consecrated weapons — a holy blessed weapon or a contaminated holy blessed weapon."
+      },
+      {
+        "label": "Type",
+        "value": "Malakhim"
       }
     ],
     "tags": [
@@ -713,6 +725,10 @@
       {
         "label": "Skills",
         "value": "Warmth of the Realm, Faint Ward, Angelic Aura (Lumen), Dawnveil (Lumen) — each skill has its own entry in the Angel Skills / Demon Skills categories."
+      },
+      {
+        "label": "Type",
+        "value": "Malakhim"
       }
     ],
     "tags": [
@@ -738,6 +754,10 @@
       {
         "label": "Markings",
         "value": "Plain black spots or black cherry spotting depending on how much Veyn surged through when the vow broke."
+      },
+      {
+        "label": "Type",
+        "value": "Fallen Angels"
       }
     ],
     "tags": [
@@ -4923,6 +4943,54 @@
       "six pillars",
       "angel",
       "general"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-275",
+    "category": "Races",
+    "name": "Cherubim",
+    "subtitle": "The throne-guardians — the apex angels",
+    "description": "The highest type of angel, the guardians of the throne. The Serapharch — the ruler of the Angel Realm — is of this type. They are essentially immortal and can only be killed by a Divine Weapon or a Corrupted Divine Weapon (Vireth, the Fallen Grace).",
+    "fields": [],
+    "tags": [
+      "race",
+      "angel",
+      "cherubim",
+      "apex"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-276",
+    "category": "Races",
+    "name": "Malakhim",
+    "subtitle": "The messenger host — the common true angels",
+    "description": "The common type of true angel, the faithful host who take the Veyn Vow. The Aetherblade Lord Angels, Virtues, and Lumen all belong to this type.",
+    "fields": [],
+    "tags": [
+      "race",
+      "angel",
+      "malakhim",
+      "host"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-277",
+    "category": "Races",
+    "name": "Fallen Angels",
+    "subtitle": "The broken — cast out for breaking the vow",
+    "description": "The type of angel who broke the Veyn Vow and was cast out of the Angel Realm. They keep their wings and power but can never take another vow, leaving their connection to Veyn unstable and unregulated.",
+    "fields": [],
+    "tags": [
+      "race",
+      "angel",
+      "fallen angels",
+      "fallen"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"

@@ -303,7 +303,8 @@ module.exports = [
     'Serapharch',
     'Rank 1 — Ruler of the Angel Realm',
     'The ruler of the Angel Realm. They are essentially immortal and can only be killed by A Corrupted Divine Weapon (Vireth, the Fallen Grace) or A Divine Weapon. They have a very strong regenerative ability and a very strong natural defense.',
-    [
+    [      { label: 'Type', value: 'Cherubim' },
+
       { label: 'Appearance', value: '8 wings, large and almost covering their whole body, the feathers glow gold. Their halo is a solid ring of light, too bright to look at directly. They have the strongest aura among all the angels. Their wing color is light pale gold with a bright but dim glow.' },
       { label: 'Skills', value: 'Kings Record, Sixth Sense, Time Reversal, Chronos Fury, Will Mastery, Holy Rain, Dignified Presence, Angelic Aura (Serapharch), Holy Flame, God’s Index Finger, God Chain, Holy Grail, Warpstep, Dawnveil (Serapharch) — each skill has its own entry in the Angel Skills / Demon Skills categories.' },
     ],
@@ -314,7 +315,8 @@ module.exports = [
     'Aetherblade Lord Angel',
     'Rank 2 — Commander of the Angel Army',
     'A high-ranking angel and commander of the angel army, answering only to the Serapharch. They never age and are nearly impossible to bring down in battle through conventional means. Only a consecrated weapon, a blood-forged blade, or the venom of a Coilmane carries enough power to wound them fatally. Their regeneration works on Veyn — if there is Veyn in their body they can heal.',
-    [
+    [      { label: 'Type', value: 'Malakhim' },
+
       { label: 'Appearance', value: '6 wings, big but with scars from battle that never fully heal. Their halo is bright but steady, not as dazzling as the Serapharch’s. They look more like warriors, with sharper features and always in a battle-ready stance. Their aura is strong but not too strong, though they can improve it. Their wings are pure white and they glow.' },
       { label: 'Skills', value: 'Skyward Chains, Vanguard’s Cry, Aegis Ward, Holy Mend, Angelic Aura (Aetherblade), Swiftstep, Dawnveil (Aetherblade) — each skill has its own entry in the Angel Skills / Demon Skills categories.' },
     ],
@@ -325,7 +327,8 @@ module.exports = [
     'Virtue',
     'Rank 3 — Soldiers of the Angel Army',
     'A mid-ranking angel with regenerative ability lesser than the Aetherblade Lord Angel. They serve as soldiers under the Aetherblade Lord Angel, forming the disciplined core of the angel army. Unlike Aetherblade Lord Angels above them, a Virtue can be killed by conventional blessed or consecrated weapons — they do not require a Divine Weapon or blood-forged blade. Though their regeneration is weaker, if they have stamina they can heal. Their healing cannot work with Veyn.',
-    [
+    [      { label: 'Type', value: 'Malakhim' },
+
       { label: 'Appearance', value: '4 wings, smaller and duller than the ranks above them. Their halo flickers instead of staying solid. Their aura is just normal. They have cream colored wings.' },
       { label: 'Skills', value: 'Guiding Light, Radiant Strike, Formation Discipline, Angelic Aura (Virtue), Dawnveil (Virtue) — each skill has its own entry in the Angel Skills / Demon Skills categories.' },
       { label: 'Can be killed by', value: 'Conventional blessed or consecrated weapons — a holy blessed weapon or a contaminated holy blessed weapon.' },
@@ -337,7 +340,8 @@ module.exports = [
     'Lumen',
     'Rank 4 — Citizens of the Angel Realm',
     'They can be killed with regular weapons. They are the citizens of the Angel Realm, they don’t have regenerative abilities and are weak. They always stay in the Angel Realm, and only leave if they need something outside their realm.',
-    [
+    [      { label: 'Type', value: 'Malakhim' },
+
       { label: 'Appearance', value: '2 wings, small and delicate. Their halo is faint, barely visible. Their aura is the weakest. They have light gray colored wings.' },
       { label: 'Skills', value: 'Warmth of the Realm, Faint Ward, Angelic Aura (Lumen), Dawnveil (Lumen) — each skill has its own entry in the Angel Skills / Demon Skills categories.' },
     ],
@@ -348,7 +352,8 @@ module.exports = [
     'Fallen Angel',
     'Cast out — broken halo, spotted wings',
     'They have black spotted white wings or black cherry spotted white wings and a broken halo on top of their head. Once the vow breaks, the angel is cast out of the Angel Realm and rejected by their own race — this is what makes them a Fallen Angel. They keep their wings and whatever power they had, but can never take another Veyn Vow again, so their connection to Veyn stays unstable and unregulated. This makes them strong in bursts but dangerous even to themselves, since nothing filters how much Veyn moves through them anymore.',
-    [
+    [      { label: 'Type', value: 'Fallen Angels' },
+
       { label: 'Cause', value: 'Breaking the Angel Veyn Vow (disobeying someone above their rank, or pulling more Veyn than the vow allows to act against an order).' },
       { label: 'Markings', value: 'Plain black spots or black cherry spotting depending on how much Veyn surged through when the vow broke.' },
     ],
@@ -2025,5 +2030,30 @@ module.exports = [
     'A spoken falsehood that settles into the mind as if it had always been true.',
     [],
     ['skill', 'demon', 'bloodward'],
+  ),
+
+  e(
+    'Races',
+    'Cherubim',
+    'The throne-guardians — the apex angels',
+    'The highest type of angel, the guardians of the throne. The Serapharch — the ruler of the Angel Realm — is of this type. They are essentially immortal and can only be killed by a Divine Weapon or a Corrupted Divine Weapon (Vireth, the Fallen Grace).',
+    [],
+    ['race', 'angel', 'cherubim', 'apex'],
+  ),
+  e(
+    'Races',
+    'Malakhim',
+    'The messenger host — the common true angels',
+    'The common type of true angel, the faithful host who take the Veyn Vow. The Aetherblade Lord Angels, Virtues, and Lumen all belong to this type.',
+    [],
+    ['race', 'angel', 'malakhim', 'host'],
+  ),
+  e(
+    'Races',
+    'Fallen Angels',
+    'The broken — cast out for breaking the vow',
+    'The type of angel who broke the Veyn Vow and was cast out of the Angel Realm. They keep their wings and power but can never take another vow, leaving their connection to Veyn unstable and unregulated.',
+    [],
+    ['race', 'angel', 'fallen angels', 'fallen'],
   ),
 ];

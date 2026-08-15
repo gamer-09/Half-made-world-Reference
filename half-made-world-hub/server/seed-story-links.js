@@ -384,4 +384,11 @@ module.exports = [
   s('Blood-Oath', 'Demon of the Bloodhound', 'skill of', 'Skill of', 'One of the Demon of the Bloodhound’s abilities.'),
   s('Disinter', 'Demon of the Bloodhound', 'skill of', 'Skill of', 'One of the Demon of the Bloodhound’s abilities.'),
   s('Guile', 'Demon of the Bloodhound', 'skill of', 'Skill of', 'One of the Demon of the Bloodhound’s abilities.'),
+
+  // --- Angel types (Cherubim / Malakhim / Fallen Angels) ---
+  s('Serapharch', 'Cherubim', 'part of', 'Part of', 'Serapharch is a Cherubim angel.'),
+  s('Aetherblade Lord Angel', 'Malakhim', 'part of', 'Part of', 'Aetherblade Lord Angel is a Malakhim angel.'),
+  s('Virtue', 'Malakhim', 'part of', 'Part of', 'Virtue is a Malakhim angel.'),
+  s('Lumen', 'Malakhim', 'part of', 'Part of', 'Lumen is a Malakhim angel.'),
+  s('Fallen Angel', 'Fallen Angels', 'part of', 'Part of', 'Fallen Angel is a Fallen Angels type.'),
 ];
