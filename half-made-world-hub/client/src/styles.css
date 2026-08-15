@@ -1677,8 +1677,19 @@ select.input {
 }
 
 /* ---------- map nodes + edges ---------- */
-.map-node {
-  animation: nodeIn 0.5s var(--ease-spring) both;
+.map-node.entering {
+  animation: nodeIn 0.5s var(--ease-spring) backwards;
+}
+
+/* Dim the whole web with one class toggle instead of re-rendering every node
+   and edge: the browser applies these in a single style pass, and active
+   elements (hovered node, selected edge, its endpoints) stay bright. */
+.map-svg.dimming .map-node:not(.active) {
+  opacity: 0.25;
+}
+
+.map-svg.dimming .map-edge:not(.active) {
+  opacity: 0.1;
 }
 
 .map-edge {

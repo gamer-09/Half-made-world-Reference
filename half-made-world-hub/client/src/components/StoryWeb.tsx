@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useRef, useState } from 'react';
+import { memo, useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import type { Entry, Relationship, StoryLink } from '../types';
 import { relationshipType } from '../relationshipTypes';
 import { storyLinkType } from '../storyLinkTypes';
@@ -264,6 +264,187 @@ function loadHiddenFromStorage(): Set<string> {
   return new Set();
 }
 
+interface WebNodeProps {
+  name: string;
+  category: string;
+  x: number;
+  y: number;
+  opacity: number;
+  active: boolean;
+  focused: boolean;
+  hovered: boolean;
+  focusMode: boolean;
+  hasEntry: boolean;
+  showLabel: boolean;
+  onPointerEnter: (name: string) => void;
+  onPointerLeave: () => void;
+  onPointerDown: (e: React.PointerEvent, name: string) => void;
+  onClick: (e: React.MouseEvent, name: string) => void;
+}
+
+// Memoized per-node SVG group: only re-renders when this node's visual state
+// (opacity, active, hover, label, position) actually changes, so hovering or
+// selecting one node doesn't re-render the other 260.
+const WebNode = memo(function WebNode({
+  name,
+  category,
+  x,
+  y,
+  opacity,
+  active,
+  focused,
+  hovered,
+  focusMode,
+  hasEntry,
+  showLabel,
+  onPointerEnter,
+  onPointerLeave,
+  onPointerDown,
+  onClick,
+}: WebNodeProps) {
+  const isChar = category === 'Characters';
+  const isOther = category === 'Other';
+  const stroke = isOther ? '#64748f' : categoryColor(category);
+  const fill = isOther ? '#0a1020' : `${stroke}2b`;
+  // Drop the entrance animation class after it finishes so the animation can
+  // never restart and fight the dimming opacity on later interactions.
+  const [entered, setEntered] = useState(false);
+  useEffect(() => {
+    const t = window.setTimeout(() => setEntered(true), 550);
+    return () => window.clearTimeout(t);
+  }, []);
+  return (
+    <g
+      className={`map-node${active ? ' active' : ''}${entered ? '' : ' entering'}`}
+      opacity={opacity}
+      style={{ cursor: focusMode ? 'pointer' : hasEntry ? 'pointer' : 'grab' }}
+      onPointerEnter={() => onPointerEnter(name)}
+      onPointerLeave={onPointerLeave}
+      onPointerDown={(e) => onPointerDown(e, name)}
+      onClick={(e) => onClick(e, name)}
+    >
+      {hovered && !focused && (
+        <circle cx={x} cy={y} r={NODE_R + 7} fill="transparent" stroke={stroke} strokeWidth="1.5" strokeDasharray="3 3" />
+      )}
+      {focused && (
+        <circle cx={x} cy={y} r={NODE_R + 10} fill="transparent" stroke={stroke} strokeWidth="2" opacity="0.9" />
+      )}
+      <circle
+        cx={x}
+        cy={y}
+        r={NODE_R}
+        fill={fill}
+        stroke={stroke}
+        strokeWidth={focused ? 3 : isChar ? 2.5 : isOther ? 1.5 : 2}
+        strokeDasharray={isOther ? '3 3' : undefined}
+        style={{ filter: active ? `drop-shadow(0 0 7px ${stroke}88)` : undefined }}
+      />
+      <text x={x} y={y + 5} textAnchor="middle" className="map-node-initial" fill={isOther ? '#94a3b8' : stroke}>
+        {name.charAt(0).toUpperCase()}
+      </text>
+      {showLabel && (
+        <text x={x} y={y + NODE_R + 19} textAnchor="middle" className="map-node-label">
+          {truncate(name)}
+        </text>
+      )}
+    </g>
+  );
+});
+
+interface WebEdgeProps {
+  id: string;
+  active: boolean;
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+  color: string;
+  dashed: boolean;
+  strokeWidth: number;
+  opacity: number;
+  showLabel: boolean;
+  labelX: number;
+  labelY: number;
+  labelText: string;
+  labelWidth: number;
+  onPointerEnter: (id: string) => void;
+  onPointerLeave: () => void;
+  onClick: (id: string) => void;
+}
+
+// Memoized per-edge SVG group: only re-renders when this edge's visual state
+// actually changes, so hovering a node only re-renders its own edges.
+const WebEdge = memo(function WebEdge({
+  id,
+  active,
+  x1,
+  y1,
+  x2,
+  y2,
+  color,
+  dashed,
+  strokeWidth,
+  opacity,
+  showLabel,
+  labelX,
+  labelY,
+  labelText,
+  labelWidth,
+  onPointerEnter,
+  onPointerLeave,
+  onClick,
+}: WebEdgeProps) {
+  return (
+    <g
+      className={`map-edge${active ? ' active' : ''}`}
+      opacity={opacity}
+      onPointerEnter={() => onPointerEnter(id)}
+      onPointerLeave={onPointerLeave}
+      onClick={(ev) => {
+        ev.stopPropagation();
+        onClick(id);
+      }}
+    >
+      <line
+        x1={x1}
+        y1={y1}
+        x2={x2}
+        y2={y2}
+        stroke={color}
+        strokeWidth={strokeWidth}
+        strokeDasharray={dashed ? '6 5' : undefined}
+        markerEnd={`url(#warrow-${color.replace('#', '')})`}
+      />
+      <line
+        x1={x1}
+        y1={y1}
+        x2={x2}
+        y2={y2}
+        stroke="transparent"
+        strokeWidth={12}
+        style={{ cursor: 'pointer' }}
+      />
+      {showLabel && (
+        <g pointerEvents="none">
+          <rect
+            x={labelX - labelWidth / 2}
+            y={labelY - 26}
+            width={labelWidth}
+            height={20}
+            rx={10}
+            fill="rgba(7, 11, 22, 0.93)"
+            stroke={color}
+            strokeOpacity={0.6}
+          />
+          <text x={labelX} y={labelY - 12} textAnchor="middle" className="map-edge-label" fill={color}>
+            {labelText}
+          </text>
+        </g>
+      )}
+    </g>
+  );
+});
+
 export function StoryWeb({
   entries,
   relationships,
@@ -464,7 +645,7 @@ export function StoryWeb({
   }, [nodes, focusNode]);
 
   // ---- dragging ----
-  const toSvg = (clientX: number, clientY: number): Pos => {
+  const toSvg = useCallback((clientX: number, clientY: number): Pos => {
     const svg = svgRef.current;
     if (!svg) return { x: 0, y: 0 };
     const ctm = svg.getScreenCTM();
@@ -474,7 +655,7 @@ export function StoryWeb({
     pt.y = clientY;
     const p = pt.matrixTransform(ctm.inverse());
     return { x: p.x, y: p.y };
-  };
+  }, []);
 
   useEffect(() => {
     if (!dragging) return;
@@ -499,14 +680,52 @@ export function StoryWeb({
     };
   }, [dragging]);
 
-  const startDrag = (e: React.PointerEvent, id: string) => {
-    e.stopPropagation();
-    const p = toSvg(e.clientX, e.clientY);
-    const cur = positions[id] ?? { x: W / 2, y: H / 2 };
-    dragRef.current = { id, dx: p.x - cur.x, dy: p.y - cur.y, moved: false, startX: p.x, startY: p.y };
-    setSelectedEdge(null);
-    setDragging(id);
-  };
+  const startDrag = useCallback(
+    (e: React.PointerEvent, id: string) => {
+      e.stopPropagation();
+      const p = toSvg(e.clientX, e.clientY);
+      const cur = positionsRef.current[id] ?? { x: W / 2, y: H / 2 };
+      dragRef.current = { id, dx: p.x - cur.x, dy: p.y - cur.y, moved: false, startX: p.x, startY: p.y };
+      setSelectedEdge(null);
+      setDragging(id);
+    },
+    [toSvg],
+  );
+
+  // ---- stable per-element handlers (keeps memoized WebNode/WebEdge from re-rendering) ----
+  const handleEdgePointerEnter = useCallback((id: string) => setHoverEdge(id), []);
+  const handleEdgePointerLeave = useCallback(() => setHoverEdge(null), []);
+  const handleEdgeClick = useCallback(
+    (id: string) => {
+      setSelectedEdge((cur) => {
+        if (cur?.id === id) return null;
+        return displayEdges.find((e) => e.id === id) ?? cur;
+      });
+    },
+    [displayEdges],
+  );
+
+  const handleNodePointerEnter = useCallback((name: string) => setHoverId(name), []);
+  const handleNodePointerLeave = useCallback(() => setHoverId(null), []);
+
+  const handleNodeClick = useCallback(
+    (e: React.MouseEvent, name: string) => {
+      if (dragRef.current?.moved) {
+        dragRef.current = null;
+        return;
+      }
+      dragRef.current = null;
+      e.stopPropagation();
+      if (focusMode) {
+        setFocusNode(name);
+        setSelectedEdge(null);
+        return;
+      }
+      const entry = entryByName.get(name.toLowerCase());
+      if (entry) onNodeClick(entry);
+    },
+    [focusMode, entryByName, onNodeClick],
+  );
 
   // ---- edge geometry ----
   const edgeGeom = useMemo(() => {
@@ -908,7 +1127,7 @@ export function StoryWeb({
       <div className="map-container web-container">
         <svg
           ref={svgRef}
-          className="map-svg"
+          className={`map-svg${dim && !typeFilter ? ' dimming' : ''}`}
           viewBox={`0 0 ${W} ${H}`}
           onPointerDown={() => setSelectedEdge(null)}
         >
@@ -933,7 +1152,7 @@ export function StoryWeb({
             const g = edgeGeom.get(e.id);
             if (!g) return null;
             const isActiveEdge = activeEdgeIds.has(e.id);
-            const active = isActiveEdge || (hoverId && (e.source === hoverId || e.target === hoverId));
+            const active = isActiveEdge || (hoverId ? e.source === hoverId || e.target === hoverId : false);
             const matchesFilter = typeFilter ? edgeLabelText(e) === typeFilter : true;
             const opacity = typeFilter
               ? matchesFilter
@@ -947,70 +1166,39 @@ export function StoryWeb({
                 ? 0.1
                 : 1;
             const lp = edgeLabels.get(e.id);
+            const showLabel = isActiveEdge && !!lp;
+            const labelText = edgeLabelText(e);
             return (
-              <g
+              <WebEdge
                 key={`${e.kind}-${e.id}`}
-                className="map-edge"
-                opacity={opacity}
-                onPointerEnter={() => setHoverEdge(e.id)}
-                onPointerLeave={() => setHoverEdge(null)}
-                onClick={(ev) => {
-                  ev.stopPropagation();
-                  setSelectedEdge(selectedEdge?.id === e.id ? null : e);
-                }}
-              >
-                <line
-                  x1={g.ax}
-                  y1={g.ay}
-                  x2={g.bx}
-                  y2={g.by}
-                  stroke={e.color}
-                  strokeWidth={active ? 2.8 : typeFilter && matchesFilter ? 2.2 : 1.4}
-                  strokeDasharray={e.dashed ? '6 5' : undefined}
-                  markerEnd={`url(#warrow-${e.color.replace('#', '')})`}
-                />
-                <line
-                  x1={g.ax}
-                  y1={g.ay}
-                  x2={g.bx}
-                  y2={g.by}
-                  stroke="transparent"
-                  strokeWidth={12}
-                  style={{ cursor: 'pointer' }}
-                />
-                {isActiveEdge && lp && (() => {
-                  const text = edgeLabelText(e);
-                  const w = text.length * 6.6 + 18;
-                  return (
-                    <g pointerEvents="none">
-                      <rect
-                        x={lp.x - w / 2}
-                        y={lp.y - 26}
-                        width={w}
-                        height={20}
-                        rx={10}
-                        fill="rgba(7, 11, 22, 0.93)"
-                        stroke={e.color}
-                        strokeOpacity={0.6}
-                      />
-                      <text x={lp.x} y={lp.y - 12} textAnchor="middle" className="map-edge-label" fill={e.color}>
-                        {text}
-                      </text>
-                    </g>
-                  );
-                })()}
-              </g>
+                id={e.id}
+                active={active}
+                x1={g.ax}
+                y1={g.ay}
+                x2={g.bx}
+                y2={g.by}
+                color={e.color}
+                dashed={e.dashed}
+                strokeWidth={active ? 2.8 : typeFilter && matchesFilter ? 2.2 : 1.4}
+                opacity={typeFilter ? opacity : 1}
+                showLabel={showLabel}
+                labelX={lp ? lp.x : g.mx}
+                labelY={lp ? lp.y : g.my}
+                labelText={showLabel ? labelText : ''}
+                labelWidth={showLabel ? labelText.length * 6.6 + 18 : 0}
+                onPointerEnter={handleEdgePointerEnter}
+                onPointerLeave={handleEdgePointerLeave}
+                onClick={handleEdgeClick}
+              />
             );
           })}
 
           {displayNodes.map((node) => {
             const pos = positions[node.name];
             if (!pos) return null;
-            const isChar = node.category === 'Characters';
-            const isOther = node.category === 'Other';
-            const entry = entryByName.get(node.name.toLowerCase());
-            const isFocused = focusMode && focusNode === node.name;
-            const active = hoverId === node.name || isFocused || (selectedEdge && (selectedEdge.source === node.name || selectedEdge.target === node.name));
+            const hovered = hoverId === node.name;
+            const focused = focusMode && focusNode === node.name;
+            const active = hovered || focused || (selectedEdge ? selectedEdge.source === node.name || selectedEdge.target === node.name : false);
             const filteredOut = typeFilter ? !(filteredNodeSet?.has(node.name) ?? false) : false;
             const opacity = typeFilter
               ? filteredOut
@@ -1018,60 +1206,26 @@ export function StoryWeb({
                 : dim && !active
                   ? 0.4
                   : 1
-              : dim && !active
-                ? 0.25
-                : 1;
-            const stroke = isOther ? '#64748f' : categoryColor(node.category);
-            const fill = isOther ? '#0a1020' : `${stroke}2b`;
+              : 1;
             return (
-              <g
+              <WebNode
                 key={node.name}
-                className="map-node"
+                name={node.name}
+                category={node.category}
+                x={pos.x}
+                y={pos.y}
                 opacity={opacity}
-                style={{ cursor: focusMode ? 'pointer' : entry ? 'pointer' : 'grab' }}
-                onPointerEnter={() => setHoverId(node.name)}
-                onPointerLeave={() => setHoverId(null)}
-                onPointerDown={(e) => startDrag(e, node.name)}
-                onClick={(e) => {
-                  if (dragRef.current?.moved) {
-                    dragRef.current = null;
-                    return;
-                  }
-                  dragRef.current = null;
-                  e.stopPropagation();
-                  if (focusMode) {
-                    setFocusNode(node.name);
-                    setSelectedEdge(null);
-                    return;
-                  }
-                  if (entry) onNodeClick(entry);
-                }}
-              >
-                {hoverId === node.name && !isFocused && (
-                  <circle cx={pos.x} cy={pos.y} r={NODE_R + 7} fill="transparent" stroke={stroke} strokeWidth="1.5" strokeDasharray="3 3" />
-                )}
-                {isFocused && (
-                  <circle cx={pos.x} cy={pos.y} r={NODE_R + 10} fill="transparent" stroke={stroke} strokeWidth="2" opacity="0.9" />
-                )}
-                <circle
-                  cx={pos.x}
-                  cy={pos.y}
-                  r={NODE_R}
-                  fill={fill}
-                  stroke={stroke}
-                  strokeWidth={isFocused ? 3 : isChar ? 2.5 : isOther ? 1.5 : 2}
-                  strokeDasharray={isOther ? '3 3' : undefined}
-                  style={{ filter: active ? `drop-shadow(0 0 7px ${stroke}88)` : undefined }}
-                />
-                <text x={pos.x} y={pos.y + 5} textAnchor="middle" className="map-node-initial" fill={isOther ? '#94a3b8' : stroke}>
-                  {node.name.charAt(0).toUpperCase()}
-                </text>
-                {nodeLabels.has(node.name) && (
-                  <text x={pos.x} y={pos.y + NODE_R + 19} textAnchor="middle" className="map-node-label">
-                    {truncate(node.name)}
-                  </text>
-                )}
-              </g>
+                active={active}
+                focused={focused}
+                hovered={hovered}
+                focusMode={focusMode}
+                hasEntry={!!entryByName.get(node.name.toLowerCase())}
+                showLabel={nodeLabels.has(node.name)}
+                onPointerEnter={handleNodePointerEnter}
+                onPointerLeave={handleNodePointerLeave}
+                onPointerDown={startDrag}
+                onClick={handleNodeClick}
+              />
             );
           })}
         </svg>
