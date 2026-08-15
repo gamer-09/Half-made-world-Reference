@@ -375,4 +375,7 @@ module.exports = [
   s('Liora Veyne', 'Angel Realm', 'lives in', 'Lives in', 'An Aetherblade Lord Angel of the Angel army.'),
   s('Thalor Elwin', 'Angel Realm', 'lives in', 'Lives in', 'An Aetherblade Lord Angel of the Angel army.'),
   s('Aranweis', 'Angel Realm', 'lives in', 'Lives in', 'An Aetherblade Lord Angel of the Angel army.'),
+
+  // --- Carin + Sythra ties ---
+  s("Licent Varak’s Plot", 'Sythra Kaelis', 'story of', 'Story of', "She drained what remained of Lisa before Licent Varak’s men finished it."),
 ];

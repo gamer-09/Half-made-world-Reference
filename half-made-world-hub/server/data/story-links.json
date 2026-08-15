@@ -3162,5 +3162,25 @@
     "description": "An Aetherblade Lord Angel of the Angel army.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-307",
+    "source": "Carin",
+    "target": "Demon Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "The MC met her when he visited the Demon Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-308",
+    "source": "Licent Varak’s Plot",
+    "target": "Sythra Kaelis",
+    "type": "story of",
+    "label": "Story of",
+    "description": "She drained what remained of Lisa before Licent Varak’s men finished it.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]
