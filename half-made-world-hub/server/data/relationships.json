@@ -372,5 +372,15 @@
     "description": "Saw Ordium’s vow fraying and said nothing.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "rel-seed-034",
+    "source": "Licent Varak",
+    "target": "Tera Morage",
+    "type": "serves",
+    "label": "Serves",
+    "description": "A Bloodward general serving under Tera Morage.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

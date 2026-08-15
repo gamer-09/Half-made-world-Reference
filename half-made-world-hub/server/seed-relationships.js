@@ -57,4 +57,7 @@ module.exports = [
   r('Serathiel', 'Ordium', 'rival of', 'Rival of', 'Resents that Ordium threw away the seat she would have bled to hold.'),
   r('Liora Veyne', 'Ordium', 'knows', 'Knows', "Brought the execution order to Ordium’s door."),
   r('Thalor Elwin', 'Ordium', 'knows', 'Knows', "Saw Ordium’s vow fraying and said nothing."),
+
+  // --- Licent Varak serves Tera Morage ---
+  r('Licent Varak', 'Tera Morage', 'serves', 'Serves', 'A Bloodward general serving under Tera Morage.'),
 ];

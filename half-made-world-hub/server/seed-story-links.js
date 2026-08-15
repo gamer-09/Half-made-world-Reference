@@ -378,4 +378,7 @@ module.exports = [
 
   // --- Carin + Sythra ties ---
   s("Licent Varak’s Plot", 'Sythra Kaelis', 'story of', 'Story of', "She drained what remained of Lisa before Licent Varak’s men finished it."),
+
+  // --- Licent Varak is a demon general ---
+  s('Licent Varak', 'Demon Realm', 'lives in', 'Lives in', 'A Bloodward demon and general of the Demon army.'),
 ];

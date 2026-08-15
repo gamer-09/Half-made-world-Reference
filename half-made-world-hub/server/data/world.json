@@ -2199,13 +2199,20 @@
       {
         "label": "Rank",
         "value": "Bloodward"
+      },
+      {
+        "label": "Title",
+        "value": "Demon of the Bloodhound"
       }
     ],
     "tags": [
       "character",
       "licent",
       "antagonist",
-      "betrayal"
+      "betrayal",
+      "general",
+      "demon",
+      "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"

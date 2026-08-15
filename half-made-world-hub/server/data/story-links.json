@@ -3182,5 +3182,15 @@
     "description": "She drained what remained of Lisa before Licent Varak’s men finished it.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-309",
+    "source": "Licent Varak",
+    "target": "Demon Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "A Bloodward demon and general of the Demon army.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]
