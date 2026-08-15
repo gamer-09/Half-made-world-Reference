@@ -4895,5 +4895,36 @@
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-273",
+    "category": "Rules & Notes",
+    "name": "Titles and Their Skills",
+    "subtitle": "Every title carries its own skills",
+    "description": "A title is more than a name — each one carries its own set of skills, mastered by the one who holds it. A title’s skills are distinct from a character’s innate rank abilities, and they can be passed down along with the title itself.",
+    "fields": [],
+    "tags": [
+      "title",
+      "skills",
+      "title skills"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-274",
+    "category": "Rules & Notes",
+    "name": "The Six Pillars of Angels",
+    "subtitle": "The six generals of the Angel Realm",
+    "description": "The Angel Realm’s six generals are known as the Six Pillars, ranked First through Sixth. The First Pillar is Chronous, held by Ordium; the Second through Sixth are Helious, Areous, Deimous, Horkous, and Argous. Each pillar bears a title, its own skills, and a duty — from guarding the Sundering Altar to standing as the Serapharch’s personal guard.",
+    "fields": [],
+    "tags": [
+      "pillar",
+      "six pillars",
+      "angel",
+      "general"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

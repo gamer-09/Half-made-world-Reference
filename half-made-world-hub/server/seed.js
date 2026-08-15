@@ -553,6 +553,23 @@ module.exports = [
     ['portal', 'hidden realm', 'leap year', 'veyn'],
   ),
 
+  e(
+    'Rules & Notes',
+    'Titles and Their Skills',
+    'Every title carries its own skills',
+    'A title is more than a name — each one carries its own set of skills, mastered by the one who holds it. A title\u2019s skills are distinct from a character\u2019s innate rank abilities, and they can be passed down along with the title itself.',
+    [],
+    ['title', 'skills', 'title skills'],
+  ),
+  e(
+    'Rules & Notes',
+    'The Six Pillars of Angels',
+    'The six generals of the Angel Realm',
+    'The Angel Realm\u2019s six generals are known as the Six Pillars, ranked First through Sixth. The First Pillar is Chronous, held by Ordium; the Second through Sixth are Helious, Areous, Deimous, Horkous, and Argous. Each pillar bears a title, its own skills, and a duty \u2014 from guarding the Sundering Altar to standing as the Serapharch\u2019s personal guard.',
+    [],
+    ['pillar', 'six pillars', 'angel', 'general'],
+  ),
+
   // ============================================================ CLASSES
   e('Classes', 'Mage', 'Magic/Veyn class', 'A general Veyn-caster with access to the widest range of spells out of any class. Not specialized in anything specific, they use raw Veyn for offense, defense, or utility depending on the situation.', [{ label: 'Type', value: 'Magic/Veyn class' }], ['class', 'mage', 'veyn']),
   e('Classes', 'Alchemist', 'Magic/Veyn class', 'Combines Veyn with physical ingredients to make potions, poisons, or explosives. They can use pixie dust as one of their core ingredients since it reacts well with Veyn, though pixie dust is quite rare and can only be gotten by going to the Hidden Realm.', [{ label: 'Type', value: 'Magic/Veyn class' }], ['class', 'alchemist', 'potions']),
