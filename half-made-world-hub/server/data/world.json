@@ -2206,7 +2206,7 @@
       },
       {
         "label": "Skills",
-        "value": "Blood-Oath, Disinter, Fox-Tongue"
+        "value": "Blood-Oath, Disinter, Guile"
       }
     ],
     "tags": [
@@ -4884,9 +4884,9 @@
   {
     "id": "seed-272",
     "category": "Demon Skills",
-    "name": "Fox-Tongue",
+    "name": "Guile",
     "subtitle": "Bloodward skill",
-    "description": "What he speaks rings true; a lie from him is believed as fact, like a swindling fox.",
+    "description": "A spoken falsehood that settles into the mind as if it had always been true.",
     "fields": [],
     "tags": [
       "skill",

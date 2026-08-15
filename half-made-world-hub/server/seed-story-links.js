@@ -382,5 +382,5 @@ module.exports = [
   // --- Licent Varak (Demon of the Bloodhound) skills ---
   s('Blood-Oath', 'Demon of the Bloodhound', 'skill of', 'Skill of', 'One of the Demon of the Bloodhound’s abilities.'),
   s('Disinter', 'Demon of the Bloodhound', 'skill of', 'Skill of', 'One of the Demon of the Bloodhound’s abilities.'),
-  s('Fox-Tongue', 'Demon of the Bloodhound', 'skill of', 'Skill of', 'One of the Demon of the Bloodhound’s abilities.'),
+  s('Guile', 'Demon of the Bloodhound', 'skill of', 'Skill of', 'One of the Demon of the Bloodhound’s abilities.'),
 ];
