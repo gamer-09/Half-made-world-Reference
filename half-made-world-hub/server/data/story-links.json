@@ -3062,5 +3062,105 @@
     "description": "His realm is the Angel Realm.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-297",
+    "source": "Kael Vornath",
+    "target": "Demon Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "A Bloodward general of the Demon army.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-298",
+    "source": "Sythra Kaelis",
+    "target": "Demon Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "A Bloodward general of the Demon army.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-299",
+    "source": "Nyra Thessan",
+    "target": "Demon Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "A Bloodward general of the Demon army.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-300",
+    "source": "Othrek Veyne",
+    "target": "Demon Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "A Bloodward general of the Demon army.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-301",
+    "source": "Isella Marrek",
+    "target": "Demon Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "A Bloodward general of the Demon army.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-302",
+    "source": "Cyrion",
+    "target": "Angel Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "An Aetherblade Lord Angel of the Angel army.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-303",
+    "source": "Serathiel",
+    "target": "Angel Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "An Aetherblade Lord Angel of the Angel army.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-304",
+    "source": "Liora Veyne",
+    "target": "Angel Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "An Aetherblade Lord Angel of the Angel army.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-305",
+    "source": "Thalor Elwin",
+    "target": "Angel Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "An Aetherblade Lord Angel of the Angel army.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-306",
+    "source": "Aranweis",
+    "target": "Angel Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "An Aetherblade Lord Angel of the Angel army.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

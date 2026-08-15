@@ -363,4 +363,16 @@ module.exports = [
   s('Sofia', 'Human Realm', 'lives in', 'Lives in', 'She raised Jaiden in the Human Realm.'),
   s('Lisa', 'Demon Realm', 'lives in', 'Lives in', 'Her realm is the Demon Realm.'),
   s('Ordium', 'Angel Realm', 'lives in', 'Lives in', 'His realm is the Angel Realm.'),
+
+  // --- General/Pillar realm homes ---
+  s('Kael Vornath', 'Demon Realm', 'lives in', 'Lives in', 'A Bloodward general of the Demon army.'),
+  s('Sythra Kaelis', 'Demon Realm', 'lives in', 'Lives in', 'A Bloodward general of the Demon army.'),
+  s('Nyra Thessan', 'Demon Realm', 'lives in', 'Lives in', 'A Bloodward general of the Demon army.'),
+  s('Othrek Veyne', 'Demon Realm', 'lives in', 'Lives in', 'A Bloodward general of the Demon army.'),
+  s('Isella Marrek', 'Demon Realm', 'lives in', 'Lives in', 'A Bloodward general of the Demon army.'),
+  s('Cyrion', 'Angel Realm', 'lives in', 'Lives in', 'An Aetherblade Lord Angel of the Angel army.'),
+  s('Serathiel', 'Angel Realm', 'lives in', 'Lives in', 'An Aetherblade Lord Angel of the Angel army.'),
+  s('Liora Veyne', 'Angel Realm', 'lives in', 'Lives in', 'An Aetherblade Lord Angel of the Angel army.'),
+  s('Thalor Elwin', 'Angel Realm', 'lives in', 'Lives in', 'An Aetherblade Lord Angel of the Angel army.'),
+  s('Aranweis', 'Angel Realm', 'lives in', 'Lives in', 'An Aetherblade Lord Angel of the Angel army.'),
 ];
