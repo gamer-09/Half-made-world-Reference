@@ -1156,6 +1156,40 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
+    "id": "e1d433b5-1177-4351-a6c8-2f2ec9f7fa70",
+    "category": "Magic Systems",
+    "name": "Blessed Ren",
+    "subtitle": "The sanctified form of Ren",
+    "description": "Blessed Ren is Ren sanctified — a person’s own inner Vitality blessed and brightened into a holy form, the way Holy Energy is Veyn purified. Where raw Ren glows a deep crimson, blessed Ren glows a warm white-gold, and instead of only strengthening the body it can heal and protect. Because it is still Ren — drawn from the body’s own Vitality rather than the world core — a paladin who wields blessed Ren never holds Veyn and Ren together, and so never suffers their incompatibility.",
+    "fields": [
+      {
+        "label": "Color",
+        "value": "Warm white-gold"
+      },
+      {
+        "label": "Nature",
+        "value": "Sanctified Ren — not a separate source"
+      },
+      {
+        "label": "Used by",
+        "value": "Paladins and other holy warriors"
+      },
+      {
+        "label": "Effect",
+        "value": "Strengthens, heals, and protects using the body’s own sanctified Vitality"
+      }
+    ],
+    "tags": [
+      "blessed ren",
+      "ren",
+      "holy",
+      "paladin",
+      "magic"
+    ],
+    "createdAt": "2026-08-16T23:14:21.835Z",
+    "updatedAt": "2026-08-16T23:14:21.835Z"
+  },
+  {
     "id": "seed-046",
     "category": "Magic Systems",
     "name": "Concentrated Veyn",
@@ -1568,11 +1602,11 @@
     "category": "Classes",
     "name": "Paladin",
     "subtitle": "Ren + Holy class",
-    "description": "Blends physical strength with Holy Energy, giving them the fighting capability of a warrior alongside the ability to heal or protect using Holy Energy, a purified form of Veyn. Common among those who protect others directly, like guards or knights.",
+    "description": "Blends physical strength with Blessed Ren — their own Ren sanctified into a holy form — giving them the fighting power of a warrior and the ability to heal and protect, all through their own Vitality rather than Veyn. Because they never hold Veyn and Ren together, paladins avoid the incompatibility that would kill anyone else. Common among those who protect others directly, like guards or knights.",
     "fields": [
       {
         "label": "Type",
-        "value": "Ren class, Holy class"
+        "value": "Ren class — Blessed Ren"
       }
     ],
     "tags": [

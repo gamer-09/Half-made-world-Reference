@@ -556,6 +556,19 @@ module.exports = [
   ),
   e(
     "Magic Systems",
+    "Blessed Ren",
+    "The sanctified form of Ren",
+    "Blessed Ren is Ren sanctified — a person’s own inner Vitality blessed and brightened into a holy form, the way Holy Energy is Veyn purified. Where raw Ren glows a deep crimson, blessed Ren glows a warm white-gold, and instead of only strengthening the body it can heal and protect. Because it is still Ren — drawn from the body’s own Vitality rather than the world core — a paladin who wields blessed Ren never holds Veyn and Ren together, and so never suffers their incompatibility.",
+    [
+      { label: "Color", value: "Warm white-gold" },
+      { label: "Nature", value: "Sanctified Ren — not a separate source" },
+      { label: "Used by", value: "Paladins and other holy warriors" },
+      { label: "Effect", value: "Strengthens, heals, and protects using the body’s own sanctified Vitality" },
+    ],
+    ["blessed ren", "ren", "holy", "paladin", "magic"],
+  ),
+  e(
+    "Magic Systems",
     "Concentrated Veyn",
     "Brighter, denser Veyn",
     "Matches the color of a Lucent Stone: the same silver-blue as raw Veyn, just far brighter and more vivid, clear rather than faint or hazy.",
@@ -757,9 +770,9 @@ module.exports = [
     "Classes",
     "Paladin",
     "Ren + Holy class",
-    "Blends physical strength with Holy Energy, giving them the fighting capability of a warrior alongside the ability to heal or protect using Holy Energy, a purified form of Veyn. Common among those who protect others directly, like guards or knights.",
+    "Blends physical strength with Blessed Ren — their own Ren sanctified into a holy form — giving them the fighting power of a warrior and the ability to heal and protect, all through their own Vitality rather than Veyn. Because they never hold Veyn and Ren together, paladins avoid the incompatibility that would kill anyone else. Common among those who protect others directly, like guards or knights.",
     [
-      { label: "Type", value: "Ren class, Holy class" },
+      { label: "Type", value: "Ren class — Blessed Ren" },
     ],
     ["class", "paladin", "holy", "knight"],
   ),
