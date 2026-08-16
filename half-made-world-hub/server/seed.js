@@ -1417,7 +1417,7 @@ module.exports = [
     [
       { label: 'Role', value: 'Takes the MC to the Hidden Realm; Head Master of the academy.' },
       { label: 'Location', value: 'Stays in the Human Realm; was only hiding in the Hidden Realm.' },
-      { label: 'Race', value: 'Extinct — name not yet decided.' },
+      { label: 'Race', value: 'Vael' },
       { label: 'Academy', value: 'Elyndor Academy' },
     ],
     ['character', 'head master', 'academy', 'hidden realm', 'human realm'],
@@ -2211,5 +2211,33 @@ module.exports = [
     'Not every creature of the Dark belongs to the Demon Realm’s ranks. Some are spirits — beings given shape by unstable Veyn rather than born of the demonic bloodline. The Cindergrave Wraith Lord and the Lesser Cindergrave Wraiths are evil spirits: fragments of will pulled from the fallen kingdom of Lethmoor and held together by the unstable Veyn of its terrain. They are not demons and hold no demon rank; they simply endure where the Veyn is too broken to be called a realm, feeding on the Veyn of the living to stay whole.',
     [],
     ['spirit', 'evil spirit', 'wraith', 'veyn', 'cindergrave'],
+  ),
+
+  e(
+    'Race Types',
+    'Vael',
+    'The extinct realm-makers',
+    'An extinct race, wiped out by the former ruler of the Human Realm, forcing the survivors to flee by tearing open the Hidden Realm as a hiding place — an act so violent it nearly destroyed the world outright. Escaping the ruler didn’t save them: once inside, the realm’s own creatures began forming almost immediately, and the Vael had no way to survive against them. Nearly the entire race died out inside the very refuge they built, save for one survivor — the Headmaster of the Academy — who alone learned to endure it and later became the only person to ever successfully brew the Ethereal Potion.',
+    [
+      { label: 'Appearance', value: 'Pale, ash-grey skin; flat, dark eyes that do not reflect light; faint markings that glow faintly with Veyn beneath the skin.' },
+      { label: 'Innate Ability', value: 'Potent Blood' },
+    ],
+    ['race', 'vael', 'extinct', 'hidden realm'],
+  ),
+  e(
+    'Innate Abilities',
+    'Potent Blood',
+    'Innate ability',
+    'Their blood has an extremely high, potent healing capability.',
+    [],
+    ['innate', 'ability', 'vael'],
+  ),
+  e(
+    'Rules & Notes',
+    'The Vael',
+    'The extinct race of the Hidden Realm',
+    'The Vael were an ancient race of realm-makers, wiped out by the former ruler of the Human Realm. Their survivors tore open the Hidden Realm as a hiding place, an act so violent it nearly destroyed the world, but even that refuge could not save them — the realm’s creatures formed almost immediately and the Vael died out inside it, leaving one survivor: the Headmaster of the Academy, who alone learned to endure the realm and became the only person to ever brew the Ethereal Potion.',
+    [],
+    ['vael', 'extinct', 'race', 'hidden realm'],
   ),
 ];

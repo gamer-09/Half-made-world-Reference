@@ -3558,5 +3558,25 @@
     "color": "",
     "createdAt": "2026-08-16T17:50:06.008Z",
     "updatedAt": "2026-08-16T17:50:06.008Z"
+  },
+  {
+    "id": "link-seed-349",
+    "source": "Kael von Ashen",
+    "target": "Vael",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Kael von Ashen is the last of the Vael.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-350",
+    "source": "Potent Blood",
+    "target": "Vael",
+    "type": "innate of",
+    "label": "Innate of",
+    "description": "Potent Blood is the innate ability of the Vael.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

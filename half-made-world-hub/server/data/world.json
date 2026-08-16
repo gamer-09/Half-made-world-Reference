@@ -3584,7 +3584,7 @@
       },
       {
         "label": "Race",
-        "value": "Extinct — name not yet decided."
+        "value": "Vael"
       },
       {
         "label": "Academy",
@@ -5374,6 +5374,62 @@
       "wraith",
       "veyn",
       "cindergrave"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-294",
+    "category": "Race Types",
+    "name": "Vael",
+    "subtitle": "The extinct realm-makers",
+    "description": "An extinct race, wiped out by the former ruler of the Human Realm, forcing the survivors to flee by tearing open the Hidden Realm as a hiding place — an act so violent it nearly destroyed the world outright. Escaping the ruler didn’t save them: once inside, the realm’s own creatures began forming almost immediately, and the Vael had no way to survive against them. Nearly the entire race died out inside the very refuge they built, save for one survivor — the Headmaster of the Academy — who alone learned to endure it and later became the only person to ever successfully brew the Ethereal Potion.",
+    "fields": [
+      {
+        "label": "Appearance",
+        "value": "Pale, ash-grey skin; flat, dark eyes that do not reflect light; faint markings that glow faintly with Veyn beneath the skin."
+      },
+      {
+        "label": "Innate Ability",
+        "value": "Potent Blood"
+      }
+    ],
+    "tags": [
+      "race",
+      "vael",
+      "extinct",
+      "hidden realm"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-295",
+    "category": "Innate Abilities",
+    "name": "Potent Blood",
+    "subtitle": "Innate ability",
+    "description": "Their blood has an extremely high, potent healing capability.",
+    "fields": [],
+    "tags": [
+      "innate",
+      "ability",
+      "vael"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-296",
+    "category": "Rules & Notes",
+    "name": "The Vael",
+    "subtitle": "The extinct race of the Hidden Realm",
+    "description": "The Vael were an ancient race of realm-makers, wiped out by the former ruler of the Human Realm. Their survivors tore open the Hidden Realm as a hiding place, an act so violent it nearly destroyed the world, but even that refuge could not save them — the realm’s creatures formed almost immediately and the Vael died out inside it, leaving one survivor: the Headmaster of the Academy, who alone learned to endure the realm and became the only person to ever brew the Ethereal Potion.",
+    "fields": [],
+    "tags": [
+      "vael",
+      "extinct",
+      "race",
+      "hidden realm"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"

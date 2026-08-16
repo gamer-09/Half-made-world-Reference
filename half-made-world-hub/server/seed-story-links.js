@@ -418,4 +418,8 @@ module.exports = [
   // --- Named angel races ---
   s('Ordium', 'Malakhim', 'part of', 'Part of', 'Ordium is a Malakhim angel.'),
   s('Jaiden Marlock', 'Malakhim', 'part of', 'Part of', 'Jaiden Marlock is a Malakhim angel.'),
+
+  // --- Vael race links ---
+  s('Kael von Ashen', 'Vael', 'part of', 'Part of', 'Kael von Ashen is the last of the Vael.'),
+  s('Potent Blood', 'Vael', 'innate of', 'Innate of', 'Potent Blood is the innate ability of the Vael.'),
 ];
