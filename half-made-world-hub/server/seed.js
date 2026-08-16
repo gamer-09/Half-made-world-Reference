@@ -2786,4 +2786,12 @@ module.exports = [
     [],
     ["veyn", "holy energy", "corrupted veyn", "humans", "angels", "demons"],
   ),
+  e(
+    "Rules & Notes",
+    "The Formation of Holy Energy and Corrupted Veyn",
+    "How raw Veyn becomes gold or black",
+    "Both holy energy and corrupted Veyn are made from the same raw Veyn, but by opposite processes. Holy energy is formed through purification: a holy being burns away Veyn’s impurity — an angel through the discipline of their halo and Veyn Vow, a saint or diviner through their own holy channeling — brightening the Veyn from silver-blue into gold. Corrupted Veyn is formed through corruption: a demon turns its own Veyn inward and decomposes it into miasma, darkening and poisoning it until it stains a deep purple or black. One Veyn pulled in two directions — which is exactly why they cannot coexist and cancel each other out when they meet.",
+    [],
+    ["holy energy", "corrupted veyn", "veyn", "formation", "purification", "corruption"],
+  ),
 ];

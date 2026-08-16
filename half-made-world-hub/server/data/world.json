@@ -5643,5 +5643,23 @@
     ],
     "createdAt": "2026-08-16T22:39:06.448Z",
     "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "64aca900-4f91-4a47-aef4-46b49ceea118",
+    "category": "Rules & Notes",
+    "name": "The Formation of Holy Energy and Corrupted Veyn",
+    "subtitle": "How raw Veyn becomes gold or black",
+    "description": "Both holy energy and corrupted Veyn are made from the same raw Veyn, but by opposite processes. Holy energy is formed through purification: a holy being burns away Veyn’s impurity — an angel through the discipline of their halo and Veyn Vow, a saint or diviner through their own holy channeling — brightening the Veyn from silver-blue into gold. Corrupted Veyn is formed through corruption: a demon turns its own Veyn inward and decomposes it into miasma, darkening and poisoning it until it stains a deep purple or black. One Veyn pulled in two directions — which is exactly why they cannot coexist and cancel each other out when they meet.",
+    "fields": [],
+    "tags": [
+      "holy energy",
+      "corrupted veyn",
+      "veyn",
+      "formation",
+      "purification",
+      "corruption"
+    ],
+    "createdAt": "2026-08-16T22:57:23.630Z",
+    "updatedAt": "2026-08-16T22:57:23.630Z"
   }
 ]
