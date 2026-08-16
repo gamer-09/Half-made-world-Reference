@@ -4907,7 +4907,7 @@
     "category": "Demon Skills",
     "name": "Auralis Seal",
     "subtitle": "Personalized skill",
-    "description": "The sealing craft she used to make the Auralis Ruby — seals auras and forms away entirely.",
+    "description": "Temporarily seals a target’s active abilities and aura, cutting them off from their power. While sealed, the target cannot use skills or project their aura and is forced to fight with only their physical strength and basic techniques. The duration depends on how much Veyn the user has available, and the consumption is extremely high, making it difficult to maintain for long.",
     "fields": [
       {
         "label": "Type",
@@ -4947,7 +4947,7 @@
     "category": "Angel Skills",
     "name": "The Stolen Hour",
     "subtitle": "Personalized skill",
-    "description": "A skill forged during the nine months hidden with Lisa — erases a moment so it never happened.",
+    "description": "Locks a target into a short time loop of their most recent actions (usually the last 3–5 seconds). While trapped, the target is forced to endlessly re-live that same moment and cannot act outside of it. The user remains free to move, attack, or reposition during the loop. Maintaining the ability drains Veyn continuously, and stronger targets can eventually force their way out.",
     "fields": [
       {
         "label": "Type",
