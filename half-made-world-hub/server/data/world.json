@@ -5294,5 +5294,54 @@
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-289",
+    "category": "Rules & Notes",
+    "name": "Race Types",
+    "subtitle": "Species, separate from rank",
+    "description": "Beyond their rank, every angel and demon belongs to a race type — a kind of being, not a position. The angels have three types: the Cherubim (the throne-guardian apex), the Malakhim (the common true angels), and the Fallen Angels (the vow-breakers). The demons have three: the Fiends (the apex), the Dregs (the common demons), and the Imps (the impish few set apart from the ordinary line). Race type and rank are independent — a Serapharch and a Lumen are both angels, but at different ranks of the same kind.",
+    "fields": [],
+    "tags": [
+      "race",
+      "race type",
+      "species",
+      "angels",
+      "demons"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-290",
+    "category": "Rules & Notes",
+    "name": "Innate Abilities",
+    "subtitle": "One per race type",
+    "description": "Each race type carries one innate ability, shared by every member of that type regardless of rank. These are distinct from learned skills: they are born into the blood, not trained. The Cherubim are Imperishable, the Malakhim carry Veyn-Regen, and the Fallen Angels carry Rapid-Mend; the Fiends are Sovereign Resilience, the Dregs carry Vitality-Regen, and the Imps carry Veyn-Touch.",
+    "fields": [],
+    "tags": [
+      "innate",
+      "innate ability",
+      "race",
+      "ability"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-291",
+    "category": "Rules & Notes",
+    "name": "Mastered and Personalized Skills",
+    "subtitle": "The two highest tiers of skill",
+    "description": "Beyond ordinary skills, a character can reach two higher tiers. A Mastered skill is one they have perfected beyond what their rank normally allows — their peak. A Personalized skill is their signature, unique to them alone, forged from their own experience. These are the skills that can be passed down to an offspring, and they mark the few who stand above their rank.",
+    "fields": [],
+    "tags": [
+      "mastered",
+      "personalized",
+      "skill",
+      "tier"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

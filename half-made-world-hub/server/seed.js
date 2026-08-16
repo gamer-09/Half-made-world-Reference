@@ -2170,4 +2170,29 @@ module.exports = [
     [],
     ['evolution', 'demon', 'dregs', 'fiends', 'mordrach', 'rule'],
   ),
+
+  e(
+    'Rules & Notes',
+    'Race Types',
+    'Species, separate from rank',
+    'Beyond their rank, every angel and demon belongs to a race type — a kind of being, not a position. The angels have three types: the Cherubim (the throne-guardian apex), the Malakhim (the common true angels), and the Fallen Angels (the vow-breakers). The demons have three: the Fiends (the apex), the Dregs (the common demons), and the Imps (the impish few set apart from the ordinary line). Race type and rank are independent — a Serapharch and a Lumen are both angels, but at different ranks of the same kind.',
+    [],
+    ['race', 'race type', 'species', 'angels', 'demons'],
+  ),
+  e(
+    'Rules & Notes',
+    'Innate Abilities',
+    'One per race type',
+    'Each race type carries one innate ability, shared by every member of that type regardless of rank. These are distinct from learned skills: they are born into the blood, not trained. The Cherubim are Imperishable, the Malakhim carry Veyn-Regen, and the Fallen Angels carry Rapid-Mend; the Fiends are Sovereign Resilience, the Dregs carry Vitality-Regen, and the Imps carry Veyn-Touch.',
+    [],
+    ['innate', 'innate ability', 'race', 'ability'],
+  ),
+  e(
+    'Rules & Notes',
+    'Mastered and Personalized Skills',
+    'The two highest tiers of skill',
+    'Beyond ordinary skills, a character can reach two higher tiers. A Mastered skill is one they have perfected beyond what their rank normally allows — their peak. A Personalized skill is their signature, unique to them alone, forged from their own experience. These are the skills that can be passed down to an offspring, and they mark the few who stand above their rank.',
+    [],
+    ['mastered', 'personalized', 'skill', 'tier'],
+  ),
 ];
