@@ -2517,6 +2517,10 @@ module.exports = [
     "The highest type of angel, the guardians of the throne. The Serapharch — the ruler of the Angel Realm — is of this type. They are essentially immortal and can only be killed by a Divine Weapon or a Corrupted Divine Weapon (Vireth, the Fallen Grace).",
     [
       { label: "Innate Ability", value: "Imperishable" },
+      { label: "Skin", value: "Luminous, pale gold like sunlight through marble, holding light rather than reflecting it, faintly radiant at the edges." },
+      { label: "Build", value: "Tall and statuesque, carrying themselves like living monuments, regal, unhurried, impossible to rush." },
+      { label: "Eyes", value: "Pure radiant gold with no visible pupil, glowing steady and calm with the same light as their halo." },
+      { label: "Presence", value: "Their Angelic Aura is so pure it visibly brightens the air around them, a quiet, overwhelming weight that makes lesser beings lower their gaze." },
     ],
     ["race", "angel", "cherubim", "apex"],
   ),
@@ -2527,6 +2531,10 @@ module.exports = [
     "The common type of true angel, the faithful host who take the Veyn Vow. The Aetherblade Lord Angels, Virtues, and Lumen all belong to this type.",
     [
       { label: "Innate Ability", value: "Veyn-Regen" },
+      { label: "Skin", value: "Fair, luminous, holding a soft white-gold glow, less radiant than a Cherubim's deep gold luminance, but still clearly not human." },
+      { label: "Build", value: "Upright and disciplined, built for duty and combat readiness rather than a Cherubim's towering presence." },
+      { label: "Eyes", value: "Bright, pale gold or white, glowing steadily, matching the brightness of their halo." },
+      { label: "Presence", value: "Their Angelic Aura is clearly visible, a genuine glow and pressure in the air around them, though not as overwhelming as a Cherubim's." },
     ],
     ["race", "angel", "malakhim", "host"],
   ),
