@@ -524,7 +524,7 @@ module.exports = [
     [
       { label: "Color", value: "Gold" },
       { label: "Nature", value: "Purified Veyn — not a separate source" },
-      { label: "Used by", value: "Angels, saints, diviners, paladins, and other holy beings" },
+      { label: "Used by", value: "Angels, saints, diviners, paladins, and other holy beings — including the angel half of the hybrid Jaiden Marlock." },
       { label: "Effect", value: "Burns corruption on contact — strong against undead, miasma, and corrupted Veyn; weak against the uncorrupted" },
     ],
     ["holy energy", "holy", "veyn", "magic", "purified"],

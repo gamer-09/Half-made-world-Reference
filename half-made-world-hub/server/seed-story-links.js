@@ -381,4 +381,5 @@ module.exports = [
   s("Diviner", "Holy Energy", "uses", "Uses", "A Diviner channels Holy Energy to read the future and uncover hidden truths."),
   s("Paladin", "Holy Energy", "uses", "Uses", "A Paladin blends physical strength with Holy Energy."),
   s("Angels (Overview)", "Holy Energy", "uses", "Uses", "Angels brighten their Veyn into Holy Energy — the gold their holy skills are made from."),
+  s("Jaiden Marlock", "Holy Energy", "uses", "Uses", "Through his Malakhim angel half, Jaiden channels Holy Energy — while his Imp demon half runs on corrupted Veyn (miasma)."),
 ];

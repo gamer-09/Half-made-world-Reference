@@ -3628,5 +3628,15 @@
     "description": "Angels brighten their Veyn into Holy Energy — the gold their holy skills are made from.",
     "createdAt": "2026-08-16T22:28:06.999Z",
     "updatedAt": "2026-08-16T22:28:06.999Z"
+  },
+  {
+    "id": "09c614e3-23a1-48fd-85de-0cc60098eddf",
+    "source": "Jaiden Marlock",
+    "target": "Holy Energy",
+    "type": "uses",
+    "label": "Uses",
+    "description": "Through his Malakhim angel half, Jaiden channels Holy Energy — while his Imp demon half runs on corrupted Veyn (miasma).",
+    "createdAt": "2026-08-16T22:30:51.802Z",
+    "updatedAt": "2026-08-16T22:30:51.802Z"
   }
 ]
