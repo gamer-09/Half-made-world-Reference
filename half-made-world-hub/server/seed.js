@@ -2228,7 +2228,7 @@ module.exports = [
     'Innate Abilities',
     'Potent Blood',
     'Innate ability',
-    'Their blood has an extremely high, potent healing capability.',
+    'Their blood has an extremely high, potent healing capability, and is an excellent conduit for magic — allowing them to use powerful magic easily.',
     [],
     ['innate', 'ability', 'vael'],
   ),
