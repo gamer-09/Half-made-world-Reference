@@ -1975,7 +1975,7 @@
   {
     "id": "link-seed-198",
     "source": "Kael von Ashen",
-    "target": "Academy",
+    "target": "Elyndor Academy",
     "type": "head master of",
     "label": "Head Master of",
     "description": "The sole survivor of the old race killed by the former Human Realm ruler is the academy’s Head Master (comment 126).",
@@ -2004,7 +2004,7 @@
   },
   {
     "id": "a5d43fc6-fc57-4a65-8750-3606ebc24143",
-    "source": "Academy",
+    "source": "Elyndor Academy",
     "target": "Human Realm",
     "type": "located in",
     "label": "Located in",
@@ -2203,7 +2203,7 @@
   {
     "id": "e8bb92d9-55dc-442b-8327-7cb88d616707",
     "source": "Wener Leger",
-    "target": "Academy",
+    "target": "Elyndor Academy",
     "type": "Teacher at",
     "label": "Teacher at",
     "description": "teaches swordsmanship at the academy",
@@ -2225,7 +2225,7 @@
   {
     "id": "2d601cef-3800-403c-9197-63a01776d7b9",
     "source": "The Sundering Altar",
-    "target": "Academy",
+    "target": "Elyndor Academy",
     "type": "located in",
     "label": "Located in",
     "description": "it is at the academy where all children at the age of 15 come to awaken there classes and for angels there halo",

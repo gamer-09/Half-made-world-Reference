@@ -1418,21 +1418,20 @@ module.exports = [
       { label: 'Role', value: 'Takes the MC to the Hidden Realm; Head Master of the academy.' },
       { label: 'Location', value: 'Stays in the Human Realm; was only hiding in the Hidden Realm.' },
       { label: 'Race', value: 'Extinct — name not yet decided.' },
-      { label: 'Academy', value: 'Name not yet decided.' },
+      { label: 'Academy', value: 'Elyndor Academy' },
     ],
     ['character', 'head master', 'academy', 'hidden realm', 'human realm'],
   ),
 
   e(
     'Locations',
-    'Academy',
-    'The unnamed school led by Kael von Ashen',
-    'The school led by Kael von Ashen, the sole survivor of the old race killed off by the former Human Realm ruler. Its name has not yet been decided.',
+    'Elyndor Academy',
+    'The school led by Kael von Ashen',
+    'The academy led by Kael von Ashen, the sole survivor of the old race killed off by the former Human Realm ruler.',
     [
       { label: 'Head Master', value: 'Kael von Ashen' },
-      { label: 'Name', value: 'Not yet decided.' },
     ],
-    ['academy', 'school', 'head master', 'hidden realm'],
+    ['academy', 'school', 'head master', 'hidden realm', 'elyndor'],
   ),
 
   e(

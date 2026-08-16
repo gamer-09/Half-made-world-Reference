@@ -3588,7 +3588,7 @@
       },
       {
         "label": "Academy",
-        "value": "Name not yet decided."
+        "value": "Elyndor Academy"
       }
     ],
     "tags": [
@@ -3604,24 +3604,21 @@
   {
     "id": "seed-185",
     "category": "Locations",
-    "name": "Academy",
-    "subtitle": "The unnamed school led by Kael von Ashen",
-    "description": "The school led by Kael von Ashen, the sole survivor of the old race killed off by the former Human Realm ruler. Its name has not yet been decided.",
+    "name": "Elyndor Academy",
+    "subtitle": "The school led by Kael von Ashen",
+    "description": "The academy led by Kael von Ashen, the sole survivor of the old race killed off by the former Human Realm ruler.",
     "fields": [
       {
         "label": "Head Master",
         "value": "Kael von Ashen"
-      },
-      {
-        "label": "Name",
-        "value": "Not yet decided."
       }
     ],
     "tags": [
       "academy",
       "school",
       "head master",
-      "hidden realm"
+      "hidden realm",
+      "elyndor"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
