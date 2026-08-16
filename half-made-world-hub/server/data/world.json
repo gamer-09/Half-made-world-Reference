@@ -2114,7 +2114,7 @@
       },
       {
         "label": "Inherited Skills",
-        "value": "Sovereign Aura, Time’s Grasp"
+        "value": "Auralis Seal, The Stolen Hour"
       },
       {
         "label": "Race",
@@ -5012,7 +5012,7 @@
     "category": "Rules & Notes",
     "name": "Titles and Their Skills",
     "subtitle": "Every title carries its own skills",
-    "description": "A title is more than a name — each one carries its own set of skills, mastered by the one who holds it. A title’s skills are distinct from a character’s innate rank abilities. Titles cannot be passed down; only a ruler of the first rank can grant a title to another, and only if they see that person as worthy of it. What can be passed down is a mastered skill — like Ordium’s Time’s Grasp or Lisa’s Sovereign Aura — which flows from parent to offspring.",
+    "description": "A title is more than a name — each one carries its own set of skills, mastered by the one who holds it. A title’s skills are distinct from a character’s innate rank abilities. Titles cannot be passed down; only a ruler of the first rank can grant a title to another, and only if they see that person as worthy of it. What can be passed down is a personalized skill — like Ordium’s The Stolen Hour or Lisa’s Auralis Seal — which flows from parent to offspring.",
     "fields": [],
     "tags": [
       "title",

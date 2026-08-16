@@ -3539,22 +3539,22 @@
   },
   {
     "id": "d2fc6c3c-8a38-4bc1-b9da-c4d18fa99f7b",
-    "source": "Time’s Grasp",
+    "source": "The Stolen Hour",
     "target": "Jaiden Marlock",
     "type": "passed down",
     "label": "Passed down",
-    "description": "A passed down skill from his dad",
+    "description": "A personalized skill passed down from his dad, Ordium.",
     "color": "",
     "createdAt": "2026-08-16T16:57:19.184Z",
     "updatedAt": "2026-08-16T16:57:19.184Z"
   },
   {
     "id": "762fa2d4-1a96-4001-a49e-22e16859b73b",
-    "source": "Sovereign Aura",
+    "source": "Auralis Seal",
     "target": "Jaiden Marlock",
     "type": "passed down",
     "label": "Passed down",
-    "description": "A skill passed down from his mom",
+    "description": "A personalized skill passed down from his mom, Lisa.",
     "color": "",
     "createdAt": "2026-08-16T17:50:06.008Z",
     "updatedAt": "2026-08-16T17:50:06.008Z"
