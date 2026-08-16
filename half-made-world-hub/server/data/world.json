@@ -5530,5 +5530,22 @@
     ],
     "createdAt": "2026-08-16T21:29:34.458Z",
     "updatedAt": "2026-08-16T21:29:34.458Z"
+  },
+  {
+    "id": "f386434e-8c6e-4b74-bee1-70f19facccc6",
+    "category": "Rules & Notes",
+    "name": "The World Core",
+    "subtitle": "The untouched heart of the world",
+    "description": "The world core has no mind and no body — only a will. It is the untouched source from which all Veyn flows into the world, but it does not think or feel the way a living thing does. When the world was put in danger — when the old race tore open the Hidden Realm and nearly destroyed everything — the core's will answered on its own, raising the world barrier to split the realms apart and carving the Shudon from its own stone to guard the entrances against collapse.",
+    "fields": [],
+    "tags": [
+      "world core",
+      "veyn",
+      "will",
+      "world barrier",
+      "shudon"
+    ],
+    "createdAt": "2026-08-16T21:34:21.432Z",
+    "updatedAt": "2026-08-16T21:34:21.432Z"
   }
 ]

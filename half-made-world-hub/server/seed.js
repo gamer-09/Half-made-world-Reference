@@ -2743,4 +2743,12 @@ module.exports = [
     [],
     ["world barrier", "world core", "veyn", "shudon", "hidden realm"],
   ),
+  e(
+    "Rules & Notes",
+    "The World Core",
+    "The untouched heart of the world",
+    "The world core has no mind and no body — only a will. It is the untouched source from which all Veyn flows into the world, but it does not think or feel the way a living thing does. When the world was put in danger — when the old race tore open the Hidden Realm and nearly destroyed everything — the core's will answered on its own, raising the world barrier to split the realms apart and carving the Shudon from its own stone to guard the entrances against collapse.",
+    [],
+    ["world core", "veyn", "will", "world barrier", "shudon"],
+  ),
 ];
