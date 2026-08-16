@@ -376,4 +376,9 @@ module.exports = [
   s("Potent Blood", "Vael", "innate of", "Innate of", "Potent Blood is the innate ability of the Vael."),
   s("The Seer", "Healers", "chooses", "Chooses", "The Seer picks who becomes the next Healer, locating them through the Truthstone."),
   s("Healers", "Clergy", "part of", "Part of", "The seven Healers are chosen from among the Clergy."),
+  s("Holy Energy", "Veyn", "refined from", "Refined from", "Holy energy is Veyn purified and brightened into gold."),
+  s("Saintess", "Holy Energy", "uses", "Uses", "A Saintess channels Holy Energy rather than raw Veyn."),
+  s("Diviner", "Holy Energy", "uses", "Uses", "A Diviner channels Holy Energy to read the future and uncover hidden truths."),
+  s("Paladin", "Holy Energy", "uses", "Uses", "A Paladin blends physical strength with Holy Energy."),
+  s("Angels (Overview)", "Holy Energy", "uses", "Uses", "Angels brighten their Veyn into Holy Energy — the gold their holy skills are made from."),
 ];

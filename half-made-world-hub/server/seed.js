@@ -518,6 +518,19 @@ module.exports = [
   ),
   e(
     "Magic Systems",
+    "Holy Energy",
+    "The purified form of Veyn",
+    "Holy energy is Veyn purified and brightened into gold — the form of Veyn channeled by angels, saints, diviners, paladins, and other holy beings. Where raw Veyn glows a neutral silver-blue, holy energy glows gold and burns corruption on contact, so it is naturally strong against undead, miasma, and corrupted Veyn while doing little to anything uncorrupted. It is not a separate source of power — it is Veyn refined, drawn from the same world core and bound by the same limits.",
+    [
+      { label: "Color", value: "Gold" },
+      { label: "Nature", value: "Purified Veyn — not a separate source" },
+      { label: "Used by", value: "Angels, saints, diviners, paladins, and other holy beings" },
+      { label: "Effect", value: "Burns corruption on contact — strong against undead, miasma, and corrupted Veyn; weak against the uncorrupted" },
+    ],
+    ["holy energy", "holy", "veyn", "magic", "purified"],
+  ),
+  e(
+    "Magic Systems",
     "Ren",
     "The inner energy of swordsmen",
     "It is what swordsmen use in place of Veyn. It is the inner energy from our body brought out to enhance our strength. Ren glows a deep crimson red since it is drawn from a person’s own Vitality rather than an outside source. Where Veyn feels cool and ambient, Ren feels warm and physical, more like a pulse than a light.",
@@ -655,7 +668,7 @@ module.exports = [
     "Classes",
     "Diviner",
     "Magic/Veyn class",
-    "Channels holy energy, the same purified Veyn that Holy Rain and Holy Flame are made from, to read fragments of the future or uncover hidden truths. A subtle, passive class — most Diviners are not fighters; they are consulted rather than deployed in battle. There are only 3 Diviners per century. They have the innate ability to see through any lies or disguises, called True-Sight.",
+    "Channels Holy Energy, the same purified Veyn that Holy Rain and Holy Flame are made from, to read fragments of the future or uncover hidden truths. A subtle, passive class — most Diviners are not fighters; they are consulted rather than deployed in battle. There are only 3 Diviners per century. They have the innate ability to see through any lies or disguises, called True-Sight.",
     [
       { label: "Type", value: "Magic/Veyn class" },
       { label: "Rarity", value: "Only 3 Diviners per century" },
@@ -688,7 +701,7 @@ module.exports = [
     "Classes",
     "Saintess",
     "Holy class",
-    "Unlike a Mage who draws on raw Veyn, a Saintess channels holy energy, the same energy Diviners, Holy Rain, and Holy Flame use. This makes her spells naturally effective against undead, miasma, and other corrupted Veyn, but weaker against things that have nothing to do with corruption. Her magic leans almost entirely toward healing, protection, and cleansing rather than direct offense.",
+    "Unlike a Mage who draws on raw Veyn, a Saintess channels Holy Energy, the same energy Diviners, Holy Rain, and Holy Flame use. This makes her spells naturally effective against undead, miasma, and other corrupted Veyn, but weaker against things that have nothing to do with corruption. Her magic leans almost entirely toward healing, protection, and cleansing rather than direct offense.",
     [
       { label: "Type", value: "Magic/Veyn class, Holy class" },
     ],
@@ -718,7 +731,7 @@ module.exports = [
     "Classes",
     "Paladin",
     "Ren + Holy class",
-    "Blends physical strength with holy energy, giving them the fighting capability of a warrior alongside the ability to heal or protect using a Pure version of Veyn (holy energy). Common among those who protect others directly, like guards or knights.",
+    "Blends physical strength with Holy Energy, giving them the fighting capability of a warrior alongside the ability to heal or protect using Holy Energy, a purified form of Veyn. Common among those who protect others directly, like guards or knights.",
     [
       { label: "Type", value: "Ren class, Holy class" },
     ],

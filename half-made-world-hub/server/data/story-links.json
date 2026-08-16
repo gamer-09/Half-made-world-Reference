@@ -3578,5 +3578,55 @@
     "description": "The seven Healers are chosen from among the Clergy.",
     "createdAt": "2026-08-16T22:21:48.054Z",
     "updatedAt": "2026-08-16T22:21:48.054Z"
+  },
+  {
+    "id": "1cf7d32b-d79e-4413-a38d-f0f9e6d253ec",
+    "source": "Holy Energy",
+    "target": "Veyn",
+    "type": "refined from",
+    "label": "Refined from",
+    "description": "Holy energy is Veyn purified and brightened into gold.",
+    "createdAt": "2026-08-16T22:28:06.999Z",
+    "updatedAt": "2026-08-16T22:28:06.999Z"
+  },
+  {
+    "id": "9ba77df7-cad3-4375-8287-6423c3a40bb6",
+    "source": "Saintess",
+    "target": "Holy Energy",
+    "type": "uses",
+    "label": "Uses",
+    "description": "A Saintess channels Holy Energy rather than raw Veyn.",
+    "createdAt": "2026-08-16T22:28:06.999Z",
+    "updatedAt": "2026-08-16T22:28:06.999Z"
+  },
+  {
+    "id": "2338ec37-bd49-4edd-83e1-3ad78b36f848",
+    "source": "Diviner",
+    "target": "Holy Energy",
+    "type": "uses",
+    "label": "Uses",
+    "description": "A Diviner channels Holy Energy to read the future and uncover hidden truths.",
+    "createdAt": "2026-08-16T22:28:06.999Z",
+    "updatedAt": "2026-08-16T22:28:06.999Z"
+  },
+  {
+    "id": "700db466-9243-4871-8b67-14e5d59c9c88",
+    "source": "Paladin",
+    "target": "Holy Energy",
+    "type": "uses",
+    "label": "Uses",
+    "description": "A Paladin blends physical strength with Holy Energy.",
+    "createdAt": "2026-08-16T22:28:06.999Z",
+    "updatedAt": "2026-08-16T22:28:06.999Z"
+  },
+  {
+    "id": "e95e1351-2031-4d26-a615-326b8d5b51ff",
+    "source": "Angels (Overview)",
+    "target": "Holy Energy",
+    "type": "uses",
+    "label": "Uses",
+    "description": "Angels brighten their Veyn into Holy Energy — the gold their holy skills are made from.",
+    "createdAt": "2026-08-16T22:28:06.999Z",
+    "updatedAt": "2026-08-16T22:28:06.999Z"
   }
 ]
