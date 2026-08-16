@@ -2735,4 +2735,12 @@ module.exports = [
     [],
     ["vael", "extinct", "race", "hidden realm"],
   ),
+  e(
+    "Rules & Notes",
+    "The World Barrier",
+    "Its magical origins",
+    "The world barrier was raised to split the realms apart after the old race's tearing-open of the Hidden Realm nearly destroyed the world. Its magic is drawn directly from the untouched world core — the same primal source from which Veyn is pulled — rather than from any single caster, which is why it has endured without ever being re-made. The Shudon, stone golems carved from the world core, were set at every entrance between the realms to guard the barrier and keep the world from collapsing inward.",
+    [],
+    ["world barrier", "world core", "veyn", "shudon", "hidden realm"],
+  ),
 ];
