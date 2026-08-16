@@ -1422,9 +1422,9 @@
   {
     "id": "seed-063",
     "category": "Classes",
-    "name": "Cleric",
+    "name": "Clergy",
     "subtitle": "Magic/Veyn class",
-    "description": "Trained in restoring injuries and health using Veyn. Anyone can train as a Cleric, though only seven at a time hold the actual title in the Human Realm.",
+    "description": "Trained in restoring injuries and health using Veyn. Anyone can train as Clergy, though only seven at a time hold the actual title in the Human Realm.",
     "fields": [
       {
         "label": "Type",
@@ -1433,7 +1433,7 @@
     ],
     "tags": [
       "class",
-      "cleric",
+      "clergy",
       "veyn"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",

@@ -696,13 +696,13 @@ module.exports = [
   ),
   e(
     "Classes",
-    "Cleric",
+    "Clergy",
     "Magic/Veyn class",
-    "Trained in restoring injuries and health using Veyn. Anyone can train as a Cleric, though only seven at a time hold the actual title in the Human Realm.",
+    "Trained in restoring injuries and health using Veyn. Anyone can train as Clergy, though only seven at a time hold the actual title in the Human Realm.",
     [
       { label: "Type", value: "Magic/Veyn class" },
     ],
-    ["class", "cleric", "veyn"],
+    ["class", "clergy", "veyn"],
   ),
   e(
     "Classes",

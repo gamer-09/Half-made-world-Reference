@@ -181,7 +181,7 @@ module.exports = [
   s("Exorcist", "Veyn", "class of", "Class of", "A slight use of Veyn/Magic class."),
   s("Broker", "Ren", "class of", "Class of", "A Ren class."),
   s("Saintess", "Veyn", "class of", "Class of", "A Magic/Veyn class, Holy class - channels holy energy, a purified form of Veyn."),
-  s("Cleric", "Veyn", "class of", "Class of", "A Magic/Veyn class."),
+  s("Clergy", "Veyn", "class of", "Class of", "A Magic/Veyn class."),
   s("Archer", "Veyn", "class of", "Class of", "A Magic/Veyn class."),
   s("Paladin", "Ren", "class of", "Class of", "A Ren class - the physical half of Paladin."),
   s("Paladin", "Veyn", "class of", "Class of", "A Holy class - heals and protects using holy energy, a purified form of Veyn."),
