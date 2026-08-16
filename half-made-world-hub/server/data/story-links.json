@@ -2774,26 +2774,6 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "link-seed-272",
-    "source": "Auralis Seal",
-    "target": "Jaiden Marlock",
-    "type": "passed down",
-    "label": "Passed down",
-    "description": "Inherited from Lisa — the sealing craft she used to make the Auralis Ruby that seals his forms and auras.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-273",
-    "source": "The Stolen Hour",
-    "target": "Jaiden Marlock",
-    "type": "passed down",
-    "label": "Passed down",
-    "description": "Inherited from Ordium — a time-warping skill passed down through his father’s line.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
     "id": "link-seed-274",
     "source": "Lisa’s Plot",
     "target": "Sofia Marlock",
@@ -3556,5 +3536,27 @@
     "description": "Clint Ashborn is a Cherubim angel.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "d2fc6c3c-8a38-4bc1-b9da-c4d18fa99f7b",
+    "source": "Time’s Grasp",
+    "target": "Jaiden Marlock",
+    "type": "passed down",
+    "label": "Passed down",
+    "description": "A passed down skill from his dad",
+    "color": "",
+    "createdAt": "2026-08-16T16:57:19.184Z",
+    "updatedAt": "2026-08-16T16:57:19.184Z"
+  },
+  {
+    "id": "762fa2d4-1a96-4001-a49e-22e16859b73b",
+    "source": "Sovereign Aura",
+    "target": "Jaiden Marlock",
+    "type": "passed down",
+    "label": "Passed down",
+    "description": "A skill passed down from his mom",
+    "color": "",
+    "createdAt": "2026-08-16T17:50:06.008Z",
+    "updatedAt": "2026-08-16T17:50:06.008Z"
   }
 ]
