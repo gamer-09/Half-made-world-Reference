@@ -3638,5 +3638,75 @@
     "description": "Through his Malakhim angel half, Jaiden channels Holy Energy — while his Imp demon half runs on corrupted Veyn (miasma).",
     "createdAt": "2026-08-16T22:30:51.802Z",
     "updatedAt": "2026-08-16T22:30:51.802Z"
+  },
+  {
+    "id": "eb2ba34e-04a0-481b-8be3-099c3d174ee7",
+    "source": "Clint Ashborn",
+    "target": "Holy Energy",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As a Cherubim, Clint Ashborn channels Holy Energy.",
+    "createdAt": "2026-08-16T22:32:44.773Z",
+    "updatedAt": "2026-08-16T22:32:44.773Z"
+  },
+  {
+    "id": "2207d659-9f80-4c6d-abe3-fffbf19a0011",
+    "source": "Ordium",
+    "target": "Holy Energy",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As a Malakhim angel, Ordium channels Holy Energy.",
+    "createdAt": "2026-08-16T22:32:44.773Z",
+    "updatedAt": "2026-08-16T22:32:44.773Z"
+  },
+  {
+    "id": "928e1298-b5da-4f28-b44a-c76ff5e8f5b9",
+    "source": "Cyrion",
+    "target": "Holy Energy",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As a Malakhim angel, Cyrion channels Holy Energy.",
+    "createdAt": "2026-08-16T22:32:44.773Z",
+    "updatedAt": "2026-08-16T22:32:44.773Z"
+  },
+  {
+    "id": "2498bf17-d66d-4d78-b211-8a32a30daeef",
+    "source": "Serathiel",
+    "target": "Holy Energy",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As a Malakhim angel, Serathiel channels Holy Energy.",
+    "createdAt": "2026-08-16T22:32:44.773Z",
+    "updatedAt": "2026-08-16T22:32:44.773Z"
+  },
+  {
+    "id": "5c2aac7c-1d9c-4715-99e6-c7a8be48b56c",
+    "source": "Liora Veyne",
+    "target": "Holy Energy",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As a Malakhim angel, Liora Veyne channels Holy Energy.",
+    "createdAt": "2026-08-16T22:32:44.773Z",
+    "updatedAt": "2026-08-16T22:32:44.773Z"
+  },
+  {
+    "id": "a6973679-bdc2-4a8d-bbd3-ce9945c01fc6",
+    "source": "Thalor Elwin",
+    "target": "Holy Energy",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As a Malakhim angel, Thalor Elwin channels Holy Energy.",
+    "createdAt": "2026-08-16T22:32:44.773Z",
+    "updatedAt": "2026-08-16T22:32:44.773Z"
+  },
+  {
+    "id": "63697d18-8b71-46d0-b0cf-10f2c8880d7c",
+    "source": "Aranweis",
+    "target": "Holy Energy",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As a Malakhim angel, Aranweis channels Holy Energy.",
+    "createdAt": "2026-08-16T22:32:44.773Z",
+    "updatedAt": "2026-08-16T22:32:44.773Z"
   }
 ]

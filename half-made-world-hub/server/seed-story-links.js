@@ -382,4 +382,11 @@ module.exports = [
   s("Paladin", "Holy Energy", "uses", "Uses", "A Paladin blends physical strength with Holy Energy."),
   s("Angels (Overview)", "Holy Energy", "uses", "Uses", "Angels brighten their Veyn into Holy Energy — the gold their holy skills are made from."),
   s("Jaiden Marlock", "Holy Energy", "uses", "Uses", "Through his Malakhim angel half, Jaiden channels Holy Energy — while his Imp demon half runs on corrupted Veyn (miasma)."),
+  s("Clint Ashborn", "Holy Energy", "uses", "Uses", "As a Cherubim, Clint Ashborn channels Holy Energy."),
+  s("Ordium", "Holy Energy", "uses", "Uses", "As a Malakhim angel, Ordium channels Holy Energy."),
+  s("Cyrion", "Holy Energy", "uses", "Uses", "As a Malakhim angel, Cyrion channels Holy Energy."),
+  s("Serathiel", "Holy Energy", "uses", "Uses", "As a Malakhim angel, Serathiel channels Holy Energy."),
+  s("Liora Veyne", "Holy Energy", "uses", "Uses", "As a Malakhim angel, Liora Veyne channels Holy Energy."),
+  s("Thalor Elwin", "Holy Energy", "uses", "Uses", "As a Malakhim angel, Thalor Elwin channels Holy Energy."),
+  s("Aranweis", "Holy Energy", "uses", "Uses", "As a Malakhim angel, Aranweis channels Holy Energy."),
 ];
