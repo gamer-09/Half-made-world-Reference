@@ -3496,5 +3496,65 @@
     "description": "Jaiden Marlock is a Malakhim angel.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-343",
+    "source": "Cyrion",
+    "target": "Malakhim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Cyrion is a Malakhim angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-344",
+    "source": "Serathiel",
+    "target": "Malakhim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Serathiel is a Malakhim angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-345",
+    "source": "Liora Veyne",
+    "target": "Malakhim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Liora Veyne is a Malakhim angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-346",
+    "source": "Thalor Elwin",
+    "target": "Malakhim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Thalor Elwin is a Malakhim angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-347",
+    "source": "Aranweis",
+    "target": "Malakhim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Aranweis is a Malakhim angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-348",
+    "source": "Clint Ashborn",
+    "target": "Cherubim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Clint Ashborn is a Cherubim angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

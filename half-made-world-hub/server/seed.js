@@ -757,7 +757,7 @@ module.exports = [
   ),
   e('Characters', 'Ruby Divina', 'Ruler of the Human Realm (Female)', 'The current ruler of the Human Realm.', [], ['character', 'ruler', 'human realm']),
   e('Characters', 'Tera Morage', 'Ruler of the Demon Realm — Mordrach (Female)', 'The current ruler of the Demon Realm. She has a second right-hand man, Licent Varak, who reported Lisa to her.', [{ label: 'Rank', value: 'Mordrach' }, { label: 'Race', value: 'Fiends' }], ['character', 'ruler', 'demon realm', 'mordrach']),
-  e('Characters', 'Clint Ashborn', 'Ruler of the Angel Realm — Serapharch (Male)', 'The current ruler of the Angel Realm.', [{ label: 'Rank', value: 'Serapharch' }], ['character', 'ruler', 'angel realm', 'serapharch']),
+  e('Characters', 'Clint Ashborn', 'Ruler of the Angel Realm — Serapharch (Male)', 'The current ruler of the Angel Realm.', [{ label: 'Rank', value: 'Serapharch' }, { label: 'Race', value: 'Cherubim' }], ['character', 'ruler', 'angel realm', 'serapharch']),
 
   // ============================================================ PLOT
   e(
@@ -1558,6 +1558,7 @@ module.exports = [
     'The Second Pillar. He watches the far edge of the Angel Realm, where the host does not march. He saw Ordium slip away the first time and said nothing — and he has kept the secret of Jaiden’s parentage ever since, not out of loyalty, but because he doesn’t report what he hasn’t decided to act on.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
+      { label: 'Race', value: 'Malakhim' },
       { label: 'Title', value: 'Second Pillar, Helious' },
       { label: 'Pillar', value: 'Second Pillar' },
       { label: 'Skills', value: 'Long Sight, Burning Path, Second Sun' },
@@ -1571,6 +1572,7 @@ module.exports = [
     'The Third Pillar — the bulwark who never retreats, and no one has ever thanked her for it. When Ordium abandoned his post, she was next in line for his seat, and she resents that he threw away a rank she would have bled to hold.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
+      { label: 'Race', value: 'Malakhim' },
       { label: 'Title', value: 'Third Pillar, Areous' },
       { label: 'Pillar', value: 'Third Pillar' },
       { label: 'Skills', value: 'Battle Trance, Ravager’s Grasp, War-Worn' },
@@ -1584,6 +1586,7 @@ module.exports = [
     'The Fourth Pillar. She carries the bad news, and she is never wrong. It was Liora who brought the execution order to Ordium’s door, in the same soft voice she uses to announce a dawn. The soldiers say the dread before a battle is her, arriving first.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
+      { label: 'Race', value: 'Malakhim' },
       { label: 'Title', value: 'Fourth Pillar, Deimous' },
       { label: 'Pillar', value: 'Fourth Pillar' },
       { label: 'Skills', value: 'Dread-Herald, Unheralded, Kneel' },
@@ -1597,6 +1600,7 @@ module.exports = [
     'The Fifth Pillar — the guardian of the Sundering Altar, where every person in the world is brought at fifteen to have their latent connection to Veyn unlocked for the first time. Angels swear their Veyn Vow there, and it is where each halo first forms. Thalor records every vow sworn at the altar and watches for the first sign that one is fraying. He saw the signs in Ordium long before he left: a vow pulled thin by something it was never meant to contain. He said nothing then, and has spent every day since wondering whether a single word from him could have stopped all of it.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
+      { label: 'Race', value: 'Malakhim' },
       { label: 'Title', value: 'Fifth Pillar, Horkous' },
       { label: 'Pillar', value: 'Fifth Pillar' },
       { label: 'Skills', value: 'Altar-Rite, Oath-Curse, True-Witness' },
@@ -1610,6 +1614,7 @@ module.exports = [
     'The Sixth Pillar — the personal guard of the Serapharch, the first-rank ruler of the Angel Realm. Aranweis is the king’s own watcher, standing always within reach of the throne, his hundred-eyed gaze missing nothing. He has seen every supplicant, every messenger, and every traitor who ever came before the king, and he forgets none of them.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
+      { label: 'Race', value: 'Malakhim' },
       { label: 'Title', value: 'Sixth Pillar, Argous' },
       { label: 'Pillar', value: 'Sixth Pillar' },
       { label: 'Skills', value: 'All-Seeing Eye, Warden’s Recall, Warden’s Mark' },

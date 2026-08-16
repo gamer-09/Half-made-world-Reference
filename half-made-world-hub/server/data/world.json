@@ -2341,6 +2341,10 @@
       {
         "label": "Rank",
         "value": "Serapharch"
+      },
+      {
+        "label": "Race",
+        "value": "Cherubim"
       }
     ],
     "tags": [
@@ -4006,6 +4010,10 @@
       {
         "label": "Skills",
         "value": "Long Sight, Burning Path, Second Sun"
+      },
+      {
+        "label": "Race",
+        "value": "Malakhim"
       }
     ],
     "tags": [
@@ -4041,6 +4049,10 @@
       {
         "label": "Skills",
         "value": "Battle Trance, Ravager’s Grasp, War-Worn"
+      },
+      {
+        "label": "Race",
+        "value": "Malakhim"
       }
     ],
     "tags": [
@@ -4076,6 +4088,10 @@
       {
         "label": "Skills",
         "value": "Dread-Herald, Unheralded, Kneel"
+      },
+      {
+        "label": "Race",
+        "value": "Malakhim"
       }
     ],
     "tags": [
@@ -4111,6 +4127,10 @@
       {
         "label": "Skills",
         "value": "Altar-Rite, Oath-Curse, True-Witness"
+      },
+      {
+        "label": "Race",
+        "value": "Malakhim"
       }
     ],
     "tags": [
@@ -4146,6 +4166,10 @@
       {
         "label": "Skills",
         "value": "All-Seeing Eye, Warden’s Recall, Warden’s Mark"
+      },
+      {
+        "label": "Race",
+        "value": "Malakhim"
       }
     ],
     "tags": [
