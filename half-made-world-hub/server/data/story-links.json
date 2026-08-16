@@ -3828,5 +3828,15 @@
     "description": "Through his Imp demon half, Jaiden wields Corrupted Veyn (miasma) — while his Malakhim angel half channels Holy Energy.",
     "createdAt": "2026-08-16T22:39:06.448Z",
     "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "d0cc2f24-8828-4fdf-8c47-a6c8af837986",
+    "source": "Corrupted Veyn",
+    "target": "Corruption Sickness",
+    "type": "causes",
+    "label": "Causes",
+    "description": "Contact with corrupted Veyn slowly kills a human over three stages.",
+    "createdAt": "2026-08-16T22:52:52.361Z",
+    "updatedAt": "2026-08-16T22:52:52.361Z"
   }
 ]

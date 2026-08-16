@@ -575,6 +575,18 @@ module.exports = [
     ],
     ["sickness", "veyn", "concentrated"],
   ),
+  e(
+    "Magic Systems",
+    "Corruption Sickness",
+    "What corrupted Veyn does to a human",
+    "When a human comes into contact with corrupted Veyn, it does not kill them at once — it corrupts their own Veyn and slowly kills them over three stages, each worse than the last, like a disease eating through the body. Holy energy is the only thing that can halt or reverse it, and only in the early stages.",
+    [
+      { label: "Stage 1 — The Taint", value: "The corrupted Veyn darkens the Veyn at the point of contact. Symptoms: nausea, fatigue, and a faint grey-purple discoloration where it touched. Still reversible with holy energy." },
+      { label: "Stage 2 — The Spread", value: "The corruption spreads through the body's Veyn channels. Symptoms: constant pain, blackened veins surfacing under the skin, unstable or darkening magic, and rapid weakening. Only strong holy purification can halt it." },
+      { label: "Stage 3 — The End", value: "The corruption consumes the body's Veyn entirely, and the body fails as its own poisoned Veyn destroys it from within. Death is inevitable; holy energy can only ease the pain." },
+    ],
+    ["corrupted veyn", "corruption", "sickness", "human", "veyn", "three stages"],
+  ),
 
   // ============================================================ RULES & NOTES
   e(

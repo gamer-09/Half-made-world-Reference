@@ -401,4 +401,5 @@ module.exports = [
   s("Isella Marrek", "Corrupted Veyn", "uses", "Uses", "As a Dregs demon, Isella Marrek wields Corrupted Veyn."),
   s("Carin", "Corrupted Veyn", "uses", "Uses", "As an Imp, Carin wields Corrupted Veyn."),
   s("Jaiden Marlock", "Corrupted Veyn", "uses", "Uses", "Through his Imp demon half, Jaiden wields Corrupted Veyn (miasma) — while his Malakhim angel half channels Holy Energy."),
+  s("Corrupted Veyn", "Corruption Sickness", "causes", "Causes", "Contact with corrupted Veyn slowly kills a human over three stages."),
 ];
