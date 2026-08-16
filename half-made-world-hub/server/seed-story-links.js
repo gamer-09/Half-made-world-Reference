@@ -333,8 +333,8 @@ module.exports = [
   s('The Stolen Hour', 'First Pillar, Chronous', 'skill of', 'Skill of', 'One of the First Pillar, Chronous’s abilities.'),
 
   // --- Inherited skills passed down to the MC ---
-  s('Auralis Seal', 'Jaiden Marlock', 'passed down', 'Passed down', 'Inherited from Lisa — the sealing craft she used to make the Auralis Ruby that seals his forms and auras.'),
-  s('The Stolen Hour', 'Jaiden Marlock', 'passed down', 'Passed down', 'Inherited from Ordium — a time-warping skill passed down through his father’s line.'),
+  s('Sovereign Aura', 'Jaiden Marlock', 'passed down', 'Passed down', 'A mastered skill passed down from his mom, Lisa.'),
+  s('Time’s Grasp', 'Jaiden Marlock', 'passed down', 'Passed down', 'A mastered skill passed down from his dad, Ordium.'),
 
   // --- Plot & Rules/Notes cross-links ---
   s("Lisa’s Plot", 'Sofia', 'story of', 'Story of', 'Lisa gave the child to her maid Sofia to raise in the Human Realm.'),
