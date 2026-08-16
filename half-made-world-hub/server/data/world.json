@@ -3392,7 +3392,7 @@
     "category": "Demon Skills",
     "name": "Instinctive Bargaining",
     "subtitle": "Gnash skill",
-    "description": "A natural pull toward making contracts that could raise their rank, though most backfire since Gnash aren't strong enough yet to enforce favorable terms.",
+    "description": "Gives the user a natural advantage when forming contracts or deals. The user can impose slightly more favorable terms than normal and sense when the other party is trying to cheat or hide a loophole. In combat, this manifests as the ability to force a short-term “bargain” on an opponent (e.g., “trade one attack for reduced damage” or “pause fighting for three seconds”).",
     "fields": [],
     "tags": [
       "skill",
@@ -4123,7 +4123,7 @@
       },
       {
         "label": "Skills",
-        "value": "Altar-Rite, Oath-Curse, True-Witness"
+        "value": "Altar-Rite, Vowbrand, Truthvein"
       },
       {
         "label": "Race",
@@ -4515,7 +4515,7 @@
     "category": "Demon Skills",
     "name": "Bond-Sight",
     "subtitle": "Bloodward skill",
-    "description": "She perceives the emotional bonds between people, seeing who loves whom.",
+    "description": "Allows the user to see the emotional and magical bonds connecting people. Strong bonds appear as clear threads of light or darkness. The user can read the nature of the bond (loyalty, love, hatred, contract, etc.) and, with enough focus, temporarily weaken or disrupt a bond, creating hesitation or conflict in the target.",
     "fields": [],
     "tags": [
       "skill",
@@ -4755,7 +4755,7 @@
     "category": "Angel Skills",
     "name": "Altar-Rite",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Allows him to call upon the Sundering Altar to bind a spoken vow.",
+    "description": "Channels residual power similar to the Sundering Altar. The user can force a temporary magical binding on a target, locking them into a short-term condition or restriction (e.g., “cannot lie,” “cannot attack,” “cannot flee”) for a limited time. Stronger targets resist longer.",
     "fields": [],
     "tags": [
       "skill",
@@ -4768,7 +4768,7 @@
   {
     "id": "seed-258",
     "category": "Angel Skills",
-    "name": "Oath-Curse",
+    "name": "Vowbrand",
     "subtitle": "Aetherblade Lord Angel skill",
     "description": "Curses whoever breaks a vow sworn before him.",
     "fields": [],
@@ -4783,7 +4783,7 @@
   {
     "id": "seed-259",
     "category": "Angel Skills",
-    "name": "True-Witness",
+    "name": "Truthvein",
     "subtitle": "Aetherblade Lord Angel skill",
     "description": "Senses the moment a vow is spoken falsely.",
     "fields": [],
@@ -4982,7 +4982,7 @@
     "category": "Demon Skills",
     "name": "Disinter",
     "subtitle": "Bloodward skill",
-    "description": "Digs up what a target buried, dragging the hidden truth into the light.",
+    "description": "Forces hidden or suppressed information to the surface. The user can drag out a target’s recent memories, sealed abilities, or buried emotions, temporarily exposing weaknesses, past injuries, or sealed powers. In combat, this can reveal openings or force a target’s hidden form/ability to surface against their will.",
     "fields": [],
     "tags": [
       "skill",
