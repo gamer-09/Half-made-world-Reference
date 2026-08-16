@@ -701,6 +701,7 @@ module.exports = [
       { label: 'Angelic rank', value: 'Aetherblade Lord Angel' },
       { label: 'Demonic rank', value: 'Bloodward' },
       { label: 'Race', value: 'Imp (demon half)' },
+      { label: 'Angel Race', value: 'Malakhim (angel half)' },
       { label: 'Parents', value: 'Lisa (Bloodward demon) and Ordium (Aetherblade Lord Angel)' },
       { label: 'Raised by', value: 'Sofia, in the Human Realm' },
       { label: 'Inherited Skills', value: 'Auralis Seal, The Stolen Hour' },
@@ -729,6 +730,7 @@ module.exports = [
     'The First Pillar — the highest-ranked of the six angel generals, the one the others took their orders from. He met Lisa and left his post for nine months. When the rulers called him back, they ordered him executed for lying with a demon. The First Pillar fell, and the five beneath him were never the same after.',
     [
       { label: 'Rank', value: 'Aetherblade Lord Angel' },
+      { label: 'Race', value: 'Malakhim' },
       { label: 'Title', value: 'First Pillar, Chronous' },
       { label: 'Pillar', value: 'First Pillar' },
       { label: 'Skills', value: 'Lapse, Rewind, Still Hour' },

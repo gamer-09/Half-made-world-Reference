@@ -3476,5 +3476,25 @@
     "description": "Tera Morage is a Fiends demon.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-341",
+    "source": "Ordium",
+    "target": "Malakhim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Ordium is a Malakhim angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-342",
+    "source": "Jaiden Marlock",
+    "target": "Malakhim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Jaiden Marlock is a Malakhim angel.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

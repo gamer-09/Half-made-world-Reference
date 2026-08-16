@@ -2119,6 +2119,10 @@
       {
         "label": "Race",
         "value": "Imp (demon half)"
+      },
+      {
+        "label": "Angel Race",
+        "value": "Malakhim (angel half)"
       }
     ],
     "tags": [
@@ -2203,6 +2207,10 @@
       {
         "label": "Personalized Skill",
         "value": "The Stolen Hour"
+      },
+      {
+        "label": "Race",
+        "value": "Malakhim"
       }
     ],
     "tags": [

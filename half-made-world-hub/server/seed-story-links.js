@@ -414,4 +414,8 @@ module.exports = [
   s('Nyra Thessan', 'Dregs', 'part of', 'Part of', 'Nyra Thessan is a Dregs demon.'),
   s('Isella Marrek', 'Dregs', 'part of', 'Part of', 'Isella Marrek is a Dregs demon.'),
   s('Tera Morage', 'Fiends', 'part of', 'Part of', 'Tera Morage is a Fiends demon.'),
+
+  // --- Named angel races ---
+  s('Ordium', 'Malakhim', 'part of', 'Part of', 'Ordium is a Malakhim angel.'),
+  s('Jaiden Marlock', 'Malakhim', 'part of', 'Part of', 'Jaiden Marlock is a Malakhim angel.'),
 ];
