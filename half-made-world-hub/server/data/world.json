@@ -1094,6 +1094,44 @@
     "updatedAt": "2026-08-16T22:28:06.999Z"
   },
   {
+    "id": "e10e64e4-3124-4994-b952-cfcf5f97de64",
+    "category": "Magic Systems",
+    "name": "Corrupted Veyn",
+    "subtitle": "The corrupted form of Veyn",
+    "description": "Corrupted Veyn is Veyn darkened and corrupted into a deep purple or black — the form of Veyn that demons wield, which they call miasma. Where raw Veyn glows a neutral silver-blue and holy energy brightens it into gold, corrupted Veyn darkens it, poisoning and contaminating whatever it touches. It harms humans and can contaminate holy auras and holy energy. It is not a separate source of power — it is Veyn corrupted, drawn from the same world core and bound by the same limits.",
+    "fields": [
+      {
+        "label": "Color",
+        "value": "Deep purple or black"
+      },
+      {
+        "label": "Nature",
+        "value": "Corrupted Veyn — not a separate source"
+      },
+      {
+        "label": "Also called",
+        "value": "Miasma"
+      },
+      {
+        "label": "Used by",
+        "value": "Demons"
+      },
+      {
+        "label": "Effect",
+        "value": "Harms humans and contaminates holy auras and holy energy"
+      }
+    ],
+    "tags": [
+      "corrupted veyn",
+      "miasma",
+      "veyn",
+      "magic",
+      "demon"
+    ],
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
     "id": "seed-045",
     "category": "Magic Systems",
     "name": "Ren",
@@ -5539,5 +5577,40 @@
     ],
     "createdAt": "2026-08-16T21:34:21.432Z",
     "updatedAt": "2026-08-16T21:34:21.432Z"
+  },
+  {
+    "id": "67ee6e06-afae-4472-8403-aca3cd942153",
+    "category": "Rules & Notes",
+    "name": "Holy Energy and Corrupted Veyn",
+    "subtitle": "The two opposing poles of Veyn",
+    "description": "Holy energy and corrupted Veyn are the two opposite poles of Veyn — one purified into gold, the other darkened into black. They are naturally at war with each other: holy energy burns corruption on contact, while corrupted Veyn contaminates and corrodes holy auras and holy energy. When they clash directly, they cancel each other out — Holy Flame and Purgatory Flames each consume the other rather than one overcoming the other.",
+    "fields": [],
+    "tags": [
+      "holy energy",
+      "corrupted veyn",
+      "conflict",
+      "veyn",
+      "opposition"
+    ],
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "df3e7f63-2d09-4016-86ec-a2253abc871e",
+    "category": "Rules & Notes",
+    "name": "The Three Forms of Veyn",
+    "subtitle": "Humans, angels, and demons",
+    "description": "The three peoples of the world each draw on a different form of Veyn. Humans use raw Veyn — neutral and silver-blue, the unshaped source itself. Angels channel Holy Energy — Veyn purified into gold. Demons wield Corrupted Veyn — Veyn darkened into miasma. All three trace back to the same world core; they are not separate powers, but one Veyn expressed three ways, each reflecting the nature of those who use it.",
+    "fields": [],
+    "tags": [
+      "veyn",
+      "holy energy",
+      "corrupted veyn",
+      "humans",
+      "angels",
+      "demons"
+    ],
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
   }
 ]

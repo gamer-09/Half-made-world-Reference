@@ -3708,5 +3708,125 @@
     "description": "As a Malakhim angel, Aranweis channels Holy Energy.",
     "createdAt": "2026-08-16T22:32:44.773Z",
     "updatedAt": "2026-08-16T22:32:44.773Z"
+  },
+  {
+    "id": "c63645bf-3bd7-4889-8da0-a9a00605b4bc",
+    "source": "Corrupted Veyn",
+    "target": "Veyn",
+    "type": "corrupted from",
+    "label": "Corrupted from",
+    "description": "Corrupted Veyn is Veyn darkened and corrupted.",
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "469ee128-e4b5-4cfb-8fe1-63d69f3ee111",
+    "source": "Humans",
+    "target": "Veyn",
+    "type": "uses",
+    "label": "Uses",
+    "description": "Humans use raw Veyn — the neutral, silver-blue form.",
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "ff58473b-6422-48f0-b58f-50db0a51f03b",
+    "source": "Demons (Overview)",
+    "target": "Corrupted Veyn",
+    "type": "uses",
+    "label": "Uses",
+    "description": "Demons corrupt their Veyn into miasma.",
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "7cf3d38b-2a38-4640-a2a7-e647aef22b30",
+    "source": "Tera Morage",
+    "target": "Corrupted Veyn",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As a Fiend, Tera Morage wields Corrupted Veyn.",
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "625c8557-9cb2-4995-99c0-26a0cecfde23",
+    "source": "Lisa",
+    "target": "Corrupted Veyn",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As an Imp, Lisa wields Corrupted Veyn.",
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "ad9de657-461d-4843-83c4-497d18b41493",
+    "source": "Licent Varak",
+    "target": "Corrupted Veyn",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As a Dregs demon, Licent Varak wields Corrupted Veyn.",
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "bdb89bd2-06c5-45e4-af23-796b0d1cd409",
+    "source": "Kael Vornath",
+    "target": "Corrupted Veyn",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As an Imp, Kael Vornath wields Corrupted Veyn.",
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "12f2cb53-d1b0-4a12-9c8a-b4f6ab7da314",
+    "source": "Sythra Kaelis",
+    "target": "Corrupted Veyn",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As a Dregs demon, Sythra Kaelis wields Corrupted Veyn.",
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "7ac4f2b6-04ab-40d3-9c9d-26e8fbdc5ea9",
+    "source": "Nyra Thessan",
+    "target": "Corrupted Veyn",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As a Dregs demon, Nyra Thessan wields Corrupted Veyn.",
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "f57e8a61-4cb7-4701-8636-93d2d7c1ffb7",
+    "source": "Isella Marrek",
+    "target": "Corrupted Veyn",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As a Dregs demon, Isella Marrek wields Corrupted Veyn.",
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "6e1440de-3971-42aa-b040-7e3a68d5461e",
+    "source": "Carin",
+    "target": "Corrupted Veyn",
+    "type": "uses",
+    "label": "Uses",
+    "description": "As an Imp, Carin wields Corrupted Veyn.",
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
+  },
+  {
+    "id": "1de84740-1c6b-4656-b179-44263b08e5c7",
+    "source": "Jaiden Marlock",
+    "target": "Corrupted Veyn",
+    "type": "uses",
+    "label": "Uses",
+    "description": "Through his Imp demon half, Jaiden wields Corrupted Veyn (miasma) — while his Malakhim angel half channels Holy Energy.",
+    "createdAt": "2026-08-16T22:39:06.448Z",
+    "updatedAt": "2026-08-16T22:39:06.448Z"
   }
 ]

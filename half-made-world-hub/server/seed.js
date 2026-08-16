@@ -531,6 +531,20 @@ module.exports = [
   ),
   e(
     "Magic Systems",
+    "Corrupted Veyn",
+    "The corrupted form of Veyn",
+    "Corrupted Veyn is Veyn darkened and corrupted into a deep purple or black — the form of Veyn that demons wield, which they call miasma. Where raw Veyn glows a neutral silver-blue and holy energy brightens it into gold, corrupted Veyn darkens it, poisoning and contaminating whatever it touches. It harms humans and can contaminate holy auras and holy energy. It is not a separate source of power — it is Veyn corrupted, drawn from the same world core and bound by the same limits.",
+    [
+      { label: "Color", value: "Deep purple or black" },
+      { label: "Nature", value: "Corrupted Veyn — not a separate source" },
+      { label: "Also called", value: "Miasma" },
+      { label: "Used by", value: "Demons" },
+      { label: "Effect", value: "Harms humans and contaminates holy auras and holy energy" },
+    ],
+    ["corrupted veyn", "miasma", "veyn", "magic", "demon"],
+  ),
+  e(
+    "Magic Systems",
     "Ren",
     "The inner energy of swordsmen",
     "It is what swordsmen use in place of Veyn. It is the inner energy from our body brought out to enhance our strength. Ren glows a deep crimson red since it is drawn from a person’s own Vitality rather than an outside source. Where Veyn feels cool and ambient, Ren feels warm and physical, more like a pulse than a light.",
@@ -2743,5 +2757,21 @@ module.exports = [
     "The world core has no mind and no body — only a will. It is the untouched source from which all Veyn flows into the world, but it does not think or feel the way a living thing does. When the world was put in danger — when the old race tore open the Hidden Realm and nearly destroyed everything — the core's will answered on its own, raising the world barrier to split the realms apart and carving the Shudon from its own stone to guard the entrances against collapse.",
     [],
     ["world core", "veyn", "will", "world barrier", "shudon"],
+  ),
+  e(
+    "Rules & Notes",
+    "Holy Energy and Corrupted Veyn",
+    "The two opposing poles of Veyn",
+    "Holy energy and corrupted Veyn are the two opposite poles of Veyn — one purified into gold, the other darkened into black. They are naturally at war with each other: holy energy burns corruption on contact, while corrupted Veyn contaminates and corrodes holy auras and holy energy. When they clash directly, they cancel each other out — Holy Flame and Purgatory Flames each consume the other rather than one overcoming the other.",
+    [],
+    ["holy energy", "corrupted veyn", "conflict", "veyn", "opposition"],
+  ),
+  e(
+    "Rules & Notes",
+    "The Three Forms of Veyn",
+    "Humans, angels, and demons",
+    "The three peoples of the world each draw on a different form of Veyn. Humans use raw Veyn — neutral and silver-blue, the unshaped source itself. Angels channel Holy Energy — Veyn purified into gold. Demons wield Corrupted Veyn — Veyn darkened into miasma. All three trace back to the same world core; they are not separate powers, but one Veyn expressed three ways, each reflecting the nature of those who use it.",
+    [],
+    ["veyn", "holy energy", "corrupted veyn", "humans", "angels", "demons"],
   ),
 ];
