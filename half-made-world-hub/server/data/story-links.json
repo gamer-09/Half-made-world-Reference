@@ -1604,7 +1604,7 @@
   },
   {
     "id": "link-seed-161",
-    "source": "Healer",
+    "source": "Cleric",
     "target": "Veyn",
     "type": "class of",
     "label": "Class of",
@@ -2260,26 +2260,6 @@
     "type": "held by",
     "label": "Held by",
     "description": "The title “Chronous” is borne by Ordium.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-203",
-    "source": "Angel of the Vast",
-    "target": "Aetherblade Lord Angel",
-    "type": "held by",
-    "label": "Held by",
-    "description": "The widest reach beneath the throne, held by the Aetherblade Lord Angel.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-207",
-    "source": "Demon of the Overflow",
-    "target": "Bloodward",
-    "type": "held by",
-    "label": "Held by",
-    "description": "Power beyond a single vessel — the Bloodward’s surfeit of Veyn.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },

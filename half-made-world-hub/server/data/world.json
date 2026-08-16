@@ -1422,9 +1422,9 @@
   {
     "id": "seed-063",
     "category": "Classes",
-    "name": "Healer",
+    "name": "Cleric",
     "subtitle": "Magic/Veyn class",
-    "description": "Trained in restoring injuries and health using Veyn. Anyone can train as a Healer, though only seven at a time hold the actual title in the Human Realm.",
+    "description": "Trained in restoring injuries and health using Veyn. Anyone can train as a Cleric, though only seven at a time hold the actual title in the Human Realm.",
     "fields": [
       {
         "label": "Type",
@@ -1433,7 +1433,7 @@
     ],
     "tags": [
       "class",
-      "healer",
+      "cleric",
       "veyn"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
@@ -3799,48 +3799,6 @@
       "angel",
       "pillar",
       "ordium"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "seed-191",
-    "category": "Titles",
-    "name": "Angel of the Vast",
-    "subtitle": "The Aetherblade’s reach",
-    "description": "The widest reach beneath the throne, held by the Aetherblade Lord Angel.",
-    "fields": [
-      {
-        "label": "Held by",
-        "value": "Aetherblade Lord Angel"
-      }
-    ],
-    "tags": [
-      "title",
-      "vast",
-      "aetherblade",
-      "angel"
-    ],
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "seed-195",
-    "category": "Titles",
-    "name": "Demon of the Overflow",
-    "subtitle": "The Bloodward’s surfeit",
-    "description": "Power beyond a single vessel — the Bloodward’s surfeit of Veyn.",
-    "fields": [
-      {
-        "label": "Held by",
-        "value": "Bloodward"
-      }
-    ],
-    "tags": [
-      "title",
-      "overflow",
-      "bloodward",
-      "demon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"

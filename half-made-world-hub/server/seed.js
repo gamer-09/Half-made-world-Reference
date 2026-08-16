@@ -696,13 +696,13 @@ module.exports = [
   ),
   e(
     "Classes",
-    "Healer",
+    "Cleric",
     "Magic/Veyn class",
-    "Trained in restoring injuries and health using Veyn. Anyone can train as a Healer, though only seven at a time hold the actual title in the Human Realm.",
+    "Trained in restoring injuries and health using Veyn. Anyone can train as a Cleric, though only seven at a time hold the actual title in the Human Realm.",
     [
       { label: "Type", value: "Magic/Veyn class" },
     ],
-    ["class", "healer", "veyn"],
+    ["class", "cleric", "veyn"],
   ),
   e(
     "Classes",
@@ -1905,26 +1905,6 @@ module.exports = [
       { label: "Held by", value: "Ordium" },
     ],
     ["title", "angel", "pillar", "ordium"],
-  ),
-  e(
-    "Titles",
-    "Angel of the Vast",
-    "The Aetherblade’s reach",
-    "The widest reach beneath the throne, held by the Aetherblade Lord Angel.",
-    [
-      { label: "Held by", value: "Aetherblade Lord Angel" },
-    ],
-    ["title", "vast", "aetherblade", "angel"],
-  ),
-  e(
-    "Titles",
-    "Demon of the Overflow",
-    "The Bloodward’s surfeit",
-    "Power beyond a single vessel — the Bloodward’s surfeit of Veyn.",
-    [
-      { label: "Held by", value: "Bloodward" },
-    ],
-    ["title", "overflow", "bloodward", "demon"],
   ),
 
   // ============================================================ CHARACTERS
