@@ -2105,6 +2105,10 @@ module.exports = [
     'The highest type of demon, the rulers of the Demon Realm. The Mordrach are of this type — they cannot be killed by regular or holy weapons, only by a Divine Weapon.',
     [
       { label: 'Innate Ability', value: 'Sovereign Resilience' },
+      { label: 'Skin', value: 'Deep onyx-black, almost absorbing light, with faint ember-orange cracks like cooling magma at the edges of their horns and fingers.' },
+      { label: 'Build', value: 'Towering, broad, heavy, they carry themselves like living thrones.' },
+      { label: 'Eyes', value: 'Smoldering embers, no visible pupil, shedding a faint heat-haze.' },
+      { label: 'Presence', value: 'Their Demonic Aura is so thick it visibly darkens the air around them.' },
     ],
     ['race', 'demon', 'fiends', 'apex'],
   ),
@@ -2115,6 +2119,10 @@ module.exports = [
     'The common type of demon, the rank-and-file of the Demon Realm. The Bloodward, Scourge, and Gnash all belong to this type.',
     [
       { label: 'Innate Ability', value: 'Vitality-Regen' },
+      { label: 'Skin', value: 'Rough, ashen or bruised-purple, scarred and battle-worn.' },
+      { label: 'Build', value: 'Varied but hardened, soldier-like, lean and coiled.' },
+      { label: 'Eyes', value: 'Bloodshot amber or sickly yellow, no warmth.' },
+      { label: 'Presence', value: "A faint, constant oppressive hum, lesser than a Fiend's, but always felt." },
     ],
     ['race', 'demon', 'dregs', 'common'],
   ),
@@ -2125,6 +2133,10 @@ module.exports = [
     'A demon type set apart from the ordinary Dregs — the impish few, including Lisa and Kael Vornath the Jester demon, and the MC’s demon half.',
     [
       { label: 'Innate Ability', value: 'Veyn-Touch' },
+      { label: 'Skin', value: "Warmer and less monstrous than a Dreg's, closer to a deep violet or plum tone rather than ash or bruise-purple, unsettling mostly in how normal it can look at a glance." },
+      { label: 'Build', value: 'Lithe and human-passing, more agile than hardened, built for misdirection rather than raw force.' },
+      { label: 'Eyes', value: "Sharp, alert, with a flicker of amusement even in danger, unlike a Dreg's flat hostility." },
+      { label: 'Presence', value: "Their aura doesn't press down the way a Fiend's or Dreg's does, it unsettles more subtly, a playful-cruel undertone that makes people uneasy without knowing exactly why." },
     ],
     ['race', 'demon', 'imps', 'imp'],
   ),
