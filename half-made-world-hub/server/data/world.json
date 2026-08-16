@@ -546,15 +546,16 @@
         "value": "Lethmoor Kingdom — throne room"
       },
       {
-        "label": "Type",
-        "value": "Shades"
+        "label": "Nature",
+        "value": "An evil spirit, not a demon."
       }
     ],
     "tags": [
       "cindergrave",
       "wraith",
       "lethmoor",
-      "boss"
+      "boss",
+      "evil spirit"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -571,14 +572,15 @@
         "value": "Lethmoor Kingdom ruins"
       },
       {
-        "label": "Type",
-        "value": "Shades"
+        "label": "Nature",
+        "value": "An evil spirit, not a demon."
       }
     ],
     "tags": [
       "cindergrave",
       "wraith",
-      "lethmoor"
+      "lethmoor",
+      "evil spirit"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -2113,6 +2115,10 @@
       {
         "label": "Inherited Skills",
         "value": "Auralis Seal, The Stolen Hour"
+      },
+      {
+        "label": "Race",
+        "value": "Imp (demon half)"
       }
     ],
     "tags": [
@@ -2150,6 +2156,10 @@
       {
         "label": "Personalized Skill",
         "value": "Auralis Seal"
+      },
+      {
+        "label": "Race",
+        "value": "Imp"
       }
     ],
     "tags": [
@@ -2221,6 +2231,10 @@
       {
         "label": "Rank",
         "value": "Scourge"
+      },
+      {
+        "label": "Race",
+        "value": "Dregs"
       }
     ],
     "tags": [
@@ -2251,6 +2265,10 @@
       {
         "label": "Skills",
         "value": "Blood-Oath, Disinter, Guile"
+      },
+      {
+        "label": "Race",
+        "value": "Dregs"
       }
     ],
     "tags": [
@@ -2290,6 +2308,10 @@
       {
         "label": "Rank",
         "value": "Mordrach"
+      },
+      {
+        "label": "Race",
+        "value": "Fiends"
       }
     ],
     "tags": [
@@ -3623,7 +3645,7 @@
       },
       {
         "label": "Race",
-        "value": "Demon"
+        "value": "Imp"
       }
     ],
     "tags": [
@@ -3832,6 +3854,10 @@
       {
         "label": "Skills",
         "value": "Red Whisper, Blood Jape, Traitor’s Step"
+      },
+      {
+        "label": "Race",
+        "value": "Imp"
       }
     ],
     "tags": [
@@ -3863,6 +3889,10 @@
       {
         "label": "Skills",
         "value": "Grey Miasma, Widow’s Toll, Fading Wound"
+      },
+      {
+        "label": "Race",
+        "value": "Dregs"
       }
     ],
     "tags": [
@@ -3894,6 +3924,10 @@
       {
         "label": "Skills",
         "value": "Siphon, Unslaked, Seal"
+      },
+      {
+        "label": "Race",
+        "value": "Dregs"
       }
     ],
     "tags": [
@@ -3925,6 +3959,10 @@
       {
         "label": "Skills",
         "value": "Heart-Bind, Lover’s Step, Bond-Sight"
+      },
+      {
+        "label": "Race",
+        "value": "Dregs"
       }
     ],
     "tags": [
@@ -5127,9 +5165,9 @@
   {
     "id": "seed-283",
     "category": "Race Types",
-    "name": "Shades",
-    "subtitle": "The Veyn-formed",
-    "description": "The type of demon given shape by unstable Veyn rather than born of the Demon Realm’s ranks. The Cindergrave Wraith Lord and the Lesser Cindergrave Wraiths belong to this type.",
+    "name": "Imps",
+    "subtitle": "The impish demons",
+    "description": "A demon type set apart from the ordinary Dregs — the impish few, including Lisa and Kael Vornath the Jester demon, and the MC’s demon half.",
     "fields": [
       {
         "label": "Innate Ability",
@@ -5139,8 +5177,8 @@
     "tags": [
       "race",
       "demon",
-      "shades",
-      "veyn-formed"
+      "imps",
+      "imp"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"

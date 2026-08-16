@@ -402,9 +402,16 @@ module.exports = [
   s('Bloodward', 'Dregs', 'part of', 'Part of', 'Bloodward is a Dregs demon.'),
   s('Scourge', 'Dregs', 'part of', 'Part of', 'Scourge is a Dregs demon.'),
   s('Gnash', 'Dregs', 'part of', 'Part of', 'Gnash is a Dregs demon.'),
-  s('Cindergrave Wraith Lord', 'Shades', 'part of', 'Part of', 'The Cindergrave Wraith Lord is a Shades demon.'),
-  s('Lesser Cindergrave Wraiths', 'Shades', 'part of', 'Part of', 'The Lesser Cindergrave Wraiths are Shades demons.'),
   s('Sovereign Resilience', 'Fiends', 'innate of', 'Innate of', 'Sovereign Resilience is the innate ability of the Fiends.'),
   s('Vitality-Regen', 'Dregs', 'innate of', 'Innate of', 'Vitality-Regen is the innate ability of the Dregs.'),
-  s('Veyn-Touch', 'Shades', 'innate of', 'Innate of', 'Veyn-Touch is the innate ability of the Shades.'),
+  s('Veyn-Touch', 'Imps', 'innate of', 'Innate of', 'Veyn-Touch is the innate ability of the Shades.'),
+
+  // --- Named demon races ---
+  s('Lisa', 'Imps', 'part of', 'Part of', 'Lisa is an Imp demon.'),
+  s('Kael Vornath', 'Imps', 'part of', 'Part of', 'Kael Vornath is an Imp demon.'),
+  s('Licent Varak', 'Dregs', 'part of', 'Part of', 'Licent Varak is a Dregs demon.'),
+  s('Sythra Kaelis', 'Dregs', 'part of', 'Part of', 'Sythra Kaelis is a Dregs demon.'),
+  s('Nyra Thessan', 'Dregs', 'part of', 'Part of', 'Nyra Thessan is a Dregs demon.'),
+  s('Isella Marrek', 'Dregs', 'part of', 'Part of', 'Isella Marrek is a Dregs demon.'),
+  s('Tera Morage', 'Fiends', 'part of', 'Part of', 'Tera Morage is a Fiends demon.'),
 ];

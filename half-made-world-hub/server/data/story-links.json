@@ -3326,26 +3326,6 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "link-seed-326",
-    "source": "Cindergrave Wraith Lord",
-    "target": "Shades",
-    "type": "part of",
-    "label": "Part of",
-    "description": "Cindergrave Wraith Lord is a Shades demon.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-327",
-    "source": "Lesser Cindergrave Wraiths",
-    "target": "Shades",
-    "type": "part of",
-    "label": "Part of",
-    "description": "Lesser Cindergrave Wraiths is a Shades demon.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
     "id": "link-seed-328",
     "source": "Sovereign Resilience",
     "target": "Fiends",
@@ -3368,7 +3348,7 @@
   {
     "id": "link-seed-330",
     "source": "Veyn-Touch",
-    "target": "Shades",
+    "target": "Imps",
     "type": "innate of",
     "label": "Innate of",
     "description": "Veyn-Touch is the innate ability of the Shades.",
@@ -3396,5 +3376,105 @@
     "color": "#34d399",
     "createdAt": "2026-08-15T18:34:18.510Z",
     "updatedAt": "2026-08-15T18:34:18.510Z"
+  },
+  {
+    "id": "link-seed-331",
+    "source": "Lisa",
+    "target": "Imps",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Lisa is an Imp demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-332",
+    "source": "Kael Vornath",
+    "target": "Imps",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Kael Vornath is an Imp demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-333",
+    "source": "Carin",
+    "target": "Imps",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Carin is an Imp demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-334",
+    "source": "Jaiden Marlock",
+    "target": "Imps",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Jaiden Marlock is an Imp demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-335",
+    "source": "Licent Varak",
+    "target": "Dregs",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Licent Varak is a Dregs demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-336",
+    "source": "Sythra Kaelis",
+    "target": "Dregs",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Sythra Kaelis is a Dregs demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-337",
+    "source": "Nyra Thessan",
+    "target": "Dregs",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Nyra Thessan is a Dregs demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-338",
+    "source": "Isella Marrek",
+    "target": "Dregs",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Isella Marrek is a Dregs demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-339",
+    "source": "Sofia Marlock",
+    "target": "Dregs",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Sofia Marlock is a Dregs demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-340",
+    "source": "Tera Morage",
+    "target": "Fiends",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Tera Morage is a Fiends demon.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]

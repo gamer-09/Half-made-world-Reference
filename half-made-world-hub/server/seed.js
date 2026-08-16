@@ -266,16 +266,16 @@ module.exports = [
     'Cindergrave Wraith Lord',
     'Ruler of Lethmoor’s ruins',
     'The ruler of Lethmoor’s ruins, formed from the strongest fragment of will pulled from the fallen kingdom when the city was replicated. It is not a dead body turned undead; it is an unfinished will given shape by the unstable Veyn in Lethmoor’s terrain. It hungers for Veyn from anything living that enters the ruins, and feeding is what keeps its half-replicated form from falling apart. It rules from the throne room but can move through the ruins to rally the lesser Cindergrave wraiths if intruders get deep enough. Its touch drains Veyn directly from a target to sustain itself — the more it feeds, the stronger and more solid it gets before fading back down. Destroying it means disrupting the Veyn holding it together, not just physical damage, so a Diviner or Exorcist hits it far harder than a regular weapon would.',
-    [{ label: 'Type', value: 'Shades' }, { label: 'Location', value: 'Lethmoor Kingdom — throne room' }],
-    ['cindergrave', 'wraith', 'lethmoor', 'boss'],
+    [{ label: 'Location', value: 'Lethmoor Kingdom — throne room' }, { label: 'Nature', value: 'An evil spirit, not a demon.' }],
+    ['cindergrave', 'wraith', 'lethmoor', 'boss', 'evil spirit'],
   ),
   e(
     'Beings',
     'Lesser Cindergrave Wraiths',
     'Drifting fragments of will',
     'Weaker fragments of will formed the same way the Cindergrave Wraith Lord was, pulled from the fallen kingdom when Lethmoor was replicated, just without enough strength or Veyn to hold a fully solid form. They drift through the ruins and only fully mobilize when the Cindergrave Wraith Lord rallies them against intruders who get too deep into the city. Like their lord, they feed on Veyn from the living to stay together, though far less efficiently. A lesser Cindergrave wraith can be worn down and dispersed by regular weapons; they just reform again over time as long as Lethmoor’s unstable Veyn remains in the terrain.',
-    [{ label: 'Type', value: 'Shades' }, { label: 'Location', value: 'Lethmoor Kingdom ruins' }],
-    ['cindergrave', 'wraith', 'lethmoor'],
+    [{ label: 'Location', value: 'Lethmoor Kingdom ruins' }, { label: 'Nature', value: 'An evil spirit, not a demon.' }],
+    ['cindergrave', 'wraith', 'lethmoor', 'evil spirit'],
   ),
   e(
     'Beings',
@@ -700,6 +700,7 @@ module.exports = [
       { label: 'Forms', value: '1st — Normal: looks fully human, no wings, horns, or halo. 2nd — A halo appears above his head and two horns emerge from his forehead, using partial abilities of both an angel and a demon. 3rd — Full angel form: 6 pure feathery white wings and a brightly glowing halo, with the angelic aura. 4th — Full demon form: 6 horns and 6 dark purple feathery wings, with the demonic aura. 5th — True hybrid form: 3 pure white feathery wings on one half and 3 black feathery wings on the other, 6 horns, and a halo split in half floating above his head. Both the angelic and demonic auras surround him at the same time.' },
       { label: 'Angelic rank', value: 'Aetherblade Lord Angel' },
       { label: 'Demonic rank', value: 'Bloodward' },
+      { label: 'Race', value: 'Imp (demon half)' },
       { label: 'Parents', value: 'Lisa (Bloodward demon) and Ordium (Aetherblade Lord Angel)' },
       { label: 'Raised by', value: 'Sofia, in the Human Realm' },
       { label: 'Inherited Skills', value: 'Auralis Seal, The Stolen Hour' },
@@ -713,6 +714,7 @@ module.exports = [
     'She had a child for Ordium, and due to their ranks and positions they could not stay together and were separated to their various Realms: Lisa went to her realm, the Demon Realm, and Ordium went to the Angel Realm. Her rank was Bloodward. She was known to bring cruelty upon people who fight her and is the most powerful demon in the Demon Realm after the Mordrach. After realizing she was pregnant with Jaiden and found his aura very abnormal — carrying both an angelic aura and a demonic aura — she knew he would be killed off and she could not bear it, so she gave the child to her personal maid, not before giving her a ruby pendant called the Auralis Ruby to seal all his auras, which makes him look human.',
     [
       { label: 'Rank', value: 'Bloodward' },
+      { label: 'Race', value: 'Imp' },
       { label: 'Skills', value: 'Glut, Cornucopia, Reap' },
       { label: 'Mastered Skill', value: 'Sovereign Aura' },
       { label: 'Personalized Skill', value: 'Auralis Seal' },
@@ -740,7 +742,7 @@ module.exports = [
     'Sofia',
     'Lisa’s personal maid — Jaiden’s guardian',
     'Lisa’s personal maid. Lisa gave her the child Jaiden along with the Auralis Ruby pendant to seal his auras. She then left for the Human Realm with Jaiden, where she raised him.',
-    [],
+    [{ label: 'Race', value: 'Dregs' }],
     ['character', 'sofia', 'maid', 'guardian'],
   ),
   e(
@@ -748,11 +750,11 @@ module.exports = [
     'Licent Varak',
     'Second right-hand man to Tera Morage — the betrayer',
     'He is the second right-hand man to Tera Morage in the Demon Realm. He had always hated Lisa for being stronger than him and holding the top Bloodward position, so he was constantly looking for a way to take her power and rank away. When he saw Sofia heading to an unknown location, he tried to follow her but lost track of her. He then saw Lisa meet with an angel. After that, he discovered they had intercourse and that she had become pregnant with a child. He used this information to report her to Tera Morage, which enraged the ruler. As a result, Lisa was demoted to Gnash rank and later killed by his men, which he ordered them to do.',
-    [{ label: 'Rank', value: 'Bloodward' }, { label: 'Title', value: 'Demon of the Bloodhound' }, { label: 'Skills', value: 'Blood-Oath, Disinter, Guile' }],
+    [{ label: 'Rank', value: 'Bloodward' }, { label: 'Race', value: 'Dregs' }, { label: 'Title', value: 'Demon of the Bloodhound' }, { label: 'Skills', value: 'Blood-Oath, Disinter, Guile' }],
     ['character', 'licent', 'antagonist', 'betrayal', 'demon', 'bloodward', 'general'],
   ),
   e('Characters', 'Ruby Divina', 'Ruler of the Human Realm (Female)', 'The current ruler of the Human Realm.', [], ['character', 'ruler', 'human realm']),
-  e('Characters', 'Tera Morage', 'Ruler of the Demon Realm — Mordrach (Female)', 'The current ruler of the Demon Realm. She has a second right-hand man, Licent Varak, who reported Lisa to her.', [{ label: 'Rank', value: 'Mordrach' }], ['character', 'ruler', 'demon realm', 'mordrach']),
+  e('Characters', 'Tera Morage', 'Ruler of the Demon Realm — Mordrach (Female)', 'The current ruler of the Demon Realm. She has a second right-hand man, Licent Varak, who reported Lisa to her.', [{ label: 'Rank', value: 'Mordrach' }, { label: 'Race', value: 'Fiends' }], ['character', 'ruler', 'demon realm', 'mordrach']),
   e('Characters', 'Clint Ashborn', 'Ruler of the Angel Realm — Serapharch (Male)', 'The current ruler of the Angel Realm.', [{ label: 'Rank', value: 'Serapharch' }], ['character', 'ruler', 'angel realm', 'serapharch']),
 
   // ============================================================ PLOT
@@ -1502,6 +1504,7 @@ module.exports = [
     'A general who fights with misdirection, never taken seriously until the feint lands. Tolerated because he wins, and his cruelty is a performance — but the performance is the point, and he has never once shown fear, which is why no one trusts him. Tera Morage keeps him for his usefulness but does not trust him.',
     [
       { label: 'Rank', value: 'Bloodward' },
+      { label: 'Race', value: 'Imp' },
       { label: 'Title', value: 'Jester demon' },
       { label: 'Skills', value: 'Red Whisper, Blood Jape, Traitor’s Step' },
     ],
@@ -1514,6 +1517,7 @@ module.exports = [
     'Her cruelty wears the face of mercy. She kills not in anger but in pity — she tells her victims she is relieving them of their sadness as her miasma drains the will and Veyn from them, leaving behind empty, obedient shells. The grief she carries is real, but it is a grief she now administers to others. She was the one sent to “comfort” Lisa after her demotion to Gnash, draining what remained of her before Licent Varak’s men finished it.',
     [
       { label: 'Rank', value: 'Bloodward' },
+      { label: 'Race', value: 'Dregs' },
       { label: 'Title', value: 'Demon of melancholy' },
       { label: 'Skills', value: 'Grey Miasma, Widow’s Toll, Fading Wound' },
     ],
@@ -1526,6 +1530,7 @@ module.exports = [
     'She devours magic the way others eat bread. The more she consumes, the stronger she grows, and no battlefield has ever been enough to fill her. She fights not for the realm but because stopping means feeling the hunger again.',
     [
       { label: 'Rank', value: 'Bloodward' },
+      { label: 'Race', value: 'Dregs' },
       { label: 'Title', value: 'Demon of gluttony' },
       { label: 'Skills', value: 'Siphon, Unslaked, Seal' },
     ],
@@ -1538,6 +1543,7 @@ module.exports = [
     'A general who has never once loved anyone back. She treats love as a resource — the devotion and affection of others is something she harvests and hoards to fuel her power. The more people love her, the stronger she grows, so she cultivates followers endlessly, and it is entirely transactional on her end. She recruits and binds the Demon army’s soldiers, which is why their ranks hold together even when the cause is lost, keeping her in Tera Morage’s orbit.',
     [
       { label: 'Rank', value: 'Bloodward' },
+      { label: 'Race', value: 'Dregs' },
       { label: 'Title', value: 'Demon of love' },
       { label: 'Skills', value: 'Heart-Bind, Lover’s Step, Bond-Sight' },
     ],
@@ -2108,13 +2114,13 @@ module.exports = [
   ),
   e(
     'Race Types',
-    'Shades',
-    'The Veyn-formed',
-    'The type of demon given shape by unstable Veyn rather than born of the Demon Realm’s ranks. The Cindergrave Wraith Lord and the Lesser Cindergrave Wraiths belong to this type.',
+    'Imps',
+    'The impish demons',
+    'A demon type set apart from the ordinary Dregs — the impish few, including Lisa and Kael Vornath the Jester demon, and the MC’s demon half.',
     [
       { label: 'Innate Ability', value: 'Veyn-Touch' },
     ],
-    ['race', 'demon', 'shades', 'veyn-formed'],
+    ['race', 'demon', 'imps', 'imp'],
   ),
   e(
     'Innate Abilities',
