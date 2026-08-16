@@ -1424,7 +1424,7 @@
     "category": "Classes",
     "name": "Clergy",
     "subtitle": "Magic/Veyn class",
-    "description": "Trained in restoring injuries and health using Veyn. Anyone can join the Clergy.",
+    "description": "Trained in restoring injuries and health using Veyn. Anyone can join the Clergy — from among them, the Seer chooses the seven who hold the title of Healer in the Human Realm.",
     "fields": [
       {
         "label": "Type",

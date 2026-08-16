@@ -698,7 +698,7 @@ module.exports = [
     "Classes",
     "Clergy",
     "Magic/Veyn class",
-    "Trained in restoring injuries and health using Veyn. Anyone can join the Clergy.",
+    "Trained in restoring injuries and health using Veyn. Anyone can join the Clergy — from among them, the Seer chooses the seven who hold the title of Healer in the Human Realm.",
     [
       { label: "Type", value: "Magic/Veyn class" },
     ],

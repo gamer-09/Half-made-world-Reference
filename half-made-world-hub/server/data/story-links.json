@@ -3568,5 +3568,15 @@
     "description": "The Seer picks who becomes the next Healer, locating them through the Truthstone.",
     "createdAt": "2026-08-16T22:11:48.543Z",
     "updatedAt": "2026-08-16T22:11:48.543Z"
+  },
+  {
+    "id": "50745e33-aca8-47b9-a9ca-0b3c752d21d5",
+    "source": "Healers",
+    "target": "Clergy",
+    "type": "part of",
+    "label": "Part of",
+    "description": "The seven Healers are chosen from among the Clergy.",
+    "createdAt": "2026-08-16T22:21:48.054Z",
+    "updatedAt": "2026-08-16T22:21:48.054Z"
   }
 ]
