@@ -3558,5 +3558,15 @@
     "description": "Potent Blood is the innate ability of the Vael.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "51e5d349-1f33-4bfc-9cee-96c9cb91e853",
+    "source": "The Seer",
+    "target": "Healers",
+    "type": "chooses",
+    "label": "Chooses",
+    "description": "The Seer picks who becomes the next Healer, locating them through the Truthstone.",
+    "createdAt": "2026-08-16T22:11:48.543Z",
+    "updatedAt": "2026-08-16T22:11:48.543Z"
   }
 ]

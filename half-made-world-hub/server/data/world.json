@@ -997,11 +997,11 @@
     "category": "Humans",
     "name": "Healers",
     "subtitle": "The seven healers of the Human Realm",
-    "description": "There are only seven healers in the Human Realm. When one dies, a new healer is chosen within the next two years. Anyone can train as a Healer, though only seven at a time hold the actual title in the Human Realm. One person in the Human Realm knows who the next healer will be — this role is called The Seer.",
+    "description": "There are only seven Healers in the Human Realm. Anyone can join the Clergy, but only seven at a time hold the actual title of Healer. When one of the seven dies, the Seer chooses the next Healer within two years — the Seer is the only person in the Human Realm who knows who the next Healer will be, locating them through the Truthstone.",
     "fields": [
       {
         "label": "Role",
-        "value": "Anyone can train as a Healer; only seven at a time hold the title in the Human Realm."
+        "value": "Anyone can join the Clergy; only seven at a time hold the title of Healer in the Human Realm."
       }
     ],
     "tags": [

@@ -374,4 +374,5 @@ module.exports = [
   s("Auralis Seal", "Jaiden Marlock", "passed down", "Passed down", "A personalized skill passed down from his mom, Lisa."),
   s("Kael von Ashen", "Vael", "part of", "Part of", "Kael von Ashen is the last of the Vael."),
   s("Potent Blood", "Vael", "innate of", "Innate of", "Potent Blood is the innate ability of the Vael."),
+  s("The Seer", "Healers", "chooses", "Chooses", "The Seer picks who becomes the next Healer, locating them through the Truthstone."),
 ];
