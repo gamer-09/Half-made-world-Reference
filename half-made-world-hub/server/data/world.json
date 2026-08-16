@@ -3570,8 +3570,8 @@
   {
     "id": "seed-184",
     "category": "Characters",
-    "name": "Head Master of the Academy",
-    "subtitle": "The only survivor of the Hidden Realm’s creation — takes the MC there",
+    "name": "Kael von Ashen",
+    "subtitle": "Head Master of the Academy — the sole survivor of the Hidden Realm’s creation",
     "description": "The only survivor of the old race that was killed off by the former Human Realm ruler when the Hidden Realm was forcefully created. He is the Head Master of the academy, and he is the character who takes the MC, Jaiden, to the Hidden Realm. His extinct race has no name yet, and neither does the academy.",
     "fields": [
       {
@@ -3605,12 +3605,12 @@
     "id": "seed-185",
     "category": "Locations",
     "name": "Academy",
-    "subtitle": "The unnamed school led by the Head Master of the Academy",
-    "description": "The school led by the Head Master of the Academy, the sole survivor of the old race killed off by the former Human Realm ruler. Its name has not yet been decided.",
+    "subtitle": "The unnamed school led by Kael von Ashen",
+    "description": "The school led by Kael von Ashen, the sole survivor of the old race killed off by the former Human Realm ruler. Its name has not yet been decided.",
     "fields": [
       {
         "label": "Head Master",
-        "value": "Head Master of the Academy"
+        "value": "Kael von Ashen"
       },
       {
         "label": "Name",

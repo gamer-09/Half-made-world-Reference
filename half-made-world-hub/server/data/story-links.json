@@ -1954,7 +1954,7 @@
   },
   {
     "id": "link-seed-196",
-    "source": "Head Master of the Academy",
+    "source": "Kael von Ashen",
     "target": "Human Realm",
     "type": "lives in",
     "label": "Lives in",
@@ -1964,7 +1964,7 @@
   },
   {
     "id": "link-seed-197",
-    "source": "Head Master of the Academy",
+    "source": "Kael von Ashen",
     "target": "Hidden Realm (Shadow Realm)",
     "type": "hides in",
     "label": "Hides in",
@@ -1974,7 +1974,7 @@
   },
   {
     "id": "link-seed-198",
-    "source": "Head Master of the Academy",
+    "source": "Kael von Ashen",
     "target": "Academy",
     "type": "head master of",
     "label": "Head Master of",

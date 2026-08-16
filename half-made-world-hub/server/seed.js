@@ -1411,8 +1411,8 @@ module.exports = [
 
   e(
     'Characters',
-    'Head Master of the Academy',
-    'The only survivor of the Hidden Realm’s creation — takes the MC there',
+    'Kael von Ashen',
+    'Head Master of the Academy — the sole survivor of the Hidden Realm’s creation',
     'The only survivor of the old race that was killed off by the former Human Realm ruler when the Hidden Realm was forcefully created. He is the Head Master of the academy, and he is the character who takes the MC, Jaiden, to the Hidden Realm. His extinct race has no name yet, and neither does the academy.',
     [
       { label: 'Role', value: 'Takes the MC to the Hidden Realm; Head Master of the academy.' },
@@ -1426,10 +1426,10 @@ module.exports = [
   e(
     'Locations',
     'Academy',
-    'The unnamed school led by the Head Master of the Academy',
-    'The school led by the Head Master of the Academy, the sole survivor of the old race killed off by the former Human Realm ruler. Its name has not yet been decided.',
+    'The unnamed school led by Kael von Ashen',
+    'The school led by Kael von Ashen, the sole survivor of the old race killed off by the former Human Realm ruler. Its name has not yet been decided.',
     [
-      { label: 'Head Master', value: 'Head Master of the Academy' },
+      { label: 'Head Master', value: 'Kael von Ashen' },
       { label: 'Name', value: 'Not yet decided.' },
     ],
     ['academy', 'school', 'head master', 'hidden realm'],

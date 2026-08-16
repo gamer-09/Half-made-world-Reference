@@ -256,11 +256,11 @@ module.exports = [
   s('Jaiden Marlock', 'Mage', 'class of', 'Class of', 'Per the doc comment: the Mc\'s class is a mage.'),
 
   // --- Head Master: stays in the Human Realm; only hid in the Hidden Realm (doc + comment 126) ---
-  s('Head Master of the Academy', 'Human Realm', 'lives in', 'Lives in', 'The Head Master stays in the Human Realm.'),
-  s('Head Master of the Academy', 'Hidden Realm (Shadow Realm)', 'hides in', 'Hides in', 'He was only hiding in the Hidden Realm to hide.'),
+  s('Kael von Ashen', 'Human Realm', 'lives in', 'Lives in', 'The Head Master stays in the Human Realm.'),
+  s('Kael von Ashen', 'Hidden Realm (Shadow Realm)', 'hides in', 'Hides in', 'He was only hiding in the Hidden Realm to hide.'),
 
-  // --- Head Master of the Academy (doc: "the Head master of the academy" + comment 126) ---
-  s('Head Master of the Academy', 'Academy', 'head master of', 'Head Master of', 'The sole survivor of the old race killed by the former Human Realm ruler is the academy’s Head Master (comment 126).'),
+  // --- Kael von Ashen (doc: "the Head master of the academy" + comment 126) ---
+  s('Kael von Ashen', 'Academy', 'head master of', 'Head Master of', 'The sole survivor of the old race killed by the former Human Realm ruler is the academy’s Head Master (comment 126).'),
 
   // --- Title: Crown-less, borne by Lisa ---
   s('Crown-less', 'Lisa', 'held by', 'Held by', 'The title “Crown-less” is borne by Lisa — the strongest Bloodward after the Mordrach, who never wore the crown herself.'),
