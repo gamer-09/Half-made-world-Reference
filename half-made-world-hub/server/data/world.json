@@ -5044,10 +5044,11 @@
     "tags": [
       "innate",
       "ability",
-      "angel"
+      "angel",
+      "Cherubim"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-15T21:31:36.126Z"
   },
   {
     "id": "seed-279",
@@ -5059,10 +5060,11 @@
     "tags": [
       "innate",
       "ability",
-      "angel"
+      "angel",
+      "Malakhim"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-15T21:30:47.334Z"
   },
   {
     "id": "seed-280",
@@ -5074,10 +5076,11 @@
     "tags": [
       "innate",
       "ability",
-      "angel"
+      "angel",
+      "fallen agnel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-15T21:30:16.611Z"
   },
   {
     "id": "seed-281",
@@ -5152,10 +5155,11 @@
     "tags": [
       "innate",
       "ability",
-      "demon"
+      "demon",
+      "fiends"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-15T18:31:36.914Z"
+    "updatedAt": "2026-08-15T21:30:31.376Z"
   },
   {
     "id": "seed-285",
@@ -5167,10 +5171,11 @@
     "tags": [
       "innate",
       "ability",
-      "demon"
+      "demon",
+      "dregs"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-15T21:31:12.886Z"
   },
   {
     "id": "seed-286",
@@ -5182,10 +5187,11 @@
     "tags": [
       "innate",
       "ability",
-      "demon"
+      "demon",
+      "shades"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-15T21:30:58.813Z"
   },
   {
     "id": "seed-287",
