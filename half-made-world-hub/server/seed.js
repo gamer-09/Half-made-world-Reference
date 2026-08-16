@@ -2195,4 +2195,21 @@ module.exports = [
     [],
     ['mastered', 'personalized', 'skill', 'tier'],
   ),
+
+  e(
+    'Rules & Notes',
+    'The Hybrid',
+    'Angel and demon in one body',
+    'A hybrid is an angel and a demon born of a single body — a union the world considers impossible, since Veyn and Ren cannot coexist and the two realms’ natures are opposed. Jaiden Marlock is the first, born of Ordium (an Aetherblade Lord Angel) and Lisa (a Bloodward), and his aura carries both an angelic and a demonic aura at once. Hybrids inherit both parents’ race types — in Jaiden’s case the Imp demon half and the Malakhim angel half — and can draw on the abilities of both. Because such a being has never existed before, there are no rules for it, only what Jaiden himself becomes.',
+    [],
+    ['hybrid', 'angel', 'demon', 'jaiden', 'race'],
+  ),
+  e(
+    'Rules & Notes',
+    'Spirits',
+    'Not demons — something else',
+    'Not every creature of the Dark belongs to the Demon Realm’s ranks. Some are spirits — beings given shape by unstable Veyn rather than born of the demonic bloodline. The Cindergrave Wraith Lord and the Lesser Cindergrave Wraiths are evil spirits: fragments of will pulled from the fallen kingdom of Lethmoor and held together by the unstable Veyn of its terrain. They are not demons and hold no demon rank; they simply endure where the Veyn is too broken to be called a realm, feeding on the Veyn of the living to stay whole.',
+    [],
+    ['spirit', 'evil spirit', 'wraith', 'veyn', 'cindergrave'],
+  ),
 ];
