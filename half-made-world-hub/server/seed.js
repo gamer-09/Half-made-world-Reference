@@ -39,7 +39,7 @@ module.exports = [
     "Realms",
     "Angel Realm",
     "Ruler: Clint Ashborn (Male, Serapharch)",
-    "The home of the angels. The Lumen, the lowest-ranking angels, are its citizens and almost never leave it. Lethmoor, a fallen kingdom recorded in this realm, was later replicated inside the Hidden Realm. Ruled by Clint Ashborn, a Serapharch.",
+    "The home of the angels. The Lumen, the lowest-ranking angels, are its citizens and almost never leave it. Lethmoor, a fallen kingdom recorded in this realm, was later replicated inside the Hidden Realm. Ruled by Clint Ashborn, a Serapharch. Its population is small — only in the tens of thousands, a single city’s worth — because angels barely die and do not breed the way humans do; that smallness is what lets the Veyn Vow and the rank hierarchy hold the whole realm in perfect order, and why the loss of even one of the Six Pillars stung so deeply.",
     [
       { label: "Ruler", value: "Clint Ashborn (Male), Serapharch rank" },
       { label: "Inhabitants", value: "All four angel ranks — Serapharch, Aetherblade Lord, Virtue, Lumen" },
@@ -50,7 +50,7 @@ module.exports = [
     "Realms",
     "Demon Realm",
     "Ruler: Tera Morage (Female, Mordrach)",
-    "The home of the demons, ruled by Tera Morage, a Mordrach. The Umbrage Forest, the dark half of the Ether Forest, is located here, where all the hostile monsters stay.",
+    "The home of the demons, ruled by Tera Morage, a Mordrach. The Umbrage Forest, the dark half of the Ether Forest, is located here, where all the hostile monsters stay. Its population runs into the hundreds of thousands but never holds still — demons die in droves and must breed fast just to keep the ranks filled, which is why the Demon Realm alone can field its endless armies.",
     [
       { label: "Ruler", value: "Tera Morage (Female), Mordrach rank" },
       { label: "Notable places", value: "Umbrage Forest" },
