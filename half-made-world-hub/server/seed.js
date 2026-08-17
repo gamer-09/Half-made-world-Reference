@@ -2918,6 +2918,16 @@ module.exports = [
     ["kingdom", "demon realm", "vorath", "capital"],
   ),
 
+  // ============================================================ RULES & NOTES
+  e(
+    "Rules & Notes",
+    "Hybrid Fusion",
+    "The mutated skills of the True Hybrid Form",
+    "When Jaiden Marlock enters his True Hybrid Form, the skills of his two bloodlines stop being separate sets. Each skill of the Aetherblade Lord Angel rank and each skill of the Bloodward demon rank mutate and fuse together, one with another, becoming a single hybrid skill that neither race could wield alone. The fused skills draw on Holy Energy and Corrupted Veyn at once, and exist only while the hybrid form is held.",
+    [],
+    ["hybrid", "fusion", "jaiden", "true hybrid form", "skill"],
+  ),
+
   // ============================================================ HYBRID SKILLS
   e(
     "Hybrid Skills",
@@ -2954,11 +2964,11 @@ module.exports = [
   ),
   e(
     "Hybrid Skills",
-    "Mend-and-Rend",
+    "Mend-and-Rot",
     "Hybrid skill",
-    "Heals allies with holy light while simultaneously tearing Veyn from wounded enemies. What is taken from the enemy is given to the ally, so the user’s healing no longer costs only their own reserves.",
+    "Heals allies with holy light while the same touch lets corrupted Veyn rot through enemies. What is purified on one side is decomposed on the other, so the user’s healing no longer costs only their own reserves.",
     [
-      { label: "Fuses", value: "Holy Mend + Fading Wound" },
+      { label: "Fuses", value: "Holy Mend + Veyn Decomposition (Bloodward)" },
       { label: "Form", value: "True Hybrid Form" },
     ],
     ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
@@ -2976,11 +2986,11 @@ module.exports = [
   ),
   e(
     "Hybrid Skills",
-    "Vexstep",
+    "Frenzied Step",
     "Hybrid skill",
-    "A blink that swaps the user with a chosen target in the same instant. The user may vanish and reappear behind an enemy while leaving that enemy standing exactly where the user was — a movement no opponent can track.",
+    "A blink driven by pure rage. The user vanishes and reappears behind an enemy in the same breath, each step multiplying their strength as the berserk state deepens, until their movements become impossible to track or stop.",
     [
-      { label: "Fuses", value: "Swiftstep + Traitor's Step" },
+      { label: "Fuses", value: "Swiftstep + Berserk (Bloodward)" },
       { label: "Form", value: "True Hybrid Form" },
     ],
     ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
@@ -2995,213 +3005,5 @@ module.exports = [
       { label: "Form", value: "True Hybrid Form" },
     ],
     ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Lapsing Miasma",
-    "Hybrid skill",
-    "A grey mist that slows the flow of time for anyone breathing it. Movement and thought both drag, as if the air itself has thickened around them.",
-    [
-      { label: "Fuses", value: "Lapse + Grey Miasma" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Rewound Double",
-    "Hybrid skill",
-    "Conjures a blood-double that takes a killing blow in the user’s place, then rewinds the moment so the user is restored as if the blow never landed. Each use costs heavily, but it can undo a single fatal mistake.",
-    [
-      { label: "Fuses", value: "Rewind + Blood Jape" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Sealed Hour",
-    "Hybrid skill",
-    "Freezes a target in the instant between breaths while simultaneously locking their skills away. While sealed, they can neither move nor call on their abilities.",
-    [
-      { label: "Fuses", value: "Still Hour + Seal" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Sight of Threads",
-    "Hybrid skill",
-    "The user sees both far across the realm and the invisible bonds that tie people together. Loyalty, love, hatred, and contracts all become visible threads, and the user can read them at a glance.",
-    [
-      { label: "Fuses", value: "Long Sight + Bond-Sight" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Sunburst",
-    "Hybrid skill",
-    "A line of scorching light that detonates into an omnidirectional burst of Veyn on impact. Whatever it touches is burned, and whatever stands too close is flung back by the wave.",
-    [
-      { label: "Fuses", value: "Burning Path + Cornucopia" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Gorged Sun",
-    "Hybrid skill",
-    "A blinding sphere that feeds on the Veyn of anyone it marks. The longer it hovers over a target, the more of their power it drains and the brighter it burns, until the target is overloaded from within.",
-    [
-      { label: "Fuses", value: "Second Sun + Glut" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "War-Frenzy",
-    "Hybrid skill",
-    "The user enters a battle trance fused with the demonic berserk state. Pain cannot slow them and their strength multiplies, but reason narrows to a single point: the fight.",
-    [
-      { label: "Fuses", value: "Battle Trance + Berserk (Bloodward)" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Grasp-and-Reap",
-    "Hybrid skill",
-    "The user wrenches a weapon from an enemy’s hand while pulling Veyn from everyone weaker in the area. Every disarm feeds the user, turning the battlefield itself into a source of power.",
-    [
-      { label: "Fuses", value: "Ravager's Grasp + Reap" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "War-Sated",
-    "Hybrid skill",
-    "Every wound the user takes hardens their body, and every blow they land feeds their strength. The longer a battle goes on, the more unstoppable they become.",
-    [
-      { label: "Fuses", value: "War-Worn + Unslaked" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Dread Toll",
-    "Hybrid skill",
-    "A spoken word and a tolling note fused into one. Those who hear it are gripped by growing fear and grief at once, until they can no longer fight and can only obey.",
-    [
-      { label: "Fuses", value: "Dread-Herald + Widow's Toll" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Unheard Whisper",
-    "Hybrid skill",
-    "The user vanishes without sound and reappears where least expected, speaking a Veyn-laced whisper that shatters an enemy’s spell as it is cast. They are never seen coming, and their words break magic mid-air.",
-    [
-      { label: "Fuses", value: "Unheralded + Red Whisper" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Dreadbind",
-    "Hybrid skill",
-    "A crushing weight of dread bound directly to a target’s heart. The more they struggle, the heavier the pressure grows, and any harm dealt to the user is answered in kind.",
-    [
-      { label: "Fuses", value: "Dreadweight + Heart-Bind" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Bound Rite",
-    "Hybrid skill",
-    "The user forces a temporary binding on a target in the same breath that a contract is sealed. The conditions become absolute — cannot lie, cannot flee, cannot strike — until the rite is lifted.",
-    [
-      { label: "Fuses", value: "Altar-Rite + Blood Pact" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Oathbrand",
-    "Hybrid skill",
-    "A vow sworn in blood. If the target breaks it, the curse activates at once, draining their Veyn and locking their movements. There is no loophole and no release but death or the user’s mercy.",
-    [
-      { label: "Fuses", value: "Vowbrand + Blood-Oath" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Bitter Truth",
-    "Hybrid skill",
-    "The user senses every lie in the air and speaks one of their own so perfectly it cannot be told from truth. What is true they know; what they say, everyone believes.",
-    [
-      { label: "Fuses", value: "Truthvein + Guile" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Eye of Ruin",
-    "Hybrid skill",
-    "The user’s sight reaches everything within their watch, and what they behold, they can corrupt. A target caught in their gaze feels their own Veyn begin to rot from within.",
-    [
-      { label: "Fuses", value: "All-Seeing Eye + Veyn Decomposition (Bloodward)" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Recall of the Buried",
-    "Hybrid skill",
-    "The user’s perfect memory reaches into a target, dragging buried memories, sealed abilities, and hidden fears to the surface. Nothing kept secret can stay hidden from them.",
-    [
-      { label: "Fuses", value: "Warden's Recall + Disinter" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-  e(
-    "Hybrid Skills",
-    "Draining Mark",
-    "Hybrid skill",
-    "The user marks a target and can track them anywhere in the realm, drawing Veyn from them across any distance. The mark persists until the user lifts it or the target dies.",
-    [
-      { label: "Fuses", value: "Warden's Mark + Siphon" },
-      { label: "Form", value: "True Hybrid Form" },
-    ],
-    ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
-  ),
-
-  // ============================================================ RULES & NOTES
-  e(
-    "Rules & Notes",
-    "Hybrid Fusion",
-    "The mutated skills of the True Hybrid Form",
-    "When Jaiden Marlock enters his True Hybrid Form, the skills of his two bloodlines stop being separate sets. Each skill of the Aetherblade Lord Angel rank and each skill of the Bloodward demon rank mutate and fuse together, one with another, becoming a single hybrid skill that neither race could wield alone. The fused skills draw on Holy Energy and Corrupted Veyn at once, and exist only while the hybrid form is held.",
-    [],
-    ["hybrid", "fusion", "jaiden", "true hybrid form", "skill"],
   ),
 ];
