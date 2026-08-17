@@ -402,4 +402,13 @@ module.exports = [
   s("Jaiden Marlock", "Corrupted Veyn", "uses", "Uses", "Through his Imp demon half, Jaiden wields Corrupted Veyn (miasma) — while his Malakhim angel half channels Holy Energy."),
   s("Corrupted Veyn", "Corruption Sickness", "causes", "Causes", "Contact with corrupted Veyn slowly kills a human over three stages."),
   s("Auric Ren", "Ren", "refined from", "Refined from", "Auric Ren is Ren brightened into gold."),
+  s("Ruby Divina’s Plot", "Ruby Divina", "story of", "Story of", "The mortal ruler’s gambit."),
+  s("Ruby Divina’s Plot", "Jaiden Marlock", "story of", "Story of", "She shields the hybrid as her insurance."),
+  s("Clint Ashborn’s Plot", "Clint Ashborn", "story of", "Story of", "The immaculate tyrant who believes his cruelty is mercy."),
+  s("Clint Ashborn’s Plot", "Ordium", "story of", "Story of", "He ordered his own right-hand man executed."),
+  s("Clint Ashborn’s Plot", "Jaiden Marlock", "story of", "Story of", "The hybrid is the refutation of Clint’s entire order."),
+  s("Wener Leger’s Plot", "Wener Leger", "story of", "Story of", "The fallen angel who wants to own the world."),
+  s("Wener Leger’s Plot", "Dark Moon", "story of", "Story of", "The evil organization he built from exile."),
+  s("Wener Leger’s Plot", "Licent Varak", "story of", "Story of", "He recruited Licent Varak’s raw ambition."),
+  s("Wener Leger’s Plot", "Jaiden Marlock", "story of", "Story of", "He watches the hybrid like a collector watching a weapon."),
 ];

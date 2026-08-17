@@ -3838,5 +3838,95 @@
     "description": "Auric Ren is Ren brightened into gold.",
     "createdAt": "2026-08-16T23:14:21.835Z",
     "updatedAt": "2026-08-16T23:14:21.835Z"
+  },
+  {
+    "id": "5af802ac-265c-499f-9ecd-62f9b3fff296",
+    "source": "Ruby Divina’s Plot",
+    "target": "Ruby Divina",
+    "type": "story of",
+    "label": "Story of",
+    "description": "The mortal ruler’s gambit.",
+    "createdAt": "2026-08-17T01:07:47.595Z",
+    "updatedAt": "2026-08-17T01:07:47.595Z"
+  },
+  {
+    "id": "c4376ced-f373-4303-9a15-01634beb414d",
+    "source": "Ruby Divina’s Plot",
+    "target": "Jaiden Marlock",
+    "type": "story of",
+    "label": "Story of",
+    "description": "She shields the hybrid as her insurance.",
+    "createdAt": "2026-08-17T01:07:47.595Z",
+    "updatedAt": "2026-08-17T01:07:47.595Z"
+  },
+  {
+    "id": "6b65934d-0fa2-4090-8269-33f8d14c119e",
+    "source": "Clint Ashborn’s Plot",
+    "target": "Clint Ashborn",
+    "type": "story of",
+    "label": "Story of",
+    "description": "The immaculate tyrant who believes his cruelty is mercy.",
+    "createdAt": "2026-08-17T01:07:47.595Z",
+    "updatedAt": "2026-08-17T01:07:47.595Z"
+  },
+  {
+    "id": "c9f6ffff-f314-4e22-9716-21d081342704",
+    "source": "Clint Ashborn’s Plot",
+    "target": "Ordium",
+    "type": "story of",
+    "label": "Story of",
+    "description": "He ordered his own right-hand man executed.",
+    "createdAt": "2026-08-17T01:07:47.595Z",
+    "updatedAt": "2026-08-17T01:07:47.595Z"
+  },
+  {
+    "id": "3fbc4265-d844-49a2-b24e-3bd381516d4d",
+    "source": "Clint Ashborn’s Plot",
+    "target": "Jaiden Marlock",
+    "type": "story of",
+    "label": "Story of",
+    "description": "The hybrid is the refutation of Clint’s entire order.",
+    "createdAt": "2026-08-17T01:07:47.595Z",
+    "updatedAt": "2026-08-17T01:07:47.595Z"
+  },
+  {
+    "id": "dec95df6-9f58-49df-89b3-5beabb5f476f",
+    "source": "Wener Leger’s Plot",
+    "target": "Wener Leger",
+    "type": "story of",
+    "label": "Story of",
+    "description": "The fallen angel who wants to own the world.",
+    "createdAt": "2026-08-17T01:07:47.595Z",
+    "updatedAt": "2026-08-17T01:07:47.595Z"
+  },
+  {
+    "id": "316e23af-d7bd-44ab-b04a-c463ae3fac35",
+    "source": "Wener Leger’s Plot",
+    "target": "Dark Moon",
+    "type": "story of",
+    "label": "Story of",
+    "description": "The evil organization he built from exile.",
+    "createdAt": "2026-08-17T01:07:47.595Z",
+    "updatedAt": "2026-08-17T01:07:47.595Z"
+  },
+  {
+    "id": "85ed301c-7250-4c21-a0a4-64df32bfa5cf",
+    "source": "Wener Leger’s Plot",
+    "target": "Licent Varak",
+    "type": "story of",
+    "label": "Story of",
+    "description": "He recruited Licent Varak’s raw ambition.",
+    "createdAt": "2026-08-17T01:07:47.595Z",
+    "updatedAt": "2026-08-17T01:07:47.595Z"
+  },
+  {
+    "id": "d15341fa-ffcd-4fe3-9080-356c605b45eb",
+    "source": "Wener Leger’s Plot",
+    "target": "Jaiden Marlock",
+    "type": "story of",
+    "label": "Story of",
+    "description": "He watches the hybrid like a collector watching a weapon.",
+    "createdAt": "2026-08-17T01:07:47.595Z",
+    "updatedAt": "2026-08-17T01:07:47.595Z"
   }
 ]

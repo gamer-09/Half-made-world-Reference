@@ -1150,7 +1150,7 @@ module.exports = [
     "Characters",
     "Ruby Divina",
     "Ruler of the Human Realm (Female)",
-    "The current ruler of the Human Realm.",
+    "Ruby Divina is the only mortal ruler in a world governed by immortals — Clint Ashborn does not age, and Tera Morage dies of nothing short of a Divine Weapon, while Ruby will be gone within a mortal lifetime and knows it. She rules humanity, the one people with no wings, no halo, no miasma — just raw Veyn and short years — caught between two realms that could crush hers on a whim. Her whole reign has been the slow, careful work of making humanity too useful and too dangerous to be worth crushing. She has known about Jaiden Marlock from the beginning — the hybrid child hiding in her realm under a maid’s care is no secret to her — and she has shielded him not from kindness but because he is her insurance: a being both realms would go to war over, the one card that could make humanity a power instead of a client.",
     [],
     ["character", "ruler", "human realm"],
   ),
@@ -1169,7 +1169,7 @@ module.exports = [
     "Characters",
     "Clint Ashborn",
     "Ruler of the Angel Realm — Serapharch (Male)",
-    "The current ruler of the Angel Realm.",
+    "Clint Ashborn has ruled the Angel Realm so long the realm has forgotten there was ever another way. He ordered his own right-hand man, Ordium, executed for loving a demon and fathering the hybrid child — and to Clint that was not cruelty but necessity, the one clean cut that kept chaos from the door. He believes the Veyn Vow and the hierarchy are the only things standing between order and the collapse of everything, and he administers that belief with the serenity of a man who has never once doubted he was saving the world. He knows the buried truth of the world core’s will, and it frightens him more than any demon, because a will greater than the angelic order would mean the order he has upheld his whole existence is not the highest thing there is. Every impossible thing Jaiden Marlock is, is a refutation of Clint’s entire life — which is what makes him so dangerous an enemy: he is not wrong that the hybrid threatens the world’s balance, only wrong about what to do with it.",
     [
       { label: "Rank", value: "Serapharch" },
       { label: "Race", value: "Cherubim" },
@@ -1898,13 +1898,37 @@ module.exports = [
     [],
     ["protagonist", "plot", "Jaiden"],
   ),
+  e(
+    "Plot",
+    "Ruby Divina’s Plot",
+    "The mortal ruler’s gambit",
+    "Ruby Divina is the only mortal ruler in a world governed by immortals, and she has spent her entire reign making humanity too useful — and too dangerous — to be worth crushing. She has known about Jaiden Marlock from the beginning: the hybrid hiding in her realm under a maid’s care is no secret to her, and she has shielded him not from kindness but because he is her insurance, the one being both realms would go to war over. As Jaiden grows into his strength, she is forced to choose what she has spent her life avoiding — keep sheltering the boy who could make humanity a power, or hand him to whichever realm offers the better terms. Her choice, when it comes, decides whether humanity survives free or becomes a vassal, and whether Ruby Divina is remembered as the ruler who saved her people or the one who sold the world’s last hope.",
+    [],
+    ["plot", "ruby divina", "ruler", "human realm"],
+  ),
+  e(
+    "Plot",
+    "Clint Ashborn’s Plot",
+    "The immaculate tyrant",
+    "Clint Ashborn has ruled the Angel Realm so long the realm has forgotten there was ever another way. He ordered his own right-hand man, Ordium, executed for loving a demon and fathering the hybrid child, and he calls it mercy — the one clean cut that kept chaos from the door. He believes the Veyn Vow and the hierarchy are the only things standing between order and the collapse of everything. But every impossible thing Jaiden Marlock is, is a refutation of Clint’s entire life, and as the hybrid grows, Clint is set on a collision course with the child he tried to prevent — an enemy he cannot dismiss, because he is not wrong that the hybrid threatens the world’s balance, only wrong about what to do with it.",
+    [],
+    ["plot", "clint ashborn", "ruler", "angel realm"],
+  ),
+  e(
+    "Plot",
+    "Wener Leger’s Plot",
+    "The patient tyrant",
+    "Wener Leger was cast out of the Angel Realm, and Dark Moon is the blade he built from the wreckage of that fall. Its goal is domination of the Realms, with Wener at the top, and he is patient enough to hide behind a swordsmanship teacher’s post at Elyndor Academy while he pieces the world’s next tyrant together from its own cast-offs — the fallen, the banished, the disgraced, and Licent Varak’s raw ambition. He is watching Jaiden Marlock, the first hybrid, the way a collector watches a rare weapon he has not yet decided how to wield. There is no higher cause and no hidden mercy in Wener; he does not want to save the world from its lies. He wants to own it.",
+    [],
+    ["plot", "wener leger", "dark moon", "leader"],
+  ),
 
   // ============================================================ CHARACTERS
   e(
     "Characters",
     "Wener Leger",
     "Leader of Dark Moon",
-    "The true leader of the Dark moon clan",
+    "Wener Leger was cast out of the Angel Realm, and Dark Moon is what he built from the wreckage of that fall — not a refuge, but a blade pointed back at everything that discarded him. Its goal is exactly what it sounds like: domination of the Realms, with Wener at the top, and he is patient enough to hide behind a swordsmanship teacher’s post at Elyndor Academy while he pieces the world’s next tyrant together from its own cast-offs. He recruits the desperate and the disgraced — fallen angels, banished demons, and now Licent Varak’s raw ambition — not to free them, but to use them, because the broken are the cheapest soldiers and the easiest to convince they are owed something. He is watching Jaiden Marlock, the first hybrid, the way a collector watches a rare weapon he has not yet decided how to wield. There is no higher cause beneath Dark Moon’s banner and no hidden mercy in its leader; Wener does not want to save the world from its lies. He wants to own it, and he has spent his long exile learning exactly how.",
     [
       { label: "Disguise", value: "Teacher of Swordsmanship class at the academy" },
       { label: "Race", value: "Fallen Angel" },

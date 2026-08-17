@@ -372,5 +372,35 @@
     "description": "A Bloodward general serving under Tera Morage.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "088a6cad-0a68-497d-aa58-5a973497b6dd",
+    "source": "Ruby Divina",
+    "target": "Jaiden Marlock",
+    "type": "knows",
+    "label": "Knows",
+    "description": "She has known of the hybrid hiding in her realm from the beginning.",
+    "createdAt": "2026-08-17T01:07:47.595Z",
+    "updatedAt": "2026-08-17T01:07:47.595Z"
+  },
+  {
+    "id": "4213055b-d619-40f4-b78b-907b53db1dae",
+    "source": "Wener Leger",
+    "target": "Clint Ashborn",
+    "type": "opposes",
+    "label": "Opposes",
+    "description": "Dark Moon’s leader stands against the angelic order Clint upholds.",
+    "createdAt": "2026-08-17T01:07:47.595Z",
+    "updatedAt": "2026-08-17T01:07:47.595Z"
+  },
+  {
+    "id": "5a27b206-fc38-4233-a3f7-2fe5fbb9badd",
+    "source": "Wener Leger",
+    "target": "Jaiden Marlock",
+    "type": "watches",
+    "label": "Watches",
+    "description": "He watches the first hybrid the way a collector watches a rare weapon.",
+    "createdAt": "2026-08-17T01:07:47.595Z",
+    "updatedAt": "2026-08-17T01:07:47.595Z"
   }
 ]
