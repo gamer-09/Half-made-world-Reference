@@ -1299,7 +1299,7 @@
     "category": "Rules & Notes",
     "name": "Veyn & Ren Incompatibility",
     "subtitle": "You can never hold both",
-    "description": "Joining magic and Bladesinger is not possible since Veyn and Ren are not compatible; you can’t have Ren and Veyn together in your body since it can kill you due to their extreme incompatibility.",
+    "description": "Joining magic and Bladesinger is not possible since Veyn and Ren are not compatible; you can’t have Ren and Veyn together in your body since it can kill you due to their extreme incompatibility. The one exception is Smithing — a Smith may draw on both during the forge, but can never learn any skill outside Smithing and the forging of weapons.",
     "fields": [],
     "tags": [
       "veyn",
@@ -1420,11 +1420,11 @@
     "category": "Classes",
     "name": "Smithing",
     "subtitle": "Veyn & Ren class",
-    "description": "Crafts weapons and armor using Veyn to reinforce or enchant them during the forging process. Blood-forging (using demon or angel blood in the forge) is one of the hardest skills in this class to learn — not every Smith can do it, since demon and angel blood is reactive to Veyn, and a mistake can cause the death of the smith.",
+    "description": "Crafts weapons and armor using Veyn to reinforce or enchant them during the forging process. Blood-forging (using demon or angel blood in the forge) is one of the hardest skills in this class to learn — not every Smith can do it, since demon and angel blood is reactive to Veyn, and a mistake can cause the death of the smith. Smithing is the one exception to the Veyn and Ren incompatibility: a Smith may draw on both during the forge, but this comes at a price — they can never learn any skill outside Smithing and the forging of weapons.",
     "fields": [
       {
         "label": "Type",
-        "value": "Magic/Veyn and Ren class"
+        "value": "Magic/Veyn and Ren class (the sole exception to their incompatibility)"
       },
       {
         "label": "Blood-forging",
@@ -3709,7 +3709,7 @@
     "category": "Characters",
     "name": "Kael von Ashen",
     "subtitle": "Head Master of the Academy — the sole survivor of the Hidden Realm’s creation",
-    "description": "The only survivor of the old race that was killed off by the former Human Realm ruler when the Hidden Realm was forcefully created. He is the Head Master of the academy, and he is the character who takes the MC, Jaiden, to the Hidden Realm. His extinct race has no name yet, and neither does the academy.",
+    "description": "The only survivor of the Vael, the old race wiped out by the former Human Realm ruler when the Hidden Realm was forcefully created. He is the Head Master of Elyndor Academy, and he is the character who takes the MC, Jaiden, to the Hidden Realm.",
     "fields": [
       {
         "label": "Role",
