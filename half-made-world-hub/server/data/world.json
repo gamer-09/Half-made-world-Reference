@@ -4869,7 +4869,7 @@
     "category": "Angel Skills",
     "name": "Dread-Herald",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Speaks a single word that plants a growing fear in a target.",
+    "description": "The user speaks a single word of power that plants a deep, growing fear inside the target. The fear intensifies over time, steadily weakening the target’s will, slowing their movements, and making it harder for them to use skills. If the fear is allowed to fully mature, the target becomes temporarily paralyzed by terror or forced to flee. Stronger targets take longer to break, but the effect is harder to shake once it takes root.",
     "fields": [],
     "tags": [
       "skill",
@@ -4877,7 +4877,7 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T22:49:03.664Z"
   },
   {
     "id": "seed-255",
