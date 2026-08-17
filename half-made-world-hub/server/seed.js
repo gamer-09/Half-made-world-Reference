@@ -2400,7 +2400,7 @@ module.exports = [
     "Angel Skills",
     "Unheralded",
     "Aetherblade Lord Angel skill",
-    "Appears without warning where she is least expected.",
+    "The user vanishes from sight and reappears instantly in a location where the target least expects them. The sudden appearance carries a brief disruptive force that staggers the opponent and leaves them open for a follow-up attack. The skill can be used in rapid succession, but each use after the first becomes harder to control and costs more Veyn.",
     [],
     ["skill", "angel", "aetherblade lord angel"],
   ),
