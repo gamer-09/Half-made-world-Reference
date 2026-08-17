@@ -2644,7 +2644,7 @@
     "category": "Angel Skills",
     "name": "Sixth Sense",
     "subtitle": "Serapharch skill",
-    "description": "Sharpens all their senses — smell, hearing, sight, and touch — letting them perceive what cannot be seen with the naked eye.",
+    "description": "Sharpens every one of the user's senses far beyond normal limits. Sight can pierce darkness and illusion, hearing can catch heartbeats and distant footsteps, smell can track individuals across long distances, and touch can feel shifts in Veyn and emotion. At full focus, the user can perceive things that are completely invisible to the naked eye, including hidden auras, faint traces of magic, and the emotional state of those nearby.",
     "fields": [],
     "tags": [
       "skill",
@@ -2652,7 +2652,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-114",
@@ -2719,7 +2719,7 @@
     "category": "Angel Skills",
     "name": "Dignified Presence",
     "subtitle": "Serapharch skill",
-    "description": "Thickens the surrounding Veyn, making it hard to breathe or move. Uses their own Veyn — the more used, the denser it gets.",
+    "description": "The user floods the surrounding area with their own Veyn, thickening the air until it becomes heavy and oppressive. Breathing grows difficult, movement slows, and weaker opponents struggle to stay upright or form skills. The more Veyn the user pours into it, the denser and more crushing the pressure becomes.",
     "fields": [],
     "tags": [
       "skill",
@@ -2727,7 +2727,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-119",
@@ -2794,7 +2794,7 @@
     "category": "Angel Skills",
     "name": "Holy Grail",
     "subtitle": "Serapharch skill",
-    "description": "Forms a sun as hot as the real one. Size can be shrunk down to a pebble for more concentrated power, but the larger it is, the weaker and more Veyn-costly it becomes.",
+    "description": "Manifests a sphere of pure holy fire that burns with the heat of a true sun. The user can shrink it down to the size of a pebble for extreme concentrated power, or expand it into a larger form. The bigger it becomes, the more Veyn it costs and the more the heat spreads, though the focused small form is far more destructive against a single target.",
     "fields": [],
     "tags": [
       "skill",
@@ -2802,7 +2802,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-124",
@@ -2824,7 +2824,7 @@
     "category": "Angel Skills",
     "name": "Dawnveil (Serapharch)",
     "subtitle": "Serapharch skill",
-    "description": "Innate to all angels. Lets them blend into any society, hiding their true form and aura. The higher the rank, the more effective the disguise and the less it costs to maintain; the lower the rank, the weaker it is and the more it cuts into their true strength.",
+    "description": "The highest form of the innate angelic disguise. The user can perfectly hide their wings, halo, aura, and true nature, blending flawlessly into any society. Even strong magical senses struggle to see through it. The disguise costs almost no effort to maintain at this rank.",
     "fields": [],
     "tags": [
       "skill",
@@ -2832,7 +2832,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-126",
@@ -3019,7 +3019,7 @@
     "category": "Angel Skills",
     "name": "Warmth of the Realm",
     "subtitle": "Lumen skill",
-    "description": "A passive, gentle ability to ease minor pain or fear in those nearby. Not a combat skill — it reflects their role as ordinary citizens rather than soldiers.",
+    "description": "A gentle passive aura that eases minor pain, calms fear, and softens emotional distress in those nearby. It has no combat use and exists purely as a reflection of a Lumen's role as an ordinary citizen rather than a warrior.",
     "fields": [],
     "tags": [
       "skill",
@@ -3027,7 +3027,7 @@
       "lumen"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-139",
@@ -3064,7 +3064,7 @@
     "category": "Angel Skills",
     "name": "Dawnveil (Lumen)",
     "subtitle": "Lumen skill",
-    "description": "The weakest version of the disguise, thin enough to break under any real scrutiny — though Lumen already look the most human of any rank, so they rely on it least.",
+    "description": "The weakest form of the angelic disguise. It can hide the user's true nature at a glance, but any close inspection or focused magical scrutiny will cause it to break almost immediately.",
     "fields": [],
     "tags": [
       "skill",
@@ -3072,14 +3072,14 @@
       "lumen"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-142",
     "category": "Demon Skills",
     "name": "Death Scythe",
     "subtitle": "Mordrach skill",
-    "description": "A scythe formed from Veyn, enchanted with an instant death attribute. Its destructive power is where their true strength lies.",
+    "description": "Forms a massive scythe from pure Veyn, enchanted with an instant-death attribute. A clean cut from this weapon can end a life in a single stroke if the target is weaker or caught off guard. Its raw destructive power is the true strength of the ability.",
     "fields": [],
     "tags": [
       "skill",
@@ -3087,7 +3087,7 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-143",
@@ -3124,7 +3124,7 @@
     "category": "Demon Skills",
     "name": "Dominating Will",
     "subtitle": "Mordrach skill",
-    "description": "Thickens the Veyn in their surroundings, making it hard for others to breathe or use their own Veyn. Making it denser costs more than their own Veyn.",
+    "description": "Floods the surrounding area with the user's Veyn, thickening it until breathing becomes difficult and other people struggle to control their own magic. The denser the user makes it, the higher the Veyn cost.",
     "fields": [],
     "tags": [
       "skill",
@@ -3132,14 +3132,14 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-146",
     "category": "Demon Skills",
     "name": "Soul Oath",
     "subtitle": "Mordrach skill",
-    "description": "Lets them form contracts with anyone, binding the other person's soul until the deal is fulfilled or they choose to release it.",
+    "description": "Allows the user to form binding contracts with anyone. Once the contract is accepted, the other party's soul is bound until the terms are fulfilled or the user willingly releases them. Breaking the contract brings severe consequences.",
     "fields": [],
     "tags": [
       "skill",
@@ -3147,14 +3147,14 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-147",
     "category": "Demon Skills",
     "name": "Veyn Decomposition (Mordrach)",
     "subtitle": "Mordrach skill",
-    "description": "Innate to all demons. Lets them turn their Veyn into a toxic miasma that harms humans and can contaminate holy auras or holy energy.",
+    "description": "The strongest form of the innate demon ability. Converts the user's Veyn into a dense, toxic miasma that poisons living beings, weakens holy energy, and contaminates the surrounding area.",
     "fields": [],
     "tags": [
       "skill",
@@ -3162,14 +3162,14 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-148",
     "category": "Demon Skills",
     "name": "Hands of Death",
     "subtitle": "Mordrach skill",
-    "description": "An innate ability of high-ranking demons, extremely hard to use so very few demons can. Erases part of a person's memory on touch, though never all of it. Can be blocked for a moment by covering your whole body in Veyn stronger than theirs.",
+    "description": "A rare high-rank ability. By touching a target, the user can erase a portion of their memories. The erasure is never complete, but it can remove key knowledge, skills, or recent events. Covering the body in stronger Veyn can briefly resist it.",
     "fields": [],
     "tags": [
       "skill",
@@ -3177,14 +3177,14 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-149",
     "category": "Demon Skills",
     "name": "Purgatory Flames",
     "subtitle": "Mordrach skill",
-    "description": "Purple flames that burn a target until they die or the caster releases them. It can be blocked by using a strong Holy Rain.",
+    "description": "Summons purple flames that cling to a target and continue burning until the user releases them or the target dies. The flames are extremely difficult to extinguish and can only be reliably blocked by a strong Holy Rain.",
     "fields": [],
     "tags": [
       "skill",
@@ -3192,14 +3192,14 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-150",
     "category": "Demon Skills",
     "name": "Charm",
     "subtitle": "Mordrach skill",
-    "description": "Forces someone to do what they want, though it doesn't work on anyone stronger than them and can be resisted. Only female demons have this skill.",
+    "description": "A skill exclusive to female demons. It forces a weaker target to obey the user's spoken commands for a limited time. Stronger beings can resist or break free more easily.",
     "fields": [],
     "tags": [
       "skill",
@@ -3207,14 +3207,14 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-151",
     "category": "Demon Skills",
     "name": "Soul-Sight",
     "subtitle": "Mordrach skill",
-    "description": "Lets them see where a person's soul will move next, effectively predicting their next attack. Doesn't work on angels of any rank.",
+    "description": "Allows the user to see the flow of a target's soul, effectively predicting the direction and timing of their next attack. This ability does not work on angels of any rank.",
     "fields": [],
     "tags": [
       "skill",
@@ -3222,7 +3222,7 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-152",
@@ -3244,7 +3244,7 @@
     "category": "Demon Skills",
     "name": "Demonic Aura (Mordrach)",
     "subtitle": "Mordrach skill",
-    "description": "Always active. It makes those weaker than you want to bow before you — they would not have the will or strength to oppose you. Can be cloaked by Duskveil.",
+    "description": "The strongest form of demonic presence. It crushes the will of those weaker than the user, creating a powerful urge to bow or submit. It can be fully cloaked by Duskveil.",
     "fields": [],
     "tags": [
       "skill",
@@ -3252,14 +3252,14 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-154",
     "category": "Demon Skills",
     "name": "Duskveil (Mordrach)",
     "subtitle": "Mordrach skill",
-    "description": "Innate to all demons. Lets them blend into any society, hiding their true form and aura. At Mordrach rank the disguise passes flawlessly, even under scrutiny, but cuts their true strength by half while active.",
+    "description": "The highest form of the innate demon disguise. The user can perfectly hide their true form and aura, passing even under close scrutiny. While active, it cuts the user's true strength roughly in half.",
     "fields": [],
     "tags": [
       "skill",
@@ -3267,14 +3267,14 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-155",
     "category": "Demon Skills",
     "name": "Blood Chains",
     "subtitle": "Bloodward skill",
-    "description": "Conjures chains from their own blood infused with Veyn, used to bind, drag, or crush an opponent. The stronger the blood, the stronger the chain.",
+    "description": "Conjures chains formed from the user's own blood and infused with Veyn. These chains can bind, drag, crush, or restrain a target. The stronger and denser the user's blood, the more powerful the chains become.",
     "fields": [],
     "tags": [
       "skill",
@@ -3282,7 +3282,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-156",
@@ -3319,7 +3319,7 @@
     "category": "Demon Skills",
     "name": "Blood Pact",
     "subtitle": "Bloodward skill",
-    "description": "A lesser version of Soul Oath. Can bind a person to a task or promise, but unlike Soul Oath, the pact breaks if the Bloodward dies.",
+    "description": "A lesser form of Soul Oath. It can bind a target to a specific task or promise, but the pact automatically breaks if the Bloodward who created it dies.",
     "fields": [],
     "tags": [
       "skill",
@@ -3327,7 +3327,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-159",
@@ -3379,7 +3379,7 @@
     "category": "Demon Skills",
     "name": "Duskveil (Bloodward)",
     "subtitle": "Bloodward skill",
-    "description": "Innate to all demons. At Bloodward rank the disguise holds up well, though subtle tells (eyes, a shadow at the wrong angle) could give them away under close or magical scrutiny. Cuts their true strength by roughly 60%.",
+    "description": "A strong but imperfect disguise. It hides the user's true nature well, though subtle tells may appear under close or magical inspection. While active, it reduces the user's true strength by roughly 60%.",
     "fields": [],
     "tags": [
       "skill",
@@ -3387,7 +3387,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-163",
@@ -3439,7 +3439,7 @@
     "category": "Demon Skills",
     "name": "Veyn Decomposition (Scourge)",
     "subtitle": "Scourge skill",
-    "description": "Same innate ability, though weak enough that it only irritates humans rather than truly poisoning them. It also causes confusion and loss of direction.",
+    "description": "A weaker form of the toxic miasma. It irritates and unsettles humans rather than truly poisoning them, and can cause confusion and mild disorientation.",
     "fields": [],
     "tags": [
       "skill",
@@ -3447,7 +3447,7 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-167",
@@ -3484,7 +3484,7 @@
     "category": "Demon Skills",
     "name": "Duskveil (Scourge)",
     "subtitle": "Scourge skill",
-    "description": "Innate to all demons. At Scourge rank the disguise is rougher and less convincing, more likely to slip under stress or in combat. Cuts their true strength by roughly 70%.",
+    "description": "A rough disguise that works at a distance but is more likely to slip under stress or close scrutiny. While active, it reduces the user's true strength by roughly 70%.",
     "fields": [],
     "tags": [
       "skill",
@@ -3492,14 +3492,14 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-170",
     "category": "Demon Skills",
     "name": "Binding Contract",
     "subtitle": "Gnash skill",
-    "description": "Their signature ability. Lets them make contracts with anyone; once signed, both parties are bound until the deal is fulfilled.",
+    "description": "The signature ability of Gnash-rank demons. Allows them to form contracts with anyone. Once signed, both parties are bound until the terms are completed.",
     "fields": [],
     "tags": [
       "skill",
@@ -3507,7 +3507,7 @@
       "gnash"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-171",
@@ -3559,7 +3559,7 @@
     "category": "Demon Skills",
     "name": "Duskveil (Gnash)",
     "subtitle": "Gnash skill",
-    "description": "Innate to all demons. At Gnash rank it is the weakest version — thin enough to break under any real scrutiny, though since Gnash already look close to human naturally, they rely on it the least.",
+    "description": "The weakest form of the disguise. It can hide the user's nature at a casual glance, but any real scrutiny will break it. While active, it reduces the user's true strength by roughly 80%.",
     "fields": [],
     "tags": [
       "skill",
@@ -3567,7 +3567,7 @@
       "gnash"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-175",
@@ -3634,7 +3634,7 @@
     "category": "Angel Skills",
     "name": "Angelic Aura",
     "subtitle": "The shared angelic aura - scales with rank",
-    "description": "Always active. It makes anyone weaker than them want to bow, stripping away the will to oppose them. Each rank has its own version: the higher the rank, the stronger and more oppressive the aura.",
+    "description": "A constant presence that presses on the will of those weaker than the user. It creates a natural urge to submit or avoid conflict, growing stronger with higher rank.",
     "fields": [],
     "tags": [
       "skill",
@@ -3642,14 +3642,14 @@
       "aura"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-180",
     "category": "Angel Skills",
     "name": "Dawnveil",
     "subtitle": "The innate angelic disguise - scales with rank",
-    "description": "Innate to all angels. Lets them blend into any society, hiding their true form and aura. The higher the rank, the more effective the disguise and the less it costs to maintain; the lower the rank, the weaker it is and the more it cuts into their true strength.",
+    "description": "Innate to all angels. Allows them to hide their true form and aura. Effectiveness and stability scale directly with rank.",
     "fields": [],
     "tags": [
       "skill",
@@ -3657,14 +3657,14 @@
       "disguise"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-181",
     "category": "Demon Skills",
     "name": "Veyn Decomposition",
     "subtitle": "The innate demonic miasma - scales with rank",
-    "description": "Innate to all demons. Lets them turn their Veyn into a toxic miasma that harms humans and can contaminate holy auras or holy energy. The higher the rank, the stronger and more concentrated the miasma.",
+    "description": "Innate to all demons. Converts Veyn into a toxic or unsettling presence. Strength and density scale with rank.",
     "fields": [],
     "tags": [
       "skill",
@@ -3672,14 +3672,14 @@
       "miasma"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-182",
     "category": "Demon Skills",
     "name": "Berserk",
     "subtitle": "The berserk state - scales with rank",
-    "description": "Triggers automatically at low health. Boosts attack power and magic attacks by a large amount but sharply reduces reasoning. Each rank has its own version with a stronger multiplier.",
+    "description": "Triggers automatically when the user's health falls critically low. Greatly increases attack power and magic while reducing reasoning and control. The strength of the boost scales with rank.",
     "fields": [],
     "tags": [
       "skill",
@@ -3687,14 +3687,14 @@
       "berserk"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-183",
     "category": "Demon Skills",
     "name": "Demonic Aura",
     "subtitle": "The shared demonic aura - scales with rank",
-    "description": "Always active. It makes those weaker than you want to bow before you - they would not have the will or strength to oppose you. Can be cloaked by Duskveil. Each rank has its own version.",
+    "description": "A constant oppressive presence that makes those weaker feel the urge to submit. Strength scales with rank.",
     "fields": [],
     "tags": [
       "skill",
@@ -3702,7 +3702,7 @@
       "aura"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-184",
@@ -4614,7 +4614,7 @@
     "category": "Demon Skills",
     "name": "Widow’s Toll",
     "subtitle": "Bloodward skill",
-    "description": "A single tolling note that echoes in the bones; it makes the affected start crying and lose the will to fight her, obeying her instead.",
+    "description": "Releases a single deep, resonant note that echoes in the bones of those who hear it. The sound forces the affected to begin crying and strips away their will to fight, making them more obedient to the user for a short time.",
     "fields": [],
     "tags": [
       "skill",
@@ -4622,7 +4622,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-232",
@@ -4644,7 +4644,7 @@
     "category": "Demon Skills",
     "name": "Heart-Bind",
     "subtitle": "Bloodward skill",
-    "description": "Binds a target to her with Veyn so they cannot kill her, and any damage done to her is transferred back onto the one bound.",
+    "description": "Creates a Veyn-based bond with a target that prevents them from killing the user. Any damage dealt to the user is partially transferred back onto the one who is bound.",
     "fields": [],
     "tags": [
       "skill",
@@ -4652,7 +4652,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:20:05.505Z"
   },
   {
     "id": "seed-234",
