@@ -2914,7 +2914,7 @@
     "category": "Angel Skills",
     "name": "Swiftstep",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "A shorter-range version of Warpstep. Instantly moves the user up to 3 meters.",
+    "description": "The user folds space in an instant, vanishing from their current position and reappearing up to 3 meters away in a blink. The movement is nearly impossible to track with the naked eye, allowing them to slip behind an opponent, dodge a fatal strike, or close distance before the enemy can react. Though shorter in range than Warpstep, its speed and low Veyn cost make it ideal for rapid, repeated use in close combat.",
     "fields": [],
     "tags": [
       "skill",
@@ -2922,7 +2922,7 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-17T23:23:30.943Z"
   },
   {
     "id": "seed-132",
@@ -3394,7 +3394,7 @@
     "category": "Demon Skills",
     "name": "Vitality Surge",
     "subtitle": "Scourge skill",
-    "description": "Burns the user's own life force to grant a temporary surge in physical strength and speed.",
+    "description": "The user deliberately burns their own life force, converting raw Vitality into a violent surge of physical power. Muscles strengthen, speed multiplies, and the body becomes capable of feats far beyond its normal limits for a short time. The greater the amount of life force sacrificed, the more overwhelming the boost — but the backlash leaves the user drained and vulnerable once the effect ends.",
     "fields": [],
     "tags": [
       "skill",
@@ -3402,14 +3402,14 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-17T23:23:30.943Z"
   },
   {
     "id": "seed-164",
     "category": "Demon Skills",
     "name": "Rend Claws",
     "subtitle": "Scourge skill",
-    "description": "Natural claws sharp and tough enough to cut through most ordinary armor and weapons.",
+    "description": "The user’s claws are naturally honed to a lethal edge, dense enough to tear through most conventional armor, weapons, and reinforced materials. Each slash carries both physical cutting power and a faint trace of demonic energy, allowing them to rip open defenses that would stop ordinary blades.",
     "fields": [],
     "tags": [
       "skill",
@@ -3417,7 +3417,7 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-17T23:23:30.943Z"
   },
   {
     "id": "seed-165",
@@ -3544,7 +3544,7 @@
     "category": "Demon Skills",
     "name": "Demonic Aura (Gnash)",
     "subtitle": "Gnash skill",
-    "description": "The faintest version. It only creates a mild sense of unease in those nearby.",
+    "description": "The weakest form of demonic presence. It does not crush the will or force submission, but it creates a subtle, persistent sense of unease in those nearby — a quiet instinct that something is wrong. Most people cannot identify the source, only that they feel mildly unsettled when standing too close.",
     "fields": [],
     "tags": [
       "skill",
@@ -3552,7 +3552,7 @@
       "gnash"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-17T23:23:30.943Z"
   },
   {
     "id": "seed-174",
@@ -4584,7 +4584,7 @@
     "category": "Demon Skills",
     "name": "Traitor’s Step",
     "subtitle": "Bloodward skill",
-    "description": "Allows the user to instantly swap positions with an enemy they have already wounded.",
+    "description": "After wounding an enemy, the user can instantly exchange positions with them. In the blink of an eye, the injured target is left standing where the user just was, while the user appears in the enemy’s former place — often behind them or in a far more advantageous position. The sudden swap creates perfect openings for follow-up attacks.",
     "fields": [],
     "tags": [
       "skill",
@@ -4592,7 +4592,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-17T23:23:40.518Z"
   },
   {
     "id": "seed-230",
@@ -4974,7 +4974,7 @@
     "category": "Angel Skills",
     "name": "Warden’s Recall",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Gives the user perfect and permanent memory of anything they have personally witnessed.",
+    "description": "Grants the user a perfect, unbreakable memory of everything they have ever personally witnessed. Every face, every conversation, every detail of a battlefield, every shift in expression is preserved with absolute clarity and can be recalled at will, no matter how much time has passed. This allows the user to notice patterns others miss, recognize people they saw only once years ago, and reconstruct events with flawless accuracy.",
     "fields": [],
     "tags": [
       "skill",
@@ -4982,7 +4982,7 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-17T23:23:40.518Z"
   },
   {
     "id": "seed-262",
@@ -5032,14 +5032,14 @@
     "category": "Demon Skills",
     "name": "Reap",
     "subtitle": "Bloodward skill",
-    "description": "Pulls Veyn from every weaker being in the surrounding area and draws it into the user.",
+    "description": "The user extends their power across the surrounding area and violently pulls Veyn from every weaker being within range. Streams of stolen energy are torn away from their targets and drawn directly into the user, simultaneously weakening everyone affected while rapidly restoring and amplifying the user’s own reserves.",
     "fields": [],
     "tags": [
       "skill",
       "demon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-17T23:23:30.943Z"
   },
   {
     "id": "seed-266",
