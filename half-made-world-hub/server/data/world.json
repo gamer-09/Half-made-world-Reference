@@ -4884,7 +4884,7 @@
     "category": "Angel Skills",
     "name": "Unheralded",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Appears without warning where she is least expected.",
+    "description": "The user vanishes from sight and reappears instantly in a location where the target least expects them. The sudden appearance carries a brief disruptive force that staggers the opponent and leaves them open for a follow-up attack. The skill can be used in rapid succession, but each use after the first becomes harder to control and costs more Veyn.",
     "fields": [],
     "tags": [
       "skill",
@@ -4892,7 +4892,7 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T22:54:28.939Z"
   },
   {
     "id": "seed-256",
