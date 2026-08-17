@@ -6,9 +6,10 @@ import { storyLinkType } from '../storyLinkTypes';
 /**
  * Block Chain Map — the world's geography as a rightward-flowing blockchain.
  *
- * Each root gets its own horizontal lane flowing to the right.
- * Lanes stack vertically. World genesis block sits at far left, centered.
- * Within a lane the tree grows rightward by depth.
+ * The World genesis block sits at the far left. Each realm/category is its own
+ * horizontal chain of blocks flowing to the right (children in breadth-first
+ * order, stepped down by depth like a staircase). Chains are packed into rows
+ * left-to-right, so the map grows WIDE (right), not tall (down).
  *
  * Scroll to zoom · drag to pan · hover to trace · click to open · Esc to fit.
  */
@@ -17,12 +18,21 @@ const CONTAINMENT_TYPES = new Set(['located in', 'lives in', 'home of', 'part of
 const PARENT_PRIORITY = ['located in', 'lives in', 'home of', 'part of'];
 const WORLD = 'The World';
 
-const BLOCK_W = 200;
-const BLOCK_H = 80;
-const H_GAP = 100;
-const V_GAP = 10;
-const LANE_PAD = 22;
-const PAD = 28;
+// Compact content box (~1200 wide) so the whole map fits the stage at a
+// readable scale — same trick as the Relationship Map's fixed 1200x720 viewBox,
+// which scales UP to fill the screen instead of shrinking away.
+const BLOCK_W = 96;
+const BLOCK_H = 48;
+const H_GAP = 8;
+const ROW_GAP = 12;
+const DEPTH_STEP = 8;
+const PAD = 12;
+const GENESIS_W = 116;
+const GENESIS_H = 56;
+const HUB_GAP = 28;
+const MAX_PER_ROW = 11; // blocks per row before a chain wraps to the next band
+const GENESIS_LINK = { label: 'contains', color: '#e2c044' };
+
 const MIN_SCALE = 0.04;
 const MAX_SCALE = 3;
 
@@ -34,6 +44,7 @@ interface MapNode {
   depth: number;
   x: number;
   y: number;
+  index: number;
   parentName: string | null;
   parentType: string | null;
 }
@@ -65,7 +76,7 @@ function buildTree(entries: Entry[], storyLinks: StoryLink[]): MapNode {
   const build = (name: string, seen: Set<string>): MapNode => {
     const existing = nodeMap.get(name);
     if (existing) return existing;
-    const node: MapNode = { name, entry: byName.get(name) ?? null, children: [], size: 1, depth: 0, x: 0, y: 0, parentName: null, parentType: null };
+    const node: MapNode = { name, entry: byName.get(name) ?? null, children: [], size: 1, depth: 0, x: 0, y: 0, index: 0, parentName: null, parentType: null };
     nodeMap.set(name, node);
     for (const kid of childrenOf.get(name) ?? []) {
       if (seen.has(kid)) continue;
@@ -77,7 +88,7 @@ function buildTree(entries: Entry[], storyLinks: StoryLink[]): MapNode {
     return node;
   };
   const roots = [...participating].filter((n) => !parentOf.has(n));
-  const world: MapNode = { name: WORLD, entry: null, children: [], size: 1, depth: 0, x: 0, y: 0, parentName: null, parentType: null };
+  const world: MapNode = { name: WORLD, entry: null, children: [], size: 1, depth: 0, x: 0, y: 0, index: 0, parentName: null, parentType: null };
   for (const r of roots) world.children.push(build(r, new Set([r])));
   const measure = (n: MapNode): number => { let s = 1; for (const c of n.children) s += measure(c); n.size = s; return s; };
   measure(world);
@@ -86,53 +97,67 @@ function buildTree(entries: Entry[], storyLinks: StoryLink[]): MapNode {
   return world;
 }
 
-function countLeaves(n: MapNode): number {
-  if (n.children.length === 0) return 1;
-  return n.children.reduce((s, c) => s + countLeaves(c), 0);
-}
-
-function layoutTree(world: MapNode): { size: { width: number; height: number }; nodes: MapNode[] } {
+/**
+ * Lay the tree out as rightward-flowing chains packed into a compact,
+ * screen-filling content box:
+ * - Each root (realm/category) becomes a chain in breadth-first order, stepped
+ *   down by depth like a staircase, flowing right.
+ * - Chains are filled into rows left-to-right (biggest first); long chains wrap
+ *   onto the next row. Rows stack with a small gap, so the whole map stays
+ *   roughly 1200px wide — the same footprint as the Relationship Map — and
+ *   scales up to fill the stage at a readable size.
+ * - The World genesis block is the hub at the far left, vertically centered.
+ */
+function layoutChainMap(world: MapNode): { size: { width: number; height: number }; nodes: MapNode[] } {
   const nodes: MapNode[] = [];
-  let maxDepth = 0;
-  let maxRight = 0;
+  const startX = PAD + GENESIS_W + HUB_GAP;
 
-  // Layout each root's subtree within its own lane.
-  let laneY = PAD;
+  // Breadth-first order per chain so each chain is a smooth rightward staircase.
+  const chains: MapNode[][] = [];
   for (const root of world.children) {
-    const leafCount = countLeaves(root);
-    const laneHeight = leafCount * (BLOCK_H + V_GAP) - V_GAP;
-    let slot = 0;
-    const laneTop = laneY;
-
-    const laySubtree = (n: MapNode, depth: number) => {
-      n.depth = depth;
-      maxDepth = Math.max(maxDepth, depth);
-      n.x = PAD + (BLOCK_W + H_GAP) + depth * (BLOCK_W + H_GAP);
-      nodes.push(n);
-      if (n.children.length === 0) {
-        n.y = laneTop + slot * (BLOCK_H + V_GAP);
-        slot += 1;
-      } else {
-        for (const c of n.children) laySubtree(c, depth + 1);
-        const ys = n.children.map((c) => c.y);
-        n.y = (Math.min(...ys) + Math.max(...ys)) / 2;
-      }
-      maxRight = Math.max(maxRight, n.x + BLOCK_W);
-    };
-    laySubtree(root, 0);
-    laneY += laneHeight + LANE_PAD;
+    const order: MapNode[] = [];
+    root.depth = 0;
+    const queue: MapNode[] = [root];
+    while (queue.length) {
+      const n = queue.shift()!;
+      order.push(n);
+      for (const c of n.children) { c.depth = n.depth + 1; queue.push(c); }
+    }
+    chains.push(order);
   }
 
-  // Place World genesis block at far left, centered vertically.
-  const worldY = (PAD + (laneY - LANE_PAD)) / 2 - BLOCK_H / 2;
+  // Fill blocks into rows left-to-right; chains wrap onto the next row.
+  let row = 0;
+  let col = 0;
+  let rowTop = PAD;
+  const rowHeights: number[] = [0];
+  for (const order of chains) {
+    for (let i = 0; i < order.length; i += 1) {
+      const n = order[i];
+      if (col >= MAX_PER_ROW) {
+        row += 1;
+        col = 0;
+        rowTop += rowHeights[row - 1] + BLOCK_H + ROW_GAP;
+        rowHeights.push(0);
+      }
+      n.x = startX + col * (BLOCK_W + H_GAP);
+      n.y = rowTop + n.depth * DEPTH_STEP;
+      n.index = i + 1;
+      nodes.push(n);
+      rowHeights[row] = Math.max(rowHeights[row], n.depth * DEPTH_STEP);
+      col += 1;
+    }
+  }
+
+  // World genesis hub at the far left, vertically centered.
+  const totalHeight = rowTop + rowHeights[row] + BLOCK_H + PAD;
   world.depth = 0;
+  world.index = 0;
   world.x = PAD;
-  world.y = worldY;
+  world.y = (PAD + (totalHeight - PAD)) / 2 - GENESIS_H / 2;
   nodes.unshift(world);
 
-  const totalHeight = laneY - LANE_PAD + PAD;
-  const totalWidth = Math.max(maxRight + PAD, PAD * 2 + (BLOCK_W + H_GAP) * 2 + BLOCK_W);
-
+  const totalWidth = startX + MAX_PER_ROW * (BLOCK_W + H_GAP) - H_GAP + PAD;
   return { size: { width: totalWidth, height: totalHeight }, nodes };
 }
 
@@ -150,7 +175,7 @@ interface BlockMapProps {
 
 export function BlockMap({ entries, storyLinks, onNodeClick }: BlockMapProps) {
   const tree = useMemo(() => buildTree(entries, storyLinks), [entries, storyLinks]);
-  const { size, nodes } = useMemo(() => layoutTree(tree), [tree]);
+  const { size, nodes } = useMemo(() => layoutChainMap(tree), [tree]);
 
   const stageRef = useRef<HTMLDivElement>(null);
   const [scale, setScale] = useState(1);
@@ -210,8 +235,24 @@ export function BlockMap({ entries, storyLinks, onNodeClick }: BlockMapProps) {
   };
 
   const zoomButtons = (factor: number) => { const stage = stageRef.current; const cx = stage ? stage.clientWidth / 2 : 0; const cy = stage ? stage.clientHeight / 2 : 0; zoomAt(factor, cx, cy); };
-  const linkCount = nodes.reduce((n, node) => n + (node.parentType ? 1 : 0), 0);
+  const linkCount = nodes.reduce((n, node) => n + (node.parentType ? 1 : 0), 0) + tree.children.length;
   const realmCount = nodes.filter((n) => n.entry?.category === 'Realms').length;
+
+  const renderLink = (gx: number, gy: number, cx: number, cy: number, color: string, label: string, dimmed: boolean, key: string) => {
+    const midX = (gx + cx) / 2; const midY = (gy + cy) / 2;
+    return (
+      <g key={key} className={`blockmap-link${dimmed ? ' dim' : ''}`}>
+        <path d={`M ${gx} ${gy} L ${midX} ${gy} L ${midX} ${cy} L ${cx} ${cy}`} fill="none" stroke={color} strokeOpacity={0.35} strokeWidth={8} strokeLinejoin="round" strokeLinecap="round" />
+        <path d={`M ${gx} ${gy} L ${midX} ${gy} L ${midX} ${cy} L ${cx} ${cy}`} fill="none" stroke={color} strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />
+        <g stroke={color} strokeWidth={2} fill="none" opacity={0.85}>
+          <line x1={midX - 7} y1={gy} x2={midX + 7} y2={gy} />
+          <circle cx={midX - 7} cy={gy} r={3.2} /><circle cx={midX + 7} cy={gy} r={3.2} />
+        </g>
+        <rect x={midX - ((label.length * 5.6 + 14) / 2)} y={midY - 10} width={label.length * 5.6 + 14} height={20} rx={10} fill="rgba(7, 11, 22, 0.94)" stroke={color} strokeOpacity={0.55} />
+        <text x={midX} y={midY + 4} textAnchor="middle" className="blockmap-link-label" fill={color}>{label}</text>
+      </g>
+    );
+  };
 
   return (
     <div className="blockmap">
@@ -236,22 +277,15 @@ export function BlockMap({ entries, storyLinks, onNodeClick }: BlockMapProps) {
               const parent = byName.get(node.parentName); if (!parent) return null;
               const px = parent.x + BLOCK_W; const py = parent.y + BLOCK_H / 2;
               const cx = node.x; const cy = node.y + BLOCK_H / 2;
-              const midX = parent.x + BLOCK_W + H_GAP / 2; const midY = (py + cy) / 2;
               const type = storyLinkType(node.parentType);
               const active = hoverId ? chainOf(hoverId).has(node.name) : true;
-              const dimmed = hoverId !== null && !active;
-              return (
-                <g key={node.name} className={`blockmap-link${dimmed ? ' dim' : ''}`}>
-                  <path d={`M ${px} ${py} L ${midX} ${py} L ${midX} ${cy} L ${cx} ${cy}`} fill="none" stroke={type.color} strokeOpacity={0.35} strokeWidth={8} strokeLinejoin="round" strokeLinecap="round" />
-                  <path d={`M ${px} ${py} L ${midX} ${py} L ${midX} ${cy} L ${cx} ${cy}`} fill="none" stroke={type.color} strokeWidth={2} strokeLinejoin="round" strokeLinecap="round" />
-                  <g stroke={type.color} strokeWidth={2} fill="none" opacity={0.85}>
-                    <line x1={midX - 7} y1={py} x2={midX + 7} y2={py} />
-                    <circle cx={midX - 7} cy={py} r={3.2} /><circle cx={midX + 7} cy={py} r={3.2} />
-                  </g>
-                  <rect x={midX - ((type.label.length * 5.6 + 14) / 2)} y={midY - 10} width={type.label.length * 5.6 + 14} height={20} rx={10} fill="rgba(7, 11, 22, 0.94)" stroke={type.color} strokeOpacity={0.55} />
-                  <text x={midX} y={midY + 4} textAnchor="middle" className="blockmap-link-label" fill={type.color}>{type.label}</text>
-                </g>
-              );
+              return renderLink(px, py, cx, cy, type.color, type.label, hoverId !== null && !active, `link-${node.name}`);
+            })}
+            {tree.children.map((root) => {
+              const gx = tree.x + GENESIS_W; const gy = tree.y + GENESIS_H / 2;
+              const cx = root.x; const cy = root.y + BLOCK_H / 2;
+              const active = hoverId ? chainOf(hoverId).has(root.name) : true;
+              return renderLink(gx, gy, cx, cy, GENESIS_LINK.color, GENESIS_LINK.label, hoverId !== null && !active, `link-genesis-${root.name}`);
             })}
           </svg>
           {nodes.map((node) => {
@@ -259,16 +293,18 @@ export function BlockMap({ entries, storyLinks, onNodeClick }: BlockMapProps) {
             const dimmed = hoverId !== null && !chainOf(hoverId).has(node.name);
             const color = node.entry ? categoryColor(node.entry.category) : '#e2c044';
             const isWorld = node.name === WORLD; const hasChildren = node.children.length > 0;
+            const w = isWorld ? GENESIS_W : BLOCK_W;
+            const h = isWorld ? GENESIS_H : BLOCK_H;
             return (
               <button key={node.name} className={`blockmap-node${dimmed ? ' dim' : ''}${hovered ? ' hovered' : ''}${isWorld ? ' genesis' : ''}`}
-                style={{ left: node.x, top: node.y, width: BLOCK_W, height: BLOCK_H, borderColor: isWorld ? 'rgba(226, 192, 68, 0.6)' : `${color}66` }}
+                style={{ left: node.x, top: node.y, width: w, height: h, borderColor: isWorld ? 'rgba(226, 192, 68, 0.6)' : `${color}66` }}
                 onPointerDown={(e) => e.stopPropagation()} onPointerEnter={() => setHoverId(node.name)} onPointerLeave={() => setHoverId(null)}
                 onClick={() => { if (node.entry) onNodeClick(node.entry); else fitView(); }}
                 title={node.entry?.subtitle || (isWorld ? 'Genesis — click to fit' : '')}
               >
                 <span className="blockmap-blk-head" style={{ background: isWorld ? 'linear-gradient(90deg, #e2c044, #a87b1f)' : color }}>
                   <span className="blockmap-blk-cat">{isWorld ? '◆ GENESIS' : node.entry?.category ?? 'world'}</span>
-                  <span className="blockmap-blk-height">#{node.depth}</span>
+                  <span className="blockmap-blk-height">#{node.index}</span>
                 </span>
                 <span className="blockmap-blk-body">
                   <span className="blockmap-node-name">{node.name}</span>

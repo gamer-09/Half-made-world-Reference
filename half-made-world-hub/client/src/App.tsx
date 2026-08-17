@@ -569,7 +569,7 @@ export default function App() {
           </div>
         </header>
 
-        <div className="view-transition" key={viewKey}>
+        <div className={`view-transition${isBlocksView ? ' view-fill' : ''}`} key={viewKey}>
         {loading ? (
           <div className="loading">
             <span className="loading-orb" aria-hidden="true" />
