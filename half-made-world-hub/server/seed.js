@@ -2933,7 +2933,7 @@ module.exports = [
     "Hybrid Skills",
     "Twilight Chains",
     "Hybrid skill",
-    "Conjures chains woven from both hardened light and living blood, binding a target far more securely than either alone. The chains burn where they touch and drink strength from the bound, weakening any who struggle against them.",
+    "Conjures thick chains woven from hardened holy light and living blood. The chains bind with far greater strength than either Skyward Chains or Blood Chains alone. Wherever they touch, they burn with holy fire while simultaneously drinking the target’s strength and Veyn. The more the victim struggles, the tighter and hungrier the chains become, rapidly exhausting even strong opponents.",
     [
       { label: "Fuses", value: "Skyward Chains + Blood Chains" },
       { label: "Form", value: "True Hybrid Form" },
@@ -2944,7 +2944,7 @@ module.exports = [
     "Hybrid Skills",
     "Cry of the Sundered",
     "Hybrid skill",
-    "A single commanding shout that carries both the angelic power to steel allies and the demonic power to cow enemies. Allies who hear it fight harder; enemies falter, their will to resist momentarily broken.",
+    "A single, dual-natured battle cry that carries both angelic authority and demonic dominance. Allies who hear it feel their strength, speed, and resolve surge, while enemies experience a sudden collapse of will — their bodies hesitating and their skills faltering for a critical moment. The effect is strong enough to turn the momentum of a battle in a single breath.",
     [
       { label: "Fuses", value: "Vanguard's Cry + Warcry of Dominion" },
       { label: "Form", value: "True Hybrid Form" },
@@ -2955,7 +2955,7 @@ module.exports = [
     "Hybrid Skills",
     "Hollow Aegis",
     "Hybrid skill",
-    "A barrier of solidified light and hardened blood layered together, far stronger than either ward alone. It absorbs incoming attacks and feeds the drained energy back into the user’s regeneration rather than only spending it.",
+    "Forms a layered barrier of solidified light and hardened blood. The ward is significantly tougher than either Aegis Ward or Crimson Ward alone. Instead of only draining the user’s regeneration, it absorbs a portion of the force from incoming attacks and converts it into restorative energy, partially healing the user with every blow it blocks.",
     [
       { label: "Fuses", value: "Aegis Ward + Crimson Ward" },
       { label: "Form", value: "True Hybrid Form" },
@@ -2966,7 +2966,7 @@ module.exports = [
     "Hybrid Skills",
     "Mend-and-Rot",
     "Hybrid skill",
-    "Heals allies with holy light while the same touch lets corrupted Veyn rot through enemies. What is purified on one side is decomposed on the other, so the user’s healing no longer costs only their own reserves.",
+    "A dual-natured touch that heals and corrupts at the same time. Allies struck by it are rapidly healed by pure holy light, while enemies suffer rotting, decomposing Veyn that eats through flesh and magic. The energy taken from the corrupted side is recycled to fuel the healing, allowing the user to restore allies without fully draining their own reserves.",
     [
       { label: "Fuses", value: "Holy Mend + Veyn Decomposition (Bloodward)" },
       { label: "Form", value: "True Hybrid Form" },
@@ -2977,7 +2977,7 @@ module.exports = [
     "Hybrid Skills",
     "Aura of the Split Crown",
     "Hybrid skill",
-    "The angelic and demonic auras fused into one overwhelming presence. Those weaker than the user feel both the urge to kneel and the instinct to flee at once, their will crushed from two directions.",
+    "The complete fusion of an Aetherblade’s Angelic Aura and a Bloodward’s Demonic Aura. Those weaker than the user are crushed by two opposing forces at once — the overwhelming urge to kneel in submission and the primal instinct to flee in terror. The conflicting pressure shatters focus, slows reactions, and makes sustained resistance extremely difficult.",
     [
       { label: "Fuses", value: "Angelic Aura (Aetherblade) + Demonic Aura (Bloodward)" },
       { label: "Form", value: "True Hybrid Form" },
@@ -2988,7 +2988,7 @@ module.exports = [
     "Hybrid Skills",
     "Frenzied Step",
     "Hybrid skill",
-    "A blink driven by pure rage. The user vanishes and reappears behind an enemy in the same breath, each step multiplying their strength as the berserk state deepens, until their movements become impossible to track or stop.",
+    "A rage-fueled blink that combines Swiftstep with the Bloodward’s Berserk state. The user vanishes and reappears behind a target in an instant, each use feeding their growing frenzy. With every step, their strength multiplies and their movements become faster and harder to track, until they are little more than a blur of overwhelming force.",
     [
       { label: "Fuses", value: "Swiftstep + Berserk (Bloodward)" },
       { label: "Form", value: "True Hybrid Form" },
@@ -2999,7 +2999,7 @@ module.exports = [
     "Hybrid Skills",
     "Gloaming Veil",
     "Hybrid skill",
-    "The angelic Dawnveil and demonic Duskveil fused into a single perfect disguise. The user can hide their hybrid form, both auras, and all traces of their true nature even under close scrutiny.",
+    "The perfect fusion of Dawnveil and Duskveil. The user can completely erase all traces of their hybrid nature, both auras, wings, horns, and halo. Even under close magical scrutiny, the disguise holds firm, making them appear as an ordinary human or whichever form they choose to present. Maintaining it still carries a cost, but far less than using either veil separately.",
     [
       { label: "Fuses", value: "Dawnveil (Aetherblade) + Duskveil (Bloodward)" },
       { label: "Form", value: "True Hybrid Form" },
