@@ -277,7 +277,7 @@ module.exports = [
   s("War-Worn", "Third Pillar, Areous", "skill of", "Skill of", "One of the Third Pillar, Areous’s abilities."),
   s("Dread-Herald", "Fourth Pillar, Deimous", "skill of", "Skill of", "One of the Fourth Pillar, Deimous’s abilities."),
   s("Unheralded", "Fourth Pillar, Deimous", "skill of", "Skill of", "One of the Fourth Pillar, Deimous’s abilities."),
-  s("Kneel", "Fourth Pillar, Deimous", "skill of", "Skill of", "One of the Fourth Pillar, Deimous’s abilities."),
+  s("Dreadweight", "Fourth Pillar, Deimous", "skill of", "Skill of", "One of the Fourth Pillar, Deimous’s abilities."),
   s("Altar-Rite", "Fifth Pillar, Horkous", "skill of", "Skill of", "One of the Fifth Pillar, Horkous’s abilities."),
   s("Vowbrand", "Fifth Pillar, Horkous", "skill of", "Skill of", "One of the Fifth Pillar, Horkous’s abilities."),
   s("Truthvein", "Fifth Pillar, Horkous", "skill of", "Skill of", "One of the Fifth Pillar, Horkous’s abilities."),
