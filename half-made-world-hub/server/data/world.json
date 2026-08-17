@@ -5766,7 +5766,7 @@
     "fields": [
       {
         "label": "Exchange",
-        "value": "10 silver = 1 gold; 100 gold = 1 platinum"
+        "value": "100 silver = 1 gold; 1,000 gold = 1 platinum"
       },
       {
         "label": "Tiers",
@@ -5782,7 +5782,7 @@
     "createdAt": "2026-08-17T11:34:10.259Z",
     "updatedAt": "2026-08-17T11:34:10.259Z",
     "name": "Sigils",
-    "description": "The single currency used across all three realms, minted in three metals. Ten silver sigils make one gold sigil, and one hundred gold sigils make one platinum sigil — so a single platinum sigil is worth a thousand silver. The same coins circulate in the Human, Angel, and Demon Realms alike.",
+    "description": "The single currency used across all three realms, minted in three metals. One hundred silver sigils make one gold sigil, and one thousand gold sigils make one platinum sigil — so a single platinum sigil is worth one hundred thousand silver. The same coins circulate in the Human, Angel, and Demon Realms alike.",
     "category": "Coins"
   },
   {
@@ -5791,11 +5791,11 @@
     "fields": [
       {
         "label": "Value",
-        "value": "1 silver = 1/10 gold"
+        "value": "1 silver = 1/100 gold"
       },
       {
         "label": "Tier",
-        "value": "Middle"
+        "value": "Lowest"
       }
     ],
     "tags": [
@@ -5807,7 +5807,7 @@
     "createdAt": "2026-08-17T11:34:10.259Z",
     "updatedAt": "2026-08-17T11:34:10.259Z",
     "name": "Silver Sigil",
-    "description": "The lowest tier of currency, used for everyday purchases. Ten silver sigils are worth one gold sigil.",
+    "description": "The lowest tier of currency, used for everyday purchases. One hundred silver sigils are worth one gold sigil.",
     "category": "Coins"
   },
   {
@@ -5816,7 +5816,7 @@
     "fields": [
       {
         "label": "Value",
-        "value": "1 gold = 10 silver; 100 gold = 1 platinum"
+        "value": "1 gold = 100 silver; 1,000 gold = 1 platinum"
       },
       {
         "label": "Tier",
@@ -5832,7 +5832,7 @@
     "createdAt": "2026-08-17T11:34:10.259Z",
     "updatedAt": "2026-08-17T11:34:10.259Z",
     "name": "Gold Sigil",
-    "description": "The middle tier of currency. One gold sigil is worth ten silver, and one hundred gold sigils are worth one platinum sigil.",
+    "description": "The middle tier of currency. One gold sigil is worth one hundred silver, and one thousand gold sigils are worth one platinum sigil.",
     "category": "Coins"
   },
   {
@@ -5840,11 +5840,11 @@
     "category": "Coins",
     "name": "Platinum Sigil",
     "subtitle": "The highest coin",
-    "description": "The highest tier of currency, reserved for large transactions and wealth. One platinum sigil is worth one hundred gold, or one thousand silver.",
+    "description": "The highest tier of currency, reserved for large transactions and wealth. One platinum sigil is worth one thousand gold, or one hundred thousand silver.",
     "fields": [
       {
         "label": "Value",
-        "value": "1 platinum = 100 gold = 1,000 silver"
+        "value": "1 platinum = 1,000 gold = 100,000 silver"
       },
       {
         "label": "Tier",
