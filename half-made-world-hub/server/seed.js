@@ -2839,4 +2839,50 @@ module.exports = [
     [],
     ["holy energy", "corrupted veyn", "veyn", "formation", "purification", "corruption"],
   ),
+
+  // ============================================================ COINS
+  e(
+    "Coins",
+    "Sigils",
+    "The currency of the three realms",
+    "The single currency used across all three realms, minted in three metals. Ten bronze sigils make one silver sigil, and one hundred silver sigils make one gold sigil — so a single gold sigil is worth a thousand bronze. The same coins circulate in the Human, Angel, and Demon Realms alike.",
+    [
+      { label: "Exchange", value: "10 bronze = 1 silver; 100 silver = 1 gold" },
+      { label: "Tiers", value: "Bronze (lowest), Silver (middle), Gold (highest)" },
+    ],
+    ["sigil", "currency", "coin", "money"],
+  ),
+  e(
+    "Coins",
+    "Bronze Sigil",
+    "The lowest coin",
+    "The lowest tier of currency, used for everyday purchases. Ten bronze sigils are worth one silver sigil.",
+    [
+      { label: "Value", value: "1 bronze = 1/10 silver" },
+      { label: "Tier", value: "Lowest" },
+    ],
+    ["sigil", "bronze", "coin", "currency"],
+  ),
+  e(
+    "Coins",
+    "Silver Sigil",
+    "The middle coin",
+    "The middle tier of currency. One silver sigil is worth ten bronze, and one hundred silver sigils are worth one gold sigil.",
+    [
+      { label: "Value", value: "1 silver = 10 bronze; 100 silver = 1 gold" },
+      { label: "Tier", value: "Middle" },
+    ],
+    ["sigil", "silver", "coin", "currency"],
+  ),
+  e(
+    "Coins",
+    "Gold Sigil",
+    "The highest coin",
+    "The highest tier of currency, reserved for large transactions and wealth. One gold sigil is worth one hundred silver, or one thousand bronze.",
+    [
+      { label: "Value", value: "1 gold = 100 silver = 1,000 bronze" },
+      { label: "Tier", value: "Highest" },
+    ],
+    ["sigil", "gold", "coin", "currency"],
+  ),
 ];

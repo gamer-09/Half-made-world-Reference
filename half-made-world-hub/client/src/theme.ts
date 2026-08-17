@@ -18,6 +18,7 @@ export const CATEGORY_COLORS: Record<string, string> = {
   'Demon Skills': '#d8b4fe',
   'Character Forms': '#fda4af',
   'Artifact Skills': '#bef264',
+  Coins: '#fde047',
 };
 
 export const FALLBACK_COLOR = '#94a3b8';
