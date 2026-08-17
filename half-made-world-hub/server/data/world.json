@@ -4243,7 +4243,7 @@
       },
       {
         "label": "Skills",
-        "value": "Dread-Herald, Unheralded, Kneel"
+        "value": "Dread-Herald, Unheralded, Dreadweight"
       },
       {
         "label": "Race",
@@ -4897,9 +4897,9 @@
   {
     "id": "seed-256",
     "category": "Angel Skills",
-    "name": "Kneel",
+    "name": "Dreadweight",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Forces a target to their knees under the weight of pure dread.",
+    "description": "Unleashes a crushing wave of pure dread that forces the target downward under its weight. The pressure slows their movements, weakens their stance, and makes it difficult for them to stay upright or use skills effectively. Stronger targets can resist being fully forced to their knees, but the oppressive weight still hampers them significantly.",
     "fields": [],
     "tags": [
       "skill",
@@ -4907,7 +4907,7 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:00:10.305Z"
   },
   {
     "id": "seed-257",
