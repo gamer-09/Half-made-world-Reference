@@ -686,7 +686,7 @@ module.exports = [
     "Classes",
     "Smithing",
     "Veyn & Ren class",
-    "Crafts weapons and armor using Veyn to reinforce or enchant them during the forging process. Blood-forging (using demon or angel blood in the forge) is one of the hardest skills in this class to learn — not every Smith can do it, since demon and angel blood is reactive to Veyn, and a mistake can cause the death of the smith. Smithing is the one exception to the Veyn and Ren incompatibility: a Smith may draw on both during the forge, but this comes at a price — they can never learn any skill outside Smithing and the forging of weapons.",
+    "Crafts weapons and armor using Veyn to reinforce or enchant them during the forging process. Blood-forging (using demon or angel blood in the forge) is one of the hardest skills in this class to learn — not every Smith can do it, since demon and angel blood is reactive to Veyn, and a mistake can cause the death of the smith. Smithing is the one exception to the Veyn and Ren incompatibility: a Smith may draw on both during the forge, but this comes at a heavy price — any skill they learned before taking up Smithing is lost, and they can never learn or use any skill outside Smithing and the forging of weapons.",
     [
       { label: "Type", value: "Magic/Veyn and Ren class (the sole exception to their incompatibility)" },
       { label: "Blood-forging", value: "The rank of the demon or angel whose blood is used determines how powerful the weapon will be — low ranking blood can at least injure, high ranking blood can kill. Demon and angel blood is reactive to Veyn; a mistake can cause the death of the smith." },
