@@ -2392,7 +2392,7 @@ module.exports = [
     "Angel Skills",
     "Dread-Herald",
     "Aetherblade Lord Angel skill",
-    "Speaks a single word that plants a growing fear in a target.",
+    "The user speaks a single word of power that plants a deep, growing fear inside the target. The fear intensifies over time, steadily weakening the target’s will, slowing their movements, and making it harder for them to use skills. If the fear is allowed to fully mature, the target becomes temporarily paralyzed by terror or forced to flee. Stronger targets take longer to break, but the effect is harder to shake once it takes root.",
     [],
     ["skill", "angel", "aetherblade lord angel"],
   ),
