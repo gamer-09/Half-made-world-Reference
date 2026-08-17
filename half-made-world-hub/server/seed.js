@@ -139,7 +139,7 @@ module.exports = [
     [
       { label: "Guardian", value: "Leviathan (lava-adapted sea serpent)" },
       { label: "Ruler", value: "Cindergrave Wraith Lord" },
-      { label: "Treasure vault", value: "Chamber beneath the throne chair — Aerendrel, Liework’s Fallen Crown, Rejuvenating Elixir, Sael’s Luck" },
+      { label: "Treasure vault", value: "Chamber beneath the throne chair — Aerendrel, Liework’s Fallen Crown, Rejuvenating Elixir, Selene’s Luck" },
     ],
     ["lethmoor", "hidden realm", "kingdom", "lava"],
   ),
@@ -231,7 +231,7 @@ module.exports = [
     "Monsters",
     "Dragons",
     "Territorial guardians of the Shadow Realm",
-    "They stay in the Shadow Realm. They are very protective of their territory. They can also be found on high mountain tops in the Hidden Realm, where they become hostile to anyone who invades their territory. They are very difficult to deal with due to their tough scales and slightly strong magic resistance. Kaelroot trees grow near the nest of a dragon.",
+    "They stay in the Shadow Realm. They are very protective of their territory. They can also be found on high mountain tops in the Hidden Realm, where they become hostile to anyone who invades their territory. They are very difficult to deal with due to their tough scales and slightly strong magic resistance. Ebonspire trees grow near the nest of a dragon.",
     [
       { label: "Location", value: "Shadow Realm; high mountain tops in the Hidden Realm" },
       { label: "Notable", value: "Their heart is an ingredient in the Ethereal Potion." },
@@ -940,7 +940,7 @@ module.exports = [
     "Hidden Realm",
     "Pixie Dust",
     "Youth, Veyn and Ren in a powder",
-    "Can be used to make someone younger or give a permanent boost in Veyn and a little for Ren. It is one of the core ingredients of the Alchemist class, since it reacts well with Veyn. It is quite rare and can only be gotten by going to the Hidden Realm. It can be brewed with pixie dust, grinded leaves of the Grimbough tree, grinded powder from the bark of the Kaelroot tree, and the heart of a dragon — the resulting potion is called the Ethereal Potion.",
+    "Can be used to make someone younger or give a permanent boost in Veyn and a little for Ren. It is one of the core ingredients of the Alchemist class, since it reacts well with Veyn. It is quite rare and can only be gotten by going to the Hidden Realm. It can be brewed with pixie dust, grinded leaves of the Grimbough tree, grinded powder from the bark of the Ebonspire tree, and the heart of a dragon — the resulting potion is called the Ethereal Potion.",
     [
       { label: "Source", value: "Pixies (Hidden Realm)" },
     ],
@@ -956,11 +956,11 @@ module.exports = [
   ),
   e(
     "Hidden Realm",
-    "Kaelroot Tree",
+    "Ebonspire Tree",
     "The 100-year tree of dragon nests",
     "It is found and grows near the nest of a dragon. It is a 100-year-old tree. The leaves can be used to make an elixir named the Rejuvenating Elixir, while the bark when grinded to powder can be used in making the Ethereal Potion.",
     [],
-    ["hidden realm", "tree", "kaelroot", "dragon"],
+    ["hidden realm", "tree", "ebonspire", "dragon"],
   ),
   e(
     "Hidden Realm",
@@ -968,7 +968,7 @@ module.exports = [
     "Legendary-rank elixir that halts aging",
     "A legendary-rank elixir, difficult to brew correctly — a single miscalculation wastes the rare ingredients entirely. Rather than restoring or boosting Veyn or Ren, it halts the drinker’s aging completely for a long, fixed stretch of time rather than reversing it like pixie dust does.",
     [
-      { label: "Ingredients", value: "Pixie dust, grinded leaves of the Grimbough tree, grinded powder from the bark of the Kaelroot tree, the heart of a dragon" },
+      { label: "Ingredients", value: "Pixie dust, grinded leaves of the Grimbough tree, grinded powder from the bark of the Ebonspire tree, the heart of a dragon" },
     ],
     ["hidden realm", "potion", "elixir", "aging"],
   ),
@@ -1042,7 +1042,7 @@ module.exports = [
   ),
   e(
     "Artifacts",
-    "Sael’s Luck",
+    "Selene’s Luck",
     "One critical strike, blocked",
     "A luck pendant that blocks a critical/fatal strike that can kill you once, and then breaks.",
     [
@@ -1842,11 +1842,11 @@ module.exports = [
     "Characters",
     "Kael von Ashen",
     "Head Master of the Academy — the sole survivor of the Hidden Realm’s creation",
-    "The only survivor of the Vael, the old race wiped out by the former Human Realm ruler when the Hidden Realm was forcefully created. He is the Head Master of Elyndor Academy, and he is the character who takes the MC, Jaiden, to the Hidden Realm.",
+    "The only survivor of the Aelthar, the old race wiped out by the former Human Realm ruler when the Hidden Realm was forcefully created. He is the Head Master of Elyndor Academy, and he is the character who takes the MC, Jaiden, to the Hidden Realm.",
     [
       { label: "Role", value: "Takes the MC to the Hidden Realm; Head Master of the academy." },
       { label: "Location", value: "Stays in the Human Realm; was only hiding in the Hidden Realm." },
-      { label: "Race", value: "Vael" },
+      { label: "Race", value: "Aelthar" },
       { label: "Academy", value: "Elyndor Academy" },
     ],
     ["character", "head master", "academy", "hidden realm", "human realm"],
@@ -1994,7 +1994,7 @@ module.exports = [
   // ============================================================ CHARACTERS
   e(
     "Characters",
-    "Kael Vornath",
+    "Laren Vornath",
     "Demon general of the Demon army",
     "A general who fights with misdirection, never taken seriously until the feint lands. Tolerated because he wins, and his cruelty is a performance — but the performance is the point, and he has never once shown fear, which is why no one trusts him. Tera Morage keeps him for his usefulness but does not trust him.",
     [
@@ -2003,7 +2003,7 @@ module.exports = [
       { label: "Skills", value: "Red Whisper, Blood Jape, Traitor’s Step" },
       { label: "Race", value: "Imp" },
     ],
-    ["character", "demon", "general", "bloodward", "jester demon", "kael vornath"],
+    ["character", "demon", "general", "bloodward", "jester demon", "laren vornath"],
   ),
   e(
     "Characters",
@@ -2119,12 +2119,12 @@ module.exports = [
   e(
     "Titles",
     "Jester demon",
-    "The title of Kael Vornath",
-    "A title borne by Kael Vornath — the Demon army’s misdirection general, whose cruelty is a performance and who has never once shown fear.",
+    "The title of Laren Vornath",
+    "A title borne by Laren Vornath — the Demon army’s misdirection general, whose cruelty is a performance and who has never once shown fear.",
     [
-      { label: "Held by", value: "Kael Vornath" },
+      { label: "Held by", value: "Laren Vornath" },
     ],
-    ["title", "demon", "general", "kael vornath"],
+    ["title", "demon", "general", "laren vornath"],
   ),
   e(
     "Titles",
@@ -2672,7 +2672,7 @@ module.exports = [
     "Race Types",
     "Imps",
     "The impish demons",
-    "A demon type set apart from the ordinary Dregs — the impish few, including Lisa and Kael Vornath the Jester demon, and the MC’s demon half.",
+    "A demon type set apart from the ordinary Dregs — the impish few, including Lisa and Laren Vornath the Jester demon, and the MC’s demon half.",
     [
       { label: "Innate Ability", value: "Veyn-Touch" },
       { label: "Skin", value: "Warmer and less monstrous than a Dreg's, closer to a deep violet or plum tone rather than ash or bruise-purple, unsettling mostly in how normal it can look at a glance." },
@@ -2770,14 +2770,14 @@ module.exports = [
   // ============================================================ RACE TYPES
   e(
     "Race Types",
-    "Vael",
+    "Aelthar",
     "The extinct realm-makers",
-    "An extinct race, wiped out by the former ruler of the Human Realm, forcing the survivors to flee by tearing open the Hidden Realm as a hiding place — an act so violent it nearly destroyed the world outright. Escaping the ruler didn’t save them: once inside, the realm’s own creatures began forming almost immediately, and the Vael had no way to survive against them. Nearly the entire race died out inside the very refuge they built, save for one survivor — the Headmaster of the Academy — who alone learned to endure it and later became the only person to ever successfully brew the Ethereal Potion.",
+    "An extinct race, wiped out by the former ruler of the Human Realm, forcing the survivors to flee by tearing open the Hidden Realm as a hiding place — an act so violent it nearly destroyed the world outright. Escaping the ruler didn’t save them: once inside, the realm’s own creatures began forming almost immediately, and the Aelthar had no way to survive against them. Nearly the entire race died out inside the very refuge they built, save for one survivor — the Headmaster of the Academy — who alone learned to endure it and later became the only person to ever successfully brew the Ethereal Potion.",
     [
       { label: "Appearance", value: "Pale, ash-grey skin; flat, dark eyes that do not reflect light; faint markings that glow faintly with Veyn beneath the skin." },
       { label: "Innate Ability", value: "Potent Blood" },
     ],
-    ["race", "vael", "extinct", "hidden realm"],
+    ["race", "aelthar", "extinct", "hidden realm"],
   ),
 
   // ============================================================ INNATE ABILITIES
@@ -2787,17 +2787,17 @@ module.exports = [
     "Innate ability",
     "Their blood has an extremely high, potent healing capability, and is an excellent conduit for magic — allowing them to use powerful magic easily.",
     [],
-    ["innate", "ability", "vael"],
+    ["innate", "ability", "aelthar"],
   ),
 
   // ============================================================ RULES & NOTES
   e(
     "Rules & Notes",
-    "The Vael",
+    "The Aelthar",
     "The extinct race of the Hidden Realm",
-    "The Vael were an ancient race of realm-makers, wiped out by the former ruler of the Human Realm. Their survivors tore open the Hidden Realm as a hiding place, an act so violent it nearly destroyed the world, but even that refuge could not save them — the realm’s creatures formed almost immediately and the Vael died out inside it, leaving one survivor: the Headmaster of the Academy, who alone learned to endure the realm and became the only person to ever brew the Ethereal Potion.",
+    "The Aelthar were an ancient race of realm-makers, wiped out by the former ruler of the Human Realm. Their survivors tore open the Hidden Realm as a hiding place, an act so violent it nearly destroyed the world, but even that refuge could not save them — the realm’s creatures formed almost immediately and the Aelthar died out inside it, leaving one survivor: the Headmaster of the Academy, who alone learned to endure the realm and became the only person to ever brew the Ethereal Potion.",
     [],
-    ["vael", "extinct", "race", "hidden realm"],
+    ["aelthar", "extinct", "race", "hidden realm"],
   ),
   e(
     "Rules & Notes",
