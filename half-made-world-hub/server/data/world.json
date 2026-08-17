@@ -1158,9 +1158,9 @@
   {
     "id": "e1d433b5-1177-4351-a6c8-2f2ec9f7fa70",
     "category": "Magic Systems",
-    "name": "Blessed Ren",
-    "subtitle": "The sanctified form of Ren",
-    "description": "Blessed Ren is Ren sanctified — a person’s own inner Vitality blessed and brightened into a holy form, the way Holy Energy is Veyn purified. Where raw Ren glows a deep crimson, blessed Ren glows a warm white-gold, and instead of only strengthening the body it can heal and protect. Because it is still Ren — drawn from the body’s own Vitality rather than the world core — a paladin who wields blessed Ren never holds Veyn and Ren together, and so never suffers their incompatibility.",
+    "name": "Auric Ren",
+    "subtitle": "The golden form of Ren",
+    "description": "Auric Ren is Ren brightened into gold — a person’s own inner Vitality refined into a radiant, holy-tinged form, the way Holy Energy is Veyn purified. Where raw Ren glows a deep crimson, Auric Ren glows a warm white-gold, and instead of only strengthening the body it can heal and protect. Because it is still Ren — drawn from the body’s own Vitality rather than the world core — a paladin who wields Auric Ren never holds Veyn and Ren together, and so never suffers their incompatibility.",
     "fields": [
       {
         "label": "Color",
@@ -1168,7 +1168,7 @@
       },
       {
         "label": "Nature",
-        "value": "Sanctified Ren — not a separate source"
+        "value": "Auric Ren — not a separate source"
       },
       {
         "label": "Used by",
@@ -1176,7 +1176,7 @@
       },
       {
         "label": "Effect",
-        "value": "Strengthens, heals, and protects using the body’s own sanctified Vitality"
+        "value": "Strengthens, heals, and protects using the body’s own gold-brightened Vitality"
       }
     ],
     "tags": [
@@ -1602,11 +1602,11 @@
     "category": "Classes",
     "name": "Paladin",
     "subtitle": "Ren + Holy class",
-    "description": "Blends physical strength with Blessed Ren — their own Ren sanctified into a holy form — giving them the fighting power of a warrior and the ability to heal and protect, all through their own Vitality rather than Veyn. Because they never hold Veyn and Ren together, paladins avoid the incompatibility that would kill anyone else. Common among those who protect others directly, like guards or knights.",
+    "description": "Blends physical strength with Auric Ren — their own Ren brightened into gold — giving them the fighting power of a warrior and the ability to heal and protect, all through their own Vitality rather than Veyn. Because they never hold Veyn and Ren together, paladins avoid the incompatibility that would kill anyone else. Common among those who protect others directly, like guards or knights.",
     "fields": [
       {
         "label": "Type",
-        "value": "Ren class — Blessed Ren"
+        "value": "Ren class — Auric Ren"
       }
     ],
     "tags": [

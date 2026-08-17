@@ -3602,10 +3602,10 @@
   {
     "id": "700db466-9243-4871-8b67-14e5d59c9c88",
     "source": "Paladin",
-    "target": "Blessed Ren",
+    "target": "Auric Ren",
     "type": "uses",
     "label": "Uses",
-    "description": "A Paladin blends physical strength with Blessed Ren — sanctified Ren — never touching Veyn.",
+    "description": "A Paladin blends physical strength with Auric Ren — golden Ren — never touching Veyn.",
     "createdAt": "2026-08-16T22:28:06.999Z",
     "updatedAt": "2026-08-16T22:28:06.999Z"
   },
@@ -3831,11 +3831,11 @@
   },
   {
     "id": "4cf96ed7-bde6-449e-8c67-6ee6ee92e14b",
-    "source": "Blessed Ren",
+    "source": "Auric Ren",
     "target": "Ren",
     "type": "refined from",
     "label": "Refined from",
-    "description": "Blessed Ren is Ren sanctified and brightened into a holy form.",
+    "description": "Auric Ren is Ren brightened into gold.",
     "createdAt": "2026-08-16T23:14:21.835Z",
     "updatedAt": "2026-08-16T23:14:21.835Z"
   }

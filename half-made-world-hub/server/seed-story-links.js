@@ -378,7 +378,7 @@ module.exports = [
   s("Holy Energy", "Veyn", "refined from", "Refined from", "Holy energy is Veyn purified and brightened into gold."),
   s("Saintess", "Holy Energy", "uses", "Uses", "A Saintess channels Holy Energy rather than raw Veyn."),
   s("Diviner", "Holy Energy", "uses", "Uses", "A Diviner channels Holy Energy to read the future and uncover hidden truths."),
-  s("Paladin", "Blessed Ren", "uses", "Uses", "A Paladin blends physical strength with Blessed Ren — sanctified Ren — never touching Veyn."),
+  s("Paladin", "Auric Ren", "uses", "Uses", "A Paladin blends physical strength with Auric Ren — golden Ren — never touching Veyn."),
   s("Angels (Overview)", "Holy Energy", "uses", "Uses", "Angels brighten their Veyn into Holy Energy — the gold their holy skills are made from."),
   s("Jaiden Marlock", "Holy Energy", "uses", "Uses", "Through his Malakhim angel half, Jaiden channels Holy Energy — while his Imp demon half runs on corrupted Veyn (miasma)."),
   s("Clint Ashborn", "Holy Energy", "uses", "Uses", "As a Cherubim, Clint Ashborn channels Holy Energy."),
@@ -401,5 +401,5 @@ module.exports = [
   s("Carin", "Corrupted Veyn", "uses", "Uses", "As an Imp, Carin wields Corrupted Veyn."),
   s("Jaiden Marlock", "Corrupted Veyn", "uses", "Uses", "Through his Imp demon half, Jaiden wields Corrupted Veyn (miasma) — while his Malakhim angel half channels Holy Energy."),
   s("Corrupted Veyn", "Corruption Sickness", "causes", "Causes", "Contact with corrupted Veyn slowly kills a human over three stages."),
-  s("Blessed Ren", "Ren", "refined from", "Refined from", "Blessed Ren is Ren sanctified and brightened into a holy form."),
+  s("Auric Ren", "Ren", "refined from", "Refined from", "Auric Ren is Ren brightened into gold."),
 ];
