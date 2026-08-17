@@ -90,7 +90,7 @@ export function Sidebar({
       <button
         className={`nav-map-btn${view === 'blocks' ? ' active' : ''}`}
         onClick={onOpenBlocks}
-        title="Realms, kingdoms, and who lives where — zoom in and out"
+        title="The world's geography as a chain of linked blocks"
       >
         <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8">
           <rect x="3" y="3" width="8" height="8" rx="1.5" />
@@ -98,7 +98,7 @@ export function Sidebar({
           <rect x="3" y="13" width="8" height="8" rx="1.5" />
           <rect x="13" y="13" width="8" height="8" rx="1.5" />
         </svg>
-        Block Map
+        Block Chain Map
       </button>
 
       <label className="search-wrap">

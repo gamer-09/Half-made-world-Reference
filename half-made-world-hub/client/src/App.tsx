@@ -502,7 +502,7 @@ export default function App() {
         <header className="main-header" style={{ borderBottom: '1px solid rgba(96,165,250,0.16)', position: 'relative', zIndex: 10, display: 'flex', visibility: 'visible', opacity: 1 }}>
           <div style={{ visibility: 'visible', opacity: 1, display: 'block' }}>
             <h2 className="main-title" style={{ color: 'white', visibility: 'visible', opacity: 1 }}>
-              {isBlocksView ? 'Block Map' : isWebView ? 'Story Web' : isMapView ? 'Relationship Map' : activeCategory === 'All' ? 'All Entries' : activeCategory}
+              {isBlocksView ? 'Block Chain Map' : isWebView ? 'Story Web' : isMapView ? 'Relationship Map' : activeCategory === 'All' ? 'All Entries' : activeCategory}
               {!isMapView && !isWebView && !isBlocksView && (
                 <span className="main-count" style={{ color: '#22d3ee', background: 'rgba(34,211,238,0.14)', border: '1px solid rgba(34,211,238,0.4)' }}>
                   {filtered.length}
@@ -511,7 +511,7 @@ export default function App() {
             </h2>
             <p className="main-sub" style={{ color: '#9fb0cc' }}>
               {isBlocksView
-                ? 'Realms, kingdoms, and who lives where — zoom in and out'
+                ? 'The world’s geography as a chain — every place linked to what contains it'
                 : isWebView
                   ? 'The whole world at a glance — every realm, monster, artifact, and thread'
                   : isMapView
