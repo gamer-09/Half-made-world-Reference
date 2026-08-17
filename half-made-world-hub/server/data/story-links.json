@@ -3550,6 +3550,76 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
+    "id": "link-seed-351",
+    "source": "Ruby Divina",
+    "target": "Human Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "Ruby Divina rules and resides in the Human Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-352",
+    "source": "Leviathan",
+    "target": "Lethmoor Kingdom",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "The lava-adapted serpent lives in Lethmoor's territory.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-353",
+    "source": "Cindergrave Wraith Lord",
+    "target": "Lethmoor Kingdom",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "The Wraith Lord dwells in Lethmoor's ruins.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-354",
+    "source": "Lesser Cindergrave Wraiths",
+    "target": "Lethmoor Kingdom",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "The lesser wraiths drift through Lethmoor's ruins.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-355",
+    "source": "Coilmane",
+    "target": "Thornlost Forest",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "Coilmane is the guardian of the Thornlost Forest.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-356",
+    "source": "Griffen",
+    "target": "Arubian Forest",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "Griffens roost on the high mountain peaks above the Arubian Forest.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-357",
+    "source": "Shudon",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "located in",
+    "label": "Located in",
+    "description": "Shudon stone golems stand guard at every realm entrance.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
     "id": "51e5d349-1f33-4bfc-9cee-96c9cb91e853",
     "source": "The Seer",
     "target": "Healers",

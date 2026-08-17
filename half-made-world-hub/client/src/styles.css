@@ -1833,7 +1833,7 @@ select.input {
   flex: 1; min-height: 0; padding: 4px 8px 1px;
   display: flex; flex-direction: column; gap: 2px; overflow: hidden;
 }
-.blockmap-node-name { font-size: 12px; font-weight: 700; line-height: 1.2; }
+.blockmap-node-name { font-size: 12px; font-weight: 700; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .blockmap-node-sub {
   font-size: 9px; color: var(--muted); line-height: 1.25;
   display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;
