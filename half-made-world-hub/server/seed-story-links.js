@@ -417,4 +417,7 @@ module.exports = [
   s("Tera Morage’s Plot", "Dark Moon", "story of", "Story of", "The circle of knives closing around her throne."),
   s("Tera Morage’s Plot", "Mordrach", "story of", "Story of", "The rank whose succession law dooms its holder."),
   s("Tera Morage’s Plot", "Jaiden Marlock", "story of", "Story of", "The hybrid she does not know exists."),
+  s("Aldermere", "Human Realm", "located in", "Located in", "Aldermere is the ruling kingdom of the Human Realm."),
+  s("Aurelion", "Angel Realm", "located in", "Located in", "Aurelion is the ruling kingdom of the Angel Realm."),
+  s("Vorath", "Demon Realm", "located in", "Located in", "Vorath is the ruling kingdom of the Demon Realm."),
 ];

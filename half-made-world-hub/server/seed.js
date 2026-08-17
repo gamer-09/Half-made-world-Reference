@@ -2885,4 +2885,36 @@ module.exports = [
     ],
     ["sigil", "platinum", "coin", "currency"],
   ),
+
+  // ============================================================ LOCATIONS
+  e(
+    "Locations",
+    "Aldermere",
+    "The kingdom of the Human Realm",
+    "The ruling kingdom of the Human Realm, seat of Ruby Divina. Unlike the other realms’ capitals, Aldermere governs no rigid caste or rank — its people are the varied hundreds of thousands of humanity, and its ruler holds power through political skill and the trust of that population rather than divine right or raw strength.",
+    [
+      { label: "Ruler", value: "Ruby Divina" },
+    ],
+    ["kingdom", "human realm", "alderdere", "capital"],
+  ),
+  e(
+    "Locations",
+    "Aurelion",
+    "The kingdom of the Angel Realm",
+    "The ruling kingdom of the Angel Realm, seat of the Serapharch Clint Ashborn. Built around the throne, it is home to the angelic hierarchy at its purest — the Six Pillars, the Veyn Vow, and the ranks held in order. Its population numbers only in the tens of thousands, small enough to be governed perfectly.",
+    [
+      { label: "Ruler", value: "Clint Ashborn" },
+    ],
+    ["kingdom", "angel realm", "aurelion", "capital"],
+  ),
+  e(
+    "Locations",
+    "Vorath",
+    "The kingdom of the Demon Realm",
+    "The ruling kingdom of the Demon Realm, seat of the Mordrach Tera Morage. A city that never sleeps, its hundreds of thousands churning as demons kill their way up the ranks and breed to fill what battle empties. It is the only realm capital that fields endless armies.",
+    [
+      { label: "Ruler", value: "Tera Morage" },
+    ],
+    ["kingdom", "demon realm", "vorath", "capital"],
+  ),
 ];

@@ -64,4 +64,7 @@ module.exports = [
   r("Tera Morage", "Lisa", "friend of", "Friend of", "The one demon Tera trusted enough to keep close — and the one mercy she ever allowed."),
   r("Tera Morage", "Licent Varak", "unaware of", "Unaware of", "She does not see that her own second right-hand is plotting her death with Dark Moon."),
   r("Tera Morage", "Jaiden Marlock", "unaware of", "Unaware of", "She does not know the hybrid child of Lisa and Ordium exists."),
+  r("Ruby Divina", "Aldermere", "ruler of", "Ruler of", "Ruby Divina rules Aldermere, the kingdom of the Human Realm."),
+  r("Clint Ashborn", "Aurelion", "ruler of", "Ruler of", "Clint Ashborn rules Aurelion, the kingdom of the Angel Realm."),
+  r("Tera Morage", "Vorath", "ruler of", "Ruler of", "Tera Morage rules Vorath, the kingdom of the Demon Realm."),
 ];

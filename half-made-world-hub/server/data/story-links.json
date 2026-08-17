@@ -3988,5 +3988,35 @@
     "description": "The hybrid she does not know exists.",
     "createdAt": "2026-08-17T01:14:23.357Z",
     "updatedAt": "2026-08-17T01:14:23.357Z"
+  },
+  {
+    "id": "ffc1c7a6-e25a-45c2-857c-380b4293c46a",
+    "source": "Aldermere",
+    "target": "Human Realm",
+    "type": "located in",
+    "label": "Located in",
+    "description": "Aldermere is the ruling kingdom of the Human Realm.",
+    "createdAt": "2026-08-17T12:12:05.590Z",
+    "updatedAt": "2026-08-17T12:12:05.590Z"
+  },
+  {
+    "id": "83efb264-6686-428c-87e0-0d2956a09e4e",
+    "source": "Aurelion",
+    "target": "Angel Realm",
+    "type": "located in",
+    "label": "Located in",
+    "description": "Aurelion is the ruling kingdom of the Angel Realm.",
+    "createdAt": "2026-08-17T12:12:05.590Z",
+    "updatedAt": "2026-08-17T12:12:05.590Z"
+  },
+  {
+    "id": "238f3de2-f455-44ad-8bd1-3c8fcdf8d7ff",
+    "source": "Vorath",
+    "target": "Demon Realm",
+    "type": "located in",
+    "label": "Located in",
+    "description": "Vorath is the ruling kingdom of the Demon Realm.",
+    "createdAt": "2026-08-17T12:12:05.590Z",
+    "updatedAt": "2026-08-17T12:12:05.590Z"
   }
 ]

@@ -432,5 +432,35 @@
     "description": "She does not know the hybrid child of Lisa and Ordium exists.",
     "createdAt": "2026-08-17T01:14:23.357Z",
     "updatedAt": "2026-08-17T01:14:23.357Z"
+  },
+  {
+    "id": "f228b18c-2c85-4777-b7f6-7579a7331bb7",
+    "source": "Ruby Divina",
+    "target": "Aldermere",
+    "type": "ruler of",
+    "label": "Ruler of",
+    "description": "Ruby Divina rules Aldermere, the kingdom of the Human Realm.",
+    "createdAt": "2026-08-17T12:12:05.590Z",
+    "updatedAt": "2026-08-17T12:12:05.590Z"
+  },
+  {
+    "id": "99067ef1-ef60-440a-b114-678240d59a49",
+    "source": "Clint Ashborn",
+    "target": "Aurelion",
+    "type": "ruler of",
+    "label": "Ruler of",
+    "description": "Clint Ashborn rules Aurelion, the kingdom of the Angel Realm.",
+    "createdAt": "2026-08-17T12:12:05.590Z",
+    "updatedAt": "2026-08-17T12:12:05.590Z"
+  },
+  {
+    "id": "fc0eff1b-90cf-41f0-ae80-04cf0cf63d0b",
+    "source": "Tera Morage",
+    "target": "Vorath",
+    "type": "ruler of",
+    "label": "Ruler of",
+    "description": "Tera Morage rules Vorath, the kingdom of the Demon Realm.",
+    "createdAt": "2026-08-17T12:12:05.590Z",
+    "updatedAt": "2026-08-17T12:12:05.590Z"
   }
 ]
