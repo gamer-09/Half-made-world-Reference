@@ -32,6 +32,7 @@ import { EntryDetail } from './components/EntryDetail';
 import { EntryForm } from './components/EntryForm';
 import { RelationshipMap } from './components/RelationshipMap';
 import { StoryWeb } from './components/StoryWeb';
+import { BlockMap } from './components/BlockMap';
 import { LinkForm } from './components/LinkForm';
 import { Modal } from './components/Modal';
 import { RELATIONSHIP_TYPES, relationshipType } from './relationshipTypes';
@@ -173,6 +174,8 @@ export default function App() {
         setView('map');
       } else if (e.key === '3') {
         setView('web');
+      } else if (e.key === '4') {
+        setView('blocks');
       }
     };
     window.addEventListener('keydown', onKey);
@@ -472,9 +475,10 @@ export default function App() {
 
   const isMapView = view === 'map';
   const isWebView = view === 'web';
+  const isBlocksView = view === 'blocks';
   const showDashboard = view === 'browse' && activeCategory === 'All' && search.trim() === '' && !activeTag;
 
-  const viewKey = isWebView ? 'web' : isMapView ? 'map' : `browse-${activeCategory}`;
+  const viewKey = isBlocksView ? 'blocks' : isWebView ? 'web' : isMapView ? 'map' : `browse-${activeCategory}`;
 
   return (
     <div className="app">
@@ -491,28 +495,31 @@ export default function App() {
         onAdd={openAdd}
         onOpenMap={() => setView('map')}
         onOpenWeb={() => setView('web')}
+        onOpenBlocks={() => setView('blocks')}
       />
 
       <main className="main">
         <header className="main-header" style={{ borderBottom: '1px solid rgba(96,165,250,0.16)', position: 'relative', zIndex: 10, display: 'flex', visibility: 'visible', opacity: 1 }}>
           <div style={{ visibility: 'visible', opacity: 1, display: 'block' }}>
             <h2 className="main-title" style={{ color: 'white', visibility: 'visible', opacity: 1 }}>
-              {isWebView ? 'Story Web' : isMapView ? 'Relationship Map' : activeCategory === 'All' ? 'All Entries' : activeCategory}
-              {!isMapView && !isWebView && (
+              {isBlocksView ? 'Block Map' : isWebView ? 'Story Web' : isMapView ? 'Relationship Map' : activeCategory === 'All' ? 'All Entries' : activeCategory}
+              {!isMapView && !isWebView && !isBlocksView && (
                 <span className="main-count" style={{ color: '#22d3ee', background: 'rgba(34,211,238,0.14)', border: '1px solid rgba(34,211,238,0.4)' }}>
                   {filtered.length}
                 </span>
               )}
             </h2>
             <p className="main-sub" style={{ color: '#9fb0cc' }}>
-              {isWebView
-                ? 'The whole world at a glance — every realm, monster, artifact, and thread'
-                : isMapView
-                  ? 'Who knows whom — and who betrayed whom'
-                  : activeCategory === 'All'
-                    ? 'Everything in the archive'
-                    : `Entries in ${activeCategory}`}
-              {!isMapView && !isWebView && search.trim() && ` · matching “${search.trim()}”`}
+              {isBlocksView
+                ? 'Realms, kingdoms, and who lives where — zoom in and out'
+                : isWebView
+                  ? 'The whole world at a glance — every realm, monster, artifact, and thread'
+                  : isMapView
+                    ? 'Who knows whom — and who betrayed whom'
+                    : activeCategory === 'All'
+                      ? 'Everything in the archive'
+                      : `Entries in ${activeCategory}`}
+              {!isMapView && !isWebView && !isBlocksView && search.trim() && ` · matching “${search.trim()}”`}
             </p>
           </div>
           <div className="header-actions">
@@ -576,6 +583,8 @@ export default function App() {
               Retry
             </button>
           </div>
+        ) : isBlocksView ? (
+          <BlockMap entries={entries} storyLinks={storyLinks} onNodeClick={setSelected} />
         ) : isWebView ? (
           <StoryWeb
             entries={entries}

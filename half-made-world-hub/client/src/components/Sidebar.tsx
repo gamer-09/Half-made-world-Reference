@@ -2,7 +2,7 @@ import type { Ref } from 'react';
 import type { CategoryInfo } from '../types';
 import { categoryColor } from '../theme';
 
-export type ViewMode = 'browse' | 'map' | 'web';
+export type ViewMode = 'browse' | 'map' | 'web' | 'blocks';
 
 interface SidebarProps {
   categories: CategoryInfo[];
@@ -16,6 +16,7 @@ interface SidebarProps {
   onAdd: () => void;
   onOpenMap: () => void;
   onOpenWeb: () => void;
+  onOpenBlocks: () => void;
 }
 
 export function Sidebar({
@@ -30,6 +31,7 @@ export function Sidebar({
   onAdd,
   onOpenMap,
   onOpenWeb,
+  onOpenBlocks,
 }: SidebarProps) {
   return (
     <aside className="sidebar">
@@ -83,6 +85,20 @@ export function Sidebar({
           <line x1="3.5" y1="12" x2="20.5" y2="12" />
         </svg>
         Story Web
+      </button>
+
+      <button
+        className={`nav-map-btn${view === 'blocks' ? ' active' : ''}`}
+        onClick={onOpenBlocks}
+        title="Realms, kingdoms, and who lives where — zoom in and out"
+      >
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8">
+          <rect x="3" y="3" width="8" height="8" rx="1.5" />
+          <rect x="13" y="3" width="8" height="8" rx="1.5" />
+          <rect x="3" y="13" width="8" height="8" rx="1.5" />
+          <rect x="13" y="13" width="8" height="8" rx="1.5" />
+        </svg>
+        Block Map
       </button>
 
       <label className="search-wrap">
