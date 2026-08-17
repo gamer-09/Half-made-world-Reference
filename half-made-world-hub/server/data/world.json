@@ -5766,11 +5766,11 @@
     "fields": [
       {
         "label": "Exchange",
-        "value": "10 bronze = 1 silver; 100 silver = 1 gold"
+        "value": "10 silver = 1 gold; 100 gold = 1 platinum"
       },
       {
         "label": "Tiers",
-        "value": "Bronze (lowest), Silver (middle), Gold (highest)"
+        "value": "Silver (lowest), Gold (middle), Platinum (highest)"
       }
     ],
     "tags": [
@@ -5782,41 +5782,16 @@
     "createdAt": "2026-08-17T11:34:10.259Z",
     "updatedAt": "2026-08-17T11:34:10.259Z",
     "name": "Sigils",
-    "description": "The single currency used across all three realms, minted in three metals. Ten bronze sigils make one silver sigil, and one hundred silver sigils make one gold sigil — so a single gold sigil is worth a thousand bronze. The same coins circulate in the Human, Angel, and Demon Realms alike.",
-    "category": "Coins"
-  },
-  {
-    "id": "3b5d2be4-bdc5-4c5d-8e4e-5323bf471cd0",
-    "subtitle": "The lowest coin",
-    "fields": [
-      {
-        "label": "Value",
-        "value": "1 bronze = 1/10 silver"
-      },
-      {
-        "label": "Tier",
-        "value": "Lowest"
-      }
-    ],
-    "tags": [
-      "sigil",
-      "bronze",
-      "coin",
-      "currency"
-    ],
-    "createdAt": "2026-08-17T11:34:10.259Z",
-    "updatedAt": "2026-08-17T11:34:10.259Z",
-    "name": "Bronze Sigil",
-    "description": "The lowest tier of currency, used for everyday purchases. Ten bronze sigils are worth one silver sigil.",
+    "description": "The single currency used across all three realms, minted in three metals. Ten silver sigils make one gold sigil, and one hundred gold sigils make one platinum sigil — so a single platinum sigil is worth a thousand silver. The same coins circulate in the Human, Angel, and Demon Realms alike.",
     "category": "Coins"
   },
   {
     "id": "0f9eccca-9065-4a02-9f8d-f28b6fefe9f5",
-    "subtitle": "The middle coin",
+    "subtitle": "The lowest coin",
     "fields": [
       {
         "label": "Value",
-        "value": "1 silver = 10 bronze; 100 silver = 1 gold"
+        "value": "1 silver = 1/10 gold"
       },
       {
         "label": "Tier",
@@ -5832,20 +5807,20 @@
     "createdAt": "2026-08-17T11:34:10.259Z",
     "updatedAt": "2026-08-17T11:34:10.259Z",
     "name": "Silver Sigil",
-    "description": "The middle tier of currency. One silver sigil is worth ten bronze, and one hundred silver sigils are worth one gold sigil.",
+    "description": "The lowest tier of currency, used for everyday purchases. Ten silver sigils are worth one gold sigil.",
     "category": "Coins"
   },
   {
     "id": "e9ab4108-9908-43e0-8624-294fc6eecc21",
-    "subtitle": "The highest coin",
+    "subtitle": "The middle coin",
     "fields": [
       {
         "label": "Value",
-        "value": "1 gold = 100 silver = 1,000 bronze"
+        "value": "1 gold = 10 silver; 100 gold = 1 platinum"
       },
       {
         "label": "Tier",
-        "value": "Highest"
+        "value": "Middle"
       }
     ],
     "tags": [
@@ -5857,7 +5832,32 @@
     "createdAt": "2026-08-17T11:34:10.259Z",
     "updatedAt": "2026-08-17T11:34:10.259Z",
     "name": "Gold Sigil",
-    "description": "The highest tier of currency, reserved for large transactions and wealth. One gold sigil is worth one hundred silver, or one thousand bronze.",
+    "description": "The middle tier of currency. One gold sigil is worth ten silver, and one hundred gold sigils are worth one platinum sigil.",
     "category": "Coins"
+  },
+  {
+    "id": "e5c64cc8-52e8-4ee4-9a9d-c7a46d451cfd",
+    "category": "Coins",
+    "name": "Platinum Sigil",
+    "subtitle": "The highest coin",
+    "description": "The highest tier of currency, reserved for large transactions and wealth. One platinum sigil is worth one hundred gold, or one thousand silver.",
+    "fields": [
+      {
+        "label": "Value",
+        "value": "1 platinum = 100 gold = 1,000 silver"
+      },
+      {
+        "label": "Tier",
+        "value": "Highest"
+      }
+    ],
+    "tags": [
+      "sigil",
+      "platinum",
+      "coin",
+      "currency"
+    ],
+    "createdAt": "2026-08-17T11:38:36.210Z",
+    "updatedAt": "2026-08-17T11:38:36.210Z"
   }
 ]
