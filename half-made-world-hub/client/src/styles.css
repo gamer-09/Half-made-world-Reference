@@ -1818,7 +1818,7 @@ select.input {
 
 .blockmap-blk-head {
   display: flex; align-items: center; justify-content: space-between; gap: 6px;
-  padding: 2px 8px; flex: none;
+  padding: 0 8px; flex: none;
 }
 .blockmap-blk-cat {
   font-size: 8.5px; font-weight: 800; letter-spacing: 0.08em; text-transform: uppercase;
@@ -1830,10 +1830,14 @@ select.input {
 }
 
 .blockmap-blk-body {
-  flex: 1; min-height: 0; padding: 4px 8px 1px;
-  display: flex; flex-direction: column; gap: 2px; overflow: hidden;
+  flex: 1; min-height: 0; padding: 3px 8px 1px;
+  display: flex; flex-direction: column; overflow: hidden;
 }
-.blockmap-node-name { font-size: 12px; font-weight: 700; line-height: 1.2; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.blockmap-node-name {
+  font-size: 12px; font-weight: 700; line-height: 1.2;
+  display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+  overflow-wrap: anywhere;
+}
 .blockmap-node-sub {
   font-size: 9px; color: var(--muted); line-height: 1.25;
   display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;
@@ -1841,7 +1845,7 @@ select.input {
 
 .blockmap-blk-foot {
   flex: none; display: flex; align-items: center; justify-content: space-between; gap: 6px;
-  padding: 1px 8px 4px;
+  padding: 1px 8px 3px;
 }
 .blockmap-node-size { font-size: 9px; color: var(--muted-2); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .blockmap-blk-hash {

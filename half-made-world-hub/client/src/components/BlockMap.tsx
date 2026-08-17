@@ -21,16 +21,16 @@ const WORLD = 'The World';
 // Compact content box (~1200 wide) so the whole map fits the stage at a
 // readable scale — same trick as the Relationship Map's fixed 1200x720 viewBox,
 // which scales UP to fill the screen instead of shrinking away.
-const BLOCK_W = 96;
-const BLOCK_H = 48;
+const BLOCK_W = 104;
+const BLOCK_H = 60;
 const H_GAP = 8;
 const ROW_GAP = 9;
-const DEPTH_STEP = 6;
+const DEPTH_STEP = 4;
 const PAD = 12;
 const GENESIS_W = 116;
-const GENESIS_H = 56;
+const GENESIS_H = 60;
 const HUB_GAP = 28;
-const MAX_PER_ROW = 11; // blocks per row before a chain wraps to the next band
+const MAX_PER_ROW = 12; // blocks per row before a chain wraps to the next band
 const GENESIS_LINK = { label: 'contains', color: '#e2c044' };
 
 const MIN_SCALE = 0.04;
@@ -308,7 +308,6 @@ export function BlockMap({ entries, storyLinks, onNodeClick }: BlockMapProps) {
                 </span>
                 <span className="blockmap-blk-body">
                   <span className="blockmap-node-name">{node.name}</span>
-                  {node.entry?.subtitle && <span className="blockmap-node-sub">{node.entry.subtitle}</span>}
                 </span>
                 <span className="blockmap-blk-foot">
                   <span className="blockmap-node-size">{node.size} {node.size === 1 ? 'entry' : 'entries'}{hasChildren ? ` · ${node.children.length} ch` : ''}</span>
