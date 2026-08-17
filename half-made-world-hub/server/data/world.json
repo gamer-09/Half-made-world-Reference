@@ -2448,7 +2448,7 @@
     "category": "Characters",
     "name": "Tera Morage",
     "subtitle": "Ruler of the Demon Realm — Mordrach (Female)",
-    "description": "The current ruler of the Demon Realm. She has a second right-hand man, Licent Varak, who reported Lisa to her.",
+    "description": "Tera Morage did not inherit the Mordrach’s crown — she tore it from the king before her, the way every Fiend who ever ruled the Demon Realm rose by killing the one above, and she has never once relaxed her grip since. Unkillable by anything short of a Divine Weapon, she let that invulnerability curdle into contempt, ruling her generals and her right-hand men with the certainty that nothing in the realm can touch her. The single exception was Lisa. Lisa was not merely her right-hand — she was her friend, the one demon Tera trusted enough to keep close — and so when Licent Varak brought her the truth of Lisa’s affair with an angel, Tera did what no Mordrach is supposed to do: she showed mercy. She demoted Lisa to Gnash, a punishment meant to hurt but not to kill, because in a realm where strength is the only truth, that was the softest sentence she could pass without appearing weak. It was still a death sentence. Licent, who had only ever hated Lisa, had her killed by his own men — and Tera, who can be killed by nothing in her realm, learned that the one law she cannot bend is the one that put her on the throne: when a Mordrach dies, all the Veyn she holds passes to the heir who can withstand it. Her court is a circle of knives, every one of them waiting for a Divine Weapon to appear, and Licent Varak, her own second right-hand, is already in the dark with Dark Moon. She does not see it, because she has spent so long fearing nothing that she has forgotten how to fear her own shadow.",
     "fields": [
       {
         "label": "Rank",
@@ -3865,6 +3865,22 @@
     ],
     "createdAt": "2026-08-17T01:07:47.595Z",
     "updatedAt": "2026-08-17T01:07:47.595Z"
+  },
+  {
+    "id": "514168c3-3ab6-4876-8fb8-1d65c0120f0f",
+    "category": "Plot",
+    "name": "Tera Morage’s Plot",
+    "subtitle": "The tyrant whose one mercy was a death sentence",
+    "description": "Tera Morage did not inherit the Mordrach’s crown — she tore it from the king before her, the way every Fiend who ever ruled the Demon Realm rose by killing the one above, and she has never once relaxed her grip since. Unkillable by anything short of a Divine Weapon, she let that invulnerability curdle into contempt, ruling her generals and her right-hand men with the certainty that nothing in the realm can touch her. The single exception was Lisa. Lisa was not merely her right-hand — she was her friend, the one demon Tera trusted enough to keep close — and so when Licent Varak brought her the truth of Lisa’s affair with an angel, Tera did what no Mordrach is supposed to do: she showed mercy. She demoted Lisa to Gnash, a punishment meant to hurt but not to kill, because in a realm where strength is the only truth, that was the softest sentence she could pass without appearing weak. It was still a death sentence. Licent, who had only ever hated Lisa, had her killed by his own men — and Tera, who can be killed by nothing in her realm, learned that the one law she cannot bend is the one that put her on the throne: when a Mordrach dies, all the Veyn she holds passes to the heir who can withstand it. Her court is a circle of knives, every one of them waiting for a Divine Weapon to appear, and Licent Varak, her own second right-hand, is already in the dark with Dark Moon. She does not see it, because she has spent so long fearing nothing that she has forgotten how to fear her own shadow.",
+    "fields": [],
+    "tags": [
+      "plot",
+      "tera morage",
+      "ruler",
+      "demon realm"
+    ],
+    "createdAt": "2026-08-17T01:14:23.357Z",
+    "updatedAt": "2026-08-17T01:14:23.357Z"
   },
   {
     "id": "bd19a14c-d2d0-4bea-a7e0-becaafd51a8a",

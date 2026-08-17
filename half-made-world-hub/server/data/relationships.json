@@ -402,5 +402,35 @@
     "description": "He watches the first hybrid the way a collector watches a rare weapon.",
     "createdAt": "2026-08-17T01:07:47.595Z",
     "updatedAt": "2026-08-17T01:07:47.595Z"
+  },
+  {
+    "id": "285d1a57-62cb-476d-a647-cd541ce559de",
+    "source": "Tera Morage",
+    "target": "Lisa",
+    "type": "friend of",
+    "label": "Friend of",
+    "description": "The one demon Tera trusted enough to keep close — and the one mercy she ever allowed.",
+    "createdAt": "2026-08-17T01:14:23.357Z",
+    "updatedAt": "2026-08-17T01:14:23.357Z"
+  },
+  {
+    "id": "381a1d14-4a9e-46d8-b841-0ea5b7acbaf1",
+    "source": "Tera Morage",
+    "target": "Licent Varak",
+    "type": "unaware of",
+    "label": "Unaware of",
+    "description": "She does not see that her own second right-hand is plotting her death with Dark Moon.",
+    "createdAt": "2026-08-17T01:14:23.357Z",
+    "updatedAt": "2026-08-17T01:14:23.357Z"
+  },
+  {
+    "id": "0e67e156-a38e-4fc9-8928-d825c72d3dda",
+    "source": "Tera Morage",
+    "target": "Jaiden Marlock",
+    "type": "unaware of",
+    "label": "Unaware of",
+    "description": "She does not know the hybrid child of Lisa and Ordium exists.",
+    "createdAt": "2026-08-17T01:14:23.357Z",
+    "updatedAt": "2026-08-17T01:14:23.357Z"
   }
 ]

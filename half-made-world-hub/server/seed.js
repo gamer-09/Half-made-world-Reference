@@ -1158,7 +1158,7 @@ module.exports = [
     "Characters",
     "Tera Morage",
     "Ruler of the Demon Realm — Mordrach (Female)",
-    "The current ruler of the Demon Realm. She has a second right-hand man, Licent Varak, who reported Lisa to her.",
+    "Tera Morage did not inherit the Mordrach’s crown — she tore it from the king before her, the way every Fiend who ever ruled the Demon Realm rose by killing the one above, and she has never once relaxed her grip since. Unkillable by anything short of a Divine Weapon, she let that invulnerability curdle into contempt, ruling her generals and her right-hand men with the certainty that nothing in the realm can touch her. The single exception was Lisa. Lisa was not merely her right-hand — she was her friend, the one demon Tera trusted enough to keep close — and so when Licent Varak brought her the truth of Lisa’s affair with an angel, Tera did what no Mordrach is supposed to do: she showed mercy. She demoted Lisa to Gnash, a punishment meant to hurt but not to kill, because in a realm where strength is the only truth, that was the softest sentence she could pass without appearing weak. It was still a death sentence. Licent, who had only ever hated Lisa, had her killed by his own men — and Tera, who can be killed by nothing in her realm, learned that the one law she cannot bend is the one that put her on the throne: when a Mordrach dies, all the Veyn she holds passes to the heir who can withstand it. Her court is a circle of knives, every one of them waiting for a Divine Weapon to appear, and Licent Varak, her own second right-hand, is already in the dark with Dark Moon. She does not see it, because she has spent so long fearing nothing that she has forgotten how to fear her own shadow.",
     [
       { label: "Rank", value: "Mordrach" },
       { label: "Race", value: "Fiends" },
@@ -1921,6 +1921,14 @@ module.exports = [
     "Wener Leger was cast out of the Angel Realm, and Dark Moon is the blade he built from the wreckage of that fall. Its goal is domination of the Realms, with Wener at the top, and he is patient enough to hide behind a swordsmanship teacher’s post at Elyndor Academy while he pieces the world’s next tyrant together from its own cast-offs — the fallen, the banished, the disgraced, and Licent Varak’s raw ambition. He is watching Jaiden Marlock, the first hybrid, the way a collector watches a rare weapon he has not yet decided how to wield. There is no higher cause and no hidden mercy in Wener; he does not want to save the world from its lies. He wants to own it.",
     [],
     ["plot", "wener leger", "dark moon", "leader"],
+  ),
+  e(
+    "Plot",
+    "Tera Morage’s Plot",
+    "The tyrant whose one mercy was a death sentence",
+    "Tera Morage did not inherit the Mordrach’s crown — she tore it from the king before her, the way every Fiend who ever ruled the Demon Realm rose by killing the one above, and she has never once relaxed her grip since. Unkillable by anything short of a Divine Weapon, she let that invulnerability curdle into contempt, ruling her generals and her right-hand men with the certainty that nothing in the realm can touch her. The single exception was Lisa. Lisa was not merely her right-hand — she was her friend, the one demon Tera trusted enough to keep close — and so when Licent Varak brought her the truth of Lisa’s affair with an angel, Tera did what no Mordrach is supposed to do: she showed mercy. She demoted Lisa to Gnash, a punishment meant to hurt but not to kill, because in a realm where strength is the only truth, that was the softest sentence she could pass without appearing weak. It was still a death sentence. Licent, who had only ever hated Lisa, had her killed by his own men — and Tera, who can be killed by nothing in her realm, learned that the one law she cannot bend is the one that put her on the throne: when a Mordrach dies, all the Veyn she holds passes to the heir who can withstand it. Her court is a circle of knives, every one of them waiting for a Divine Weapon to appear, and Licent Varak, her own second right-hand, is already in the dark with Dark Moon. She does not see it, because she has spent so long fearing nothing that she has forgotten how to fear her own shadow.",
+    [],
+    ["plot", "tera morage", "ruler", "demon realm"],
   ),
 
   // ============================================================ CHARACTERS

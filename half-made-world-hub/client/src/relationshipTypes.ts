@@ -18,6 +18,7 @@ export const RELATIONSHIP_TYPES: Record<string, RelType> = {
   demoted: { label: 'Demoted', color: '#f97316' },
   'ordered killed': { label: 'Ordered killed', color: '#f87171' },
   'rival of': { label: 'Rival of', color: '#f87171' },
+  'friend of': { label: 'Friend of', color: '#4ade80' },
   opposes: { label: 'Opposes', color: '#f87171' },
   watches: { label: 'Watches', color: '#94a3b8', dashed: true },
   drained: { label: 'Drained', color: '#c084fc' },

@@ -411,4 +411,10 @@ module.exports = [
   s("Wener Leger’s Plot", "Dark Moon", "story of", "Story of", "The evil organization he built from exile."),
   s("Wener Leger’s Plot", "Licent Varak", "story of", "Story of", "He recruited Licent Varak’s raw ambition."),
   s("Wener Leger’s Plot", "Jaiden Marlock", "story of", "Story of", "He watches the hybrid like a collector watching a weapon."),
+  s("Tera Morage’s Plot", "Tera Morage", "story of", "Story of", "The tyrant whose one mercy was a death sentence."),
+  s("Tera Morage’s Plot", "Lisa", "story of", "Story of", "Her friend, and the one mercy she ever allowed."),
+  s("Tera Morage’s Plot", "Licent Varak", "story of", "Story of", "Her second right-hand, already in the dark with Dark Moon."),
+  s("Tera Morage’s Plot", "Dark Moon", "story of", "Story of", "The circle of knives closing around her throne."),
+  s("Tera Morage’s Plot", "Mordrach", "story of", "Story of", "The rank whose succession law dooms its holder."),
+  s("Tera Morage’s Plot", "Jaiden Marlock", "story of", "Story of", "The hybrid she does not know exists."),
 ];

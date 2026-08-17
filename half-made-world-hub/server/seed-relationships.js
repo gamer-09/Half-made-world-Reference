@@ -61,4 +61,7 @@ module.exports = [
   r("Ruby Divina", "Jaiden Marlock", "knows", "Knows", "She has known of the hybrid hiding in her realm from the beginning."),
   r("Wener Leger", "Clint Ashborn", "opposes", "Opposes", "Dark Moon’s leader stands against the angelic order Clint upholds."),
   r("Wener Leger", "Jaiden Marlock", "watches", "Watches", "He watches the first hybrid the way a collector watches a rare weapon."),
+  r("Tera Morage", "Lisa", "friend of", "Friend of", "The one demon Tera trusted enough to keep close — and the one mercy she ever allowed."),
+  r("Tera Morage", "Licent Varak", "unaware of", "Unaware of", "She does not see that her own second right-hand is plotting her death with Dark Moon."),
+  r("Tera Morage", "Jaiden Marlock", "unaware of", "Unaware of", "She does not know the hybrid child of Lisa and Ordium exists."),
 ];

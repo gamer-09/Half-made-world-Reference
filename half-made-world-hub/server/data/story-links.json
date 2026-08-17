@@ -3928,5 +3928,65 @@
     "description": "He watches the hybrid like a collector watching a weapon.",
     "createdAt": "2026-08-17T01:07:47.595Z",
     "updatedAt": "2026-08-17T01:07:47.595Z"
+  },
+  {
+    "id": "bdeae71d-9903-43ab-ae4d-53945c217c40",
+    "source": "Tera Morage’s Plot",
+    "target": "Tera Morage",
+    "type": "story of",
+    "label": "Story of",
+    "description": "The tyrant whose one mercy was a death sentence.",
+    "createdAt": "2026-08-17T01:14:23.357Z",
+    "updatedAt": "2026-08-17T01:14:23.357Z"
+  },
+  {
+    "id": "42413f52-6bd4-4660-ac4c-22cb2d67d31a",
+    "source": "Tera Morage’s Plot",
+    "target": "Lisa",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Her friend, and the one mercy she ever allowed.",
+    "createdAt": "2026-08-17T01:14:23.357Z",
+    "updatedAt": "2026-08-17T01:14:23.357Z"
+  },
+  {
+    "id": "112febf6-653b-4e03-9753-658420f66fe7",
+    "source": "Tera Morage’s Plot",
+    "target": "Licent Varak",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Her second right-hand, already in the dark with Dark Moon.",
+    "createdAt": "2026-08-17T01:14:23.357Z",
+    "updatedAt": "2026-08-17T01:14:23.357Z"
+  },
+  {
+    "id": "43140b7b-2fe1-415f-bc7b-c899d949d777",
+    "source": "Tera Morage’s Plot",
+    "target": "Dark Moon",
+    "type": "story of",
+    "label": "Story of",
+    "description": "The circle of knives closing around her throne.",
+    "createdAt": "2026-08-17T01:14:23.357Z",
+    "updatedAt": "2026-08-17T01:14:23.357Z"
+  },
+  {
+    "id": "42bf07ef-2cbb-4d9b-8298-51a4e6548dc6",
+    "source": "Tera Morage’s Plot",
+    "target": "Mordrach",
+    "type": "story of",
+    "label": "Story of",
+    "description": "The rank whose succession law dooms its holder.",
+    "createdAt": "2026-08-17T01:14:23.357Z",
+    "updatedAt": "2026-08-17T01:14:23.357Z"
+  },
+  {
+    "id": "713e73bd-76b9-47db-98c2-fdc7d0969914",
+    "source": "Tera Morage’s Plot",
+    "target": "Jaiden Marlock",
+    "type": "story of",
+    "label": "Story of",
+    "description": "The hybrid she does not know exists.",
+    "createdAt": "2026-08-17T01:14:23.357Z",
+    "updatedAt": "2026-08-17T01:14:23.357Z"
   }
 ]
