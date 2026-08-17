@@ -42,7 +42,7 @@ module.exports = [
   r("Carin", "Jaiden Marlock", "Demon trainer for", "Demon trainer for", "she trained Jaiden further on how to use his demonic powers"),
   r("Sofia Marlock", "Jaiden Marlock", "Trainer of", "Trainer of", "She trained Jaiden on how to use some of his angelic powers since she was once an angel too"),
   r("Licent Varak", "Tera Morage", "Going to kill", "Going to kill", "planning to kill her for her position and become the new ruler of the demon realm"),
-  r("Kael Vornath", "Tera Morage", "serves", "Serves", "Kael Vornath is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm."),
+  r("Laren Vornath", "Tera Morage", "serves", "Serves", "Laren Vornath is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm."),
   r("Sythra Kaelis", "Tera Morage", "serves", "Serves", "Sythra Kaelis is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm."),
   r("Nyra Thessan", "Tera Morage", "serves", "Serves", "Nyra Thessan is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm."),
   r("Isella Marrek", "Tera Morage", "serves", "Serves", "Isella Marrek is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm."),

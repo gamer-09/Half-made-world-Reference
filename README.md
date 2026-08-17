@@ -11,9 +11,9 @@ have to live buried in a single document again.
 - **`Half_made world ideas.docx`** — the original source document. Everything in the hub was seeded
   from this file; it remains here as the canonical starting reference.
 
-The archive holds **185+ entries across 20 categories** — Demon/Angel Skills, Classes, Monsters,
-Items, Characters, Artifacts, Locations, Realms, Magic Systems, and more — all browsable, searchable,
-and editable through the UI.
+The archive holds **296+ entries across 23 categories** — Demon/Angel Skills, Titles, Rules & Notes,
+Characters, Classes, Monsters, Locations, Items, Magic Systems, Realms, Coins, and more — all
+browsable, searchable, and editable through the UI.
 
 ## Quick start
 
@@ -45,8 +45,8 @@ Each entry has:
 
 ## Relationship Map
 
-A dedicated **Relationship Map** view (button in the sidebar) shows the 9 named characters as nodes
-and their connections as colored, arrowed edges — who knows whom, who loves whom, who betrayed whom.
+A dedicated **Relationship Map** view shows named characters as nodes and their connections as
+colored, arrowed edges — who knows whom, who loves whom, who betrayed whom.
 
 - **Drag** characters to rearrange the layout.
 - **Hover** a character to trace all of its links; dim everything else.
@@ -55,15 +55,14 @@ and their connections as colored, arrowed edges — who knows whom, who loves wh
 - **Add relationships** through a structured form (source, target, type, label, notes) — types drive
   edge colors, e.g. `betrayed`, `ordered killed`, `right-hand of`, `unaware of`.
 
-Relationships are seeded from the reference document (15 links between the 8 characters) and persist
-in `server/data/relationships.json`.
+Relationships persist in `server/data/relationships.json`.
 
 ## Story Web
 
-A **Story Web** page (second button in the sidebar) shows the *whole story* as one interactive map —
-every realm, location, monster, being, rank, item, artifact, character, and plot thread as a node,
-connected by colored, arrowed links like `located in`, `guards`, `rules`, `kills`, `sealed in`,
-`crafted by`, and `story of`. Character relationship links are merged in too.
+A **Story Web** page shows the *whole story* as one interactive map — every realm, location,
+monster, being, rank, item, artifact, character, and plot thread as a node, connected by **399+**
+colored, arrowed links like `located in`, `guards`, `rules`, `kills`, `sealed in`, `crafted by`, and
+`story of`. Character relationship links are merged in too.
 
 - **Category chips** above the map toggle whole categories on/off (e.g. hide Classes to declutter).
 - **Drag** any node to rearrange; **hover** traces its connections; **click** a node opens its entry;
@@ -71,8 +70,18 @@ connected by colored, arrowed links like `located in`, `guards`, `rules`, `kills
 - Node ring colors match the archive category colors; link colors match their type legend.
 - **Add links** through the same structured form as relationships (any entry name is suggested).
 
-Story links are seeded from the reference document (69 links) and persist in
-`server/data/story-links.json`.
+Story links persist in `server/data/story-links.json`.
+
+## Block Map
+
+A **Block Map** view renders the world's geography as a rightward-flowing "blockchain": a genesis
+block for *The World* sits at the far left, with each realm/category laid out as its own horizontal
+chain of blocks (children in breadth-first order), packed left-to-right so the map grows wide rather
+than tall. Realms and containment links (`located in`, `lives in`, `home of`, `part of`) drive the
+hierarchy.
+
+- **Scroll** to zoom, **drag** to pan, **hover** to trace a chain, **click** a block to open its
+  entry, **Esc** to fit the whole map to screen.
 
 ## API reference
 

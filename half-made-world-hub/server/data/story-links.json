@@ -543,10 +543,10 @@
   {
     "id": "link-seed-055",
     "source": "Ethereal Potion",
-    "target": "Kaelroot Tree",
+    "target": "Ebonspire Tree",
     "type": "ingredient of",
     "label": "Ingredient of",
-    "description": "Grinded Kaelroot bark is an ingredient.",
+    "description": "Grinded Ebonspire bark is an ingredient.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -563,10 +563,10 @@
   {
     "id": "link-seed-057",
     "source": "Rejuvenating Elixir",
-    "target": "Kaelroot Tree",
+    "target": "Ebonspire Tree",
     "type": "made from",
     "label": "Made from",
-    "description": "The leaves of the Kaelroot tree brew this elixir.",
+    "description": "The leaves of the Ebonspire tree brew this elixir.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -612,7 +612,7 @@
   },
   {
     "id": "link-seed-062",
-    "source": "Sael’s Luck",
+    "source": "Selene’s Luck",
     "target": "Lethmoor Kingdom",
     "type": "found in",
     "label": "Found in",
@@ -742,7 +742,7 @@
   },
   {
     "id": "link-seed-075",
-    "source": "Sael’s Luck",
+    "source": "Selene’s Luck",
     "target": "Jaiden Marlock",
     "type": "found by",
     "label": "Found by",
@@ -2159,7 +2159,7 @@
   },
   {
     "id": "fb30ea36-7429-43d7-a06a-9a167255cc25",
-    "source": "Kaelroot Tree",
+    "source": "Ebonspire Tree",
     "target": "Hidden Realm (Shadow Realm)",
     "type": "located in",
     "label": "Located in",
@@ -2256,10 +2256,10 @@
   {
     "id": "link-seed-214",
     "source": "Jester demon",
-    "target": "Kael Vornath",
+    "target": "Laren Vornath",
     "type": "held by",
     "label": "Held by",
-    "description": "The title “Jester demon” is borne by Kael Vornath.",
+    "description": "The title “Jester demon” is borne by Laren Vornath.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -2359,7 +2359,7 @@
     "target": "Jester demon",
     "type": "skill of",
     "label": "Skill of",
-    "description": "One of Kael Vornath’s abilities — the Jester demon.",
+    "description": "One of Laren Vornath’s abilities — the Jester demon.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -2369,7 +2369,7 @@
     "target": "Jester demon",
     "type": "skill of",
     "label": "Skill of",
-    "description": "One of Kael Vornath’s abilities — the Jester demon.",
+    "description": "One of Laren Vornath’s abilities — the Jester demon.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -2379,7 +2379,7 @@
     "target": "Jester demon",
     "type": "skill of",
     "label": "Skill of",
-    "description": "One of Kael Vornath’s abilities — the Jester demon.",
+    "description": "One of Laren Vornath’s abilities — the Jester demon.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -2975,7 +2975,7 @@
   },
   {
     "id": "link-seed-297",
-    "source": "Kael Vornath",
+    "source": "Laren Vornath",
     "target": "Demon Realm",
     "type": "lives in",
     "label": "Lives in",
@@ -3339,11 +3339,11 @@
   },
   {
     "id": "link-seed-332",
-    "source": "Kael Vornath",
+    "source": "Laren Vornath",
     "target": "Imps",
     "type": "part of",
     "label": "Part of",
-    "description": "Kael Vornath is an Imp demon.",
+    "description": "Laren Vornath is an Imp demon.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -3532,20 +3532,20 @@
   {
     "id": "link-seed-349",
     "source": "Kael von Ashen",
-    "target": "Vael",
+    "target": "Aelthar",
     "type": "part of",
     "label": "Part of",
-    "description": "Kael von Ashen is the last of the Vael.",
+    "description": "Kael von Ashen is the last of the Aelthar.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
     "id": "link-seed-350",
     "source": "Potent Blood",
-    "target": "Vael",
+    "target": "Aelthar",
     "type": "innate of",
     "label": "Innate of",
-    "description": "Potent Blood is the innate ability of the Vael.",
+    "description": "Potent Blood is the innate ability of the Aelthar.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -3831,11 +3831,11 @@
   },
   {
     "id": "bdb89bd2-06c5-45e4-af23-796b0d1cd409",
-    "source": "Kael Vornath",
+    "source": "Laren Vornath",
     "target": "Corrupted Veyn",
     "type": "uses",
     "label": "Uses",
-    "description": "As an Imp, Kael Vornath wields Corrupted Veyn.",
+    "description": "As an Imp, Laren Vornath wields Corrupted Veyn.",
     "createdAt": "2026-08-16T22:39:06.448Z",
     "updatedAt": "2026-08-16T22:39:06.448Z"
   },

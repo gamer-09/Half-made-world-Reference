@@ -215,11 +215,11 @@
   },
   {
     "id": "rel-seed-017",
-    "source": "Kael Vornath",
+    "source": "Laren Vornath",
     "target": "Tera Morage",
     "type": "serves",
     "label": "Serves",
-    "description": "Kael Vornath is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.",
+    "description": "Laren Vornath is a Bloodward general serving under Tera Morage, the Mordrach ruler of the Demon Realm.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
