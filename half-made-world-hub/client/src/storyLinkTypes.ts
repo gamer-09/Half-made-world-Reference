@@ -19,6 +19,7 @@ export const STORY_LINK_TYPES: Record<string, StoryLinkType> = {
   uses: { label: 'Uses', color: '#2dd4bf' },
   'corrupted from': { label: 'Corrupted from', color: '#a855f7' },
   causes: { label: 'Causes', color: '#f87171' },
+  'fused from': { label: 'Fused from', color: '#e879f9' },
   studies: { label: 'Studies', color: '#4ade80' },
   kills: { label: 'Can kill', color: '#f87171' },
   'sealed in': { label: 'Sealed in', color: '#38bdf8' },

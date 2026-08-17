@@ -4088,5 +4088,765 @@
     "description": "Vorath is the ruling kingdom of the Demon Realm.",
     "createdAt": "2026-08-17T12:12:05.590Z",
     "updatedAt": "2026-08-17T12:12:05.590Z"
+  },
+  {
+    "id": "4e3662b4-b7f6-43d6-8f14-c6a099a06a22",
+    "source": "Twilight Chains",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "4c37eec1-0a28-42ee-b259-80159967897a",
+    "source": "Twilight Chains",
+    "target": "Skyward Chains",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Skyward Chains.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "c041a361-6c90-436b-86f2-920ee0f00606",
+    "source": "Twilight Chains",
+    "target": "Blood Chains",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Blood Chains.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "36275a80-bdc8-4893-bfe1-88cd5b7ab51d",
+    "source": "Cry of the Sundered",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "36d762c3-3c4c-424c-86eb-7db840295310",
+    "source": "Cry of the Sundered",
+    "target": "Vanguard's Cry",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Vanguard's Cry.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "2dc1511d-06ed-4b14-9b2c-b1bedf28a779",
+    "source": "Cry of the Sundered",
+    "target": "Warcry of Dominion",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Warcry of Dominion.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "edad4ac9-44ba-4f5c-9b42-8835c92ca44a",
+    "source": "Hollow Aegis",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "510e8983-b858-408c-8e9a-c3ebcb6b7f1e",
+    "source": "Hollow Aegis",
+    "target": "Aegis Ward",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Aegis Ward.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "98d53655-adf6-4839-8114-773066d62183",
+    "source": "Hollow Aegis",
+    "target": "Crimson Ward",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Crimson Ward.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "beced40e-65bc-4555-b2e0-e3e18b7a2cd1",
+    "source": "Mend-and-Rend",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "d0647a5b-fb13-4151-be05-c567ab90332e",
+    "source": "Mend-and-Rend",
+    "target": "Holy Mend",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Holy Mend.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "8cbd1966-09ab-4765-bf2c-9166951bca81",
+    "source": "Mend-and-Rend",
+    "target": "Fading Wound",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Fading Wound.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "bb738bb7-1c61-4fb8-a770-a24e9d3d837e",
+    "source": "Aura of the Split Crown",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "bd290474-759f-40d8-aa4a-ade5c13614ed",
+    "source": "Aura of the Split Crown",
+    "target": "Angelic Aura (Aetherblade)",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Angelic Aura (Aetherblade).",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "cf135816-9836-4fd3-a19a-1fc0c55dccd9",
+    "source": "Aura of the Split Crown",
+    "target": "Demonic Aura (Bloodward)",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Demonic Aura (Bloodward).",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "9e2fc653-3b33-4adc-a0ab-02a9e026ce3d",
+    "source": "Vexstep",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "0471b134-237c-4155-9b81-b22126f56425",
+    "source": "Vexstep",
+    "target": "Swiftstep",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Swiftstep.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "61b875e0-5286-4533-bcb2-0e42494cfa70",
+    "source": "Vexstep",
+    "target": "Traitor’s Step",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Traitor's Step.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "606bb29c-84b0-4ffb-bcab-fff9722514cb",
+    "source": "Gloaming Veil",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "fc1af048-a7d6-4e5a-be9b-743fad6cca66",
+    "source": "Gloaming Veil",
+    "target": "Dawnveil (Aetherblade)",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Dawnveil (Aetherblade).",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "aa4d19ac-7298-4c7e-984e-2a9a0d9ff517",
+    "source": "Gloaming Veil",
+    "target": "Duskveil (Bloodward)",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Duskveil (Bloodward).",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "b9d70257-5fbe-471e-bd01-5f51b9a426a1",
+    "source": "Lapsing Miasma",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "ee380b99-0a7d-4a64-8c2a-88273290b3e2",
+    "source": "Lapsing Miasma",
+    "target": "Lapse",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Lapse.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "f1b942fc-5a3f-4625-a046-2a1526c424d9",
+    "source": "Lapsing Miasma",
+    "target": "Grey Miasma",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Grey Miasma.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "bea397e9-69e2-484d-be61-340275a040a7",
+    "source": "Rewound Double",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "77d5b4dd-deda-479f-9c4b-eff4aff006c8",
+    "source": "Rewound Double",
+    "target": "Rewind",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Rewind.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "04d121f0-6870-4233-bb97-a3dd6189da3a",
+    "source": "Rewound Double",
+    "target": "Blood Jape",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Blood Jape.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "fe08a281-0f3d-49b4-837f-0b8b21d22365",
+    "source": "Sealed Hour",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "2afd921f-b5a9-4bd3-bcf2-3a6be44748fa",
+    "source": "Sealed Hour",
+    "target": "Still Hour",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Still Hour.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "210bff47-ad07-4ff0-98db-f68c1495fcae",
+    "source": "Sealed Hour",
+    "target": "Seal",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Seal.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "32398a66-3af4-42ab-a603-21be6e2fe198",
+    "source": "Sight of Threads",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "915cdd45-bb6e-464e-b498-e85611c40eac",
+    "source": "Sight of Threads",
+    "target": "Long Sight",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Long Sight.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "eb4c152c-af53-4256-913a-50867cc05322",
+    "source": "Sight of Threads",
+    "target": "Bond-Sight",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Bond-Sight.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "a437ee86-f4a9-4428-8b35-2d7ce41a81bd",
+    "source": "Sunburst",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "8070aebd-1d85-4c66-95de-b7c3e95b4a6f",
+    "source": "Sunburst",
+    "target": "Burning Path",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Burning Path.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "dc30d5e7-15c0-4794-94f8-7780eda9c90a",
+    "source": "Sunburst",
+    "target": "Cornucopia",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Cornucopia.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "2eab5923-2b2b-4c32-a0d9-cd6d396d1e35",
+    "source": "Gorged Sun",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "0b842905-4b25-4465-9a8b-5811432c96bd",
+    "source": "Gorged Sun",
+    "target": "Second Sun",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Second Sun.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "868b23c2-0111-430f-a27a-161455bc0bbb",
+    "source": "Gorged Sun",
+    "target": "Glut",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Glut.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "fc9cd8ef-cb01-4c6d-9532-e615befda311",
+    "source": "War-Frenzy",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "643713dd-7f4f-4832-b009-65645cba28f4",
+    "source": "War-Frenzy",
+    "target": "Battle Trance",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Battle Trance.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "216bb4ee-1c8f-46ce-9e15-db69505e7648",
+    "source": "War-Frenzy",
+    "target": "Berserk (Bloodward)",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Berserk (Bloodward).",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "06b5727b-3a72-4c45-a97f-0b3a1d3a628f",
+    "source": "Grasp-and-Reap",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "f650a65c-b630-4e36-aa84-9c2c7b41f27e",
+    "source": "Grasp-and-Reap",
+    "target": "Ravager’s Grasp",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Ravager's Grasp.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "0354c627-85e7-4a0a-9b4f-a6dbd774ebd9",
+    "source": "Grasp-and-Reap",
+    "target": "Reap",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Reap.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "ec2494ef-4ff4-4112-a497-4745a398ad66",
+    "source": "War-Sated",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "4f80829c-2561-49a2-a135-014c07a24f2e",
+    "source": "War-Sated",
+    "target": "War-Worn",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill War-Worn.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "dbc74721-aa76-417b-91bb-7bec471e4675",
+    "source": "War-Sated",
+    "target": "Unslaked",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Unslaked.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "c8b0bcb5-e858-4caa-9c0c-7286e24d911f",
+    "source": "Dread Toll",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "81b542de-8f0e-4a9c-a66f-8dcb756a5711",
+    "source": "Dread Toll",
+    "target": "Dread-Herald",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Dread-Herald.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "483b31de-c293-48ed-a3c3-18a82889c768",
+    "source": "Dread Toll",
+    "target": "Widow’s Toll",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Widow's Toll.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "3cacf726-699a-4a77-baf9-5f22386c87bf",
+    "source": "Unheard Whisper",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "a04efa90-729e-415a-bc58-97c056307835",
+    "source": "Unheard Whisper",
+    "target": "Unheralded",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Unheralded.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "ac4cef63-a404-4a06-83e5-b37f2623f560",
+    "source": "Unheard Whisper",
+    "target": "Red Whisper",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Red Whisper.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "ab3b4473-466c-44d3-b361-1471f86a3b86",
+    "source": "Dreadbind",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "4fdc0ca0-46a5-4e6c-8b9b-b7140a8072e0",
+    "source": "Dreadbind",
+    "target": "Dreadweight",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Dreadweight.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "a6d26c5e-3bdc-43ae-a11c-f733b5906ec5",
+    "source": "Dreadbind",
+    "target": "Heart-Bind",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Heart-Bind.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "8b4ed54a-059b-4735-beb4-87d449094511",
+    "source": "Bound Rite",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "29c4cd42-2b6f-4623-966f-90c67d785d6e",
+    "source": "Bound Rite",
+    "target": "Altar-Rite",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Altar-Rite.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "85bc492f-aeee-46f4-b365-538dab30009f",
+    "source": "Bound Rite",
+    "target": "Blood Pact",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Blood Pact.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "39c8ebe2-45f1-42d2-944e-277adf592652",
+    "source": "Oathbrand",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "7bdbfbe0-d028-45ae-abe8-85a2868b3696",
+    "source": "Oathbrand",
+    "target": "Vowbrand",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Vowbrand.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "ad724d6f-7ffd-439d-9960-238cd1e20557",
+    "source": "Oathbrand",
+    "target": "Blood-Oath",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Blood-Oath.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "3991fdf4-7498-470b-a32d-2cd18b277746",
+    "source": "Bitter Truth",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "255e3557-2715-4951-8323-bc42b7ded978",
+    "source": "Bitter Truth",
+    "target": "Truthvein",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Truthvein.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "3a12ea9f-da7e-4792-a059-f988f8b38244",
+    "source": "Bitter Truth",
+    "target": "Guile",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Guile.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "dab52d7a-feab-4e8a-9e6f-d9599968c94a",
+    "source": "Eye of Ruin",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "f92037c2-7993-4ab9-a4ec-cac1d140337e",
+    "source": "Eye of Ruin",
+    "target": "All-Seeing Eye",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill All-Seeing Eye.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "221a34ea-84f4-4e6e-b5af-bf41a7eba1ee",
+    "source": "Eye of Ruin",
+    "target": "Veyn Decomposition (Bloodward)",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Veyn Decomposition (Bloodward).",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "b3d4c051-873d-45db-8428-5d2398624aa4",
+    "source": "Recall of the Buried",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "57e5ff4f-5350-4d87-9ed0-e53908a11aa8",
+    "source": "Recall of the Buried",
+    "target": "Warden’s Recall",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Warden's Recall.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "ef693e45-fabb-4361-9923-da53a068909f",
+    "source": "Recall of the Buried",
+    "target": "Disinter",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Disinter.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "0bee0dbc-8231-465f-bcc9-5cc2bc35c6d5",
+    "source": "Draining Mark",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A hybrid skill of the True Hybrid Form.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "a156fb5d-bb13-407b-b3ac-3db20730e0b7",
+    "source": "Draining Mark",
+    "target": "Warden’s Mark",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the angel skill Warden's Mark.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "1333c478-9b74-4192-80e7-15805cd1091b",
+    "source": "Draining Mark",
+    "target": "Siphon",
+    "type": "fused from",
+    "label": "Fused from",
+    "description": "Fuses the demon skill Siphon.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
+  },
+  {
+    "id": "ded3b6b1-196b-4867-9693-0669a7e008b3",
+    "source": "Hybrid Fusion",
+    "target": "Jaiden Marlock — True Hybrid Form",
+    "type": "about",
+    "label": "About",
+    "description": "The mechanic behind the hybrid form’s mutated skills.",
+    "createdAt": "2026-08-17T23:39:00.920Z",
+    "updatedAt": "2026-08-17T23:39:00.920Z"
   }
 ]
