@@ -2629,7 +2629,7 @@
     "category": "Angel Skills",
     "name": "Kings Record",
     "subtitle": "Serapharch skill",
-    "description": "See a glimpse of someone's memories and past just by touching them.",
+    "description": "By making physical contact, the user can view fragments of a target's memories and past experiences. The clearer the contact and the stronger the user's focus, the more detailed the visions become.",
     "fields": [],
     "tags": [
       "skill",
@@ -2637,7 +2637,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-113",
@@ -2659,7 +2659,7 @@
     "category": "Angel Skills",
     "name": "Time Reversal",
     "subtitle": "Serapharch skill",
-    "description": "Reverses time for up to 20 seconds.",
+    "description": "Reverses the flow of time in a small area or on a single target for up to 20 seconds, undoing recent actions or injuries within that window.",
     "fields": [],
     "tags": [
       "skill",
@@ -2667,14 +2667,14 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-115",
     "category": "Angel Skills",
     "name": "Chronos Fury",
     "subtitle": "Serapharch skill",
-    "description": "Summons a barrage of lightning down on a location of their choosing.",
+    "description": "Calls down a concentrated storm of lightning onto a chosen location, striking with high precision and destructive force.",
     "fields": [],
     "tags": [
       "skill",
@@ -2682,14 +2682,14 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-116",
     "category": "Angel Skills",
     "name": "Will Mastery",
     "subtitle": "Serapharch skill",
-    "description": "Forms any weapon out of Veyn and can send out air blades to strike from a distance.",
+    "description": "Shapes pure Veyn into any weapon the user can imagine. The formed weapons can also launch sharp blades of compressed air from a distance.",
     "fields": [],
     "tags": [
       "skill",
@@ -2697,14 +2697,14 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-117",
     "category": "Angel Skills",
     "name": "Holy Rain",
     "subtitle": "Serapharch skill",
-    "description": "Deals damage to the undead while healing and restoring Veyn to allies.",
+    "description": "Summons a rain of purified holy energy that burns undead and corrupted beings while healing allies and restoring their Veyn.",
     "fields": [],
     "tags": [
       "skill",
@@ -2712,7 +2712,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-118",
@@ -2734,7 +2734,7 @@
     "category": "Angel Skills",
     "name": "Angelic Aura (Serapharch)",
     "subtitle": "Serapharch skill",
-    "description": "Always active. It makes anyone weaker than them want to bow, stripping away the will to oppose them.",
+    "description": "A constant, overwhelming presence that presses down on anyone weaker. It strips away the will to resist, making targets feel an instinctive urge to bow or submit. Even strong opponents feel their resolve weaken under its weight.",
     "fields": [],
     "tags": [
       "skill",
@@ -2742,7 +2742,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-120",
@@ -2764,7 +2764,7 @@
     "category": "Angel Skills",
     "name": "God's Index Finger",
     "subtitle": "Serapharch skill",
-    "description": "Summons a giant golden index finger to suppress an opponent, or shrinks it down into an extension of their own hand.",
+    "description": "Manifests a massive golden finger that can press down on a target to suppress their movement and power. It can also shrink into an extension of the user's own hand for close combat.",
     "fields": [],
     "tags": [
       "skill",
@@ -2772,14 +2772,14 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-122",
     "category": "Angel Skills",
     "name": "God Chain",
     "subtitle": "Serapharch skill",
-    "description": "Forms chains of light to lock down an opponent.",
+    "description": "Creates strong chains of light that bind a target's body and restrict their ability to move or cast skills.",
     "fields": [],
     "tags": [
       "skill",
@@ -2787,7 +2787,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-123",
@@ -2809,7 +2809,7 @@
     "category": "Angel Skills",
     "name": "Warpstep",
     "subtitle": "Serapharch skill",
-    "description": "Instantly moves anywhere within 6 meters using Veyn.",
+    "description": "Allows the user to instantly relocate to any point within 6 meters by folding space with Veyn.",
     "fields": [],
     "tags": [
       "skill",
@@ -2817,7 +2817,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-125",
@@ -2839,7 +2839,7 @@
     "category": "Angel Skills",
     "name": "Skyward Chains",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "A lesser version of God Chain — forms light chains to restrain an opponent, though weaker and easier to break free from.",
+    "description": "A lesser form of God Chain. Forms lighter chains that still restrain a target but are easier to break with enough force.",
     "fields": [],
     "tags": [
       "skill",
@@ -2847,14 +2847,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-127",
     "category": "Angel Skills",
     "name": "Vanguard's Cry",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "A battle-shout that temporarily boosts the strength and resolve of every angel under their command.",
+    "description": "A powerful battle shout that temporarily strengthens the bodies and resolve of all angels under the user's command.",
     "fields": [],
     "tags": [
       "skill",
@@ -2862,14 +2862,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-128",
     "category": "Angel Skills",
     "name": "Aegis Ward",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Forms a barrier of solidified light and Veyn to block incoming attacks, though holding it drains their own regeneration.",
+    "description": "Forms a solid barrier of light and condensed Veyn that can block incoming attacks. Maintaining the barrier continuously drains the user's regenerative ability.",
     "fields": [],
     "tags": [
       "skill",
@@ -2877,14 +2877,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-129",
     "category": "Angel Skills",
     "name": "Holy Mend",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "A lesser version of Holy Rain — heals allies and damages undead, but with a smaller range and weaker potency.",
+    "description": "A weaker version of Holy Rain. Heals allies and harms undead in a smaller area with reduced potency.",
     "fields": [],
     "tags": [
       "skill",
@@ -2892,14 +2892,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-130",
     "category": "Angel Skills",
     "name": "Angelic Aura (Aetherblade)",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Same trait as the Serapharch's, though noticeably weaker.",
+    "description": "A powerful but lesser version of the Serapharch's aura. It creates heavy pressure that makes weaker beings hesitate and struggle to fight at full strength. Not as absolute as the highest rank, but still difficult to ignore.",
     "fields": [],
     "tags": [
       "skill",
@@ -2907,14 +2907,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-131",
     "category": "Angel Skills",
     "name": "Swiftstep",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "A lesser version of Warpstep — instantly moves anywhere within 3 meters using Veyn.",
+    "description": "A shorter-range version of Warpstep. Instantly moves the user up to 3 meters.",
     "fields": [],
     "tags": [
       "skill",
@@ -2922,14 +2922,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-132",
     "category": "Angel Skills",
     "name": "Dawnveil (Aetherblade)",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Same innate ability as all angels, though the disguise holds up a bit weaker under scrutiny.",
+    "description": "Allows the user to hide their true form and aura, blending into normal society. The disguise is solid but not perfect — close inspection or strong magical senses can reveal subtle flaws.",
     "fields": [],
     "tags": [
       "skill",
@@ -2937,14 +2937,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-133",
     "category": "Angel Skills",
     "name": "Guiding Light",
     "subtitle": "Virtue skill",
-    "description": "A basic healing touch that closes minor wounds — far weaker than Holy Mend and unable to affect undead.",
+    "description": "A gentle healing touch that closes minor wounds. It has no effect on undead or heavily corrupted beings.",
     "fields": [],
     "tags": [
       "skill",
@@ -2952,14 +2952,14 @@
       "virtue"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-134",
     "category": "Angel Skills",
     "name": "Radiant Strike",
     "subtitle": "Virtue skill",
-    "description": "Their weapon carries a faint holy charge, dealing bonus damage against undead and demons.",
+    "description": "Infuses the user's weapon with a faint holy charge, causing extra damage to undead and demons on contact.",
     "fields": [],
     "tags": [
       "skill",
@@ -2967,14 +2967,14 @@
       "virtue"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-135",
     "category": "Angel Skills",
     "name": "Formation Discipline",
     "subtitle": "Virtue skill",
-    "description": "Fight best in disciplined groups, gaining strength and defense boost when near other Virtues.",
+    "description": "When fighting near other Virtues, the user gains increased strength and defense through coordinated discipline.",
     "fields": [],
     "tags": [
       "skill",
@@ -2982,14 +2982,14 @@
       "virtue"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-136",
     "category": "Angel Skills",
     "name": "Angelic Aura (Virtue)",
     "subtitle": "Virtue skill",
-    "description": "Same trait as the higher ranks, weaker still — more of a passive unease in those nearby than true submission.",
+    "description": "A steady passive presence that creates unease in those nearby. It doesn't force submission, but it unsettles opponents and makes them feel watched and pressured.",
     "fields": [],
     "tags": [
       "skill",
@@ -2997,14 +2997,14 @@
       "virtue"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-137",
     "category": "Angel Skills",
     "name": "Dawnveil (Virtue)",
     "subtitle": "Virtue skill",
-    "description": "Same innate ability, though the disguise is rougher and more likely to slip under pressure.",
+    "description": "A rougher version of the disguise. It works well at a distance, but under stress or close scrutiny it becomes unstable and more likely to slip.",
     "fields": [],
     "tags": [
       "skill",
@@ -3012,7 +3012,7 @@
       "virtue"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-138",
@@ -3034,7 +3034,7 @@
     "category": "Angel Skills",
     "name": "Faint Ward",
     "subtitle": "Lumen skill",
-    "description": "Can form a very weak shield, enough to block a single low-power attack.",
+    "description": "Creates a thin, fragile shield capable of blocking only a single low-power attack before shattering.",
     "fields": [],
     "tags": [
       "skill",
@@ -3042,14 +3042,14 @@
       "lumen"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-140",
     "category": "Angel Skills",
     "name": "Angelic Aura (Lumen)",
     "subtitle": "Lumen skill",
-    "description": "The weakest version, barely perceptible to anyone nearby.",
+    "description": "The weakest form. It only produces a faint sense of presence, barely noticeable unless someone is paying close attention.",
     "fields": [],
     "tags": [
       "skill",
@@ -3057,7 +3057,7 @@
       "lumen"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-141",
@@ -3094,7 +3094,7 @@
     "category": "Demon Skills",
     "name": "Chain Reaper Scythe",
     "subtitle": "Mordrach skill",
-    "description": "Their main weapon — a chain scythe controlled purely by will. It can be shrunk down into an accessory for easy carrying.",
+    "description": "A long chain scythe controlled entirely by the user's will. It can be compacted into a small accessory when not needed.",
     "fields": [],
     "tags": [
       "skill",
@@ -3102,14 +3102,14 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-144",
     "category": "Demon Skills",
     "name": "Call of the Dead",
     "subtitle": "Mordrach skill",
-    "description": "Opens a hell's gate that releases an undead army to fight for them.",
+    "description": "Tears open a temporary gate that releases a group of undead soldiers to fight under the user's command.",
     "fields": [],
     "tags": [
       "skill",
@@ -3117,7 +3117,7 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-145",
@@ -3229,7 +3229,7 @@
     "category": "Demon Skills",
     "name": "Berserk (Mordrach)",
     "subtitle": "Mordrach skill",
-    "description": "Triggers automatically at low health. Boosts attack power and magic attacks by 20x but sharply reduces reasoning.",
+    "description": "Triggers automatically when the user's health drops critically low. Attack power and magic surge to extreme levels (roughly 20 times normal), but reasoning and self-control are sharply reduced, making the user far more reckless.",
     "fields": [],
     "tags": [
       "skill",
@@ -3237,7 +3237,7 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-153",
@@ -3289,7 +3289,7 @@
     "category": "Demon Skills",
     "name": "Warcry of Dominion",
     "subtitle": "Bloodward skill",
-    "description": "A battle-shout that temporarily boosts the strength and resolve of every demon under their command.",
+    "description": "A commanding battle shout that temporarily increases the strength and fighting spirit of all demons under the user's authority.",
     "fields": [],
     "tags": [
       "skill",
@@ -3297,14 +3297,14 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-157",
     "category": "Demon Skills",
     "name": "Crimson Ward",
     "subtitle": "Bloodward skill",
-    "description": "Forms a barrier of hardened blood and Veyn to block incoming attacks, though holding it drains their own regeneration.",
+    "description": "Forms a dense barrier of hardened blood and Veyn. It can block strong attacks, but holding it steadily drains the user's ability to regenerate.",
     "fields": [],
     "tags": [
       "skill",
@@ -3312,7 +3312,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-158",
@@ -3334,7 +3334,7 @@
     "category": "Demon Skills",
     "name": "Veyn Decomposition (Bloodward)",
     "subtitle": "Bloodward skill",
-    "description": "Same innate demon ability as the Mordrach, though the miasma they produce is noticeably weaker.",
+    "description": "Converts the user's Veyn into a toxic miasma that harms living beings and interferes with holy energy. Noticeably weaker than a Mordrach's version, but still dangerous in close range.",
     "fields": [],
     "tags": [
       "skill",
@@ -3342,14 +3342,14 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-160",
     "category": "Demon Skills",
     "name": "Demonic Aura (Bloodward)",
     "subtitle": "Bloodward skill",
-    "description": "Always active. It makes those weaker than you want to bow before you. Can be cloaked by Duskveil, but only a little.",
+    "description": "A constant oppressive presence that makes those weaker feel the urge to bow or submit. It can be partially hidden with Duskveil, but not completely.",
     "fields": [],
     "tags": [
       "skill",
@@ -3357,14 +3357,14 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-161",
     "category": "Demon Skills",
     "name": "Berserk (Bloodward)",
     "subtitle": "Bloodward skill",
-    "description": "Same trigger as the Mordrach's, but the boost is smaller — 10x instead of 20x.",
+    "description": "Triggers at low health. Provides a strong boost to attack power and magic (around 10 times normal) while reducing clear thinking and restraint.",
     "fields": [],
     "tags": [
       "skill",
@@ -3372,7 +3372,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-162",
@@ -3394,7 +3394,7 @@
     "category": "Demon Skills",
     "name": "Vitality Surge",
     "subtitle": "Scourge skill",
-    "description": "Burns their own Vitality to temporarily boost physical strength and speed.",
+    "description": "Burns the user's own life force to grant a temporary surge in physical strength and speed.",
     "fields": [],
     "tags": [
       "skill",
@@ -3402,14 +3402,14 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-164",
     "category": "Demon Skills",
     "name": "Rend Claws",
     "subtitle": "Scourge skill",
-    "description": "Their claws are naturally sharp enough to tear through most conventional armor.",
+    "description": "Natural claws sharp and tough enough to cut through most ordinary armor and weapons.",
     "fields": [],
     "tags": [
       "skill",
@@ -3417,14 +3417,14 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-165",
     "category": "Demon Skills",
     "name": "Pack Tactics",
     "subtitle": "Scourge skill",
-    "description": "Fight best in numbers, gaining strength and defense boost when near another Scourge.",
+    "description": "When fighting near other Scourges, the user gains increased strength and defense through coordinated aggression.",
     "fields": [],
     "tags": [
       "skill",
@@ -3432,7 +3432,7 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-166",
@@ -3454,7 +3454,7 @@
     "category": "Demon Skills",
     "name": "Berserk (Scourge)",
     "subtitle": "Scourge skill",
-    "description": "Same trigger, weaker boost — 5x instead of 20x.",
+    "description": "Triggers at low health. Offers a moderate boost (around 5 times normal) with reduced reasoning.",
     "fields": [],
     "tags": [
       "skill",
@@ -3462,14 +3462,14 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-168",
     "category": "Demon Skills",
     "name": "Demonic Aura (Scourge)",
     "subtitle": "Scourge skill",
-    "description": "Always active. It makes those weaker than you want to bow before you. Their aura is weak.",
+    "description": "A weaker but still noticeable pressure. It unsettles those of lower rank and makes them more hesitant to oppose the user.",
     "fields": [],
     "tags": [
       "skill",
@@ -3477,7 +3477,7 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-169",
@@ -3514,7 +3514,7 @@
     "category": "Demon Skills",
     "name": "Veyn Decomposition (Gnash)",
     "subtitle": "Gnash skill",
-    "description": "Barely perceptible at this rank — more of an unsettling presence than actual miasma, but it can cause hallucinations.",
+    "description": "Produces only a thin, unsettling presence rather than true miasma. Prolonged exposure can cause mild hallucinations and disorientation in weaker targets.",
     "fields": [],
     "tags": [
       "skill",
@@ -3522,7 +3522,7 @@
       "gnash"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-172",
@@ -3544,7 +3544,7 @@
     "category": "Demon Skills",
     "name": "Demonic Aura (Gnash)",
     "subtitle": "Gnash skill",
-    "description": "Always active. It makes those weaker than you want to bow before you.",
+    "description": "The faintest version. It only creates a mild sense of unease in those nearby.",
     "fields": [],
     "tags": [
       "skill",
@@ -3552,7 +3552,7 @@
       "gnash"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-174",
@@ -4554,7 +4554,7 @@
     "category": "Demon Skills",
     "name": "Red Whisper",
     "subtitle": "Bloodward skill",
-    "description": "A Veyn-laced whisper that breaks an enemy’s spell mid-cast.",
+    "description": "A quiet, Veyn-laced whisper that can interrupt and shatter an enemy's spell while it is being cast.",
     "fields": [],
     "tags": [
       "skill",
@@ -4562,14 +4562,14 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-228",
     "category": "Demon Skills",
     "name": "Blood Jape",
     "subtitle": "Bloodward skill",
-    "description": "Conjures a moving double of himself from blood-Veyn; it takes a hit meant for him, then collapses when spent.",
+    "description": "Creates a moving double formed from blood and Veyn. The double can take a fatal hit in the user's place before collapsing.",
     "fields": [],
     "tags": [
       "skill",
@@ -4577,14 +4577,14 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-229",
     "category": "Demon Skills",
     "name": "Traitor’s Step",
     "subtitle": "Bloodward skill",
-    "description": "Swaps position with an enemy he’s already wounded, leaving them where he stood.",
+    "description": "Allows the user to instantly swap positions with an enemy they have already wounded.",
     "fields": [],
     "tags": [
       "skill",
@@ -4592,14 +4592,14 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-230",
     "category": "Demon Skills",
     "name": "Grey Miasma",
     "subtitle": "Bloodward skill",
-    "description": "Bleeds a faint grey Veyn-mist that clings to a field, slowing anyone who breathes it.",
+    "description": "Releases a thin grey mist that clings to the area and slows the movements of anyone who breathes it in.",
     "fields": [],
     "tags": [
       "skill",
@@ -4607,7 +4607,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-231",
@@ -4629,7 +4629,7 @@
     "category": "Demon Skills",
     "name": "Fading Wound",
     "subtitle": "Bloodward skill",
-    "description": "A wound she gives doesn’t hurt so much as exhaust; the victim’s Veyn drains away.",
+    "description": "Wounds inflicted by the user do not only cause pain — they steadily drain the target's Veyn over time.",
     "fields": [],
     "tags": [
       "skill",
@@ -4637,7 +4637,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-233",
@@ -4659,7 +4659,7 @@
     "category": "Demon Skills",
     "name": "Lover’s Step",
     "subtitle": "Bloodward skill",
-    "description": "Makes the affected fall in love with her, listening to her and doing whatever she asks.",
+    "description": "Subtly influences a target's emotions, making them more willing to listen, trust, or obey the user for a limited time.",
     "fields": [],
     "tags": [
       "skill",
@@ -4667,7 +4667,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-235",
@@ -4689,7 +4689,7 @@
     "category": "Demon Skills",
     "name": "Siphon",
     "subtitle": "Bloodward skill",
-    "description": "Drains away magic weaker than her.",
+    "description": "Drains magical energy from targets weaker than the user and adds a portion of it to the user's own reserves.",
     "fields": [],
     "tags": [
       "skill",
@@ -4697,14 +4697,14 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-240",
     "category": "Demon Skills",
     "name": "Unslaked",
     "subtitle": "Bloodward skill",
-    "description": "The more magic she eats, the stronger she gets.",
+    "description": "The more magical energy the user absorbs, the stronger their body and attacks temporarily become.",
     "fields": [],
     "tags": [
       "skill",
@@ -4712,14 +4712,14 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-241",
     "category": "Demon Skills",
     "name": "Seal",
     "subtitle": "Bloodward skill",
-    "description": "Locks an opponent’s special ability for 1 minute.",
+    "description": "Temporarily locks away one of an opponent's special abilities, preventing its use for a short period.",
     "fields": [],
     "tags": [
       "skill",
@@ -4727,14 +4727,14 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-245",
     "category": "Angel Skills",
     "name": "Lapse",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Slows the flow of a single moment around a target.",
+    "description": "Slows the flow of time around a single target, making their movements and reactions noticeably sluggish for a short period.",
     "fields": [],
     "tags": [
       "skill",
@@ -4742,14 +4742,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-246",
     "category": "Angel Skills",
     "name": "Rewind",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Undoes the last few seconds of a wound he just took.",
+    "description": "Reverses the last few seconds of damage the user has taken, restoring the body to its previous state.",
     "fields": [],
     "tags": [
       "skill",
@@ -4757,14 +4757,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-247",
     "category": "Angel Skills",
     "name": "Still Hour",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Locks a target in the instant between one breath and the next.",
+    "description": "Freezes a target in the brief moment between one breath and the next, locking them in place for a short time.",
     "fields": [],
     "tags": [
       "skill",
@@ -4772,14 +4772,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-248",
     "category": "Angel Skills",
     "name": "Long Sight",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Sees clearly across the far edge of the realm, spotting a threat before it draws near.",
+    "description": "Extends the user's vision across great distances within the realm, allowing them to spot threats long before they arrive.",
     "fields": [],
     "tags": [
       "skill",
@@ -4787,14 +4787,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-249",
     "category": "Angel Skills",
     "name": "Burning Path",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Leaves a line of light on the ground that scorches whoever crosses it.",
+    "description": "Leaves a glowing trail of light on the ground that scorches and damages anyone who steps across it.",
     "fields": [],
     "tags": [
       "skill",
@@ -4802,14 +4802,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-250",
     "category": "Angel Skills",
     "name": "Second Sun",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Conjures a hovering light that blinds and marks a single target.",
+    "description": "Creates a hovering sphere of intense light that blinds a target and marks them, making them easier to track and hit.",
     "fields": [],
     "tags": [
       "skill",
@@ -4817,14 +4817,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-251",
     "category": "Angel Skills",
     "name": "Battle Trance",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Enters a trance where pain cannot slow her.",
+    "description": "Pushes the user into a focused state where pain no longer interferes with movement or decision-making.",
     "fields": [],
     "tags": [
       "skill",
@@ -4832,14 +4832,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-252",
     "category": "Angel Skills",
     "name": "Ravager’s Grasp",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Wrenches a weapon or shield from an enemy’s grip.",
+    "description": "Violently tears a weapon or shield from an opponent's hands using raw force mixed with Veyn.",
     "fields": [],
     "tags": [
       "skill",
@@ -4847,14 +4847,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-253",
     "category": "Angel Skills",
     "name": "War-Worn",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Her body grows harder with every wound she takes.",
+    "description": "With every wound the user receives, their body becomes harder and more resistant to further damage.",
     "fields": [],
     "tags": [
       "skill",
@@ -4862,7 +4862,7 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-254",
@@ -4929,7 +4929,7 @@
     "category": "Angel Skills",
     "name": "Vowbrand",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Curses whoever breaks a vow sworn before him.",
+    "description": "Places a conditional curse on a target. If the target breaks a stated rule or promise, the curse activates — draining Veyn, weakening the body, or briefly locking their movements.",
     "fields": [],
     "tags": [
       "skill",
@@ -4937,14 +4937,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-259",
     "category": "Angel Skills",
     "name": "Truthvein",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Senses the moment a vow is spoken falsely.",
+    "description": "Allows the user to sense the truth behind spoken words. Lies, half-truths, and deceptions become clear. In combat, it also helps the user read feints and false openings.",
     "fields": [],
     "tags": [
       "skill",
@@ -4952,14 +4952,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-260",
     "category": "Angel Skills",
     "name": "All-Seeing Eye",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Sees everything within his watch at once, missing nothing.",
+    "description": "Grants the user complete awareness of everything happening within their designated area of watch at the same time.",
     "fields": [],
     "tags": [
       "skill",
@@ -4967,14 +4967,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-261",
     "category": "Angel Skills",
     "name": "Warden’s Recall",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Recalls in perfect detail anything he has ever witnessed.",
+    "description": "Gives the user perfect and permanent memory of anything they have personally witnessed.",
     "fields": [],
     "tags": [
       "skill",
@@ -4982,14 +4982,14 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-262",
     "category": "Angel Skills",
     "name": "Warden’s Mark",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "Marks an intruder so he can track them anywhere in the realm.",
+    "description": "Places an invisible mark on a target that allows the user to track them anywhere within the realm.",
     "fields": [],
     "tags": [
       "skill",
@@ -4997,56 +4997,56 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-263",
     "category": "Demon Skills",
     "name": "Glut",
     "subtitle": "Bloodward skill",
-    "description": "Overloads a single target with far more Veyn than their body can hold, breaking them apart from the inside.",
+    "description": "Forces far more Veyn into a target's body than it can safely contain, causing internal damage and disruption.",
     "fields": [],
     "tags": [
       "skill",
       "demon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-264",
     "category": "Demon Skills",
     "name": "Cornucopia",
     "subtitle": "Bloodward skill",
-    "description": "A surge of her surplus Veyn pours out in every direction at once, overwhelming whatever is weaker than her around it.",
+    "description": "Releases a wide burst of surplus Veyn in all directions, overwhelming and damaging weaker beings caught in the wave.",
     "fields": [],
     "tags": [
       "skill",
       "demon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-265",
     "category": "Demon Skills",
     "name": "Reap",
     "subtitle": "Bloodward skill",
-    "description": "Pulls the Veyn from everything weaker in the area, adding it to her own.",
+    "description": "Pulls Veyn from every weaker being in the surrounding area and draws it into the user.",
     "fields": [],
     "tags": [
       "skill",
       "demon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-266",
     "category": "Demon Skills",
     "name": "Sovereign Aura",
     "subtitle": "Mastered skill",
-    "description": "Her Demonic Aura refined to a peak that forces even other Bloodwards to their knees.",
+    "description": "A refined and intensified form of Demonic Aura strong enough to force even other Bloodwards to feel heavy pressure and the urge to submit.",
     "fields": [
       {
         "label": "Type",
@@ -5059,7 +5059,7 @@
       "mastered"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-267",
@@ -5086,7 +5086,7 @@
     "category": "Angel Skills",
     "name": "Time’s Grasp",
     "subtitle": "Mastered skill",
-    "description": "Halts a single target’s flow of time for a few heartbeats.",
+    "description": "Temporarily halts a single target's personal flow of time for a few heartbeats, freezing them in place.",
     "fields": [
       {
         "label": "Type",
@@ -5099,7 +5099,7 @@
       "mastered"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-269",
@@ -5156,7 +5156,7 @@
     "category": "Demon Skills",
     "name": "Guile",
     "subtitle": "Bloodward skill",
-    "description": "A spoken falsehood that settles into the mind as if it had always been true.",
+    "description": "A carefully spoken lie that sinks into the target's mind and feels as if it has always been true.",
     "fields": [],
     "tags": [
       "skill",
@@ -5164,7 +5164,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-17T23:08:31.461Z"
   },
   {
     "id": "seed-273",
