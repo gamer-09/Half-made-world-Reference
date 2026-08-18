@@ -485,7 +485,7 @@
       },
       {
         "label": "Body",
-        "value": "They are completely immune to any form of magic meaning raw veyn, holy energy and corrupted veyn is ineffective against it"
+        "value": "They are completely immune to any form of magic — raw Veyn, Holy Energy, and Corrupted Veyn are all ineffective against them."
       },
       {
         "label": "Control",
@@ -497,7 +497,7 @@
       },
       {
         "label": "Unknown",
-        "value": "People still dont know much about the mark or even that if someone with it can activate to golem which the golem would them have a goal to kill the person"
+        "value": "People still don’t know much about the mark — or even that someone with it can activate a golem, which would then make it the golem’s goal to kill that person."
       }
     ],
     "tags": [
@@ -506,7 +506,7 @@
       "guardian"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-18T10:28:46.500Z"
+    "updatedAt": "2026-08-18T10:40:46.839Z"
   },
   {
     "id": "seed-023",
@@ -6136,19 +6136,19 @@
     "category": "Rules & Notes",
     "name": "The World Curse",
     "subtitle": "A curse given by the world core",
-    "description": "Forms a rune collar around the persons neck and would be unavoidably be hunted shudon when spotted and will be killed",
+    "description": "Forms a rune collar around the person’s neck. The bearer is unavoidably hunted by the Shudon when spotted and will be killed.",
     "fields": [
       {
         "label": "Brand",
-        "value": "Makes a rune like design around the persons neck and can awaken the golems to hunt the person down. with this mark on teleportation out of the realm or place is blocked and rendered unusable"
+        "value": "Makes a rune-like design around the person’s neck and can awaken the golems to hunt the person down. With this mark on, teleportation out of the realm or place is blocked and rendered unusable."
       },
       {
         "label": "Ban",
-        "value": "Blocks any use of Teleportation out of the realm and is hunted down and killed by the Shudon. which means you are locked down and stuck in the realm you were when you got it"
+        "value": "Blocks any use of teleportation out of the realm, and the bearer is hunted down and killed by the Shudon. This means you are locked down and stuck in the realm you were in when you got it."
       },
       {
         "label": "Mark",
-        "value": "This mark cant be hidden or removed my any means"
+        "value": "This mark can’t be hidden or removed by any means."
       }
     ],
     "tags": [
@@ -6158,6 +6158,6 @@
       "aelthar"
     ],
     "createdAt": "2026-08-18T09:12:19.977Z",
-    "updatedAt": "2026-08-18T09:24:01.631Z"
+    "updatedAt": "2026-08-18T10:40:46.839Z"
   }
 ]
