@@ -20,6 +20,7 @@ export const CATEGORY_COLORS: Record<string, string> = {
   'Artifact Skills': '#bef264',
   Coins: '#fde047',
   'Hybrid Skills': '#e879f9',
+  'Class Skills': '#f9a8d4',
 };
 
 export const FALLBACK_COLOR = '#94a3b8';

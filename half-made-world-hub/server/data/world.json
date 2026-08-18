@@ -506,7 +506,7 @@
       "guardian"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-18T10:40:46.839Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
     "id": "seed-023",
@@ -1076,7 +1076,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "1fc02d01-c3ba-4031-8ba0-96630067d9f7",
+    "id": "seed-045",
     "category": "Magic Systems",
     "name": "Holy Energy",
     "subtitle": "The purified form of Veyn",
@@ -1106,11 +1106,11 @@
       "magic",
       "purified"
     ],
-    "createdAt": "2026-08-16T22:28:06.999Z",
-    "updatedAt": "2026-08-16T22:28:06.999Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "e10e64e4-3124-4994-b952-cfcf5f97de64",
+    "id": "seed-046",
     "category": "Magic Systems",
     "name": "Corrupted Veyn",
     "subtitle": "The corrupted form of Veyn",
@@ -1144,11 +1144,11 @@
       "magic",
       "demon"
     ],
-    "createdAt": "2026-08-16T22:39:06.448Z",
-    "updatedAt": "2026-08-16T22:39:06.448Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-045",
+    "id": "seed-047",
     "category": "Magic Systems",
     "name": "Ren",
     "subtitle": "The inner energy of swordsmen",
@@ -1172,7 +1172,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "e1d433b5-1177-4351-a6c8-2f2ec9f7fa70",
+    "id": "seed-048",
     "category": "Magic Systems",
     "name": "Auric Ren",
     "subtitle": "The golden form of Ren",
@@ -1202,11 +1202,11 @@
       "paladin",
       "magic"
     ],
-    "createdAt": "2026-08-16T23:14:21.835Z",
-    "updatedAt": "2026-08-16T23:14:21.835Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-046",
+    "id": "seed-049",
     "category": "Magic Systems",
     "name": "Concentrated Veyn",
     "subtitle": "Brighter, denser Veyn",
@@ -1225,7 +1225,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-047",
+    "id": "seed-050",
     "category": "Magic Systems",
     "name": "Saturation Sickness",
     "subtitle": "The cost of lingering in concentrated Veyn",
@@ -1249,7 +1249,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "56f372e1-1a69-456a-9c8f-7fc57f8bfb45",
+    "id": "seed-051",
     "category": "Magic Systems",
     "name": "Corruption Sickness",
     "subtitle": "What corrupted Veyn does to a human",
@@ -1276,11 +1276,11 @@
       "veyn",
       "three stages"
     ],
-    "createdAt": "2026-08-16T22:52:52.361Z",
-    "updatedAt": "2026-08-16T22:52:52.361Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-048",
+    "id": "seed-052",
     "category": "Rules & Notes",
     "name": "Affinity & Awakening",
     "subtitle": "How Veyn affinity is revealed and chosen",
@@ -1296,7 +1296,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-049",
+    "id": "seed-053",
     "category": "Rules & Notes",
     "name": "Class Skill Limits",
     "subtitle": "Humans can master a class fully; other races are capped",
@@ -1311,7 +1311,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-050",
+    "id": "seed-054",
     "category": "Rules & Notes",
     "name": "Veyn & Ren Incompatibility",
     "subtitle": "You can never hold both",
@@ -1326,7 +1326,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-051",
+    "id": "seed-055",
     "category": "Rules & Notes",
     "name": "Growing Your Veyn Capacity",
     "subtitle": "How to increase your pool",
@@ -1341,7 +1341,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-052",
+    "id": "seed-056",
     "category": "Rules & Notes",
     "name": "Inheritance of Ranks & Abilities",
     "subtitle": "Not always passed down",
@@ -1356,7 +1356,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-053",
+    "id": "seed-057",
     "category": "Rules & Notes",
     "name": "The Hidden Realm Portal",
     "subtitle": "Moves every leap year",
@@ -1372,7 +1372,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-054",
+    "id": "seed-058",
     "category": "Classes",
     "name": "Mage",
     "subtitle": "Magic/Veyn class",
@@ -1381,18 +1381,23 @@
       {
         "label": "Type",
         "value": "Magic/Veyn class"
+      },
+      {
+        "label": "Skills",
+        "value": "Arc Bolt, Aegis Wall, Resonance, Elemental Weave, Wellspring, Sanctum, Shockwave, Linkthread, Flux, Sovereign Flow — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "mage",
-      "veyn"
+      "veyn",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-055",
+    "id": "seed-059",
     "category": "Classes",
     "name": "Alchemist",
     "subtitle": "Magic/Veyn class",
@@ -1401,18 +1406,23 @@
       {
         "label": "Type",
         "value": "Magic/Veyn class"
+      },
+      {
+        "label": "Skills",
+        "value": "Brewcraft, Venomcraft, Blastflask, Assay, Potency Surge, Catalyst, Purge, Transmute, Field Mix, Grand Elixir — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "alchemist",
-      "potions"
+      "potions",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-056",
+    "id": "seed-060",
     "category": "Classes",
     "name": "Beastmaster",
     "subtitle": "Ren class",
@@ -1421,18 +1431,23 @@
       {
         "label": "Type",
         "value": "Ren class (non-magic)"
+      },
+      {
+        "label": "Skills",
+        "value": "Soulbond, Mindshare, Command, Shared Senses, Wild Surge, Living Shield, Coordinated Strike, Vital Link, Ascension, Pack Lord — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "beastmaster",
-      "ren"
+      "ren",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-057",
+    "id": "seed-061",
     "category": "Classes",
     "name": "Smithing",
     "subtitle": "Veyn & Ren class",
@@ -1445,19 +1460,24 @@
       {
         "label": "Blood-forging",
         "value": "The rank of the demon or angel whose blood is used determines how powerful the weapon will be — low ranking blood can at least injure, high ranking blood can kill. Demon and angel blood is reactive to Veyn; a mistake can cause the death of the smith."
+      },
+      {
+        "label": "Skills",
+        "value": "Forgework, Veyn Temper, Ren Edge, Bloodforge, Appraisal, Platecraft, Rune Seal, Restore, Legendcraft, Crimson Alloy — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "smith",
       "forge",
-      "blood-forging"
+      "blood-forging",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-058",
+    "id": "seed-062",
     "category": "Classes",
     "name": "Enchanter",
     "subtitle": "Magic/Veyn class",
@@ -1466,18 +1486,23 @@
       {
         "label": "Type",
         "value": "Magic/Veyn class"
+      },
+      {
+        "label": "Skills",
+        "value": "Imbue, Veyn Bind, Read Rune, Unbind, Amplify, Layer, Wardseal, Strike Rune, Living Enchant, Rune Discovery — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "enchanter",
-      "veyn"
+      "veyn",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-059",
+    "id": "seed-063",
     "category": "Classes",
     "name": "Diviner",
     "subtitle": "Magic/Veyn class",
@@ -1498,19 +1523,24 @@
       {
         "label": "Only humans",
         "value": "Only humans have ever been Diviners — there are only 3 in the world."
+      },
+      {
+        "label": "Skills",
+        "value": "True-Sight, Foresight, Echoes, Truthsense, Veyn Pulse, Aura Gaze, Deep Scry, Mindward, Thread Sight, Oracle's Eye — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "diviner",
       "true-sight",
-      "holy"
+      "holy",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-060",
+    "id": "seed-064",
     "category": "Classes",
     "name": "Exorcist",
     "subtitle": "Veyn-use class",
@@ -1519,19 +1549,24 @@
       {
         "label": "Type",
         "value": "Slight use of Veyn/Magic"
+      },
+      {
+        "label": "Skills",
+        "value": "Purify, Bind the Fallen, Miasma Purge, Stabilize, Rite of Expulsion, Sanctum Barrier, Cleansing Strike, Mass Ablution, Spirit Banish, Final Seal — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "exorcist",
       "corrupted",
-      "fallen angel"
+      "fallen angel",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-061",
+    "id": "seed-065",
     "category": "Classes",
     "name": "Broker",
     "subtitle": "Ren class",
@@ -1540,19 +1575,24 @@
       {
         "label": "Type",
         "value": "Ren class (non-magic)"
+      },
+      {
+        "label": "Skills",
+        "value": "Mediate, Enforce, Clause Sight, Sever, Bargain, Tell, Backlash Ward, Network, Leverage, Iron Contract — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "broker",
       "contracts",
-      "gnash"
+      "gnash",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-062",
+    "id": "seed-066",
     "category": "Classes",
     "name": "Saintess",
     "subtitle": "Holy class",
@@ -1561,19 +1601,24 @@
       {
         "label": "Type",
         "value": "Magic/Veyn class, Holy class"
+      },
+      {
+        "label": "Skills",
+        "value": "Grace, Aegis of Light, Cleanse, Radiant Guard, Smite, Benediction, Hallowed Ground, Lumen, Sacred Mastery, Miracle — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "saintess",
       "holy",
-      "healing"
+      "healing",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-063",
+    "id": "seed-067",
     "category": "Classes",
     "name": "Clergy",
     "subtitle": "Magic/Veyn class",
@@ -1582,18 +1627,23 @@
       {
         "label": "Type",
         "value": "Magic/Veyn class"
+      },
+      {
+        "label": "Skills",
+        "value": "Mend, Restore, Ritual of Recovery, Guardian Field, Regeneration, Sanctuary, Soothing Light, Lifeweave, Remedy, Teach — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "clergy",
-      "veyn"
+      "veyn",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-064",
+    "id": "seed-068",
     "category": "Classes",
     "name": "Archer",
     "subtitle": "Magic/Veyn class",
@@ -1602,19 +1652,24 @@
       {
         "label": "Type",
         "value": "Magic/Veyn class"
+      },
+      {
+        "label": "Skills",
+        "value": "Enchanted Shot, Armor Piercer, Blast Arrow, Seeker, Rain of Arrows, Arrow Ward, Sunder Shot, Healing Flight, Master Shot, New Quiver — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "archer",
       "arrows",
-      "veyn"
+      "veyn",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-065",
+    "id": "seed-069",
     "category": "Classes",
     "name": "Paladin",
     "subtitle": "Ren + Holy class",
@@ -1623,19 +1678,24 @@
       {
         "label": "Type",
         "value": "Ren class — Auric Ren"
+      },
+      {
+        "label": "Skills",
+        "value": "Auric Blow, Lightshield, Golden Mend, Aura of Resolve, Judgment, Lay on Hands, Consecrate, Divine Ward, Oathsurge, Champion — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "paladin",
       "holy",
-      "knight"
+      "knight",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-066",
+    "id": "seed-070",
     "category": "Classes",
     "name": "Grimtender",
     "subtitle": "Magic/Veyn class",
@@ -1644,19 +1704,24 @@
       {
         "label": "Type",
         "value": "Magic/Veyn class"
+      },
+      {
+        "label": "Skills",
+        "value": "Raise, Command Dead, Bone Wall, Drain Remains, Necrotic Pulse, Legion, Bone Lance, Spirit Anchor, Deathlord, Harvest — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "grimtender",
       "undead",
-      "reanimate"
+      "reanimate",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-067",
+    "id": "seed-071",
     "category": "Classes",
     "name": "Bladesinger",
     "subtitle": "Ren class",
@@ -1665,19 +1730,24 @@
       {
         "label": "Type",
         "value": "Ren class"
+      },
+      {
+        "label": "Skills",
+        "value": "Cleave, Crimson Edge, Flourish, Counter, Gale, Phantom Cut, Tempest, Grace, Bladesong, Perfection — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "bladesinger",
       "ren",
-      "sword"
+      "sword",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-068",
+    "id": "seed-072",
     "category": "Classes",
     "name": "Berserker",
     "subtitle": "Ren class",
@@ -1686,18 +1756,23 @@
       {
         "label": "Type",
         "value": "Ren class"
+      },
+      {
+        "label": "Skills",
+        "value": "Frenzy, Warhowl, Overkill, Reckless, Unyielding, Rampage, Detonate, Cripple, Last Stand, Warlord — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "berserker",
-      "ren"
+      "ren",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-069",
+    "id": "seed-073",
     "category": "Classes",
     "name": "Sentinel",
     "subtitle": "Ren class",
@@ -1706,19 +1781,24 @@
       {
         "label": "Type",
         "value": "Ren class"
+      },
+      {
+        "label": "Skills",
+        "value": "Ironclad, Bulwark, Fortress, Provoke, Endure, Shield Slam, Aegis Share, Oathguard, Last Breath, Immovable — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "sentinel",
       "ren",
-      "defense"
+      "defense",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-070",
+    "id": "seed-074",
     "category": "Classes",
     "name": "Ren Archer",
     "subtitle": "Ren class",
@@ -1727,18 +1807,23 @@
       {
         "label": "Type",
         "value": "Ren class"
+      },
+      {
+        "label": "Skills",
+        "value": "Force Arrow, Power Draw, Rapid Fire, Piercer, Windstep, Longshot, Barrage, Slip, Hawk Eye, Arrow Lord — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "archer",
-      "ren"
+      "ren",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-071",
+    "id": "seed-075",
     "category": "Classes",
     "name": "Veilrunner",
     "subtitle": "Ren class",
@@ -1747,19 +1832,24 @@
       {
         "label": "Type",
         "value": "Ren class"
+      },
+      {
+        "label": "Skills",
+        "value": "Shade Step, Silence, Backstab, Smoke, Ghost, Venom Edge, Touchlock, Mimic, Vanish, Wraith — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
       "class",
       "veilrunner",
       "stealth",
-      "ren"
+      "ren",
+      "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-072",
+    "id": "seed-076",
     "category": "Classes",
     "name": "Shudonkeeper",
     "subtitle": "Classless class",
@@ -1768,6 +1858,10 @@
       {
         "label": "Type",
         "value": "Classless class"
+      },
+      {
+        "label": "Skills",
+        "value": "Study, Preserve, Lore, Script, Commune, Chronicle, Theory, Archive, Fragment Sense, Core Insight — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1779,7 +1873,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-073",
+    "id": "seed-077",
     "category": "Items",
     "name": "Restoration Potion",
     "subtitle": "Restores Veyn",
@@ -1799,7 +1893,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-074",
+    "id": "seed-078",
     "category": "Items",
     "name": "Veyn Stone",
     "subtitle": "Condensed crystallized Veyn",
@@ -1814,7 +1908,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-075",
+    "id": "seed-079",
     "category": "Items",
     "name": "Lucent Stone",
     "subtitle": "The refined Veyn Stone",
@@ -1829,7 +1923,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-076",
+    "id": "seed-080",
     "category": "Items",
     "name": "Lucent Reserve",
     "subtitle": "Full restoration of Veyn or Ren",
@@ -1849,7 +1943,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-077",
+    "id": "seed-081",
     "category": "Items",
     "name": "Healing Potion",
     "subtitle": "Heals minor injuries",
@@ -1864,7 +1958,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-078",
+    "id": "seed-082",
     "category": "Items",
     "name": "Wraithcloth",
     "subtitle": "Hide your presence and scent",
@@ -1879,7 +1973,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-079",
+    "id": "seed-083",
     "category": "Items",
     "name": "Ring of Foundation",
     "subtitle": "Store and release Veyn",
@@ -1894,7 +1988,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-080",
+    "id": "seed-084",
     "category": "Items",
     "name": "Remy’s Bracelet",
     "subtitle": "Carry 10 items anywhere",
@@ -1909,7 +2003,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-081",
+    "id": "seed-085",
     "category": "Items",
     "name": "Hermes Robe",
     "subtitle": "20x speed",
@@ -1924,7 +2018,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-082",
+    "id": "seed-086",
     "category": "Items",
     "name": "Iron-will Ring",
     "subtitle": "Resist poison, mental attacks, and fatal injuries",
@@ -1945,7 +2039,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-083",
+    "id": "seed-087",
     "category": "Hidden Realm",
     "name": "Pixie Dust",
     "subtitle": "Youth, Veyn and Ren in a powder",
@@ -1965,7 +2059,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-084",
+    "id": "seed-088",
     "category": "Hidden Realm",
     "name": "Grimbough Tree",
     "subtitle": "The magic-resistant slanting tree",
@@ -1981,7 +2075,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-085",
+    "id": "seed-089",
     "category": "Hidden Realm",
     "name": "Ebonspire Tree",
     "subtitle": "The 100-year tree of dragon nests",
@@ -1997,7 +2091,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-086",
+    "id": "seed-090",
     "category": "Hidden Realm",
     "name": "Ethereal Potion",
     "subtitle": "Legendary-rank elixir that halts aging",
@@ -2018,7 +2112,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-087",
+    "id": "seed-091",
     "category": "Hidden Realm",
     "name": "Rejuvenating Elixir",
     "subtitle": "Complete healing",
@@ -2034,7 +2128,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-088",
+    "id": "seed-092",
     "category": "Artifacts",
     "name": "Vireth, the Fallen Grace",
     "subtitle": "The corrupted divine sword sealed in the Sentient River",
@@ -2068,7 +2162,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-089",
+    "id": "seed-093",
     "category": "Artifacts",
     "name": "Virastra, the Ascendant Vow",
     "subtitle": "The uncorrupted divine sword, lost in the ruins",
@@ -2093,7 +2187,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-090",
+    "id": "seed-094",
     "category": "Artifacts",
     "name": "Solvane, the Hallowed Edge",
     "subtitle": "The divine spear still in someone’s possession",
@@ -2126,7 +2220,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-091",
+    "id": "seed-095",
     "category": "Artifacts",
     "name": "Aerendrel, the Skybound Wrath",
     "subtitle": "The storm-strung bow of the Lethmoor vault",
@@ -2139,10 +2233,6 @@
       {
         "label": "Note",
         "value": "\"Sinew\" refers to a tendon — the tough, fibrous connective tissue that attaches muscle to bone."
-      },
-      {
-        "label": "User-bound",
-        "value": "Bound to the users soul and if others trys to use it --- it becomes nothing more than a piece of junk/ regular bow"
       }
     ],
     "tags": [
@@ -2152,10 +2242,10 @@
       "lethmoor"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-18T12:33:20.219Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-092",
+    "id": "seed-096",
     "category": "Artifacts",
     "name": "Liework’s Fallen Crown",
     "subtitle": "The decayed crown of a fallen kingdom",
@@ -2176,7 +2266,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-093",
+    "id": "seed-097",
     "category": "Artifacts",
     "name": "Selene’s Luck",
     "subtitle": "One critical strike, blocked",
@@ -2197,7 +2287,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-094",
+    "id": "seed-098",
     "category": "Artifacts",
     "name": "Auralis Ruby",
     "subtitle": "The pendant that sealed the MC’s forms",
@@ -2223,7 +2313,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-095",
+    "id": "seed-099",
     "category": "Artifacts",
     "name": "Agro Totem",
     "subtitle": "Summon a storm of monsters",
@@ -2243,7 +2333,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-096",
+    "id": "seed-100",
     "category": "Characters",
     "name": "Jaiden Marlock",
     "subtitle": "Main Character — the first Angel-Demon Hybrid",
@@ -2292,7 +2382,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-097",
+    "id": "seed-101",
     "category": "Characters",
     "name": "Lisa",
     "subtitle": "Bloodward demon — most powerful after the Mordrach",
@@ -2335,7 +2425,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-098",
+    "id": "seed-102",
     "category": "Characters",
     "name": "Ordium",
     "subtitle": "Jaiden’s Father — Aetherblade Lord Angel",
@@ -2383,7 +2473,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-099",
+    "id": "seed-103",
     "category": "Characters",
     "name": "Sofia Marlock",
     "subtitle": "Lisa’s personal maid — Jaiden’s guardian",
@@ -2410,10 +2500,10 @@
       "fallen angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-14T00:53:39.211Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-100",
+    "id": "seed-104",
     "category": "Characters",
     "name": "Licent Varak",
     "subtitle": "Second right-hand man to Tera Morage — the betrayer",
@@ -2449,27 +2539,22 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-101",
+    "id": "seed-105",
     "category": "Characters",
     "name": "Ruby Divina",
     "subtitle": "Ruler of the Human Realm (Female)",
     "description": "Ruby Divina is the only mortal ruler in a world governed by immortals — Clint Ashborn does not age, and Tera Morage dies of nothing short of a Divine Weapon, while Ruby will be gone within a mortal lifetime and knows it. She rules humanity, the one people with no wings, no halo, no miasma — just raw Veyn and short years — caught between two realms that could crush hers on a whim. Her whole reign has been the slow, careful work of making humanity too useful and too dangerous to be worth crushing. She has known about Jaiden Marlock from the beginning — the hybrid child hiding in her realm under a maid’s care is no secret to her — and she has shielded him not from kindness but because he is her insurance: a being both realms would go to war over, the one card that could make humanity a power instead of a client.",
-    "fields": [
-      {
-        "label": "Class",
-        "value": "Berserker"
-      }
-    ],
+    "fields": [],
     "tags": [
       "character",
       "ruler",
       "human realm"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-18T12:27:20.299Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-102",
+    "id": "seed-106",
     "category": "Characters",
     "name": "Tera Morage",
     "subtitle": "Ruler of the Demon Realm — Mordrach (Female)",
@@ -2494,7 +2579,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-103",
+    "id": "seed-107",
     "category": "Characters",
     "name": "Clint Ashborn",
     "subtitle": "Ruler of the Angel Realm — Serapharch (Male)",
@@ -2519,7 +2604,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-104",
+    "id": "seed-108",
     "category": "Plot",
     "name": "Lisa’s Plot",
     "subtitle": "A forbidden love, a hidden child, and a death sentence",
@@ -2539,7 +2624,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-105",
+    "id": "seed-109",
     "category": "Plot",
     "name": "Licent Varak’s Plot",
     "subtitle": "Jealousy that cost Lisa her life",
@@ -2560,11 +2645,11 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-106",
+    "id": "seed-110",
     "category": "Plot",
     "name": "Ordium’s Plot",
-    "subtitle": "Love at first sight, killed off by Clint Ashborn",
-    "description": "Ordium, an Aetherblade Lord Rank Angel, fell in love with Lisa at first sight. He left his post and spent the next 9 months with Lisa in a secret place in the Human Realm, since it is large and it would take time for them to be found. They were expecting a child, but unexpectedly they were called back by their rulers and he was ordered to be executed for sleeping with a demon",
+    "subtitle": "Love at first sight — left unfinished",
+    "description": "Ordium, an Aetherblade Lord Rank Angel, fell in love with Lisa at first sight. He left his post and spent the next 9 months with Lisa in a secret place in the Human Realm, since it is large and it would take time for them to be found. They were expecting a child, but unexpectedly they were called back by their rulers… (the document cuts off here — “but as…”)",
     "fields": [],
     "tags": [
       "plot",
@@ -2572,10 +2657,10 @@
       "father"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-18T12:03:30.853Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-107",
+    "id": "seed-111",
     "category": "Character Forms",
     "name": "Jaiden Marlock — Normal",
     "subtitle": "First Form of 5 — Jaiden Marlock",
@@ -2590,7 +2675,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-108",
+    "id": "seed-112",
     "category": "Character Forms",
     "name": "Jaiden Marlock — Halo & Horns",
     "subtitle": "Second Form of 5 — Jaiden Marlock",
@@ -2605,7 +2690,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-109",
+    "id": "seed-113",
     "category": "Character Forms",
     "name": "Jaiden Marlock — Full Angel Form",
     "subtitle": "Third Form of 5 — Jaiden Marlock",
@@ -2620,7 +2705,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-110",
+    "id": "seed-114",
     "category": "Character Forms",
     "name": "Jaiden Marlock — Full Demon Form",
     "subtitle": "Fourth Form of 5 — Jaiden Marlock",
@@ -2635,7 +2720,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-111",
+    "id": "seed-115",
     "category": "Character Forms",
     "name": "Jaiden Marlock — True Hybrid Form",
     "subtitle": "Fifth Form of 5 — Jaiden Marlock",
@@ -2650,7 +2735,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-112",
+    "id": "seed-116",
     "category": "Angel Skills",
     "name": "Kings Record",
     "subtitle": "Serapharch skill",
@@ -2662,10 +2747,10 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-113",
+    "id": "seed-117",
     "category": "Angel Skills",
     "name": "Sixth Sense",
     "subtitle": "Serapharch skill",
@@ -2677,10 +2762,10 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-114",
+    "id": "seed-118",
     "category": "Angel Skills",
     "name": "Time Reversal",
     "subtitle": "Serapharch skill",
@@ -2692,10 +2777,10 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-115",
+    "id": "seed-119",
     "category": "Angel Skills",
     "name": "Chronos Fury",
     "subtitle": "Serapharch skill",
@@ -2707,10 +2792,10 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-116",
+    "id": "seed-120",
     "category": "Angel Skills",
     "name": "Will Mastery",
     "subtitle": "Serapharch skill",
@@ -2722,10 +2807,10 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-117",
+    "id": "seed-121",
     "category": "Angel Skills",
     "name": "Holy Rain",
     "subtitle": "Serapharch skill",
@@ -2737,10 +2822,10 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-118",
+    "id": "seed-122",
     "category": "Angel Skills",
     "name": "Dignified Presence",
     "subtitle": "Serapharch skill",
@@ -2752,10 +2837,10 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-119",
+    "id": "seed-123",
     "category": "Angel Skills",
     "name": "Angelic Aura (Serapharch)",
     "subtitle": "Serapharch skill",
@@ -2767,10 +2852,10 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-120",
+    "id": "seed-124",
     "category": "Angel Skills",
     "name": "Holy Flame",
     "subtitle": "Serapharch skill",
@@ -2785,7 +2870,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-121",
+    "id": "seed-125",
     "category": "Angel Skills",
     "name": "God's Index Finger",
     "subtitle": "Serapharch skill",
@@ -2797,10 +2882,10 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-122",
+    "id": "seed-126",
     "category": "Angel Skills",
     "name": "God Chain",
     "subtitle": "Serapharch skill",
@@ -2812,10 +2897,10 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-123",
+    "id": "seed-127",
     "category": "Angel Skills",
     "name": "Holy Grail",
     "subtitle": "Serapharch skill",
@@ -2827,10 +2912,10 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-124",
+    "id": "seed-128",
     "category": "Angel Skills",
     "name": "Warpstep",
     "subtitle": "Serapharch skill",
@@ -2842,10 +2927,10 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-125",
+    "id": "seed-129",
     "category": "Angel Skills",
     "name": "Dawnveil (Serapharch)",
     "subtitle": "Serapharch skill",
@@ -2857,10 +2942,10 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-126",
+    "id": "seed-130",
     "category": "Angel Skills",
     "name": "Skyward Chains",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -2872,10 +2957,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-127",
+    "id": "seed-131",
     "category": "Angel Skills",
     "name": "Vanguard's Cry",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -2887,10 +2972,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-128",
+    "id": "seed-132",
     "category": "Angel Skills",
     "name": "Aegis Ward",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -2902,10 +2987,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-129",
+    "id": "seed-133",
     "category": "Angel Skills",
     "name": "Holy Mend",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -2917,10 +3002,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-130",
+    "id": "seed-134",
     "category": "Angel Skills",
     "name": "Angelic Aura (Aetherblade)",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -2932,10 +3017,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-131",
+    "id": "seed-135",
     "category": "Angel Skills",
     "name": "Swiftstep",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -2947,10 +3032,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:23:30.943Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-132",
+    "id": "seed-136",
     "category": "Angel Skills",
     "name": "Dawnveil (Aetherblade)",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -2962,10 +3047,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-133",
+    "id": "seed-137",
     "category": "Angel Skills",
     "name": "Guiding Light",
     "subtitle": "Virtue skill",
@@ -2977,10 +3062,10 @@
       "virtue"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-134",
+    "id": "seed-138",
     "category": "Angel Skills",
     "name": "Radiant Strike",
     "subtitle": "Virtue skill",
@@ -2992,10 +3077,10 @@
       "virtue"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-135",
+    "id": "seed-139",
     "category": "Angel Skills",
     "name": "Formation Discipline",
     "subtitle": "Virtue skill",
@@ -3007,10 +3092,10 @@
       "virtue"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-136",
+    "id": "seed-140",
     "category": "Angel Skills",
     "name": "Angelic Aura (Virtue)",
     "subtitle": "Virtue skill",
@@ -3022,10 +3107,10 @@
       "virtue"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-137",
+    "id": "seed-141",
     "category": "Angel Skills",
     "name": "Dawnveil (Virtue)",
     "subtitle": "Virtue skill",
@@ -3037,10 +3122,10 @@
       "virtue"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-138",
+    "id": "seed-142",
     "category": "Angel Skills",
     "name": "Warmth of the Realm",
     "subtitle": "Lumen skill",
@@ -3052,10 +3137,10 @@
       "lumen"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-139",
+    "id": "seed-143",
     "category": "Angel Skills",
     "name": "Faint Ward",
     "subtitle": "Lumen skill",
@@ -3067,10 +3152,10 @@
       "lumen"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-140",
+    "id": "seed-144",
     "category": "Angel Skills",
     "name": "Angelic Aura (Lumen)",
     "subtitle": "Lumen skill",
@@ -3082,10 +3167,10 @@
       "lumen"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-141",
+    "id": "seed-145",
     "category": "Angel Skills",
     "name": "Dawnveil (Lumen)",
     "subtitle": "Lumen skill",
@@ -3097,10 +3182,10 @@
       "lumen"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-142",
+    "id": "seed-146",
     "category": "Demon Skills",
     "name": "Death Scythe",
     "subtitle": "Mordrach skill",
@@ -3112,10 +3197,10 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-143",
+    "id": "seed-147",
     "category": "Demon Skills",
     "name": "Chain Reaper Scythe",
     "subtitle": "Mordrach skill",
@@ -3127,10 +3212,10 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-144",
+    "id": "seed-148",
     "category": "Demon Skills",
     "name": "Call of the Dead",
     "subtitle": "Mordrach skill",
@@ -3142,10 +3227,10 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-145",
+    "id": "seed-149",
     "category": "Demon Skills",
     "name": "Dominating Will",
     "subtitle": "Mordrach skill",
@@ -3157,10 +3242,10 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-146",
+    "id": "seed-150",
     "category": "Demon Skills",
     "name": "Soul Oath",
     "subtitle": "Mordrach skill",
@@ -3172,10 +3257,10 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-147",
+    "id": "seed-151",
     "category": "Demon Skills",
     "name": "Veyn Decomposition (Mordrach)",
     "subtitle": "Mordrach skill",
@@ -3187,10 +3272,10 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-148",
+    "id": "seed-152",
     "category": "Demon Skills",
     "name": "Hands of Death",
     "subtitle": "Mordrach skill",
@@ -3202,10 +3287,10 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-149",
+    "id": "seed-153",
     "category": "Demon Skills",
     "name": "Purgatory Flames",
     "subtitle": "Mordrach skill",
@@ -3217,10 +3302,10 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-150",
+    "id": "seed-154",
     "category": "Demon Skills",
     "name": "Charm",
     "subtitle": "Mordrach skill",
@@ -3232,10 +3317,10 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-151",
+    "id": "seed-155",
     "category": "Demon Skills",
     "name": "Soul-Sight",
     "subtitle": "Mordrach skill",
@@ -3247,10 +3332,10 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-152",
+    "id": "seed-156",
     "category": "Demon Skills",
     "name": "Berserk (Mordrach)",
     "subtitle": "Mordrach skill",
@@ -3262,10 +3347,10 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-153",
+    "id": "seed-157",
     "category": "Demon Skills",
     "name": "Demonic Aura (Mordrach)",
     "subtitle": "Mordrach skill",
@@ -3277,10 +3362,10 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-154",
+    "id": "seed-158",
     "category": "Demon Skills",
     "name": "Duskveil (Mordrach)",
     "subtitle": "Mordrach skill",
@@ -3292,10 +3377,10 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-155",
+    "id": "seed-159",
     "category": "Demon Skills",
     "name": "Blood Chains",
     "subtitle": "Bloodward skill",
@@ -3307,10 +3392,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-156",
+    "id": "seed-160",
     "category": "Demon Skills",
     "name": "Warcry of Dominion",
     "subtitle": "Bloodward skill",
@@ -3322,10 +3407,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-157",
+    "id": "seed-161",
     "category": "Demon Skills",
     "name": "Crimson Ward",
     "subtitle": "Bloodward skill",
@@ -3337,10 +3422,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-158",
+    "id": "seed-162",
     "category": "Demon Skills",
     "name": "Blood Pact",
     "subtitle": "Bloodward skill",
@@ -3352,10 +3437,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-159",
+    "id": "seed-163",
     "category": "Demon Skills",
     "name": "Veyn Decomposition (Bloodward)",
     "subtitle": "Bloodward skill",
@@ -3367,10 +3452,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-160",
+    "id": "seed-164",
     "category": "Demon Skills",
     "name": "Demonic Aura (Bloodward)",
     "subtitle": "Bloodward skill",
@@ -3382,10 +3467,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-161",
+    "id": "seed-165",
     "category": "Demon Skills",
     "name": "Berserk (Bloodward)",
     "subtitle": "Bloodward skill",
@@ -3397,10 +3482,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-162",
+    "id": "seed-166",
     "category": "Demon Skills",
     "name": "Duskveil (Bloodward)",
     "subtitle": "Bloodward skill",
@@ -3412,10 +3497,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-163",
+    "id": "seed-167",
     "category": "Demon Skills",
     "name": "Vitality Surge",
     "subtitle": "Scourge skill",
@@ -3427,10 +3512,10 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:23:30.943Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-164",
+    "id": "seed-168",
     "category": "Demon Skills",
     "name": "Rend Claws",
     "subtitle": "Scourge skill",
@@ -3442,10 +3527,10 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:23:30.943Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-165",
+    "id": "seed-169",
     "category": "Demon Skills",
     "name": "Pack Tactics",
     "subtitle": "Scourge skill",
@@ -3457,10 +3542,10 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-166",
+    "id": "seed-170",
     "category": "Demon Skills",
     "name": "Veyn Decomposition (Scourge)",
     "subtitle": "Scourge skill",
@@ -3472,10 +3557,10 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-167",
+    "id": "seed-171",
     "category": "Demon Skills",
     "name": "Berserk (Scourge)",
     "subtitle": "Scourge skill",
@@ -3487,10 +3572,10 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-168",
+    "id": "seed-172",
     "category": "Demon Skills",
     "name": "Demonic Aura (Scourge)",
     "subtitle": "Scourge skill",
@@ -3502,10 +3587,10 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-169",
+    "id": "seed-173",
     "category": "Demon Skills",
     "name": "Duskveil (Scourge)",
     "subtitle": "Scourge skill",
@@ -3517,10 +3602,10 @@
       "scourge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-170",
+    "id": "seed-174",
     "category": "Demon Skills",
     "name": "Binding Contract",
     "subtitle": "Gnash skill",
@@ -3532,10 +3617,10 @@
       "gnash"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-171",
+    "id": "seed-175",
     "category": "Demon Skills",
     "name": "Veyn Decomposition (Gnash)",
     "subtitle": "Gnash skill",
@@ -3547,10 +3632,10 @@
       "gnash"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-172",
+    "id": "seed-176",
     "category": "Demon Skills",
     "name": "Instinctive Bargaining",
     "subtitle": "Gnash skill",
@@ -3565,7 +3650,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-173",
+    "id": "seed-177",
     "category": "Demon Skills",
     "name": "Demonic Aura (Gnash)",
     "subtitle": "Gnash skill",
@@ -3577,10 +3662,10 @@
       "gnash"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:23:30.943Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-174",
+    "id": "seed-178",
     "category": "Demon Skills",
     "name": "Duskveil (Gnash)",
     "subtitle": "Gnash skill",
@@ -3592,10 +3677,10 @@
       "gnash"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-175",
+    "id": "seed-179",
     "category": "Artifact Skills",
     "name": "Graceless Edge",
     "subtitle": "Vireth, the Fallen Grace — skill",
@@ -3610,7 +3695,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-176",
+    "id": "seed-180",
     "category": "Artifact Skills",
     "name": "Split Grace",
     "subtitle": "Vireth, the Fallen Grace — skill",
@@ -3625,7 +3710,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-177",
+    "id": "seed-181",
     "category": "Monsters",
     "name": "Pallantine",
     "subtitle": "Light-half elves of the Arubian Forest",
@@ -3640,11 +3725,11 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-178",
+    "id": "seed-182",
     "category": "Monsters",
     "name": "Veilborn",
     "subtitle": "Dark-half elves of the Umbrage Forest",
-    "description": "One of the two types of Elves. They stay in the Umbrage Forest, the dark half of the Ether Forest, and they only trust themselves. Their blood is one of the ingredients required to craft an Agro Totem.\nTheir home is in the demon realm",
+    "description": "One of the two types of Elves. They stay in the Umbrage Forest, the dark half of the Ether Forest, and they only trust themselves. Their blood is one of the ingredients required to craft an Agro Totem.",
     "fields": [],
     "tags": [
       "elf",
@@ -3652,10 +3737,10 @@
       "umbrage forest"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-18T12:41:07.952Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-179",
+    "id": "seed-183",
     "category": "Angel Skills",
     "name": "Angelic Aura",
     "subtitle": "The shared angelic aura - scales with rank",
@@ -3667,10 +3752,10 @@
       "aura"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-180",
+    "id": "seed-184",
     "category": "Angel Skills",
     "name": "Dawnveil",
     "subtitle": "The innate angelic disguise - scales with rank",
@@ -3682,10 +3767,10 @@
       "disguise"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-181",
+    "id": "seed-185",
     "category": "Demon Skills",
     "name": "Veyn Decomposition",
     "subtitle": "The innate demonic miasma - scales with rank",
@@ -3697,10 +3782,10 @@
       "miasma"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-182",
+    "id": "seed-186",
     "category": "Demon Skills",
     "name": "Berserk",
     "subtitle": "The berserk state - scales with rank",
@@ -3712,10 +3797,10 @@
       "berserk"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-183",
+    "id": "seed-187",
     "category": "Demon Skills",
     "name": "Demonic Aura",
     "subtitle": "The shared demonic aura - scales with rank",
@@ -3727,10 +3812,10 @@
       "aura"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-184",
+    "id": "seed-188",
     "category": "Characters",
     "name": "Kael von Ashen",
     "subtitle": "Head Master of the Academy — the sole survivor of the Hidden Realm’s creation",
@@ -3764,7 +3849,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-185",
+    "id": "seed-189",
     "category": "Locations",
     "name": "Elyndor Academy",
     "subtitle": "The school led by Kael von Ashen",
@@ -3786,7 +3871,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "f6d3b336-da98-4b07-a32c-9e93a596e621",
+    "id": "seed-190",
     "category": "Clan",
     "name": "Dark Moon",
     "subtitle": "Hidden and Dangerous group of people",
@@ -3800,11 +3885,11 @@
     "tags": [
       "Evil"
     ],
-    "createdAt": "2026-08-13T17:03:13.050Z",
-    "updatedAt": "2026-08-13T17:03:13.050Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "d728d6e9-bbdb-47f2-9b42-874920ee012a",
+    "id": "seed-191",
     "category": "Characters",
     "name": "Carin",
     "subtitle": "Female Demon trainer",
@@ -3825,26 +3910,26 @@
       "carin",
       "character"
     ],
-    "createdAt": "2026-08-14T00:44:18.744Z",
-    "updatedAt": "2026-08-14T14:42:54.219Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "9c5916bc-7997-4388-a29d-c5229c4a3d4d",
+    "id": "seed-192",
     "category": "Plot",
     "name": "Jaiden Marlock Plot",
     "subtitle": "Plot for Mc",
-    "description": "His class is Mage. he has a much higher amount of Veyn than other Angels and Demons. He stays in a small house with Sofia who takes care of him and protects him. Later Sofia took him meet with Carin who then train him to be better at his demonic power. Sofia also trained Jaiden on how to use his angelic powers. Sofia also gave him the Auralis Ruby from his mother which would seal his true appearance, he can release the seal though for a limited time, with the help of Sofia he learnt how to release the seals and manifest his wings",
+    "description": "His class is Mage. he has a much higher amount of Veyn than other Angels and Demons. He stays in a small house with Sofia who takes care of him and protects him. Later Sofia took him meet with Carin who then train him to be better at his demonic power. Sofia also trained Jaiden on how to use his angelic powers. Sofia also gave him the Auralis Ruby from his mother which would seal his true appearance, he can release the seal though for a limited time",
     "fields": [],
     "tags": [
       "protagonist",
       "plot",
       "Jaiden"
     ],
-    "createdAt": "2026-08-14T00:52:22.427Z",
-    "updatedAt": "2026-08-18T11:57:34.759Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "316142fc-5a18-4829-b4a4-c7929c485fda",
+    "id": "seed-193",
     "category": "Plot",
     "name": "Ruby Divina’s Plot",
     "subtitle": "The mortal ruler’s gambit",
@@ -3856,11 +3941,11 @@
       "ruler",
       "human realm"
     ],
-    "createdAt": "2026-08-17T01:07:47.595Z",
-    "updatedAt": "2026-08-17T01:07:47.595Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "3c56dba6-98ff-475c-90aa-b0066953b847",
+    "id": "seed-194",
     "category": "Plot",
     "name": "Clint Ashborn’s Plot",
     "subtitle": "The immaculate tyrant",
@@ -3872,11 +3957,11 @@
       "ruler",
       "angel realm"
     ],
-    "createdAt": "2026-08-17T01:07:47.595Z",
-    "updatedAt": "2026-08-17T01:07:47.595Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "2494dba8-4f33-438e-996a-f2a4a1df1e11",
+    "id": "seed-195",
     "category": "Plot",
     "name": "Wener Leger’s Plot",
     "subtitle": "The patient tyrant",
@@ -3888,11 +3973,11 @@
       "dark moon",
       "leader"
     ],
-    "createdAt": "2026-08-17T01:07:47.595Z",
-    "updatedAt": "2026-08-17T01:07:47.595Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "514168c3-3ab6-4876-8fb8-1d65c0120f0f",
+    "id": "seed-196",
     "category": "Plot",
     "name": "Tera Morage’s Plot",
     "subtitle": "The tyrant whose one mercy was a death sentence",
@@ -3904,11 +3989,11 @@
       "ruler",
       "demon realm"
     ],
-    "createdAt": "2026-08-17T01:14:23.357Z",
-    "updatedAt": "2026-08-17T01:14:23.357Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "bd19a14c-d2d0-4bea-a7e0-becaafd51a8a",
+    "id": "seed-197",
     "category": "Characters",
     "name": "Wener Leger",
     "subtitle": "Leader of Dark Moon",
@@ -3933,11 +4018,11 @@
       "angel",
       "wener"
     ],
-    "createdAt": "2026-08-14T12:16:11.428Z",
-    "updatedAt": "2026-08-15T16:03:04.629Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-186",
+    "id": "seed-198",
     "category": "Angels",
     "name": "An Angel Breaking the vow",
     "subtitle": "What happens when an angel’s vow shatters",
@@ -3959,11 +4044,11 @@
       "broken halo",
       "breaking"
     ],
-    "createdAt": "2026-08-14T00:00:00.000Z",
-    "updatedAt": "2026-08-14T00:00:00.000Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-187",
+    "id": "seed-199",
     "category": "Titles",
     "name": "Crown-less",
     "subtitle": "A title for Lisa, the top Bloodward who never wore the crown",
@@ -3988,7 +4073,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-188",
+    "id": "seed-200",
     "category": "Titles",
     "name": "Demon of Abundance",
     "subtitle": "The overfull one",
@@ -4009,7 +4094,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-189",
+    "id": "seed-201",
     "category": "Titles",
     "name": "First Pillar, Chronous",
     "subtitle": "Chronos, god of time",
@@ -4100,7 +4185,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-205",
+    "id": "seed-204",
     "category": "Characters",
     "name": "Nyra Thessan",
     "subtitle": "Demon general of the Demon army",
@@ -4135,7 +4220,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-207",
+    "id": "seed-205",
     "category": "Characters",
     "name": "Isella Marrek",
     "subtitle": "Demon general of the Demon army",
@@ -4170,7 +4255,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-208",
+    "id": "seed-206",
     "category": "Characters",
     "name": "Cyrion",
     "subtitle": "Angel general of the Angel army",
@@ -4209,7 +4294,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-209",
+    "id": "seed-207",
     "category": "Characters",
     "name": "Serathiel",
     "subtitle": "Angel general of the Angel army",
@@ -4248,7 +4333,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-210",
+    "id": "seed-208",
     "category": "Characters",
     "name": "Liora Veyne",
     "subtitle": "Angel general of the Angel army",
@@ -4287,7 +4372,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-211",
+    "id": "seed-209",
     "category": "Characters",
     "name": "Thalor Elwin",
     "subtitle": "Angel general of the Angel army",
@@ -4326,7 +4411,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-212",
+    "id": "seed-210",
     "category": "Characters",
     "name": "Aranweis",
     "subtitle": "Angel general of the Angel army",
@@ -4365,7 +4450,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-214",
+    "id": "seed-211",
     "category": "Titles",
     "name": "Jester demon",
     "subtitle": "The title of Laren Vornath",
@@ -4386,7 +4471,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-215",
+    "id": "seed-212",
     "category": "Titles",
     "name": "Demon of melancholy",
     "subtitle": "The title of Sythra Kaelis",
@@ -4407,7 +4492,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-217",
+    "id": "seed-213",
     "category": "Titles",
     "name": "Demon of gluttony",
     "subtitle": "The title of Nyra Thessan",
@@ -4428,7 +4513,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-219",
+    "id": "seed-214",
     "category": "Titles",
     "name": "Demon of love",
     "subtitle": "The title of Isella Marrek",
@@ -4449,7 +4534,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-220",
+    "id": "seed-215",
     "category": "Titles",
     "name": "Second Pillar, Helious",
     "subtitle": "Helios, the all-seeing sun",
@@ -4470,7 +4555,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-221",
+    "id": "seed-216",
     "category": "Titles",
     "name": "Third Pillar, Areous",
     "subtitle": "Ares, god of war",
@@ -4491,7 +4576,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-222",
+    "id": "seed-217",
     "category": "Titles",
     "name": "Fourth Pillar, Deimous",
     "subtitle": "Deimos, dread personified",
@@ -4512,7 +4597,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-223",
+    "id": "seed-218",
     "category": "Titles",
     "name": "Fifth Pillar, Horkous",
     "subtitle": "Horkos, god of oaths",
@@ -4533,7 +4618,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-224",
+    "id": "seed-219",
     "category": "Titles",
     "name": "Sixth Pillar, Argous",
     "subtitle": "Argus, the hundred-eyed watcher",
@@ -4554,7 +4639,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-226",
+    "id": "seed-220",
     "category": "Titles",
     "name": "Demon of the Bloodhound",
     "subtitle": "The title of Licent Varak",
@@ -4575,7 +4660,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-227",
+    "id": "seed-221",
     "category": "Demon Skills",
     "name": "Red Whisper",
     "subtitle": "Bloodward skill",
@@ -4587,10 +4672,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-228",
+    "id": "seed-222",
     "category": "Demon Skills",
     "name": "Blood Jape",
     "subtitle": "Bloodward skill",
@@ -4602,10 +4687,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-229",
+    "id": "seed-223",
     "category": "Demon Skills",
     "name": "Traitor’s Step",
     "subtitle": "Bloodward skill",
@@ -4617,10 +4702,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:23:40.518Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-230",
+    "id": "seed-224",
     "category": "Demon Skills",
     "name": "Grey Miasma",
     "subtitle": "Bloodward skill",
@@ -4632,10 +4717,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-231",
+    "id": "seed-225",
     "category": "Demon Skills",
     "name": "Widow’s Toll",
     "subtitle": "Bloodward skill",
@@ -4647,10 +4732,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-232",
+    "id": "seed-226",
     "category": "Demon Skills",
     "name": "Fading Wound",
     "subtitle": "Bloodward skill",
@@ -4662,10 +4747,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-233",
+    "id": "seed-227",
     "category": "Demon Skills",
     "name": "Heart-Bind",
     "subtitle": "Bloodward skill",
@@ -4677,10 +4762,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:20:05.505Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-234",
+    "id": "seed-228",
     "category": "Demon Skills",
     "name": "Lover’s Step",
     "subtitle": "Bloodward skill",
@@ -4692,10 +4777,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-235",
+    "id": "seed-229",
     "category": "Demon Skills",
     "name": "Bond-Sight",
     "subtitle": "Bloodward skill",
@@ -4710,7 +4795,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-239",
+    "id": "seed-230",
     "category": "Demon Skills",
     "name": "Siphon",
     "subtitle": "Bloodward skill",
@@ -4722,10 +4807,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-240",
+    "id": "seed-231",
     "category": "Demon Skills",
     "name": "Unslaked",
     "subtitle": "Bloodward skill",
@@ -4737,10 +4822,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-241",
+    "id": "seed-232",
     "category": "Demon Skills",
     "name": "Seal",
     "subtitle": "Bloodward skill",
@@ -4752,10 +4837,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-245",
+    "id": "seed-233",
     "category": "Angel Skills",
     "name": "Lapse",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4767,10 +4852,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-246",
+    "id": "seed-234",
     "category": "Angel Skills",
     "name": "Rewind",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4782,10 +4867,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-247",
+    "id": "seed-235",
     "category": "Angel Skills",
     "name": "Still Hour",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4797,10 +4882,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-248",
+    "id": "seed-236",
     "category": "Angel Skills",
     "name": "Long Sight",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4812,10 +4897,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-249",
+    "id": "seed-237",
     "category": "Angel Skills",
     "name": "Burning Path",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4827,10 +4912,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-250",
+    "id": "seed-238",
     "category": "Angel Skills",
     "name": "Second Sun",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4842,10 +4927,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-251",
+    "id": "seed-239",
     "category": "Angel Skills",
     "name": "Battle Trance",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4857,10 +4942,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-252",
+    "id": "seed-240",
     "category": "Angel Skills",
     "name": "Ravager’s Grasp",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4872,10 +4957,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-253",
+    "id": "seed-241",
     "category": "Angel Skills",
     "name": "War-Worn",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4887,10 +4972,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-254",
+    "id": "seed-242",
     "category": "Angel Skills",
     "name": "Dread-Herald",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4902,10 +4987,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T22:49:03.664Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-255",
+    "id": "seed-243",
     "category": "Angel Skills",
     "name": "Unheralded",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4917,10 +5002,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T22:54:28.939Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-256",
+    "id": "seed-244",
     "category": "Angel Skills",
     "name": "Dreadweight",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4932,10 +5017,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:00:10.305Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-257",
+    "id": "seed-245",
     "category": "Angel Skills",
     "name": "Altar-Rite",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4950,7 +5035,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-258",
+    "id": "seed-246",
     "category": "Angel Skills",
     "name": "Vowbrand",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4962,10 +5047,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-259",
+    "id": "seed-247",
     "category": "Angel Skills",
     "name": "Truthvein",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4977,10 +5062,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-260",
+    "id": "seed-248",
     "category": "Angel Skills",
     "name": "All-Seeing Eye",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -4992,10 +5077,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-261",
+    "id": "seed-249",
     "category": "Angel Skills",
     "name": "Warden’s Recall",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -5007,10 +5092,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:23:40.518Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-262",
+    "id": "seed-250",
     "category": "Angel Skills",
     "name": "Warden’s Mark",
     "subtitle": "Aetherblade Lord Angel skill",
@@ -5022,10 +5107,10 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-263",
+    "id": "seed-251",
     "category": "Demon Skills",
     "name": "Glut",
     "subtitle": "Bloodward skill",
@@ -5036,10 +5121,10 @@
       "demon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-264",
+    "id": "seed-252",
     "category": "Demon Skills",
     "name": "Cornucopia",
     "subtitle": "Bloodward skill",
@@ -5050,10 +5135,10 @@
       "demon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-265",
+    "id": "seed-253",
     "category": "Demon Skills",
     "name": "Reap",
     "subtitle": "Bloodward skill",
@@ -5064,10 +5149,10 @@
       "demon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:23:30.943Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-266",
+    "id": "seed-254",
     "category": "Demon Skills",
     "name": "Sovereign Aura",
     "subtitle": "Mastered skill",
@@ -5084,10 +5169,10 @@
       "mastered"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-267",
+    "id": "seed-255",
     "category": "Demon Skills",
     "name": "Auralis Seal",
     "subtitle": "Personalized skill",
@@ -5107,7 +5192,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-268",
+    "id": "seed-256",
     "category": "Angel Skills",
     "name": "Time’s Grasp",
     "subtitle": "Mastered skill",
@@ -5124,10 +5209,10 @@
       "mastered"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-269",
+    "id": "seed-257",
     "category": "Angel Skills",
     "name": "The Stolen Hour",
     "subtitle": "Personalized skill",
@@ -5147,7 +5232,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-270",
+    "id": "seed-258",
     "category": "Demon Skills",
     "name": "Blood-Oath",
     "subtitle": "Bloodward skill",
@@ -5162,7 +5247,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-271",
+    "id": "seed-259",
     "category": "Demon Skills",
     "name": "Disinter",
     "subtitle": "Bloodward skill",
@@ -5177,7 +5262,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-272",
+    "id": "seed-260",
     "category": "Demon Skills",
     "name": "Guile",
     "subtitle": "Bloodward skill",
@@ -5189,10 +5274,10 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-17T23:08:31.461Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-273",
+    "id": "seed-261",
     "category": "Rules & Notes",
     "name": "Titles and Their Skills",
     "subtitle": "Every title carries its own skills",
@@ -5207,7 +5292,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-274",
+    "id": "seed-262",
     "category": "Rules & Notes",
     "name": "The Six Pillars of Angels",
     "subtitle": "The six generals of the Angel Realm",
@@ -5223,7 +5308,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-275",
+    "id": "seed-263",
     "category": "Race Types",
     "name": "Cherubim",
     "subtitle": "The throne-guardians — the apex angels",
@@ -5260,7 +5345,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-276",
+    "id": "seed-264",
     "category": "Race Types",
     "name": "Malakhim",
     "subtitle": "The messenger host — the common true angels",
@@ -5297,7 +5382,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-277",
+    "id": "seed-265",
     "category": "Race Types",
     "name": "Fallen Angels",
     "subtitle": "The broken — cast out for breaking the vow",
@@ -5318,7 +5403,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-278",
+    "id": "seed-266",
     "category": "Innate Abilities",
     "name": "Imperishable",
     "subtitle": "Innate ability",
@@ -5331,10 +5416,10 @@
       "Cherubim"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-15T21:31:36.126Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-279",
+    "id": "seed-267",
     "category": "Innate Abilities",
     "name": "Veyn-Regen",
     "subtitle": "Innate ability",
@@ -5347,10 +5432,10 @@
       "Malakhim"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-15T21:30:47.334Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-280",
+    "id": "seed-268",
     "category": "Innate Abilities",
     "name": "Rapid-Mend",
     "subtitle": "Innate ability",
@@ -5363,10 +5448,10 @@
       "fallen agnel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-15T21:30:16.611Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-281",
+    "id": "seed-269",
     "category": "Race Types",
     "name": "Fiends",
     "subtitle": "The apex demons",
@@ -5403,7 +5488,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-282",
+    "id": "seed-270",
     "category": "Race Types",
     "name": "Dregs",
     "subtitle": "The common demons",
@@ -5440,7 +5525,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-283",
+    "id": "seed-271",
     "category": "Race Types",
     "name": "Imps",
     "subtitle": "The impish demons",
@@ -5477,7 +5562,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-284",
+    "id": "seed-272",
     "category": "Innate Abilities",
     "name": "Sovereign Resilience",
     "subtitle": "Innate ability",
@@ -5490,10 +5575,10 @@
       "fiends"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-15T21:30:31.376Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-285",
+    "id": "seed-273",
     "category": "Innate Abilities",
     "name": "Vitality-Regen",
     "subtitle": "Innate ability",
@@ -5506,10 +5591,10 @@
       "dregs"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-15T21:31:12.886Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-286",
+    "id": "seed-274",
     "category": "Innate Abilities",
     "name": "Veyn-Touch",
     "subtitle": "Innate ability",
@@ -5522,10 +5607,10 @@
       "shades"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-15T21:30:58.813Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-287",
+    "id": "seed-275",
     "category": "Rules & Notes",
     "name": "Angel Evolution",
     "subtitle": "How a new Serapharch is made",
@@ -5539,10 +5624,10 @@
       "rule"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-15T17:41:19.037Z"
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-288",
+    "id": "seed-276",
     "category": "Rules & Notes",
     "name": "Demon Evolution",
     "subtitle": "How a new Mordrach is made",
@@ -5560,7 +5645,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-289",
+    "id": "seed-277",
     "category": "Rules & Notes",
     "name": "Race Types",
     "subtitle": "Species, separate from rank",
@@ -5577,7 +5662,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-290",
+    "id": "seed-278",
     "category": "Rules & Notes",
     "name": "Innate Abilities",
     "subtitle": "One per race type",
@@ -5593,7 +5678,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-291",
+    "id": "seed-279",
     "category": "Rules & Notes",
     "name": "Mastered and Personalized Skills",
     "subtitle": "The two highest tiers of skill",
@@ -5609,7 +5694,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-292",
+    "id": "seed-280",
     "category": "Rules & Notes",
     "name": "The Hybrid",
     "subtitle": "Angel and demon in one body",
@@ -5626,7 +5711,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-293",
+    "id": "seed-281",
     "category": "Rules & Notes",
     "name": "Spirits",
     "subtitle": "Not demons — something else",
@@ -5643,7 +5728,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-294",
+    "id": "seed-282",
     "category": "Race Types",
     "name": "Aelthar",
     "subtitle": "The extinct realm-makers",
@@ -5668,7 +5753,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-295",
+    "id": "seed-283",
     "category": "Innate Abilities",
     "name": "Potent Blood",
     "subtitle": "Innate ability",
@@ -5683,7 +5768,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "seed-296",
+    "id": "seed-284",
     "category": "Rules & Notes",
     "name": "The Aelthar",
     "subtitle": "The extinct race of the Hidden Realm",
@@ -5699,7 +5784,7 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "985202d2-867e-4c24-94dc-741b61626126",
+    "id": "seed-285",
     "category": "Rules & Notes",
     "name": "The World Barrier",
     "subtitle": "Its magical origins",
@@ -5712,11 +5797,11 @@
       "shudon",
       "hidden realm"
     ],
-    "createdAt": "2026-08-16T21:29:34.458Z",
-    "updatedAt": "2026-08-16T21:29:34.458Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "f386434e-8c6e-4b74-bee1-70f19facccc6",
+    "id": "seed-286",
     "category": "Rules & Notes",
     "name": "The World Core",
     "subtitle": "The untouched heart of the world",
@@ -5729,11 +5814,11 @@
       "world barrier",
       "shudon"
     ],
-    "createdAt": "2026-08-16T21:34:21.432Z",
-    "updatedAt": "2026-08-16T21:34:21.432Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "67ee6e06-afae-4472-8403-aca3cd942153",
+    "id": "seed-287",
     "category": "Rules & Notes",
     "name": "Holy Energy and Corrupted Veyn",
     "subtitle": "The two opposing poles of Veyn",
@@ -5746,11 +5831,11 @@
       "veyn",
       "opposition"
     ],
-    "createdAt": "2026-08-16T22:39:06.448Z",
-    "updatedAt": "2026-08-16T22:39:06.448Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "df3e7f63-2d09-4016-86ec-a2253abc871e",
+    "id": "seed-288",
     "category": "Rules & Notes",
     "name": "The Three Forms of Veyn",
     "subtitle": "Humans, angels, and demons",
@@ -5764,11 +5849,11 @@
       "angels",
       "demons"
     ],
-    "createdAt": "2026-08-16T22:39:06.448Z",
-    "updatedAt": "2026-08-16T22:39:06.448Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "64aca900-4f91-4a47-aef4-46b49ceea118",
+    "id": "seed-289",
     "category": "Rules & Notes",
     "name": "The Formation of Holy Energy and Corrupted Veyn",
     "subtitle": "How raw Veyn becomes gold or black",
@@ -5782,12 +5867,15 @@
       "purification",
       "corruption"
     ],
-    "createdAt": "2026-08-16T22:57:23.630Z",
-    "updatedAt": "2026-08-16T22:57:23.630Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "ea64f57f-49fe-4762-a672-54b408a2fac3",
+    "id": "seed-290",
+    "category": "Coins",
+    "name": "Sigils",
     "subtitle": "The currency of the three realms",
+    "description": "The single currency used across all three realms, minted in three metals. One hundred silver sigils make one gold sigil, and one thousand gold sigils make one platinum sigil — so a single platinum sigil is worth one hundred thousand silver. The same coins circulate in the Human, Angel, and Demon Realms alike.",
     "fields": [
       {
         "label": "Exchange",
@@ -5804,15 +5892,15 @@
       "coin",
       "money"
     ],
-    "createdAt": "2026-08-17T11:34:10.259Z",
-    "updatedAt": "2026-08-17T11:34:10.259Z",
-    "name": "Sigils",
-    "description": "The single currency used across all three realms, minted in three metals. One hundred silver sigils make one gold sigil, and one thousand gold sigils make one platinum sigil — so a single platinum sigil is worth one hundred thousand silver. The same coins circulate in the Human, Angel, and Demon Realms alike.",
-    "category": "Coins"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "0f9eccca-9065-4a02-9f8d-f28b6fefe9f5",
+    "id": "seed-291",
+    "category": "Coins",
+    "name": "Silver Sigil",
     "subtitle": "The lowest coin",
+    "description": "The lowest tier of currency, used for everyday purchases. One hundred silver sigils are worth one gold sigil.",
     "fields": [
       {
         "label": "Value",
@@ -5829,15 +5917,15 @@
       "coin",
       "currency"
     ],
-    "createdAt": "2026-08-17T11:34:10.259Z",
-    "updatedAt": "2026-08-17T11:34:10.259Z",
-    "name": "Silver Sigil",
-    "description": "The lowest tier of currency, used for everyday purchases. One hundred silver sigils are worth one gold sigil.",
-    "category": "Coins"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "e9ab4108-9908-43e0-8624-294fc6eecc21",
+    "id": "seed-292",
+    "category": "Coins",
+    "name": "Gold Sigil",
     "subtitle": "The middle coin",
+    "description": "The middle tier of currency. One gold sigil is worth one hundred silver, and one thousand gold sigils are worth one platinum sigil.",
     "fields": [
       {
         "label": "Value",
@@ -5854,14 +5942,11 @@
       "coin",
       "currency"
     ],
-    "createdAt": "2026-08-17T11:34:10.259Z",
-    "updatedAt": "2026-08-17T11:34:10.259Z",
-    "name": "Gold Sigil",
-    "description": "The middle tier of currency. One gold sigil is worth one hundred silver, and one thousand gold sigils are worth one platinum sigil.",
-    "category": "Coins"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "e5c64cc8-52e8-4ee4-9a9d-c7a46d451cfd",
+    "id": "seed-293",
     "category": "Coins",
     "name": "Platinum Sigil",
     "subtitle": "The highest coin",
@@ -5882,11 +5967,11 @@
       "coin",
       "currency"
     ],
-    "createdAt": "2026-08-17T11:38:36.210Z",
-    "updatedAt": "2026-08-17T11:38:36.210Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "76566486-e2bf-4631-85c5-79e2db8380e5",
+    "id": "seed-294",
     "category": "Locations",
     "name": "Aldermere",
     "subtitle": "The kingdom of the Human Realm",
@@ -5903,11 +5988,11 @@
       "alderdere",
       "capital"
     ],
-    "createdAt": "2026-08-17T12:12:05.590Z",
-    "updatedAt": "2026-08-17T12:12:05.590Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "840942f1-a1ae-45d9-9b83-7cc0ec77ea4d",
+    "id": "seed-295",
     "category": "Locations",
     "name": "Aurelion",
     "subtitle": "The kingdom of the Angel Realm",
@@ -5924,11 +6009,11 @@
       "aurelion",
       "capital"
     ],
-    "createdAt": "2026-08-17T12:12:05.590Z",
-    "updatedAt": "2026-08-17T12:12:05.590Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "98edceeb-7b4c-4feb-9291-9588602a6fa9",
+    "id": "seed-296",
     "category": "Locations",
     "name": "Vorath",
     "subtitle": "The kingdom of the Demon Realm",
@@ -5945,11 +6030,11 @@
       "vorath",
       "capital"
     ],
-    "createdAt": "2026-08-17T12:12:05.590Z",
-    "updatedAt": "2026-08-17T12:12:05.590Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "1dbb11d0-d34e-48db-bf12-ee114e21a8e2",
+    "id": "seed-297",
     "category": "Rules & Notes",
     "name": "Hybrid Fusion",
     "subtitle": "The mutated skills of the True Hybrid Form",
@@ -5962,11 +6047,11 @@
       "true hybrid form",
       "skill"
     ],
-    "createdAt": "2026-08-17T23:39:00.920Z",
-    "updatedAt": "2026-08-17T23:39:00.920Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "a5464412-0cb0-436e-ab34-66b0d5bc9bc3",
+    "id": "seed-298",
     "category": "Hybrid Skills",
     "name": "Twilight Chains",
     "subtitle": "Hybrid skill",
@@ -5987,11 +6072,11 @@
       "jaiden marlock",
       "true hybrid form"
     ],
-    "createdAt": "2026-08-17T23:47:32.849Z",
-    "updatedAt": "2026-08-17T23:53:19.725Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "c59b1d34-093a-4546-942e-6df83b657d50",
+    "id": "seed-299",
     "category": "Hybrid Skills",
     "name": "Cry of the Sundered",
     "subtitle": "Hybrid skill",
@@ -6012,11 +6097,11 @@
       "jaiden marlock",
       "true hybrid form"
     ],
-    "createdAt": "2026-08-17T23:47:32.849Z",
-    "updatedAt": "2026-08-17T23:53:19.725Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "b58943b5-1687-4cf7-847c-8cca321d326e",
+    "id": "seed-300",
     "category": "Hybrid Skills",
     "name": "Hollow Aegis",
     "subtitle": "Hybrid skill",
@@ -6037,11 +6122,11 @@
       "jaiden marlock",
       "true hybrid form"
     ],
-    "createdAt": "2026-08-17T23:47:32.849Z",
-    "updatedAt": "2026-08-17T23:53:19.725Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "a04b7e17-2661-4120-ba86-78a26112d62b",
+    "id": "seed-301",
     "category": "Hybrid Skills",
     "name": "Mend-and-Rot",
     "subtitle": "Hybrid skill",
@@ -6062,11 +6147,11 @@
       "jaiden marlock",
       "true hybrid form"
     ],
-    "createdAt": "2026-08-17T23:47:32.849Z",
-    "updatedAt": "2026-08-17T23:53:19.725Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "1c52321b-7bec-4128-a4e3-69760c846314",
+    "id": "seed-302",
     "category": "Hybrid Skills",
     "name": "Aura of the Split Crown",
     "subtitle": "Hybrid skill",
@@ -6087,11 +6172,11 @@
       "jaiden marlock",
       "true hybrid form"
     ],
-    "createdAt": "2026-08-17T23:47:32.849Z",
-    "updatedAt": "2026-08-17T23:53:19.725Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "f1b218c4-e41f-4958-88a1-16c1916b5b00",
+    "id": "seed-303",
     "category": "Hybrid Skills",
     "name": "Frenzied Step",
     "subtitle": "Hybrid skill",
@@ -6112,11 +6197,11 @@
       "jaiden marlock",
       "true hybrid form"
     ],
-    "createdAt": "2026-08-17T23:47:32.849Z",
-    "updatedAt": "2026-08-17T23:53:19.725Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "4e54ce89-ed59-4ad9-8767-51328d85672c",
+    "id": "seed-304",
     "category": "Hybrid Skills",
     "name": "Gloaming Veil",
     "subtitle": "Hybrid skill",
@@ -6137,11 +6222,11 @@
       "jaiden marlock",
       "true hybrid form"
     ],
-    "createdAt": "2026-08-17T23:47:32.849Z",
-    "updatedAt": "2026-08-17T23:53:19.725Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "fd602245-ed9d-4687-90a2-1ed109bf4075",
+    "id": "seed-305",
     "category": "Rules & Notes",
     "name": "The World Curse",
     "subtitle": "A curse given by the world core",
@@ -6166,88 +6251,3218 @@
       "curse",
       "aelthar"
     ],
-    "createdAt": "2026-08-18T09:12:19.977Z",
-    "updatedAt": "2026-08-18T11:26:44.339Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "40bde394-c260-47b7-b9a8-5766d738abd0",
-    "category": "Characters",
-    "name": "Eva Aldermere Divina",
-    "subtitle": "Princess of the Human Kingdom",
-    "description": "She is the 1st Princess of the human kingdom in line to the throne and who is also attending the academy. and is the daughter to Ruby  Divina",
-    "fields": [
-      {
-        "label": "Class",
-        "value": "Mage"
-      }
-    ],
+    "id": "seed-306",
+    "category": "Class Skills",
+    "name": "Arc Bolt",
+    "subtitle": "Mage skill",
+    "description": "Fires a concentrated spear of raw Veyn that explodes on impact. Can be released quickly for lower damage or charged longer for a stronger blast. Main mid-range attack.",
+    "fields": [],
     "tags": [
-      "character",
-      "eva aldermere",
-      "princesss",
-      "daughter"
+      "skill",
+      "class",
+      "mage",
+      "veyn",
+      "offensive"
     ],
-    "createdAt": "2026-08-18T12:12:20.177Z",
-    "updatedAt": "2026-08-18T12:58:23.004Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "3bf98aa0-15ff-4b5f-8c62-9b4f78cf9921",
-    "category": "Characters",
-    "name": "Bella Rose",
-    "subtitle": "Jaiden’s Childhood Friend",
-    "description": "She is the childhood friend of the mc and become close and attached to him. due to one reason that happened she was born with an unusual amount of Veyn(holy energy)",
-    "fields": [
-      {
-        "label": "Race",
-        "value": "Malakhim angel"
-      },
-      {
-        "label": "Rank",
-        "value": "Virtue"
-      },
-      {
-        "label": "Class",
-        "value": "Archer"
-      },
-      {
-        "label": "Reason",
-        "value": "(coming soon)"
-      }
-    ],
+    "id": "seed-307",
+    "category": "Class Skills",
+    "name": "Aegis Wall",
+    "subtitle": "Mage skill",
+    "description": "Creates a translucent wall of condensed Veyn that blocks physical and magical attacks. Strength and duration depend on how much Veyn is poured into it.",
+    "fields": [],
     "tags": [
-      "childhood friend",
-      "character",
-      "bella rose"
+      "skill",
+      "class",
+      "mage",
+      "veyn",
+      "defensive"
     ],
-    "createdAt": "2026-08-18T12:25:12.827Z",
-    "updatedAt": "2026-08-18T13:00:35.089Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "ca6121bc-c9ac-48f7-a1be-67989f0f8441",
-    "category": "Characters",
-    "name": "Mark Wesley",
-    "subtitle": "A friend of Jaiden",
-    "description": "He is a friend of Jaiden after he helped him during an incident",
-    "fields": [
-      {
-        "label": "Class",
-        "value": "Alchemist"
-      },
-      {
-        "label": "Race",
-        "value": "Veilborn"
-      },
-      {
-        "label": "From",
-        "value": "Demon Realm"
-      }
-    ],
+    "id": "seed-308",
+    "category": "Class Skills",
+    "name": "Resonance",
+    "subtitle": "Mage skill",
+    "description": "Heightens the user's sensitivity to Veyn, allowing them to detect living beings, hidden magic, and changes in ambient density. Used for tracking and awareness.",
+    "fields": [],
     "tags": [
-      "Character",
-      "mark wesley",
-      "friend"
+      "skill",
+      "class",
+      "mage",
+      "veyn",
+      "utility"
     ],
-    "createdAt": "2026-08-18T12:37:24.978Z",
-    "updatedAt": "2026-08-18T12:47:54.098Z"
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-309",
+    "category": "Class Skills",
+    "name": "Elemental Weave",
+    "subtitle": "Mage skill",
+    "description": "Converts raw Veyn into fire, ice, lightning, or wind and releases it as a focused attack. Each element carries a secondary effect (burn, slow, stun, or push).",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "mage",
+      "veyn",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-310",
+    "category": "Class Skills",
+    "name": "Wellspring",
+    "subtitle": "Mage skill",
+    "description": "Draws ambient Veyn from the surroundings to restore the user's reserves. Works faster in high-density areas. Cannot be used while casting other spells.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "mage",
+      "veyn",
+      "utility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-311",
+    "category": "Class Skills",
+    "name": "Sanctum",
+    "subtitle": "Mage skill",
+    "description": "Forms a large protective dome of Veyn around the user and nearby allies. Blocks attacks from all directions as long as the user maintains the supply of Veyn.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "mage",
+      "veyn",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-312",
+    "category": "Class Skills",
+    "name": "Shockwave",
+    "subtitle": "Mage skill",
+    "description": "Releases a radial burst of raw Veyn that knocks enemies back and disrupts concentration. Used to create space in close combat.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "mage",
+      "veyn",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-313",
+    "category": "Class Skills",
+    "name": "Linkthread",
+    "subtitle": "Mage skill",
+    "description": "Creates a visible Veyn thread linking the user to one or more allies. Allows sharing of Veyn reserves and limited spell support. Breaks if the distance becomes too great.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "mage",
+      "veyn",
+      "support"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-314",
+    "category": "Class Skills",
+    "name": "Flux",
+    "subtitle": "Mage skill",
+    "description": "Temporarily converts the user's Veyn between raw, elemental, and purified states. Enables more flexible spell combinations but requires precise control.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "mage",
+      "veyn",
+      "utility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-315",
+    "category": "Class Skills",
+    "name": "Sovereign Flow",
+    "subtitle": "Mage skill",
+    "description": "Grants advanced control over Veyn. Allows casting multiple spells at once, shaping Veyn with high precision, and reducing the cost of all other Mage abilities.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "mage",
+      "veyn",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-316",
+    "category": "Class Skills",
+    "name": "Brewcraft",
+    "subtitle": "Alchemist skill",
+    "description": "Combines Veyn and ingredients to create healing, restorative, or enhancement potions. Quality depends on materials and skill.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "alchemist",
+      "potion"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-317",
+    "category": "Class Skills",
+    "name": "Venomcraft",
+    "subtitle": "Alchemist skill",
+    "description": "Creates toxins that can paralyze, weaken, or cause lingering damage. Can be applied to weapons or delivered through food and drink.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "alchemist",
+      "poison"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-318",
+    "category": "Class Skills",
+    "name": "Blastflask",
+    "subtitle": "Alchemist skill",
+    "description": "Brews volatile mixtures that explode on impact or command. Blast size and force can be adjusted by changing ingredients and Veyn input.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "alchemist",
+      "explosive",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-319",
+    "category": "Class Skills",
+    "name": "Assay",
+    "subtitle": "Alchemist skill",
+    "description": "Instantly identifies the magical properties, purity, and potential uses of any ingredient through touch or a light Veyn probe.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "alchemist",
+      "knowledge"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-320",
+    "category": "Class Skills",
+    "name": "Potency Surge",
+    "subtitle": "Alchemist skill",
+    "description": "Channels extra Veyn into a potion during brewing, greatly increasing its final strength. Requires careful control to avoid ruining the brew.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "alchemist",
+      "potion",
+      "veyn"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-321",
+    "category": "Class Skills",
+    "name": "Catalyst",
+    "subtitle": "Alchemist skill",
+    "description": "Creates special substances that multiply or alter the effects of other potions when combined with them.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "alchemist",
+      "potion"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-322",
+    "category": "Class Skills",
+    "name": "Purge",
+    "subtitle": "Alchemist skill",
+    "description": "Removes toxins, corruption, and impurities from ingredients or finished potions. Can also cleanse small amounts of contaminated Veyn.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "alchemist",
+      "purification"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-323",
+    "category": "Class Skills",
+    "name": "Transmute",
+    "subtitle": "Alchemist skill",
+    "description": "Changes the physical state or basic composition of ingredients so they can be used in recipes they normally could not enter.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "alchemist",
+      "transmutation"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-324",
+    "category": "Class Skills",
+    "name": "Field Mix",
+    "subtitle": "Alchemist skill",
+    "description": "Allows rapid brewing of a functional potion during combat using whatever materials are on hand. Results are rougher but still usable.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "alchemist",
+      "potion",
+      "combat"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-325",
+    "category": "Class Skills",
+    "name": "Grand Elixir",
+    "subtitle": "Alchemist skill",
+    "description": "Creates complex, multi-layered legendary potions with powerful and lasting effects. Requires rare ingredients and high control.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "alchemist",
+      "potion",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-326",
+    "category": "Class Skills",
+    "name": "Soulbond",
+    "subtitle": "Beastmaster skill",
+    "description": "Forms a deep telepathic bond with a willing creature. Once accepted, both can sense each other's emotions and general intentions. Cannot be forced.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "beastmaster",
+      "bond"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-327",
+    "category": "Class Skills",
+    "name": "Mindshare",
+    "subtitle": "Beastmaster skill",
+    "description": "Deepens the bond so the user and creature can exchange more complex thoughts and feelings beyond basic intent.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "beastmaster",
+      "bond",
+      "utility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-328",
+    "category": "Class Skills",
+    "name": "Command",
+    "subtitle": "Beastmaster skill",
+    "description": "Issues clear, instantaneous combat orders to the bonded creature through the bond. The creature responds as if the order were instinct.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "beastmaster",
+      "bond",
+      "combat"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-329",
+    "category": "Class Skills",
+    "name": "Shared Senses",
+    "subtitle": "Beastmaster skill",
+    "description": "Allows the user to see, hear, and feel through the bonded creature's senses for a limited time. Range depends on bond strength.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "beastmaster",
+      "bond",
+      "utility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-330",
+    "category": "Class Skills",
+    "name": "Wild Surge",
+    "subtitle": "Beastmaster skill",
+    "description": "Channels Ren into the bonded creature, temporarily increasing its speed, strength, and durability. Cost is shared between user and creature.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "beastmaster",
+      "ren",
+      "combat"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-331",
+    "category": "Class Skills",
+    "name": "Living Shield",
+    "subtitle": "Beastmaster skill",
+    "description": "Commands the creature to intercept an attack aimed at the user, using its body as a barrier.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "beastmaster",
+      "bond",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-332",
+    "category": "Class Skills",
+    "name": "Coordinated Strike",
+    "subtitle": "Beastmaster skill",
+    "description": "Times the user's attack and the creature's attack to land on the same target at the same moment.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "beastmaster",
+      "bond",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-333",
+    "category": "Class Skills",
+    "name": "Vital Link",
+    "subtitle": "Beastmaster skill",
+    "description": "Allows Ren and vitality to flow through the bond, healing either the user or the creature.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "beastmaster",
+      "ren",
+      "support"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-334",
+    "category": "Class Skills",
+    "name": "Ascension",
+    "subtitle": "Beastmaster skill",
+    "description": "Accelerates the growth and potential of a bonded creature through shared experience and Ren exposure.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "beastmaster",
+      "ren",
+      "growth"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-335",
+    "category": "Class Skills",
+    "name": "Pack Lord",
+    "subtitle": "Beastmaster skill",
+    "description": "Allows the user to maintain bonds with multiple creatures and coordinate all of them with high precision.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "beastmaster",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-336",
+    "category": "Class Skills",
+    "name": "Forgework",
+    "subtitle": "Smithing skill",
+    "description": "Shapes metal into functional weapons and armor using a forge, hammer, and basic Veyn reinforcement.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "smith",
+      "crafting"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-337",
+    "category": "Class Skills",
+    "name": "Veyn Temper",
+    "subtitle": "Smithing skill",
+    "description": "Channels Veyn into metal during forging, giving the finished item minor magical properties such as increased sharpness or durability.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "smith",
+      "veyn",
+      "crafting"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-338",
+    "category": "Class Skills",
+    "name": "Ren Edge",
+    "subtitle": "Smithing skill",
+    "description": "Channels the smith's own Ren into a weapon during forging, increasing its striking power.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "smith",
+      "ren",
+      "crafting"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-339",
+    "category": "Class Skills",
+    "name": "Bloodforge",
+    "subtitle": "Smithing skill",
+    "description": "Uses angel or demon blood in the forge to create weapons capable of harming high-rank beings. Extremely dangerous if mishandled.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "smith",
+      "blood-forging",
+      "crafting"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-340",
+    "category": "Class Skills",
+    "name": "Appraisal",
+    "subtitle": "Smithing skill",
+    "description": "Instantly judges a weapon's quality, construction, enchantments, and weaknesses through examination.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "smith",
+      "knowledge"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-341",
+    "category": "Class Skills",
+    "name": "Platecraft",
+    "subtitle": "Smithing skill",
+    "description": "Specializes in creating armor that absorbs, deflects, or redistributes both physical and magical impacts.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "smith",
+      "crafting",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-342",
+    "category": "Class Skills",
+    "name": "Rune Seal",
+    "subtitle": "Smithing skill",
+    "description": "Fuses lasting magical effects directly into the metal during the final stage of forging.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "smith",
+      "enchantment",
+      "crafting"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-343",
+    "category": "Class Skills",
+    "name": "Restore",
+    "subtitle": "Smithing skill",
+    "description": "Fully repairs damaged weapons and armor, including broken blades and worn enchantments.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "smith",
+      "crafting"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-344",
+    "category": "Class Skills",
+    "name": "Legendcraft",
+    "subtitle": "Smithing skill",
+    "description": "Creates multi-layered legendary weapons and armor using materials that lesser smiths cannot work with.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "smith",
+      "mastery",
+      "crafting"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-345",
+    "category": "Class Skills",
+    "name": "Crimson Alloy",
+    "subtitle": "Smithing skill",
+    "description": "Advanced bloodforging that allows mixing blood from different ranks or even angel and demon blood. Extremely powerful and extremely risky.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "smith",
+      "blood-forging",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-346",
+    "category": "Class Skills",
+    "name": "Imbue",
+    "subtitle": "Enchanter skill",
+    "description": "Gives ordinary items simple lasting magical properties (glow, sharpness, resistance, etc.).",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "enchanter",
+      "enchantment"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-347",
+    "category": "Class Skills",
+    "name": "Veyn Bind",
+    "subtitle": "Enchanter skill",
+    "description": "Channels Veyn into a finished item to create stronger and more complex magical effects.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "enchanter",
+      "veyn",
+      "enchantment"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-348",
+    "category": "Class Skills",
+    "name": "Read Rune",
+    "subtitle": "Enchanter skill",
+    "description": "Fully reads and understands existing enchantments on an item — their function, strength, and stability.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "enchanter",
+      "enchantment",
+      "knowledge"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-349",
+    "category": "Class Skills",
+    "name": "Unbind",
+    "subtitle": "Enchanter skill",
+    "description": "Cleanly removes an enchantment from an item without damaging it. Poor execution can destroy the item.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "enchanter",
+      "enchantment"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-350",
+    "category": "Class Skills",
+    "name": "Amplify",
+    "subtitle": "Enchanter skill",
+    "description": "Strengthens and stabilizes an existing enchantment, making it more potent or longer-lasting.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "enchanter",
+      "enchantment"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-351",
+    "category": "Class Skills",
+    "name": "Layer",
+    "subtitle": "Enchanter skill",
+    "description": "Fuses two or more compatible enchantments onto a single item. Incompatible ones can cancel or destroy the item.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "enchanter",
+      "enchantment"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-352",
+    "category": "Class Skills",
+    "name": "Wardseal",
+    "subtitle": "Enchanter skill",
+    "description": "Creates defensive enchantments on shields, armor, or objects that absorb or deflect incoming attacks.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "enchanter",
+      "enchantment",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-353",
+    "category": "Class Skills",
+    "name": "Strike Rune",
+    "subtitle": "Enchanter skill",
+    "description": "Places offensive trigger enchantments on weapons that activate on impact (fire, force, etc.).",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "enchanter",
+      "enchantment",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-354",
+    "category": "Class Skills",
+    "name": "Living Enchant",
+    "subtitle": "Enchanter skill",
+    "description": "Creates complex, adaptive enchantments that can respond to threats or evolve over time.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "enchanter",
+      "enchantment",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-355",
+    "category": "Class Skills",
+    "name": "Rune Discovery",
+    "subtitle": "Enchanter skill",
+    "description": "Allows the user to research and develop entirely new enchantment patterns and effects.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "enchanter",
+      "enchantment",
+      "knowledge"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-356",
+    "category": "Class Skills",
+    "name": "True-Sight",
+    "subtitle": "Diviner skill",
+    "description": "Sees through lies, disguises, and magical concealment, including abilities like Duskveil and Wraithcloth.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "diviner",
+      "innate",
+      "perception"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-357",
+    "category": "Class Skills",
+    "name": "Foresight",
+    "subtitle": "Diviner skill",
+    "description": "Glimpses fragmented possible futures as symbols, feelings, or brief flashes. Further and clearer visions cost more Veyn and become less reliable.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "diviner",
+      "holy",
+      "perception"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-358",
+    "category": "Class Skills",
+    "name": "Echoes",
+    "subtitle": "Diviner skill",
+    "description": "Views residual past events tied to a specific location or person. Clarity depends on the strength of the remaining Veyn traces.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "diviner",
+      "holy",
+      "perception"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-359",
+    "category": "Class Skills",
+    "name": "Truthsense",
+    "subtitle": "Diviner skill",
+    "description": "Detects lies and deception in real time through changes in a target's Veyn flow and aura.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "diviner",
+      "perception"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-360",
+    "category": "Class Skills",
+    "name": "Veyn Pulse",
+    "subtitle": "Diviner skill",
+    "description": "Senses the presence, density, and nature of Veyn in the surrounding area, including corrupted or holy variants.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "diviner",
+      "veyn",
+      "perception"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-361",
+    "category": "Class Skills",
+    "name": "Aura Gaze",
+    "subtitle": "Diviner skill",
+    "description": "Reads the auras of living beings to reveal emotional state, health, hidden abilities, and magical influence.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "diviner",
+      "perception"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-362",
+    "category": "Class Skills",
+    "name": "Deep Scry",
+    "subtitle": "Diviner skill",
+    "description": "A prepared ritual form of Foresight that produces clearer and more detailed visions at the cost of time and materials.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "diviner",
+      "holy",
+      "ritual"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-363",
+    "category": "Class Skills",
+    "name": "Mindward",
+    "subtitle": "Diviner skill",
+    "description": "Protects the user's mind and aura from being read or influenced by other Diviners or mental abilities.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "diviner",
+      "holy",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-364",
+    "category": "Class Skills",
+    "name": "Thread Sight",
+    "subtitle": "Diviner skill",
+    "description": "Allows the user to perceive the emotional and magical bonds connecting people.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "diviner",
+      "perception"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-365",
+    "category": "Class Skills",
+    "name": "Oracle's Eye",
+    "subtitle": "Diviner skill",
+    "description": "Temporarily combines multiple divination effects, granting a brief period of heightened all-around awareness.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "diviner",
+      "holy",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-366",
+    "category": "Class Skills",
+    "name": "Purify",
+    "subtitle": "Exorcist skill",
+    "description": "Channels Veyn to cleanse corrupted or unstable Veyn from a person, object, or area.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "exorcist",
+      "veyn",
+      "purification"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-367",
+    "category": "Class Skills",
+    "name": "Bind the Fallen",
+    "subtitle": "Exorcist skill",
+    "description": "Specialized binding techniques used to suppress and contain the unstable power of Fallen Angels.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "exorcist",
+      "fallen angel",
+      "combat"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-368",
+    "category": "Class Skills",
+    "name": "Miasma Purge",
+    "subtitle": "Exorcist skill",
+    "description": "Extracts and neutralizes demonic miasma from living beings, places, or objects. The process is often painful for the target.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "exorcist",
+      "demon",
+      "purification"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-369",
+    "category": "Class Skills",
+    "name": "Stabilize",
+    "subtitle": "Exorcist skill",
+    "description": "Calms chaotic or fluctuating Veyn, preventing it from becoming corrupted or dangerously unstable.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "exorcist",
+      "veyn",
+      "utility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-370",
+    "category": "Class Skills",
+    "name": "Rite of Expulsion",
+    "subtitle": "Exorcist skill",
+    "description": "A formal ritual that forces out deep possession, curses, or heavy contamination. Requires time, components, and focus.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "exorcist",
+      "ritual"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-371",
+    "category": "Class Skills",
+    "name": "Sanctum Barrier",
+    "subtitle": "Exorcist skill",
+    "description": "Creates a barrier of purified Veyn that is especially effective against demons, undead, and miasma.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "exorcist",
+      "veyn",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-372",
+    "category": "Class Skills",
+    "name": "Cleansing Strike",
+    "subtitle": "Exorcist skill",
+    "description": "Channels purified Veyn into a physical attack that deals heavy extra damage to corrupted beings.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "exorcist",
+      "veyn",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-373",
+    "category": "Class Skills",
+    "name": "Mass Ablution",
+    "subtitle": "Exorcist skill",
+    "description": "Allows the purification of multiple targets or a wide area at once. Requires significant Veyn and concentration.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "exorcist",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-374",
+    "category": "Class Skills",
+    "name": "Spirit Banish",
+    "subtitle": "Exorcist skill",
+    "description": "Forces powerful residual spirits or wills to disperse or leave an area.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "exorcist",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-375",
+    "category": "Class Skills",
+    "name": "Final Seal",
+    "subtitle": "Exorcist skill",
+    "description": "Places a powerful, lasting suppression on extreme corruption or dangerous entities, locking their power away.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "exorcist",
+      "defensive",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-376",
+    "category": "Class Skills",
+    "name": "Mediate",
+    "subtitle": "Broker skill",
+    "description": "Drafts, reads, and balances contracts so that terms are clear, enforceable, and as fair as possible.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "broker",
+      "contract"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-377",
+    "category": "Class Skills",
+    "name": "Enforce",
+    "subtitle": "Broker skill",
+    "description": "Magically triggers the penalties written into a signed contract when a party breaks the terms.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "broker",
+      "contract",
+      "combat"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-378",
+    "category": "Class Skills",
+    "name": "Clause Sight",
+    "subtitle": "Broker skill",
+    "description": "Detects hidden clauses, loopholes, and magical bindings inside a contract.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "broker",
+      "contract",
+      "knowledge"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-379",
+    "category": "Class Skills",
+    "name": "Sever",
+    "subtitle": "Broker skill",
+    "description": "Forcibly dissolves a signed contract. Carries a high risk of backlash to both parties and the Broker.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "broker",
+      "contract"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-380",
+    "category": "Class Skills",
+    "name": "Bargain",
+    "subtitle": "Broker skill",
+    "description": "Expert persuasion and negotiation used to find acceptable terms between hostile or difficult parties.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "broker",
+      "social"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-381",
+    "category": "Class Skills",
+    "name": "Tell",
+    "subtitle": "Broker skill",
+    "description": "Senses dishonesty during negotiations through body language, voice, and small Veyn fluctuations.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "broker",
+      "perception"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-382",
+    "category": "Class Skills",
+    "name": "Backlash Ward",
+    "subtitle": "Broker skill",
+    "description": "Creates a protective ward that guards the Broker against magical backlash from contracts and hostile parties.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "broker",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-383",
+    "category": "Class Skills",
+    "name": "Network",
+    "subtitle": "Broker skill",
+    "description": "Maintains a web of contacts, informants, and fellow Brokers across different areas and realms.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "broker",
+      "social",
+      "utility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-384",
+    "category": "Class Skills",
+    "name": "Leverage",
+    "subtitle": "Broker skill",
+    "description": "Turns small pieces of information or minor advantages into strong negotiating positions.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "broker",
+      "social"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-385",
+    "category": "Class Skills",
+    "name": "Iron Contract",
+    "subtitle": "Broker skill",
+    "description": "Creates high-stakes contracts that are extremely difficult to break and carry severe consequences.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "broker",
+      "contract",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-386",
+    "category": "Class Skills",
+    "name": "Grace",
+    "subtitle": "Saintess skill",
+    "description": "Channels Holy Energy to heal wounds and purge corruption-related ailments more effectively than ordinary healing.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "saintess",
+      "holy",
+      "healing"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-387",
+    "category": "Class Skills",
+    "name": "Aegis of Light",
+    "subtitle": "Saintess skill",
+    "description": "Creates a barrier of Holy Energy that is especially strong against demonic and corrupted attacks.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "saintess",
+      "holy",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-388",
+    "category": "Class Skills",
+    "name": "Cleanse",
+    "subtitle": "Saintess skill",
+    "description": "Purifies curses, miasma, and corruption from a target or area with focused Holy Energy.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "saintess",
+      "holy",
+      "purification"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-389",
+    "category": "Class Skills",
+    "name": "Radiant Guard",
+    "subtitle": "Saintess skill",
+    "description": "Forms a radiant shield that blocks attacks and burns corrupted beings on contact.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "saintess",
+      "holy",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-390",
+    "category": "Class Skills",
+    "name": "Smite",
+    "subtitle": "Saintess skill",
+    "description": "Infuses a melee attack with Holy Energy that deals heavy extra damage to undead and demons.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "saintess",
+      "holy",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-391",
+    "category": "Class Skills",
+    "name": "Benediction",
+    "subtitle": "Saintess skill",
+    "description": "Temporarily boosts an ally's resistance to corruption and increases their Veyn recovery.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "saintess",
+      "holy",
+      "support"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-392",
+    "category": "Class Skills",
+    "name": "Hallowed Ground",
+    "subtitle": "Saintess skill",
+    "description": "Places a lasting holy zone that repels corrupted beings and slowly purifies the area.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "saintess",
+      "holy",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-393",
+    "category": "Class Skills",
+    "name": "Lumen",
+    "subtitle": "Saintess skill",
+    "description": "Emits cleansing light that reveals hidden beings, burns undead, and weakens demonic power.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "saintess",
+      "holy",
+      "utility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-394",
+    "category": "Class Skills",
+    "name": "Sacred Mastery",
+    "subtitle": "Saintess skill",
+    "description": "Allows precise and selective use of Holy Energy for complex healing and combat applications.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "saintess",
+      "holy",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-395",
+    "category": "Class Skills",
+    "name": "Miracle",
+    "subtitle": "Saintess skill",
+    "description": "Advanced holy techniques that can produce effects beyond normal limits of the class.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "saintess",
+      "holy",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-396",
+    "category": "Class Skills",
+    "name": "Mend",
+    "subtitle": "Clergy skill",
+    "description": "Channels Veyn to heal minor wounds, cuts, bruises, and light burns.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "clergy",
+      "veyn",
+      "healing"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-397",
+    "category": "Class Skills",
+    "name": "Restore",
+    "subtitle": "Clergy skill",
+    "description": "Heals serious injuries such as broken bones, deep cuts, and internal damage. Takes more time and Veyn than basic healing.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "clergy",
+      "veyn",
+      "healing"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-398",
+    "category": "Class Skills",
+    "name": "Ritual of Recovery",
+    "subtitle": "Clergy skill",
+    "description": "A prepared healing ritual used for wounds too severe for direct methods. Takes time but can save lives.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "clergy",
+      "veyn",
+      "healing",
+      "ritual"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-399",
+    "category": "Class Skills",
+    "name": "Guardian Field",
+    "subtitle": "Clergy skill",
+    "description": "Creates a barrier that absorbs damage directed at wounded allies, giving the healer time to work.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "clergy",
+      "veyn",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-400",
+    "category": "Class Skills",
+    "name": "Regeneration",
+    "subtitle": "Clergy skill",
+    "description": "Places a lasting effect on an ally that accelerates their natural healing over several hours.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "clergy",
+      "veyn",
+      "support"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-401",
+    "category": "Class Skills",
+    "name": "Sanctuary",
+    "subtitle": "Clergy skill",
+    "description": "Creates a zone that continuously heals anyone inside it. Useful for field treatment areas.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "clergy",
+      "veyn",
+      "healing",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-402",
+    "category": "Class Skills",
+    "name": "Soothing Light",
+    "subtitle": "Clergy skill",
+    "description": "Emits a gentle light that eases pain, calms the mind, and mildly speeds recovery in those nearby.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "clergy",
+      "veyn",
+      "healing",
+      "support"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-403",
+    "category": "Class Skills",
+    "name": "Lifeweave",
+    "subtitle": "Clergy skill",
+    "description": "Advanced healing capable of restoring lost limbs (with rare components) and pulling someone back from the edge of death.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "clergy",
+      "veyn",
+      "healing",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-404",
+    "category": "Class Skills",
+    "name": "Remedy",
+    "subtitle": "Clergy skill",
+    "description": "Develops and applies specialized treatments for rare conditions and unique injuries.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "clergy",
+      "veyn",
+      "healing",
+      "knowledge"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-405",
+    "category": "Class Skills",
+    "name": "Teach",
+    "subtitle": "Clergy skill",
+    "description": "Allows the user to effectively train others in healing techniques, helping maintain the number of capable healers.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "clergy",
+      "veyn",
+      "healing",
+      "support"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-406",
+    "category": "Class Skills",
+    "name": "Enchanted Shot",
+    "subtitle": "Archer skill",
+    "description": "Enchants an arrow with Veyn before firing, adding elemental or force effects that activate on impact.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "archer",
+      "veyn",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-407",
+    "category": "Class Skills",
+    "name": "Armor Piercer",
+    "subtitle": "Archer skill",
+    "description": "Focuses Veyn into the arrowhead so it can punch through armor, shields, and barriers.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "archer",
+      "veyn",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-408",
+    "category": "Class Skills",
+    "name": "Blast Arrow",
+    "subtitle": "Archer skill",
+    "description": "Creates arrows that detonate on impact, damaging everything in a small radius.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "archer",
+      "veyn",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-409",
+    "category": "Class Skills",
+    "name": "Seeker",
+    "subtitle": "Archer skill",
+    "description": "Enchants an arrow so it actively adjusts its path mid-flight to follow a designated target.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "archer",
+      "veyn",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-410",
+    "category": "Class Skills",
+    "name": "Rain of Arrows",
+    "subtitle": "Archer skill",
+    "description": "Launches a volley of enchanted arrows into the air to rain down over a wide area.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "archer",
+      "veyn",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-411",
+    "category": "Class Skills",
+    "name": "Arrow Ward",
+    "subtitle": "Archer skill",
+    "description": "Plants arrows in the ground to form a temporary Veyn barrier that blocks incoming attacks.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "archer",
+      "veyn",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-412",
+    "category": "Class Skills",
+    "name": "Sunder Shot",
+    "subtitle": "Archer skill",
+    "description": "A single, fully charged arrow fired with extreme speed and penetrating power.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "archer",
+      "veyn",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-413",
+    "category": "Class Skills",
+    "name": "Healing Flight",
+    "subtitle": "Archer skill",
+    "description": "Enchants an arrow with healing Veyn, allowing the archer to restore allies from a distance.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "archer",
+      "veyn",
+      "support",
+      "healing"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-414",
+    "category": "Class Skills",
+    "name": "Master Shot",
+    "subtitle": "Archer skill",
+    "description": "Allows complex multi-effect enchantments on arrows and extreme-range precision shooting.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "archer",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-415",
+    "category": "Class Skills",
+    "name": "New Quiver",
+    "subtitle": "Archer skill",
+    "description": "Develops entirely new forms of magical ammunition and arrow techniques.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "archer",
+      "knowledge"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-416",
+    "category": "Class Skills",
+    "name": "Auric Blow",
+    "subtitle": "Paladin skill",
+    "description": "Channels golden Ren into a powerful melee attack that burns corrupted beings and heals nearby allies.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "paladin",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-417",
+    "category": "Class Skills",
+    "name": "Lightshield",
+    "subtitle": "Paladin skill",
+    "description": "Creates a radiant barrier that blocks attacks and burns corrupted beings on contact.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "paladin",
+      "ren",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-418",
+    "category": "Class Skills",
+    "name": "Golden Mend",
+    "subtitle": "Paladin skill",
+    "description": "Heals allies with golden Ren while purifying corruption inside the wounds.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "paladin",
+      "ren",
+      "healing"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-419",
+    "category": "Class Skills",
+    "name": "Aura of Resolve",
+    "subtitle": "Paladin skill",
+    "description": "Strengthens nearby allies against fear, charm, and morale-breaking effects.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "paladin",
+      "ren",
+      "support"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-420",
+    "category": "Class Skills",
+    "name": "Judgment",
+    "subtitle": "Paladin skill",
+    "description": "A massive single-target strike of pure golden Ren that deals heavy damage to corrupted and undead beings.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "paladin",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-421",
+    "category": "Class Skills",
+    "name": "Lay on Hands",
+    "subtitle": "Paladin skill",
+    "description": "Direct-contact healing that restores injuries and purifies corruption at the same time.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "paladin",
+      "ren",
+      "healing"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-422",
+    "category": "Class Skills",
+    "name": "Consecrate",
+    "subtitle": "Paladin skill",
+    "description": "Blesses an area so that it heals allies and damages corrupted beings standing on it.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "paladin",
+      "ren",
+      "support",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-423",
+    "category": "Class Skills",
+    "name": "Divine Ward",
+    "subtitle": "Paladin skill",
+    "description": "Places an automatic protective ward on an ally that activates when they are attacked.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "paladin",
+      "ren",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-424",
+    "category": "Class Skills",
+    "name": "Oathsurge",
+    "subtitle": "Paladin skill",
+    "description": "Temporarily increases the Paladin's power when their allies are in serious danger.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "paladin",
+      "ren",
+      "passive",
+      "support"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-425",
+    "category": "Class Skills",
+    "name": "Champion",
+    "subtitle": "Paladin skill",
+    "description": "A full temporary empowerment that turns the Paladin into a beacon of golden light, greatly enhancing all abilities.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "paladin",
+      "ren",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-426",
+    "category": "Class Skills",
+    "name": "Raise",
+    "subtitle": "Grimtender skill",
+    "description": "Channels Veyn into the remains of a fallen creature, reanimating it as an undead servant under the user's control.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "grimtender",
+      "veyn",
+      "undead"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-427",
+    "category": "Class Skills",
+    "name": "Command Dead",
+    "subtitle": "Grimtender skill",
+    "description": "Issues precise combat orders to one or more reanimated servants.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "grimtender",
+      "undead",
+      "combat"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-428",
+    "category": "Class Skills",
+    "name": "Bone Wall",
+    "subtitle": "Grimtender skill",
+    "description": "Commands reanimated bodies to intercept attacks, using them as disposable shields.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "grimtender",
+      "undead",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-429",
+    "category": "Class Skills",
+    "name": "Drain Remains",
+    "subtitle": "Grimtender skill",
+    "description": "Siphons residual Veyn from nearby corpses and remains to restore the user's own reserves.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "grimtender",
+      "veyn",
+      "utility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-430",
+    "category": "Class Skills",
+    "name": "Necrotic Pulse",
+    "subtitle": "Grimtender skill",
+    "description": "Releases a wave of necrotic energy that weakens living targets and strengthens undead ones.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "grimtender",
+      "veyn",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-431",
+    "category": "Class Skills",
+    "name": "Legion",
+    "subtitle": "Grimtender skill",
+    "description": "Reanimates a large number of remains at once, creating a group of undead servants.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "grimtender",
+      "veyn",
+      "undead",
+      "combat"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-432",
+    "category": "Class Skills",
+    "name": "Bone Lance",
+    "subtitle": "Grimtender skill",
+    "description": "Shapes bone into a projectile and launches it, carrying necrotic Veyn that damages on impact.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "grimtender",
+      "undead",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-433",
+    "category": "Class Skills",
+    "name": "Spirit Anchor",
+    "subtitle": "Grimtender skill",
+    "description": "Binds residual spirit more tightly to remains, creating stronger and more intelligent undead.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "grimtender",
+      "undead"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-434",
+    "category": "Class Skills",
+    "name": "Deathlord",
+    "subtitle": "Grimtender skill",
+    "description": "Allows permanent high-quality undead and large-scale simultaneous control.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "grimtender",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-435",
+    "category": "Class Skills",
+    "name": "Harvest",
+    "subtitle": "Grimtender skill",
+    "description": "Extracts and stores residual essence from the newly dead for later use in powerful reanimation.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "grimtender",
+      "undead",
+      "utility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-436",
+    "category": "Class Skills",
+    "name": "Cleave",
+    "subtitle": "Bladesinger skill",
+    "description": "A rapid sweeping sword strike that can hit multiple targets in one motion.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "bladesinger",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-437",
+    "category": "Class Skills",
+    "name": "Crimson Edge",
+    "subtitle": "Bladesinger skill",
+    "description": "Coats the blade in concentrated Ren, greatly increasing its cutting power.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "bladesinger",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-438",
+    "category": "Class Skills",
+    "name": "Flourish",
+    "subtitle": "Bladesinger skill",
+    "description": "Uses rapid, precise blade movements to deflect incoming attacks with minimal effort.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "bladesinger",
+      "ren",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-439",
+    "category": "Class Skills",
+    "name": "Counter",
+    "subtitle": "Bladesinger skill",
+    "description": "Responds to an incoming attack with an immediate and precise counter-strike.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "bladesinger",
+      "ren",
+      "defensive",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-440",
+    "category": "Class Skills",
+    "name": "Gale",
+    "subtitle": "Bladesinger skill",
+    "description": "Uses Ren to propel the user forward in a burst of speed, closing distance instantly.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "bladesinger",
+      "ren",
+      "mobility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-441",
+    "category": "Class Skills",
+    "name": "Phantom Cut",
+    "subtitle": "Bladesinger skill",
+    "description": "Strikes from an unexpected angle by masking the blade's movement with Ren.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "bladesinger",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-442",
+    "category": "Class Skills",
+    "name": "Tempest",
+    "subtitle": "Bladesinger skill",
+    "description": "Unleashes a rapid series of Ren-enhanced slashes that create a whirlwind of attacks.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "bladesinger",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-443",
+    "category": "Class Skills",
+    "name": "Grace",
+    "subtitle": "Bladesinger skill",
+    "description": "Passively enhances balance, coordination, and reaction speed, allowing the user to maintain form even while wounded.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "bladesinger",
+      "ren",
+      "passive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-444",
+    "category": "Class Skills",
+    "name": "Bladesong",
+    "subtitle": "Bladesinger skill",
+    "description": "Enters a focused state where Ren flows rhythmically through the body, enhancing all physical and blade techniques.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "bladesinger",
+      "ren",
+      "buff"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-445",
+    "category": "Class Skills",
+    "name": "Perfection",
+    "subtitle": "Bladesinger skill",
+    "description": "The user executes every movement with optimal efficiency and zero wasted motion.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "bladesinger",
+      "ren",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-446",
+    "category": "Class Skills",
+    "name": "Frenzy",
+    "subtitle": "Berserker skill",
+    "description": "Enters a controlled rage that greatly increases physical strength and pain tolerance while reducing precision.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "berserker",
+      "ren",
+      "buff"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-447",
+    "category": "Class Skills",
+    "name": "Warhowl",
+    "subtitle": "Berserker skill",
+    "description": "Releases a Ren-infused shout that staggers nearby enemies and weakens their resolve.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "berserker",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-448",
+    "category": "Class Skills",
+    "name": "Overkill",
+    "subtitle": "Berserker skill",
+    "description": "Channels a massive burst of Ren into a single attack for extreme damage, leaving the user temporarily drained.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "berserker",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-449",
+    "category": "Class Skills",
+    "name": "Reckless",
+    "subtitle": "Berserker skill",
+    "description": "Abandons defense for one devastating attack that leaves the user completely open afterward.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "berserker",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-450",
+    "category": "Class Skills",
+    "name": "Unyielding",
+    "subtitle": "Berserker skill",
+    "description": "When health falls critically low, Ren automatically surges to keep the user fighting through wounds that would stop others.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "berserker",
+      "ren",
+      "passive",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-451",
+    "category": "Class Skills",
+    "name": "Rampage",
+    "subtitle": "Berserker skill",
+    "description": "Fully unleashes rage, massively increasing strength and speed but removing the ability to distinguish friend from foe.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "berserker",
+      "ren",
+      "buff",
+      "dangerous"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-452",
+    "category": "Class Skills",
+    "name": "Detonate",
+    "subtitle": "Berserker skill",
+    "description": "Explodes all accumulated Ren outward, damaging and knocking back everything nearby.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "berserker",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-453",
+    "category": "Class Skills",
+    "name": "Cripple",
+    "subtitle": "Berserker skill",
+    "description": "A targeted strike meant to disable a specific body part, such as shattering a bone or tearing a tendon.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "berserker",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-454",
+    "category": "Class Skills",
+    "name": "Last Stand",
+    "subtitle": "Berserker skill",
+    "description": "A final, suicidal burst of power used when death is certain, dealing catastrophic damage to everything nearby including the user.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "berserker",
+      "ren",
+      "offensive",
+      "dangerous"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-455",
+    "category": "Class Skills",
+    "name": "Warlord",
+    "subtitle": "Berserker skill",
+    "description": "A roar so powerful it distorts the air, shatters weak structures, and empowers nearby allies while crushing enemy morale.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "berserker",
+      "ren",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-456",
+    "category": "Class Skills",
+    "name": "Ironclad",
+    "subtitle": "Sentinel skill",
+    "description": "Coats armor and shield in concentrated Ren, greatly increasing their durability.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "sentinel",
+      "ren",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-457",
+    "category": "Class Skills",
+    "name": "Bulwark",
+    "subtitle": "Sentinel skill",
+    "description": "Creates a solid barrier of Ren in a chosen direction to block incoming attacks.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "sentinel",
+      "ren",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-458",
+    "category": "Class Skills",
+    "name": "Fortress",
+    "subtitle": "Sentinel skill",
+    "description": "The user plants their feet and becomes nearly immovable, taking reduced damage and resisting knockback.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "sentinel",
+      "ren",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-459",
+    "category": "Class Skills",
+    "name": "Provoke",
+    "subtitle": "Sentinel skill",
+    "description": "Projects a challenge that forces enemies to focus their attacks on the Sentinel instead of allies.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "sentinel",
+      "ren",
+      "utility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-460",
+    "category": "Class Skills",
+    "name": "Endure",
+    "subtitle": "Sentinel skill",
+    "description": "Allows the user to continue functioning even under severe injury by reinforcing the body with Ren.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "sentinel",
+      "ren",
+      "passive",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-461",
+    "category": "Class Skills",
+    "name": "Shield Slam",
+    "subtitle": "Sentinel skill",
+    "description": "Slams the shield into an opponent with Ren-enhanced force, dealing damage and potentially stunning them.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "sentinel",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-462",
+    "category": "Class Skills",
+    "name": "Aegis Share",
+    "subtitle": "Sentinel skill",
+    "description": "Extends the Sentinel's protective effect to nearby allies, reducing the damage they take.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "sentinel",
+      "ren",
+      "defensive",
+      "support"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-463",
+    "category": "Class Skills",
+    "name": "Oathguard",
+    "subtitle": "Sentinel skill",
+    "description": "Designates an ally to protect. The Sentinel automatically intercepts attacks aimed at that ally.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "sentinel",
+      "ren",
+      "defensive",
+      "support"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-464",
+    "category": "Class Skills",
+    "name": "Last Breath",
+    "subtitle": "Sentinel skill",
+    "description": "Once per battle, when the user would fall, a reserve of Ren keeps them alive at 1 health for a short time.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "sentinel",
+      "ren",
+      "defensive",
+      "passive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-465",
+    "category": "Class Skills",
+    "name": "Immovable",
+    "subtitle": "Sentinel skill",
+    "description": "The user becomes a wide-area defensive bastion, taking drastically reduced damage and protecting a large zone around them.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "sentinel",
+      "ren",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-466",
+    "category": "Class Skills",
+    "name": "Force Arrow",
+    "subtitle": "Ren Archer skill",
+    "description": "Coats an arrow in Ren before firing, increasing its force and penetration.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "ren archer",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-467",
+    "category": "Class Skills",
+    "name": "Power Draw",
+    "subtitle": "Ren Archer skill",
+    "description": "Charges an arrow with maximum Ren and fires it at extreme speed and power.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "ren archer",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-468",
+    "category": "Class Skills",
+    "name": "Rapid Fire",
+    "subtitle": "Ren Archer skill",
+    "description": "Fires a quick succession of Ren-enhanced arrows without pausing between shots.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "ren archer",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-469",
+    "category": "Class Skills",
+    "name": "Piercer",
+    "subtitle": "Ren Archer skill",
+    "description": "Concentrates Ren into the arrowhead so it can punch through heavy armor and shields.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "ren archer",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-470",
+    "category": "Class Skills",
+    "name": "Windstep",
+    "subtitle": "Ren Archer skill",
+    "description": "Uses Ren to move quickly and silently, allowing rapid repositioning between shots.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "ren archer",
+      "ren",
+      "mobility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-471",
+    "category": "Class Skills",
+    "name": "Longshot",
+    "subtitle": "Ren Archer skill",
+    "description": "Takes careful aim and fires a single arrow with perfect precision at extreme range.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "ren archer",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-472",
+    "category": "Class Skills",
+    "name": "Barrage",
+    "subtitle": "Ren Archer skill",
+    "description": "Fires a dense cloud of Ren-coated arrows that blankets an area.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "ren archer",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-473",
+    "category": "Class Skills",
+    "name": "Slip",
+    "subtitle": "Ren Archer skill",
+    "description": "A Ren-enhanced dodge that allows the user to avoid attacks while staying ready to fire.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "ren archer",
+      "ren",
+      "mobility",
+      "defensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-474",
+    "category": "Class Skills",
+    "name": "Hawk Eye",
+    "subtitle": "Ren Archer skill",
+    "description": "Passively enhances vision, target tracking, and distance judgment.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "ren archer",
+      "ren",
+      "passive",
+      "perception"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-475",
+    "category": "Class Skills",
+    "name": "Arrow Lord",
+    "subtitle": "Ren Archer skill",
+    "description": "Allows perfect accuracy while moving and the creation of hovering arrow constructs that can fire on command.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "ren archer",
+      "ren",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-476",
+    "category": "Class Skills",
+    "name": "Shade Step",
+    "subtitle": "Veilrunner skill",
+    "description": "Uses Ren to move silently and quickly through dim light and shadows, becoming hard to track.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "veilrunner",
+      "ren",
+      "mobility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-477",
+    "category": "Class Skills",
+    "name": "Silence",
+    "subtitle": "Veilrunner skill",
+    "description": "Completely suppresses all sound from the user's movements, including footsteps and clothing.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "veilrunner",
+      "ren",
+      "passive",
+      "stealth"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-478",
+    "category": "Class Skills",
+    "name": "Backstab",
+    "subtitle": "Veilrunner skill",
+    "description": "A high-damage precision strike delivered from behind, targeting vital points.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "veilrunner",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-479",
+    "category": "Class Skills",
+    "name": "Smoke",
+    "subtitle": "Veilrunner skill",
+    "description": "Creates a cloud of smoke or dust that breaks line of sight and allows repositioning or escape.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "veilrunner",
+      "ren",
+      "utility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-480",
+    "category": "Class Skills",
+    "name": "Ghost",
+    "subtitle": "Veilrunner skill",
+    "description": "Enhances reflexes and body control, allowing the user to dodge attacks with minimal movement.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "veilrunner",
+      "ren",
+      "defensive",
+      "mobility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-481",
+    "category": "Class Skills",
+    "name": "Venom Edge",
+    "subtitle": "Veilrunner skill",
+    "description": "Coats a blade in Ren-enhanced poison that slows, weakens, or paralyzes on contact.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "veilrunner",
+      "ren",
+      "offensive"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-482",
+    "category": "Class Skills",
+    "name": "Touchlock",
+    "subtitle": "Veilrunner skill",
+    "description": "Uses Ren to sense and manipulate the internal mechanisms of locks without physical tools.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "veilrunner",
+      "ren",
+      "utility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-483",
+    "category": "Class Skills",
+    "name": "Mimic",
+    "subtitle": "Veilrunner skill",
+    "description": "Subtly alters posture, gait, and mannerisms to blend into crowds or imitate another person.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "veilrunner",
+      "ren",
+      "utility"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-484",
+    "category": "Class Skills",
+    "name": "Vanish",
+    "subtitle": "Veilrunner skill",
+    "description": "Fully suppresses presence for a short time, becoming effectively invisible (movement is limited).",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "veilrunner",
+      "ren",
+      "stealth"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-485",
+    "category": "Class Skills",
+    "name": "Wraith",
+    "subtitle": "Veilrunner skill",
+    "description": "Allows near-perfect stealth even at full speed, leaving almost no trace of the user's presence.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "veilrunner",
+      "ren",
+      "mastery"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-486",
+    "category": "Class Skills",
+    "name": "Study",
+    "subtitle": "Shudonkeeper skill",
+    "description": "Deep analysis of Shudon construction, materials, design, and age through examination.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "shudonkeeper",
+      "knowledge"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-487",
+    "category": "Class Skills",
+    "name": "Preserve",
+    "subtitle": "Shudonkeeper skill",
+    "description": "Repairs and maintains inactive Shudon, slowing further deterioration even if reactivation is impossible.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "shudonkeeper",
+      "repair"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-488",
+    "category": "Class Skills",
+    "name": "Lore",
+    "subtitle": "Shudonkeeper skill",
+    "description": "Theoretical knowledge of how the Shudon were originally created and what role the world core played.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "shudonkeeper",
+      "knowledge"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-489",
+    "category": "Class Skills",
+    "name": "Script",
+    "subtitle": "Shudonkeeper skill",
+    "description": "Reads and interprets the ancient inscriptions found on Shudon and related relics.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "shudonkeeper",
+      "knowledge"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-490",
+    "category": "Class Skills",
+    "name": "Commune",
+    "subtitle": "Shudonkeeper skill",
+    "description": "Attempts to sense residual will or traces of the world core inside dormant Shudon through physical contact.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "shudonkeeper",
+      "perception"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-491",
+    "category": "Class Skills",
+    "name": "Chronicle",
+    "subtitle": "Shudonkeeper skill",
+    "description": "Comprehensive knowledge of the Shudon's historical role in the division of the realms.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "shudonkeeper",
+      "knowledge"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-492",
+    "category": "Class Skills",
+    "name": "Theory",
+    "subtitle": "Shudonkeeper skill",
+    "description": "Develops and refines theoretical methods that might one day allow reactivation of the Shudon.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "shudonkeeper",
+      "knowledge"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-493",
+    "category": "Class Skills",
+    "name": "Archive",
+    "subtitle": "Shudonkeeper skill",
+    "description": "Organizes and preserves the collective research, observations, and theories of all previous Shudonkeepers.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "shudonkeeper",
+      "knowledge"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-494",
+    "category": "Class Skills",
+    "name": "Fragment Sense",
+    "subtitle": "Shudonkeeper skill",
+    "description": "Detects and identifies Shudon-related relics and materials even when heavily damaged or buried.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "shudonkeeper",
+      "perception"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-495",
+    "category": "Class Skills",
+    "name": "Core Insight",
+    "subtitle": "Shudonkeeper skill",
+    "description": "Allows brief, incomplete glimpses of residual world-core patterns still present inside Shudon remains.",
+    "fields": [],
+    "tags": [
+      "skill",
+      "class",
+      "shudonkeeper",
+      "perception"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]
