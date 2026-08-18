@@ -258,6 +258,10 @@ module.exports = [
     [
       { label: "Status", value: "Inactive for a long time; no one currently knows how to reactivate them." },
       { label: "Plot", value: "They become active later in the story." },
+      { label: "Body", value: "They are completely immune to any form of magic meaning raw veyn, holy energy and corrupted veyn is ineffective against it" },
+      { label: "Control", value: "They act out the will of the world core" },
+      { label: "Hostile", value: "They are hostile to the bearers of the world curse mark" },
+      { label: "Unkown", value: "People still dont know much about the mark or even that if someone with it can activate to golem which the golem would them have a goal to kill the person" },
     ],
     ["shudon", "golem", "guardian"],
   ),
@@ -3005,5 +3009,19 @@ module.exports = [
       { label: "Form", value: "True Hybrid Form" },
     ],
     ["hybrid", "skill", "jaiden marlock", "true hybrid form"],
+  ),
+
+  // ============================================================ RULES & NOTES
+  e(
+    "Rules & Notes",
+    "The World Curse",
+    "A curse given by the world core",
+    "Forms a rune collar around the persons neck and would be unavoidably be hunted shudon when spotted and will be killed",
+    [
+      { label: "Brand", value: "Makes a rune like design around the persons neck and can awaken the golems to hunt the person down. with this mark on teleportation out of the realm or place is blocked and rendered unusable" },
+      { label: "Ban", value: "Blocks any use of Teleportation out of the realm and is hunted down and killed by the Shudon. which means you are locked down and stuck in the realm you were when you got it" },
+      { label: "Mark", value: "This mark cant be hidden or removed my any means" },
+    ],
+    ["world core", "shudon", "curse", "aelthar"],
   ),
 ];
