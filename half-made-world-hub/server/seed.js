@@ -261,7 +261,7 @@ module.exports = [
       { label: "Body", value: "They are completely immune to any form of magic meaning raw veyn, holy energy and corrupted veyn is ineffective against it" },
       { label: "Control", value: "They act out the will of the world core" },
       { label: "Hostile", value: "They are hostile to the bearers of the world curse mark" },
-      { label: "Unkown", value: "People still dont know much about the mark or even that if someone with it can activate to golem which the golem would them have a goal to kill the person" },
+      { label: "Unknown", value: "People still dont know much about the mark or even that if someone with it can activate to golem which the golem would them have a goal to kill the person" },
     ],
     ["shudon", "golem", "guardian"],
   ),
