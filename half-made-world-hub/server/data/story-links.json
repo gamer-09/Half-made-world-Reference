@@ -241,16 +241,6 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "link-seed-025",
-    "source": "Shudon",
-    "target": "Hidden Realm (Shadow Realm)",
-    "type": "guards",
-    "label": "Guards",
-    "description": "A Shudon guards every realm entrance.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
     "id": "link-seed-026",
     "source": "Leviathan",
     "target": "Lethmoor Kingdom",
@@ -2904,16 +2894,6 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
-    "id": "link-seed-290",
-    "source": "The Hidden Realm Portal",
-    "target": "Shudon",
-    "type": "about",
-    "label": "About",
-    "description": "The entrances to the different realms are guarded by a Shudon.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
     "id": "link-seed-291",
     "source": "Nyra Thessan",
     "target": "Cindergrave Wraith Lord",
@@ -3606,16 +3586,6 @@
     "type": "lives in",
     "label": "Lives in",
     "description": "Griffens roost on the high mountain peaks above the Arubian Forest.",
-    "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
-  },
-  {
-    "id": "link-seed-357",
-    "source": "Shudon",
-    "target": "Hidden Realm (Shadow Realm)",
-    "type": "located in",
-    "label": "Located in",
-    "description": "Shudon stone golems stand guard at every realm entrance.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
