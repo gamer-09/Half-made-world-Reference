@@ -5694,7 +5694,7 @@
     "category": "Rules & Notes",
     "name": "The World Barrier",
     "subtitle": "Its magical origins",
-    "description": "The world barrier was raised to split the realms apart after the old race's tearing-open of the Hidden Realm nearly destroyed the world. Its magic is drawn directly from the untouched world core — the same primal source from which Veyn is pulled — rather than from any single caster, which is why it has endured without ever being re-made. The Shudon, stone golems carved from the world core, were set at every entrance between the realms to guard the barrier and keep the world from collapsing inward.",
+    "description": "The world barrier was raised to split the realms apart after the old race’s tearing-open of the Hidden Realm nearly destroyed the world. Its magic is drawn directly from the untouched world core — the same primal source from which Veyn is pulled — rather than from any single caster, which is why it has endured without ever being re-made. The Shudon, stone golems carved from the world core, were set at the entrances to the three main realms — Human, Angel, and Demon — to guard the barrier and keep the world from collapsing inward. The Hidden Realm has no Shudon; its only entrance is the wandering portal.",
     "fields": [],
     "tags": [
       "world barrier",
@@ -5711,7 +5711,7 @@
     "category": "Rules & Notes",
     "name": "The World Core",
     "subtitle": "The untouched heart of the world",
-    "description": "The world core has no mind and no body — only a will. It is the untouched source from which all Veyn flows into the world, but it does not think or feel the way a living thing does. When the world was put in danger — when the old race tore open the Hidden Realm and nearly destroyed everything — the core's will answered on its own, raising the world barrier to split the realms apart and carving the Shudon from its own stone to guard the entrances against collapse.",
+    "description": "The world core has no mind and no body — only a will. It is the untouched source from which all Veyn flows into the world, but it does not think or feel the way a living thing does. When the world was put in danger — when the old race tore open the Hidden Realm and nearly destroyed everything — the core’s will answered on its own, raising the world barrier to split the realms apart and carving the Shudon from its own stone to guard the three main realms’ entrances against collapse.",
     "fields": [],
     "tags": [
       "world core",
