@@ -254,7 +254,7 @@ module.exports = [
     "Beings",
     "Shudon",
     "The stone golem guardians of the realm entrances",
-    "They are highly intelligent stone golems that are skilled in combat. They are made from the core of the world to protect the realms from collapse. Though they have been inactive for a long time. All the entrances to the different realms are guarded by a Shudon.",
+    "They are highly intelligent stone golems that are skilled in combat. They are made from the core of the world to protect the realms from collapse, though they have been inactive for a long time. The entrances to the three main realms — the Human, Angel, and Demon Realms — are each guarded by a Shudon. The Hidden Realm is not guarded by them; its only entrance is the wandering portal.",
     [
       { label: "Status", value: "Inactive for a long time; no one currently knows how to reactivate them." },
       { label: "Plot", value: "They become active later in the story." },
@@ -650,7 +650,7 @@ module.exports = [
     "Rules & Notes",
     "The Hidden Realm Portal",
     "Moves every leap year",
-    "The portal to the Hidden Realm changes its location every leap year. It forms by drawing in all the Veyn from its surroundings until the area is fully drained, then uses what it absorbed to relocate itself somewhere new that’s rich in Veyn. The amount of time it takes for enough Veyn to concentrate in a new location happens to be roughly a leap year, which is why the portal only reappears that often. Since it’s drawn to wherever Veyn is rich rather than moving randomly, someone with a strong enough sense of Veyn density could theoretically predict roughly where it might appear next. All the entrances to the different realms are guarded by a Shudon.",
+    "The portal to the Hidden Realm changes its location every leap year. It forms by drawing in all the Veyn from its surroundings until the area is fully drained, then uses what it absorbed to relocate itself somewhere new that’s rich in Veyn. The amount of time it takes for enough Veyn to concentrate in a new location happens to be roughly a leap year, which is why the portal only reappears that often. Since it’s drawn to wherever Veyn is rich rather than moving randomly, someone with a strong enough sense of Veyn density could theoretically predict roughly where it might appear next.",
     [],
     ["portal", "hidden realm", "leap year", "veyn"],
   ),
