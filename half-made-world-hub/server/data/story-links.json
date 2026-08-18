@@ -4308,5 +4308,115 @@
     "description": "Fuses the demon skill Duskveil (Bloodward).",
     "createdAt": "2026-08-17T23:47:32.849Z",
     "updatedAt": "2026-08-17T23:47:32.849Z"
+  },
+  {
+    "id": "a283a853-300a-4271-af3c-86c5db873164",
+    "source": "Eva Aldermere Divina",
+    "target": "Elyndor Academy",
+    "type": "Goes to",
+    "label": "Goes to",
+    "description": "she attends the academy",
+    "color": "#22d3ee",
+    "createdAt": "2026-08-18T12:17:11.742Z",
+    "updatedAt": "2026-08-18T12:17:11.742Z"
+  },
+  {
+    "id": "a1d291aa-52a6-4d45-8f60-f7f39101da98",
+    "source": "Bella Rose",
+    "target": "Aerendrel, the Skybound Wrath",
+    "type": "owned by",
+    "label": "Owned by",
+    "description": "was given to her by Jaiden",
+    "color": "",
+    "createdAt": "2026-08-18T12:31:24.930Z",
+    "updatedAt": "2026-08-18T12:31:24.930Z"
+  },
+  {
+    "id": "3bfcabf5-d11f-4c60-9952-174fe745d3eb",
+    "source": "Bella Rose",
+    "target": "Malakhim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "she is a Malakhim angel",
+    "color": "",
+    "createdAt": "2026-08-18T12:49:29.660Z",
+    "updatedAt": "2026-08-18T12:49:29.660Z"
+  },
+  {
+    "id": "48d43e79-7474-41e3-b238-085fbca07b07",
+    "source": "Bella Rose",
+    "target": "Archer",
+    "type": "class of",
+    "label": "Class of",
+    "description": "her given class is archer",
+    "color": "",
+    "createdAt": "2026-08-18T12:50:36.065Z",
+    "updatedAt": "2026-08-18T12:50:36.065Z"
+  },
+  {
+    "id": "fd0cc6b1-fc86-4b7e-a0bf-0d69b1103e43",
+    "source": "Mark Wesley",
+    "target": "Alchemist",
+    "type": "class of",
+    "label": "Class of",
+    "description": "his given class is alchemist",
+    "color": "",
+    "createdAt": "2026-08-18T12:51:10.063Z",
+    "updatedAt": "2026-08-18T12:51:10.063Z"
+  },
+  {
+    "id": "3fc2d4aa-bd13-4758-9955-afc01b0da5e0",
+    "source": "Mark Wesley",
+    "target": "Elyndor Academy",
+    "type": "Goes to",
+    "label": "Goes to",
+    "description": "he goes to the acedemy",
+    "color": "#22d3ee",
+    "createdAt": "2026-08-18T12:52:15.843Z",
+    "updatedAt": "2026-08-18T12:52:15.843Z"
+  },
+  {
+    "id": "e21324ef-1de2-4f45-88ad-bd04ac9138d3",
+    "source": "Eva Aldermere Divina",
+    "target": "Mage",
+    "type": "class of",
+    "label": "Class of",
+    "description": "she was given the class of mage",
+    "color": "",
+    "createdAt": "2026-08-18T12:56:30.715Z",
+    "updatedAt": "2026-08-18T12:56:30.715Z"
+  },
+  {
+    "id": "0491bec5-9868-41e3-b94a-e4d9f840e563",
+    "source": "Ruby Divina",
+    "target": "Berserk",
+    "type": "class of",
+    "label": "Class of",
+    "description": "she was given the class of a berserker",
+    "color": "",
+    "createdAt": "2026-08-18T12:57:51.750Z",
+    "updatedAt": "2026-08-18T12:57:51.750Z"
+  },
+  {
+    "id": "af0d2ecf-172d-428a-8ea0-900a751f4a8a",
+    "source": "Bella Rose",
+    "target": "Elyndor Academy",
+    "type": "Goes to",
+    "label": "Goes to",
+    "description": "she goes to the academy with jaiden",
+    "color": "#22d3ee",
+    "createdAt": "2026-08-18T13:04:05.443Z",
+    "updatedAt": "2026-08-18T13:04:05.443Z"
+  },
+  {
+    "id": "1a0c4a3f-ab58-40f6-9bcc-2de98e6f2da9",
+    "source": "Jaiden Marlock",
+    "target": "Elyndor Academy",
+    "type": "Goes to",
+    "label": "Goes to",
+    "description": "he starts to school in the academy",
+    "color": "#22d3ee",
+    "createdAt": "2026-08-18T13:04:38.668Z",
+    "updatedAt": "2026-08-18T13:04:38.669Z"
   }
 ]

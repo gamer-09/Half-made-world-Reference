@@ -2139,6 +2139,10 @@
       {
         "label": "Note",
         "value": "\"Sinew\" refers to a tendon — the tough, fibrous connective tissue that attaches muscle to bone."
+      },
+      {
+        "label": "User-bound",
+        "value": "Bound to the users soul and if others trys to use it --- it becomes nothing more than a piece of junk/ regular bow"
       }
     ],
     "tags": [
@@ -2148,7 +2152,7 @@
       "lethmoor"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-18T12:33:20.219Z"
   },
   {
     "id": "seed-092",
@@ -2450,14 +2454,19 @@
     "name": "Ruby Divina",
     "subtitle": "Ruler of the Human Realm (Female)",
     "description": "Ruby Divina is the only mortal ruler in a world governed by immortals — Clint Ashborn does not age, and Tera Morage dies of nothing short of a Divine Weapon, while Ruby will be gone within a mortal lifetime and knows it. She rules humanity, the one people with no wings, no halo, no miasma — just raw Veyn and short years — caught between two realms that could crush hers on a whim. Her whole reign has been the slow, careful work of making humanity too useful and too dangerous to be worth crushing. She has known about Jaiden Marlock from the beginning — the hybrid child hiding in her realm under a maid’s care is no secret to her — and she has shielded him not from kindness but because he is her insurance: a being both realms would go to war over, the one card that could make humanity a power instead of a client.",
-    "fields": [],
+    "fields": [
+      {
+        "label": "Class",
+        "value": "Berserker"
+      }
+    ],
     "tags": [
       "character",
       "ruler",
       "human realm"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-18T12:27:20.299Z"
   },
   {
     "id": "seed-102",
@@ -2554,8 +2563,8 @@
     "id": "seed-106",
     "category": "Plot",
     "name": "Ordium’s Plot",
-    "subtitle": "Love at first sight — left unfinished",
-    "description": "Ordium, an Aetherblade Lord Rank Angel, fell in love with Lisa at first sight. He left his post and spent the next 9 months with Lisa in a secret place in the Human Realm, since it is large and it would take time for them to be found. They were expecting a child, but unexpectedly they were called back by their rulers… (the document cuts off here — “but as…”)",
+    "subtitle": "Love at first sight, killed off by Clint Ashborn",
+    "description": "Ordium, an Aetherblade Lord Rank Angel, fell in love with Lisa at first sight. He left his post and spent the next 9 months with Lisa in a secret place in the Human Realm, since it is large and it would take time for them to be found. They were expecting a child, but unexpectedly they were called back by their rulers and he was ordered to be executed for sleeping with a demon",
     "fields": [],
     "tags": [
       "plot",
@@ -2563,7 +2572,7 @@
       "father"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-18T12:03:30.853Z"
   },
   {
     "id": "seed-107",
@@ -3635,7 +3644,7 @@
     "category": "Monsters",
     "name": "Veilborn",
     "subtitle": "Dark-half elves of the Umbrage Forest",
-    "description": "One of the two types of Elves. They stay in the Umbrage Forest, the dark half of the Ether Forest, and they only trust themselves. Their blood is one of the ingredients required to craft an Agro Totem.",
+    "description": "One of the two types of Elves. They stay in the Umbrage Forest, the dark half of the Ether Forest, and they only trust themselves. Their blood is one of the ingredients required to craft an Agro Totem.\nTheir home is in the demon realm",
     "fields": [],
     "tags": [
       "elf",
@@ -3643,7 +3652,7 @@
       "umbrage forest"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-18T12:41:07.952Z"
   },
   {
     "id": "seed-179",
@@ -3824,7 +3833,7 @@
     "category": "Plot",
     "name": "Jaiden Marlock Plot",
     "subtitle": "Plot for Mc",
-    "description": "His class is Mage. he has a much higher amount of Veyn than other Angels and Demons. He stays in a small house with Sofia who takes care of him and protects him. Later Sofia took him meet with Carin who then train him to be better at his demonic power. Sofia also trained Jaiden on how to use his angelic powers. Sofia also gave him the Auralis Ruby from his mother which would seal his true appearance, he can release the seal though for a limited time",
+    "description": "His class is Mage. he has a much higher amount of Veyn than other Angels and Demons. He stays in a small house with Sofia who takes care of him and protects him. Later Sofia took him meet with Carin who then train him to be better at his demonic power. Sofia also trained Jaiden on how to use his angelic powers. Sofia also gave him the Auralis Ruby from his mother which would seal his true appearance, he can release the seal though for a limited time, with the help of Sofia he learnt how to release the seals and manifest his wings",
     "fields": [],
     "tags": [
       "protagonist",
@@ -3832,7 +3841,7 @@
       "Jaiden"
     ],
     "createdAt": "2026-08-14T00:52:22.427Z",
-    "updatedAt": "2026-08-15T13:31:42.544Z"
+    "updatedAt": "2026-08-18T11:57:34.759Z"
   },
   {
     "id": "316142fc-5a18-4829-b4a4-c7929c485fda",
@@ -6158,6 +6167,87 @@
       "aelthar"
     ],
     "createdAt": "2026-08-18T09:12:19.977Z",
-    "updatedAt": "2026-08-18T10:40:46.839Z"
+    "updatedAt": "2026-08-18T11:26:44.339Z"
+  },
+  {
+    "id": "40bde394-c260-47b7-b9a8-5766d738abd0",
+    "category": "Characters",
+    "name": "Eva Aldermere Divina",
+    "subtitle": "Princess of the Human Kingdom",
+    "description": "She is the 1st Princess of the human kingdom in line to the throne and who is also attending the academy. and is the daughter to Ruby  Divina",
+    "fields": [
+      {
+        "label": "Class",
+        "value": "Mage"
+      }
+    ],
+    "tags": [
+      "character",
+      "eva aldermere",
+      "princesss",
+      "daughter"
+    ],
+    "createdAt": "2026-08-18T12:12:20.177Z",
+    "updatedAt": "2026-08-18T12:58:23.004Z"
+  },
+  {
+    "id": "3bf98aa0-15ff-4b5f-8c62-9b4f78cf9921",
+    "category": "Characters",
+    "name": "Bella Rose",
+    "subtitle": "Jaiden’s Childhood Friend",
+    "description": "She is the childhood friend of the mc and become close and attached to him. due to one reason that happened she was born with an unusual amount of Veyn(holy energy)",
+    "fields": [
+      {
+        "label": "Race",
+        "value": "Malakhim angel"
+      },
+      {
+        "label": "Rank",
+        "value": "Virtue"
+      },
+      {
+        "label": "Class",
+        "value": "Archer"
+      },
+      {
+        "label": "Reason",
+        "value": "(coming soon)"
+      }
+    ],
+    "tags": [
+      "childhood friend",
+      "character",
+      "bella rose"
+    ],
+    "createdAt": "2026-08-18T12:25:12.827Z",
+    "updatedAt": "2026-08-18T13:00:35.089Z"
+  },
+  {
+    "id": "ca6121bc-c9ac-48f7-a1be-67989f0f8441",
+    "category": "Characters",
+    "name": "Mark Wesley",
+    "subtitle": "A friend of Jaiden",
+    "description": "He is a friend of Jaiden after he helped him during an incident",
+    "fields": [
+      {
+        "label": "Class",
+        "value": "Alchemist"
+      },
+      {
+        "label": "Race",
+        "value": "Veilborn"
+      },
+      {
+        "label": "From",
+        "value": "Demon Realm"
+      }
+    ],
+    "tags": [
+      "Character",
+      "mark wesley",
+      "friend"
+    ],
+    "createdAt": "2026-08-18T12:37:24.978Z",
+    "updatedAt": "2026-08-18T12:47:54.098Z"
   }
 ]
