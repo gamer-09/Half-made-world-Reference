@@ -482,6 +482,22 @@
       {
         "label": "Plot",
         "value": "They become active later in the story."
+      },
+      {
+        "label": "Body",
+        "value": "They are completely immune to any form of magic meaning raw veyn, holy energy and corrupted veyn is ineffective against it"
+      },
+      {
+        "label": "Control",
+        "value": "They act out the will of the world core"
+      },
+      {
+        "label": "Hostile",
+        "value": "They are hostile to the bearers of the world curse mark"
+      },
+      {
+        "label": "Unkown",
+        "value": "People still dont know much about the mark or even that if someone with it can activate to golem which the golem would them have a goal to kill the person"
       }
     ],
     "tags": [
@@ -490,7 +506,7 @@
       "guardian"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-18T09:26:13.484Z"
   },
   {
     "id": "seed-023",
@@ -6114,5 +6130,34 @@
     ],
     "createdAt": "2026-08-17T23:47:32.849Z",
     "updatedAt": "2026-08-17T23:53:19.725Z"
+  },
+  {
+    "id": "fd602245-ed9d-4687-90a2-1ed109bf4075",
+    "category": "Rules & Notes",
+    "name": "The World Curse",
+    "subtitle": "A curse given by the world core",
+    "description": "Forms a rune collar around the persons neck and would be unavoidably be hunted shudon when spotted and will be killed",
+    "fields": [
+      {
+        "label": "Brand",
+        "value": "Makes a rune like design around the persons neck and can awaken the golems to hunt the person down. with this mark on teleportation out of the realm or place is blocked and rendered unusable"
+      },
+      {
+        "label": "Ban",
+        "value": "Blocks any use of Teleportation out of the realm and is hunted down and killed by the Shudon. which means you are locked down and stuck in the realm you were when you got it"
+      },
+      {
+        "label": "Mark",
+        "value": "This mark cant be hidden or removed my any means"
+      }
+    ],
+    "tags": [
+      "world core",
+      "shudon",
+      "curse",
+      "aelthar"
+    ],
+    "createdAt": "2026-08-18T09:12:19.977Z",
+    "updatedAt": "2026-08-18T09:24:01.631Z"
   }
 ]
