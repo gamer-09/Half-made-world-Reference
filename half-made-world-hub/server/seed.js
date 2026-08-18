@@ -2718,7 +2718,7 @@ module.exports = [
     "Rules & Notes",
     "Angel Evolution",
     "How a new Serapharch is made",
-    "To become the first rank — the Serapharch — the heir is flooded with a massive amount of Veyn, then exposed to ten days of raw, concentrated Veyn. If they survive, they evolve into an Cherubim angel and become the new ruler of the Angel Realm. This rite is performed on the heir, and only after the king has died or has given up the throne",
+    "To become the first rank — the Serapharch — the heir is flooded with a massive amount of Veyn, then exposed to ten days of raw, concentrated Veyn. If they survive, they evolve into a Cherubim angel and become the new ruler of the Angel Realm. This rite is performed on the heir, and only after the king has died or has given up the throne.",
     [],
     ["evolution", "angel", "cherubim", "serapharch", "rule"],
   ),
