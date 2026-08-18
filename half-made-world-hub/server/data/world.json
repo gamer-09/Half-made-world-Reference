@@ -1384,7 +1384,7 @@
       },
       {
         "label": "Skills",
-        "value": "Arc Bolt, Aegis Wall, Resonance, Elemental Weave, Wellspring, Sanctum, Shockwave, Linkthread, Flux, Sovereign Flow — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Piercing Lance, Glass Bastion, Echo Sense, Elemental Brand, Leechfield, Skyvault, Repulse, Bloodthread, Shiftstate, Absolute Flow — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1409,7 +1409,7 @@
       },
       {
         "label": "Skills",
-        "value": "Brewcraft, Venomcraft, Blastflask, Assay, Potency Surge, Catalyst, Purge, Transmute, Field Mix, Grand Elixir — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Toniccraft, Nightbrew, Shattervial, Trueassay, Overcharge, Multiplier, Cleansebrew, Mattershift, Hastybrew, Mythic Draught — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1434,7 +1434,7 @@
       },
       {
         "label": "Skills",
-        "value": "Soulbond, Mindshare, Command, Shared Senses, Wild Surge, Living Shield, Coordinated Strike, Vital Link, Ascension, Pack Lord — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Heartbind, Thoughtlink, Pack Order, Beast Eye, Feral Rush, Fleshguard, Twin Fang, Lifeshare, Blood Ascension, Alpha Will — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1463,7 +1463,7 @@
       },
       {
         "label": "Skills",
-        "value": "Forgework, Veyn Temper, Ren Edge, Bloodforge, Appraisal, Platecraft, Rune Seal, Restore, Legendcraft, Crimson Alloy — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Hammerborn, Star Temper, Vital Edge, Crimson Forge, True Edge, Aegis Craft, Soulseal, Reforge, Mythforge, Bloodalloy — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1489,7 +1489,7 @@
       },
       {
         "label": "Skills",
-        "value": "Imbue, Veyn Bind, Read Rune, Unbind, Amplify, Layer, Wardseal, Strike Rune, Living Enchant, Rune Discovery — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Sparkbind, Deepbind, Runeread, Unweave, Heighten, Overlay, Guardseal, Wrathseal, Living Rune, Newscript — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1526,7 +1526,7 @@
       },
       {
         "label": "Skills",
-        "value": "True-Sight, Foresight, Echoes, Truthsense, Veyn Pulse, Aura Gaze, Deep Scry, Mindward, Thread Sight, Oracle's Eye — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Clear Sight, Far Sight, Past Echo, Liebreak, Flowsense, Soulgaze, Deep Vision, Mindlock, Bond Sight, Allsight — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1552,7 +1552,7 @@
       },
       {
         "label": "Skills",
-        "value": "Purify, Bind the Fallen, Miasma Purge, Stabilize, Rite of Expulsion, Sanctum Barrier, Cleansing Strike, Mass Ablution, Spirit Banish, Final Seal — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Whitefire, Fallen Bind, Miasma Break, Stillflow, Expulsion Rite, Holy Bastion, Purge Strike, Mass Cleanse, Spirit Drive, Eternal Seal — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1578,7 +1578,7 @@
       },
       {
         "label": "Skills",
-        "value": "Mediate, Enforce, Clause Sight, Sever, Bargain, Tell, Backlash Ward, Network, Leverage, Iron Contract — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Balance, Bindword, Loophole, Contract Break, Silver Tongue, Falsesense, Backlash Guard, Web, Pressure, Ironword — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1604,7 +1604,7 @@
       },
       {
         "label": "Skills",
-        "value": "Grace, Aegis of Light, Cleanse, Radiant Guard, Smite, Benediction, Hallowed Ground, Lumen, Sacred Mastery, Miracle — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Light Mend, Radiant Aegis, Holy Purge, Burning Guard, Judgment Blow, Blessing, Sacred Ground, Reveal Light, Holy Precision, Divine Act — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1630,7 +1630,7 @@
       },
       {
         "label": "Skills",
-        "value": "Mend, Restore, Ritual of Recovery, Guardian Field, Regeneration, Sanctuary, Soothing Light, Lifeweave, Remedy, Teach — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Soft Heal, Deep Heal, Recovery Rite, Protect Field, Lifebloom, Healing Ground, Calm Light, Life Restore, Special Cure, Healer's Hand — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1655,7 +1655,7 @@
       },
       {
         "label": "Skills",
-        "value": "Enchanted Shot, Armor Piercer, Blast Arrow, Seeker, Rain of Arrows, Arrow Ward, Sunder Shot, Healing Flight, Master Shot, New Quiver — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Spell Arrow, Sunder Arrow, Burst Arrow, Homing Bolt, Skyfall, Quiver Wall, Final Arrow, Grace Arrow, Perfect Shot, Arrowcraft — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1681,7 +1681,7 @@
       },
       {
         "label": "Skills",
-        "value": "Auric Blow, Lightshield, Golden Mend, Aura of Resolve, Judgment, Lay on Hands, Consecrate, Divine Ward, Oathsurge, Champion — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Golden Strike, Dawn Shield, Light Mend, Courage Aura, Final Judgment, Sacred Touch, Holy Ground, Guardian Seal, Oath Power, Radiant Champion — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1707,7 +1707,7 @@
       },
       {
         "label": "Skills",
-        "value": "Raise, Command Dead, Bone Wall, Drain Remains, Necrotic Pulse, Legion, Bone Lance, Spirit Anchor, Deathlord, Harvest — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Awaken, Dead Order, Bone Guard, Grave Drain, Death Pulse, Bone Legion, Bone Spear, Soul Bind, Grave Lord, Soul Take — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1733,7 +1733,7 @@
       },
       {
         "label": "Skills",
-        "value": "Cleave, Crimson Edge, Flourish, Counter, Gale, Phantom Cut, Tempest, Grace, Bladesong, Perfection — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Wide Cut, Blood Edge, Blade Dance, Return Cut, Wind Step, Ghost Cut, Storm of Blades, Perfect Form, Sword Song, Flawless Edge — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1759,7 +1759,7 @@
       },
       {
         "label": "Skills",
-        "value": "Frenzy, Warhowl, Overkill, Reckless, Unyielding, Rampage, Detonate, Cripple, Last Stand, Warlord — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Blood Rage, Battle Roar, Killing Blow, All-In, Never Fall, Mad Rampage, Rage Burst, Bone Break, Final Rage, War Cry — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1784,7 +1784,7 @@
       },
       {
         "label": "Skills",
-        "value": "Ironclad, Bulwark, Fortress, Provoke, Endure, Shield Slam, Aegis Share, Oathguard, Last Breath, Immovable — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Iron Skin, Stone Wall, Rooted Stance, Challenge, Stand Firm, Shield Crash, Shared Guard, Protect Ally, Final Stand, Unbreakable — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1810,7 +1810,7 @@
       },
       {
         "label": "Skills",
-        "value": "Force Arrow, Power Draw, Rapid Fire, Piercer, Windstep, Longshot, Barrage, Slip, Hawk Eye, Arrow Lord — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Power Bolt, Heavy Draw, Quick Volley, Armor Break, Gale Step, Far Shot, Arrow Storm, Sidestep, Sharp Eye, Arrow Master — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1835,7 +1835,7 @@
       },
       {
         "label": "Skills",
-        "value": "Shade Step, Silence, Backstab, Smoke, Ghost, Venom Edge, Touchlock, Mimic, Vanish, Wraith — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Shadow Move, No Sound, Death from Behind, Smoke Screen, Phantom Dodge, Poison Blade, Lock Touch, Face Shift, Disappear, Living Shadow — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -1861,7 +1861,7 @@
       },
       {
         "label": "Skills",
-        "value": "Study, Preserve, Lore, Script, Commune, Chronicle, Theory, Archive, Fragment Sense, Core Insight — each skill has its own entry in the Class Skills category. — each skill has its own entry in the Class Skills category."
+        "value": "Stone Study, Stone Keep, Golem Lore, Ancient Read, Stone Whisper, World Record, Awaken Theory, Keepers Archive, Relic Sense, Core Glimpse — each skill has its own entry in the Class Skills category."
       }
     ],
     "tags": [
@@ -6257,7 +6257,7 @@
   {
     "id": "seed-306",
     "category": "Class Skills",
-    "name": "Arc Bolt",
+    "name": "Piercing Lance",
     "subtitle": "Mage skill",
     "description": "Fires a concentrated spear of raw Veyn that explodes on impact. Can be released quickly for lower damage or charged longer for a stronger blast. Main mid-range attack.",
     "fields": [],
@@ -6274,7 +6274,7 @@
   {
     "id": "seed-307",
     "category": "Class Skills",
-    "name": "Aegis Wall",
+    "name": "Glass Bastion",
     "subtitle": "Mage skill",
     "description": "Creates a translucent wall of condensed Veyn that blocks physical and magical attacks. Strength and duration depend on how much Veyn is poured into it.",
     "fields": [],
@@ -6291,7 +6291,7 @@
   {
     "id": "seed-308",
     "category": "Class Skills",
-    "name": "Resonance",
+    "name": "Echo Sense",
     "subtitle": "Mage skill",
     "description": "Heightens the user's sensitivity to Veyn, allowing them to detect living beings, hidden magic, and changes in ambient density. Used for tracking and awareness.",
     "fields": [],
@@ -6308,7 +6308,7 @@
   {
     "id": "seed-309",
     "category": "Class Skills",
-    "name": "Elemental Weave",
+    "name": "Elemental Brand",
     "subtitle": "Mage skill",
     "description": "Converts raw Veyn into fire, ice, lightning, or wind and releases it as a focused attack. Each element carries a secondary effect (burn, slow, stun, or push).",
     "fields": [],
@@ -6325,7 +6325,7 @@
   {
     "id": "seed-310",
     "category": "Class Skills",
-    "name": "Wellspring",
+    "name": "Leechfield",
     "subtitle": "Mage skill",
     "description": "Draws ambient Veyn from the surroundings to restore the user's reserves. Works faster in high-density areas. Cannot be used while casting other spells.",
     "fields": [],
@@ -6342,7 +6342,7 @@
   {
     "id": "seed-311",
     "category": "Class Skills",
-    "name": "Sanctum",
+    "name": "Skyvault",
     "subtitle": "Mage skill",
     "description": "Forms a large protective dome of Veyn around the user and nearby allies. Blocks attacks from all directions as long as the user maintains the supply of Veyn.",
     "fields": [],
@@ -6359,7 +6359,7 @@
   {
     "id": "seed-312",
     "category": "Class Skills",
-    "name": "Shockwave",
+    "name": "Repulse",
     "subtitle": "Mage skill",
     "description": "Releases a radial burst of raw Veyn that knocks enemies back and disrupts concentration. Used to create space in close combat.",
     "fields": [],
@@ -6376,7 +6376,7 @@
   {
     "id": "seed-313",
     "category": "Class Skills",
-    "name": "Linkthread",
+    "name": "Bloodthread",
     "subtitle": "Mage skill",
     "description": "Creates a visible Veyn thread linking the user to one or more allies. Allows sharing of Veyn reserves and limited spell support. Breaks if the distance becomes too great.",
     "fields": [],
@@ -6393,7 +6393,7 @@
   {
     "id": "seed-314",
     "category": "Class Skills",
-    "name": "Flux",
+    "name": "Shiftstate",
     "subtitle": "Mage skill",
     "description": "Temporarily converts the user's Veyn between raw, elemental, and purified states. Enables more flexible spell combinations but requires precise control.",
     "fields": [],
@@ -6410,7 +6410,7 @@
   {
     "id": "seed-315",
     "category": "Class Skills",
-    "name": "Sovereign Flow",
+    "name": "Absolute Flow",
     "subtitle": "Mage skill",
     "description": "Grants advanced control over Veyn. Allows casting multiple spells at once, shaping Veyn with high precision, and reducing the cost of all other Mage abilities.",
     "fields": [],
@@ -6427,7 +6427,7 @@
   {
     "id": "seed-316",
     "category": "Class Skills",
-    "name": "Brewcraft",
+    "name": "Toniccraft",
     "subtitle": "Alchemist skill",
     "description": "Combines Veyn and ingredients to create healing, restorative, or enhancement potions. Quality depends on materials and skill.",
     "fields": [],
@@ -6443,7 +6443,7 @@
   {
     "id": "seed-317",
     "category": "Class Skills",
-    "name": "Venomcraft",
+    "name": "Nightbrew",
     "subtitle": "Alchemist skill",
     "description": "Creates toxins that can paralyze, weaken, or cause lingering damage. Can be applied to weapons or delivered through food and drink.",
     "fields": [],
@@ -6459,7 +6459,7 @@
   {
     "id": "seed-318",
     "category": "Class Skills",
-    "name": "Blastflask",
+    "name": "Shattervial",
     "subtitle": "Alchemist skill",
     "description": "Brews volatile mixtures that explode on impact or command. Blast size and force can be adjusted by changing ingredients and Veyn input.",
     "fields": [],
@@ -6476,7 +6476,7 @@
   {
     "id": "seed-319",
     "category": "Class Skills",
-    "name": "Assay",
+    "name": "Trueassay",
     "subtitle": "Alchemist skill",
     "description": "Instantly identifies the magical properties, purity, and potential uses of any ingredient through touch or a light Veyn probe.",
     "fields": [],
@@ -6492,7 +6492,7 @@
   {
     "id": "seed-320",
     "category": "Class Skills",
-    "name": "Potency Surge",
+    "name": "Overcharge",
     "subtitle": "Alchemist skill",
     "description": "Channels extra Veyn into a potion during brewing, greatly increasing its final strength. Requires careful control to avoid ruining the brew.",
     "fields": [],
@@ -6509,7 +6509,7 @@
   {
     "id": "seed-321",
     "category": "Class Skills",
-    "name": "Catalyst",
+    "name": "Multiplier",
     "subtitle": "Alchemist skill",
     "description": "Creates special substances that multiply or alter the effects of other potions when combined with them.",
     "fields": [],
@@ -6525,7 +6525,7 @@
   {
     "id": "seed-322",
     "category": "Class Skills",
-    "name": "Purge",
+    "name": "Cleansebrew",
     "subtitle": "Alchemist skill",
     "description": "Removes toxins, corruption, and impurities from ingredients or finished potions. Can also cleanse small amounts of contaminated Veyn.",
     "fields": [],
@@ -6541,7 +6541,7 @@
   {
     "id": "seed-323",
     "category": "Class Skills",
-    "name": "Transmute",
+    "name": "Mattershift",
     "subtitle": "Alchemist skill",
     "description": "Changes the physical state or basic composition of ingredients so they can be used in recipes they normally could not enter.",
     "fields": [],
@@ -6557,7 +6557,7 @@
   {
     "id": "seed-324",
     "category": "Class Skills",
-    "name": "Field Mix",
+    "name": "Hastybrew",
     "subtitle": "Alchemist skill",
     "description": "Allows rapid brewing of a functional potion during combat using whatever materials are on hand. Results are rougher but still usable.",
     "fields": [],
@@ -6574,7 +6574,7 @@
   {
     "id": "seed-325",
     "category": "Class Skills",
-    "name": "Grand Elixir",
+    "name": "Mythic Draught",
     "subtitle": "Alchemist skill",
     "description": "Creates complex, multi-layered legendary potions with powerful and lasting effects. Requires rare ingredients and high control.",
     "fields": [],
@@ -6591,7 +6591,7 @@
   {
     "id": "seed-326",
     "category": "Class Skills",
-    "name": "Soulbond",
+    "name": "Heartbind",
     "subtitle": "Beastmaster skill",
     "description": "Forms a deep telepathic bond with a willing creature. Once accepted, both can sense each other's emotions and general intentions. Cannot be forced.",
     "fields": [],
@@ -6607,7 +6607,7 @@
   {
     "id": "seed-327",
     "category": "Class Skills",
-    "name": "Mindshare",
+    "name": "Thoughtlink",
     "subtitle": "Beastmaster skill",
     "description": "Deepens the bond so the user and creature can exchange more complex thoughts and feelings beyond basic intent.",
     "fields": [],
@@ -6624,7 +6624,7 @@
   {
     "id": "seed-328",
     "category": "Class Skills",
-    "name": "Command",
+    "name": "Pack Order",
     "subtitle": "Beastmaster skill",
     "description": "Issues clear, instantaneous combat orders to the bonded creature through the bond. The creature responds as if the order were instinct.",
     "fields": [],
@@ -6641,7 +6641,7 @@
   {
     "id": "seed-329",
     "category": "Class Skills",
-    "name": "Shared Senses",
+    "name": "Beast Eye",
     "subtitle": "Beastmaster skill",
     "description": "Allows the user to see, hear, and feel through the bonded creature's senses for a limited time. Range depends on bond strength.",
     "fields": [],
@@ -6658,7 +6658,7 @@
   {
     "id": "seed-330",
     "category": "Class Skills",
-    "name": "Wild Surge",
+    "name": "Feral Rush",
     "subtitle": "Beastmaster skill",
     "description": "Channels Ren into the bonded creature, temporarily increasing its speed, strength, and durability. Cost is shared between user and creature.",
     "fields": [],
@@ -6675,7 +6675,7 @@
   {
     "id": "seed-331",
     "category": "Class Skills",
-    "name": "Living Shield",
+    "name": "Fleshguard",
     "subtitle": "Beastmaster skill",
     "description": "Commands the creature to intercept an attack aimed at the user, using its body as a barrier.",
     "fields": [],
@@ -6692,7 +6692,7 @@
   {
     "id": "seed-332",
     "category": "Class Skills",
-    "name": "Coordinated Strike",
+    "name": "Twin Fang",
     "subtitle": "Beastmaster skill",
     "description": "Times the user's attack and the creature's attack to land on the same target at the same moment.",
     "fields": [],
@@ -6709,7 +6709,7 @@
   {
     "id": "seed-333",
     "category": "Class Skills",
-    "name": "Vital Link",
+    "name": "Lifeshare",
     "subtitle": "Beastmaster skill",
     "description": "Allows Ren and vitality to flow through the bond, healing either the user or the creature.",
     "fields": [],
@@ -6726,7 +6726,7 @@
   {
     "id": "seed-334",
     "category": "Class Skills",
-    "name": "Ascension",
+    "name": "Blood Ascension",
     "subtitle": "Beastmaster skill",
     "description": "Accelerates the growth and potential of a bonded creature through shared experience and Ren exposure.",
     "fields": [],
@@ -6743,7 +6743,7 @@
   {
     "id": "seed-335",
     "category": "Class Skills",
-    "name": "Pack Lord",
+    "name": "Alpha Will",
     "subtitle": "Beastmaster skill",
     "description": "Allows the user to maintain bonds with multiple creatures and coordinate all of them with high precision.",
     "fields": [],
@@ -6759,7 +6759,7 @@
   {
     "id": "seed-336",
     "category": "Class Skills",
-    "name": "Forgework",
+    "name": "Hammerborn",
     "subtitle": "Smithing skill",
     "description": "Shapes metal into functional weapons and armor using a forge, hammer, and basic Veyn reinforcement.",
     "fields": [],
@@ -6775,7 +6775,7 @@
   {
     "id": "seed-337",
     "category": "Class Skills",
-    "name": "Veyn Temper",
+    "name": "Star Temper",
     "subtitle": "Smithing skill",
     "description": "Channels Veyn into metal during forging, giving the finished item minor magical properties such as increased sharpness or durability.",
     "fields": [],
@@ -6792,7 +6792,7 @@
   {
     "id": "seed-338",
     "category": "Class Skills",
-    "name": "Ren Edge",
+    "name": "Vital Edge",
     "subtitle": "Smithing skill",
     "description": "Channels the smith's own Ren into a weapon during forging, increasing its striking power.",
     "fields": [],
@@ -6809,7 +6809,7 @@
   {
     "id": "seed-339",
     "category": "Class Skills",
-    "name": "Bloodforge",
+    "name": "Crimson Forge",
     "subtitle": "Smithing skill",
     "description": "Uses angel or demon blood in the forge to create weapons capable of harming high-rank beings. Extremely dangerous if mishandled.",
     "fields": [],
@@ -6826,7 +6826,7 @@
   {
     "id": "seed-340",
     "category": "Class Skills",
-    "name": "Appraisal",
+    "name": "True Edge",
     "subtitle": "Smithing skill",
     "description": "Instantly judges a weapon's quality, construction, enchantments, and weaknesses through examination.",
     "fields": [],
@@ -6842,7 +6842,7 @@
   {
     "id": "seed-341",
     "category": "Class Skills",
-    "name": "Platecraft",
+    "name": "Aegis Craft",
     "subtitle": "Smithing skill",
     "description": "Specializes in creating armor that absorbs, deflects, or redistributes both physical and magical impacts.",
     "fields": [],
@@ -6859,7 +6859,7 @@
   {
     "id": "seed-342",
     "category": "Class Skills",
-    "name": "Rune Seal",
+    "name": "Soulseal",
     "subtitle": "Smithing skill",
     "description": "Fuses lasting magical effects directly into the metal during the final stage of forging.",
     "fields": [],
@@ -6876,7 +6876,7 @@
   {
     "id": "seed-343",
     "category": "Class Skills",
-    "name": "Restore",
+    "name": "Reforge",
     "subtitle": "Smithing skill",
     "description": "Fully repairs damaged weapons and armor, including broken blades and worn enchantments.",
     "fields": [],
@@ -6892,7 +6892,7 @@
   {
     "id": "seed-344",
     "category": "Class Skills",
-    "name": "Legendcraft",
+    "name": "Mythforge",
     "subtitle": "Smithing skill",
     "description": "Creates multi-layered legendary weapons and armor using materials that lesser smiths cannot work with.",
     "fields": [],
@@ -6909,7 +6909,7 @@
   {
     "id": "seed-345",
     "category": "Class Skills",
-    "name": "Crimson Alloy",
+    "name": "Bloodalloy",
     "subtitle": "Smithing skill",
     "description": "Advanced bloodforging that allows mixing blood from different ranks or even angel and demon blood. Extremely powerful and extremely risky.",
     "fields": [],
@@ -6926,7 +6926,7 @@
   {
     "id": "seed-346",
     "category": "Class Skills",
-    "name": "Imbue",
+    "name": "Sparkbind",
     "subtitle": "Enchanter skill",
     "description": "Gives ordinary items simple lasting magical properties (glow, sharpness, resistance, etc.).",
     "fields": [],
@@ -6942,7 +6942,7 @@
   {
     "id": "seed-347",
     "category": "Class Skills",
-    "name": "Veyn Bind",
+    "name": "Deepbind",
     "subtitle": "Enchanter skill",
     "description": "Channels Veyn into a finished item to create stronger and more complex magical effects.",
     "fields": [],
@@ -6959,7 +6959,7 @@
   {
     "id": "seed-348",
     "category": "Class Skills",
-    "name": "Read Rune",
+    "name": "Runeread",
     "subtitle": "Enchanter skill",
     "description": "Fully reads and understands existing enchantments on an item — their function, strength, and stability.",
     "fields": [],
@@ -6976,7 +6976,7 @@
   {
     "id": "seed-349",
     "category": "Class Skills",
-    "name": "Unbind",
+    "name": "Unweave",
     "subtitle": "Enchanter skill",
     "description": "Cleanly removes an enchantment from an item without damaging it. Poor execution can destroy the item.",
     "fields": [],
@@ -6992,7 +6992,7 @@
   {
     "id": "seed-350",
     "category": "Class Skills",
-    "name": "Amplify",
+    "name": "Heighten",
     "subtitle": "Enchanter skill",
     "description": "Strengthens and stabilizes an existing enchantment, making it more potent or longer-lasting.",
     "fields": [],
@@ -7008,7 +7008,7 @@
   {
     "id": "seed-351",
     "category": "Class Skills",
-    "name": "Layer",
+    "name": "Overlay",
     "subtitle": "Enchanter skill",
     "description": "Fuses two or more compatible enchantments onto a single item. Incompatible ones can cancel or destroy the item.",
     "fields": [],
@@ -7024,7 +7024,7 @@
   {
     "id": "seed-352",
     "category": "Class Skills",
-    "name": "Wardseal",
+    "name": "Guardseal",
     "subtitle": "Enchanter skill",
     "description": "Creates defensive enchantments on shields, armor, or objects that absorb or deflect incoming attacks.",
     "fields": [],
@@ -7041,7 +7041,7 @@
   {
     "id": "seed-353",
     "category": "Class Skills",
-    "name": "Strike Rune",
+    "name": "Wrathseal",
     "subtitle": "Enchanter skill",
     "description": "Places offensive trigger enchantments on weapons that activate on impact (fire, force, etc.).",
     "fields": [],
@@ -7058,7 +7058,7 @@
   {
     "id": "seed-354",
     "category": "Class Skills",
-    "name": "Living Enchant",
+    "name": "Living Rune",
     "subtitle": "Enchanter skill",
     "description": "Creates complex, adaptive enchantments that can respond to threats or evolve over time.",
     "fields": [],
@@ -7075,7 +7075,7 @@
   {
     "id": "seed-355",
     "category": "Class Skills",
-    "name": "Rune Discovery",
+    "name": "Newscript",
     "subtitle": "Enchanter skill",
     "description": "Allows the user to research and develop entirely new enchantment patterns and effects.",
     "fields": [],
@@ -7092,7 +7092,7 @@
   {
     "id": "seed-356",
     "category": "Class Skills",
-    "name": "True-Sight",
+    "name": "Clear Sight",
     "subtitle": "Diviner skill",
     "description": "Sees through lies, disguises, and magical concealment, including abilities like Duskveil and Wraithcloth.",
     "fields": [],
@@ -7109,7 +7109,7 @@
   {
     "id": "seed-357",
     "category": "Class Skills",
-    "name": "Foresight",
+    "name": "Far Sight",
     "subtitle": "Diviner skill",
     "description": "Glimpses fragmented possible futures as symbols, feelings, or brief flashes. Further and clearer visions cost more Veyn and become less reliable.",
     "fields": [],
@@ -7126,7 +7126,7 @@
   {
     "id": "seed-358",
     "category": "Class Skills",
-    "name": "Echoes",
+    "name": "Past Echo",
     "subtitle": "Diviner skill",
     "description": "Views residual past events tied to a specific location or person. Clarity depends on the strength of the remaining Veyn traces.",
     "fields": [],
@@ -7143,7 +7143,7 @@
   {
     "id": "seed-359",
     "category": "Class Skills",
-    "name": "Truthsense",
+    "name": "Liebreak",
     "subtitle": "Diviner skill",
     "description": "Detects lies and deception in real time through changes in a target's Veyn flow and aura.",
     "fields": [],
@@ -7159,7 +7159,7 @@
   {
     "id": "seed-360",
     "category": "Class Skills",
-    "name": "Veyn Pulse",
+    "name": "Flowsense",
     "subtitle": "Diviner skill",
     "description": "Senses the presence, density, and nature of Veyn in the surrounding area, including corrupted or holy variants.",
     "fields": [],
@@ -7176,7 +7176,7 @@
   {
     "id": "seed-361",
     "category": "Class Skills",
-    "name": "Aura Gaze",
+    "name": "Soulgaze",
     "subtitle": "Diviner skill",
     "description": "Reads the auras of living beings to reveal emotional state, health, hidden abilities, and magical influence.",
     "fields": [],
@@ -7192,7 +7192,7 @@
   {
     "id": "seed-362",
     "category": "Class Skills",
-    "name": "Deep Scry",
+    "name": "Deep Vision",
     "subtitle": "Diviner skill",
     "description": "A prepared ritual form of Foresight that produces clearer and more detailed visions at the cost of time and materials.",
     "fields": [],
@@ -7209,7 +7209,7 @@
   {
     "id": "seed-363",
     "category": "Class Skills",
-    "name": "Mindward",
+    "name": "Mindlock",
     "subtitle": "Diviner skill",
     "description": "Protects the user's mind and aura from being read or influenced by other Diviners or mental abilities.",
     "fields": [],
@@ -7226,7 +7226,7 @@
   {
     "id": "seed-364",
     "category": "Class Skills",
-    "name": "Thread Sight",
+    "name": "Bond Sight",
     "subtitle": "Diviner skill",
     "description": "Allows the user to perceive the emotional and magical bonds connecting people.",
     "fields": [],
@@ -7242,7 +7242,7 @@
   {
     "id": "seed-365",
     "category": "Class Skills",
-    "name": "Oracle's Eye",
+    "name": "Allsight",
     "subtitle": "Diviner skill",
     "description": "Temporarily combines multiple divination effects, granting a brief period of heightened all-around awareness.",
     "fields": [],
@@ -7259,7 +7259,7 @@
   {
     "id": "seed-366",
     "category": "Class Skills",
-    "name": "Purify",
+    "name": "Whitefire",
     "subtitle": "Exorcist skill",
     "description": "Channels Veyn to cleanse corrupted or unstable Veyn from a person, object, or area.",
     "fields": [],
@@ -7276,7 +7276,7 @@
   {
     "id": "seed-367",
     "category": "Class Skills",
-    "name": "Bind the Fallen",
+    "name": "Fallen Bind",
     "subtitle": "Exorcist skill",
     "description": "Specialized binding techniques used to suppress and contain the unstable power of Fallen Angels.",
     "fields": [],
@@ -7293,7 +7293,7 @@
   {
     "id": "seed-368",
     "category": "Class Skills",
-    "name": "Miasma Purge",
+    "name": "Miasma Break",
     "subtitle": "Exorcist skill",
     "description": "Extracts and neutralizes demonic miasma from living beings, places, or objects. The process is often painful for the target.",
     "fields": [],
@@ -7310,7 +7310,7 @@
   {
     "id": "seed-369",
     "category": "Class Skills",
-    "name": "Stabilize",
+    "name": "Stillflow",
     "subtitle": "Exorcist skill",
     "description": "Calms chaotic or fluctuating Veyn, preventing it from becoming corrupted or dangerously unstable.",
     "fields": [],
@@ -7327,7 +7327,7 @@
   {
     "id": "seed-370",
     "category": "Class Skills",
-    "name": "Rite of Expulsion",
+    "name": "Expulsion Rite",
     "subtitle": "Exorcist skill",
     "description": "A formal ritual that forces out deep possession, curses, or heavy contamination. Requires time, components, and focus.",
     "fields": [],
@@ -7343,7 +7343,7 @@
   {
     "id": "seed-371",
     "category": "Class Skills",
-    "name": "Sanctum Barrier",
+    "name": "Holy Bastion",
     "subtitle": "Exorcist skill",
     "description": "Creates a barrier of purified Veyn that is especially effective against demons, undead, and miasma.",
     "fields": [],
@@ -7360,7 +7360,7 @@
   {
     "id": "seed-372",
     "category": "Class Skills",
-    "name": "Cleansing Strike",
+    "name": "Purge Strike",
     "subtitle": "Exorcist skill",
     "description": "Channels purified Veyn into a physical attack that deals heavy extra damage to corrupted beings.",
     "fields": [],
@@ -7377,7 +7377,7 @@
   {
     "id": "seed-373",
     "category": "Class Skills",
-    "name": "Mass Ablution",
+    "name": "Mass Cleanse",
     "subtitle": "Exorcist skill",
     "description": "Allows the purification of multiple targets or a wide area at once. Requires significant Veyn and concentration.",
     "fields": [],
@@ -7393,7 +7393,7 @@
   {
     "id": "seed-374",
     "category": "Class Skills",
-    "name": "Spirit Banish",
+    "name": "Spirit Drive",
     "subtitle": "Exorcist skill",
     "description": "Forces powerful residual spirits or wills to disperse or leave an area.",
     "fields": [],
@@ -7409,7 +7409,7 @@
   {
     "id": "seed-375",
     "category": "Class Skills",
-    "name": "Final Seal",
+    "name": "Eternal Seal",
     "subtitle": "Exorcist skill",
     "description": "Places a powerful, lasting suppression on extreme corruption or dangerous entities, locking their power away.",
     "fields": [],
@@ -7426,7 +7426,7 @@
   {
     "id": "seed-376",
     "category": "Class Skills",
-    "name": "Mediate",
+    "name": "Balance",
     "subtitle": "Broker skill",
     "description": "Drafts, reads, and balances contracts so that terms are clear, enforceable, and as fair as possible.",
     "fields": [],
@@ -7442,7 +7442,7 @@
   {
     "id": "seed-377",
     "category": "Class Skills",
-    "name": "Enforce",
+    "name": "Bindword",
     "subtitle": "Broker skill",
     "description": "Magically triggers the penalties written into a signed contract when a party breaks the terms.",
     "fields": [],
@@ -7459,7 +7459,7 @@
   {
     "id": "seed-378",
     "category": "Class Skills",
-    "name": "Clause Sight",
+    "name": "Loophole",
     "subtitle": "Broker skill",
     "description": "Detects hidden clauses, loopholes, and magical bindings inside a contract.",
     "fields": [],
@@ -7476,7 +7476,7 @@
   {
     "id": "seed-379",
     "category": "Class Skills",
-    "name": "Sever",
+    "name": "Contract Break",
     "subtitle": "Broker skill",
     "description": "Forcibly dissolves a signed contract. Carries a high risk of backlash to both parties and the Broker.",
     "fields": [],
@@ -7492,7 +7492,7 @@
   {
     "id": "seed-380",
     "category": "Class Skills",
-    "name": "Bargain",
+    "name": "Silver Tongue",
     "subtitle": "Broker skill",
     "description": "Expert persuasion and negotiation used to find acceptable terms between hostile or difficult parties.",
     "fields": [],
@@ -7508,7 +7508,7 @@
   {
     "id": "seed-381",
     "category": "Class Skills",
-    "name": "Tell",
+    "name": "Falsesense",
     "subtitle": "Broker skill",
     "description": "Senses dishonesty during negotiations through body language, voice, and small Veyn fluctuations.",
     "fields": [],
@@ -7524,7 +7524,7 @@
   {
     "id": "seed-382",
     "category": "Class Skills",
-    "name": "Backlash Ward",
+    "name": "Backlash Guard",
     "subtitle": "Broker skill",
     "description": "Creates a protective ward that guards the Broker against magical backlash from contracts and hostile parties.",
     "fields": [],
@@ -7540,7 +7540,7 @@
   {
     "id": "seed-383",
     "category": "Class Skills",
-    "name": "Network",
+    "name": "Web",
     "subtitle": "Broker skill",
     "description": "Maintains a web of contacts, informants, and fellow Brokers across different areas and realms.",
     "fields": [],
@@ -7557,7 +7557,7 @@
   {
     "id": "seed-384",
     "category": "Class Skills",
-    "name": "Leverage",
+    "name": "Pressure",
     "subtitle": "Broker skill",
     "description": "Turns small pieces of information or minor advantages into strong negotiating positions.",
     "fields": [],
@@ -7573,7 +7573,7 @@
   {
     "id": "seed-385",
     "category": "Class Skills",
-    "name": "Iron Contract",
+    "name": "Ironword",
     "subtitle": "Broker skill",
     "description": "Creates high-stakes contracts that are extremely difficult to break and carry severe consequences.",
     "fields": [],
@@ -7590,7 +7590,7 @@
   {
     "id": "seed-386",
     "category": "Class Skills",
-    "name": "Grace",
+    "name": "Light Mend",
     "subtitle": "Saintess skill",
     "description": "Channels Holy Energy to heal wounds and purge corruption-related ailments more effectively than ordinary healing.",
     "fields": [],
@@ -7607,7 +7607,7 @@
   {
     "id": "seed-387",
     "category": "Class Skills",
-    "name": "Aegis of Light",
+    "name": "Radiant Aegis",
     "subtitle": "Saintess skill",
     "description": "Creates a barrier of Holy Energy that is especially strong against demonic and corrupted attacks.",
     "fields": [],
@@ -7624,7 +7624,7 @@
   {
     "id": "seed-388",
     "category": "Class Skills",
-    "name": "Cleanse",
+    "name": "Holy Purge",
     "subtitle": "Saintess skill",
     "description": "Purifies curses, miasma, and corruption from a target or area with focused Holy Energy.",
     "fields": [],
@@ -7641,7 +7641,7 @@
   {
     "id": "seed-389",
     "category": "Class Skills",
-    "name": "Radiant Guard",
+    "name": "Burning Guard",
     "subtitle": "Saintess skill",
     "description": "Forms a radiant shield that blocks attacks and burns corrupted beings on contact.",
     "fields": [],
@@ -7658,7 +7658,7 @@
   {
     "id": "seed-390",
     "category": "Class Skills",
-    "name": "Smite",
+    "name": "Judgment Blow",
     "subtitle": "Saintess skill",
     "description": "Infuses a melee attack with Holy Energy that deals heavy extra damage to undead and demons.",
     "fields": [],
@@ -7675,7 +7675,7 @@
   {
     "id": "seed-391",
     "category": "Class Skills",
-    "name": "Benediction",
+    "name": "Blessing",
     "subtitle": "Saintess skill",
     "description": "Temporarily boosts an ally's resistance to corruption and increases their Veyn recovery.",
     "fields": [],
@@ -7692,7 +7692,7 @@
   {
     "id": "seed-392",
     "category": "Class Skills",
-    "name": "Hallowed Ground",
+    "name": "Sacred Ground",
     "subtitle": "Saintess skill",
     "description": "Places a lasting holy zone that repels corrupted beings and slowly purifies the area.",
     "fields": [],
@@ -7709,7 +7709,7 @@
   {
     "id": "seed-393",
     "category": "Class Skills",
-    "name": "Lumen",
+    "name": "Reveal Light",
     "subtitle": "Saintess skill",
     "description": "Emits cleansing light that reveals hidden beings, burns undead, and weakens demonic power.",
     "fields": [],
@@ -7726,7 +7726,7 @@
   {
     "id": "seed-394",
     "category": "Class Skills",
-    "name": "Sacred Mastery",
+    "name": "Holy Precision",
     "subtitle": "Saintess skill",
     "description": "Allows precise and selective use of Holy Energy for complex healing and combat applications.",
     "fields": [],
@@ -7743,7 +7743,7 @@
   {
     "id": "seed-395",
     "category": "Class Skills",
-    "name": "Miracle",
+    "name": "Divine Act",
     "subtitle": "Saintess skill",
     "description": "Advanced holy techniques that can produce effects beyond normal limits of the class.",
     "fields": [],
@@ -7760,7 +7760,7 @@
   {
     "id": "seed-396",
     "category": "Class Skills",
-    "name": "Mend",
+    "name": "Soft Heal",
     "subtitle": "Clergy skill",
     "description": "Channels Veyn to heal minor wounds, cuts, bruises, and light burns.",
     "fields": [],
@@ -7777,7 +7777,7 @@
   {
     "id": "seed-397",
     "category": "Class Skills",
-    "name": "Restore",
+    "name": "Deep Heal",
     "subtitle": "Clergy skill",
     "description": "Heals serious injuries such as broken bones, deep cuts, and internal damage. Takes more time and Veyn than basic healing.",
     "fields": [],
@@ -7794,7 +7794,7 @@
   {
     "id": "seed-398",
     "category": "Class Skills",
-    "name": "Ritual of Recovery",
+    "name": "Recovery Rite",
     "subtitle": "Clergy skill",
     "description": "A prepared healing ritual used for wounds too severe for direct methods. Takes time but can save lives.",
     "fields": [],
@@ -7812,7 +7812,7 @@
   {
     "id": "seed-399",
     "category": "Class Skills",
-    "name": "Guardian Field",
+    "name": "Protect Field",
     "subtitle": "Clergy skill",
     "description": "Creates a barrier that absorbs damage directed at wounded allies, giving the healer time to work.",
     "fields": [],
@@ -7829,7 +7829,7 @@
   {
     "id": "seed-400",
     "category": "Class Skills",
-    "name": "Regeneration",
+    "name": "Lifebloom",
     "subtitle": "Clergy skill",
     "description": "Places a lasting effect on an ally that accelerates their natural healing over several hours.",
     "fields": [],
@@ -7846,7 +7846,7 @@
   {
     "id": "seed-401",
     "category": "Class Skills",
-    "name": "Sanctuary",
+    "name": "Healing Ground",
     "subtitle": "Clergy skill",
     "description": "Creates a zone that continuously heals anyone inside it. Useful for field treatment areas.",
     "fields": [],
@@ -7864,7 +7864,7 @@
   {
     "id": "seed-402",
     "category": "Class Skills",
-    "name": "Soothing Light",
+    "name": "Calm Light",
     "subtitle": "Clergy skill",
     "description": "Emits a gentle light that eases pain, calms the mind, and mildly speeds recovery in those nearby.",
     "fields": [],
@@ -7882,7 +7882,7 @@
   {
     "id": "seed-403",
     "category": "Class Skills",
-    "name": "Lifeweave",
+    "name": "Life Restore",
     "subtitle": "Clergy skill",
     "description": "Advanced healing capable of restoring lost limbs (with rare components) and pulling someone back from the edge of death.",
     "fields": [],
@@ -7900,7 +7900,7 @@
   {
     "id": "seed-404",
     "category": "Class Skills",
-    "name": "Remedy",
+    "name": "Special Cure",
     "subtitle": "Clergy skill",
     "description": "Develops and applies specialized treatments for rare conditions and unique injuries.",
     "fields": [],
@@ -7918,7 +7918,7 @@
   {
     "id": "seed-405",
     "category": "Class Skills",
-    "name": "Teach",
+    "name": "Healer's Hand",
     "subtitle": "Clergy skill",
     "description": "Allows the user to effectively train others in healing techniques, helping maintain the number of capable healers.",
     "fields": [],
@@ -7936,7 +7936,7 @@
   {
     "id": "seed-406",
     "category": "Class Skills",
-    "name": "Enchanted Shot",
+    "name": "Spell Arrow",
     "subtitle": "Archer skill",
     "description": "Enchants an arrow with Veyn before firing, adding elemental or force effects that activate on impact.",
     "fields": [],
@@ -7953,7 +7953,7 @@
   {
     "id": "seed-407",
     "category": "Class Skills",
-    "name": "Armor Piercer",
+    "name": "Sunder Arrow",
     "subtitle": "Archer skill",
     "description": "Focuses Veyn into the arrowhead so it can punch through armor, shields, and barriers.",
     "fields": [],
@@ -7970,7 +7970,7 @@
   {
     "id": "seed-408",
     "category": "Class Skills",
-    "name": "Blast Arrow",
+    "name": "Burst Arrow",
     "subtitle": "Archer skill",
     "description": "Creates arrows that detonate on impact, damaging everything in a small radius.",
     "fields": [],
@@ -7987,7 +7987,7 @@
   {
     "id": "seed-409",
     "category": "Class Skills",
-    "name": "Seeker",
+    "name": "Homing Bolt",
     "subtitle": "Archer skill",
     "description": "Enchants an arrow so it actively adjusts its path mid-flight to follow a designated target.",
     "fields": [],
@@ -8004,7 +8004,7 @@
   {
     "id": "seed-410",
     "category": "Class Skills",
-    "name": "Rain of Arrows",
+    "name": "Skyfall",
     "subtitle": "Archer skill",
     "description": "Launches a volley of enchanted arrows into the air to rain down over a wide area.",
     "fields": [],
@@ -8021,7 +8021,7 @@
   {
     "id": "seed-411",
     "category": "Class Skills",
-    "name": "Arrow Ward",
+    "name": "Quiver Wall",
     "subtitle": "Archer skill",
     "description": "Plants arrows in the ground to form a temporary Veyn barrier that blocks incoming attacks.",
     "fields": [],
@@ -8038,7 +8038,7 @@
   {
     "id": "seed-412",
     "category": "Class Skills",
-    "name": "Sunder Shot",
+    "name": "Final Arrow",
     "subtitle": "Archer skill",
     "description": "A single, fully charged arrow fired with extreme speed and penetrating power.",
     "fields": [],
@@ -8055,7 +8055,7 @@
   {
     "id": "seed-413",
     "category": "Class Skills",
-    "name": "Healing Flight",
+    "name": "Grace Arrow",
     "subtitle": "Archer skill",
     "description": "Enchants an arrow with healing Veyn, allowing the archer to restore allies from a distance.",
     "fields": [],
@@ -8073,7 +8073,7 @@
   {
     "id": "seed-414",
     "category": "Class Skills",
-    "name": "Master Shot",
+    "name": "Perfect Shot",
     "subtitle": "Archer skill",
     "description": "Allows complex multi-effect enchantments on arrows and extreme-range precision shooting.",
     "fields": [],
@@ -8089,7 +8089,7 @@
   {
     "id": "seed-415",
     "category": "Class Skills",
-    "name": "New Quiver",
+    "name": "Arrowcraft",
     "subtitle": "Archer skill",
     "description": "Develops entirely new forms of magical ammunition and arrow techniques.",
     "fields": [],
@@ -8105,7 +8105,7 @@
   {
     "id": "seed-416",
     "category": "Class Skills",
-    "name": "Auric Blow",
+    "name": "Golden Strike",
     "subtitle": "Paladin skill",
     "description": "Channels golden Ren into a powerful melee attack that burns corrupted beings and heals nearby allies.",
     "fields": [],
@@ -8122,7 +8122,7 @@
   {
     "id": "seed-417",
     "category": "Class Skills",
-    "name": "Lightshield",
+    "name": "Dawn Shield",
     "subtitle": "Paladin skill",
     "description": "Creates a radiant barrier that blocks attacks and burns corrupted beings on contact.",
     "fields": [],
@@ -8139,7 +8139,7 @@
   {
     "id": "seed-418",
     "category": "Class Skills",
-    "name": "Golden Mend",
+    "name": "Light Mend",
     "subtitle": "Paladin skill",
     "description": "Heals allies with golden Ren while purifying corruption inside the wounds.",
     "fields": [],
@@ -8156,7 +8156,7 @@
   {
     "id": "seed-419",
     "category": "Class Skills",
-    "name": "Aura of Resolve",
+    "name": "Courage Aura",
     "subtitle": "Paladin skill",
     "description": "Strengthens nearby allies against fear, charm, and morale-breaking effects.",
     "fields": [],
@@ -8173,7 +8173,7 @@
   {
     "id": "seed-420",
     "category": "Class Skills",
-    "name": "Judgment",
+    "name": "Final Judgment",
     "subtitle": "Paladin skill",
     "description": "A massive single-target strike of pure golden Ren that deals heavy damage to corrupted and undead beings.",
     "fields": [],
@@ -8190,7 +8190,7 @@
   {
     "id": "seed-421",
     "category": "Class Skills",
-    "name": "Lay on Hands",
+    "name": "Sacred Touch",
     "subtitle": "Paladin skill",
     "description": "Direct-contact healing that restores injuries and purifies corruption at the same time.",
     "fields": [],
@@ -8207,7 +8207,7 @@
   {
     "id": "seed-422",
     "category": "Class Skills",
-    "name": "Consecrate",
+    "name": "Holy Ground",
     "subtitle": "Paladin skill",
     "description": "Blesses an area so that it heals allies and damages corrupted beings standing on it.",
     "fields": [],
@@ -8225,7 +8225,7 @@
   {
     "id": "seed-423",
     "category": "Class Skills",
-    "name": "Divine Ward",
+    "name": "Guardian Seal",
     "subtitle": "Paladin skill",
     "description": "Places an automatic protective ward on an ally that activates when they are attacked.",
     "fields": [],
@@ -8242,7 +8242,7 @@
   {
     "id": "seed-424",
     "category": "Class Skills",
-    "name": "Oathsurge",
+    "name": "Oath Power",
     "subtitle": "Paladin skill",
     "description": "Temporarily increases the Paladin's power when their allies are in serious danger.",
     "fields": [],
@@ -8260,7 +8260,7 @@
   {
     "id": "seed-425",
     "category": "Class Skills",
-    "name": "Champion",
+    "name": "Radiant Champion",
     "subtitle": "Paladin skill",
     "description": "A full temporary empowerment that turns the Paladin into a beacon of golden light, greatly enhancing all abilities.",
     "fields": [],
@@ -8277,7 +8277,7 @@
   {
     "id": "seed-426",
     "category": "Class Skills",
-    "name": "Raise",
+    "name": "Awaken",
     "subtitle": "Grimtender skill",
     "description": "Channels Veyn into the remains of a fallen creature, reanimating it as an undead servant under the user's control.",
     "fields": [],
@@ -8294,7 +8294,7 @@
   {
     "id": "seed-427",
     "category": "Class Skills",
-    "name": "Command Dead",
+    "name": "Dead Order",
     "subtitle": "Grimtender skill",
     "description": "Issues precise combat orders to one or more reanimated servants.",
     "fields": [],
@@ -8311,7 +8311,7 @@
   {
     "id": "seed-428",
     "category": "Class Skills",
-    "name": "Bone Wall",
+    "name": "Bone Guard",
     "subtitle": "Grimtender skill",
     "description": "Commands reanimated bodies to intercept attacks, using them as disposable shields.",
     "fields": [],
@@ -8328,7 +8328,7 @@
   {
     "id": "seed-429",
     "category": "Class Skills",
-    "name": "Drain Remains",
+    "name": "Grave Drain",
     "subtitle": "Grimtender skill",
     "description": "Siphons residual Veyn from nearby corpses and remains to restore the user's own reserves.",
     "fields": [],
@@ -8345,7 +8345,7 @@
   {
     "id": "seed-430",
     "category": "Class Skills",
-    "name": "Necrotic Pulse",
+    "name": "Death Pulse",
     "subtitle": "Grimtender skill",
     "description": "Releases a wave of necrotic energy that weakens living targets and strengthens undead ones.",
     "fields": [],
@@ -8362,7 +8362,7 @@
   {
     "id": "seed-431",
     "category": "Class Skills",
-    "name": "Legion",
+    "name": "Bone Legion",
     "subtitle": "Grimtender skill",
     "description": "Reanimates a large number of remains at once, creating a group of undead servants.",
     "fields": [],
@@ -8380,7 +8380,7 @@
   {
     "id": "seed-432",
     "category": "Class Skills",
-    "name": "Bone Lance",
+    "name": "Bone Spear",
     "subtitle": "Grimtender skill",
     "description": "Shapes bone into a projectile and launches it, carrying necrotic Veyn that damages on impact.",
     "fields": [],
@@ -8397,7 +8397,7 @@
   {
     "id": "seed-433",
     "category": "Class Skills",
-    "name": "Spirit Anchor",
+    "name": "Soul Bind",
     "subtitle": "Grimtender skill",
     "description": "Binds residual spirit more tightly to remains, creating stronger and more intelligent undead.",
     "fields": [],
@@ -8413,7 +8413,7 @@
   {
     "id": "seed-434",
     "category": "Class Skills",
-    "name": "Deathlord",
+    "name": "Grave Lord",
     "subtitle": "Grimtender skill",
     "description": "Allows permanent high-quality undead and large-scale simultaneous control.",
     "fields": [],
@@ -8429,7 +8429,7 @@
   {
     "id": "seed-435",
     "category": "Class Skills",
-    "name": "Harvest",
+    "name": "Soul Take",
     "subtitle": "Grimtender skill",
     "description": "Extracts and stores residual essence from the newly dead for later use in powerful reanimation.",
     "fields": [],
@@ -8446,7 +8446,7 @@
   {
     "id": "seed-436",
     "category": "Class Skills",
-    "name": "Cleave",
+    "name": "Wide Cut",
     "subtitle": "Bladesinger skill",
     "description": "A rapid sweeping sword strike that can hit multiple targets in one motion.",
     "fields": [],
@@ -8463,7 +8463,7 @@
   {
     "id": "seed-437",
     "category": "Class Skills",
-    "name": "Crimson Edge",
+    "name": "Blood Edge",
     "subtitle": "Bladesinger skill",
     "description": "Coats the blade in concentrated Ren, greatly increasing its cutting power.",
     "fields": [],
@@ -8480,7 +8480,7 @@
   {
     "id": "seed-438",
     "category": "Class Skills",
-    "name": "Flourish",
+    "name": "Blade Dance",
     "subtitle": "Bladesinger skill",
     "description": "Uses rapid, precise blade movements to deflect incoming attacks with minimal effort.",
     "fields": [],
@@ -8497,7 +8497,7 @@
   {
     "id": "seed-439",
     "category": "Class Skills",
-    "name": "Counter",
+    "name": "Return Cut",
     "subtitle": "Bladesinger skill",
     "description": "Responds to an incoming attack with an immediate and precise counter-strike.",
     "fields": [],
@@ -8515,7 +8515,7 @@
   {
     "id": "seed-440",
     "category": "Class Skills",
-    "name": "Gale",
+    "name": "Wind Step",
     "subtitle": "Bladesinger skill",
     "description": "Uses Ren to propel the user forward in a burst of speed, closing distance instantly.",
     "fields": [],
@@ -8532,7 +8532,7 @@
   {
     "id": "seed-441",
     "category": "Class Skills",
-    "name": "Phantom Cut",
+    "name": "Ghost Cut",
     "subtitle": "Bladesinger skill",
     "description": "Strikes from an unexpected angle by masking the blade's movement with Ren.",
     "fields": [],
@@ -8549,7 +8549,7 @@
   {
     "id": "seed-442",
     "category": "Class Skills",
-    "name": "Tempest",
+    "name": "Storm of Blades",
     "subtitle": "Bladesinger skill",
     "description": "Unleashes a rapid series of Ren-enhanced slashes that create a whirlwind of attacks.",
     "fields": [],
@@ -8566,7 +8566,7 @@
   {
     "id": "seed-443",
     "category": "Class Skills",
-    "name": "Grace",
+    "name": "Perfect Form",
     "subtitle": "Bladesinger skill",
     "description": "Passively enhances balance, coordination, and reaction speed, allowing the user to maintain form even while wounded.",
     "fields": [],
@@ -8583,7 +8583,7 @@
   {
     "id": "seed-444",
     "category": "Class Skills",
-    "name": "Bladesong",
+    "name": "Sword Song",
     "subtitle": "Bladesinger skill",
     "description": "Enters a focused state where Ren flows rhythmically through the body, enhancing all physical and blade techniques.",
     "fields": [],
@@ -8600,7 +8600,7 @@
   {
     "id": "seed-445",
     "category": "Class Skills",
-    "name": "Perfection",
+    "name": "Flawless Edge",
     "subtitle": "Bladesinger skill",
     "description": "The user executes every movement with optimal efficiency and zero wasted motion.",
     "fields": [],
@@ -8617,7 +8617,7 @@
   {
     "id": "seed-446",
     "category": "Class Skills",
-    "name": "Frenzy",
+    "name": "Blood Rage",
     "subtitle": "Berserker skill",
     "description": "Enters a controlled rage that greatly increases physical strength and pain tolerance while reducing precision.",
     "fields": [],
@@ -8634,7 +8634,7 @@
   {
     "id": "seed-447",
     "category": "Class Skills",
-    "name": "Warhowl",
+    "name": "Battle Roar",
     "subtitle": "Berserker skill",
     "description": "Releases a Ren-infused shout that staggers nearby enemies and weakens their resolve.",
     "fields": [],
@@ -8651,7 +8651,7 @@
   {
     "id": "seed-448",
     "category": "Class Skills",
-    "name": "Overkill",
+    "name": "Killing Blow",
     "subtitle": "Berserker skill",
     "description": "Channels a massive burst of Ren into a single attack for extreme damage, leaving the user temporarily drained.",
     "fields": [],
@@ -8668,7 +8668,7 @@
   {
     "id": "seed-449",
     "category": "Class Skills",
-    "name": "Reckless",
+    "name": "All-In",
     "subtitle": "Berserker skill",
     "description": "Abandons defense for one devastating attack that leaves the user completely open afterward.",
     "fields": [],
@@ -8685,7 +8685,7 @@
   {
     "id": "seed-450",
     "category": "Class Skills",
-    "name": "Unyielding",
+    "name": "Never Fall",
     "subtitle": "Berserker skill",
     "description": "When health falls critically low, Ren automatically surges to keep the user fighting through wounds that would stop others.",
     "fields": [],
@@ -8703,7 +8703,7 @@
   {
     "id": "seed-451",
     "category": "Class Skills",
-    "name": "Rampage",
+    "name": "Mad Rampage",
     "subtitle": "Berserker skill",
     "description": "Fully unleashes rage, massively increasing strength and speed but removing the ability to distinguish friend from foe.",
     "fields": [],
@@ -8721,7 +8721,7 @@
   {
     "id": "seed-452",
     "category": "Class Skills",
-    "name": "Detonate",
+    "name": "Rage Burst",
     "subtitle": "Berserker skill",
     "description": "Explodes all accumulated Ren outward, damaging and knocking back everything nearby.",
     "fields": [],
@@ -8738,7 +8738,7 @@
   {
     "id": "seed-453",
     "category": "Class Skills",
-    "name": "Cripple",
+    "name": "Bone Break",
     "subtitle": "Berserker skill",
     "description": "A targeted strike meant to disable a specific body part, such as shattering a bone or tearing a tendon.",
     "fields": [],
@@ -8755,7 +8755,7 @@
   {
     "id": "seed-454",
     "category": "Class Skills",
-    "name": "Last Stand",
+    "name": "Final Rage",
     "subtitle": "Berserker skill",
     "description": "A final, suicidal burst of power used when death is certain, dealing catastrophic damage to everything nearby including the user.",
     "fields": [],
@@ -8773,7 +8773,7 @@
   {
     "id": "seed-455",
     "category": "Class Skills",
-    "name": "Warlord",
+    "name": "War Cry",
     "subtitle": "Berserker skill",
     "description": "A roar so powerful it distorts the air, shatters weak structures, and empowers nearby allies while crushing enemy morale.",
     "fields": [],
@@ -8790,7 +8790,7 @@
   {
     "id": "seed-456",
     "category": "Class Skills",
-    "name": "Ironclad",
+    "name": "Iron Skin",
     "subtitle": "Sentinel skill",
     "description": "Coats armor and shield in concentrated Ren, greatly increasing their durability.",
     "fields": [],
@@ -8807,7 +8807,7 @@
   {
     "id": "seed-457",
     "category": "Class Skills",
-    "name": "Bulwark",
+    "name": "Stone Wall",
     "subtitle": "Sentinel skill",
     "description": "Creates a solid barrier of Ren in a chosen direction to block incoming attacks.",
     "fields": [],
@@ -8824,7 +8824,7 @@
   {
     "id": "seed-458",
     "category": "Class Skills",
-    "name": "Fortress",
+    "name": "Rooted Stance",
     "subtitle": "Sentinel skill",
     "description": "The user plants their feet and becomes nearly immovable, taking reduced damage and resisting knockback.",
     "fields": [],
@@ -8841,7 +8841,7 @@
   {
     "id": "seed-459",
     "category": "Class Skills",
-    "name": "Provoke",
+    "name": "Challenge",
     "subtitle": "Sentinel skill",
     "description": "Projects a challenge that forces enemies to focus their attacks on the Sentinel instead of allies.",
     "fields": [],
@@ -8858,7 +8858,7 @@
   {
     "id": "seed-460",
     "category": "Class Skills",
-    "name": "Endure",
+    "name": "Stand Firm",
     "subtitle": "Sentinel skill",
     "description": "Allows the user to continue functioning even under severe injury by reinforcing the body with Ren.",
     "fields": [],
@@ -8876,7 +8876,7 @@
   {
     "id": "seed-461",
     "category": "Class Skills",
-    "name": "Shield Slam",
+    "name": "Shield Crash",
     "subtitle": "Sentinel skill",
     "description": "Slams the shield into an opponent with Ren-enhanced force, dealing damage and potentially stunning them.",
     "fields": [],
@@ -8893,7 +8893,7 @@
   {
     "id": "seed-462",
     "category": "Class Skills",
-    "name": "Aegis Share",
+    "name": "Shared Guard",
     "subtitle": "Sentinel skill",
     "description": "Extends the Sentinel's protective effect to nearby allies, reducing the damage they take.",
     "fields": [],
@@ -8911,7 +8911,7 @@
   {
     "id": "seed-463",
     "category": "Class Skills",
-    "name": "Oathguard",
+    "name": "Protect Ally",
     "subtitle": "Sentinel skill",
     "description": "Designates an ally to protect. The Sentinel automatically intercepts attacks aimed at that ally.",
     "fields": [],
@@ -8929,7 +8929,7 @@
   {
     "id": "seed-464",
     "category": "Class Skills",
-    "name": "Last Breath",
+    "name": "Final Stand",
     "subtitle": "Sentinel skill",
     "description": "Once per battle, when the user would fall, a reserve of Ren keeps them alive at 1 health for a short time.",
     "fields": [],
@@ -8947,7 +8947,7 @@
   {
     "id": "seed-465",
     "category": "Class Skills",
-    "name": "Immovable",
+    "name": "Unbreakable",
     "subtitle": "Sentinel skill",
     "description": "The user becomes a wide-area defensive bastion, taking drastically reduced damage and protecting a large zone around them.",
     "fields": [],
@@ -8964,7 +8964,7 @@
   {
     "id": "seed-466",
     "category": "Class Skills",
-    "name": "Force Arrow",
+    "name": "Power Bolt",
     "subtitle": "Ren Archer skill",
     "description": "Coats an arrow in Ren before firing, increasing its force and penetration.",
     "fields": [],
@@ -8981,7 +8981,7 @@
   {
     "id": "seed-467",
     "category": "Class Skills",
-    "name": "Power Draw",
+    "name": "Heavy Draw",
     "subtitle": "Ren Archer skill",
     "description": "Charges an arrow with maximum Ren and fires it at extreme speed and power.",
     "fields": [],
@@ -8998,7 +8998,7 @@
   {
     "id": "seed-468",
     "category": "Class Skills",
-    "name": "Rapid Fire",
+    "name": "Quick Volley",
     "subtitle": "Ren Archer skill",
     "description": "Fires a quick succession of Ren-enhanced arrows without pausing between shots.",
     "fields": [],
@@ -9015,7 +9015,7 @@
   {
     "id": "seed-469",
     "category": "Class Skills",
-    "name": "Piercer",
+    "name": "Armor Break",
     "subtitle": "Ren Archer skill",
     "description": "Concentrates Ren into the arrowhead so it can punch through heavy armor and shields.",
     "fields": [],
@@ -9032,7 +9032,7 @@
   {
     "id": "seed-470",
     "category": "Class Skills",
-    "name": "Windstep",
+    "name": "Gale Step",
     "subtitle": "Ren Archer skill",
     "description": "Uses Ren to move quickly and silently, allowing rapid repositioning between shots.",
     "fields": [],
@@ -9049,7 +9049,7 @@
   {
     "id": "seed-471",
     "category": "Class Skills",
-    "name": "Longshot",
+    "name": "Far Shot",
     "subtitle": "Ren Archer skill",
     "description": "Takes careful aim and fires a single arrow with perfect precision at extreme range.",
     "fields": [],
@@ -9066,7 +9066,7 @@
   {
     "id": "seed-472",
     "category": "Class Skills",
-    "name": "Barrage",
+    "name": "Arrow Storm",
     "subtitle": "Ren Archer skill",
     "description": "Fires a dense cloud of Ren-coated arrows that blankets an area.",
     "fields": [],
@@ -9083,7 +9083,7 @@
   {
     "id": "seed-473",
     "category": "Class Skills",
-    "name": "Slip",
+    "name": "Sidestep",
     "subtitle": "Ren Archer skill",
     "description": "A Ren-enhanced dodge that allows the user to avoid attacks while staying ready to fire.",
     "fields": [],
@@ -9101,7 +9101,7 @@
   {
     "id": "seed-474",
     "category": "Class Skills",
-    "name": "Hawk Eye",
+    "name": "Sharp Eye",
     "subtitle": "Ren Archer skill",
     "description": "Passively enhances vision, target tracking, and distance judgment.",
     "fields": [],
@@ -9119,7 +9119,7 @@
   {
     "id": "seed-475",
     "category": "Class Skills",
-    "name": "Arrow Lord",
+    "name": "Arrow Master",
     "subtitle": "Ren Archer skill",
     "description": "Allows perfect accuracy while moving and the creation of hovering arrow constructs that can fire on command.",
     "fields": [],
@@ -9136,7 +9136,7 @@
   {
     "id": "seed-476",
     "category": "Class Skills",
-    "name": "Shade Step",
+    "name": "Shadow Move",
     "subtitle": "Veilrunner skill",
     "description": "Uses Ren to move silently and quickly through dim light and shadows, becoming hard to track.",
     "fields": [],
@@ -9153,7 +9153,7 @@
   {
     "id": "seed-477",
     "category": "Class Skills",
-    "name": "Silence",
+    "name": "No Sound",
     "subtitle": "Veilrunner skill",
     "description": "Completely suppresses all sound from the user's movements, including footsteps and clothing.",
     "fields": [],
@@ -9171,7 +9171,7 @@
   {
     "id": "seed-478",
     "category": "Class Skills",
-    "name": "Backstab",
+    "name": "Death from Behind",
     "subtitle": "Veilrunner skill",
     "description": "A high-damage precision strike delivered from behind, targeting vital points.",
     "fields": [],
@@ -9188,7 +9188,7 @@
   {
     "id": "seed-479",
     "category": "Class Skills",
-    "name": "Smoke",
+    "name": "Smoke Screen",
     "subtitle": "Veilrunner skill",
     "description": "Creates a cloud of smoke or dust that breaks line of sight and allows repositioning or escape.",
     "fields": [],
@@ -9205,7 +9205,7 @@
   {
     "id": "seed-480",
     "category": "Class Skills",
-    "name": "Ghost",
+    "name": "Phantom Dodge",
     "subtitle": "Veilrunner skill",
     "description": "Enhances reflexes and body control, allowing the user to dodge attacks with minimal movement.",
     "fields": [],
@@ -9223,7 +9223,7 @@
   {
     "id": "seed-481",
     "category": "Class Skills",
-    "name": "Venom Edge",
+    "name": "Poison Blade",
     "subtitle": "Veilrunner skill",
     "description": "Coats a blade in Ren-enhanced poison that slows, weakens, or paralyzes on contact.",
     "fields": [],
@@ -9240,7 +9240,7 @@
   {
     "id": "seed-482",
     "category": "Class Skills",
-    "name": "Touchlock",
+    "name": "Lock Touch",
     "subtitle": "Veilrunner skill",
     "description": "Uses Ren to sense and manipulate the internal mechanisms of locks without physical tools.",
     "fields": [],
@@ -9257,7 +9257,7 @@
   {
     "id": "seed-483",
     "category": "Class Skills",
-    "name": "Mimic",
+    "name": "Face Shift",
     "subtitle": "Veilrunner skill",
     "description": "Subtly alters posture, gait, and mannerisms to blend into crowds or imitate another person.",
     "fields": [],
@@ -9274,7 +9274,7 @@
   {
     "id": "seed-484",
     "category": "Class Skills",
-    "name": "Vanish",
+    "name": "Disappear",
     "subtitle": "Veilrunner skill",
     "description": "Fully suppresses presence for a short time, becoming effectively invisible (movement is limited).",
     "fields": [],
@@ -9291,7 +9291,7 @@
   {
     "id": "seed-485",
     "category": "Class Skills",
-    "name": "Wraith",
+    "name": "Living Shadow",
     "subtitle": "Veilrunner skill",
     "description": "Allows near-perfect stealth even at full speed, leaving almost no trace of the user's presence.",
     "fields": [],
@@ -9308,7 +9308,7 @@
   {
     "id": "seed-486",
     "category": "Class Skills",
-    "name": "Study",
+    "name": "Stone Study",
     "subtitle": "Shudonkeeper skill",
     "description": "Deep analysis of Shudon construction, materials, design, and age through examination.",
     "fields": [],
@@ -9324,7 +9324,7 @@
   {
     "id": "seed-487",
     "category": "Class Skills",
-    "name": "Preserve",
+    "name": "Stone Keep",
     "subtitle": "Shudonkeeper skill",
     "description": "Repairs and maintains inactive Shudon, slowing further deterioration even if reactivation is impossible.",
     "fields": [],
@@ -9340,7 +9340,7 @@
   {
     "id": "seed-488",
     "category": "Class Skills",
-    "name": "Lore",
+    "name": "Golem Lore",
     "subtitle": "Shudonkeeper skill",
     "description": "Theoretical knowledge of how the Shudon were originally created and what role the world core played.",
     "fields": [],
@@ -9356,7 +9356,7 @@
   {
     "id": "seed-489",
     "category": "Class Skills",
-    "name": "Script",
+    "name": "Ancient Read",
     "subtitle": "Shudonkeeper skill",
     "description": "Reads and interprets the ancient inscriptions found on Shudon and related relics.",
     "fields": [],
@@ -9372,7 +9372,7 @@
   {
     "id": "seed-490",
     "category": "Class Skills",
-    "name": "Commune",
+    "name": "Stone Whisper",
     "subtitle": "Shudonkeeper skill",
     "description": "Attempts to sense residual will or traces of the world core inside dormant Shudon through physical contact.",
     "fields": [],
@@ -9388,7 +9388,7 @@
   {
     "id": "seed-491",
     "category": "Class Skills",
-    "name": "Chronicle",
+    "name": "World Record",
     "subtitle": "Shudonkeeper skill",
     "description": "Comprehensive knowledge of the Shudon's historical role in the division of the realms.",
     "fields": [],
@@ -9404,7 +9404,7 @@
   {
     "id": "seed-492",
     "category": "Class Skills",
-    "name": "Theory",
+    "name": "Awaken Theory",
     "subtitle": "Shudonkeeper skill",
     "description": "Develops and refines theoretical methods that might one day allow reactivation of the Shudon.",
     "fields": [],
@@ -9420,7 +9420,7 @@
   {
     "id": "seed-493",
     "category": "Class Skills",
-    "name": "Archive",
+    "name": "Keepers Archive",
     "subtitle": "Shudonkeeper skill",
     "description": "Organizes and preserves the collective research, observations, and theories of all previous Shudonkeepers.",
     "fields": [],
@@ -9436,7 +9436,7 @@
   {
     "id": "seed-494",
     "category": "Class Skills",
-    "name": "Fragment Sense",
+    "name": "Relic Sense",
     "subtitle": "Shudonkeeper skill",
     "description": "Detects and identifies Shudon-related relics and materials even when heavily damaged or buried.",
     "fields": [],
@@ -9452,7 +9452,7 @@
   {
     "id": "seed-495",
     "category": "Class Skills",
-    "name": "Core Insight",
+    "name": "Core Glimpse",
     "subtitle": "Shudonkeeper skill",
     "description": "Allows brief, incomplete glimpses of residual world-core patterns still present inside Shudon remains.",
     "fields": [],
