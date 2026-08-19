@@ -447,7 +447,7 @@ module.exports = [
   s("Gloaming Veil", "Dawnveil (Aetherblade)", "fused from", "Fused from", "Fuses the angel skill Dawnveil (Aetherblade)."),
   s("Gloaming Veil", "Duskveil (Bloodward)", "fused from", "Fused from", "Fuses the demon skill Duskveil (Bloodward)."),
   s("Eva Aldermere Divina", "Elyndor Academy", "Goes to", "Goes to", "she attends the academy"),
-  s("Bella Rose", "Aerendrel, the Skybound Wrath", "owned by", "Owned by", "was given to her by Jaiden"),
+  s("Aerendrel, the Skybound Wrath", "Bella Rose", "owned by", "Owned by", "Found by Jaiden in the chamber beneath Lethmoor’s throne chair, and later given to Bella Rose."),
   s("Bella Rose", "Malakhim", "part of", "Part of", "she is a Malakhim angel"),
   s("Bella Rose", "Archer", "class of", "Class of", "her given class is archer"),
   s("Mark Wesley", "Alchemist", "class of", "Class of", "his given class is alchemist"),
