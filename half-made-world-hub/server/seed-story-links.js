@@ -733,113 +733,74 @@ module.exports = [
   s("Bella Rose", "E Grade", "rank of", "Rank of", "Bella Rose is a E Grade being at the Peak stage."),
   s("Mark Wesley", "E Grade", "rank of", "Rank of", "Mark Wesley is a E Grade being at the Late stage."),
   s("Varen Ashtail", "B Grade", "rank of", "Rank of", "Varen Ashtail is a B Grade being at the Mid stage."),
-  // ============================================================ NEW MONSTERS — CLASSIC
-
-  // Werewolves
   s("Werewolves", "Thornlost Forest", "located in", "Located in", "Werewolves roam the Thornlost Forest in the Hidden Realm, occasionally crossing into Umbrage Forest border zones."),
   s("Werewolves", "Hidden Realm", "located in", "Located in", "Their primary habitat is the Thornlost Forest within the Hidden Realm."),
   s("Werewolves", "Exorcist", "vulnerable to", "Vulnerable to", "A high-rank Exorcist purification can remove the curse — but only before the seventh transformation."),
   s("Werewolves", "Saintess", "vulnerable to", "Vulnerable to", "A Saintess holy purge can cure the werewolf curse in its early stages."),
-
-  // Basilisk
   s("Basilisk", "Umbrage Forest", "located in", "Located in", "Basilisks hunt in the deep Umbrage Forest and the darker reaches of Thornlost Forest."),
   s("Basilisk", "Hidden Realm", "located in", "Located in", "Found occasionally in the Thornlost Forest's darker reaches."),
   s("Basilisk", "Demon Realm", "located in", "Located in", "Primary habitat is the deep Umbrage Forest within the Demon Realm."),
   s("Basilisk", "Enchanter", "component for", "Component for", "Preserved Basilisk eyes are used in Wardseal and Guardseal-class defensive runework."),
   s("Basilisk", "Broker", "valued by", "Valued by", "Basilisk eyes are worth a small fortune in the Broker's market."),
-
-  // Manticore
   s("Manticore", "Umbrage Forest", "located in", "Located in", "Manticores ambush prey in the Umbrage Forest and occasionally deep Arubian Forest."),
   s("Manticore", "Demon Realm", "located in", "Located in", "Primary hunting ground is the Umbrage Forest."),
   s("Manticore", "Alchemist", "component for", "Component for", "Manticore venom sacs are the base component for Paralytic Venom, working on beings up to C-rank."),
   s("Manticore", "Broker", "valued by", "Valued by", "Venom sac extraction is a specialized Broker contract worth enormous sums."),
-
-  // Chimera
   s("Chimera", "Umbrage Forest", "located in", "Located in", "Chimeras inhabit the deepest parts of the Umbrage Forest."),
   s("Chimera", "Hidden Realm", "located in", "Located in", "Also found in the Thornlost Forest within the Hidden Realm."),
   s("Chimera", "Alchemist", "component for", "Component for", "Chimera blood is flammable and used in Blastflask and Explosive Mixing compounds."),
-
-  // Cockatrice
   s("Cockatrice", "Umbrage Forest", "located in", "Located in", "Cockatrices hunt along the Umbrage Forest borders and Thornlost Forest edges."),
   s("Cockatrice", "Hidden Realm", "located in", "Located in", "Found at the edges of Thornlost Forest in the Hidden Realm."),
   s("Cockatrice", "Enchanter", "component for", "Component for", "Their petrifying beak residue is used in Wardseal defensive rune creation."),
-
-  // Goblins
   s("Goblins", "Umbrage Forest", "located in", "Located in", "Goblin warrens are dug throughout the Umbrage Forest."),
   s("Goblins", "Human Realm", "located in", "Located in", "Some Goblin warrens extend into the deeper parts of the Arubian Forest."),
   s("Goblins", "Demon Realm", "located in", "Located in", "Primary habitat is the Umbrage Forest within the Demon Realm."),
-
-  // Orcs
   s("Orcs", "Umbrage Forest", "located in", "Located in", "Orc war-bands roam the Umbrage Forest, competing with Trolls and Minotaurs for territory."),
   s("Orcs", "Demon Realm", "located in", "Located in", "Found in the Umbrage Forest and border regions of the Demon Realm."),
   s("Orcs", "Trolls", "rivals with", "Rivals with", "Orcs and Trolls compete for territory in the Umbrage Forest."),
   s("Orcs", "Minotaur", "rivals with", "Rivals with", "Orcs and Minotaurs clash over hunting grounds in the Umbrage Forest."),
-
-  // ============================================================ NEW MONSTERS — OP
-
-  // Abyssal Wyrm
   s("Abyssal Wyrm", "Aelthar", "sealed by", "Sealed by", "The Aelthar sealed the Abyssal Wyrm beneath the world's crust using world-core Veyn."),
-  s("Abyssal Wyrm", "World Core", "feeds on", "Feeds on", "The Abyssal Wyrm devours ambient Veyn from entire regions, creating dead zones."),
+  s("Abyssal Wyrm", "The World Core", "feeds on", "Feeds on", "The Abyssal Wyrm devours ambient Veyn from entire regions, creating dead zones."),
   s("Abyssal Wyrm", "Shudon", "can be harmed by", "Can be harmed by", "Only weapons forged from world-core material (Shudon-grade metal) can wound it."),
   s("Abyssal Wyrm", "Human Realm", "threatens", "Threatens", "When the seal breaks, the Wyrm will surface and create a dead zone the size of a kingdom."),
   s("Abyssal Wyrm", "Angel Realm", "threatens", "Threatens", "Its Veyn-draining breath would devastate the Angel Realm if released."),
   s("Abyssal Wyrm", "Demon Realm", "threatens", "Threatens", "The Demon Realm is equally vulnerable to the Wyrm's catastrophic Veyn drain."),
-
-  // World Eater
-  s("World Eater", "World Core", "parasitizes", "Parasitizes", "The World Eater embeds itself in the world core and slowly drains its power over centuries."),
+  s("World Eater", "The World Core", "parasitizes", "Parasitizes", "The World Eater embeds itself in the world core and slowly drains its power over centuries."),
   s("World Eater", "Aelthar", "discovered by", "Discovered by", "The Aelthar discovered the World Eater's existence — one reason they created the Hidden Realm."),
   s("World Eater", "Shudon", "suppressed by", "Suppressed by", "The Shudon were built partly as core regulators to detect and suppress the World Eater's spread."),
   s("World Eater", "Hidden Realm", "partially redirected by", "Partially redirected by", "The Hidden Realm was created partly to redirect the World Eater's feeding away from the main core."),
-
-  // Void Colossus
   s("Void Colossus", "Hidden Realm", "triggered by", "Triggered by", "The Void Colossus first appeared when the Hidden Realm was forcefully created."),
-  s("Void Colossus", "Realm Barrier", "guards", "Guards", "It is the void's own immune response, drawn to breaches in the realm barrier."),
+  s("Void Colossus", "The World Barrier", "guards", "Guards", "It is the void's own immune response, drawn to breaches in the realm barrier."),
   s("Void Colossus", "Aelthar", "related to", "Related to", "The Aelthar's forceful creation of the Hidden Realm triggered the first Void Colossus appearance."),
-
-  // Storm Titan
   s("Storm Titan", "Human Realm", "located in", "Located in", "Storm Titans coalesce in regions with sustained severe weather across all three realms."),
   s("Storm Titan", "Angel Realm", "located in", "Located in", "Found in storm coasts and volcanic weather zones of the Angel Realm."),
   s("Storm Titan", "Demon Realm", "located in", "Located in", "Mountaintop and volcanic regions of the Demon Realm host Storm Titans."),
-  s("Storm Titan", "World Core", "formed from", "Formed from", "Storm Titans are centuries of accumulated elemental Veyn given form and awareness."),
-
-  // Bloodwraith Sovereign
+  s("Storm Titan", "The World Core", "formed from", "Formed from", "Storm Titans are centuries of accumulated elemental Veyn given form and awareness."),
   s("Bloodwraith Sovereign", "Lethmoor Kingdom", "found at", "Found at", "Battlefields and massacre sites like Lethmoor are prime Bloodwraith Sovereign territory."),
   s("Bloodwraith Sovereign", "Hidden Realm", "located in", "Located in", "Found at the Lethmoor ruins and other mass-death sites in the Hidden Realm."),
   s("Bloodwraith Sovereign", "Exorcist", "vulnerable to", "Vulnerable to", "Only Exorcist-class spiritual banishment combined with holy purification can truly destroy one."),
   s("Bloodwraith Sovereign", "Saintess", "vulnerable to", "Vulnerable to", "Holy purification is required alongside Exorcist banishment to destroy a Bloodwraith Sovereign."),
   s("Bloodwraith Sovereign", "Lesser Cindergrave Wraiths", "superior to", "Superior to", "A Bloodwraith Sovereign is the apex of all wraith-type spirits, far above the Lesser Cindergrave Wraiths."),
   s("Bloodwraith Sovereign", "Cindergrave Wraith Lord", "superior to", "Superior to", "The Bloodwraith Sovereign is more powerful than the Cindergrave Wraith Lord in every measure."),
-
-  // ============================================================ NEW MONSTERS — FRIENDLY / SPIRITS
-
-  // Skywhales
   s("Skywhales", "Human Realm", "located in", "Located in", "Skywhales drift through the upper atmosphere of the Human Realm."),
   s("Skywhales", "Angel Realm", "located in", "Located in", "Skywhales float through the upper atmosphere of the Angel Realm."),
   s("Skywhales", "Demon Realm", "located in", "Located in", "Skywhales pass through the upper atmosphere of the Demon Realm."),
   s("Skywhales", "Pallantine", "harvested by", "Harvested by", "Pallantine Elves skyride on Griffens to carefully harvest Skywhale blubber under strict quotas."),
   s("Skywhales", "Alchemist", "component for", "Component for", "Skywhale blubber is used in Potency Surge-class potions and advanced brewing."),
   s("Skywhales", "Griffen", "approached via", "Approached via", "Pallantine Elves use trained Griffens to reach Skywhales in the upper atmosphere."),
-
-  // Lightwisps
   s("Lightwisps", "Human Realm", "located in", "Located in", "Lightwisps appear wherever someone is lost or in danger in the Human Realm."),
   s("Lightwisps", "Angel Realm", "located in", "Located in", "Lightwisps guide lost travelers in the Angel Realm."),
   s("Lightwisps", "Demon Realm", "located in", "Located in", "Lightwisps appear to the lost in the Demon Realm."),
-  s("Lightwisps", "World Core", "formed from", "Formed from", "Lightwisps are Veyn shaped by collective positive intent into a guidance pattern."),
-
-  // Stonetenders
+  s("Lightwisps", "The World Core", "formed from", "Formed from", "Lightwisps are Veyn shaped by collective positive intent into a guidance pattern."),
   s("Stonetenders", "Human Realm", "located in", "Located in", "Stonetenders appear wherever the land has been damaged in the Human Realm."),
   s("Stonetenders", "Angel Realm", "located in", "Located in", "Stonetenders repair damaged terrain across the Angel Realm."),
   s("Stonetenders", "Demon Realm", "located in", "Located in", "Stonetenders appear at post-battlefields and earthquake zones in the Demon Realm."),
   s("Stonetenders", "Shudonkeeper", "studied by", "Studied by", "Shudonkeepers study Stonetenders to understand world-core maintenance mechanisms."),
-  s("Stonetenders", "World Core", "connected to", "Connected to", "Stonetenders are drawn to Veyn disruption and maintain the land as the world core's immune system."),
-
-  // Dreamweavers
+  s("Stonetenders", "The World Core", "connected to", "Connected to", "Stonetenders are drawn to Veyn disruption and maintain the land as the world core's immune system."),
   s("Dreamweavers", "Arubian Forest", "located in", "Located in", "Dreamweavers are found primarily in the Arubian Forest."),
   s("Dreamweavers", "Human Realm", "located in", "Located in", "Dreamweavers appear in the Human Realm, especially near the Sundering Altar."),
-  s("Dreamweavers", "Sundering Altar", "found near", "Found near", "Dreamweavers cluster around the Sundering Altar where ambient Veyn is calm and steady."),
+  s("Dreamweavers", "The Sundering Altar", "found near", "Found near", "Dreamweavers cluster around the Sundering Altar where ambient Veyn is calm and steady."),
   s("Dreamweavers", "Clergy", "complementary to", "Complementary to", "Dreamweavers heal trauma that Clergy healers cannot touch — purely psychological healing."),
-
-  // Stonehollow Elk
   s("Stonehollow Elk", "Arubian Forest", "located in", "Located in", "Stonehollow Elk herds roam the Arubian Forest and occasionally Thornlost Forest."),
   s("Stonehollow Elk", "Hidden Realm", "located in", "Located in", "Some Stonehollow Elk are found in the Thornlost Forest within the Hidden Realm."),
   s("Stonehollow Elk", "Human Realm", "located in", "Located in", "Primary habitat is the Arubian Forest within the Human Realm."),
@@ -848,75 +809,53 @@ module.exports = [
   s("Stonehollow Elk", "Trolls", "calms", "Calms", "The Stonehollow Elk's Veyn aura calms hostile creatures including Trolls in their vicinity."),
   s("Stonehollow Elk", "Minotaur", "calms", "Calms", "The Stonehollow Elk's Veyn aura pacifies Minotaurs within its vicinity."),
   s("Stonehollow Elk", "Harpies", "calms", "Calms", "The Stonehollow Elk's Veyn aura prevents Harpies from attacking in its presence."),
-
-  // Ashbound Spirits
   s("Ashbound Spirits", "Human Realm", "located in", "Located in", "Ashbound Spirits form at burned settlement sites across the Human Realm."),
   s("Ashbound Spirits", "Angel Realm", "located in", "Located in", "Found at fire-destroyed sites in the Angel Realm."),
   s("Ashbound Spirits", "Demon Realm", "located in", "Located in", "Cluster near forges and volcanic areas in the Demon Realm."),
   s("Ashbound Spirits", "Exorcist", "vulnerable to", "Vulnerable to", "Exorcists can banish Ashbound Spirits permanently through the Rite of Expulsion."),
   s("Ashbound Spirits", "Clergy", "soothable by", "Soothable by", "Clergy healers can soothe Ashbound Spirits with the Restoration Rite."),
-
-  // Tidecallers
   s("Tidecallers", "Sentient River", "extensions of", "Extensions of", "Tidecallers are manifestations of the Sentient River's own awareness."),
   s("Tidecallers", "Hidden Realm", "located in", "Located in", "Tidecallers emerge from the Sentient River and any connected water source in the Hidden Realm."),
   s("Tidecallers", "Sirens", "coexist with", "Coexist with", "Tidecallers and Sirens both inhabit the Sentient River; the river's awareness coordinates them."),
   s("Tidecallers", "Vireth", "protect seal of", "Protect seal of", "Tidecallers protect the seal on Vireth, the Fallen Grace, within the Sentient River."),
   s("Tidecallers", "Diviner", "pacifiable by", "Pacifiable by", "A Diviner's Truthsense proves pure intent to the river, pacifying the Tidecallers."),
   s("Tidecallers", "Clergy", "pacifiable by", "Pacifiable by", "A Clergy Restoration Rite proves pure intent to the Sentient River, calming the Tidecallers."),
-
-  // Thornweald
   s("Thornweald", "Arubian Forest", "located in", "Located in", "Thornweald guard the oldest parts of the Arubian Forest."),
   s("Thornweald", "Hidden Realm", "located in", "Located in", "Thornweald protect ancient groves in the Thornlost Forest."),
   s("Thornweald", "Demon Realm", "located in", "Located in", "Thornweald are found in ancient Umbrage Forest groves."),
   s("Thornweald", "Human Realm", "located in", "Located in", "The oldest Thornweald guard thousand-year-old trees in the Human Realm's Arubian Forest."),
   s("Thornweald", "Elves", "protect alongside", "Protect alongside", "Thornweald and Elves both protect the forests they inhabit."),
   s("Thornweald", "Pallantine", "protect alongside", "Protect alongside", "Pallantine Elves and Thornweald cooperate to guard the Arubian Forest."),
-
-  // Echoes of the Fallen
   s("Echoes of the Fallen", "Human Realm", "located in", "Located in", "Echo battlefields are found where major historical conflicts occurred in the Human Realm."),
   s("Echoes of the Fallen", "Angel Realm", "located in", "Located in", "Echo battlefields exist across the Angel Realm from ancient wars."),
   s("Echoes of the Fallen", "Demon Realm", "located in", "Located in", "Echoes persist at Demon Realm battlefields from historical conflicts."),
   s("Echoes of the Fallen", "Aelthar", "most famous site of", "Most famous site of", "The most famous Echo battlefield is where the Aelthar were wiped out centuries ago."),
   s("Echoes of the Fallen", "Diviner", "read by", "Read by", "Diviners can read Echoes to reconstruct entire battles and uncover forgotten tactical knowledge."),
-
-  // Gloomveil Specters
   s("Gloomveil Specters", "Lethmoor Kingdom", "found at", "Found at", "Gloomveil Specters haunt the ruins of Lethmoor in the Hidden Realm."),
   s("Gloomveil Specters", "Hidden Realm", "located in", "Located in", "Found in abandoned sections of the Umbrage Forest and Lethmoor ruins."),
   s("Gloomveil Specters", "Demon Realm", "located in", "Located in", "Gloomveil Specters form in abandoned sections of the Umbrage Forest."),
   s("Gloomveil Specters", "Human Realm", "located in", "Located in", "Occasionally found in sealed rooms within Elyndor Academy."),
   s("Gloomveil Specters", "Elyndor Academy", "found at", "Found at", "Sealed rooms where students were locked away for extended periods can spawn Gloomveil Specters."),
   s("Gloomveil Specters", "Cindergrave Wraith Lord", "lesser than", "Lesser than", "Gloomveil Specters are far weaker than the Cindergrave Wraith Lord but harder to detect."),
-
-  // ============================================================ RACE TYPES — PALLANTINE & VEILBORN
-
   s("Pallantine", "Elves", "branches from", "Branches from", "Pallantine are the light-half elves who split from the main Elves race."),
   s("Pallantine", "Arubian Forest", "located in", "Located in", "Pallantine make their home in the Arubian Forest, the light half of the Ether Forest."),
   s("Pallantine", "Human Realm", "located in", "Located in", "The Arubian Forest lies within the Human Realm."),
   s("Pallantine", "Griffen", "uses as transport", "Uses as transport", "Pallantine Elves use trained Griffens as their mountain transport."),
   s("Pallantine", "Stonehollow Elk", "cultural bond with", "Cultural bond with", "Pallantine have a tradition of exchanging gifts with Stonehollow Elk herds."),
-
   s("Veilborn", "Elves", "branches from", "Branches from", "Veilborn are the dark-half elves who split from the main Elves race."),
   s("Veilborn", "Umbrage Forest", "located in", "Located in", "Veilborn make their home in the Umbrage Forest, the dark half of the Ether Forest."),
   s("Veilborn", "Demon Realm", "located in", "Located in", "The Umbrage Forest lies within the Demon Realm."),
   s("Veilborn", "Agro Totem", "component for", "Component for", "Veilborn blood is one of the ingredients required to craft an Agro Totem."),
-
-  // ============================================================ EXISTING ENTRIES — ADD NEW LINKS
-
-  // Elves — connect to new children
   s("Elves", "Pallantine", "parent race of", "Parent race of", "Pallantine are the light-half branch of the Elves race."),
   s("Elves", "Veilborn", "parent race of", "Parent race of", "Veilborn are the dark-half branch of the Elves race."),
   s("Elves", "Arubian Forest", "located in", "Located in", "Elves inhabit both the Arubian Forest and the Umbrage Forest."),
   s("Elves", "Umbrage Forest", "located in", "Located in", "Elves inhabit both the Arubian Forest and the Umbrage Forest."),
-
-  // Hidden Realm — connect to new inhabitants
   s("Hidden Realm (Shadow Realm)", "Werewolves", "inhabited by", "Inhabited by", "Werewolves roam the Thornlost Forest within the Hidden Realm."),
   s("Hidden Realm (Shadow Realm)", "Basilisk", "inhabited by", "Inhabited by", "Basilisks are found in the darker reaches of the Thornlost Forest."),
   s("Hidden Realm (Shadow Realm)", "Chimera", "inhabited by", "Inhabited by", "Chimeras inhabit the deepest parts of the Thornlost Forest."),
   s("Hidden Realm (Shadow Realm)", "Tidecallers", "inhabited by", "Inhabited by", "Tidecallers are extensions of the Sentient River within the Hidden Realm."),
   s("Hidden Realm (Shadow Realm)", "Gloomveil Specters", "inhabited by", "Inhabited by", "Gloomveil Specters haunt the ruins of Lethmoor within the Hidden Realm."),
   s("Hidden Realm (Shadow Realm)", "Echoes of the Fallen", "inhabited by", "Inhabited by", "The most famous Echo battlefield — the Aelthar extinction site — is within the Hidden Realm."),
-
-  // Umbrage Forest — connect to new inhabitants
   s("Umbrage Forest", "Werewolves", "inhabited by", "Inhabited by", "Werewolves occasionally cross into Umbrage Forest border zones."),
   s("Umbrage Forest", "Basilisk", "inhabited by", "Inhabited by", "Basilisks hunt in the deep Umbrage Forest."),
   s("Umbrage Forest", "Manticore", "inhabited by", "Inhabited by", "Manticores ambush prey throughout the Umbrage Forest."),
@@ -925,59 +864,39 @@ module.exports = [
   s("Umbrage Forest", "Goblins", "inhabited by", "Inhabited by", "Goblin warrens are dug throughout the Umbrage Forest."),
   s("Umbrage Forest", "Orcs", "inhabited by", "Inhabited by", "Orc war-bands roam the Umbrage Forest."),
   s("Umbrage Forest", "Thornweald", "inhabited by", "Inhabited by", "Ancient Thornweald guard the oldest trees in Umbrage Forest groves."),
-
-  // Arubian Forest — connect to new inhabitants
   s("Arubian Forest", "Manticore", "inhabited by", "Inhabited by", "Manticores occasionally hunt in deep parts of the Arubian Forest."),
   s("Arubian Forest", "Goblins", "inhabited by", "Inhabited by", "Some Goblin warrens extend into the deeper Arubian Forest."),
   s("Arubian Forest", "Dreamweavers", "inhabited by", "Inhabited by", "Dreamweavers are found primarily in the Arubian Forest."),
   s("Arubian Forest", "Stonehollow Elk", "inhabited by", "Inhabited by", "Stonehollow Elk herds roam the Arubian Forest."),
   s("Arubian Forest", "Thornweald", "inhabited by", "Inhabited by", "Thornweald guard the oldest thousand-year-old trees in the Arubian Forest."),
   s("Arubian Forest", "Skywhales", "inhabited by", "Inhabited by", "Skywhales drift through the upper atmosphere above the Arubian Forest."),
-
-  // Thornlost Forest — connect to new inhabitants
   s("Thornlost Forest", "Werewolves", "inhabited by", "Inhabited by", "Werewolves roam the Thornlost Forest."),
   s("Thornlost Forest", "Basilisk", "inhabited by", "Inhabited by", "Basilisks are found in the darker reaches of Thornlost Forest."),
   s("Thornlost Forest", "Chimera", "inhabited by", "Inhabited by", "Chimeras inhabit the deepest parts of Thornlost Forest."),
   s("Thornlost Forest", "Cockatrice", "inhabited by", "Inhabited by", "Cockatrices hunt along the edges of Thornlost Forest."),
   s("Thornlost Forest", "Stonehollow Elk", "inhabited by", "Inhabited by", "Some Stonehollow Elk are found in Thornlost Forest."),
   s("Thornlost Forest", "Thornweald", "inhabited by", "Inhabited by", "Thornweald protect ancient trees in the Thornlost Forest."),
-
-  // Sentient River — connect to Tidecallers
   s("Sentient River", "Tidecallers", "inhabited by", "Inhabited by", "Tidecallers are extensions of the Sentient River's own awareness."),
   s("Sentient River", "Sirens", "inhabited by", "Inhabited by", "Sirens make their home in the Sentient River alongside the Tidecallers."),
-
-  // Lethmoor Kingdom — connect to new spirits
   s("Lethmoor Kingdom", "Gloomveil Specters", "inhabited by", "Inhabited by", "Gloomveil Specters haunt the abandoned ruins of Lethmoor."),
   s("Lethmoor Kingdom", "Bloodwraith Sovereign", "potentially home to", "Potentially home to", "Battlefields and massacre sites like Lethmoor are prime Bloodwraith Sovereign territory."),
-
-  // Elyndor Academy — connect to Gloomveil Specters
   s("Elyndor Academy", "Gloomveil Specters", "occasionally hosts", "Occasionally hosts", "Sealed rooms where students were locked away for extended periods can spawn Gloomveil Specters."),
-
-  // ============================================================ RULES & NOTES — UNLINKED
-
-  // The Two Sundering Altars
-  s("The Two Sundering Altars", "Sundering Altar", "details of", "Details of", "The Two Sundering Altars entry explains both the Common Altar and the Academy Altar in detail."),
+  s("The Two Sundering Altars", "The Sundering Altar", "details of", "Details of", "The Two Sundering Altars entry explains both the Common Altar and the Academy Altar in detail."),
   s("The Two Sundering Altars", "Elyndor Academy", "one located at", "One located at", "The Academy Altar is located within Elyndor Academy and is the more powerful of the two."),
   s("The Two Sundering Altars", "Kael von Ashen", "built by", "Built by", "Both altars were built by Kael von Ashen using Aelthar knowledge."),
   s("The Two Sundering Altars", "Aelthar", "built using knowledge of", "Built using knowledge of", "The altars were constructed using Aelthar knowledge of the world core."),
-  s("The Two Sundering Altars", "Affinity and Awakening", "explains process of", "Explains process of", "The Two Sundering Altars entry details how each altar awakens class affinity and starting grade."),
+  s("The Two Sundering Altars", "Affinity & Awakening", "explains process of", "Explains process of", "The Two Sundering Altars entry details how each altar awakens class affinity and starting grade."),
   s("The Two Sundering Altars", "Classes", "determines", "Determines", "The altars reveal a person's class affinity — the discipline they are best suited for."),
   s("The Two Sundering Altars", "Grade System", "determines starting", "Determines starting", "The altars reveal a person's starting grade, setting the foundation for their future growth."),
-
-  // The Rune Star System
   s("The Rune Star System", "Mage", "unique to", "Unique to", "The Rune Star System is the foundation of all Mage power — unique to the Mage class."),
   s("The Rune Star System", "Rune Star Circles", "progression of", "Progression of", "The Rune Star System progresses through seven circles, each a sigil carved into the Mage's heart."),
-  s("The Rune Star System", "World Core", "powered by", "Powered by", "The Rune Star draws power from the world core through the sigils carved into the heart."),
+  s("The Rune Star System", "The World Core", "powered by", "Powered by", "The Rune Star draws power from the world core through the sigils carved into the heart."),
   s("The Rune Star System", "1st Circle Rune Star", "first stage of", "First stage of", "The 1st Circle is the beginning of the Rune Star progression."),
   s("The Rune Star System", "7th Circle Rune Star", "final stage of", "Final stage of", "The 7th Circle cannot be self-inscribed — it must be given by the world core itself."),
-
-  // Titles and Their Skills
   s("Titles and Their Skills", "Angel Skills", "contains", "Contains", "Titles carry their own set of skills, distinct from rank abilities."),
   s("Titles and Their Skills", "Demon Skills", "contains", "Contains", "Demon titles also carry unique skills granted by the ruler."),
   s("Titles and Their Skills", "Mastered and Personalized Skills", "related to", "Related to", "Title skills are distinct from Mastered and Personalized skills."),
   s("Titles and Their Skills", "Serapharch", "granted by", "Granted by", "Only a ruler of the first rank can grant a title to another."),
-
-  // The Six Pillars of Angels
   s("The Six Pillars of Angels", "Aetherblade Lord Angel", "rank of", "Rank of", "All Six Pillars hold the Aetherblade Lord Angel rank."),
   s("The Six Pillars of Angels", "Angel Realm", "defend", "Defend", "The Six Pillars are the Angel Realm's six generals."),
   s("The Six Pillars of Angels", "Clint Ashborn", "serve", "Serve", "The Six Pillars serve the Serapharch Clint Ashborn."),
@@ -987,25 +906,19 @@ module.exports = [
   s("The Six Pillars of Angels", "Liora Veyne", "Fourth Pillar is", "Fourth Pillar is", "Liora Veyne is the Fourth Pillar, Deimous."),
   s("The Six Pillars of Angels", "Thalor Elwin", "Fifth Pillar is", "Fifth Pillar is", "Thalor Elwin is the Fifth Pillar, Horkous."),
   s("The Six Pillars of Angels", "Aranweis", "Sixth Pillar is", "Sixth Pillar is", "Aranweis is the Sixth Pillar, Argous."),
-  s("The Six Pillars of Angels", "Sundering Altar", "guardian of", "Guardian of", "The Fifth Pillar Thalor guards the Sundering Altar where vows are sworn."),
-
-  // Angel Evolution
+  s("The Six Pillars of Angels", "The Sundering Altar", "guardian of", "Guardian of", "The Fifth Pillar Thalor guards the Sundering Altar where vows are sworn."),
   s("Angel Evolution", "Lumen", "evolves from", "Evolves from", "Angels begin as Lumen and evolve upward through ranks."),
   s("Angel Evolution", "Virtue", "evolves to", "Evolves to", "Lumen can evolve to Virtue rank through growth."),
   s("Angel Evolution", "Aetherblade Lord Angel", "evolves to", "Evolves to", "Virtue can evolve to Aetherblade Lord Angel."),
   s("Angel Evolution", "Serapharch", "evolves to", "Evolves to", "The rarest evolution — from Aetherblade Lord to Serapharch."),
-  s("Angel Evolution", "Angel Veyn Vow", "governs", "Governs", "Angel evolution is regulated by the Veyn Vow at each rank transition."),
-  s("Angel Evolution", "Sundering Altar", "takes place at", "Takes place at", "Rank transitions occur at the Sundering Altar when the vow is renewed."),
-
-  // Demon Evolution
+  s("Angel Evolution", "The Angel Veyn Vow", "governs", "Governs", "Angel evolution is regulated by the Veyn Vow at each rank transition."),
+  s("Angel Evolution", "The Sundering Altar", "takes place at", "Takes place at", "Rank transitions occur at the Sundering Altar when the vow is renewed."),
   s("Demon Evolution", "Gnash", "evolves from", "Evolves from", "Demons begin as Gnash and evolve upward through ranks."),
   s("Demon Evolution", "Scourge", "evolves to", "Evolves to", "Gnash can evolve to Scourge through accumulated power."),
   s("Demon Evolution", "Bloodward", "evolves to", "Evolves to", "Scourge can evolve to Bloodward rank."),
   s("Demon Evolution", "Mordrach", "evolves to", "Evolves to", "The rarest evolution — from Bloodward to Mordrach, requiring immense power."),
-  s("Demon Evolution", "Sundering Altar", "takes place at", "Takes place at", "Demon rank transitions begin at the Sundering Altar at age 15."),
+  s("Demon Evolution", "The Sundering Altar", "takes place at", "Takes place at", "Demon rank transitions begin at the Sundering Altar at age 15."),
   s("Demon Evolution", "Umbrage Forest", "connected to", "Connected to", "Demon evolution is tied to the demonic aura of the Umbrage Forest."),
-
-  // Race Types
   s("Race Types", "Angels (Overview)", "contains", "Contains", "Race Types covers angel race types: Cherubim, Malakhim, and Fallen Angels."),
   s("Race Types", "Demons (Overview)", "contains", "Contains", "Race Types covers demon race types: Fiends, Dregs, and Imps."),
   s("Race Types", "Aelthar", "contains", "Contains", "Race Types covers the extinct Aelthar race."),
@@ -1017,19 +930,13 @@ module.exports = [
   s("Race Types", "Imps", "contains", "Contains", "The Imps are the impish demon race type."),
   s("Race Types", "Pallantine", "contains", "Contains", "Pallantine are the light-half elves, branching from the Elves race."),
   s("Race Types", "Veilborn", "contains", "Contains", "Veilborn are the dark-half elves, branching from the Elves race."),
-
-  // Innate Abilities
   s("Innate Abilities", "Angels (Overview)", "possessed by", "Possessed by", "Each angel race type carries an innate ability."),
   s("Innate Abilities", "Demons (Overview)", "possessed by", "Possessed by", "Each demon race type carries an innate ability."),
   s("Innate Abilities", "Race Types", "governs", "Governs", "Innate abilities are determined by race type, not rank."),
   s("Innate Abilities", "Aelthar", "possessed by", "Possessed by", "The Aelthar possessed Potent Blood as their innate ability."),
-
-  // Mastered and Personalized Skills
   s("Mastered and Personalized Skills", "Classes", "transcend", "Transcend", "Mastered and Personalized skills go beyond what a normal class allows."),
   s("Mastered and Personalized Skills", "Titles and Their Skills", "distinct from", "Distinct from", "Mastered and Personalized skills are different from title-granted skills."),
   s("Mastered and Personalized Skills", "Innate Abilities", "distinct from", "Distinct from", "Mastered and Personalized skills are learned, not innate."),
-
-  // The Hybrid
   s("The Hybrid", "Jaiden Marlock", "is", "Is", "Jaiden Marlock is the first and only hybrid — angel and demon in one body."),
   s("The Hybrid", "Ordium", "child of", "Child of", "Jaiden inherited his angel half from Ordium, an Aetherblade Lord Angel."),
   s("The Hybrid", "Lisa", "child of", "Child of", "Jaiden inherited his demon half from Lisa, a Bloodward demon."),
@@ -1040,8 +947,6 @@ module.exports = [
   s("The Hybrid", "Clint Ashborn", "threatens", "Threatens", "The hybrid's existence threatens the balance Clint Ashborn has spent his life upholding."),
   s("The Hybrid", "Tera Morage", "threatens", "Threatens", "The hybrid threatens the demonic hierarchy Tera Morage rules."),
   s("The Hybrid", "Ruby Divina", "insurance of", "Insurance of", "Ruby Divina has shielded Jaiden as humanity's insurance against both realms."),
-
-  // Spirits
   s("Spirits", "Cindergrave Wraith Lord", "example of", "Example of", "The Cindergrave Wraith Lord is an evil spirit formed from Lethmoor's unstable Veyn."),
   s("Spirits", "Lesser Cindergrave Wraiths", "example of", "Example of", "Lesser Cindergrave Wraiths are evil spirits — fragments of will from the fallen kingdom."),
   s("Spirits", "Ashbound Spirits", "example of", "Example of", "Ashbound Spirits are fire-locked spirits formed from destroyed settlements."),
@@ -1050,44 +955,34 @@ module.exports = [
   s("Spirits", "Echoes of the Fallen", "example of", "Example of", "Echoes of the Fallen are combat-intent spirits from ancient battlefields."),
   s("Spirits", "Gloomveil Specters", "example of", "Example of", "Gloomveil Specters are isolation-formed spirits that feed on despair."),
   s("Spirits", "Lightwisps", "example of", "Example of", "Lightwisps are Veyn-shaped guidance spirits formed from collective positive intent."),
-  s("Spirits", "World Core", "formed from", "Formed from", "Spirits are beings given shape by unstable Veyn from the world core."),
-
-  // The Aelthar
+  s("Spirits", "The World Core", "formed from", "Formed from", "Spirits are beings given shape by unstable Veyn from the world core."),
   s("The Aelthar", "Hidden Realm (Shadow Realm)", "created", "Created", "The Aelthar tore open the Hidden Realm as a hiding place from the former Human Realm ruler."),
   s("The Aelthar", "Human Realm", "fled from", "Fled from", "The Aelthar were wiped out by the former ruler of the Human Realm."),
   s("The Aelthar", "Kael von Ashen", "sole survivor is", "Sole survivor is", "Kael von Ashen is the only surviving Aelthar."),
   s("The Aelthar", "Elyndor Academy", "founded by", "Founded by", "Kael von Ashen, the last Aelthar, founded Elyndor Academy."),
-  s("The Aelthar", "Sundering Altar", "built using knowledge of", "Built using knowledge of", "The altars were built by Kael using Aelthar knowledge of the world core."),
+  s("The Aelthar", "The Sundering Altar", "built using knowledge of", "Built using knowledge of", "The altars were built by Kael using Aelthar knowledge of the world core."),
   s("The Aelthar", "Abyssal Wyrm", "sealed by", "Sealed by", "The Aelthar sealed the Abyssal Wyrm beneath the world's crust."),
   s("The Aelthar", "World Eater", "discovered by", "Discovered by", "The Aelthar discovered the World Eater's existence — one reason they created the Hidden Realm."),
   s("The Aelthar", "Ethereal Potion", "only brewer of", "Only brewer of", "Kael von Ashen, the last Aelthar, is the only person to ever successfully brew the Ethereal Potion."),
   s("The Aelthar", "Innate Abilities", "possessed Potent Blood", "Possessed Potent Blood", "The Aelthar's innate ability was Potent Blood — blood with extreme healing and magical conduit properties."),
-
-  // The World Barrier
-  s("The World Barrier", "World Core", "raised by", "Raised by", "The world core's will raised the barrier to split the realms after the Hidden Realm was torn open."),
+  s("The World Barrier", "The World Core", "raised by", "Raised by", "The world core's will raised the barrier to split the realms after the Hidden Realm was torn open."),
   s("The World Barrier", "Hidden Realm", "separates", "Separates", "The barrier separates the Hidden Realm from the three main realms."),
   s("The World Barrier", "Aelthar", "triggered by", "Triggered by", "The Aelthar's forceful creation of the Hidden Realm nearly destroyed the world, triggering the barrier."),
   s("The World Barrier", "Void Colossus", "breach triggers", "Breach triggers", "Breaches in the barrier trigger Void Colossus appearances."),
   s("The World Barrier", "Shudon", "maintained by", "Maintained by", "The Shudon help maintain the barrier's integrity at realm entrances."),
-
-  // The World Core
   s("The World Core", "Veyn", "source of", "Source of", "All Veyn flows from the world core into the world."),
   s("The World Core", "World Eater", "parasitized by", "Parasitized by", "The World Eater embeds itself in the core and drains its power over centuries."),
   s("The World Core", "Shudon", "created", "Created", "The world core carved the Shudon from its own stone to guard the realm entrances."),
-  s("The World Core", "World Barrier", "raised", "Raised", "The world core's will raised the barrier to split the realms."),
+  s("The World Core", "The World Barrier", "raised", "Raised", "The world core's will raised the barrier to split the realms."),
   s("The World Core", "Stonetenders", "connected to", "Connected to", "Stonetenders are drawn to Veyn disruption and maintain the land as the core's immune system."),
   s("The World Core", "Lightwisps", "formed from", "Formed from", "Lightwisps are Veyn from the core shaped by collective positive intent."),
   s("The World Core", "Bella Rose", "blessed", "Blessed", "The world core's will reflexively blessed Bella Rose with extra holy energy the night Jaiden was born."),
   s("The World Core", "Storm Titan", "formed from", "Formed from", "Storm Titans are centuries of accumulated elemental Veyn from the core given form."),
-
-  // Holy Energy and Corrupted Veyn
   s("Holy Energy and Corrupted Veyn", "Holy Energy", "explains", "Explains", "Holy Energy and Corrupted Veyn explains the two purified forms of Veyn."),
   s("Holy Energy and Corrupted Veyn", "Corrupted Veyn", "explains", "Explains", "The entry covers both holy and corrupted forms of Veyn."),
   s("Holy Energy and Corrupted Veyn", "Corruption Sickness", "related to", "Related to", "Corrupted Veyn causes Corruption Sickness in humans."),
   s("Holy Energy and Corrupted Veyn", "Angels (Overview)", "used by angels", "Used by angels", "Angels channel Holy Energy through their Veyn Vow."),
   s("Holy Energy and Corrupted Veyn", "Demons (Overview)", "used by demons", "Used by demons", "Demons channel Corrupted Veyn (miasma) as their natural form."),
-
-  // The Three Forms of Veyn
   s("The Three Forms of Veyn", "Veyn", "expands on", "Expands on", "The Three Forms of Veyn covers raw, holy, and corrupted variants."),
   s("The Three Forms of Veyn", "Holy Energy", "form of", "Form of", "Holy Energy is Veyn purified and brightened into gold."),
   s("The Three Forms of Veyn", "Corrupted Veyn", "form of", "Form of", "Corrupted Veyn is Veyn darkened into deep purple or black."),
@@ -1095,50 +990,33 @@ module.exports = [
   s("The Three Forms of Veyn", "Humans", "use raw", "Use raw", "Humans draw on raw Veyn — the neutral, unshaped source."),
   s("The Three Forms of Veyn", "Angels (Overview)", "use holy", "Use holy", "Angels channel Holy Energy, the purified gold form of Veyn."),
   s("The Three Forms of Veyn", "Demons (Overview)", "use corrupted", "Use corrupted", "Demons channel Corrupted Veyn, the darkened form they call miasma."),
-
-  // The Formation of Holy Energy and Corrupted Veyn
   s("The Formation of Holy Energy and Corrupted Veyn", "Holy Energy", "how formed", "How formed", "Explains how raw Veyn is purified into Holy Energy by angels."),
   s("The Formation of Holy Energy and Corrupted Veyn", "Corrupted Veyn", "how formed", "How formed", "Explains how raw Veyn is darkened into Corrupted Veyn by demons."),
   s("The Formation of Holy Energy and Corrupted Veyn", "Veyn", "transforms", "Transforms", "Raw Veyn transforms into holy or corrupted forms depending on who channels it."),
-
-  // The World Curse
   s("The World Curse", "Shudon", "detected by", "Detected by", "Shudon are hostile to bearers of the world curse mark."),
-  s("The World Curse", "World Core", "connected to", "Connected to", "The world curse is connected to the world core's will and its response to threats."),
+  s("The World Curse", "The World Core", "connected to", "Connected to", "The world curse is connected to the world core's will and its response to threats."),
   s("The World Curse", "Elyndor Academy", "studied at", "Studied at", "The curse is studied at Elyndor Academy, though knowledge is limited."),
-
-  // The Ren Organ
   s("The Ren Organ", "Ren", "channels", "Channels", "The Ren Organ allows angels and demons to channel Ren instead of Veyn."),
   s("The Ren Organ", "Angels (Overview)", "can develop", "Can develop", "Angels can unlock a Ren Organ to channel Ren, but cannot touch Veyn while it is open."),
   s("The Ren Organ", "Demons (Overview)", "can develop", "Can develop", "Demons can unlock a Ren Organ to channel Ren, but cannot touch Veyn while it is open."),
   s("The Ren Organ", "Veyn and Ren Incompatibility", "governed by", "Governed by", "The Ren Organ is governed by the incompatibility rule — Veyn and Ren cannot coexist."),
   s("The Ren Organ", "Paladin", "related to", "Related to", "Paladins use Auric Ren — their own Ren brightened into gold — without touching Veyn."),
-
-  // Rune Star Circles vs Grades
   s("Rune Star Circles vs Grades", "Mage", "unique to", "Unique to", "Mages use Rune Star Circles instead of the standard Grade system."),
   s("Rune Star Circles vs Grades", "Grade System", "compared to", "Compared to", "Rune Star Circles are the Mage equivalent of the Grade system used by all other classes."),
   s("Rune Star Circles vs Grades", "The Rune Star System", "details of", "Details of", "The comparison explains why Mages progress differently from other classes."),
-
-  // ============================================================ COINS — UNLINKED
-
   s("Sigils", "Human Realm", "circulates in", "Circulates in", "Sigils are the single currency used across all three realms."),
   s("Sigils", "Angel Realm", "circulates in", "Circulates in", "Sigils are the single currency used across all three realms."),
   s("Sigils", "Demon Realm", "circulates in", "Circulates in", "Sigils are the single currency used across all three realms."),
   s("Sigils", "Silver Sigil", "contains", "Contains", "Sigils come in three metals: silver, gold, and platinum."),
   s("Sigils", "Gold Sigil", "contains", "Contains", "Sigils come in three metals: silver, gold, and platinum."),
   s("Sigils", "Platinum Sigil", "contains", "Contains", "Sigils come in three metals: silver, gold, and platinum."),
-
   s("Silver Sigil", "Gold Sigil", "converts to", "Converts to", "One hundred silver sigils make one gold sigil."),
   s("Silver Sigil", "Sigils", "part of", "Part of", "Silver Sigils are the lowest tier of the sigil currency system."),
-
   s("Gold Sigil", "Silver Sigil", "converts from", "Converts from", "One gold sigil is worth one hundred silver sigils."),
   s("Gold Sigil", "Platinum Sigil", "converts to", "Converts to", "One thousand gold sigils make one platinum sigil."),
   s("Gold Sigil", "Sigils", "part of", "Part of", "Gold Sigils are the middle tier of the sigil currency system."),
-
   s("Platinum Sigil", "Gold Sigil", "converts from", "Converts from", "One platinum sigil is worth one thousand gold sigils."),
   s("Platinum Sigil", "Sigils", "part of", "Part of", "Platinum Sigils are the highest tier, reserved for large transactions."),
-
-  // ============================================================ GRADE SYSTEM — UNLINKED
-
   s("The Wall", "Grade System", "barrier within", "Barrier within", "The Wall is a natural barrier to advancement between grades."),
   s("The Wall", "Evolution Quest", "related to", "Related to", "The Wall can be overcome through an Evolution Quest."),
   s("The Wall", "E Grade", "blocks", "Blocks", "The Wall appears between each grade from E onward."),
@@ -1147,24 +1025,17 @@ module.exports = [
   s("The Wall", "B Grade", "blocks", "Blocks", "The Wall appears between each grade from E onward."),
   s("The Wall", "A Grade", "blocks", "Blocks", "The Wall appears between each grade from E onward."),
   s("The Wall", "S Grade", "blocks", "Blocks", "The Wall appears between each grade from E onward."),
-
   s("Evolution Quest", "Grade System", "advancement method of", "Advancement method of", "Evolution Quests are challenges that allow advancement to the next grade."),
   s("Evolution Quest", "The Wall", "overcomes", "Overcomes", "An Evolution Quest is the way to break through The Wall between grades."),
   s("Evolution Quest", "E Grade", "advances from", "Advances from", "Evolution Quests allow advancement from E Grade to D Grade and beyond."),
   s("Evolution Quest", "D Grade", "advances to", "Advances to", "Evolution Quests allow advancement from E Grade to D Grade and beyond."),
-
-  // ============================================================ ITEMS — UNLINKED
-
   s("Healing Potion", "Alchemist", "crafted by", "Crafted by", "Healing Potions are brewed by Alchemists using Veyn and ingredients."),
   s("Healing Potion", "Clergy", "alternative to", "Alternative to", "Healing Potions provide a quicker but less effective alternative to Clergy healing."),
-  s("Healing Potion", "Potioncraft", "created via", "Created via", "Healing Potions are created through the Alchemist skill Potioncraft."),
+  s("Healing Potion", "Toniccraft", "created via", "Created via", "Healing Potions are created through the Alchemist skill Potioncraft."),
   s("Healing Potion", "Human Realm", "sold in", "Sold in", "Healing Potions are commonly sold across the Human Realm."),
   s("Healing Potion", "Angel Realm", "sold in", "Sold in", "Healing Potions are available in the Angel Realm."),
   s("Healing Potion", "Demon Realm", "sold in", "Sold in", "Healing Potions are available in the Demon Realm."),
-
-  // ============================================================ ANGELS — UNLINKED
-
-  s("An Angel Breaking the vow", "Angel Veyn Vow", "results of", "Results of", "Breaking the Veyn Vow results in a shattered halo and spotted wings."),
+  s("An Angel Breaking the vow", "The Angel Veyn Vow", "results of", "Results of", "Breaking the Veyn Vow results in a shattered halo and spotted wings."),
   s("An Angel Breaking the vow", "Fallen Angels", "creates", "Creates", "An angel who breaks the vow becomes a Fallen Angel — cast out and rejected."),
   s("An Angel Breaking the vow", "Ordium", "example of", "Example of", "Ordium broke his vow for loving Lisa and was sentenced to execution."),
   s("An Angel Breaking the vow", "Cyrion", "witnessed by", "Witnessed by", "Cyrion saw Ordium slip away and kept the secret of his vow-breaking."),
@@ -1173,5 +1044,4 @@ module.exports = [
   s("An Angel Breaking the vow", "Thalor Elwin", "detected signs of", "Detected signs of", "Thalor saw the signs in Ordium long before he left — a vow pulled thin."),
   s("An Angel Breaking the vow", "Lisa", "connected through", "Connected through", "Ordium broke his vow because of his love for Lisa, a demon."),
   s("An Angel Breaking the vow", "Jaiden Marlock", "resulted in", "Resulted in", "The vow-breaking led to Jaiden's birth and the secret of his parentage."),
-
 ];

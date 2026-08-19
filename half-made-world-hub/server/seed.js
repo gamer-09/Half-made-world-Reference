@@ -197,6 +197,8 @@ module.exports = [
     ],
     ["minotaur", "umbrage"],
   ),
+
+  // ============================================================ BEINGS
   e(
     "Beings",
     "Elves",
@@ -212,6 +214,8 @@ module.exports = [
     ],
     ["elf", "pallantine", "veilborn"],
   ),
+
+  // ============================================================ MONSTERS
   e(
     "Monsters",
     "Griffen",
@@ -279,11 +283,6 @@ module.exports = [
     ],
     ["siren", "sentient river", "hypnosis"],
   ),
-
-  
-  // ============================================================ NEW MONSTERS — CLASSIC
-
-  // --- Werewolves ---
   e(
     "Monsters",
     "Werewolves",
@@ -299,8 +298,6 @@ module.exports = [
     ],
     ["werewolf", "werewolves", "cursed", "moon", "hidden realm", "thornlost"],
   ),
-
-  // --- Basilisk ---
   e(
     "Monsters",
     "Basilisk",
@@ -316,8 +313,6 @@ module.exports = [
     ],
     ["basilisk", "petrify", "serpent", "umbrage", "stone gaze"],
   ),
-
-  // --- Manticore ---
   e(
     "Monsters",
     "Manticore",
@@ -333,8 +328,6 @@ module.exports = [
     ],
     ["manticore", "lion", "venom", "ambush", "umbrage"],
   ),
-
-  // --- Chimera ---
   e(
     "Monsters",
     "Chimera",
@@ -350,8 +343,6 @@ module.exports = [
     ],
     ["chimera", "three heads", "fire", "venom", "umbrage", "hidden realm"],
   ),
-
-  // --- Cockatrice ---
   e(
     "Monsters",
     "Cockatrice",
@@ -367,8 +358,6 @@ module.exports = [
     ],
     ["cockatrice", "petrify", "bird", "dragon", "umbrage"],
   ),
-
-  // --- Goblins ---
   e(
     "Monsters",
     "Goblins",
@@ -384,8 +373,6 @@ module.exports = [
     ],
     ["goblin", "goblins", "pack", "traps", "umbrage"],
   ),
-
-  // --- Orcs ---
   e(
     "Monsters",
     "Orcs",
@@ -401,10 +388,6 @@ module.exports = [
     ],
     ["orc", "orcs", "warrior", "strength", "umbrage", "demon realm"],
   ),
-
-  // ============================================================ NEW MONSTERS — OVERPOWERED (OP)
-
-  // --- Abyssal Wyrm ---
   e(
     "Monsters",
     "Abyssal Wyrm",
@@ -421,8 +404,6 @@ module.exports = [
     ],
     ["abyssal wyrm", "ancient", "realm devouring", "sealed", "catastrophic", "op"],
   ),
-
-  // --- World Eater ---
   e(
     "Monsters",
     "World Eater",
@@ -439,8 +420,6 @@ module.exports = [
     ],
     ["world eater", "parasite", "world core", "existential", "aelthar", "op"],
   ),
-
-  // --- Void Colossus ---
   e(
     "Monsters",
     "Void Colossus",
@@ -457,8 +436,6 @@ module.exports = [
     ],
     ["void colossus", "void", "barrier", "breach", "construct", "op"],
   ),
-
-  // --- Storm Titan ---
   e(
     "Monsters",
     "Storm Titan",
@@ -475,8 +452,6 @@ module.exports = [
     ],
     ["storm titan", "elemental", "weather", "lightning", "ancient", "op"],
   ),
-
-  // --- Bloodwraith Sovereign ---
   e(
     "Monsters",
     "Bloodwraith Sovereign",
@@ -493,10 +468,6 @@ module.exports = [
     ],
     ["bloodwraith", "sovereign", "wraith", "apex", "spirit", "op"],
   ),
-
-  // ============================================================ NEW MONSTERS — FRIENDLY / NEUTRAL
-
-  // --- Skywhales ---
   e(
     "Monsters",
     "Skywhales",
@@ -512,8 +483,6 @@ module.exports = [
     ],
     ["skywhale", "skywhales", "gentle", "floating", "friendly", "blubber", "veyn"],
   ),
-
-  // --- Lightwisps ---
   e(
     "Monsters",
     "Lightwisps",
@@ -529,8 +498,6 @@ module.exports = [
     ],
     ["lightwisp", "lightwisps", "guiding", "friendly", "veyn", "lost", "safe"],
   ),
-
-  // --- Stonetenders ---
   e(
     "Monsters",
     "Stonetenders",
@@ -546,8 +513,6 @@ module.exports = [
     ],
     ["stonetender", "stonetenders", "earth", "elemental", "friendly", "repair", "land"],
   ),
-
-  // --- Dreamweavers ---
   e(
     "Monsters",
     "Dreamweavers",
@@ -564,8 +529,6 @@ module.exports = [
     ],
     ["dreamweaver", "dreamweavers", "dream", "healing", "trauma", "moth", "friendly", "spirit"],
   ),
-
-  // --- Stonehollow Elk ---
   e(
     "Monsters",
     "Stonehollow Elk",
@@ -581,10 +544,6 @@ module.exports = [
     ],
     ["stonehollow elk", "elk", "antler", "veyn", "conductor", "friendly", "arubian"],
   ),
-
-  // ============================================================ NEW MONSTERS — SPIRITS
-
-  // --- Ashbound Spirits ---
   e(
     "Monsters",
     "Ashbound Spirits",
@@ -600,8 +559,6 @@ module.exports = [
     ],
     ["ashbound", "ashbound spirits", "fire", "spirit", "ash", "ember", "destroyed"],
   ),
-
-  // --- Tidecallers ---
   e(
     "Monsters",
     "Tidecallers",
@@ -618,8 +575,6 @@ module.exports = [
     ],
     ["tidecaller", "tidecallers", "water", "spirit", "sentient river", "vireth"],
   ),
-
-  // --- Thornweald ---
   e(
     "Monsters",
     "Thornweald",
@@ -636,8 +591,6 @@ module.exports = [
     ],
     ["thornweald", "forest", "spirit", "tree", "ancient", "guardian", "arubian", "thornlost"],
   ),
-
-  // --- Echoes of the Fallen ---
   e(
     "Monsters",
     "Echoes of the Fallen",
@@ -653,8 +606,6 @@ module.exports = [
     ],
     ["echoes", "fallen", "battlefield", "spirit", "warrior", "history", "aelthar"],
   ),
-
-  // --- Gloomveil Specters ---
   e(
     "Monsters",
     "Gloomveil Specters",
@@ -672,8 +623,7 @@ module.exports = [
     ["gloomveil", "specter", "specters", "shadow", "despair", "isolation", "spirit", "lethmoor"],
   ),
 
-
-// ============================================================ BEINGS
+  // ============================================================ BEINGS
   e(
     "Beings",
     "Shudon",
@@ -1082,6 +1032,14 @@ module.exports = [
   // ============================================================ GRADE SYSTEM
   e(
     "Grade System",
+    "Grade System",
+    "The universal power scale",
+    "Every awakened being is measured by a Grade, from G (never exposed to Veyn) through F, E, D, C, B, A, to S (demigod). Grades run from level 0 to 100, each with Early, Mid, Late, and Peak sub-stages, a Wall at the peak of each grade, and an Evolution Quest to advance. Mages are the exception — they progress through Rune Star Circles instead.",
+    [],
+    ["grade", "grade system", "power", "level"],
+  ),
+  e(
+    "Grade System",
     "G Grade",
     "Mortal Grade — Level 0-9",
     "The starting grade assigned to beings who were never exposed to Veyn before gaining access to the System. This usually means those born in uninitiated worlds before integration. Any being born after System integration is assigned F Grade at minimum. G Grade beings have no sub-stages and cannot advance through normal means — they must first be exposed to Veyn.",
@@ -1322,6 +1280,14 @@ module.exports = [
   ),
 
   // ============================================================ CLASSES
+  e(
+    "Classes",
+    "Classes",
+    "The nineteen classes of the world",
+    "The Sundering Altar reveals each person’s class — the discipline they are best suited for. There are nineteen classes in total, split between Veyn-based classes (Mage, Alchemist, Enchanter, Diviner, Saintess, Clergy, Archer, Exorcist, Grimtender), Ren-based classes (Bladesinger, Berserker, Sentinel, Ren Archer, Veilrunner, Broker, Beastmaster, Paladin), and the unique Shudonkeeper. Humans can master a class fully; angels and demons are capped at five class-skills.",
+    [],
+    ["class", "classes", "system"],
+  ),
   e(
     "Classes",
     "Mage",
@@ -2018,6 +1984,14 @@ module.exports = [
   // ============================================================ ANGEL SKILLS
   e(
     "Angel Skills",
+    "Angel Skills",
+    "The skills of angels",
+    "The abilities angels wield, drawn from their Veyn and their rank. Each angel rank has its own skills, and the Six Pillars of Angels each carry their own personal techniques. Titles also grant their own set of skills, distinct from rank abilities.",
+    [],
+    ["angel skills", "angel", "skill"],
+  ),
+  e(
+    "Angel Skills",
     "Kings Record",
     "Serapharch skill",
     "By making physical contact, the user can view fragments of a target's memories and past experiences. The clearer the contact and the stronger the user's focus, the more detailed the visions become.",
@@ -2258,6 +2232,14 @@ module.exports = [
   ),
 
   // ============================================================ DEMON SKILLS
+  e(
+    "Demon Skills",
+    "Demon Skills",
+    "The skills of demons",
+    "The abilities demons wield, drawn from their corrupted Veyn and their rank. Each demon rank has its own skills, and the demon generals each carry their own personal techniques. Demon titles also grant their own set of skills, distinct from rank abilities.",
+    [],
+    ["demon skills", "demon", "skill"],
+  ),
   e(
     "Demon Skills",
     "Death Scythe",
@@ -2541,7 +2523,7 @@ module.exports = [
     ["vireth", "skill", "artifact"],
   ),
 
-  // ============================================================ MONSTERS
+  // ============================================================ RACE TYPES
   e(
     "Race Types",
     "Pallantine",
@@ -3738,6 +3720,14 @@ module.exports = [
   ),
 
   // ============================================================ HYBRID SKILLS
+  e(
+    "Hybrid Skills",
+    "Hybrid Skills",
+    "The fused skills of the hybrid",
+    "The mutated skills of Jaiden Marlock’s True Hybrid Form. When he enters it, each of his Aetherblade Lord Angel rank skills fuses with a Bloodward demon rank skill, becoming a single hybrid skill that neither race could wield alone. They draw on Holy Energy and Corrupted Veyn at once.",
+    [],
+    ["hybrid skills", "hybrid", "skill", "jaiden"],
+  ),
   e(
     "Hybrid Skills",
     "Twilight Chains",

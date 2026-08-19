@@ -7392,7 +7392,7 @@
   {
     "id": "link-seed-740",
     "source": "Abyssal Wyrm",
-    "target": "World Core",
+    "target": "The World Core",
     "type": "feeds on",
     "label": "Feeds on",
     "description": "The Abyssal Wyrm devours ambient Veyn from entire regions, creating dead zones.",
@@ -7442,7 +7442,7 @@
   {
     "id": "link-seed-745",
     "source": "World Eater",
-    "target": "World Core",
+    "target": "The World Core",
     "type": "parasitizes",
     "label": "Parasitizes",
     "description": "The World Eater embeds itself in the world core and slowly drains its power over centuries.",
@@ -7492,7 +7492,7 @@
   {
     "id": "link-seed-750",
     "source": "Void Colossus",
-    "target": "Realm Barrier",
+    "target": "The World Barrier",
     "type": "guards",
     "label": "Guards",
     "description": "It is the void's own immune response, drawn to breaches in the realm barrier.",
@@ -7542,7 +7542,7 @@
   {
     "id": "link-seed-755",
     "source": "Storm Titan",
-    "target": "World Core",
+    "target": "The World Core",
     "type": "formed from",
     "label": "Formed from",
     "description": "Storm Titans are centuries of accumulated elemental Veyn given form and awareness.",
@@ -7702,7 +7702,7 @@
   {
     "id": "link-seed-771",
     "source": "Lightwisps",
-    "target": "World Core",
+    "target": "The World Core",
     "type": "formed from",
     "label": "Formed from",
     "description": "Lightwisps are Veyn shaped by collective positive intent into a guidance pattern.",
@@ -7752,7 +7752,7 @@
   {
     "id": "link-seed-776",
     "source": "Stonetenders",
-    "target": "World Core",
+    "target": "The World Core",
     "type": "connected to",
     "label": "Connected to",
     "description": "Stonetenders are drawn to Veyn disruption and maintain the land as the world core's immune system.",
@@ -7782,7 +7782,7 @@
   {
     "id": "link-seed-779",
     "source": "Dreamweavers",
-    "target": "Sundering Altar",
+    "target": "The Sundering Altar",
     "type": "found near",
     "label": "Found near",
     "description": "Dreamweavers cluster around the Sundering Altar where ambient Veyn is calm and steady.",
@@ -8602,7 +8602,7 @@
   {
     "id": "link-seed-861",
     "source": "The Two Sundering Altars",
-    "target": "Sundering Altar",
+    "target": "The Sundering Altar",
     "type": "details of",
     "label": "Details of",
     "description": "The Two Sundering Altars entry explains both the Common Altar and the Academy Altar in detail.",
@@ -8642,7 +8642,7 @@
   {
     "id": "link-seed-865",
     "source": "The Two Sundering Altars",
-    "target": "Affinity and Awakening",
+    "target": "Affinity & Awakening",
     "type": "explains process of",
     "label": "Explains process of",
     "description": "The Two Sundering Altars entry details how each altar awakens class affinity and starting grade.",
@@ -8692,7 +8692,7 @@
   {
     "id": "link-seed-870",
     "source": "The Rune Star System",
-    "target": "World Core",
+    "target": "The World Core",
     "type": "powered by",
     "label": "Powered by",
     "description": "The Rune Star draws power from the world core through the sigils carved into the heart.",
@@ -8852,7 +8852,7 @@
   {
     "id": "link-seed-886",
     "source": "The Six Pillars of Angels",
-    "target": "Sundering Altar",
+    "target": "The Sundering Altar",
     "type": "guardian of",
     "label": "Guardian of",
     "description": "The Fifth Pillar Thalor guards the Sundering Altar where vows are sworn.",
@@ -8902,7 +8902,7 @@
   {
     "id": "link-seed-891",
     "source": "Angel Evolution",
-    "target": "Angel Veyn Vow",
+    "target": "The Angel Veyn Vow",
     "type": "governs",
     "label": "Governs",
     "description": "Angel evolution is regulated by the Veyn Vow at each rank transition.",
@@ -8912,7 +8912,7 @@
   {
     "id": "link-seed-892",
     "source": "Angel Evolution",
-    "target": "Sundering Altar",
+    "target": "The Sundering Altar",
     "type": "takes place at",
     "label": "Takes place at",
     "description": "Rank transitions occur at the Sundering Altar when the vow is renewed.",
@@ -8962,7 +8962,7 @@
   {
     "id": "link-seed-897",
     "source": "Demon Evolution",
-    "target": "Sundering Altar",
+    "target": "The Sundering Altar",
     "type": "takes place at",
     "label": "Takes place at",
     "description": "Demon rank transitions begin at the Sundering Altar at age 15.",
@@ -9342,7 +9342,7 @@
   {
     "id": "link-seed-935",
     "source": "Spirits",
-    "target": "World Core",
+    "target": "The World Core",
     "type": "formed from",
     "label": "Formed from",
     "description": "Spirits are beings given shape by unstable Veyn from the world core.",
@@ -9392,7 +9392,7 @@
   {
     "id": "link-seed-940",
     "source": "The Aelthar",
-    "target": "Sundering Altar",
+    "target": "The Sundering Altar",
     "type": "built using knowledge of",
     "label": "Built using knowledge of",
     "description": "The altars were built by Kael using Aelthar knowledge of the world core.",
@@ -9442,7 +9442,7 @@
   {
     "id": "link-seed-945",
     "source": "The World Barrier",
-    "target": "World Core",
+    "target": "The World Core",
     "type": "raised by",
     "label": "Raised by",
     "description": "The world core's will raised the barrier to split the realms after the Hidden Realm was torn open.",
@@ -9522,7 +9522,7 @@
   {
     "id": "link-seed-953",
     "source": "The World Core",
-    "target": "World Barrier",
+    "target": "The World Barrier",
     "type": "raised",
     "label": "Raised",
     "description": "The world core's will raised the barrier to split the realms.",
@@ -9732,7 +9732,7 @@
   {
     "id": "link-seed-974",
     "source": "The World Curse",
-    "target": "World Core",
+    "target": "The World Core",
     "type": "connected to",
     "label": "Connected to",
     "description": "The world curse is connected to the world core's will and its response to threats.",
@@ -10102,7 +10102,7 @@
   {
     "id": "link-seed-1011",
     "source": "Healing Potion",
-    "target": "Potioncraft",
+    "target": "Toniccraft",
     "type": "created via",
     "label": "Created via",
     "description": "Healing Potions are created through the Alchemist skill Potioncraft.",
@@ -10142,7 +10142,7 @@
   {
     "id": "link-seed-1015",
     "source": "An Angel Breaking the vow",
-    "target": "Angel Veyn Vow",
+    "target": "The Angel Veyn Vow",
     "type": "results of",
     "label": "Results of",
     "description": "Breaking the Veyn Vow results in a shattered halo and spotted wings.",
