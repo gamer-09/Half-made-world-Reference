@@ -45,6 +45,17 @@ export const STORY_LINK_TYPES: Record<string, StoryLinkType> = {
   'class of': { label: 'Class of', color: '#38bdf8' },
   'progresses to': { label: 'Progresses to', color: '#818cf8' },
   'Leader of': { label: 'Leader of', color: '#fbbf24' },
+  About: { label: 'About', color: '#94a3b8' },
+  "Can't": { label: "Can't", color: '#f87171' },
+  'Evolve to': { label: 'Evolve to', color: '#818cf8' },
+  'Goes to': { label: 'Goes to', color: '#38bdf8' },
+  Joined: { label: 'Joined', color: '#4ade80' },
+  'Sold by': { label: 'Sold by', color: '#f472b6' },
+  'Teacher at': { label: 'Teacher at', color: '#2dd4bf' },
+  'Used by': { label: 'Used by', color: '#2dd4bf' },
+  'head master of': { label: 'Head Master of', color: '#facc15' },
+  'held by': { label: 'Held by', color: '#fbbf24' },
+  'hides in': { label: 'Hides in', color: '#94a3b8' },
 };
 
 export const FALLBACK_STORY = { label: 'Related to', color: '#94a3b8' };

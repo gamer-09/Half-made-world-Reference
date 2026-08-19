@@ -22,6 +22,10 @@ export const RELATIONSHIP_TYPES: Record<string, RelType> = {
   opposes: { label: 'Opposes', color: '#f87171' },
   watches: { label: 'Watches', color: '#94a3b8', dashed: true },
   drained: { label: 'Drained', color: '#c084fc' },
+  'Demon trainer for': { label: 'Demon trainer for', color: '#c084fc' },
+  'Going to kill': { label: 'Going to kill', color: '#f87171' },
+  'Trainer of': { label: 'Trainer of', color: '#4ade80' },
+  takes: { label: 'Takes', color: '#a78bfa' },
 };
 
 export const FALLBACK_REL = { label: 'Related to', color: '#94a3b8' };
