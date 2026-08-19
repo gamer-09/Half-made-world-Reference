@@ -11,9 +11,11 @@ have to live buried in a single document again.
 - **`Half_made world ideas.docx`** — the original source document. Everything in the hub was seeded
   from this file; it remains here as the canonical starting reference.
 
-The archive holds **296+ entries across 23 categories** — Demon/Angel Skills, Titles, Rules & Notes,
-Characters, Classes, Monsters, Locations, Items, Magic Systems, Realms, Coins, and more — all
-browsable, searchable, and editable through the UI.
+The archive holds **542 entries across 29 categories** — Demon/Angel/Class/Hybrid Skills, Titles,
+Rules & Notes, Characters, Classes, Class Progression, Grade System, Rune Star Circles, Monsters,
+Locations, Items, Magic Systems, Realms, Coins, Clan, and more — all browsable, searchable, and
+editable through the UI. **24 characters**, **712 story links**, and **49 relationships** tie it
+all together.
 
 ## Quick start
 
@@ -60,7 +62,7 @@ Relationships persist in `server/data/relationships.json`.
 ## Story Web
 
 A **Story Web** page shows the *whole story* as one interactive map — every realm, location,
-monster, being, rank, item, artifact, character, and plot thread as a node, connected by **399+**
+monster, being, rank, item, artifact, character, and plot thread as a node, connected by **712**
 colored, arrowed links like `located in`, `guards`, `rules`, `kills`, `sealed in`, `crafted by`, and
 `story of`. Character relationship links are merged in too.
 
@@ -82,6 +84,23 @@ hierarchy.
 
 - **Scroll** to zoom, **drag** to pan, **hover** to trace a chain, **click** a block to open its
   entry, **Esc** to fit the whole map to screen.
+
+## World systems (as captured in the archive)
+
+- **Ranks & roles** — angel and demon rank (Serapharch↔Lumen, Mordrach↔Gnash) measures *power*, not
+  *profession*; most beings are civilians and any rank can leave the realm.
+- **Grades (G–S)** — the universal power scale, with Early/Mid/Late/Peak sub-stages, the Wall, and
+  Evolution Quests. Max level is 100.
+- **Rune Star Circles (1–7)** — Mages progress by inscribing Rune Stars into their heart instead of
+  using the Grade system; each circle maps to a rough Grade equivalent (1st≈F … 7th≈S).
+- **Classes (19)** — Veyn and Ren classes, each with 10 class-skills and a 7-tier progression
+  ladder. Angels/demons learn max 5 class-skills; humans learn all. Veyn & Ren can't mix (Smithing
+  is the sole exception; angels/demons may unlock a Ren Organ at the cost of all Veyn).
+- **Magic** — Veyn (neutral) → Holy Energy (angels/saints) and Corrupted Veyn (demons); Ren → Auric
+  Ren (paladins).
+- **Currency** — Sigils: 100 silver = 1 gold, 1,000 gold = 1 platinum.
+- **Reference document** — `Half_made world ideas.docx` is regenerated from `world.json` (the source
+  of truth) so it always mirrors the archive exactly.
 
 ## API reference
 
