@@ -6918,5 +6918,245 @@
     "description": "Kael von Ashen holds the Shudonkeeper class.",
     "createdAt": "2026-08-19T03:32:16.230Z",
     "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "0b8c97bb-646d-431d-8c38-65d6189da31b",
+    "source": "Jaiden Marlock",
+    "target": "3rd Circle Rune Star",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Jaiden Marlock has reached the 3rd Circle Rune Star (Artificer).",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "813a538d-31ce-4756-aad4-64fa568fb753",
+    "source": "Lisa",
+    "target": "A Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Lisa is a A Grade being at the Mid stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "30880efd-96cb-440a-b580-bad2b3b2d0f6",
+    "source": "Ordium",
+    "target": "5th Circle Rune Star",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Ordium has reached the 5th Circle Rune Star (Archmage).",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "0a5ba150-b6cb-42aa-951d-224cf13c616a",
+    "source": "Sofia Marlock",
+    "target": "C Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Sofia Marlock is a C Grade being at the Peak stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "7fe5972a-7c9b-4281-b167-3ff1781db09b",
+    "source": "Licent Varak",
+    "target": "B Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Licent Varak is a B Grade being at the Late stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "184236e0-94e4-405e-9e10-6243b973b0c5",
+    "source": "Ruby Divina",
+    "target": "B Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Ruby Divina is a B Grade being at the Peak stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "22e41c10-ff36-4ee3-b312-87053ae949b3",
+    "source": "Tera Morage",
+    "target": "6th Circle Rune Star",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Tera Morage has reached the 6th Circle Rune Star (Sovereign).",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "6f8791b3-347b-4f52-bcaa-67448464b26a",
+    "source": "Clint Ashborn",
+    "target": "6th Circle Rune Star",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Clint Ashborn has reached the 6th Circle Rune Star (Sovereign).",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "0069fc07-1dc6-45cb-a43a-042fe3479213",
+    "source": "Kael von Ashen",
+    "target": "S Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Kael von Ashen is a S Grade being at the Peak stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "595f70ab-dbe4-40f2-b2e8-f6d6c73fc54b",
+    "source": "Carin",
+    "target": "C Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Carin is a C Grade being at the Early stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "7007d2d3-b306-471b-a0af-8bce417a7f0e",
+    "source": "Wener Leger",
+    "target": "A Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Wener Leger is a A Grade being at the Mid stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "7cb8794f-e003-40ee-804d-6ee903455202",
+    "source": "Laren Vornath",
+    "target": "B Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Laren Vornath is a B Grade being at the Mid stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "77280434-8cf4-4ae1-8a1a-c78c8ebc6513",
+    "source": "Sythra Kaelis",
+    "target": "B Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Sythra Kaelis is a B Grade being at the Mid stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "e264923f-4b32-487e-913f-ba42673302ec",
+    "source": "Nyra Thessan",
+    "target": "4th Circle Rune Star",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Nyra Thessan has reached the 4th Circle Rune Star (Warden).",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "bb26db46-8d13-46f5-871d-5ed24fc08811",
+    "source": "Isella Marrek",
+    "target": "B Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Isella Marrek is a B Grade being at the Late stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "93c3e26e-9897-4c0c-8c74-b5a20f42f282",
+    "source": "Cyrion",
+    "target": "A Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Cyrion is a A Grade being at the Late stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "624dee73-6757-4b5e-a24e-4b537c4c0164",
+    "source": "Serathiel",
+    "target": "A Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Serathiel is a A Grade being at the Late stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "2c315935-a380-4ab7-ac86-417402eff156",
+    "source": "Liora Veyne",
+    "target": "4th Circle Rune Star",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Liora Veyne has reached the 4th Circle Rune Star (Warden).",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "ad6a8325-fde1-425e-9e3b-a6c757ba5af5",
+    "source": "Thalor Elwin",
+    "target": "A Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Thalor Elwin is a A Grade being at the Mid stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "f3e3d79d-15e6-4489-8aa7-3e4bfe1b5c5a",
+    "source": "Aranweis",
+    "target": "A Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Aranweis is a A Grade being at the Early stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "e9adf07f-dc10-4e1a-8d28-c4a4c65ae433",
+    "source": "Eva Aldermere Divina",
+    "target": "1st Circle Rune Star",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Eva Aldermere Divina has reached the 1st Circle Rune Star (Initiate).",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "571c4f84-fd84-46f7-9cd3-3e80d33f02e9",
+    "source": "Bella Rose",
+    "target": "E Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Bella Rose is a E Grade being at the Peak stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "bef12d98-ab83-49dc-9bf3-48ea4284ed23",
+    "source": "Mark Wesley",
+    "target": "E Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Mark Wesley is a E Grade being at the Late stage.",
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
+  },
+  {
+    "id": "1781cd1f-5cef-4bcd-bfc7-271e551e2cee",
+    "source": "Varen Ashtail",
+    "target": "B Grade",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Varen Ashtail is a B Grade being at the Mid stage.",
+    "createdAt": "2026-08-19T04:03:03.020Z",
+    "updatedAt": "2026-08-19T04:03:03.020Z"
   }
 ]

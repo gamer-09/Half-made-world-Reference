@@ -3171,6 +3171,14 @@
       {
         "label": "Angel Race",
         "value": "Malakhim (angel half)"
+      },
+      {
+        "label": "Rune Star Circle",
+        "value": "3rd Circle Rune Star"
+      },
+      {
+        "label": "Power Level",
+        "value": "Artificer"
       }
     ],
     "tags": [
@@ -3180,7 +3188,7 @@
       "hybrid"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-120",
@@ -3220,6 +3228,14 @@
       {
         "label": "Ren Organ",
         "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
+      },
+      {
+        "label": "Grade",
+        "value": "A Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Mid"
       }
     ],
     "tags": [
@@ -3231,7 +3247,7 @@
       "general"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-121",
@@ -3271,6 +3287,14 @@
       {
         "label": "Class",
         "value": "Mage"
+      },
+      {
+        "label": "Rune Star Circle",
+        "value": "5th Circle Rune Star"
+      },
+      {
+        "label": "Power Level",
+        "value": "Archmage"
       }
     ],
     "tags": [
@@ -3283,7 +3307,7 @@
       "general"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-122",
@@ -3307,6 +3331,14 @@
       {
         "label": "Class",
         "value": "Exorcist"
+      },
+      {
+        "label": "Grade",
+        "value": "C Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Peak"
       }
     ],
     "tags": [
@@ -3317,7 +3349,7 @@
       "fallen angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-123",
@@ -3349,6 +3381,14 @@
       {
         "label": "Ren Organ",
         "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
+      },
+      {
+        "label": "Grade",
+        "value": "B Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Late"
       }
     ],
     "tags": [
@@ -3361,7 +3401,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-124",
@@ -3369,14 +3409,23 @@
     "name": "Ruby Divina",
     "subtitle": "Ruler of the Human Realm (Female)",
     "description": "Ruby Divina is the only mortal ruler in a world governed by immortals — Clint Ashborn does not age, and Tera Morage dies of nothing short of a Divine Weapon, while Ruby will be gone within a mortal lifetime and knows it. She rules humanity, the one people with no wings, no halo, no miasma — just raw Veyn and short years — caught between two realms that could crush hers on a whim. Her whole reign has been the slow, careful work of making humanity too useful and too dangerous to be worth crushing. She has known about Jaiden Marlock from the beginning — the hybrid child hiding in her realm under a maid’s care is no secret to her — and she has shielded him not from kindness but because he is her insurance: a being both realms would go to war over, the one card that could make humanity a power instead of a client.",
-    "fields": [],
+    "fields": [
+      {
+        "label": "Grade",
+        "value": "B Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Peak"
+      }
+    ],
     "tags": [
       "character",
       "ruler",
       "human realm"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-125",
@@ -3396,6 +3445,14 @@
       {
         "label": "Class",
         "value": "Mage"
+      },
+      {
+        "label": "Rune Star Circle",
+        "value": "6th Circle Rune Star"
+      },
+      {
+        "label": "Power Level",
+        "value": "Sovereign"
       }
     ],
     "tags": [
@@ -3405,7 +3462,7 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-126",
@@ -3425,6 +3482,14 @@
       {
         "label": "Class",
         "value": "Mage"
+      },
+      {
+        "label": "Rune Star Circle",
+        "value": "6th Circle Rune Star"
+      },
+      {
+        "label": "Power Level",
+        "value": "Sovereign"
       }
     ],
     "tags": [
@@ -3434,7 +3499,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-127",
@@ -4673,6 +4738,14 @@
       {
         "label": "Class",
         "value": "Shudonkeeper"
+      },
+      {
+        "label": "Grade",
+        "value": "S Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Peak"
       }
     ],
     "tags": [
@@ -4683,7 +4756,7 @@
       "human realm"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-208",
@@ -4747,6 +4820,14 @@
       {
         "label": "Ren Organ",
         "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
+      },
+      {
+        "label": "Grade",
+        "value": "C Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Early"
       }
     ],
     "tags": [
@@ -4756,7 +4837,7 @@
       "character"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-211",
@@ -4863,6 +4944,14 @@
       {
         "label": "Ren Organ",
         "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
+      },
+      {
+        "label": "Grade",
+        "value": "A Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Mid"
       }
     ],
     "tags": [
@@ -4872,7 +4961,7 @@
       "wener"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-217",
@@ -4997,6 +5086,14 @@
       {
         "label": "Ren Organ",
         "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
+      },
+      {
+        "label": "Grade",
+        "value": "B Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Mid"
       }
     ],
     "tags": [
@@ -5008,7 +5105,7 @@
       "laren vornath"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-222",
@@ -5036,6 +5133,14 @@
       {
         "label": "Class",
         "value": "Grimtender"
+      },
+      {
+        "label": "Grade",
+        "value": "B Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Mid"
       }
     ],
     "tags": [
@@ -5047,7 +5152,7 @@
       "sythra kaelis"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-223",
@@ -5075,6 +5180,14 @@
       {
         "label": "Class",
         "value": "Mage"
+      },
+      {
+        "label": "Rune Star Circle",
+        "value": "4th Circle Rune Star"
+      },
+      {
+        "label": "Power Level",
+        "value": "Warden"
       }
     ],
     "tags": [
@@ -5086,7 +5199,7 @@
       "nyra thessan"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-224",
@@ -5118,6 +5231,14 @@
       {
         "label": "Ren Organ",
         "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
+      },
+      {
+        "label": "Grade",
+        "value": "B Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Late"
       }
     ],
     "tags": [
@@ -5129,7 +5250,7 @@
       "isella marrek"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-225",
@@ -5161,6 +5282,14 @@
       {
         "label": "Class",
         "value": "Archer"
+      },
+      {
+        "label": "Grade",
+        "value": "A Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Late"
       }
     ],
     "tags": [
@@ -5172,7 +5301,7 @@
       "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-226",
@@ -5208,6 +5337,14 @@
       {
         "label": "Ren Organ",
         "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
+      },
+      {
+        "label": "Grade",
+        "value": "A Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Late"
       }
     ],
     "tags": [
@@ -5219,7 +5356,7 @@
       "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-227",
@@ -5251,6 +5388,14 @@
       {
         "label": "Class",
         "value": "Mage"
+      },
+      {
+        "label": "Rune Star Circle",
+        "value": "4th Circle Rune Star"
+      },
+      {
+        "label": "Power Level",
+        "value": "Warden"
       }
     ],
     "tags": [
@@ -5262,7 +5407,7 @@
       "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-228",
@@ -5298,6 +5443,14 @@
       {
         "label": "Ren Organ",
         "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
+      },
+      {
+        "label": "Grade",
+        "value": "A Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Mid"
       }
     ],
     "tags": [
@@ -5309,7 +5462,7 @@
       "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-229",
@@ -5345,6 +5498,14 @@
       {
         "label": "Ren Organ",
         "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
+      },
+      {
+        "label": "Grade",
+        "value": "A Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Early"
       }
     ],
     "tags": [
@@ -5356,7 +5517,7 @@
       "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T03:32:16.230Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "seed-230",
@@ -11502,8 +11663,8 @@
         "value": "Broker"
       },
       {
-        "label": "Rank",
-        "value": "B-rank (Grade System)"
+        "label": "Grade",
+        "value": "B Grade"
       },
       {
         "label": "Guild Rank",
@@ -11536,6 +11697,10 @@
       {
         "label": "Reputation",
         "value": "Known as 'The Silver Tongue' — the most trusted Broker in the Human Realm"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Mid"
       }
     ],
     "tags": [
@@ -11546,7 +11711,7 @@
       "silver concord"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T04:03:03.020Z"
   },
   {
     "id": "003ea248-3969-4834-895c-530759e75f77",
@@ -11566,6 +11731,14 @@
       {
         "label": "Parent",
         "value": "Ruby Divina"
+      },
+      {
+        "label": "Rune Star Circle",
+        "value": "1st Circle Rune Star"
+      },
+      {
+        "label": "Power Level",
+        "value": "Initiate"
       }
     ],
     "tags": [
@@ -11576,7 +11749,7 @@
       "ruby divina"
     ],
     "createdAt": "2026-08-19T01:28:26.234Z",
-    "updatedAt": "2026-08-19T01:28:26.234Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "73ff5868-9641-4e80-941a-5e7a20784cd0",
@@ -11596,6 +11769,14 @@
       {
         "label": "Artifact",
         "value": "Aerendrel, the Skybound Wrath (given by Jaiden)"
+      },
+      {
+        "label": "Grade",
+        "value": "E Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Peak"
       }
     ],
     "tags": [
@@ -11607,7 +11788,7 @@
       "aerendrel"
     ],
     "createdAt": "2026-08-19T01:28:26.234Z",
-    "updatedAt": "2026-08-19T01:28:26.234Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "091b77f3-5c86-4297-9806-72ff24c8ac99",
@@ -11619,6 +11800,14 @@
       {
         "label": "Class",
         "value": "Alchemist"
+      },
+      {
+        "label": "Grade",
+        "value": "E Grade"
+      },
+      {
+        "label": "Sub-stage",
+        "value": "Late"
       }
     ],
     "tags": [
@@ -11628,7 +11817,7 @@
       "jaiden"
     ],
     "createdAt": "2026-08-19T01:28:26.234Z",
-    "updatedAt": "2026-08-19T01:28:26.234Z"
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   },
   {
     "id": "9383ac14-44a1-4b2d-bd46-0a9abcea8313",
@@ -11678,5 +11867,51 @@
     ],
     "createdAt": "2026-08-19T03:00:26.582Z",
     "updatedAt": "2026-08-19T03:00:26.582Z"
+  },
+  {
+    "id": "6cc763f6-e562-48f9-acf4-66d8ea8fd599",
+    "category": "Rules & Notes",
+    "name": "Rune Star Circles vs Grades",
+    "subtitle": "How a Mage’s circle compares to a Grade",
+    "description": "Mages do not use the Grade system — their power is measured by the Rune Star Circle inscribed into their heart. But the two scales can be compared directly by the power each tier represents. A Mage’s circle is roughly equal to a Grade as follows, starting at F because a Mage is by definition already awakened to Veyn (no Mage sits at G Grade, which means never exposed to Veyn).",
+    "fields": [
+      {
+        "label": "1st Circle (Initiate)",
+        "value": "≈ F Grade — the foundation stage; basic spells and control"
+      },
+      {
+        "label": "2nd Circle (Adept)",
+        "value": "≈ E Grade — the first real step of power; enhanced spells"
+      },
+      {
+        "label": "3rd Circle (Artificer)",
+        "value": "≈ D Grade — competent and self-sufficient; most adventurers"
+      },
+      {
+        "label": "4th Circle (Warden)",
+        "value": "≈ C Grade — can level structures and command real force"
+      },
+      {
+        "label": "5th Circle (Archmage)",
+        "value": "≈ B Grade — city-destroying power; terrain shaping"
+      },
+      {
+        "label": "6th Circle (Sovereign)",
+        "value": "≈ A Grade — apocalypse-scale; rivals lesser divine beings"
+      },
+      {
+        "label": "7th Circle (Transcendent)",
+        "value": "≈ S Grade — demigod; a tier beyond mortal power"
+      }
+    ],
+    "tags": [
+      "rune star",
+      "grade",
+      "circle",
+      "mage",
+      "comparison"
+    ],
+    "createdAt": "2026-08-19T04:02:54.727Z",
+    "updatedAt": "2026-08-19T04:02:54.727Z"
   }
 ]
