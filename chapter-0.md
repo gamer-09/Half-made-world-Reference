@@ -1,89 +1,77 @@
-# Chapter 0 — The Door
+# Chapter 0 — The Three Realms
 
-Mirei's hands wouldn't stop shaking—and trembling hands meant death.
+Before there were borders, there was the core.
 
-The circle carved into the stone beneath her palms had been ready for three days, cut by the last three stonecutters the Aelthar had left. But stone was just a frame. The real line had to be drawn in Veyn, bleeding straight from her body, and Mirei was terrified her well had finally run dry.
+No one alive has seen it. It has no face, no body, no throne. The old texts say it has only a *will* — the untouched heart of the world, breathing Veyn into everything the way a pulse moves blood. Every flame, every spell, every halo and every horn draws on that single, silent pulse. The world did not make itself; it is *held* together, and it has been held for so long that no one thinks to ask what is doing the holding.
 
-Behind her, the old temple hall was packed tight with refugees. People who used to study the architecture of the cosmos were now just waiting to die. An infant cried in ragged, exhausted hitches. An old man cleared his throat over and over, trying to find words he'd never speak.
+Once, the world was one country.
 
-"They breached the outer gate," Torvahl said, stepping up beside her. His voice wasn't panicked; he sounded like a man reading off the time of day.
-
-"I know."
-
-"The King leads them himself. His banner is on the ridge."
-
-Mirei's fingers froze over the seventh glyph. She'd sworn she wouldn't think of him tonight. She'd kept that promise until dawn.
-
-"Then he came to watch," she muttered, and kept drawing.
-
-Years ago, at some endless state dinner back when the word *Aelthar* was a title rather than a curse, the King had asked her a question. He'd wanted to know what it felt like to hold a realm's shape in her hands like a wine glass. She'd mistaken it for wonder. Now she knew the truth: it was a buyer appraising something he planned to steal.
-
-Her failing hands dragged, making the final glyph bleed crooked across the floor.
-
-"It doesn't have to be pretty," Torvahl whispered. It was a merciful lie. They both knew it.
-
-"Bring them up," Mirei said. "Youngest first. I want the children through before my strength gives out."
-
-Torvahl moved into the crowd, doing what he always did best—calming the panic without slowing them down. *Keep moving. Stay close. Don't let go of the person next to you, even if you trip.*
-
-Mirei dropped to her knees at the center of the ring, slammed her palms against the stone, and pulled.
-
-She didn't ask politely, the way the ancient texts taught. There was no time for polite magic. She reached out and snatched at the fabric of reality like a dying woman grabbing for a ledge. The world fought back instantly. Every spell had a little friction, but this was different. The realm itself seemed to realize a piece of it was being ripped away without permission.
-
-Mirei yanked harder.
-
-The floor didn't just shake—for one terrifying second, it forgot how to be solid. Miles away, across oceans she would never see again, every sea rose a few inches and stayed there. Every hearth fire across the world flickered out at once, as if a giant mouth had sucked in the atmosphere.
-
-In front of her, reality tore open.
-
-She'd expected a door—clean edges, a threshold, a frame. Instead, the air split like wet skin. It was a raw, bloody tear, revealing an abyss that was neither light nor dark. It was a place so unformed it had never needed a name.
-
-"Now!" Mirei gasped, her voice steadier than her hands. "Go! Move!"
-
-They ran. She counted them out of habit, losing track somewhere past two hundred. Counting kept her from looking at their faces. The baby stopped crying. She forced herself not to think about why.
-
-Torvahl went through near the end, dragging a terrified boy by the wrist—a pale, ash-grey child with a faint light moving beneath the skin of his throat, nine years old and already holding the last name his people would ever give him. At the threshold, Torvahl hesitated, looking back at her. *Are you coming?*
-
-Mirei shook her head. *No. Go. I have to hold it open.*
-
-He stepped through.
-
-She held the tear open for eleven more agonizing seconds. Then she let it snap shut, sealing herself on the wrong side of the world.
+That is the part the histories hurry past, because the truth of it is ugly. Once, there were no Realms. Only a single, unbroken land under one sky, and a people who could *shape* it.
 
 ---
 
-On the other side, in a universe created less than an hour ago, the survivors tumbled onto real ground and breathed real air. For one brief moment, they thought they'd made it. They thought the sacrifice had bought their freedom.
+The Aelthar were realm-makers.
 
-Torvahl felt the wrongness first—a sudden shift in the dark, like a breath held too long finally being released. He turned, his grip still tight on the boy's wrist, and watched the first shadow crawl out of the raw earth like frost spreading across a window.
+That is not a metaphor. Where other beings wielded Veyn as a tool, the Aelthar held it as a birthright. They did not build cities so much as *convince* the world to become them. It is said they could hold the shape of a horizon in their hands the way a child holds a handful of water — and, like water, what they held was always trying to slip away. The Aelthar were careful. They had to be. Power that can remake a world can also unmake it, and the Aelthar knew, better than any people before or since, what it cost to keep a world in one piece.
 
-It had no name. Nothing here did. That was the trap.
+For a long time, that was enough. For a long time, the world was whole.
 
-Torvahl had spent his whole life manipulating old realms with established rules. Nobody had ever taught him how to survive in a world that hadn't decided what it was yet.
-
-But he had one thing left, and he used it the way he had always used everything—without hesitation. He pushed the boy behind him, drew what was left of his Veyn into the points of his fingers, and met the dark.
-
-"Run," he said, and it was the last word he meant.
-
-The boy ran. He ran toward the only light in that hungry dark—a faint glow at the heart of it, like the last coal of a fire—and the creatures came out of the raw earth behind him, and he did not look back, because looking back had never once made anything better.
-
-He was nine years old. He did not cry, because crying would have been a sound, and sound, in that place, was an invitation.
-
-By whatever passed for morning in a country with no sun, he was the last. The refuge had closed over them all, and the only thing left of the Aelthar was a boy, alone in the dark, learning not to make a sound.
+And then a human king looked at them, and saw not a people, but a threat.
 
 ---
 
-High above, in the world they left behind, the King's vanguard burst into the hall. They found no enemies, no bodies to butcher—only scorched stone and a vanishing line in the air that bled a faint, useless light.
+His name was Aldric Malgrave.
 
-Aldric Malgrave stood before the dying seam for a long time. His men waited, expecting a grand speech to give the slaughter meaning.
+He ruled the Human Realm in the age before the Divina line, and history remembers him only as a fear that wore a crown. He did not hate the Aelthar. Hate would have been kinder — hate, at least, is honest. Malgrave *calculated* them, the way a merchant calculates a rival. A people who could unmake the world were a people who could unmake *him*, and that was a risk no crown could afford to leave standing.
 
-He said nothing.
+He did not declare war. War admits the enemy is worth the name. He declared a *hunt*.
 
-He declared it a victory—because a king can't march into an empty room and call it failure—and ordered his army home. Behind them, the light went cold.
+The Aelthar were not warriors. They were scholars, stonecutters, dreamers, people who had spent their whole history learning to hold a world gently. They had no army to meet him with. They had only their hands, and their birthright, and the terrible knowledge that they were the last of their kind.
 
-And on the far side of the void, the last of the Aelthar learned to endure a world that had not yet decided what it was.
+So they ran.
 
-Years later, the boy who walked out of that place would take the name Kael von Ashen, and he would be the only person ever to brew the Ethereal Potion.
+---
 
-But that is another chapter. This one ends where every story truly begins:
+They ran to the edge of everything, and when the edge would not hide them, they did the one thing left.
 
-with a child, in the dark, refusing to be the last.
+They tore the world open.
+
+It was never meant to be done. It was the act the Aelthar themselves had spent a thousand generations refusing, the one thing their lore named *the unmaking*. But a cornered people will do in desperation what no people will do in peace, and so, in a temple at the end of the land, the last of the Aelthar drew a line in their own Veyn and *pulled* — and the world, which had been whole for so long, remembered that it could be torn.
+
+The seas rose. The fires went out. Every soul in every realm felt it — a single, shared shudder, like a heart missing a beat.
+
+And into the wound they made, the Aelthar fled.
+
+---
+
+They called it the Hidden Realm, and they meant it as a refuge.
+
+But a world that has been torn does not stay empty. The refuge was not finished — it had never *decided what it was* — and almost at once, out of the raw dark, things began to form. Things with too many legs and not enough eyes. Things that had no names, because nothing there did.
+
+The Aelthar, who had spent their lives learning to survive in a world with rules, discovered they did not know how to survive in a world that was still deciding its own.
+
+They died there. Almost all of them.
+
+---
+
+The world did not forget the wound they left.
+
+Deep below, in the dark where the core turned its silent will, something older than kings, older than the Aelthar, older than the borders themselves, stirred. The world had been put in danger, and the will at its heart answered — not with anger, for a will has no anger, but with the same instinct that makes a body draw a scab over a cut. It raised a barrier between what had been one world and made it many, so that no single tearing could ever break the whole again. And at the doors between those new realms it set watchers of its own stone.
+
+This is why there are three Realms now, and why none of them can fall without the others knowing. This is why the world holds. This is the scar, and the scab over it.
+
+---
+
+And this is why it all matters now.
+
+Because the hunt did not quite finish. One of the Aelthar survived — a child, alone in the dark of the realm his people had built to be safe, learning to endure a place that was not finished becoming itself. The only one. The last.
+
+His name, in the end, was Kael von Ashen.
+
+He walked back out of the Hidden Realm years later, carrying in his head everything his people had known — the shaping of worlds, the cost of it, and the one thing no realm-maker had ever wanted to learn from a king: what happens when fear is left to rule.
+
+He built a school at the crossing of the three Realms, and he taught. And in that school, a century of children — human, angel, and demon — came to be awakened, none of them knowing that the quiet old Headmaster at the door was the reason their world was split, and the reason it still held.
+
+But that is Chapter 1.
+
+This is only the beginning of the beginning: three Realms where there was once one, a barrier that no one alive remembers being raised, and a boy in the dark, refusing to be the last.
