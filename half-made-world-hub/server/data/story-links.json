@@ -6718,5 +6718,25 @@
     "description": "His given class is Broker.",
     "createdAt": "2026-08-19T01:10:39.800Z",
     "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "8da4b65c-948d-40ff-9814-d8be710fd0da",
+    "source": "Rank and Role",
+    "target": "Angels (Overview)",
+    "type": "about",
+    "label": "About",
+    "description": "The principle that rank is power, not profession.",
+    "createdAt": "2026-08-19T01:39:00.548Z",
+    "updatedAt": "2026-08-19T01:39:00.548Z"
+  },
+  {
+    "id": "cfd7c4b9-a518-4d82-b316-78bd0beffe27",
+    "source": "Rank and Role",
+    "target": "Demons (Overview)",
+    "type": "about",
+    "label": "About",
+    "description": "The principle that rank is power, not profession.",
+    "createdAt": "2026-08-19T01:39:00.548Z",
+    "updatedAt": "2026-08-19T01:39:00.548Z"
   }
 ]

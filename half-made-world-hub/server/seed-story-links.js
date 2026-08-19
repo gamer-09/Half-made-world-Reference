@@ -689,4 +689,6 @@ module.exports = [
   s("Silver Concord — Guild Facilities", "Silver Concord", "part of", "Part of", "The guild’s facilities and premises."),
   s("Varen Ashtail", "Silver Concord", "Leader of", "Leader of", "Guildmaster of Silver Concord."),
   s("Varen Ashtail", "Broker", "class of", "Class of", "His given class is Broker."),
+  s("Rank and Role", "Angels (Overview)", "about", "About", "The principle that rank is power, not profession."),
+  s("Rank and Role", "Demons (Overview)", "about", "About", "The principle that rank is power, not profession."),
 ];

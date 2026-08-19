@@ -322,8 +322,8 @@ module.exports = [
   e(
     "Angels",
     "Angels (Overview)",
-    "Four ranks, wings and halos tell the rank",
-    "There are four ranks of angels: Serapharch, Aetherblade Lord Angel, Virtue, and Lumen. They have pure white feathery wings and a glowing halo on top of their heads. The number of wings indicates their rank — the higher the rank, the more wings they have. The appearance of their halo also changes slightly by rank: the higher the rank, the more powerful and bright they look; lower-rank halos glow very dimly. They have an angelic aura around them all the time, and the stronger the aura, the stronger they are.",
+    "Four ranks — power, not profession",
+    "There are four ranks of angels: Serapharch, Aetherblade Lord Angel, Virtue, and Lumen. They have pure white feathery wings and a glowing halo on top of their heads. The number of wings indicates their rank — the higher the rank, the more wings they have — and the appearance of their halo changes by rank too: the higher the rank, the more powerful and bright they look, while lower-rank halos glow very dimly. A rank measures how much Veyn an angel holds, not what they do for a living. Only some angels join the army; most are ordinary civilians — craftsmen, merchants, scholars, and workers — who simply happen to hold their rank. Angels of any rank can leave the Angel Realm and live in the Human Realm as normal citizens, hiding their true nature behind Dawnveil.",
     [
       { label: "Note", value: "Both demons and angels can retract or hide their wings if they want." },
       { label: "Note", value: "Abilities learnt can be passed down to offspring, though not all the time." },
@@ -333,8 +333,8 @@ module.exports = [
   e(
     "Angels",
     "Serapharch",
-    "Rank 1 — Ruler of the Angel Realm",
-    "The ruler of the Angel Realm. They are essentially immortal and can only be killed by A Corrupted Divine Weapon (Vireth, the Fallen Grace) or A Divine Weapon. They have a very strong regenerative ability and a very strong natural defense.",
+    "Rank 1 — The apex of angelkind",
+    "The highest rank an angel can hold — a tier of power so immense that, in practice, only one Serapharch has ever ruled at a time, as the Ruler of the Angel Realm. They are essentially immortal and can only be killed by A Corrupted Divine Weapon (Vireth, the Fallen Grace) or A Divine Weapon. They have a very strong regenerative ability and a very strong natural defense.",
     [
       { label: "Appearance", value: "8 wings, large and almost covering their whole body, the feathers glow gold. Their halo is a solid ring of light, too bright to look at directly. They have the strongest aura among all the angels. Their wing color is light pale gold with a bright but dim glow." },
       { label: "Skills", value: "Kings Record, Sixth Sense, Time Reversal, Chronos Fury, Will Mastery, Holy Rain, Dignified Presence, Angelic Aura (Serapharch), Holy Flame, God’s Index Finger, God Chain, Holy Grail, Warpstep, Dawnveil (Serapharch) — each skill has its own entry in the Angel Skills / Demon Skills categories." },
@@ -345,8 +345,8 @@ module.exports = [
   e(
     "Angels",
     "Aetherblade Lord Angel",
-    "Rank 2 — Commander of the Angel Army",
-    "A high-ranking angel and commander of the angel army, answering only to the Serapharch. They never age and are nearly impossible to bring down in battle through conventional means. Only a consecrated weapon, a blood-forged blade, or the venom of a Coilmane carries enough power to wound them fatally. Their regeneration works on Veyn — if there is Veyn in their body they can heal.",
+    "Rank 2 — The realm’s elite",
+    "A high-ranking angel of the second tier. Many Aetherblade Lord Angels command the Angel army — the Six Pillars are all of this rank — but not every Aetherblade Lord is a soldier. Some are master artisans, scholars, or nobles who hold the rank through power rather than war. They never age and are nearly impossible to bring down in battle through conventional means. Only a consecrated weapon, a blood-forged blade, or the venom of a Coilmane carries enough power to wound them fatally. Their regeneration works on Veyn — if there is Veyn in their body they can heal.",
     [
       { label: "Appearance", value: "6 wings, big but with scars from battle that never fully heal. Their halo is bright but steady, not as dazzling as the Serapharch’s. They look more like warriors, with sharper features and always in a battle-ready stance. Their aura is strong but not too strong, though they can improve it. Their wings are pure white and they glow." },
       { label: "Skills", value: "Skyward Chains, Vanguard’s Cry, Aegis Ward, Holy Mend, Angelic Aura (Aetherblade), Swiftstep, Dawnveil (Aetherblade) — each skill has its own entry in the Angel Skills / Demon Skills categories." },
@@ -357,8 +357,8 @@ module.exports = [
   e(
     "Angels",
     "Virtue",
-    "Rank 3 — Soldiers of the Angel Army",
-    "A mid-ranking angel with regenerative ability lesser than the Aetherblade Lord Angel. They serve as soldiers under the Aetherblade Lord Angel, forming the disciplined core of the angel army. Unlike Aetherblade Lord Angels above them, a Virtue can be killed by conventional blessed or consecrated weapons — they do not require a Divine Weapon or blood-forged blade. Though their regeneration is weaker, if they have stamina they can heal. Their healing cannot work with Veyn.",
+    "Rank 3 — The mid ranks",
+    "A mid-ranking angel. The disciplined core of the Angel army is drawn from the Virtues, but most Virtues are civilians — craftsmen, merchants, and ordinary workers who simply hold this rank. Unlike Aetherblade Lord Angels above them, a Virtue can be killed by conventional blessed or consecrated weapons — they do not require a Divine Weapon or blood-forged blade. Though their regeneration is weaker, if they have stamina they can heal. Their healing cannot work with Veyn.",
     [
       { label: "Appearance", value: "4 wings, smaller and duller than the ranks above them. Their halo flickers instead of staying solid. Their aura is just normal. They have cream colored wings." },
       { label: "Skills", value: "Guiding Light, Radiant Strike, Formation Discipline, Angelic Aura (Virtue), Dawnveil (Virtue) — each skill has its own entry in the Angel Skills / Demon Skills categories." },
@@ -370,8 +370,8 @@ module.exports = [
   e(
     "Angels",
     "Lumen",
-    "Rank 4 — Citizens of the Angel Realm",
-    "They can be killed with regular weapons. They are the citizens of the Angel Realm, they don’t have regenerative abilities and are weak. They always stay in the Angel Realm, and only leave if they need something outside their realm.",
+    "Rank 4 — The common citizens",
+    "The lowest and most common rank of angel — the ordinary citizens of the Angel Realm. They can be killed with regular weapons, they don’t have regenerative abilities, and they are weak. Most angels are Lumen, and most Lumen live quiet, ordinary lives — working, trading, and raising families like anyone else. Many never leave the Angel Realm, but plenty do, settling in the Human Realm as normal citizens and hiding their true nature behind Dawnveil.",
     [
       { label: "Appearance", value: "2 wings, small and delicate. Their halo is faint, barely visible. Their aura is the weakest. They have light gray colored wings." },
       { label: "Skills", value: "Warmth of the Realm, Faint Ward, Angelic Aura (Lumen), Dawnveil (Lumen) — each skill has its own entry in the Angel Skills / Demon Skills categories." },
@@ -406,8 +406,8 @@ module.exports = [
   e(
     "Demons",
     "Demons (Overview)",
-    "Four ranks, horns and wings tell the rank",
-    "There are four ranks of demons: Mordrach, Bloodward, Scourge, and Gnash. They have horns on their forehead and feathery black wings. The number of horns and wings both indicate their rank — the higher the rank, the more horns and wings they have. They always have a demonic aura around them. Note: a rank can be passed down to an offspring, though not all the time, so they would have to work their way up the ranks.",
+    "Four ranks — power, not profession",
+    "There are four ranks of demons: Mordrach, Bloodward, Scourge, and Gnash. They have horns on their forehead and feathery black wings. The number of horns and wings both indicate their rank — the higher the rank, the more horns and wings they have. They always have a demonic aura around them. A rank measures how much power a demon holds, not what they do for a living. Only some demons join the army; most are ordinary civilians — laborers, traders, craftsmen, and workers — who simply happen to hold their rank. Demons of any rank can leave the Demon Realm and live in the Human Realm as normal citizens, hiding their true nature behind Duskveil. Note: a rank can be passed down to an offspring, though not all the time, so they would have to work their way up the ranks.",
     [
       { label: "Note", value: "Both demons and angels can retract or hide their wings if they want." },
       { label: "Duskveil", value: "Innate to all demons. Lets them blend into any society, hiding their true form and aura. The higher the rank, the more effective the disguise and the less power it costs; the lower the rank, the weaker the disguise and the more it cuts into their true strength." },
@@ -418,7 +418,7 @@ module.exports = [
     "Demons",
     "Mordrach",
     "Rank 1 — Rulers of the Demon Realm",
-    "They are the rulers of the Demon Realm and the highest rank of authority there. They can’t be killed by regular weapons or holy imbued weapons. They can only be harmed and killed by a Divine weapon.",
+    "The highest rank of demon — a tier of power so vast that the Mordrach rules the Demon Realm. They can’t be killed by regular weapons or holy imbued weapons. They can only be harmed and killed by a Divine weapon.",
     [
       { label: "Appearance", value: "8 horns and 8 wings, the horns curling back and fused together at the base like a crown. Their wings are massive, tattered at the edges but still powerful, the black feathers seeming to absorb light rather than reflect it. They have the strongest aura amongst all the demons. Deep-purple colored wings." },
       { label: "Skills", value: "Death Scythe, Chain Reaper Scythe, Call of the Dead, Dominating Will, Soul Oath, Veyn Decomposition (Mordrach), Hands of Death, Purgatory Flames, Charm, Soul-Sight, Berserk (Mordrach), Demonic Aura (Mordrach), Duskveil (Mordrach) — each skill has its own entry in the Angel Skills / Demon Skills categories." },
@@ -430,8 +430,8 @@ module.exports = [
   e(
     "Demons",
     "Bloodward",
-    "Rank 2 — Commanders of the Demon Army",
-    "They are the commanders of the Demon army in the Demon Realm. Their regenerative ability is less than the Mordrach, and their regenerative ability runs on Veyn.",
+    "Rank 2 — The realm’s elite",
+    "A high-ranking demon of the second tier. Many Bloodwards command the Demon army, but not every Bloodward is a soldier — some are powerful civilians who hold the rank through strength alone. Their regenerative ability is less than the Mordrach, and their regenerative ability runs on Veyn.",
     [
       { label: "Appearance", value: "6 horns and 6 wings, the horns sharp and jagged, some cracked from old battles. Their wings are broad and scarred, mirroring how the Aetherblade Lord Angel’s wings carry battle-scars that never fully heal. They carry themselves like commanders, always poised for a fight. Their aura is strong but not too strong like the Mordrach. Dark, purple colored wings." },
       { label: "Skills", value: "Blood Chains, Warcry of Dominion, Crimson Ward, Blood Pact, Veyn Decomposition (Bloodward), Demonic Aura (Bloodward), Berserk (Bloodward), Duskveil (Bloodward) — each skill has its own entry in the Angel Skills / Demon Skills categories." },
@@ -442,8 +442,8 @@ module.exports = [
   e(
     "Demons",
     "Scourge",
-    "Rank 3 — Demon Soldiers",
-    "They are demon soldiers that are under the Bloodward. They have a lesser regeneration that runs on Vitality.",
+    "Rank 3 — The mid ranks",
+    "A mid-ranking demon. The soldiers of the Demon army are drawn from the Scourge, but most Scourges are civilians — laborers, traders, and ordinary demons who simply hold this rank. They have a lesser regeneration that runs on Vitality.",
     [
       { label: "Appearance", value: "4 horns and 4 wings, shorter and less refined than the ranks above. Their wings are smaller, feathers rougher and less full. Their aura is just normal. Wine purple colored wings." },
       { label: "Skills", value: "Vitality Surge, Rend Claws, Pack Tactics, Veyn Decomposition (Scourge), Berserk (Scourge), Demonic Aura (Scourge), Duskveil (Scourge) — each skill has its own entry in the Angel Skills / Demon Skills categories." },
@@ -454,8 +454,8 @@ module.exports = [
   e(
     "Demons",
     "Gnash",
-    "Rank 4 — Regular Demons",
-    "They are regular demons. At the age of 15 they are taken to The Sundering Altar for their awakening. They can make contracts with anyone, and once the contract is signed, they are bound by it and can’t break free from it until it has been fulfilled. Making a contract with a Gnash is very risky since most of the time they are not friendly, and they want to increase their rank for more power.",
+    "Rank 4 — The common demons",
+    "The lowest and most common rank of demon. At the age of 15 they are taken to The Sundering Altar for their awakening. They can make contracts with anyone, and once the contract is signed, they are bound by it and can’t break free from it until it has been fulfilled. Making a contract with a Gnash is very risky since most of the time they are not friendly, and they want to increase their rank for more power. Most Gnash live ordinary lives as civilians, and many leave the Demon Realm to live in the Human Realm behind Duskveil.",
     [
       { label: "Appearance", value: "2 horns and 2 wings, small and stubby, barely more than bumps. Their wings are the smallest of all demon ranks, thin and often kept retracted. They look the most human out of all the ranks, which fits since they’re the ones taken to the Sundering Altar and still closest to an ordinary life before their power grows. Their aura is the weakest and gives an ominous feeling. Mauve, purple colored wings." },
       { label: "Skills", value: "Binding Contract, Veyn Decomposition (Gnash), Instinctive Bargaining, Demonic Aura (Gnash), Duskveil (Gnash) — each skill has its own entry in the Angel Skills / Demon Skills categories." },
@@ -5302,5 +5302,15 @@ module.exports = [
       { label: "Class", value: "Alchemist" },
     ],
     ["character", "alchemist", "elyndor academy", "jaiden"],
+  ),
+
+  // ============================================================ RULES & NOTES
+  e(
+    "Rules & Notes",
+    "Rank and Role",
+    "Power and profession are separate",
+    "A rank is a measure of power, not a profession. Every angel and demon has a rank — the amount of Veyn their body holds, shown by their wings and horns — but only some choose the army. Most angels and demons are civilians: merchants, craftsmen, scholars, laborers, and tradespeople who happen to hold a high or low rank. A powerful Aetherblade Lord Angel might command the army, or might simply be a master artisan who has never held a sword; a weak Gnash might be a soldier, or might run a shop in a quiet town. Rank decides how strong you are. Role decides what you do. And because rank is power rather than duty, angels and demons of any rank are free to leave their realm and live in the Human Realm as ordinary citizens, hiding their true nature behind Dawnveil or Duskveil.",
+    [],
+    ["rank", "role", "civilian", "army", "angel", "demon"],
   ),
 ];
