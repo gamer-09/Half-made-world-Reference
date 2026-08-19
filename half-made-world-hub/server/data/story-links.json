@@ -4359,10 +4359,10 @@
   {
     "id": "0491bec5-9868-41e3-b94a-e4d9f840e563",
     "source": "Ruby Divina",
-    "target": "Berserk",
+    "target": "Berserker",
     "type": "class of",
     "label": "Class of",
-    "description": "she was given the class of a berserker",
+    "description": "She was given the class of Berserker.",
     "color": "",
     "createdAt": "2026-08-18T12:57:51.750Z",
     "updatedAt": "2026-08-18T12:57:51.750Z"
@@ -6738,5 +6738,185 @@
     "description": "The principle that rank is power, not profession.",
     "createdAt": "2026-08-19T01:39:00.548Z",
     "updatedAt": "2026-08-19T01:39:00.548Z"
+  },
+  {
+    "id": "8f58eb30-0819-4403-8f46-1122efb95c96",
+    "source": "Ordium",
+    "target": "Mage",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Ordium holds the Mage class.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "3b6f372f-c777-4b67-8c78-95feddc65a3b",
+    "source": "Cyrion",
+    "target": "Archer",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Cyrion holds the Archer class.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "b3f6c092-27d3-44d6-828b-64314c6fe5aa",
+    "source": "Serathiel",
+    "target": "Bladesinger",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Serathiel holds the Bladesinger class through the Ren Organ — fighting without Veyn.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "4ef2dad2-0ea9-447f-8a7c-0543ae1d74df",
+    "source": "Liora Veyne",
+    "target": "Mage",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Liora Veyne holds the Mage class.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "1ae6b61e-8c44-499a-8032-679d00e584fe",
+    "source": "Thalor Elwin",
+    "target": "Paladin",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Thalor Elwin holds the Paladin class through the Ren Organ — fighting without Veyn.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "8afb5c49-1a45-4eef-9af2-e2f380c7a13e",
+    "source": "Aranweis",
+    "target": "Sentinel",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Aranweis holds the Sentinel class through the Ren Organ — fighting without Veyn.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "a146c0b7-a07c-4df1-8f25-643f1a0a7b13",
+    "source": "Clint Ashborn",
+    "target": "Mage",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Clint Ashborn holds the Mage class.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "c5433b9b-b3cb-4dec-a075-b7d3600239c8",
+    "source": "Sofia Marlock",
+    "target": "Exorcist",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Sofia Marlock holds the Exorcist class.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "85b3f5a6-9deb-41e1-9f84-b5f17ebddb66",
+    "source": "Wener Leger",
+    "target": "Bladesinger",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Wener Leger holds the Bladesinger class through the Ren Organ — fighting without Veyn.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "f08a686c-b3f7-4da6-8d73-8713d07613bb",
+    "source": "Lisa",
+    "target": "Berserker",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Lisa holds the Berserker class through the Ren Organ — fighting without Veyn.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "611c7a73-740f-4e0a-a83d-3e1ad401861f",
+    "source": "Licent Varak",
+    "target": "Ren Archer",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Licent Varak holds the Ren Archer class through the Ren Organ — fighting without Veyn.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "4dcec240-58c3-4681-b37b-02a34ecc5acc",
+    "source": "Tera Morage",
+    "target": "Mage",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Tera Morage holds the Mage class.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "1664e69f-a534-42e9-893c-a8f69dcc40be",
+    "source": "Laren Vornath",
+    "target": "Veilrunner",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Laren Vornath holds the Veilrunner class through the Ren Organ — fighting without Veyn.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "bfffd736-b40d-486f-bb71-9900dc4ddfa5",
+    "source": "Sythra Kaelis",
+    "target": "Grimtender",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Sythra Kaelis holds the Grimtender class.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "6e9482c0-37c7-41f9-8320-d9dd23f1b92d",
+    "source": "Nyra Thessan",
+    "target": "Mage",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Nyra Thessan holds the Mage class.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "f2cbd0e1-b651-4d45-84d0-4ba2ccaf5be8",
+    "source": "Isella Marrek",
+    "target": "Broker",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Isella Marrek holds the Broker class through the Ren Organ — fighting without Veyn.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "fcd38d61-874f-4766-9d54-6ad9309685c2",
+    "source": "Carin",
+    "target": "Beastmaster",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Carin holds the Beastmaster class through the Ren Organ — fighting without Veyn.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
+  },
+  {
+    "id": "caf9cf7b-de8f-4b5b-b182-cdc93fbc99e7",
+    "source": "Kael von Ashen",
+    "target": "Shudonkeeper",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Kael von Ashen holds the Shudonkeeper class.",
+    "createdAt": "2026-08-19T03:32:16.230Z",
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   }
 ]

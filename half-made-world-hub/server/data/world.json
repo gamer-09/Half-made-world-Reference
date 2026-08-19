@@ -3212,6 +3212,14 @@
       {
         "label": "Race",
         "value": "Imp"
+      },
+      {
+        "label": "Class",
+        "value": "Berserker"
+      },
+      {
+        "label": "Ren Organ",
+        "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
       }
     ],
     "tags": [
@@ -3223,7 +3231,7 @@
       "general"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-121",
@@ -3259,6 +3267,10 @@
       {
         "label": "Race",
         "value": "Malakhim"
+      },
+      {
+        "label": "Class",
+        "value": "Mage"
       }
     ],
     "tags": [
@@ -3271,7 +3283,7 @@
       "general"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-122",
@@ -3291,6 +3303,10 @@
       {
         "label": "Race",
         "value": "Dregs"
+      },
+      {
+        "label": "Class",
+        "value": "Exorcist"
       }
     ],
     "tags": [
@@ -3301,7 +3317,7 @@
       "fallen angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-123",
@@ -3325,6 +3341,14 @@
       {
         "label": "Race",
         "value": "Dregs"
+      },
+      {
+        "label": "Class",
+        "value": "Ren Archer"
+      },
+      {
+        "label": "Ren Organ",
+        "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
       }
     ],
     "tags": [
@@ -3337,7 +3361,7 @@
       "bloodward"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-124",
@@ -3368,6 +3392,10 @@
       {
         "label": "Race",
         "value": "Fiends"
+      },
+      {
+        "label": "Class",
+        "value": "Mage"
       }
     ],
     "tags": [
@@ -3377,7 +3405,7 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-126",
@@ -3393,6 +3421,10 @@
       {
         "label": "Race",
         "value": "Cherubim"
+      },
+      {
+        "label": "Class",
+        "value": "Mage"
       }
     ],
     "tags": [
@@ -3402,7 +3434,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-127",
@@ -4637,6 +4669,10 @@
       {
         "label": "Academy",
         "value": "Elyndor Academy"
+      },
+      {
+        "label": "Class",
+        "value": "Shudonkeeper"
       }
     ],
     "tags": [
@@ -4647,7 +4683,7 @@
       "human realm"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-208",
@@ -4703,6 +4739,14 @@
       {
         "label": "Race",
         "value": "Imp"
+      },
+      {
+        "label": "Class",
+        "value": "Beastmaster"
+      },
+      {
+        "label": "Ren Organ",
+        "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
       }
     ],
     "tags": [
@@ -4712,7 +4756,7 @@
       "character"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-211",
@@ -4811,6 +4855,14 @@
       {
         "label": "Rank",
         "value": "formally Aetherblade Lord Angel"
+      },
+      {
+        "label": "Class",
+        "value": "Bladesinger"
+      },
+      {
+        "label": "Ren Organ",
+        "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
       }
     ],
     "tags": [
@@ -4820,7 +4872,7 @@
       "wener"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-217",
@@ -4937,6 +4989,14 @@
       {
         "label": "Race",
         "value": "Imp"
+      },
+      {
+        "label": "Class",
+        "value": "Veilrunner"
+      },
+      {
+        "label": "Ren Organ",
+        "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
       }
     ],
     "tags": [
@@ -4948,7 +5008,7 @@
       "laren vornath"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-222",
@@ -4972,6 +5032,10 @@
       {
         "label": "Race",
         "value": "Dregs"
+      },
+      {
+        "label": "Class",
+        "value": "Grimtender"
       }
     ],
     "tags": [
@@ -4983,7 +5047,7 @@
       "sythra kaelis"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-223",
@@ -5007,6 +5071,10 @@
       {
         "label": "Race",
         "value": "Dregs"
+      },
+      {
+        "label": "Class",
+        "value": "Mage"
       }
     ],
     "tags": [
@@ -5018,7 +5086,7 @@
       "nyra thessan"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-224",
@@ -5042,6 +5110,14 @@
       {
         "label": "Race",
         "value": "Dregs"
+      },
+      {
+        "label": "Class",
+        "value": "Broker"
+      },
+      {
+        "label": "Ren Organ",
+        "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
       }
     ],
     "tags": [
@@ -5053,7 +5129,7 @@
       "isella marrek"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-225",
@@ -5081,6 +5157,10 @@
       {
         "label": "Race",
         "value": "Malakhim"
+      },
+      {
+        "label": "Class",
+        "value": "Archer"
       }
     ],
     "tags": [
@@ -5092,7 +5172,7 @@
       "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-226",
@@ -5120,6 +5200,14 @@
       {
         "label": "Race",
         "value": "Malakhim"
+      },
+      {
+        "label": "Class",
+        "value": "Bladesinger"
+      },
+      {
+        "label": "Ren Organ",
+        "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
       }
     ],
     "tags": [
@@ -5131,7 +5219,7 @@
       "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-227",
@@ -5159,6 +5247,10 @@
       {
         "label": "Race",
         "value": "Malakhim"
+      },
+      {
+        "label": "Class",
+        "value": "Mage"
       }
     ],
     "tags": [
@@ -5170,7 +5262,7 @@
       "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-228",
@@ -5198,6 +5290,14 @@
       {
         "label": "Race",
         "value": "Malakhim"
+      },
+      {
+        "label": "Class",
+        "value": "Paladin"
+      },
+      {
+        "label": "Ren Organ",
+        "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
       }
     ],
     "tags": [
@@ -5209,7 +5309,7 @@
       "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-229",
@@ -5237,6 +5337,14 @@
       {
         "label": "Race",
         "value": "Malakhim"
+      },
+      {
+        "label": "Class",
+        "value": "Sentinel"
+      },
+      {
+        "label": "Ren Organ",
+        "value": "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open."
       }
     ],
     "tags": [
@@ -5248,7 +5356,7 @@
       "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T03:32:16.230Z"
   },
   {
     "id": "seed-230",
