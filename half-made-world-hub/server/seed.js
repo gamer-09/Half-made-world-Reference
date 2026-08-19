@@ -490,9 +490,9 @@ module.exports = [
     "Humans",
     "Healers",
     "The seven healers of the Human Realm",
-    "There are only seven Healers in the Human Realm. Anyone can join the Clergy, but only seven at a time hold the actual title of Healer. When one of the seven dies, the Seer chooses the next Healer within two years — the Seer is the only person in the Human Realm who knows who the next Healer will be, locating them through the Truthstone.",
+    "There are only seven Healers in the Human Realm — and the seven Healers are the only seven holders of the Clergy class. When one of the seven dies, the Seer chooses the next Healer within two years, locating them through the Truthstone. To be a Healer is to hold the Clergy class; the two are one and the same.",
     [
-      { label: "Role", value: "Anyone can join the Clergy; only seven at a time hold the title of Healer in the Human Realm." },
+      { label: "Role", value: "The seven Healers are the only seven Clergy class-holders in the world." },
     ],
     ["healer", "seven"],
   ),
@@ -1014,7 +1014,7 @@ module.exports = [
     "Classes",
     "Clergy",
     "Magic/Veyn class",
-    "Trained in restoring injuries and health using Veyn. Anyone can join the Clergy — from among them, the Seer chooses the seven who hold the title of Healer in the Human Realm.",
+    "Trained in restoring injuries and health using Veyn. There are only seven Clergy class-holders in the world at any time — and those seven are the Healers of the Human Realm, chosen by the Seer through the Truthstone when one dies. To hold the Clergy class is to hold the title of Healer; there is no other way to become one.",
     [
       { label: "Type", value: "Magic/Veyn class" },
       { label: "Skills", value: "Soft Heal, Deep Heal, Recovery Rite, Protect Field, Lifebloom, Healing Ground, Calm Light, Life Restore, Special Cure, Healer's Hand — each skill has its own entry in the Class Skills category." },
