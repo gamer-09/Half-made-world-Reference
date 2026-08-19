@@ -4895,7 +4895,7 @@ module.exports = [
     "Class Progression",
     "Alchemist — Potion Mastery Ranks",
     "Alchemy progression system",
-    "Alchemists progress through ranks based on their brewing skill, ingredient knowledge, and ability to handle dangerous reactions. Each rank unlocks access to more complex recipes and rare ingredients. The ranks are: Stirrer → Mixer → Brewer → Compounder → Transmuter → Elixir Lord → Grand Alchemist. At Stirrer level, an Alchemist can make basic healing tonics. By Grand Alchemist, they can brew legendary potions like the Ethereal Potion and handle pixie dust without neutralizing it.",
+    "Alchemists progress through ranks based on their brewing skill, ingredient knowledge, and ability to handle dangerous reactions. Each rank unlocks access to more complex recipes and rare ingredients. The ranks are: Distiller → Admixtor → Brewer → Compounder → Transmuter → Elixir Lord → Grand Alchemist. At Distiller, an Alchemist can make basic healing tonics. By Grand Alchemist, they can brew legendary potions like the Ethereal Potion and handle pixie dust without neutralizing it.",
     [
       { label: "Ranks", value: "Distiller → Admixtor → Brewer → Compounder → Transmuter → Elixir Lord → Grand Alchemist" },
       { label: "Distiller", value: "Basic tonics, simple healing drinks, identifies common ingredients" },
@@ -4912,7 +4912,7 @@ module.exports = [
     "Class Progression",
     "Beastmaster — Bond Depth Stages",
     "Beastmaster progression system",
-    "Beastmasters progress not by raw power but by the depth and quality of their bond with creatures. Each stage represents a deeper telepathic and spiritual connection. The stages are: Whisperer → Bonded → Twin-Soul → Pack Leader → Wild Sovereign → Apex Predator → Alpha Eternal. At Whisperer, a Beastmaster can sense a creature's emotions. At Alpha Eternal, they can bond with multiple apex creatures simultaneously and share their senses as if they were their own body.",
+    "Beastmasters progress not by raw power but by the depth and quality of their bond with creatures. Each stage represents a deeper telepathic and spiritual connection. The stages are: Whisperer → Bonded → Twin-Soul → Pack Leader → Wild Sovereign → Beastlord → Alpha Eternal. At Whisperer, a Beastmaster can sense a creature's emotions. At Alpha Eternal, they can bond with multiple apex creatures simultaneously and share their senses as if they were their own body.",
     [
       { label: "Stages", value: "Whisperer → Bonded → Twin-Soul → Pack Leader → Wild Sovereign → Beastlord → Alpha Eternal" },
       { label: "Whisperer", value: "Can sense creature emotions, forms basic telepathic link with willing animals" },
@@ -4929,7 +4929,7 @@ module.exports = [
     "Class Progression",
     "Smithing — Forge Mastery Tiers",
     "Smithing progression system",
-    "Smiths advance through tiers based on their ability to work increasingly rare and dangerous materials, and the complexity of enchantments they can forge. The tiers are: Apprentice Smith → Journeyman Smith → Forgemaster → Bloodforger → Runesmith → Mythic Forger → Grand Forger. At Apprentice, they shape basic steel. At Grand Forger, they can work Divine materials, create legendary weapons, and handle mixed angel-demon blood without dying.",
+    "Smiths advance through tiers based on their ability to work increasingly rare and dangerous materials, and the complexity of enchantments they can forge. The tiers are: Apprentice Smith → Metalwright → Forgemaster → Bloodforger → Runesmith → Mythic Forger → Grand Forger. At Apprentice Smith, they shape basic steel. At Grand Forger, they can work Divine materials, create legendary weapons, and handle mixed angel-demon blood without dying.",
     [
       { label: "Tiers", value: "Apprentice Smith → Metalwright → Forgemaster → Bloodforger → Runesmith → Mythic Forger → Grand Forger" },
       { label: "Apprentice Smith", value: "Shapes basic steel, creates functional weapons and armor with basic Veyn reinforcement" },
@@ -4946,7 +4946,7 @@ module.exports = [
     "Class Progression",
     "Enchanter — Rune Mastery Grades",
     "Enchanter progression system",
-    "Enchanters advance through grades based on their understanding of magical resonance and their ability to layer, fuse, and create enchantments. The grades are: Rune Reader → Rune Writer → Rune Shaper → Rune Weaver → Rune Lord → Rune Sage → Rune Transcendent. At Rune Reader, they can identify existing enchantments. At Rune Transcendent, they can create adaptive enchantments that evolve over time and develop entirely new forms of magic.",
+    "Enchanters advance through grades based on their understanding of magical resonance and their ability to layer, fuse, and create enchantments. The grades are: Rune Reader → Ensorceler → Glyphwright → Wardweaver → Rune Lord → Rune Sage → Rune Transcendent. At Rune Reader, they can identify existing enchantments. At Rune Transcendent, they can create adaptive enchantments that evolve over time and develop entirely new forms of magic.",
     [
       { label: "Grades", value: "Rune Reader → Ensorceler → Glyphwright → Wardweaver → Rune Lord → Rune Sage → Rune Transcendent" },
       { label: "Rune Reader", value: "Identifies enchantments on items, reads their function and strength" },
@@ -4963,7 +4963,7 @@ module.exports = [
     "Class Progression",
     "Diviner — Sight Depth Levels",
     "Diviner progression system",
-    "Diviners advance through levels of Sight Depth — how deeply they can perceive the threads of fate, truth, and Veyn. The levels are: Glimpse → Peeker → Watcher → Seer → Oracle → Prophet → Cosmic Sight. At Glimpse, they detect obvious lies. At Cosmic Sight, they perceive the emotional and magical bonds connecting all living things and can temporarily combine all divination effects at once.",
+    "Diviners advance through levels of Sight Depth — how deeply they can perceive the threads of fate, truth, and Veyn. The levels are: Insight → Reader → Watcher → Seer → Oracle → Prophet → Fatesight. At Insight, they detect obvious lies. At Fatesight, they perceive the emotional and magical bonds connecting all living things and can temporarily combine all divination effects at once.",
     [
       { label: "Levels", value: "Insight → Reader → Watcher → Seer → Oracle → Prophet → Fatesight" },
       { label: "Insight", value: "Detects obvious lies, basic True-Sight, senses strong Veyn presence" },
@@ -4980,7 +4980,7 @@ module.exports = [
     "Class Progression",
     "Exorcist — Purification Stages",
     "Exorcist progression system",
-    "Exorcists advance through stages of purification mastery — how cleanly and powerfully they can cleanse corruption, bind fallen beings, and seal dangerous entities. The stages are: Cleaner → Warder → Binder → Purifier → Exorcist → Grand Exorcist → Eternal Seal-Bearer. At Cleaner, they remove surface miasma. At Eternal Seal-Bearer, they can place permanent suppressions on extreme corruption and banish powerful spirits.",
+    "Exorcists advance through stages of purification mastery — how cleanly and powerfully they can cleanse corruption, bind fallen beings, and seal dangerous entities. The stages are: Cleaner → Warder → Binder → Purifier → Consecrator → Grand Exorcist → Eternal Seal-Bearer. At Cleaner, they remove surface miasma. At Eternal Seal-Bearer, they can place permanent suppressions on extreme corruption and banish powerful spirits.",
     [
       { label: "Stages", value: "Cleaner → Warder → Binder → Purifier → Consecrator → Grand Exorcist → Eternal Seal-Bearer" },
       { label: "Cleaner", value: "Removes surface miasma and minor corruption from people and objects" },
@@ -5014,7 +5014,7 @@ module.exports = [
     "Class Progression",
     "Saintess — Radiance Ascension",
     "Saintess progression system",
-    "Saintesses advance through stages of Holy Energy mastery — how purely and powerfully they can channel divine light. The stages are: Flicker → Glow → Radiance → Brilliance → Blazing Light → Divine Radiance → Seraphic Aura. At Flicker, they emit a faint healing warmth. At Seraphic Aura, they become a beacon of golden light that can selectively heal or harm, purify without damaging, and create barriers that adapt to incoming threats.",
+    "Saintesses advance through stages of Holy Energy mastery — how purely and powerfully they can channel divine light. The stages are: Dawnlight → Glow → Radiance → Brilliance → Blazing Light → Divine Radiance → Seraphic Aura. At Dawnlight, they emit a faint healing warmth. At Seraphic Aura, they become a beacon of golden light that can selectively heal or harm, purify without damaging, and create barriers that adapt to incoming threats.",
     [
       { label: "Stages", value: "Dawnlight → Glow → Radiance → Brilliance → Blazing Light → Divine Radiance → Seraphic Aura" },
       { label: "Dawnlight", value: "Emits faint healing warmth, basic wound mending, weak corruption resistance" },
@@ -5031,7 +5031,7 @@ module.exports = [
     "Class Progression",
     "Clergy — Healing Mastery Ranks",
     "Clergy progression system",
-    "Clergy advance through ranks based on their healing skill, from basic wound care to life-saving mastery. The ranks are: Tender → Mender → Restorer → Healer → High Healer → Saint Healer → Life Weaver. At Tender, they can bandage wounds and apply basic Veyn. At Life Weaver, they can restore lost limbs, pull someone back from the edge of death, and develop entirely new healing techniques.",
+    "Clergy advance through ranks based on their healing skill, from basic wound care to life-saving mastery. The ranks are: Acolyte → Mercyward → Restorer → Healer → High Healer → Saint Healer → Life Weaver. At Acolyte, they can bandage wounds and apply basic Veyn. At Life Weaver, they can restore lost limbs, pull someone back from the edge of death, and develop entirely new healing techniques.",
     [
       { label: "Ranks", value: "Acolyte → Mercyward → Restorer → Healer → High Healer → Saint Healer → Life Weaver" },
       { label: "Acolyte", value: "Basic wound care, applies Veyn to minor cuts and bruises, first aid" },
@@ -5048,7 +5048,7 @@ module.exports = [
     "Class Progression",
     "Archer — Shot Mastery Tiers",
     "Archer progression system",
-    "Archers advance through tiers based on their ability to enchant arrows and shoot with precision. The tiers are: Marksman → Sharpshooter → Enchanter Archer → Spell Archer → Storm Archer → Void Archer → Cosmic Marksman. At Marksmaster, they fire basic Veyn-enchanted arrows. At Cosmic Marksman, they create entirely new forms of magical ammunition and fire with perfect accuracy at impossible ranges.",
+    "Archers advance through tiers based on their ability to enchant arrows and shoot with precision. The tiers are: Marksman → Sharpshooter → Enchanter Archer → Spell Archer → Storm Archer → Void Archer → Trueshot. At Marksman, they fire basic Veyn-enchanted arrows. At Trueshot, they create entirely new forms of magical ammunition and fire with perfect accuracy at impossible ranges.",
     [
       { label: "Tiers", value: "Marksman → Sharpshooter → Enchanter Archer → Spell Archer → Storm Archer → Void Archer → Trueshot" },
       { label: "Marksman", value: "Basic Veyn arrow enchantment, fires with good accuracy, simple elemental effects" },
@@ -5082,7 +5082,7 @@ module.exports = [
     "Class Progression",
     "Grimtender — Death Mastery Ranks",
     "Grimtender progression system",
-    "Grimtenders advance through ranks based on their command over death and undeath. The ranks are: Bone Worker → Grave Tender → Corpse Speaker → Death Adept → Necromancer → Grave Lord → Death Sovereign. At Bone Worker, they can reanimate simple remains. At Death Sovereign, they command permanent high-quality undead, maintain large-scale simultaneous control, and can harvest souls for later use.",
+    "Grimtenders advance through ranks based on their command over death and undeath. The ranks are: Bonewright → Gravekeeper → Bonewarden → Deathcaller → Necromancer → Grave Lord → Death Sovereign. At Bonewright, they can reanimate simple remains. At Death Sovereign, they command permanent high-quality undead, maintain large-scale simultaneous control, and can harvest souls for later use.",
     [
       { label: "Ranks", value: "Bonewright → Gravekeeper → Bonewarden → Deathcaller → Necromancer → Grave Lord → Death Sovereign" },
       { label: "Bonewright", value: "Reanimates simple remains, issues basic commands, uses remains as disposable shields" },
@@ -5116,7 +5116,7 @@ module.exports = [
     "Class Progression",
     "Berserker — Rage Ascension",
     "Berserker progression system",
-    "Berserkers advance through stages of rage mastery — how deeply they can tap into their Ren-fueled fury without losing themselves. The stages are: Angry → Furious → Enraged → Wrathful → Berserk → Warlord → Avatar of War. At Angry, they enter controlled rage for strength boosts. At Avatar of War, their roar distorts the air, shatters structures, and empowers allies while crushing enemy morale.",
+    "Berserkers advance through stages of rage mastery — how deeply they can tap into their Ren-fueled fury without losing themselves. The stages are: Rageborn → Bloodrager → Wrathbringer → Battlegraced → Berserk → Warlord → Avatar of War. At Rageborn, they enter controlled rage for strength boosts. At Avatar of War, their roar distorts the air, shatters structures, and empowers allies while crushing enemy morale.",
     [
       { label: "Stages", value: "Rageborn → Bloodrager → Wrathbringer → Battlegraced → Berserk → Warlord → Avatar of War" },
       { label: "Rageborn", value: "Controlled rage increases strength and pain tolerance, basic war howl" },
@@ -5133,7 +5133,7 @@ module.exports = [
     "Class Progression",
     "Sentinel — Guardian Oath Ranks",
     "Sentinel progression system",
-    "Sentinels advance through ranks based on their protective ability and endurance. The ranks are: Guard → Shield Bearer → Warden → Fortress → bulwark → Immortal Guardian → Eternal Sentinel. At Guard, they reinforce armor with Ren. At Eternal Sentinel, they become a wide-area defensive bastion, taking drastically reduced damage and protecting a large zone around them.",
+    "Sentinels advance through ranks based on their protective ability and endurance. The ranks are: Guard → Shield Bearer → Warden → Bulwark Knight → Citadel → Immortal Guardian → Eternal Sentinel. At Guard, they reinforce armor with Ren. At Eternal Sentinel, they become a wide-area defensive bastion, taking drastically reduced damage and protecting a large zone around them.",
     [
       { label: "Ranks", value: "Guard → Shield Bearer → Warden → Bulwark Knight → Citadel → Immortal Guardian → Eternal Sentinel" },
       { label: "Guard", value: "Reinforces armor with Ren, creates basic Ren walls, taunts enemies" },
@@ -5150,7 +5150,7 @@ module.exports = [
     "Class Progression",
     "Ren Archer — Bow Mastery Stages",
     "Ren Archer progression system",
-    "Ren Archers advance through stages of Ren-bow synchronization — how perfectly they can channel Ren through their arrows. The stages are: Novice Archer → Ren Touched → Crimson Archer → Storm Bow → Phantom Archer → Void Striker → Arrow Sovereign. At Novice Archer, they coat arrows in basic Ren. At Arrow Sovereign, they fire with perfect accuracy while moving, create hovering arrow constructs, and imbue multiple arrows with different Ren effects.",
+    "Ren Archers advance through stages of Ren-bow synchronization — how perfectly they can channel Ren through their arrows. The stages are: Novice Archer → Ren Touched → Crimson Archer → Storm Bow → Phantom Archer → Bloodshot → Arrow Sovereign. At Novice Archer, they coat arrows in basic Ren. At Arrow Sovereign, they fire with perfect accuracy while moving, create hovering arrow constructs, and imbue multiple arrows with different Ren effects.",
     [
       { label: "Stages", value: "Novice Archer → Ren Touched → Crimson Archer → Storm Bow → Phantom Archer → Bloodshot → Arrow Sovereign" },
       { label: "Novice Archer", value: "Basic Ren-coated arrows, increased force and penetration, rapid volley" },
@@ -5167,7 +5167,7 @@ module.exports = [
     "Class Progression",
     "Veilrunner — Shadow Mastery Tiers",
     "Veilrunner progression system",
-    "Veilrunners advance through tiers of shadow mastery — how completely they can disappear into darkness and strike without being detected. The tiers are: Lurker → Shadow Walker → Phantom → Ghost → Wraith → Shadow Lord → Living Shadow. At Lurker, they suppress sound and move quietly. At Living Shadow, they become one with the shadows, moving silently and invisibly at full speed, leaving no trace.",
+    "Veilrunners advance through tiers of shadow mastery — how completely they can disappear into darkness and strike without being detected. The tiers are: Nightwalker → Phantom → Ghost → Wraith → Shadow Lord → Living Shadow. At Nightwalker, they suppress sound and move quietly. At Living Shadow, they become one with the shadows, moving silently and invisibly at full speed, leaving no trace.",
     [
       { label: "Tiers", value: "Nightwalker → Phantom → Ghost → Wraith → Shadow Lord → Living Shadow" },
       { label: "Nightwalker", value: "Suppresses sound and moves through dim light nearly unseen, with enhanced reflexes, lock picking with Ren, and poison blade coating." },
@@ -5183,7 +5183,7 @@ module.exports = [
     "Class Progression",
     "Shudonkeeper — Knowledge Depths",
     "Shudonkeeper progression system",
-    "Shudonkeepers advance through depths of knowledge about the Shudon and the world core. The depths are: Student → Researcher → Lorekeeper → Archivist → Scholar → Sage → World Reader. At Student, they learn basic Shudon construction. At World Reader, they can sense residual world-core patterns inside Shudon remains and glimpse the true nature of the golems.",
+    "Shudonkeepers advance through depths of knowledge about the Shudon and the world core. The depths are: Student → Antiquarian → Lorekeeper → Archivist → Scholar → Sage → Core-Seer. At Student, they learn basic Shudon construction. At Core-Seer, they can sense residual world-core patterns inside Shudon remains and glimpse the true nature of the golems.",
     [
       { label: "Depths", value: "Student → Antiquarian → Lorekeeper → Archivist → Scholar → Sage → Core-Seer" },
       { label: "Student", value: "Learns basic Shudon construction, identifies age and origin of fragments" },
