@@ -70,4 +70,5 @@ module.exports = [
   r("Eva Aldermere Divina", "Ruby Divina", "child of", "Child of", "She is the daughter to Ruby Divina"),
   r("Bella Rose", "Jaiden Marlock", "friend of", "Friend of", "she is the childhood friend of jaiden"),
   r("Mark Wesley", "Jaiden Marlock", "friend of", "Friend of", "he later became friends with jaiden"),
+  r("Aldric Malgrave", "Kael von Ashen", "hunted", "Hunted", "He hunted the Aelthar to extinction — Kael von Ashen is the one survivor he never caught."),
 ];

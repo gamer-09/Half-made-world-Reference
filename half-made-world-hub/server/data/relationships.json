@@ -495,5 +495,15 @@
     "color": "",
     "createdAt": "2026-08-18T12:55:18.382Z",
     "updatedAt": "2026-08-18T12:55:18.382Z"
+  },
+  {
+    "id": "372fd627-3792-4bdc-ac75-4315880e48fb",
+    "source": "Aldric Malgrave",
+    "target": "Kael von Ashen",
+    "type": "hunted",
+    "label": "Hunted",
+    "description": "He hunted the Aelthar to extinction — Kael von Ashen is the one survivor he never caught.",
+    "createdAt": "2026-08-19T23:14:09.527Z",
+    "updatedAt": "2026-08-19T23:14:09.527Z"
   }
 ]

@@ -5833,4 +5833,19 @@ module.exports = [
     ],
     ["rune star", "grade", "circle", "mage", "comparison"],
   ),
+
+  // ============================================================ CHARACTERS
+  e(
+    "Characters",
+    "Aldric Malgrave",
+    "The Former King of the Human Realm",
+    "Aldric Malgrave was the ruler of the Human Realm before the Divina line, and the man whose fear ended a race. He looked on the Aelthar — the ancient realm-makers who could shape and tear reality itself — and saw not a people but a threat to his crown, and he hunted them to extinction. His persecution drove the survivors to tear open the Hidden Realm as a refuge, an act so violent it nearly unmade the world and forced the world core’s will to raise the barrier that split the realms apart. He caught every one of them but one — Kael von Ashen, the sole survivor who would become Headmaster of Elyndor Academy — and that single failure is the thread the whole story hangs from.",
+    [
+      { label: "Race", value: "Human" },
+      { label: "Title", value: "Former King of the Human Realm (predecessor to the Divina line)" },
+      { label: "Fate", value: "Deposed — no longer on the throne; the Divina line rules now." },
+      { label: "Crime", value: "Exterminated the Aelthar race; set in motion the near-destruction of the world." },
+    ],
+    ["character", "human", "king", "former ruler", "human realm", "aelthar", "genocide", "villain"],
+  ),
 ];

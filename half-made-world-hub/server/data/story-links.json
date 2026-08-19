@@ -10228,5 +10228,55 @@
     "description": "The vow-breaking led to Jaiden's birth and the secret of his parentage.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "64b423a1-085f-455b-b256-0ff41a67aaa9",
+    "source": "Aldric Malgrave",
+    "target": "Human Realm",
+    "type": "rules",
+    "label": "Rules",
+    "description": "The former ruler of the Human Realm, before the Divina line.",
+    "createdAt": "2026-08-19T23:14:09.527Z",
+    "updatedAt": "2026-08-19T23:14:09.527Z"
+  },
+  {
+    "id": "87dde54c-ed07-49af-b954-0e1a881370ca",
+    "source": "Aldric Malgrave",
+    "target": "Aelthar",
+    "type": "kills",
+    "label": "Can kill",
+    "description": "He exterminated the Aelthar, the realm-maker race.",
+    "createdAt": "2026-08-19T23:14:09.527Z",
+    "updatedAt": "2026-08-19T23:14:09.527Z"
+  },
+  {
+    "id": "f1e7df57-67f7-4476-9794-31f0ea4d3276",
+    "source": "Aldric Malgrave",
+    "target": "Hidden Realm (Shadow Realm)",
+    "type": "causes",
+    "label": "Causes",
+    "description": "His persecution forced the Aelthar to tear open the Hidden Realm to escape.",
+    "createdAt": "2026-08-19T23:14:09.527Z",
+    "updatedAt": "2026-08-19T23:14:09.527Z"
+  },
+  {
+    "id": "c0ac822b-1703-4b2e-bb75-ec7e0452b757",
+    "source": "Aldric Malgrave",
+    "target": "The World Barrier",
+    "type": "causes",
+    "label": "Causes",
+    "description": "The near-destruction his hunt set in motion forced the world core’s will to raise the barrier.",
+    "createdAt": "2026-08-19T23:14:09.527Z",
+    "updatedAt": "2026-08-19T23:14:09.527Z"
+  },
+  {
+    "id": "a993cc5c-d95e-459c-a3fe-4454e4e77ca5",
+    "source": "Aldric Malgrave",
+    "target": "Human Realm",
+    "type": "lives in",
+    "label": "Lives in",
+    "description": "A human king of the Human Realm (appears in the Block Map under it).",
+    "createdAt": "2026-08-19T23:14:09.527Z",
+    "updatedAt": "2026-08-19T23:14:09.527Z"
   }
 ]

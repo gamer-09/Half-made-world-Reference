@@ -1044,4 +1044,9 @@ module.exports = [
   s("An Angel Breaking the vow", "Thalor Elwin", "detected signs of", "Detected signs of", "Thalor saw the signs in Ordium long before he left — a vow pulled thin."),
   s("An Angel Breaking the vow", "Lisa", "connected through", "Connected through", "Ordium broke his vow because of his love for Lisa, a demon."),
   s("An Angel Breaking the vow", "Jaiden Marlock", "resulted in", "Resulted in", "The vow-breaking led to Jaiden's birth and the secret of his parentage."),
+  s("Aldric Malgrave", "Human Realm", "rules", "Rules", "The former ruler of the Human Realm, before the Divina line."),
+  s("Aldric Malgrave", "Aelthar", "kills", "Can kill", "He exterminated the Aelthar, the realm-maker race."),
+  s("Aldric Malgrave", "Hidden Realm (Shadow Realm)", "causes", "Causes", "His persecution forced the Aelthar to tear open the Hidden Realm to escape."),
+  s("Aldric Malgrave", "The World Barrier", "causes", "Causes", "The near-destruction his hunt set in motion forced the world core’s will to raise the barrier."),
+  s("Aldric Malgrave", "Human Realm", "lives in", "Lives in", "A human king of the Human Realm (appears in the Block Map under it)."),
 ];
