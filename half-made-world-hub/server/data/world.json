@@ -10365,14 +10365,14 @@
     "fields": [
       {
         "label": "Ranks",
-        "value": "Stirrer → Mixer → Brewer → Compounder → Transmuter → Elixir Lord → Grand Alchemist"
+        "value": "Distiller → Admixtor → Brewer → Compounder → Transmuter → Elixir Lord → Grand Alchemist"
       },
       {
-        "label": "Stirrer",
+        "label": "Distiller",
         "value": "Basic tonics, simple healing drinks, identifies common ingredients"
       },
       {
-        "label": "Mixer",
+        "label": "Admixtor",
         "value": "Compound potions, basic poisons, can handle minor Veyn-infused ingredients"
       },
       {
@@ -10403,7 +10403,7 @@
       "ranks"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T02:15:24.412Z"
   },
   {
     "id": "seed-516",
@@ -10561,7 +10561,7 @@
     "fields": [
       {
         "label": "Levels",
-        "value": "Glimpse → Peeker → Watcher → Seer → Oracle → Prophet → Cosmic Sight"
+        "value": "Glimpse → Peeker → Watcher → Seer → Oracle → Prophet → Fatesight"
       },
       {
         "label": "Glimpse",
@@ -10588,7 +10588,7 @@
         "value": "Reliable future sight, perceives bonds between people, performs complex rituals"
       },
       {
-        "label": "Cosmic Sight",
+        "label": "Fatesight",
         "value": "Combines all divination effects, perceives the interconnected web of all living things"
       }
     ],
@@ -10599,7 +10599,7 @@
       "levels"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T02:15:24.412Z"
   },
   {
     "id": "seed-520",
@@ -11100,7 +11100,7 @@
     "fields": [
       {
         "label": "Stages",
-        "value": "Novice Archer → Ren Touched → Crimson Archer → Storm Bow → Phantom Archer → Void Striker → Arrow Sovereign"
+        "value": "Novice Archer → Ren Touched → Crimson Archer → Storm Bow → Phantom Archer → Bloodshot → Arrow Sovereign"
       },
       {
         "label": "Novice Archer",
@@ -11123,7 +11123,7 @@
         "value": "Perfect accuracy at extreme range, arrows that adjust mid-flight"
       },
       {
-        "label": "Void Striker",
+        "label": "Bloodshot",
         "value": "Arrows that pierce through dimensions, reality-bending Ren effects"
       },
       {
@@ -11138,7 +11138,7 @@
       "stages"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T02:15:24.412Z"
   },
   {
     "id": "seed-531",
@@ -11198,14 +11198,14 @@
     "fields": [
       {
         "label": "Depths",
-        "value": "Student → Researcher → Lorekeeper → Archivist → Scholar → Sage → World Reader"
+        "value": "Student → Antiquarian → Lorekeeper → Archivist → Scholar → Sage → Core-Seer"
       },
       {
         "label": "Student",
         "value": "Learns basic Shudon construction, identifies age and origin of fragments"
       },
       {
-        "label": "Researcher",
+        "label": "Antiquarian",
         "value": "Repairs inactive Shudon, reads ancient inscriptions, studies golem lore"
       },
       {
@@ -11225,7 +11225,7 @@
         "value": "Communes with Shudon through physical contact, senses faint world-core traces"
       },
       {
-        "label": "World Reader",
+        "label": "Core-Seer",
         "value": "Glimpses residual world-core patterns, deepest understanding of Shudon purpose"
       }
     ],
@@ -11236,7 +11236,7 @@
       "depths"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T02:15:24.412Z"
   },
   {
     "id": "seed-533",
