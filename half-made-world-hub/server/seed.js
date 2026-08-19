@@ -5269,4 +5269,38 @@ module.exports = [
     ],
     ["character", "guildmaster", "broker", "b-rank", "silver concord"],
   ),
+  e(
+    "Characters",
+    "Eva Aldermere Divina",
+    "Daughter of Ruby Divina — Mage",
+    "The daughter of Ruby Divina, ruler of the Human Realm. She was given the class of Mage and attends Elyndor Academy alongside Jaiden Marlock.",
+    [
+      { label: "Class", value: "Mage" },
+      { label: "Race", value: "Human" },
+      { label: "Parent", value: "Ruby Divina" },
+    ],
+    ["character", "human realm", "mage", "elyndor academy", "ruby divina"],
+  ),
+  e(
+    "Characters",
+    "Bella Rose",
+    "Jaiden’s childhood friend — Archer",
+    "Jaiden Marlock’s childhood friend, and a Malakhim angel. She was given the class of Archer and attends Elyndor Academy. Jaiden gave her the bow Aerendrel, the Skybound Wrath.",
+    [
+      { label: "Class", value: "Archer" },
+      { label: "Race", value: "Malakhim" },
+      { label: "Artifact", value: "Aerendrel, the Skybound Wrath (given by Jaiden)" },
+    ],
+    ["character", "malakhim", "archer", "elyndor academy", "jaiden", "aerendrel"],
+  ),
+  e(
+    "Characters",
+    "Mark Wesley",
+    "Jaiden’s friend — Alchemist",
+    "A friend of Jaiden Marlock, who later became close to him. He was given the class of Alchemist and attends Elyndor Academy.",
+    [
+      { label: "Class", value: "Alchemist" },
+    ],
+    ["character", "alchemist", "elyndor academy", "jaiden"],
+  ),
 ];

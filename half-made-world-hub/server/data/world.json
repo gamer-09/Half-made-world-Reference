@@ -11435,5 +11435,87 @@
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "003ea248-3969-4834-895c-530759e75f77",
+    "category": "Characters",
+    "name": "Eva Aldermere Divina",
+    "subtitle": "Daughter of Ruby Divina — Mage",
+    "description": "The daughter of Ruby Divina, ruler of the Human Realm. She was given the class of Mage and attends Elyndor Academy alongside Jaiden Marlock.",
+    "fields": [
+      {
+        "label": "Class",
+        "value": "Mage"
+      },
+      {
+        "label": "Race",
+        "value": "Human"
+      },
+      {
+        "label": "Parent",
+        "value": "Ruby Divina"
+      }
+    ],
+    "tags": [
+      "character",
+      "human realm",
+      "mage",
+      "elyndor academy",
+      "ruby divina"
+    ],
+    "createdAt": "2026-08-19T01:28:26.234Z",
+    "updatedAt": "2026-08-19T01:28:26.234Z"
+  },
+  {
+    "id": "73ff5868-9641-4e80-941a-5e7a20784cd0",
+    "category": "Characters",
+    "name": "Bella Rose",
+    "subtitle": "Jaiden’s childhood friend — Archer",
+    "description": "Jaiden Marlock’s childhood friend, and a Malakhim angel. She was given the class of Archer and attends Elyndor Academy. Jaiden gave her the bow Aerendrel, the Skybound Wrath.",
+    "fields": [
+      {
+        "label": "Class",
+        "value": "Archer"
+      },
+      {
+        "label": "Race",
+        "value": "Malakhim"
+      },
+      {
+        "label": "Artifact",
+        "value": "Aerendrel, the Skybound Wrath (given by Jaiden)"
+      }
+    ],
+    "tags": [
+      "character",
+      "malakhim",
+      "archer",
+      "elyndor academy",
+      "jaiden",
+      "aerendrel"
+    ],
+    "createdAt": "2026-08-19T01:28:26.234Z",
+    "updatedAt": "2026-08-19T01:28:26.234Z"
+  },
+  {
+    "id": "091b77f3-5c86-4297-9806-72ff24c8ac99",
+    "category": "Characters",
+    "name": "Mark Wesley",
+    "subtitle": "Jaiden’s friend — Alchemist",
+    "description": "A friend of Jaiden Marlock, who later became close to him. He was given the class of Alchemist and attends Elyndor Academy.",
+    "fields": [
+      {
+        "label": "Class",
+        "value": "Alchemist"
+      }
+    ],
+    "tags": [
+      "character",
+      "alchemist",
+      "elyndor academy",
+      "jaiden"
+    ],
+    "createdAt": "2026-08-19T01:28:26.234Z",
+    "updatedAt": "2026-08-19T01:28:26.234Z"
   }
 ]
