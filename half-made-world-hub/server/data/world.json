@@ -10463,14 +10463,14 @@
     "fields": [
       {
         "label": "Tiers",
-        "value": "Apprentice Smith → Journeyman Smith → Forgemaster → Bloodforger → Runesmith → Mythic Forger → Grand Forger"
+        "value": "Apprentice Smith → Metalwright → Forgemaster → Bloodforger → Runesmith → Mythic Forger → Grand Forger"
       },
       {
         "label": "Apprentice Smith",
         "value": "Shapes basic steel, creates functional weapons and armor with basic Veyn reinforcement"
       },
       {
-        "label": "Journeyman Smith",
+        "label": "Metalwright",
         "value": "Veyn infusion during forging, creates minor magical properties, handles Ren channeling"
       },
       {
@@ -10501,7 +10501,7 @@
       "tiers"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T02:27:02.592Z"
   },
   {
     "id": "seed-518",
@@ -10512,22 +10512,22 @@
     "fields": [
       {
         "label": "Grades",
-        "value": "Rune Reader → Rune Writer → Rune Shaper → Rune Weaver → Rune Lord → Rune Sage → Rune Transcendent"
+        "value": "Rune Reader → Ensorceler → Glyphwright → Wardweaver → Rune Lord → Rune Sage → Rune Transcendent"
       },
       {
         "label": "Rune Reader",
         "value": "Identifies enchantments on items, reads their function and strength"
       },
       {
-        "label": "Rune Writer",
+        "label": "Ensorceler",
         "value": "Creates simple lasting enchantments on ordinary items"
       },
       {
-        "label": "Rune Shaper",
+        "label": "Glyphwright",
         "value": "Channels Veyn into finished items, creates stronger magical effects"
       },
       {
-        "label": "Rune Weaver",
+        "label": "Wardweaver",
         "value": "Fuses compatible enchantments, removes and enhances existing ones"
       },
       {
@@ -10550,7 +10550,7 @@
       "grades"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T02:27:02.592Z"
   },
   {
     "id": "seed-519",
@@ -10904,22 +10904,22 @@
     "fields": [
       {
         "label": "Ranks",
-        "value": "Bone Worker → Grave Tender → Corpse Speaker → Death Adept → Necromancer → Grave Lord → Death Sovereign"
+        "value": "Deathsinger → Gravekeeper → Bonewarden → Deathcaller → Necromancer → Grave Lord → Death Sovereign"
       },
       {
-        "label": "Bone Worker",
+        "label": "Deathsinger",
         "value": "Reanimates simple remains, issues basic commands, uses remains as disposable shields"
       },
       {
-        "label": "Grave Tender",
+        "label": "Gravekeeper",
         "value": "Controls multiple undead, drains Veyn from corpses, basic necrotic pulses"
       },
       {
-        "label": "Corpse Speaker",
+        "label": "Bonewarden",
         "value": "Binds spirits to remains for smarter undead, creates bone projectiles"
       },
       {
-        "label": "Death Adept",
+        "label": "Deathcaller",
         "value": "Reanimates large groups, creates undead legions, enhanced necrotic attacks"
       },
       {
@@ -10942,7 +10942,7 @@
       "ranks"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T02:27:02.592Z"
   },
   {
     "id": "seed-527",
