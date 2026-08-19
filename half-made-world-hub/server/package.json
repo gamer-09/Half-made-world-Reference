@@ -9,8 +9,6 @@
   },
   "dependencies": {
     "cors": "^2.8.5",
-    "docx": "^9.7.1",
-    "express": "^4.21.2",
-    "jszip": "^3.10.1"
+    "express": "^4.21.2"
   }
 }
