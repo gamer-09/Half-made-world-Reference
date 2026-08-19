@@ -127,7 +127,7 @@ module.exports = [
     "Locations",
     "The Sundering Altar",
     "Where every person’s Veyn awakens at age 15",
-    "There are two Sundering Altars in the world. The first is the Common Altar, located in a neutral temple between the three realms, where most ordinary people go for their awakening at age 15. The second is the Academy Altar, located within Elyndor Academy itself, reserved for students accepted into the Academy. Both altars were built by Kael von Ashen using Aelthar knowledge, but the Academy Altar is significantly more powerful — it provides a clearer reading of a person's class affinity and starting grade, and can handle a wider range of race types including angels and demons.\n\nThe altar works by channeling Veyn from the world core through a network of ancient runes carved into its surface. When a person steps onto the altar, their latent Veyn resonates with the Veyn in the altar, and the connection is unlocked. The altar then reads the person's Veyn signature and reveals: their class affinity (what they are best suited for), their starting grade (how much latent Veyn they possess), and any innate abilities they may carry. The process is painless but overwhelming — most people describe it as a flood of light and sensation that lasts only a few seconds but feels like hours. Because the altar is the only reliable way to awaken magic, and because it is under the Academy's care, all children of every race are brought to Elyndor Academy at age 15 to undergo their awakening. This is why the Academy holds such a central position across all three realms \u2014 it is the gatekeeper to magical ability for the entire world.",
+    "There are two Sundering Altars in the world. The first is the Common Altar, located in a neutral temple between the three realms, where most ordinary people go for their awakening at age 15. The second is the Academy Altar, located within Elyndor Academy itself, reserved for students accepted into the Academy. Both altars were built by Kael von Ashen using Aelthar knowledge, but the Academy Altar is significantly more powerful — it provides a clearer reading of a person's class affinity and starting grade, and can handle a wider range of race types including angels and demons.\n\nThe altar works by channeling Veyn from the world core through a network of ancient runes carved into its surface. When a person steps onto the altar, their latent Veyn resonates with the Veyn in the altar, and the connection is unlocked. The altar then reads the person's Veyn signature and reveals: their class affinity (what they are best suited for), their starting grade (how much latent Veyn they possess), and any innate abilities they may carry. The process is painless but overwhelming — most people describe it as a flood of light and sensation that lasts only a few seconds but feels like hours. Because the altar is the only reliable way to awaken magic, and because it is under the Academy's care, all children of every race are brought to Elyndor Academy at age 15 to undergo their awakening. This is why the Academy holds such a central position across all three realms — it is the gatekeeper to magical ability for the entire world.",
     [],
     ["altar", "awakening", "veyn", "affinity"],
   ),
@@ -655,7 +655,6 @@ module.exports = [
     ["portal", "hidden realm", "leap year", "veyn"],
   ),
 
-
   // ============================================================ GRADE SYSTEM
   e(
     "Grade System",
@@ -797,8 +796,7 @@ module.exports = [
     ["grade", "system", "mechanic", "advancement"],
   ),
 
-
-  // ============================================================ RUNE STAR CIRCLES (MAGE)
+  // ============================================================ RUNE STAR CIRCLES
   e(
     "Rune Star Circles",
     "1st Circle Rune Star",
@@ -1133,7 +1131,8 @@ module.exports = [
     ["class", "shudonkeeper", "shudon"],
   ),
 
-    e(
+  // ============================================================ RULES & NOTES
+  e(
     "Rules & Notes",
     "The Two Sundering Altars",
     "Common Altar and Academy Altar",
@@ -1147,7 +1146,6 @@ module.exports = [
     ],
     ["rules", "sundering altar", "academy", "awakening", "magic system"],
   ),
-
   e(
     "Rules & Notes",
     "The Rune Star System",
@@ -1166,7 +1164,7 @@ module.exports = [
     ["rules", "mage", "rune star", "magic system", "progression"],
   ),
 
-// ============================================================ ITEMS
+  // ============================================================ ITEMS
   e(
     "Items",
     "Restoration Potion",
@@ -3340,197 +3338,17 @@ module.exports = [
     ["world core", "shudon", "curse", "aelthar"],
   ),
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  // ============================================================ CLASS SKILLS
   e(
     "Class Skills",
     "Piercing Lance",
     "Mage skill",
     "Fires a concentrated spear of raw Veyn that explodes on impact. At its most basic, the lance is little more than a sharp bolt of silver-blue energy — fast, damaging, but easily blocked by even a basic Veyn barrier. The caster can release it quickly for lower damage or charge it longer for a stronger blast. Main mid-range attack for any practicing Mage. The lance leaves a faint trail of dissolved air in its wake, and the explosion on impact sends shards of residual Veyn scattering in a small radius.",
     [
-          { label: "Rune Star Circle", value: "1st Circle" },
-          { label: "Unlock Requirement", value: "Basic offensive spell — the first spell any Mage learns. A concentrated spear of raw Veyn that explodes on impact." },
-        ],
-    ["skill","class","mage","veyn","offensive"],
+      { label: "Rune Star Circle", value: "1st Circle" },
+      { label: "Unlock Requirement", value: "Basic offensive spell — the first spell any Mage learns. A concentrated spear of raw Veyn that explodes on impact." },
+    ],
+    ["skill", "class", "mage", "veyn", "offensive"],
   ),
   e(
     "Class Skills",
@@ -3538,10 +3356,10 @@ module.exports = [
     "Mage skill",
     "Creates a translucent wall of condensed Veyn that blocks physical and magical attacks. At its most basic, the wall is thin and brittle — it can stop a sword swing or a low-level spell, but sustained fire or a heavy blow will shatter it. Strength and duration depend entirely on how much Veyn the caster pours into it. The wall shimmers with a faint silver-blue light, and cracks appear along its surface as it absorbs damage. Once it breaks, the Veyn dissipates into nothing.",
     [
-          { label: "Rune Star Circle", value: "1st Circle" },
-          { label: "Unlock Requirement", value: "Basic defensive spell — creates a translucent wall of condensed Veyn that blocks physical and magical attacks." },
-        ],
-    ["skill","class","mage","veyn","defensive"],
+      { label: "Rune Star Circle", value: "1st Circle" },
+      { label: "Unlock Requirement", value: "Basic defensive spell — creates a translucent wall of condensed Veyn that blocks physical and magical attacks." },
+    ],
+    ["skill", "class", "mage", "veyn", "defensive"],
   ),
   e(
     "Class Skills",
@@ -3549,10 +3367,10 @@ module.exports = [
     "Mage skill",
     "Heightens the user's sensitivity to Veyn, allowing them to detect living beings, hidden magic, and changes in ambient density. At its most basic, the sense is vague and imprecise — the caster can tell something is nearby but not exactly where or what. It feels like a faint hum at the back of the skull, growing louder as the source draws nearer. The range is short, perhaps fifty meters, and the sense can be overwhelmed by strong Veyn sources.",
     [
-          { label: "Rune Star Circle", value: "1st Circle" },
-          { label: "Unlock Requirement", value: "Basic utility spell — heightens sensitivity to Veyn, allowing detection of living beings, hidden magic, and ambient density changes." },
-        ],
-    ["skill","class","mage","veyn","utility"],
+      { label: "Rune Star Circle", value: "1st Circle" },
+      { label: "Unlock Requirement", value: "Basic utility spell — heightens sensitivity to Veyn, allowing detection of living beings, hidden magic, and ambient density changes." },
+    ],
+    ["skill", "class", "mage", "veyn", "utility"],
   ),
   e(
     "Class Skills",
@@ -3560,10 +3378,10 @@ module.exports = [
     "Mage skill",
     "Converts raw Veyn into fire, ice, lightning, or wind and releases it as a focused attack. At its most basic, the conversion is crude — the element is unstable and loses potency quickly. Each element carries a secondary effect: fire burns, ice slows, lightning stuns, wind pushes. The caster must choose one element per casting and cannot switch mid-attack. The brand appears as a glowing sigil on the caster's palm before the element erupts outward.",
     [
-          { label: "Rune Star Circle", value: "2nd Circle" },
-          { label: "Unlock Requirement", value: "Converts raw Veyn into fire, ice, lightning, or wind and releases it as a focused attack. Each element carries a secondary effect." },
-        ],
-    ["skill","class","mage","veyn","offensive"],
+      { label: "Rune Star Circle", value: "2nd Circle" },
+      { label: "Unlock Requirement", value: "Converts raw Veyn into fire, ice, lightning, or wind and releases it as a focused attack. Each element carries a secondary effect." },
+    ],
+    ["skill", "class", "mage", "veyn", "offensive"],
   ),
   e(
     "Class Skills",
@@ -3571,10 +3389,10 @@ module.exports = [
     "Mage skill",
     "Draws ambient Veyn from the surroundings to restore the user's reserves. At its most basic, the draw is slow and inefficient — the caster must stand still and focus, making them vulnerable. Works faster in high-density Veyn areas. Cannot be used while casting other spells. The field manifests as a faint vortex of silver particles spiraling into the caster's body, and the surrounding area dims slightly as Veyn is drained.",
     [
-          { label: "Rune Star Circle", value: "3rd Circle" },
-          { label: "Unlock Requirement", value: "Draws ambient Veyn from the surroundings to restore the user's reserves. Works faster in high-density areas. Cannot be used while casting other spells." },
-        ],
-    ["skill","class","mage","veyn","utility"],
+      { label: "Rune Star Circle", value: "3rd Circle" },
+      { label: "Unlock Requirement", value: "Draws ambient Veyn from the surroundings to restore the user's reserves. Works faster in high-density areas. Cannot be used while casting other spells." },
+    ],
+    ["skill", "class", "mage", "veyn", "utility"],
   ),
   e(
     "Class Skills",
@@ -3582,10 +3400,10 @@ module.exports = [
     "Mage skill",
     "Forms a large protective dome of Veyn around the user and nearby allies. At its most basic, the dome is thin and temporary — it can absorb a few hits before failing. Blocks attacks from all directions as long as the user maintains the supply of Veyn. The dome appears as a translucent hemisphere of shimmering light, and the caster must remain stationary to maintain it. The larger the dome, the faster the Veyn drains.",
     [
-          { label: "Rune Star Circle", value: "3rd Circle" },
-          { label: "Unlock Requirement", value: "Forms a large protective dome of Veyn around the user and nearby allies. Blocks attacks from all directions as long as the user maintains the supply of Veyn." },
-        ],
-    ["skill","class","mage","veyn","defensive"],
+      { label: "Rune Star Circle", value: "3rd Circle" },
+      { label: "Unlock Requirement", value: "Forms a large protective dome of Veyn around the user and nearby allies. Blocks attacks from all directions as long as the user maintains the supply of Veyn." },
+    ],
+    ["skill", "class", "mage", "veyn", "defensive"],
   ),
   e(
     "Class Skills",
@@ -3593,10 +3411,10 @@ module.exports = [
     "Mage skill",
     "Releases a radial burst of raw Veyn that knocks enemies back and disrupts concentration. At its most basic, the burst is weak — it pushes enemies a few steps back and causes momentary disorientation. Used to create space in close combat. The shockwave radiates outward from the caster in a visible ripple of silver energy, and the ground beneath them cracks slightly from the force.",
     [
-          { label: "Rune Star Circle", value: "2nd Circle" },
-          { label: "Unlock Requirement", value: "Releases a radial burst of raw Veyn that knocks enemies back and disrupts concentration. Used to create space in close combat." },
-        ],
-    ["skill","class","mage","veyn","offensive"],
+      { label: "Rune Star Circle", value: "2nd Circle" },
+      { label: "Unlock Requirement", value: "Releases a radial burst of raw Veyn that knocks enemies back and disrupts concentration. Used to create space in close combat." },
+    ],
+    ["skill", "class", "mage", "veyn", "offensive"],
   ),
   e(
     "Class Skills",
@@ -3604,10 +3422,10 @@ module.exports = [
     "Mage skill",
     "Creates a visible Veyn thread linking the user to one or more allies. At its most basic, the thread is fragile — it can share small amounts of Veyn and basic spell support, but breaks if the distance becomes too great or if either party takes heavy damage. The thread glows faintly along its length, and both parties can feel a subtle tug when the other is in danger.",
     [
-          { label: "Rune Star Circle", value: "4th Circle" },
-          { label: "Unlock Requirement", value: "Creates a visible Veyn thread linking the user to one or more allies. Allows sharing of Veyn reserves and limited spell support. Breaks if the distance becomes too great." },
-        ],
-    ["skill","class","mage","veyn","support"],
+      { label: "Rune Star Circle", value: "4th Circle" },
+      { label: "Unlock Requirement", value: "Creates a visible Veyn thread linking the user to one or more allies. Allows sharing of Veyn reserves and limited spell support. Breaks if the distance becomes too great." },
+    ],
+    ["skill", "class", "mage", "veyn", "support"],
   ),
   e(
     "Class Skills",
@@ -3615,10 +3433,10 @@ module.exports = [
     "Mage skill",
     "Temporarily converts the user's Veyn between raw, elemental, and purified states. At its most basic, the conversion is unstable and brief — the caster can only maintain the shifted state for a few seconds before it reverts. Enables more flexible spell combinations but requires precise control. The Veyn visibly changes color during the shift: raw is silver-blue, elemental takes on the color of the element, purified glows white.",
     [
-          { label: "Rune Star Circle", value: "5th Circle" },
-          { label: "Unlock Requirement", value: "Temporarily converts the user's Veyn between raw, elemental, and purified states. Enables more flexible spell combinations but requires precise control." },
-        ],
-    ["skill","class","mage","veyn","utility"],
+      { label: "Rune Star Circle", value: "5th Circle" },
+      { label: "Unlock Requirement", value: "Temporarily converts the user's Veyn between raw, elemental, and purified states. Enables more flexible spell combinations but requires precise control." },
+    ],
+    ["skill", "class", "mage", "veyn", "utility"],
   ),
   e(
     "Class Skills",
@@ -3626,10 +3444,10 @@ module.exports = [
     "Mage skill",
     "Grants advanced control over Veyn. Allows casting multiple spells at once, shaping Veyn with high precision, and reducing the cost of all other Mage abilities. At its most basic, the control is limited — the caster can maintain two spells simultaneously and reduce costs by a small margin. The Veyn flows visibly through the caster's body in intricate patterns, and their eyes glow with a steady silver light.",
     [
-          { label: "Rune Star Circle", value: "6th Circle" },
-          { label: "Unlock Requirement", value: "Grants advanced control over Veyn. Allows casting multiple spells at once, shaping Veyn with high precision, and reducing the cost of all other Mage abilities." },
-        ],
-    ["skill","class","mage","veyn","mastery"],
+      { label: "Rune Star Circle", value: "6th Circle" },
+      { label: "Unlock Requirement", value: "Grants advanced control over Veyn. Allows casting multiple spells at once, shaping Veyn with high precision, and reducing the cost of all other Mage abilities." },
+    ],
+    ["skill", "class", "mage", "veyn", "mastery"],
   ),
   e(
     "Class Skills",
@@ -3637,7 +3455,7 @@ module.exports = [
     "Alchemist skill",
     "Combines Veyn and ingredients to create healing, restorative, or enhancement potions. At its most basic, the brews are simple — a basic healing potion that closes minor cuts, a restorative tonic that eases fatigue. Quality depends entirely on the materials and the alchemist's skill. The brewing process requires a mortar, heat source, and at least one Veyn-reactive ingredient. A failed batch results in a foul-smelling liquid that has no effect.",
     [],
-    ["skill","class","alchemist","potion"],
+    ["skill", "class", "alchemist", "potion"],
   ),
   e(
     "Class Skills",
@@ -3645,7 +3463,7 @@ module.exports = [
     "Alchemist skill",
     "Creates toxic concoctions that can paralyze, weaken, or cause lingering damage. At its most basic, the poisons are mild — they cause numbness in the affected area, brief dizziness, or minor irritation. Can be applied to weapons or delivered through food and drink. The brewer must wear protective gloves during mixing, as the toxins are as dangerous to the maker as the target if mishandled.",
     [],
-    ["skill","class","alchemist","poison"],
+    ["skill", "class", "alchemist", "poison"],
   ),
   e(
     "Class Skills",
@@ -3653,7 +3471,7 @@ module.exports = [
     "Alchemist skill",
     "Brews volatile mixtures that explode on impact or command. At its most basic, the blast is small — enough to startle and burn, but not lethal. Blast size and force can be adjusted by changing ingredients and Veyn input. The vials are fragile and must be stored carefully, as accidental breakage can injure the alchemist. Each vial glows faintly with the color of its explosive compound.",
     [],
-    ["skill","class","alchemist","explosive","offensive"],
+    ["skill", "class", "alchemist", "explosive", "offensive"],
   ),
   e(
     "Class Skills",
@@ -3661,7 +3479,7 @@ module.exports = [
     "Alchemist skill",
     "Instantly identifies the magical properties, purity, and potential uses of any ingredient through touch or a light Veyn probe. At its most basic, the identification is surface-level — the alchemist can tell if an ingredient is toxic, magical, or mundane, but cannot determine exact potency. The probe feels like a warm pulse extending from the fingertips into the material.",
     [],
-    ["skill","class","alchemist","knowledge"],
+    ["skill", "class", "alchemist", "knowledge"],
   ),
   e(
     "Class Skills",
@@ -3669,7 +3487,7 @@ module.exports = [
     "Alchemist skill",
     "Channels extra Veyn into a potion during brewing, greatly increasing its final strength. At its most basic, the overcharge adds a marginal boost — perhaps 10-15% stronger than a standard brew. Requires careful control to avoid ruining the brew, as too much Veyn destabilizes the mixture. The alchemist must maintain steady hand contact with the brewing vessel throughout the process.",
     [],
-    ["skill","class","alchemist","potion","veyn"],
+    ["skill", "class", "alchemist", "potion", "veyn"],
   ),
   e(
     "Class Skills",
@@ -3677,7 +3495,7 @@ module.exports = [
     "Alchemist skill",
     "Creates special substances that multiply or alter the effects of other potions when combined with them. At its most basic, the multiplier is a simple amplifier — it doubles the effect of a single potion. The substance appears as a fine, iridescent powder that must be added at the exact right moment in the brewing process.",
     [],
-    ["skill","class","alchemist","potion"],
+    ["skill", "class", "alchemist", "potion"],
   ),
   e(
     "Class Skills",
@@ -3685,7 +3503,7 @@ module.exports = [
     "Alchemist skill",
     "Removes toxins, corruption, and impurities from ingredients or finished potions. At its most basic, the cleanse can remove minor contamination — a slightly spoiled herb, a potion that has turned murky. Can also cleanse small amounts of contaminated Veyn. The process involves submerging the ingredient in a purification solution and channeling Veyn through it.",
     [],
-    ["skill","class","alchemist","purification"],
+    ["skill", "class", "alchemist", "purification"],
   ),
   e(
     "Class Skills",
@@ -3693,7 +3511,7 @@ module.exports = [
     "Alchemist skill",
     "Changes the physical state or basic composition of ingredients so they can be used in recipes they normally could not enter. At its most basic, the shift is minor — turning a solid powder into a liquid, or changing the color and texture of a herb. The shift is temporary and reverts after a few minutes unless stabilized.",
     [],
-    ["skill","class","alchemist","transmutation"],
+    ["skill", "class", "alchemist", "transmutation"],
   ),
   e(
     "Class Skills",
@@ -3701,7 +3519,7 @@ module.exports = [
     "Alchemist skill",
     "Allows rapid brewing of a functional potion during combat using whatever materials are on hand. At its most basic, the potion is rough — it works, but the effect is weaker and the taste is terrible. Results are rougher but still usable. The alchemist must identify suitable ingredients in seconds and mix them by hand, relying on instinct and experience.",
     [],
-    ["skill","class","alchemist","potion","combat"],
+    ["skill", "class", "alchemist", "potion", "combat"],
   ),
   e(
     "Class Skills",
@@ -3709,7 +3527,7 @@ module.exports = [
     "Alchemist skill",
     "Creates complex, multi-layered legendary potions with powerful and lasting effects. At its most basic, the draught requires rare ingredients and high control — the alchemist must maintain perfect Veyn channeling for hours while the potion brews. A single mistake wastes the entire batch. The finished product glows with an inner light and radiates a faint hum of power.",
     [],
-    ["skill","class","alchemist","potion","mastery"],
+    ["skill", "class", "alchemist", "potion", "mastery"],
   ),
   e(
     "Class Skills",
@@ -3717,7 +3535,7 @@ module.exports = [
     "Beastmaster skill",
     "Forms a deep telepathic bond with a willing creature. At its most basic, the bond is one-directional — the beastmaster can sense the creature's emotions but cannot project their own thoughts. Once accepted, both can sense each other's emotions and general intentions. Cannot be forced. The bond manifests as a warm glow in the chest when the creature is nearby.",
     [],
-    ["skill","class","beastmaster","bond"],
+    ["skill", "class", "beastmaster", "bond"],
   ),
   e(
     "Class Skills",
@@ -3725,7 +3543,7 @@ module.exports = [
     "Beastmaster skill",
     "Deepens the bond so the user and creature can exchange more complex thoughts and feelings beyond basic intent. At its most basic, the exchange is limited to images and emotions — the beastmaster can share a picture of what they want the creature to do, but not detailed verbal commands. The link feels like a second set of senses overlaid on their own.",
     [],
-    ["skill","class","beastmaster","bond","utility"],
+    ["skill", "class", "beastmaster", "bond", "utility"],
   ),
   e(
     "Class Skills",
@@ -3733,7 +3551,7 @@ module.exports = [
     "Beastmaster skill",
     "Issues clear, instantaneous combat orders to the bonded creature through the bond. At its most basic, the orders are simple — attack, defend, retreat. The creature responds as if the order were instinct. The bond carries emotional weight, so the creature feels the urgency behind each command.",
     [],
-    ["skill","class","beastmaster","bond","combat"],
+    ["skill", "class", "beastmaster", "bond", "combat"],
   ),
   e(
     "Class Skills",
@@ -3741,7 +3559,7 @@ module.exports = [
     "Beastmaster skill",
     "Allows the user to see, hear, and feel through the bonded creature's senses for a limited time. At its most basic, the shared senses last only a few seconds and cause disorientation when switching back. Range depends on bond strength. The beastmaster's eyes briefly take on the color of the creature's eyes during the transfer.",
     [],
-    ["skill","class","beastmaster","bond","utility"],
+    ["skill", "class", "beastmaster", "bond", "utility"],
   ),
   e(
     "Class Skills",
@@ -3749,7 +3567,7 @@ module.exports = [
     "Beastmaster skill",
     "Channels Ren into the bonded creature, temporarily increasing its speed, strength, and durability. At its most basic, the boost is moderate — the creature moves about 30% faster and hits harder for a short duration. Cost is shared between user and creature. The beast's fur or scales glow faintly with crimson energy during the rush.",
     [],
-    ["skill","class","beastmaster","ren","combat"],
+    ["skill", "class", "beastmaster", "ren", "combat"],
   ),
   e(
     "Class Skills",
@@ -3757,7 +3575,7 @@ module.exports = [
     "Beastmaster skill",
     "Commands the creature to intercept an attack aimed at the user, using its body as a barrier. At its most basic, the creature responds quickly but takes full damage from the attack. The bond ensures the creature acts without hesitation, even against threats far stronger than itself.",
     [],
-    ["skill","class","beastmaster","bond","defensive"],
+    ["skill", "class", "beastmaster", "bond", "defensive"],
   ),
   e(
     "Class Skills",
@@ -3765,7 +3583,7 @@ module.exports = [
     "Beastmaster skill",
     "Times the user's attack and the creature's attack to land on the same target at the same moment. At its most basic, the coordination requires visual contact and a brief telepathic countdown. The simultaneous strike deals more damage than either attack alone, as the target cannot defend against both directions at once.",
     [],
-    ["skill","class","beastmaster","bond","offensive"],
+    ["skill", "class", "beastmaster", "bond", "offensive"],
   ),
   e(
     "Class Skills",
@@ -3773,7 +3591,7 @@ module.exports = [
     "Beastmaster skill",
     "Allows Ren and vitality to flow through the bond, healing either the user or the creature. At its most basic, the healing is moderate — it can close wounds and ease pain, but cannot regenerate lost limbs. The flow of vitality feels like warmth traveling along the bond, and both parties feel a brief drain during the transfer.",
     [],
-    ["skill","class","beastmaster","ren","support"],
+    ["skill", "class", "beastmaster", "ren", "support"],
   ),
   e(
     "Class Skills",
@@ -3781,7 +3599,7 @@ module.exports = [
     "Beastmaster skill",
     "Accelerates the growth and potential of a bonded creature through shared experience and Ren exposure. At its most basic, the ascension is slow — the creature's physical abilities improve marginally over weeks of training. The beastmaster must actively channel Ren into the creature during rest periods for the ascension to take effect.",
     [],
-    ["skill","class","beastmaster","ren","growth"],
+    ["skill", "class", "beastmaster", "ren", "growth"],
   ),
   e(
     "Class Skills",
@@ -3789,7 +3607,7 @@ module.exports = [
     "Beastmaster skill",
     "Allows the user to maintain bonds with multiple creatures and coordinate all of them with high precision. At its most basic, the alpha can manage two or three bonds simultaneously, issuing orders and sharing senses across all of them. The mental strain is significant, and the alpha must rest frequently to avoid exhaustion.",
     [],
-    ["skill","class","beastmaster","mastery"],
+    ["skill", "class", "beastmaster", "mastery"],
   ),
   e(
     "Class Skills",
@@ -3797,7 +3615,7 @@ module.exports = [
     "Smithing skill",
     "Shapes metal into functional weapons and armor using a forge, hammer, and basic Veyn reinforcement. At its most basic, the smith can create simple blades and basic chainmail — functional but unremarkable. The Veyn reinforcement adds minor durability and sharpness. The hammer strikes resonate with a faint silver glow as Veyn is channeled into the metal.",
     [],
-    ["skill","class","smith","crafting"],
+    ["skill", "class", "smith", "crafting"],
   ),
   e(
     "Class Skills",
@@ -3805,7 +3623,7 @@ module.exports = [
     "Smithing skill",
     "Channels Veyn into metal during forging, giving the finished item minor magical properties such as increased sharpness or durability. At its most basic, the temper adds a single property — a blade that holds its edge longer, or armor that absorbs slightly more impact. The Veyn must be channeled continuously during the final hammer strikes.",
     [],
-    ["skill","class","smith","veyn","crafting"],
+    ["skill", "class", "smith", "veyn", "crafting"],
   ),
   e(
     "Class Skills",
@@ -3813,7 +3631,7 @@ module.exports = [
     "Smithing skill",
     "Channels the smith's own Ren into a weapon during forging, increasing its striking power. At its most basic, the Ren infusion adds raw physical damage — the weapon hits harder than its weight would suggest. Unlike Veyn infusion, this works through the user's own Vitality rather than ambient energy, and the smith feels drained after the process.",
     [],
-    ["skill","class","smith","ren","crafting"],
+    ["skill", "class", "smith", "ren", "crafting"],
   ),
   e(
     "Class Skills",
@@ -3821,7 +3639,7 @@ module.exports = [
     "Smithing skill",
     "Uses angel or demon blood in the forge to create weapons capable of harming high-rank beings. At its most basic, the blood must be from a low-rank source — a Gnash or Lumen. Extremely dangerous if mishandled, as the blood is reactive to Veyn and a mistake can kill the smith. The blood sizzles and sparks when it touches the heated metal.",
     [],
-    ["skill","class","smith","blood-forging","crafting"],
+    ["skill", "class", "smith", "blood-forging", "crafting"],
   ),
   e(
     "Class Skills",
@@ -3829,7 +3647,7 @@ module.exports = [
     "Smithing skill",
     "Instantly judges a weapon's quality, construction, enchantments, and weaknesses through examination. At its most basic, the assessment is surface-level — the smith can tell if a blade is well-balanced and detect obvious flaws, but cannot identify hidden enchantments. The judgment feels like a pulse of Veyn extending from the hands into the weapon.",
     [],
-    ["skill","class","smith","knowledge"],
+    ["skill", "class", "smith", "knowledge"],
   ),
   e(
     "Class Skills",
@@ -3837,7 +3655,7 @@ module.exports = [
     "Smithing skill",
     "Specializes in creating armor that absorbs, deflects, or redistributes both physical and magical impacts. At its most basic, the armor can withstand a few strong blows before failing. The smith must layer multiple materials and channel Veyn between each layer to create the redistribution effect.",
     [],
-    ["skill","class","smith","crafting","defensive"],
+    ["skill", "class", "smith", "crafting", "defensive"],
   ),
   e(
     "Class Skills",
@@ -3845,7 +3663,7 @@ module.exports = [
     "Smithing skill",
     "Fuses lasting magical effects directly into the metal during the final stage of forging. At its most basic, the seal adds a single enchantment — a blade that glows in the dark, or armor that resists fire. The enchantment is permanent as long as the metal remains intact. The seal appears as a faint runic pattern on the finished item.",
     [],
-    ["skill","class","smith","enchantment","crafting"],
+    ["skill", "class", "smith", "enchantment", "crafting"],
   ),
   e(
     "Class Skills",
@@ -3853,7 +3671,7 @@ module.exports = [
     "Smithing skill",
     "Fully repairs damaged weapons and armor, including broken blades and worn enchantments. At its most basic, the reforge can mend cracks, re-sharpen edges, and restore minor enchantments. The smith must heat the item to forging temperature and work the metal back into shape while channeling Veyn.",
     [],
-    ["skill","class","smith","crafting"],
+    ["skill", "class", "smith", "crafting"],
   ),
   e(
     "Class Skills",
@@ -3861,7 +3679,7 @@ module.exports = [
     "Smithing skill",
     "Creates multi-layered legendary weapons and armor using materials that lesser smiths cannot work with. At its most basic, the mythforge can handle rare materials like dragon bone or mithril, combining them with Veyn-infused alloys. The resulting items are far superior to standard equipment.",
     [],
-    ["skill","class","smith","mastery","crafting"],
+    ["skill", "class", "smith", "mastery", "crafting"],
   ),
   e(
     "Class Skills",
@@ -3869,7 +3687,7 @@ module.exports = [
     "Smithing skill",
     "Advanced bloodforging that allows mixing blood from different ranks or even angel and demon blood. At its most basic, the alloy creates weapons that can wound or kill beings immune to normal weapons. Extremely powerful and extremely risky — the mixed blood is volatile and can explode if the temperature is wrong.",
     [],
-    ["skill","class","smith","blood-forging","mastery"],
+    ["skill", "class", "smith", "blood-forging", "mastery"],
   ),
   e(
     "Class Skills",
@@ -3877,7 +3695,7 @@ module.exports = [
     "Enchanter skill",
     "Gives ordinary items simple lasting magical properties (glow, sharpness, resistance, etc.). At its most basic, the enchantment is minor — a blade that stays sharp a little longer, a cloak that repels light rain. The process requires direct contact with the item and a focused Veyn pulse. The enchantment fades over months unless reinforced.",
     [],
-    ["skill","class","enchanter","enchantment"],
+    ["skill", "class", "enchanter", "enchantment"],
   ),
   e(
     "Class Skills",
@@ -3885,7 +3703,7 @@ module.exports = [
     "Enchanter skill",
     "Channels Veyn into a finished item to create stronger and more complex magical effects. At its most basic, the bind creates a moderate enchantment — a shield that absorbs a single strong blow, a ring that enhances perception briefly. The Veyn must be precisely measured, as too much causes the item to crack.",
     [],
-    ["skill","class","enchanter","veyn","enchantment"],
+    ["skill", "class", "enchanter", "veyn", "enchantment"],
   ),
   e(
     "Class Skills",
@@ -3893,7 +3711,7 @@ module.exports = [
     "Enchanter skill",
     "Fully reads and understands existing enchantments on an item — their function, strength, and stability. At its most basic, the read identifies the type and power of the enchantment, but cannot determine how to modify it. The reader's eyes glow faintly as they trace the runic patterns with their gaze.",
     [],
-    ["skill","class","enchanter","enchantment","knowledge"],
+    ["skill", "class", "enchanter", "enchantment", "knowledge"],
   ),
   e(
     "Class Skills",
@@ -3901,7 +3719,7 @@ module.exports = [
     "Enchanter skill",
     "Cleanly removes an enchantment from an item without damaging it. At its most basic, the unweave works on simple enchantments only — complex or layered effects may resist or damage the item. Poor execution can destroy the item. The process involves channeling Veyn into the enchantment and carefully unraveling its structure.",
     [],
-    ["skill","class","enchanter","enchantment"],
+    ["skill", "class", "enchanter", "enchantment"],
   ),
   e(
     "Class Skills",
@@ -3909,7 +3727,7 @@ module.exports = [
     "Enchanter skill",
     "Strengthens and stabilizes an existing enchantment, making it more potent or longer-lasting. At its most basic, the heighten adds a marginal boost — perhaps 20% stronger or lasts twice as long. Requires a deep understanding of the original enchantment to avoid destabilizing it.",
     [],
-    ["skill","class","enchanter","enchantment"],
+    ["skill", "class", "enchanter", "enchantment"],
   ),
   e(
     "Class Skills",
@@ -3917,7 +3735,7 @@ module.exports = [
     "Enchanter skill",
     "Fuses two or more compatible enchantments onto a single item. At its most basic, the overlay can combine two simple effects — a blade that is both sharp and fire-resistant. Incompatible ones can cancel or destroy the item. The enchanter must identify compatible enchantments before attempting the fusion.",
     [],
-    ["skill","class","enchanter","enchantment"],
+    ["skill", "class", "enchanter", "enchantment"],
   ),
   e(
     "Class Skills",
@@ -3925,7 +3743,7 @@ module.exports = [
     "Enchanter skill",
     "Creates defensive enchantments on shields, armor, or objects that absorb or deflect incoming attacks. At its most basic, the seal creates a barrier that can absorb a few hits before failing. The enchantment appears as a glowing runic circle on the item's surface.",
     [],
-    ["skill","class","enchanter","enchantment","defensive"],
+    ["skill", "class", "enchanter", "enchantment", "defensive"],
   ),
   e(
     "Class Skills",
@@ -3933,7 +3751,7 @@ module.exports = [
     "Enchanter skill",
     "Places offensive trigger enchantments on weapons that activate on impact (fire, force, etc.). At its most basic, the seal adds a single elemental burst on hit — a burst of flame, a shock of lightning, or a blast of force. The enchantment triggers once per charge and must be replenished.",
     [],
-    ["skill","class","enchanter","enchantment","offensive"],
+    ["skill", "class", "enchanter", "enchantment", "offensive"],
   ),
   e(
     "Class Skills",
@@ -3941,7 +3759,7 @@ module.exports = [
     "Enchanter skill",
     "Creates complex, adaptive enchantments that can respond to threats or evolve over time. At its most basic, the living rune can detect incoming attacks and adjust its defense accordingly. The rune appears as a shifting, luminous pattern that moves across the item's surface.",
     [],
-    ["skill","class","enchanter","enchantment","mastery"],
+    ["skill", "class", "enchanter", "enchantment", "mastery"],
   ),
   e(
     "Class Skills",
@@ -3949,7 +3767,7 @@ module.exports = [
     "Enchanter skill",
     "Allows the user to research and develop entirely new enchantment patterns and effects. At its most basic, the newscript can create minor variations on existing enchantments — a fire enchantment that burns colder, a shield that hardens on impact. The research requires extensive experimentation and documentation.",
     [],
-    ["skill","class","enchanter","enchantment","knowledge"],
+    ["skill", "class", "enchanter", "enchantment", "knowledge"],
   ),
   e(
     "Class Skills",
@@ -3957,7 +3775,7 @@ module.exports = [
     "Diviner skill",
     "Sees through lies, disguises, and magical concealment, including abilities like Duskveil and Wraithcloth. At its most basic, the sight is instinctive — the Diviner simply knows when something is false. The effect is always active and cannot be turned off, which can be overwhelming in crowded areas.",
     [],
-    ["skill","class","diviner","innate","perception"],
+    ["skill", "class", "diviner", "innate", "perception"],
   ),
   e(
     "Class Skills",
@@ -3965,7 +3783,7 @@ module.exports = [
     "Diviner skill",
     "Glimpses fragmented possible futures as symbols, feelings, or brief flashes. At its most basic, the visions are vague and symbolic — a red door might mean danger, a broken chain might mean freedom. Further and clearer visions cost more Veyn and become less reliable the further ahead the Diviner tries to see.",
     [],
-    ["skill","class","diviner","holy","perception"],
+    ["skill", "class", "diviner", "holy", "perception"],
   ),
   e(
     "Class Skills",
@@ -3973,7 +3791,7 @@ module.exports = [
     "Diviner skill",
     "Views residual past events tied to a specific location or person. At its most basic, the echoes are brief and distorted — like watching a scene through frosted glass. Clarity depends on the strength of the remaining Veyn traces. Strong emotional events leave clearer echoes than mundane ones.",
     [],
-    ["skill","class","diviner","holy","perception"],
+    ["skill", "class", "diviner", "holy", "perception"],
   ),
   e(
     "Class Skills",
@@ -3981,7 +3799,7 @@ module.exports = [
     "Diviner skill",
     "Detects lies and deception in real time through changes in a target's Veyn flow and aura. At its most basic, the detection is subtle — the Diviner feels a slight distortion in the target's aura when they speak falsely. The sensation is brief and can be missed if the Diviner is not focused.",
     [],
-    ["skill","class","diviner","perception"],
+    ["skill", "class", "diviner", "perception"],
   ),
   e(
     "Class Skills",
@@ -3989,7 +3807,7 @@ module.exports = [
     "Diviner skill",
     "Senses the presence, density, and nature of Veyn in the surrounding area, including corrupted or holy variants. At its most basic, the sense covers a short radius — perhaps twenty meters. The Diviner can distinguish between raw, corrupted, and holy Veyn, but cannot determine the exact source without moving closer.",
     [],
-    ["skill","class","diviner","veyn","perception"],
+    ["skill", "class", "diviner", "veyn", "perception"],
   ),
   e(
     "Class Skills",
@@ -3997,7 +3815,7 @@ module.exports = [
     "Diviner skill",
     "Reads the auras of living beings to reveal emotional state, health, hidden abilities, and magical influence. At its most basic, the gaze shows surface emotions and obvious physical conditions. Deeper readings require sustained focus and may be resisted by strong-willed targets.",
     [],
-    ["skill","class","diviner","perception"],
+    ["skill", "class", "diviner", "perception"],
   ),
   e(
     "Class Skills",
@@ -4005,7 +3823,7 @@ module.exports = [
     "Diviner skill",
     "A prepared ritual form of Far Sight that produces clearer and more detailed visions at the cost of time and materials. At its most basic, the ritual requires a quiet space, incense, and a focal object. The visions are clearer than raw Far Sight but still symbolic and open to interpretation.",
     [],
-    ["skill","class","diviner","holy","ritual"],
+    ["skill", "class", "diviner", "holy", "ritual"],
   ),
   e(
     "Class Skills",
@@ -4013,7 +3831,7 @@ module.exports = [
     "Diviner skill",
     "Protects the user's mind and aura from being read or influenced by other Diviners or mental abilities. At its most basic, the lock blocks casual reading and minor psychic intrusions. Stronger effects may break through, but the lock alerts the Diviner to the attempt.",
     [],
-    ["skill","class","diviner","holy","defensive"],
+    ["skill", "class", "diviner", "holy", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4021,7 +3839,7 @@ module.exports = [
     "Diviner skill",
     "Allows the user to perceive the emotional and magical bonds connecting people. At its most basic, the sight shows faint threads of connection — friendship, rivalry, love, hatred. The threads vary in color and thickness based on the strength and nature of the bond.",
     [],
-    ["skill","class","diviner","perception"],
+    ["skill", "class", "diviner", "perception"],
   ),
   e(
     "Class Skills",
@@ -4029,7 +3847,7 @@ module.exports = [
     "Diviner skill",
     "Temporarily combines multiple divination effects, granting a brief period of heightened all-around awareness. At its most basic, the allsight lasts only a few seconds and causes severe mental fatigue afterward. During the effect, the Diviner perceives truth, past, future, and bonds simultaneously.",
     [],
-    ["skill","class","diviner","holy","mastery"],
+    ["skill", "class", "diviner", "holy", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4037,7 +3855,7 @@ module.exports = [
     "Exorcist skill",
     "Channels Veyn to cleanse corrupted or unstable Veyn from a person, object, or area. At its most basic, the whitefire removes surface corruption — miasma stains, minor curses, tainted objects. The fire appears as a pale, cold flame that burns away corruption without harming the living.",
     [],
-    ["skill","class","exorcist","veyn","purification"],
+    ["skill", "class", "exorcist", "veyn", "purification"],
   ),
   e(
     "Class Skills",
@@ -4045,7 +3863,7 @@ module.exports = [
     "Exorcist skill",
     "Specialized binding techniques used to suppress and contain the unstable power of Fallen Angels. At its most basic, the bind creates Veyn chains that restrain a Fallen Angel's physical form. The chains glow with purified Veyn and tighten if the target struggles.",
     [],
-    ["skill","class","exorcist","fallen angel","combat"],
+    ["skill", "class", "exorcist", "fallen angel", "combat"],
   ),
   e(
     "Class Skills",
@@ -4053,7 +3871,7 @@ module.exports = [
     "Exorcist skill",
     "Extracts and neutralizes demonic miasma from living beings, places, or objects. At its most basic, the extraction is painful for the target — the miasma clings to the body and must be pulled out strand by strand. The process often causes the target to scream as the corruption is torn free.",
     [],
-    ["skill","class","exorcist","demon","purification"],
+    ["skill", "class", "exorcist", "demon", "purification"],
   ),
   e(
     "Class Skills",
@@ -4061,7 +3879,7 @@ module.exports = [
     "Exorcist skill",
     "Calms chaotic or fluctuating Veyn, preventing it from becoming corrupted or dangerously unstable. At its most basic, the stillflow stabilizes a small area — perhaps a room or a patch of ground. The effect is temporary and must be maintained with ongoing Veyn channeling.",
     [],
-    ["skill","class","exorcist","veyn","utility"],
+    ["skill", "class", "exorcist", "veyn", "utility"],
   ),
   e(
     "Class Skills",
@@ -4069,7 +3887,7 @@ module.exports = [
     "Exorcist skill",
     "A formal ritual that forces out deep possession, curses, or heavy contamination. At its most basic, the rite requires a ritual circle, specific components, and several hours of focused chanting. The more entrenched the corruption, the longer and more dangerous the ritual becomes.",
     [],
-    ["skill","class","exorcist","ritual"],
+    ["skill", "class", "exorcist", "ritual"],
   ),
   e(
     "Class Skills",
@@ -4077,7 +3895,7 @@ module.exports = [
     "Exorcist skill",
     "Creates a barrier of purified Veyn that is especially effective against demons, undead, and miasma. At its most basic, the bastion blocks physical attacks and weakens corrupted beings who touch it. The barrier appears as a wall of pale, cold light.",
     [],
-    ["skill","class","exorcist","veyn","defensive"],
+    ["skill", "class", "exorcist", "veyn", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4085,7 +3903,7 @@ module.exports = [
     "Exorcist skill",
     "Channels purified Veyn into a physical attack that deals heavy extra damage to corrupted beings. At its most basic, the strike is a single powerful blow that disrupts the target's corrupted Veyn on contact. The more corrupted the target, the more effective the strike becomes.",
     [],
-    ["skill","class","exorcist","veyn","offensive"],
+    ["skill", "class", "exorcist", "veyn", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4093,7 +3911,7 @@ module.exports = [
     "Exorcist skill",
     "Allows the purification of multiple targets or a wide area at once. At its most basic, the cleanse covers a small group — perhaps five or ten people. Requires significant Veyn and concentration, and the effect is weaker than individual purification.",
     [],
-    ["skill","class","exorcist","mastery"],
+    ["skill", "class", "exorcist", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4101,7 +3919,7 @@ module.exports = [
     "Exorcist skill",
     "Forces powerful residual spirits or wills to disperse or leave an area. At its most basic, the drive weakens the spirit's hold and forces it to retreat temporarily. The spirit may return if the underlying cause is not addressed.",
     [],
-    ["skill","class","exorcist","offensive"],
+    ["skill", "class", "exorcist", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4109,7 +3927,7 @@ module.exports = [
     "Exorcist skill",
     "Places a powerful, lasting suppression on extreme corruption or dangerous entities, locking their power away. At its most basic, the seal can contain moderate corruption for decades. The seal appears as a glowing runic circle that burns into the target's body or the surrounding area.",
     [],
-    ["skill","class","exorcist","defensive","mastery"],
+    ["skill", "class", "exorcist", "defensive", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4117,7 +3935,7 @@ module.exports = [
     "Broker skill",
     "Drafts, reads, and balances contracts so that terms are clear, enforceable, and as fair as possible. At its most basic, the Broker can create simple trade agreements with clear penalties for breach. The contract is magically binding once signed, but the terms must be reasonable.",
     [],
-    ["skill","class","broker","contract"],
+    ["skill", "class", "broker", "contract"],
   ),
   e(
     "Class Skills",
@@ -4125,7 +3943,7 @@ module.exports = [
     "Broker skill",
     "Magically triggers the penalties written into a signed contract when a party breaks the terms. At its most basic, the enforcement is automatic — the moment a breach is detected, the penalty activates. The Broker must be within range to witness the breach.",
     [],
-    ["skill","class","broker","contract","combat"],
+    ["skill", "class", "broker", "contract", "combat"],
   ),
   e(
     "Class Skills",
@@ -4133,7 +3951,7 @@ module.exports = [
     "Broker skill",
     "Detects hidden clauses, loopholes, and magical bindings inside a contract. At its most basic, the detection identifies obvious traps and unfair terms. Hidden or magically concealed clauses require deeper examination.",
     [],
-    ["skill","class","broker","contract","knowledge"],
+    ["skill", "class", "broker", "contract", "knowledge"],
   ),
   e(
     "Class Skills",
@@ -4141,7 +3959,7 @@ module.exports = [
     "Broker skill",
     "Forcibly dissolves a signed contract. At its most basic, the break carries a high risk of backlash to both parties and the Broker. The backlash manifests as a surge of painful Veyn that can injure or incapacitate.",
     [],
-    ["skill","class","broker","contract"],
+    ["skill", "class", "broker", "contract"],
   ),
   e(
     "Class Skills",
@@ -4149,7 +3967,7 @@ module.exports = [
     "Broker skill",
     "Expert persuasion and negotiation used to find acceptable terms between hostile or difficult parties. At its most basic, the Broker can calm tensions and find minor compromises. The skill relies on reading body language and Veyn fluctuations as much as words.",
     [],
-    ["skill","class","broker","social"],
+    ["skill", "class", "broker", "social"],
   ),
   e(
     "Class Skills",
@@ -4157,7 +3975,7 @@ module.exports = [
     "Broker skill",
     "Senses dishonesty during negotiations through body language, voice, and small Veyn fluctuations. At its most basic, the sense detects obvious lies and evasions. Subtle deception or magically enhanced lying may slip through.",
     [],
-    ["skill","class","broker","perception"],
+    ["skill", "class", "broker", "perception"],
   ),
   e(
     "Class Skills",
@@ -4165,7 +3983,7 @@ module.exports = [
     "Broker skill",
     "Creates a protective ward that guards the Broker against magical backlash from contracts and hostile parties. At its most basic, the ward absorbs a single instance of backlash before needing to be renewed. The ward appears as a faint glow around the Broker's hands.",
     [],
-    ["skill","class","broker","defensive"],
+    ["skill", "class", "broker", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4173,7 +3991,7 @@ module.exports = [
     "Broker skill",
     "Maintains a web of contacts, informants, and fellow Brokers across different areas and realms. At its most basic, the web provides basic information and local contacts in major cities. Expanding the web requires time and trust-building.",
     [],
-    ["skill","class","broker","social","utility"],
+    ["skill", "class", "broker", "social", "utility"],
   ),
   e(
     "Class Skills",
@@ -4181,7 +3999,7 @@ module.exports = [
     "Broker skill",
     "Turns small pieces of information or minor advantages into strong negotiating positions. At its most basic, the Broker can leverage a single piece of leverage into a favorable term. The skill requires quick thinking and intimate knowledge of the other party's fears.",
     [],
-    ["skill","class","broker","social"],
+    ["skill", "class", "broker", "social"],
   ),
   e(
     "Class Skills",
@@ -4189,7 +4007,7 @@ module.exports = [
     "Broker skill",
     "Creates high-stakes contracts that are extremely difficult to break and carry severe consequences. At its most basic, the ironword binds the signer to terms that cannot be escaped by any known means. The penalty for breaking an ironword is catastrophic — often death or permanent loss of power.",
     [],
-    ["skill","class","broker","contract","mastery"],
+    ["skill", "class", "broker", "contract", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4197,7 +4015,7 @@ module.exports = [
     "Saintess skill",
     "Channels Holy Energy to heal wounds and purge corruption-related ailments more effectively than ordinary healing. At its most basic, the mend closes minor wounds and eases pain. The light is warm and gentle, and the patient feels a soothing heat spread through the affected area.",
     [],
-    ["skill","class","saintess","holy","healing"],
+    ["skill", "class", "saintess", "holy", "healing"],
   ),
   e(
     "Class Skills",
@@ -4205,7 +4023,7 @@ module.exports = [
     "Saintess skill",
     "Creates a barrier of Holy Energy that is especially strong against demonic and corrupted attacks. At its most basic, the aegis blocks a single attack before fading. The barrier appears as a disc of golden light that burns corrupted beings on contact.",
     [],
-    ["skill","class","saintess","holy","defensive"],
+    ["skill", "class", "saintess", "holy", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4213,7 +4031,7 @@ module.exports = [
     "Saintess skill",
     "Purifies curses, miasma, and corruption from a target or area with focused Holy Energy. At its most basic, the purge removes surface-level contamination — a cursed object, a miasma stain, a minor hex. The process causes the corruption to dissolve into golden sparks.",
     [],
-    ["skill","class","saintess","holy","purification"],
+    ["skill", "class", "saintess", "holy", "purification"],
   ),
   e(
     "Class Skills",
@@ -4221,7 +4039,7 @@ module.exports = [
     "Saintess skill",
     "Forms a radiant shield that blocks attacks and burns corrupted beings on contact. At its most basic, the guard absorbs a few hits and deals minor burn damage to undead or demons who touch it. The shield dims as it absorbs damage.",
     [],
-    ["skill","class","saintess","holy","defensive"],
+    ["skill", "class", "saintess", "holy", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4229,7 +4047,7 @@ module.exports = [
     "Saintess skill",
     "Infuses a melee attack with Holy Energy that deals heavy extra damage to undead and demons. At its most basic, the blow is a single powerful strike that disrupts the target's unholy essence. The attack leaves a lingering burn of purified light on the target.",
     [],
-    ["skill","class","saintess","holy","offensive"],
+    ["skill", "class", "saintess", "holy", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4237,7 +4055,7 @@ module.exports = [
     "Saintess skill",
     "Temporarily boosts an ally's resistance to corruption and increases their Veyn recovery. At its most basic, the blessing lasts a few minutes and provides a marginal improvement. The blessed ally glows faintly with golden light for the duration.",
     [],
-    ["skill","class","saintess","holy","support"],
+    ["skill", "class", "saintess", "holy", "support"],
   ),
   e(
     "Class Skills",
@@ -4245,7 +4063,7 @@ module.exports = [
     "Saintess skill",
     "Places a lasting holy zone that repels corrupted beings and slowly purifies the area. At its most basic, the zone covers a small area and lasts only a short time. Undead and demons who enter the zone take burn damage and are weakened.",
     [],
-    ["skill","class","saintess","holy","defensive"],
+    ["skill", "class", "saintess", "holy", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4253,7 +4071,7 @@ module.exports = [
     "Saintess skill",
     "Emits cleansing light that reveals hidden beings, burns undead, and weakens demonic power. At its most basic, the light covers a moderate area and forces invisible or concealed beings to become visible. Undead and demons are slowed and weakened by the light.",
     [],
-    ["skill","class","saintess","holy","utility"],
+    ["skill", "class", "saintess", "holy", "utility"],
   ),
   e(
     "Class Skills",
@@ -4261,7 +4079,7 @@ module.exports = [
     "Saintess skill",
     "Allows precise and selective use of Holy Energy for complex healing and combat applications. At its most basic, the precision allows the Saintess to target specific wounds or corruption without affecting surrounding tissue. The control requires intense concentration.",
     [],
-    ["skill","class","saintess","holy","mastery"],
+    ["skill", "class", "saintess", "holy", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4269,7 +4087,7 @@ module.exports = [
     "Saintess skill",
     "Advanced holy techniques that can produce effects beyond normal limits of the class. At its most basic, the divine act can achieve seemingly impossible feats — curing incurable diseases, banishing powerful demons, or creating barriers that last for days. The cost is severe physical and spiritual exhaustion.",
     [],
-    ["skill","class","saintess","holy","mastery"],
+    ["skill", "class", "saintess", "holy", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4277,7 +4095,7 @@ module.exports = [
     "Clergy skill",
     "Channels Veyn to heal minor wounds, cuts, bruises, and light burns. At its most basic, the healing is gentle and slow — the wound closes over several seconds, and the patient feels warmth spreading through the area. The Veyn消耗 is minimal.",
     [],
-    ["skill","class","clergy","veyn","healing"],
+    ["skill", "class", "clergy", "veyn", "healing"],
   ),
   e(
     "Class Skills",
@@ -4285,7 +4103,7 @@ module.exports = [
     "Clergy skill",
     "Heals serious injuries such as broken bones, deep cuts, and internal damage. Takes more time and Veyn than basic healing. At its most basic, the deep heal can mend a broken arm or close a deep laceration, but the process takes minutes and drains the healer significantly.",
     [],
-    ["skill","class","clergy","veyn","healing"],
+    ["skill", "class", "clergy", "veyn", "healing"],
   ),
   e(
     "Class Skills",
@@ -4293,7 +4111,7 @@ module.exports = [
     "Clergy skill",
     "A prepared healing ritual used for wounds too severe for direct methods. Takes time but can save lives. At its most basic, the rite requires a quiet space, bandages, and focused Veyn channeling over several hours. The patient must remain still throughout.",
     [],
-    ["skill","class","clergy","veyn","healing","ritual"],
+    ["skill", "class", "clergy", "veyn", "healing", "ritual"],
   ),
   e(
     "Class Skills",
@@ -4301,7 +4119,7 @@ module.exports = [
     "Clergy skill",
     "Creates a barrier that absorbs damage directed at wounded allies, giving the healer time to work. At its most basic, the field absorbs a few hits before failing. The barrier appears as a translucent dome of pale light over the patient.",
     [],
-    ["skill","class","clergy","veyn","defensive"],
+    ["skill", "class", "clergy", "veyn", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4309,7 +4127,7 @@ module.exports = [
     "Clergy skill",
     "Places a lasting effect on an ally that accelerates their natural healing over several hours. At its most basic, the lifebloom speeds recovery by a small margin — a wound that would take days heals in half the time. The effect persists through mild activity.",
     [],
-    ["skill","class","clergy","veyn","support"],
+    ["skill", "class", "clergy", "veyn", "support"],
   ),
   e(
     "Class Skills",
@@ -4317,7 +4135,7 @@ module.exports = [
     "Clergy skill",
     "Creates a zone that continuously heals anyone inside it. At its most basic, the zone covers a small area and provides slow, passive healing. Useful for field treatment areas where multiple wounded need attention.",
     [],
-    ["skill","class","clergy","veyn","healing","defensive"],
+    ["skill", "class", "clergy", "veyn", "healing", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4325,7 +4143,7 @@ module.exports = [
     "Clergy skill",
     "Emits a gentle light that eases pain, calms the mind, and mildly speeds recovery in those nearby. At its most basic, the light covers a moderate radius and provides marginal relief. The effect is passive and does not require active concentration.",
     [],
-    ["skill","class","clergy","veyn","healing","support"],
+    ["skill", "class", "clergy", "veyn", "healing", "support"],
   ),
   e(
     "Class Skills",
@@ -4333,7 +4151,7 @@ module.exports = [
     "Clergy skill",
     "Advanced healing capable of restoring lost limbs (with rare components) and pulling someone back from the edge of death. At its most basic, the restore can mend even catastrophic injuries if the patient is not already dead. Requires rare reagents and hours of work.",
     [],
-    ["skill","class","clergy","veyn","healing","mastery"],
+    ["skill", "class", "clergy", "veyn", "healing", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4341,7 +4159,7 @@ module.exports = [
     "Clergy skill",
     "Develops and applies specialized treatments for rare conditions and unique injuries. At its most basic, the cure can address conditions that standard healing cannot — magical diseases, cursed wounds, Veyn corruption. Each case requires research and custom formulation.",
     [],
-    ["skill","class","clergy","veyn","healing","knowledge"],
+    ["skill", "class", "clergy", "veyn", "healing", "knowledge"],
   ),
   e(
     "Class Skills",
@@ -4349,7 +4167,7 @@ module.exports = [
     "Clergy skill",
     "Allows the user to effectively train others in healing techniques, helping maintain the number of capable healers. At its most basic, the teacher can convey basic healing methods to students. The skill includes the ability to diagnose student errors and correct them.",
     [],
-    ["skill","class","clergy","veyn","healing","support"],
+    ["skill", "class", "clergy", "veyn", "healing", "support"],
   ),
   e(
     "Class Skills",
@@ -4357,7 +4175,7 @@ module.exports = [
     "Archer skill",
     "Enchants an arrow with Veyn before firing, adding elemental or force effects that activate on impact. At its most basic, the enchantment adds a single elemental burst — fire, ice, or force. The arrow carries the enchantment until impact, and the effect is modest.",
     [],
-    ["skill","class","archer","veyn","offensive"],
+    ["skill", "class", "archer", "veyn", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4365,7 +4183,7 @@ module.exports = [
     "Archer skill",
     "Focuses Veyn into the arrowhead so it can punch through armor, shields, and barriers. At its most basic, the sunder can penetrate light armor and wooden shields. Heavier protection may resist or slow the arrow.",
     [],
-    ["skill","class","archer","veyn","offensive"],
+    ["skill", "class", "archer", "veyn", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4373,7 +4191,7 @@ module.exports = [
     "Archer skill",
     "Creates arrows that detonate on impact, damaging everything in a small radius. At its most basic, the burst is small — enough to wound nearby enemies but not lethal to anyone beyond the immediate blast zone. The explosion scatters residual Veyn.",
     [],
-    ["skill","class","archer","veyn","offensive"],
+    ["skill", "class", "archer", "veyn", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4381,7 +4199,7 @@ module.exports = [
     "Archer skill",
     "Enchants an arrow so it actively adjusts its path mid-flight to follow a designated target. At its most basic, the homing is weak — the arrow curves gently toward the target and can be dodged by quick movement. The tracking lasts only a few seconds.",
     [],
-    ["skill","class","archer","veyn","offensive"],
+    ["skill", "class", "archer", "veyn", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4389,7 +4207,7 @@ module.exports = [
     "Archer skill",
     "Launches a volley of enchanted arrows into the air to rain down over a wide area. At its most basic, the skyfall covers a moderate area and each arrow carries a basic enchantment. The arrows fall at steep angles, making them difficult to block.",
     [],
-    ["skill","class","archer","veyn","offensive"],
+    ["skill", "class", "archer", "veyn", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4397,7 +4215,7 @@ module.exports = [
     "Archer skill",
     "Plants arrows in the ground to form a temporary Veyn barrier that blocks incoming attacks. At its most basic, the wall covers a short stretch and absorbs a few hits. The arrows glow with Veyn and serve as anchor points for the barrier.",
     [],
-    ["skill","class","archer","veyn","defensive"],
+    ["skill", "class", "archer", "veyn", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4405,7 +4223,7 @@ module.exports = [
     "Archer skill",
     "A single, fully charged arrow fired with extreme speed and penetrating power. At its most basic, the final arrow carries the full force of the archer's Veyn and can punch through heavy armor. The shot leaves the archer temporarily drained.",
     [],
-    ["skill","class","archer","veyn","offensive"],
+    ["skill", "class", "archer", "veyn", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4413,7 +4231,7 @@ module.exports = [
     "Archer skill",
     "Enchants an arrow with healing Veyn, allowing the archer to restore allies from a distance. At its most basic, the grace arrow can close minor wounds on impact. The arrow must strike the target gently — firing too hard negates the healing effect.",
     [],
-    ["skill","class","archer","veyn","support","healing"],
+    ["skill", "class", "archer", "veyn", "support", "healing"],
   ),
   e(
     "Class Skills",
@@ -4421,7 +4239,7 @@ module.exports = [
     "Archer skill",
     "Allows complex multi-effect enchantments on arrows and extreme-range precision shooting. At its most basic, the perfect shot combines two effects on a single arrow — fire and piercing, or ice and homing. The precision allows hits at ranges beyond normal sight.",
     [],
-    ["skill","class","archer","mastery"],
+    ["skill", "class", "archer", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4429,7 +4247,7 @@ module.exports = [
     "Archer skill",
     "Develops entirely new forms of magical ammunition and arrow techniques. At its most basic, the arrowcraft can create arrows with unique properties — arrows that split into multiple projectiles, arrows that create barriers on impact, or arrows that drain Veyn from targets.",
     [],
-    ["skill","class","archer","knowledge"],
+    ["skill", "class", "archer", "knowledge"],
   ),
   e(
     "Class Skills",
@@ -4437,7 +4255,7 @@ module.exports = [
     "Paladin skill",
     "Channels golden Ren into a powerful melee attack that burns corrupted beings and heals nearby allies. At its most basic, the strike is a single radiant blow that deals moderate damage to corruption and minor healing to allies. The golden energy flares briefly on impact.",
     [],
-    ["skill","class","paladin","ren","offensive"],
+    ["skill", "class", "paladin", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4445,7 +4263,7 @@ module.exports = [
     "Paladin skill",
     "Creates a radiant barrier that blocks attacks and burns corrupted beings on contact. At its most basic, the shield absorbs a few hits and deals minor burn damage to undead or demons. The barrier appears as a disc of golden light.",
     [],
-    ["skill","class","paladin","ren","defensive"],
+    ["skill", "class", "paladin", "ren", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4453,7 +4271,7 @@ module.exports = [
     "Paladin skill",
     "Heals allies with golden Ren while purifying corruption inside the wounds. At its most basic, the mend closes wounds and removes minor corruption. The golden energy spreads through the patient's body like warm light.",
     [],
-    ["skill","class","paladin","ren","healing"],
+    ["skill", "class", "paladin", "ren", "healing"],
   ),
   e(
     "Class Skills",
@@ -4461,7 +4279,7 @@ module.exports = [
     "Paladin skill",
     "Strengthens nearby allies against fear, charm, and morale-breaking effects. At its most basic, the aura provides a marginal boost to mental resistance. Allies near the Paladin feel a surge of confidence and determination.",
     [],
-    ["skill","class","paladin","ren","support"],
+    ["skill", "class", "paladin", "ren", "support"],
   ),
   e(
     "Class Skills",
@@ -4469,7 +4287,7 @@ module.exports = [
     "Paladin skill",
     "A massive single-target strike of pure golden Ren that deals heavy damage to corrupted and undead beings. At its most basic, the judgment is a single devastating blow that can incapacitate a low-rank corrupted being. The golden energy explodes on impact.",
     [],
-    ["skill","class","paladin","ren","offensive"],
+    ["skill", "class", "paladin", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4477,7 +4295,7 @@ module.exports = [
     "Paladin skill",
     "Direct-contact healing that restores injuries and purifies corruption at the same time. At its most basic, the touch can mend moderate wounds and remove surface corruption. The healer must maintain physical contact throughout the process.",
     [],
-    ["skill","class","paladin","ren","healing"],
+    ["skill", "class", "paladin", "ren", "healing"],
   ),
   e(
     "Class Skills",
@@ -4485,7 +4303,7 @@ module.exports = [
     "Paladin skill",
     "Blesses an area so that it heals allies and damages corrupted beings standing on it. At its most basic, the ground covers a small area and provides passive healing to allies while burning undead. The effect lasts as long as the Paladin maintains concentration.",
     [],
-    ["skill","class","paladin","ren","support","defensive"],
+    ["skill", "class", "paladin", "ren", "support", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4493,7 +4311,7 @@ module.exports = [
     "Paladin skill",
     "Places an automatic protective ward on an ally that activates when they are attacked. At its most basic, the seal absorbs a single hit and then shatters. The ward appears as a faint golden glow on the ally's shoulder.",
     [],
-    ["skill","class","paladin","ren","defensive"],
+    ["skill", "class", "paladin", "ren", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4501,7 +4319,7 @@ module.exports = [
     "Paladin skill",
     "Temporarily increases the Paladin's power when their allies are in serious danger. At its most basic, the power boost is moderate — increased strength, speed, and Ren output for a short duration. The boost fades once the danger passes.",
     [],
-    ["skill","class","paladin","ren","passive","support"],
+    ["skill", "class", "paladin", "ren", "passive", "support"],
   ),
   e(
     "Class Skills",
@@ -4509,7 +4327,7 @@ module.exports = [
     "Paladin skill",
     "A full temporary empowerment that turns the Paladin into a beacon of golden light, greatly enhancing all abilities. At its most basic, the champion form lasts only a minute and leaves the Paladin exhausted afterward. During the form, all paladin abilities are doubled in power.",
     [],
-    ["skill","class","paladin","ren","mastery"],
+    ["skill", "class", "paladin", "ren", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4517,7 +4335,7 @@ module.exports = [
     "Grimtender skill",
     "Channels Veyn into the remains of a fallen creature, reanimating it as an undead servant under the user's control. At its most basic, the awakened creature retains basic physical abilities but moves stiffly and slowly. The Veyn cost is moderate.",
     [],
-    ["skill","class","grimtender","veyn","undead"],
+    ["skill", "class", "grimtender", "veyn", "undead"],
   ),
   e(
     "Class Skills",
@@ -4525,7 +4343,7 @@ module.exports = [
     "Grimtender skill",
     "Issues precise combat orders to one or more reanimated servants. At its most basic, the orders are simple — attack, defend, move to position. The undead respond slowly but obey without question.",
     [],
-    ["skill","class","grimtender","undead","combat"],
+    ["skill", "class", "grimtender", "undead", "combat"],
   ),
   e(
     "Class Skills",
@@ -4533,7 +4351,7 @@ module.exports = [
     "Grimtender skill",
     "Commands reanimated bodies to intercept attacks, using them as disposable shields. At its most basic, the guard takes full damage from the attack and may be destroyed. The Grimtender can reassemble destroyed undead later.",
     [],
-    ["skill","class","grimtender","undead","defensive"],
+    ["skill", "class", "grimtender", "undead", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4541,7 +4359,7 @@ module.exports = [
     "Grimtender skill",
     "Siphons residual Veyn from nearby corpses and remains to restore the user's own reserves. At its most basic, the drain extracts a small amount of Veyn from each corpse. The more powerful the remains, the more Veyn is gained.",
     [],
-    ["skill","class","grimtender","veyn","utility"],
+    ["skill", "class", "grimtender", "veyn", "utility"],
   ),
   e(
     "Class Skills",
@@ -4549,7 +4367,7 @@ module.exports = [
     "Grimtender skill",
     "Releases a wave of necrotic energy that weakens living targets and strengthens undead ones. At its most basic, the pulse covers a small area and causes minor weakness in living targets while slightly boosting undead movement speed.",
     [],
-    ["skill","class","grimtender","veyn","offensive"],
+    ["skill", "class", "grimtender", "veyn", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4557,7 +4375,7 @@ module.exports = [
     "Grimtender skill",
     "Reanimates a large number of remains at once, creating a group of undead servants. At its most basic, the legion can raise a dozen weak skeletons simultaneously. The more remains available, the larger the legion.",
     [],
-    ["skill","class","grimtender","veyn","undead","combat"],
+    ["skill", "class", "grimtender", "veyn", "undead", "combat"],
   ),
   e(
     "Class Skills",
@@ -4565,7 +4383,7 @@ module.exports = [
     "Grimtender skill",
     "Shapes bone into a projectile and launches it, carrying necrotic Veyn that damages on impact. At its most basic, the spear is a single bone shard that can wound a target. The necrotic Veyn causes lingering damage.",
     [],
-    ["skill","class","grimtender","undead","offensive"],
+    ["skill", "class", "grimtender", "undead", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4573,7 +4391,7 @@ module.exports = [
     "Grimtender skill",
     "Binds residual spirit more tightly to remains, creating stronger and more intelligent undead. At its most basic, the bind creates an undead that retains some of its former knowledge and can follow complex commands.",
     [],
-    ["skill","class","grimtender","undead"],
+    ["skill", "class", "grimtender", "undead"],
   ),
   e(
     "Class Skills",
@@ -4581,7 +4399,7 @@ module.exports = [
     "Grimtender skill",
     "Allows permanent high-quality undead and large-scale simultaneous control. At its most basic, the lord can maintain a dozen powerful undead indefinitely and coordinate them in battle. The mental strain is significant.",
     [],
-    ["skill","class","grimtender","mastery"],
+    ["skill", "class", "grimtender", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4589,7 +4407,7 @@ module.exports = [
     "Grimtender skill",
     "Extracts and stores residual essence from the newly dead for later use in powerful reanimation. At its most basic, the take preserves the spirit's essence for weeks, allowing the Grimtender to create elite undead later.",
     [],
-    ["skill","class","grimtender","undead","utility"],
+    ["skill", "class", "grimtender", "undead", "utility"],
   ),
   e(
     "Class Skills",
@@ -4597,7 +4415,7 @@ module.exports = [
     "Bladesinger skill",
     "A rapid sweeping sword strike that can hit multiple targets in one motion. At its most basic, the cleave can strike two or three enemies in a line. The blade moves so fast it leaves a faint crimson trail in the air.",
     [],
-    ["skill","class","bladesinger","ren","offensive"],
+    ["skill", "class", "bladesinger", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4605,7 +4423,7 @@ module.exports = [
     "Bladesinger skill",
     "Coats the blade in concentrated Ren, greatly increasing its cutting power. At its most basic, the Ren edge lasts only a few strikes before fading. The coated blade can cut through materials that would normally resist steel.",
     [],
-    ["skill","class","bladesinger","ren","offensive"],
+    ["skill", "class", "bladesinger", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4613,7 +4431,7 @@ module.exports = [
     "Bladesinger skill",
     "Uses rapid, precise blade movements to deflect incoming attacks with minimal effort. At its most basic, the dance can redirect one or two attacks before the user must reset. The movements are fluid and instinctive.",
     [],
-    ["skill","class","bladesinger","ren","defensive"],
+    ["skill", "class", "bladesinger", "ren", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4621,7 +4439,7 @@ module.exports = [
     "Bladesinger skill",
     "Responds to an incoming attack with an immediate and precise counter-strike. At its most basic, the counter is a single reactive slash that exploits the attacker's opening. The more committed the attack, the more devastating the return.",
     [],
-    ["skill","class","bladesinger","ren","defensive","offensive"],
+    ["skill", "class", "bladesinger", "ren", "defensive", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4629,7 +4447,7 @@ module.exports = [
     "Bladesinger skill",
     "Uses Ren to propel the user forward in a burst of speed, closing distance instantly. At its most basic, the step covers a short distance and creates a small gust of wind. The movement is nearly instantaneous.",
     [],
-    ["skill","class","bladesinger","ren","mobility"],
+    ["skill", "class", "bladesinger", "ren", "mobility"],
   ),
   e(
     "Class Skills",
@@ -4637,7 +4455,7 @@ module.exports = [
     "Bladesinger skill",
     "Strikes from an unexpected angle by masking the blade's movement with Ren. At its most basic, the cut obscures the blade's approach for a split second, making it difficult to defend. The strike seems to come from nowhere.",
     [],
-    ["skill","class","bladesinger","ren","offensive"],
+    ["skill", "class", "bladesinger", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4645,7 +4463,7 @@ module.exports = [
     "Bladesinger skill",
     "Unleashes a rapid series of Ren-enhanced slashes that create a whirlwind of attacks. At its most basic, the storm delivers three or four slashes in rapid succession. Each slash carries Ren and the combined force shreds through defenses.",
     [],
-    ["skill","class","bladesinger","ren","offensive"],
+    ["skill", "class", "bladesinger", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4653,7 +4471,7 @@ module.exports = [
     "Bladesinger skill",
     "Passively enhances balance, coordination, and reaction speed, allowing the user to maintain form even while wounded. At its most basic, the form provides a moderate boost to agility and reaction time. The effect is always active.",
     [],
-    ["skill","class","bladesinger","ren","passive"],
+    ["skill", "class", "bladesinger", "ren", "passive"],
   ),
   e(
     "Class Skills",
@@ -4661,7 +4479,7 @@ module.exports = [
     "Bladesinger skill",
     "Enters a focused state where Ren flows rhythmically through the body, enhancing all physical and blade techniques. At its most basic, the song boosts all physical abilities by a significant margin. The Ren flows in visible crimson patterns along the body.",
     [],
-    ["skill","class","bladesinger","ren","buff"],
+    ["skill", "class", "bladesinger", "ren", "buff"],
   ),
   e(
     "Class Skills",
@@ -4669,7 +4487,7 @@ module.exports = [
     "Bladesinger skill",
     "The user executes every movement with optimal efficiency and zero wasted motion. At its most basic, the edge provides a major boost to all combat abilities — perfect strikes, perfect defense, perfect timing. The blade becomes an extension of the soul.",
     [],
-    ["skill","class","bladesinger","ren","mastery"],
+    ["skill", "class", "bladesinger", "ren", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4677,7 +4495,7 @@ module.exports = [
     "Berserker skill",
     "Enters a controlled rage that greatly increases physical strength and pain tolerance while reducing precision. At its most basic, the rage boosts strength by about 50% and numbs pain. The user's eyes glow red and their muscles visibly tense.",
     [],
-    ["skill","class","berserker","ren","buff"],
+    ["skill", "class", "berserker", "ren", "buff"],
   ),
   e(
     "Class Skills",
@@ -4685,7 +4503,7 @@ module.exports = [
     "Berserker skill",
     "Releases a Ren-infused shout that staggers nearby enemies and weakens their resolve. At its most basic, the roar causes momentary disorientation and fear in weaker opponents. The sound carries a visible shockwave of crimson energy.",
     [],
-    ["skill","class","berserker","ren","offensive"],
+    ["skill", "class", "berserker", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4693,7 +4511,7 @@ module.exports = [
     "Berserker skill",
     "Channels a massive burst of Ren into a single attack for extreme damage, leaving the user temporarily drained. At its most basic, the blow deals devastating damage to a single target but leaves the user vulnerable afterward.",
     [],
-    ["skill","class","berserker","ren","offensive"],
+    ["skill", "class", "berserker", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4701,7 +4519,7 @@ module.exports = [
     "Berserker skill",
     "Abandons defense for one devastating attack that leaves the user completely open afterward. At its most basic, the attack deals catastrophic damage to a single target but removes all defensive capability for a short time.",
     [],
-    ["skill","class","berserker","ren","offensive"],
+    ["skill", "class", "berserker", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4709,7 +4527,7 @@ module.exports = [
     "Berserker skill",
     "When health falls critically low, Ren automatically surges to keep the user fighting through wounds that would stop others. At its most basic, the surge provides a brief window of enhanced fighting ability before the exhaustion hits.",
     [],
-    ["skill","class","berserker","ren","passive","defensive"],
+    ["skill", "class", "berserker", "ren", "passive", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4717,7 +4535,7 @@ module.exports = [
     "Berserker skill",
     "Fully unleashes rage, massively increasing strength and speed but removing the ability to distinguish friend from foe. At its most basic, the rampage doubles all physical abilities but the user attacks anything nearby.",
     [],
-    ["skill","class","berserker","ren","buff","dangerous"],
+    ["skill", "class", "berserker", "ren", "buff", "dangerous"],
   ),
   e(
     "Class Skills",
@@ -4725,7 +4543,7 @@ module.exports = [
     "Berserker skill",
     "Explodes all accumulated Ren outward, damaging and knocking back everything nearby. At its most basic, the burst covers a small radius and deals moderate damage. The force can break grapples and shatter barriers.",
     [],
-    ["skill","class","berserker","ren","offensive"],
+    ["skill", "class", "berserker", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4733,7 +4551,7 @@ module.exports = [
     "Berserker skill",
     "A targeted strike meant to disable a specific body part, such as shattering a bone or tearing a tendon. At its most basic, the strike can break a single bone or tear a single muscle group. The damage is permanent without healing.",
     [],
-    ["skill","class","berserker","ren","offensive"],
+    ["skill", "class", "berserker", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4741,7 +4559,7 @@ module.exports = [
     "Berserker skill",
     "A final, suicidal burst of power used when death is certain, dealing catastrophic damage to everything nearby including the user. At its most basic, the rage creates a massive explosion of Ren that destroys everything in the immediate area.",
     [],
-    ["skill","class","berserker","ren","offensive","dangerous"],
+    ["skill", "class", "berserker", "ren", "offensive", "dangerous"],
   ),
   e(
     "Class Skills",
@@ -4749,7 +4567,7 @@ module.exports = [
     "Berserker skill",
     "A roar so powerful it distorts the air, shatters weak structures, and empowers nearby allies while crushing enemy morale. At its most basic, the cry boosts allied fighting ability and staggers enemies. The sound is felt as much as heard.",
     [],
-    ["skill","class","berserker","ren","mastery"],
+    ["skill", "class", "berserker", "ren", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4757,7 +4575,7 @@ module.exports = [
     "Sentinel skill",
     "Coats armor and shield in concentrated Ren, greatly increasing their durability. At its most basic, the Ren reinforcement adds a moderate boost to armor value. The armor glows faintly with crimson energy when struck.",
     [],
-    ["skill","class","sentinel","ren","defensive"],
+    ["skill", "class", "sentinel", "ren", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4765,7 +4583,7 @@ module.exports = [
     "Sentinel skill",
     "Creates a solid barrier of Ren in a chosen direction to block incoming attacks. At its most basic, the wall covers a short stretch and absorbs a few hits. The barrier appears as a translucent crimson wall.",
     [],
-    ["skill","class","sentinel","ren","defensive"],
+    ["skill", "class", "sentinel", "ren", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4773,7 +4591,7 @@ module.exports = [
     "Sentinel skill",
     "The user plants their feet and becomes nearly immovable, taking reduced damage and resisting knockback. At its most basic, the stance provides a moderate damage reduction and prevents being pushed back. The user's feet seem to meld with the ground.",
     [],
-    ["skill","class","sentinel","ren","defensive"],
+    ["skill", "class", "sentinel", "ren", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4781,7 +4599,7 @@ module.exports = [
     "Sentinel skill",
     "Projects a challenge that forces enemies to focus their attacks on the Sentinel instead of allies. At its most basic, the challenge works on weaker-willed opponents and lasts only a few seconds. The Sentinel glows with a faint crimson aura.",
     [],
-    ["skill","class","sentinel","ren","utility"],
+    ["skill", "class", "sentinel", "ren", "utility"],
   ),
   e(
     "Class Skills",
@@ -4789,7 +4607,7 @@ module.exports = [
     "Sentinel skill",
     "Allows the user to continue functioning even under severe injury by reinforcing the body with Ren. At its most basic, the Ren reinforcement numbs pain and keeps the body moving despite wounds. The effect is passive and always active.",
     [],
-    ["skill","class","sentinel","ren","passive","defensive"],
+    ["skill", "class", "sentinel", "ren", "passive", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4797,7 +4615,7 @@ module.exports = [
     "Sentinel skill",
     "Slams the shield into an opponent with Ren-enhanced force, dealing damage and potentially stunning them. At its most basic, the crash deals moderate bludgeoning damage and may daze the target for a moment.",
     [],
-    ["skill","class","sentinel","ren","offensive"],
+    ["skill", "class", "sentinel", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4805,7 +4623,7 @@ module.exports = [
     "Sentinel skill",
     "Extends the Sentinel's protective effect to nearby allies, reducing the damage they take. At its most basic, the guard absorbs a portion of damage that would otherwise hit allies. The effect covers a small radius.",
     [],
-    ["skill","class","sentinel","ren","defensive","support"],
+    ["skill", "class", "sentinel", "ren", "defensive", "support"],
   ),
   e(
     "Class Skills",
@@ -4813,7 +4631,7 @@ module.exports = [
     "Sentinel skill",
     "Designates an ally to protect. The Sentinel automatically intercepts attacks aimed at that ally. At its most basic, the Sentinel reacts quickly to intercept but takes full damage from the attack.",
     [],
-    ["skill","class","sentinel","ren","defensive","support"],
+    ["skill", "class", "sentinel", "ren", "defensive", "support"],
   ),
   e(
     "Class Skills",
@@ -4821,7 +4639,7 @@ module.exports = [
     "Sentinel skill",
     "Once per battle, when the user would fall, a reserve of Ren keeps them alive at 1 health for a short time. At its most basic, the stand lasts only a few seconds — enough to deliver one final attack or retreat.",
     [],
-    ["skill","class","sentinel","ren","defensive","passive"],
+    ["skill", "class", "sentinel", "ren", "defensive", "passive"],
   ),
   e(
     "Class Skills",
@@ -4829,7 +4647,7 @@ module.exports = [
     "Sentinel skill",
     "The user becomes a wide-area defensive bastion, taking drastically reduced damage and protecting a large zone around them. At its most basic, the bastion reduces incoming damage by a massive margin and covers a significant area.",
     [],
-    ["skill","class","sentinel","ren","mastery"],
+    ["skill", "class", "sentinel", "ren", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4837,7 +4655,7 @@ module.exports = [
     "Ren Archer skill",
     "Coats an arrow in Ren before firing, increasing its force and penetration. At its most basic, the Ren coating adds moderate damage and allows the arrow to pierce light armor. The arrow glows faintly crimson in flight.",
     [],
-    ["skill","class","ren archer","ren","offensive"],
+    ["skill", "class", "ren archer", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4845,7 +4663,7 @@ module.exports = [
     "Ren Archer skill",
     "Charges an arrow with maximum Ren and fires it at extreme speed and power. At its most basic, the heavy draw deals devastating damage to a single target but drains significant Ren. The arrow leaves a crimson trail.",
     [],
-    ["skill","class","ren archer","ren","offensive"],
+    ["skill", "class", "ren archer", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4853,7 +4671,7 @@ module.exports = [
     "Ren Archer skill",
     "Fires a quick succession of Ren-enhanced arrows without pausing between shots. At its most basic, the volley fires three or four arrows in rapid succession. Each arrow carries enough Ren to wound.",
     [],
-    ["skill","class","ren archer","ren","offensive"],
+    ["skill", "class", "ren archer", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4861,7 +4679,7 @@ module.exports = [
     "Ren Archer skill",
     "Concentrates Ren into the arrowhead so it can punch through heavy armor and shields. At its most basic, the break can penetrate medium armor and wooden shields. Heavier protection may resist.",
     [],
-    ["skill","class","ren archer","ren","offensive"],
+    ["skill", "class", "ren archer", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4869,7 +4687,7 @@ module.exports = [
     "Ren Archer skill",
     "Uses Ren to move quickly and silently, allowing rapid repositioning between shots. At its most basic, the step covers a short distance and is nearly silent. The movement leaves no trace.",
     [],
-    ["skill","class","ren archer","ren","mobility"],
+    ["skill", "class", "ren archer", "ren", "mobility"],
   ),
   e(
     "Class Skills",
@@ -4877,7 +4695,7 @@ module.exports = [
     "Ren Archer skill",
     "Takes careful aim and fires a single arrow with perfect precision at extreme range. At its most basic, the far shot can hit targets beyond normal sight range. The Ren coating ensures the arrow maintains its trajectory.",
     [],
-    ["skill","class","ren archer","ren","offensive"],
+    ["skill", "class", "ren archer", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4885,7 +4703,7 @@ module.exports = [
     "Ren Archer skill",
     "Fires a dense cloud of Ren-coated arrows that blankets an area. At its most basic, the storm covers a moderate area and each arrow carries enough force to wound. The sheer volume makes it difficult to dodge.",
     [],
-    ["skill","class","ren archer","ren","offensive"],
+    ["skill", "class", "ren archer", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4893,7 +4711,7 @@ module.exports = [
     "Ren Archer skill",
     "A Ren-enhanced dodge that allows the user to avoid attacks while staying ready to fire. At its most basic, the sidestep provides a quick lateral movement that can evade a single attack. The user remains in firing stance.",
     [],
-    ["skill","class","ren archer","ren","mobility","defensive"],
+    ["skill", "class", "ren archer", "ren", "mobility", "defensive"],
   ),
   e(
     "Class Skills",
@@ -4901,7 +4719,7 @@ module.exports = [
     "Ren Archer skill",
     "Passively enhances vision, target tracking, and distance judgment. At its most basic, the eye provides a moderate boost to visual acuity and target acquisition. The effect is always active.",
     [],
-    ["skill","class","ren archer","ren","passive","perception"],
+    ["skill", "class", "ren archer", "ren", "passive", "perception"],
   ),
   e(
     "Class Skills",
@@ -4909,7 +4727,7 @@ module.exports = [
     "Ren Archer skill",
     "Allows perfect accuracy while moving and the creation of hovering arrow constructs that can fire on command. At its most basic, the master can create two or three hovering arrows that fire independently. The accuracy is flawless.",
     [],
-    ["skill","class","ren archer","ren","mastery"],
+    ["skill", "class", "ren archer", "ren", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4917,7 +4735,7 @@ module.exports = [
     "Veilrunner skill",
     "Uses Ren to move silently and quickly through dim light and shadows, becoming hard to track. At its most basic, the move reduces sound and allows passage through shadows without detection. The user appears as a fleeting dark shape.",
     [],
-    ["skill","class","veilrunner","ren","mobility"],
+    ["skill", "class", "veilrunner", "ren", "mobility"],
   ),
   e(
     "Class Skills",
@@ -4925,7 +4743,7 @@ module.exports = [
     "Veilrunner skill",
     "Completely suppresses all sound from the user's movements, including footsteps and clothing. At its most basic, the silence is absolute — the user makes no noise whatsoever. The effect is passive and always active.",
     [],
-    ["skill","class","veilrunner","ren","passive","stealth"],
+    ["skill", "class", "veilrunner", "ren", "passive", "stealth"],
   ),
   e(
     "Class Skills",
@@ -4933,7 +4751,7 @@ module.exports = [
     "Veilrunner skill",
     "A high-damage precision strike delivered from behind, targeting vital points. At its most basic, the backstab deals massive damage and may be lethal on a clean hit. The strike targets the spine, neck, or kidneys.",
     [],
-    ["skill","class","veilrunner","ren","offensive"],
+    ["skill", "class", "veilrunner", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4941,7 +4759,7 @@ module.exports = [
     "Veilrunner skill",
     "Creates a cloud of smoke or dust that breaks line of sight and allows repositioning or escape. At its most basic, the screen covers a small area and lasts a few seconds. The smoke is thick and obscuring.",
     [],
-    ["skill","class","veilrunner","ren","utility"],
+    ["skill", "class", "veilrunner", "ren", "utility"],
   ),
   e(
     "Class Skills",
@@ -4949,7 +4767,7 @@ module.exports = [
     "Veilrunner skill",
     "Enhances reflexes and body control, allowing the user to dodge attacks with minimal movement. At its most basic, the dodge provides a moderate boost to evasion. The user's movements become fluid and unpredictable.",
     [],
-    ["skill","class","veilrunner","ren","defensive","mobility"],
+    ["skill", "class", "veilrunner", "ren", "defensive", "mobility"],
   ),
   e(
     "Class Skills",
@@ -4957,7 +4775,7 @@ module.exports = [
     "Veilrunner skill",
     "Coats a blade in Ren-enhanced poison that slows, weakens, or paralyzes on contact. At its most basic, the poison causes minor weakness and slows the target briefly. The blade glows faintly with a sickly green light.",
     [],
-    ["skill","class","veilrunner","ren","offensive"],
+    ["skill", "class", "veilrunner", "ren", "offensive"],
   ),
   e(
     "Class Skills",
@@ -4965,7 +4783,7 @@ module.exports = [
     "Veilrunner skill",
     "Uses Ren to sense and manipulate the internal mechanisms of locks without physical tools. At its most basic, the touch can pick simple mechanical locks. Complex magical locks require deeper concentration.",
     [],
-    ["skill","class","veilrunner","ren","utility"],
+    ["skill", "class", "veilrunner", "ren", "utility"],
   ),
   e(
     "Class Skills",
@@ -4973,7 +4791,7 @@ module.exports = [
     "Veilrunner skill",
     "Subtly alters posture, gait, and mannerisms to blend into crowds or imitate another person. At its most basic, the shift provides a general resemblance — not a perfect copy. The user can fool casual observation.",
     [],
-    ["skill","class","veilrunner","ren","utility"],
+    ["skill", "class", "veilrunner", "ren", "utility"],
   ),
   e(
     "Class Skills",
@@ -4981,7 +4799,7 @@ module.exports = [
     "Veilrunner skill",
     "Fully suppresses presence for a short time, becoming effectively invisible. At its most basic, the vanish lasts only a few seconds and movement is limited. The user's Veyn signature fades to nothing.",
     [],
-    ["skill","class","veilrunner","ren","stealth"],
+    ["skill", "class", "veilrunner", "ren", "stealth"],
   ),
   e(
     "Class Skills",
@@ -4989,7 +4807,7 @@ module.exports = [
     "Veilrunner skill",
     "Allows near-perfect stealth even at full speed, leaving almost no trace of the user's presence. At its most basic, the shadow provides near-invisible movement at walking speed. Faster movement may leave brief visual disturbances.",
     [],
-    ["skill","class","veilrunner","ren","mastery"],
+    ["skill", "class", "veilrunner", "ren", "mastery"],
   ),
   e(
     "Class Skills",
@@ -4997,7 +4815,7 @@ module.exports = [
     "Shudonkeeper skill",
     "Deep analysis of Shudon construction, materials, design, and age through examination. At its most basic, the study can identify the age and general origin of a Shudon fragment. The analysis requires physical contact and focused Veyn probing.",
     [],
-    ["skill","class","shudonkeeper","knowledge"],
+    ["skill", "class", "shudonkeeper", "knowledge"],
   ),
   e(
     "Class Skills",
@@ -5005,7 +4823,7 @@ module.exports = [
     "Shudonkeeper skill",
     "Repairs and maintains inactive Shudon, slowing further deterioration even if reactivation is impossible. At its most basic, the keep can patch cracks, clean surfaces, and reinforce fragile sections. The work is slow and meticulous.",
     [],
-    ["skill","class","shudonkeeper","repair"],
+    ["skill", "class", "shudonkeeper", "repair"],
   ),
   e(
     "Class Skills",
@@ -5013,7 +4831,7 @@ module.exports = [
     "Shudonkeeper skill",
     "Theoretical knowledge of how the Shudon were originally created and what role the world core played. At its most basic, the lore covers the basic history and construction methods. The knowledge is mostly academic.",
     [],
-    ["skill","class","shudonkeeper","knowledge"],
+    ["skill", "class", "shudonkeeper", "knowledge"],
   ),
   e(
     "Class Skills",
@@ -5021,7 +4839,7 @@ module.exports = [
     "Shudonkeeper skill",
     "Reads and interprets the ancient inscriptions found on Shudon and related relics. At its most basic, the read can decipher simple inscriptions and identify common symbols. Complex texts require extensive study.",
     [],
-    ["skill","class","shudonkeeper","knowledge"],
+    ["skill", "class", "shudonkeeper", "knowledge"],
   ),
   e(
     "Class Skills",
@@ -5029,7 +4847,7 @@ module.exports = [
     "Shudonkeeper skill",
     "Attempts to sense residual will or traces of the world core inside dormant Shudon through physical contact. At its most basic, the whisper provides faint impressions — emotions, images, or sounds. The contact must be sustained.",
     [],
-    ["skill","class","shudonkeeper","perception"],
+    ["skill", "class", "shudonkeeper", "perception"],
   ),
   e(
     "Class Skills",
@@ -5037,7 +4855,7 @@ module.exports = [
     "Shudonkeeper skill",
     "Comprehensive knowledge of the Shudon's historical role in the division of the realms. At its most basic, the record covers the major events and their significance. The knowledge is essential for understanding reactivation.",
     [],
-    ["skill","class","shudonkeeper","knowledge"],
+    ["skill", "class", "shudonkeeper", "knowledge"],
   ),
   e(
     "Class Skills",
@@ -5045,7 +4863,7 @@ module.exports = [
     "Shudonkeeper skill",
     "Develops and refines theoretical methods that might one day allow reactivation of the Shudon. At its most basic, the theory is speculative — logical but unproven. Each theory requires extensive research and documentation.",
     [],
-    ["skill","class","shudonkeeper","knowledge"],
+    ["skill", "class", "shudonkeeper", "knowledge"],
   ),
   e(
     "Class Skills",
@@ -5053,7 +4871,7 @@ module.exports = [
     "Shudonkeeper skill",
     "Organizes and preserves the collective research, observations, and theories of all previous Shudonkeepers. At its most basic, the archive can catalog and retrieve information efficiently. The archive grows with each generation.",
     [],
-    ["skill","class","shudonkeeper","knowledge"],
+    ["skill", "class", "shudonkeeper", "knowledge"],
   ),
   e(
     "Class Skills",
@@ -5061,7 +4879,7 @@ module.exports = [
     "Shudonkeeper skill",
     "Detects and identifies Shudon-related relics and materials even when heavily damaged or buried. At its most basic, the sense covers a moderate radius and can distinguish Shudon materials from ordinary stone. The sense feels like a faint vibration.",
     [],
-    ["skill","class","shudonkeeper","perception"],
+    ["skill", "class", "shudonkeeper", "perception"],
   ),
   e(
     "Class Skills",
@@ -5069,11 +4887,10 @@ module.exports = [
     "Shudonkeeper skill",
     "Allows brief, incomplete glimpses of residual world-core patterns still present inside Shudon remains. At its most basic, the glimpse provides a flash of insight — a single image or feeling. The glimpse is disorienting and cannot be controlled.",
     [],
-    ["skill","class","shudonkeeper","perception"],
+    ["skill", "class", "shudonkeeper", "perception"],
   ),
 
-
-  // ============================================================ CLASS PROGRESSION SYSTEMS
+  // ============================================================ CLASS PROGRESSION
   e(
     "Class Progression",
     "Alchemist — Potion Mastery Ranks",
@@ -5089,7 +4906,7 @@ module.exports = [
       { label: "Elixir Lord", value: "Legendary-rank potions, handles dragon heart and Grimbough leaves independently" },
       { label: "Grand Alchemist", value: "Can brew the Ethereal Potion, creates entirely new formulas, master of all alchemical arts" },
     ],
-    ["progression","alchemist","class","ranks"],
+    ["progression", "alchemist", "class", "ranks"],
   ),
   e(
     "Class Progression",
@@ -5106,7 +4923,7 @@ module.exports = [
       { label: "Apex Predator", value: "Bonds with apex-tier creatures, shared abilities between master and beast" },
       { label: "Alpha Eternal", value: "Permanent multi-creature bond network, creatures retain former abilities, master and beasts share damage" },
     ],
-    ["progression","beastmaster","class","stages"],
+    ["progression", "beastmaster", "class", "stages"],
   ),
   e(
     "Class Progression",
@@ -5123,7 +4940,7 @@ module.exports = [
       { label: "Mythic Forger", value: "Creates legendary-grade weapons, works with rare materials impossible for lesser smiths" },
       { label: "Grand Forger", value: "Can mix angel and demon blood, creates Divine-tier weapons, masters all forging disciplines" },
     ],
-    ["progression","smith","class","tiers"],
+    ["progression", "smith", "class", "tiers"],
   ),
   e(
     "Class Progression",
@@ -5140,7 +4957,7 @@ module.exports = [
       { label: "Rune Sage", value: "Develops new enchantment patterns, creates adaptive enchantments" },
       { label: "Rune Transcendent", value: "Creates enchantments that respond to threats and evolve over time, pioneers new magical forms" },
     ],
-    ["progression","enchanter","class","grades"],
+    ["progression", "enchanter", "class", "grades"],
   ),
   e(
     "Class Progression",
@@ -5157,7 +4974,7 @@ module.exports = [
       { label: "Prophet", value: "Reliable future sight, perceives bonds between people, performs complex rituals" },
       { label: "Cosmic Sight", value: "Combines all divination effects, perceives the interconnected web of all living things" },
     ],
-    ["progression","diviner","class","levels"],
+    ["progression", "diviner", "class", "levels"],
   ),
   e(
     "Class Progression",
@@ -5174,7 +4991,7 @@ module.exports = [
       { label: "Grand Exorcist", value: "Mass purifications, banishes powerful spirits, cleanses entire regions" },
       { label: "Eternal Seal-Bearer", value: "Places permanent suppressions on extreme corruption, forces spirits to disperse permanently" },
     ],
-    ["progression","exorcist","class","stages"],
+    ["progression", "exorcist", "class", "stages"],
   ),
   e(
     "Class Progression",
@@ -5191,7 +5008,7 @@ module.exports = [
       { label: "Grand Arbiter", value: "Handles ruler-level disputes, creates contracts that bind entire organizations" },
       { label: "Iron Sovereign", value: "Creates near-unbreakable contracts, enforces penalties across all three realms, mediates between the Four Rulers" },
     ],
-    ["progression","broker","class","ranks"],
+    ["progression", "broker", "class", "ranks"],
   ),
   e(
     "Class Progression",
@@ -5208,7 +5025,7 @@ module.exports = [
       { label: "Divine Radiance", value: "Selectively heals or harms, creates adaptive barriers, advanced holy techniques" },
       { label: "Seraphic Aura", value: "All holy abilities enhanced to maximum, produces effects beyond normal class limits" },
     ],
-    ["progression","saintess","class","stages"],
+    ["progression", "saintess", "class", "stages"],
   ),
   e(
     "Class Progression",
@@ -5225,7 +5042,7 @@ module.exports = [
       { label: "Saint Healer", value: "Restores lost limbs with rare components, pulls people back from death's edge" },
       { label: "Life Weaver", value: "Creates entirely new healing techniques, masters all healing disciplines, legendary healing" },
     ],
-    ["progression","clergy","class","ranks"],
+    ["progression", "clergy", "class", "ranks"],
   ),
   e(
     "Class Progression",
@@ -5242,7 +5059,7 @@ module.exports = [
       { label: "Void Archer", value: "Arrows that pierce through dimensions, reality-bending enchantments" },
       { label: "Cosmic Marksman", value: "Creates entirely new magical ammunition, perfect accuracy at any range, arrows that never miss" },
     ],
-    ["progression","archer","class","tiers"],
+    ["progression", "archer", "class", "tiers"],
   ),
   e(
     "Class Progression",
@@ -5259,7 +5076,7 @@ module.exports = [
       { label: "Seraphic Knight", value: "All paladin abilities enhanced, becomes a beacon of golden light" },
       { label: "Eternal Guardian", value: "Full temporary empowerment, all abilities at maximum, inspires allies and terrifies corruption" },
     ],
-    ["progression","paladin","class","stages"],
+    ["progression", "paladin", "class", "stages"],
   ),
   e(
     "Class Progression",
@@ -5276,7 +5093,7 @@ module.exports = [
       { label: "Grave Lord", value: "Permanent undead army, harvests souls for later use, commands elite undead" },
       { label: "Death Sovereign", value: "Controls multiple powerful undead simultaneously, maintains permanent undead guard, harvests residual essence" },
     ],
-    ["progression","grimtender","class","ranks"],
+    ["progression", "grimtender", "class", "ranks"],
   ),
   e(
     "Class Progression",
@@ -5293,7 +5110,7 @@ module.exports = [
       { label: "Eternal Blade", value: "Becomes one with the blade, executes techniques with perfect precision" },
       { label: "Perfect Edge", value: "Every movement optimal, zero wasted motion, blade is extension of soul" },
     ],
-    ["progression","bladesinger","class","stages"],
+    ["progression", "bladesinger", "class", "stages"],
   ),
   e(
     "Class Progression",
@@ -5310,7 +5127,7 @@ module.exports = [
       { label: "Warlord", value: "Roar empowers allies and crushes enemy morale, war cry staggers entire armies" },
       { label: "Avatar of War", value: "Final rage burst on death deals catastrophic damage, all abilities at absolute peak" },
     ],
-    ["progression","berserker","class","stages"],
+    ["progression", "berserker", "class", "stages"],
   ),
   e(
     "Class Progression",
@@ -5327,7 +5144,7 @@ module.exports = [
       { label: "Immortal Guardian", value: "Wide-area defensive bastion, takes drastically reduced damage" },
       { label: "Eternal Sentinel", value: "Becomes immovable wall, protects large zone, inspires allies to fight harder" },
     ],
-    ["progression","sentinel","class","ranks"],
+    ["progression", "sentinel", "class", "ranks"],
   ),
   e(
     "Class Progression",
@@ -5344,7 +5161,7 @@ module.exports = [
       { label: "Void Striker", value: "Arrows that pierce through dimensions, reality-bending Ren effects" },
       { label: "Arrow Sovereign", value: "Perfect accuracy while moving, hovering arrow constructs, multiple simultaneous Ren effects" },
     ],
-    ["progression","ren archer","class","stages"],
+    ["progression", "ren archer", "class", "stages"],
   ),
   e(
     "Class Progression",
@@ -5361,7 +5178,7 @@ module.exports = [
       { label: "Shadow Lord", value: "Permanent shadow integration, strikes without detection, leaves no trace" },
       { label: "Living Shadow", value: "One with shadows, near-perfect stealth at full speed, vanishes indefinitely" },
     ],
-    ["progression","veilrunner","class","tiers"],
+    ["progression", "veilrunner", "class", "tiers"],
   ),
   e(
     "Class Progression",
@@ -5378,26 +5195,26 @@ module.exports = [
       { label: "Sage", value: "Communes with Shudon through physical contact, senses faint world-core traces" },
       { label: "World Reader", value: "Glimpses residual world-core patterns, deepest understanding of Shudon purpose" },
     ],
-    ["progression","shudonkeeper","class","depths"],
+    ["progression", "shudonkeeper", "class", "depths"],
   ),
 
-  // ============================================================ GUILD / CLAN SYSTEM
+  // ============================================================ CLAN
   e(
     "Clan",
     "Silver Concord",
     "Mercenary and Contract Guild — Human Realm",
-    "Silver Concord is one of the most respected guilds in the Human Realm, specializing in contract mediation, mercenary dispatch, and跨-realm trade facilitation. Founded by a B-rank Broker who saw the need for a neutral organization that could handle deals between humans, demons, and angels without bias. The guild operates out of a fortified manor in Aldermere, with branches in major cities across the Human Realm. Its reputation is built on one iron rule: every contract signed under Silver Concord's seal is honored.",
+    "Silver Concord is one of the most respected guilds in the Human Realm, specializing in contract mediation, mercenary dispatch, and Cross-realm trade facilitation. Founded by a B-rank Broker who saw the need for a neutral organization that could handle deals between humans, demons, and angels without bias. The guild operates out of a fortified manor in Aldermere, with branches in major cities across the Human Realm. Its reputation is built on one iron rule: every contract signed under Silver Concord's seal is honored.",
     [
       { label: "Type", value: "Mercenary and Contract Guild" },
       { label: "Location", value: "Aldermere, Human Realm (main branch)" },
       { label: "Founded", value: "Approximately 200 years ago" },
       { label: "Guildmaster", value: "Varen Ashtail — Broker class, B-rank" },
       { label: "Members", value: "~150 active members across all ranks" },
-      { label: "Specialization", value: "Contract mediation, mercenary dispatch,跨-realm trade" },
+      { label: "Specialization", value: "Contract mediation, mercenary dispatch, Cross-realm trade" },
       { label: "Reputation", value: "Known for ironclad fairness and reliable contract enforcement" },
       { label: "Guild Rules", value: "1. Every contract under Silver Concord's seal is honored. 2. No member may break a signed contract. 3. The guild does not take sides in disputes. 4. Members protect each other. 5. The Guildmaster's word is final." },
     ],
-    ["clan","guild","human realm","mercenary","contract"],
+    ["clan", "guild", "human realm", "mercenary", "contract"],
   ),
   e(
     "Clan",
@@ -5407,13 +5224,13 @@ module.exports = [
     [
       { label: "Ranks", value: "Initiate → Journeyman → Veteran → Elite → Champion → Guildmaster" },
       { label: "Initiate", value: "New members, supervised on simple contracts, learning guild rules" },
-      { label: "Journeyman", value: "Independent on standard contracts, can handle low-risk跨-realm deals" },
+      { label: "Journeyman", value: "Independent on standard contracts, can handle low-risk Cross-realm deals" },
       { label: "Veteran", value: "Handles complex contracts, mentors Initiates, trusted with sensitive negotiations" },
       { label: "Elite", value: "Leads contract teams, handles high-stakes deals, represents the guild externally" },
       { label: "Champion", value: "Top-tier members, handles ruler-level disputes, oversees branch operations" },
       { label: "Guildmaster", value: "Leads the entire guild, final authority on all contracts and disputes" },
     ],
-    ["clan","guild","ranks","silver concord"],
+    ["clan", "guild", "ranks", "silver concord"],
   ),
   e(
     "Clan",
@@ -5423,14 +5240,16 @@ module.exports = [
     [
       { label: "Contract Hall", value: "Central meeting room where contracts are drafted, reviewed, and sealed with the guild's magical imprint" },
       { label: "Training Grounds", value: "Indoor and outdoor areas for members to practice combat, negotiation, and contract enforcement" },
-      { label: "Archive", value: "Vast library of completed contracts, legal precedents, and跨-realm trade regulations" },
+      { label: "Archive", value: "Vast library of completed contracts, legal precedents, and Cross-realm trade regulations" },
       { label: "Armory", value: "Weapons and armor available for members, including blood-forged weapons for high-rank missions" },
       { label: "Healing Ward", value: "Staffed by Clergy members, provides treatment for injured members" },
-      { label: "Teleportation Circle", value: "Rare magical circle that allows快速 travel to branch offices in other cities" },
+      { label: "Teleportation Circle", value: "Rare magical circle that allows fast travel to branch offices in other cities" },
       { label: "Guild Vault", value: "Secure storage for valuable contract items, rare ingredients, and guild funds" },
     ],
-    ["clan","guild","facilities","silver concord"],
+    ["clan", "guild", "facilities", "silver concord"],
   ),
+
+  // ============================================================ CHARACTERS
   e(
     "Characters",
     "Varen Ashtail",
@@ -5448,6 +5267,6 @@ module.exports = [
       { label: "Background", value: "Founded Silver Concord ~200 years ago. Built it from a small mediation office into a跨-realm guild. Has mediated between rulers and never lost a client." },
       { label: "Reputation", value: "Known as 'The Silver Tongue' — the most trusted Broker in the Human Realm" },
     ],
-    ["character","guildmaster","broker","b-rank","silver concord"],
+    ["character", "guildmaster", "broker", "b-rank", "silver concord"],
   ),
 ];

@@ -67,4 +67,7 @@ module.exports = [
   r("Ruby Divina", "Aldermere", "ruler of", "Ruler of", "Ruby Divina rules Aldermere, the kingdom of the Human Realm."),
   r("Clint Ashborn", "Aurelion", "ruler of", "Ruler of", "Clint Ashborn rules Aurelion, the kingdom of the Angel Realm."),
   r("Tera Morage", "Vorath", "ruler of", "Ruler of", "Tera Morage rules Vorath, the kingdom of the Demon Realm."),
+  r("Eva Aldermere Divina", "Ruby Divina", "child of", "Child of", "She is the daughter to Ruby Divina"),
+  r("Bella Rose", "Jaiden Marlock", "friend of", "Friend of", "she is the childhood friend of jaiden"),
+  r("Mark Wesley", "Jaiden Marlock", "friend of", "Friend of", "he later became friends with jaiden"),
 ];
