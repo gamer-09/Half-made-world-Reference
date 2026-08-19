@@ -152,6 +152,9 @@ module.exports = [
     "They are smaller than Fairies. They produce “pixie dust” which can be used to make a potion. They stay in the Hidden Realm. Pixie dust can make someone younger or give a permanent boost in Veyn and a little for Ren.",
     [
       { label: "Location", value: "Hidden Realm" },
+      { label: "Realm", value: "Hidden Realm (Shadow Realm)" },
+      { label: "Hostile", value: "Passive — flee from danger; do not attack" },
+      { label: "Threat Level", value: "None — passive; do not attack and flee from danger" },
     ],
     ["pixie", "dust", "hidden realm"],
   ),
@@ -162,6 +165,9 @@ module.exports = [
     "They are friendly creatures that roam in the Arubian Forest. They can help you find treasures that may be hidden in the forest for a valuable trade.",
     [
       { label: "Location", value: "Arubian Forest" },
+      { label: "Realm", value: "Human Realm" },
+      { label: "Hostile", value: "Friendly — trade with travelers rather than fight" },
+      { label: "Threat Level", value: "None — friendly; trade with travelers rather than fight" },
     ],
     ["fairy", "arubian", "treasure"],
   ),
@@ -172,6 +178,9 @@ module.exports = [
     "They stay at the darker side of the Arubian Forest (the Umbrage Forest). They always move in groups.",
     [
       { label: "Location", value: "Umbrage Forest" },
+      { label: "Realm", value: "Demon Realm" },
+      { label: "Hostile", value: "Hostile — hunt in groups and attack travelers on sight" },
+      { label: "Threat Level", value: "Moderate — individually manageable but dangerous in packs of three or more" },
     ],
     ["troll", "umbrage"],
   ),
@@ -182,17 +191,24 @@ module.exports = [
     "They stay in the Umbrage Forest and are aggressive towards humans.",
     [
       { label: "Location", value: "Umbrage Forest" },
+      { label: "Realm", value: "Demon Realm" },
+      { label: "Hostile", value: "Extremely hostile — aggressive toward humans and charge on sight" },
+      { label: "Threat Level", value: "High — individually lethal to untrained humans; charge attacks break through basic armor" },
     ],
     ["minotaur", "umbrage"],
   ),
   e(
-    "Monsters",
+    "Beings",
     "Elves",
     "Territorial forest folk — two types",
     "They stay in the Arubian Forest or the Umbrage Forest, and become aggressive to those who destroy the part of the forest in their territory. There are two types of Elves: the Pallantine and the Veilborn.",
     [
       { label: "Pallantine", value: "They stay in the Arubian Forest." },
       { label: "Veilborn", value: "They stay in the Umbrage Forest and only trust themselves." },
+      { label: "Location", value: "Arubian Forest (Pallantine) and Umbrage Forest (Veilborn)" },
+      { label: "Realm", value: "Human Realm (Pallantine) and Demon Realm (Veilborn)" },
+      { label: "Hostile", value: "Defensive — attack only when their forest territory is threatened" },
+      { label: "Threat Level", value: "Moderate — defensive rather than aggressive; attack only when territory is threatened" },
     ],
     ["elf", "pallantine", "veilborn"],
   ),
@@ -203,6 +219,9 @@ module.exports = [
     "They are used as transport by the Pallantine. They live on the highest part of mountains.",
     [
       { label: "Location", value: "Highest parts of mountains" },
+      { label: "Realm", value: "Human Realm" },
+      { label: "Hostile", value: "Territorial — rarely attack humans unless provoked; mountable by Pallantine only" },
+      { label: "Threat Level", value: "Low — territorial but rarely attack humans; mountable by Pallantine only" },
     ],
     ["griffen", "pallantine", "mountains", "transport"],
   ),
@@ -214,6 +233,9 @@ module.exports = [
     [
       { label: "Location", value: "Thornlost Forest (Hidden Realm)" },
       { label: "Notable", value: "Its venom is one of the few things that can wound an Aetherblade Lord Angel fatally." },
+      { label: "Realm", value: "Hidden Realm (Shadow Realm)" },
+      { label: "Hostile", value: "Hostile — attacks anyone who enters Thornlost Forest without permission" },
+      { label: "Threat Level", value: "Extreme — venom is lethal even to high-rank angels; armored body resists most attacks" },
     ],
     ["coilmane", "guardian", "thornlost", "venom"],
   ),
@@ -224,6 +246,9 @@ module.exports = [
     "They use a fiery whip as a weapon in combat and they can shapeshift; they are shapeshifting winged beasts. They stay in the Umbrage Forest.",
     [
       { label: "Location", value: "Umbrage Forest" },
+      { label: "Realm", value: "Demon Realm" },
+      { label: "Hostile", value: "Hostile — attack travelers using fire whip and shapeshifting ambush tactics" },
+      { label: "Threat Level", value: "High — shapeshifting makes ambush unpredictable; fire whip burns through standard armor" },
     ],
     ["harpy", "harpies", "umbrage", "shapeshift"],
   ),
@@ -235,6 +260,9 @@ module.exports = [
     [
       { label: "Location", value: "Shadow Realm; high mountain tops in the Hidden Realm" },
       { label: "Notable", value: "Their heart is an ingredient in the Ethereal Potion." },
+      { label: "Realm", value: "Hidden Realm (Shadow Realm); high mountain tops in the Hidden Realm" },
+      { label: "Hostile", value: "Extremely hostile — attack anyone who invades their territory" },
+      { label: "Threat Level", value: "Extreme — tough scales resist most magic; territorial rage makes them nearly unstoppable" },
     ],
     ["dragon", "shadow realm", "hidden realm"],
   ),
@@ -245,11 +273,407 @@ module.exports = [
     "They are humanoid fish women. They stay in the Sentient River in the Shadow Realm. They can hypnotize you when you hear them sing.",
     [
       { label: "Location", value: "Sentient River (Shadow Realm)" },
+      { label: "Realm", value: "Hidden Realm (Shadow Realm)" },
+      { label: "Hostile", value: "Hostile — hypnotize anyone who hears their song, leading to drowning" },
+      { label: "Threat Level", value: "High — song hypnotizes anyone who hears it; drowning is the usual cause of death" },
     ],
     ["siren", "sentient river", "hypnosis"],
   ),
 
-  // ============================================================ BEINGS
+  
+  // ============================================================ NEW MONSTERS — CLASSIC
+
+  // --- Werewolves ---
+  e(
+    "Monsters",
+    "Werewolves",
+    "Moon-cursed shapeshifters of the Thornlost Forest",
+    "Humans or humanoids cursed by corrupted Veyn exposure during a full moon, forced into a bestial wolf form they cannot control. The transformation is not voluntary — the corrupted Veyn embedded in their blood triggers it whenever the moon's light is strongest. In their shifted form they are faster and stronger than any natural wolf, with claws that can rend steel and a bite that injects corrupted Veyn into the victim, beginning the corruption sickness. They retain fragments of their human mind — enough to recognize loved ones but never enough to stop themselves. The curse cannot be removed by conventional healing; only a high-rank Exorcist's Purification or a Saintess's Holy Purge can purge the corrupted Veyn from their blood, and even then the process can leave permanent scarring on the soul. A werewolf that has transformed more than seven times is considered past the point of no return — the corrupted Veyn has rewritten their Veyn channels too deeply for any cure to work.",
+    [
+      { label: "Location", value: "Thornlost Forest (Hidden Realm); occasionally near border zones of the Umbrage Forest" },
+      { label: "Realm", value: "Hidden Realm (Shadow Realm); Demon Realm border" },
+      { label: "Hostile", value: "Extremely hostile — attack anything in range during transformation; cannot control their actions" },
+      { label: "Threat Level", value: "High — dangerous to unprepared travelers; a single werewolf can overwhelm a group of F-rank fighters" },
+      { label: "Cure", value: "High-rank Exorcist purification or Saintess holy purge — only before the seventh transformation" },
+      { label: "Notable", value: "Their cursed blood can be refined into a potion that temporarily grants enhanced senses and physical power, but carries a risk of triggering the curse in the drinker" },
+    ],
+    ["werewolf", "werewolves", "cursed", "moon", "hidden realm", "thornlost"],
+  ),
+
+  // --- Basilisk ---
+  e(
+    "Monsters",
+    "Basilisk",
+    "Stone-gazing serpents of the Umbrage Forest depths",
+    "Massive serpents up to forty feet long with scales of dark iron-grey that shimmer with an oily sheen. Their most dangerous feature is their gaze — prolonged eye contact with a Basilisk petrifies living flesh, starting at the extremities and spreading inward over the course of minutes. The petrification is not instant death; victims remain conscious as their body turns to stone, able to feel the process but unable to move or scream once it reaches the chest. The stone is not true stone — it is corrupted Veyn crystallized around the victim's body, which means an Exorcist's Purify can reverse the early stages but not the advanced ones. Basilisks hunt by ambush, coiling in dense undergrowth and waiting for prey to wander into line of sight. They are drawn to areas of high Veyn density, and their nests are surrounded by the petrified remains of previous victims — sometimes dozens, creating a grotesque garden of stone figures. Their eyes, once removed and properly preserved, are a component in powerful defensive enchantments, particularly Wardseal and Guardseal-class runework.",
+    [
+      { label: "Location", value: "Deep Umbrage Forest; occasionally found in the Thornlost Forest darker reaches" },
+      { label: "Realm", value: "Demon Realm; Hidden Realm (Shadow Realm)" },
+      { label: "Hostile", value: "Extremely hostile — petrify anything that makes direct eye contact" },
+      { label: "Threat Level", value: "Extreme — petrification gaze can end a fight instantly; mirrors are the only reliable counter" },
+      { label: "Weakness", value: "They cannot petrify through reflective surfaces; mirrors or polished shields bounce the gaze back. Direct light to their eyes also stuns them temporarily." },
+      { label: "Notable", value: "Preserved Basilisk eyes are worth a small fortune in the Broker's market" },
+    ],
+    ["basilisk", "petrify", "serpent", "umbrage", "stone gaze"],
+  ),
+
+  // --- Manticore ---
+  e(
+    "Monsters",
+    "Manticore",
+    "Lion-bodied ambush predators with a scorpion's venom tail",
+    "A terrifying hybrid with the body of a massive lion, bat-like wings that allow short bursts of flight, and a segmented scorpion tail tipped with a barbed stinger loaded with paralytic venom. Unlike most beasts of the Umbrage Forest, Manticores are solitary hunters that rely on ambush rather than pack tactics. They bury themselves in loose soil or leaf litter near travel paths and strike when prey passes overhead — the venom from their tail paralyzes within seconds, and they consume their prey alive. Their roar is unnaturally loud and can be heard for miles; it serves both as a territorial claim and a way to disorient prey before the attack. Manticores have a rudimentary Veyn sensitivity that lets them detect the size and strength of nearby beings, allowing them to avoid targets that might fight back. They are fiercely territorial and will fight to the death rather than retreat from their claimed hunting ground. A Manticore's venom sac, carefully extracted while the creature is alive, is one of the most valuable alchemical ingredients in the world — it is the base component for Paralytic Venom, a poison that works on beings up to C-rank.",
+    [
+      { label: "Location", value: "Umbrage Forest; occasionally found in deep parts of the Arubian Forest" },
+      { label: "Realm", value: "Demon Realm; Human Realm (rare)" },
+      { label: "Hostile", value: "Extremely hostile — ambush predators that paralyze and consume prey alive" },
+      { label: "Threat Level", value: "High — venom is lethal to most humans; venom sac extraction is a high-value Broker contract" },
+      { label: "Notable", value: "Venom sac extraction is a specialized Broker contract worth enormous sums" },
+      { label: "Behavior", value: "Solitary ambush predator; avoids anything it detects as stronger than itself" },
+    ],
+    ["manticore", "lion", "venom", "ambush", "umbrage"],
+  ),
+
+  // --- Chimera ---
+  e(
+    "Monsters",
+    "Chimera",
+    "Three-headed hybrid of fire, fang, and fury",
+    "A monstrous hybrid with three distinct heads — a lion's head that roars with concussive force, a goat's head that breathes a stream of corrosive bile capable of dissolving metal and stone, and a serpent's head that strikes with venom far more potent than a Basilisk's, capable of killing an A-rank fighter in minutes if untreated. The three heads operate semi-independently, each with its own awareness and instincts, which makes a Chimera extraordinarily difficult to fight — it can attack from three directions simultaneously and react to threats from any angle. Its body is heavily armored with overlapping scales that are resistant to both physical and magical damage, and its blood is flammable when exposed to air, meaning wounds that draw blood can ignite unexpectedly. Chimera blood is highly prized by Alchemists for creating Explosive Mixing compounds and Blastflask ingredients, though harvesting it safely requires specialized containment. They are found in the most dangerous depths of the Umbrage Forest and occasionally in the Hidden Realm's Thornlost Forest.",
+    [
+      { label: "Location", value: "Deep Umbrage Forest; Thornlost Forest (Hidden Realm)" },
+      { label: "Realm", value: "Demon Realm; Hidden Realm (Shadow Realm)" },
+      { label: "Hostile", value: "Extremely hostile — attack with three heads simultaneously from multiple angles" },
+      { label: "Threat Level", value: "Extreme — three heads attack simultaneously; blood ignites on contact with air" },
+      { label: "Notable", value: "Their flammable blood is a key Alchemical ingredient but requires containment during extraction" },
+      { label: "Weakness", value: "The three heads sometimes disagree on targeting, creating brief windows of incoordination that skilled fighters can exploit" },
+    ],
+    ["chimera", "three heads", "fire", "venom", "umbrage", "hidden realm"],
+  ),
+
+  // --- Cockatrice ---
+  e(
+    "Monsters",
+    "Cockatrice",
+    "Dragon-bird hybrid with petrifying touch",
+    "A smaller relative of the Basilisk, but far more cunning. The Cockatrice has the body of a rooster covered in dull bronze scales, small dragon-like wings that allow gliding, and a hooked beak that secretes a thin layer of petrifying residue — not from its gaze like a Basilisk, but through physical contact. Any flesh touched by a Cockatrice's beak or talons begins to calcify within minutes, the process slower than a Basilisk's gaze but far harder to detect until it has already progressed significantly. Cockatrices hunt in mated pairs, with one luring prey through deceptive calls that mimic wounded animals while the other flanks for a surprise strike. They are intelligent enough to set simple traps and have been observed stealing food from Troll nests. Though individually not as dangerous as a Basilisk, their cunning and pair-hunting tactics make them a persistent nuisance in border regions. Their petrifying residue, when carefully collected, is used by Enchanters to create Wardseal-class defensive runes that harden on contact.",
+    [
+      { label: "Location", value: "Umbrage Forest borders; Thornlost Forest edges" },
+      { label: "Realm", value: "Demon Realm; Hidden Realm (Shadow Realm)" },
+      { label: "Hostile", value: "Hostile — hunt in mated pairs using lure-and-flank tactics; petrifying touch" },
+      { label: "Threat Level", value: "Moderate — not individually overwhelming; dangerous in mated pairs that use lure-and-flank tactics" },
+      { label: "Notable", value: "Their beak residue is used in Wardseal enchantments" },
+      { label: "Behavior", value: "Hunts in mated pairs using lure-and-flank tactics; mimics wounded animal calls" },
+    ],
+    ["cockatrice", "petrify", "bird", "dragon", "umbrage"],
+  ),
+
+  // --- Goblins ---
+  e(
+    "Monsters",
+    "Goblins",
+    "Cunning pack hunters with a talent for traps",
+    "Small, wiry humanoids standing barely three feet tall, with mottled green-grey skin, oversized ears that give them exceptional hearing, and yellow eyes adapted for near-total darkness. Goblins are not individually dangerous — a single Goblin could be killed by an average human with a sword — but they are never alone. They travel in warrens of fifty to several hundred, and their true strength lies in their intelligence and their obsessive crafting of traps. Goblin warrens are labyrinths of dug tunnels and concealed pit traps, tripwires connected to falling spikes, and crude but effective noise alarms that alert the entire warren to intruders. They are surprisingly adept at salvaging and repurposing materials — Goblin warrens are littered with scavenged weapons, broken armor, and stolen supplies repurposed into crude but functional tools. They fear fire above all else and will scatter at the first sign of flame, but they are bold enough to swarm anything that enters their territory on foot. Goblin nests are found throughout the Umbrage Forest and occasionally in the deeper parts of the Arubian Forest, where they raid fairy caches and steal treasures from unwary travelers.",
+    [
+      { label: "Location", value: "Umbrage Forest; deeper Arubian Forest" },
+      { label: "Realm", value: "Demon Realm; Human Realm" },
+      { label: "Hostile", value: "Hostile — swarm intruders with overwhelming numbers and elaborate traps" },
+      { label: "Threat Level", value: "Low — individually weak; dangerous only in large groups due to traps and numbers" },
+      { label: "Notable", value: "Surprisingly good at crafting and repurposing stolen materials" },
+      { label: "Weakness", value: "Panic in the face of fire; scatter immediately" },
+    ],
+    ["goblin", "goblins", "pack", "traps", "umbrage"],
+  ),
+
+  // --- Orcs ---
+  e(
+    "Monsters",
+    "Orcs",
+    "Brutish humanoid warriors who prize strength above all",
+    "Massive humanoids standing between six and eight feet tall, with thick grey-green skin, protruding tusks, and dense musculature that allows them to wield weapons too heavy for most humans. Orcs are not mindless — they have a functioning society with ranks, customs, and a brutal form of honor — but they solve nearly every problem with violence, and their idea of negotiation is a wrestling match. They live in loosely organized war-bands led by the strongest individual, and leadership challenges are settled through ritual combat to the death. Orcs do not use magic in the traditional sense, but their bodies naturally channel a crude form of Ren through sheer physical will, giving them brute strength and endurance far beyond what their size alone would suggest. They are found primarily in the Umbrage Forest, where they compete with Trolls and Minotaurs for territory. Orcs have a grudging respect for anyone who can defeat them in single combat, and some Orc war-bands have been known to follow a human or demon fighter who proved themselves in the fighting pit.",
+    [
+      { label: "Location", value: "Umbrage Forest; border regions of the Demon Realm" },
+      { label: "Realm", value: "Demon Realm" },
+      { label: "Hostile", value: "Hostile — attack on sight; respect ritual combat and follow those who defeat their strongest" },
+      { label: "Threat Level", value: "Moderate — individually dangerous; terrifying when fielding a full war-band" },
+      { label: "Notable", value: "Respect strength; can be recruited if defeated in ritual combat" },
+      { label: "Society", value: "War-band structure led by the strongest; leadership through combat" },
+    ],
+    ["orc", "orcs", "warrior", "strength", "umbrage", "demon realm"],
+  ),
+
+  // ============================================================ NEW MONSTERS — OVERPOWERED (OP)
+
+  // --- Abyssal Wyrm ---
+  e(
+    "Monsters",
+    "Abyssal Wyrm",
+    "Ancient realm-devouring entity sealed beneath the world",
+    "A creature so old it predates the division of the three realms — an entity that feeds on Veyn at a catastrophic scale, draining entire regions of ambient magic until the land itself begins to die. It was sealed beneath the world's crust by the Aelthar during their reign, locked in a cage of world-core Veyn that has been slowly weakening for millennia. The Abyssal Wyrm's body is serpentine, miles long, with segments of armored hide that each resemble a different landscape — one segment looks like cracked earth, another like frozen tundra, another like molten rock — as though it has absorbed the essence of every territory it has devoured. Its breath does not burn or freeze; it nullifies all Veyn in its path, creating zones of absolute magic silence where no spell, no enchantment, and no aura can function. Anything caught in this zone is reduced to the physical equivalent of a newborn — no magical defenses, no enhanced strength, no healing. It can only be harmed by weapons forged from world-core material (Shudon-grade metal) or by attacks that channel Veyn directly from the world core. The seal is weakening. When it breaks, the Wyrm will surface, and the resulting Veyn drain will create a dead zone the size of a kingdom.",
+    [
+      { label: "Location", value: "Sealed beneath the world's crust — exact location unknown" },
+      { label: "Threat Level", value: "Catastrophic — realm-ending entity; breath creates absolute magic-silence zones" },
+      { label: "Weakness", value: "World-core material weapons; attacks channeled from the world core directly" },
+      { label: "Seal", value: "Aelthar cage of world-core Veyn — weakening over millennia" },
+      { label: "Notable", value: "Its breath creates zones of absolute magic silence where no spells can function" },
+      { label: "Hostile", value: "Extremely hostile — destroys anything in its path; devours ambient Veyn from entire regions" },
+      { label: "Realm", value: "Sealed beneath the world — surfaces in any realm when the seal breaks" },
+    ],
+    ["abyssal wyrm", "ancient", "realm devouring", "sealed", "catastrophic", "op"],
+  ),
+
+  // --- World Eater ---
+  e(
+    "Monsters",
+    "World Eater",
+    "Parasitic entity that feeds on the world core itself",
+    "Not a creature born of Veyn but something that exists outside it — a parasitic consciousness that embeds itself in the world core and slowly drains its power over centuries. The World Eater does not have a physical form in the traditional sense; it manifests as a spreading darkness within the core's energy, a corruption that converts pure world-core Veyn into a form that is neither raw, holy, nor corrupted but simply null — an absence of magical energy that cannot be used by anything. The only reason the world still functions is that the World Eater feeds slowly and the core replenishes faster than it drains, but this balance is not guaranteed. The Aelthar discovered the World Eater's existence and it was one of the reasons they created the Hidden Realm — partly as an escape, partly as a way to redirect the World Eater's feeding away from the main core. The Shudon were originally built not just as realm guardians but as core regulators, designed to detect and suppress the World Eater's spread. If the Shudon remain inactive for too long, the World Eater's drain will accelerate beyond the core's ability to replenish, and the world will begin to die from the inside out.",
+    [
+      { label: "Location", value: "Embedded within the world core — no physical location" },
+      { label: "Threat Level", value: "Existential — world-ending parasite; only the Shudon can detect and suppress it" },
+      { label: "Nature", value: "Parasitic consciousness, not a physical creature" },
+      { label: "Detection", value: "Only the Shudon can detect and suppress its spread" },
+      { label: "Notable", value: "Its null-Veyn conversion cannot be reversed — only slowed" },
+      { label: "Hostile", value: "Hostile to all life — drains the world core that sustains every realm" },
+      { label: "Realm", value: "Embedded in the world core — affects all realms equally" },
+    ],
+    ["world eater", "parasite", "world core", "existential", "aelthar", "op"],
+  ),
+
+  // --- Void Colossus ---
+  e(
+    "Monsters",
+    "Void Colossus",
+    "Ancient construct from beyond the realm barrier",
+    "A towering entity of unknown origin that exists in the spaces between realms — in the void that separates the Human, Angel, Demon, and Hidden Realms from one another. It is not alive in any conventional sense; it has no metabolism, no reproduction, no survival instinct. It moves through the void with purpose, and that purpose appears to be finding and destroying breaches in the realm barrier. When a breach occurs — such as when the Hidden Realm was forcefully created — the Void Colossus is drawn to it like a predator to blood in water. It manifests at the breach point as a towering humanoid figure of compressed void energy, thirty to fifty feet tall, with no features except two dim points of light where eyes would be. It attacks anything near the breach with sweeps of its arms that create localized spatial distortions — areas where distance, gravity, and direction lose meaning for a few seconds, long enough for anything caught in them to be torn apart by the conflicting forces. It cannot be killed because it is not truly present in any realm; it is a projection of the void's own immune response. Destroying one merely pushes it back into the void, and it will return to any new breach. The only way to stop it is to close the breach it was drawn to.",
+    [
+      { label: "Location", value: "The void between realms; manifests at barrier breaches" },
+      { label: "Threat Level", value: "Extreme — spatial distortion attacks cannot be blocked; only closing the breach forces it to withdraw" },
+      { label: "Nature", value: "Void immune response — not truly alive, cannot be killed permanently" },
+      { label: "Weakness", value: "Closing the breach it was drawn to forces it to withdraw" },
+      { label: "Notable", value: "First appeared when the Hidden Realm was created; may return if new breaches form" },
+      { label: "Hostile", value: "Hostile to everything near a breach — attacks indiscriminately with spatial distortion" },
+      { label: "Realm", value: "The void between realms; manifests at any barrier breach across all realms" },
+    ],
+    ["void colossus", "void", "barrier", "breach", "construct", "op"],
+  ),
+
+  // --- Storm Titan ---
+  e(
+    "Monsters",
+    "Storm Titan",
+    "Ancient elemental being of concentrated weather Veyn",
+    "A being formed from centuries of accumulated elemental Veyn concentrated in a single location — a living storm given form and awareness. Storm Titans appear as humanoid figures made of swirling wind, rain, and lightning, standing between twenty and thirty feet tall, with eyes that flicker like distant lightning. They are not born; they coalesce. When a region experiences enough sustained severe weather over enough decades, the ambient elemental Veyn begins to organize itself into a pattern, and eventually that pattern develops enough complexity to become aware. A Storm Titan's body is in constant motion — wind tears at its edges, rain lashes outward from its core, and arcs of lightning discharge randomly in all directions. It does not speak, but it can project emotions and simple concepts through the Veyn fluctuations it generates, and the strongest ones have been known to develop something resembling speech over centuries of accumulation. A Storm Titan can control weather within a ten-mile radius of its body with absolute precision — calling lightning strikes, summoning tornadoes, or creating localized floods at will. It is not hostile by nature but is territorial; anything that enters its weather zone during a Storm Titan's active phase is at risk. They can be dispersed by sufficient magical force, but the elemental Veyn that formed them simply scatters and will re-coalesce over decades unless the ambient conditions change.",
+    [
+      { label: "Location", value: "Regions with sustained severe weather — mountaintops, storm coasts, volcanic weather zones" },
+      { label: "Threat Level", value: "Extreme — controls weather over a ten-mile radius; dispersible but re-coalesces over decades" },
+      { label: "Nature", value: "Living storm — coalesced elemental Veyn with developing awareness" },
+      { label: "Weakness", value: "Can be dispersed by overwhelming magical force but will re-coalesce over decades" },
+      { label: "Notable", value: "Oldest known Storm Titan has existed for over three thousand years" },
+      { label: "Hostile", value: "Extremely hostile within its weather zone — attacks anything that enters with full weather control" },
+      { label: "Realm", value: "All three realms — found in regions with sustained severe weather" },
+    ],
+    ["storm titan", "elemental", "weather", "lightning", "ancient", "op"],
+  ),
+
+  // --- Bloodwraith Sovereign ---
+  e(
+    "Monsters",
+    "Bloodwraith Sovereign",
+    "Apex predator of all wraith-type spirits",
+    "The most powerful wraith-class spirit in existence — not a fragment of will like the Lesser Cindergrave Wraiths, but an entire consciousness that has fed on the blood and Veyn of thousands of victims over centuries. Where a Cindergrave Wraith Lord is a half-replicated form held together by unstable Veyn, a Bloodwraith Sovereign is a fully realized entity of condensed life-force and corrupted will. It appears as a tall, cloaked figure of swirling crimson and black mist, with a hollow face that shows only two burning points of light where eyes should be. Its touch does not merely drain Veyn — it drains vitality directly, aging the victim's body decades in seconds. It can exist in a state of near-invisibility, visible only as a faint heat-shimmer in the air, and can pass through solid matter as though it were not there. A Bloodwraith Sovereign is drawn to places where great numbers have died — battlefields, massacre sites, plague pits — and it feeds on the residual will left behind by the dead. The more it feeds, the more solid and powerful it becomes; at its peak, it can manifest a physical form strong enough to fight on equal terms with a B-rank fighter. It can only be truly destroyed by a combination of holy purification and Exorcist-class spiritual banishment — physical damage merely disperses it temporarily. If destroyed, the thousands of consumed wills it carries are released simultaneously, creating a shockwave of spiritual energy that can drive weak-willed individuals insane.",
+    [
+      { label: "Location", value: "Battlefields, massacre sites, plague pits — anywhere mass death has occurred" },
+      { label: "Threat Level", value: "Extreme — touch drains decades of life in seconds; requires holy + Exorcist banishment to destroy" },
+      { label: "Nature", value: "Fully realized wraith-class spirit — apex of its type" },
+      { label: "Weakness", value: "Holy purification + Exorcist spiritual banishment required for true destruction" },
+      { label: "Notable", value: "Releasing its consumed wills upon destruction creates a sanity-breaking shockwave" },
+      { label: "Hostile", value: "Extremely hostile — drains decades of life from anyone it touches; drawn to mass-death sites" },
+      { label: "Realm", value: "All three realms — found at battlefields, massacre sites, and plague pits" },
+    ],
+    ["bloodwraith", "sovereign", "wraith", "apex", "spirit", "op"],
+  ),
+
+  // ============================================================ NEW MONSTERS — FRIENDLY / NEUTRAL
+
+  // --- Skywhales ---
+  e(
+    "Monsters",
+    "Skywhales",
+    "Gentle floating giants of the upper atmosphere",
+    "Massive creatures, sometimes hundreds of feet long, that float through the upper atmosphere of all three realms on currents of concentrated Veyn embedded in their blubber. Their skin is a translucent pale blue that glows faintly in moonlight, and their songs — deep, resonant tones that travel for miles — are said to carry traces of the world core's Veyn, which is why those who hear them often report feeling calmer and more focused afterward. Skywhales are completely passive; they do not hunt, they do not attack, and they show no fear of anything below them. They filter-feed on ambient Veyn in the upper atmosphere, drifting slowly across the sky in patterns that some Diviners believe follow the world's ley lines. They are difficult to reach because of their altitude, but the Pallantine Elves have developed a method of skyriding — using trained Griffens to approach a Skywhale and land on its back, where the concentrated Veyn in its blubber can be carefully harvested. Skywhale blubber is one of the most valuable alchemical ingredients in the world: it can be used to create Potency Surge-class potions of extraordinary strength, and its Veyn-rich properties make it useful in almost every advanced brewing process. The Pallantine have a strict quota system for harvesting — take too much and the whale's flight becomes unstable, potentially crashing and destroying everything below.",
+    [
+      { label: "Location", value: "Upper atmosphere of all three realms" },
+      { label: "Realm", value: "All three realms — Human, Angel, and Demon Realms" },
+      { label: "Hostile", value: "Passive — completely non-aggressive; filter-feed on ambient Veyn" },
+      { label: "Threat Level", value: "None — completely passive; filter-feed on ambient Veyn" },
+      { label: "Notable", value: "Their songs carry world-core Veyn traces; blubber is extremely valuable" },
+      { label: "Harvest", value: "Pallantine Elves skyride on Griffens to carefully harvest blubber under strict quotas" },
+    ],
+    ["skywhale", "skywhales", "gentle", "floating", "friendly", "blubber", "veyn"],
+  ),
+
+  // --- Lightwisps ---
+  e(
+    "Monsters",
+    "Lightwisps",
+    "Guiding spirits of pure Veyn that lead the lost home",
+    "Small, floating orbs of warm golden-white light, ranging from the size of a marble to the size of a fist, that appear to lost or endangered travelers in all three realms. They are not intelligent in the way sentient beings are — they do not speak, they do not have personalities, and they do not form attachments — but they respond to distress with remarkable consistency. A Lightwisp appears when someone is lost, injured, or in danger and cannot find their way, and it guides them toward safety with patient, persistent hovering. If the person follows, the Lightwisp leads them to the nearest settlement, road, or safe resting place. If they do not follow, the Lightwisp waits. It will stay for hours, days, or even weeks if necessary, pulsing gently to draw attention. They are formed from naturally occurring Veyn that has been exposed to so much ambient positive intent — travelers wishing for safety, healers praying for the lost, parents calling for their children — that it has developed a rudimentary pattern-matching behavior. They are not alive; they are Veyn shaped by collective will into a guidance function. Lightwisps cannot be captured or controlled; they dissipate if contained and reform spontaneously nearby. Attempting to harm one causes it to flash violently and vanish, and the ambient Veyn in the area darkens for several hours.",
+    [
+      { label: "Location", value: "All three realms — appear wherever someone is lost or in danger" },
+      { label: "Realm", value: "All three realms — Human, Angel, and Demon Realms" },
+      { label: "Hostile", value: "Passive — completely beneficial; guide lost travelers to safety" },
+      { label: "Threat Level", value: "None — completely beneficial; guide lost travelers to safety" },
+      { label: "Nature", value: "Veyn shaped by collective positive intent into a guidance pattern" },
+      { label: "Notable", value: "Cannot be captured or controlled; dissipate if contained" },
+    ],
+    ["lightwisp", "lightwisps", "guiding", "friendly", "veyn", "lost", "safe"],
+  ),
+
+  // --- Stonetenders ---
+  e(
+    "Monsters",
+    "Stonetenders",
+    "Earth elementals that maintain and repair the land",
+    "Slow-moving humanoid figures made of compacted earth, stone, and root systems, standing between four and six feet tall, with moss growing across their shoulders and small flowers sprouting from cracks in their stone skin. Stonetenders are not aggressive — they do not attack, they do not guard territory in the hostile sense, and they do not respond to provocation unless their charges are threatened. Their sole function is land maintenance: they smooth erosion, fill sinkholes, break up dangerous rockfalls before they become avalanches, and guide water flow away from vulnerable areas. They appear in regions where the land has been damaged — after battles, earthquakes, or magical cataclysms — and they work in silence, repairing what was broken. They are drawn to areas where the world's Veyn is disrupted, which is why they appear most often after significant magical events. Stonetenders cannot be tamed or commanded, but they do not object to being observed, and some Shudonkeepers have spent years studying their behavior in the hope of understanding the world core's maintenance mechanisms. A Stonetender that has been damaged will attempt to repair itself using nearby soil and stone; if enough material is available, it will fully regenerate within hours. If completely destroyed, the material that formed it simply settles back into the ground and a new Stonetender will eventually coalesce from the same area.",
+    [
+      { label: "Location", value: "Regions with land damage — post-battlefields, earthquake zones, magical disruption sites" },
+      { label: "Realm", value: "All three realms — appear wherever the land has been damaged" },
+      { label: "Hostile", value: "Passive — purely beneficial; repair damaged terrain after battles" },
+      { label: "Threat Level", value: "None — purely beneficial; repair damaged terrain after earthquakes, battles, and magical cataclysms" },
+      { label: "Nature", value: "Earth elementals drawn to Veyn disruption; repair and maintain the land" },
+      { label: "Notable", value: "Cannot be tamed; study subject for Shudonkeepers researching world-core maintenance" },
+    ],
+    ["stonetender", "stonetenders", "earth", "elemental", "friendly", "repair", "land"],
+  ),
+
+  // --- Dreamweavers ---
+  e(
+    "Monsters",
+    "Dreamweavers",
+    "Insectoid spirits that heal trauma through shared dreams",
+    "Moth-like creatures the size of a human hand, with translucent wings that shimmer with faint Veyn traces and long, delicate antennae that glow a soft lavender. Dreamweavers are found primarily in the Arubian Forest and around the Sundering Altar, where the ambient Veyn is calm and steady. They are drawn to individuals suffering from psychological trauma — PTSD, grief, nightmares, despair — and they land on the sleeping person's forehead, where their antennae make contact with the person's Veyn channels. The Dreamweaver then enters the person's dream, not as an interpreter or guide but as a passive presence that stabilizes the dream's emotional landscape. Nightmares become less intense, traumatic memories lose their sharp edges over repeated exposure, and the dreamer wakes feeling progressively lighter. The process is gradual — a single Dreamweaver visit helps a little, but repeated visits over weeks can resolve deep-seated trauma that even Clergy healers cannot touch. They cannot cure magical corruption or physical illness; their function is purely psychological. Dreamweavers are entirely non-aggressive and will flee if disturbed, but they always return to the same person until the trauma is resolved. They are respected across all three realms, and harming one is considered a serious taboo — not because of any enforcement, but because the ambient Veyn in the area darkens noticeably for weeks afterward, affecting everyone nearby.",
+    [
+      { label: "Location", value: "Arubian Forest; around the Sundering Altar" },
+      { label: "Realm", value: "Human Realm" },
+      { label: "Hostile", value: "Passive — purely beneficial; heal psychological trauma through shared dreaming" },
+      { label: "Threat Level", value: "None — purely beneficial" },
+      { label: "Nature", value: "Insectoid Veyn spirits that heal trauma through shared dreaming" },
+      { label: "Notable", value: "Cannot cure physical illness or magical corruption — purely psychological healing" },
+      { label: "Taboo", value: "Harming one causes ambient Veyn to darken for weeks; universally considered wrong" },
+    ],
+    ["dreamweaver", "dreamweavers", "dream", "healing", "trauma", "moth", "friendly", "spirit"],
+  ),
+
+  // --- Stonehollow Elk ---
+  e(
+    "Monsters",
+    "Stonehollow Elk",
+    "Ancient antlered beasts whose shed antlers are Veyn conductors",
+    "Massive elk-like creatures standing twelve feet at the shoulder, with coats of deep forest green and antlers that grow to span six feet across. Their antlers are not bone — they are crystallized Veyn, formed slowly over decades as the elk absorbs ambient Veyn from the forests they inhabit. When a Stonehollow Elk sheds its antlers naturally (once every few years), the shed antlers remain conductive to Veyn for decades afterward, making them one of the most sought-after materials for Enchanters and Smiths. The elk themselves are peaceful herbivores that avoid conflict whenever possible; they are intelligent enough to recognize friendly humans and have been known to allow riders on their backs in the Arubian Forest, though they will flee from anyone who approaches aggressively. Their Veyn-rich antlers give them a natural Veyn aura that calms hostile creatures in their immediate vicinity — Trolls, Minotaurs, and even Harpies will not attack a Stonehollow Elk or anyone within its aura. The Pallantine Elves have a cultural tradition of exchanging gifts with Stonehollow Elk herds, leaving offerings of rare mosses and berries in exchange for naturally shed antlers. Killing a Stonehollow Elk is considered deeply taboo in Pallantine culture, and doing so in the Arubian Forest guarantees a response from both the Pallantine and the forest itself.",
+    [
+      { label: "Location", value: "Arubian Forest; occasionally Thornlost Forest (Hidden Realm)" },
+      { label: "Realm", value: "Human Realm; Hidden Realm (Shadow Realm)" },
+      { label: "Hostile", value: "Passive — peaceful herbivores; calming aura pacifies hostile creatures nearby" },
+      { label: "Threat Level", value: "None — peaceful herbivores; shed antlers are Veyn conductors prized by Enchanters" },
+      { label: "Notable", value: "Shed antlers are Veyn conductors — highly prized by Enchanters and Smiths" },
+      { label: "Cultural", value: "Pallantine tradition of gift exchange; killing one is deeply taboo" },
+    ],
+    ["stonehollow elk", "elk", "antler", "veyn", "conductor", "friendly", "arubian"],
+  ),
+
+  // ============================================================ NEW MONSTERS — SPIRITS
+
+  // --- Ashbound Spirits ---
+  e(
+    "Monsters",
+    "Ashbound Spirits",
+    "Fire-locked remnants of destroyed settlements",
+    "Spirits formed from the residual will and Veyn of people who died in fires that consumed entire settlements — not the individuals themselves, but the collective panic, grief, and rage of a community destroyed in flames. They manifest as flickering humanoid shapes made of embers and ash, with hollow mouths that emit a constant low wail that rises to a scream when they detect the living. Ashbound Spirits are not intelligent; they are patterns of emotional Veyn that repeat the final moments of the community they formed from, endlessly reliving the fire. They are drawn to fire and heat, clustering around bonfires, forge sites, and volcanic areas, and they become agitated and hostile when they detect living beings nearby — not out of malice but out of a compulsive need to pull others into the fire that destroyed them. They can be dispersed by removing the fire source that anchors them, but they reform if the fire reignites. Exorcists can banish them permanently through the Rite of Expulsion, and Clergy healers can soothe them with the Restoration Rite, though neither method is guaranteed to work on groups larger than a dozen.",
+    [
+      { label: "Location", value: "Burned settlement sites; near bonfires, forges, and volcanic areas" },
+      { label: "Realm", value: "All three realms — wherever fire has destroyed a settlement" },
+      { label: "Hostile", value: "Hostile — compulsively pull the living into fire; attack when agitated" },
+      { label: "Threat Level", value: "Moderate — individually weak; dangerous in groups and drawn to fire sources" },
+      { label: "Nature", value: "Collective emotional Veyn from community destruction — not individual spirits" },
+      { label: "Weakness", value: "Removing fire source disperses them; Exorcist Rite of Expulsion for permanent banishment" },
+    ],
+    ["ashbound", "ashbound spirits", "fire", "spirit", "ash", "ember", "destroyed"],
+  ),
+
+  // --- Tidecallers ---
+  e(
+    "Monsters",
+    "Tidecallers",
+    "Ocean spirits that maintain the Sentient River's currents",
+    "Spirits formed from the residual Veyn of the Sentient River — the living waterway of the Hidden Realm that responds to intent and houses the Sirens. Tidecallers are not separate from the river; they are extensions of it, manifestations of the river's own awareness given semi-independent form. They appear as humanoid figures made entirely of flowing water, translucent and constantly shifting, with eyes that glow a deep aquatic blue. They maintain the river's currents, guide the flow around obstacles, and enforce the river's will — which is to say, they protect the seal on Vireth, the Fallen Grace, by attacking anyone the river identifies as a threat to the seal. They are not hostile to neutral passers-by; the river's awareness distinguishes between casual travelers and those seeking to disturb what lies beneath. Tidecallers can move freely through any water source connected to the Sentient River, emerging from puddles, streams, and even rainwater that has fallen from the river's mist. They can be evaded by demonstrating pure intent — a Diviner's Truthsense or a Clergy's Restoration Rite proves to the river that the traveler means no harm. Fighting a Tidecaller outside the river weakens it significantly, as it is cut off from its source; inside the river, it is nearly invincible.",
+    [
+      { label: "Location", value: "Sentient River (Hidden Realm); any connected water source" },
+      { label: "Realm", value: "Hidden Realm (Shadow Realm)" },
+      { label: "Hostile", value: "Hostile to seal-threats — attack anyone the river identifies as a danger to Veyns seal" },
+      { label: "Threat Level", value: "High — nearly invincible within the Sentient River; moderate outside it" },
+      { label: "Nature", value: "Extensions of the Sentient River's awareness — not independent spirits" },
+      { label: "Weakness", value: "Demonstrating pure intent pacifies the river; fighting outside the river weakens them" },
+      { label: "Notable", value: "They protect the seal on Vireth, the Fallen Grace" },
+    ],
+    ["tidecaller", "tidecallers", "water", "spirit", "sentient river", "vireth"],
+  ),
+
+  // --- Thornweald ---
+  e(
+    "Monsters",
+    "Thornweald",
+    "Ancient forest spirits that protect the oldest trees",
+    "Spirits bound to trees that have stood for over a thousand years — not the trees themselves, but the accumulated Veyn those trees have absorbed over centuries, which has developed enough complexity to become aware. Thornweald manifest as tangled shapes of vine, root, and thorn that move through the forest floor with slow, deliberate purpose. They are the forest's immune system: when a tree in their territory is threatened — by axe, by fire, by disease, or by magical corruption — the Thornweald moves to protect it. They are not aggressive toward travelers or even those who harvest dead wood or fallen branches; their hostility is reserved for those who threaten living trees. A Thornweald defending a tree is extraordinarily difficult to fight — its vine body regenerates as fast as it is cut, and it can entangle an attacker in roots that grow from the ground itself, holding them in place until they cease their destructive action or the Thornweald judges them too dangerous and expels them from the territory by force. They can be permanently killed by destroying the tree they are bound to, but doing so triggers a forest-wide response — every Thornweald within miles becomes hostile, and the forest itself begins to resist with falling branches, shifting roots, and thorn growth that blocks paths. Thornweald are found in the oldest parts of the Arubian Forest, the Thornlost Forest, and occasionally in ancient groves within the Umbrage Forest.",
+    [
+      { label: "Location", value: "Oldest parts of Arubian Forest, Thornlost Forest, ancient Umbrage groves" },
+      { label: "Realm", value: "Human Realm (Arubian Forest); Hidden Realm (Thornlost Forest); Demon Realm (Umbrage Forest)" },
+      { label: "Hostile", value: "Hostile to tree-threats — attack anyone who harms living trees in their territory" },
+      { label: "Threat Level", value: "Moderate — regenerative and territorial; attack only living-tree threats" },
+      { label: "Nature", value: "Forest immune system — bound to thousand-year-old trees" },
+      { label: "Weakness", value: "Destroying their bound tree kills them but triggers a forest-wide response" },
+      { label: "Notable", value: "Do not attack those who harvest dead wood or fallen branches — only living-tree threats" },
+    ],
+    ["thornweald", "forest", "spirit", "tree", "ancient", "guardian", "arubian", "thornlost"],
+  ),
+
+  // --- Echoes of the Fallen ---
+  e(
+    "Monsters",
+    "Echoes of the Fallen",
+    "Residual wills of ancient warriors bound to battlefields",
+    "Spirits formed from the residual Veyn and willpower of warriors who died in major historical battles — not wraiths, not ghosts, but patterns of combat intent so strong they imprinted on the land itself. Echoes of the Fallen appear as translucent, flickering figures engaged in perpetual combat — they fight, they fall, they rise, and they fight again, repeating the final moments of the battle they died in. They are not hostile to the living; they do not recognize the living at all, existing entirely within their own loop. Walking through an Echo battlefield is like watching a historical replay — you can see the formations, hear the clash of weapons, and feel the tactical decisions being made, though none of it can harm you. For military historians and strategists, Echo battlefields are invaluable resources — they provide perfect, unbiased records of historical combat. However, prolonged exposure to Echo battlefields has a psychological cost: the ambient Veyn carries echoes of the warriors' emotions — rage, fear, grief, determination — and those emotions begin to bleed into anyone who stays too long. Diviners and Exorcists can read the Echoes to reconstruct entire battles, and some have used this ability to uncover forgotten military techniques and lost tactical knowledge. Echo battlefields are found where major historical conflicts occurred — the most famous being the field where the Aelthar were wiped out, where Echoes still fight a battle that ended centuries ago.",
+    [
+      { label: "Location", value: "Major historical battlefields — the most famous is the Aelthar extinction site" },
+      { label: "Realm", value: "All three realms — wherever major historical battles occurred" },
+      { label: "Hostile", value: "Passive — non-hostile; do not recognize the living; exist in their own combat loop" },
+      { label: "Threat Level", value: "None — non-hostile combat loops; prolonged exposure causes emotional bleed and apathy" },
+      { label: "Nature", value: "Combat-intent Veyn patterns — not sentient, not hostile, not interactive" },
+      { label: "Notable", value: "Invaluable for military historians — perfect records of historical combat" },
+    ],
+    ["echoes", "fallen", "battlefield", "spirit", "warrior", "history", "aelthar"],
+  ),
+
+  // --- Gloomveil Specters ---
+  e(
+    "Monsters",
+    "Gloomveil Specters",
+    "Shadow-born spirits that feed on isolation and despair",
+    "Spirits that form in places where someone has been alone for so long their Veyn has begun to decay — abandoned buildings, empty prisons, forgotten caves, and sealed chambers. Unlike Ashbound Spirits which form from collective trauma, Gloomveil Specters form from individual isolation. They manifest as thin, elongated shadows with no features except a pair of dim, sunken eyes, and they are almost perfectly silent. A Gloomveil Specter does not attack physically; it feeds by projecting a field of intense loneliness and hopelessness that deepens the victim's own despair until they give up the will to move, fight, or even call for help. The victim falls into a waking coma of total apathy while the Specter slowly drains their Veyn to sustain itself. The process takes hours, and the victim is fully aware the entire time — they simply stop caring enough to resist. Gloomveil Specters are weak in terms of raw power; a single burst of Ren, Veyn, or even a shout of足够的 willpower can disperse one. The danger is not their strength but their subtlety — they appear when you are already vulnerable, already alone, already losing hope, and they make it worse. They are found in the ruins of Lethmoor, in abandoned sections of the Umbrage Forest, and occasionally in sealed rooms within Elyndor Academy where students have been locked away for extended periods.",
+    [
+      { label: "Location", value: "Lethmoor ruins; abandoned Umbrage sections; sealed Academy rooms" },
+      { label: "Realm", value: "Hidden Realm (Shadow Realm); Demon Realm (Umbrage Forest); Human Realm (Academy)" },
+      { label: "Hostile", value: "Hostile — feed on isolation and despair; drain Veyn from vulnerable victims" },
+      { label: "Threat Level", value: "Moderate — individually weak; nearly undetectable until the victim is already psychologically vulnerable" },
+      { label: "Nature", value: "Isolation-formed spirits that feed on despair and drain Veyn" },
+      { label: "Weakness", value: "Any burst of strong willpower or magical energy disperses them easily" },
+      { label: "Notable", value: "Victims are fully aware but lose the will to resist — a waking coma of apathy" },
+    ],
+    ["gloomveil", "specter", "specters", "shadow", "despair", "isolation", "spirit", "lethmoor"],
+  ),
+
+
+// ============================================================ BEINGS
   e(
     "Beings",
     "Shudon",
@@ -2119,18 +2543,18 @@ module.exports = [
 
   // ============================================================ MONSTERS
   e(
-    "Monsters",
+    "Race Types",
     "Pallantine",
-    "Light-half elves of the Arubian Forest",
-    "One of the two types of Elves. They stay in the Arubian Forest, the light half of the Ether Forest. They are used as transport by the Griffen, who live on the highest parts of the mountains.",
+    "Light-half elves of the Arubian Forest — branches from Elves",
+    "A branch of the Elves race. Pallantine are the light-half elves who inhabit the Arubian Forest, the light half of the Ether Forest within the Human Realm. They split from the main Elves race and took the light side of the forest as their territory. They are friendly to humans and trade with travelers, and they use Griffens as transport from the highest mountain parts. Their blood is one of the ingredients required to craft a Veilstone Amulet. They stay in the Arubian Forest, the light half of the Ether Forest. They are used as transport by the Griffen, who live on the highest parts of the mountains.",
     [],
-    ["elf", "pallantine", "arubian forest"],
+    ["elf", "pallantine", "arubian forest", "race type"],
   ),
   e(
-    "Monsters",
+    "Race Types",
     "Veilborn",
-    "Dark-half elves of the Umbrage Forest",
-    "One of the two types of Elves. They stay in the Umbrage Forest, the dark half of the Ether Forest, and they only trust themselves. Their blood is one of the ingredients required to craft an Agro Totem.",
+    "Dark-half elves of the Umbrage Forest — branches from Elves",
+    "A branch of the Elves race. Veilborn are the dark-half elves who inhabit the Umbrage Forest, the dark half of the Ether Forest within the Demon Realm. They split from the main Elves race and took the dark side of the forest as their territory. They are hostile to outsiders and trust only themselves. Their blood is one of the ingredients required to craft an Agro Totem. They stay in the Umbrage Forest, the dark half of the Ether Forest, and they only trust themselves. Their blood is one of the ingredients required to craft an Agro Totem.",
     [],
     ["elf", "veilborn", "umbrage forest"],
   ),
@@ -5356,16 +5780,18 @@ module.exports = [
   e(
     "Characters",
     "Bella Rose",
-    "Jaiden’s childhood friend — Archer",
-    "Jaiden Marlock’s childhood friend, and a Malakhim angel. She was given the class of Archer and attends Elyndor Academy. Jaiden gave her the bow Aerendrel, the Skybound Wrath.",
+    "Jaiden’s childhood friend — Archer with unusual holy energy",
+    "Jaiden Marlock’s childhood friend, and a Malakhim angel. She was given the class of Archer and attends Elyndor Academy. Jaiden gave her the bow Aerendrel, the Skybound Wrath. Bella was born with an unusually large reservoir of holy energy — far more than any Malakhim should possess at her age, and enough that even senior angels noticed it during her awakening at the Sundering Altar. The reason traces back to the night she was born: Jaiden Marlock, the first angel-demon hybrid, came into the world the same night. The world core’s will — which has no mind but acts to maintain balance — sensed the existence of a being who carried both angelic and demonic aura simultaneously, something the world had never seen and its balance had never accounted for. In response, the core’s will did what it always does when equilibrium is threatened: it pushed back. Not with thought, not with intent, but with a reflexive surge of purified Veyn that flooded the nearest compatible vessel — a newborn Malakhim angel lying in the same ward, in the same city, at the same moment. Bella Rose absorbed that surge without knowing it, and it settled into her Veyn channels as though it had always been there. She has never been told why her holy energy burns brighter than others of her rank. The Headmaster suspects the truth but has said nothing, because revealing it would mean revealing Jaiden’s nature — and the world core’s response to it — to people who would not understand what that balance means. Bella simply trains harder than everyone else, convinced her strength is talent rather than the world’s immune system reacting to a threat it could not name.",
     [
       { label: "Class", value: "Archer" },
       { label: "Race", value: "Malakhim" },
       { label: "Artifact", value: "Aerendrel, the Skybound Wrath (given by Jaiden)" },
       { label: "Grade", value: "E Grade" },
       { label: "Sub-stage", value: "Peak" },
+      { label: "Unusual Trait", value: "Born with far more holy energy than any Malakhim should possess — a reflexive surge from the world core, triggered the same night Jaiden was born" },
+      { label: "Secret", value: "The Headmaster suspects the truth but has not told her; revealing it would expose Jaiden’s hybrid nature and the world core’s response to it" },
     ],
-    ["character", "malakhim", "archer", "elyndor academy", "jaiden", "aerendrel"],
+    ["character", "malakhim", "archer", "elyndor academy", "jaiden", "aerendrel", "holy energy", "world core"],
   ),
   e(
     "Characters",
