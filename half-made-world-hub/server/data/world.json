@@ -11292,36 +11292,36 @@
     "id": "seed-534",
     "category": "Clan",
     "name": "Silver Concord — Guild Ranks",
-    "subtitle": "Internal rank structure",
-    "description": "Silver Concord uses a rank system based on contract completion, reliability, and skill. Higher ranks unlock access to more dangerous and lucrative contracts. All new members start as Initiates and must prove themselves before advancing.",
+    "subtitle": "The ranks of the guild — trust in the seal",
+    "description": "Silver Concord ranks its members not by raw power or Grade, but by how far the guild trusts them with its seal. Every rank reflects a step in the life of a contract — from witnessing one, to drafting it, to signing it, to ruling on it when it breaks. A member’s Grade and class are irrelevant to guild rank: a low-Grade Scribe can rise to Arbiter on pure reliability, while a high-Grade mercenary may never rise past Witness if the guild does not trust their word. Advancement is earned through completed contracts, sound judgment, and an unbroken record — the same iron rule that made the guild’s name.",
     "fields": [
       {
         "label": "Ranks",
-        "value": "Initiate → Journeyman → Veteran → Elite → Champion → Guildmaster"
+        "value": "Witness → Scribe → Signatory → Mediator → Arbiter → Guildmaster"
       },
       {
-        "label": "Initiate",
-        "value": "New members, supervised on simple contracts, learning guild rules"
+        "label": "Witness",
+        "value": "New members. They observe contracts and learn the guild’s rules under supervision, but may not touch the seal."
       },
       {
-        "label": "Journeyman",
-        "value": "Independent on standard contracts, can handle low-risk Cross-realm deals"
+        "label": "Scribe",
+        "value": "Drafts and records contracts. Can witness standard agreements, but every seal they carry is countersigned by a Signatory."
       },
       {
-        "label": "Veteran",
-        "value": "Handles complex contracts, mentors Initiates, trusted with sensitive negotiations"
+        "label": "Signatory",
+        "value": "Authorized to sign and carry the guild’s seal on standard contracts. Trusted to handle low-risk Cross-realm deals on their own."
       },
       {
-        "label": "Elite",
-        "value": "Leads contract teams, handles high-stakes deals, represents the guild externally"
+        "label": "Mediator",
+        "value": "Mediates disputes between parties and handles sensitive negotiations. May oversee complex contracts and mentor lower ranks."
       },
       {
-        "label": "Champion",
-        "value": "Top-tier members, handles ruler-level disputes, oversees branch operations"
+        "label": "Arbiter",
+        "value": "Rules on broken contracts and enforces the seal. Leads contract teams, represents the guild to rulers, and oversees branch operations."
       },
       {
         "label": "Guildmaster",
-        "value": "Leads the entire guild, final authority on all contracts and disputes"
+        "value": "A single, unique rank. Holds the guild’s master seal and is the final authority on every contract and dispute — currently Varen Ashtail."
       }
     ],
     "tags": [
@@ -11331,7 +11331,7 @@
       "silver concord"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-18T23:30:18.508Z"
+    "updatedAt": "2026-08-19T01:44:55.471Z"
   },
   {
     "id": "seed-535",
