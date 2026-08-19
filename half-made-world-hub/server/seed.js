@@ -660,7 +660,7 @@ module.exports = [
     "Grade System",
     "G Grade",
     "Mortal Grade — Level 0-9",
-    "The starting grade assigned to beings who were never exposed to Mana before gaining access to the System. This usually means those born in uninitiated worlds before integration. Any being born after System integration is assigned F Grade at minimum. G Grade beings have no sub-stages and cannot advance through normal means — they must first be exposed to Mana.",
+    "The starting grade assigned to beings who were never exposed to Veyn before gaining access to the System. This usually means those born in uninitiated worlds before integration. Any being born after System integration is assigned F Grade at minimum. G Grade beings have no sub-stages and cannot advance through normal means — they must first be exposed to Veyn.",
     [
       { label: "Level Range", value: "0 - 9" },
       { label: "Sub-stages", value: "None" },
@@ -672,7 +672,7 @@ module.exports = [
     "Grade System",
     "F Grade",
     "First Grade — Level 10-19",
-    "The first true grade of the System. F Grade beings have been exposed to Mana and can begin developing their abilities. This is the starting point for most awakened individuals. F Grade has no sub-stages — it is a transitional grade where the foundation is built before the real progression begins.",
+    "The first true grade of the System. F Grade beings have been exposed to Veyn and can begin developing their abilities. This is the starting point for most awakened individuals. F Grade has no sub-stages — it is a transitional grade where the foundation is built before the real progression begins.",
     [
       { label: "Level Range", value: "10 - 19" },
       { label: "Sub-stages", value: "None" },

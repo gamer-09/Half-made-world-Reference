@@ -1376,7 +1376,7 @@
     "category": "Grade System",
     "name": "G Grade",
     "subtitle": "Mortal Grade — Level 0-9",
-    "description": "The starting grade assigned to beings who were never exposed to Mana before gaining access to the System. This usually means those born in uninitiated worlds before integration. Any being born after System integration is assigned F Grade at minimum. G Grade beings have no sub-stages and cannot advance through normal means — they must first be exposed to Mana.",
+    "description": "The starting grade assigned to beings who were never exposed to Veyn before gaining access to the System. This usually means those born in uninitiated worlds before integration. Any being born after System integration is assigned F Grade at minimum. G Grade beings have no sub-stages and cannot advance through normal means — they must first be exposed to Veyn.",
     "fields": [
       {
         "label": "Level Range",
@@ -1398,14 +1398,14 @@
       "g-grade"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T02:38:37.134Z"
+    "updatedAt": "2026-08-19T03:53:34.451Z"
   },
   {
     "id": "seed-059",
     "category": "Grade System",
     "name": "F Grade",
     "subtitle": "First Grade — Level 10-19",
-    "description": "The first true grade of the System. F Grade beings have been exposed to Mana and can begin developing their abilities. This is the starting point for most awakened individuals. F Grade has no sub-stages — it is a transitional grade where the foundation is built before the real progression begins.",
+    "description": "The first true grade of the System. F Grade beings have been exposed to Veyn and can begin developing their abilities. This is the starting point for most awakened individuals. F Grade has no sub-stages — it is a transitional grade where the foundation is built before the real progression begins.",
     "fields": [
       {
         "label": "Level Range",
@@ -1427,7 +1427,7 @@
       "f-grade"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T02:38:37.134Z"
+    "updatedAt": "2026-08-19T03:53:34.451Z"
   },
   {
     "id": "seed-060",
