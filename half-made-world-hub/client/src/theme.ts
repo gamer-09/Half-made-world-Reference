@@ -21,6 +21,9 @@ export const CATEGORY_COLORS: Record<string, string> = {
   Coins: '#fde047',
   'Hybrid Skills': '#e879f9',
   'Class Skills': '#f9a8d4',
+  'Grade System': '#60a5fa',
+  'Rune Star Circles': '#c084fc',
+  'Class Progression': '#34d399',
 };
 
 export const FALLBACK_COLOR = '#94a3b8';
