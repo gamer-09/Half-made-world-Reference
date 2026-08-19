@@ -568,7 +568,7 @@ module.exports = [
   s("Arrowcraft", "Archer", "skill of", "Skill of", "A Archer skill."),
   s("Golden Strike", "Paladin", "skill of", "Skill of", "A Paladin skill."),
   s("Dawn Shield", "Paladin", "skill of", "Skill of", "A Paladin skill."),
-  s("Light Mend", "Paladin", "skill of", "Skill of", "A Paladin skill."),
+  s("Auric Mend", "Paladin", "skill of", "Skill of", "A Paladin skill."),
   s("Courage Aura", "Paladin", "skill of", "Skill of", "A Paladin skill."),
   s("Final Judgment", "Paladin", "skill of", "Skill of", "A Paladin skill."),
   s("Sacred Touch", "Paladin", "skill of", "Skill of", "A Paladin skill."),

@@ -1041,7 +1041,7 @@ module.exports = [
     "Blends physical strength with Auric Ren — their own Ren brightened into gold — giving them the fighting power of a warrior and the ability to heal and protect, all through their own Vitality rather than Veyn. Because they never hold Veyn and Ren together, paladins avoid the incompatibility that would kill anyone else. Common among those who protect others directly, like guards or knights.",
     [
       { label: "Type", value: "Ren class — Auric Ren" },
-      { label: "Skills", value: "Golden Strike, Dawn Shield, Light Mend, Courage Aura, Final Judgment, Sacred Touch, Holy Ground, Guardian Seal, Oath Power, Radiant Champion — each skill has its own entry in the Class Skills category." },
+      { label: "Skills", value: "Golden Strike, Dawn Shield, Auric Mend, Courage Aura, Final Judgment, Sacred Touch, Holy Ground, Guardian Seal, Oath Power, Radiant Champion — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
     ["class", "paladin", "holy", "knight", "skills"],
@@ -4335,7 +4335,7 @@ module.exports = [
   ),
   e(
     "Class Skills",
-    "Light Mend",
+    "Auric Mend",
     "Paladin skill",
     "Heals allies with golden Ren while purifying corruption inside the wounds. At its most basic, the mend closes wounds and removes minor corruption. The golden energy spreads through the patient's body like warm light.",
     [],

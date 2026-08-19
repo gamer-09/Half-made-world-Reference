@@ -2362,7 +2362,7 @@
       },
       {
         "label": "Skills",
-        "value": "Golden Strike, Dawn Shield, Light Mend, Courage Aura, Final Judgment, Sacred Touch, Holy Ground, Guardian Seal, Oath Power, Radiant Champion — each skill has its own entry in the Class Skills category."
+        "value": "Golden Strike, Dawn Shield, Auric Mend, Courage Aura, Final Judgment, Sacred Touch, Holy Ground, Guardian Seal, Oath Power, Radiant Champion — each skill has its own entry in the Class Skills category."
       },
       {
         "label": "Grade Progression",
@@ -9299,7 +9299,7 @@
   {
     "id": "seed-437",
     "category": "Class Skills",
-    "name": "Light Mend",
+    "name": "Auric Mend",
     "subtitle": "Paladin skill",
     "description": "Heals allies with golden Ren while purifying corruption inside the wounds. At its most basic, the mend closes wounds and removes minor corruption. The golden energy spreads through the patient's body like warm light.",
     "fields": [],
@@ -9311,7 +9311,7 @@
       "healing"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T04:05:51.873Z"
   },
   {
     "id": "seed-438",
