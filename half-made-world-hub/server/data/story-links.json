@@ -4388,5 +4388,2335 @@
     "color": "#22d3ee",
     "createdAt": "2026-08-18T13:04:38.668Z",
     "updatedAt": "2026-08-18T13:04:38.669Z"
+  },
+  {
+    "id": "381c033e-eac7-493c-8fc7-784f8d84c97b",
+    "source": "Piercing Lance",
+    "target": "Mage",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mage skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "7507933f-8304-4324-8818-8b380aa68022",
+    "source": "Glass Bastion",
+    "target": "Mage",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mage skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "5d9ebe63-303d-461e-abc0-bff747664f18",
+    "source": "Echo Sense",
+    "target": "Mage",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mage skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "0e07ef4a-d76e-498d-8453-5e4fa23f92c0",
+    "source": "Elemental Brand",
+    "target": "Mage",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mage skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "8ddba0cb-b0e4-4172-8daf-44ecc0686d35",
+    "source": "Leechfield",
+    "target": "Mage",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mage skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "170b293c-523b-4ea5-9412-c08c60610068",
+    "source": "Skyvault",
+    "target": "Mage",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mage skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "8ba5da02-071c-4aaf-9ca6-7f910f85b291",
+    "source": "Repulse",
+    "target": "Mage",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mage skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "66199363-e992-46b5-bcb5-914075536c95",
+    "source": "Bloodthread",
+    "target": "Mage",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mage skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "9d00e0f6-4e7a-4c69-93c8-2cceeb92c7a1",
+    "source": "Shiftstate",
+    "target": "Mage",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mage skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f067c1d0-62db-4e65-859b-fa6b6c889d09",
+    "source": "Absolute Flow",
+    "target": "Mage",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Mage skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "01a39851-aa84-4760-813a-5465f89226c9",
+    "source": "Toniccraft",
+    "target": "Alchemist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Alchemist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "2b425d3d-e9ff-4d3c-ae32-377372ecc447",
+    "source": "Nightbrew",
+    "target": "Alchemist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Alchemist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "8f2891ae-4b4c-43bd-8abd-0c58a9873da9",
+    "source": "Shattervial",
+    "target": "Alchemist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Alchemist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "8eedefc7-7aab-4e10-888e-c4e31d163cb0",
+    "source": "Trueassay",
+    "target": "Alchemist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Alchemist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "a69f9b8f-4c7d-4b87-95e0-2f796bc9d445",
+    "source": "Overcharge",
+    "target": "Alchemist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Alchemist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f605ad4e-f6de-4f00-bb3d-a614151e5a28",
+    "source": "Multiplier",
+    "target": "Alchemist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Alchemist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "220f40f5-4cbb-4328-aef9-bc96a6bf6a9d",
+    "source": "Cleansebrew",
+    "target": "Alchemist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Alchemist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "5a91d47f-0ea4-46f0-ab0e-74ad7eab6657",
+    "source": "Mattershift",
+    "target": "Alchemist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Alchemist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "990962ec-1fac-42f4-b963-1bf64d0dfdec",
+    "source": "Hastybrew",
+    "target": "Alchemist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Alchemist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "cb86d047-5642-43fb-86a2-04a6bdab8bf2",
+    "source": "Mythic Draught",
+    "target": "Alchemist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Alchemist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "a9dce9d7-522a-4de0-9b8e-635b3068152e",
+    "source": "Heartbind",
+    "target": "Beastmaster",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Beastmaster skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "276b4567-27f1-4608-af37-a7423a2f1310",
+    "source": "Thoughtlink",
+    "target": "Beastmaster",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Beastmaster skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "4507908a-ac91-4ed7-bfe0-0b5f58267ee3",
+    "source": "Pack Order",
+    "target": "Beastmaster",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Beastmaster skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "cd85266b-32a7-42bd-9cc6-babda1dbc72f",
+    "source": "Beast Eye",
+    "target": "Beastmaster",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Beastmaster skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "cea09ebb-3e7a-4101-b3e1-e044b0514af8",
+    "source": "Feral Rush",
+    "target": "Beastmaster",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Beastmaster skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "52ec25bb-823e-41bf-ae64-d5aa29e7b982",
+    "source": "Fleshguard",
+    "target": "Beastmaster",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Beastmaster skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "158b0db8-3897-42c9-929e-dc0058cf4572",
+    "source": "Twin Fang",
+    "target": "Beastmaster",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Beastmaster skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "73f01cf8-88f1-472f-bf0b-9d28fcff9851",
+    "source": "Lifeshare",
+    "target": "Beastmaster",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Beastmaster skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "4a166f29-0b11-4c16-a235-3ec6b00ca3cf",
+    "source": "Blood Ascension",
+    "target": "Beastmaster",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Beastmaster skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "3e6f7430-1086-4029-af1c-f5dd31218a3b",
+    "source": "Alpha Will",
+    "target": "Beastmaster",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Beastmaster skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "cca61162-eda8-4bc4-b8b1-169cb97763dc",
+    "source": "Hammerborn",
+    "target": "Smithing",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Smithing skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "c3994486-7e1e-4f35-b859-7f66aeb7f47f",
+    "source": "Star Temper",
+    "target": "Smithing",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Smithing skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "ed5daba1-e0d4-412b-a94e-d10d24e97509",
+    "source": "Vital Edge",
+    "target": "Smithing",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Smithing skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "e87a792b-ada5-4763-a6eb-02b4e272a634",
+    "source": "Crimson Forge",
+    "target": "Smithing",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Smithing skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "4a679e77-ec5c-452f-b891-bdb9375c773b",
+    "source": "True Edge",
+    "target": "Smithing",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Smithing skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "5db2c082-2c80-4a7a-a308-897d4c103d3a",
+    "source": "Aegis Craft",
+    "target": "Smithing",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Smithing skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "0e84b52f-c267-41be-8e1b-20957f83a6e4",
+    "source": "Soulseal",
+    "target": "Smithing",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Smithing skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "fcbc4518-7bb7-4932-a2ee-2ee7d4e18a0b",
+    "source": "Reforge",
+    "target": "Smithing",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Smithing skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "a6277a64-63a4-4793-ac53-6d70d638b59a",
+    "source": "Mythforge",
+    "target": "Smithing",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Smithing skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "8cfe7f10-d617-48a4-afe6-61fb4b80d044",
+    "source": "Bloodalloy",
+    "target": "Smithing",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Smithing skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "0f499fb3-8b41-4306-acbe-ff52071b299b",
+    "source": "Sparkbind",
+    "target": "Enchanter",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Enchanter skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f0031d97-0c85-4fa7-bedb-51d41b47b2c5",
+    "source": "Deepbind",
+    "target": "Enchanter",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Enchanter skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "ddad2a37-811a-4149-a57f-b33f89cdf639",
+    "source": "Runeread",
+    "target": "Enchanter",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Enchanter skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f0195515-923b-49db-8c83-e7c671bda049",
+    "source": "Unweave",
+    "target": "Enchanter",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Enchanter skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "90e3ea0c-29e0-4357-ab60-3f8198952755",
+    "source": "Heighten",
+    "target": "Enchanter",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Enchanter skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "05863038-e028-445f-a493-a2b774cf7955",
+    "source": "Overlay",
+    "target": "Enchanter",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Enchanter skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "74842a16-65d0-4227-bb14-89c25e666934",
+    "source": "Guardseal",
+    "target": "Enchanter",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Enchanter skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "2f822a61-a034-4ce9-94b3-8a37761a5987",
+    "source": "Wrathseal",
+    "target": "Enchanter",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Enchanter skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "251035d3-46ef-430e-b4b5-8285d950b8ec",
+    "source": "Living Rune",
+    "target": "Enchanter",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Enchanter skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "6ff04b42-45dc-4bb3-a10f-67ac0d31573c",
+    "source": "Newscript",
+    "target": "Enchanter",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Enchanter skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "580b8c73-0d66-451b-a2d7-46302ad7800b",
+    "source": "Clear Sight",
+    "target": "Diviner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Diviner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "6b690f29-eb5d-459a-a205-6caa51adca7b",
+    "source": "Far Sight",
+    "target": "Diviner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Diviner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "c3f71fa9-a7e7-4500-a471-ea959dcbc3e9",
+    "source": "Past Echo",
+    "target": "Diviner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Diviner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "2d110e36-0742-40a7-ba7d-5355b545641e",
+    "source": "Liebreak",
+    "target": "Diviner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Diviner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "82758c91-0b6c-4d99-9dd6-f7617cd7f2d1",
+    "source": "Flowsense",
+    "target": "Diviner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Diviner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "63c50e67-741a-493f-bb28-80a38d984c97",
+    "source": "Soulgaze",
+    "target": "Diviner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Diviner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "b9542c93-1dbf-49d1-84ef-259a8dcb38ad",
+    "source": "Deep Vision",
+    "target": "Diviner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Diviner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "dd2554a2-6ac9-4d4b-8408-0f20f4ffce9f",
+    "source": "Mindlock",
+    "target": "Diviner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Diviner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "4f7dca5c-7f81-464f-ab22-e3f4f1ce84fd",
+    "source": "Bond Sight",
+    "target": "Diviner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Diviner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "b74e83d1-0e46-4a4c-afd5-9426dab56fb3",
+    "source": "Allsight",
+    "target": "Diviner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Diviner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "af5197db-71cb-4603-823c-862882befa61",
+    "source": "Whitefire",
+    "target": "Exorcist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Exorcist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "3c24ea32-3e96-444b-a1cd-5db6ced68ac8",
+    "source": "Fallen Bind",
+    "target": "Exorcist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Exorcist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "d88259ec-a1a5-450a-aef7-a9a093f46d43",
+    "source": "Miasma Break",
+    "target": "Exorcist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Exorcist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "0f40b042-311c-4cbb-9b29-d7a1668d3b74",
+    "source": "Stillflow",
+    "target": "Exorcist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Exorcist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "386a7d63-4e6f-4c48-bc8a-98329a7e8509",
+    "source": "Expulsion Rite",
+    "target": "Exorcist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Exorcist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "eda38408-3fca-4883-a425-b63c2aef5356",
+    "source": "Holy Bastion",
+    "target": "Exorcist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Exorcist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "7d41f8af-c584-4a27-8ab5-560bd52ca8f8",
+    "source": "Purge Strike",
+    "target": "Exorcist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Exorcist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "fd8929e4-9e6f-4535-bce5-712389636d63",
+    "source": "Mass Cleanse",
+    "target": "Exorcist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Exorcist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f69f0236-12d3-42b0-bdad-1ed5d65145d3",
+    "source": "Spirit Drive",
+    "target": "Exorcist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Exorcist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "d1fb0ebe-1b1d-4116-a79f-14b1810615c3",
+    "source": "Eternal Seal",
+    "target": "Exorcist",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Exorcist skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f024d903-b550-44fc-9250-828921ec47ad",
+    "source": "Balance",
+    "target": "Broker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Broker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f7c7d5da-6cf7-4e45-9890-e32a60c8c506",
+    "source": "Bindword",
+    "target": "Broker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Broker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "b0801492-8e40-4c33-b03a-39545f2dcd7e",
+    "source": "Loophole",
+    "target": "Broker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Broker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "8d14b9c9-e907-4d5b-9166-3a66745fe750",
+    "source": "Contract Break",
+    "target": "Broker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Broker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "785cdc3b-eacd-447c-8988-adef1413c43d",
+    "source": "Silver Tongue",
+    "target": "Broker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Broker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "491240dd-18c5-456f-b2e9-c0d13c6e2cc3",
+    "source": "Falsesense",
+    "target": "Broker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Broker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "23572670-2ab8-4a21-93d9-aadd12c97e4b",
+    "source": "Backlash Guard",
+    "target": "Broker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Broker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "dfe3e4b6-c6c1-41a4-a30b-3e04bb87ab44",
+    "source": "Web",
+    "target": "Broker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Broker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "24e72811-9ff8-4a0d-b79f-6e0fd7187253",
+    "source": "Pressure",
+    "target": "Broker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Broker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "a42cdfa9-1094-4bd4-99ec-e9c7a257da23",
+    "source": "Ironword",
+    "target": "Broker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Broker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "dc74296b-4ca7-41e2-9333-37947159d8c4",
+    "source": "Light Mend",
+    "target": "Saintess",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Saintess skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "52193c68-5056-4ec0-97e7-6822e8f1d93e",
+    "source": "Radiant Aegis",
+    "target": "Saintess",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Saintess skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "a0ab1a5f-9158-4b28-992b-747c7b4168e9",
+    "source": "Holy Purge",
+    "target": "Saintess",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Saintess skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "a6b244fe-93d3-4695-9290-a64c9e9d92f1",
+    "source": "Burning Guard",
+    "target": "Saintess",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Saintess skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "90b18187-141a-4e98-92eb-2858269c02a5",
+    "source": "Judgment Blow",
+    "target": "Saintess",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Saintess skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "0581af1c-524b-4585-93ed-e5393e5d633b",
+    "source": "Blessing",
+    "target": "Saintess",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Saintess skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "baaa9ab3-20d9-48dc-9a7d-01f6e7b64202",
+    "source": "Sacred Ground",
+    "target": "Saintess",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Saintess skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "bdbdc9d0-f106-45d8-812f-3b9fc7daa134",
+    "source": "Reveal Light",
+    "target": "Saintess",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Saintess skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "0861df8d-a308-428a-bbd1-d5cae807208d",
+    "source": "Holy Precision",
+    "target": "Saintess",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Saintess skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "79fba6c0-fe63-4961-acb8-9a00755a3afa",
+    "source": "Divine Act",
+    "target": "Saintess",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Saintess skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "81fafeb3-25d9-4b12-a114-232619e896fd",
+    "source": "Soft Heal",
+    "target": "Clergy",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Clergy skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "3135d03c-1500-4c9c-a7c8-13c56c3a2446",
+    "source": "Deep Heal",
+    "target": "Clergy",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Clergy skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "65c89ef6-953c-4d61-99a7-d6b1929ec74b",
+    "source": "Recovery Rite",
+    "target": "Clergy",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Clergy skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "198887cb-22ff-42ae-8404-62017c7c074d",
+    "source": "Protect Field",
+    "target": "Clergy",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Clergy skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "47cbd61e-6d0e-4522-8ee1-28e4973f01d3",
+    "source": "Lifebloom",
+    "target": "Clergy",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Clergy skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "99dd81a7-a3de-499b-9b39-6b3aa61c20b1",
+    "source": "Healing Ground",
+    "target": "Clergy",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Clergy skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "d6ce7ccf-a192-4b2e-bbe2-40d29889650e",
+    "source": "Calm Light",
+    "target": "Clergy",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Clergy skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "5c92d187-4fe0-4f8b-816b-f78492032adf",
+    "source": "Life Restore",
+    "target": "Clergy",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Clergy skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "09c2b60c-3327-40a0-b892-a3abf216de52",
+    "source": "Special Cure",
+    "target": "Clergy",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Clergy skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "626946c7-6487-47eb-85d8-67b0f405488b",
+    "source": "Healer's Hand",
+    "target": "Clergy",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Clergy skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "147be204-088f-49fa-8d73-817b197208fc",
+    "source": "Spell Arrow",
+    "target": "Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f0b9c338-0f59-47e1-8290-5865deef1702",
+    "source": "Sunder Arrow",
+    "target": "Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "98c5fe40-7e39-4ac5-9a04-c06f3b0cd51a",
+    "source": "Burst Arrow",
+    "target": "Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "918f719f-f3ff-4297-9f88-3bf8bad2d59a",
+    "source": "Homing Bolt",
+    "target": "Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "31f302b0-3501-47ab-800b-feffa0ccd245",
+    "source": "Skyfall",
+    "target": "Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "0dbc1632-68ea-4cc3-8502-035abbb60c13",
+    "source": "Quiver Wall",
+    "target": "Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "3fee477b-133c-4be9-8c5f-1e20586d4c64",
+    "source": "Final Arrow",
+    "target": "Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "17bf346c-0fd9-40e5-b1ec-4976b4abf893",
+    "source": "Grace Arrow",
+    "target": "Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "9bcd6e0a-2bc6-4347-be5c-2f9c8aa2b833",
+    "source": "Perfect Shot",
+    "target": "Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "bd7dfb74-5f6f-446d-9cfd-f01c329ab63d",
+    "source": "Arrowcraft",
+    "target": "Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "b34df3e3-dd49-450c-96e2-37ee44a78c2a",
+    "source": "Golden Strike",
+    "target": "Paladin",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Paladin skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "0b1e979d-307a-4dbb-930a-3b269823bea3",
+    "source": "Dawn Shield",
+    "target": "Paladin",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Paladin skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "8b687f01-528f-490d-83c4-b27543ef1e70",
+    "source": "Light Mend",
+    "target": "Paladin",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Paladin skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "c2fa36b6-9679-4c15-9cfe-b66f63245fca",
+    "source": "Courage Aura",
+    "target": "Paladin",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Paladin skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "2a769a92-5b54-45d0-8e08-9913a4a3090d",
+    "source": "Final Judgment",
+    "target": "Paladin",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Paladin skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "054a841c-eb41-4ac2-b4f9-57ccd4d2944c",
+    "source": "Sacred Touch",
+    "target": "Paladin",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Paladin skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "e090e220-19f6-44f7-91ea-f6fd435d973c",
+    "source": "Holy Ground",
+    "target": "Paladin",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Paladin skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "ee632f8d-4398-4323-8dd7-28e9c71931af",
+    "source": "Guardian Seal",
+    "target": "Paladin",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Paladin skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "4e0a45f9-6f01-44ab-8ae8-bfca8152dbc4",
+    "source": "Oath Power",
+    "target": "Paladin",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Paladin skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f2b19b56-dd14-4762-858d-ef3a51f35cc1",
+    "source": "Radiant Champion",
+    "target": "Paladin",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Paladin skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "53ba0b5e-d7b1-4bad-859f-2a02f5974337",
+    "source": "Awaken",
+    "target": "Grimtender",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Grimtender skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "df7e127c-0f89-4269-80e1-c89275a55b6a",
+    "source": "Dead Order",
+    "target": "Grimtender",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Grimtender skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "09779234-bcf8-4f3c-bfca-94dc28cca6f4",
+    "source": "Bone Guard",
+    "target": "Grimtender",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Grimtender skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "8f927ab2-411f-4997-b3ae-0e4890b8e84d",
+    "source": "Grave Drain",
+    "target": "Grimtender",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Grimtender skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "da487b05-5c27-4e86-87fa-e7f03e799213",
+    "source": "Death Pulse",
+    "target": "Grimtender",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Grimtender skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f568ca91-3271-4055-a23e-2acc047bf4b6",
+    "source": "Bone Legion",
+    "target": "Grimtender",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Grimtender skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "13727542-fce1-4ecf-bce1-e57ba92a2c1e",
+    "source": "Bone Spear",
+    "target": "Grimtender",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Grimtender skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "a1fb412a-754a-4525-a30e-75ab63259765",
+    "source": "Soul Bind",
+    "target": "Grimtender",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Grimtender skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "30748c14-e041-4d7a-854d-84e64a2651d4",
+    "source": "Grave Lord",
+    "target": "Grimtender",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Grimtender skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "a9e68150-6104-46fc-a32a-2a3b49c9b45f",
+    "source": "Soul Take",
+    "target": "Grimtender",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Grimtender skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f055979f-f67f-425f-a32b-6ba71bc867dc",
+    "source": "Wide Cut",
+    "target": "Bladesinger",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bladesinger skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "639ab0c0-aee3-432e-bedd-6a8420b468a0",
+    "source": "Blood Edge",
+    "target": "Bladesinger",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bladesinger skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "106a309c-1d14-41c6-900d-07c9a7a0d1eb",
+    "source": "Blade Dance",
+    "target": "Bladesinger",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bladesinger skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "9fb9b447-8e45-432d-b750-e0d24057ea97",
+    "source": "Return Cut",
+    "target": "Bladesinger",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bladesinger skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "04f41151-9a76-4584-b2ba-80b278acb6ec",
+    "source": "Wind Step",
+    "target": "Bladesinger",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bladesinger skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "5f6955a0-4a71-43d8-acea-60a647c240f1",
+    "source": "Ghost Cut",
+    "target": "Bladesinger",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bladesinger skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "5dfaeb77-680f-4de8-9dd0-e0d40bd6b40a",
+    "source": "Storm of Blades",
+    "target": "Bladesinger",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bladesinger skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "1582e11f-01de-4927-9bce-8d621118a968",
+    "source": "Perfect Form",
+    "target": "Bladesinger",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bladesinger skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "ad400103-5036-457d-98ed-2f34119bc89c",
+    "source": "Sword Song",
+    "target": "Bladesinger",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bladesinger skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "3e5f14bc-627a-4f26-a6c4-ccf3d93e3f73",
+    "source": "Flawless Edge",
+    "target": "Bladesinger",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Bladesinger skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "ed335bca-aff9-45e5-8c7d-3b18b9c6cf9d",
+    "source": "Blood Rage",
+    "target": "Berserker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Berserker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "56075057-d22c-41be-bdc1-65be446e9222",
+    "source": "Battle Roar",
+    "target": "Berserker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Berserker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "b15daa4e-f0a3-4aaf-882d-4dca44df9826",
+    "source": "Killing Blow",
+    "target": "Berserker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Berserker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "05282b44-1007-474c-a6b9-c5c3a29cb524",
+    "source": "All-In",
+    "target": "Berserker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Berserker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "508fff49-4073-48de-ba82-ded28e17c6ae",
+    "source": "Never Fall",
+    "target": "Berserker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Berserker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "fe3d0269-b180-4463-ad77-3a2815db7ab7",
+    "source": "Mad Rampage",
+    "target": "Berserker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Berserker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "85952f01-33ff-4116-a2e4-263412a3ed2d",
+    "source": "Rage Burst",
+    "target": "Berserker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Berserker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "4cd81578-9f0d-4ab5-af88-5dd9dbf3c9c0",
+    "source": "Bone Break",
+    "target": "Berserker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Berserker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "4fcb44b6-6a2f-4407-b4ca-46c0d38b69f1",
+    "source": "Final Rage",
+    "target": "Berserker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Berserker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "c11a28c2-8dbb-4351-8014-5ac2be9f80a2",
+    "source": "War Cry",
+    "target": "Berserker",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Berserker skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "daa02100-08e2-4f53-946f-1c8ee530c4ba",
+    "source": "Iron Skin",
+    "target": "Sentinel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Sentinel skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "3b09cb47-7485-4f2f-b484-8c4aa3d5ada4",
+    "source": "Stone Wall",
+    "target": "Sentinel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Sentinel skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "ec850631-846b-40bc-a672-7f9f6993dadc",
+    "source": "Rooted Stance",
+    "target": "Sentinel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Sentinel skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "16a860b0-5169-4736-b3d5-a7056801a75b",
+    "source": "Challenge",
+    "target": "Sentinel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Sentinel skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "897ce439-13ae-4496-b1fe-835810b629a5",
+    "source": "Stand Firm",
+    "target": "Sentinel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Sentinel skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "ef934db9-4a38-4d56-b937-d5dc8895e813",
+    "source": "Shield Crash",
+    "target": "Sentinel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Sentinel skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "b1bdc286-401e-4898-a7c4-bd3c979682c7",
+    "source": "Shared Guard",
+    "target": "Sentinel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Sentinel skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "a44db920-87e2-4246-907c-8c887503a3f6",
+    "source": "Protect Ally",
+    "target": "Sentinel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Sentinel skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f3562bb5-a7e4-4a55-b115-eb73945d144f",
+    "source": "Final Stand",
+    "target": "Sentinel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Sentinel skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "24ab1cca-65dd-4002-b31e-d8add904627f",
+    "source": "Unbreakable",
+    "target": "Sentinel",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Sentinel skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "1c879545-2d97-4cc3-aa9f-0f948d571abb",
+    "source": "Power Bolt",
+    "target": "Ren Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Ren Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "7ed3fd25-30d1-415f-8fbf-a48a703e611d",
+    "source": "Heavy Draw",
+    "target": "Ren Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Ren Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "0df194f4-62bc-47e7-9eb6-e44e00ad5a5c",
+    "source": "Quick Volley",
+    "target": "Ren Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Ren Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "471bf7ed-b7d9-4730-9054-e6c27aba7f13",
+    "source": "Armor Break",
+    "target": "Ren Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Ren Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "e37469dd-54e6-4e38-b88d-f52ca677876e",
+    "source": "Gale Step",
+    "target": "Ren Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Ren Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "ccad6d95-b778-4850-813d-e80436e72e69",
+    "source": "Far Shot",
+    "target": "Ren Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Ren Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "1dadec15-d133-4219-a009-e4ba60f54136",
+    "source": "Arrow Storm",
+    "target": "Ren Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Ren Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "d2d65f24-4d8b-4135-ad1d-52f15f6eec28",
+    "source": "Sidestep",
+    "target": "Ren Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Ren Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "2befa9c5-6c72-493c-ae10-e763c5fea359",
+    "source": "Sharp Eye",
+    "target": "Ren Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Ren Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "fbc05d8b-ba73-4747-8be0-8cc7c5d6b7d3",
+    "source": "Arrow Master",
+    "target": "Ren Archer",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Ren Archer skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "590509b8-dc44-4d14-a816-e4b29f74227c",
+    "source": "Shadow Move",
+    "target": "Veilrunner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Veilrunner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "d2a038f4-675e-454c-97ab-15997eeb7aa6",
+    "source": "No Sound",
+    "target": "Veilrunner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Veilrunner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "ad0cceba-bb3d-4227-8900-d915c5497ac0",
+    "source": "Death from Behind",
+    "target": "Veilrunner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Veilrunner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "e56ab0f0-acd5-446f-8e92-84374616e151",
+    "source": "Smoke Screen",
+    "target": "Veilrunner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Veilrunner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "ec0fbb07-612c-4d8e-b9b8-0673b82654ea",
+    "source": "Phantom Dodge",
+    "target": "Veilrunner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Veilrunner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "59e42440-8c4a-4bf3-a429-d3216b183e62",
+    "source": "Poison Blade",
+    "target": "Veilrunner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Veilrunner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "ab97e4f8-0438-4f56-85fa-a62aac718570",
+    "source": "Lock Touch",
+    "target": "Veilrunner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Veilrunner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "69275f76-a963-4290-b355-255a65b7a5f7",
+    "source": "Face Shift",
+    "target": "Veilrunner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Veilrunner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "fb2c233e-cd2b-48a0-9837-d44e5024726e",
+    "source": "Disappear",
+    "target": "Veilrunner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Veilrunner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "690f63eb-5ccf-4142-b18c-e702569d379a",
+    "source": "Living Shadow",
+    "target": "Veilrunner",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Veilrunner skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "8740cc0b-0f85-4359-8db3-8cd2d018e363",
+    "source": "Stone Study",
+    "target": "Shudonkeeper",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Shudonkeeper skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "5bf1a345-1962-4206-958e-6a843c15e4aa",
+    "source": "Stone Keep",
+    "target": "Shudonkeeper",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Shudonkeeper skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "0fec0e21-c659-4139-be28-4f458af596e7",
+    "source": "Golem Lore",
+    "target": "Shudonkeeper",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Shudonkeeper skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "789ffa4e-e9ec-4044-8fd1-060d357ac131",
+    "source": "Ancient Read",
+    "target": "Shudonkeeper",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Shudonkeeper skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "96ad26e1-a2df-43d1-84cc-1a08a5c44349",
+    "source": "Stone Whisper",
+    "target": "Shudonkeeper",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Shudonkeeper skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "c338dab3-5039-4f94-b78a-f7bf0228954a",
+    "source": "World Record",
+    "target": "Shudonkeeper",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Shudonkeeper skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "69577666-b12d-4260-a4c6-3412c67bc923",
+    "source": "Awaken Theory",
+    "target": "Shudonkeeper",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Shudonkeeper skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "5f24776a-318c-448e-9415-d29b61e077fc",
+    "source": "Keepers Archive",
+    "target": "Shudonkeeper",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Shudonkeeper skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f860184f-6e58-4208-8b8a-a83d96938101",
+    "source": "Relic Sense",
+    "target": "Shudonkeeper",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Shudonkeeper skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "f81287ef-de22-4b2e-82e1-8589f52f535c",
+    "source": "Core Glimpse",
+    "target": "Shudonkeeper",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Shudonkeeper skill.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "e1a95b1d-331a-4a08-92db-d1f9c2751a1e",
+    "source": "Alchemist — Potion Mastery Ranks",
+    "target": "Alchemist",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Alchemist class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "9690c6b7-8e1c-42f3-9962-20de45bb6f43",
+    "source": "Beastmaster — Bond Depth Stages",
+    "target": "Beastmaster",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Beastmaster class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "1ec8c87d-8b23-4278-82a1-9782ab46a350",
+    "source": "Smithing — Forge Mastery Tiers",
+    "target": "Smithing",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Smithing class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "216cb0d9-fcc6-47a5-a262-c005f4eb1c21",
+    "source": "Enchanter — Rune Mastery Grades",
+    "target": "Enchanter",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Enchanter class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "411dff11-9722-41d4-95bd-c7afaf227c44",
+    "source": "Diviner — Sight Depth Levels",
+    "target": "Diviner",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Diviner class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "e7edb2d5-c79e-4586-a0b6-fb764aad150f",
+    "source": "Exorcist — Purification Stages",
+    "target": "Exorcist",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Exorcist class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "268d99aa-7514-4bab-a28d-9b849f84ad92",
+    "source": "Broker — Contract Tier Ranks",
+    "target": "Broker",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Broker class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "3dcea862-ad2a-4b77-a425-096b2afc3842",
+    "source": "Saintess — Radiance Ascension",
+    "target": "Saintess",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Saintess class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "40f86878-0334-405d-94d4-3f6b94f297e6",
+    "source": "Clergy — Healing Mastery Ranks",
+    "target": "Clergy",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Clergy class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "e11f7820-3046-40f6-ba14-8ebd387eacfc",
+    "source": "Archer — Shot Mastery Tiers",
+    "target": "Archer",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Archer class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "fbcfc902-0b6d-4da1-a6ae-6e79a4ebeeac",
+    "source": "Paladin — Oath Ascension",
+    "target": "Paladin",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Paladin class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "db45943a-8835-4a00-99c9-28a5f4dec48e",
+    "source": "Grimtender — Death Mastery Ranks",
+    "target": "Grimtender",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Grimtender class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "3a3fb3d6-1c73-4787-90a2-94164b516ec8",
+    "source": "Bladesinger — Blade Harmony Stages",
+    "target": "Bladesinger",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Bladesinger class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "d006066f-8a24-4493-9081-dfadc882eaf5",
+    "source": "Berserker — Rage Ascension",
+    "target": "Berserker",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Berserker class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "a1aa1003-c19e-405b-9ebd-9963a9d2d71c",
+    "source": "Sentinel — Guardian Oath Ranks",
+    "target": "Sentinel",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Sentinel class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "8a95cc6c-3adb-44c2-b384-f1804b9a9f7f",
+    "source": "Ren Archer — Bow Mastery Stages",
+    "target": "Ren Archer",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Ren Archer class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "42bfd2b3-2544-4c1e-af38-cc507480ddfe",
+    "source": "Veilrunner — Shadow Mastery Tiers",
+    "target": "Veilrunner",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Veilrunner class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "77a9429d-cf7c-4fe7-b393-9144ab5d2889",
+    "source": "Shudonkeeper — Knowledge Depths",
+    "target": "Shudonkeeper",
+    "type": "about",
+    "label": "About",
+    "description": "The progression system for the Shudonkeeper class.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "657db848-b3b1-433e-8328-d9cf82e32177",
+    "source": "1st Circle Rune Star",
+    "target": "Mage",
+    "type": "about",
+    "label": "About",
+    "description": "The Rune Star circle system is how a Mage advances.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "7eb90903-f9ec-40f4-a588-7e2091561b08",
+    "source": "2nd Circle Rune Star",
+    "target": "Mage",
+    "type": "about",
+    "label": "About",
+    "description": "The Rune Star circle system is how a Mage advances.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "9e095985-68f0-40cd-b5b8-5fa5636d7ec5",
+    "source": "3rd Circle Rune Star",
+    "target": "Mage",
+    "type": "about",
+    "label": "About",
+    "description": "The Rune Star circle system is how a Mage advances.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "d694e4e3-9c12-464d-9b88-9ae6fa6c4f88",
+    "source": "4th Circle Rune Star",
+    "target": "Mage",
+    "type": "about",
+    "label": "About",
+    "description": "The Rune Star circle system is how a Mage advances.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "e7bcbaaa-4dff-44f8-844d-1784c72562db",
+    "source": "5th Circle Rune Star",
+    "target": "Mage",
+    "type": "about",
+    "label": "About",
+    "description": "The Rune Star circle system is how a Mage advances.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "47b8ae49-0dd3-4bec-980c-1295c0802ec0",
+    "source": "6th Circle Rune Star",
+    "target": "Mage",
+    "type": "about",
+    "label": "About",
+    "description": "The Rune Star circle system is how a Mage advances.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "dc62fe66-7092-4fe3-ac0f-babe7031abb1",
+    "source": "7th Circle Rune Star",
+    "target": "Mage",
+    "type": "about",
+    "label": "About",
+    "description": "The Rune Star circle system is how a Mage advances.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "db12d4d7-3eff-4412-a750-04a69d9e6a8d",
+    "source": "1st Circle Rune Star",
+    "target": "2nd Circle Rune Star",
+    "type": "progresses to",
+    "label": "Progresses to",
+    "description": "1st Circle Rune Star progresses to 2nd Circle Rune Star.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "cf2dc3a3-fb9b-4284-9571-71eb7abc68b0",
+    "source": "2nd Circle Rune Star",
+    "target": "3rd Circle Rune Star",
+    "type": "progresses to",
+    "label": "Progresses to",
+    "description": "2nd Circle Rune Star progresses to 3rd Circle Rune Star.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "cb8b8520-d8c3-480d-a901-241a549ddcea",
+    "source": "3rd Circle Rune Star",
+    "target": "4th Circle Rune Star",
+    "type": "progresses to",
+    "label": "Progresses to",
+    "description": "3rd Circle Rune Star progresses to 4th Circle Rune Star.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "367fd6b0-2c11-44d9-a750-a7a8c8228fcf",
+    "source": "4th Circle Rune Star",
+    "target": "5th Circle Rune Star",
+    "type": "progresses to",
+    "label": "Progresses to",
+    "description": "4th Circle Rune Star progresses to 5th Circle Rune Star.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "05732c77-f80b-414e-a338-c8d87f6f9495",
+    "source": "5th Circle Rune Star",
+    "target": "6th Circle Rune Star",
+    "type": "progresses to",
+    "label": "Progresses to",
+    "description": "5th Circle Rune Star progresses to 6th Circle Rune Star.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "ce89ff5c-5132-45de-bfd0-36753c06620c",
+    "source": "6th Circle Rune Star",
+    "target": "7th Circle Rune Star",
+    "type": "progresses to",
+    "label": "Progresses to",
+    "description": "6th Circle Rune Star progresses to 7th Circle Rune Star.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "23a3b1e4-d0a0-4c0d-893d-f653311fd077",
+    "source": "G Grade",
+    "target": "F Grade",
+    "type": "progresses to",
+    "label": "Progresses to",
+    "description": "G Grade progresses to F Grade.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "efb41d70-2d1a-4697-abaa-d4b73d84159c",
+    "source": "F Grade",
+    "target": "E Grade",
+    "type": "progresses to",
+    "label": "Progresses to",
+    "description": "F Grade progresses to E Grade.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "ac9c59c4-002b-4c5c-b4ee-bd0e23aa7509",
+    "source": "E Grade",
+    "target": "D Grade",
+    "type": "progresses to",
+    "label": "Progresses to",
+    "description": "E Grade progresses to D Grade.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "385ce89c-e939-4157-883d-14494c68bb47",
+    "source": "D Grade",
+    "target": "C Grade",
+    "type": "progresses to",
+    "label": "Progresses to",
+    "description": "D Grade progresses to C Grade.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "d044a7c9-1fc3-45c2-9e36-36095a1af1bc",
+    "source": "C Grade",
+    "target": "B Grade",
+    "type": "progresses to",
+    "label": "Progresses to",
+    "description": "C Grade progresses to B Grade.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "662b34bf-976a-4923-b827-e8bf56445973",
+    "source": "B Grade",
+    "target": "A Grade",
+    "type": "progresses to",
+    "label": "Progresses to",
+    "description": "B Grade progresses to A Grade.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "e7b8c56b-0fb3-4a46-918f-e9572e780891",
+    "source": "A Grade",
+    "target": "S Grade",
+    "type": "progresses to",
+    "label": "Progresses to",
+    "description": "A Grade progresses to S Grade.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "081b313c-8697-4d1b-b542-67a2c0c744cc",
+    "source": "Silver Concord",
+    "target": "Aldermere",
+    "type": "located in",
+    "label": "Located in",
+    "description": "The guild’s main branch is a fortified manor in Aldermere.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "e6bce25c-3ca6-4498-bc96-beacc8a22a11",
+    "source": "Silver Concord — Guild Ranks",
+    "target": "Silver Concord",
+    "type": "part of",
+    "label": "Part of",
+    "description": "The rank structure within Silver Concord.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "3c8cc00c-9988-48f4-aac9-563f280a3e92",
+    "source": "Silver Concord — Guild Facilities",
+    "target": "Silver Concord",
+    "type": "part of",
+    "label": "Part of",
+    "description": "The guild’s facilities and premises.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "b88c0a1b-9ae2-4c6a-b556-43136a2a62f9",
+    "source": "Varen Ashtail",
+    "target": "Silver Concord",
+    "type": "Leader of",
+    "label": "Leader of",
+    "description": "Guildmaster of Silver Concord.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
+  },
+  {
+    "id": "b1c867a3-ff97-4b33-9ea2-5bc9ec329bf8",
+    "source": "Varen Ashtail",
+    "target": "Broker",
+    "type": "class of",
+    "label": "Class of",
+    "description": "His given class is Broker.",
+    "createdAt": "2026-08-19T01:10:39.800Z",
+    "updatedAt": "2026-08-19T01:10:39.800Z"
   }
 ]

@@ -43,6 +43,8 @@ export const STORY_LINK_TYPES: Record<string, StoryLinkType> = {
   'skill of': { label: 'Skill of', color: '#4ade80' },
   'form of': { label: 'Form of', color: '#f472b6' },
   'class of': { label: 'Class of', color: '#38bdf8' },
+  'progresses to': { label: 'Progresses to', color: '#818cf8' },
+  'Leader of': { label: 'Leader of', color: '#fbbf24' },
 };
 
 export const FALLBACK_STORY = { label: 'Related to', color: '#94a3b8' };
