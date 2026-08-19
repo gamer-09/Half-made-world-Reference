@@ -1049,4 +1049,6 @@ module.exports = [
   s("Aldric Malgrave", "Hidden Realm (Shadow Realm)", "causes", "Causes", "His persecution forced the Aelthar to tear open the Hidden Realm to escape."),
   s("Aldric Malgrave", "The World Barrier", "causes", "Causes", "The near-destruction his hunt set in motion forced the world core’s will to raise the barrier."),
   s("Aldric Malgrave", "Human Realm", "lives in", "Lives in", "A human king of the Human Realm (appears in the Block Map under it)."),
+  s("Aelthar", "The World Core", "cursed by", "Cursed by", "For tearing open the Hidden Realm, the world core’s will cursed the Aelthar — the origin of the World Curse."),
+  s("The World Curse", "Aelthar", "cursed by", "Cursed by", "The World Curse was first laid upon the Aelthar."),
 ];

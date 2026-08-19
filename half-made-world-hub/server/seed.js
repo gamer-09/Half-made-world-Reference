@@ -3567,6 +3567,7 @@ module.exports = [
     [
       { label: "Appearance", value: "Pale, ash-grey skin; flat, dark eyes that do not reflect light; faint markings that glow faintly with Veyn beneath the skin." },
       { label: "Innate Ability", value: "Potent Blood" },
+      { label: "Curse", value: "Cursed by the world core for tearing open the Hidden Realm — every Aelthar bore the rune collar." },
     ],
     ["race", "aelthar", "extinct", "hidden realm"],
   ),
@@ -3811,11 +3812,12 @@ module.exports = [
     "Rules & Notes",
     "The World Curse",
     "A curse given by the world core",
-    "Forms a rune collar around the person’s neck. The bearer is unavoidably hunted by the Shudon when spotted and will be killed.",
+    "Forms a rune collar around the person’s neck. The bearer is unavoidably hunted by the Shudon when spotted and will be killed. The curse was first laid by the world core upon the Aelthar, as punishment for tearing open the Hidden Realm and nearly destroying the world — a mark the will of the world placed on an entire race for the crime of nearly unmaking it.",
     [
       { label: "Brand", value: "Makes a rune-like design around the person’s neck and can awaken the golems to hunt the person down. With this mark on, teleportation out of the realm or place is blocked and rendered unusable." },
       { label: "Ban", value: "Blocks any use of teleportation out of the realm, and the bearer is hunted down and killed by the Shudon. This means you are locked down and stuck in the realm you were in when you got it." },
       { label: "Mark", value: "This mark can’t be hidden or removed by any means." },
+      { label: "Origin", value: "First laid on the Aelthar by the world core, for tearing open the Hidden Realm." },
     ],
     ["world core", "shudon", "curse", "aelthar"],
   ),

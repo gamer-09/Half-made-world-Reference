@@ -56,6 +56,7 @@ export const STORY_LINK_TYPES: Record<string, StoryLinkType> = {
   'head master of': { label: 'Head Master of', color: '#facc15' },
   'held by': { label: 'Held by', color: '#fbbf24' },
   'hides in': { label: 'Hides in', color: '#94a3b8' },
+  'cursed by': { label: 'Cursed by', color: '#a855f7' },
 };
 
 export const FALLBACK_STORY = { label: 'Related to', color: '#94a3b8' };

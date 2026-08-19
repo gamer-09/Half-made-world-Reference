@@ -10278,5 +10278,25 @@
     "description": "A human king of the Human Realm (appears in the Block Map under it).",
     "createdAt": "2026-08-19T23:14:09.527Z",
     "updatedAt": "2026-08-19T23:14:09.527Z"
+  },
+  {
+    "id": "52f3ae03-e5bb-49ac-9044-a54214a779c6",
+    "source": "Aelthar",
+    "target": "The World Core",
+    "type": "cursed by",
+    "label": "Cursed by",
+    "description": "For tearing open the Hidden Realm, the world core’s will cursed the Aelthar — the origin of the World Curse.",
+    "createdAt": "2026-08-19T23:51:28.857Z",
+    "updatedAt": "2026-08-19T23:51:28.857Z"
+  },
+  {
+    "id": "9f4309ac-ac35-4263-944b-0c46abf8e530",
+    "source": "The World Curse",
+    "target": "Aelthar",
+    "type": "cursed by",
+    "label": "Cursed by",
+    "description": "The World Curse was first laid upon the Aelthar.",
+    "createdAt": "2026-08-19T23:51:28.857Z",
+    "updatedAt": "2026-08-19T23:51:28.857Z"
   }
 ]
