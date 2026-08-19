@@ -1315,7 +1315,7 @@
     "category": "Rules & Notes",
     "name": "Veyn & Ren Incompatibility",
     "subtitle": "You can never hold both",
-    "description": "Joining magic and Bladesinger is not possible since Veyn and Ren are not compatible; you can’t have Ren and Veyn together in your body since it can kill you due to their extreme incompatibility. The one exception is Smithing — a Smith may draw on both during the forge, but can never learn any skill outside Smithing and the forging of weapons.",
+    "description": "Joining magic and Bladesinger is not possible since Veyn and Ren are not compatible; you can’t have Ren and Veyn together in your body since it can kill you due to their extreme incompatibility. The one exception is Smithing — a Smith may draw on both during the forge, but can never learn any skill outside Smithing and the forging of weapons. Angels and demons can unlock a Ren Organ to channel Ren, but the same rule applies: while the organ is open they cannot touch any Veyn, or the incompatibility kills them.",
     "fields": [],
     "tags": [
       "veyn",
@@ -11539,5 +11539,36 @@
     ],
     "createdAt": "2026-08-19T01:39:00.548Z",
     "updatedAt": "2026-08-19T01:39:00.548Z"
+  },
+  {
+    "id": "e7feb91e-2260-43e1-8936-d2eb19f2ea3b",
+    "category": "Rules & Notes",
+    "name": "The Ren Organ",
+    "subtitle": "How angels and demons channel Ren",
+    "description": "Angels and demons are born to Veyn — their aura, halo or miasma, and every innate skill run on it — and Ren, the inner energy drawn from a body’s own Vitality, does not come naturally to them. But it is not impossible. An angel or demon can unlock a Ren Organ: a channel within the body that lets them draw on their own Vitality and use Ren the way a human or swordsman does. The cost is absolute — while the Ren Organ is open, the user cannot touch any form of Veyn at all. The moment Veyn and Ren meet inside the same body, the incompatibility rule applies and can kill them. This means an angel or demon who walks the Ren path must fight without their aura, their halo or miasma, and every innate Veyn skill they were born with, until they close the organ and return to Veyn.",
+    "fields": [
+      {
+        "label": "Unlock",
+        "value": "An angel or demon can unlock a Ren Organ to channel Ren from their own Vitality."
+      },
+      {
+        "label": "Cost",
+        "value": "While the organ is open, the user cannot touch any form of Veyn — not even their own aura or innate skills."
+      },
+      {
+        "label": "Rule",
+        "value": "Mixing Veyn and Ren in one body applies the incompatibility rule and can kill."
+      }
+    ],
+    "tags": [
+      "ren organ",
+      "ren",
+      "veyn",
+      "angel",
+      "demon",
+      "incompatibility"
+    ],
+    "createdAt": "2026-08-19T03:00:26.582Z",
+    "updatedAt": "2026-08-19T03:00:26.582Z"
   }
 ]

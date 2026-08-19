@@ -626,7 +626,7 @@ module.exports = [
     "Rules & Notes",
     "Veyn & Ren Incompatibility",
     "You can never hold both",
-    "Joining magic and Bladesinger is not possible since Veyn and Ren are not compatible; you can’t have Ren and Veyn together in your body since it can kill you due to their extreme incompatibility. The one exception is Smithing — a Smith may draw on both during the forge, but can never learn any skill outside Smithing and the forging of weapons.",
+    "Joining magic and Bladesinger is not possible since Veyn and Ren are not compatible; you can’t have Ren and Veyn together in your body since it can kill you due to their extreme incompatibility. The one exception is Smithing — a Smith may draw on both during the forge, but can never learn any skill outside Smithing and the forging of weapons. Angels and demons can unlock a Ren Organ to channel Ren, but the same rule applies: while the organ is open they cannot touch any Veyn, or the incompatibility kills them.",
     [],
     ["veyn", "ren", "incompatible"],
   ),
@@ -5313,5 +5313,17 @@ module.exports = [
     "A rank is a measure of power, not a profession. Every angel and demon has a rank — the amount of Veyn their body holds, shown by their wings and horns — but only some choose the army. Most angels and demons are civilians: merchants, craftsmen, scholars, laborers, and tradespeople who happen to hold a high or low rank. A powerful Aetherblade Lord Angel might command the army, or might simply be a master artisan who has never held a sword; a weak Gnash might be a soldier, or might run a shop in a quiet town. Rank decides how strong you are. Role decides what you do. And because rank is power rather than duty, angels and demons of any rank are free to leave their realm and live in the Human Realm as ordinary citizens, hiding their true nature behind Dawnveil or Duskveil.",
     [],
     ["rank", "role", "civilian", "army", "angel", "demon"],
+  ),
+  e(
+    "Rules & Notes",
+    "The Ren Organ",
+    "How angels and demons channel Ren",
+    "Angels and demons are born to Veyn — their aura, halo or miasma, and every innate skill run on it — and Ren, the inner energy drawn from a body’s own Vitality, does not come naturally to them. But it is not impossible. An angel or demon can unlock a Ren Organ: a channel within the body that lets them draw on their own Vitality and use Ren the way a human or swordsman does. The cost is absolute — while the Ren Organ is open, the user cannot touch any form of Veyn at all. The moment Veyn and Ren meet inside the same body, the incompatibility rule applies and can kill them. This means an angel or demon who walks the Ren path must fight without their aura, their halo or miasma, and every innate Veyn skill they were born with, until they close the organ and return to Veyn.",
+    [
+      { label: "Unlock", value: "An angel or demon can unlock a Ren Organ to channel Ren from their own Vitality." },
+      { label: "Cost", value: "While the organ is open, the user cannot touch any form of Veyn — not even their own aura or innate skills." },
+      { label: "Rule", value: "Mixing Veyn and Ren in one body applies the incompatibility rule and can kill." },
+    ],
+    ["ren organ", "ren", "veyn", "angel", "demon", "incompatibility"],
   ),
 ];
