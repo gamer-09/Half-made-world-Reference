@@ -10561,14 +10561,14 @@
     "fields": [
       {
         "label": "Levels",
-        "value": "Glimpse → Peeker → Watcher → Seer → Oracle → Prophet → Fatesight"
+        "value": "Insight → Reader → Watcher → Seer → Oracle → Prophet → Fatesight"
       },
       {
-        "label": "Glimpse",
+        "label": "Insight",
         "value": "Detects obvious lies, basic True-Sight, senses strong Veyn presence"
       },
       {
-        "label": "Peeker",
+        "label": "Reader",
         "value": "Sees through magical concealment, detects hidden beings, reads basic auras"
       },
       {
@@ -10599,7 +10599,7 @@
       "levels"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T02:15:24.412Z"
+    "updatedAt": "2026-08-19T02:23:05.484Z"
   },
   {
     "id": "seed-520",
@@ -11149,15 +11149,11 @@
     "fields": [
       {
         "label": "Tiers",
-        "value": "Lurker → Shadow Walker → Phantom → Ghost → Wraith → Shadow Lord → Living Shadow"
+        "value": "Nightwalker → Phantom → Ghost → Wraith → Shadow Lord → Living Shadow"
       },
       {
-        "label": "Lurker",
-        "value": "Suppresses sound, basic shadow movement, lock picking with Ren"
-      },
-      {
-        "label": "Shadow Walker",
-        "value": "Moves through dim light invisibly, enhanced reflexes, poison blade coating"
+        "label": "Nightwalker",
+        "value": "Suppresses sound and moves through dim light nearly unseen, with enhanced reflexes, lock picking with Ren, and poison blade coating."
       },
       {
         "label": "Phantom",
@@ -11187,7 +11183,7 @@
       "tiers"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-19T02:23:05.484Z"
   },
   {
     "id": "seed-532",
