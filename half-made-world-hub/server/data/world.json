@@ -10904,10 +10904,10 @@
     "fields": [
       {
         "label": "Ranks",
-        "value": "Deathsinger → Gravekeeper → Bonewarden → Deathcaller → Necromancer → Grave Lord → Death Sovereign"
+        "value": "Bonewright → Gravekeeper → Bonewarden → Deathcaller → Necromancer → Grave Lord → Death Sovereign"
       },
       {
-        "label": "Deathsinger",
+        "label": "Bonewright",
         "value": "Reanimates simple remains, issues basic commands, uses remains as disposable shields"
       },
       {
@@ -10942,7 +10942,7 @@
       "ranks"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-19T02:27:02.592Z"
+    "updatedAt": "2026-08-19T02:30:37.501Z"
   },
   {
     "id": "seed-527",

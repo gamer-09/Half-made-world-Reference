@@ -5084,8 +5084,8 @@ module.exports = [
     "Grimtender progression system",
     "Grimtenders advance through ranks based on their command over death and undeath. The ranks are: Bone Worker → Grave Tender → Corpse Speaker → Death Adept → Necromancer → Grave Lord → Death Sovereign. At Bone Worker, they can reanimate simple remains. At Death Sovereign, they command permanent high-quality undead, maintain large-scale simultaneous control, and can harvest souls for later use.",
     [
-      { label: "Ranks", value: "Deathsinger → Gravekeeper → Bonewarden → Deathcaller → Necromancer → Grave Lord → Death Sovereign" },
-      { label: "Deathsinger", value: "Reanimates simple remains, issues basic commands, uses remains as disposable shields" },
+      { label: "Ranks", value: "Bonewright → Gravekeeper → Bonewarden → Deathcaller → Necromancer → Grave Lord → Death Sovereign" },
+      { label: "Bonewright", value: "Reanimates simple remains, issues basic commands, uses remains as disposable shields" },
       { label: "Gravekeeper", value: "Controls multiple undead, drains Veyn from corpses, basic necrotic pulses" },
       { label: "Bonewarden", value: "Binds spirits to remains for smarter undead, creates bone projectiles" },
       { label: "Deathcaller", value: "Reanimates large groups, creates undead legions, enhanced necrotic attacks" },
