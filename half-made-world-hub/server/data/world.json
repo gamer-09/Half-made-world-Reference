@@ -28,7 +28,7 @@
     "category": "Realms",
     "name": "Angel Realm",
     "subtitle": "Ruler: Clint Ashborn (Male, Serapharch)",
-    "description": "The home of the angels. The Lumen, the lowest-ranking angels, are its citizens and almost never leave it. Lethmoor, a fallen kingdom recorded in this realm, was later replicated inside the Hidden Realm. Ruled by Clint Ashborn, a Serapharch. Its population is small — only in the tens of thousands, a single city’s worth — because angels barely die and do not breed the way humans do; that smallness is what lets the Veyn Vow and the rank hierarchy hold the whole realm in perfect order, and why the loss of even one of the Six Pillars stung so deeply.",
+    "description": "The home of the angels. The Lumen, the lowest-ranking angels, are its citizens and almost never leave it. Lethmoor, a fallen kingdom recorded in this realm, was later replicated inside the Hidden Realm. Ruled by Clint Ashborn, a Serapharch. Its population is small — only in the tens of thousands, a single city’s worth — because angels barely die and do not breed the way humans do; that smallness is what lets the angels live by promise and trust, each bound by their own sworn word rather than by chains — and why the loss of even one of the Six Pillars stung so deeply.",
     "fields": [
       {
         "label": "Ruler",
@@ -44,7 +44,7 @@
       "angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-20T03:28:29.212Z"
   },
   {
     "id": "seed-003",
@@ -1889,7 +1889,7 @@
     "fields": [
       {
         "label": "Cause",
-        "value": "Breaking the Angel Veyn Vow (disobeying someone above their rank, or pulling more Veyn than the vow allows to act against an order)."
+        "value": "Breaking the Angel Veyn Vow (betraying their own sworn promise)."
       },
       {
         "label": "Markings",
@@ -1907,18 +1907,34 @@
       "broken halo"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-20T03:28:29.212Z"
   },
   {
     "id": "seed-056",
     "category": "Angels",
     "name": "The Angel Veyn Vow",
-    "subtitle": "The magical bond that regulates angelic Veyn",
-    "description": "Every angel takes a Veyn Vow when their halo first forms. It binds their access to Veyn to their obedience to the angelic hierarchy. It is not just spoken, it is a magical bond — the halo is the physical seal of it. If the vow holds, an angel can freely use Veyn within their rank’s limit, and the halo regulates it so it doesn’t overwhelm them. The vow is the reason angels can hold as much power as they do; without it their body can’t safely filter raw Veyn on its own. Rank affects the vow too — a higher rank means a stronger vow and halo, so they can channel more Veyn without breaking. The vow breaks when an angel disobeys someone above their rank or pulls more Veyn than their vow allows to act against an order. Once it breaks, the halo can’t hold the channel steady and shatters, becoming the broken halo Fallen Angels are known for. The wings get affected too — the uncontrolled Veyn surging through them leaves permanent black spotting on the feathers.",
+    "subtitle": "A promise, spoken at the altar",
+    "description": "Every angel takes the Veyn Vow when their halo first forms, at the Sundering Altar, at the age of fifteen. It is not an oath of obedience and not a chain — it is a promise, spoken freely, and the words of it are a ritual. Each angel’s vow is their own: a promise of what they will uphold, the truth they choose to carry, sworn into their own halo with the help of the Guardian. The halo is the physical seal of that promise, and it is what lets an angel’s Veyn flow steady and pure — because it is their own word, kept, that stabilizes them, not any master’s command. The vow is why angels can hold as much power as they do; without it their body cannot safely filter raw Veyn on its own. The stronger and truer the promise, the brighter the halo. It breaks only when an angel betrays their own sworn word.",
     "fields": [
       {
+        "label": "Incantation",
+        "value": "With this light I make my promise. By the Veyn that made me and the will that holds the world, I swear to keep the word I speak, and to carry my own truth until my light goes out. This halo is my seal — my promise made visible. May it hold while my word is true, and may it shatter the day I betray it."
+      },
+      {
         "label": "Halo",
-        "value": "An angel’s halo forms at age 15, when the vow is taken at the altar."
+        "value": "The halo forms at age 15, at the Sundering Altar, when the vow is spoken with the Guardian’s help."
+      },
+      {
+        "label": "Nature",
+        "value": "A personal promise, not an oath of obedience — each angel swears their own truth."
+      },
+      {
+        "label": "Seal",
+        "value": "The halo is the seal of the angel’s own word; keeping the promise keeps the Veyn steady."
+      },
+      {
+        "label": "Breaking",
+        "value": "The vow breaks when an angel betrays their own promise — not by disobeying a superior, but by breaking their own word."
       }
     ],
     "tags": [
@@ -1928,7 +1944,7 @@
       "halo"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-20T03:28:29.212Z"
   },
   {
     "id": "seed-057",
@@ -4339,7 +4355,7 @@
       },
       {
         "label": "Veyn Vow",
-        "value": "Cannot take the Veyn Vow — his hybrid nature cannot bind one half without strangling the other."
+        "value": "Cannot take the Veyn Vow — no single promise can bind his two natures."
       }
     ],
     "tags": [
@@ -4349,7 +4365,7 @@
       "hybrid"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-20T03:28:29.212Z"
   },
   {
     "id": "seed-142",
@@ -6160,11 +6176,11 @@
     "category": "Angels",
     "name": "An Angel Breaking the vow",
     "subtitle": "What happens when an angel’s vow shatters",
-    "description": "The vow breaks when an angel disobeys someone above their rank, or pulls more Veyn than their vow allows to act against an order. Once it breaks, the halo can’t hold the channel steady and shatters, becoming the broken halo Fallen Angels are known for. The wings get affected too — the uncontrolled Veyn surging through them at that moment leaves permanent black spotting on the feathers: some end up with plain black spots, others with black cherry spotting, depending on how much Veyn surged through when it broke.",
+    "description": "The vow breaks when an angel betrays their own promise — when they do the one thing they swore to themselves they would never do. It is not a punishment handed down by a superior, but the consequence of their own broken word: the promise that held their Veyn steady lets go, and the halo can no longer hold the channel. It shatters, becoming the broken halo Fallen Angels are known for. The uncontrolled Veyn surging through them at that moment leaves permanent black spotting on the feathers — plain black spots or black cherry spotting, depending on how much Veyn surged through when the promise broke.",
     "fields": [
       {
         "label": "Trigger",
-        "value": "Disobeying someone above their rank, or pulling more Veyn than the vow allows to act against an order."
+        "value": "Betraying their own sworn promise — breaking their own word, not an order from above."
       },
       {
         "label": "Result",
@@ -6179,7 +6195,7 @@
       "breaking"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-20T03:28:29.212Z"
   },
   {
     "id": "seed-240",
@@ -6606,7 +6622,7 @@
     "category": "Characters",
     "name": "Thalor Elwin",
     "subtitle": "Angel general of the Angel army",
-    "description": "The Fifth Pillar — the guardian of the Sundering Altar, where every person in the world is brought at fifteen to have their latent connection to Veyn unlocked for the first time. Angels swear their Veyn Vow there, and it is where each halo first forms. Thalor records every vow sworn at the altar and watches for the first sign that one is fraying. He saw the signs in Ordium long before he left: a vow pulled thin by something it was never meant to contain. He said nothing then, and has spent every day since wondering whether a single word from him could have stopped all of it.",
+    "description": "The Fifth Pillar — the guardian of the Sundering Altar, where every person in the world is brought at fifteen to have their latent connection to Veyn unlocked for the first time. Angels speak their Veyn Vow there with the Guardian’s help, and it is where each halo first forms. Thalor keeps the altar and records every vow spoken there, watching for the first sign that a promise is fraying. He saw the signs in Ordium long before he left: a vow pulled thin by something it was never meant to contain. He said nothing then, and has spent every day since wondering whether a single word from him could have stopped all of it.",
     "fields": [
       {
         "label": "Rank",
@@ -6654,7 +6670,7 @@
       "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-20T03:28:29.212Z"
   },
   {
     "id": "seed-251",
@@ -7648,7 +7664,7 @@
     "category": "Race Types",
     "name": "Fallen Angels",
     "subtitle": "The broken — cast out for breaking the vow",
-    "description": "The type of angel who broke the Veyn Vow and was cast out of the Angel Realm. They keep their wings and power but can never take another vow, leaving their connection to Veyn unstable and unregulated.",
+    "description": "The type of angel who broke their own Veyn Vow and lost their halo to it. They keep their wings and power but can never take another vow, leaving their connection to Veyn unstable and unregulated.",
     "fields": [
       {
         "label": "Innate Ability",
@@ -7662,7 +7678,7 @@
       "fallen"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-20T03:28:29.212Z"
   },
   {
     "id": "seed-307",
@@ -7960,11 +7976,11 @@
     "category": "Rules & Notes",
     "name": "The Hybrid",
     "subtitle": "Angel and demon in one body",
-    "description": "A hybrid is an angel and a demon born of a single body — a union the world considers impossible, since Veyn and Ren cannot coexist and the two realms’ natures are opposed. Jaiden Marlock is the first, born of Ordium (an Aetherblade Lord Angel) and Lisa (a Bloodward), and his aura carries both an angelic and a demonic aura at once. Hybrids inherit both parents’ race types — in Jaiden’s case the Imp demon half and the Malakhim angel half — and can draw on the abilities of both. Because such a being has never existed before, there are no rules for it, only what Jaiden himself becomes. A hybrid cannot take the Veyn Vow: the vow regulates Veyn through obedience, but a demon’s Veyn is unregulated by nature, and a body holding Holy Energy and Corrupted Veyn in balance cannot bind one half to a vow without strangling the other. The vow was simply never made for a being like him.",
+    "description": "A hybrid is an angel and a demon born of a single body — a union the world considers impossible, since Veyn and Ren cannot coexist and the two realms’ natures are opposed. Jaiden Marlock is the first, born of Ordium (an Aetherblade Lord Angel) and Lisa (a Bloodward), and his aura carries both an angelic and a demonic aura at once. Hybrids inherit both parents’ race types — in Jaiden’s case the Imp demon half and the Malakhim angel half — and can draw on the abilities of both. Because such a being has never existed before, there are no rules for it, only what Jaiden himself becomes. A hybrid cannot take the Veyn Vow: the vow is a single promise sworn into one halo, but a hybrid holds two natures in one body — an angel’s light and a demon’s dark — and no single promise can bind both at once. The vow was simply never made for a being like him.",
     "fields": [
       {
         "label": "The Vow",
-        "value": "A hybrid cannot take the Veyn Vow — binding his angelic half would strangle the demonic half. The Angel Realm would still demand it, and would reject him when he cannot give it."
+        "value": "A hybrid cannot take the Veyn Vow — no single promise can bind two natures. The Angel Realm would still demand it, and would reject him when he cannot give it."
       }
     ],
     "tags": [
@@ -7975,7 +7991,7 @@
       "race"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-20T03:28:29.212Z"
   },
   {
     "id": "seed-322",
@@ -8128,7 +8144,7 @@
     "category": "Rules & Notes",
     "name": "The Formation of Holy Energy and Corrupted Veyn",
     "subtitle": "How raw Veyn becomes gold or black",
-    "description": "Both holy energy and corrupted Veyn are made from the same raw Veyn, but by opposite processes. Holy energy is formed through purification: a holy being burns away Veyn’s impurity — an angel through the discipline of their halo and Veyn Vow, a saint or diviner through their own holy channeling — brightening the Veyn from silver-blue into gold. Corrupted Veyn is formed through corruption: a demon turns its own Veyn inward and decomposes it into miasma, darkening and poisoning it until it stains a deep purple or black. One Veyn pulled in two directions — which is exactly why they cannot coexist and cancel each other out when they meet.",
+    "description": "Both holy energy and corrupted Veyn are made from the same raw Veyn, but by opposite processes. Holy energy is formed through purification: a holy being burns away Veyn’s impurity — an angel through the promise of their halo and Veyn Vow, a saint or diviner through their own holy channeling — brightening the Veyn from silver-blue into gold. Corrupted Veyn is formed through corruption: a demon turns its own Veyn inward and decomposes it into miasma, darkening and poisoning it until it stains a deep purple or black. One Veyn pulled in two directions — which is exactly why they cannot coexist and cancel each other out when they meet.",
     "fields": [],
     "tags": [
       "holy energy",
@@ -8139,7 +8155,7 @@
       "corruption"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-08-20T03:28:29.212Z"
   },
   {
     "id": "seed-331",
@@ -13181,5 +13197,35 @@
     ],
     "createdAt": "2026-08-19T23:14:09.527Z",
     "updatedAt": "2026-08-19T23:14:09.527Z"
+  },
+  {
+    "id": "b1968745-9bd1-48b4-a1ec-ac507b9f1900",
+    "category": "Beings",
+    "name": "The Guardian",
+    "subtitle": "The rare keeper of the Veyn Vow ritual",
+    "description": "A rare and ancient being who appears at the Sundering Altar to officiate the Veyn Vow — the ritual by which every angel’s halo is formed. It is not commonly seen; most angels glimpse it only once, on the day of their awakening, and never again. No one knows what it is, where it came from, or how many of them exist. It simply appears when a halo is to be made, speaks the vow with the young angel, and is gone. Its presence is what lets the promise take hold: without it, an angel’s halo cannot form, and their Veyn cannot be stabilized.",
+    "fields": [
+      {
+        "label": "Nature",
+        "value": "Unknown — a rare being, not commonly seen, that officiates the Veyn Vow ritual."
+      },
+      {
+        "label": "Role",
+        "value": "Helps every angel form their halo and speak their vow at the Sundering Altar."
+      },
+      {
+        "label": "Rarity",
+        "value": "Most angels see it only once, at their awakening, and never again."
+      }
+    ],
+    "tags": [
+      "guardian",
+      "vow",
+      "halo",
+      "altar",
+      "being"
+    ],
+    "createdAt": "2026-08-20T03:28:29.212Z",
+    "updatedAt": "2026-08-20T03:28:29.212Z"
   }
 ]
