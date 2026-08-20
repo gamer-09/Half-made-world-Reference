@@ -4287,7 +4287,7 @@
     "fields": [
       {
         "label": "Forms",
-        "value": "1st — Normal: looks fully human, no wings, horns, or halo. 2nd — A halo appears above his head and two horns emerge from his forehead, using partial abilities of both an angel and a demon. 3rd — Full angel form: 6 pure feathery white wings and a brightly glowing halo, with the angelic aura. 4th — Full demon form: 6 horns and 6 dark purple feathery wings, with the demonic aura. 5th — True hybrid form: 3 pure white feathery wings on one half and 3 black feathery wings on the other, 6 horns, and a halo split in half floating above his head. Both the angelic and demonic auras surround him at the same time."
+        "value": "1st — Normal: looks fully human, no wings, horns, or halo. 2nd — Full angel form: 6 pure feathery white wings and a brightly glowing halo, with the angelic aura. 3rd — A halo appears above his head and two horns emerge from his forehead, using partial abilities of both an angel and a demon. 4th — Full demon form: 6 horns and 6 dark purple feathery wings, with the demonic aura. 5th — True hybrid form: 3 pure white feathery wings on one half and 3 black feathery wings on the other, 6 horns, and a halo split in half floating above his head. Both the angelic and demonic auras surround him at the same time."
       },
       {
         "label": "Angelic rank",
@@ -4721,7 +4721,7 @@
     "id": "seed-153",
     "category": "Character Forms",
     "name": "Jaiden Marlock — Halo & Horns",
-    "subtitle": "Second Form of 5 — Jaiden Marlock",
+    "subtitle": "Third Form of 5 — Jaiden Marlock",
     "description": "A halo appears above his head and two horns emerge from his forehead, using partial abilities of both an angel and a demon.",
     "fields": [],
     "tags": [
@@ -4736,7 +4736,7 @@
     "id": "seed-154",
     "category": "Character Forms",
     "name": "Jaiden Marlock — Full Angel Form",
-    "subtitle": "Third Form of 5 — Jaiden Marlock",
+    "subtitle": "Second Form of 5 — Jaiden Marlock",
     "description": "6 pure feathery white wings and a halo that glows brightly on top of his head, along with the angelic aura all angels carry.",
     "fields": [],
     "tags": [
