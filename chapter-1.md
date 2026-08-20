@@ -112,7 +112,7 @@ I’d expected dim candles and solemn monks in robes. Instead, the Grand Hall wa
 
 At the center of the room sat a massive, raised dais inlaid with a ring of silver runes. They pulsed with a pale, rhythmic light, humming low enough to make my teeth ache.
 
-Names were called. One by one, teenagers stepped up onto the platform. I watched a boy from the lower district step into the ring; the runes flared, casting a faint silver-blue glow over his face. Evaluators at the edge of the stage scribbled notes into massive ledgers, calling out his class and grade: *E Grade, Mage.*
+Names were called. One by one, teenagers stepped up onto the platform. I watched a boy from the lower district step into the ring; the runes flared, casting a faint silver-blue glow over his face, and for a few seconds he stood rigid, eyes gone somewhere the rest of us couldn't follow — the few seconds every awakened soul swears feel like hours. Evaluators at the edge of the stage scribbled notes into massive ledgers, recording the reading the altar had already shown: *E Grade, Mage.*
 
 It was a machine. A assembly line designed to sort your whole life into a grade, a class, and a future before noon.
 
@@ -128,7 +128,7 @@ It didn't just light up—it detonated.
 
 The silver runes flared blindingly bright, and a torrent of golden light blasted upward from the altar. It didn't just wash over Bella; it poured out of her like a cracked dam. A tide of blinding, holy light swept across the room, snuffing out the surrounding torches and forcing the proctors to throw their arms over their eyes.
 
-It kept rising. The air tasted like ozone and static. For five suffocating seconds, a fifteen-year-old girl lit up the entire hall like a fallen star. It wasn't the light of an E Grade. It wasn't even the light of an A Grade.
+It kept rising. The air tasted like ozone and static. For five suffocating seconds — though Bella would later swear it was an hour — a fifteen-year-old girl lit up the entire hall like a fallen star. It wasn't the light of an E Grade. It wasn't even the light of an A Grade. And deep in the floor of the dais, a rune no one had seen glow in a hundred years flared to life: the mark of an anomalous signature, the reading the Academy Altar had been built to catch.
 
 "By the vow," a priest near the front whispered, stumbling backward. "That's impossible..."
 
