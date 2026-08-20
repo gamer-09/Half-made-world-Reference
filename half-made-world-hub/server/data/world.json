@@ -4336,6 +4336,10 @@
       {
         "label": "Power Level",
         "value": "Artificer"
+      },
+      {
+        "label": "Veyn Vow",
+        "value": "Cannot take the Veyn Vow — his hybrid nature cannot bind one half without strangling the other."
       }
     ],
     "tags": [
@@ -7956,8 +7960,13 @@
     "category": "Rules & Notes",
     "name": "The Hybrid",
     "subtitle": "Angel and demon in one body",
-    "description": "A hybrid is an angel and a demon born of a single body — a union the world considers impossible, since Veyn and Ren cannot coexist and the two realms’ natures are opposed. Jaiden Marlock is the first, born of Ordium (an Aetherblade Lord Angel) and Lisa (a Bloodward), and his aura carries both an angelic and a demonic aura at once. Hybrids inherit both parents’ race types — in Jaiden’s case the Imp demon half and the Malakhim angel half — and can draw on the abilities of both. Because such a being has never existed before, there are no rules for it, only what Jaiden himself becomes.",
-    "fields": [],
+    "description": "A hybrid is an angel and a demon born of a single body — a union the world considers impossible, since Veyn and Ren cannot coexist and the two realms’ natures are opposed. Jaiden Marlock is the first, born of Ordium (an Aetherblade Lord Angel) and Lisa (a Bloodward), and his aura carries both an angelic and a demonic aura at once. Hybrids inherit both parents’ race types — in Jaiden’s case the Imp demon half and the Malakhim angel half — and can draw on the abilities of both. Because such a being has never existed before, there are no rules for it, only what Jaiden himself becomes. A hybrid cannot take the Veyn Vow: the vow regulates Veyn through obedience, but a demon’s Veyn is unregulated by nature, and a body holding Holy Energy and Corrupted Veyn in balance cannot bind one half to a vow without strangling the other. The vow was simply never made for a being like him.",
+    "fields": [
+      {
+        "label": "The Vow",
+        "value": "A hybrid cannot take the Veyn Vow — binding his angelic half would strangle the demonic half. The Angel Realm would still demand it, and would reject him when he cannot give it."
+      }
+    ],
     "tags": [
       "hybrid",
       "angel",
