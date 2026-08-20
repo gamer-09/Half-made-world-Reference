@@ -1906,7 +1906,7 @@ module.exports = [
     "Characters",
     "Clint Ashborn",
     "Ruler of the Angel Realm — Serapharch (Male)",
-    "Clint Ashborn has ruled the Angel Realm so long the realm has forgotten there was ever another way. He ordered his own right-hand man, Ordium, executed for loving a demon and fathering the hybrid child — and to Clint that was not cruelty but necessity, the one clean cut that kept chaos from the door. He believes the Veyn Vow and the hierarchy are the only things standing between order and the collapse of everything, and he administers that belief with the serenity of a man who has never once doubted he was saving the world. He knows the buried truth of the world core’s will, and it frightens him more than any demon, because a will greater than the angelic order would mean the order he has upheld his whole existence is not the highest thing there is. Every impossible thing Jaiden Marlock is, is a refutation of Clint’s entire life — which is what makes him so dangerous an enemy: he is not wrong that the hybrid threatens the world’s balance, only wrong about what to do with it.",
+    "Clint Ashborn has ruled the Angel Realm so long the realm has forgotten there was ever another way. He ordered his own right-hand man, Ordium, executed for loving a demon and fathering the hybrid child — and to Clint that was not cruelty but necessity, the one clean cut that kept chaos from the door. He believes the angels’ promises — the Veyn Vows each of them swore — and the order those promises uphold are the only things standing between peace and the collapse of everything, and he administers that belief with the serenity of a man who has never once doubted he was saving the world. He knows the buried truth of the world core’s will, and it frightens him more than any demon, because a will greater than the angelic order would mean the order he has upheld his whole existence is not the highest thing there is. Every impossible thing Jaiden Marlock is, is a refutation of Clint’s entire life — which is what makes him so dangerous an enemy: he is not wrong that the hybrid threatens the world’s balance, only wrong about what to do with it.",
     [
       { label: "Rank", value: "Serapharch" },
       { label: "Race", value: "Cherubim" },
@@ -2673,7 +2673,7 @@ module.exports = [
     "Plot",
     "Clint Ashborn’s Plot",
     "The immaculate tyrant",
-    "Clint Ashborn has ruled the Angel Realm so long the realm has forgotten there was ever another way. He ordered his own right-hand man, Ordium, executed for loving a demon and fathering the hybrid child, and he calls it mercy — the one clean cut that kept chaos from the door. He believes the Veyn Vow and the hierarchy are the only things standing between order and the collapse of everything. But every impossible thing Jaiden Marlock is, is a refutation of Clint’s entire life, and as the hybrid grows, Clint is set on a collision course with the child he tried to prevent — an enemy he cannot dismiss, because he is not wrong that the hybrid threatens the world’s balance, only wrong about what to do with it.",
+    "Clint Ashborn has ruled the Angel Realm so long the realm has forgotten there was ever another way. He ordered his own right-hand man, Ordium, executed for loving a demon and fathering the hybrid child, and he calls it mercy — the one clean cut that kept chaos from the door. He believes the angels’ promises — the Veyn Vows each of them swore — and the order those promises uphold are the only things standing between peace and the collapse of everything. But every impossible thing Jaiden Marlock is, is a refutation of Clint’s entire life, and as the hybrid grows, Clint is set on a collision course with the child he tried to prevent — an enemy he cannot dismiss, because he is not wrong that the hybrid threatens the world’s balance, only wrong about what to do with it.",
     [],
     ["plot", "clint ashborn", "ruler", "angel realm"],
   ),
@@ -3704,7 +3704,7 @@ module.exports = [
     "Locations",
     "Aurelion",
     "The kingdom of the Angel Realm",
-    "The ruling kingdom of the Angel Realm, seat of the Serapharch Clint Ashborn. Built around the throne, it is home to the angelic hierarchy at its purest — the Six Pillars, the Veyn Vow, and the ranks held in order. Its population numbers only in the tens of thousands, small enough to be governed perfectly.",
+    "The ruling kingdom of the Angel Realm, seat of the Serapharch Clint Ashborn. Built around the throne, it is home to the angels’ promises at their purest — the Six Pillars, the Veyn Vows, and the ranks kept by sworn word. Its population numbers only in the tens of thousands, small enough to be governed perfectly.",
     [
       { label: "Ruler", value: "Clint Ashborn" },
     ],
