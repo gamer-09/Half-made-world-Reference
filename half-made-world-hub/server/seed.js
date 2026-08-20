@@ -1761,10 +1761,11 @@ module.exports = [
     "Artifacts",
     "Auralis Ruby",
     "The pendant that sealed the MC’s forms",
-    "A pendant crafted by the MC’s mom (Lisa), who then gave it to Sofia. The pendant has 5 seals to seal the MC’s 5 forms. It seals both of his auras (angelic and demonic), which makes him look human.",
+    "A pendant crafted by the MC’s mom (Lisa), who then gave it to Sofia. The pendant has 5 seals to seal the MC’s 5 forms. It seals both of his auras (angelic and demonic), which makes him look human. If a seal is strained or cracked, it will gradually recover and mend itself over time — but never back to full strength. A seal that has cracked once is permanently weakened, and will crack more easily the next time it is tested.",
     [
       { label: "Crafted by", value: "Lisa, a Bloodward demon" },
       { label: "Keeper", value: "Sofia" },
+      { label: "Seal Recovery", value: "A cracked seal mends over time, but stays permanently weakened and cracks more easily afterward." },
     ],
     ["artifact", "pendant", "ruby", "jaiden", "seals"],
   ),
