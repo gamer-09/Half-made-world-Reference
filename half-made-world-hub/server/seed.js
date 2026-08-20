@@ -996,8 +996,10 @@ module.exports = [
     "Rules & Notes",
     "Class Skill Limits",
     "Humans can master a class fully; other races are capped",
-    "All races can use skills of their chosen class, but since the Angel and Demon realms have innate skills already, the max skills they can learn from their class is 5, while humans can learn all the skills of that class.",
-    [],
+    "All races can use skills of their chosen class, but since the Angel and Demon realms have innate skills already, the max skills they can learn from their class is 5, while humans can learn all the skills of that class. Learning a skill from a class other than your own, however, is another matter: it is extremely difficult for humans to do, so hard that most never manage it, and they stick to what the altar gave them.",
+    [
+      { label: "Cross-class", value: "Learning skills from a class other than your own is extremely difficult for humans — most never manage it and stick to what the altar gave them." },
+    ],
     ["classes", "skills", "limits"],
   ),
   e(
@@ -5875,5 +5877,16 @@ module.exports = [
       { label: "Strolls", value: "A few generals — never most, never often — take quiet, unannounced strolls through their realm." },
     ],
     ["general", "pillar", "rare", "awe", "rank"],
+  ),
+  e(
+    "Rules & Notes",
+    "Cross-Class Skills",
+    "Why most people stick to what the altar gave them",
+    "Every awakened person is assigned one class at the Sundering Altar, and that class is where their path begins. Humans, unlike angels and demons, can in theory learn the skills of any class — but in the world as it is, learning a skill outside your own class is extremely difficult. The body’s Veyn is shaped to its class at awakening, and forcing it to learn a foreign discipline is slow, painful, and usually fails. Most humans who try give up. So in this era of the world, people stick to what the altar gave them — not because they are forbidden to reach for more, but because the effort is rarely worth it.",
+    [
+      { label: "The fact", value: "Humans find it difficult to learn skills from classes other than their own, so they stick to the class the altar assigned them." },
+      { label: "Why", value: "The body’s Veyn is shaped to its class at awakening; forcing a foreign discipline is slow, painful, and usually fails." },
+    ],
+    ["class", "skills", "altar", "human", "cross-class"],
   ),
 ];
