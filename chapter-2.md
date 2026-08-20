@@ -2,101 +2,105 @@ CHAPTER 2
 
 "Jaiden Marlock."
 
-The proctor said my name like it was a stone he was dropping into a well.
+Oh no.
 
-I didn't move. I was doing that thing I do, the thing where my body forgets it has legs, and my brain starts drafting reasons why I shouldn't have to do the thing everyone is waiting for me to do. *Reasons I could offer right now*, my brain supplied helpfully, *one: sudden illness. Two: sudden death. Three—*
+That was the thought. Not a big dramatic thought. Just *oh no*, small and flat, the way you think it right before you step in a puddle you already saw coming.
+
+I didn't move. I mean, moving felt like a lot. My legs had sort of quietly unionized and decided they were done for the day, and honestly? Fair. Same, legs. Same.
 
 "Jaiden Marlock, now."
 
-Okay, okay. I moved. Not because I wanted to, but because Bella had her hand on my back and was physically steering me toward the stairs like a sheepdog with an attitude problem.
+Fine. *Fine.* I moved. Bella had her hand on my back and was shoving me toward the stairs like I was a very reluctant sheep, and the crowd split open around me like I was suddenly interesting, which was new and deeply uncomfortable.
 
-"Go," she whispered. "I'll be right here."
+"Go," Bella hissed. "I'll be right here."
 
-I walked. The crowd opened around me like water around a dropped stone, and every face turned, and I swear the air got thinner with every step, like the room itself was holding its breath.
-
-The stairs were stone and there were eleven of them. I counted, because counting was easier than looking at what waited at the top.
+I walked. The stairs were stone and there were eleven of them, and I counted every single one, because counting was better than looking at the thing waiting at the top, and also because if I was going to die up there I wanted to know exactly how many steps it took.
 
 *   *   *
 
-The ring of runes was smaller up close. Smaller, and brighter, and humming that low tooth-ache hum that made the fillings in my mouth feel like they were about to vibrate loose.
+Up close the ring of runes was smaller. And brighter. And making this low tooth-ache hum that made me want to press my hands over my ears and walk into the sea.
 
-A priest in grey robes — the same one who'd called out Bella's reading — motioned for me to step into the center. His eyes flicked to the pendant at my throat, just for a second, then away, and something in my stomach dropped.
+A priest in grey robes — the same guy who'd announced Bella — waved me into the middle. His eyes flicked down to the pendant at my throat, just for a second, then away.
 
-*He looked at it. Why did he look at it.*
+Wait. Why did he look at the pendant? People didn't look at the pendant. The pendant was invisible. That was the whole point of the pendant. He looked at the pendant and now I was suddenly very aware that there was a pendant, and that it was cold, and that cold was starting to feel a lot like a warning.
 
-"Place your hands at your sides," he said. "And do not speak."
+"Hands at your sides," the priest said. "Do not speak."
 
-I did as I was told, because that's what you do when a priest tells you not to speak. I stood in the center of the ring, and the runes flared once, silver-blue, and then the world went away.
+Sure. No problem. Not speaking was maybe the one thing I was genuinely good at. I stood in the middle of the ring. The runes flared once, silver-blue.
 
-*   *   *
-
-Here's what they don't tell you about the awakening.
-
-They don't tell you it feels like drowning in warm light. They don't tell you that for a few seconds — a few seconds that stretch out until they feel like the whole of your life happening all at once — you can feel something *look at you*. Not the priest. Not the crowd. Something older, something that lives in the altar, that reaches down through the runes and into the dark behind your sternum and *reads*.
-
-It read me.
-
-And I felt it hesitate.
+And then everything went away.
 
 *   *   *
 
-The altar found my class first. Mage. It flared, clean and silver-blue, and somewhere far away a voice announced it, and the crowd made the small satisfied murmur a crowd makes when a thing goes the way it's supposed to.
+So. Nobody warns you about the light.
 
-Then the altar found my grade, and that's when it happened.
+It hits you like warm water, except it's inside you, which sounds gross, and it is, a little. And for a second — or five seconds, or an hour, who even knows, time stops doing its job in there — you can feel something *looking*. Not the priest. Not the crowd. Something old, living in the altar, reaching down through the runes and into the dark behind your ribs, flipping through you like a book.
 
-The runes didn't flare. They *seized*. The silver-blue light stuttered, then doubled — two lights now, not one, twisting up out of the ring like threads from a frayed rope. One silver. One the color of a bruise.
+It got to the part behind my sternum.
 
-And the thing under my ribs — that second heartbeat, the one I'd spent fifteen years pretending not to feel — it slammed against the inside of my chest like something trying to claw its way out.
+And it stopped.
 
-My hand flew to the pendant.
+And I swear — I *felt* it frown. Whatever a frown is when it's made of light and stone and a thousand years. It found the thing I'd been hiding since forever, the second heartbeat, the wrong one, and it just... hesitated. Like it didn't know what to do with me.
 
-It was burning hot.
+Buddy, I thought. Join the club.
 
 *   *   *
 
-Deep in the floor of the dais, the same rune that had flared for Bella — the anomalous-signature mark, the one nobody had seen glow in a hundred years — blazed to life again. Twice in one morning.
+Class first. Mage. Clean, silver-blue, normal. A voice announced it from somewhere far off and the crowd did that little satisfied murmur, the one that says *okay, boring, moving on.*
 
-At the dais's edge, the Guardian had not moved. Thalor Elwin stood as still as the stone he kept, and I could feel his eyes on me now — on the pendant at my throat, on the two lights that should not exist together, on the impossible thing I'd spent fifteen years being told to hide.
+Then the altar went looking for my grade.
 
-The crowd went silent. Not the good kind of silent. The kind of silent that comes before someone screams.
+And that's when it went wrong.
 
-I couldn't breathe. The two lights kept twisting, kept fighting, and I could feel them now, feel the *two* of me, the thing under my skin pressing up, up, up—
+The runes seized. The silver-blue light stuttered — flickered — and then split into *two*, two lights twisting up out of the floor like the frayed ends of a rope, one silver, one the color of a bruise. I stood there watching them fight each other and the thing under my ribs slammed against my chest so hard I saw white.
+
+My hand shot to the pendant.
+
+It was burning.
+
+*   *   *
+
+Deep in the floor, the same rune that had gone off for Bella — the anomaly mark, the one nobody had seen light up in a hundred years — blazed awake again. Second time in one morning.
+
+At the edge of the dais, the Guardian hadn't moved. Thalor Elwin stood there like he'd been carved, and I could feel him watching me now — at the pendant, at the two lights that shouldn't be able to exist in the same body, at me, the walking impossible thing.
+
+The crowd went quiet. The bad quiet. The quiet that comes right before somebody screams.
+
+I couldn't breathe. The lights kept twisting and I could feel it now, feel the *two* of me, the thing under my skin pressing up, up, up—
 
 The pendant cracked.
 
-Not a sound. A *feeling*. A sharp, cold snap against my collarbone, like ice breaking, and then the heat went out of the ruby all at once, and the two lights stuttered and collapsed back into one, and the anomalous rune dimmed to nothing.
+No sound. Just a feeling — a sharp cold snap against my collarbone, like ice going. The heat died out of the ruby all at once, the two lights shuddered and collapsed back into one, and the anomaly rune went dark.
 
-And I was standing in the center of the ring, shaking, with a hairline crack running down the middle of the ruby I had never once taken off.
+And I was standing in the middle of the ring, shaking, with a hairline crack down the middle of the ruby I had never, ever taken off.
 
 *   *   *
 
-The crowd erupted.
+The crowd lost it.
 
-I didn't hear most of it. I heard "impossible" and "two signatures" and "what was that light," all of it washing over me like noise through water. Bella was shouting something, trying to push toward the dais, her voice sharp and scared as it cut through the roar.
+I couldn't pick out words, just noise — "impossible," "two signatures," "what was that light" — all of it washing over me like I was underwater. Bella was yelling something, trying to shove through the crowd toward me.
 
-And then the Headmaster raised one hand.
+And then the Headmaster lifted one hand.
 
-The crowd went silent again. Just like that. The old man hadn't spoken a single word, but the whole hall obeyed him like a single animal, and I understood, in that moment, why they say the Academy answers to no king.
+The whole hall went dead silent. Just like that. The man hadn't said a single word and everyone shut up like one animal, and in that second I got why they say the Academy doesn't answer to any king.
 
-"An anomaly," the Headmaster said, and his voice was soft, and it carried. "The altar has flagged an anomaly in the boy's reading. It will be examined. The awakening will proceed."
+"An anomaly," the Headmaster said. Soft voice. It carried. "The altar has flagged an anomaly in the boy's reading. It will be examined. The awakening will proceed."
 
-He didn't look at the crowd. He looked at me, and for a long, terrible second, I could have sworn he looked at the pendant, too — and then through it, and then through me, like he could see every seal I carried, every lock I'd been told my whole life would keep me safe.
+He wasn't looking at the crowd. He was looking at me. And for one long horrible second I was sure he was looking at the pendant, and then *through* it, and then through me, like he could see every seal and every lock I'd spent fifteen years being told would keep me safe.
 
 "Next," he said.
 
 *   *   *
 
-I don't remember walking down from the dais.
+I don't really remember getting down off the dais.
 
-I remember Bella's hands on my face, and her voice, sharp and scared, saying my name over and over. I remember the crack in the ruby, a thin silver line that caught the light, and the way it felt cold again against my skin, like it had used up something it couldn't get back.
+Bella's hands on my face. Her voice, scared, saying my name over and over. The crack in the ruby, a thin silver line catching the light. It was cold again, like it had burned through something it couldn't get back.
 
-And I remember the Headmaster's voice, soft and carrying, as I reached the bottom of the stairs.
+And the Headmaster's voice, soft and carrying, right as I hit the bottom stair.
 
-"Jaiden Marlock," he said. "My office. After the ceremony."
+"Jaiden Marlock. My office. After the ceremony."
 
-I didn't turn around.
-
-I already knew, with the clean, terrible certainty that only comes when you've been caught, that whatever he'd seen in that reading — whatever he'd seen *me* be — was only the beginning of the trouble.
+I didn't turn around. I just kept walking, one foot in front of the other, thinking *oh no* again, the same flat little thought, over and over, all the way out.
 
 And the crack in the ruby was already starting to mend.
 
