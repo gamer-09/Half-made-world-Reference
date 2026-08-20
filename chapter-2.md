@@ -100,7 +100,7 @@ And the Headmaster's voice, soft and carrying, right as I hit the bottom stair.
 
 "Jaiden Marlock. My office. After the ceremony."
 
-I didn't turn around. I just kept walking, one foot in front of the other, thinking *oh no* again, the same flat little thought, over and over, all the way out.
+I didn't turn around. I couldn't have looked him in the eye if I'd wanted to. I just kept walking, one foot in front of the other, thinking *oh no* again, the same flat little thought, over and over, all the way out.
 
 And the crack in the ruby was already starting to mend.
 

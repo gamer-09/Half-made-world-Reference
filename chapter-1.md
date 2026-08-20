@@ -16,7 +16,7 @@ I cracked one eye open. Sofia stood in the doorway, arms crossed. She was wearin
 
 "Five," she said.
 
-I sat up so fast the room spun. "I'm up! Look! Fully vertical."
+I sat up so fast the room spun. "I'm up! Look! Fully vertical." It sounded better in my head.
 
 She didn't look impressed. "Do you know what day it is?"
 
@@ -78,7 +78,7 @@ Bella Rose was practically vibrating at the front gate. The second she saw me, h
 
 "There you are!" She grabbed my sleeve, yanking me down the dirt path before I could even clear the gate. "Do you have any idea what time it is? Do you know what they do to the last kid to arrive? They announce it! To the whole courtyard! For the rest of your life, you’ll be Jaiden Marlock, the guy who hit snooze on his own destiny—"
 
-"Bella. Relax." I let her drag me. "I'm awake. I'm moving. I'm currently being abducted down my own street. What more do you want?"
+"Bella. Relax." I let her drag me. "I'm awake. I'm moving. I'm currently being abducted down my own street. What more do you want?" It came out lighter than I meant, because it was Bella, and Bella was the one person I didn't have to be careful around.
 
 She flashed that wide, reckless grin I’d known since we were seven years old, back when we used to steal apples from the upper orchards. "I want you to walk faster!"
 
