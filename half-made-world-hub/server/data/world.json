@@ -1914,7 +1914,7 @@
     "category": "Angels",
     "name": "The Angel Veyn Vow",
     "subtitle": "A promise, spoken at the altar",
-    "description": "Every angel takes the Veyn Vow when their halo first forms, at the Sundering Altar, at the age of fifteen. It is not an oath of obedience and not a chain — it is a promise, spoken freely, and the words of it are a ritual. Each angel’s vow is their own: a promise of what they will uphold, the truth they choose to carry, sworn into their own halo with the help of the Guardian. The halo is the physical seal of that promise, and it is what lets an angel’s Veyn flow steady and pure — because it is their own word, kept, that stabilizes them, not any master’s command. The vow is why angels can hold as much power as they do; without it their body cannot safely filter raw Veyn on its own. The stronger and truer the promise, the brighter the halo. It breaks only when an angel betrays their own sworn word.",
+    "description": "Every angel takes the Veyn Vow when their halo first forms, at the Sundering Altar, at the age of fifteen. It is not an oath of obedience and not a chain — it is a promise, spoken freely, and the words of it are a ritual. Each angel’s vow is their own: a promise of what they will uphold, the truth they choose to carry, sworn into their own halo with the help of the Guardian — Thalor Elwin, the Fifth Pillar, who keeps the Sundering Altar. The halo is the physical seal of that promise, and it is what lets an angel’s Veyn flow steady and pure — because it is their own word, kept, that stabilizes them, not any master’s command. The vow is why angels can hold as much power as they do; without it their body cannot safely filter raw Veyn on its own. The stronger and truer the promise, the brighter the halo. It breaks only when an angel betrays their own sworn word.",
     "fields": [
       {
         "label": "Incantation",
@@ -1922,7 +1922,7 @@
       },
       {
         "label": "Halo",
-        "value": "The halo forms at age 15, at the Sundering Altar, when the vow is spoken with the Guardian’s help."
+        "value": "The halo forms at age 15, at the Sundering Altar, when the vow is spoken with the Guardian’s help — Thalor Elwin, the Fifth Pillar."
       },
       {
         "label": "Nature",
@@ -1944,7 +1944,7 @@
       "halo"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-20T03:28:29.212Z"
+    "updatedAt": "2026-08-20T03:35:25.422Z"
   },
   {
     "id": "seed-057",
@@ -6621,8 +6621,8 @@
     "id": "seed-250",
     "category": "Characters",
     "name": "Thalor Elwin",
-    "subtitle": "Angel general of the Angel army",
-    "description": "The Fifth Pillar — the guardian of the Sundering Altar, where every person in the world is brought at fifteen to have their latent connection to Veyn unlocked for the first time. Angels speak their Veyn Vow there with the Guardian’s help, and it is where each halo first forms. Thalor keeps the altar and records every vow spoken there, watching for the first sign that a promise is fraying. He saw the signs in Ordium long before he left: a vow pulled thin by something it was never meant to contain. He said nothing then, and has spent every day since wondering whether a single word from him could have stopped all of it.",
+    "subtitle": "The Fifth Pillar — Guardian of the Sundering Altar",
+    "description": "The Fifth Pillar, and the Guardian of the Sundering Altar — the angel who officiates the Veyn Vow and helps every young angel form their halo. When an angel turns fifteen, it is Thalor who appears at the altar to speak the vow with them, though to most angels he is a rare and half-remembered figure, glimpsed once on the day of their awakening and never again. He keeps the altar and records every vow spoken there, watching for the first sign that a promise is fraying. He saw the signs in Ordium long before he left: a vow pulled thin by something it was never meant to contain. He said nothing then, and has spent every day since wondering whether a single word from him could have stopped all of it.",
     "fields": [
       {
         "label": "Rank",
@@ -6659,6 +6659,10 @@
       {
         "label": "Sub-stage",
         "value": "Mid"
+      },
+      {
+        "label": "Role",
+        "value": "Guardian of the Sundering Altar — officiates the Veyn Vow and helps form each halo."
       }
     ],
     "tags": [
@@ -6670,7 +6674,7 @@
       "pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-20T03:28:29.212Z"
+    "updatedAt": "2026-08-20T03:35:25.422Z"
   },
   {
     "id": "seed-251",
@@ -13197,35 +13201,5 @@
     ],
     "createdAt": "2026-08-19T23:14:09.527Z",
     "updatedAt": "2026-08-19T23:14:09.527Z"
-  },
-  {
-    "id": "b1968745-9bd1-48b4-a1ec-ac507b9f1900",
-    "category": "Beings",
-    "name": "The Guardian",
-    "subtitle": "The rare keeper of the Veyn Vow ritual",
-    "description": "A rare and ancient being who appears at the Sundering Altar to officiate the Veyn Vow — the ritual by which every angel’s halo is formed. It is not commonly seen; most angels glimpse it only once, on the day of their awakening, and never again. No one knows what it is, where it came from, or how many of them exist. It simply appears when a halo is to be made, speaks the vow with the young angel, and is gone. Its presence is what lets the promise take hold: without it, an angel’s halo cannot form, and their Veyn cannot be stabilized.",
-    "fields": [
-      {
-        "label": "Nature",
-        "value": "Unknown — a rare being, not commonly seen, that officiates the Veyn Vow ritual."
-      },
-      {
-        "label": "Role",
-        "value": "Helps every angel form their halo and speak their vow at the Sundering Altar."
-      },
-      {
-        "label": "Rarity",
-        "value": "Most angels see it only once, at their awakening, and never again."
-      }
-    ],
-    "tags": [
-      "guardian",
-      "vow",
-      "halo",
-      "altar",
-      "being"
-    ],
-    "createdAt": "2026-08-20T03:28:29.212Z",
-    "updatedAt": "2026-08-20T03:28:29.212Z"
   }
 ]

@@ -769,10 +769,10 @@ module.exports = [
     "Angels",
     "The Angel Veyn Vow",
     "A promise, spoken at the altar",
-    "Every angel takes the Veyn Vow when their halo first forms, at the Sundering Altar, at the age of fifteen. It is not an oath of obedience and not a chain — it is a promise, spoken freely, and the words of it are a ritual. Each angel’s vow is their own: a promise of what they will uphold, the truth they choose to carry, sworn into their own halo with the help of the Guardian. The halo is the physical seal of that promise, and it is what lets an angel’s Veyn flow steady and pure — because it is their own word, kept, that stabilizes them, not any master’s command. The vow is why angels can hold as much power as they do; without it their body cannot safely filter raw Veyn on its own. The stronger and truer the promise, the brighter the halo. It breaks only when an angel betrays their own sworn word.",
+    "Every angel takes the Veyn Vow when their halo first forms, at the Sundering Altar, at the age of fifteen. It is not an oath of obedience and not a chain — it is a promise, spoken freely, and the words of it are a ritual. Each angel’s vow is their own: a promise of what they will uphold, the truth they choose to carry, sworn into their own halo with the help of the Guardian — Thalor Elwin, the Fifth Pillar, who keeps the Sundering Altar. The halo is the physical seal of that promise, and it is what lets an angel’s Veyn flow steady and pure — because it is their own word, kept, that stabilizes them, not any master’s command. The vow is why angels can hold as much power as they do; without it their body cannot safely filter raw Veyn on its own. The stronger and truer the promise, the brighter the halo. It breaks only when an angel betrays their own sworn word.",
     [
       { label: "Incantation", value: "With this light I make my promise. By the Veyn that made me and the will that holds the world, I swear to keep the word I speak, and to carry my own truth until my light goes out. This halo is my seal — my promise made visible. May it hold while my word is true, and may it shatter the day I betray it." },
-      { label: "Halo", value: "The halo forms at age 15, at the Sundering Altar, when the vow is spoken with the Guardian’s help." },
+      { label: "Halo", value: "The halo forms at age 15, at the Sundering Altar, when the vow is spoken with the Guardian’s help — Thalor Elwin, the Fifth Pillar." },
       { label: "Nature", value: "A personal promise, not an oath of obedience — each angel swears their own truth." },
       { label: "Seal", value: "The halo is the seal of the angel’s own word; keeping the promise keeps the Veyn steady." },
       { label: "Breaking", value: "The vow breaks when an angel betrays their own promise — not by disobeying a superior, but by breaking their own word." },
@@ -2880,8 +2880,8 @@ module.exports = [
   e(
     "Characters",
     "Thalor Elwin",
-    "Angel general of the Angel army",
-    "The Fifth Pillar — the guardian of the Sundering Altar, where every person in the world is brought at fifteen to have their latent connection to Veyn unlocked for the first time. Angels speak their Veyn Vow there with the Guardian’s help, and it is where each halo first forms. Thalor keeps the altar and records every vow spoken there, watching for the first sign that a promise is fraying. He saw the signs in Ordium long before he left: a vow pulled thin by something it was never meant to contain. He said nothing then, and has spent every day since wondering whether a single word from him could have stopped all of it.",
+    "The Fifth Pillar — Guardian of the Sundering Altar",
+    "The Fifth Pillar, and the Guardian of the Sundering Altar — the angel who officiates the Veyn Vow and helps every young angel form their halo. When an angel turns fifteen, it is Thalor who appears at the altar to speak the vow with them, though to most angels he is a rare and half-remembered figure, glimpsed once on the day of their awakening and never again. He keeps the altar and records every vow spoken there, watching for the first sign that a promise is fraying. He saw the signs in Ordium long before he left: a vow pulled thin by something it was never meant to contain. He said nothing then, and has spent every day since wondering whether a single word from him could have stopped all of it.",
     [
       { label: "Rank", value: "Aetherblade Lord Angel" },
       { label: "Title", value: "Fifth Pillar, Horkous" },
@@ -2892,6 +2892,7 @@ module.exports = [
       { label: "Ren Organ", value: "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open." },
       { label: "Grade", value: "A Grade" },
       { label: "Sub-stage", value: "Mid" },
+      { label: "Role", value: "Guardian of the Sundering Altar — officiates the Veyn Vow and helps form each halo." },
     ],
     ["character", "angel", "general", "aetherblade lord angel", "horkous", "pillar"],
   ),
@@ -5859,19 +5860,5 @@ module.exports = [
       { label: "Crime", value: "Exterminated the Aelthar race; set in motion the near-destruction of the world." },
     ],
     ["character", "human", "king", "former ruler", "human realm", "aelthar", "genocide", "villain"],
-  ),
-
-  // ============================================================ BEINGS
-  e(
-    "Beings",
-    "The Guardian",
-    "The rare keeper of the Veyn Vow ritual",
-    "A rare and ancient being who appears at the Sundering Altar to officiate the Veyn Vow — the ritual by which every angel’s halo is formed. It is not commonly seen; most angels glimpse it only once, on the day of their awakening, and never again. No one knows what it is, where it came from, or how many of them exist. It simply appears when a halo is to be made, speaks the vow with the young angel, and is gone. Its presence is what lets the promise take hold: without it, an angel’s halo cannot form, and their Veyn cannot be stabilized.",
-    [
-      { label: "Nature", value: "Unknown — a rare being, not commonly seen, that officiates the Veyn Vow ritual." },
-      { label: "Role", value: "Helps every angel form their halo and speak their vow at the Sundering Altar." },
-      { label: "Rarity", value: "Most angels see it only once, at their awakening, and never again." },
-    ],
-    ["guardian", "vow", "halo", "altar", "being"],
   ),
 ];

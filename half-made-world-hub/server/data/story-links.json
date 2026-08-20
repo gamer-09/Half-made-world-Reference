@@ -10300,23 +10300,23 @@
     "updatedAt": "2026-08-19T23:51:28.857Z"
   },
   {
-    "id": "93e2dc26-e797-4558-8de2-e8bec9579bf2",
-    "source": "The Guardian",
+    "id": "654cbebf-08dd-42e0-ad3b-0eb4954962fc",
+    "source": "Thalor Elwin",
     "target": "The Angel Veyn Vow",
     "type": "about",
     "label": "About",
-    "description": "The Guardian officiates the Veyn Vow ritual and helps form each halo.",
-    "createdAt": "2026-08-20T03:28:29.212Z",
-    "updatedAt": "2026-08-20T03:28:29.212Z"
+    "description": "Thalor Elwin, the Guardian of the Sundering Altar, officiates the Veyn Vow and helps form each halo.",
+    "createdAt": "2026-08-20T03:35:25.422Z",
+    "updatedAt": "2026-08-20T03:35:25.422Z"
   },
   {
-    "id": "aa9b247e-4cc9-4943-90fe-5634cc1e835e",
-    "source": "The Guardian",
+    "id": "94055592-3ce4-4688-b94f-67fa9209d908",
+    "source": "Thalor Elwin",
     "target": "The Sundering Altar",
-    "type": "about",
-    "label": "About",
-    "description": "The Guardian appears at the Sundering Altar when a halo is to be made.",
-    "createdAt": "2026-08-20T03:28:29.212Z",
-    "updatedAt": "2026-08-20T03:28:29.212Z"
+    "type": "guards",
+    "label": "Guards",
+    "description": "Thalor Elwin guards and keeps the Sundering Altar, where every halo is formed.",
+    "createdAt": "2026-08-20T03:35:25.422Z",
+    "updatedAt": "2026-08-20T03:35:25.422Z"
   }
 ]

@@ -1051,6 +1051,6 @@ module.exports = [
   s("Aldric Malgrave", "Human Realm", "lives in", "Lives in", "A human king of the Human Realm (appears in the Block Map under it)."),
   s("Aelthar", "The World Core", "cursed by", "Cursed by", "For tearing open the Hidden Realm, the world core’s will cursed the Aelthar — the origin of the World Curse."),
   s("The World Curse", "Aelthar", "cursed by", "Cursed by", "The World Curse was first laid upon the Aelthar."),
-  s("The Guardian", "The Angel Veyn Vow", "about", "About", "The Guardian officiates the Veyn Vow ritual and helps form each halo."),
-  s("The Guardian", "The Sundering Altar", "about", "About", "The Guardian appears at the Sundering Altar when a halo is to be made."),
+  s("Thalor Elwin", "The Angel Veyn Vow", "about", "About", "Thalor Elwin, the Guardian of the Sundering Altar, officiates the Veyn Vow and helps form each halo."),
+  s("Thalor Elwin", "The Sundering Altar", "guards", "Guards", "Thalor Elwin guards and keeps the Sundering Altar, where every halo is formed."),
 ];
