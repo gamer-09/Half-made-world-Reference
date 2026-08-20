@@ -1,143 +1,153 @@
-# Chapter 1
+**CHAPTER 1**
 
-Somewhere far away, a voice was calling my name.
+Somewhere far away, a voice was trying to ruin my life.
 
 "Jaiden."
 
-I pulled the blanket over my head. Blankets, in my experience, fixed most problems, and they fixed this one by making the voice sound muffled and far away and entirely ignorable.
+I pulled the blanket over my head. Blankets, in my experience, fixed most problems. They made annoying voices muffled, far away, and entirely ignorable.
 
 "Jaiden Marlock."
 
-Ah. Full name. The blanket's power had limits.
+*Ah. Full name.* The blanket’s armor had cracked.
 
-"If you are not out of that bed in the next five seconds," Sofia said, from somewhere above me now, "I will come in there, and I will not be gentle."
+"If you aren't out of that bed in five seconds," Sofia said, her voice hovering directly over me, "I'm coming in. And I will not be gentle."
 
-I opened one eye. Sofia was standing in the doorway of my room with her arms crossed, and she had her *disappointed* face on, which was worse than her angry face, because her angry face you could wait out and her disappointed face followed you around all day like a small, tired ghost.
+I cracked one eye open. Sofia stood in the doorway, arms crossed. She was wearing her *disappointed* face—which was infinitely worse than her angry face. You could wait out angry. Disappointed just hovered over your shoulder all day like a miserable ghost.
 
 "Five," she said.
 
-I sat up so fast the room tilted. "I'm up. I'm up. See? Vertical."
+I sat up so fast the room spun. "I'm up! Look! Fully vertical."
 
-She did not look impressed. "Do you know what day it is?"
+She didn't look impressed. "Do you know what day it is?"
 
-I knew. Everyone in the world knew, because it was the one day nobody got to skip, the one day that came for every fifteen-year-old in every realm like a tax collector or a bad cold. But Sofia liked to say it out loud, the way you say a thing to make it real, so I let her.
+Of course I knew. Everyone in the realm knew. It was the one day no fifteen-year-old could dodge, coming for us like a tax collector or a sudden fever. But Sofia liked stating the obvious just to make it real, so I let her.
 
-"Your awakening," she said. "You are due at the Academy altar before the ninth bell, and you, Jaiden Marlock, are still in bed."
+"Your awakening," she said. "You're due at the Academy altar before the ninth bell, and you're still buried in sheets."
 
----
+*   *   *
 
-The first thing I did, the way I did every morning, was reach for the pendant.
+The first thing I did—the thing I did *every* morning—was reach for the pendant.
 
-It hung on a chain around my neck — a little ruby the color of deep water, cool against my chest, and I had worn it for so long it felt less like jewelry and more like a body part. I never took it off. Not for swimming, not for sleeping, not ever, because Sofia had made me promise, once, back when I was small enough to still ask questions.
+It hung on a silver chain against my collarbone: a dark ruby, cool to the touch. I’d worn it so long it felt less like jewelry and more like a limb. I never took it off. Not to sleep, not to swim, not ever. Sofia had made me swear to it back when I was still small enough to ask stupid questions.
 
-*Why do I have to keep it on always?*
+*"Why do I have to keep it on?"*
 
-*Because it keeps you safe,* she'd said. *And because you gave me your word.*
+*"Because it keeps you safe, she’d told me, her eyes dead serious. And because you gave me your word."*
 
-I was pretty sure I hadn't given anyone any word, given that I'd been like six, but I'd kept the promise anyway. I'd kept it so long I didn't even think about it anymore. I just curled my fingers around the ruby through my shirt and let the cool of it settle me, the way it always did.
+*Pretty sure I hadn't given anyone my word at six years old,* I thought, but I’d kept the promise anyway. I curled my fingers around the cold stone through my shirt, letting it anchor me.
 
-Today, I needed the settling.
+Today, I needed anchoring.
 
----
+*   *   *
 
-Breakfast appeared in front of me. Bread, an egg, water. I ate without tasting any of it.
+Breakfast was a plate of bread, a hard-boiled egg, and water. I swallowed it without tasting a thing.
 
-Across the table, Sofia wasn't eating. She was watching me the way she'd watched me my whole life — the way you watch something at the edge of a high place, not hovering, but never quite looking away. I'd asked her about it once, when I was little.
+Across the table, Sofia just watched me. She’d looked at me like that my whole life—the way you watch a kid standing too close to a ledge. Not hovering, but ready to grab your shirt if you slipped.
 
-*Why do you always look at me like that?*
+When I was little, I’d asked her about that, too.
 
-*Because you're the only thing in this world that's mine,* she'd said. *And I intend to keep you in one piece.*
+*"Why do you always look at me like I’m about to fall?"*
 
-Back then it had made me laugh. This morning it just made the egg sit wrong in my stomach.
+*"Because you're the only thing in this world that's mine, she’d said softly. And I intend to keep you in one piece."*
 
-"Sofia," I said, then stopped.
+Back then, it made me smile. This morning, it just made the egg curdle in my stomach.
 
-She looked up. Waited.
+"Sofia," I started, then bit my lip.
 
-"Nothing." I pushed the bread around my plate. "Nervous, that's all."
+She looked up instantly. "What is it?"
 
-Which was true, in the same way that saying the ocean is *damp* is true. The real reason sat under my skin, in the space behind my ribs, and it did not have words.
+"Nothing." I pushed a piece of crust around my plate. "Just nervous."
 
-Sometimes — when the house was quiet, when I'd been lying still too long — I felt something *move* in there. Something that wasn't quite me. It felt less like a heartbeat and more like two heartbeats, layered over each other, out of step, wrong.
+Which was true, the same way saying a hurricane is *windy* is true. The real problem was sitting under my ribs, in the dark behind my sternum, where words couldn't reach it.
 
-And every time it happened, my hand went to the pendant. Like the ruby knew. Like it was the only thing in the world holding the door shut.
+Sometimes—when the house was dead silent, when I laid still for too long—I felt a pulse in there. A second heartbeat. Out of step with my own. Wrong.
 
-I'd never told Sofia. I didn't know how to start. *Hey, so, fun news, I think there's something living under my skin.* Some things you just don't say out loud, and I'd spent fifteen years learning exactly which ones.
+And every time it twitched, my hand went straight to the ruby. Like the stone knew. Like it was the only deadbolt keeping a heavy door locked shut.
 
----
+*I’d never told Sofia. How do you casually bring up, "Hey, so fun news, I think there's a parasite riding shotgun in my torso?" You don't. You keep your mouth shut.*
 
-"Bella's downstairs," Sofia said, and the disappointed face softened into something almost fond. "She's been out there since before the birds woke up. Says she isn't going to let you be late to your own awakening."
+*   *   *
 
-The knot in my chest loosened. Bella.
+"Bella’s downstairs," Sofia said, her stern face finally softening into something fond. "She’s been pacing the porch since before the sun came up. Says she refuses to let you be late to your own execution."
 
-I grabbed my coat and the bundle Sofia had left by the door — clean clothes, a ribbon she was weirdly insistent I'd need — and went down.
+"Awakening," I corrected automatically, but the knot in my chest loosened. *Bella.*
 
-Bella Rose was at the front gate, practically vibrating, and the second she saw me she lit up like someone had thrown a match into dry grass.
+I grabbed my jacket and the small satchel Sofia had prepped by the door—clean clothes and a red silk ribbon she was weirdly obsessed with me having—and headed out.
 
-"There you are." She grabbed my sleeve and started pulling me toward the road before I'd even finished saying hello. "Do you have any idea what time it is? Do you have any idea what happens to the last kid to arrive at an awakening? They announce it. *Everyone.* For the rest of your life you'd be Jaiden Marlock, the boy who was late to his own—"
+Bella Rose was practically vibrating at the front gate. The second she saw me, her face lit up like a match struck near gasoline.
 
-"Bella. Bella." I let her drag me. "I'm awake. I'm here. I'm being pulled through my own front yard. What more do you want?"
+"There you are!" She grabbed my sleeve, yanking me down the dirt path before I could even clear the gate. "Do you have any idea what time it is? Do you know what they do to the last kid to arrive? They announce it! To the whole courtyard! For the rest of your life, you’ll be Jaiden Marlock, the guy who hit snooze on his own destiny—"
 
-She grinned at me, that wide, uncomplicated grin I'd known since we were kids running through the fields behind the house, since before I could remember a time when Bella wasn't somewhere nearby, waiting for me. "I want you to *walk faster*."
+"Bella. Relax." I let her drag me. "I'm awake. I'm moving. I'm currently being abducted down my own street. What more do you want?"
 
-So I walked faster.
+She flashed that wide, reckless grin I’d known since we were seven years old, back when we used to steal apples from the upper orchards. "I want you to walk faster!"
 
-The whole town was moving the same way we were, that morning. Families in small quiet clusters, all heading for the Academy gates, the grown-ups trying very hard not to look as scared as the kids felt. I watched them and felt the day settle over everything, heavy as a wet coat.
+The whole town was moving in the same direction. Families walked in tight, quiet clusters toward the soaring white gates of the Academy, the adults trying—and failing—to hide how terrified they were.
 
-Bella walked half a step ahead, filling the silence with a running commentary on everyone we passed, and I let her, because Bella's voice had always had a way of making even the scariest morning feel like an ordinary one.
+Bella walked half a step ahead, filling the air with a relentless play-by-play of every person we passed. I let her chatter wash over me. Bella’s voice had a way of flattening out panic, turning apocalyptic mornings into ordinary ones.
 
-And then, because I was fifteen and the thing under my skin would not shut up, I said it.
+Then the thing under my skin twitched again.
 
-"Bella."
+"Bella?"
 
-"Hm?"
+"Yeah?"
 
 "What if the reading's wrong?"
 
-She stopped so fast I nearly walked into her. Turned around. "Wrong how?"
+She stopped dead in her tracks. I almost plowed right into her back. She turned around, eyebrows raised. "Wrong how?"
 
-"I don't know." My hand found the pendant through my coat, automatic. "What if the altar looks at me and sees… something that shouldn't be there?"
+"I don't know." My hand went to the ruby under my coat. Instinct. "What if the altar looks at me and sees... something weird? Something that shouldn't be there?"
 
-For a second the grin dropped, and underneath it was that other Bella, the steady one, the one who'd punched a boy twice her size when we were nine because he'd laughed at me. "Jaiden. You've been weird since the day I met you, and I still like you. So whatever the altar sees, whatever you are — it's going to be fine."
+The grin vanished. For a fraction of a second, I saw the *other* Bella—the girl who had broken a bully’s nose in the third grade for pushing me into a creek.
 
-She said it like it was the most obvious thing in the world, and for about half a second, I almost believed her.
+"Jaiden," she said, her voice dropping into a absolute certainty. "You’ve been weird since the day I met you. I still like you. So whatever that altar sees? It’s going to be fine."
 
----
+She said it like it was a universal law. For about three seconds, I actually believed her.
 
-The Academy Altar was not what I'd pictured.
+*   *   *
 
-I'd imagined stone and candles and grim priests in robes. What I got was a hall so big it swallowed sound, crammed with fifteen-year-olds from all three realms, all of them whispering at once, and at the center, on a raised platform, a ring of pale runes carved into the floor. They glowed faintly. They hummed, low and even, like something asleep and dreaming.
+The Academy Altar was nothing like the pictures in our history texts.
 
-Names were being called. One by one, kids went up. I watched them step into the ring, watched the runes flare, watched the light pour out of the altar and wash over their faces while the adults at the edges murmured and wrote things in enormous books.
+I’d expected dim candles and solemn monks in robes. Instead, the Grand Hall was a cavernous amphitheater overflowing with hundreds of fifteen-year-olds from all three realms. The air buzzed with nervous whispers.
 
-This was it. The measurement. The moment your whole life got sorted into a class and a grade and a future, whether you liked it or not.
+At the center of the room sat a massive, raised dais inlaid with a ring of silver runes. They pulsed with a pale, rhythmic light, humming low enough to make my teeth ache.
 
-My hands were freezing. I kept them wrapped around the pendant, and the ruby was freezing too.
+Names were called. One by one, teenagers stepped up onto the platform. I watched a boy from the lower district step into the ring; the runes flared, casting a faint silver-blue glow over his face. Evaluators at the edge of the stage scribbled notes into massive ledgers, calling out his class and grade: *E Grade, Mage.*
 
-"Bella Rose."
+It was a machine. A assembly line designed to sort your whole life into a grade, a class, and a future before noon.
 
-Bella squeezed my arm — *it'll be fine* — and walked up onto the platform with her head high, and stepped into the ring.
+My hands were ice-cold. I squeezed the ruby through my shirt. The stone felt just as frozen as my fingers.
 
-The hall went quiet.
+"Bella Rose!"
 
-It happened all at once. The runes flared brighter than they had for anyone else, and the light that came out of the altar didn't so much wash over Bella as *pour* out of her — gold, and then more gold, a tide of holy light so bright the candles guttered and the nearest adults actually took a step backward. It kept growing. It kept *rising*. For one long, impossible moment the whole hall was lit by a single Malakhim girl, and it wasn't the light of an E-grade, and it wasn't the light of any Malakhim I'd ever seen, and the sound that ran through the crowd wasn't awe.
+Bella squeezed my forearm hard. *Told you so,* her eyes said. She marched up the steps, chin high, and stepped squarely into the center of the ring.
 
-It was shock.
+The entire hall fell dead silent.
 
-"By the vow," someone whispered near the front. "That can't be right."
+It didn't just light up—it detonated.
 
-I stood frozen, watching the light of my oldest friend swallow the hall whole, and under my ribs that thing stirred again — the two heartbeats, layered and out of step — and for the first time in my life, I was afraid of it.
+The silver runes flared blindingly bright, and a torrent of golden light blasted upward from the altar. It didn't just wash over Bella; it poured out of her like a cracked dam. A tide of blinding, holy light swept across the room, snuffing out the surrounding torches and forcing the proctors to throw their arms over their eyes.
 
-My fingers went white around the pendant.
+It kept rising. The air tasted like ozone and static. For five suffocating seconds, a fifteen-year-old girl lit up the entire hall like a fallen star. It wasn't the light of an E Grade. It wasn't even the light of an A Grade.
 
-Up on the platform, Bella Rose stood in the center of her own small sun, and she had no idea what she'd just done.
+"By the vow," a priest near the front whispered, stumbling backward. "That's impossible..."
 
-And somewhere in the crowd, an old man in the plain robes of the Academy's Headmaster watched her — and then, slow and deliberate, his eyes found mine.
+I stood paralyzed, watching my best friend stand in the center of a miniature sun.
 
----
+And beneath my ribs, the secondary pulse slammed against my chest wall—hard, sharp, and violently out of rhythm. The thing inside me was waking up.
 
-"Jaiden Marlock."
+My knuckles turned white around my pendant.
 
-The name cut through the hall like a thrown knife, and every head turned.
+Up on the platform, surrounded by blinding gold, Bella looked around in absolute shock. She had no idea what she'd just unleashed.
+
+And at the base of the dais, an old man in the dark robes of the Headmaster slowly turned away from the light.
+
+His eyes locked directly onto mine.
+
+*   *   *
+
+"Jaiden Marlock!"
+
+The proctor's voice cut through the ringing silence like a gunshot.
 
 It was my turn.
