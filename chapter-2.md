@@ -56,6 +56,8 @@ It was burning hot.
 
 Deep in the floor of the dais, the same rune that had flared for Bella — the anomalous-signature mark, the one nobody had seen glow in a hundred years — blazed to life again. Twice in one morning.
 
+At the dais's edge, the Guardian had not moved. Thalor Elwin stood as still as the stone he kept, and I could feel his eyes on me now — on the pendant at my throat, on the two lights that should not exist together, on the impossible thing I'd spent fifteen years being told to hide.
+
 The crowd went silent. Not the good kind of silent. The kind of silent that comes before someone screams.
 
 I couldn't breathe. The two lights kept twisting, kept fighting, and I could feel them now, feel the *two* of me, the thing under my skin pressing up, up, up—

@@ -110,7 +110,7 @@ The Academy Altar was nothing like the pictures in our history texts.
 
 I’d expected dim candles and solemn monks in robes. Instead, the Grand Hall was a cavernous amphitheater overflowing with hundreds of fifteen-year-olds from all three realms. The air buzzed with nervous whispers.
 
-At the center of the room sat a massive, raised dais inlaid with a ring of silver runes. They pulsed with a pale, rhythmic light, humming low enough to make my teeth ache.
+At the center of the room sat a massive, raised dais inlaid with a ring of silver runes. They pulsed with a pale, rhythmic light, humming low enough to make my teeth ache. And at the dais's edge stood the Guardian — Thalor Elwin, the Fifth Pillar, the angel who spoke every vow and shaped every halo in the world. I'd heard his name my whole life. I'd never once seen his face. The hall had gone quiet around him without anyone telling it to, the way a room goes quiet when something vast is standing in it.
 
 Names were called. One by one, teenagers stepped up onto the platform. I watched a boy from the lower district step into the ring; the runes flared, casting a faint silver-blue glow over his face, and for a few seconds he stood rigid, eyes gone somewhere the rest of us couldn't follow — the few seconds every awakened soul swears feel like hours. Evaluators at the edge of the stage scribbled notes into massive ledgers, recording the reading the altar had already shown: *E Grade, Mage.*
 
@@ -128,7 +128,7 @@ It didn't just light up—it detonated.
 
 The silver runes flared blindingly bright, and a torrent of golden light blasted upward from the altar. It didn't just wash over Bella; it poured out of her like a cracked dam. A tide of blinding, holy light swept across the room, snuffing out the surrounding torches and forcing the proctors to throw their arms over their eyes.
 
-It kept rising. The air tasted like ozone and static. For five suffocating seconds — though Bella would later swear it was an hour — a fifteen-year-old girl lit up the entire hall like a fallen star. It wasn't the light of an E Grade. It wasn't even the light of an A Grade. And deep in the floor of the dais, a rune no one had seen glow in a hundred years flared to life: the mark of an anomalous signature, the reading the Academy Altar had been built to catch.
+It kept rising. The air tasted like ozone and static. Above her head, where every angel's halo forms, a ring of gold blazed into being — and it did not stop at soft and holy. It burned. Bright enough to hurt to look at. For five suffocating seconds — though Bella would later swear it was an hour — a fifteen-year-old girl lit up the entire hall like a fallen star. It wasn't the light of an E Grade. It wasn't even the light of an A Grade. And deep in the floor of the dais, a rune no one had seen glow in a hundred years flared to life: the mark of an anomalous signature, the reading the Academy Altar had been built to catch.
 
 "By the vow," a priest near the front whispered, stumbling backward. "That's impossible..."
 
