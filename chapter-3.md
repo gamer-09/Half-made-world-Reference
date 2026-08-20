@@ -2,172 +2,126 @@ CHAPTER 3
 
 The Academy wanted to see me first thing.
 
-Not classes. Not breakfast. Not even enough time to figure out which way my own dorm faced. A clerk in grey was outside my door before the first bell, holding a clipboard like it was evidence, and he told me the Headmaster's office was expecting me.
+Not classes. Not breakfast. Not even time to figure out which way my dorm faced. Some grey-robed clerk was already outside my door before the first bell, clipboard in hand, saying the Headmaster's office was waiting.
 
-*Oh good,* I thought. *The day's barely started and I'm already in trouble.*
+Awesome. Day one and I'm already in trouble.
 
-I followed him, because not following felt like more work than following, and also because my mouth was still too asleep to argue.
+I followed him. Arguing felt like too much work, and my brain was still half-asleep anyway.
 
-*   *   *
-
-The office was small. That threw me. The man who ran the place every kid in the world got dragged to at fifteen — his office was the size of a closet. One window. A desk that'd seen better centuries. He wasn't even sitting behind it.
-
-He was standing at the window with his back to me, hands clasped, and he didn't turn around when I came in. Just stood there. The silence stretched until I wanted to fill it, and I didn't, because I'd learned a long time ago that when an adult goes quiet like that, you keep your own mouth shut and wait.
+The office was small. One window. Old desk. The Headmaster wasn't even sitting. He just stood at the window with his back to me and didn't turn around when I came in. The silence dragged. I kept my mouth shut. Adults go quiet like that when they want you to feel small.
 
 "Sit," he said.
 
 I sat.
 
-And then he read me back to myself, flat and careful, like a weather report.
+"Jaiden Marlock. Class: Mage. Innate abilities: unreadable." He said it flat, like he was reading a list. Then, "The altar flagged an anomaly in your reading."
 
-"Jaiden Marlock. Class: Mage. Innate abilities: unreadable."
+Anomaly. My hand went straight to the pendant. The crack felt sharp under my fingers. I wanted to say it was nothing, just a glitch, but nothing came out. I just nodded.
 
-He paused.
+He looked at me for a long time. Then, quiet enough I almost missed it: "So did I."
 
-"The altar flagged an anomaly in your reading."
+That was it. No speech. No welcome. Just a nod toward the door, and the clerk already waiting to take me out.
 
-There it was. *Anomaly.* The word hung in the little room like a third person, and my hand went to the pendant under my shirt on its own, and the crack in it felt like a splinter under my fingers.
+By the time I got to the courtyard it was packed with first-years. I stuck my hands in my pockets and kept my head down. After that office I really didn't want people staring, and if you walk slow and look at the ground, most of them don't.
 
-I wanted to say something. Anything. *It's nothing. It's a glitch. The altar's just old.* But my throat had closed up, so I just sat there and nodded once, like an idiot.
+A bunch of kids were crowded around the fountain, talking over each other.
 
-He looked at me for a long time. Then, so quiet I almost missed it:
+"What even *is* Veyn?" some boy kept asking. "Everyone keeps saying it like I should already know."
 
-"So did I."
+"It's the power in the world," another kid said, all proud. "The silver-blue stuff. You pull it in and make magic with it."
 
-*   *   *
+"Why's it silver-blue?"
 
-Nobody wants to be the anomaly.
+"I don't know. It just is. Stop asking weird questions."
 
-The first-years were spilling out into the big courtyard by the time I got there, and I was glad for the noise, because it meant I could stand at the edge of it and not be part of it. That was the thing I was actually good at. Not magic. Not talking. Just... standing at the edge, listening, being the guy nobody had to explain anything to because nobody noticed he was there.
+I slowed down. Let them keep talking.
 
-There was a knot of kids by the fountain, all talking over each other.
+"What about the red stuff the fighters use?"
 
-"—but what even *is* it?" a boy was saying, waving his hands around. "Veyn this, Veyn that, everybody keeps saying it like I'm supposed to already know."
-
-"It's the power in the world," another kid said, sounding very proud of himself. "The silver-blue stuff. It's in everything. You pull it in and shape it, and that's magic."
-
-"So why's it silver *blue*?"
-
-"I don't know, it just is. Don't be weird about it."
-
-I drifted a little closer, hands in my pockets. Listening. Not joining. Joining would mean talking, and talking meant people looking at me, and I'd had enough of people looking at me for one morning.
-
-"What about the red stuff?" someone asked. "The fighters, they've got that red—"
-
-"Ren," a girl cut in, and she said it like she'd been waiting all day for someone to ask. "That's not from the world, it's from *you*. Your own life. Burns red. And you can't have both."
+"Ren," a girl cut in. "That's from inside you. Your own life force. Burns red. And you can't have both."
 
 "Why not?"
 
-"It kills you," the girl said, flat and cheerful, like it was the best bit of gossip she had. "Veyn and Ren can't share a body. Try it and you don't get to pick which one kills you first."
+"Because it kills you," she said, like it was obvious. "Veyn and Ren in the same body? You're done. Doesn't matter which one finishes you."
 
-The knot went quiet for a second, the way a group does when the fun fact turns out to be a warning.
+They went quiet for a second. I kept walking and tried not to think about the pressure behind the pendant, and how none of their rules would feel like rules if they could feel what I felt.
 
-I stood there with my hand around the cracked ruby and thought about the second heartbeat under my ribs, and how, if any of these kids could feel what I felt, none of their rules would feel like rules anymore.
+There was some long orientation after that. A guy up front talking about rules. I sat in the very back and mostly tuned it out. Curfew, altar, classes, grades… whatever. I caught pieces and let them float away.
 
-I didn't say it. Obviously.
+Lunch was bread and something grey. I ate it standing against a wall so no one would sit next to me. Across the way I could see the training yard. New kids trying stuff and failing. One Mage got a shield up for like three seconds before it collapsed and she face-planted. An Archer kept shooting until her quiver was empty and then just stood there looking lost.
 
-*   *   *
+Some older student was walking past with a younger kid trailing him.
 
-The training yard was where the day actually happened.
+"Why can't people just learn more than one class?" the kid asked. "I heard humans can."
 
-I sat on a low wall at the edge and watched, because watching other people struggle is the best way to learn, and because it required exactly zero effort from me, which was my favorite kind of learning.
+The older one laughed. "Yeah, in theory. But it's hard. Your body gets locked into whatever the altar gives you. Trying to force something else is basically impossible for most people. So everyone just sticks to their one thing."
 
-A Mage was trying to hold up a shield of Veyn. She got it — three seconds of bright silver-blue, wobbling — and then it flickered and died and she pitched forward onto her hands, gasping.
+I chewed my bread and didn't like how that sat. Stick to what the altar gave you. Which meant Mage. Great.
 
-"Pushed too hard," someone muttered near me. "She'll sleep for a day."
+Afternoon class was under the colonnade. I took a seat in the back again. The instructor who walked in looked strict—grey hair, straight back.
 
-An Archer was firing arrows like she was being timed, and I watched the glow leave each one the second it flew, until she reached back and found nothing and just stood there with her arm hanging.
+Someone in front of me whispered, "That's Vareth. She was high up. Hasn't moved in like thirty years."
 
-An older student was walking the rows like he'd seen it all a thousand times, and a younger kid was jogging along beside him, asking questions in that fast way kids do when they think asking enough questions makes them look smart.
+"Why?"
 
-"Why can't people learn more than one class?" the kid asked. "If humans can do it, why doesn't everybody?"
+"Hit the Wall. Grade stops. Progress stops. Some people just… stay there forever."
 
-The older student laughed, but not mean. "Humans *can*. In theory. But it's hard. Really hard. Your body gets shaped to whatever the altar gives you, and forcing it to learn something foreign is like trying to teach a fish to climb a ladder. Most people try once, fail, and never try again. So everybody just... sticks to what they got."
+I looked at her and the word *Wall* suddenly felt heavier. Like an actual ceiling she was stuck under.
 
-*Stick to what the altar gave you,* I thought, and didn't like the shape of it. Because what the altar had given me was Mage. And Mage, apparently, meant—
+Then she pointed at a kid in the front. "You. What makes Mage progression different?"
 
-Well. I was about to find out.
+The kid froze. "Uh… Mages are special?"
 
-*   *   *
+A few people laughed. Vareth didn't.
 
-Someone pointed out a woman standing by the far gate. Grey hair. Straight back. The kind of stillness that made the air around her feel cold.
+"Wrong." Her eyes moved across the rest of us. I tried to disappear into the wall. "Mages don't climb grades the normal way. They carve their progress into themselves."
 
-"That's Instructor Vareth," a student said, low, like he was telling a ghost story. "She's a Mage. Was up at the fifth circle. Hasn't moved in thirty years."
+The laughing died.
 
-"Why not?" someone asked.
+"You burn a Rune Star into your own heart," she said, quieter. "One at a time. First to seventh. And if you mess it up—if you rush or panic halfway—"
 
-The student shrugged. "Hit the Wall. Everybody hits it eventually. The grade tops out, progress stops, and after that? Some people just... stop. Forever."
-
-*The Wall.* I'd heard the word before, the way you hear words like *winter* or *taxes* — something you know exists and just hope never happens to you. But looking at that woman, thirty years frozen, it stopped being a word. It became a shape. A ceiling with a person pressed against it.
-
-I looked away first.
-
-*   *   *
-
-The Mage thing got worse.
-
-There was a small class under the colonnade, and an Instructor with sharp eyes and no patience was pacing in front of them.
-
-"You." She pointed at a boy in the front row. "Tell me what makes Mage progression different from every other class."
-
-The boy blinked. "Um. Mages are, uh. Special?"
-
-The class snickered. The Instructor didn't.
-
-"Wrong, but I'll let it stand for comedy." She swept her eyes over the rest of us, and I tried very hard to become part of the wall. "Mages don't rise through the Grade system like everyone else. Mages *carve* their progress. Into themselves."
-
-The snickering stopped.
-
-"You inscribe a Rune Star," she said, and her voice dropped, "into the muscle of your own heart. One circle at a time. First through seventh. Each one is a sigil burned into the most sensitive organ in your body. And if you make a mistake— if you rush, or skip a step, or lose your nerve halfway through—"
-
-She let the silence finish it.
+She didn't finish. She didn't have to.
 
 "You die," she said.
 
-The colonnade went dead quiet. Somewhere behind me the fountain kept splashing, very far away.
+Everything went quiet. I touched the pendant. The crack felt colder than before.
 
-I touched the pendant. The crack felt like a line of cold fire.
+So Mage meant cutting into my own heart. Forever. Cool. Love that for me.
 
-*So being a Mage means doing heart surgery on myself,* I thought. *Forever. Fun.*
+And I couldn't even quit. The altar said Mage, so that was it. Unless I tried the thing nobody bothers trying. Which I wasn't going to. I just wanted to go back to sleep. But sleep wasn't on the schedule.
 
-And the worst part was, I couldn't even quit. Nobody could. The altar said Mage, and that was that, unless I wanted to try the impossible thing nobody bothered trying. Which I didn't. I wanted to go back to bed. But bed wasn't a class, apparently.
+By the time I got back to the dorm the sun was down and I felt wiped out for no real reason.
 
-*   *   *
+A demon kid was on the bed across from mine, poking at the little horn nubs on his forehead. He'd been complaining for a while.
 
-By the time the sun started dropping, I'd learned more than I'd ever wanted to know.
+"Five skills," he muttered. "That's all I get. Five. Forever."
 
-A demon kid in my dorm — two little horn nubs he kept touching like he couldn't believe they were real — was sprawled on his bed, complaining at the ceiling.
+"Could be worse," a human kid said from the other side. "You're stuck at five. I could theoretically learn anything, and I still won't, because it's too hard and everyone gives up. At least you have a reason."
 
-"Five," he said. "Five class skills. That's my whole life. Five."
+They both laughed. Someone threw a pillow.
 
-"Could be worse," a human kid said from the other side of the room. "You're capped at five. I could learn anything, and I still won't, because it's too hard and everybody quits. At least you've got an excuse."
+I stayed on my bed and stared at the ceiling. Didn't join in. The whole thing sat wrong in my chest and I didn't feel like talking.
 
-The demon kid threw a pillow at him. They were both laughing.
+I wasn't human. I'd never been. I just looked like one. Under the pendant—under the crack that was supposed to keep everything locked down—I was something else. Both sides of me were something else.
 
-I lay on my bed and stared at my own ceiling and didn't join in, because the unfairness of it was sitting on my chest like a rock and I didn't trust my voice.
+No human "learn anything" freedom. No clean five-skill limit either. Just… whatever a hybrid even was. No clear rules. No clear place.
 
-Here was the thing nobody in that room knew. I wasn't human. I'd never been human. I'd spent fifteen years *looking* like one, but under the skin— under the crack in the pendant that'd been holding it all in— I was something else. Both halves of me were something else.
+Caged from both directions. And nobody here would ever know, because I wasn't going to tell them. Telling them meant more eyes on me, and I'd already had enough of that for one day.
 
-Not the human freedom. Not the clean five-skill cap. Just... whatever a hybrid was. A thing with no rules, and no place, and a limit nobody could even tell me the shape of.
+Night came quiet.
 
-Caged from both sides. And nobody in the room would ever know, because I'd never tell them, because telling them would mean them looking at me, and I'd had enough of that for one lifetime, let alone one day.
+Everyone else was asleep, or pretending. I lay still with my hand on the pendant, feeling the thin crack and the pressure underneath it. Still there. Still waiting.
 
-*   *   *
+I thought about the Headmaster's office. The word *anomaly*. Vareth stuck at her Wall for thirty years. Bella with that gold light pouring off her while I stood in the crowd knowing I'd never get a door like that.
 
-It was quiet that night.
+The pressure behind the pendant shifted.
 
-The dorm had gone dark. Everyone else was asleep, or pretending, and I lay still with my hand over the pendant, feeling the crack — that thin, cold, slowly-mending line — and the second heartbeat underneath it, patient. Waiting.
+I pressed down on it.
 
-I thought about the Headmaster's small office, and *anomaly*. About Instructor Vareth, thirty years at a Wall. About a ring of gold forming over Bella's head while I watched from the crowd, and the promise she'd spoken, and the way I'd already known, even then, that it was a door I'd never get to walk through.
+Not yet. Just… not yet.
 
-The second heartbeat stirred.
+Outside, the Academy was silent. Somewhere in it the Headmaster was probably still standing at that window.
 
-I pressed it down.
-
-*Not yet,* I thought. *Just... not yet.*
-
-Outside, the Academy was silent, and somewhere in it an old man in a small room was probably still standing at a window, watching a boy who didn't belong anywhere.
-
-And the crack in the ruby kept mending.
+And the crack in the ruby kept trying to close.
 
 Too slowly.

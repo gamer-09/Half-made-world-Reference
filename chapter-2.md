@@ -40,7 +40,7 @@ It got to the part behind my sternum.
 
 And it stopped.
 
-And I swear — I *felt* it frown. Whatever a frown is when it's made of light and stone and a thousand years. It found the thing I'd been hiding since forever, the second heartbeat, the wrong one, and it just... hesitated. Like it didn't know what to do with me.
+And I swear — I *felt* it frown. Whatever a frown is when it's made of light and stone and a thousand years. It found the thing I'd been hiding since forever, the wrong pressure behind the pendant, and it just... hesitated. Like it didn't know what to do with me.
 
 *Buddy. Join the club.*
 

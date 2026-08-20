@@ -60,7 +60,7 @@ She looked up instantly. "What is it?"
 
 Which was true, the same way saying a hurricane is *windy* is true. The real problem was sitting under my ribs, in the dark behind my sternum, where words couldn't reach it.
 
-Sometimes—when the house was dead silent, when I laid still for too long—I felt a pulse in there. A second heartbeat. Out of step with my own. Wrong.
+Sometimes—when the house was dead silent, when I laid still for too long—I felt it press up from behind the pendant. Not a heartbeat. Something else. Out of step with me. Wrong.
 
 And every time it twitched, my hand went straight to the ruby. Like the stone knew. Like it was the only deadbolt keeping a heavy door locked shut.
 
@@ -138,7 +138,7 @@ It kept rising. The air tasted like ozone and static. Above her head, where ever
 
 I stood paralyzed, watching my best friend stand in the center of a miniature sun.
 
-And beneath my ribs, the secondary pulse slammed against my chest wall—hard, sharp, and violently out of rhythm. The thing inside me was waking up.
+And behind the pendant, the pressure slammed against my chest—hard, sharp, and sudden. The thing inside me was waking up.
 
 My knuckles turned white around my pendant.
 
