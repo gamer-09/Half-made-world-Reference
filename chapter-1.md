@@ -30,11 +30,11 @@ The first thing I did—the thing I did *every* morning—was reach for the pend
 
 It hung on a silver chain against my collarbone: a dark ruby, cool to the touch. I’d worn it so long it felt less like jewelry and more like a limb. I never took it off. Not to sleep, not to swim, not ever. Sofia had made me swear to it back when I was still small enough to ask stupid questions.
 
-*"Why do I have to keep it on?"*
+*Why do I have to keep it on?*
 
-*"Because it keeps you safe, she’d told me, her eyes dead serious. And because you gave me your word."*
+*Because it keeps you safe,* she’d told me, her eyes dead serious. *And because you gave me your word.*
 
-*Pretty sure I hadn't given anyone my word at six years old,* I thought, but I’d kept the promise anyway. I curled my fingers around the cold stone through my shirt, letting it anchor me.
+Pretty sure I hadn't given anyone my word at six years old, but I’d kept the promise anyway. I curled my fingers around the cold stone through my shirt, letting it anchor me.
 
 Today, I needed anchoring.
 
@@ -46,9 +46,9 @@ Across the table, Sofia just watched me. She’d looked at me like that my whole
 
 When I was little, I’d asked her about that, too.
 
-*"Why do you always look at me like I’m about to fall?"*
+*Why do you always look at me like I’m about to fall?*
 
-*"Because you're the only thing in this world that's mine, she’d said softly. And I intend to keep you in one piece."*
+*Because you're the only thing in this world that's mine,* she’d said softly. *And I intend to keep you in one piece.*
 
 Back then, it made me smile. This morning, it just made the egg curdle in my stomach.
 
@@ -64,7 +64,7 @@ Sometimes—when the house was dead silent, when I laid still for too long—I f
 
 And every time it twitched, my hand went straight to the ruby. Like the stone knew. Like it was the only deadbolt keeping a heavy door locked shut.
 
-*I’d never told Sofia. How do you casually bring up, "Hey, so fun news, I think there's a parasite riding shotgun in my torso?" You don't. You keep your mouth shut.*
+I’d never told Sofia. How do you casually bring up, "Hey, so fun news, I think there's a parasite riding shotgun in my torso?" You don't. You keep your mouth shut.
 
 *   *   *
 
