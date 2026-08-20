@@ -1786,7 +1786,7 @@ module.exports = [
     "Main Character — the first Angel-Demon Hybrid",
     "A hybrid of an angel and a demon, and as a result became the first hybrid in the world. His parents were the right-hand man of the rulers of the angel and the demon realm, respectively. He was given to his mother’s personal maid, Sofia, along with the Auralis Ruby pendant to seal his auras so he looks human. He then lives in the Human Realm with Sofia.",
     [
-      { label: "Forms", value: "1st — Normal: looks fully human, no wings, horns, or halo. 2nd — Full angel form: 6 pure feathery white wings and a brightly glowing halo, with the angelic aura. 3rd — A halo appears above his head and two horns emerge from his forehead, using partial abilities of both an angel and a demon. 4th — Full demon form: 6 horns and 6 dark purple feathery wings, with the demonic aura. 5th — True hybrid form: 3 pure white feathery wings on one half and 3 black feathery wings on the other, 6 horns, and a halo split in half floating above his head. Both the angelic and demonic auras surround him at the same time." },
+      { label: "Forms", value: "1st — Normal: looks fully human, no wings, horns, or halo. 2nd — Full angel form: 6 pure feathery white wings and a brightly glowing halo, with the angelic aura. 3rd — Full demon form: 6 horns and 6 dark purple feathery wings, with the demonic aura. 4th — A halo appears above his head and two horns emerge from his forehead, using partial abilities of both an angel and a demon. 5th — True hybrid form: 3 pure white feathery wings on one half and 3 black feathery wings on the other, 6 horns, and a halo split in half floating above his head. Both the angelic and demonic auras surround him at the same time." },
       { label: "Angelic rank", value: "Aetherblade Lord Angel" },
       { label: "Demonic rank", value: "Bloodward" },
       { label: "Parents", value: "Lisa (Bloodward demon) and Ordium (Aetherblade Lord Angel)" },
@@ -1951,7 +1951,7 @@ module.exports = [
   e(
     "Character Forms",
     "Jaiden Marlock — Halo & Horns",
-    "Third Form of 5 — Jaiden Marlock",
+    "Fourth Form of 5 — Jaiden Marlock",
     "A halo appears above his head and two horns emerge from his forehead, using partial abilities of both an angel and a demon.",
     [],
     ["jaiden", "form", "halo & horns"],
@@ -1967,7 +1967,7 @@ module.exports = [
   e(
     "Character Forms",
     "Jaiden Marlock — Full Demon Form",
-    "Fourth Form of 5 — Jaiden Marlock",
+    "Third Form of 5 — Jaiden Marlock",
     "6 horns and 6 dark purple feathery wings, along with the demonic aura all demons carry.",
     [],
     ["jaiden", "form", "full demon form"],
