@@ -48,15 +48,12 @@ In a small group or class setting, a teacher asks what makes Mage progression di
 
 The room goes quiet. Jaiden feels the weight of it. The cracked pendant throbs once. *(The emotional core — his path is self-inflicted surgery.)*
 
-### Beat 6 — The Vow (Ritual)
-From a distance, Jaiden watches **Thalor Elwin** oversee a young angel taking the **Veyn Vow**. He sees the halo form. He feels the second heartbeat stir. No one explains it to him. He simply understands he is shut out of it.
-
-### Beat 7 — The Double Limit
+### Beat 6 — The Double Limit
 A demon student complains about only being able to hold **five class skills**. A human student replies that humans could theoretically learn more, but almost nobody does. Jaiden realizes both of his true natures lock him out of the human flexibility while still subjecting him to non-human limits. He is restricted from both sides.
 
 *(Corrected canon: Jaiden is angel + demon, no human half. So "learn everything" was never his, and even the five-cap barely applies to a being with "no rules.")*
 
-### Beat 8 — Night Close
+### Beat 7 — Night Close
 Dormitory. Quiet. The ruby pendant is still cracked and mending too slowly. The second heartbeat sounds once. Jaiden presses it down. The chapter ends on the personal cost, not on the systems.
 
 ---
@@ -80,8 +77,9 @@ Dormitory. Quiet. The ruby pendant is still cracked and mending too slowly. The 
 - That Mages progress through dangerous internal carving (Rune Stars)
 - The five-skill limit
 - That humans have theoretical flexibility most never use
-- That angels are bound by the Veyn Vow
 - That Jaiden's reading is anomalous and being watched
+
+*(The Veyn Vow is not taught here — it was already shown at the altar in Chapter 1, during Bella's awakening.)*
 
 ## What Stays Hidden
 - Guilds

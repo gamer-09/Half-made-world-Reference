@@ -124,11 +124,15 @@ Bella squeezed my forearm hard. *Told you so,* her eyes said. She marched up the
 
 The entire hall fell dead silent.
 
-It didn't just light up—it detonated.
+Thalor Elwin moved first. The Guardian stepped forward to the edge of the ring, and when he spoke, his voice was quiet and it carried to the back of the hall, the way a promise does. "Repeat after me."
+
+And Bella did. I heard the words, the same words every angel speaks on this one day, and for a second they felt almost ordinary — *With this light I make my promise...*
+
+Then the altar answered. It didn't just light up—it detonated.
 
 The silver runes flared blindingly bright, and a torrent of golden light blasted upward from the altar. It didn't just wash over Bella; it poured out of her like a cracked dam. A tide of blinding, holy light swept across the room, snuffing out the surrounding torches and forcing the proctors to throw their arms over their eyes.
 
-It kept rising. The air tasted like ozone and static. Above her head, where every angel's halo forms, a ring of gold blazed into being — and it did not stop at soft and holy. It burned. Bright enough to hurt to look at. For five suffocating seconds — though Bella would later swear it was an hour — a fifteen-year-old girl lit up the entire hall like a fallen star. It wasn't the light of an E Grade. It wasn't even the light of an A Grade. And deep in the floor of the dais, a rune no one had seen glow in a hundred years flared to life: the mark of an anomalous signature, the reading the Academy Altar had been built to catch.
+It kept rising. The air tasted like ozone and static. Above her head, where every angel's halo forms, a ring of gold blazed into being — the promise made visible, her own word sealing itself into light — and it did not stop at soft and holy. It burned. Bright enough to hurt to look at. For five suffocating seconds — though Bella would later swear it was an hour — a fifteen-year-old girl lit up the entire hall like a fallen star. It wasn't the light of an E Grade. It wasn't even the light of an A Grade. And deep in the floor of the dais, a rune no one had seen glow in a hundred years flared to life: the mark of an anomalous signature, the reading the Academy Altar had been built to catch.
 
 "By the vow," a priest near the front whispered, stumbling backward. "That's impossible..."
 
