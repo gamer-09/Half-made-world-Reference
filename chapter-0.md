@@ -1,101 +1,79 @@
 # Chapter 0
 
-The boy did not know the world was ending. He only knew his mother was running, and that her hand was too tight around his wrist.
+In the beginning there was a pulse.
 
-The light under her skin had gone from silver to something the color of a bruise, and that frightened him more than the things behind them. Her light had never looked like that. It used to pool soft in her palms when she told him stories, little ribbons of pale fire she would braid into the dark to make the shadows go away. Now it crawled under her skin in fitful, wounded threads, and every few steps she made a sound low in her throat, like she was holding something heavy inside her and it was getting heavier.
+It had no name, and it needed none, because there was nothing else to tell it apart from. It turned at the center of everything, and from it Veyn bled outward like blood from a heart — pale, silver-blue, the raw stuff of which every later wonder would be made. The pulse did not think, and it did not feel, and it did not want. It only *was*, and it *held*.
 
-She did not tell him to be quiet. He had not made a sound since the first night, and she had stopped asking him to.
-
----
-
-The last of the Aelthar had stopped running at the edge of a cliff that had no name, in a country that had no name, because in those days the world had only one country and it did not need naming.
-
-The boy counted the torches coming up the ridge the way his mother had taught him, and he knew, with the terrible arithmetic of children, that there were more torches than there were of them.
-
-"What will we do?" he whispered.
-
-His mother looked down at him. For a long moment she did not answer, and he watched the light in her eyes — that same pale, bruise-colored light — and understood that whatever she said next would be a lie, because the truth was too heavy for her to lift and hand to him.
-
-"We will open a door," she said.
+For a long age, that was enough. A single world, whole, turning around a single will.
 
 ---
 
-There was no door. That was the first thing the boy learned that night.
+The Aelthar came in that age, and they were the first to learn the pulse's name.
 
-The elders knelt in a circle on the bare stone and drew their light out of their own bodies — real light, this time, not the dying threads, but the full bright Veyn of a people who had spent ten thousand years learning to *hold* the world rather than break it — and they began to sing.
+They did not worship it, the way later peoples would worship the things it made. They listened to it. They spent ten thousand years learning to *hold* the world the way the core held it — not to rule it, but to keep it from slipping. They could shape a horizon in their hands the way a potter shapes wet clay, and they were careful, because they alone understood what every later age would forget:
 
-The boy had heard his mother sing. This was not that.
-
-The song tore at the air the way his mother's hand tore at her sleeve when she was afraid. The light they drew pooled in the center of the circle and began to *pull* — and the boy felt it, felt it in the roots of his teeth and the floor of his chest, felt the whole world lean toward that pool of light the way water leans toward a crack in a dam.
-
-He knew then, without anyone telling him, that what they were doing was the one thing they had always sworn never to do.
-
-"Look away," his mother said. "Look at me."
-
-He did.
-
-And the world split.
+that a world which can be held can also be dropped.
 
 ---
 
-He did not see the tear open. He only heard it — a sound like a held breath letting go all at once, and behind it, a silence that was not empty but *waiting*. When he looked, there was a seam of light standing in the air where the circle had been, and on the other side of it: a dark that moved.
+It was a king who dropped it.
 
-The refugees went through. He knew because he could hear them stop running, one by one, as they stepped into that waiting silence.
+His name was Aldric Malgrave, and he ruled the Human Realm in an age before its throne had a lineage to remember. He looked on the Aelthar and did not see keepers. He saw a power that could unmake his crown, and he did what the frightened have always done to the powerful:
 
-The torches were very close now. The boy could hear the king's men — not shouting, never shouting, which was worse — and the sound of their boots on the stone.
+he hunted them.
 
-His mother knelt and put her hands on his shoulders, and for the first time in all the nights of running, her light went bright again. All of it. She gathered every last thread of the Veyn in her body and she pushed it into him, warm, and he felt it settle behind his ribs like a second heartbeat.
+And the Aelthar, who had spent ten thousand years refusing the one act their lore named the unmaking, were cornered at last, and they did it.
 
-"You are the last of us," she said. "So you have to be brave enough for all of us. Can you do that?"
+They tore the world open.
 
-He nodded, though he did not know what he was agreeing to.
+The seas rose and did not fall back. Every fire in the world went out in the same breath, as if a mouth had closed over the sky. And into the wound they had made, the Aelthar fled — into a place they meant as a refuge, a country with no sun, where time would run slow and no one would ever hunger.
 
-"Then run. Through the door. Do not look back at me. And do not let them see your light."
+The refuge was not finished. It had never decided what it was. And the things that form in a world that is still deciding are always hungry.
 
----
-
-He ran.
-
-He was nine years old, and he ran through the seam into a country that had not finished becoming a country, and behind him his mother turned to face the torches, and he did not look back, because she had told him not to, and because looking back had never once made anything better.
-
-On the other side, the dark was not dark. It was a dark with *shapes in it*, half-formed, deciding.
-
-The boy stood very still and did not let them see his light.
+The Aelthar died there. Almost all of them.
 
 ---
 
-He did not know it then, but the world had answered.
+The pulse, which had no anger and no mercy, answered as a body answers a wound: it closed.
 
-Deep beneath the stone, where the core of the world turned its slow, mindless will, something registered the wound. And because the world core has no anger and no mercy — only a will, and the instinct of a body closing over a cut — it answered twice.
+It raised a barrier between what had been one world and made it three, so that no single tearing could ever break the whole again. And at the doors between those three realms it set watchers of its own stone — the Shudon — golems that carry the pulse's will and no other, asleep until the world needs waking.
 
-It answered first with a **curse**. The boy felt it as a sudden cold at his throat, a circle of light that closed around his neck like a collar and would not come off, no matter how he clawed at it. It was still there when the cold passed. It would still be there every morning after. A mark that could not be hidden, could not be removed, and that the stone things of the world were already learning to hunt.
-
-And it answered second with a **barrier** — a wall raised between what had been one world, so that what the Aelthar had torn could never be torn again. The boy felt that too, distantly, the way you feel a door slam shut in another room. One world became three. The boy did not have words for this. He only knew, suddenly and completely, that the way back was gone.
+And upon the Aelthar — upon the last of them, on the far side of the dark — it laid a curse. A collar of cold light around the neck, a mark that cannot be hidden or removed, that the Shudon are made to hunt. The world does not forget being nearly unmade.
 
 ---
 
-The things in the dark came for the refugees first.
+This is the world the story inherits.
 
-The boy learned, over the hours that followed, that a refuge is only a refuge if the things inside it are not already hungry. These were. They were new, and new things are always hungry, and the Aelthar — who had spent their whole long history learning to survive a world with rules — had no idea how to survive a world that was still deciding what its rules were.
+**Three realms** where there was once one. The **Human Realm** — green and crowded, its capital Aldermere, its people the only ones who can change what they are, and the only ones who die young. The **Angel Realm** — a nation of wings and halos no larger than a single city, its capital Aurelion, where a vow keeps order and the breaking of one pillar shakes the whole. The **Demon Realm** — a churning country of horns and miasma, its capital Vorath, where rank is taken by killing and the army is endless because the dying never stops.
 
-One by one, the running stopped. One by one, the light went out.
-
-By the time the boy stopped hearing the others, he was the only light left.
-
-He stood in the dark of the realm his people had torn open to save themselves, the rune cold around his neck, his mother's Veyn a second heartbeat behind his ribs, and he understood — with the clean, terrible clarity only children have — three things, one after the other, like stones dropping into a well.
-
-He was the last.
-
-The refuge was a tomb.
-
-And somewhere on the other side of the closed door, a king was still counting his dead, and calling it victory.
+And between them, everywhere and nowhere, the **Hidden Realm** — the scar. A country with no sun, time running ten times slow, guarded by nothing and by everything. Remember it. Every wound in this story leads back to it.
 
 ---
 
-Years later, the boy who walked out of that place would take the name **Kael von Ashen**. He would be the only one of his people to ever do so. And he would carry out of that dark, hidden behind his ribs, the one thing the world had tried to kill and failed to:
+The magic the pulse gave them is one thing, pulled two ways.
 
-the knowledge of how it was made.
+**Veyn** is the common gift — the silver-blue blood of the world, free to any hand that learns to shape it. But the same Veyn, in different hands, becomes different things. **Holy Energy** is Veyn purified to gold, the light of angels and saints, and it burns whatever is corrupted. **Corrupted Veyn** is Veyn darkened to miasma, the purple-black breath of demons, and it rots whatever it touches. They are the same pulse split by a wound, and they cannot meet without cancelling. This is the oldest war in the world, older than the realms that fight it.
 
-But that is another chapter. This one ends where every story truly begins —
+And there is **Ren** — not from the core at all, but from the body's own Vitality, crimson and warm, the energy of those who fight with nothing but themselves. It cannot share a body with Veyn. A being must choose, and most are made to choose at fifteen.
 
-with a boy alone in the dark, a collar of cold light around his neck, refusing to be the last.
+Because at fifteen, every child of every race is brought to the **Sundering Altar**, where the seal on their power is broken and their **class** is read out of them the way a name is read off a tongue — Mage, Clergy, Paladin, Berserker, and a dozen more, nineteen paths in all — and their **Grade** is weighed, G to S, from a mortal's spark to a demigod's storm. The Mages carve **Rune Stars** into their own hearts instead, one circle at a time, and a single wrong stroke kills them. For all of it, everywhere, they pay in the same **Sigils** — silver, gold, platinum — because coin, unlike faith, crosses every border.
+
+---
+
+And at the crossing of the three realms stands **Elyndor Academy**, built by the one Aelthar who walked back out of the dark.
+
+The last one. The survivor. The boy who grew to be **Kael von Ashen**, who alone learned to endure a realm that was still becoming itself, and who alone of all his people ever came back — carrying, hidden behind his ribs, the knowledge of how the world was made.
+
+He built the school where every child in every realm is awakened. He taught, and he waited, and he never once told anyone what he was the last of, or what his people had done, or why the world was split.
+
+---
+
+So this is the world: **half-made**, torn and hastily stitched, its seams still showing.
+
+A world of three realms and one pulse. A world of gold and black, of altars and coins and curses. A world with a scar it cannot close, and a wall it cannot see, and a will at its heart that has no name and needs none.
+
+And somewhere in that world, in a small house in a quiet town, a boy is growing up who does not yet know that his blood is a seam — that the two people who made him were an angel and a demon, and that he is the first of something that has never existed.
+
+He only knows the woman who raised him, and a small ruby pendant he has been told never to take off.
+
+That is where the story begins. But first, look at the world — because all of it, every realm and every curse and every class, was already turning toward that boy, in that house, waiting for the day the seal came off.
