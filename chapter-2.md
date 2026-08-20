@@ -72,7 +72,7 @@ And I was standing in the center of the ring, shaking, with a hairline crack run
 
 The crowd erupted.
 
-I didn't hear most of it. I heard "impossible" and "two signatures" and "what was that light," all of it washing over me like noise through water. Bella was shouting something, trying to push toward the dais. Mark was staring at me like I'd grown a second head, which, for all I knew, I had.
+I didn't hear most of it. I heard "impossible" and "two signatures" and "what was that light," all of it washing over me like noise through water. Bella was shouting something, trying to push toward the dais, her voice sharp and scared as it cut through the roar.
 
 And then the Headmaster raised one hand.
 
@@ -88,7 +88,7 @@ He didn't look at the crowd. He looked at me, and for a long, terrible second, I
 
 I don't remember walking down from the dais.
 
-I remember Bella's hands on my face, and her voice, sharp and scared, saying my name over and over. I remember Mark's hand on my shoulder, solid and warm. I remember the crack in the ruby, a thin silver line that caught the light, and the way it felt cold again against my skin, like it had used up something it couldn't get back.
+I remember Bella's hands on my face, and her voice, sharp and scared, saying my name over and over. I remember the crack in the ruby, a thin silver line that caught the light, and the way it felt cold again against my skin, like it had used up something it couldn't get back.
 
 And I remember the Headmaster's voice, soft and carrying, as I reached the bottom of the stairs.
 
