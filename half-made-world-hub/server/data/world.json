@@ -4237,7 +4237,7 @@
     "category": "Artifacts",
     "name": "Auralis Ruby",
     "subtitle": "The pendant that sealed the MC’s forms",
-    "description": "A pendant crafted by the MC’s mom (Lisa), who then gave it to Sofia. The pendant has 5 seals to seal the MC’s 5 forms. It seals both of his auras (angelic and demonic), which makes him look human. If a seal is strained or cracked, it will gradually recover and mend itself over time — but never back to full strength. A seal that has cracked once is permanently weakened, and will crack more easily the next time it is tested.",
+    "description": "A pendant crafted by the MC’s mom (Lisa), who then gave it to Sofia. The pendant has 5 seals to seal the MC’s 5 forms, and the seals are not equal — each seal is stronger than the one before it, so the 1st seal is the weakest and the 5th is the strongest. It seals both of his auras (angelic and demonic), which makes him look human. When a seal breaks, the strain it was holding does not vanish — it passes to the next seal. If that next seal is pushed past its own limit, it will break or weaken in turn. A broken seal can mend over time, but never back to full strength, and a weakened seal cracks more easily the next time it is tested.",
     "fields": [
       {
         "label": "Crafted by",
@@ -4248,8 +4248,16 @@
         "value": "Sofia"
       },
       {
-        "label": "Seal Recovery",
-        "value": "A cracked seal mends over time, but stays permanently weakened and cracks more easily afterward."
+        "label": "Seal Strength",
+        "value": "The 5 seals escalate in strength — 1st is weakest, 5th is strongest. Each is stronger than the one before it."
+      },
+      {
+        "label": "Break Chain",
+        "value": "When a seal breaks, its strain passes to the next seal; if that seal is pushed past its limit, it breaks or weakens too."
+      },
+      {
+        "label": "Recovery",
+        "value": "A broken seal mends over time, but never to full strength — and a weakened seal breaks more easily afterward."
       }
     ],
     "tags": [
