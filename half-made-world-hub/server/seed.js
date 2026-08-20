@@ -5867,11 +5867,12 @@ module.exports = [
     "Rules & Notes",
     "The Rarity of Generals",
     "Why a general is a rare sight",
-    "The generals of the Angel and Demon Realms — the Six Pillars of Angels and the demon generals of the Demon army — are so few, and so elevated, that most people go their whole lives without ever seeing one. To the ordinary angel or demon, catching sight of a general is like a common citizen glimpsing the ruler of a country: a moment of awe, of stillness, of wanting to be near the power without ever daring to be in its way. It is not merely rank that sets them apart, but distance — they are the apex of realms whose populations number in the tens or hundreds of thousands, and they are seen only in war, in council, or in legend. When one appears, the crowd remembers it for the rest of their lives.",
+    "The generals of the Angel and Demon Realms — the Six Pillars of Angels and the demon generals of the Demon army — are so few, and so elevated, that most people go their whole lives without ever seeing one. To the ordinary angel or demon, catching sight of a general is like a common citizen glimpsing the ruler of a country: a moment of awe, of stillness, of wanting to be near the power without ever daring to be in its way. It is not merely rank that sets them apart, but distance — they are the apex of realms whose populations number in the tens or hundreds of thousands, and they are seen only in war, in council, or in legend. When one appears, the crowd remembers it for the rest of their lives. Yet not every general is a hermit. A few of them — never most, and never often — take little strolls through their realm, walking among the people who would never otherwise see them. Those walks are quiet, unannounced, and rare; the people who glimpse them remember it for the rest of their lives too.",
     [
       { label: "Angel generals", value: "The Six Pillars of Angels — Ordium, Cyrion, Serathiel, Liora Veyne, Thalor Elwin, Aranweis." },
       { label: "Demon generals", value: "The demon generals — Lisa (formerly), Licent Varak, Laren Vornath, Sythra Kaelis, Nyra Thessan, Isella Marrek." },
       { label: "Effect", value: "Seeing one is like glimpsing a head of state — a rare, awe-struck moment most people never experience." },
+      { label: "Strolls", value: "A few generals — never most, never often — take quiet, unannounced strolls through their realm." },
     ],
     ["general", "pillar", "rare", "awe", "rank"],
   ),
