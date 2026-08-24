@@ -1780,6 +1780,8 @@ select.input {
     var(--bg);
 }
 .blockmap-stage.panning { cursor: grabbing; }
+.web-container.panning { cursor: grabbing; }
+.web-container.panning .map-svg { pointer-events: none; }
 
 .blockmap-canvas {
   position: absolute; top: 0; left: 0;
