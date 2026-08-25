@@ -28347,5 +28347,318 @@
     ],
     "createdAt": "2026-08-23T21:53:38.674Z",
     "updatedAt": "2026-08-23T21:53:38.674Z"
+  },
+  {
+    "id": "concept-system-001",
+    "category": "Magic Systems",
+    "name": "The System",
+    "subtitle": "The universal framework that governs power, growth, and advancement",
+    "description": "The System is the invisible framework that overlays the world, governing how power is measured, how beings grow, and how they advance. It assigns every awakened being a Grade (from G through S), tracks their level within that Grade, and issues Evolution Quests when they reach the peak of a rank. The System also manages the Rune Star circles for Mages, the Wall that blocks advancement, and the sub-stages (Early, Mid, Late, Peak) that mark progress within each Grade. No one knows who or what created the System — it simply exists, as fundamental to the world as Veyn itself. Some believe it was created by the Aelthar before their extinction; others think it emerged naturally from the world core. The System communicates through a silent internal interface that only the individual can perceive, displaying their stats, quests, and notifications.",
+    "fields": [
+      {
+        "label": "Function",
+        "value": "Tracks grades, levels, sub-stages, evolution quests, and skill mastery for every awakened being."
+      },
+      {
+        "label": "Grades",
+        "value": "G (mortal) → F → E → D → C → B → A → S (demigod). Each grade except G and F has sub-stages: Early, Mid, Late, Peak."
+      },
+      {
+        "label": "Interface",
+        "value": "A silent internal display only the individual can see — shows stats, quests, notifications, and skill information."
+      },
+      {
+        "label": "Origin",
+        "value": "Unknown. Some believe it was created by the Aelthar; others think it emerged from the world core."
+      },
+      {
+        "label": "Evolution Quests",
+        "value": "Issued when a being reaches the peak of a grade. Must be completed to advance. Difficulty scales with the grade."
+      },
+      {
+        "label": "The Wall",
+        "value": "A natural barrier that appears at the peak of each grade. Must be broken through to advance. Failure means permanent stagnation."
+      },
+      {
+        "label": "Mage Exception",
+        "value": "Mages do not use the standard Grade system — they progress through Rune Star circles instead."
+      }
+    ],
+    "tags": [
+      "system",
+      "magic system",
+      "grade",
+      "level",
+      "evolution",
+      "framework"
+    ],
+    "createdAt": "2026-08-25T19:34:58.802Z",
+    "updatedAt": "2026-08-25T19:34:58.802Z"
+  },
+  {
+    "id": "concept-vitality-001",
+    "category": "Magic Systems",
+    "name": "Vitality",
+    "subtitle": "The inner life force that fuels Ren and physical enhancement",
+    "description": "Vitality is the inner life force present in every living being — the raw energy of the body itself, separate from Veyn which is drawn from the world around them. While Veyn glows a pale silver-blue and feels cool and ambient, Vitality is warm and physical, more like a pulse than a light. Ren is drawn directly from a person's Vitality — when a swordsman channels Ren, they are burning their own life force to enhance strength, speed, and physical capability. This is why Ren-based abilities feel more intimate and dangerous than Veyn-based ones: every use of Ren is a withdrawal from the user's own reserves. Scourge demons run their regeneration on Vitality rather than Veyn, giving them a weaker but self-sustaining healing ability. If a person's Vitality is fully depleted, they die — there is no way to regenerate it quickly, only through rest, food, and time.",
+    "fields": [
+      {
+        "label": "Nature",
+        "value": "The inner life force of a living being — the raw energy of the body itself."
+      },
+      {
+        "label": "Color",
+        "value": "Deep crimson red — drawn from a person's own Vitality rather than an outside source."
+      },
+      {
+        "label": "Feel",
+        "value": "Warm and physical, more like a pulse than a light."
+      },
+      {
+        "label": "Relationship to Ren",
+        "value": "Ren is drawn directly from Vitality. Every use of Ren is a withdrawal from the user's life force."
+      },
+      {
+        "label": "Relationship to Veyn",
+        "value": "Vitality and Veyn are separate systems — Vitality is internal, Veyn is external. They cannot be held together without killing the user (except in Smithing)."
+      },
+      {
+        "label": "Depletion",
+        "value": "If fully depleted, the person dies. Recovery is slow — only through rest, food, and time."
+      },
+      {
+        "label": "Scourge Demons",
+        "value": "Scourge run their regeneration on Vitality rather than Veyn, giving them a weaker but self-sustaining healing ability."
+      }
+    ],
+    "tags": [
+      "vitality",
+      "life force",
+      "ren",
+      "energy",
+      "magic system"
+    ],
+    "createdAt": "2026-08-25T19:34:58.802Z",
+    "updatedAt": "2026-08-25T19:34:58.802Z"
+  },
+  {
+    "id": "concept-affinity-001",
+    "category": "Magic Systems",
+    "name": "Affinity",
+    "subtitle": "The innate Veyn path revealed at the Sundering Altar",
+    "description": "Affinity is the specific magical path or discipline that a person is innately suited for — revealed when their Veyn awakens at the Sundering Altar at age 15. When a person steps onto the altar, their latent Veyn resonates with the Veyn in the altar, and the connection is unlocked. The altar then reads the person's Veyn signature and reveals their affinity: the specific path they are best suited for (combat-magic, healing, elemental control, beast-bonding, etc.). This is not a choice the person makes consciously in the moment — it is revealed to them, based on what is already latent inside them. For elves, angels, and demons, this affinity stays fixed forever. For humans, however, the affinity can change or grow over time through training, meaning a human could eventually learn more than one affinity — something no other race can do. The catch is that switching or adding a new affinity is extremely hard, and most humans give up.",
+    "fields": [
+      {
+        "label": "Revealed at",
+        "value": "The Sundering Altar, at age 15, when Veyn first awakens."
+      },
+      {
+        "label": "What it determines",
+        "value": "The specific path/discipline a person is best suited for — their class, their magical strengths, their natural abilities."
+      },
+      {
+        "label": "Fixed vs Flexible",
+        "value": "Fixed for elves, angels, and demons — never changes. Flexible for humans — can change or grow over time through training."
+      },
+      {
+        "label": "Common affinities",
+        "value": "Combat-magic, healing, elemental control, beast-bonding, stealth, support, crafting, and more."
+      },
+      {
+        "label": "Path-choosing",
+        "value": "Comes after the altar — once someone knows their affinity and class, they choose how to pursue it (which order, mentor, discipline, or role to commit to)."
+      }
+    ],
+    "tags": [
+      "affinity",
+      "veyn",
+      "altar",
+      "awakening",
+      "class",
+      "magic system"
+    ],
+    "createdAt": "2026-08-25T19:34:58.802Z",
+    "updatedAt": "2026-08-25T19:34:58.802Z"
+  },
+  {
+    "id": "concept-leylines-001",
+    "category": "Magic Systems",
+    "name": "Ley Lines",
+    "subtitle": "The invisible channels of concentrated Veyn that flow beneath the world",
+    "description": "Ley Lines are invisible channels of concentrated Veyn that flow beneath the surface of the world, connecting the three realms and the Hidden Realm in a vast, interconnected network. They are the highways of magical energy — wherever Ley Lines intersect or surface, Veyn becomes denser and more potent, making those locations ideal for magical practices, enchantments, and the cultivation of rare plants. The Sundering Altars were built at major Ley Line intersections to harness the concentrated Veyn for the awakening ceremony. Diviners can sense Ley Lines and trace their paths, and some believe the Skywhales follow Ley Line patterns as they drift through the upper atmosphere. Ley Lines are not conscious or alive — they are natural formations, like underground rivers of Veyn — but they are essential to the world's magical ecosystem. Disrupting a Ley Line can cause localized Veyn droughts, weakening magic in the affected area for years.",
+    "fields": [
+      {
+        "label": "Nature",
+        "value": "Invisible channels of concentrated Veyn flowing beneath the world's surface — like underground rivers of magical energy."
+      },
+      {
+        "label": "Function",
+        "value": "Connect the three realms and the Hidden Realm in a vast network. Distribute Veyn across the world."
+      },
+      {
+        "label": "Intersections",
+        "value": "Where Ley Lines meet, Veyn becomes denser and more potent — ideal for magical practices and enchantments."
+      },
+      {
+        "label": "Sundering Altars",
+        "value": "Built at major Ley Line intersections to harness concentrated Veyn for the awakening ceremony."
+      },
+      {
+        "label": "Skywhales",
+        "value": "Some Diviners believe Skywhales follow Ley Line patterns as they drift through the upper atmosphere."
+      },
+      {
+        "label": "Disruption",
+        "value": "Disrupting a Ley Line causes localized Veyn droughts, weakening magic in the affected area for years."
+      }
+    ],
+    "tags": [
+      "ley lines",
+      "veyn",
+      "magic",
+      "channels",
+      "concentrated veyn",
+      "magic system"
+    ],
+    "createdAt": "2026-08-25T19:34:58.802Z",
+    "updatedAt": "2026-08-25T19:34:58.802Z"
+  },
+  {
+    "id": "concept-bloodforging-001",
+    "category": "Magic Systems",
+    "name": "Blood-forging",
+    "subtitle": "The dangerous art of infusing weapons with angel or demon blood",
+    "description": "Blood-forging is one of the hardest skills in the Smithing class — the process of using demon or angel blood in the forge to create weapons of extraordinary power. The rank of the demon or angel whose blood is used determines how powerful the weapon will be: low-ranking blood can at least injure a being of that race, while high-ranking blood can kill. Demon and angel blood is reactive to Veyn, which makes the forging process extremely dangerous — a mistake can cause the death of the smith. The blood must be drawn while the donor is alive and willing (or recently deceased), and the smith must channel their own Veyn into the blood during the forging process to bind it to the metal. A Blood-forged weapon carries the innate properties of the blood's source: a weapon forged with Mordrach blood might carry corrupted Veyn effects, while one forged with Serapharch blood might carry holy energy. Only Smiths who have mastered the class can attempt Blood-forging, and even then, it is considered a high-risk, high-reward craft.",
+    "fields": [
+      {
+        "label": "Class",
+        "value": "Smithing — the one class that can use both Veyn and Ren (the sole exception to their incompatibility)."
+      },
+      {
+        "label": "Blood source",
+        "value": "Demon or angel blood, drawn while the donor is alive and willing (or recently deceased)."
+      },
+      {
+        "label": "Power scaling",
+        "value": "Low-ranking blood can injure beings of that race; high-ranking blood can kill them."
+      },
+      {
+        "label": "Danger",
+        "value": "Blood is reactive to Veyn — a mistake during forging can kill the smith."
+      },
+      {
+        "label": "Properties",
+        "value": "A Blood-forged weapon carries the innate properties of the blood's source — corrupted Veyn effects from demon blood, holy energy from angel blood."
+      },
+      {
+        "label": "Requirement",
+        "value": "Only Smiths who have mastered the class can attempt Blood-forging."
+      }
+    ],
+    "tags": [
+      "blood-forging",
+      "smithing",
+      "weapon",
+      "demon blood",
+      "angel blood",
+      "magic system"
+    ],
+    "createdAt": "2026-08-25T19:34:58.802Z",
+    "updatedAt": "2026-08-25T19:34:58.802Z"
+  },
+  {
+    "id": "concept-veynchannels-001",
+    "category": "Magic Systems",
+    "name": "Veyn Channels",
+    "subtitle": "The internal pathways through which Veyn flows in the body",
+    "description": "Veyn Channels are the internal pathways within a being's body through which Veyn flows — the conduits that connect a person's latent Veyn to the external Veyn in the world around them. Before awakening at the Sundering Altar, these channels are dormant and undeveloped. The altar opens them for the first time, allowing Veyn to flow through the body and be shaped into magic. The width, density, and number of Veyn Channels a person has determines how much Veyn they can hold and how powerful their magic can become. Angels have naturally wider and more developed channels, which is why they can channel more Veyn than humans. Demons have channels that naturally corrupt Veyn into miasma as it passes through them. Fallen Angels have unstable channels — the vow break damaged them, making Veyn flow in bursts rather than steady streams. The Auralis Ruby works by sealing Jaiden's Veyn Channels, preventing his angelic and demonic auras from manifesting.",
+    "fields": [
+      {
+        "label": "Nature",
+        "value": "Internal pathways within the body that connect latent Veyn to external Veyn in the world."
+      },
+      {
+        "label": "Awakening",
+        "value": "Dormant before the Sundering Altar — the altar opens them for the first time at age 15."
+      },
+      {
+        "label": "Power determines",
+        "value": "Width, density, and number of channels determines Veyn capacity and magical power."
+      },
+      {
+        "label": "Angels",
+        "value": "Naturally wider and more developed — can channel more Veyn than humans."
+      },
+      {
+        "label": "Demons",
+        "value": "Channels naturally corrupt Veyn into miasma as it passes through them."
+      },
+      {
+        "label": "Fallen Angels",
+        "value": "Channels are damaged and unstable — Veyn flows in bursts rather than steady streams."
+      },
+      {
+        "label": "Auralis Ruby",
+        "value": "Works by sealing Jaiden's Veyn Channels, preventing his auras from manifesting."
+      }
+    ],
+    "tags": [
+      "veyn channels",
+      "veyn",
+      "awakening",
+      "altar",
+      "body",
+      "magic system"
+    ],
+    "createdAt": "2026-08-25T19:34:58.802Z",
+    "updatedAt": "2026-08-25T19:34:58.802Z"
+  },
+  {
+    "id": "concept-truesight-001",
+    "category": "Innate Abilities",
+    "name": "True-Sight",
+    "subtitle": "The Diviner's innate ability to see through any lie or disguise",
+    "description": "True-Sight is the innate ability unique to Diviners — the only class that possesses it. It allows the user to see through any lie, deception, disguise, or illusion with absolute clarity. A Diviner with True-Sight can detect dishonesty in speech, see through magical disguises like Dawnveil and Duskveil, pierce through illusions, and perceive the true nature of enchanted objects. The ability is always active at a low level, giving Diviners an instinctive sense when something is false, and can be focused to pierce even the most powerful deceptions. True-Sight is also what makes the Seer possible — the Seer is always a Diviner, and True-Sight lets them verify the Truthstone's guidance without being deceived. Wraithcloth, one of the few items that can hide a person's presence, is explicitly noted as vulnerable to True-Sight.",
+    "fields": [
+      {
+        "label": "Class",
+        "value": "Diviner — the only class with this ability."
+      },
+      {
+        "label": "What it sees through",
+        "value": "Lies, disguises (Dawnveil, Duskveil), illusions, enchantments, and deception of any kind."
+      },
+      {
+        "label": "Passive level",
+        "value": "Always active at low intensity — gives an instinctive sense when something is false."
+      },
+      {
+        "label": "Focused level",
+        "value": "Can be concentrated to pierce even the most powerful magical disguises and illusions."
+      },
+      {
+        "label": "Seer connection",
+        "value": "The Seer is always a Diviner — True-Sight lets them verify the Truthstone's guidance without deception."
+      },
+      {
+        "label": "Known vulnerability",
+        "value": "Wraithcloth can be seen through with True-Sight."
+      },
+      {
+        "label": "Rarity",
+        "value": "Only 3 Diviners exist per century, making True-Sight extremely rare in the world."
+      }
+    ],
+    "tags": [
+      "true-sight",
+      "diviner",
+      "innate ability",
+      "see through",
+      "lies",
+      "disguise",
+      "illusion"
+    ],
+    "createdAt": "2026-08-25T20:02:16.963Z",
+    "updatedAt": "2026-08-25T20:02:16.963Z"
   }
 ]

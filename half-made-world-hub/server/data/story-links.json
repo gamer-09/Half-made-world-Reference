@@ -19748,5 +19748,335 @@
     "description": "Jaiden Marlock is central to his own plot",
     "createdAt": "2026-08-24T01:28:49.108Z",
     "updatedAt": "2026-08-24T01:28:49.109Z"
+  },
+  {
+    "id": "link-concept-001",
+    "source": "The System",
+    "target": "Grade System",
+    "type": "governs",
+    "label": "Governs",
+    "description": "The System assigns and tracks every being's Grade, from G through S.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-002",
+    "source": "The System",
+    "target": "Evolution Quest",
+    "type": "manages",
+    "label": "Manages",
+    "description": "The System issues Evolution Quests when a being reaches the peak of a grade.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-003",
+    "source": "The System",
+    "target": "The Wall",
+    "type": "manages",
+    "label": "Manages",
+    "description": "The System enforces the Wall — the natural barrier that blocks advancement at each grade peak.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-004",
+    "source": "The System",
+    "target": "The Rune Star System",
+    "type": "manages",
+    "label": "Manages",
+    "description": "For Mages, the System manages Rune Star circle progression instead of the standard Grade system.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-005",
+    "source": "Vitality",
+    "target": "Ren",
+    "type": "fuels",
+    "label": "Fuels",
+    "description": "Ren is drawn directly from a person's Vitality — every use of Ren is a withdrawal from the user's life force.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-006",
+    "source": "Vitality",
+    "target": "The Ren Organ",
+    "type": "connected to",
+    "label": "Connected to",
+    "description": "The Ren Organ channels Vitality into Ren, but while it is open the user cannot touch Veyn.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-007",
+    "source": "Vitality",
+    "target": "Scourge",
+    "type": "used by",
+    "label": "Used by",
+    "description": "Scourge demons run their regeneration on Vitality rather than Veyn, giving them a weaker but self-sustaining heal.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-008",
+    "source": "Vitality",
+    "target": "Berserker",
+    "type": "used by",
+    "label": "Used by",
+    "description": "Berserkers burn Ren — and thus Vitality — recklessly for a huge boost in power at the cost of control.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-009",
+    "source": "Vitality",
+    "target": "Veyn & Ren Incompatibility",
+    "type": "about",
+    "label": "About",
+    "description": "Vitality fuels Ren; Veyn comes from the world. The two cannot coexist in one body without killing the user.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-010",
+    "source": "Affinity",
+    "target": "The Sundering Altar",
+    "type": "revealed at",
+    "label": "Revealed at",
+    "description": "Affinity is revealed when Veyn first awakens at the Sundering Altar at age 15.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-011",
+    "source": "Affinity",
+    "target": "Affinity & Awakening",
+    "type": "about",
+    "label": "About",
+    "description": "Affinity is the specific magical path revealed during the awakening ceremony at the altar.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-012",
+    "source": "Affinity",
+    "target": "Humans",
+    "type": "flexible for",
+    "label": "Flexible for",
+    "description": "Unlike other races, humans can change or grow their affinity over time through training.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-013",
+    "source": "Affinity",
+    "target": "Classes",
+    "type": "determines",
+    "label": "Determines",
+    "description": "A person's affinity determines which class they are best suited for at the altar.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-014",
+    "source": "Ley Lines",
+    "target": "Veyn",
+    "type": "channels",
+    "label": "Channels",
+    "description": "Ley Lines are invisible channels of concentrated Veyn flowing beneath the world's surface.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-015",
+    "source": "Ley Lines",
+    "target": "Skywhales",
+    "type": "followed by",
+    "label": "Followed by",
+    "description": "Some Diviners believe Skywhales follow Ley Line patterns as they drift through the upper atmosphere.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-016",
+    "source": "Ley Lines",
+    "target": "The Sundering Altar",
+    "type": "connected to",
+    "label": "Connected to",
+    "description": "The Sundering Altars were built at major Ley Line intersections to harness concentrated Veyn.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-017",
+    "source": "Ley Lines",
+    "target": "Concentrated Veyn",
+    "type": "produces",
+    "label": "Produces",
+    "description": "Where Ley Lines intersect, Veyn becomes denser and more potent — concentrated Veyn.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-018",
+    "source": "Blood-forging",
+    "target": "Smithing",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "Blood-forging is one of the hardest skills in the Smithing class — using demon or angel blood in the forge.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-019",
+    "source": "Blood-forging",
+    "target": "Veyn",
+    "type": "uses",
+    "label": "Uses",
+    "description": "The smith must channel Veyn into the blood during forging to bind it to the metal.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-020",
+    "source": "Blood-forging",
+    "target": "Veyn & Ren Incompatibility",
+    "type": "exception to",
+    "label": "Exception to",
+    "description": "Smithing is the sole exception to Veyn-Ren incompatibility — a Smith may draw on both during the forge.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-021",
+    "source": "Veyn Channels",
+    "target": "The Sundering Altar",
+    "type": "opened by",
+    "label": "Opened by",
+    "description": "The altar opens dormant Veyn Channels for the first time, allowing Veyn to flow through the body.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-022",
+    "source": "Veyn Channels",
+    "target": "Auralis Ruby",
+    "type": "sealed by",
+    "label": "Sealed by",
+    "description": "The Auralis Ruby works by sealing Jaiden's Veyn Channels, preventing his angelic and demonic auras from manifesting.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-023",
+    "source": "Veyn Channels",
+    "target": "Veyn",
+    "type": "channels",
+    "label": "Channels",
+    "description": "Veyn Channels are the internal pathways that connect a person's latent Veyn to the external Veyn in the world.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-024",
+    "source": "Veyn Channels",
+    "target": "Angels (Overview)",
+    "type": "wider in",
+    "label": "Wider in",
+    "description": "Angels have naturally wider and more developed Veyn Channels, which is why they can channel more Veyn than humans.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-025",
+    "source": "Veyn Channels",
+    "target": "Demons (Overview)",
+    "type": "corrupted in",
+    "label": "Corrupted in",
+    "description": "Demon Veyn Channels naturally corrupt Veyn into miasma as it passes through them.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-026",
+    "source": "Veyn Channels",
+    "target": "Fallen Angel",
+    "type": "damaged in",
+    "label": "Damaged in",
+    "description": "Fallen Angel Veyn Channels are damaged and unstable — Veyn flows in bursts rather than steady streams.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-concept-027",
+    "source": "Veyn Channels",
+    "target": "Growing Your Veyn Capacity",
+    "type": "about",
+    "label": "About",
+    "description": "Veyn Capacity is determined by the width and density of a person's Veyn Channels.",
+    "createdAt": "2026-08-25T19:43:36.839Z",
+    "updatedAt": "2026-08-25T19:43:36.839Z"
+  },
+  {
+    "id": "link-truesight-001",
+    "source": "True-Sight",
+    "target": "Diviner",
+    "type": "innate of",
+    "label": "Innate of",
+    "description": "True-Sight is the innate ability unique to Diviners — the only class that possesses it.",
+    "createdAt": "2026-08-25T20:02:16.963Z",
+    "updatedAt": "2026-08-25T20:02:16.963Z"
+  },
+  {
+    "id": "link-truesight-002",
+    "source": "True-Sight",
+    "target": "Dawnveil (Serapharch)",
+    "type": "sees through",
+    "label": "Sees through",
+    "description": "True-Sight can pierce even the Serapharch's flawless Dawnveil disguise.",
+    "createdAt": "2026-08-25T20:02:16.963Z",
+    "updatedAt": "2026-08-25T20:02:16.963Z"
+  },
+  {
+    "id": "link-truesight-003",
+    "source": "True-Sight",
+    "target": "Duskveil (Mordrach)",
+    "type": "sees through",
+    "label": "Sees through",
+    "description": "True-Sight can see through even a Mordrach's perfect Duskveil disguise.",
+    "createdAt": "2026-08-25T20:02:16.963Z",
+    "updatedAt": "2026-08-25T20:02:16.963Z"
+  },
+  {
+    "id": "link-truesight-004",
+    "source": "True-Sight",
+    "target": "Wraithcloth",
+    "type": "counters",
+    "label": "Counters",
+    "description": "Wraithcloth can be seen through with a Diviner's True-Sight.",
+    "createdAt": "2026-08-25T20:02:16.963Z",
+    "updatedAt": "2026-08-25T20:02:16.963Z"
+  },
+  {
+    "id": "link-truesight-005",
+    "source": "True-Sight",
+    "target": "The Seer",
+    "type": "enables",
+    "label": "Enables",
+    "description": "The Seer is always a Diviner — True-Sight lets them verify the Truthstone's guidance without deception.",
+    "createdAt": "2026-08-25T20:02:16.963Z",
+    "updatedAt": "2026-08-25T20:02:16.963Z"
+  },
+  {
+    "id": "link-truesight-006",
+    "source": "True-Sight",
+    "target": "The Truthstone",
+    "type": "verifies",
+    "label": "Verifies",
+    "description": "True-Sight allows the Seer to confirm the Truthstone's guidance is genuine and not manipulated.",
+    "createdAt": "2026-08-25T20:02:16.963Z",
+    "updatedAt": "2026-08-25T20:02:16.963Z"
   }
 ]
