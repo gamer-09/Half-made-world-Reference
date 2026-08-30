@@ -6,263 +6,115 @@ import { findCharacter } from '../nameMatch';
 import { categoryColor } from '../theme';
 
 // ── Layout constants ───────────────────────────────────────────────────
-// Expanded canvas: 3500×2500 (was 1500×900) gives ~5.5× more area for
-// 400+ nodes to breathe without overlapping.
-const W = 3500;
-const H = 2500;
-const NODE_R = 18;
-const DRAG_THRESHOLD = 4;
+// Column-based layout: each category is a vertical column, scrollable.
+const NODE_R = 14;
 const PICKER_KEY = 'hmw-web-hidden-categories';
+
+// Column layout
+const COL_PAD_LEFT = 20;
+const COL_WIDTH = 140;       // width per category column
+const NODE_ROW_H = 46;       // vertical space per node
+const COL_HEADER_H = 30;
+const COL_PAD_Y = 8;
+const COL_GAP = 16;          // gap between columns
+const EDGE_CURVE = 0.25;     // edge curvature strength
+
+// Category ordering
 const CATEGORY_ORDER = [
-  'Realms',
-  'Locations',
-  'Monsters',
-  'Beings',
-  'Angels',
-  'Demons',
-  'Humans',
-  'Magic Systems',
-  'Rules & Notes',
-  'Classes',
-  'Items',
-  'Hidden Realm',
-  'Artifacts',
-  'Artifact Skills',
-  'Characters',
-  'Character Forms',
-  'Angel Skills',
-  'Demon Skills',
-  'Plot',
-  'Other',
+  'Realms', 'Locations', 'Characters', 'Plot',
+  'Angels', 'Demons', 'Humans', 'Classes',
+  'Magic Systems', 'Rules & Notes', 'Items', 'Artifacts',
+  'Artifact Skills', 'Angel Skills', 'Demon Skills', 'Character Forms',
+  'Monsters', 'Beings', 'Hidden Realm', 'Organizations',
+  'Economy', 'Military', 'Calendar', 'Laws & Justice',
+  'Medical', 'Travel', 'Architecture', 'Combat Mechanics',
+  'Combat Training', 'Culture', 'Daily Life', 'Equipment',
+  'Intelligence', 'Lore & Myths', 'Nature', 'Politics',
+  'Resources', 'Skill Mechanics', 'Social Classes', 'Academy',
+  'Clan', 'Other',
 ];
 
-// ── Zoom / pan constants ──────────────────────────────────────────────
-const MIN_SCALE = 0.04;
-const MAX_SCALE = 4;
-const ZOOM_FACTOR = 1.15;
-
-interface Pos {
-  x: number;
-  y: number;
-}
+interface Pos { x: number; y: number }
 type Positions = Record<string, Pos>;
 
-interface Box {
-  x1: number;
-  y1: number;
-  x2: number;
-  y2: number;
-}
-
-function boxesIntersect(a: Box, b: Box): boolean {
-  return a.x1 < b.x2 && a.x2 > b.x1 && a.y1 < b.y2 && a.y2 > b.y1;
-}
-
 interface WebEdge {
-  id: string;
-  kind: 'story' | 'relationship';
-  source: string;
-  target: string;
-  type: string;
-  label: string;
-  description: string;
-  color: string;
-  dashed: boolean;
+  id: string; kind: 'story' | 'relationship';
+  source: string; target: string; type: string;
+  label: string; description: string; color: string; dashed: boolean;
 }
 
 interface Geom {
-  ax: number;
-  ay: number;
-  bx: number;
-  by: number;
-  mx: number;
-  my: number;
+  ax: number; ay: number; bx: number; by: number;
+  mx: number; my: number; curvedPath: string;
+}
+
+interface ColInfo {
+  category: string; x: number; y: number;
+  width: number; height: number; color: string; nodeCount: number;
 }
 
 interface StoryWebProps {
-  entries: Entry[];
-  relationships: Relationship[];
-  storyLinks: StoryLink[];
-  onNodeClick: (entry: Entry) => void;
-  onAdd: () => void;
-  onEditStory: (link: StoryLink) => void;
-  onDeleteStory: (link: StoryLink) => void;
-  onEditRel: (rel: Relationship) => void;
-  onDeleteRel: (rel: Relationship) => void;
+  entries: Entry[]; relationships: Relationship[]; storyLinks: StoryLink[];
+  onNodeClick: (entry: Entry) => void; onAdd: () => void;
+  onEditStory: (link: StoryLink) => void; onDeleteStory: (link: StoryLink) => void;
+  onEditRel: (rel: Relationship) => void; onDeleteRel: (rel: Relationship) => void;
 }
 
-// ── Force-directed layout ─────────────────────────────────────────────
-// Improved: stronger repulsion, wider initial spread, quadtree-like
-// de-overlap, more iterations for convergence on a large canvas.
-function forceLayout(names: string[], edges: { source: string; target: string }[], seed?: Positions): Positions {
-  const nodes = names.map((name, i) => {
-    const prev = seed?.[name];
-    // Wider initial spread to fill the larger canvas
-    const angle = (i / names.length) * Math.PI * 2;
-    const ring = W * 0.36 + (i % 5) * 40; // stagger radii
-    return {
-      name,
-      x: prev ? prev.x + (Math.random() - 0.5) * 20 : W / 2 + Math.cos(angle) * ring,
-      y: prev ? prev.y + (Math.random() - 0.5) * 20 : H / 2 + Math.sin(angle) * ring * (H / W),
-      vx: 0,
-      vy: 0,
-    };
-  });
-  const byName = new Map(nodes.map((n) => [n.name, n]));
-
-  // ── Main simulation (more iterations + stronger forces for large canvas)
-  for (let iter = 0; iter < 500; iter += 1) {
-    const cooling = 1 - iter / 500; // linearly cool
-
-    // Repulsion (all pairs) — stronger constant for the larger area
-    for (let i = 0; i < nodes.length; i += 1) {
-      for (let j = i + 1; j < nodes.length; j += 1) {
-        const a = nodes[i];
-        const b = nodes[j];
-        let dx = a.x - b.x;
-        let dy = a.y - b.y;
-        let d2 = dx * dx + dy * dy;
-        if (d2 < 1) {
-          dx = (Math.random() - 0.5) * 8;
-          dy = (Math.random() - 0.5) * 8;
-          d2 = 8;
-        }
-        const d = Math.sqrt(d2);
-        // Stronger repulsion (220000 vs 105000) — nodes spread further apart
-        const force = 220000 / (d2 + 3600);
-        const fx = (dx / d) * force;
-        const fy = (dy / d) * force;
-        a.vx += fx;
-        a.vy += fy;
-        b.vx -= fx;
-        b.vy -= fy;
-      }
-    }
-
-    // Attraction (edges) — stronger spring to keep connected nodes near each other
-    for (const edge of edges) {
-      const a = byName.get(edge.source);
-      const b = byName.get(edge.target);
-      if (!a || !b) continue;
-      const dx = b.x - a.x;
-      const dy = b.y - a.y;
-      const d = Math.sqrt(dx * dx + dy * dy) || 1;
-      // Stronger spring (0.06 vs 0.03) with longer rest length (240 vs 165)
-      const force = (d - 240) * 0.06;
-      const fx = (dx / d) * force;
-      const fy = (dy / d) * force;
-      a.vx += fx;
-      a.vy += fy;
-      b.vx -= fx;
-      b.vy -= fy;
-    }
-
-    // Center gravity — gentle pull to keep the graph from drifting off-canvas
-    for (const n of nodes) {
-      n.vx += (W / 2 - n.x) * 0.006;
-      n.vy += (H / 2 - n.y) * 0.006;
-    }
-
-    // Apply velocity with cooling and clamp
-    for (const n of nodes) {
-      n.vx *= 0.75;
-      n.vy *= 0.75;
-      const speed = Math.sqrt(n.vx * n.vx + n.vy * n.vy);
-      const maxSpeed = 18 * (0.3 + 0.7 * cooling);
-      if (speed > maxSpeed) {
-        n.vx = (n.vx / speed) * maxSpeed;
-        n.vy = (n.vy / speed) * maxSpeed;
-      }
-      n.x += n.vx;
-      n.y += n.vy;
-      n.x = Math.max(100, Math.min(W - 100, n.x));
-      n.y = Math.max(100, Math.min(H - 100, n.y));
-    }
+// ── Column-based layout ────────────────────────────────────────────────
+// Each category = one vertical column. Columns flow left-to-right.
+// Nodes stack vertically within each column. Wide = scrollable.
+function columnLayout(
+  displayNodes: { name: string; category: string }[],
+): { positions: Positions; size: { width: number; height: number }; columns: ColInfo[] } {
+  const groups = new Map<string, { name: string; category: string }[]>();
+  for (const n of displayNodes) {
+    const list = groups.get(n.category) ?? [];
+    list.push(n);
+    groups.set(n.category, list);
   }
 
-  // ── De-overlap pass ────────────────────────────────────────────────
-  const MIN_DIST = NODE_R * 2.6 + 18;
-  for (let pass = 0; pass < 16; pass += 1) {
-    let moved = false;
-    for (let i = 0; i < nodes.length; i += 1) {
-      for (let j = i + 1; j < nodes.length; j += 1) {
-        const a = nodes[i];
-        const b = nodes[j];
-        let dx = b.x - a.x;
-        let dy = b.y - a.y;
-        let d = Math.hypot(dx, dy);
-        if (d < MIN_DIST) {
-          if (d < 1e-6) {
-            dx = Math.random() - 0.5;
-            dy = Math.random() - 0.5;
-            d = Math.hypot(dx, dy) || 1;
-          }
-          const push = (MIN_DIST - d) / 2;
-          const ux = dx / d;
-          const uy = dy / d;
-          a.x -= ux * push;
-          a.y -= uy * push;
-          b.x += ux * push;
-          b.y += uy * push;
-          moved = true;
-        }
-      }
+  const known = CATEGORY_ORDER.filter((c) => groups.has(c));
+  const extra = [...groups.keys()].filter((c) => !CATEGORY_ORDER.includes(c)).sort();
+  const catOrder = [...known, ...extra];
+
+  const positions: Positions = {};
+  const columns: ColInfo[] = [];
+  let curX = COL_PAD_LEFT;
+  let maxHeight = 0;
+
+  for (const cat of catOrder) {
+    const nodes = groups.get(cat) ?? [];
+    if (nodes.length === 0) continue;
+
+    const rows = nodes.length;
+    const colH = COL_HEADER_H + COL_PAD_Y * 2 + rows * NODE_ROW_H;
+
+    columns.push({
+      category: cat, x: curX, y: 0,
+      width: COL_WIDTH, height: colH,
+      color: categoryColor(cat), nodeCount: nodes.length,
+    });
+
+    // Place nodes vertically in column
+    const startY = COL_HEADER_H + COL_PAD_Y;
+    for (let i = 0; i < nodes.length; i++) {
+      positions[nodes[i].name] = {
+        x: curX + COL_WIDTH / 2,
+        y: startY + i * NODE_ROW_H + NODE_R + 2,
+      };
     }
-    for (const n of nodes) {
-      n.x = Math.max(100, Math.min(W - 100, n.x));
-      n.y = Math.max(100, Math.min(H - 100, n.y));
-    }
-    if (!moved) break;
+
+    maxHeight = Math.max(maxHeight, colH);
+    curX += COL_WIDTH + COL_GAP;
   }
 
-  // ── Angular de-overlap (fan out neighbors) ─────────────────────────
-  for (let pass = 0; pass < 12; pass += 1) {
-    let moved = false;
-    for (const n of nodes) {
-      const neighbors: typeof nodes = [];
-      for (const edge of edges) {
-        if (edge.source === n.name) {
-          const t = byName.get(edge.target);
-          if (t) neighbors.push(t);
-        } else if (edge.target === n.name) {
-          const s = byName.get(edge.source);
-          if (s) neighbors.push(s);
-        }
-      }
-      for (let i = 0; i < neighbors.length; i += 1) {
-        for (let j = i + 1; j < neighbors.length; j += 1) {
-          const a = neighbors[i];
-          const b = neighbors[j];
-          if (a === b) continue;
-          const angA = Math.atan2(a.y - n.y, a.x - n.x);
-          const angB = Math.atan2(b.y - n.y, b.x - n.x);
-          let diff = Math.abs(angA - angB);
-          diff = Math.min(diff, Math.PI * 2 - diff);
-          if (diff < 0.25) {
-            const mid = (angA + angB) / 2;
-            const push = 16;
-            a.x += Math.cos(mid + Math.PI / 2) * push;
-            a.y += Math.sin(mid + Math.PI / 2) * push;
-            b.x += Math.cos(mid - Math.PI / 2) * push;
-            b.y += Math.sin(mid - Math.PI / 2) * push;
-            moved = true;
-          }
-        }
-      }
-    }
-    for (const n of nodes) {
-      n.x = Math.max(100, Math.min(W - 100, n.x));
-      n.y = Math.max(100, Math.min(H - 100, n.y));
-    }
-    if (!moved) break;
-  }
+  const totalWidth = curX + COL_PAD_LEFT;
+  const totalHeight = maxHeight + 60; // bottom padding
 
-  const out: Positions = {};
-  for (const n of nodes) out[n.name] = { x: n.x, y: n.y };
-  return out;
+  return { positions, size: { width: totalWidth, height: totalHeight }, columns };
 }
 
-function truncate(name: string, max = 24): string {
+function truncate(name: string, max = 18): string {
   return name.length > max ? `${name.slice(0, max - 1)}…` : name;
 }
 
@@ -276,71 +128,62 @@ function loadHiddenFromStorage(): Set<string> {
     if (!raw) return new Set();
     const arr = JSON.parse(raw);
     if (Array.isArray(arr)) return new Set(arr);
-  } catch {
-    /* ignore */
-  }
+  } catch { /* ignore */ }
   return new Set();
 }
 
 // ── Memoized SVG node ─────────────────────────────────────────────────
 interface WebNodeProps {
-  name: string;
-  category: string;
-  x: number;
-  y: number;
-  opacity: number;
-  active: boolean;
-  focused: boolean;
-  hovered: boolean;
-  focusMode: boolean;
-  hasEntry: boolean;
-  showLabel: boolean;
-  onPointerEnter: (name: string) => void;
-  onPointerLeave: () => void;
+  name: string; category: string; x: number; y: number;
+  opacity: number; active: boolean; focused: boolean; hovered: boolean;
+  focusMode: boolean; hasEntry: boolean; showLabel: boolean;
+  onPointerEnter: (name: string) => void; onPointerLeave: () => void;
   onPointerDown: (e: React.PointerEvent, name: string) => void;
   onClick: (e: React.MouseEvent, name: string) => void;
+  onLabelClick: (e: React.MouseEvent, name: string) => void;
 }
 
 const WebNode = memo(function WebNode({
   name, category, x, y, opacity, active, focused, hovered, focusMode,
-  hasEntry, showLabel, onPointerEnter, onPointerLeave, onPointerDown, onClick,
+  hasEntry, showLabel, onPointerEnter, onPointerLeave, onPointerDown, onClick, onLabelClick,
 }: WebNodeProps) {
   const isChar = category === 'Characters';
   const isOther = category === 'Other';
   const stroke = isOther ? '#64748f' : categoryColor(category);
   const fill = isOther ? '#0a1020' : `${stroke}2b`;
-  const [entered, setEntered] = useState(false);
-  useEffect(() => {
-    const t = window.setTimeout(() => setEntered(true), 550);
-    return () => window.clearTimeout(t);
-  }, []);
+
   return (
     <g
-      className={`map-node${active ? ' active' : ''}${entered ? '' : ' entering'}`}
+      className={`map-node${active ? ' active' : ''}`}
       opacity={opacity}
-      style={{ cursor: focusMode ? 'pointer' : hasEntry ? 'pointer' : 'grab' }}
+      style={{ cursor: focusMode ? 'pointer' : hasEntry ? 'pointer' : 'default' }}
       onPointerEnter={() => onPointerEnter(name)}
       onPointerLeave={onPointerLeave}
       onPointerDown={(e) => onPointerDown(e, name)}
       onClick={(e) => onClick(e, name)}
     >
       {hovered && !focused && (
-        <circle cx={x} cy={y} r={NODE_R + 7} fill="transparent" stroke={stroke} strokeWidth="1.5" strokeDasharray="3 3" />
+        <circle cx={x} cy={y} r={NODE_R + 5} fill="transparent" stroke={stroke} strokeWidth="1.5" strokeDasharray="3 3" />
       )}
       {focused && (
-        <circle cx={x} cy={y} r={NODE_R + 10} fill="transparent" stroke={stroke} strokeWidth="2" opacity="0.9" />
+        <circle cx={x} cy={y} r={NODE_R + 8} fill="transparent" stroke={stroke} strokeWidth="2" opacity="0.9" />
       )}
       <circle
         cx={x} cy={y} r={NODE_R} fill={fill} stroke={stroke}
-        strokeWidth={focused ? 3 : isChar ? 2.5 : isOther ? 1.5 : 2}
+        strokeWidth={focused ? 2.5 : isChar ? 2 : isOther ? 1 : 1.5}
         strokeDasharray={isOther ? '3 3' : undefined}
-        style={{ filter: active ? `drop-shadow(0 0 7px ${stroke}88)` : undefined }}
+        style={{ filter: active ? `drop-shadow(0 0 6px ${stroke}88)` : undefined }}
       />
-      <text x={x} y={y + 5} textAnchor="middle" className="map-node-initial" fill={isOther ? '#94a3b8' : stroke}>
+      <text x={x} y={y + 4.5} textAnchor="middle" className="map-node-initial" fill={isOther ? '#94a3b8' : stroke} style={{ fontSize: 11 }}>
         {name.charAt(0).toUpperCase()}
       </text>
       {showLabel && (
-        <text x={x} y={y + NODE_R + 19} textAnchor="middle" className="map-node-label">
+        <text
+          x={x} y={y + NODE_R + 14} textAnchor="middle" className="map-node-label"
+          style={{ fontSize: 10, cursor: name.length > 18 ? 'help' : 'default' }}
+          onPointerDown={(e) => { e.stopPropagation(); }}
+          onClick={(e) => { e.stopPropagation(); onLabelClick(e, name); }}
+        >
           {truncate(name)}
         </text>
       )}
@@ -348,30 +191,17 @@ const WebNode = memo(function WebNode({
   );
 });
 
-// ── Memoized SVG edge ─────────────────────────────────────────────────
+// ── Memoized SVG edge (curved bezier) ─────────────────────────────────
 interface WebEdgeProps {
-  id: string;
-  active: boolean;
-  x1: number;
-  y1: number;
-  x2: number;
-  y2: number;
-  color: string;
-  dashed: boolean;
-  strokeWidth: number;
-  opacity: number;
-  showLabel: boolean;
-  labelX: number;
-  labelY: number;
-  labelText: string;
-  labelWidth: number;
-  onPointerEnter: (id: string) => void;
-  onPointerLeave: () => void;
-  onClick: (id: string) => void;
+  id: string; active: boolean;
+  path: string;
+  color: string; dashed: boolean; strokeWidth: number; opacity: number;
+  showLabel: boolean; labelX: number; labelY: number; labelText: string; labelWidth: number;
+  onPointerEnter: (id: string) => void; onPointerLeave: () => void; onClick: (id: string) => void;
 }
 
 const WebEdge = memo(function WebEdge({
-  id, active, x1, y1, x2, y2, color, dashed, strokeWidth, opacity,
+  id, active, path, color, dashed, strokeWidth, opacity,
   showLabel, labelX, labelY, labelText, labelWidth,
   onPointerEnter, onPointerLeave, onClick,
 }: WebEdgeProps) {
@@ -383,18 +213,18 @@ const WebEdge = memo(function WebEdge({
       onPointerLeave={onPointerLeave}
       onClick={(ev) => { ev.stopPropagation(); onClick(id); }}
     >
-      <line
-        x1={x1} y1={y1} x2={x2} y2={y2}
-        stroke={color} strokeWidth={strokeWidth}
+      <path
+        d={path}
+        fill="none" stroke={color} strokeWidth={strokeWidth}
         strokeDasharray={dashed ? '6 5' : undefined}
         markerEnd={`url(#warrow-${color.replace('#', '')})`}
       />
-      <line x1={x1} y1={y1} x2={x2} y2={y2} stroke="transparent" strokeWidth={14} style={{ cursor: 'pointer' }} />
+      <path d={path} fill="none" stroke="transparent" strokeWidth={14} style={{ cursor: 'pointer' }} />
       {showLabel && (
         <g pointerEvents="none">
-          <rect x={labelX - labelWidth / 2} y={labelY - 26} width={labelWidth} height={20} rx={10}
+          <rect x={labelX - labelWidth / 2} y={labelY - 24} width={labelWidth} height={18} rx={9}
             fill="rgba(7, 11, 22, 0.93)" stroke={color} strokeOpacity={0.6} />
-          <text x={labelX} y={labelY - 12} textAnchor="middle" className="map-edge-label" fill={color}>
+          <text x={labelX} y={labelY - 11} textAnchor="middle" className="map-edge-label" fill={color} style={{ fontSize: 10 }}>
             {labelText}
           </text>
         </g>
@@ -403,16 +233,87 @@ const WebEdge = memo(function WebEdge({
   );
 });
 
+// ── Column header ──────────────────────────────────────────────────────
+const ColHeader = memo(function ColHeader({ col }: { col: ColInfo }) {
+  return (
+    <g>
+      <rect
+        x={col.x + 2} y={0} width={col.width - 4} height={col.height}
+        rx={6} fill={`${col.color}08`} stroke={`${col.color}20`} strokeWidth={1}
+      />
+      <rect
+        x={col.x + 2} y={0} width={col.width - 4} height={COL_HEADER_H}
+        rx={6} fill={`${col.color}18`} stroke={`${col.color}30`} strokeWidth={1}
+      />
+      <text
+        x={col.x + col.width / 2} y={COL_HEADER_H - 9}
+        textAnchor="middle" fill={col.color}
+        style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.4px', textTransform: 'uppercase' }}
+      >
+        {col.category}
+      </text>
+      <text
+        x={col.x + col.width / 2} y={COL_HEADER_H - 1}
+        textAnchor="middle" fill={`${col.color}88`}
+        style={{ fontSize: 8, fontWeight: 400 }}
+      >
+        {col.nodeCount} nodes
+      </text>
+    </g>
+  );
+});
+
+// ── Name popup (positioned absolutely over the SVG) ────────────────────
+function NamePopup({ name, x, y, onClose }: { name: string; x: number; y: number; onClose: () => void }) {
+  const ref = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handler = (e: MouseEvent) => {
+      if (ref.current && !ref.current.contains(e.target as Node)) onClose();
+    };
+    window.addEventListener('pointerdown', handler);
+    return () => window.removeEventListener('pointerdown', handler);
+  }, [onClose]);
+
+  return (
+    <div
+      ref={ref}
+      style={{
+        position: 'absolute',
+        left: x, top: y - 36,
+        background: 'rgba(10, 16, 32, 0.96)',
+        border: '1px solid rgba(96, 165, 250, 0.3)',
+        borderRadius: 8,
+        padding: '6px 12px',
+        fontSize: 12,
+        fontWeight: 600,
+        color: '#e8f1ff',
+        whiteSpace: 'nowrap',
+        pointerEvents: 'auto',
+        zIndex: 100,
+        boxShadow: '0 4px 20px rgba(0,0,0,0.6)',
+        fontFamily: 'var(--font-head)',
+        letterSpacing: '0.3px',
+      }}
+    >
+      {name}
+    </div>
+  );
+}
+
 // ── Main component ────────────────────────────────────────────────────
 export function StoryWeb({
   entries, relationships, storyLinks, onNodeClick, onAdd,
   onEditStory, onDeleteStory, onEditRel, onDeleteRel,
 }: StoryWebProps) {
   const svgRef = useRef<SVGSVGElement>(null);
+  const containerRef = useRef<HTMLDivElement>(null);
   const dragRef = useRef<{ id: string; dx: number; dy: number; moved: boolean; startX: number; startY: number } | null>(null);
   const positionsRef = useRef<Positions>({});
 
   const [positions, setPositions] = useState<Positions>({});
+  const [mapSize, setMapSize] = useState({ width: 3200, height: 1200 });
+  const [columns, setColumns] = useState<ColInfo[]>([]);
   const [hoverId, setHoverId] = useState<string | null>(null);
   const [hoverEdge, setHoverEdge] = useState<string | null>(null);
   const [selectedEdge, setSelectedEdge] = useState<WebEdge | null>(null);
@@ -425,96 +326,32 @@ export function StoryWeb({
   const [focusNode, setFocusNode] = useState<string | null>(null);
   const [focusDepth, setFocusDepth] = useState(1);
   const [typeFilter, setTypeFilter] = useState<string | null>(null);
+  const [popup, setPopup] = useState<{ name: string; x: number; y: number } | null>(null);
 
-  // ── Zoom / pan state ───────────────────────────────────────────────
-  const [scale, setScale] = useState(1);
-  const [tx, setTx] = useState(0);
-  const [ty, setTy] = useState(0);
-  const [panning, setPanning] = useState(false);
-  const panRef = useRef<{ sx: number; sy: number; tx: number; ty: number } | null>(null);
-  const viewRef = useRef({ s: 1, tx: 0, ty: 0 });
-  useEffect(() => { viewRef.current = { s: scale, tx, ty }; }, [scale, tx, ty]);
-
-  const fitView = useCallback(() => {
-    const svg = svgRef.current;
-    if (!svg) return;
-    const rect = svg.getBoundingClientRect();
-    const sw = rect.width;
-    const sh = rect.height;
-    if (!sw || !sh) return;
-    const s = Math.min(sw / W, sh / H, 1.15);
-    const ns = Math.max(MIN_SCALE, s);
-    setScale(ns);
-    setTx((sw - W * ns) / 2);
-    setTy((sh - H * ns) / 2);
-  }, []);
-
-  const zoomAt = useCallback((factor: number, cx: number, cy: number) => {
-    const { s, tx: vx, ty: vy } = viewRef.current;
-    const ns = Math.min(MAX_SCALE, Math.max(MIN_SCALE, s * factor));
-    setScale(ns);
-    setTx(cx - ((cx - vx) * ns) / s);
-    setTy(cy - ((cy - vy) * ns) / s);
-  }, []);
-
-  // Mouse wheel zoom
-  useEffect(() => {
-    const el = svgRef.current;
-    if (!el) return;
-    const onWheel = (e: WheelEvent) => {
-      e.preventDefault();
-      const rect = el.getBoundingClientRect();
-      const cx = rect.width ? e.clientX - rect.left : 0;
-      const cy = rect.height ? e.clientY - rect.top : 0;
-      zoomAt(e.deltaY < 0 ? ZOOM_FACTOR : 1 / ZOOM_FACTOR, cx, cy);
-    };
-    el.addEventListener('wheel', onWheel, { passive: false });
-    return () => el.removeEventListener('wheel', onWheel);
-  }, [zoomAt]);
-
-  // Keyboard: Esc = fit view
+  // Keyboard: Esc exits focus or popup
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
+        if (popup) { setPopup(null); return; }
         if (focusMode) { setFocusNode(null); setFocusMode(false); }
-        else fitView();
       }
     };
     window.addEventListener('keydown', onKey);
     return () => window.removeEventListener('keydown', onKey);
-  }, [focusMode, fitView]);
+  }, [focusMode, popup]);
 
-  // ── Background panning ─────────────────────────────────────────────
+  // Convert client coords to SVG coords
   const toSvg = useCallback((clientX: number, clientY: number): Pos => {
     const svg = svgRef.current;
     if (!svg) return { x: 0, y: 0 };
-    const rect = svg.getBoundingClientRect();
-    const { s, tx: vx, ty: vy } = viewRef.current;
-    return { x: (clientX - rect.left - vx) / s, y: (clientY - rect.top - vy) / s };
+    const pt = svg.createSVGPoint();
+    pt.x = clientX;
+    pt.y = clientY;
+    const ctm = svg.getScreenCTM();
+    if (!ctm) return { x: 0, y: 0 };
+    const svgPt = pt.matrixTransform(ctm.inverse());
+    return { x: svgPt.x, y: svgPt.y };
   }, []);
-
-  const handleBgPointerDown = useCallback((e: React.PointerEvent) => {
-    // Only pan on middle-click or when not clicking a node
-    if (e.button === 1 || (e.button === 0 && (e.target as SVGElement).tagName === 'svg')) {
-      panRef.current = { sx: e.clientX, sy: e.clientY, tx: viewRef.current.tx, ty: viewRef.current.ty };
-      setPanning(true);
-      setSelectedEdge(null);
-    }
-  }, []);
-
-  useEffect(() => {
-    if (!panning) return;
-    const onMove = (e: PointerEvent) => {
-      const d = panRef.current;
-      if (!d) return;
-      setTx(d.tx + (e.clientX - d.sx));
-      setTy(d.ty + (e.clientY - d.sy));
-    };
-    const onUp = () => { panRef.current = null; setPanning(false); };
-    window.addEventListener('pointermove', onMove);
-    window.addEventListener('pointerup', onUp);
-    return () => { window.removeEventListener('pointermove', onMove); window.removeEventListener('pointerup', onUp); };
-  }, [panning]);
 
   const entryByName = useMemo(() => {
     const map = new Map<string, Entry>();
@@ -533,9 +370,7 @@ export function StoryWeb({
   // ---- build normalized nodes + edges ----
   const { nodes, edges } = useMemo(() => {
     const nodeMap = new Map<string, string>();
-    for (const e of entries) {
-      nodeMap.set(e.name, e.category === 'Characters' ? 'Characters' : e.category);
-    }
+    for (const e of entries) nodeMap.set(e.name, e.category === 'Characters' ? 'Characters' : e.category);
 
     const rawEdges: WebEdge[] = [];
     for (const s of storyLinks) {
@@ -567,16 +402,15 @@ export function StoryWeb({
   }, [entries, relationships, storyLinks]); // eslint-disable-line react-hooks/exhaustive-deps
 
   // ---- filtering ----
-  const visibleNodes = useMemo(() => {
-    return nodes.filter((n) => !hiddenCategories.has(n.category) && !hiddenNodes.has(n.name));
-  }, [nodes, hiddenCategories, hiddenNodes]);
+  const visibleNodes = useMemo(() =>
+    nodes.filter((n) => !hiddenCategories.has(n.category) && !hiddenNodes.has(n.name)),
+    [nodes, hiddenCategories, hiddenNodes]);
 
   const visibleNames = useMemo(() => new Set(visibleNodes.map((n) => n.name)), [visibleNodes]);
 
   const visibleEdges = useMemo(
     () => edges.filter((e) => visibleNames.has(e.source) && visibleNames.has(e.target)),
-    [edges, visibleNames],
-  );
+    [edges, visibleNames]);
 
   // ---- focus mode ----
   const focusSet = useMemo(() => {
@@ -607,19 +441,25 @@ export function StoryWeb({
 
   const displayEdges = useMemo(
     () => edges.filter((e) => displayNames.has(e.source) && displayNames.has(e.target)),
-    [edges, displayNames],
-  );
+    [edges, displayNames]);
 
-  const layoutEdges = useMemo(
-    () => displayEdges.map((e) => ({ source: e.source, target: e.target })),
-    [displayEdges],
-  );
+  // ---- node degree: how many edges each node has (for edge filtering) ----
+  const nodeDegree = useMemo(() => {
+    const map = new Map<string, number>();
+    for (const e of displayEdges) {
+      map.set(e.source, (map.get(e.source) ?? 0) + 1);
+      map.set(e.target, (map.get(e.target) ?? 0) + 1);
+    }
+    return map;
+  }, [displayEdges]);
 
-  useEffect(() => { positionsRef.current = positions; }, [positions]);
-
+  // ---- column layout ----
   useEffect(() => {
-    setPositions(forceLayout([...displayNames], layoutEdges, positionsRef.current));
-  }, [displayEdges]); // eslint-disable-line react-hooks/exhaustive-deps
+    const { positions: newPos, size, columns: newCols } = columnLayout(displayNodes);
+    setPositions(newPos);
+    setMapSize(size);
+    setColumns(newCols);
+  }, [displayNodes]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => { setSelectedEdge(null); }, [relationships, storyLinks]);
 
@@ -647,7 +487,7 @@ export function StoryWeb({
       const drag = dragRef.current;
       if (!drag) return;
       const p = toSvg(e.clientX, e.clientY);
-      if (!drag.moved && Math.hypot(p.x - drag.startX, p.y - drag.startY) > DRAG_THRESHOLD) {
+      if (!drag.moved && Math.hypot(p.x - drag.startX, p.y - drag.startY) > 4) {
         drag.moved = true;
       }
       setPositions((prev) => ({
@@ -665,43 +505,55 @@ export function StoryWeb({
     (e: React.PointerEvent, id: string) => {
       e.stopPropagation();
       const p = toSvg(e.clientX, e.clientY);
-      const cur = positionsRef.current[id] ?? { x: W / 2, y: H / 2 };
+      const cur = positionsRef.current[id] ?? { x: mapSize.width / 2, y: mapSize.height / 2 };
       dragRef.current = { id, dx: p.x - cur.x, dy: p.y - cur.y, moved: false, startX: p.x, startY: p.y };
       setSelectedEdge(null);
       setDragging(id);
     },
-    [toSvg],
+    [toSvg, mapSize],
   );
 
-  // ---- stable handlers ----
+  useEffect(() => { positionsRef.current = positions; }, [positions]);
+
+  // ---- handlers ----
   const handleEdgePointerEnter = useCallback((id: string) => setHoverEdge(id), []);
   const handleEdgePointerLeave = useCallback(() => setHoverEdge(null), []);
-  const handleEdgeClick = useCallback(
-    (id: string) => {
-      setSelectedEdge((cur) => {
-        if (cur?.id === id) return null;
-        return displayEdges.find((e) => e.id === id) ?? cur;
-      });
-    },
-    [displayEdges],
-  );
+  const handleEdgeClick = useCallback((id: string) => {
+    setSelectedEdge((cur) => {
+      if (cur?.id === id) return null;
+      return displayEdges.find((e) => e.id === id) ?? cur;
+    });
+  }, [displayEdges]);
 
   const handleNodePointerEnter = useCallback((name: string) => setHoverId(name), []);
   const handleNodePointerLeave = useCallback(() => setHoverId(null), []);
 
-  const handleNodeClick = useCallback(
-    (e: React.MouseEvent, name: string) => {
-      if (dragRef.current?.moved) { dragRef.current = null; return; }
-      dragRef.current = null;
-      e.stopPropagation();
-      if (focusMode) { setFocusNode(name); setSelectedEdge(null); return; }
-      const entry = entryByName.get(name.toLowerCase());
-      if (entry) onNodeClick(entry);
-    },
-    [focusMode, entryByName, onNodeClick],
-  );
+  const handleNodeClick = useCallback((e: React.MouseEvent, name: string) => {
+    if (dragRef.current?.moved) { dragRef.current = null; return; }
+    dragRef.current = null;
+    e.stopPropagation();
+    if (focusMode) { setFocusNode(name); setSelectedEdge(null); return; }
+    const entry = entryByName.get(name.toLowerCase());
+    if (entry) onNodeClick(entry);
+  }, [focusMode, entryByName, onNodeClick]);
 
-  // ---- edge geometry ----
+  const handleLabelClick = useCallback((e: React.MouseEvent, name: string) => {
+    e.stopPropagation();
+    const rect = containerRef.current?.getBoundingClientRect();
+    if (!rect) return;
+    const svgEl = svgRef.current;
+    if (!svgEl) return;
+    // Convert SVG position to screen position
+    const pos = positions[name];
+    if (!pos) return;
+    const ctm = svgEl.getScreenCTM();
+    if (!ctm) return;
+    const screenX = pos.x * ctm.a + ctm.e - rect.left;
+    const screenY = pos.y * ctm.d + ctm.f - rect.top;
+    setPopup({ name, x: Math.min(screenX, rect.width - 200), y: screenY });
+  }, [positions]);
+
+  // ---- edge geometry (curved bezier between columns) ----
   const edgeGeom = useMemo(() => {
     const groups = new Map<string, { a: string; b: string; ids: string[] }>();
     for (const e of displayEdges) {
@@ -720,35 +572,49 @@ export function StoryWeb({
       const g = groups.get(key);
       const ids = g?.ids ?? [e.id];
       const index = ids.indexOf(e.id);
-      const offset = (index - (ids.length - 1) / 2) * 30;
+      const spread = (index - (ids.length - 1) / 2) * 18;
 
-      const ca = positions[g?.a ?? e.source] ?? positions[e.source] ?? { x: W / 2, y: H / 2 };
-      const cb = positions[g?.b ?? e.target] ?? positions[e.target] ?? { x: W / 2, y: H / 2 };
-      const cdx = cb.x - ca.x;
-      const cdy = cb.y - ca.y;
-      const clen = Math.sqrt(cdx * cdx + cdy * cdy) || 1;
-      const nx = (-cdy / clen) * offset;
-      const ny = (cdx / clen) * offset;
+      const a = positions[e.source] ?? { x: mapSize.width / 2, y: mapSize.height / 2 };
+      const b = positions[e.target] ?? { x: mapSize.width / 2, y: mapSize.height / 2 };
 
-      const a = positions[e.source] ?? { x: W / 2, y: H / 2 };
-      const b = positions[e.target] ?? { x: W / 2, y: H / 2 };
+      const dx = b.x - a.x;
+      const dy = b.y - a.y;
+      const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+
+      // Offset perpendicular for multi-edge parallelism
+      const nx = (-dy / dist) * spread;
+      const ny = (dx / dist) * spread;
+
       const ax = a.x + nx;
       const ay = a.y + ny;
       const bx = b.x + nx;
       const by = b.y + ny;
 
-      const ux = (bx - ax) / clen;
-      const uy = (by - ay) / clen;
-      const s1 = NODE_R + 4;
-      const s2 = NODE_R + 10;
+      // Shorten to avoid overlap with node circles
+      const ux = (bx - ax) / dist;
+      const uy = (by - ay) / dist;
+      const sx = ax + ux * (NODE_R + 4);
+      const sy = ay + uy * (NODE_R + 4);
+      const ex = bx - ux * (NODE_R + 8);
+      const ey = by - uy * (NODE_R + 8);
+
+      // Bezier curve: control point perpendicular to midpoint
+      const mx = (sx + ex) / 2;
+      const my = (sy + ey) / 2;
+      const perpX = -uy * dist * EDGE_CURVE;
+      const perpY = ux * dist * EDGE_CURVE;
+      const cx = mx + perpX;
+      const cy = my + perpY;
+
+      const path = `M ${sx} ${sy} Q ${cx} ${cy} ${ex} ${ey}`;
+
       map.set(e.id, {
-        ax: ax + ux * s1, ay: ay + uy * s1,
-        bx: bx - ux * s2, by: by - uy * s2,
-        mx: (ax + bx) / 2, my: (ay + by) / 2,
+        ax: sx, ay: sy, bx: ex, by: ey,
+        mx: cx, my: cy, curvedPath: path,
       });
     }
     return map;
-  }, [displayEdges, positions]);
+  }, [displayEdges, positions, mapSize]);
 
   const activeEdgeIds = useMemo(() => {
     if (selectedEdge) return new Set([selectedEdge.id]);
@@ -762,32 +628,27 @@ export function StoryWeb({
     return set;
   }, [selectedEdge, hoverEdge, hoverId, displayEdges]);
 
-  // ---- collision-resolved label placement ----
+  // Edge labels (collision-resolved)
   const edgeLabels = useMemo(() => {
     const out = new Map<string, { x: number; y: number }>();
-    const placed: Box[] = [];
-    const pillBox = (x: number, y: number, w: number): Box => ({
-      x1: x - w / 2, y1: y - 26, x2: x + w / 2, y2: y - 6,
-    });
-
+    const placed: { x1: number; y1: number; x2: number; y2: number }[] = [];
     for (const e of displayEdges) {
       if (!activeEdgeIds.has(e.id)) continue;
       if (typeFilter && edgeLabelText(e) !== typeFilter) continue;
       const g = edgeGeom.get(e.id);
       if (!g) continue;
       const text = edgeLabelText(e);
-      const w = text.length * 6.6 + 18;
-
-      const spots: { x: number; y: number }[] = [];
-      for (const t of [0.5, 0.34, 0.66, 0.22, 0.78]) {
-        const px = g.ax + (g.bx - g.ax) * t;
-        const py = g.ay + (g.by - g.ay) * t;
-        spots.push({ x: px, y: py - 24 });
-        spots.push({ x: px, y: py + 12 });
-      }
-      const chosen = spots.find((s) => !placed.some((p) => boxesIntersect(p, pillBox(s.x, s.y, w)))) ?? spots[0];
+      const w = text.length * 5.5 + 14;
+      // Place at midpoint of curve
+      const spots = [
+        { x: g.mx, y: g.my - 16 },
+        { x: g.mx, y: g.my + 10 },
+        { x: (g.ax + g.mx) / 2, y: (g.ay + g.my) / 2 - 12 },
+      ];
+      const pill = (x: number, y: number) => ({ x1: x - w / 2, y1: y - 14, x2: x + w / 2, y2: y + 4 });
+      const chosen = spots.find((s) => !placed.some((p) => boxesIntersect(pill(s.x, s.y), p))) ?? spots[0];
       out.set(e.id, chosen);
-      placed.push(pillBox(chosen.x, chosen.y, w));
+      placed.push(pill(chosen.x, chosen.y));
     }
     return out;
   }, [displayEdges, activeEdgeIds, edgeGeom, typeFilter]);
@@ -804,7 +665,7 @@ export function StoryWeb({
 
   const nodeLabels = useMemo(() => {
     const shown = new Set<string>();
-    const placed: Box[] = [];
+    const placed: { x1: number; y1: number; x2: number; y2: number }[] = [];
     const order = [...displayNodes].sort((a, b) => {
       const pa = a.category === 'Characters' ? 1 : 0;
       const pb = b.category === 'Characters' ? 1 : 0;
@@ -815,9 +676,9 @@ export function StoryWeb({
       const pos = positions[n.name];
       if (!pos) continue;
       const label = truncate(n.name);
-      const w = label.length * 6.5 + 6;
-      const box: Box = { x1: pos.x - w / 2, y1: pos.y + NODE_R + 6, x2: pos.x + w / 2, y2: pos.y + NODE_R + 24 };
-      if (!placed.some((p) => boxesIntersect(p, box))) {
+      const w = label.length * 5.5 + 4;
+      const box = { x1: pos.x - w / 2, y1: pos.y + NODE_R + 3, x2: pos.x + w / 2, y2: pos.y + NODE_R + 18 };
+      if (!placed.some((p) => boxesIntersect(box, p))) {
         shown.add(n.name);
         placed.push(box);
       }
@@ -826,6 +687,10 @@ export function StoryWeb({
     if (focusMode && focusNode) shown.add(focusNode);
     return shown;
   }, [displayNodes, positions, degree, hoverId, focusMode, focusNode]);
+
+  function boxesIntersect(a: { x1: number; y1: number; x2: number; y2: number }, b: { x1: number; y1: number; x2: number; y2: number }): boolean {
+    return a.x1 < b.x2 && a.x2 > b.x1 && a.y1 < b.y2 && a.y2 > b.y1;
+  }
 
   const markerColors = useMemo(() => {
     const set = new Set<string>();
@@ -863,7 +728,7 @@ export function StoryWeb({
   const presentCategories = useMemo(() => {
     const set = new Set(nodes.map((n) => n.category));
     const known = CATEGORY_ORDER.filter((c) => set.has(c));
-    const extra = [...set].filter((c) => !CATEGORY_ORDER.includes(c)).sort((a, b) => a.localeCompare(b));
+    const extra = [...set].filter((c) => !CATEGORY_ORDER.includes(c)).sort();
     return [...known, ...extra];
   }, [nodes]);
 
@@ -888,8 +753,7 @@ export function StoryWeb({
     if (hiddenCategories.has(cat)) setHiddenNodes(new Set());
     setHiddenCategories((prev) => {
       const next = new Set(prev);
-      if (next.has(cat)) next.delete(cat);
-      else next.add(cat);
+      if (next.has(cat)) next.delete(cat); else next.add(cat);
       return next;
     });
     setSelectedEdge(null);
@@ -901,17 +765,8 @@ export function StoryWeb({
     setSelectedEdge(null);
   };
 
-  const showAll = () => {
-    setHiddenCategories(new Set());
-    setHiddenNodes(new Set());
-    setSelectedEdge(null);
-  };
-
-  const hideAll = () => {
-    setHiddenCategories(new Set(presentCategories));
-    setHiddenNodes(new Set());
-    setSelectedEdge(null);
-  };
+  const showAll = () => { setHiddenCategories(new Set()); setHiddenNodes(new Set()); setSelectedEdge(null); };
+  const hideAll = () => { setHiddenCategories(new Set(presentCategories)); setHiddenNodes(new Set()); setSelectedEdge(null); };
 
   const toggleFocusMode = () => {
     setFocusMode((m) => !m);
@@ -919,39 +774,31 @@ export function StoryWeb({
     setSelectedEdge(null);
   };
 
-  const dim = hoverId !== null || hoverEdge !== null || selectedEdge !== null;
+  // Dim everything when hovering/selecting — only connected nodes stay bright
+  const hoveredNeighborNames = useMemo(() => {
+    const set = new Set<string>();
+    if (!hoverId && !selectedEdge) return set;
+    const anchor = hoverId ?? selectedEdge?.source ?? selectedEdge?.target;
+    if (!anchor) return set;
+    for (const e of displayEdges) {
+      if (e.source === anchor) set.add(e.target);
+      if (e.target === anchor) set.add(e.source);
+    }
+    return set;
+  }, [hoverId, selectedEdge, displayEdges]);
 
-  const selectedStory =
-    selectedEdge?.kind === 'story' ? storyLinks.find((s) => s.id === selectedEdge.id) : undefined;
-  const selectedRel =
-    selectedEdge?.kind === 'relationship' ? relationships.find((r) => r.id === selectedEdge.id) : undefined;
+  const dim = hoverId !== null || selectedEdge !== null;
 
-  const zoomButtons = (factor: number) => {
-    const svg = svgRef.current;
-    const cx = svg ? svg.clientWidth / 2 : 0;
-    const cy = svg ? svg.clientHeight / 2 : 0;
-    zoomAt(factor, cx, cy);
-  };
+  const selectedStory = selectedEdge?.kind === 'story' ? storyLinks.find((s) => s.id === selectedEdge.id) : undefined;
+  const selectedRel = selectedEdge?.kind === 'relationship' ? relationships.find((r) => r.id === selectedEdge.id) : undefined;
 
   return (
     <div className="map-view">
       <div className="map-toolbar">
         <p className="map-hint">
-          The whole story web — {displayNodes.length} nodes · {displayEdges.length} links. Scroll to zoom · drag background to pan · drag nodes to rearrange · hover to trace · click a node for its entry · click a link for its story
+          The whole story web — {displayNodes.length} nodes · {displayEdges.length} links · {columns.length} categories
         </p>
         <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
-          <button className="btn btn-ghost btn-sm" onClick={fitView} title="Fit view (Esc)">
-            ⤢ Fit
-          </button>
-          <button className="btn btn-ghost btn-sm" onClick={() => zoomButtons(1 / 1.25)} title="Zoom out">
-            −
-          </button>
-          <span style={{ fontFamily: 'var(--font-mono)', fontSize: 11, color: 'var(--muted)', minWidth: 36, textAlign: 'center' }}>
-            {Math.round(scale * 100)}%
-          </span>
-          <button className="btn btn-ghost btn-sm" onClick={() => zoomButtons(1.25)} title="Zoom in">
-            +
-          </button>
           <button
             className={`btn btn-sm ${focusMode ? 'btn-primary' : 'btn-secondary'}`}
             onClick={toggleFocusMode}
@@ -985,8 +832,7 @@ export function StoryWeb({
               style={{ '--chip': categoryColor(cat) } as React.CSSProperties}
               title={hidden
                 ? `${cat} — hidden, click to show · double-click to show only this`
-                : `${cat} — visible, click to hide · double-click to show only this`
-              }
+                : `${cat} — visible, click to hide · double-click to show only this`}
             >
               <span className="filter-dot" />
               {cat}
@@ -1037,12 +883,10 @@ export function StoryWeb({
 
       {focusMode && focusNode && (
         <div className="focus-bar">
-          <span className="focus-bar-name">
-            ◎ Focus: <strong>{focusNode}</strong>
-          </span>
+          <span className="focus-bar-name">◎ Focus: <strong>{focusNode}</strong></span>
           <span className="focus-bar-depth">
-            <button className={focusDepth === 1 ? 'on' : ''} onClick={() => setFocusDepth(1)} title="Show direct connections only">1 hop</button>
-            <button className={focusDepth === 2 ? 'on' : ''} onClick={() => setFocusDepth(2)} title="Show connections of connections too">2 hops</button>
+            <button className={focusDepth === 1 ? 'on' : ''} onClick={() => setFocusDepth(1)}>1 hop</button>
+            <button className={focusDepth === 2 ? 'on' : ''} onClick={() => setFocusDepth(2)}>2 hops</button>
           </span>
           <span className="focus-bar-count">{focusSet.size} nodes · {displayEdges.length} links</span>
           <button className="btn btn-secondary btn-xs" onClick={() => setFocusNode(null)}>✕ Exit focus</button>
@@ -1050,18 +894,22 @@ export function StoryWeb({
       )}
       {focusMode && !focusNode && (
         <div className="focus-bar idle">
-          <span>◎ Focus mode — <strong>click any node</strong> to explore its connections · category filters are paused while focused · Esc to exit</span>
+          <span>◎ Focus mode — <strong>click any node</strong> to explore its connections · Esc to exit</span>
           <button className="btn btn-secondary btn-xs" onClick={toggleFocusMode}>✕ Exit</button>
         </div>
       )}
 
-      <div className={`map-container web-container${panning ? ' panning' : ''}`}>
+      <div
+        ref={containerRef}
+        className="map-container web-container"
+        style={{ position: 'relative', overflow: 'auto' }}
+      >
         <svg
           ref={svgRef}
-          className={`map-svg${dim && !typeFilter ? ' dimming' : ''}`}
-          viewBox={`0 0 ${W} ${H}`}
-          onPointerDown={handleBgPointerDown}
-          style={{ transform: `translate(${tx}px, ${ty}px) scale(${scale})`, transformOrigin: '0 0' }}
+          className="map-svg"
+          width={mapSize.width}
+          height={mapSize.height}
+          viewBox={`0 0 ${mapSize.width} ${mapSize.height}`}
         >
           <defs>
             {markerColors.map((color) => (
@@ -1069,39 +917,49 @@ export function StoryWeb({
                 key={color}
                 id={`warrow-${color.replace('#', '')}`}
                 viewBox="0 0 10 10" refX="9" refY="5"
-                markerWidth="7" markerHeight="7" orient="auto-start-reverse"
+                markerWidth="6" markerHeight="6" orient="auto-start-reverse"
               >
                 <path d="M 0 1 L 10 5 L 0 9 z" fill={color} />
               </marker>
             ))}
           </defs>
 
+          {/* Column backgrounds */}
+          {columns.map((col) => (
+            <ColHeader key={`col-${col.category}`} col={col} />
+          ))}
+
+          {/* Edges — only rendered when hovering/selecting a node AND both endpoints have connections */}
           {displayEdges.map((e) => {
             const g = edgeGeom.get(e.id);
             if (!g) return null;
-            const isActiveEdge = activeEdgeIds.has(e.id);
-            const active = isActiveEdge || (hoverId ? e.source === hoverId || e.target === hoverId : false);
+            const connectedToHover = hoverId ? (e.source === hoverId || e.target === hoverId) : false;
+            const connectedToSelected = selectedEdge ? (e.source === selectedEdge.source || e.source === selectedEdge.target || e.target === selectedEdge.source || e.target === selectedEdge.target) : false;
+            // Both endpoints must have at least 1 connection each
+            const sourceDegree = nodeDegree.get(e.source) ?? 0;
+            const targetDegree = nodeDegree.get(e.target) ?? 0;
+            const bothConnected = sourceDegree >= 1 && targetDegree >= 1;
+            // Show edge only if hovering/selecting AND both endpoints are connected
+            const isVisible = (connectedToHover || connectedToSelected) && bothConnected;
+            // Completely skip rendering hidden edges — no arrowheads, no ghost lines
+            if (!isVisible) return null;
             const matchesFilter = typeFilter ? edgeLabelText(e) === typeFilter : true;
-            const opacity = typeFilter
-              ? matchesFilter
-                ? dim && !active ? 0.4 : 1
-                : active ? 0.3 : 0.05
-              : dim && !active ? 0.1 : 1;
+            if (typeFilter && !matchesFilter) return null;
             const lp = edgeLabels.get(e.id);
-            const showLabel = isActiveEdge && !!lp;
+            const showLabel = !!lp;
             const labelText = edgeLabelText(e);
             return (
               <WebEdge
                 key={`${e.kind}-${e.id}`}
-                id={e.id} active={active}
-                x1={g.ax} y1={g.ay} x2={g.bx} y2={g.by}
+                id={e.id} active={true}
+                path={g.curvedPath}
                 color={e.color} dashed={e.dashed}
-                strokeWidth={active ? 2.8 : typeFilter && matchesFilter ? 2.2 : 1.4}
-                opacity={typeFilter ? opacity : 1}
+                strokeWidth={2.5}
+                opacity={1}
                 showLabel={showLabel}
                 labelX={lp ? lp.x : g.mx} labelY={lp ? lp.y : g.my}
                 labelText={showLabel ? labelText : ''}
-                labelWidth={showLabel ? labelText.length * 6.6 + 18 : 0}
+                labelWidth={showLabel ? labelText.length * 5.5 + 14 : 0}
                 onPointerEnter={handleEdgePointerEnter}
                 onPointerLeave={handleEdgePointerLeave}
                 onClick={handleEdgeClick}
@@ -1109,16 +967,16 @@ export function StoryWeb({
             );
           })}
 
+          {/* Nodes */}
           {displayNodes.map((node) => {
             const pos = positions[node.name];
             if (!pos) return null;
             const hovered = hoverId === node.name;
             const focused = focusMode && focusNode === node.name;
-            const active = hovered || focused || (selectedEdge ? selectedEdge.source === node.name || selectedEdge.target === node.name : false);
+            const isConnected = hoveredNeighborNames.has(node.name);
+            const active = hovered || focused || isConnected || (selectedEdge ? selectedEdge.source === node.name || selectedEdge.target === node.name : false);
             const filteredOut = typeFilter ? !(filteredNodeSet?.has(node.name) ?? false) : false;
-            const opacity = typeFilter
-              ? filteredOut ? 0.15 : dim && !active ? 0.4 : 1
-              : 1;
+            const opacity = typeFilter && filteredOut ? 0 : (dim && !active ? 0 : 1);
             return (
               <WebNode
                 key={node.name}
@@ -1132,10 +990,16 @@ export function StoryWeb({
                 onPointerLeave={handleNodePointerLeave}
                 onPointerDown={startDrag}
                 onClick={handleNodeClick}
+                onLabelClick={handleLabelClick}
               />
             );
           })}
         </svg>
+
+        {/* Name popup */}
+        {popup && (
+          <NamePopup name={popup.name} x={popup.x} y={popup.y} onClose={() => setPopup(null)} />
+        )}
 
         {selectedEdge && (
           <div className="map-edge-detail">

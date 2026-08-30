@@ -57,6 +57,27 @@ export const STORY_LINK_TYPES: Record<string, StoryLinkType> = {
   'held by': { label: 'Held by', color: '#fbbf24' },
   'hides in': { label: 'Hides in', color: '#94a3b8' },
   'cursed by': { label: 'Cursed by', color: '#a855f7' },
+  // Six Pillars / Six Fingers
+  defend: { label: 'Defend', color: '#f87171' },
+  serve: { label: 'Serve', color: '#c084fc' },
+  'First Finger is': { label: 'First Finger is', color: '#a855f7' },
+  'Second Finger was': { label: 'Second Finger was', color: '#a855f7' },
+  'Third Finger is': { label: 'Third Finger is', color: '#a855f7' },
+  'Fourth Finger is': { label: 'Fourth Finger is', color: '#a855f7' },
+  'Fifth Finger is': { label: 'Fifth Finger is', color: '#a855f7' },
+  'Sixth Finger is': { label: 'Sixth Finger is', color: '#a855f7' },
+  'First Pillar is': { label: 'First Pillar is', color: '#fbbf24' },
+  'Second Pillar is': { label: 'Second Pillar is', color: '#fbbf24' },
+  'Third Pillar is': { label: 'Third Pillar is', color: '#fbbf24' },
+  'Fourth Pillar is': { label: 'Fourth Pillar is', color: '#fbbf24' },
+  'Fifth Pillar is': { label: 'Fifth Pillar is', color: '#fbbf24' },
+  'Sixth Pillar is': { label: 'Sixth Pillar is', color: '#fbbf24' },
+  'was First Pillar of': { label: 'Was First Pillar of', color: '#fbbf24' },
+  'was Second Pillar of': { label: 'Was Second Pillar of', color: '#fbbf24' },
+  includes: { label: 'Includes', color: '#34d399' },
+  'guardian of': { label: 'Guardian of', color: '#4ade80' },
+  'holds title': { label: 'Holds title', color: '#fbbf24' },
+  'is': { label: 'Is', color: '#94a3b8' },
 };
 
 export const FALLBACK_STORY = { label: 'Related to', color: '#94a3b8' };

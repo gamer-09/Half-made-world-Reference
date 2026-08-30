@@ -511,14 +511,14 @@ export default function App() {
             </h2>
             <p className="main-sub" style={{ color: '#9fb0cc' }}>
               {isBlocksView
-                ? 'The world’s geography as a chain — every place linked to what contains it'
-                : isWebView
-                  ? 'The whole world at a glance — every realm, monster, artifact, and thread'
-                  : isMapView
-                    ? 'Who knows whom — and who betrayed whom'
-                    : activeCategory === 'All'
-                      ? 'Everything in the archive'
-                      : `Entries in ${activeCategory}`}
+                  ? 'The world’s geography as a chain — every place linked to what contains it'
+                  : isWebView
+                    ? 'The whole world at a glance — every realm, monster, artifact, and thread'
+                    : isMapView
+                      ? 'Who knows whom — and who betrayed whom'
+                      : activeCategory === 'All'
+                        ? 'Everything in the archive'
+                        : `Entries in ${activeCategory}`}
               {!isMapView && !isWebView && !isBlocksView && search.trim() && ` · matching “${search.trim()}”`}
             </p>
           </div>

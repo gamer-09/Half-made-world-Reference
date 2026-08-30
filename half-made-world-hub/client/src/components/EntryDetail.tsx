@@ -1,5 +1,6 @@
 import type { ConnectionInfo, Entry } from '../types';
 import { categoryColor } from '../theme';
+import { DescriptionRenderer } from './DescriptionRenderer';
 
 interface EntryDetailProps {
   entry: Entry;
@@ -28,7 +29,7 @@ export function EntryDetail({ entry, connections, onEdit, onDelete, onOpenEntry 
       <h2 className="detail-name">{entry.name}</h2>
       {entry.subtitle && <p className="detail-subtitle">{entry.subtitle}</p>}
 
-      <p className="detail-desc">{entry.description}</p>
+      <DescriptionRenderer text={entry.description} />
 
       {entry.fields.length > 0 && (
         <dl className="detail-fields">
