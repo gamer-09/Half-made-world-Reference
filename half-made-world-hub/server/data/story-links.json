@@ -20171,7 +20171,7 @@
   },
   {
     "id": "link-truesight-001",
-    "source": "True-Sight",
+    "source": "Diviner",
     "target": "Diviner",
     "type": "innate of",
     "label": "Innate of",
@@ -20181,7 +20181,7 @@
   },
   {
     "id": "link-truesight-002",
-    "source": "True-Sight",
+    "source": "Diviner",
     "target": "Dawnveil (Serapharch)",
     "type": "sees through",
     "label": "Sees through",
@@ -20191,7 +20191,7 @@
   },
   {
     "id": "link-truesight-003",
-    "source": "True-Sight",
+    "source": "Diviner",
     "target": "Duskveil (Mordrach)",
     "type": "sees through",
     "label": "Sees through",
@@ -20201,7 +20201,7 @@
   },
   {
     "id": "link-truesight-004",
-    "source": "True-Sight",
+    "source": "Diviner",
     "target": "Wraithcloth",
     "type": "counters",
     "label": "Counters",
@@ -20211,7 +20211,7 @@
   },
   {
     "id": "link-truesight-005",
-    "source": "True-Sight",
+    "source": "Diviner",
     "target": "The Seer",
     "type": "enables",
     "label": "Enables",
@@ -20221,7 +20221,7 @@
   },
   {
     "id": "link-truesight-006",
-    "source": "True-Sight",
+    "source": "Diviner",
     "target": "The Truthstone",
     "type": "verifies",
     "label": "Verifies",
