@@ -4734,7 +4734,7 @@
       },
       {
         "label": "Abilities",
-        "value": "Mage class, 3rd Circle Rune Star, Artificer power level. Channels both Holy Energy and Corrupted Veyn. 5 forms sealed by Auralis Ruby. In True Hybrid Form, skills fuse. Abnormally large Veyn reserves. Cannot take Vow, cannot make Pact, cannot mix Veyn and Ren."
+        "value": "Mage class, 3rd Circle Rune Star, Artificer power level. Channels both Holy Energy and Corrupted Veyn. 5 forms sealed by Auralis Ruby. In True Hybrid Form, skills fuse. Abnormally large Veyn reserves. Cannot take Vow, cannot make Pact, cannot mix Veyn and Ren. His soul is not whole: his angel half has no soul — only the beginning of a spiritual body — while his demon half carries a full demon soul, two halves that cannot both be true and yet coexist in him."
       },
       {
         "label": "Auralis Ruby",
@@ -4764,7 +4764,7 @@
       "main character"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-31T00:17:52.844Z"
+    "updatedAt": "2026-08-31T00:27:43.400Z"
   },
   {
     "id": "seed-144",
@@ -6953,7 +6953,7 @@
     "category": "Demon Skills",
     "name": "Soul-Sight",
     "subtitle": "Mordrach skill",
-    "description": "Allows the user to see the flow of a target’s soul, effectively predicting the direction and timing of their next attack. This ability does not work on angels of any rank — angels have no soul. What an angel carries instead is a spiritual body, the holy form bound to their Vow, and Soul-Sight can only perceive souls, so an angel’s spiritual body is invisible to it. Demons can never read an angel’s soul, because there is nothing there to read.",
+    "description": "Allows the user to see the flow of a target’s soul, effectively predicting the direction and timing of their next attack. This ability does not work on angels of any rank — angels have no soul. What an angel carries instead is a spiritual body, the holy form bound to their Vow, and Soul-Sight can only perceive souls, so an angel’s spiritual body is invisible to it. Demons can never read an angel’s soul, because there is nothing there to read. Against a hybrid, Soul-Sight breaks in a way no demon can explain: it flickers. A hybrid holds half a soul and half a spiritual body at once, and because it is held to be impossible to have either half, the sight reads him like a light switching on and off — sometimes his soul is there to be seen, and sometimes it is not.",
     "fields": [
       {
         "label": "Type",
@@ -6961,7 +6961,7 @@
       },
       {
         "label": "Effect",
-        "value": "The demon perceives the soul of any being within 50 meters — unless that being is an angel, who has a spiritual body instead of a soul, and so cannot be read."
+        "value": "The demon perceives the soul of any being within 50 meters — unless that being is an angel, who has a spiritual body instead of a soul, and so cannot be read. Against a hybrid, the reading flickers on and off — half a soul and half a spiritual body cannot both be held, yet the hybrid holds both, so Soul-Sight sometimes sees him and sometimes sees nothing."
       },
       {
         "label": "Cooldown",
@@ -6982,7 +6982,7 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-31T00:17:52.844Z"
+    "updatedAt": "2026-08-31T00:27:43.400Z"
   },
   {
     "id": "seed-201",
