@@ -199,22 +199,40 @@
     "category": "Locations",
     "name": "Sentient River",
     "subtitle": "The living river of the Shadow Realm",
-    "description": "The river where the Sirens make their home in the Shadow Realm. The river is aware and does not take kindly to being disturbed — the water reacts to intent, calm for those who pass by but violent and resistant toward anyone who tries to take something from it, especially the thing sealed in its depths. Currents shift on their own, pulling and dragging with a will rather than gravity, and it is said the river can sense a person’s purpose the moment they touch it. Combined with the hypnotic song of the Sirens, the river is an active participant in keeping Vireth, the Fallen Grace, buried.",
+    "description": "The river where the Sirens make their home in the Shadow Realm. The river is aware and does not take kindly to being disturbed — the water reacts to intent, calm for those who pass by but violent and resistant toward anyone who tries to take something from it, especially the thing sealed in its depths. Currents shift on their own, pulling and dragging with a will rather than gravity, and it is said the river can sense a person’s purpose the moment they touch it. Combined with the hypnotic song of the Sirens, the river is an active participant in keeping Vireth, the Fallen Grace, buried.\n\nThe river was not always sentient. It was once a normal waterway. Vireth’s corruption poisoned it over centuries — not as a physical poison, but as a spiritual one. Every soul the sword consumed during its time as a sentient, hungry weapon was trapped. Their consciousness — anger, grief, confusion — bled into the river like ink into water. The river became made of people. Their souls swim in the corrupted current, screaming without sound, reaching for bodies they no longer have.\n\nThe river is ‘sentient’ because it is composed of the dead. It moves with intent because the souls within it still have intent. It reacts violently to seekers because the souls remember what the sword did to them, and they want it to stay buried. Under Soul-Sight, the river appears as a swirling mass of spectral figures — every person Vireth ever consumed, trapped in the corrupted water, reaching and screaming.\n\nThe river is not a natural hazard. It is a graveyard. And the sword is the murderer that built it.",
     "fields": [
       {
         "label": "Danger",
-        "value": "The river itself reacts violently to those who come looking for the wrong reasons; Sirens hypnotize anyone who hears them sing."
+        "value": "The river itself reacts violently to those who come looking for the wrong reasons; Sirens hypnotize anyone who hears them sing. Under Soul-Sight, the river is revealed as a mass of trapped souls."
       },
       {
         "label": "Sealed within",
         "value": "Vireth, the Fallen Grace — held down by two separate seals."
+      },
+      {
+        "label": "Vengeful Souls",
+        "value": "Every soul Vireth consumed was trapped in the river. Their consciousness bled into the water: anger, grief, confusion. The river is made of people. It moves with intent because the souls within it still have intent."
+      },
+      {
+        "label": "Why It’s Sentient",
+        "value": "The river is composed of the dead. It reacts violently to seekers because the souls remember the sword and want it buried. The Sirens, shaped by the corruption, lure people in because the sword wants sacrifices."
+      },
+      {
+        "label": "Soul-Sight View",
+        "value": "Under Soul-Sight, the river appears as a swirling mass of spectral figures — every person Vireth ever consumed, trapped in the corrupted water, reaching and screaming."
+      },
+      {
+        "label": "Lore Connections",
+        "value": "Vireth’s Five Eyes, The Vengeful Souls of the Sentient River, Soul-Sight, Sirens"
       }
     ],
     "tags": [
       "river",
       "sentient",
       "sirens",
-      "vireth"
+      "vireth",
+      "vengeful souls",
+      "corruption"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -619,7 +637,7 @@
     "category": "Monsters",
     "name": "Sirens",
     "subtitle": "Hypnotic humanoid fish-women",
-    "description": "They are humanoid fish women. They stay in the Sentient River in the Shadow Realm. They can hypnotize you when you hear them sing.",
+    "description": "They are humanoid fish women. They stay in the Sentient River in the Shadow Realm. They can hypnotize you when you hear them sing.\n\nThe Sirens were not always this way. They were shaped by Vireth's corruption. When the sword's evil aura poisoned the Sentient River over centuries, the Sirens — who were bound as guardians — adapted to the toxic environment. They didn't survive despite the corruption; they were shaped by it. Their hypnotic song is not a natural ability. It is a side effect of the sword's influence on them. They lure people in not just to protect the river, but because the sword wants sacrifices. The vengeful souls in the water want company. The Sirens give them what they want.\n\nUnder Soul-Sight, the Sirens appear as corrupted spiritual beings — their own souls tangled with the vengeful souls of the river, creating a hybrid consciousness that is part Siren, part consumed victim. They are guardians and prisoners at the same time.",
     "fields": [
       {
         "label": "Appearance",
@@ -640,12 +658,30 @@
       {
         "label": "Threat Level",
         "value": "High — song hypnotizes anyone who hears it; drowning is the usual cause of death"
+      },
+      {
+        "label": "Origin",
+        "value": "Originally bound as guardians of the Sentient River. Shaped by Vireth's corruption over centuries — their hypnotic song is a side effect of the sword's influence, not a natural ability."
+      },
+      {
+        "label": "True Nature",
+        "value": "Under Soul-Sight, they appear as corrupted spiritual beings — their own souls tangled with the vengeful souls of the river. Part Siren, part consumed victim. Guardians and prisoners at the same time."
+      },
+      {
+        "label": "Connection to Vireth",
+        "value": "They lure people in because the sword wants sacrifices. The vengeful souls in the water want company. The Sirens give them what they want. They are extensions of the sword's will, even though the sword is sealed."
+      },
+      {
+        "label": "Lore Connections",
+        "value": "Vireth's Five Eyes, The Vengeful Souls of the Sentient River, Soul-Sight"
       }
     ],
     "tags": [
       "siren",
       "sentient river",
-      "hypnosis"
+      "hypnosis",
+      "vireth",
+      "corruption"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -4494,6 +4530,14 @@
       {
         "label": "User-bound",
         "value": "Binds to the user’s soul — anyone else who tries to use it finds it becomes nothing more than a piece of metal."
+      },
+      {
+        "label": "Five Eyes",
+        "value": "Five eyes carved along the fuller. The Aelthar sealed three permanently. Currently stuck at one eye open. The second eye flickers. Each eye that opens deepens the corruption. Jaiden’s Soul Sight counters the influence — he watches it in real time and keeps the other eyes closed. See ‘Vireth’s Five Eyes’ entry."
+      },
+      {
+        "label": "Current State",
+        "value": "One eye open. The sword whispers. Its evil aura poisoned the Sentient River centuries ago, trapping the souls of everyone it consumed in the corrupted water. See ‘The Vengeful Souls of the Sentient River’ entry."
       }
     ],
     "tags": [
@@ -11261,7 +11305,7 @@
       },
       {
         "label": "Description",
-        "value": "Humans, Angels (4 ranks), Demons (4 ranks), Elves (2 types), Aelthar (extinct), Vileth (parasitic), Vilethsworn (demonic humans), plus monsters and beings."
+        "value": "Humans, Angels (4 ranks), Demons (4 ranks), Elves (2 types), Aelthar (extinct), Soulgrub (parasitic), Grubsworn (demonic humans), plus monsters and beings."
       }
     ],
     "tags": [
@@ -20366,6 +20410,111 @@
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
+    "id": "seed-800",
+    "category": "Lore & Myths",
+    "name": "Vireth's Five Eyes",
+    "subtitle": "The original design of the corrupted sword — five eyes that opened one by one",
+    "description": "Before the sword was sealed, before it poisoned the Sentient River, before the vengeful souls gathered in its wake — Vireth had five eyes.\n\nThe eyes were carved into the blade in a straight line along the fuller, each one a closed lid etched into the dark metal. They were not decorative. They were functional. Each eye corresponded to a stage of the sword's true power, and each one opened in sequence as the wielder progressed.\n\nThe first eye, when opened, granted minor enhancement — the blade became lighter, sharper, its edge holding longer. The second eye amplified the wielder's aura, extending their presence into the space around them. The third eye allowed the sword to channel both holy and corrupted energy simultaneously, layering them into a single strike. The fourth eye let the sword feed on the target's Veyn, draining them with each cut. The fifth and final eye — the one no wielder ever reached — was said to merge the sword's consciousness with the wielder's, making them one being. The sword would become an extension of the body, not a tool held in the hand.\n\nBut the eyes were not a reward. Each one that opened meant the sword's corruption deepened. The first eye whispered. The second blurred the wielder's moral compass. The third made corruption visible — veins darkening, aura shifting. The fourth began to override the wielder's will. The fifth was full possession. The sword was not partnered with its wielder. It was consuming them.\n\nThe Aelthar who forged Vireth understood what the full form meant. They capped the sword — sealing three of the five eyes permanently, allowing only the first two to open under controlled conditions. The cap was their safeguard: a way to use the sword's power without being consumed by it. When the sword was later corrupted by the World Eater, the cap held. Even in its twisted state, Vireth could only access two of its five eyes.\n\nJaiden, upon claiming the sword, finds it stuck at one eye open. The second eye flickers occasionally — a threat, a promise, a warning. The sword wants to open its remaining eyes. It whispers for it. But the MC's Soul Sight lets him see the corruption in real time: the sword's influence reaching into him like a hand, trying to bend his will. He watches it happen and chooses, every day, to keep the other eyes closed.\n\nThe question the story asks: when the moment comes — when someone he loves is dying, when sealed power isn't enough — will he open the second eye knowing what it costs?",
+    "fields": [
+      {
+        "label": "Design",
+        "value": "Five eyes carved in a straight line along the fuller of the blade. Each eye is a closed lid etched into dark metal. They open one by one as the wielder progresses."
+      },
+      {
+        "label": "First Eye",
+        "value": "Minor enhancement — blade becomes lighter, sharper, edge holds longer. The sword begins to whisper."
+      },
+      {
+        "label": "Second Eye",
+        "value": "Aura amplification — the wielder's presence extends into the space around them. The wielder's moral compass begins to blur."
+      },
+      {
+        "label": "Third Eye",
+        "value": "Dual-channel — the sword channels both holy and corrupted energy simultaneously, layering them into a single strike. Corruption becomes visible: veins darkening, aura shifting."
+      },
+      {
+        "label": "Fourth Eye",
+        "value": "Veyn drain — the sword feeds on the target's Veyn with each cut, adding it to the wielder's reserves. The sword begins to override the wielder's will — moments of blacking out, waking up somewhere unfamiliar."
+      },
+      {
+        "label": "Fifth Eye",
+        "value": "Full possession — the sword and wielder merge into one consciousness. The original personality is buried. The sword wears the wielder like a suit. No wielder has ever reached this stage willingly."
+      },
+      {
+        "label": "The Cap",
+        "value": "The Aelthar sealed three of the five eyes permanently, allowing only the first two to open. The cap survived the World Eater's corruption — Vireth remains stuck at two eyes maximum."
+      },
+      {
+        "label": "Current State",
+        "value": "Stuck at one eye open. The second eye flickers occasionally. The sword whispers for release. Jaiden's Soul Sight counters the corruption — he watches the influence in real time and chooses to keep the other eyes closed."
+      },
+      {
+        "label": "Soul Sight Counter",
+        "value": "Jaiden can see the sword's corruption moving toward him — the influence wrapping around his soul like a hand. He watches it happen and fights it off through vigilance. No one else has this ability. Anyone else who wields the sword is vulnerable."
+      },
+      {
+        "label": "Story Function",
+        "value": "Each eye opening is a cost, not a reward. The sword is not a partner — it is a predator. Jaiden's struggle is not 'when will he get stronger' but 'when will he stop resisting.' The eyes are a visual progress indicator of corruption, not power."
+      },
+      {
+        "label": "Connection to Auralis Ruby",
+        "value": "The Auralis Ruby seals Jaiden's forms (5 seals). The sword's eyes amplify those forms (5 eyes). One suppresses, one empowers. They mirror each other — but the sword's 'empowerment' is corruption disguised as strength."
+      }
+    ],
+    "tags": [
+      "vireth",
+      "sword",
+      "eyes",
+      "corruption",
+      "five forms",
+      "soul sight"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-801",
+    "category": "Lore & Myths",
+    "name": "The Vengeful Souls of the Sentient River",
+    "subtitle": "What the sword left behind in the water",
+    "description": "Before the Sentient River was living water that sensed intent and resisted corruption, it was simply a river. The corruption came later — carried by Vireth.\n\nWhen the Aelthar sealed the sword in the river, they believed the double seal and the Sirens would be enough to contain its influence. They were wrong. The sword's evil aura seeped into the water over centuries, not as a physical poison but as a spiritual one. The river didn't just become hostile — it became haunted.\n\nEvery soul that Vireth consumed during its time as a sentient, hungry weapon didn't simply die. The sword's corruption trapped them. Their consciousness — their anger, their grief, their confusion — bled into the river like ink into water. The river became made of people. Their souls swam in the corrupted current, screaming without sound, reaching for bodies they no longer had.\n\nThe river is 'sentient' because it is composed of the dead. It moves with intent because the souls within it still have intent. It reacts violently to anyone who comes looking for the sword because the souls remember what the sword did to them, and they want it to stay buried.\n\nThe Sirens, who were bound as guardians, adapted to this environment. They didn't survive despite the corruption — they were shaped by it. Their hypnotic song is not a natural ability. It is a side effect of the sword's influence on them. They lure people in not just to protect the river, but because the sword wants sacrifices. The souls in the water want company. The Sirens give them what they want.\n\nJaiden, with Soul Sight, can see every soul in the river. Every name. Every face. Every person who was consumed by the sword and now swims in the corrupted water. He can see them reaching for him. He can see their pain. And he can see the sword's influence pulling at them, using them, keeping them trapped.\n\nThe river is not a natural hazard. It is a graveyard. And the sword is the murderer that built it.",
+    "fields": [
+      {
+        "label": "Origin",
+        "value": "The river was once a normal waterway. Vireth's corruption poisoned it over centuries, trapping the souls of everyone the sword consumed."
+      },
+      {
+        "label": "The Souls",
+        "value": "Every soul Vireth consumed didn't die — it was trapped. Their consciousness bled into the river: anger, grief, confusion. The river is made of people."
+      },
+      {
+        "label": "Why It's Sentient", 
+        "value": "The river moves with intent because the souls within it still have intent. It reacts violently to seekers because the souls remember the sword and want it buried."
+      },
+      {
+        "label": "The Sirens",
+        "value": "Shaped by the corruption, not natural. Their hypnotic song is a side effect of the sword's influence. They lure people in because the sword wants sacrifices."
+      },
+      {
+        "label": "Soul Sight Connection",
+        "value": "Jaiden can see every soul in the river — every name, every face, every person consumed by the sword. He sees them reaching for him, trapped in the corrupted water."
+      },
+      {
+        "label": "Story Function",
+        "value": "The river is not a natural hazard. It is a graveyard. The sword is the murderer that built it. This reframes the Sentient River from 'dangerous location' to 'crime scene.'"
+      }
+    ],
+    "tags": [
+      "vireth",
+      "sentient river",
+      "vengeful souls",
+      "corruption",
+      "sirens"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
     "id": "seed-641",
     "category": "Lore & Myths",
     "name": "The Founding of Elyndor Academy",
@@ -25271,6 +25420,157 @@
     ],
     "tags": [
       "monsters"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-790",
+    "category": "Monsters",
+    "name": "Spirit Leeches",
+    "subtitle": "Parasitic feeders on angel spiritual bodies",
+    "description": "Spirit Leeches are microscopic parasitic entities that exist in the space between the physical and spiritual. They are invisible to the naked eye and undetectable by normal senses — only Soul-Sight or high-grade Veyn perception can reveal them. Spirit Leeches are drawn to spiritual bodies, which they consume as a food source. Angels are their primary prey because their spiritual bodies (created by the Veyn Vow) are dense and rich with structured Veyn. Spirit Leeches cannot feed on demons (demonic aura repels them) or humans (spiritual bodies are too weak to sustain them). A Spirit Leech infection is always fatal to an angel — the only question is how the angel dies. Spirit Leeches reproduce rapidly once inside a spiritual body, making early detection critical. There is no known cure once infection reaches Stage 3 or beyond.",
+    "fields": [
+      {
+        "label": "Appearance",
+        "value": "Invisible to the naked eye. Under Soul-Sight, they appear as faintly glowing, thread-like organisms that pulse with a sickly violet light. They cluster around spiritual bodies like parasites on a host, burrowing into the outer layers of the spiritual form."
+      },
+      {
+        "label": "Location",
+        "value": "Found in areas where the barrier between realms is thin — near Sundering Altars, in the Shattered Lands, and in places where massive spiritual energy has been released (battlefields, mass death events). They are most common in the Angel Realm but can cross into other realms through weak points."
+      },
+      {
+        "label": "Realm",
+        "value": "Primarily Angel Realm; can infest any realm with thin barriers"
+      },
+      {
+        "label": "Hostile",
+        "value": "Extremely hostile — always aggressive toward spiritual bodies"
+      },
+      {
+        "label": "Threat Level",
+        "value": "Lethal — always fatal to angels; untreatable past Stage 3"
+      },
+      {
+        "label": "Reproduction",
+        "value": "Rapid. A single Spirit Leech can produce dozens of offspring within hours of infecting a spiritual body. The more spiritual energy available, the faster they multiply."
+      },
+      {
+        "label": "Weakness",
+        "value": "Holy Energy can kill individual Spirit Leeches, but only if applied before they burrow deep. Demonic aura repels them entirely. The Aelthar could perceive and destroy them with Soul-Sight-guided strikes. The longer the worms remain embedded, the more resistant they become to Holy Energy — by Stage 3, they are woven into the spiritual body so deeply that removing them would destroy the host."
+      },
+      {
+        "label": "Effect Path",
+        "value": "Two paths depending on infection density: Consumption (low density — the worm eats the spiritual body) and Corrosion (high density — the worm dissolves the spiritual body). Both are fatal, but the experience and timeline differ dramatically."
+      },
+      {
+        "label": "Story Relevance",
+        "value": "Spirit Leeches represent the fragility of the angel system. Angels have no souls — their spiritual body is all they are. A creature that eats spiritual bodies is an existential threat to the entire angel race. They also connect to the sword's corruption theme: the sword poisoned the river, Spirit Leeches poison angels."
+      },
+      {
+        "label": "Lore Connections",
+        "value": "Angel spiritual bodies, Veyn Vow, Soul-Sight, Aelthar extinction, the Shattered Lands"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Parasites"
+      }
+    ],
+    "tags": [
+      "spirit leech",
+      "parasite",
+      "angel",
+      "spiritual body",
+      "lethal"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-791",
+    "category": "Monsters",
+    "name": "Spirit Leech Consumption Stages",
+    "subtitle": "The lucky death — leech eats the spiritual body",
+    "description": "When a Spirit Leech infects an angel at low density (a single worm or small cluster), it enters Consumption mode. The worm feeds directly on the spiritual body, eating it layer by layer. The angel experiences immense, escalating pain as their spiritual body is consumed. This is considered the 'lucky' path because the angel remains sane throughout — they feel everything, but they stay themselves. Death comes when the spiritual body is fully consumed. The process takes days to weeks depending on the angel's rank (higher-ranking angels have denser spiritual bodies, giving the worm more to eat but also buying more time).",
+    "fields": [
+      {
+        "label": "Stage 1 — The Bite",
+        "value": "The worm breaches the outer layer of the spiritual body. The angel feels a sharp, cold sting in their chest — like a needle made of ice piercing the heart. The halo flickers once. No visible wound. The angel dismisses it as fatigue. Duration: 1-2 days before progressing."
+      },
+      {
+        "label": "Stage 2 — The Hollowing",
+        "value": "The worm has eaten through the outer layer and begun consuming the core of the spiritual body. Pain escalates to a constant, grinding ache — like something is scooping out the inside of the chest. The halo dims noticeably. The angel begins to feel 'less' — less energy, less clarity, less presence. Others may notice the angel's aura weakening. Duration: 3-5 days."
+      },
+      {
+        "label": "Stage 3 — The Unraveling",
+        "value": "The worm has consumed most of the spiritual body. Pain becomes blinding — the angel cannot think, cannot speak, can only scream. The halo flickers constantly, threatening to extinguish. The angel's physical form begins to destabilize — wings glitch, aura stutters, skin cracks with faint light leaking from within. They are still themselves, still aware, but the pain is beyond description. Duration: 1-2 days."
+      },
+      {
+        "label": "Stage 4 — The Silence",
+        "value": "The spiritual body is fully consumed. The worm has nothing left to eat. The halo extinguishes. The angel's body goes rigid, eyes wide open, mouth frozen in a silent scream. Then the body collapses — not dead in the traditional sense, but empty. The spiritual body is gone, and without it, the physical form cannot sustain itself. Death within hours. The body decomposes unnaturally fast, as if the worm consumes the physical remains too."
+      },
+      {
+        "label": "Detection",
+        "value": "Soul-Sight can detect the worm from Stage 1 — it appears as a faint violet thread burrowing into the spiritual body. Without Soul-Sight, the infection is nearly impossible to identify until Stage 2, when the halo dims."
+      },
+      {
+        "label": "Treatment",
+        "value": "Stage 1: The worm has only breached the outer layer. A skilled Clergy can perform a Extraction Rite — channeling concentrated Holy Energy into the infected area while the angel maintains their Vow focus. The Holy Energy burns the worm from the outside in. The angel experiences sharp pain during extraction but the worm is killed within minutes. Success rate: high if caught early. Stage 2: The worm has burrowed into the core. Extraction is still possible but requires a Saintess or high-ranking Clergy performing a Vow Renewal — a ritual that rewrites the angel's spiritual body around the worm, forcing it out. The angel must remain conscious throughout, maintaining their Vow under immense pain. The process takes hours. Success rate: moderate. Some spiritual body damage is permanent. Stage 3: The worm is woven into the spiritual body so deeply that removing it would destroy the host. The angel can only await death. Clergy may provide pain management and spiritual comfort, but there is no cure. Stage 4: No treatment possible. The spiritual body is gone."
+      }
+    ],
+    "tags": [
+      "spirit leech",
+      "consumption",
+      "angel",
+      "parasite",
+      "stages"
+    ],
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "seed-792",
+    "category": "Monsters",
+    "name": "Spirit Leech Corrosion Stages",
+    "subtitle": "The unlucky death — leech dissolves the spiritual body and the mind",
+    "description": "When a Spirit Leech infects an angel at high density (multiple worms or a large cluster), it enters Corrosion mode. Instead of eating the spiritual body cleanly, the worms dissolve it — breaking it down chemically, like acid. The dissolved spiritual matter doesn't disappear; it pools in the angel's mind, distorting perception, memory, and identity. The angel goes insane — not gradually, but in stages, each one stripping away a layer of who they are. This is the 'unlucky' path because the angel loses themselves before they die. They become a danger to everyone around them, often killing others or themselves before the infection finishes them. Corrosion is faster than Consumption but far more horrifying.",
+    "fields": [
+      {
+        "label": "Stage 1 — The Dissolve",
+        "value": "The worms breach the spiritual body and begin dissolving it. The angel feels a burning sensation — like acid eating through the chest. The halo dims and takes on a sickly, uneven glow. The angel's thoughts become slightly muddled — sentences trail off, words blur together. They know something is wrong but can't articulate what. Duration: 1-2 days."
+      },
+      {
+        "label": "Stage 2 — The Fog",
+        "value": "The dissolved spiritual matter pools in the angel's consciousness. Perception fractures — the angel sees things that aren't there, hears whispers from no one, feels hands on skin that isn't being touched. Memory becomes unreliable — they forget names, places, their own Vow. The halo crackles erratically. The angel becomes paranoid, convinced someone is poisoning them (they're right, but they can't prove it). They may lash out at allies, accuse innocent people, or flee into isolation. Duration: 2-4 days."
+      },
+      {
+        "label": "Stage 3 — The Hollow",
+        "value": "The dissolved spiritual matter has consumed most of the angel's identity. The angel no longer recognizes themselves in mirrors. They forget their name, their rank, their purpose. The halo flickers violently, sometimes extinguishing for seconds at a time. The angel becomes violent — not out of malice, but out of terror. They are a person trapped in a body that no longer feels like theirs, surrounded by faces they don't recognize, in a world that makes no sense. They attack anyone who approaches, not because they want to hurt them, but because every touch feels like the worms burrowing deeper. Duration: 1-2 days."
+      },
+      {
+        "label": "Stage 4 — The Collapse",
+        "value": "The spiritual body is fully dissolved. The halo extinguishes permanently. The angel's physical form goes rigid — then breaks. Not death, but something worse: the angel's body continues to move, but the person inside is gone. What remains is a Hollowed — a mindless, raging entity of spiritual waste and corrupted Veyn. The Hollowed attacks anything living, driven by the last echoes of the dissolved spiritual body. It can only be stopped by destroying the physical form entirely. The body does not decompose — it remains animated until destroyed."
+      },
+      {
+        "label": "Detection",
+        "value": "Soul-Sight can detect the worms from Stage 1 — they appear as a swarm of violet threads dissolving the spiritual body like acid in water. Without Soul-Sight, the infection looks like mental illness — paranoia, memory loss, violent outbursts — until Stage 3, when the halo begins extinguishing."
+      },
+      {
+        "label": "Treatment",
+        "value": "Stage 1: The worms have just begun dissolving. A Saintess can perform a Purification Rite — flooding the spiritual body with Holy Energy to kill the worms before the dissolve spreads. The angel experiences burning pain as the Holy Energy burns through both worms and dissolved matter. Success rate: high if caught early. Stage 2: The dissolve has pooled in consciousness. Extremely difficult — requires a Saintess or high-ranking Clergy performing a Vow Renewal to purge the dissolved matter. The angel must remain conscious and maintain their Vow while the ritual rewrites their spiritual body, burning out the dissolved pockets. The process takes hours and leaves the angel exhausted and partially amnesiac. Success rate: moderate. Stage 3: The dissolved spiritual matter has merged with the angel's consciousness. Removing it would destroy the mind entirely. The angel can only await death. Clergy may provide spiritual comfort, but there is no cure. Stage 4: No treatment possible. The Hollowed must be destroyed."
+      },
+      {
+        "label": "Danger to Others",
+        "value": "A Corrosion-stage angel is one of the most dangerous beings in existence. They are an angel's physical power (wings, Veyn aura, martial skill) combined with no restraint, no reason, and no fear. A Stage 3 Hollowing angel can kill dozens before being put down. Stage 4 Hollowed entities are permanent threats that require military response."
+      }
+    ],
+    "tags": [
+      "spirit leech",
+      "corrosion",
+      "angel",
+      "parasite",
+      "insanity",
+      "hollowed"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
@@ -33216,9 +33516,9 @@
   {
     "id": "seed-1013",
     "category": "Demons",
-    "name": "Vileth",
+    "name": "Soulgrub",
     "subtitle": "Parasitic demons — the contract-makers",
-    "description": "The Vileth are a unique type of demon that exists outside the standard rank hierarchy. They are not Fiends and not Dregs — they are something older, something the Aelthar tried to erase and failed. Where other demons are born from the world core's corrupted Veyn, the Vileth are born from the void between realms — from the same nothingness that produces the Void Colossus. They have no physical form of their own. They are parasites of will, consciousnesses that exist only by attaching to a host.\n\nA Vileth cannot survive in the open. Without a host, a Vileth dissipates within hours, its consciousness scattering back into the void. It needs a living body — preferably human, though angel and demon hosts are possible (and far more dangerous). The Vileth attaches itself to a host through a contract: a binding agreement, written in the host's own blood, that grants the Vileth permission to inhabit the host's body and feed on their Veyn.\n\nIn return, the host receives demonic power — not the structured power of a class or a rank, but raw, corrupted Veyn that bypasses the normal channels. The host becomes stronger, faster, and more resilient than any human. They gain access to abilities no human class can teach: aura manipulation, Veyn corruption, and the ability to sense and disrupt other beings' Veyn signatures. The power is real. The cost is slow consumption.\n\nThe Vileth feeds on the host's Veyn — and, more insidiously, on their will. Over months and years, the host's personality changes. They become colder, more ruthless, more willing to use others. The Vileth does not control the host (not at first); it simply removes the barriers that kept the host's worst impulses in check. A kind person becomes indifferent. An indifferent person becomes cruel. A cruel person becomes something that does not remember what kindness felt like.\n\nThe transformation is gradual enough that the host often does not notice it happening. By the time they realize what they have become, the Vileth has consumed enough of their will that leaving the contract is no longer possible — not because the contract forbids it, but because the host no longer has the strength of will to break it.\n\n---\n\n## APPEARANCE\n\nA Vileth in its true form is nearly invisible — a shadow that moves against the light, a distortion in the air that makes people feel uneasy without knowing why. When attached to a host, the Vileth manifests as a faint, oily darkness that clings to the host's skin, particularly around the eyes, throat, and hands. In low light, the Vileth's shadow can be seen moving independently of the host — shifting, reaching, tasting the air.\n\nThe host's appearance changes over time:\n\n• **Early Stage (Months 1–6):** The host's eyes develop a faint amber or crimson tint, visible only in certain light. Their skin pales slightly. They may develop dark circles under their eyes. Their voice drops half a register.\n\n• **Middle Stage (Months 6–18):** The host's eyes become permanently discolored — amber, crimson, or black, depending on the Vileth's nature. Small, vestigial horns begin to form at the temples (not the forehead like true demons — these are parasitic growths, not natural demon anatomy). Their skin takes on a grayish or ash-colored undertone. Their aura becomes perceptible: a low, constant pressure that makes people nearby feel uneasy, nauseous, or disgusted.\n\n• **Late Stage (18+ Months):** The host's horns grow longer and more pronounced. Their skin darkens to a deep gray or bruised purple. Their eyes lose their natural color entirely. The Vileth's shadow becomes visible as a second silhouette behind them. Their aura is now strong enough to cause physical discomfort in anyone within a few meters — headaches, nausea, a visceral sense of revulsion. Fallen angels, whose damaged Veyn connections make them hypersensitive to corruption, find the Vilethsworn's aura almost unbearable.\n\n---\n\n## THE CONTRACT\n\nThe Vileth Contract is a binding agreement written in the host's blood. It is not a Demon Pact (which is a contract between two demons) and not a Veyn Vow (which is a promise sworn into an angel's halo). It is something older and more primal — a parasitic bond that predates the Sundering.\n\nThe contract's terms are simple:\n\n• The Vileth inhabits the host's body.\n• The Vileth feeds on the host's Veyn (and, over time, their will).\n• The host receives demonic power proportional to the Vileth's strength.\n• The host cannot break the contract without destroying the Vileth — which also destroys the power.\n\nThe contract is sealed with three drops of the host's blood, spoken aloud in Old Aelthar script (which the Vileth teaches the host automatically). Once sealed, the contract cannot be dissolved by any known means — not by exorcism, not by holy purification, not by the Broker's Guild. The only way to end a Vileth Contract is to kill the host, which also kills the Vileth.\n\n---\n\n## HOW THEY ARE PERCEIVED\n\nThe Vileth are universally reviled. They are not respected like the Mordrach, feared like the Bloodward, or tolerated like the Gnash. They are parasites — the demonic equivalent of a disease.\n\n• **Other demons** view the Vileth with contempt. They are not \"real\" demons; they are void-born parasites that leech off other beings' power. The Demon Realm has no place for them. Most Vileth operate in the Human Realm, hiding among the population.\n\n• **Angels** view the Vileth as an abomination — a corruption of the Veyn system itself. Fallen angels, whose damaged Veyn connections make them sensitive to the Vileth's aura, find the Vilethsworn physically repulsive. The aura of a Vilethsworn triggers an instinctive fight-or-flight response in fallen angels, as though their broken Vow-sense recognizes the Vileth as a threat.\n\n• **Humans** fear the Vileth. Stories of Vilethsworn — humans who sold their will for power — are common in the Human Realm. The Broker's Guild refuses to handle Vileth Contracts. The Seer's Order considers Vilethsworn to be spiritual casualties. Most humans avoid anyone who displays Vileth symptoms.\n\n• **The World Core Faith** teaches that the Vileth are a consequence of the Sundering — a void-creature that slipped through the broken barrier and found a niche in the world. They are not evil by nature; they are hungry. But the hunger consumes everything.\n\n---\n\n## STORY RELEVANCE\n\nThe Vileth represent the world's answer to the question: \"What happens when someone wants power badly enough to pay any price?\" They are the dark mirror of the Broker's Guild — where the Broker trades in contracts between willing parties, the Vileth trades in contracts that consume the signer. They are also a reminder that the Sundering's damage is not just physical (the broken barriers, the dormant Shudon) but spiritual — the void between realms has produced creatures that should not exist, and those creatures are finding their way into the world.\n\nThe Vilethsworn appear throughout the story as minor antagonists, tragic figures, and cautionary tales. Some are desperate humans who made bad choices. Some are former Academy students who were seduced by the promise of power. Some are Dark Moon operatives who were given Vileth Contracts as \"payment\" for their service — Wener Leger has been known to distribute Vileth as a tool of control, binding his most useful agents to contracts that make them dependent on him.",
+    "description": "The Soulgrub are a unique type of demon that exists outside the standard rank hierarchy. They are not Fiends and not Dregs — they are something older, something the Aelthar tried to erase and failed. Where other demons are born from the world core's corrupted Veyn, the Soulgrub are born from the void between realms — from the same nothingness that produces the Void Colossus. They have no physical form of their own. They are parasites of will, consciousnesses that exist only by attaching to a host.\n\nA Soulgrub cannot survive in the open. Without a host, a Soulgrub dissipates within hours, its consciousness scattering back into the void. It needs a living body — preferably human, though angel and demon hosts are possible (and far more dangerous). The Soulgrub attaches itself to a host through a contract: a binding agreement, written in the host's own blood, that grants the Soulgrub permission to inhabit the host's body and feed on their Veyn.\n\nIn return, the host receives demonic power — not the structured power of a class or a rank, but raw, corrupted Veyn that bypasses the normal channels. The host becomes stronger, faster, and more resilient than any human. They gain access to abilities no human class can teach: aura manipulation, Veyn corruption, and the ability to sense and disrupt other beings' Veyn signatures. The power is real. The cost is slow consumption.\n\nThe Soulgrub feeds on the host's Veyn — and, more insidiously, on their will. Over months and years, the host's personality changes. They become colder, more ruthless, more willing to use others. The Soulgrub does not control the host (not at first); it simply removes the barriers that kept the host's worst impulses in check. A kind person becomes indifferent. An indifferent person becomes cruel. A cruel person becomes something that does not remember what kindness felt like.\n\nThe transformation is gradual enough that the host often does not notice it happening. By the time they realize what they have become, the Soulgrub has consumed enough of their will that leaving the contract is no longer possible — not because the contract forbids it, but because the host no longer has the strength of will to break it.\n\n---\n\n## APPEARANCE\n\nA Soulgrub in its true form is nearly invisible — a shadow that moves against the light, a distortion in the air that makes people feel uneasy without knowing why. When attached to a host, the Soulgrub manifests as a faint, oily darkness that clings to the host's skin, particularly around the eyes, throat, and hands. In low light, the Soulgrub's shadow can be seen moving independently of the host — shifting, reaching, tasting the air.\n\nThe host's appearance changes over time:\n\n• **Early Stage (Months 1–6):** The host's eyes develop a faint amber or crimson tint, visible only in certain light. Their skin pales slightly. They may develop dark circles under their eyes. Their voice drops half a register.\n\n• **Middle Stage (Months 6–18):** The host's eyes become permanently discolored — amber, crimson, or black, depending on the Soulgrub's nature. Small, vestigial horns begin to form at the temples (not the forehead like true demons — these are parasitic growths, not natural demon anatomy). Their skin takes on a grayish or ash-colored undertone. Their aura becomes perceptible: a low, constant pressure that makes people nearby feel uneasy, nauseous, or disgusted.\n\n• **Late Stage (18+ Months):** The host's horns grow longer and more pronounced. Their skin darkens to a deep gray or bruised purple. Their eyes lose their natural color entirely. The Soulgrub's shadow becomes visible as a second silhouette behind them. Their aura is now strong enough to cause physical discomfort in anyone within a few meters — headaches, nausea, a visceral sense of revulsion. Fallen angels, whose damaged Veyn connections make them hypersensitive to corruption, find the Grubsworn's aura almost unbearable.\n\n---\n\n## THE CONTRACT\n\nThe Soulgrub Contract is a binding agreement written in the host's blood. It is not a Demon Pact (which is a contract between two demons) and not a Veyn Vow (which is a promise sworn into an angel's halo). It is something older and more primal — a parasitic bond that predates the Sundering.\n\nThe contract's terms are simple:\n\n• The Soulgrub inhabits the host's body.\n• The Soulgrub feeds on the host's Veyn (and, over time, their will).\n• The host receives demonic power proportional to the Soulgrub's strength.\n• The host cannot break the contract without destroying the Soulgrub — which also destroys the power.\n\nThe contract is sealed with three drops of the host's blood, spoken aloud in Old Aelthar script (which the Soulgrub teaches the host automatically). Once sealed, the contract cannot be dissolved by any known means — not by exorcism, not by holy purification, not by the Broker's Guild. The only way to end a Soulgrub Contract is to kill the host, which also kills the Soulgrub.\n\n---\n\n## HOW THEY ARE PERCEIVED\n\nThe Soulgrub are universally reviled. They are not respected like the Mordrach, feared like the Bloodward, or tolerated like the Gnash. They are parasites — the demonic equivalent of a disease.\n\n• **Other demons** view the Soulgrub with contempt. They are not \"real\" demons; they are void-born parasites that leech off other beings' power. The Demon Realm has no place for them. Most Soulgrub operate in the Human Realm, hiding among the population.\n\n• **Angels** view the Soulgrub as an abomination — a corruption of the Veyn system itself. Fallen angels, whose damaged Veyn connections make them sensitive to the Soulgrub's aura, find the Grubsworn physically repulsive. The aura of a Grubsworn triggers an instinctive fight-or-flight response in fallen angels, as though their broken Vow-sense recognizes the Soulgrub as a threat.\n\n• **Humans** fear the Soulgrub. Stories of Grubsworn — humans who sold their will for power — are common in the Human Realm. The Broker's Guild refuses to handle Soulgrub Contracts. The Seer's Order considers Grubsworn to be spiritual casualties. Most humans avoid anyone who displays Soulgrub symptoms.\n\n• **The World Core Faith** teaches that the Soulgrub are a consequence of the Sundering — a void-creature that slipped through the broken barrier and found a niche in the world. They are not evil by nature; they are hungry. But the hunger consumes everything.\n\n---\n\n## STORY RELEVANCE\n\nThe Soulgrub represent the world's answer to the question: \"What happens when someone wants power badly enough to pay any price?\" They are the dark mirror of the Broker's Guild — where the Broker trades in contracts between willing parties, the Soulgrub trades in contracts that consume the signer. They are also a reminder that the Sundering's damage is not just physical (the broken barriers, the dormant Shudon) but spiritual — the void between realms has produced creatures that should not exist, and those creatures are finding their way into the world.\n\nThe Grubsworn appear throughout the story as minor antagonists, tragic figures, and cautionary tales. Some are desperate humans who made bad choices. Some are former Academy students who were seduced by the promise of power. Some are Dark Moon operatives who were given Soulgrub Contracts as \"payment\" for their service — Wener Leger has been known to distribute Soulgrub as a tool of control, binding his most useful agents to contracts that make them dependent on him.",
     "fields": [
       {
         "label": "Origin",
@@ -33234,7 +33534,7 @@
       },
       {
         "label": "Contract",
-        "value": "Binding agreement written in the host's blood, spoken in Old Aelthar script. Terms: Vileth inhabits body, feeds on Veyn and will, host receives demonic power. Cannot be broken without destroying the Vileth."
+        "value": "Binding agreement written in the host's blood, spoken in Old Aelthar script. Terms: Soulgrub inhabits body, feeds on Veyn and will, host receives demonic power. Cannot be broken without destroying the Soulgrub."
       },
       {
         "label": "Power Granted",
@@ -33242,7 +33542,7 @@
       },
       {
         "label": "Cost",
-        "value": "Slow consumption of the host's Veyn and will. Personality changes: kind → indifferent → cruel → unrecognizable. Vileth removes barriers against worst impulses."
+        "value": "Slow consumption of the host's Veyn and will. Personality changes: kind → indifferent → cruel → unrecognizable. Soulgrub removes barriers against worst impulses."
       },
       {
         "label": "How Others See Them",
@@ -33250,7 +33550,7 @@
       },
       {
         "label": "Story Relevance",
-        "value": "Dark mirror of the Broker's Guild. Represent spiritual damage from the Sundering. Appear as minor antagonists, tragic figures, cautionary tales. Dark Moon distributes Vileth Contracts as control tool."
+        "value": "Dark mirror of the Broker's Guild. Represent spiritual damage from the Sundering. Appear as minor antagonists, tragic figures, cautionary tales. Dark Moon distributes Soulgrub Contracts as control tool."
       },
       {
         "label": "Lore Connections",
@@ -33271,13 +33571,13 @@
   {
     "id": "seed-1014",
     "category": "Humans",
-    "name": "Vilethsworn",
-    "subtitle": "Humans bonded to a Vileth — the demonic humans",
-    "description": "Humans who have entered into a Vileth Contract — binding themselves to a parasitic void-demon in exchange for demonic power. They are not a race in the biological sense; they are a condition. Any human can become Vilethsworn if they sign the contract, and the transformation is irreversible.\n\nVilethsworn are the most reviled people in the world. Their aura — a constant, low-pressure field of corrupted Veyn — makes everyone nearby feel uneasy, nauseous, or disgusted. The effect is not psychological; it is spiritual. The Vileth's parasitic bond radiates a frequency of Veyn that the human body interprets as wrong, the way the nose interprets the smell of rot. Fallen angels find the Vilethsworn's aura almost unbearable — their damaged Veyn connections make them hypersensitive to the corruption, and proximity to a Vilethsworn triggers an instinctive, overwhelming urge to flee.\n\nVilethsworn are not mindless. They retain their intelligence, their memories, and most of their personality — at least at first. The Vileth consumes their will gradually, removing the barriers that kept their worst impulses in check. A Vilethsworn who was once kind does not become evil overnight; they become indifferent, then cold, then willing to use others, then unable to understand why using others is wrong. The process takes months to years, and by the time it is complete, the person they were is gone — replaced by something that wears their face and remembers their life but does not feel what they felt.\n\nSome Vilethsworn fight the transformation. They seek out Clergy healers, Seer's Order scholars, and even Aelthar artifacts in desperate attempts to break the contract. None of it works. The contract is sealed in blood and Old Aelthar script; it cannot be exorcised, purified, or bargained away. The only way to end it is to kill the host — which also kills the Vileth. This creates a grim social reality: Vilethsworn who resist the transformation know that the only escape is death, and the world around them knows it too.\n\n---\n\n## APPEARANCE\n\nVilethsworn appearance depends on how long they have been bonded:\n\n• **Freshly Bonded (Weeks 1–4):** The host looks mostly human. Their eyes may have a faint amber or crimson tint in certain light. Their skin is slightly paler than normal. They feel \"off\" to people nearby — a vague sense of wrongness that is hard to articulate.\n\n• **Early Stage (Months 1–6):** Eyes become permanently discolored — amber, crimson, or black. Skin pales further, developing an ashen or grayish undertone. Dark circles appear under the eyes. The aura becomes perceptible: a low, constant pressure that makes people nearby feel uneasy. Small, vestigial horns begin to form at the temples (not the forehead like true demons — these are parasitic growths, not natural demon anatomy).\n\n• **Middle Stage (Months 6–18):** Horns grow longer and more pronounced — still smaller than a Gnash's, but visible. Skin darkens to a deep gray or bruised purple. Eyes lose their natural color entirely. The Vileth's shadow becomes visible as a second silhouette behind them. The aura is now strong enough to cause physical discomfort — headaches, nausea, a visceral sense of revulsion in anyone within a few meters.\n\n• **Late Stage (18+ Months):** The host's appearance is barely human. Horns are fully formed, curling slightly at the tips. Skin is uniformly dark gray or purple-black. Eyes are solid amber, crimson, or black. The Vileth's shadow is always visible, moving independently. The aura is powerful enough to cause weaker beings to vomit or collapse. Fallen angels cannot be in the same room without severe distress.\n\n---\n\n## ABILITIES\n\nVilethsworn gain abilities that no human class can teach:\n\n• **Corrupted Veyn Channeling:** The ability to channel raw corrupted Veyn, bypassing normal class restrictions. This makes them unpredictable in combat — they can use abilities that no human should have.\n\n• **Aura Manipulation:** The ability to intensify or suppress their aura at will. A skilled Vilethsworn can focus their aura into a weapon — a concentrated blast of revulsion that causes nausea, disorientation, or even temporary paralysis in nearby beings.\n\n• **Veyn Sense:** The ability to detect and disrupt other beings' Veyn signatures. This makes them effective spies and assassins — they can identify hidden beings, trace Veyn trails, and weaken opponents by disrupting their Veyn flow.\n\n• **Parasitic Drain:** The ability to drain Veyn from living beings through physical contact. This is not a class skill; it is the Vileth's feeding mechanism, extended to the host. In combat, a Vilethsworn can weaken an opponent by draining their Veyn reserves.\n\n---\n\n## LIMITATIONS\n\n• **Cannot take a Vow:** The Vileth's corrupted Veyn makes the Vow impossible — the halo cannot form over corrupted energy.\n• **Cannot make a Pact:** The Vileth Contract supersedes any other binding agreement. The Vileth does not share its host.\n• **Cannot use Ren:** The Vileth's corrupted Veyn is incompatible with Ren energy.\n• **Cannot learn class skills normally:** Abilities come from the Vileth, not from discipline.\n• **Progressive loss of will:** The Vileth consumes the host's will over time.\n\n---\n\n## SOCIAL STATUS\n\n• **Human Realm:** Feared, avoided. Broker's Guild refuses contracts. Some form communities in Aldermere's slums.\n• **Angel Realm:** Forbidden entry. Fallen angels go out of their way to avoid them.\n• **Demon Realm:** Not recognized as demons. Considered parasites.\n• **Hidden Realm:** Limited contact. Kael studying the connection between Vileth and the void-border.\n\n---\n\n## STORY RELEVANCE\n\nVilethsworn appear as minor antagonists (Dark Moon enforcers), tragic figures (desperate humans who made bad choices), cautionary tales (mirror Jaiden's situation), and social commentary (proof the world's safety nets are incomplete).",
+    "name": "Grubsworn",
+    "subtitle": "Humans bonded to a Soulgrub — the demonic humans",
+    "description": "Humans who have entered into a Soulgrub Contract — binding themselves to a parasitic void-demon in exchange for demonic power. They are not a race in the biological sense; they are a condition. Any human can become Grubsworn if they sign the contract, and the transformation is irreversible.\n\nGrubsworn are the most reviled people in the world. Their aura — a constant, low-pressure field of corrupted Veyn — makes everyone nearby feel uneasy, nauseous, or disgusted. The effect is not psychological; it is spiritual. The Soulgrub's parasitic bond radiates a frequency of Veyn that the human body interprets as wrong, the way the nose interprets the smell of rot. Fallen angels find the Grubsworn's aura almost unbearable — their damaged Veyn connections make them hypersensitive to the corruption, and proximity to a Grubsworn triggers an instinctive, overwhelming urge to flee.\n\nGrubsworn are not mindless. They retain their intelligence, their memories, and most of their personality — at least at first. The Soulgrub consumes their will gradually, removing the barriers that kept their worst impulses in check. A Grubsworn who was once kind does not become evil overnight; they become indifferent, then cold, then willing to use others, then unable to understand why using others is wrong. The process takes months to years, and by the time it is complete, the person they were is gone — replaced by something that wears their face and remembers their life but does not feel what they felt.\n\nSome Grubsworn fight the transformation. They seek out Clergy healers, Seer's Order scholars, and even Aelthar artifacts in desperate attempts to break the contract. None of it works. The contract is sealed in blood and Old Aelthar script; it cannot be exorcised, purified, or bargained away. The only way to end it is to kill the host — which also kills the Soulgrub. This creates a grim social reality: Grubsworn who resist the transformation know that the only escape is death, and the world around them knows it too.\n\n---\n\n## APPEARANCE\n\nGrubsworn appearance depends on how long they have been bonded:\n\n• **Freshly Bonded (Weeks 1–4):** The host looks mostly human. Their eyes may have a faint amber or crimson tint in certain light. Their skin is slightly paler than normal. They feel \"off\" to people nearby — a vague sense of wrongness that is hard to articulate.\n\n• **Early Stage (Months 1–6):** Eyes become permanently discolored — amber, crimson, or black. Skin pales further, developing an ashen or grayish undertone. Dark circles appear under the eyes. The aura becomes perceptible: a low, constant pressure that makes people nearby feel uneasy. Small, vestigial horns begin to form at the temples (not the forehead like true demons — these are parasitic growths, not natural demon anatomy).\n\n• **Middle Stage (Months 6–18):** Horns grow longer and more pronounced — still smaller than a Gnash's, but visible. Skin darkens to a deep gray or bruised purple. Eyes lose their natural color entirely. The Soulgrub's shadow becomes visible as a second silhouette behind them. The aura is now strong enough to cause physical discomfort — headaches, nausea, a visceral sense of revulsion in anyone within a few meters.\n\n• **Late Stage (18+ Months):** The host's appearance is barely human. Horns are fully formed, curling slightly at the tips. Skin is uniformly dark gray or purple-black. Eyes are solid amber, crimson, or black. The Soulgrub's shadow is always visible, moving independently. The aura is powerful enough to cause weaker beings to vomit or collapse. Fallen angels cannot be in the same room without severe distress.\n\n---\n\n## ABILITIES\n\nGrubsworn gain abilities that no human class can teach:\n\n• **Corrupted Veyn Channeling:** The ability to channel raw corrupted Veyn, bypassing normal class restrictions. This makes them unpredictable in combat — they can use abilities that no human should have.\n\n• **Aura Manipulation:** The ability to intensify or suppress their aura at will. A skilled Grubsworn can focus their aura into a weapon — a concentrated blast of revulsion that causes nausea, disorientation, or even temporary paralysis in nearby beings.\n\n• **Veyn Sense:** The ability to detect and disrupt other beings' Veyn signatures. This makes them effective spies and assassins — they can identify hidden beings, trace Veyn trails, and weaken opponents by disrupting their Veyn flow.\n\n• **Parasitic Drain:** The ability to drain Veyn from living beings through physical contact. This is not a class skill; it is the Soulgrub's feeding mechanism, extended to the host. In combat, a Grubsworn can weaken an opponent by draining their Veyn reserves.\n\n---\n\n## LIMITATIONS\n\n• **Cannot take a Vow:** The Soulgrub's corrupted Veyn makes the Vow impossible — the halo cannot form over corrupted energy.\n• **Cannot make a Pact:** The Soulgrub Contract supersedes any other binding agreement. The Soulgrub does not share its host.\n• **Cannot use Ren:** The Soulgrub's corrupted Veyn is incompatible with Ren energy.\n• **Cannot learn class skills normally:** Abilities come from the Soulgrub, not from discipline.\n• **Progressive loss of will:** The Soulgrub consumes the host's will over time.\n\n---\n\n## SOCIAL STATUS\n\n• **Human Realm:** Feared, avoided. Broker's Guild refuses contracts. Some form communities in Aldermere's slums.\n• **Angel Realm:** Forbidden entry. Fallen angels go out of their way to avoid them.\n• **Demon Realm:** Not recognized as demons. Considered parasites.\n• **Hidden Realm:** Limited contact. Kael studying the connection between Soulgrub and the void-border.\n\n---\n\n## STORY RELEVANCE\n\nGrubsworn appear as minor antagonists (Dark Moon enforcers), tragic figures (desperate humans who made bad choices), cautionary tales (mirror Jaiden's situation), and social commentary (proof the world's safety nets are incomplete).",
     "fields": [
       {
         "label": "Nature",
-        "value": "Not a biological race — a condition. Any human can become Vilethsworn by signing a Vileth Contract. The transformation is irreversible."
+        "value": "Not a biological race — a condition. Any human can become Grubsworn by signing a Soulgrub Contract. The transformation is irreversible."
       },
       {
         "label": "Appearance (Fresh)",
@@ -33289,7 +33589,7 @@
       },
       {
         "label": "Appearance (Middle)",
-        "value": "Months 6–18: longer horns, dark gray/purple skin, natural eye color lost, visible Vileth shadow, aura causes headaches and nausea within meters."
+        "value": "Months 6–18: longer horns, dark gray/purple skin, natural eye color lost, visible Soulgrub shadow, aura causes headaches and nausea within meters."
       },
       {
         "label": "Appearance (Late)",
@@ -33317,7 +33617,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": "Vileth, Void Colossus, the Sundering, World Barrier, Broker's Guild, Seer's Order, World Core Faith, Dark Moon, Fallen Angels, Elyndor Academy, Jaiden Marlock."
+        "value": "Soulgrub, Void Colossus, the Sundering, World Barrier, Broker's Guild, Seer's Order, World Core Faith, Dark Moon, Fallen Angels, Elyndor Academy, Jaiden Marlock."
       }
     ],
     "tags": [
