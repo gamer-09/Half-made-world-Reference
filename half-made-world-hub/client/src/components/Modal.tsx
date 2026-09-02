@@ -22,7 +22,7 @@ export function Modal({ onClose, children, wide }: ModalProps) {
         onMouseDown={(e) => e.stopPropagation()}
       >
         <button className="modal-close" onClick={onClose} aria-label="Close">
-          ✕
+          <i className="fa-solid fa-xmark" />
         </button>
         {children}
       </div>

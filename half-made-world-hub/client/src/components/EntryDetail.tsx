@@ -78,10 +78,10 @@ export function EntryDetail({ entry, connections, onEdit, onDelete, onOpenEntry 
 
       <div className="detail-actions">
         <button className="btn btn-secondary" onClick={() => onEdit(entry)}>
-          ✎ Edit
+          <i className="fa-solid fa-pen" style={{ fontSize: 11 }} /> Edit
         </button>
         <button className="btn btn-danger" onClick={() => onDelete(entry)}>
-          🗑 Delete
+          <i className="fa-solid fa-trash" style={{ fontSize: 11 }} /> Delete
         </button>
       </div>
     </div>

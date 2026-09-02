@@ -167,11 +167,11 @@ function GraphNode3D({
       {/* Label */}
       <Billboard position={[0, baseR + 0.3, 0]}>
         <Text
-          fontSize={isHovered ? 0.28 : 0.22}
+          fontSize={isHovered ? 0.18 : 0.14}
           color={dimmed ? '#334155' : '#e8f1ff'}
           anchorX="center" anchorY="bottom"
-          outlineWidth={0.02} outlineColor="#000"
-          maxWidth={4}
+          outlineWidth={0.015} outlineColor="#000"
+          maxWidth={3}
         >
           {node.label}
         </Text>
@@ -270,12 +270,12 @@ function Scene({
 
   return (
     <>
-      <color attach="background" args={['#04060d']} />
-      <fog attach="fog" args={['#04060d', 25, 60]} />
+      <color attach="background" args={['#080a10']} />
+      <fog attach="fog" args={['#080a10', 25, 60]} />
       <ambientLight intensity={0.5} />
       <directionalLight position={[10, 15, 10]} intensity={1.0} color="#e8f1ff" />
       <pointLight position={[-8, 6, -8]} intensity={0.5} color="#8b5cf6" />
-      <pointLight position={[0, -4, 8]} intensity={0.3} color="#22d3ee" />
+      <pointLight position={[0, -4, 8]} intensity={0.3} color="#c8a876" />
 
       {/* Edges */}
       {edges.map((e) => {
@@ -352,7 +352,7 @@ export function Graph3D({
     <div className="graph3d-container">
       <Canvas
         camera={{ position: [12, 8, 12], fov: 50 }}
-        style={{ background: '#04060d' }}
+        style={{ background: '#080a10' }}
         gl={{ antialias: true }}
       >
         <Scene

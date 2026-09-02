@@ -505,5 +505,159 @@
     "description": "He hunted the Aelthar to extinction — Kael von Ashen is the one survivor he never caught.",
     "createdAt": "2026-08-19T23:14:09.527Z",
     "updatedAt": "2026-08-19T23:14:09.527Z"
+  },
+  {
+    "id": "fe453aed-9f16-432a-adff-fd388385fdc3",
+    "source": "Lisa",
+    "target": "Jaiden Marlock",
+    "type": "parent of",
+    "label": "parent of",
+    "description": "",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.494Z",
+    "updatedAt": "2026-09-01T22:38:32.494Z"
+  },
+  {
+    "id": "bf780f53-87b7-4f83-a89f-4f4a3ac8f717",
+    "source": "Ordium",
+    "target": "Jaiden Marlock",
+    "type": "parent of",
+    "label": "parent of",
+    "description": "",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.494Z",
+    "updatedAt": "2026-09-01T22:38:32.494Z"
+  },
+  {
+    "id": "b62a0de7-0893-469c-9869-d4dfa29e2a87",
+    "source": "Lisa",
+    "target": "Licent Varak",
+    "type": "rival of",
+    "label": "Rival of",
+    "description": "Always hated Lisa for being stronger than him and holding the top Bloodward position; constantly looked for a way to take her power and rank away.",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.494Z",
+    "updatedAt": "2026-09-01T22:38:32.494Z"
+  },
+  {
+    "id": "53792a79-9835-40d5-b05c-f28f45fdfb5c",
+    "source": "Sofia Marlock",
+    "target": "Licent Varak",
+    "type": "knows",
+    "label": "Knows",
+    "description": "Saw Sofia heading to an unknown location and tried to follow her, but lost track of her.",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.495Z",
+    "updatedAt": "2026-09-01T22:38:32.495Z"
+  },
+  {
+    "id": "2390fcd2-cc06-4633-8bee-5bb4a61b24ed",
+    "source": "Ordium",
+    "target": "Cyrion",
+    "type": "knows",
+    "label": "Knows",
+    "description": "Saw Ordium slip away and has kept the secret of his parentage ever since.",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.495Z",
+    "updatedAt": "2026-09-01T22:38:32.495Z"
+  },
+  {
+    "id": "f738e3e7-b871-4295-ad34-47adca562960",
+    "source": "Jaiden Marlock",
+    "target": "Cyrion",
+    "type": "knows",
+    "label": "Knows",
+    "description": "Kept the secret of Jaiden’s parentage.",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.495Z",
+    "updatedAt": "2026-09-01T22:38:32.495Z"
+  },
+  {
+    "id": "9b297061-4ff1-4026-9907-716e8b0f0c95",
+    "source": "Ordium",
+    "target": "Serathiel",
+    "type": "rival of",
+    "label": "Rival of",
+    "description": "Resents that Ordium threw away the seat she would have bled to hold.",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.496Z",
+    "updatedAt": "2026-09-01T22:38:32.496Z"
+  },
+  {
+    "id": "073d8e22-268f-4a51-bf0a-d276554fb2f7",
+    "source": "Ordium",
+    "target": "Liora Veyne",
+    "type": "knows",
+    "label": "Knows",
+    "description": "Brought the execution order to Ordium’s door.",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.496Z",
+    "updatedAt": "2026-09-01T22:38:32.496Z"
+  },
+  {
+    "id": "fa6d8e7c-f31b-45da-bbe0-d260f6914277",
+    "source": "Ordium",
+    "target": "Thalor Elwin",
+    "type": "knows",
+    "label": "Knows",
+    "description": "Saw Ordium’s vow fraying and said nothing.",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.496Z",
+    "updatedAt": "2026-09-01T22:38:32.496Z"
+  },
+  {
+    "id": "32f62fd6-e71f-4ce4-a83b-f7b507617976",
+    "source": "Jaiden Marlock",
+    "target": "Ruby Divina",
+    "type": "knows",
+    "label": "Knows",
+    "description": "She has known of the hybrid hiding in her realm from the beginning.",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.497Z",
+    "updatedAt": "2026-09-01T22:38:32.497Z"
+  },
+  {
+    "id": "2661dc9a-2c3d-46f2-ba8c-32842bd2d92a",
+    "source": "Lisa",
+    "target": "Tera Morage",
+    "type": "friend of",
+    "label": "Friend of",
+    "description": "The one demon Tera trusted enough to keep close — and the one mercy she ever allowed.",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.497Z",
+    "updatedAt": "2026-09-01T22:38:32.497Z"
+  },
+  {
+    "id": "b27b8d1b-7744-40fc-9c6b-4add2fd175fd",
+    "source": "Ruby Divina",
+    "target": "Eva Aldermere Divina",
+    "type": "parent of",
+    "label": "parent of",
+    "description": "",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.497Z",
+    "updatedAt": "2026-09-01T22:38:32.497Z"
+  },
+  {
+    "id": "3267590e-24d7-46e5-9393-079d12d5ee3e",
+    "source": "Jaiden Marlock",
+    "target": "Bella Rose",
+    "type": "friend of",
+    "label": "Friend of",
+    "description": "she is the childhood friend of jaiden",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.498Z",
+    "updatedAt": "2026-09-01T22:38:32.498Z"
+  },
+  {
+    "id": "f8bb13da-5ee0-4751-808c-cc746c7d572a",
+    "source": "Jaiden Marlock",
+    "target": "Mark Wesley",
+    "type": "friend of",
+    "label": "Friend of",
+    "description": "he later became friends with jaiden",
+    "color": "",
+    "createdAt": "2026-09-01T22:38:32.498Z",
+    "updatedAt": "2026-09-01T22:38:32.498Z"
   }
 ]

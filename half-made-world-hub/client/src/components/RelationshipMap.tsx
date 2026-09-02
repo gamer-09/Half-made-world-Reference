@@ -3,6 +3,7 @@ import type { Entry, Relationship } from '../types';
 import { relationshipType } from '../relationshipTypes';
 import { findCharacter } from '../nameMatch';
 import { Graph3D, type GraphNode, type GraphEdge } from './Graph3D';
+import { Graph2D } from './Graph2D';
 
 interface MapProps {
   relationships: Relationship[];
@@ -17,6 +18,7 @@ export function RelationshipMap({
   relationships, characterEntries, onNodeClick, onAdd, onEdit, onDelete,
 }: MapProps) {
   const [selectedEdge, setSelectedEdge] = useState<Relationship | null>(null);
+  const [viewMode, setViewMode] = useState<'3d' | '2d'>('3d');
 
   const resolveName = (name: string): string => {
     const exact = characterEntries.find((e) => e.name.toLowerCase() === name.toLowerCase());
@@ -33,14 +35,14 @@ export function RelationshipMap({
   const graphNodes = useMemo<GraphNode[]>(() => {
     const map = new Map<string, GraphNode>();
     for (const e of characterEntries) {
-      map.set(e.name, { id: e.name, label: e.name, color: '#fbbf24', size: 1 });
+      map.set(e.name, { id: e.name, label: e.name, color: '#c8a876', size: 1 });
     }
     // Add referenced names that don't have entries
     for (const r of relationships) {
       const src = resolveName(r.source);
       const tgt = resolveName(r.target);
-      if (!map.has(src)) map.set(src, { id: src, label: src, color: '#64748f', size: 0.7 });
-      if (!map.has(tgt)) map.set(tgt, { id: tgt, label: tgt, color: '#64748f', size: 0.7 });
+      if (!map.has(src)) map.set(src, { id: src, label: src, color: '#7f8fa3', size: 0.7 });
+      if (!map.has(tgt)) map.set(tgt, { id: tgt, label: tgt, color: '#7f8fa3', size: 0.7 });
     }
     return [...map.values()];
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -84,23 +86,52 @@ export function RelationshipMap({
     return [...seen.entries()];
   }, [relationships]);
 
+  const is3D = viewMode === '3d';
+
   return (
     <div className="map-view">
       <div className="map-toolbar">
         <p className="map-hint">
-          3D relationship graph — {graphNodes.length} characters · {graphEdges.length} links · drag to orbit
+          {is3D ? '3D' : '2D'} relationship graph — {graphNodes.length} characters · {graphEdges.length} links{is3D ? ' · drag to orbit' : ''}
         </p>
-        <button className="btn btn-primary btn-sm" onClick={onAdd}>
-          ＋ Add Relationship
-        </button>
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
+          <div className="view-toggle">
+            <button
+              className={`view-toggle-btn${is3D ? ' active' : ''}`}
+              onClick={() => setViewMode('3d')}
+              title="3D force-directed graph"
+            >
+              <i className="fa-solid fa-cube" style={{ fontSize: 12 }} /> 3D
+            </button>
+            <button
+              className={`view-toggle-btn${!is3D ? ' active' : ''}`}
+              onClick={() => setViewMode('2d')}
+              title="2D flat graph"
+            >
+              <i className="fa-solid fa-circle-nodes" style={{ fontSize: 12 }} /> 2D
+            </button>
+          </div>
+          <button className="btn btn-primary btn-sm" onClick={onAdd}>
+            <i className="fa-solid fa-plus" style={{ fontSize: 11 }} /> Add Relationship
+          </button>
+        </div>
       </div>
 
-      <Graph3D
-        nodes={graphNodes}
-        edges={graphEdges}
-        onNodeClick={handleNodeClick}
-        onEdgeClick={handleEdgeClick}
-      />
+      {is3D ? (
+        <Graph3D
+          nodes={graphNodes}
+          edges={graphEdges}
+          onNodeClick={handleNodeClick}
+          onEdgeClick={handleEdgeClick}
+        />
+      ) : (
+        <Graph2D
+          nodes={graphNodes}
+          edges={graphEdges}
+          onNodeClick={handleNodeClick}
+          onEdgeClick={handleEdgeClick}
+        />
+      )}
 
       {selectedEdge && (
         <div className="map-edge-detail">
@@ -113,15 +144,21 @@ export function RelationshipMap({
               {selectedEdge.label || relationshipType(selectedEdge.type).label}
             </span>
             <button className="modal-close" onClick={() => setSelectedEdge(null)} aria-label="Close"
-              style={{ position: 'static' }}>✕</button>
+              style={{ position: 'static' }}>
+              <i className="fa-solid fa-xmark" />
+            </button>
           </div>
           <p className="map-edge-relation">
             <strong>{selectedEdge.source}</strong> → <strong>{selectedEdge.target}</strong>
           </p>
           {selectedEdge.description && <p className="map-edge-desc">{selectedEdge.description}</p>}
           <div className="map-edge-actions">
-            <button className="btn btn-secondary btn-sm" onClick={() => onEdit(selectedEdge)}>✎ Edit</button>
-            <button className="btn btn-danger btn-sm" onClick={() => onDelete(selectedEdge)}>🗑 Delete</button>
+            <button className="btn btn-secondary btn-sm" onClick={() => onEdit(selectedEdge)}>
+              <i className="fa-solid fa-pen" style={{ fontSize: 11 }} /> Edit
+            </button>
+            <button className="btn btn-danger btn-sm" onClick={() => onDelete(selectedEdge)}>
+              <i className="fa-solid fa-trash" style={{ fontSize: 11 }} /> Delete
+            </button>
           </div>
         </div>
       )}
@@ -140,7 +177,7 @@ export function RelationshipMap({
           );
         })}
         <span className="legend-item">
-          <span className="legend-dot" style={{ background: 'transparent', border: '2px solid #fbbf24' }} />
+          <span className="legend-dot" style={{ background: 'transparent', border: '2px solid #c8a876' }} />
           Character
         </span>
       </div>

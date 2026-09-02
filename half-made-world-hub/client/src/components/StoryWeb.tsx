@@ -149,8 +149,8 @@ const WebNode = memo(function WebNode({
 }: WebNodeProps) {
   const isChar = category === 'Characters';
   const isOther = category === 'Other';
-  const stroke = isOther ? '#64748f' : categoryColor(category);
-  const fill = isOther ? '#0a1020' : `${stroke}2b`;
+  const stroke = isOther ? '#7f8fa3' : categoryColor(category);
+  const fill = isOther ? '#101420' : `${stroke}2b`;
 
   return (
     <g
@@ -174,7 +174,7 @@ const WebNode = memo(function WebNode({
         strokeDasharray={isOther ? '3 3' : undefined}
         style={{ filter: active ? `drop-shadow(0 0 6px ${stroke}88)` : undefined }}
       />
-      <text x={x} y={y + 4.5} textAnchor="middle" className="map-node-initial" fill={isOther ? '#94a3b8' : stroke} style={{ fontSize: 11 }}>
+      <text x={x} y={y + 4.5} textAnchor="middle" className="map-node-initial" fill={isOther ? '#7f8fa3' : stroke} style={{ fontSize: 11 }}>
         {name.charAt(0).toUpperCase()}
       </text>
       {showLabel && (
@@ -282,7 +282,7 @@ function NamePopup({ name, x, y, onClose }: { name: string; x: number; y: number
         position: 'absolute',
         left: x, top: y - 36,
         background: 'rgba(10, 16, 32, 0.96)',
-        border: '1px solid rgba(96, 165, 250, 0.3)',
+        border: '1px solid rgba(200, 168, 118, 0.3)',
         borderRadius: 8,
         padding: '6px 12px',
         fontSize: 12,

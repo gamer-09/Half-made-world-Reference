@@ -265,10 +265,13 @@ export default function App() {
       list = list.filter(
         (e) =>
           e.name.toLowerCase().includes(q) ||
-          e.subtitle.toLowerCase().includes(q) ||
-          e.description.toLowerCase().includes(q) ||
+          (e.subtitle && e.subtitle.toLowerCase().includes(q)) ||
+          (e.description && e.description.toLowerCase().includes(q)) ||
           e.tags.some((t) => t.toLowerCase().includes(q)) ||
-          e.fields.some((f) => f.label.toLowerCase().includes(q) || f.value.toLowerCase().includes(q)),
+          e.fields.some((f) => 
+            (f.label && f.label.toLowerCase().includes(q)) || 
+            (f.value && f.value.toLowerCase().includes(q))
+          ),
       );
     }
     return list;
@@ -499,17 +502,17 @@ export default function App() {
       />
 
       <main className="main">
-        <header className="main-header" style={{ borderBottom: '1px solid rgba(96,165,250,0.16)', position: 'relative', zIndex: 10, display: 'flex', visibility: 'visible', opacity: 1 }}>
+        <header className="main-header" style={{ borderBottom: '1px solid rgba(200,168,118,0.08)', position: 'relative', zIndex: 10, display: 'flex', visibility: 'visible', opacity: 1 }}>
           <div style={{ visibility: 'visible', opacity: 1, display: 'block' }}>
             <h2 className="main-title" style={{ color: 'white', visibility: 'visible', opacity: 1 }}>
               {isBlocksView ? 'Block Chain Map' : isWebView ? 'Story Web' : isMapView ? 'Relationship Map' : activeCategory === 'All' ? 'All Entries' : activeCategory}
               {!isMapView && !isWebView && !isBlocksView && (
-                <span className="main-count" style={{ color: '#22d3ee', background: 'rgba(34,211,238,0.14)', border: '1px solid rgba(34,211,238,0.4)' }}>
+                <span className="main-count" style={{ color: '#c8a876', background: 'rgba(200,168,118,0.14)', border: '1px solid rgba(200,168,118,0.3)' }}>
                   {filtered.length}
                 </span>
               )}
             </h2>
-            <p className="main-sub" style={{ color: '#9fb0cc' }}>
+            <p className="main-sub" style={{ color: 'rgba(235,230,216,0.6)' }}>
               {isBlocksView
                   ? 'The world’s geography as a chain — every place linked to what contains it'
                   : isWebView
@@ -526,7 +529,7 @@ export default function App() {
             {!isMapView && !isWebView && activeCategory !== 'All' && (
               <button
                 className="btn btn-danger btn-sm"
-                style={{ color: '#f87171', border: '1px solid rgba(248,113,113,0.4)', background: 'rgba(248,113,113,0.08)' }}
+                style={{ color: '#c25e4a', border: '1px solid rgba(194,94,74,0.4)', background: 'rgba(194,94,74,0.08)' }}
                 onClick={() => handleDeleteCategory(activeCategory)}
               >
                 🗑 Delete “{activeCategory}”
@@ -535,7 +538,7 @@ export default function App() {
             {isMapView && (
               <button
                 className="btn btn-primary btn-sm"
-                style={{ color: '#e8f1ff', border: '1px solid rgba(34,211,238,0.4)', background: 'rgba(34,211,238,0.16)' }}
+                style={{ color: '#ebe6d8', border: '1px solid rgba(200,168,118,0.4)', background: 'rgba(200,168,118,0.12)' }}
                 onClick={openAddRel}
               >
                 ＋ Add Relationship
@@ -544,7 +547,7 @@ export default function App() {
             {isWebView && (
               <button
                 className="btn btn-primary btn-sm"
-                style={{ color: '#e8f1ff', border: '1px solid rgba(34,211,238,0.4)', background: 'rgba(34,211,238,0.16)' }}
+                style={{ color: '#ebe6d8', border: '1px solid rgba(200,168,118,0.4)', background: 'rgba(200,168,118,0.12)' }}
                 onClick={openAddLink}
               >
                 ＋ Add Link
@@ -552,7 +555,7 @@ export default function App() {
             )}
             <button
               className="btn btn-ghost btn-sm"
-              style={{ color: '#9fb0cc', border: '1px solid transparent' }}
+              style={{ color: 'rgba(235,230,216,0.6)', border: '1px solid transparent' }}
               onClick={exportMarkdown}
               title="Download the archive as Markdown"
             >
@@ -560,7 +563,7 @@ export default function App() {
             </button>
             <button
               className="btn btn-ghost btn-sm"
-              style={{ color: '#9fb0cc', border: '1px solid transparent' }}
+              style={{ color: 'rgba(235,230,216,0.6)', border: '1px solid transparent' }}
               onClick={exportJson}
               title="Download the archive as JSON"
             >

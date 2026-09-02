@@ -129,7 +129,13 @@
 [128] Charm→
 [129] Forces someone to do what they want, though it doesn't work on anyone stronger than them and can be resisted. Only female demons have this skill.
 [130] Soul-Sight→
-[131] Let’s them see where a person's soul will move next, effectively predicting their next attack. Doesn't work on angels of any rank.
+[131] Let's them see where a person's soul will move next, effectively predicting their next attack. Doesn't work on angels of any rank.
+[131a] Standard Scope: Standard demon Soul Sight ONLY perceives the soul's movement — predicting the direction and timing of physical attacks. It cannot detect corruption spreading or spiritual influence. A demon with Soul Sight can dodge an incoming strike but cannot see the sword's corruption eating away at their soul.
+[131b] MC Enhancement: The MC's Soul Sight is significantly more powerful due to his angel half. His enhanced version perceives: (1) Soul movement for attack prediction, (2) Corruption spreading in real time, (3) Spiritual nature of beings, (4) Vireth's influence reaching toward him like a hand. He watches the sword's corruption try to bend his will and actively fights it off through vigilance.
+[131c] Demon vs MC Experience: DEMON WIELDING VIRETH — Soul Sight predicts attacks but CANNOT see corruption. They experience: whispering grows louder, moral compass blurs, veins darken, aura shifts, blackouts occur, eventually full possession. They fight blind — stronger in combat but losing themselves. Jaiden Wielding Vireth — Soul Sight lets him see corruption approaching in real time. He watches the sword's influence like watching a hand reach for his throat. He can resist because he can see it coming. He keeps the other eyes closed through vigilance, not strength.
+[131d] Vireth Counter-Mechanics: Each eye opening = corruption deepening. Jaiden's Soul Sight counters by: (1) Seeing the sword's whispers before they take hold, (2) Watching his moral compass blur and actively resisting, (3) Observing corruption spread through his veins and fighting it, (4) Detecting the sword attempting to override his will. Without Soul Sight, a wielder experiences these effects passively — they happen TO them. With Soul Sight, Jaiden experiences them actively — he watches and chooses to resist.
+[131e] Why Demons Cannot Survive Vireth: Even if a demon possessed Soul Sight, they cannot survive Vireth because: (1) Soul Sight only predicts physical attacks, not corruption, (2) The sword's divine nature counters demonic regeneration, (3) Corruption overwhelms demon souls faster than angel-touched souls, (4) Without Jaiden's angelic resistance, the sword's whispers eventually break any will. The MC's angel half provides the spiritual anchor that lets him resist what would consume any demon.
+
 [132] Berserk→
 [133] Triggers automatically at low health. Boosts attack power and magic attacks by 20x but sharply reduces reasoning.
 [134] Demonic Aura→
@@ -672,7 +678,7 @@ Blood-forging (using demon or angel blood in the forge) is one of the hardest sk
 
 Economy and Pricing
 
-All prices in standard currency (Copper Shard / Silver Mark / Gold Crown). Exchange rate: 10 cp = 1 sm, 10 sm = 1 gc, 100 cp = 1 gc.
+All prices in standard currency (Silver Sigil / Gold Sigil / Platinum Sigil). Exchange rate: 100 ss = 1 gs, 1000 gs = 1 ps.
 
 Wage Benchmarks:
 - Common laborer: 1-2 sm/day

@@ -55,7 +55,7 @@ export function Dashboard({
           </div>
         </div>
         <button className="btn btn-primary" onClick={onAdd}>
-          <span className="btn-icon">+</span> Add your first new entry
+          <i className="fa-solid fa-plus" style={{ fontSize: 12 }} /> Add your first new entry
         </button>
       </section>
 
@@ -92,7 +92,7 @@ export function Dashboard({
             onChange={(e) => setTagQuery(e.target.value)}
           />
           {filteredTags.length === 0 ? (
-            <p className="section-hint">No tags match “{tagQuery.trim()}”.</p>
+            <p className="section-hint">No tags match &ldquo;{tagQuery.trim()}&rdquo;.</p>
           ) : (
             <div className="tag-cloud">
               {filteredTags.map((tag) => {

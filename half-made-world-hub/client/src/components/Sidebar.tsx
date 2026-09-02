@@ -40,17 +40,17 @@ export function Sidebar({
           <svg viewBox="0 0 64 64" width="34" height="34">
             <circle cx="32" cy="32" r="16" fill="none" stroke="url(#brandGrad)" strokeWidth="2.5" />
             <circle cx="32" cy="32" r="6" fill="url(#brandGrad)" />
-            <path d="M32 8 L35 26 L50 26 L37 36 L42 56 L32 42 L22 56 L27 36 L14 26 L29 26 Z" fill="none" stroke="#22d3ee" strokeWidth="1.5" opacity="0.6" />
+            <path d="M32 8 L35 26 L50 26 L37 36 L42 56 L32 42 L22 56 L27 36 L14 26 L29 26 Z" fill="none" stroke="#c8a876" strokeWidth="1.5" opacity="0.6" />
             <defs>
               <linearGradient id="brandGrad" x1="0" y1="0" x2="1" y2="1">
-                <stop offset="0" stopColor="#22d3ee" />
-                <stop offset="1" stopColor="#8b5cf6" />
+                <stop offset="0" stopColor="#c8a876" />
+                <stop offset="1" stopColor="#8f6b3c" />
               </linearGradient>
             </defs>
           </svg>
         </div>
         <div>
-          <h1 className="brand-name">Half-Made World</h1>
+          <h1 className="brand-name">Half-Made</h1>
           <p className="brand-sub">Worldbuilding Archive</p>
         </div>
       </div>
@@ -64,13 +64,7 @@ export function Sidebar({
         onClick={onOpenMap}
         title="Who knows whom — and who betrayed whom"
       >
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8">
-          <circle cx="5" cy="6" r="2.2" />
-          <circle cx="18" cy="5" r="2.2" />
-          <circle cx="12" cy="18" r="2.2" />
-          <line x1="6.8" y1="7.2" x2="10.5" y2="15.5" />
-          <line x1="15.9" y1="6.6" x2="13.4" y2="15.7" />
-        </svg>
+        <i className="fa-solid fa-diagram-project" style={{ fontSize: 14, color: view === 'map' ? '#c8a876' : 'currentColor' }} />
         Relationship Map
       </button>
 
@@ -79,11 +73,7 @@ export function Sidebar({
         onClick={onOpenWeb}
         title="The whole world at a glance — realms, monsters, artifacts, plot"
       >
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8">
-          <circle cx="12" cy="12" r="9" />
-          <ellipse cx="12" cy="12" rx="4" ry="9" />
-          <line x1="3.5" y1="12" x2="20.5" y2="12" />
-        </svg>
+        <i className="fa-solid fa-globe" style={{ fontSize: 14, color: view === 'web' ? '#c8a876' : 'currentColor' }} />
         Story Web
       </button>
 
@@ -92,21 +82,13 @@ export function Sidebar({
         onClick={onOpenBlocks}
         title="The world's geography as a chain of linked blocks"
       >
-        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" strokeWidth="1.8">
-          <rect x="3" y="3" width="8" height="8" rx="1.5" />
-          <rect x="13" y="3" width="8" height="8" rx="1.5" />
-          <rect x="3" y="13" width="8" height="8" rx="1.5" />
-          <rect x="13" y="13" width="8" height="8" rx="1.5" />
-        </svg>
+        <i className="fa-solid fa-cubes" style={{ fontSize: 14, color: view === 'blocks' ? '#c8a876' : 'currentColor' }} />
         Block Chain Map
       </button>
 
       <label className="search-wrap">
         <span className="search-icon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" strokeWidth="2">
-            <circle cx="11" cy="11" r="7" />
-            <line x1="16.5" y1="16.5" x2="21" y2="21" />
-          </svg>
+          <i className="fa-solid fa-magnifying-glass" style={{ fontSize: 13 }} />
         </span>
         <input
           type="search"
@@ -124,7 +106,7 @@ export function Sidebar({
           className={`category-item${activeCategory === 'All' && view === 'browse' ? ' active' : ''}`}
           onClick={() => onSelectCategory('All')}
         >
-          <span className="category-dot" style={{ background: '#94a3b8' }} />
+          <span className="category-dot" style={{ background: '#7f8fa3' }} />
           <span className="category-name">All Entries</span>
           <span className="category-count">{total}</span>
         </button>

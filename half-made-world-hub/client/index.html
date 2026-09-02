@@ -1,19 +1,71 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="Interactive worldbuilding archive for the Half-Made World" />
     <title>Half-Made World — Worldbuilding Archive</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@500;600;700&family=JetBrains+Mono:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@300;400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              ink: { 950: '#080a10', 900: '#0c0f16', 850: '#101420', 800: '#161a28', 700: '#1e2330' },
+              parchment: '#ebe6d8',
+              brass: '#c8a876',
+              brassDeep: '#8f6b3c',
+              mist: '#7f8fa3',
+              ember: '#c25e4a',
+              sage: '#6b8e6b',
+            },
+            fontFamily: {
+              display: ['"Cinzel Decorative"', 'serif'],
+              body: ['"Instrument Serif"', 'Georgia', 'serif'],
+              mono: ['"JetBrains Mono"', 'monospace'],
+            },
+            animation: {
+              grain: 'grain 0.25s steps(8) infinite',
+              float: 'float 8s ease-in-out infinite',
+              'pulse-ring': 'pulse-ring 3s ease-in-out infinite',
+            },
+            keyframes: {
+              grain: {
+                '0%, 100%': { transform: 'translate(0,0)' },
+                '10%': { transform: 'translate(-2%, -2%)' },
+                '20%': { transform: 'translate(2%, 2%)' },
+                '30%': { transform: 'translate(-1%, 1%)' },
+                '40%': { transform: 'translate(1%, -1%)' },
+                '50%': { transform: 'translate(-2%, 2%)' },
+                '60%': { transform: 'translate(2%, -2%)' },
+                '70%': { transform: 'translate(-1%, -2%)' },
+                '80%': { transform: 'translate(1%, 2%)' },
+                '90%': { transform: 'translate(-2%, 1%)' },
+              },
+              float: {
+                '0%, 100%': { transform: 'translateY(0)' },
+                '50%': { transform: 'translateY(-6px)' },
+              },
+              'pulse-ring': {
+                '0%': { boxShadow: '0 0 0 0 rgba(200,168,118,0.4)' },
+                '50%': { boxShadow: '0 0 0 20px rgba(200,168,118,0)' },
+                '100%': { boxShadow: '0 0 0 0 rgba(200,168,118,0)' },
+              },
+            },
+          },
+        },
+      }
+    </script>
   </head>
-  <body>
+  <body class="font-body antialiased min-h-screen relative">
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
   </body>

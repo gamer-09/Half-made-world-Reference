@@ -32,18 +32,18 @@ const NEW_TYPE = '__new__';
 
 /** Arrow colors offered when creating a custom link type. */
 const CUSTOM_COLORS = [
-  '#22d3ee', // cyan
-  '#8b5cf6', // violet
-  '#34d399', // emerald
-  '#f472b6', // pink
-  '#fbbf24', // amber
-  '#f87171', // red
-  '#38bdf8', // sky
-  '#c084fc', // purple
-  '#4ade80', // green
-  '#fb923c', // orange
-  '#a78bfa', // lavender
-  '#818cf8', // indigo
+  '#c8a876', // brass
+  '#8f6b3c', // brassDeep
+  '#c25e4a', // ember
+  '#6b8e6b', // sage
+  '#7f8fa3', // mist
+  '#ebe6d8', // parchment
+  '#c8a876', // brass
+  '#c25e4a', // ember
+  '#6b8e6b', // sage
+  '#8f6b3c', // brassDeep
+  '#7f8fa3', // mist
+  '#ebe6d8', // parchment
 ];
 
 export function LinkForm({ title, names, types, editing, onSave, onCancel }: LinkFormProps) {

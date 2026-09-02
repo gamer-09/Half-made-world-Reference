@@ -1,41 +1,41 @@
 export const CATEGORY_COLORS: Record<string, string> = {
-  Realms: '#22d3ee',
-  Locations: '#34d399',
-  Monsters: '#f87171',
-  Beings: '#a78bfa',
-  Angels: '#fbbf24',
-  Demons: '#c084fc',
-  Humans: '#fb923c',
-  'Magic Systems': '#38bdf8',
-  'Rules & Notes': '#94a3b8',
-  Classes: '#4ade80',
-  Items: '#fbbf24',
-  'Hidden Realm': '#818cf8',
-  Artifacts: '#facc15',
-  Characters: '#f472b6',
-  Plot: '#c084fc',
-  'Angel Skills': '#7dd3fc',
-  'Demon Skills': '#d8b4fe',
-  'Character Forms': '#fda4af',
-  'Artifact Skills': '#bef264',
-  Coins: '#fde047',
-  'Hybrid Skills': '#e879f9',
-  'Class Skills': '#f9a8d4',
-  'Grade System': '#60a5fa',
-  'Rune Star Circles': '#c084fc',
-  'Class Progression': '#34d399',
+  Realms: '#c8a876',
+  Locations: '#c8a876',
+  Monsters: '#c25e4a',
+  Beings: '#c8a876',
+  Angels: '#c8a876',
+  Demons: '#c25e4a',
+  Humans: '#c8a876',
+  'Magic Systems': '#c8a876',
+  'Rules & Notes': '#7f8fa3',
+  Classes: '#c8a876',
+  Items: '#c8a876',
+  'Hidden Realm': '#7f8fa3',
+  Artifacts: '#c8a876',
+  Characters: '#c8a876',
+  Plot: '#c25e4a',
+  'Angel Skills': '#c8a876',
+  'Demon Skills': '#c25e4a',
+  'Character Forms': '#c8a876',
+  'Artifact Skills': '#c8a876',
+  Coins: '#c8a876',
+  'Hybrid Skills': '#c8a876',
+  'Class Skills': '#c8a876',
+  'Grade System': '#c8a876',
+  'Rune Star Circles': '#c8a876',
+  'Class Progression': '#6b8e6b',
 };
 
-export const FALLBACK_COLOR = '#94a3b8';
+export const FALLBACK_COLOR = '#7f8fa3';
 
 export function categoryColor(name: string): string {
   return CATEGORY_COLORS[name] ?? FALLBACK_COLOR;
 }
 
-/** Deterministic neon accent derived from a name (for brand-new categories). */
+/** Deterministic brass accent derived from a name (for brand-new categories). */
 export function categoryAccent(name: string): string {
   if (CATEGORY_COLORS[name]) return CATEGORY_COLORS[name];
-  const palette = ['#22d3ee', '#a78bfa', '#4ade80', '#fb923c', '#f87171', '#34d399'];
+  const palette = ['#c8a876', '#c25e4a', '#6b8e6b', '#7f8fa3', '#8f6b3c', '#c8a876'];
   let hash = 0;
   for (let i = 0; i < name.length; i += 1) {
     hash = (hash * 31 + name.charCodeAt(i)) >>> 0;
