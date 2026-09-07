@@ -10,7 +10,7 @@ interface DashboardProps {
   onSelectCategory: (category: string) => void;
   onSelectTag: (tag: string) => void;
   onOpenEntry: (name: string) => void;
-  onAdd: () => void;
+  onAdd?: () => void;
 }
 
 const HIGHLIGHTS = ['Artifacts', 'Classes', 'Characters', 'Plot', 'Monsters', 'Realms'];
@@ -54,9 +54,13 @@ export function Dashboard({
             <span className="stat-label">Categories</span>
           </div>
         </div>
-        <button className="btn btn-primary" onClick={onAdd}>
-          <i className="fa-solid fa-plus" style={{ fontSize: 12 }} /> Add your first new entry
-        </button>
+
+        {onAdd && (
+          <button className="btn btn-primary" onClick={onAdd}>
+            <i className="fa-solid fa-plus" style={{ fontSize: 12 }} /> Add your first new entry
+          </button>
+        )}
+
       </section>
 
       <section className="dashboard-section">

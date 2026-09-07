@@ -5,8 +5,8 @@ import { DescriptionRenderer } from './DescriptionRenderer';
 interface EntryDetailProps {
   entry: Entry;
   connections: ConnectionInfo[];
-  onEdit: (entry: Entry) => void;
-  onDelete: (entry: Entry) => void;
+  onEdit?: (entry: Entry) => void;
+  onDelete?: (entry: Entry) => void;
   onOpenEntry: (name: string) => void;
 }
 
@@ -71,19 +71,22 @@ export function EntryDetail({ entry, connections, onEdit, onDelete, onOpenEntry 
                   <span className="conn-arrow">→</span>
                 </button>
               </div>
-            ))}
-          </div>
+            ))}      </div>
+
+      {onEdit && (
+        <div className="detail-actions">
+          <button className="btn btn-secondary" onClick={() => onEdit?.(entry)}>
+            <i className="fa-solid fa-pen" style={{ fontSize: 11 }} /> Edit
+          </button>
+          <button className="btn btn-danger" onClick={() => onDelete?.(entry)}>
+            <i className="fa-solid fa-trash" style={{ fontSize: 11 }} /> Delete
+          </button>
         </div>
       )}
+    </div>
+      )}
 
-      <div className="detail-actions">
-        <button className="btn btn-secondary" onClick={() => onEdit(entry)}>
-          <i className="fa-solid fa-pen" style={{ fontSize: 11 }} /> Edit
-        </button>
-        <button className="btn btn-danger" onClick={() => onDelete(entry)}>
-          <i className="fa-solid fa-trash" style={{ fontSize: 11 }} /> Delete
-        </button>
-      </div>
+
     </div>
   );
 }

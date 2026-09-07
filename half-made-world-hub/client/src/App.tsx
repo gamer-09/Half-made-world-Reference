@@ -9,23 +9,9 @@ import type {
   StoryLink,
   StoryLinkInput,
 } from './types';
-import {
-  createEntry,
-  createRelationship,
-  createStoryLink,
-  deleteCategory,
-  deleteEntry,
-  deleteRelationship,
-  deleteStoryLink,
-  fetchEntries,
-  fetchRelationships,
-  fetchStoryLinks,
-  resetWorld,
-  updateEntry,
-  updateRelationship,
-  updateStoryLink,
-} from './api';
 import { Sidebar, type ViewMode } from './components/Sidebar';
+import { useArchive } from './hooks/useArchive';
+import * as liveApi from './api';
 import { Dashboard } from './components/Dashboard';
 import { EntryCard } from './components/EntryCard';
 import { EntryDetail } from './components/EntryDetail';
@@ -38,6 +24,8 @@ import { Modal } from './components/Modal';
 import { RELATIONSHIP_TYPES, relationshipType } from './relationshipTypes';
 import { STORY_LINK_TYPES, storyLinkType } from './storyLinkTypes';
 import { findCharacter } from './nameMatch';
+
+const canEdit = !import.meta.env.PROD;
 
 function download(filename: string, content: string, mime: string) {
   const blob = new Blob([content], { type: mime });
@@ -72,12 +60,14 @@ function buildMarkdown(entries: Entry[]): string {
 }
 
 export default function App() {
-  const [entries, setEntries] = useState<Entry[]>([]);
-  const [relationships, setRelationships] = useState<Relationship[]>([]);
-  const [storyLinks, setStoryLinks] = useState<StoryLink[]>([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState('');
-  const [view, setView] = useState<ViewMode>('browse');
+  const archive = useArchive();
+  const entries = archive.entries;
+  const relationships = archive.relationships;
+  const storyLinks = archive.storyLinks;
+  const loading = archive.mode === 'loading';
+  const error = archive.error;
+  const view = useState<ViewMode>('browse')[0];
+  const setView = useState<ViewMode>('browse')[1];
   const [activeCategory, setActiveCategory] = useState('All');
   const [search, setSearch] = useState('');
   const [selected, setSelected] = useState<Entry | null>(null);
@@ -112,22 +102,8 @@ export default function App() {
   }, []);
 
   const load = useCallback(async () => {
-    try {
-      const [entryData, relData, linkData] = await Promise.all([
-        fetchEntries(),
-        fetchRelationships(),
-        fetchStoryLinks(),
-      ]);
-      setEntries(entryData);
-      setRelationships(relData);
-      setStoryLinks(linkData);
-      setError('');
-    } catch (err) {
-      setError(err instanceof Error ? err.message : 'Failed to load the archive.');
-    } finally {
-      setLoading(false);
-    }
-  }, []);
+    await archive.load();
+  }, [archive.load]);
 
   useEffect(() => {
     load();
@@ -150,7 +126,7 @@ export default function App() {
     });
   }, [selected]);
 
-  // Keyboard shortcuts: / focuses search, n adds an entry, 1/2/3 switch views.
+  // Keyboard shortcuts: / focuses search, n adds an entry, 1/2/3/4 switch views.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {
       const target = e.target as HTMLElement | null;
@@ -167,7 +143,8 @@ export default function App() {
         e.preventDefault();
         searchRef.current?.focus();
       } else if (e.key === 'n' || e.key === 'N') {
-        openAdd();
+        if (canEdit) openAdd();
+        else showToast('This is a view-only build — new entries can’t be added here.');
       } else if (e.key === '1') {
         setView('browse');
       } else if (e.key === '2') {
@@ -268,8 +245,8 @@ export default function App() {
           (e.subtitle && e.subtitle.toLowerCase().includes(q)) ||
           (e.description && e.description.toLowerCase().includes(q)) ||
           e.tags.some((t) => t.toLowerCase().includes(q)) ||
-          e.fields.some((f) => 
-            (f.label && f.label.toLowerCase().includes(q)) || 
+          e.fields.some((f) =>
+            (f.label && f.label.toLowerCase().includes(q)) ||
             (f.value && f.value.toLowerCase().includes(q))
           ),
       );
@@ -312,12 +289,16 @@ export default function App() {
   };
 
   const handleSave = async (input: EntryInput) => {
+    if (!canEdit) {
+      showToast('Editing is disabled in the view-only build.');
+      return;
+    }
     try {
       if (editing) {
-        await updateEntry(editing.id, input);
+        await liveApi.updateEntry(editing.id, input);
         showToast(`Updated “${input.name}”.`);
       } else {
-        await createEntry(input);
+        await liveApi.createEntry(input);
         showToast(`Added “${input.name}” to ${input.category}.`);
       }
       closeForm();
@@ -328,9 +309,13 @@ export default function App() {
   };
 
   const handleDelete = async (entry: Entry) => {
+    if (!canEdit) {
+      showToast('Editing is disabled in the view-only build.');
+      return;
+    }
     if (!window.confirm(`Delete “${entry.name}” permanently?`)) return;
     try {
-      await deleteEntry(entry.id);
+      await liveApi.deleteEntry(entry.id);
       setSelected(null);
       showToast(`Deleted “${entry.name}”.`);
       await load();
@@ -340,6 +325,10 @@ export default function App() {
   };
 
   const handleDeleteCategory = async (category: string) => {
+    if (!canEdit) {
+      showToast('Editing is disabled in the view-only build.');
+      return;
+    }
     const count = categories.find((c) => c.name === category)?.count ?? 0;
     if (
       !window.confirm(
@@ -350,7 +339,7 @@ export default function App() {
       return;
     }
     try {
-      await deleteCategory(category);
+      await liveApi.deleteCategory(category);
       if (activeCategory === category) setActiveCategory('All');
       showToast(`Deleted the “${category}” category and its ${count} entries.`);
       await load();
@@ -376,12 +365,16 @@ export default function App() {
   };
 
   const handleSaveRel = async (input: RelationshipInput) => {
+    if (!canEdit) {
+      showToast('Editing is disabled in the view-only build.');
+      return;
+    }
     try {
       if (editingRel) {
-        await updateRelationship(editingRel.id, input);
+        await liveApi.updateRelationship(editingRel.id, input);
         showToast(`Updated the relationship: ${input.source} → ${input.target}.`);
       } else {
-        await createRelationship(input);
+        await liveApi.createRelationship(input);
         showToast(`Linked ${input.source} → ${input.target}.`);
       }
       closeRelForm();
@@ -392,9 +385,13 @@ export default function App() {
   };
 
   const handleDeleteRel = async (rel: Relationship) => {
+    if (!canEdit) {
+      showToast('Editing is disabled in the view-only build.');
+      return;
+    }
     if (!window.confirm(`Delete the “${rel.label}” link (${rel.source} → ${rel.target})?`)) return;
     try {
-      await deleteRelationship(rel.id);
+      await liveApi.deleteRelationship(rel.id);
       showToast(`Removed the link between ${rel.source} and ${rel.target}.`);
       await load();
     } catch (err) {
@@ -419,12 +416,16 @@ export default function App() {
   };
 
   const handleSaveLink = async (input: StoryLinkInput) => {
+    if (!canEdit) {
+      showToast('Editing is disabled in the view-only build.');
+      return;
+    }
     try {
       if (editingLink) {
-        await updateStoryLink(editingLink.id, input);
+        await liveApi.updateStoryLink(editingLink.id, input);
         showToast(`Updated the link: ${input.source} → ${input.target}.`);
       } else {
-        await createStoryLink(input);
+        await liveApi.createStoryLink(input);
         showToast(`Connected ${input.source} → ${input.target}.`);
       }
       closeLinkForm();
@@ -435,9 +436,13 @@ export default function App() {
   };
 
   const handleDeleteLink = async (link: StoryLink) => {
+    if (!canEdit) {
+      showToast('Editing is disabled in the view-only build.');
+      return;
+    }
     if (!window.confirm(`Delete the “${link.label}” link (${link.source} → ${link.target})?`)) return;
     try {
-      await deleteStoryLink(link.id);
+      await liveApi.deleteStoryLink(link.id);
       showToast(`Removed the link between ${link.source} and ${link.target}.`);
       await load();
     } catch (err) {
@@ -447,6 +452,10 @@ export default function App() {
 
   // --- Misc ---------------------------------------------------------------
   const handleReset = async () => {
+    if (!canEdit) {
+      showToast('Editing is disabled in the view-only build.');
+      return;
+    }
     if (
       !window.confirm(
         'Reset the archive to the original seed? This removes all your added entries, relationships, and story links.',
@@ -454,7 +463,7 @@ export default function App() {
     )
       return;
     try {
-      await resetWorld();
+      await liveApi.resetWorld();
       setSelected(null);
       setActiveCategory('All');
       setSearch('');
@@ -495,7 +504,7 @@ export default function App() {
         searchRef={searchRef}
         onSearch={setSearch}
         onSelectCategory={selectCategory}
-        onAdd={openAdd}
+        onAdd={canEdit ? openAdd : undefined}
         onOpenMap={() => setView('map')}
         onOpenWeb={() => setView('web')}
         onOpenBlocks={() => setView('blocks')}
@@ -509,6 +518,11 @@ export default function App() {
               {!isMapView && !isWebView && !isBlocksView && (
                 <span className="main-count" style={{ color: '#c8a876', background: 'rgba(200,168,118,0.14)', border: '1px solid rgba(200,168,118,0.3)' }}>
                   {filtered.length}
+                </span>
+              )}
+              {!canEdit && !isMapView && !isWebView && !isBlocksView && (
+                <span className="main-mode" style={{ color: 'rgba(127,143,163,0.7)', marginLeft: 8 }}>
+                  view-only build
                 </span>
               )}
             </h2>
@@ -526,7 +540,7 @@ export default function App() {
             </p>
           </div>
           <div className="header-actions">
-            {!isMapView && !isWebView && activeCategory !== 'All' && (
+            {!isMapView && !isWebView && activeCategory !== 'All' && canEdit && (
               <button
                 className="btn btn-danger btn-sm"
                 style={{ color: '#c25e4a', border: '1px solid rgba(194,94,74,0.4)', background: 'rgba(194,94,74,0.08)' }}
@@ -535,7 +549,7 @@ export default function App() {
                 🗑 Delete “{activeCategory}”
               </button>
             )}
-            {isMapView && (
+            {isMapView && canEdit && (
               <button
                 className="btn btn-primary btn-sm"
                 style={{ color: '#ebe6d8', border: '1px solid rgba(200,168,118,0.4)', background: 'rgba(200,168,118,0.12)' }}
@@ -544,7 +558,7 @@ export default function App() {
                 ＋ Add Relationship
               </button>
             )}
-            {isWebView && (
+            {isWebView && canEdit && (
               <button
                 className="btn btn-primary btn-sm"
                 style={{ color: '#ebe6d8', border: '1px solid rgba(200,168,118,0.4)', background: 'rgba(200,168,118,0.12)' }}
@@ -580,7 +594,7 @@ export default function App() {
           </div>
         ) : error ? (
           <div className="empty-state">
-            <p className="empty-title">The server isn’t answering.</p>
+            <p className="empty-title">The archive couldn’t be loaded.</p>
             <p className="empty-text">{error}</p>
             <button className="btn btn-secondary" onClick={load}>
               Retry
@@ -594,29 +608,31 @@ export default function App() {
             relationships={relationships}
             storyLinks={storyLinks}
             onNodeClick={setSelected}
-            onAdd={openAddLink}
-            onEditStory={openEditLink}
-            onDeleteStory={handleDeleteLink}
-            onEditRel={openEditRel}
-            onDeleteRel={handleDeleteRel}
+            onAdd={canEdit ? openAddLink : undefined}
+            onEditStory={canEdit ? openEditLink : undefined}
+            onDeleteStory={canEdit ? handleDeleteLink : undefined}
+            onEditRel={canEdit ? openEditRel : undefined}
+            onDeleteRel={canEdit ? handleDeleteRel : undefined}
           />
         ) : isMapView ? (
           relationships.length === 0 ? (
             <div className="empty-state">
               <p className="empty-title">No relationships yet.</p>
               <p className="empty-text">Link two characters to start weaving the web.</p>
-              <button className="btn btn-primary" onClick={openAddRel}>
-                ＋ Add Relationship
-              </button>
+              {canEdit && (
+                <button className="btn btn-primary" onClick={openAddRel}>
+                  ＋ Add Relationship
+                </button>
+              )}
             </div>
           ) : (
             <RelationshipMap
               relationships={relationships}
               characterEntries={characterEntries}
               onNodeClick={setSelected}
-              onAdd={openAddRel}
-              onEdit={openEditRel}
-              onDelete={handleDeleteRel}
+              onAdd={canEdit ? openAddRel : undefined}
+              onEdit={canEdit ? openEditRel : undefined}
+              onDelete={canEdit ? handleDeleteRel : undefined}
             />
           )
         ) : showDashboard ? (
@@ -628,15 +644,17 @@ export default function App() {
             onSelectCategory={selectCategory}
             onSelectTag={selectTag}
             onOpenEntry={openEntryByName}
-            onAdd={openAdd}
+            onAdd={canEdit ? openAdd : undefined}
           />
         ) : filtered.length === 0 ? (
           <div className="empty-state">
             <p className="empty-title">Nothing found.</p>
             <p className="empty-text">Try a different search, or add a brand-new entry to the world.</p>
-            <button className="btn btn-primary" onClick={openAdd}>
-              ＋ Add Entry
-            </button>
+            {canEdit && (
+              <button className="btn btn-primary" onClick={openAdd}>
+                ＋ Add Entry
+              </button>
+            )}
           </div>
         ) : (
           <>
@@ -661,10 +679,16 @@ export default function App() {
         </div>
 
         <footer className="main-footer">
-          <button className="btn btn-ghost btn-sm" onClick={handleReset} title="Restore the original seed data">
-            ↺ Reset to seed
-          </button>
-          <span className="footer-note">Seeded from “Half_made world ideas.docx” · saved to server/data/*.json</span>
+          {canEdit && (
+            <button className="btn btn-ghost btn-sm" onClick={handleReset} title="Restore the original seed data">
+              ↺ Reset to seed
+            </button>
+          )}
+          <span className="footer-note">
+            {canEdit
+              ? 'Seeded from “Half_made world ideas.docx” · saved to server/data/*.json'
+              : 'View-only archive · generated from server/data/*.json at build time'}
+          </span>
         </footer>
       </main>
 
@@ -673,14 +697,14 @@ export default function App() {
           <EntryDetail
             entry={selected}
             connections={connections}
-            onEdit={openEdit}
-            onDelete={handleDelete}
+            onEdit={canEdit ? openEdit : undefined}
+            onDelete={canEdit ? handleDelete : undefined}
             onOpenEntry={openEntryByName}
           />
         </Modal>
       )}
 
-      {formOpen && (
+      {formOpen && canEdit && (
         <Modal onClose={closeForm} wide>
           <EntryForm
             categories={categories.map((c) => c.name)}
@@ -692,7 +716,7 @@ export default function App() {
         </Modal>
       )}
 
-      {relFormOpen && (
+      {relFormOpen && canEdit && (
         <Modal onClose={closeRelForm} wide>
           <LinkForm
             title="Relationship"
@@ -705,7 +729,7 @@ export default function App() {
         </Modal>
       )}
 
-      {linkFormOpen && (
+      {linkFormOpen && canEdit && (
         <Modal onClose={closeLinkForm} wide>
           <LinkForm
             title="Story Link"

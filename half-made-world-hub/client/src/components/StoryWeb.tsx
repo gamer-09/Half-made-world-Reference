@@ -55,9 +55,12 @@ interface ColInfo {
 
 interface StoryWebProps {
   entries: Entry[]; relationships: Relationship[]; storyLinks: StoryLink[];
-  onNodeClick: (entry: Entry) => void; onAdd: () => void;
-  onEditStory: (link: StoryLink) => void; onDeleteStory: (link: StoryLink) => void;
-  onEditRel: (rel: Relationship) => void; onDeleteRel: (rel: Relationship) => void;
+  onNodeClick: (entry: Entry) => void;
+  onAdd?: () => void;
+  onEditStory?: (link: StoryLink) => void;
+  onDeleteStory?: (link: StoryLink) => void;
+  onEditRel?: (rel: Relationship) => void;
+  onDeleteRel?: (rel: Relationship) => void;
 }
 
 // ── Column-based layout ────────────────────────────────────────────────
@@ -303,8 +306,7 @@ function NamePopup({ name, x, y, onClose }: { name: string; x: number; y: number
 
 // ── Main component ────────────────────────────────────────────────────
 export function StoryWeb({
-  entries, relationships, storyLinks, onNodeClick, onAdd,
-  onEditStory, onDeleteStory, onEditRel, onDeleteRel,
+  entries, relationships, storyLinks, onNodeClick, onAdd, onEditStory, onDeleteStory, onEditRel, onDeleteRel,
 }: StoryWebProps) {
   const svgRef = useRef<SVGSVGElement>(null);
   const containerRef = useRef<HTMLDivElement>(null);
@@ -798,17 +800,18 @@ export function StoryWeb({
         <p className="map-hint">
           The whole story web — {displayNodes.length} nodes · {displayEdges.length} links · {columns.length} categories
         </p>
-        <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
-          <button
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>          <button
             className={`btn btn-sm ${focusMode ? 'btn-primary' : 'btn-secondary'}`}
             onClick={toggleFocusMode}
             title="Focus mode — click a node to explore only its connections"
           >
             ◎ Focus
           </button>
-          <button className="btn btn-primary btn-sm" onClick={onAdd}>
-            ＋ Add Link
-          </button>
+          {onAdd && (
+            <button className="btn btn-primary btn-sm" onClick={onAdd}>
+              ＋ Add Link
+            </button>
+          )}
         </div>
       </div>
 
@@ -1013,19 +1016,21 @@ export function StoryWeb({
               <strong>{selectedEdge.source}</strong> → <strong>{selectedEdge.target}</strong>
             </p>
             {selectedEdge.description && <p className="map-edge-desc">{selectedEdge.description}</p>}
-            <div className="map-edge-actions">
-              {selectedEdge.kind === 'story' ? (
-                <>
-                  <button className="btn btn-secondary btn-sm" onClick={() => selectedStory && onEditStory(selectedStory)}>✎ Edit</button>
-                  <button className="btn btn-danger btn-sm" onClick={() => selectedStory && onDeleteStory(selectedStory)}>🗑 Delete</button>
-                </>
-              ) : (
-                <>
-                  <button className="btn btn-secondary btn-sm" onClick={() => selectedRel && onEditRel(selectedRel)}>✎ Edit</button>
-                  <button className="btn btn-danger btn-sm" onClick={() => selectedRel && onDeleteRel(selectedRel)}>🗑 Delete</button>
-                </>
-              )}
-            </div>
+            {onEditStory && onDeleteStory && (
+              <div className="map-edge-actions">
+                {selectedEdge.kind === 'story' ? (
+                  <>
+                    <button className="btn btn-secondary btn-sm" onClick={() => selectedStory && onEditStory?.(selectedStory)}>✎ Edit</button>
+                    <button className="btn btn-danger btn-sm" onClick={() => selectedStory && onDeleteStory?.(selectedStory)}>🗑 Delete</button>
+                  </>
+                ) : (
+                  <>
+                    <button className="btn btn-secondary btn-sm" onClick={() => selectedRel && onEditRel?.(selectedRel)}>✎ Edit</button>
+                    <button className="btn btn-danger btn-sm" onClick={() => selectedRel && onDeleteRel?.(selectedRel)}>🗑 Delete</button>
+                  </>
+                )}
+              </div>
+            )}
           </div>
         )}
       </div>

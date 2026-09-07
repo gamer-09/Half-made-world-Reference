@@ -9,9 +9,9 @@ interface MapProps {
   relationships: Relationship[];
   characterEntries: Entry[];
   onNodeClick: (entry: Entry) => void;
-  onAdd: () => void;
-  onEdit: (rel: Relationship) => void;
-  onDelete: (rel: Relationship) => void;
+  onAdd?: () => void;
+  onEdit?: (rel: Relationship) => void;
+  onDelete?: (rel: Relationship) => void;
 }
 
 export function RelationshipMap({
@@ -94,8 +94,7 @@ export function RelationshipMap({
         <p className="map-hint">
           {is3D ? '3D' : '2D'} relationship graph — {graphNodes.length} characters · {graphEdges.length} links{is3D ? ' · drag to orbit' : ''}
         </p>
-        <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>
-          <div className="view-toggle">
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center' }}>          <div className="view-toggle">
             <button
               className={`view-toggle-btn${is3D ? ' active' : ''}`}
               onClick={() => setViewMode('3d')}
@@ -111,9 +110,11 @@ export function RelationshipMap({
               <i className="fa-solid fa-circle-nodes" style={{ fontSize: 12 }} /> 2D
             </button>
           </div>
-          <button className="btn btn-primary btn-sm" onClick={onAdd}>
-            <i className="fa-solid fa-plus" style={{ fontSize: 11 }} /> Add Relationship
-          </button>
+          {onAdd && (
+            <button className="btn btn-primary btn-sm" onClick={onAdd}>
+              <i className="fa-solid fa-plus" style={{ fontSize: 11 }} /> Add Relationship
+            </button>
+          )}
         </div>
       </div>
 
@@ -152,14 +153,17 @@ export function RelationshipMap({
             <strong>{selectedEdge.source}</strong> → <strong>{selectedEdge.target}</strong>
           </p>
           {selectedEdge.description && <p className="map-edge-desc">{selectedEdge.description}</p>}
-          <div className="map-edge-actions">
-            <button className="btn btn-secondary btn-sm" onClick={() => onEdit(selectedEdge)}>
-              <i className="fa-solid fa-pen" style={{ fontSize: 11 }} /> Edit
-            </button>
-            <button className="btn btn-danger btn-sm" onClick={() => onDelete(selectedEdge)}>
-              <i className="fa-solid fa-trash" style={{ fontSize: 11 }} /> Delete
-            </button>
-          </div>
+
+          {onEdit && (
+            <div className="map-edge-actions">
+              <button className="btn btn-secondary btn-sm" onClick={() => onEdit?.(selectedEdge)}>
+                <i className="fa-solid fa-pen" style={{ fontSize: 11 }} /> Edit
+              </button>
+              <button className="btn btn-danger btn-sm" onClick={() => onDelete?.(selectedEdge)}>
+                <i className="fa-solid fa-trash" style={{ fontSize: 11 }} /> Delete
+              </button>
+            </div>
+          )}
         </div>
       )}
 

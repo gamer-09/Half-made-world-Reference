@@ -13,7 +13,7 @@ interface SidebarProps {
   searchRef?: Ref<HTMLInputElement>;
   onSearch: (q: string) => void;
   onSelectCategory: (category: string) => void;
-  onAdd: () => void;
+  onAdd?: () => void;
   onOpenMap: () => void;
   onOpenWeb: () => void;
   onOpenBlocks: () => void;
@@ -55,9 +55,14 @@ export function Sidebar({
         </div>
       </div>
 
-      <button className="btn btn-primary btn-block" onClick={onAdd}>
-        <span className="btn-icon">+</span> Add Entry
-      </button>
+      {onAdd && (
+        <button
+          className="btn btn-primary btn-block"
+          onClick={onAdd}
+        >
+          <span className="btn-icon">+</span> Add Entry
+        </button>
+      )}
 
       <button
         className={`nav-map-btn${view === 'map' ? ' active' : ''}`}
