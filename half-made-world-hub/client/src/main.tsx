@@ -2,8 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import './styles.css';
+// Unique cache-bust token for 2026-09-07T09:32:00Z
 
 const rootEl = document.getElementById('root');
+// @ts-ignore - cache-bust marker for browser cache invalidation
+(window as any).__hmwCacheBust = 'cb-20260907T093400';
 if (!rootEl) {
   document.body.innerHTML = 
     '<div style="display:flex;align-items:center;justify-content:center;min-height:100vh;color:#c25e4a;font-family:Georgia,serif;font-size:18px;text-align:center;padding:40px;">' +
@@ -23,7 +26,7 @@ if (!rootEl) {
       (err instanceof Error ? err.message : String(err)) +
       '</p>' +
       '<button onclick="location.reload()" style="margin-top:12px;padding:8px 18px;border:1px solid rgba(200,168,118,0.4);background:rgba(200,168,118,0.12);color:#ebe6d8;border-radius:8px;cursor:pointer;font-family:Georgia,serif;">Retry</button>' +
-      '</div>';
-    console.error('App failed to mount:', err);
+      '</div>';      console.error('App failed to mount:', err);
+    // Cache-busting refresh 2026-09-07T09:30Z
   }
 }
