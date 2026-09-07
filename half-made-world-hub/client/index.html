@@ -66,7 +66,17 @@
     </script>
   </head>
   <body class="font-body antialiased min-h-screen relative">
-    <div id="root"></div>
+    <div id="root">
+      <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;color:rgba(235,230,216,0.6);font-family:Georgia,serif;font-size:18px;">
+        <span style="display:inline-block;width:12px;height:12px;border:2px solid rgba(200,168,118,0.4);border-top-color:#c8a876;border-radius:50%;animation:spin 0.8s linear infinite;margin-right:12px;vertical-align:middle;"></span>
+        Loading the archive…
+      </div>
+    </div>
+    <noscript>
+      <div style="display:flex;align-items:center;justify-content:center;min-height:100vh;color:#c25e4a;font-family:Georgia,serif;font-size:18px;text-align:center;padding:40px;">
+        JavaScript is required to view the archive. Please enable JavaScript and reload the page.
+      </div>
+    </noscript>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
