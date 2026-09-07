@@ -12,7 +12,7 @@ export async function loadSnapshot(): Promise<SnapshotData> {
   if (cached) return cached;
 
   if (import.meta.env.PROD) {
-    const res = await fetch('/snapshot.json');
+    const res = await fetch(import.meta.env.BASE_URL + 'snapshot.json');
     if (!res.ok) {
       throw new Error(`Failed to load the view-only archive (${res.status})`);
     }
