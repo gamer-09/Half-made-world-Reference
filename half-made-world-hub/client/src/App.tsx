@@ -66,8 +66,7 @@ export default function App() {
   const storyLinks = archive.storyLinks;
   const loading = archive.mode === 'loading';
   const error = archive.error;
-  const view = useState<ViewMode>('browse')[0];
-  const setView = useState<ViewMode>('browse')[1];
+  const [view, setView] = useState<ViewMode>('browse');
   const [activeCategory, setActiveCategory] = useState('All');
   const [search, setSearch] = useState('');
   const [selected, setSelected] = useState<Entry | null>(null);
@@ -498,128 +497,7 @@ export default function App() {
       <Sidebar
         categories={categories}
         total={entries.length}
-        view={view}
-        setView={setView}
         activeCategory={activeCategory}
-        setActiveCategory={selectCategory}
-        activeTag={activeTag}
-        setActiveTag={selectTag}
-        clearTag={clearTag}
-        search={search}
-        setSearch={setSearch}
-        searchRef={searchRef}
-        canEdit={canEdit}
-        onAdd={openAdd}
-        onReset={handleReset}
-        onExportMarkdown={exportMarkdown}
-        onExportJson={exportJson}
-      />
-
-      <main className="main-content">
-        {showDashboard && <Dashboard entries={entries} onEntryClick={setSelected} />}
-
-        {view === 'browse' && !showDashboard && (
-          <div className="browse-grid">
-            {filtered.map((e) => (
-              <EntryCard
-                key={e.id}
-                entry={e}
-                active={selected?.id === e.id}
-                onClick={() => setSelected(e)}
-                onEdit={canEdit ? openEdit : undefined}
-              />
-            ))}
-          </div>
-        )}
-
-        {isMapView && (
-          <RelationshipMap
-            relationships={relationships}
-            characterEntries={characterEntries}
-            onNodeClick={setSelected}
-            onAdd={canEdit ? openAddRel : undefined}
-            onEdit={canEdit ? openEditRel : undefined}
-            onDelete={canEdit ? handleDeleteRel : undefined}
-          />
-        )}
-
-        {isWebView && (
-          <StoryWeb
-            entries={entries}
-            relationships={relationships}
-            storyLinks={storyLinks}
-            onNodeClick={setSelected}
-            onAdd={canEdit ? openAddLink : undefined}
-            onEditStory={canEdit ? openEditLink : undefined}
-            onDeleteStory={canEdit ? handleDeleteLink : undefined}
-            onEditRel={canEdit ? openEditRel : undefined}
-            onDeleteRel={canEdit ? handleDeleteRel : undefined}
-          />
-        )}
-
-        {isBlocksView && (
-          <BlockMap
-            entries={entries}
-            storyLinks={storyLinks}
-            onNodeClick={setSelected}
-          />
-        )}
-
-        {selected && (
-          <EntryDetail
-            entry={selected}
-            connections={connections}
-            onClose={() => setSelected(null)}
-            onEdit={canEdit ? openEdit : undefined}
-            onDelete={canEdit ? handleDelete : undefined}
-            onAddRel={canEdit ? openAddRel : undefined}
-            onAddLink={canEdit ? openAddLink : undefined}
-            onEditRel={canEdit ? openEditRel : undefined}
-            onDeleteRel={canEdit ? handleDeleteRel : undefined}
-            onEditLink={canEdit ? openEditLink : undefined}
-            onDeleteLink={canEdit ? handleDeleteLink : undefined}
-          />
-        )}
-
-        {formOpen && (
-          <Modal onClose={closeForm} title={editing ? `Edit ${editing.name}` : 'New Entry'}>
-            <EntryForm
-              initial={editing}
-              onSubmit={handleSave}
-              categories={categories.map((c) => c.name)}
-            />
-          </Modal>
-        )}
-
-        {relFormOpen && (
-          <Modal onClose={closeRelForm} title={editingRel ? `Edit Relationship` : 'New Relationship'}>
-            <LinkForm
-              mode="relationship"
-              initial={editingRel}
-              onSubmit={handleSaveRel}
-              entries={entries}
-              onCancel={closeRelForm}
-            />
-          </Modal>
-        )}
-
-        {linkFormOpen && (
-          <Modal onClose={closeLinkForm} title={editingLink ? `Edit Story Link` : 'New Story Link'}>
-            <LinkForm
-              mode="story"
-              initial={editingLink}
-              onSubmit={handleSaveLink}
-              entries={entries}
-              onCancel={closeLinkForm}
-            />
-          </Modal>
-        )}
-
-        {toast && <div className="toast">{toast}</div>}
-      </main>
-    </div>
-  );
-}
         search={search}
         view={view}
         searchRef={searchRef}
