@@ -10,6 +10,7 @@ import type {
   StoryLinkInput,
 } from './types';
 import { Sidebar, type ViewMode } from './components/Sidebar';
+import { QueryChatRoom } from './components/QueryChatRoom';
 import { useArchive } from './hooks/useArchive';
 import * as liveApi from './api';
 import { Dashboard } from './components/Dashboard';
@@ -25,7 +26,7 @@ import { RELATIONSHIP_TYPES, relationshipType } from './relationshipTypes';
 import { STORY_LINK_TYPES, storyLinkType } from './storyLinkTypes';
 import { findCharacter } from './nameMatch';
 
-const canEdit = !import.meta.env.PROD;
+const canEdit = import.meta.env.DEV;
 
 function download(filename: string, content: string, mime: string) {
   const blob = new Blob([content], { type: mime });
@@ -152,6 +153,8 @@ export default function App() {
         setView('web');
       } else if (e.key === '4') {
         setView('blocks');
+      } else if (e.key === '5') {
+        setView('chat');
       }
     };
     window.addEventListener('keydown', onKey);
@@ -484,12 +487,13 @@ export default function App() {
     showToast(`Exported the full archive (${entries.length} entries) as JSON.`);
   };
 
+  const isChatView = view === 'chat';
   const isMapView = view === 'map';
   const isWebView = view === 'web';
   const isBlocksView = view === 'blocks';
   const showDashboard = view === 'browse' && activeCategory === 'All' && search.trim() === '' && !activeTag;
 
-  const viewKey = isBlocksView ? 'blocks' : isWebView ? 'web' : isMapView ? 'map' : `browse-${activeCategory}`;
+  const viewKey = isChatView ? 'chat' : isBlocksView ? 'blocks' : isWebView ? 'web' : isMapView ? 'map' : `browse-${activeCategory}`;
 
   return (
     <div className="app">
@@ -507,6 +511,7 @@ export default function App() {
         onOpenMap={() => setView('map')}
         onOpenWeb={() => setView('web')}
         onOpenBlocks={() => setView('blocks')}
+        onOpenChat={() => setView('chat')}
       />
 
       <main className="main">
@@ -613,6 +618,8 @@ export default function App() {
             onEditRel={canEdit ? openEditRel : undefined}
             onDeleteRel={canEdit ? handleDeleteRel : undefined}
           />
+        ) : isChatView ? (
+          <QueryChatRoom />
         ) : isMapView ? (
           relationships.length === 0 ? (
             <div className="empty-state">

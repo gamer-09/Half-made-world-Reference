@@ -127,3 +127,50 @@ export async function resetWorld(): Promise<{
   const res = await fetch('/api/reset', { method: 'POST' });
   return handle<{ ok: boolean; entries: number; relationships: number; storyLinks: number }>(res);
 }
+
+// --- Archive search (chat-room style) --------------------------------------
+import type { Field } from './types';
+export interface SearchMatch {
+  id: string;
+  category?: string;
+  name?: string;
+  subtitle?: string;
+  description?: string;
+  fields?: Field[];
+  tags?: string[];
+  source?: string;
+  target?: string;
+  type?: string;
+  label?: string;
+  color?: string;
+  createdAt?: string;
+  updatedAt?: string;
+  matchIn: { field: string; snippet: string }[];
+}
+
+export interface SearchResult {
+  entries: SearchMatch[];
+  relationships: SearchMatch[];
+  storyLinks: SearchMatch[];
+  query: string;
+}
+
+export async function queryArchive(q: string): Promise<SearchResult> {
+  const qs = new URLSearchParams({ q });
+  const res = await fetch(`/api/search?${qs.toString()}`);
+  return handle<SearchResult>(res);
+}
+
+// --- AI answer (Groq-backed) ---------------------------------------------
+export interface AiAnswerResponse {
+  answer: string;
+}
+
+export async function askAi(question: string, searchResult: SearchResult): Promise<AiAnswerResponse> {
+  const res = await fetch('/api/ai/answer', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ question, searchResult }),
+  });
+  return handle<AiAnswerResponse>(res);
+}

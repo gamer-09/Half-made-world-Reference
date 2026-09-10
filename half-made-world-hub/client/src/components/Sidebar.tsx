@@ -2,7 +2,7 @@ import type { Ref } from 'react';
 import type { CategoryInfo } from '../types';
 import { categoryColor } from '../theme';
 
-export type ViewMode = 'browse' | 'map' | 'web' | 'blocks';
+export type ViewMode = 'browse' | 'map' | 'web' | 'blocks' | 'chat';
 
 interface SidebarProps {
   categories: CategoryInfo[];
@@ -17,6 +17,7 @@ interface SidebarProps {
   onOpenMap: () => void;
   onOpenWeb: () => void;
   onOpenBlocks: () => void;
+  onOpenChat: () => void;
 }
 
 export function Sidebar({
@@ -32,6 +33,7 @@ export function Sidebar({
   onOpenMap,
   onOpenWeb,
   onOpenBlocks,
+  onOpenChat,
 }: SidebarProps) {
   return (
     <aside className="sidebar">
@@ -89,6 +91,15 @@ export function Sidebar({
       >
         <i className="fa-solid fa-cubes" style={{ fontSize: 14, color: view === 'blocks' ? '#c8a876' : 'currentColor' }} />
         Block Chain Map
+      </button>
+
+      <button
+        className={`nav-map-btn${view === 'chat' ? ' active' : ''}`}
+        onClick={onOpenChat}
+        title="Ask questions about the archive"
+      >
+        <i className="fa-solid fa-message" style={{ fontSize: 14, color: view === 'chat' ? '#c8a876' : 'currentColor' }} />
+        Query Chat
       </button>
 
       <label className="search-wrap">

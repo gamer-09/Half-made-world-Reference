@@ -11,27 +11,30 @@ let cached: SnapshotData | null = null;
 export async function loadSnapshot(): Promise<SnapshotData> {
   if (cached) return cached;
 
-  if (import.meta.env.PROD) {
-    const res = await fetch(import.meta.env.BASE_URL + 'snapshot.json');
-    if (!res.ok) {
-      throw new Error(`Failed to load the view-only archive (${res.status})`);
+  // Try the live server first (dev mode with the Node API running).
+  try {
+    const entries = await fetch('/api/entries').then((r) => r.json());
+    const relationships = await fetch('/api/relationships').then((r) => r.json());
+    const storyLinks = await fetch('/api/story-links').then((r) => r.json());
+    if (entries?.length && relationships?.length && storyLinks?.length) {
+      cached = { entries, relationships, storyLinks };
+      return cached;
     }
-    const data = await res.json() as SnapshotData;
-    if (!data?.entries || !data?.relationships || !data?.storyLinks) {
-      throw new Error('The view-only archive is missing data');
-    }
-    cached = data;
-    return data;
+  } catch {
+    /* live server not available — fall through to snapshot */
   }
 
-  // Dev: load from the live server so the full edit experience works locally.
-  const [entries, relationships, storyLinks] = await Promise.all([
-    fetch('/api/entries').then((r) => r.json()),
-    fetch('/api/relationships').then((r) => r.json()),
-    fetch('/api/story-links').then((r) => r.json()),
-  ]);
-  cached = { entries, relationships, storyLinks };
-  return cached;
+  // Fallback: load the bundled snapshot.json (view-only build / GitHub Pages).
+  const res = await fetch(import.meta.env.BASE_URL + 'snapshot.json');
+  if (!res.ok) {
+    throw new Error(`Failed to load the archive (${res.status})`);
+  }
+  const data = await res.json() as SnapshotData;
+  if (!data?.entries || !data?.relationships || !data?.storyLinks) {
+    throw new Error('The archive is missing data');
+  }
+  cached = data;
+  return data;
 }
 
 export function getSnapshot(): SnapshotData | null {
