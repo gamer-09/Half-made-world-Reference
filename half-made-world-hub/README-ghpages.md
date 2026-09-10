@@ -57,6 +57,14 @@ npm run build
 
 This runs the snapshot prebuild step first, then builds the Vite production bundle into `client/dist/`. The `client/dist/` folder is what gets deployed to GitHub Pages. It is also git-ignored.
 
+## AI integration
+
+The `/api/ai/answer` endpoint uses Groq to answer questions based on archive search results. The model is configured in `server/index.js`.
+
+As of the last update, the active model is **`openai/gpt-oss-20b`**.
+
+The previously used model (`llama-3.1-8b-instant`) was deprecated by Groq on **August 16, 2026** and is no longer available. If the AI stops working in the future, check the [Groq model deprecation page](https://console.groq.com/docs/deprecations) for the current replacement.
+
 ## Data format
 
 Each entry in `server/data/world.json` is a JSON object with: `id`, `category`, `name`, `subtitle`, `description`, `fields` (array of `{label, value}`), `tags`, `createdAt`, `updatedAt`. Relationships and story links follow a similar shape with `source`, `target`, `type`, `label`, `description`, and optional `color`.
