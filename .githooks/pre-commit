@@ -1,0 +1,29 @@
+#!/bin/sh
+# Pre-commit hook: keep seed files in sync with server/data/*.json.
+# If data files are staged and the seeds are stale, regenerate + restage them
+# so a commit can never contain data without matching seeds.
+
+# Only run when at least one data file is part of the commit
+DATA_STAGED=$(git diff --cached --name-only -- '*server/data/world.json' '*server/data/story-links.json' '*server/data/relationships.json' | head -1)
+if [ -z "$DATA_STAGED" ]; then
+  exit 0
+fi
+
+echo "[seeds] data files staged — checking seed sync..."
+cd "$(git rev-parse --show-toplevel)/half-made-world-hub" 2>/dev/null || cd "$(git rev-parse --show-toplevel)"
+
+node server/sync-seeds.js
+if [ $? -ne 0 ]; then
+  echo "[seeds] ERROR: sync failed — commit aborted."
+  exit 1
+fi
+
+# If the sync changed files, restage them into this commit
+CHANGED=$(git diff --name-only -- 'server/seed*.js' '**/server/seed*.js')
+if [ -n "$CHANGED" ]; then
+  echo "[seeds] restaging regenerated seeds:"
+  echo "$CHANGED" | sed 's/^/  /'
+  git add $CHANGED
+fi
+
+exit 0

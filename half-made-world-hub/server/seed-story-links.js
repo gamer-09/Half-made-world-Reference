@@ -2,6 +2,9 @@
  * Story web seed — the whole-world connection map, grounded in "Half_made world ideas.docx".
  * Links entries (and characters) to each other: located in, guards, rules, kills, sealed in, etc.
  * Node names must match entry names (case-insensitive, prefix allowed).
+ *
+ * AUTO-GENERATED from server/data/*.json — do not edit by hand.
+ * Regenerate with: npm run seeds:sync   (or: node server/sync-seeds.js)
  */
 const seededAt = '2026-08-12T00:00:00.000Z';
 

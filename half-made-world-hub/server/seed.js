@@ -2,6 +2,9 @@
  * Seed data for the Half-Made World — transcribed from "Half_made world ideas.docx".
  * This runs once to create server/data/world.json, after which the user's edits
  * are the source of truth. Use POST /api/reset to restore this seed.
+ *
+ * AUTO-GENERATED from server/data/*.json — do not edit by hand.
+ * Regenerate with: npm run seeds:sync   (or: node server/sync-seeds.js)
  */
 const seededAt = '2026-08-12T00:00:00.000Z';
 

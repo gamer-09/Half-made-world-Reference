@@ -2,6 +2,9 @@
  * Seed relationships between characters — grounded in "Half_made world ideas.docx".
  * Stored separately from entries so the archive stays pristine.
  * source -> target (directed). type drives the color/legend in the UI.
+ *
+ * AUTO-GENERATED from server/data/*.json — do not edit by hand.
+ * Regenerate with: npm run seeds:sync   (or: node server/sync-seeds.js)
  */
 const seededAt = '2026-08-12T00:00:00.000Z';
 
