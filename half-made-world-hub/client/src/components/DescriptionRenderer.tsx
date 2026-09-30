@@ -1,134 +1,13 @@
 import { useState, useCallback, useMemo } from 'react';
-
-/**
- * Parses a raw description into structured, readable blocks.
- * Works for ALL entries — short or long, with or without ## sections.
- *
- * Supports:
- *   ## HEADER
- *   --- (divider)
- *   **bold text**
- *   *italic text*
- *   - bullet items
- *   1. numbered items
- *   Auto-chunking: long paragraphs are split into collapsible sentence groups.
- */
-type Block =
-  | { type: 'heading'; level: number; text: string }
-  | { type: 'divider' }
-  | { type: 'paragraph'; html: string; raw: string }
-  | { type: 'list'; items: string[]; ordered: boolean };
-
-function parseInline(text: string): string {
-  let out = text.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
-  out = out.replace(/(?<!\*)\*([^*]+?)\*(?!\*)/g, '<em>$1</em>');
-  out = out.replace(/`(.+?)`/g, '<code class="desc-inline-code">$1</code>');
-  return out;
-}
-
-function parseDescription(raw: string): Block[] {
-  const lines = raw.split('\n');
-  const blocks: Block[] = [];
-  let i = 0;
-
-  while (i < lines.length) {
-    const line = lines[i];
-    const trimmed = line.trim();
-
-    if (trimmed === '') { i++; continue; }
-
-    // Divider: --- or ___ or ***
-    if (/^[-_*]{3,}$/.test(trimmed)) {
-      blocks.push({ type: 'divider' });
-      i++;
-      continue;
-    }
-
-    // Heading: ## or ### etc
-    const headingMatch = trimmed.match(/^(#{1,6})\s+(.+)/);
-    if (headingMatch) {
-      blocks.push({ type: 'heading', level: headingMatch[1].length, text: headingMatch[2].trim() });
-      i++;
-      continue;
-    }
-
-    // Unordered list: - item
-    if (/^[-*+]\s+/.test(trimmed)) {
-      const items: string[] = [];
-      while (i < lines.length && /^\s*[-*+]\s+/.test(lines[i])) {
-        items.push(lines[i].trim().replace(/^[-*+]\s+/, ''));
-        i++;
-      }
-      blocks.push({ type: 'list', items, ordered: false });
-      continue;
-    }
-
-    // Ordered list: 1. item
-    if (/^\d+\.\s+/.test(trimmed)) {
-      const items: string[] = [];
-      while (i < lines.length && /^\s*\d+\.\s+/.test(lines[i])) {
-        items.push(lines[i].trim().replace(/^\d+\.\s+/, ''));
-        i++;
-      }
-      blocks.push({ type: 'list', items, ordered: true });
-      continue;
-    }
-
-    // Paragraph — accumulate consecutive non-empty, non-special lines
-    const paraLines: string[] = [];
-    while (i < lines.length) {
-      const l = lines[i].trim();
-      if (l === '' || /^#{1,6}\s/.test(l) || /^[-_*]{3,}$/.test(l) || /^[-*+]\s+/.test(l) || /^\d+\.\s+/.test(l)) break;
-      paraLines.push(l);
-      i++;
-    }
-    if (paraLines.length) {
-      const joined = paraLines.join(' ');
-      blocks.push({ type: 'paragraph', html: parseInline(joined), raw: joined });
-    }
-  }
-
-  return blocks;
-}
-
-/** Split a long paragraph string into sentence chunks of ~maxLen chars */
-function chunkSentences(text: string, maxLen: number = 250): string[] {
-  if (text.length <= maxLen) return [text];
-
-  const chunks: string[] = [];
-  // Split on sentence boundaries: period/exclamation/question followed by space or end
-  const sentences = text.split(/(?<=[.!?])\s+/);
-  let current = '';
-
-  for (const sentence of sentences) {
-    if (current.length + sentence.length + 1 > maxLen && current.length > 0) {
-      chunks.push(current.trim());
-      current = sentence;
-    } else {
-      current = current ? current + ' ' + sentence : sentence;
-    }
-  }
-  if (current.trim()) chunks.push(current.trim());
-
-  return chunks.length ? chunks : [text];
-}
-
-/** Find logical sections — split on ## headings */
-function findSections(blocks: Block[]): { heading: string; body: Block[] }[] {
-  const sections: { heading: string; body: Block[] }[] = [];
-  let current: { heading: string; body: Block[] } | null = null;
-
-  for (const block of blocks) {
-    if (block.type === 'heading' && block.level === 2) {
-      if (current) sections.push(current);
-      current = { heading: block.text, body: [] };
-    } else if (current) {
-      current.body.push(block);
-    }
-  }
-  if (current) sections.push(current);
-  return sections;
-}
+import {
+  parseInline,
+  parseDescription,
+  chunkSentences,
+  findSections,
+  findIntroBlocks,
+  isLongDescription,
+  type Block,
+} from '../descriptionParser';
 
 interface DescriptionRendererProps {
   text: string;
@@ -139,7 +18,7 @@ export function DescriptionRenderer({ text }: DescriptionRendererProps) {
   const sections = useMemo(() => findSections(blocks), [blocks]);
   const hasSections = sections.length > 0;
 
-  const isLong = text.length > 350;
+  const isLong = isLongDescription(text);
   const [expanded, setExpanded] = useState(false);
   const [expandedChunks, setExpandedChunks] = useState<Set<string>>(new Set());
 
@@ -165,12 +44,7 @@ export function DescriptionRenderer({ text }: DescriptionRendererProps) {
 
   // Long with ## sections — use collapsible section accordions
   if (hasSections) {
-    const introBlocks = blocks.filter((b, idx) => {
-      if (b.type === 'heading' && b.level === 2) return false;
-      // Everything before the first ## heading
-      const firstH2 = blocks.findIndex((x) => x.type === 'heading' && x.level === 2);
-      return idx < firstH2;
-    });
+    const introBlocks = findIntroBlocks(blocks);
 
     return (
       <div className="desc-rendered desc-long">
