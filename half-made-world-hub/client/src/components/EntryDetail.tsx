@@ -71,7 +71,10 @@ export function EntryDetail({ entry, connections, onEdit, onDelete, onOpenEntry 
                   <span className="conn-arrow">→</span>
                 </button>
               </div>
-            ))}      </div>
+            ))}
+          </div>
+        </div>
+      )}
 
       {onEdit && (
         <div className="detail-actions">
@@ -83,10 +86,6 @@ export function EntryDetail({ entry, connections, onEdit, onDelete, onOpenEntry 
           </button>
         </div>
       )}
-    </div>
-      )}
-
-
     </div>
   );
 }

@@ -224,7 +224,10 @@ export function DescriptionRenderer({ text }: DescriptionRendererProps) {
     );
   }
 
-  // Long WITHOUT sections — auto-chunk paragraphs into collapsible groups
+  // Long WITHOUT sections — auto-chunk paragraphs into collapsible groups.
+  // IMPORTANT: each chunk renders EXACTLY ONCE. (The old code rendered all
+  // chunks in the main map and then rendered chunks.slice(1) AGAIN when
+  // expanded, so every paragraph after the first appeared twice.)
   const allParagraphs = blocks.filter((b) => b.type === 'paragraph');
   const nonParagraphs = blocks.filter((b) => b.type !== 'paragraph');
   const joined = allParagraphs.map((b) => b.raw).join(' ');
@@ -241,51 +244,29 @@ export function DescriptionRenderer({ text }: DescriptionRendererProps) {
         </div>
       )}
 
-      {/* Show first chunk expanded */}
       {chunks.length > 0 && (
         <div className="desc-chunks">
           {chunks.map((chunk, idx) => {
-            const key = `chunk-${idx}`;
-            const isExpanded = expanded || expandedChunks.has(key);
-            const isLast = idx === chunks.length - 1;
-            const isHidden = !isExpanded && idx > 0;
+            // Collapsed: only the first chunk is visible.
+            // Expanded (global toggle or per-chunk toggle): chunk is visible.
+            const isExpanded = expanded || expandedChunks.has(`chunk-${idx}`) || idx === 0;
+            if (!isExpanded) return null;
 
-            if (isHidden && !isLast) return null;
-
-            // First chunk or expanded — show content
-            if (idx === 0 || isExpanded) {
-              return (
-                <div key={idx} className="desc-chunk">
-                  <p
-                    className="desc-para"
-                    dangerouslySetInnerHTML={{ __html: parseInline(chunk) }}
-                  />
-                  {!expanded && chunks.length > 1 && idx === 0 && (
-                    <button className="desc-expand-more" onClick={() => toggleChunk(key)}>
-                      ▸ Continue reading…
-                    </button>
-                  )}
-                  {isExpanded && !expanded && (
-                    <button className="desc-expand-more" onClick={() => setExpandedChunks((p) => { const n = new Set(p); n.delete(key); return n; })}>
-                      ▾ Show less
-                    </button>
-                  )}
-                </div>
-              );
-            }
-
-            return null;
+            return (
+              <div key={idx} className="desc-chunk">
+                <p
+                  className="desc-para"
+                  dangerouslySetInnerHTML={{ __html: parseInline(chunk) }}
+                />
+                {/* "Continue reading" sits at the end of the last visible chunk while collapsed */}
+                {!expanded && idx === 0 && chunks.length > 1 && (
+                  <button className="desc-expand-more" onClick={() => setExpanded(true)}>
+                    ▸ Continue reading…
+                  </button>
+                )}
+              </div>
+            );
           })}
-
-          {/* If expanded, show all remaining chunks */}
-          {expanded && chunks.slice(1).map((chunk, idx) => (
-            <div key={idx + 1} className="desc-chunk">
-              <p
-                className="desc-para"
-                dangerouslySetInnerHTML={{ __html: parseInline(chunk) }}
-              />
-            </div>
-          ))}
         </div>
       )}
 
