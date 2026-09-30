@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useRef } from 'react';
-import { queryArchive, askAi } from '../api';
+import { queryArchive, askAi, askAiExplore } from '../api';
 import type { SearchResult, SearchMatch } from '../api';
 import { categoryColor } from '../theme';
 
@@ -16,13 +16,13 @@ function extractQuery(question: string): string {
   let q = question.trim().toLowerCase();
 
   // Remove a leading question word.
-  q = q.replace(/^(who|what|where|when|why|how|is|are|was|were|does|do|did|can|could|would|should|may|might|shall|will|tell me about|what is|who is|where is|when did|why did|how did|does|do|did|can|could|would)/i, '');
+  q = q.replace(/^(who|what|where|when|why|how|is|are|was|were|does|do|did|can|could|would|should|may|might|shall|will|tell me about|what is|who is|where is|when did|why did|how did|does|do|did|can|could|would)\b/i, '');
 
   // Remove punctuation.
-  q = q.replace(/[?!,;:'"()]/g, '');
+  q = q.replace(/[?!,;:'\"()]/g, '');
 
   // Remove common stop words so the remaining tokens can match.
-  q = q.replace(/\b(the|a|an|of|in|on|to|for|with|and|or|that|this|it|i|me|my|we|you|your|he|she|they|its|his|her|their|be|been|being|have|has|had|from|by|at|as|if|into|not)/gi, '');
+  q = q.replace(/\b(the|a|an|of|in|on|to|for|with|and|or|that|this|it|i|me|my|we|you|your|he|she|they|its|his|her|their|be|been|being|have|has|had|from|by|at|as|if|into|not)\b/gi, '');
 
   // Collapse whitespace and trim.
   q = q.replace(/\s+/g, ' ').trim();
@@ -55,7 +55,7 @@ function assistantText(result: SearchResult, originalQuestion: string): string {
   const total = entries.length + rels.length + links.length;
 
   if (total === 0) {
-    return `I don't have anything in the archive that answers “${originalQuestion}”. Nothing written in the archive matches that.`;
+    return `I don't have anything in the archive that answers "${originalQuestion}". Nothing written in the archive matches that.`;
   }
 
   // --- Name-like query → lead with the matching entry ---
@@ -92,7 +92,7 @@ function assistantText(result: SearchResult, originalQuestion: string): string {
     }
     if (entries.length > 0) {
       const entryNames = entries.map((e) => e.name).join(', ');
-      sentences.push(`${entries.length} entr${entries.length === 1 ? 'y' : 'ies'} also mention “${q}”: ${entryNames}.`);
+      sentences.push(`${entries.length} entr${entries.length === 1 ? 'y' : 'ies'} also mention "${q}": ${entryNames}.`);
     }
     return sentences.join('\n');
   }
@@ -101,7 +101,7 @@ function assistantText(result: SearchResult, originalQuestion: string): string {
   const parts: string[] = [];
   if (entries.length > 0) {
     const names = entries.map((e) => e.name).join(', ');
-    parts.push(`${entries.length} entr${entries.length === 1 ? 'y' : 'ies'} mention “${q}”: ${names}.`);
+    parts.push(`${entries.length} entr${entries.length === 1 ? 'y' : 'ies'} mention "${q}": ${names}.`);
     const withDesc = entries.find((e) => firstMatchDescription(e));
     if (withDesc) {
       parts.push(`On ${withDesc.name}, the archive says: ${excerpt(firstMatchDescription(withDesc), 300)}.`);
@@ -109,7 +109,7 @@ function assistantText(result: SearchResult, originalQuestion: string): string {
   }
   if (rels.length > 0) {
     const sample = rels.slice(0, 3);
-    parts.push(`${rels.length} relationship${rels.length === 1 ? '' : 's'} reference “${q}”. ${sample.map((r) => `${r.source} ${r.type} ${r.target}.`).join(' ')}`);
+    parts.push(`${rels.length} relationship${rels.length === 1 ? '' : 's'} reference "${q}". ${sample.map((r) => `${r.source} ${r.type} ${r.target}.`).join(' ')}`);
     if (rels.length > 3) parts.push(`…and ${rels.length - 3} more.`);
   }
   if (links.length > 0) {
@@ -145,6 +145,7 @@ export function QueryChatRoom() {
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
+  const [mode, setMode] = useState<'query' | 'explore'>('query');
   const inputRef = useRef<HTMLTextAreaElement>(null);
 
   const send = useCallback(async () => {
@@ -156,27 +157,59 @@ export function QueryChatRoom() {
     setMessages((prev) => [...prev, userMsg]);
     setLoading(true);
     try {
-      const query = extractQuery(text);
-      const searchResult = await queryArchive(query);
       let answer: string;
-      const hasData = searchResult.entries.length || searchResult.relationships.length || searchResult.storyLinks.length;
-      if (!hasData) {
-        answer = `I don't have anything in the archive that answers “${text}”. Nothing written in the archive matches that.`;
-      } else {
+      let results: SearchResult | undefined;
+
+      if (mode === 'explore') {
+        // Explore mode: the AI searches the whole archive on its own.
         try {
-          const ai = await askAi(text, searchResult);
+          const ai = await askAiExplore(text);
           answer = ai.answer;
         } catch (aiErr) {
           const msg = aiErr instanceof Error ? aiErr.message : String(aiErr);
           if (msg.includes('not configured') || msg.includes('GROQ_API_KEY')) {
-            answer = `The AI isn't configured yet — add your GROQ_API_KEY to the server's .env file. In the meantime, here's what the archive says:`;
+            answer = `The AI isn't configured yet — add your GROQ_API_KEY to the server's .env file.`;
           } else {
-            answer = `The AI ran into an issue, so here's what the archive says instead:`;
+            answer = `The AI ran into an issue: ${msg}`;
           }
-          answer += '\n\n' + assistantText(searchResult, text);
+        }
+      } else {
+        // Query mode: search first, then ask the AI about the results.
+        const query = extractQuery(text);
+        const searchResult = await queryArchive(query);
+        results = searchResult;
+        const hasData = searchResult.entries.length || searchResult.relationships.length || searchResult.storyLinks.length;
+        if (!hasData) {
+          // Nothing matched the literal search — still ask the AI so it can
+          // explain what's missing or suggest what the user might mean.
+          try {
+            const ai = await askAi(text, searchResult);
+            answer = ai.answer;
+          } catch (aiErr) {
+            const msg = aiErr instanceof Error ? aiErr.message : String(aiErr);
+            if (msg.includes('not configured') || msg.includes('GROQ_API_KEY')) {
+              answer = `The AI isn't configured yet — add your GROQ_API_KEY to the server's .env file.`;
+            } else {
+              answer = `I searched the archive for "${query}" but found nothing. Try a different term — for example, if you meant a character try their name, or describe what you're looking for.`;
+            }
+          }
+        } else {
+          try {
+            const ai = await askAi(text, searchResult);
+            answer = ai.answer;
+          } catch (aiErr) {
+            const msg = aiErr instanceof Error ? aiErr.message : String(aiErr);
+            if (msg.includes('not configured') || msg.includes('GROQ_API_KEY')) {
+              answer = `The AI isn't configured yet — add your GROQ_API_KEY to the server's .env file. In the meantime, here's what the archive says:`;
+            } else {
+              answer = `The AI ran into an issue (${msg}), so here's what the archive says instead:`;
+            }
+            answer += '\n\n' + assistantText(searchResult, text);
+          }
         }
       }
-      const assistant: ChatMessage = { role: 'assistant', text: answer, results: searchResult };
+
+      const assistant: ChatMessage = { role: 'assistant', text: answer, results };
       setMessages((prev) => [...prev, assistant]);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Search failed.');
@@ -219,8 +252,30 @@ export function QueryChatRoom() {
   return (
     <div className="chat-room">
       <header className="chat-header">
-        <h2 className="chat-title">Query the Archive</h2>
-        <p className="chat-sub">Ask questions about anything written in the world. The archive only knows what's been put into it.</p>
+        <div className="chat-header-row">
+          <h2 className="chat-title">Query the Archive</h2>
+          <div className="chat-mode-toggle">
+            <button
+              className={`mode-btn${mode === 'query' ? ' active' : ''}`}
+              onClick={() => setMode('query')}
+              title="Search the archive first, then ask the AI about what it found"
+            >
+              Query
+            </button>
+            <button
+              className={`mode-btn${mode === 'explore' ? ' active' : ''}`}
+              onClick={() => setMode('explore')}
+              title="Give the AI the full archive and let it find answers on its own"
+            >
+              Explore
+            </button>
+          </div>
+        </div>
+        <p className="chat-sub">
+          {mode === 'query'
+            ? 'Ask questions about anything written in the world. The archive only knows what has been put into it.'
+            : 'The AI reads the entire archive and finds answers on its own — great for vague questions like "who is the mc".'}
+        </p>
       </header>
 
       <div className="chat-messages" ref={scrollRef}>
@@ -228,11 +283,23 @@ export function QueryChatRoom() {
           <div className="chat-empty">
             <p>Try asking things like:</p>
             <ul className="chat-suggestions">
-              <li>Who is Ordium?</li>
-              <li>What lives in the Umbrage Forest?</li>
-              <li>What is the Sentient River?</li>
-              <li>Who betrayed Lisa?</li>
-              <li>Where is Vireth sealed?</li>
+              {mode === 'query' ? (
+                <>
+                  <li>Who is Ordium?</li>
+                  <li>What lives in the Umbrage Forest?</li>
+                  <li>What is the Sentient River?</li>
+                  <li>Who betrayed Lisa?</li>
+                  <li>Where is Vireth sealed?</li>
+                </>
+              ) : (
+                <>
+                  <li>Who is the mc?</li>
+                  <li>Who are the main characters?</li>
+                  <li>What is the world about?</li>
+                  <li>Tell me about the Healers</li>
+                  <li>What conflicts exist in the world?</li>
+                </>
+              )}
             </ul>
           </div>
         )}
@@ -242,7 +309,7 @@ export function QueryChatRoom() {
             <div className="chat-msg-bubble">
               <p className="chat-msg-text">{m.text}</p>
               {m.role === 'assistant' && m.results && (
-                <ChatResultList results={m.results} />
+                <ChatResultList results={m.results} mode={mode} />
               )}
             </div>
           </div>
@@ -282,32 +349,114 @@ export function QueryChatRoom() {
   );
 }
 
-function ChatResultList({ results }: { results: SearchResult }) {
-  const { entries, relationships, storyLinks } = results;
-  if (!entries.length && !relationships.length && !storyLinks.length) return null;
+// --- Results display ---
+
+function ChatResultList({ results, mode }: { results: SearchResult; mode: 'query' | 'explore' }) {
+  if (mode === 'explore') {
+    // Explore mode: the AI answer already cites specific entries and
+    // relationships in its text. Show a compact "mentioned in the answer"
+    // list of entries rather than a scattered flat list of all matches.
+    const matchedNames = results.entries
+      .filter((e) => e.name && results.entries.length > 0)
+      // We can't easily parse the AI text for names, so show the top
+      // entries that were likely referenced — sort by how connected they are.
+      .slice(0, 10);
+
+    if (matchedNames.length === 0) return null;
+
+    return (
+      <div className="chat-results">
+        <div className="chat-result-group">
+          <div className="chat-result-group-head">
+            <span className="chip" style={{ color: '#c8a876', borderColor: '#c8a87655', background: '#c8a87614' }}>
+              Archive matches ({matchedNames.length})
+            </span>
+          </div>
+          <div className="chat-result-items">
+            {matchedNames.map((e) => (
+              <ChatResultItem key={e.id} match={e} color={categoryColor(e.category || '')} />
+            ))}
+          </div>
+        </div>
+      </div>
+    );
+  }
+
+  // Query mode: split entries into "key" (those that appear in relationships
+  // or story links) and "other", so the most relevant ones surface first.
+  const relSourceTargets = new Set([
+    ...results.relationships.map((r) => r.source),
+    ...results.relationships.map((r) => r.target),
+  ]);
+  const linkSourceTargets = new Set([
+    ...results.storyLinks.map((l) => l.source),
+    ...results.storyLinks.map((l) => l.target),
+  ]);
+  const connectedNames = new Set([...relSourceTargets, ...linkSourceTargets]);
+
+  const keyEntries = results.entries.filter((e) => connectedNames.has(e.name));
+  const otherEntries = results.entries.filter((e) => !connectedNames.has(e.name));
+
+  if (!results.entries.length && !results.relationships.length && !results.storyLinks.length) return null;
 
   return (
     <div className="chat-results">
-      {entries.length > 0 && <ChatResultGroup label="Entries" color="#7f8fa3" matches={entries} />}
-      {relationships.length > 0 && <ChatResultGroup label="Relationships" color="#c25e4a" matches={relationships} />}
-      {storyLinks.length > 0 && <ChatResultGroup label="Story Links" color="#5a8f7c" matches={storyLinks} />}
-    </div>
-  );
-}
-
-function ChatResultGroup({ label, color, matches }: { label: string; color: string; matches: SearchMatch[] }) {
-  return (
-    <div className="chat-result-group">
-      <div className="chat-result-group-head">
-        <span className="chip" style={{ color, borderColor: `${color}55`, background: `${color}14` }}>
-          {label} <span className="conn-count">{matches.length}</span>
-        </span>
-      </div>
-      <div className="chat-result-items">
-        {matches.map((m) => (
-          <ChatResultItem key={m.id} match={m} color={color} />
-        ))}
-      </div>
+      {keyEntries.length > 0 && (
+        <div className="chat-result-group">
+          <div className="chat-result-group-head">
+            <span className="chip" style={{ color: '#c8a876', borderColor: '#c8a87655', background: '#c8a87614' }}>
+              Key entries ({keyEntries.length})
+            </span>
+          </div>
+          <div className="chat-result-items">
+            {keyEntries.map((e) => (
+              <ChatResultItem key={e.id} match={e} color={categoryColor(e.category || '')} />
+            ))}
+          </div>
+        </div>
+      )}
+      {otherEntries.length > 0 && (
+        <div className="chat-result-group">
+          <div className="chat-result-group-head">
+            <span className="chip" style={{ color: '#7f8fa3', borderColor: '#7f8fa355', background: '#7f8fa314' }}>
+              Other entries ({otherEntries.length})
+            </span>
+          </div>
+          <div className="chat-result-items">
+            {otherEntries.map((e) => (
+              <ChatResultItem key={e.id} match={e} color={categoryColor(e.category || '')} />
+            ))}
+          </div>
+        </div>
+      )}
+      {results.relationships.length > 0 && (
+        <div className="chat-result-group">
+          <div className="chat-result-group-head">
+            <span className="chip" style={{ color: '#c25e4a', borderColor: '#c25e4a55', background: '#c25e4a14' }}>
+              Relationships ({results.relationships.length})
+            </span>
+          </div>
+          <div className="chat-result-items">
+            {results.relationships.map((r) => (
+              <RelationshipItem key={r.id} rel={r} />
+            ))}
+          </div>
+        </div>
+      )}
+      {results.storyLinks.length > 0 && (
+        <div className="chat-result-group">
+          <div className="chat-result-group-head">
+            <span className="chip" style={{ color: '#5a8f7c', borderColor: '#5a8f7c55', background: '#5a8f7c14' }}>
+              Story links ({results.storyLinks.length})
+            </span>
+          </div>
+          <div className="chat-result-items">
+            {results.storyLinks.map((l) => (
+              <StoryLinkItem key={l.id} link={l} />
+            ))}
+          </div>
+        </div>
+      )}
     </div>
   );
 }
@@ -364,6 +513,70 @@ function ChatResultItem({ match, color }: { match: SearchMatch; color: string })
             <span key={t} className="tag">{t}</span>
           ))}
         </div>
+      )}
+    </div>
+  );
+}
+
+function RelationshipItem({ rel }: { rel: SearchMatch }) {
+  const color = categoryColor('Characters');
+  return (
+    <div className="chat-result-item relationship">
+      <div className="chat-result-item-head">
+        {rel.source && (
+          <span className="chat-result-name" style={{ color }}>
+            {rel.source}
+          </span>
+        )}
+        {rel.label && (
+          <span className="chat-rel-label">{rel.label}</span>
+        )}
+        {rel.type && (
+          <span className="chip" style={{ color: '#c25e4a', borderColor: '#c25e4a55', background: '#c25e4a14' }}>
+            {rel.type}
+          </span>
+        )}
+        {rel.target && (
+          <span className="chat-result-name" style={{ color }}>
+            {rel.target}
+          </span>
+        )}
+        {rel.createdAt && <span className="chat-result-date">{formatDate(rel.createdAt)}</span>}
+      </div>
+      {rel.description && (
+        <p className="chat-rel-desc">{rel.description}</p>
+      )}
+    </div>
+  );
+}
+
+function StoryLinkItem({ link }: { link: SearchMatch }) {
+  const color = categoryColor('Characters');
+  return (
+    <div className="chat-result-item story-link">
+      <div className="chat-result-item-head">
+        {link.source && (
+          <span className="chat-result-name" style={{ color }}>
+            {link.source}
+          </span>
+        )}
+        {link.label && (
+          <span className="chat-rel-label">{link.label}</span>
+        )}
+        {link.type && (
+          <span className="chip" style={{ color: '#5a8f7c', borderColor: '#5a8f7c55', background: '#5a8f7c14' }}>
+            {link.type}
+          </span>
+        )}
+        {link.target && (
+          <span className="chat-result-name" style={{ color }}>
+            {link.target}
+          </span>
+        )}
+        {link.createdAt && <span className="chat-result-date">{formatDate(link.createdAt)}</span>}
+      </div>
+      {link.description && (
+        <p className="chat-rel-desc">{link.description}</p>
       )}
     </div>
   );

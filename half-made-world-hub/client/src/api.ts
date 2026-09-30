@@ -174,3 +174,13 @@ export async function askAi(question: string, searchResult: SearchResult): Promi
   });
   return handle<AiAnswerResponse>(res);
 }
+
+// --- AI explore: the AI searches the full archive on its own ---
+export async function askAiExplore(question: string): Promise<AiAnswerResponse> {
+  const res = await fetch('/api/ai/explore', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ question }),
+  });
+  return handle<AiAnswerResponse>(res);
+}

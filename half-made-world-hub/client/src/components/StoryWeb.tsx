@@ -19,19 +19,30 @@ const COL_PAD_Y = 8;
 const COL_GAP = 16;          // gap between columns
 const EDGE_CURVE = 0.25;     // edge curvature strength
 
-// Category ordering
+// Category ordering — world columns left (geography, people, story),
+// systems in the middle, life/culture on the right. Categories not listed
+// here are appended alphabetically after the known ones.
 const CATEGORY_ORDER = [
-  'Realms', 'Locations', 'Characters', 'Plot',
-  'Angels', 'Demons', 'Humans', 'Classes',
-  'Magic Systems', 'Rules & Notes', 'Items', 'Artifacts',
-  'Artifact Skills', 'Angel Skills', 'Demon Skills', 'Character Forms',
-  'Monsters', 'Beings', 'Hidden Realm', 'Organizations',
-  'Economy', 'Military', 'Calendar', 'Laws & Justice',
-  'Medical', 'Travel', 'Architecture', 'Combat Mechanics',
-  'Combat Training', 'Culture', 'Daily Life', 'Equipment',
-  'Intelligence', 'Lore & Myths', 'Nature', 'Politics',
-  'Resources', 'Skill Mechanics', 'Social Classes', 'Academy',
-  'Clan', 'Other',
+  // Geography
+  'Realms', 'Locations', 'Hidden Realm',
+  // People & races
+  'Characters', 'Humans', 'Angels', 'Demons', 'Beings', 'Monsters', 'Race Types',
+  // Story
+  'Plot', 'Lore & Myths', 'Calendar', 'Clan',
+  // Power systems
+  'Magic Systems', 'Rules & Notes', 'Classes', 'Class Skills', 'Class Progression',
+  'Grade System', 'Rune Star Circles', 'Innate Abilities', 'Skill Mechanics', 'Concepts',
+  // Skills & forms by race
+  'Angel Skills', 'Demon Skills', 'Hybrid Skills', 'Artifact Skills', 'Character Forms',
+  // Things
+  'Items', 'Artifacts', 'Equipment', 'Coins', 'Resources',
+  // Society
+  'Organizations', 'Politics', 'Economy', 'Laws & Justice', 'Military', 'Intelligence',
+  'Social Classes', 'Titles',
+  // Life & world
+  'Academy', 'Culture', 'Daily Life', 'Arts & Entertainment', 'Death & Burial',
+  'Marriage & Family', 'Languages', 'Nature', 'Religion', 'Travel', 'Architecture',
+  'Medical', 'Prisons', 'Combat Mechanics', 'Combat Training',
 ];
 
 interface Pos { x: number; y: number }

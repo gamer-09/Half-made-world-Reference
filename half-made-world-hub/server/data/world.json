@@ -211,15 +211,11 @@
       },
       {
         "label": "Vengeful Souls",
-        "value": "Every soul Vireth consumed was trapped in the river. Their consciousness bled into the water: anger, grief, confusion. The river is made of people. It moves with intent because the souls within it still have intent."
+        "value": "Every soul Vireth consumed was trapped in the river. Their consciousness bled into the water: anger, grief, confusion. The river is made of people."
       },
       {
         "label": "Why It’s Sentient",
         "value": "The river is composed of the dead. It reacts violently to seekers because the souls remember the sword and want it buried. The Sirens, shaped by the corruption, lure people in because the sword wants sacrifices."
-      },
-      {
-        "label": "Soul-Sight View",
-        "value": "Under Soul-Sight, the river appears as a swirling mass of spectral figures — every person Vireth ever consumed, trapped in the corrupted water, reaching and screaming."
       },
       {
         "label": "Lore Connections",
@@ -235,7 +231,7 @@
       "corruption"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-010",
@@ -445,10 +441,6 @@
         "value": "Tall, slender humanoids with pointed ears and an angular, graceful build. Pallantine elves have lighter skin and Silver Sigil-toned hair. Veilborn elves are darker-skinned with deep violet or black hair."
       },
       {
-        "label": "Pallantine",
-        "value": "They stay in the Arubian Forest."
-      },
-      {
         "label": "Veilborn",
         "value": "They stay in the Umbrage Forest and only trust themselves."
       },
@@ -475,7 +467,7 @@
       "veilborn"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-017",
@@ -665,11 +657,11 @@
       },
       {
         "label": "True Nature",
-        "value": "Under Soul-Sight, they appear as corrupted spiritual beings — their own souls tangled with the vengeful souls of the river. Part Siren, part consumed victim. Guardians and prisoners at the same time."
+        "value": "Under Soul-Sight, they appear as corrupted spiritual beings — their own souls tangled with the vengeful souls of the river."
       },
       {
         "label": "Connection to Vireth",
-        "value": "They lure people in because the sword wants sacrifices. The vengeful souls in the water want company. The Sirens give them what they want. They are extensions of the sword's will, even though the sword is sealed."
+        "value": "They lure people in because the sword wants sacrifices. They are extensions of the sword's will, even though the sword is sealed."
       },
       {
         "label": "Lore Connections",
@@ -684,7 +676,7 @@
       "corruption"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-022",
@@ -742,7 +734,7 @@
     "fields": [
       {
         "label": "Appearance",
-        "value": "Massive serpents up to forty feet long with scales of dark iron-grey that shimmer with an oily sheen. Their most dangerous feature is their eyes, large, slit-pupiled, and glowing with a faint petrifying light."
+        "value": "Their most dangerous feature is their eyes, large, slit-pupiled, and glowing with a faint petrifying light."
       },
       {
         "label": "Location",
@@ -777,7 +769,7 @@
       "stone gaze"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-024",
@@ -786,10 +778,6 @@
     "subtitle": "Lion-bodied ambush predators with a scorpion's venom tail",
     "description": "A terrifying hybrid with the body of a massive lion, bat-like wings that allow short bursts of flight, and a segmented scorpion tail tipped with a barbed stinger loaded with paralytic venom. Unlike most beasts of the Umbrage Forest, Manticores are solitary hunters that rely on ambush rather than pack tactics. They bury themselves in loose soil or leaf litter near travel paths and strike when prey passes overhead — the venom from their tail paralyzes within seconds, and they consume their prey alive. Their roar is unnaturally loud and can be heard for miles; it serves both as a territorial claim and a way to disorient prey before the attack. Manticores have a rudimentary Veyn sensitivity that lets them detect the size and strength of nearby beings, allowing them to avoid targets that might fight back. They are fiercely territorial and will fight to the death rather than retreat from their claimed hunting ground. A Manticore's venom sac, carefully extracted while the creature is alive, is one of the most valuable alchemical ingredients in the world — it is the base component for Paralytic Venom, a poison that works on beings up to C-rank.",
     "fields": [
-      {
-        "label": "Appearance",
-        "value": "A terrifying hybrid with the body of a massive lion, bat-like wings for short bursts of flight, and a segmented scorpion tail tipped with a barbed stinger loaded with paralytic venom."
-      },
       {
         "label": "Location",
         "value": "Umbrage Forest; occasionally found in deep parts of the Arubian Forest"
@@ -823,7 +811,7 @@
       "umbrage"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-025",
@@ -834,7 +822,7 @@
     "fields": [
       {
         "label": "Appearance",
-        "value": "A monstrous hybrid with three distinct heads: a lion's head with a roar of concussive force, a goat's head that breathes corrosive bile, and a serpent's head that strikes with venom. Its body is heavily armored with overlapping scales."
+        "value": "A monstrous hybrid with three distinct heads: a lion's head with a roar of concussive force, a goat's head that breathes corrosive bile, and a serpent's head that strikes with venom."
       },
       {
         "label": "Location",
@@ -870,7 +858,7 @@
       "hidden realm"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-026",
@@ -926,10 +914,6 @@
     "description": "Small, wiry humanoids standing barely three feet tall, with mottled green-grey skin, oversized ears that give them exceptional hearing, and yellow eyes adapted for near-total darkness. Goblins are not individually dangerous — a single Goblin could be killed by an average human with a sword — but they are never alone. They travel in warrens of fifty to several hundred, and their true strength lies in their intelligence and their obsessive crafting of traps. Goblin warrens are labyrinths of dug tunnels and concealed pit traps, tripwires connected to falling spikes, and crude but effective noise alarms that alert the entire warren to intruders. They are surprisingly adept at salvaging and repurposing materials — Goblin warrens are littered with scavenged weapons, broken armor, and stolen supplies repurposed into crude but functional tools. They fear fire above all else and will scatter at the first sign of flame, but they are bold enough to swarm anything that enters their territory on foot. Goblin nests are found throughout the Umbrage Forest and occasionally in the deeper parts of the Arubian Forest, where they raid fairy caches and steal treasures from unwary travelers.",
     "fields": [
       {
-        "label": "Appearance",
-        "value": "Small, wiry humanoids standing barely three feet tall, with mottled green-grey skin, oversized ears that give them exceptional hearing, and yellow eyes adapted for near-total darkness."
-      },
-      {
         "label": "Location",
         "value": "Umbrage Forest; deeper Arubian Forest"
       },
@@ -962,7 +946,7 @@
       "umbrage"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-028",
@@ -973,7 +957,7 @@
     "fields": [
       {
         "label": "Appearance",
-        "value": "Massive humanoids standing between six and eight feet tall, with thick grey-green skin, protruding tusks, and dense musculature. They have heavy brow ridges and a brutal, practical bearing."
+        "value": "They have heavy brow ridges and a brutal, practical bearing."
       },
       {
         "label": "Location",
@@ -1009,7 +993,7 @@
       "demon realm"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-029",
@@ -1018,10 +1002,6 @@
     "subtitle": "Ancient realm-devouring entity sealed beneath the world",
     "description": "A creature so old it predates the division of the three realms — an entity that feeds on Veyn at a catastrophic scale, draining entire regions of ambient magic until the land itself begins to die. It was sealed beneath the world's crust by the Aelthar during their reign, locked in a cage of world-core Veyn that has been slowly weakening for millennia. The Abyssal Wyrm's body is serpentine, miles long, with segments of armored hide that each resemble a different landscape — one segment looks like cracked earth, another like frozen tundra, another like molten rock — as though it has absorbed the essence of every territory it has devoured. Its breath does not burn or freeze; it nullifies all Veyn in its path, creating zones of absolute magic silence where no spell, no enchantment, and no aura can function. Anything caught in this zone is reduced to the physical equivalent of a newborn — no magical defenses, no enhanced strength, no healing. It can only be harmed by weapons forged from world-core material (Shudon-grade metal) or by attacks that channel Veyn directly from the world core. The seal is weakening. When it breaks, the Wyrm will surface, and the resulting Veyn drain will create a dead zone the size of a kingdom.",
     "fields": [
-      {
-        "label": "Appearance",
-        "value": "A creature so old it predates the division of the three realms. Its body is serpentine, miles long, with segments of armored hide that each resemble a different landscape."
-      },
       {
         "label": "Location",
         "value": "Sealed beneath the world's crust — exact location unknown"
@@ -1060,7 +1040,7 @@
       "op"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-030",
@@ -1121,10 +1101,6 @@
     "description": "A towering entity of unknown origin that exists in the spaces between realms — in the void that separates the Human, Angel, Demon, and Hidden Realms from one another. It is not alive in any conventional sense; it has no metabolism, no reproduction, no survival instinct. It moves through the void with purpose, and that purpose appears to be finding and destroying breaches in the realm barrier. When a breach occurs — such as when the Hidden Realm was forcefully created — the Void Colossus is drawn to it like a predator to blood in water. It manifests at the breach point as a towering humanoid figure of compressed void energy, thirty to fifty feet tall, with no features except two dim points of light where eyes would be. It attacks anything near the breach with sweeps of its arms that create localized spatial distortions — areas where distance, gravity, and direction lose meaning for a few seconds, long enough for anything caught in them to be torn apart by the conflicting forces. It cannot be killed because it is not truly present in any realm; it is a projection of the void's own immune response. Destroying one merely pushes it back into the void, and it will return to any new breach. The only way to stop it is to close the breach it was drawn to.",
     "fields": [
       {
-        "label": "Appearance",
-        "value": "A towering humanoid figure of compressed void energy, thirty to fifty feet tall, with no features except two dim points of light where eyes would be. It is a projection of the void's own immune response."
-      },
-      {
         "label": "Location",
         "value": "The void between realms; manifests at barrier breaches"
       },
@@ -1162,7 +1138,7 @@
       "op"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-032",
@@ -1278,10 +1254,6 @@
         "value": "Enormous, whale-like creatures that soar through the skies, their massive bodies trailing ribbons of condensed Veyn that shimmer like auroras. Their skin is a deep, mottled blue-grey, and their eyes are small and ancient."
       },
       {
-        "label": "Location",
-        "value": "Upper atmosphere of all three realms"
-      },
-      {
         "label": "Realm",
         "value": "All three realms — Human, Angel, and Demon Realms"
       },
@@ -1312,7 +1284,7 @@
       "veyn"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-035",
@@ -1593,10 +1565,6 @@
       {
         "label": "Weakness",
         "value": "Demonstrating pure intent pacifies the river; fighting outside the river weakens them"
-      },
-      {
-        "label": "Notable",
-        "value": "They protect the seal on Vireth, the Fallen Grace"
       }
     ],
     "tags": [
@@ -1608,7 +1576,7 @@
       "vireth"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-041",
@@ -1946,7 +1914,7 @@
     "category": "Angels",
     "name": "Angels (Overview)",
     "subtitle": "Four ranks — power, not profession",
-    "description": "There are four ranks of angels: Serapharch, Aetherblade Lord Angel, Virtue, and Lumen. They have pure white feathery wings and a glowing halo on top of their heads. The number of wings indicates their rank — the higher the rank, the more wings they have — and the appearance of their halo changes by rank too: the higher the rank, the more powerful and bright they look, while lower-rank halos glow very dimly. A rank measures how much Veyn an angel holds, not what they do for a living. Only some angels join the army; most are ordinary civilians — craftsmen, merchants, scholars, and workers — who simply happen to hold their rank. Angels of any rank can leave the Angel Realm and live in the Human Realm as normal citizens, hiding their true nature behind Dawnveil.",
+    "description": "There are four ranks of angels: Serapharch, Aetherblade Lord Angel, Virtue, and Lumen. They have pure white feathery wings and a glowing halo on top of their heads. The number of wings indicates their rank — the higher the rank, the more wings they have — and the appearance of their halo changes by rank too: the higher the rank, the more powerful and bright they look, while lower-rank halos glow very dimly. A rank measures how much Veyn an angel holds, not what they do for a living. Only some angels join the army; most are ordinary civilians — craftsmen, merchants, scholars, and workers — who simply happen to hold their rank. Angels of any rank can leave the Angel Realm and live in the Human Realm as normal citizens, hiding their true nature behind Dawnveil.\n\nWhen an angel has used up all the Holy Energy they hold (the type of Veyn angels use), their halo starts dimming out little by little until its brightness is completely gone — which means their Veyn has finished. A fully dimmed angel cannot use their skills or magic that rely on Veyn, and can only rely on their innate trait instead — unless they were using Ren, which does not rely on Veyn.",
     "fields": [
       {
         "label": "Note",
@@ -1960,7 +1928,7 @@
       "halo"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:16:39.754Z"
   },
   {
     "id": "seed-051",
@@ -2087,7 +2055,7 @@
     "category": "Angels",
     "name": "Fallen Angel",
     "subtitle": "Cast out — broken halo, spotted wings",
-    "description": "They have black spotted white wings or black cherry spotted white wings and a broken halo on top of their head. Once the vow breaks, the angel is cast out of the Angel Realm and rejected by their own race — this is what makes them a Fallen Angel. They keep their wings and whatever power they had, but can never take another Veyn Vow again, so their connection to Veyn stays unstable and unregulated. This makes them strong in bursts but dangerous even to themselves, since nothing filters how much Veyn moves through them anymore.\n\n---\n\n## THE SANCTUARY BREAK — VOW-BETRAYAL MADNESS\n\nNot all Vow-breaks are equal. When an angel breaks their Vow through ordinary failure — weakness, cowardice, a moment of doubt — they become a standard Fallen Angel: damaged but stable, their Veyn unregulated but their mind intact. Wener Leger is an example of this type.\n\nBut when an angel breaks their Vow through the deliberate betrayal of someone they swore to protect — not just breaking their word, but using the trust of a specific person to destroy them — the break is different. The angel does not just lose their halo; they tear a void into their own Veyn channel where the promise used to resonate. This void cannot heal. It is not a wound; it is an absence — a hole in the angel's spiritual architecture where something essential was removed.\n\nOver time — weeks, months, years, depending on the severity of the betrayal — corrupted Veyn seeps into this void. Not the clean, structured corruption of a demon's aura, but something worse: formless, directionless, hungry. It fills the absence the way water fills a crack in a dam, and it does not stop. The corrupted Veyn does not give the angel power; it takes something. It eats at their memories, their emotions, their sense of self. The angel begins to forget why they made the promise. Then they forget who they made it to. Then they forget who they were before the promise.\n\nThe process is called the Sanctuary Break — named for the theological belief that an angel's Vow is their inner sanctuary, and breaking it through betrayal is not just a failure but a demolition. The sanctuary does not collapse; it hollows out, leaving a shell that looks like the angel but is driven by something else.\n\nThe symptoms of a Sanctuary Break progress in stages:\n\n• **Stage 1 — The Hollow (Weeks 1–4):** The angel feels empty. Not sad, not angry — empty. They go through the motions of life but feel nothing. Their Veyn flickers unpredictably. They avoid people who remind them of the person they betrayed.\n\n• **Stage 2 — The Fog (Months 1–6):** The angel's memories begin to blur. They forget details — the face of the person they betrayed, the words of their Vow, the sound of their own name being called. Their Veyn becomes erratic, surging and draining without warning. They become irritable, paranoid, and prone to sudden violence.\n\n• **Stage 3 — The Hunger (Months 6–18):** The corrupted Veyn in the void begins to demand feeding. The angel discovers they can drain Veyn from others through proximity or touch — not gracefully, not with control, but with a raw, desperate hunger that frightens them. They begin to seek out Veyn sources: ley lines, Veyn-rich locations, and eventually other beings. Their personality continues to degrade. They lose empathy. They lose the ability to feel guilt.\n\n• **Stage 4 — The Hollowing (18+ Months):** The corrupted Veyn has consumed enough of the angel's will that the person they were is gone. What remains is a Veyn-hungry entity that wears the angel's body and uses their remaining power for destruction. The Hollowed do not think strategically; they consume. They are drawn to concentrations of Veyn — battlefields, Altars, ley line intersections — and they feed until they are stopped or until there is nothing left to feed on.\n\nThe Hollowed are not demons. They are not undead. They are what happens when an angel's inner sanctuary is demolished and something hungry moves into the ruins. They are the most dangerous beings in the world — not because they are powerful (though they are), but because they were once trusted. A Hollowed angel retains enough of their former abilities to be devastating, and enough of their former appearance to be recognized. The person who loved them, fought beside them, or followed them sees a familiar face — and by the time they realize what has changed, it is too late.\n\nThe only way to stop a Hollowed is to destroy them completely — body and Veyn both. Exorcism does not work (there is no spirit to banish; the corrupted Veyn IS the entity). Holy purification slows them but does not stop them. The only reliable method is to channel enough Veyn to overload the corrupted void, which requires either a Divine Weapon or a combined assault by multiple high-rank fighters.\n\n---\n\n## WHY IT MATTERS\n\nThe Sanctuary Break is the theological consequence of the Vow system's greatest flaw: the Vow is supposed to be unbreakable. Angels are taught that a well-kept Vow is the foundation of their power and their identity — for an angel has no soul but the spiritual body the Vow makes, and to lose it is to lose the self. Breaking it through betrayal does not just strip them of power; it removes the structural support that keeps their spiritual architecture intact. The void that forms is not punishment — it is physics. You cannot remove a load-bearing wall and expect the building to stand.\n\nThis is why angels are so ruthless about Vow enforcement. It is not cruelty; it is mercy. An angel who breaks their Vow through betrayal will become a Hollowed — a monster wearing a face everyone remembers. The Angel Realm would rather execute a Vow-breaker quickly than let them hollow out slowly.\n\nClint Ashborn knows this. He ordered Ordium's execution not just because Ordium broke his Vow by loving a demon, but because Ordium's Vow was specifically about protecting the Angel Realm's integrity. Breaking it through the creation of a hybrid child was not just a personal failure — it was a betrayal of the exact promise Ordium swore to uphold. If Clint had let Ordium live, the Sanctuary Break would have consumed him within a year, and the resulting Hollowed would have been an Aetherblade Lord-level entity rampaging through the Angel Realm.\n\nThis is also why Wener Leger is so dangerous. He broke his Vow through ordinary failure — not betrayal of a specific person, but a general loss of faith. He did not trigger a Sanctuary Break. He remained intact, intelligent, and capable. A Fallen Angel who breaks through betrayal becomes a monster. A Fallen Angel who breaks through doubt becomes Wener Leger — which is arguably worse.\n\n---\n\n## THE SANCTUARY BREAK — VOW-BETRAYAL MADNESS\n\nNot all Vow-breaks are equal. When an angel breaks their Vow through ordinary failure — weakness, cowardice, a moment of doubt — they become a standard Fallen Angel: damaged but stable, their Veyn unregulated but their mind intact. Wener Leger is an example of this type.\n\nBut when an angel breaks their Vow through the deliberate betrayal of someone they swore to protect — not just breaking their word, but using the trust of a specific person to destroy them — the break is different. The angel does not just lose their halo; they tear a void into their own Veyn channel where the promise used to resonate. This void cannot heal. It is not a wound; it is an absence — a hole in the angel's spiritual architecture where something essential was removed.\n\nOver time — weeks, months, years, depending on the severity of the betrayal — corrupted Veyn seeps into this void. Not the clean, structured corruption of a demon's aura, but something worse: formless, directionless, hungry. It fills the absence the way water fills a crack in a dam, and it does not stop. The corrupted Veyn does not give the angel power; it takes something. It eats at their memories, their emotions, their sense of self. The angel begins to forget why they made the promise. Then they forget who they made it to. Then they forget who they were before the promise.\n\nThe process is called the Sanctuary Break — named for the theological belief that an angel's Vow is their inner sanctuary, and breaking it through betrayal is not just a failure but a demolition. The sanctuary does not collapse; it hollows out, leaving a shell that looks like the angel but is driven by something else.\n\nThe symptoms of a Sanctuary Break progress in stages:\n\n• **Stage 1 — The Hollow (Weeks 1–4):** The angel feels empty. Not sad, not angry — empty. They go through the motions of life but feel nothing. Their Veyn flickers unpredictably. They avoid people who remind them of the person they betrayed.\n\n• **Stage 2 — The Fog (Months 1–6):** The angel's memories begin to blur. They forget details — the face of the person they betrayed, the words of their Vow, the sound of their own name being called. Their Veyn becomes erratic, surging and draining without warning. They become irritable, paranoid, and prone to sudden violence.\n\n• **Stage 3 — The Hunger (Months 6–18):** The corrupted Veyn in the void begins to demand feeding. The angel discovers they can drain Veyn from others through proximity or touch — not gracefully, not with control, but with a raw, desperate hunger that frightens them. They begin to seek out Veyn sources: ley lines, Veyn-rich locations, and eventually other beings. Their personality continues to degrade. They lose empathy. They lose the ability to feel guilt.\n\n• **Stage 4 — The Hollowing (18+ Months):** The corrupted Veyn has consumed enough of the angel's will that the person they were is gone. What remains is a Veyn-hungry entity that wears the angel's body and uses their remaining power for destruction. The Hollowed do not think strategically; they consume. They are drawn to concentrations of Veyn — battlefields, Altars, ley line intersections — and they feed until they are stopped or until there is nothing left to feed on.\n\nThe Hollowed are not demons. They are not undead. They are what happens when an angel's inner sanctuary is demolished and something hungry moves into the ruins. They are the most dangerous beings in the world — not because they are powerful (though they are), but because they were once trusted. A Hollowed angel retains enough of their former abilities to be devastating, and enough of their former appearance to be recognized. The person who loved them, fought beside them, or followed them sees a familiar face — and by the time they realize what has changed, it is too late.\n\nThe only way to stop a Hollowed is to destroy them completely — body and Veyn both. Exorcism does not work (there is no spirit to banish; the corrupted Veyn IS the entity). Holy purification slows them but does not stop them. The only reliable method is to channel enough Veyn to overload the corrupted void, which requires either a Divine Weapon or a combined assault by multiple high-rank fighters.\n\n---\n\n## WHY THE SANCTUARY BREAK MATTERS\n\nThe Sanctuary Break is the theological consequence of the Vow system's greatest flaw: the Vow is supposed to be unbreakable. Angels are taught that a well-kept Vow is the foundation of their power and their identity — for an angel has no soul but the Vow, and to lose it is to lose the self. Breaking it through betrayal does not just strip them of power; it removes the structural support that keeps their spiritual architecture intact. The void that forms is not punishment — it is physics. You cannot remove a load-bearing wall and expect the building to stand.\n\nThis is why angels are so ruthless about Vow enforcement. It is not cruelty; it is mercy. An angel who breaks their Vow through betrayal will become a Hollowed — a monster wearing a face everyone remembers. The Angel Realm would rather execute a Vow-breaker quickly than let them hollow out slowly.\n\nClint Ashborn knows this. He ordered Ordium's execution not just because Ordium broke his Vow by loving a demon, but because Ordium's Vow was specifically about protecting the Angel Realm's integrity. Breaking it through the creation of a hybrid child was not just a personal failure — it was a betrayal of the exact promise Ordium swore to uphold. If Clint had let Ordium live, the Sanctuary Break would have consumed him within a year, and the resulting Hollowed would have been an Aetherblade Lord-level entity rampaging through the Angel Realm.\n\nThis is also why Wener Leger is so dangerous. He broke his Vow through ordinary failure — not betrayal of a specific person, but a general loss of faith. He did not trigger a Sanctuary Break. He remained intact, intelligent, and capable. A Fallen Angel who breaks through betrayal becomes a monster. A Fallen Angel who breaks through doubt becomes Wener Leger — which is arguably worse.",
+    "description": "They have black spotted white wings or black cherry spotted white wings and a broken halo on top of their head. Once the vow breaks, the angel is cast out of the Angel Realm and rejected by their own race — this is what makes them a Fallen Angel. They keep their wings and whatever power they had, but can never take another Veyn Vow again, so their connection to Veyn stays unstable and unregulated. This makes them strong in bursts but dangerous even to themselves, since nothing filters how much Veyn moves through them anymore.\n\n---\n\n## THE SANCTUARY BREAK — VOW-BETRAYAL MADNESS\n\nNot all Vow-breaks are equal. When an angel breaks their Vow through ordinary failure — weakness, cowardice, a moment of doubt — they become a standard Fallen Angel: damaged but stable, their Veyn unregulated but their mind intact. Wener Leger is an example of this type.\n\nBut when an angel breaks their Vow through the deliberate betrayal of someone they swore to protect — not just breaking their word, but using the trust of a specific person to destroy them — the break is different. The angel does not just lose their halo; they tear a void into their own Veyn channel where the promise used to resonate. This void cannot heal. It is not a wound; it is an absence — a hole in the angel's spiritual architecture where something essential was removed.\n\nOver time — weeks, months, years, depending on the severity of the betrayal — corrupted Veyn seeps into this void. Not the clean, structured corruption of a demon's aura, but something worse: formless, directionless, hungry. It fills the absence the way water fills a crack in a dam, and it does not stop. The corrupted Veyn does not give the angel power; it takes something. It eats at their memories, their emotions, their sense of self. The angel begins to forget why they made the promise. Then they forget who they made it to. Then they forget who they were before the promise.\n\nThe process is called the Sanctuary Break — named for the theological belief that an angel's Vow is their inner sanctuary, and breaking it through betrayal is not just a failure but a demolition. The sanctuary does not collapse; it hollows out, leaving a shell that looks like the angel but is driven by something else.\n\nThe symptoms of a Sanctuary Break progress in stages:\n\n• **Stage 1 — The Hollow (Weeks 1–4):** The angel feels empty. Not sad, not angry — empty. They go through the motions of life but feel nothing. Their Veyn flickers unpredictably. They avoid people who remind them of the person they betrayed.\n\n• **Stage 2 — The Fog (Months 1–6):** The angel's memories begin to blur. They forget details — the face of the person they betrayed, the words of their Vow, the sound of their own name being called. Their Veyn becomes erratic, surging and draining without warning. They become irritable, paranoid, and prone to sudden violence.\n\n• **Stage 3 — The Hunger (Months 6–18):** The corrupted Veyn in the void begins to demand feeding. The angel discovers they can drain Veyn from others through proximity or touch — not gracefully, not with control, but with a raw, desperate hunger that frightens them. They begin to seek out Veyn sources: ley lines, Veyn-rich locations, and eventually other beings. Their personality continues to degrade. They lose empathy. They lose the ability to feel guilt.\n\n• **Stage 4 — The Hollowing (18+ Months):** The corrupted Veyn has consumed enough of the angel's will that the person they were is gone. What remains is a Veyn-hungry entity that wears the angel's body and uses their remaining power for destruction. The Hollowed do not think strategically; they consume. They are drawn to concentrations of Veyn — battlefields, Altars, ley line intersections — and they feed until they are stopped or until there is nothing left to feed on.\n\nThe Hollowed are not demons. They are not undead. They are what happens when an angel's inner sanctuary is demolished and something hungry moves into the ruins. They are the most dangerous beings in the world — not because they are powerful (though they are), but because they were once trusted. A Hollowed angel retains enough of their former abilities to be devastating, and enough of their former appearance to be recognized. The person who loved them, fought beside them, or followed them sees a familiar face — and by the time they realize what has changed, it is too late.\n\nThe only way to stop a Hollowed is to destroy them completely — body and Veyn both. Exorcism does not work (there is no spirit to banish; the corrupted Veyn IS the entity). Holy purification slows them but does not stop them. The only reliable method is to channel enough Veyn to overload the corrupted void, which requires either a Divine Weapon or a combined assault by multiple high-rank fighters.\n\n---\n\n## WHY THE SANCTUARY BREAK MATTERS\n\nThe Sanctuary Break is the theological consequence of the Vow system's greatest flaw: the Vow is supposed to be unbreakable. Angels are taught that a well-kept Vow is the foundation of their power and their identity — for an angel has no soul but the Vow, and to lose it is to lose the self. Breaking it through betrayal does not just strip them of power; it removes the structural support that keeps their spiritual architecture intact. The void that forms is not punishment — it is physics. You cannot remove a load-bearing wall and expect the building to stand.\n\nThis is why angels are so ruthless about Vow enforcement. It is not cruelty; it is mercy. An angel who breaks their Vow through betrayal will become a Hollowed — a monster wearing a face everyone remembers. The Angel Realm would rather execute a Vow-breaker quickly than let them hollow out slowly.\n\nClint Ashborn knows this. He ordered Ordium's execution not just because Ordium broke his Vow by loving a demon, but because Ordium's Vow was specifically about protecting the Angel Realm's integrity. Breaking it through the creation of a hybrid child was not just a personal failure — it was a betrayal of the exact promise Ordium swore to uphold. If Clint had let Ordium live, the Sanctuary Break would have consumed him within a year, and the resulting Hollowed would have been an Aetherblade Lord-level entity rampaging through the Angel Realm.\n\nThis is also why Wener Leger is so dangerous. He broke his Vow through ordinary failure — not betrayal of a specific person, but a general loss of faith. He did not trigger a Sanctuary Break. He remained intact, intelligent, and capable. A Fallen Angel who breaks through betrayal becomes a monster. A Fallen Angel who breaks through doubt becomes Wener Leger — which is arguably worse.",
     "fields": [
       {
         "label": "Cause",
@@ -2115,7 +2083,7 @@
       },
       {
         "label": "Wener Leger's Break",
-        "value": "Wener broke his Vow through ordinary failure — general loss of faith, not betrayal of a specific person. He did not trigger a Sanctuary Break. He remained intact, intelligent, and capable. A Fallen Angel who breaks through doubt becomes Wener Leger — arguably worse than a Hollowed."
+        "value": "Wener broke his Vow through ordinary failure — general loss of faith, not betrayal of a specific person. A Fallen Angel who breaks through doubt becomes Wener Leger — arguably worse than a Hollowed."
       },
       {
         "label": "Clint's Knowledge",
@@ -2141,7 +2109,7 @@
       "broken halo"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-31T00:17:52.844Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-056",
@@ -2185,7 +2153,7 @@
     "category": "Demons",
     "name": "Demons (Overview)",
     "subtitle": "Four ranks — power, not profession",
-    "description": "There are four ranks of demons: Mordrach, Bloodward, Scourge, and Gnash. They have horns on their forehead and feathery black wings. The number of horns and wings both indicate their rank — the higher the rank, the more horns and wings they have. They always have a demonic aura around them. A rank measures how much power a demon holds, not what they do for a living. Only some demons join the army; most are ordinary civilians — laborers, traders, craftsmen, and workers — who simply happen to hold their rank. Demons of any rank can leave the Demon Realm and live in the Human Realm as normal citizens, hiding their true nature behind Duskveil. Note: a rank can be passed down to an offspring, though not all the time, so they would have to work their way up the ranks.",
+    "description": "There are four ranks of demons: Mordrach, Bloodward, Scourge, and Gnash. They have horns on their forehead and feathery black wings. The number of horns and wings both indicate their rank — the higher the rank, the more horns and wings they have. They always have a demonic aura around them. A rank measures how much power a demon holds, not what they do for a living. Only some demons join the army; most are ordinary civilians — laborers, traders, craftsmen, and workers — who simply happen to hold their rank. Demons of any rank can leave the Demon Realm and live in the Human Realm as normal citizens, hiding their true nature behind Duskveil. Note: a rank can be passed down to an offspring, though not all the time, so they would have to work their way up the ranks.\n\nTheir horns are not just a rank display — the horns hold all the Corrupted Veyn a demon can ever use. The horns store the corrupted Veyn and act as the conduit through which demons channel it into their skills and magic. When a demon completely runs out of Veyn, the color of their horns goes pitch black, meaning there is no more Veyn left to use. A fully black-horned demon cannot use their race skills or class skills (all of which rely on Veyn) and can only rely on their innate trait instead — unless they were using Ren, which does not rely on Veyn.",
     "fields": [
       {
         "label": "Note",
@@ -2209,7 +2177,7 @@
       "fingers"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:16:39.753Z"
   },
   {
     "id": "seed-058",
@@ -2438,10 +2406,6 @@
         "value": "Cool and ambient."
       },
       {
-        "label": "Source",
-        "value": "Drawn from the core of the world and everything around us."
-      },
-      {
         "label": "Color",
         "value": "Naturally glows pale Silver Sigil-blue like faint moonlight; holy energy brightens it into Gold Sigil, while corrupted Veyn (like a demon’s miasma) darkens it into deep purple or black."
       }
@@ -2452,7 +2416,7 @@
       "mana"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-067",
@@ -2496,10 +2460,6 @@
     "description": "Corrupted Veyn is Veyn darkened and corrupted into a deep purple or black — the form of Veyn that demons wield, which they call miasma. Where raw Veyn glows a neutral Silver Sigil-blue and holy energy brightens it into Gold Sigil, corrupted Veyn darkens it, poisoning and contaminating whatever it touches. It harms humans and can contaminate holy auras and holy energy. It is not a separate source of power — it is Veyn corrupted, drawn from the same world core and bound by the same limits.",
     "fields": [
       {
-        "label": "Color",
-        "value": "Deep purple or black"
-      },
-      {
         "label": "Nature",
         "value": "Corrupted Veyn — not a separate source"
       },
@@ -2524,7 +2484,7 @@
       "demon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-069",
@@ -2590,18 +2550,13 @@
     "name": "Concentrated Veyn",
     "subtitle": "Brighter, denser Veyn",
     "description": "Matches the color of a Lucent Stone: the same Silver Sigil-blue as raw Veyn, just far brighter and more vivid, clear rather than faint or hazy.",
-    "fields": [
-      {
-        "label": "Color",
-        "value": "Same Silver Sigil-blue as raw Veyn, just far brighter and more vivid — clear rather than faint or hazy."
-      }
-    ],
+    "fields": [],
     "tags": [
       "veyn",
       "concentrated"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-072",
@@ -2610,10 +2565,6 @@
     "subtitle": "The cost of lingering in concentrated Veyn",
     "description": "Caused by staying near or within concentrated Veyn for too long. The body can’t regulate the overwhelming amount of ambient Veyn, causing a person’s own Veyn to leak out constantly rather than being properly contained. This leaves them unable to perform any real magic (at most just basic spells), along with constant weakness, vomiting, and excessive sleep as the body struggles against the imbalance.",
     "fields": [
-      {
-        "label": "Cause",
-        "value": "Staying near or within concentrated Veyn for too long."
-      },
       {
         "label": "Symptoms",
         "value": "Constant weakness, vomiting, and excessive sleep; unable to perform any real magic (at most basic spells) as the body leaks its own Veyn."
@@ -2625,7 +2576,7 @@
       "concentrated"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-073",
@@ -2925,7 +2876,7 @@
     "category": "Grade System",
     "name": "D Grade",
     "subtitle": "Dominion Grade — Level 30-44",
-    "description": "A significant power jump. D Grade beings can influence their surroundings on a larger scale and are considered competent fighters. Most adventurers and class-holders operate at this grade. The average lifespan extends to roughly 1,000 years.",
+    "description": "A significant power jump. D Grade beings can influence their surroundings on a larger scale and are considered competent fighters. Most adventurers and class-holders operate at this grade. The average lifespan extends to roughly 1,000 years.\n\nNote on lifespans: the Grade lifespan ladder (D ~1,000 years, C ~10,000 years and up) applies to graded Human class-holders whose bodies are elevated by Veyn. It does not replace race lifespans: Demons age on their own span (200-300 years, longer for the powerful — see Demon Aging & Adaptation), and Angels are effectively immortal, limited only by promise-drain (see Angel Aging & Immortality).",
     "fields": [
       {
         "label": "Level Range",
@@ -2963,7 +2914,7 @@
       "d-grade"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T13:12:10.314Z"
   },
   {
     "id": "seed-085",
@@ -3145,10 +3096,6 @@
         "value": "Blocks advancement until overcome"
       },
       {
-        "label": "Trigger",
-        "value": "Appears at the peak of each grade"
-      },
-      {
         "label": "Failure",
         "value": "Permanent stagnation at current grade"
       }
@@ -3160,7 +3107,7 @@
       "advancement"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-090",
@@ -3648,10 +3595,6 @@
         "value": "Magic/Veyn class"
       },
       {
-        "label": "Rarity",
-        "value": "Only 3 Diviners per century"
-      },
-      {
         "label": "Innate ability",
         "value": "True-Sight — see through any lies or disguises"
       },
@@ -3676,7 +3619,7 @@
       "skills"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-105",
@@ -4072,15 +4015,11 @@
     "fields": [
       {
         "label": "Common Altar",
-        "value": "Located in a neutral temple between the three realms. Reveals general affinity and rough grade estimate. Used by most ordinary people."
+        "value": "Reveals general affinity and rough grade estimate. Used by most ordinary people."
       },
       {
         "label": "Academy Altar",
-        "value": "Located within Elyndor Academy. Reveals exact class, precise starting grade, and innate abilities. Reserved for Academy students."
-      },
-      {
-        "label": "Builder",
-        "value": "Both altars were built by Kael von Ashen using Aelthar knowledge"
+        "value": "Reveals exact class, precise starting grade, and innate abilities. Reserved for Academy students."
       },
       {
         "label": "Awakening Age",
@@ -4099,7 +4038,7 @@
       "magic system"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-119",
@@ -4119,10 +4058,6 @@
       {
         "label": "Pain Level",
         "value": "Excruciating — the most painful magical process in the world"
-      },
-      {
-        "label": "Rule 1",
-        "value": "Each circle must be fully completed before the next can be attempted"
       },
       {
         "label": "Rule 2",
@@ -4149,7 +4084,7 @@
       "progression"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-120",
@@ -4572,10 +4507,6 @@
       {
         "label": "Weapon type",
         "value": "Divine Sword"
-      },
-      {
-        "label": "Location",
-        "value": "Lost somewhere in the ruins scattered across the Hidden Realm"
       }
     ],
     "tags": [
@@ -4585,7 +4516,7 @@
       "divine weapon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-137",
@@ -4758,7 +4689,7 @@
       },
       {
         "label": "Personality",
-        "value": "Curious, stubborn, compassionate, self-doubting, dry humor. Asks questions constantly. Cares about people even when they give him no reason to. Copes with fear through sarcasm. Does not trust his own judgment."
+        "value": "Curious, stubborn, compassionate, self-doubting, dry humor. Asks questions constantly. Cares about people even when they give him no reason to. Copes with fear through sarcasm."
       },
       {
         "label": "Core Conflict",
@@ -4794,7 +4725,7 @@
       },
       {
         "label": "Auralis Ruby",
-        "value": "5 seals escalating in strength. 1st weakest (Halo & Horns), 5th strongest (True Hybrid). Strain passes to next seal when one breaks. Broken seals mend but never fully. If all 5 break at once, full form manifests uncontrollably."
+        "value": "1st weakest (Halo & Horns), 5th strongest (True Hybrid). Strain passes to next seal when one breaks. Broken seals mend but never fully. If all 5 break at once, full form manifests uncontrollably."
       },
       {
         "label": "Story Relevance",
@@ -4820,7 +4751,7 @@
       "main character"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-31T01:02:28.174Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-144",
@@ -6013,7 +5944,7 @@
     "category": "Angel Skills",
     "name": "Warpstep",
     "subtitle": "Serapharch skill",
-    "description": "Allows the user to instantly relocate to any point within 6 meters by folding space with Veyn.",
+    "description": "Allows the user to instantly relocate to any point within 20 meters by folding space with Veyn.",
     "fields": [
       {
         "label": "Type",
@@ -6042,7 +5973,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T13:12:10.314Z"
   },
   {
     "id": "seed-173",
@@ -6261,7 +6192,7 @@
     "category": "Angel Skills",
     "name": "Swiftstep",
     "subtitle": "Aetherblade Lord Angel skill",
-    "description": "The user folds space in an instant, vanishing from their current position and reappearing up to 3 meters away in a blink. The movement is nearly impossible to track with the naked eye, allowing them to slip behind an opponent, dodge a fatal strike, or close distance before the enemy can react. Though shorter in range than Warpstep, its speed and low Veyn cost make it ideal for rapid, repeated use in close combat.",
+    "description": "The user folds space in an instant, vanishing from their current position and reappearing up to 12 meters away in a blink. The movement is nearly impossible to track with the naked eye, allowing them to slip behind an opponent, dodge a fatal strike, or close distance before the enemy can react. Though shorter in range than Warpstep, its speed and low Veyn cost make it ideal for rapid, repeated use in close combat.",
     "fields": [
       {
         "label": "Type",
@@ -6290,7 +6221,7 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T13:12:10.314Z"
   },
   {
     "id": "seed-180",
@@ -7974,7 +7905,7 @@
     "category": "Race Types",
     "name": "Veilborn",
     "subtitle": "Dark-half elves of the Umbrage Forest — branches from Elves",
-    "description": "A branch of the Elves race. Veilborn are the dark-half elves who inhabit the Umbrage Forest, the dark half of the Ether Forest within the Demon Realm. They split from the main Elves race and took the dark side of the forest as their territory. They are hostile to outsiders and trust only themselves. Their blood is one of the ingredients required to craft an Agro Totem. They stay in the Umbrage Forest, the dark half of the Ether Forest, and they only trust themselves. Their blood is one of the ingredients required to craft an Agro Totem.",
+    "description": "A branch of the Elves race. Veilborn are the dark-half elves who inhabit the Umbrage Forest, the dark half of the Ether Forest within the Demon Realm. They split from the main Elves race and took the dark side of the forest as their territory. They are hostile to outsiders and trust only themselves. Their blood is one of the ingredients required to craft an Agro Totem.",
     "fields": [
       {
         "label": "Appearance",
@@ -7987,7 +7918,7 @@
       "umbrage forest"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:09:36.304Z"
   },
   {
     "id": "seed-228",
@@ -8250,7 +8181,7 @@
     "fields": [
       {
         "label": "Leader",
-        "value": "Wener Leger — Fallen Angel, former Aetherblade Lord, A Grade Mid stage, Bladesinger class. Hides behind a swordsmanship teacher's post at Elyndor Academy."
+        "value": "Wener Leger — Fallen Angel, former Aetherblade Lord, A Grade Mid stage, Bladesinger class."
       },
       {
         "label": "Founded",
@@ -8286,7 +8217,7 @@
       },
       {
         "label": "The Moon Brand",
-        "value": "A crescent moon burned into the inside of the left wrist with Ren energy. Invisible to Veyn scanners. Serves as identification and commitment. Wener calls it \"a promise without a Vow.\""
+        "value": "A crescent moon burned into the inside of the left wrist with Ren energy. Invisible to Veyn scanners. Serves as identification and commitment."
       },
       {
         "label": "The Code",
@@ -8302,7 +8233,7 @@
       },
       {
         "label": "Story Relevance",
-        "value": "The antagonist organization of the Half-Made World. Not the primary cosmic antagonist but the most personal one — operates through trust, manipulation, and the exploitation of broken people. Its tragedy is that every member was genuinely wronged. Wener's evil is not that he lies — it is that he tells the truth and uses it as a weapon."
+        "value": "Not the primary cosmic antagonist but the most personal one — operates through trust, manipulation, and the exploitation of broken people. Its tragedy is that every member was genuinely wronged."
       },
       {
         "label": "Lore Connections",
@@ -8319,7 +8250,7 @@
       "conspiracy"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-236",
@@ -12076,7 +12007,7 @@
       },
       {
         "label": "Unlock Requirement",
-        "value": "Basic offensive spell — the first spell any Mage learns. A concentrated spear of raw Veyn that explodes on impact."
+        "value": "Basic offensive spell — the first spell any Mage learns."
       }
     ],
     "tags": [
@@ -12087,7 +12018,7 @@
       "offensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-353",
@@ -12151,10 +12082,6 @@
       {
         "label": "Rune Star Circle",
         "value": "2nd Circle"
-      },
-      {
-        "label": "Unlock Requirement",
-        "value": "Converts raw Veyn into fire, ice, lightning, or wind and releases it as a focused attack. Each element carries a secondary effect."
       }
     ],
     "tags": [
@@ -12165,7 +12092,7 @@
       "offensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-356",
@@ -12180,7 +12107,7 @@
       },
       {
         "label": "Unlock Requirement",
-        "value": "Draws ambient Veyn from the surroundings to restore the user's reserves. Works faster in high-density areas. Cannot be used while casting other spells."
+        "value": "Works faster in high-density areas."
       }
     ],
     "tags": [
@@ -12191,7 +12118,7 @@
       "utility"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-357",
@@ -12203,10 +12130,6 @@
       {
         "label": "Rune Star Circle",
         "value": "3rd Circle"
-      },
-      {
-        "label": "Unlock Requirement",
-        "value": "Forms a large protective dome of Veyn around the user and nearby allies. Blocks attacks from all directions as long as the user maintains the supply of Veyn."
       }
     ],
     "tags": [
@@ -12217,7 +12140,7 @@
       "defensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-358",
@@ -12229,10 +12152,6 @@
       {
         "label": "Rune Star Circle",
         "value": "2nd Circle"
-      },
-      {
-        "label": "Unlock Requirement",
-        "value": "Releases a radial burst of raw Veyn that knocks enemies back and disrupts concentration. Used to create space in close combat."
       }
     ],
     "tags": [
@@ -12243,7 +12162,7 @@
       "offensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-359",
@@ -12258,7 +12177,7 @@
       },
       {
         "label": "Unlock Requirement",
-        "value": "Creates a visible Veyn thread linking the user to one or more allies. Allows sharing of Veyn reserves and limited spell support. Breaks if the distance becomes too great."
+        "value": "Allows sharing of Veyn reserves and limited spell support."
       }
     ],
     "tags": [
@@ -12269,7 +12188,7 @@
       "support"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-360",
@@ -12281,10 +12200,6 @@
       {
         "label": "Rune Star Circle",
         "value": "5th Circle"
-      },
-      {
-        "label": "Unlock Requirement",
-        "value": "Temporarily converts the user's Veyn between raw, elemental, and purified states. Enables more flexible spell combinations but requires precise control."
       }
     ],
     "tags": [
@@ -12295,7 +12210,7 @@
       "utility"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-361",
@@ -12307,10 +12222,6 @@
       {
         "label": "Rune Star Circle",
         "value": "6th Circle"
-      },
-      {
-        "label": "Unlock Requirement",
-        "value": "Grants advanced control over Veyn. Allows casting multiple spells at once, shaping Veyn with high precision, and reducing the cost of all other Mage abilities."
       }
     ],
     "tags": [
@@ -12321,7 +12232,7 @@
       "mastery"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-362",
@@ -16296,10 +16207,6 @@
     "description": "Alchemists progress through ranks based on their brewing skill, ingredient knowledge, and ability to handle dangerous reactions. Each rank unlocks access to more complex recipes and rare ingredients. The ranks are: Distiller → Admixtor → Brewer → Compounder → Transmuter → Elixir Lord → Grand Alchemist. At Distiller, an Alchemist can make basic healing tonics. By Grand Alchemist, they can brew legendary potions like the Ethereal Potion and handle pixie dust without neutralizing it.",
     "fields": [
       {
-        "label": "Ranks",
-        "value": "Distiller → Admixtor → Brewer → Compounder → Transmuter → Elixir Lord → Grand Alchemist"
-      },
-      {
         "label": "Distiller",
         "value": "Basic tonics, simple healing drinks, identifies common ingredients"
       },
@@ -16335,7 +16242,7 @@
       "ranks"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-543",
@@ -16344,10 +16251,6 @@
     "subtitle": "Beastmaster progression system",
     "description": "Beastmasters progress not by raw power but by the depth and quality of their bond with creatures. Each stage represents a deeper telepathic and spiritual connection. The stages are: Whisperer → Bonded → Twin-Soul → Pack Leader → Wild Sovereign → Beastlord → Alpha Eternal. At Whisperer, a Beastmaster can sense a creature's emotions. At Alpha Eternal, they can bond with multiple apex creatures simultaneously and share their senses as if they were their own body.",
     "fields": [
-      {
-        "label": "Stages",
-        "value": "Whisperer → Bonded → Twin-Soul → Pack Leader → Wild Sovereign → Beastlord → Alpha Eternal"
-      },
       {
         "label": "Whisperer",
         "value": "Can sense creature emotions, forms basic telepathic link with willing animals"
@@ -16384,7 +16287,7 @@
       "stages"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-544",
@@ -16393,10 +16296,6 @@
     "subtitle": "Smithing progression system",
     "description": "Smiths advance through tiers based on their ability to work increasingly rare and dangerous materials, and the complexity of enchantments they can forge. The tiers are: Apprentice Smith → Metalwright → Forgemaster → Bloodforger → Runesmith → Mythic Forger → Grand Forger. At Apprentice Smith, they shape basic steel. At Grand Forger, they can work Divine materials, create legendary weapons, and handle mixed angel-demon blood without dying.",
     "fields": [
-      {
-        "label": "Tiers",
-        "value": "Apprentice Smith → Metalwright → Forgemaster → Bloodforger → Runesmith → Mythic Forger → Grand Forger"
-      },
       {
         "label": "Apprentice Smith",
         "value": "Shapes basic steel, creates functional weapons and armor with basic Veyn reinforcement"
@@ -16433,7 +16332,7 @@
       "tiers"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-545",
@@ -16442,10 +16341,6 @@
     "subtitle": "Enchanter progression system",
     "description": "Enchanters advance through grades based on their understanding of magical resonance and their ability to layer, fuse, and create enchantments. The grades are: Rune Reader → Ensorceler → Glyphwright → Wardweaver → Rune Lord → Rune Sage → Rune Transcendent. At Rune Reader, they can identify existing enchantments. At Rune Transcendent, they can create adaptive enchantments that evolve over time and develop entirely new forms of magic.",
     "fields": [
-      {
-        "label": "Grades",
-        "value": "Rune Reader → Ensorceler → Glyphwright → Wardweaver → Rune Lord → Rune Sage → Rune Transcendent"
-      },
       {
         "label": "Rune Reader",
         "value": "Identifies enchantments on items, reads their function and strength"
@@ -16482,7 +16377,7 @@
       "grades"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-546",
@@ -16491,10 +16386,6 @@
     "subtitle": "Diviner progression system",
     "description": "Diviners advance through levels of Sight Depth — how deeply they can perceive the threads of fate, truth, and Veyn. The levels are: Insight → Reader → Watcher → Seer → Oracle → Prophet → Fatesight. At Insight, they detect obvious lies. At Fatesight, they perceive the emotional and magical bonds connecting all living things and can temporarily combine all divination effects at once.",
     "fields": [
-      {
-        "label": "Levels",
-        "value": "Insight → Reader → Watcher → Seer → Oracle → Prophet → Fatesight"
-      },
       {
         "label": "Insight",
         "value": "Detects obvious lies, basic True-Sight, senses strong Veyn presence"
@@ -16531,7 +16422,7 @@
       "levels"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-547",
@@ -16540,10 +16431,6 @@
     "subtitle": "Exorcist progression system",
     "description": "Exorcists advance through stages of purification mastery — how cleanly and powerfully they can cleanse corruption, bind fallen beings, and seal dangerous entities. The stages are: Cleaner → Warder → Binder → Purifier → Consecrator → Grand Exorcist → Eternal Seal-Bearer. At Cleaner, they remove surface miasma. At Eternal Seal-Bearer, they can place permanent suppressions on extreme corruption and banish powerful spirits.",
     "fields": [
-      {
-        "label": "Stages",
-        "value": "Cleaner → Warder → Binder → Purifier → Consecrator → Grand Exorcist → Eternal Seal-Bearer"
-      },
       {
         "label": "Cleaner",
         "value": "Removes surface miasma and minor corruption from people and objects"
@@ -16580,7 +16467,7 @@
       "stages"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-548",
@@ -16589,10 +16476,6 @@
     "subtitle": "Broker progression system",
     "description": "Brokers advance through ranks based on the complexity and stakes of the contracts they can handle. The ranks are: Clerk → Scribe → Notary → Mediator → Arbiter → Grand Arbiter → Iron Sovereign. At Clerk, they draft basic trade agreements. At Iron Sovereign, they can create contracts so binding they are nearly impossible to break, enforce penalties across realms, and mediate between rulers.",
     "fields": [
-      {
-        "label": "Ranks",
-        "value": "Clerk → Scribe → Notary → Mediator → Arbiter → Grand Arbiter → Iron Sovereign"
-      },
       {
         "label": "Clerk",
         "value": "Drafts basic trade agreements, reads simple contracts, detects obvious loopholes"
@@ -16629,7 +16512,7 @@
       "ranks"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-549",
@@ -16638,10 +16521,6 @@
     "subtitle": "Saintess progression system",
     "description": "Saintesses advance through stages of Holy Energy mastery — how purely and powerfully they can channel divine light. The stages are: Dawnlight → Glow → Radiance → Brilliance → Blazing Light → Divine Radiance → Seraphic Aura. At Dawnlight, they emit a faint healing warmth. At Seraphic Aura, they become a beacon of golden light that can selectively heal or harm, purify without damaging, and create barriers that adapt to incoming threats.",
     "fields": [
-      {
-        "label": "Stages",
-        "value": "Dawnlight → Glow → Radiance → Brilliance → Blazing Light → Divine Radiance → Seraphic Aura"
-      },
       {
         "label": "Dawnlight",
         "value": "Emits faint healing warmth, basic wound mending, weak corruption resistance"
@@ -16678,7 +16557,7 @@
       "stages"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-550",
@@ -16687,10 +16566,6 @@
     "subtitle": "Clergy progression system",
     "description": "Clergy advance through ranks based on their healing skill, from basic wound care to life-saving mastery. The ranks are: Acolyte → Mercyward → Restorer → Healer → High Healer → Saint Healer → Life Weaver. At Acolyte, they can bandage wounds and apply basic Veyn. At Life Weaver, they can restore lost limbs, pull someone back from the edge of death, and develop entirely new healing techniques.",
     "fields": [
-      {
-        "label": "Ranks",
-        "value": "Acolyte → Mercyward → Restorer → Healer → High Healer → Saint Healer → Life Weaver"
-      },
       {
         "label": "Acolyte",
         "value": "Basic wound care, applies Veyn to minor cuts and bruises, first aid"
@@ -16727,7 +16602,7 @@
       "ranks"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-551",
@@ -16736,10 +16611,6 @@
     "subtitle": "Archer progression system",
     "description": "Archers advance through tiers based on their ability to enchant arrows and shoot with precision. The tiers are: Marksman → Sharpshooter → Enchanter Archer → Spell Archer → Storm Archer → Void Archer → Trueshot. At Marksman, they fire basic Veyn-enchanted arrows. At Trueshot, they create entirely new forms of magical ammunition and fire with perfect accuracy at impossible ranges.",
     "fields": [
-      {
-        "label": "Tiers",
-        "value": "Marksman → Sharpshooter → Enchanter Archer → Spell Archer → Storm Archer → Void Archer → Trueshot"
-      },
       {
         "label": "Marksman",
         "value": "Basic Veyn arrow enchantment, fires with good accuracy, simple elemental effects"
@@ -16776,7 +16647,7 @@
       "tiers"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-552",
@@ -16785,10 +16656,6 @@
     "subtitle": "Paladin progression system",
     "description": "Paladins advance through stages of Oath power — how deeply their Auric Ren is tied to their sacred vow. The stages are: Sworn → Oathbound → Blessed → Consecrated → Divine Champion → Seraphic Knight → Eternal Guardian. At Sworn, they can channel basic Auric Ren. At Eternal Guardian, they become a beacon of golden light that inspires allies and terrifies corrupted beings, with all abilities enhanced to their absolute peak.",
     "fields": [
-      {
-        "label": "Stages",
-        "value": "Sworn → Oathbound → Blessed → Consecrated → Divine Champion → Seraphic Knight → Eternal Guardian"
-      },
       {
         "label": "Sworn",
         "value": "Basic Auric Ren strikes, weak golden shield, minor ally healing"
@@ -16825,7 +16692,7 @@
       "stages"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-553",
@@ -16834,10 +16701,6 @@
     "subtitle": "Grimtender progression system",
     "description": "Grimtenders advance through ranks based on their command over death and undeath. The ranks are: Bonewright → Gravekeeper → Bonewarden → Deathcaller → Necromancer → Grave Lord → Death Sovereign. At Bonewright, they can reanimate simple remains. At Death Sovereign, they command permanent high-quality undead, maintain large-scale simultaneous control, and can harvest souls for later use.",
     "fields": [
-      {
-        "label": "Ranks",
-        "value": "Bonewright → Gravekeeper → Bonewarden → Deathcaller → Necromancer → Grave Lord → Death Sovereign"
-      },
       {
         "label": "Bonewright",
         "value": "Reanimates simple remains, issues basic commands, uses remains as disposable shields"
@@ -16874,7 +16737,7 @@
       "ranks"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-554",
@@ -16883,10 +16746,6 @@
     "subtitle": "Bladesinger progression system",
     "description": "Bladesingers advance through stages of blade-Ren harmony — how perfectly their body, blade, and Ren flow as one. The stages are: Novice Blade → Swift Blade → Crimson Blade → Storm Blade → Phantom Blade → Eternal Blade → Perfect Edge. At Novice Blade, they perform basic sword strikes. At Perfect Edge, every movement is optimal, every defense flawless, and the blade becomes an extension of their soul.",
     "fields": [
-      {
-        "label": "Stages",
-        "value": "Novice Blade → Swift Blade → Crimson Blade → Storm Blade → Phantom Blade → Eternal Blade → Perfect Edge"
-      },
       {
         "label": "Novice Blade",
         "value": "Basic sword strikes, simple Ren coating on blade, rapid sweeping attacks"
@@ -16923,7 +16782,7 @@
       "stages"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-555",
@@ -16932,10 +16791,6 @@
     "subtitle": "Berserker progression system",
     "description": "Berserkers advance through stages of rage mastery — how deeply they can tap into their Ren-fueled fury without losing themselves. The stages are: Rageborn → Bloodrager → Wrathbringer → Battlegraced → Berserk → Warlord → Avatar of War. At Rageborn, they enter controlled rage for strength boosts. At Avatar of War, their roar distorts the air, shatters structures, and empowers allies while crushing enemy morale.",
     "fields": [
-      {
-        "label": "Stages",
-        "value": "Rageborn → Bloodrager → Wrathbringer → Battlegraced → Berserk → Warlord → Avatar of War"
-      },
       {
         "label": "Rageborn",
         "value": "Controlled rage increases strength and pain tolerance, basic war howl"
@@ -16972,7 +16827,7 @@
       "stages"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-556",
@@ -16981,10 +16836,6 @@
     "subtitle": "Sentinel progression system",
     "description": "Sentinels advance through ranks based on their protective ability and endurance. The ranks are: Guard → Shield Bearer → Warden → Bulwark Knight → Citadel → Immortal Guardian → Eternal Sentinel. At Guard, they reinforce armor with Ren. At Eternal Sentinel, they become a wide-area defensive bastion, taking drastically reduced damage and protecting a large zone around them.",
     "fields": [
-      {
-        "label": "Ranks",
-        "value": "Guard → Shield Bearer → Warden → Bulwark Knight → Citadel → Immortal Guardian → Eternal Sentinel"
-      },
       {
         "label": "Guard",
         "value": "Reinforces armor with Ren, creates basic Ren walls, taunts enemies"
@@ -17021,7 +16872,7 @@
       "ranks"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-557",
@@ -17030,10 +16881,6 @@
     "subtitle": "Ren Archer progression system",
     "description": "Ren Archers advance through stages of Ren-bow synchronization — how perfectly they can channel Ren through their arrows. The stages are: Novice Archer → Ren Touched → Crimson Archer → Storm Bow → Phantom Archer → Bloodshot → Arrow Sovereign. At Novice Archer, they coat arrows in basic Ren. At Arrow Sovereign, they fire with perfect accuracy while moving, create hovering arrow constructs, and imbue multiple arrows with different Ren effects.",
     "fields": [
-      {
-        "label": "Stages",
-        "value": "Novice Archer → Ren Touched → Crimson Archer → Storm Bow → Phantom Archer → Bloodshot → Arrow Sovereign"
-      },
       {
         "label": "Novice Archer",
         "value": "Basic Ren-coated arrows, increased force and penetration, rapid volley"
@@ -17070,7 +16917,7 @@
       "stages"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-558",
@@ -17079,10 +16926,6 @@
     "subtitle": "Veilrunner progression system",
     "description": "Veilrunners advance through tiers of shadow mastery — how completely they can disappear into darkness and strike without being detected. The tiers are: Nightwalker → Phantom → Ghost → Wraith → Shadow Lord → Living Shadow. At Nightwalker, they suppress sound and move quietly. At Living Shadow, they become one with the shadows, moving silently and invisibly at full speed, leaving no trace.",
     "fields": [
-      {
-        "label": "Tiers",
-        "value": "Nightwalker → Phantom → Ghost → Wraith → Shadow Lord → Living Shadow"
-      },
       {
         "label": "Nightwalker",
         "value": "Suppresses sound and moves through dim light nearly unseen, with enhanced reflexes, lock picking with Ren, and poison blade coating."
@@ -17115,7 +16958,7 @@
       "tiers"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-559",
@@ -17124,10 +16967,6 @@
     "subtitle": "Shudonkeeper progression system",
     "description": "Shudonkeepers advance through depths of knowledge about the Shudon and the world core. The depths are: Student → Antiquarian → Lorekeeper → Archivist → Scholar → Sage → Core-Seer. At Student, they learn basic Shudon construction. At Core-Seer, they can sense residual world-core patterns inside Shudon remains and glimpse the true nature of the golems.",
     "fields": [
-      {
-        "label": "Depths",
-        "value": "Student → Antiquarian → Lorekeeper → Archivist → Scholar → Sage → Core-Seer"
-      },
       {
         "label": "Student",
         "value": "Learns basic Shudon construction, identifies age and origin of fragments"
@@ -17164,7 +17003,7 @@
       "depths"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-560",
@@ -17951,27 +17790,23 @@
     "category": "Economy",
     "name": "Currency System",
     "subtitle": "The coin denominations of the Half-Made World",
-    "description": "The four-tier coinage system used across all realms. Copper for basics, Silver Sigil for daily life, Gold Sigil for significant purchases, Platinum Sigil for rare high-value deals.",
+    "description": "The three-tier coinage system used across all realms. Silver Sigil for daily life, Gold Sigil for significant purchases, Platinum Sigil for rare high-value deals. Older records sometimes mention an obsolete copper tier — copper pieces are no longer minted.",
     "fields": [
       {
-        "label": "Copper Coins (cc)",
-        "value": "Base unit. Used for small purchases — street food, basic supplies, minor services."
+        "label": "Silver Sigil (ss)",
+        "value": "Base unit. Standard daily currency — meals, inn stays, basic gear, everyday services."
       },
       {
-        "label": "Silver Coins (sc)",
-        "value": "10 copper = 1 Silver Sigil. Standard daily currency. Inn stays, meals, basic gear."
+        "label": "Gold Sigil (gs)",
+        "value": "100 Silver Sigil = 1 Gold Sigil. Significant purchases — weapons, enchantments, Broker contracts."
       },
       {
-        "label": "Gold Coins (gc)",
-        "value": "10 Silver Sigil = 1 Gold Sigil. Significant purchases — weapons, enchantments, Broker contracts."
-      },
-      {
-        "label": "Platinum Coins (pc)",
-        "value": "10 Gold Sigil = 1 Platinum Sigil. Rare. Used for high-value transactions — artifact deals, realm-spanning contracts."
+        "label": "Platinum Sigil (ps)",
+        "value": "1,000 Gold Sigil = 1 Platinum Sigil. Rare. High-value transactions — artifact deals, realm-spanning contracts."
       },
       {
         "label": "Exchange Rates",
-        "value": "1 pc = 10 gc = 100 sc = 1,000 cc. The Sigils entry uses an older 100:1 system — disregard that; this 10:1 system is canonical."
+        "value": "1 ps = 1,000 gs = 100,000 ss. Older records may mention an obsolete copper tier (cc/sc/gc/pc 10:1 system) — that system is retired; all prices today are quoted in Sigils."
       },
       {
         "label": "Black Market Premium",
@@ -17986,7 +17821,7 @@
       "trade"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:44:28.530Z"
   },
   {
     "id": "seed-580",
@@ -18031,7 +17866,7 @@
     "category": "Economy",
     "name": "Price Guide",
     "subtitle": "Every price in the Half-Made World — potions, contracts, services, and more",
-    "description": "A comprehensive reference for what things cost. All prices in standard currency (Silver Sigil / Gold Sigil / Platinum Sigil). Exchange rate: 100 ss = 1 gs, 1000 gs = 1 ps.\n\nWAGE BENCHMARKS (for context):\n- Common laborer: 1-2 sm/day\n- Skilled craftsman: 3-5 sm/day\n- Master Smith / high-rank Alchemist: 10+ sm/day\n- Academy instructor: 15-25 sm/day\n- Broker (certified): 20-40 sm/day\n- Realm soldier: 3-8 sm/day\n- Mercenary (hired guard): 5-15 sm/day depending on danger\n\n---\n\nPOTIONS & ELIXIRS\n\nHealing Potion:\n  - Minor (heals cuts, bruises, minor burns): 3-5 sm\n  - Standard (heals broken bones, moderate wounds): 1-2 gc\n  - Serious (heals severe injuries, near-fatal wounds): 5-10 gc\n  - Note: Only Clergy healers can brew these. Alchemists can brew cruder versions at half price but with side effects (nausea, temporary Veyn instability).\n\nRestoration Potion (restores Veyn reserves):\n  - Small dose (restores ~20% Veyn): 10-15 gc\n  - Full dose (restores ~80% Veyn): 25-40 gc\n  - Note: Requires Veyn Stones as ingredients. Price fluctuates with Veyn Stone availability.\n\nLucent Reserve (full restoration — Veyn or Ren):\n  - Single dose: 50-80 gc\n  - Note: Requires Lucent Stones, which are rare and expensive. Only a few Alchemists can brew this. Often unavailable at any price.\n\nEthereal Potion (halts aging for a fixed period):\n  - Priceless — ingredients include pixie dust, dragon heart, and Kaelroot bark. No Alchemist can guarantee success. The Wanderer occasionally has one: 500+ gc, if available at all.\n\nRejuvenating Elixir (complete physical heal):\n  - 100-200 gc\n  - Note: Can heal anything except a severed head or a missing heart past 10 minutes. Extremely rare. Only 2-3 Alchemists in the world can brew it.\n\nPixie Dust (raw ingredient):\n  - 5-10 gc per pouch (legitimate, if you can find it)\n  - 50+ gc on the black market (smuggled from Hidden Realm)\n  - Note: Used in Ethereal Potion brewing. Permanent Veyn boost if consumed raw (risky — unregulated dosage).\n\nAnti-Corruption Ward (prevents Corrupted Veyn exposure):\n  - 15-25 gc per ward (lasts 24 hours)\n  - Note: Essential for anyone entering the Umbrage Forest or Demon Realm border. Sold by Exorcists and select Alchemists.\n\nVeyn Dust Explosives (combat alchemy):\n  - Single charge: 3-5 gc\n  - Bundle (5 charges): 12-20 gc\n  - Note: Used by Alchemists in combat. Illegal in the Angel Realm.\n\n---\n\nBROKER CONTRACTS & SERVICES\n\nBasic Broker Contract (simple trade agreement):\n  - Broker fee: 5-10% of contract value (minimum 2 sm)\n  - Veyn-seal included\n  - Processing time: 1-3 days\n\nComplex Broker Contract (multi-party, cross-realm):\n  - Broker fee: 10-15% of contract value (minimum 1 gc)\n  - Requires Senior Broker\n  - Processing time: 3-7 days\n\nGnash Demon Contract (mediated through Broker):\n  - Broker fee: 15-25% of contract value (minimum 5 gc)\n  - Requires certified Broker with Demon Contract training\n  - Risk surcharge: +5 gc if the Gnash is high-rank\n  - Note: Going to a Gnash directly without a Broker is legal but extremely risky — no enforcement, no safety net.\n\nContract Dispute Resolution:\n  - Filing fee: 10% of contract value (split between both parties)\n  - Processing time: 1-3 days\n  - Appeal to Guild Master: additional 5% fee\n\nBroker Certification Examination:\n  - Academy tuition (if not already enrolled): 200-500 gc\n  - Examination fee: 50 gc\n  - Certification fee: 25 gc/year (renewal)\n  - Note: Only ~200 certified Brokers exist in the Human Realm.\n\nEnforcement Broker Services:\n  - Contract violation investigation: 10-50 gc (depending on complexity)\n  - Criminal apprehension: 20-100 gc (depending on target's grade)\n  - Note: Enforcement Brokers have authority to arrest anyone suspected of contract fraud.\n\n---\n\nMAGICAL SERVICES\n\nHealing (Clergy/Saintess):\n  - Minor healing (cuts, bruises): 3-5 sm\n  - Moderate healing (broken bones, moderate wounds): 1-2 gc\n  - Serious healing (severe injuries): 5-10 gc\n  - Critical healing (near-fatal): 15-30 gc\n  - Note: Clergy healers are rare (only 7 in the Human Realm). Prices skyrocket during emergencies or wars.\n\nExorcism (Exorcist):\n  - Basic purification (early Corruption Sickness): 10-20 gc\n  - Full exorcism (Corrupted Veyn removal): 30-50 gc\n  - Spirit banishment (undead, wraiths): 20-40 gc\n  - Note: Exorcists are rare and危险 — prices reflect the danger.\n\nEnchantment (Enchanter):\n  - Basic enchantment (minor magical property): 10-25 gc\n  - Standard enchantment (useful combat/utility effect): 30-75 gc\n  - Powerful enchantment (significant magical effect): 100-300 gc\n  - Note: Enchanters imbue existing items. They don't create the item — that's a Smith.\n\nSmithing (Smith):\n  - Basic weapon (iron, unenchanted): 5-15 sm\n  - Quality weapon (steel, well-crafted): 1-3 gc\n  - Veyn-reinforced weapon: 5-15 gc\n  - Blood-forged weapon (demon/angel blood): 50-200 gc\n  - Masterwork weapon: 20-50 gc\n  - Note: Blood-forging is dangerous and rare. Most Smiths refuse to do it.\n\nDivination (Diviner):\n  - Single question (general): 10-20 gc\n  - Detailed reading (specific, multi-question): 30-50 gc\n  - Future sight (24-hour forecast): 50-100 gc\n  - Note: Only 3 Diviners exist per century. Prices are astronomical when one is available.\n\nBeastmaster Bonding:\n  - Initial bonding ceremony: 5-10 gc\n  - Bond maintenance (annual): 2-5 gc\n  - Note: The bond itself is free — the ceremony cost covers the Beastmaster's time and materials.\n\n---\n\nINFORMATION & INTELLIGENCE\n\nRumors & Street gossip: Free — 1 sm (tavern buy)\nVerified information (single fact): 5-20 sm\nDetailed intelligence report: 2-10 gc\nRealm political intelligence: 10-50 gc\nShudon-related information: 100+ gc (if authentic)\nAcademy research secrets: 50-200 gc\nSeer's Order prophecy fragments: 200+ gc (illegal to sell)\n\n---\n\nTRAVEL COSTS\n\nInn lodging (per night):\n  - Common room (floor mat): 2 cp\n  - Shared room (bed): 5 cp\n  - Private room (basic): 1 sm\n  - Private room (good): 3 sm\n  - Luxury suite: 1 gc\n  - Note: Prices double in border towns and dangerous areas.\n\nRoad travel:\n  - Horse rental (per day): 5 sm\n  - Griffen ride (Pallantine only, per trip): 2-5 gc\n  - Caravan passage (shared, per 100 miles): 1-3 sm\n  - Private carriage (per 100 miles): 5-10 sm\n\nRealm Gate crossing: Free (currently — Shudon inactive)\n  - Note: When Shudon reactivate, crossing will require authorization.预计价格: 5-10 gc per crossing for non-authorized travelers.\n\nMercenary escort (Thorn Road):\n  - Per day: 5-15 sm per mercenary\n  - Full guard detail (4-6 mercenaries): 2-5 gc/day\n  - Note: Essential for Thorn Road travel. Human-Demon border is extremely dangerous.\n\n---\n\nWEAPONS & ARMOR\n\nDaggers:\n  - Simple iron: 2-5 sm\n  - Steel: 10 sm - 1 gc\n  - Veyn-enchanted: 5-15 gc\n\nSwords:\n  - Short sword (iron): 5 sm - 1 gc\n  - Longsword (steel, good quality): 3-5 gc\n  - Veyn-reinforced longsword: 10-25 gc\n  - Masterwork longsword: 20-50 gc\n  - Blood-forged sword: 100-300 gc\n  - Note: Blood-forged weapons are illegal in the Angel Realm.\n\nBows:\n  - Simple bow: 3-8 sm\n  - Composite bow: 1-3 gc\n  - Veyn-enchanted bow: 10-30 gc\n  - Aerendrel (divine-adjacent): Priceless — locked in Lethmoor vault\n\nArmor:\n  - Leather: 5-15 sm\n  - Studded leather: 1-3 gc\n  - Chain mail: 3-8 gc\n  - Half plate: 15-30 gc\n  - Full plate: 50-100 gc\n  - Veyn-reinforced plate: 150-300 gc\n\n---\n\nSPECIALTY ITEMS\n\nWraithcloth (hides presence): 30-40 gc\nRing of Foundation (stores Veyn): 40-60 gc\nRemy's Bracelet (item storage, 10 slots): 100-150 gc\nHermes Robe (20x speed boost): 200-400 gc\nIron-will Ring (poison/mental resistance): 50-80 gc\nAuralis Ruby (aura seal, unique): Priceless — only one exists\n\nWanderer's artifacts: 100-500+ gc each\n  - Wraithcloth: 150 gc\n  - Ring of Foundation: 200 gc\n  - Remy's Bracelet: 300 gc\n  - Hermes Robe: 500 gc\n  - Iron-will Ring: 250 gc\n  - Note: The Wanderer sets prices arbitrarily. They fluctuate based on the Wanderer's mood and the buyer's desperation.\n\n---\n\nBLACK MARKET (Umbrage Forest border)\n\nCorrupted Veyn artifact: 20-100 gc (illegal in Human Realm)\nCursed weapon: 50-200 gc\nRealm political secrets: 20-100 gc\nSmuggled pixie dust: 50+ gc per pouch\nGnash contract (no Broker): 10-50 gc (extremely risky)\nAssassination contract: 50-500 gc (depending on target grade)\n  - F-rank target: 50 gc\n  - E-D rank target: 100-200 gc\n  - C-B rank target: 300-500 gc\n  - A rank target: 1000+ gc (if anyone is foolish enough to try)\n  - S rank target: Not available — no contractor would take it\n\n---\n\nREALM-SPECIFIC NOTES\n\nHuman Realm: Most developed economy. Standard pricing applies. Haggling is common in markets.\n\nAngel Realm: Promise-based economy for internal trade. External trade uses standard coin but at 20% markup (angels don't haggle). Angel-crafted items are premium-priced.\n\nDemon Realm: Barter and favors preferred over coin. Gnash traders accept coin but prefer services. Prices are 30-50% lower than Human Realm for basic goods but 200%+ for magical items (rare in Demon Realm).\n\nHidden Realm: No fixed prices. The Wanderer sets prices arbitrarily. Pixie dust and rare ingredients are the only trade goods.",
+    "description": "A comprehensive reference for what things cost. All prices in standard currency (Silver Sigil / Gold Sigil / Platinum Sigil). Exchange rate: 100 ss = 1 gs, 1000 gs = 1 ps.\n\nWAGE BENCHMARKS (for context):\n- Common laborer: 1-2 ss/day\n- Skilled craftsman: 3-5 ss/day\n- Master Smith / high-rank Alchemist: 10+ ss/day\n- Academy instructor: 15-25 ss/day\n- Broker (certified): 20-40 ss/day\n- Realm soldier: 3-8 ss/day\n- Mercenary (hired guard): 5-15 ss/day depending on danger\n\n---\n\nPOTIONS & ELIXIRS\n\nHealing Potion:\n  - Minor (heals cuts, bruises, minor burns): 3-5 ss\n  - Standard (heals broken bones, moderate wounds): 1-2 gs\n  - Serious (heals severe injuries, near-fatal wounds): 5-10 gs\n  - Note: Only Clergy healers can brew these. Alchemists can brew cruder versions at half price but with side effects (nausea, temporary Veyn instability).\n\nRestoration Potion (restores Veyn reserves):\n  - Small dose (restores ~20% Veyn): 10-15 gs\n  - Full dose (restores ~80% Veyn): 25-40 gs\n  - Note: Requires Veyn Stones as ingredients. Price fluctuates with Veyn Stone availability.\n\nLucent Reserve (full restoration — Veyn or Ren):\n  - Single dose: 50-80 gs\n  - Note: Requires Lucent Stones, which are rare and expensive. Only a few Alchemists can brew this. Often unavailable at any price.\n\nEthereal Potion (halts aging for a fixed period):\n  - Priceless — ingredients include pixie dust, dragon heart, and Kaelroot bark. No Alchemist can guarantee success. The Wanderer occasionally has one: 500+ gs, if available at all.\n\nRejuvenating Elixir (complete physical heal):\n  - 100-200 gs\n  - Note: Can heal anything except a severed head or a missing heart past 10 minutes. Extremely rare. Only 2-3 Alchemists in the world can brew it.\n\nPixie Dust (raw ingredient):\n  - 5-10 gs per pouch (legitimate, if you can find it)\n  - 50+ gs on the black market (smuggled from Hidden Realm)\n  - Note: Used in Ethereal Potion brewing. Permanent Veyn boost if consumed raw (risky — unregulated dosage).\n\nAnti-Corruption Ward (prevents Corrupted Veyn exposure):\n  - 15-25 gs per ward (lasts 24 hours)\n  - Note: Essential for anyone entering the Umbrage Forest or Demon Realm border. Sold by Exorcists and select Alchemists.\n\nVeyn Dust Explosives (combat alchemy):\n  - Single charge: 3-5 gs\n  - Bundle (5 charges): 12-20 gs\n  - Note: Used by Alchemists in combat. Illegal in the Angel Realm.\n\n---\n\nBROKER CONTRACTS & SERVICES\n\nBasic Broker Contract (simple trade agreement):\n  - Broker fee: 5-10% of contract value (minimum 2 ss)\n  - Veyn-seal included\n  - Processing time: 1-3 days\n\nComplex Broker Contract (multi-party, cross-realm):\n  - Broker fee: 10-15% of contract value (minimum 1 gs)\n  - Requires Senior Broker\n  - Processing time: 3-7 days\n\nGnash Demon Contract (mediated through Broker):\n  - Broker fee: 15-25% of contract value (minimum 5 gs)\n  - Requires certified Broker with Demon Contract training\n  - Risk surcharge: +5 gs if the Gnash is high-rank\n  - Note: Going to a Gnash directly without a Broker is legal but extremely risky — no enforcement, no safety net.\n\nContract Dispute Resolution:\n  - Filing fee: 10% of contract value (split between both parties)\n  - Processing time: 1-3 days\n  - Appeal to Guild Master: additional 5% fee\n\nBroker Certification Examination:\n  - Academy tuition (if not already enrolled): 200-500 gs\n  - Examination fee: 50 gs\n  - Certification fee: 25 gs/year (renewal)\n  - Note: Only ~200 certified Brokers exist in the Human Realm.\n\nEnforcement Broker Services:\n  - Contract violation investigation: 10-50 gs (depending on complexity)\n  - Criminal apprehension: 20-100 gs (depending on target's grade)\n  - Note: Enforcement Brokers have authority to arrest anyone suspected of contract fraud.\n\n---\n\nMAGICAL SERVICES\n\nHealing (Clergy/Saintess):\n  - Minor healing (cuts, bruises): 3-5 ss\n  - Moderate healing (broken bones, moderate wounds): 1-2 gs\n  - Serious healing (severe injuries): 5-10 gs\n  - Critical healing (near-fatal): 15-30 gs\n  - Note: Clergy healers are rare (only 7 in the Human Realm). Prices skyrocket during emergencies or wars.\n\nExorcism (Exorcist):\n  - Basic purification (early Corruption Sickness): 10-20 gs\n  - Full exorcism (Corrupted Veyn removal): 30-50 gs\n  - Spirit banishment (undead, wraiths): 20-40 gs\n  - Note: Exorcists are rare and危险 — prices reflect the danger.\n\nEnchantment (Enchanter):\n  - Basic enchantment (minor magical property): 10-25 gs\n  - Standard enchantment (useful combat/utility effect): 30-75 gs\n  - Powerful enchantment (significant magical effect): 100-300 gs\n  - Note: Enchanters imbue existing items. They don't create the item — that's a Smith.\n\nSmithing (Smith):\n  - Basic weapon (iron, unenchanted): 5-15 ss\n  - Quality weapon (steel, well-crafted): 1-3 gs\n  - Veyn-reinforced weapon: 5-15 gs\n  - Blood-forged weapon (demon/angel blood): 50-200 gs\n  - Masterwork weapon: 20-50 gs\n  - Note: Blood-forging is dangerous and rare. Most Smiths refuse to do it.\n\nDivination (Diviner):\n  - Single question (general): 10-20 gs\n  - Detailed reading (specific, multi-question): 30-50 gs\n  - Future sight (24-hour forecast): 50-100 gs\n  - Note: Only 3 Diviners exist per century. Prices are astronomical when one is available.\n\nBeastmaster Bonding:\n  - Initial bonding ceremony: 5-10 gs\n  - Bond maintenance (annual): 2-5 gs\n  - Note: The bond itself is free — the ceremony cost covers the Beastmaster's time and materials.\n\n---\n\nINFORMATION & INTELLIGENCE\n\nRumors & Street gossip: Free — 1 ss (tavern buy)\nVerified information (single fact): 5-20 ss\nDetailed intelligence report: 2-10 gs\nRealm political intelligence: 10-50 gs\nShudon-related information: 100+ gs (if authentic)\nAcademy research secrets: 50-200 gs\nSeer's Order prophecy fragments: 200+ gs (illegal to sell)\n\n---\n\nTRAVEL COSTS\n\nInn lodging (per night):\n  - Common room (floor mat): 1 ss\n  - Shared room (bed): 1 ss\n  - Private room (basic): 1 ss\n  - Private room (good): 3 ss\n  - Luxury suite: 1 gs\n  - Note: Prices double in border towns and dangerous areas.\n\nRoad travel:\n  - Horse rental (per day): 5 ss\n  - Griffen ride (Pallantine only, per trip): 2-5 gs\n  - Caravan passage (shared, per 100 miles): 1-3 ss\n  - Private carriage (per 100 miles): 5-10 ss\n\nRealm Gate crossing: Free (currently — Shudon inactive)\n  - Note: When Shudon reactivate, crossing will require authorization.预计价格: 5-10 gs per crossing for non-authorized travelers.\n\nMercenary escort (Thorn Road):\n  - Per day: 5-15 ss per mercenary\n  - Full guard detail (4-6 mercenaries): 2-5 gs/day\n  - Note: Essential for Thorn Road travel. Human-Demon border is extremely dangerous.\n\n---\n\nWEAPONS & ARMOR\n\nDaggers:\n  - Simple iron: 2-5 ss\n  - Steel: 10 ss - 1 gs\n  - Veyn-enchanted: 5-15 gs\n\nSwords:\n  - Short sword (iron): 5 ss - 1 gs\n  - Longsword (steel, good quality): 3-5 gs\n  - Veyn-reinforced longsword: 10-25 gs\n  - Masterwork longsword: 20-50 gs\n  - Blood-forged sword: 100-300 gs\n  - Note: Blood-forged weapons are illegal in the Angel Realm.\n\nBows:\n  - Simple bow: 3-8 ss\n  - Composite bow: 1-3 gs\n  - Veyn-enchanted bow: 10-30 gs\n  - Aerendrel (divine-adjacent): Priceless — locked in Lethmoor vault\n\nArmor:\n  - Leather: 5-15 ss\n  - Studded leather: 1-3 gs\n  - Chain mail: 3-8 gs\n  - Half plate: 15-30 gs\n  - Full plate: 50-100 gs\n  - Veyn-reinforced plate: 150-300 gs\n\n---\n\nSPECIALTY ITEMS\n\nWraithcloth (hides presence): 30-40 gs\nRing of Foundation (stores Veyn): 40-60 gs\nRemy's Bracelet (item storage, 10 slots): 100-150 gs\nHermes Robe (20x speed boost): 200-400 gs\nIron-will Ring (poison/mental resistance): 50-80 gs\nAuralis Ruby (aura seal, unique): Priceless — only one exists\n\nWanderer's artifacts: 100-500+ gs each\n  - Wraithcloth: 150 gs\n  - Ring of Foundation: 200 gs\n  - Remy's Bracelet: 300 gs\n  - Hermes Robe: 500 gs\n  - Iron-will Ring: 250 gs\n  - Note: The Wanderer sets prices arbitrarily. They fluctuate based on the Wanderer's mood and the buyer's desperation.\n\n---\n\nBLACK MARKET (Umbrage Forest border)\n\nCorrupted Veyn artifact: 20-100 gs (illegal in Human Realm)\nCursed weapon: 50-200 gs\nRealm political secrets: 20-100 gs\nSmuggled pixie dust: 50+ gs per pouch\nGnash contract (no Broker): 10-50 gs (extremely risky)\nAssassination contract: 50-500 gs (depending on target grade)\n  - F-rank target: 50 gs\n  - E-D rank target: 100-200 gs\n  - C-B rank target: 300-500 gs\n  - A rank target: 1000+ gs (if anyone is foolish enough to try)\n  - S rank target: Not available — no contractor would take it\n\n---\n\nREALM-SPECIFIC NOTES\n\nHuman Realm: Most developed economy. Standard pricing applies. Haggling is common in markets.\n\nAngel Realm: Promise-based economy for internal trade. External trade uses standard coin but at 20% markup (angels don't haggle). Angel-crafted items are premium-priced.\n\nDemon Realm: Barter and favors preferred over coin. Gnash traders accept coin but prefer services. Prices are 30-50% lower than Human Realm for basic goods but 200%+ for magical items (rare in Demon Realm).\n\nHidden Realm: No fixed prices. The Wanderer sets prices arbitrarily. Pixie dust and rare ingredients are the only trade goods.",
     "fields": [
       {
         "label": "Wage Benchmarks",
@@ -18075,7 +17910,7 @@
       },
       {
         "label": "Potion Ingredients",
-        "value": "Veyn Stone 3-8 gc, Lucent Stone 25-50 gc, Pixie Dust 5-10 gc (50+ black market), Dragon Heart 200+ gc"
+        "value": "Veyn Stone 3-8 gs, Lucent Stone 25-50 gs, Pixie Dust 5-10 gs (50+ black market), Dragon Heart 200+ gs"
       },
       {
         "label": "Realm Markups",
@@ -18091,7 +17926,7 @@
       "writing reference"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:44:28.530Z"
   },
   {
     "id": "seed-582",
@@ -18235,10 +18070,6 @@
         "value": "Locate and watch candidates for future Healer positions"
       },
       {
-        "label": "Secrecy",
-        "value": "The Seer's location is never revealed to anyone outside the Order"
-      },
-      {
         "label": "Threat",
         "value": "If the Truthstone fell to malicious hands, future Healers could be killed before awakening"
       }
@@ -18251,7 +18082,7 @@
       "secret"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-586",
@@ -18346,7 +18177,7 @@
     "fields": [
       {
         "label": "Current Year",
-        "value": "Approximately 2350 VC (Veyn Calendar). Year 0 is the Sundering."
+        "value": "Approximately 2350 VC (Veyn Calendar)."
       },
       {
         "label": "Calendar System",
@@ -18394,7 +18225,7 @@
       },
       {
         "label": "Demon Unification Wars",
-        "value": "Years ~1950-1965. 15-year wars unified 60 Demon Clans into 20. Tera Morage rose to power."
+        "value": "Years ~1950-1965. 15-year wars unified 60 Demon Clans into 20."
       },
       {
         "label": "Broken Crown Rebellion",
@@ -18402,11 +18233,11 @@
       },
       {
         "label": "Angel-Human Trade Accord",
-        "value": "Year ~2250. Formal trade agreement regulated by the Broker's Guild. Reviewed every 10 years."
+        "value": "Year ~2250. Formal trade agreement regulated by the Broker's Guild."
       },
       {
         "label": "Fourth Turning (Approaching)",
-        "value": "Expected around Year 2500. All factions preparing. The Half-Made must be found, controlled, or destroyed before then."
+        "value": "All factions preparing. The Half-Made must be found, controlled, or destroyed before then."
       },
       {
         "label": "Key Inconsistency Note",
@@ -18430,7 +18261,7 @@
       "plot engine"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-589",
@@ -18605,11 +18436,11 @@
     "category": "Travel",
     "name": "Lodging & Rest Stops",
     "subtitle": "Where travelers sleep and rest across the realms",
-    "description": "Travelers in the Half-Made World have varying options for rest depending on the realm they're in.\n\nIn the Human Realm, inns and taverns are the standard accommodation. Every town has at least one inn, and major crossroads have several competing establishments. A bed in a shared room costs 5 cp; a private room costs 1 sm; a luxury suite at a high-end inn costs 1 gc. Inns typically serve food and drink as well, making them one-stop shops for travelers. The best-known inn chain is the Resting Stone network — a series of identical inns along the Sunward Road, each offering the same menu and prices regardless of location.\n\nThe Angel Realm has waystation shelters along major routes — simple stone buildings with beds, water, and basic supplies, maintained by Lumen volunteers. These are free to use but offer no food or luxury. For angels traveling to other realms, the Angel Realm maintains guest houses in the Human Realm's capital, provided free of charge to any angel showing Dawnveil.\n\nThe Demon Realm has nothing for travelers. Demons sleep in the wild, in caves, or in the homes of those they trust. Gnash traders sometimes offer shelter to those willing to pay Gold Sigils, but this comes with strings attached — a Gnash who shelters you expects a favor in return.\n\nThe Hidden Realm offers no permanent lodging. The time-slowed environment means travelers don't need to eat or sleep as often, but there are no structures built for comfort. The Wanderer occasionally appears and offers shelter, but always at a price.",
+    "description": "Travelers in the Half-Made World have varying options for rest depending on the realm they're in.\n\nIn the Human Realm, inns and taverns are the standard accommodation. Every town has at least one inn, and major crossroads have several competing establishments. A bed in a shared room costs 1 ss; a private room costs 1 ss; a luxury suite at a high-end inn costs 1 gs. Inns typically serve food and drink as well, making them one-stop shops for travelers. The best-known inn chain is the Resting Stone network — a series of identical inns along the Sunward Road, each offering the same menu and prices regardless of location.\n\nThe Angel Realm has waystation shelters along major routes — simple stone buildings with beds, water, and basic supplies, maintained by Lumen volunteers. These are free to use but offer no food or luxury. For angels traveling to other realms, the Angel Realm maintains guest houses in the Human Realm's capital, provided free of charge to any angel showing Dawnveil.\n\nThe Demon Realm has nothing for travelers. Demons sleep in the wild, in caves, or in the homes of those they trust. Gnash traders sometimes offer shelter to those willing to pay Gold Sigils, but this comes with strings attached — a Gnash who shelters you expects a favor in return.\n\nThe Hidden Realm offers no permanent lodging. The time-slowed environment means travelers don't need to eat or sleep as often, but there are no structures built for comfort. The Wanderer occasionally appears and offers shelter, but always at a price.",
     "fields": [
       {
         "label": "Human Inns",
-        "value": "Standard accommodation — 5cp shared, 1sm private, 1gc luxury; Resting Stone chain along Sunward Road"
+        "value": "Standard accommodation — 1ss shared, 1ss private, 1gs luxury; Resting Stone chain along Sunward Road"
       },
       {
         "label": "Angel Waystations",
@@ -18636,7 +18467,7 @@
       "accommodation"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:40:26.222Z"
   },
   {
     "id": "seed-594",
@@ -18646,24 +18477,16 @@
     "description": "The Half-Made World recognizes several categories of crime, each with different punishments depending on severity and realm.\n\nCrimes Against Persons: Assault, murder, kidnapping, and forced Veyn/Ren tampering (interfering with someone's channels without consent). Murder carries the harshest penalty — death or permanent channel severing, depending on the realm. Assault carries fines and imprisonment.\n\nCrimes Against Property: Theft, trespassing, and fraud. Theft of under 1 Gold Sigil is punished with public flogging and repayment. Theft over 1 Gold Sigil is imprisonment. Theft of magical items or artifacts is treated as a national security crime — the accused is handed to the Exorcists for Veyn interrogation.\n\nCrimes Against the State: Treason, rebellion, assassination attempts, and unauthorized realm crossing. These are punished by death in all three realms. The Angel Realm adds public Vow-shaming — the criminal's broken Vow is broadcast to nearby angels.\n\nCrimes Against Magic: Illegal enchantment, forced awakening tampering, and unsanctioned use of the Sundering Altar. These are handled exclusively by the Academy, and punishment ranges from channel severing to exile from all three realms.\n\nContract Fraud: Breaking a Broker-sealed contract is a unique crime — the physical damage to the breaker's channels serves as both punishment and evidence. The Broker's Guild prosecutes these cases.",
     "fields": [
       {
-        "label": "Murder",
-        "value": "Death or permanent channel severing"
-      },
-      {
-        "label": "Theft (under 1gc)",
+        "label": "Theft (under 1gs)",
         "value": "Public flogging + repayment"
       },
       {
-        "label": "Theft (over 1gc)",
+        "label": "Theft (over 1gs)",
         "value": "Imprisonment"
       },
       {
         "label": "Magical Item Theft",
         "value": "National security crime — handed to Exorcists"
-      },
-      {
-        "label": "Treason/Rebellion",
-        "value": "Death in all three realms"
       },
       {
         "label": "Contract Fraud",
@@ -18682,7 +18505,7 @@
       "legal"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-595",
@@ -18704,10 +18527,6 @@
         "value": "Virtue class + community judgment — no formal police"
       },
       {
-        "label": "Angel Serious Crimes",
-        "value": "Brought before the Serapharch directly"
-      },
-      {
         "label": "Demon Enforcement",
         "value": "No formal system — Bloodwards maintain order through fear"
       },
@@ -18724,7 +18543,7 @@
       "police"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-596",
@@ -18748,10 +18567,6 @@
       {
         "label": "Rules",
         "value": "No killing unless agreed, no magical items, ends on yield or incapacity"
-      },
-      {
-        "label": "Broker Exemption",
-        "value": "Sealed contracts are binding regardless of combat outcomes"
       }
     ],
     "tags": [
@@ -18762,7 +18577,7 @@
       "fighting"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-597",
@@ -18849,11 +18664,11 @@
     "fields": [
       {
         "label": "Supreme Entity",
-        "value": "The World Core — source of all Veyn, animator of all life. Whether it is conscious is the central theological question."
+        "value": "The World Core — source of all Veyn, animator of all life."
       },
       {
         "label": "Human View (The Dreamer)",
-        "value": "The Core is a living entity that fell asleep. It dreams the world into existence. Creation sustains the dream; destruction disturbs it."
+        "value": "The Core is a living entity that fell asleep. Creation sustains the dream; destruction disturbs it."
       },
       {
         "label": "Angel View (The Arbiter)",
@@ -18873,19 +18688,19 @@
       },
       {
         "label": "The Shudon",
-        "value": "Built by the Aelthar from world-core material. The Core hands — designed to maintain balance. Currently inactive."
+        "value": "The Core hands — designed to maintain balance. Currently inactive."
       },
       {
         "label": "The World Eater",
-        "value": "Parasitic consciousness draining the Core. No worshippers, no theology. The inverse of a god — takes without giving."
+        "value": "Parasitic consciousness draining the Core. The inverse of a god — takes without giving."
       },
       {
         "label": "The Abyssal Wyrm",
-        "value": "Primordial force sealed by the Aelthar. Breath nullifies all Veyn. A punishment, a forgotten sin, or a weapon — depending on who you ask."
+        "value": "Primordial force sealed by the Aelthar. A punishment, a forgotten sin, or a weapon — depending on who you ask."
       },
       {
         "label": "Human Religion",
-        "value": "World Core Faith (Dreamer). Meditation at temples, creation as prayer. No formal priesthood. The Seer is the closest to a high priest."
+        "value": "World Core Faith (Dreamer). No formal priesthood. The Seer is the closest to a high priest."
       },
       {
         "label": "Angel Religion",
@@ -18897,7 +18712,7 @@
       },
       {
         "label": "Hidden Realm Religion",
-        "value": "Pragmatism. Some worship Aelthar as ancestral spirits. Most just want to survive. Kael von Ashen views the Core as a parent."
+        "value": "Pragmatism. Some worship Aelthar as ancestral spirits. Kael von Ashen views the Core as a parent."
       },
       {
         "label": "Afterlife Beliefs",
@@ -18927,7 +18742,7 @@
       "afterlife"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-31T00:17:52.844Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-600",
@@ -19055,10 +18870,6 @@
         "value": "The Truthstone has never been wrong — predictions are always accurate"
       },
       {
-        "label": "Danger",
-        "value": "Seer must travel to wherever the Truthstone leads, often through dangerous territory"
-      },
-      {
         "label": "Succession",
         "value": "When Seer dies, Truthstone reveals next Seer to surviving Guardians"
       },
@@ -19075,7 +18886,7 @@
       "healer"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-604",
@@ -19132,11 +18943,11 @@
       },
       {
         "label": "Tier 3 Clergy",
-        "value": "Seven Healers — heal serious injuries, cure diseases, 2-5gc per session"
+        "value": "Seven Healers — heal serious injuries, cure diseases, 2-5gs per session"
       },
       {
         "label": "Tier 4 Saintess",
-        "value": "Rare — Holy Energy healing, cures what Clergy cannot, 10+gc per session"
+        "value": "Rare — Holy Energy healing, cures what Clergy cannot, 10+ gs per session"
       },
       {
         "label": "Tier 5 Angelic",
@@ -19151,7 +18962,7 @@
       "apothecary"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:44:28.530Z"
   },
   {
     "id": "seed-606",
@@ -19166,11 +18977,11 @@
       },
       {
         "label": "Common Remedies",
-        "value": "Willow Bark Tea, Thornmoss Paste, Ebon Leaf Poultice — 1-5cp each"
+        "value": "Willow Bark Tea, Thornmoss Paste, Ebon Leaf Poultice — 1-1ss each"
       },
       {
         "label": "Rare Remedies",
-        "value": "Dragon Scale Powder, Skywhale Blubber Salve — 10+gc, major cities only"
+        "value": "Dragon Scale Powder, Skywhale Blubber Salve — 10+ gs, major cities only"
       },
       {
         "label": "Regulation",
@@ -19189,7 +19000,7 @@
       "herbs"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:44:28.530Z"
   },
   {
     "id": "seed-607",
@@ -19542,7 +19353,7 @@
       },
       {
         "label": "Dustborn",
-        "value": "Laborers, farmers, craftsmen — day-to-day, 1-2sm per day, most humans are Dustborn"
+        "value": "Laborers, farmers, craftsmen — day-to-day, 1-2ss per day, most humans are Dustborn"
       },
       {
         "label": "Shorn",
@@ -19563,7 +19374,7 @@
       "shorn"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:40:26.222Z"
   },
   {
     "id": "seed-617",
@@ -19976,7 +19787,7 @@
       },
       {
         "label": "Shadow Choir",
-        "value": "Veilrunner assassin unit — D-rank+ targets, 100+ gc per contract"
+        "value": "Veilrunner assassin unit — D-rank+ targets, 100+ gs per contract"
       },
       {
         "label": "Guild Tolerance",
@@ -19995,7 +19806,7 @@
       "killing"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:44:28.530Z"
   },
   {
     "id": "seed-629",
@@ -20478,7 +20289,7 @@
       },
       {
         "label": "Current State",
-        "value": "Stuck at one eye open. The second eye flickers occasionally. The sword whispers for release. Jaiden's Soul Sight counters the corruption — he watches the influence in real time and chooses to keep the other eyes closed."
+        "value": "The sword whispers for release. Jaiden's Soul Sight counters the corruption — he watches the influence in real time and chooses to keep the other eyes closed."
       },
       {
         "label": "Soul Sight Counter",
@@ -20502,7 +20313,7 @@
       "soul sight"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-801",
@@ -20533,7 +20344,7 @@
       },
       {
         "label": "Story Function",
-        "value": "The river is not a natural hazard. It is a graveyard. The sword is the murderer that built it. This reframes the Sentient River from 'dangerous location' to 'crime scene.'"
+        "value": "It is a graveyard. This reframes the Sentient River from 'dangerous location' to 'crime scene.'"
       }
     ],
     "tags": [
@@ -20544,7 +20355,7 @@
       "sirens"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-641",
@@ -20589,19 +20400,19 @@
     "category": "Equipment",
     "name": "Weapon Catalog",
     "subtitle": "Every weapon type in the Half-Made World",
-    "description": "Weapons in the Half-Made World range from mundane to legendary.\n\nMundane Weapons: Daggers (2sm), Short Swords (1gc), Longswords (3-5gc), Axes (2-4gc), Maces (2-3gc), Spears (1-3gc), Bows (2-4gc), Crossbows (5-8gc). These are mass-produced by Smiths and available in any marketplace. They break under heavy Veyn or Ren channeling.\n\nEnchanted Weapons: Created by Enchanters who imbue mundane weapons with Veyn effects. Enchanted weapons cost 10-50gc depending on the enchantment. Common enchantments include Fire Edge (adds burning damage), Frost Guard (slows attackers), and Veyn Conduit (improves Veyn channeling through the weapon).\n\nBlood-Forged Weapons: Created by Smiths using demon or angel blood in the forge. The rank of the blood determines the weapon's power — low-rank blood can injure, high-rank blood can kill. Blood-forged weapons cost 50-200gc and are highly regulated by the Broker's Guild.\n\nDivine Weapons: The most powerful weapons in existence. Only three exist: Vireth (corrupted divine sword), Virastra (uncorrupted divine sword), and Solvane (divine spear). Each is user-bound — they only work for their chosen wielder. Divine weapons cannot be bought, only found or inherited.\n\nNamed Weapons: Unique weapons with histories and personalities. Aerendrel (storm bow), Liework's Fallen Crown (command crown), and other artifacts fall into this category.",
+    "description": "Weapons in the Half-Made World range from mundane to legendary.\n\nMundane Weapons: Daggers (2ss), Short Swords (1gs), Longswords (3-5gs), Axes (2-4gs), Maces (2-3gs), Spears (1-3gs), Bows (2-4gs), Crossbows (5-8gs). These are mass-produced by Smiths and available in any marketplace. They break under heavy Veyn or Ren channeling.\n\nEnchanted Weapons: Created by Enchanters who imbue mundane weapons with Veyn effects. Enchanted weapons cost 10-50gs depending on the enchantment. Common enchantments include Fire Edge (adds burning damage), Frost Guard (slows attackers), and Veyn Conduit (improves Veyn channeling through the weapon).\n\nBlood-Forged Weapons: Created by Smiths using demon or angel blood in the forge. The rank of the blood determines the weapon's power — low-rank blood can injure, high-rank blood can kill. Blood-forged weapons cost 50-200gs and are highly regulated by the Broker's Guild.\n\nDivine Weapons: The most powerful weapons in existence. Only three exist: Vireth (corrupted divine sword), Virastra (uncorrupted divine sword), and Solvane (divine spear). Each is user-bound — they only work for their chosen wielder. Divine weapons cannot be bought, only found or inherited.\n\nNamed Weapons: Unique weapons with histories and personalities. Aerendrel (storm bow), Liework's Fallen Crown (command crown), and other artifacts fall into this category.",
     "fields": [
       {
         "label": "Mundane",
-        "value": "Daggers 2sm, swords 1-5gc, axes 2-4gc, bows 2-4gc — break under heavy channeling"
+        "value": "Daggers 2ss, swords 1-5gs, axes 2-4gs, bows 2-4gs — break under heavy channeling"
       },
       {
         "label": "Enchanted",
-        "value": "10-50gc — Fire Edge, Frost Guard, Veyn Conduit effects"
+        "value": "10-50gs — Fire Edge, Frost Guard, Veyn Conduit effects"
       },
       {
         "label": "Blood-Forged",
-        "value": "50-200gc — demon/angel blood in forge; rank of blood = weapon power"
+        "value": "50-200gs — demon/angel blood in forge; rank of blood = weapon power"
       },
       {
         "label": "Divine Weapons",
@@ -20620,26 +20431,26 @@
       "arms"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:40:26.223Z"
   },
   {
     "id": "seed-643",
     "category": "Equipment",
     "name": "Armor Catalog",
     "subtitle": "Protective equipment across the realms",
-    "description": "Armor in the Half-Made World must balance protection with mobility.\n\nLight Armor: Leather armor (5sm) offers basic protection against slashes and blunt force. Studded leather (8sm) adds metal rivets for extra defense. Light armor allows full mobility and does not interfere with Veyn or Ren channeling. Preferred by Veilrunners, Archers, and Alchemists.\n\nMedium Armor: Chain mail (5gc) provides excellent protection against slashing weapons and moderate protection against piercing. It is heavy but flexible enough for active combat. Preferred by Bladesingers, Berserkers, and general soldiers.\n\nHeavy Armor: Plate armor (50-100gc) provides maximum protection but severely limits mobility. A full suit of plate weighs 40-60 pounds and makes climbing, swimming, and sneaking nearly impossible. Preferred by Sentinels and elite guards. Plate armor can be enchanted to reduce weight and improve Veyn conductivity.\n\nMagical Armor: Enchanted by Enchanters or Smiths with protective Veyn effects. Examples include Shieldward Plate (generates a Veyn barrier on impact), Miasma-Resistant Chain (reduces Corruption Sickness risk), and Featherlight Leather (reduces weight by 80%). Magical armor costs 2-10x the base price.\n\nDemon Armor: Corrupted Veyn-infused armor unique to the Demon Realm. Black iron plate, bone-reinforced leather, and chain made from monster parts. Demon armor often enhances the wearer's demonic aura but harms non-demon users over time.",
+    "description": "Armor in the Half-Made World must balance protection with mobility.\n\nLight Armor: Leather armor (5ss) offers basic protection against slashes and blunt force. Studded leather (8ss) adds metal rivets for extra defense. Light armor allows full mobility and does not interfere with Veyn or Ren channeling. Preferred by Veilrunners, Archers, and Alchemists.\n\nMedium Armor: Chain mail (5gs) provides excellent protection against slashing weapons and moderate protection against piercing. It is heavy but flexible enough for active combat. Preferred by Bladesingers, Berserkers, and general soldiers.\n\nHeavy Armor: Plate armor (50-100gs) provides maximum protection but severely limits mobility. A full suit of plate weighs 40-60 pounds and makes climbing, swimming, and sneaking nearly impossible. Preferred by Sentinels and elite guards. Plate armor can be enchanted to reduce weight and improve Veyn conductivity.\n\nMagical Armor: Enchanted by Enchanters or Smiths with protective Veyn effects. Examples include Shieldward Plate (generates a Veyn barrier on impact), Miasma-Resistant Chain (reduces Corruption Sickness risk), and Featherlight Leather (reduces weight by 80%). Magical armor costs 2-10x the base price.\n\nDemon Armor: Corrupted Veyn-infused armor unique to the Demon Realm. Black iron plate, bone-reinforced leather, and chain made from monster parts. Demon armor often enhances the wearer's demonic aura but harms non-demon users over time.",
     "fields": [
       {
         "label": "Light Armor",
-        "value": "Leather 5sm, studded 8sm — full mobility, no channeling interference"
+        "value": "Leather 5ss, studded 8ss — full mobility, no channeling interference"
       },
       {
         "label": "Medium Armor",
-        "value": "Chain mail 5gc — excellent slash protection, moderate mobility"
+        "value": "Chain mail 5gs — excellent slash protection, moderate mobility"
       },
       {
         "label": "Heavy Armor",
-        "value": "Plate 50-100gc — max protection, 40-60lbs, limits mobility severely"
+        "value": "Plate 50-100gs — max protection, 40-60lbs, limits mobility severely"
       },
       {
         "label": "Magical Armor",
@@ -20658,14 +20469,14 @@
       "catalog"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:40:26.223Z"
   },
   {
     "id": "seed-644",
     "category": "Equipment",
     "name": "Tool & Utility Items",
     "subtitle": "Non-combat equipment for adventuring",
-    "description": "Beyond weapons and armor, adventurers carry tools for survival.\n\nRemy's Bracelet (already cataloged): Stores up to 10 items, activated by Veyn/Ren.\n\nVeyn Compass: A small device that points toward the nearest source of concentrated Veyn. Used by adventurers navigating the Ether Forest, Hidden Realm, or any Veyn-rich area. Costs 10-15gc.\n\nExorcist Lantern: A lantern powered by holy energy that reveals hidden spirits, illusions, and corrupted Veyn. Essential for navigating areas with undead or spirit activity. Costs 20-30gc.\n\nPurification Tablets: Small tablets of compressed holy energy that can be dissolved in water to create a single-use purification solution. Used to cleanse minor Corruption Sickness or purify contaminated water. Costs 5gc per tablet.\n\nMapping Stones: Crystals that record the Veyn signature of a location, allowing the holder to return to that exact spot by following the stored signature. Essentially a magical GPS. Costs 15-20gc.\n\nEcho Crystals: Recording devices that capture and replay sounds. Used by scholars, spies, and intelligence gatherers. A single crystal can store up to one hour of audio. Costs 8-12gc.",
+    "description": "Beyond weapons and armor, adventurers carry tools for survival.\n\nRemy's Bracelet (already cataloged): Stores up to 10 items, activated by Veyn/Ren.\n\nVeyn Compass: A small device that points toward the nearest source of concentrated Veyn. Used by adventurers navigating the Ether Forest, Hidden Realm, or any Veyn-rich area. Costs 10-15gs.\n\nExorcist Lantern: A lantern powered by holy energy that reveals hidden spirits, illusions, and corrupted Veyn. Essential for navigating areas with undead or spirit activity. Costs 20-30gs.\n\nPurification Tablets: Small tablets of compressed holy energy that can be dissolved in water to create a single-use purification solution. Used to cleanse minor Corruption Sickness or purify contaminated water. Costs 5gs per tablet.\n\nMapping Stones: Crystals that record the Veyn signature of a location, allowing the holder to return to that exact spot by following the stored signature. Essentially a magical GPS. Costs 15-20gs.\n\nEcho Crystals: Recording devices that capture and replay sounds. Used by scholars, spies, and intelligence gatherers. A single crystal can store up to one hour of audio. Costs 8-12gs.",
     "fields": [
       {
         "label": "Veyn Compass",
@@ -20696,7 +20507,7 @@
       "items"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:40:26.223Z"
   },
   {
     "id": "seed-645",
@@ -20741,7 +20552,7 @@
     "category": "Daily Life",
     "name": "The Resting Stone Inn Chain",
     "subtitle": "The most famous inn network in the Human Realm",
-    "description": "The Resting Stone is the most recognized inn chain in the Human Realm — a series of identical inns along the Sunward Road, each offering the same menu and prices regardless of location.\n\nEvery Resting Stone inn has the same layout: a large common room, a bar, a kitchen, 10 private rooms, and a stable. The menu is standardized — bread and stew for 5cp, ale for 2cp, a private room for 1sm. The consistency is the brand — travelers know exactly what to expect.\n\nThe chain was founded by a former Broker who realized that travelers valued predictability over luxury. The founding principle was: 'A good night's rest should cost the same whether you're in the capital or at the border.'\n\nResting Stone innkeepers are trained by the chain's central office and are required to maintain standards. A Resting Stone that fails health or service inspections is shut down and the innkeeper replaced. This quality control has made the chain the most trusted accommodation in the Human Realm.\n\nThe chain has 47 locations along the Sunward Road and 12 in major cities off the road. Expansion into the Angel Realm is planned but complicated by angel dietary differences.",
+    "description": "The Resting Stone is the most recognized inn chain in the Human Realm — a series of identical inns along the Sunward Road, each offering the same menu and prices regardless of location.\n\nEvery Resting Stone inn has the same layout: a large common room, a bar, a kitchen, 10 private rooms, and a stable. The menu is standardized — bread and stew for 1ss, ale for 1ss, a private room for 1ss. The consistency is the brand — travelers know exactly what to expect.\n\nThe chain was founded by a former Broker who realized that travelers valued predictability over luxury. The founding principle was: 'A good night's rest should cost the same whether you're in the capital or at the border.'\n\nResting Stone innkeepers are trained by the chain's central office and are required to maintain standards. A Resting Stone that fails health or service inspections is shut down and the innkeeper replaced. This quality control has made the chain the most trusted accommodation in the Human Realm.\n\nThe chain has 47 locations along the Sunward Road and 12 in major cities off the road. Expansion into the Angel Realm is planned but complicated by angel dietary differences.",
     "fields": [
       {
         "label": "Standardized Layout",
@@ -20749,7 +20560,7 @@
       },
       {
         "label": "Standardized Menu",
-        "value": "Bread and stew 5cp, ale 2cp, private room 1sm — same prices everywhere"
+        "value": "Bread and stew 1ss, ale 1ss, private room 1ss — same prices everywhere"
       },
       {
         "label": "Founded By",
@@ -20772,7 +20583,7 @@
       "accommodation"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:40:26.223Z"
   },
   {
     "id": "seed-647",
@@ -21003,7 +20814,7 @@
     "category": "Resources",
     "name": "Mining & Raw Materials",
     "subtitle": "Where metals, stones, and Veyn resources come from",
-    "description": "The Half-Made World's raw materials come from distinct sources.\n\nMetals: Iron, copper, tin, and Gold Sigil are mined from mountain ranges in all three realms. The Human Realm's Ashvein Mountains are the largest mining region, producing iron and copper. Silver Sigil comes from the Angel Realm's Moonpeak range. Gold Sigil is rare and found only in deep mines in the Demon Realm's volcanic regions.\n\nVeyn Stones: Crystallized Veyn found in areas of high Veyn density — primarily the Ether Forest, the Hidden Realm, and near the Sundering Altar. Veyn Stones are mined by Enchanters and Alchemists who need them for potions and enchantments. Lucent Stones are refined from Veyn Stones through a purification process that requires multiple days of Veyn exposure.\n\nMonster Parts: Bones, scales, blood, venom, and organs from monsters are valuable crafting materials. Trolls bones are used for building reinforcement; Dragon scales are used for armor; Manticore venom sacs are used for paralytic poisons; Chimera blood is used for explosive compounds.\n\nEther Forest Resources: The Arubian Forest produces rare herbs, mushrooms, and plant materials used in Alchemy. Sunpetal flowers, Thornmoss, and Everbloom vines are gathered by Pallantine Elves and sold to human merchants. The Umbrage Forest produces corrupted materials — Blackthorn, Ironvine, and corrupted Veyn crystals.\n\nEbonspire Trees: Found near dragon nests in the Hidden Realm. Their bark and leaves are ingredients for the Ethereal Potion and Rejuvenating Elixir.",
+    "description": "The Half-Made World's raw materials come from distinct sources.\n\nMetals: Iron, copper, tin, silver, and gold are mined from mountain ranges in all three realms. The Human Realm's Ashvein Mountains are the largest mining region, producing iron and copper. Silver comes from the Angel Realm's Moonpeak range. Gold is rare and found only in deep mines in the Demon Realm's volcanic regions. (The minted coins — Silver Sigil, Gold Sigil, Platinum Sigil — are named after the sigil mark stamped on them, not the metal alone: a Gold Sigil coin is gold alloy stamped with the realm's sigil.)\n\nVeyn Stones: Crystallized Veyn found in areas of high Veyn density — primarily the Ether Forest, the Hidden Realm, and near the Sundering Altar. Veyn Stones are mined by Enchanters and Alchemists who need them for potions and enchantments. Lucent Stones are refined from Veyn Stones through a purification process that requires multiple days of Veyn exposure.\n\nMonster Parts: Bones, scales, blood, venom, and organs from monsters are valuable crafting materials. Trolls bones are used for building reinforcement; Dragon scales are used for armor; Manticore venom sacs are used for paralytic poisons; Chimera blood is used for explosive compounds.\n\nEther Forest Resources: The Arubian Forest produces rare herbs, mushrooms, and plant materials used in Alchemy. Sunpetal flowers, Thornmoss, and Everbloom vines are gathered by Pallantine Elves and sold to human merchants. The Umbrage Forest produces corrupted materials — Blackthorn, Ironvine, and corrupted Veyn crystals.\n\nEbonspire Trees: Found near dragon nests in the Hidden Realm. Their bark and leaves are ingredients for the Ethereal Potion and Rejuvenating Elixir.",
     "fields": [
       {
         "label": "Metals",
@@ -21038,14 +20849,14 @@
       "veyn stones"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:40:26.224Z"
   },
   {
     "id": "seed-654",
     "category": "Medical",
     "name": "Alchemy & Potion Brewing",
     "subtitle": "How alchemical items are created",
-    "description": "Alchemy is the art of combining Veyn with physical ingredients to create potions, poisons, and explosives. It is one of the most practical and dangerous classes.\n\nBrewing Process: An Alchemist draws Veyn into a mortar, pestle, or brewing vessel, then adds physical ingredients in a specific sequence. The Veyn reacts with the ingredients, transforming them into the desired effect. The sequence matters — adding ingredients in the wrong order can produce poison instead of healing, or cause an explosion.\n\nCommon Potions:\n- Healing Potion (5-10sm): Heals minor to moderate injuries. Ingredients: Veyn Stone dust, medicinal herbs, clean water.\n- Restoration Potion (10-15gc): Restores Veyn reserves. Ingredients: Multiple Veyn Stones, rare herbs.\n- Paralytic Venom (50+gc): Paralyzes targets up to C-rank. Ingredients: Manticore venom sac, Veyn catalyst.\n- Purification Solution (5gc per dose): Cleanses minor Corruption Sickness. Ingredients: Holy herbs, purified Veyn.\n- Explosive Mix (20gc): Creates a blast on impact. Ingredients: Chimera blood, Veyn Stone dust, sulfur.\n\nAdvanced Potions:\n- Lucent Reserve (50+gc): Full restoration of Veyn or Ren. Requires Lucent Stone.\n- Ethereal Potion (priceless): Halts aging for a fixed period. Requires pixie dust, Grimbough leaves, Ebonspire bark, dragon heart.\n- Rejuvenating Elixir (priceless): Complete healing of any wound. Ebonspire leaves.\n\nDanger: Botched brews can cause explosions, poison the brewer, or release corrupted Veyn. Every Alchemist has scars from failed brews.",
+    "description": "Alchemy is the art of combining Veyn with physical ingredients to create potions, poisons, and explosives. It is one of the most practical and dangerous classes.\n\nBrewing Process: An Alchemist draws Veyn into a mortar, pestle, or brewing vessel, then adds physical ingredients in a specific sequence. The Veyn reacts with the ingredients, transforming them into the desired effect. The sequence matters — adding ingredients in the wrong order can produce poison instead of healing, or cause an explosion.\n\nCommon Potions:\n- Healing Potion (5-10ss): Heals minor to moderate injuries. Ingredients: Veyn Stone dust, medicinal herbs, clean water.\n- Restoration Potion (10-15gs): Restores Veyn reserves. Ingredients: Multiple Veyn Stones, rare herbs.\n- Paralytic Venom (50+ gs): Paralyzes targets up to C-rank. Ingredients: Manticore venom sac, Veyn catalyst.\n- Purification Solution (5gs per dose): Cleanses minor Corruption Sickness. Ingredients: Holy herbs, purified Veyn.\n- Explosive Mix (20gs): Creates a blast on impact. Ingredients: Chimera blood, Veyn Stone dust, sulfur.\n\nAdvanced Potions:\n- Lucent Reserve (50+ gs): Full restoration of Veyn or Ren. Requires Lucent Stone.\n- Ethereal Potion (priceless): Halts aging for a fixed period. Requires pixie dust, Grimbough leaves, Ebonspire bark, dragon heart.\n- Rejuvenating Elixir (priceless): Complete healing of any wound. Ebonspire leaves.\n\nDanger: Botched brews can cause explosions, poison the brewer, or release corrupted Veyn. Every Alchemist has scars from failed brews.",
     "fields": [
       {
         "label": "Brewing Process",
@@ -21053,11 +20864,11 @@
       },
       {
         "label": "Common Potions",
-        "value": "Healing 5-10sm, Restoration 10-15gc, Paralytic Venom 50+gc, Explosive Mix 20gc"
+        "value": "Healing 5-10ss, Restoration 10-15gs, Paralytic Venom 50+ gs, Explosive Mix 20gs"
       },
       {
         "label": "Advanced Potions",
-        "value": "Lucent Reserve 50+gc, Ethereal Potion priceless, Rejuvenating Elixir priceless"
+        "value": "Lucent Reserve 50+ gs, Ethereal Potion priceless, Rejuvenating Elixir priceless"
       },
       {
         "label": "Botched Brews",
@@ -21076,7 +20887,7 @@
       "crafting"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T12:44:28.530Z"
   },
   {
     "id": "seed-655",
@@ -21349,11 +21160,11 @@
     "category": "Economy",
     "name": "Merchant Culture",
     "subtitle": "How traders operate across the realms",
-    "description": "Merchants are the economic backbone of the Human Realm and the primary connectors between realms.\n\nMerchant Guilds: Every major city has a Merchant Guild — a regulatory body that oversees trade practices, resolves disputes between merchants, and negotiates with Magistrates on trade policy. Guild membership is required to operate a legitimate business in most cities. Membership costs 5-10 Gold Sigils annually.\n\nCaravan Culture: Long-distance trade is conducted by caravans — groups of merchants and their guards traveling together for safety. A typical caravan includes 5-20 merchants, 10-30 guards, pack animals, and supplies for the journey. Caravans follow established routes and stop at waystations along the way.\n\nHaggling: Haggling is expected and respected in the Human Realm. A merchant who accepts the first offer is considered a fool; a customer who doesn't haggle is considered naive. The Demon Realm has no haggling — prices are fixed and arguing results in violence. The Angel Realm has no commerce in the traditional sense — trade is conducted through Vow-based exchange.\n\nMerchant Intelligence: Smart merchants maintain networks of contacts across realms — innkeepers, tavern keepers, port officials, and other merchants who share information about market conditions, supply shortages, and political changes. This intelligence network is separate from the Broker's Guild but overlaps significantly.\n\nMerchant Ethics: The Merchant Guild enforces ethical standards — price gouging during emergencies is fined, selling counterfeit goods results in expulsion, and exploiting new merchants is socially punished. The worst offense is selling corrupted Veyn artifacts to unsuspecting buyers — this results in permanent exile from the Guild.",
+    "description": "Merchants are the economic backbone of the Human Realm and the primary connectors between realms.\n\nMerchant Guilds: Every major city has a Merchant Guild — a regulatory body that oversees trade practices, resolves disputes between merchants, and negotiates with Magistrates on trade policy. Guild membership is required to operate a legitimate business in most cities. Membership costs 5-10 Gold Sigils annually.\n\nCaravan Culture: Long-distance trade is conducted by caravans — groups of merchants and their guards traveling together for safety. A typical small trade caravan includes 5-20 merchants, 10-30 guards, pack animals, and supplies for the journey. (Major long-haul caravans — the Human Realm Merchant Caravans — are a separate, larger scale: 20-50 merchants with 10-20 guards.) Caravans follow established routes and stop at waystations along the way.\n\nHaggling: Haggling is expected and respected in the Human Realm. A merchant who accepts the first offer is considered a fool; a customer who doesn't haggle is considered naive. The Demon Realm has no haggling — prices are fixed and arguing results in violence. The Angel Realm has no commerce in the traditional sense — trade is conducted through Vow-based exchange.\n\nMerchant Intelligence: Smart merchants maintain networks of contacts across realms — innkeepers, tavern keepers, port officials, and other merchants who share information about market conditions, supply shortages, and political changes. This intelligence network is separate from the Broker's Guild but overlaps significantly.\n\nMerchant Ethics: The Merchant Guild enforces ethical standards — price gouging during emergencies is fined, selling counterfeit goods results in expulsion, and exploiting new merchants is socially punished. The worst offense is selling corrupted Veyn artifacts to unsuspecting buyers — this results in permanent exile from the Guild.",
     "fields": [
       {
         "label": "Merchant Guilds",
-        "value": "Regulatory bodies in every major city — 5-10gc annual membership"
+        "value": "Regulatory bodies in every major city — 5-10gs annual membership"
       },
       {
         "label": "Caravan Culture",
@@ -21380,7 +21191,7 @@
       "culture"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T13:12:10.314Z"
   },
   {
     "id": "seed-663",
@@ -22839,7 +22650,7 @@
       },
       {
         "label": "Language",
-        "value": "Written in Old Aelthar script — a language no living being can fully read. The accepted translation is partial and debated. Several words are missing, damaged, or ambiguous."
+        "value": "The accepted translation is partial and debated."
       },
       {
         "label": "Key Phrases",
@@ -22904,7 +22715,7 @@
       "plot engine"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-31T01:02:28.174Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-706",
@@ -25359,7 +25170,7 @@
     "category": "Humans",
     "name": "The Human Crown Succession",
     "subtitle": "",
-    "description": "The Human Crown passes through hereditary succession — the eldest child of the current ruler inherits the throne. However, the Crown Advisory Council can challenge succession if they deem the heir unfit. Challenges require a two-thirds council vote and result in a formal trial where the heir must demonstrate competence. If the heir fails the trial, the Council selects a new ruler from eligible candidates. The succession system has been stable for 300 years — the last contested succession (the Broken Crown Rebellion) led to civil war. Current succession law also includes a provision: the ruler cannot be under 16 years of age.",
+    "description": "The Human Crown passes through hereditary succession — the eldest child of the current ruler inherits the throne. However, the Crown Advisory Council can challenge succession if they deem the heir unfit. Challenges require a two-thirds council vote and result in a formal trial where the heir must demonstrate competence. If the heir fails the trial, the Council selects a new ruler from eligible candidates. The succession system has been stable for 200 years — the last contested succession (the Broken Crown Rebellion) led to civil war. Current succession law also includes a provision: the ruler cannot be under 16 years of age.",
     "fields": [
       {
         "label": "Activation",
@@ -25386,7 +25197,7 @@
       "humans"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T13:12:10.314Z"
   },
   {
     "id": "seed-779",
@@ -25465,7 +25276,7 @@
     "fields": [
       {
         "label": "Appearance",
-        "value": "Invisible to the naked eye. Under Soul-Sight, they appear as faintly glowing, thread-like organisms that pulse with a sickly violet light. They cluster around spiritual bodies like parasites on a host, burrowing into the outer layers of the spiritual form."
+        "value": "Under Soul-Sight, they appear as faintly glowing, thread-like organisms that pulse with a sickly violet light. They cluster around spiritual bodies like parasites on a host, burrowing into the outer layers of the spiritual form."
       },
       {
         "label": "Location",
@@ -25516,7 +25327,7 @@
       "lethal"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-791",
@@ -25539,7 +25350,7 @@
       },
       {
         "label": "Stage 4 — The Silence",
-        "value": "The spiritual body is fully consumed. The worm has nothing left to eat. The halo extinguishes. The angel's body goes rigid, eyes wide open, mouth frozen in a silent scream. Then the body collapses — not dead in the traditional sense, but empty. The spiritual body is gone, and without it, the physical form cannot sustain itself. Death within hours. The body decomposes unnaturally fast, as if the worm consumes the physical remains too."
+        "value": "The worm has nothing left to eat. The halo extinguishes. The angel's body goes rigid, eyes wide open, mouth frozen in a silent scream. Then the body collapses — not dead in the traditional sense, but empty. The spiritual body is gone, and without it, the physical form cannot sustain itself. Death within hours. The body decomposes unnaturally fast, as if the worm consumes the physical remains too."
       },
       {
         "label": "Detection",
@@ -25558,7 +25369,7 @@
       "stages"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-792",
@@ -31324,7 +31135,7 @@
     "category": "Travel",
     "name": "The Human Realm Merchant Caravans",
     "subtitle": "",
-    "description": "Long-distance trade is conducted through merchant caravans — organized groups of traders who travel together for protection. A typical caravan includes: 20-50 merchants, 10-20 guards (hired from the Scout Guild), 5-10 pack animals (horses or mules), and a caravan master (elected by the merchants). Caravans travel established routes, stopping at designated inns and rest stops. The journey from the capital to the northern border takes approximately 30 days. Caravan travel is dangerous — bandits, monsters, and weather are constant threats. Caravan insurance through the Broker's Guild is strongly recommended.",
+    "description": "Long-distance trade is conducted through merchant caravans — organized groups of traders who travel together for protection. A typical major long-haul caravan includes: 20-50 merchants, 10-20 guards (hired from the Scout Guild), 5-10 pack animals (horses or mules), and a caravan master (elected by the merchants). (Smaller everyday trade caravans — 5-20 merchants with 10-30 guards — are described under Merchant Culture.) Caravans travel established routes, stopping at designated inns and rest stops. The journey from the capital to the northern border takes approximately 30 days. Caravan travel is dangerous — bandits, monsters, and weather are constant threats. Caravan insurance through the Broker's Guild is strongly recommended.",
     "fields": [
       {
         "label": "Activation",
@@ -31351,7 +31162,7 @@
       "travel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T13:12:10.314Z"
   },
   {
     "id": "seed-950",
@@ -33344,10 +33155,6 @@
       {
         "label": "Properties",
         "value": "A Blood-forged weapon carries the innate properties of the blood's source — corrupted Veyn effects from demon blood, holy energy from angel blood."
-      },
-      {
-        "label": "Requirement",
-        "value": "Only Smiths who have mastered the class can attempt Blood-forging."
       }
     ],
     "tags": [
@@ -33359,7 +33166,7 @@
       "magic system"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-1009",
@@ -33385,10 +33192,6 @@
         "value": "Naturally wider and more developed — can channel more Veyn than humans."
       },
       {
-        "label": "Demons",
-        "value": "Channels naturally corrupt Veyn into miasma as it passes through them."
-      },
-      {
         "label": "Fallen Angels",
         "value": "Channels are damaged and unstable — Veyn flows in bursts rather than steady streams."
       },
@@ -33406,7 +33209,7 @@
       "magic system"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-1011",
@@ -33507,7 +33310,7 @@
       },
       {
         "label": "The Cost",
-        "value": "The cost of the ascension is not Jaiden’s hybrid nature — he needs it, all of it, to survive the reach. The cost is the certainty that he is walking the exact path that broke the world once before, and that if he fails, the three horrors will be four, and this time there will be no Aelthar left to seal them away."
+        "value": "The cost of the ascension is not Jaiden’s hybrid nature — he needs it, all of it, to survive the reach."
       },
       {
         "label": "The Shudon Reactivation",
@@ -33543,7 +33346,7 @@
       "dark moon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-31T01:05:17.692Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-1013",
@@ -33558,7 +33361,7 @@
       },
       {
         "label": "Appearance (True Form)",
-        "value": "Nearly invisible — a shadow that moves against the light, a distortion in the air. When attached to a host, manifests as a faint, oily darkness clinging to the host's skin."
+        "value": "When attached to a host, manifests as a faint, oily darkness clinging to the host's skin."
       },
       {
         "label": "Appearance (Host Changes)",
@@ -33582,7 +33385,7 @@
       },
       {
         "label": "Story Relevance",
-        "value": "Dark mirror of the Broker's Guild. Represent spiritual damage from the Sundering. Appear as minor antagonists, tragic figures, cautionary tales. Dark Moon distributes Soulgrub Contracts as control tool."
+        "value": "Represent spiritual damage from the Sundering. Appear as minor antagonists, tragic figures, cautionary tales. Dark Moon distributes Soulgrub Contracts as control tool."
       },
       {
         "label": "Lore Connections",
@@ -33598,7 +33401,7 @@
       "race"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-1014",
@@ -33609,7 +33412,7 @@
     "fields": [
       {
         "label": "Nature",
-        "value": "Not a biological race — a condition. Any human can become Grubsworn by signing a Soulgrub Contract. The transformation is irreversible."
+        "value": "Not a biological race — a condition. Any human can become Grubsworn by signing a Soulgrub Contract."
       },
       {
         "label": "Appearance (Fresh)",
@@ -33629,7 +33432,7 @@
       },
       {
         "label": "Aura Effect",
-        "value": "Constant low-pressure field of corrupted Veyn. Makes everyone nearby feel uneasy, nauseous, or disgusted. Spiritual, not psychological. Fallen angels find it almost unbearable."
+        "value": "Spiritual, not psychological. Fallen angels find it almost unbearable."
       },
       {
         "label": "Abilities",
@@ -33641,7 +33444,7 @@
       },
       {
         "label": "Social Status",
-        "value": "Human Realm: feared, avoided, slum communities. Angel Realm: forbidden entry. Demon Realm: not welcome. Hidden Realm: limited contact."
+        "value": "Human Realm: feared, avoided, slum communities. Demon Realm: not welcome."
       },
       {
         "label": "Story Relevance",
@@ -33661,7 +33464,7 @@
       "race"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "eaaa30b4-561f-4d3b-a237-1ec047f11130",
@@ -33776,7 +33579,7 @@
       },
       {
         "label": "Steps",
-        "value": "1) Draw the circle at the Seam. 2) Drink the potion and empty the self. 3) Burn the heart and sever all seals. 4) Descend the ley lines through the Lucent Stone. 5) Offer — or take. 6) Become, or break."
+        "value": "2) Drink the potion and empty the self. 3) Burn the heart and sever all seals. 5) Offer — or take."
       },
       {
         "label": "The Law",
@@ -33796,7 +33599,7 @@
       "failed ascension"
     ],
     "createdAt": "2026-08-31T01:25:45.618Z",
-    "updatedAt": "2026-08-31T01:26:43.022Z"
+    "updatedAt": "2026-09-30T14:20:33.464Z"
   },
   {
     "id": "seed-7158",
@@ -34047,5 +33850,160 @@
     ],
     "createdAt": "2026-09-01T22:31:54.361Z",
     "updatedAt": "2026-09-01T22:31:54.361Z"
+  },
+  {
+    "id": "94544234-da44-42e0-ba83-78133d76d69b",
+    "category": "Rules & Notes",
+    "name": "Angels promises",
+    "subtitle": "an unbroken promise",
+    "description": "It is a promise that when an angel makes can and must never be broken when said the person who said it would be determined to the very end till the promise is accomplished but can be canceled by a slight break on their halo which can be healed by",
+    "fields": [],
+    "tags": [
+      "angels",
+      "rules&notes"
+    ],
+    "createdAt": "2026-09-28T16:54:04.383Z",
+    "updatedAt": "2026-09-28T16:54:04.383Z"
+  },
+  {
+    "id": "seed-horns-001",
+    "category": "Demons",
+    "name": "Demon Horns",
+    "subtitle": "The storage and conduit of every demon’s Corrupted Veyn",
+    "description": "A demon’s horns are far more than a rank display. The horns hold ALL the Corrupted Veyn a demon can ever use — they are both the storage and the conduit: demons channel the corrupted Veyn held in their horns into their race skills, class skills, and magic.\n\nDepletion: when a demon completely runs out of Veyn, the color of their horns goes pitch black — the visible sign that there is no more Veyn left to use. A fully black-horned demon cannot use their race skills or class skills (all of which rely on Veyn) and can only rely on their innate trait instead, for whatever they were doing — unless they were using Ren, which does not rely on Veyn.\n\nCross-reference: Demons (Overview), Rank and Role (Rules & Notes), Demon Skills. The angel mirror-rule lives in Angels (Overview): an angel whose Veyn is spent has their halo dim little by little until it goes fully dark, leaving them to rely on their innate trait (or Ren).\n\nRecovery: as the demon’s Veyn recovers from the environment, the pitch-black colour drains out of the horns and they fade back through dark shades to their natural colour — full colour back means the Corrupted Veyn stored in them is fully restored. See Veyn Recovery (Magic Systems).",
+    "fields": [
+      {
+        "label": "Function",
+        "value": "Stores ALL the Corrupted Veyn a demon can ever use and acts as the conduit for channeling it into skills and magic"
+      },
+      {
+        "label": "Depletion Sign",
+        "value": "Horns turn pitch black when Veyn is fully spent — no race skills or class skills until it recovers"
+      },
+      {
+        "label": "Fallback",
+        "value": "Innate trait only (or Ren, which does not rely on Veyn)"
+      },
+      {
+        "label": "Angel Mirror",
+        "value": "An angel’s halo dims little by little until dark when their Holy Energy is spent — same innate-trait fallback"
+      }
+    ],
+    "tags": [
+      "demons",
+      "horns",
+      "corrupted veyn",
+      "vey",
+      "storage",
+      "conduit",
+      "depletion",
+      "rank",
+      "magic system"
+    ],
+    "createdAt": "2026-09-30T12:16:39.754Z",
+    "updatedAt": "2026-09-30T12:29:13.153Z"
+  },
+  {
+    "id": "seed-veyndepletion-001",
+    "category": "Magic Systems",
+    "name": "Veyn Depletion",
+    "subtitle": "What happens when an angel or demon runs out of Veyn",
+    "description": "Every race skill and class skill an angel or demon uses relies on Veyn — angels spend Holy Energy (the type of Veyn angels use) and demons spend Corrupted Veyn stored in their horns.\n\nAngels: when an angel has used up all the Holy Energy they hold, their halo starts dimming out little by little until its brightness is completely gone — which means their Veyn has finished. A fully dimmed angel cannot use their skills or magic that rely on Veyn.\n\nDemons: when a demon completely runs out of Veyn, the color of their horns goes pitch black — the visible sign that there is no more Veyn left to use. A fully black-horned demon cannot use their race skills or class skills.\n\nThe fallback: with their Veyn finished, an angel or demon can only rely on their innate trait instead, for whatever they were doing — unless they were using Ren, which does not rely on Veyn at all.\n\nRecovery: spent Veyn recovers on its own — the body draws ambient Veyn from the surroundings. As it refills, a demon’s pitch-black horns fade back to their natural colour and an angel’s dark halo brightens back to its original brightness. See Veyn Recovery (Magic Systems).",
+    "fields": [
+      {
+        "label": "Angel Sign",
+        "value": "Halo dims little by little until fully dark — Veyn is finished"
+      },
+      {
+        "label": "Demon Sign",
+        "value": "Horns go pitch black — no more Veyn left to use"
+      },
+      {
+        "label": "Effect",
+        "value": "Cannot use race skills or class skills (all rely on Veyn)"
+      },
+      {
+        "label": "Fallback",
+        "value": "Innate trait only — unless using Ren, which does not rely on Veyn"
+      }
+    ],
+    "tags": [
+      "vey",
+      "veyn",
+      "depletion",
+      "depleted",
+      "runs out",
+      "empty",
+      "dimming",
+      "halo",
+      "horns",
+      "pitch black",
+      "innate trait",
+      "ren",
+      "magic system",
+      "angels",
+      "demons",
+      "holy energy",
+      "corrupted veyn"
+    ],
+    "createdAt": "2026-09-30T12:20:43.460Z",
+    "updatedAt": "2026-09-30T12:29:13.153Z"
+  },
+  {
+    "id": "seed-veynrecovery-001",
+    "category": "Magic Systems",
+    "name": "Veyn Recovery",
+    "subtitle": "How spent Veyn refills — and how horns and halo return to normal",
+    "description": "When an angel or demon has used up all their Veyn, it recovers on its own: the body draws ambient Veyn from the world core’s presence in everything around it and refills its reserves with it. Veyn users replenish from the environment — this is what separates them from Ren users, who must rest, eat, and recover naturally.\n\nRecovery speed: rest and sleep speed recovery up greatly — sleep is the most natural way to refill. Veyn-rich areas refill reserves in hours; a Veyn-Dead Zone stalls recovery completely — nothing refills there until the user leaves. Full recovery from complete depletion takes roughly a day of rest in normal lands.\n\nThe signs return in the reverse order they faded:\n• Demons: as the Corrupted Veyn stored in their horns refills, pitch-black horns fade back through dark shades to their natural colour — full colour back means full Veyn back.\n• Angels: a fully dark halo kindles a faint glow first, then brightens little by little until it returns to its original brightness — full brightness back means full Veyn back.\n\nBoosts: the innate Veyn-Regen ability replenishes Veyn faster than it drains, so its bearer almost never sees their horns go black or their halo go fully dark. The Blessing class skill increases an ally’s Veyn recovery.\n\nGrowth bonus: fully using up Veyn and letting it recover is the only way to grow Veyn capacity — keep replenishing after finishing it and the max amount the body can hold increases (see Growing Your Veyn Capacity).\n\nNote: Ren does not rely on Veyn and does not recover this way — Ren users recover through rest and food instead.",
+    "fields": [
+      {
+        "label": "How It Works",
+        "value": "The body draws ambient Veyn from the surroundings (the world core’s presence in everything) to refill its reserves"
+      },
+      {
+        "label": "Demon Recovery Sign",
+        "value": "Pitch-black horns fade back through dark shades to their natural colour — full colour back = full Veyn back"
+      },
+      {
+        "label": "Angel Recovery Sign",
+        "value": "A dark halo kindles a faint glow, then brightens little by little to its original brightness — full brightness = full Veyn back"
+      },
+      {
+        "label": "Speed",
+        "value": "Rest/sleep speeds it up; Veyn-rich areas refill in hours; Veyn-Dead Zones stall recovery completely; ~a day of rest from full depletion in normal lands"
+      },
+      {
+        "label": "Boosts",
+        "value": "Veyn-Regen innate ability (replenishes faster than it drains); Blessing class skill (increases ally Veyn recovery)"
+      },
+      {
+        "label": "Growth Bonus",
+        "value": "Fully finishing Veyn and letting it recover is the only way to grow Veyn capacity"
+      }
+    ],
+    "tags": [
+      "veyn",
+      "recovery",
+      "recover",
+      "replenish",
+      "refill",
+      "recharge",
+      "restore",
+      "horns",
+      "halo",
+      "colour",
+      "color",
+      "brightness",
+      "ambient veyn",
+      "rest",
+      "sleep",
+      "depleted",
+      "regen",
+      "magic system",
+      "demons",
+      "angels"
+    ],
+    "createdAt": "2026-09-30T12:29:13.153Z",
+    "updatedAt": "2026-09-30T12:29:13.153Z"
   }
 ]

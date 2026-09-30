@@ -383,44 +383,103 @@ app.get('/api/search', (req, res) => {
 // --- AI answer (Groq) ------------------------------------------------------
 const groq = new Groq({ apiKey: process.env.GROQ_API_KEY || '' });
 
-function buildContext(result) {
-  const parts = [];
-  const entries = result.entries || [];
-  const relationships = result.relationships || [];
-  const storyLinks = result.storyLinks || [];
-  if (entries.length) {
-    parts.push('=== ENTRIES ===');
-    for (const e of entries) {
-      parts.push('- ' + e.name + ' (' + (e.category || '') + ')');
-      if (e.subtitle) parts.push('  Subtitle: ' + e.subtitle);
-      if (e.description) parts.push('  Description: ' + e.description);
-      if (e.fields && e.fields.length) {
-        for (const f of e.fields) parts.push('  ' + f.label + ': ' + f.value);
-      }
-      if (e.tags && e.tags.length) parts.push('  Tags: ' + e.tags.join(', '));
-      parts.push('');
+// Groq's free tier caps requests at ~8000 tokens per minute, so keep the
+// archive context well under that (~1 token ≈ 4 chars).
+const AI_CONTEXT_CHAR_BUDGET = 16000;
+const AI_DESC_LIMIT = 800;
+const AI_FIELD_LIMIT = 300;
+const AI_SUBTITLE_LIMIT = 200;
+
+function truncateForBudget(text, max) {
+  const s = String(text || '').replace(/\s+/g, ' ').trim();
+  if (s.length <= max) return s;
+  return s.slice(0, Math.max(0, max - 1)).replace(/\s+\S*$/, '') + '…';
+}
+
+// Renders archive data into prompt lines while staying inside the char
+// budget — items that no longer fit are dropped instead of blowing past
+// Groq's token-per-minute limit (which fails the whole request).
+function buildArchiveContext(data, budget = AI_CONTEXT_CHAR_BUDGET) {
+  const lines = [];
+  let used = 0;
+  let dropped = false;
+
+  const tryAdd = (line) => {
+    if (used + line.length + 1 > budget) {
+      dropped = true;
+      return false;
     }
-  }
-  if (relationships.length) {
-    parts.push('=== RELATIONSHIPS ===');
-    for (const r of relationships) {
-      parts.push('- ' + r.source + ' --[' + (r.type || '') + ']--> ' + r.target);
-      if (r.label) parts.push('  Label: ' + r.label);
-      if (r.description) parts.push('  Description: ' + r.description);
-      parts.push('');
+    lines.push(line);
+    used += line.length + 1;
+    return true;
+  };
+
+  const addEntry = (e) => {
+    if (!tryAdd('- ' + e.name + ' (' + (e.category || '') + ')')) return;
+    if (e.subtitle) tryAdd('  Subtitle: ' + truncateForBudget(e.subtitle, AI_SUBTITLE_LIMIT));
+    if (e.description) tryAdd('  Description: ' + truncateForBudget(e.description, AI_DESC_LIMIT));
+    for (const f of e.fields || []) {
+      tryAdd('  ' + f.label + ': ' + truncateForBudget(f.value, AI_FIELD_LIMIT));
     }
+    if (e.tags && e.tags.length) tryAdd('  Tags: ' + e.tags.join(', '));
+    tryAdd('');
+  };
+
+  const addEdge = (r) => {
+    const label = r.label || r.type || '';
+    if (!tryAdd('- ' + r.source + ' --[' + label + ']--> ' + r.target)) return;
+    if (r.description) tryAdd('  Description: ' + truncateForBudget(r.description, AI_FIELD_LIMIT));
+    tryAdd('');
+  };
+
+  if ((data.entries || []).length) {
+    tryAdd('=== ENTRIES ===');
+    for (const e of data.entries) addEntry(e);
   }
-  if (storyLinks.length) {
-    parts.push('=== STORY LINKS ===');
-    for (const l of storyLinks) {
-      parts.push('- ' + l.source + ' --[' + (l.type || '') + ']--> ' + l.target);
-      if (l.label) parts.push('  Label: ' + l.label);
-      if (l.description) parts.push('  Description: ' + l.description);
-      parts.push('');
-    }
+  if ((data.relationships || []).length) {
+    tryAdd('=== RELATIONSHIPS ===');
+    for (const r of data.relationships) addEdge(r);
   }
-  if (!parts.length) return '(no data found in the archive for this query)';
-  return parts.join('\n');
+  if ((data.storyLinks || []).length) {
+    tryAdd('=== STORY LINKS ===');
+    for (const l of data.storyLinks) addEdge(l);
+  }
+
+  if (!lines.length) return '(no data found in the archive for this query)';
+  if (dropped) lines.push('(context trimmed to fit the AI token limit)');
+  return lines.join('\n');
+}
+
+// Shared Groq call: low reasoning effort keeps gpt-oss-20b from burning the
+// completion budget on hidden reasoning before it writes the answer.
+async function askGroq(prompt, maxTokens = 1024) {
+  const chat = await groq.chat.completions.create({
+    messages: [{ role: 'user', content: prompt }],
+    model: 'openai/gpt-oss-20b',
+    max_tokens: maxTokens,
+    temperature: 0.2,
+    reasoning_effort: 'low',
+  });
+  if (chat.usage) {
+    console.log(`[ai] tokens: prompt=${chat.usage.prompt_tokens} completion=${chat.usage.completion_tokens}`);
+  }
+  const answer = chat.choices?.[0]?.message?.content || '';
+  if (!answer.trim()) {
+    throw new Error('The AI returned an empty answer — try rephrasing the question.');
+  }
+  return answer;
+}
+
+function sendAiError(res, tag, err) {
+  console.error(`[ai] Groq ${tag} error:`, err.message);
+  const status = err?.status || 0;
+  if (status === 401) {
+    return res.status(500).json({ error: 'The AI API key was rejected. Check GROQ_API_KEY on the server.' });
+  }
+  if (status === 413 || status === 429 || /rate_limit_exceeded|tokens per minute|too large/i.test(err.message || '')) {
+    return res.status(429).json({ error: 'The AI hit its usage limit (free Groq tier). Wait a minute and try again.' });
+  }
+  res.status(500).json({ error: 'AI request failed: ' + (err.message || 'unknown error') });
 }
 
 app.post('/api/ai/answer', async (req, res) => {
@@ -432,8 +491,8 @@ app.post('/api/ai/answer', async (req, res) => {
     return res.status(500).json({ error: 'AI is not configured. Set GROQ_API_KEY on the server.' });
   }
 
-  const context = buildContext(searchResult);
-  const prompt = `You are an assistant for a worldbuilding archive. Answer the user's question using ONLY the information below. Do not invent, assume, or bring in outside knowledge. If the information is not in the data below, say so plainly.
+  const context = buildArchiveContext(searchResult || {});
+  const prompt = `You are an assistant for a worldbuilding archive. Answer the user's question using ONLY the information below. Do not invent, assume, or bring in outside knowledge.
 
 === QUESTION ===
 ${question}
@@ -445,24 +504,221 @@ ${context}
 - Answer in a clear, conversational tone.
 - Only use facts from the ARCHIVE DATA above.
 - Cite which entry, relationship, or story link the information comes from.
-- If nothing matches the question, say: "I don't have anything in the archive that answers that question."
+- If the ARCHIVE DATA is empty or nothing matches the question, do NOT just say "nothing matches." Instead, briefly explain what the archive contains in general (how many entries, what categories exist, what kinds of things are documented) and suggest what kinds of terms might find results — for example, try a character name, a place name, or a category. Do not invent facts about the world, but it is fine to describe the shape and scope of the archive itself.
 - Keep the answer focused and not too long.`;
 
   try {
-    const chat = await groq.chat.completions.create({
-      messages: [{ role: 'user', content: prompt }],
-      model: 'openai/gpt-oss-20b',
-      max_tokens: 1024,
-      temperature: 0.2,
-    });
-    const answer = chat.choices[0]?.message?.content || '';
+    const answer = await askGroq(prompt);
     res.json({ answer });
   } catch (err) {
-    console.error('[ai] Groq error:', err.message);
-    res.status(500).json({ error: 'AI request failed: ' + (err.message || 'unknown error') });
+    sendAiError(res, 'answer', err);
   }
 });
 
-app.listen(PORT, () => {
-  console.log(`[half-made-world] server listening on http://localhost:${PORT}`);
+// --- AI explore: the AI gets the full archive and finds answers on its own ---
+// Stopword filter as an explicit Set - plain JS, no regex escaping to break.
+const STOPWORDS = new Set([
+  'who', 'what', 'where', 'when', 'why', 'how', 'is', 'are', 'was', 'were', 'does', 'do', 'did',
+  'can', 'could', 'would', 'should', 'may', 'might', 'shall', 'will', 'tell', 'me', 'about',
+  'the', 'a', 'an', 'of', 'in', 'on', 'to', 'for', 'with', 'and', 'or', 'that', 'this', 'it',
+  'i', 'my', 'we', 'you', 'your', 'he', 'she', 'they', 'its', 'his', 'her', 'their',
+  'be', 'been', 'being', 'have', 'has', 'had', 'from', 'by', 'at', 'as', 'if', 'into', 'not', 'please',
+  'long', 'ago', 'far', 'much', 'many', 'get', 'got', 'use', 'used', 'there', 'here',
+]);
+
+function extractKeywords(question) {
+  const words = String(question || '')
+    .toLowerCase()
+    .replace(/[?!,;:'"()]/g, ' ')
+    .split(/\s+/)
+    .filter(Boolean);
+  const kept = words.filter((w) => !STOPWORDS.has(w));
+  // Expand shorthand terms ("mc") so curated tags like "main character" match.
+  const expanded = new Set(kept);
+  for (const w of kept) {
+    for (const syn of KEYWORD_SYNONYMS[w] || []) expanded.add(syn);
+  }
+  return [...expanded];
+}
+
+// Shorthand/vague terms users type, expanded so keyword matching still finds
+// entries tagged with the full term (e.g. "mc" -> entries tagged "main character").
+const KEYWORD_SYNONYMS = {
+  mc: ['main character', 'protagonist'],
+  'main character': ['mc', 'protagonist'],
+  protagonist: ['mc', 'main character'],
+  hero: ['protagonist', 'main character'],
+};
+
+// Compact index of EVERY entry in the archive, grouped by category (~5k
+// tokens). Explore mode pairs this with details for the closest matches so
+// the AI reasons over the whole archive while staying under Groq's free-tier
+// per-request token limit.
+function buildArchiveIndex(maxChars = 16000) {
+  const world = loadWorld();
+  const byCat = {};
+  for (const e of world) {
+    const cat = e.category || 'Uncategorized';
+    (byCat[cat] = byCat[cat] || []).push(e.name);
+  }
+  const lines = ['TOTAL ENTRIES: ' + world.length];
+  let chars = 0;
+  let listed = 0;
+  for (const cat of Object.keys(byCat).sort()) {
+    const names = byCat[cat];
+    const prefix = cat + ' (' + names.length + '): ';
+    const remaining = maxChars - chars - prefix.length - 1;
+    if (remaining <= 0) {
+      lines.push(prefix + '… (' + names.length + ' entries, not listed due to size)');
+      continue;
+    }
+    // Fit as many names as the budget allows instead of dropping the whole
+    // category — every category stays visible in the index.
+    let fitted = [];
+    let used = 0;
+    for (const n of names) {
+      const add = n.length + (fitted.length ? 2 : 0);
+      if (used + add > remaining) break;
+      fitted.push(n);
+      used += add;
+    }
+    if (fitted.length === names.length) {
+      lines.push(prefix + names.join(', '));
+      chars += prefix.length + used + 1;
+    } else {
+      lines.push(prefix + fitted.join(', ') + ', … (' + (names.length - fitted.length) + ' more)');
+      chars += prefix.length + remaining + 1;
+    }
+    listed += fitted.length;
+  }
+  return lines.join('\n');
+}
+
+function broadSearch(question) {
+  const keywords = extractKeywords(question);
+  if (!keywords.length) return { entries: [], relationships: [], storyLinks: [] };
+  const world = loadWorld();
+  const rels = loadRelationships();
+  const links = loadStoryLinks();
+
+  const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const wordRes = new Map(keywords.map((kw) => [kw, new RegExp("\\b" + escapeRe(kw) + "\\b")]));
+const scoredEntries = world
+    .map((e) => {
+      const name = e.name.toLowerCase();
+      const cat = (e.category || '').toLowerCase();
+      let score = 0;
+      const tags = (e.tags || []).map((t) => String(t).toLowerCase());
+      const desc = (e.description || '').toLowerCase();
+      for (const kw of keywords) {
+        // Name is the strongest signal — the user may have typed the entry name.
+        if (name === kw) score += 30;
+        else if (wordRes.get(kw).test(name)) score += 15;
+        else if (name.includes(kw)) score += 6;
+        if (cat.includes(kw)) score += 2;
+        if (e.subtitle && e.subtitle.toLowerCase().includes(kw)) score += 3;
+        // Tags are curated keywords — an exact tag hit is a good signal.
+        if (tags.some((t) => t === kw)) score += 6;
+        else if (tags.some((t) => t.includes(kw))) score += 3;
+        if (desc.includes(kw)) score += 3;
+      }
+      // Overview entries summarize their whole category — what "what is X" needs.
+      if (name.includes('overview')) score += 8;
+      // Boost character entries when the question hints at a person.
+      if (cat === 'characters' && (keywords.includes('who') || keywords.includes('mc') || keywords.includes('character') || keywords.includes('main'))) {
+        score += 2;
+      }
+      return { entry: e, score };
+    })
+    .filter((s) => s.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 25)
+    .map((s) => s.entry);
+
+  const scoredRels = rels
+    .map((r) => {
+      const src = r.source.toLowerCase();
+      const tgt = r.target.toLowerCase();
+      let score = 0;
+      for (const kw of keywords) {
+        if (src.includes(kw) || tgt.includes(kw)) score += 3;
+      }
+      return { rel: r, score };
+    })
+    .filter((s) => s.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 5)
+    .map((s) => s.rel);
+
+  const scoredLinks = links
+    .map((l) => {
+      const src = l.source.toLowerCase();
+      const tgt = l.target.toLowerCase();
+      let score = 0;
+      for (const kw of keywords) {
+        if (src.includes(kw) || tgt.includes(kw)) score += 3;
+      }
+      return { link: l, score };
+    })
+    .filter((s) => s.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .slice(0, 5)
+    .map((s) => s.link);
+
+  return { entries: scoredEntries, relationships: scoredRels, storyLinks: scoredLinks };
+}
+
+app.post('/api/ai/explore', async (req, res) => {
+  const { question } = req.body || {};
+  if (!question || typeof question !== 'string') {
+    return res.status(400).json({ error: 'A question is required.' });
+  }
+  if (!process.env.GROQ_API_KEY) {
+    return res.status(500).json({ error: 'AI is not configured. Set GROQ_API_KEY on the server.' });
+  }
+
+  // Broad keyword search across the whole archive — wider than query mode so
+  // vague questions like "who is the mc" still find relevant entries.
+  const results = broadSearch(question);
+  // Budget-aware context: keeps names/categories/descriptions within the
+  // free-tier token limit instead of blowing past it on broad matches.
+  // Details for the closest matches, PLUS a full index of every entry name
+  // in the archive — the AI sees the whole world, not just keyword hits.
+  const context = buildArchiveContext(results, 6000);
+  const archiveIndex = buildArchiveIndex();  const prompt = `You are an explorer of a worldbuilding archive. You are given TWO things: (1) a FULL INDEX of every entry in the archive (names only, grouped by category) and (2) DETAILED SEARCH RESULTS for the entries most relevant to the question. Use the index to spot entries the search results missed — if an entry name in the index looks relevant but has no details below, reason from its name and category, and name it in your answer as a lead. Answer the user's question using this data.
+
+If the question is vague (e.g. "who is the mc"), interpret it in the most useful way based on what's in the data — look for main characters, protagonists, key figures, etc.
+
+=== QUESTION ===
+${question}
+
+=== FULL ARCHIVE INDEX (every entry, grouped by category) ===
+${archiveIndex}
+
+=== SEARCH RESULTS (closest matches for the question) ===
+${context}
+
+=== RULES ===
+- Answer in a clear, conversational tone.- Only use facts from the INDEX and SEARCH RESULTS above.
+- Cite which entry, relationship, or story link the information comes from.
+- Do NOT stitch facts from different entries into new cause-and-effect the archive never states (e.g. don't turn "Veyn returns to the core when a demon dies" into "running out of Veyn kills a demon"). If two entries touch the question, present each fact separately and say the archive does not link them.
+- Quote numbers, prices, and exchange rates EXACTLY as the archive states them. Never approximate, round, or invent numeric values — if the archive says 100 Silver = 1 Gold, never say "roughly 10".
+- If you genuinely cannot find anything relevant, say so plainly and point to the closest entries by name.
+- Keep the answer focused and under 150 words.`;
+
+  try {
+    const answer = await askGroq(prompt, 900);
+    res.json({ answer });
+  } catch (err) {
+    sendAiError(res, 'explore', err);
+  }
 });
+
+if (require.main === module) {
+  app.listen(PORT, () => {
+    console.log(`[half-made-world] server listening on http://localhost:${PORT}`);
+  });
+}
+
+// Exported for tests/debug tooling (requiring this module does not start the server).
+module.exports = { extractKeywords, broadSearch, buildArchiveContext, buildArchiveIndex };
