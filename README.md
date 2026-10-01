@@ -1,5 +1,7 @@
 # Half-Made World — Reference
 
+**[Open the live archive →](https://gamer-09.github.io/Half-made-world-Reference/)**
+
 Reference archive for the *Half-Made World* fantasy novel — a searchable, editable knowledge base
 for its lore, magic systems, and characters, built as an interactive web app so world details never
 have to live buried in a single document again.
