@@ -66,6 +66,8 @@ export function Sidebar({
         </button>
       )}
 
+      <p className="sidebar-group-label">Explore</p>
+
       <button
         className={`nav-map-btn${view === 'map' ? ' active' : ''}`}
         onClick={onOpenMap}
@@ -116,6 +118,8 @@ export function Sidebar({
           onChange={(e) => onSearch(e.target.value)}
         />
       </label>
+
+      <p className="sidebar-group-label">Categories</p>
 
       <nav className="category-nav">
         <button

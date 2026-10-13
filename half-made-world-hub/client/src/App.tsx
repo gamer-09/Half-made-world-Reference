@@ -515,22 +515,18 @@ export default function App() {
       />
 
       <main className="main">
-        <header className="main-header" style={{ borderBottom: '1px solid rgba(200,168,118,0.08)', position: 'relative', zIndex: 10, display: 'flex', visibility: 'visible', opacity: 1 }}>
-          <div style={{ visibility: 'visible', opacity: 1, display: 'block' }}>
-            <h2 className="main-title" style={{ color: 'white', visibility: 'visible', opacity: 1 }}>
+        <header className="main-header">
+          <div className="main-header-text">
+            <h2 className="main-title">
               {isBlocksView ? 'Block Chain Map' : isWebView ? 'Story Web' : isMapView ? 'Relationship Map' : activeCategory === 'All' ? 'All Entries' : activeCategory}
               {!isMapView && !isWebView && !isBlocksView && (
-                <span className="main-count" style={{ color: '#c8a876', background: 'rgba(200,168,118,0.14)', border: '1px solid rgba(200,168,118,0.3)' }}>
-                  {filtered.length}
-                </span>
+                <span className="main-count">{filtered.length}</span>
               )}
               {!canEdit && !isMapView && !isWebView && !isBlocksView && (
-                <span className="main-mode" style={{ color: 'rgba(127,143,163,0.7)', marginLeft: 8 }}>
-                  view-only build
-                </span>
+                <span className="main-mode">view-only build</span>
               )}
             </h2>
-            <p className="main-sub" style={{ color: 'rgba(235,230,216,0.6)' }}>
+            <p className="main-sub">
               {isBlocksView
                   ? 'The world’s geography as a chain — every place linked to what contains it'
                   : isWebView
@@ -547,33 +543,23 @@ export default function App() {
             {!isMapView && !isWebView && activeCategory !== 'All' && canEdit && (
               <button
                 className="btn btn-danger btn-sm"
-                style={{ color: '#c25e4a', border: '1px solid rgba(194,94,74,0.4)', background: 'rgba(194,94,74,0.08)' }}
                 onClick={() => handleDeleteCategory(activeCategory)}
               >
                 🗑 Delete “{activeCategory}”
               </button>
             )}
             {isMapView && canEdit && (
-              <button
-                className="btn btn-primary btn-sm"
-                style={{ color: '#ebe6d8', border: '1px solid rgba(200,168,118,0.4)', background: 'rgba(200,168,118,0.12)' }}
-                onClick={openAddRel}
-              >
+              <button className="btn btn-primary btn-sm" onClick={openAddRel}>
                 ＋ Add Relationship
               </button>
             )}
             {isWebView && canEdit && (
-              <button
-                className="btn btn-primary btn-sm"
-                style={{ color: '#ebe6d8', border: '1px solid rgba(200,168,118,0.4)', background: 'rgba(200,168,118,0.12)' }}
-                onClick={openAddLink}
-              >
+              <button className="btn btn-primary btn-sm" onClick={openAddLink}>
                 ＋ Add Link
               </button>
             )}
             <button
               className="btn btn-ghost btn-sm"
-              style={{ color: 'rgba(235,230,216,0.6)', border: '1px solid transparent' }}
               onClick={exportMarkdown}
               title="Download the archive as Markdown"
             >
@@ -581,7 +567,6 @@ export default function App() {
             </button>
             <button
               className="btn btn-ghost btn-sm"
-              style={{ color: 'rgba(235,230,216,0.6)', border: '1px solid transparent' }}
               onClick={exportJson}
               title="Download the archive as JSON"
             >

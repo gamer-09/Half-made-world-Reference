@@ -1964,7 +1964,7 @@
     "category": "Angels",
     "name": "Aetherblade Lord Angel",
     "subtitle": "Rank 2 — The realm’s elite",
-    "description": "A high-ranking angel of the second tier. Many Aetherblade Lord Angels command the Angel army — the Six Pillars are all of this rank — but not every Aetherblade Lord is a soldier. Some are master artisans, scholars, or nobles who hold the rank through power rather than war. They never age and are nearly impossible to bring down in battle through conventional means. Only a consecrated weapon, a blood-forged blade, or the venom of a Coilmane carries enough power to wound them fatally. Their regeneration works on Veyn — if there is Veyn in their body they can heal.",
+    "description": "A high-ranking angel of the second tier. Many Aetherblade Lord Angels command the Angel army — the Six Pillars are all of this rank — but not every Aetherblade Lord is a soldier. Some are master artisans, scholars, or nobles who hold the rank through power rather than war. They never age and are nearly impossible to bring down in battle through conventional means. Only a consecrated weapon, a blood-forged blade, or the venom of a Coilmane carries enough power to wound them fatally. Their regeneration works on Veyn — if there is Veyn in their body they can heal. (If an Aetherblade Lord falls and their halo breaks, that Veyn-fed regeneration is lost with it — a Fallen Angel heals only through the Rapid-Mend trait of their new race type.)",
     "fields": [
       {
         "label": "Appearance",
@@ -1986,7 +1986,7 @@
       "commander"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T22:24:47.977Z"
   },
   {
     "id": "seed-053",
@@ -2055,7 +2055,7 @@
     "category": "Angels",
     "name": "Fallen Angel",
     "subtitle": "Cast out — broken halo, spotted wings",
-    "description": "They have black spotted white wings or black cherry spotted white wings and a broken halo on top of their head. Once the vow breaks, the angel is cast out of the Angel Realm and rejected by their own race — this is what makes them a Fallen Angel. They keep their wings and whatever power they had, but can never take another Veyn Vow again, so their connection to Veyn stays unstable and unregulated. This makes them strong in bursts but dangerous even to themselves, since nothing filters how much Veyn moves through them anymore.\n\n---\n\n## THE SANCTUARY BREAK — VOW-BETRAYAL MADNESS\n\nNot all Vow-breaks are equal. When an angel breaks their Vow through ordinary failure — weakness, cowardice, a moment of doubt — they become a standard Fallen Angel: damaged but stable, their Veyn unregulated but their mind intact. Wener Leger is an example of this type.\n\nBut when an angel breaks their Vow through the deliberate betrayal of someone they swore to protect — not just breaking their word, but using the trust of a specific person to destroy them — the break is different. The angel does not just lose their halo; they tear a void into their own Veyn channel where the promise used to resonate. This void cannot heal. It is not a wound; it is an absence — a hole in the angel's spiritual architecture where something essential was removed.\n\nOver time — weeks, months, years, depending on the severity of the betrayal — corrupted Veyn seeps into this void. Not the clean, structured corruption of a demon's aura, but something worse: formless, directionless, hungry. It fills the absence the way water fills a crack in a dam, and it does not stop. The corrupted Veyn does not give the angel power; it takes something. It eats at their memories, their emotions, their sense of self. The angel begins to forget why they made the promise. Then they forget who they made it to. Then they forget who they were before the promise.\n\nThe process is called the Sanctuary Break — named for the theological belief that an angel's Vow is their inner sanctuary, and breaking it through betrayal is not just a failure but a demolition. The sanctuary does not collapse; it hollows out, leaving a shell that looks like the angel but is driven by something else.\n\nThe symptoms of a Sanctuary Break progress in stages:\n\n• **Stage 1 — The Hollow (Weeks 1–4):** The angel feels empty. Not sad, not angry — empty. They go through the motions of life but feel nothing. Their Veyn flickers unpredictably. They avoid people who remind them of the person they betrayed.\n\n• **Stage 2 — The Fog (Months 1–6):** The angel's memories begin to blur. They forget details — the face of the person they betrayed, the words of their Vow, the sound of their own name being called. Their Veyn becomes erratic, surging and draining without warning. They become irritable, paranoid, and prone to sudden violence.\n\n• **Stage 3 — The Hunger (Months 6–18):** The corrupted Veyn in the void begins to demand feeding. The angel discovers they can drain Veyn from others through proximity or touch — not gracefully, not with control, but with a raw, desperate hunger that frightens them. They begin to seek out Veyn sources: ley lines, Veyn-rich locations, and eventually other beings. Their personality continues to degrade. They lose empathy. They lose the ability to feel guilt.\n\n• **Stage 4 — The Hollowing (18+ Months):** The corrupted Veyn has consumed enough of the angel's will that the person they were is gone. What remains is a Veyn-hungry entity that wears the angel's body and uses their remaining power for destruction. The Hollowed do not think strategically; they consume. They are drawn to concentrations of Veyn — battlefields, Altars, ley line intersections — and they feed until they are stopped or until there is nothing left to feed on.\n\nThe Hollowed are not demons. They are not undead. They are what happens when an angel's inner sanctuary is demolished and something hungry moves into the ruins. They are the most dangerous beings in the world — not because they are powerful (though they are), but because they were once trusted. A Hollowed angel retains enough of their former abilities to be devastating, and enough of their former appearance to be recognized. The person who loved them, fought beside them, or followed them sees a familiar face — and by the time they realize what has changed, it is too late.\n\nThe only way to stop a Hollowed is to destroy them completely — body and Veyn both. Exorcism does not work (there is no spirit to banish; the corrupted Veyn IS the entity). Holy purification slows them but does not stop them. The only reliable method is to channel enough Veyn to overload the corrupted void, which requires either a Divine Weapon or a combined assault by multiple high-rank fighters.\n\n---\n\n## WHY THE SANCTUARY BREAK MATTERS\n\nThe Sanctuary Break is the theological consequence of the Vow system's greatest flaw: the Vow is supposed to be unbreakable. Angels are taught that a well-kept Vow is the foundation of their power and their identity — for an angel has no soul but the Vow, and to lose it is to lose the self. Breaking it through betrayal does not just strip them of power; it removes the structural support that keeps their spiritual architecture intact. The void that forms is not punishment — it is physics. You cannot remove a load-bearing wall and expect the building to stand.\n\nThis is why angels are so ruthless about Vow enforcement. It is not cruelty; it is mercy. An angel who breaks their Vow through betrayal will become a Hollowed — a monster wearing a face everyone remembers. The Angel Realm would rather execute a Vow-breaker quickly than let them hollow out slowly.\n\nClint Ashborn knows this. He ordered Ordium's execution not just because Ordium broke his Vow by loving a demon, but because Ordium's Vow was specifically about protecting the Angel Realm's integrity. Breaking it through the creation of a hybrid child was not just a personal failure — it was a betrayal of the exact promise Ordium swore to uphold. If Clint had let Ordium live, the Sanctuary Break would have consumed him within a year, and the resulting Hollowed would have been an Aetherblade Lord-level entity rampaging through the Angel Realm.\n\nThis is also why Wener Leger is so dangerous. He broke his Vow through ordinary failure — not betrayal of a specific person, but a general loss of faith. He did not trigger a Sanctuary Break. He remained intact, intelligent, and capable. A Fallen Angel who breaks through betrayal becomes a monster. A Fallen Angel who breaks through doubt becomes Wener Leger — which is arguably worse.",
+    "description": "They have black spotted white wings or black cherry spotted white wings and a broken halo on top of their head. Once the vow breaks, the angel is cast out of the Angel Realm and rejected by their own race — this is what makes them a Fallen Angel. They keep their wings and whatever power they had, but can never take another Veyn Vow again, so their connection to Veyn stays unstable and unregulated. This makes them strong in bursts but dangerous even to themselves, since nothing filters how much Veyn moves through them anymore.\n\nLosing the halo is also the loss of the regulator that kept an angel’s Veyn moving in the correct, even channel. Without that channel a Fallen Angel’s Veyn no longer flows the way it was built to — it surges and stalls instead of circulating steady — which means the rank-based regeneration they once had stops working. A Fallen Angel cannot heal the way a Virtue or Aetherblade Lord heals, and the Veyn-fed skills of their former rank become unreliable: the power is still in them, but it can no longer be shaped through a halo that is gone. What heals them instead is the innate trait of their race type, **Rapid-Mend** — the Fallen Angel’s born healing factor, which mends the physical body regardless of Veyn and needs no halo or vow to function. This is why a Fallen Angel survives on their body’s own resilience rather than the light they lost.\n\n---\n\n## THE SANCTUARY BREAK — VOW-BETRAYAL MADNESS\n\nNot all Vow-breaks are equal. When an angel breaks their Vow through ordinary failure — weakness, cowardice, a moment of doubt — they become a standard Fallen Angel: damaged but stable, their Veyn unregulated but their mind intact. Wener Leger is an example of this type.\n\nBut when an angel breaks their Vow through the deliberate betrayal of someone they swore to protect — not just breaking their word, but using the trust of a specific person to destroy them — the break is different. The angel does not just lose their halo; they tear a void into their own Veyn channel where the promise used to resonate. This void cannot heal. It is not a wound; it is an absence — a hole in the angel's spiritual architecture where something essential was removed.\n\nOver time — weeks, months, years, depending on the severity of the betrayal — corrupted Veyn seeps into this void. Not the clean, structured corruption of a demon's aura, but something worse: formless, directionless, hungry. It fills the absence the way water fills a crack in a dam, and it does not stop. The corrupted Veyn does not give the angel power; it takes something. It eats at their memories, their emotions, their sense of self. The angel begins to forget why they made the promise. Then they forget who they made it to. Then they forget who they were before the promise.\n\nThe process is called the Sanctuary Break — named for the theological belief that an angel's Vow is their inner sanctuary, and breaking it through betrayal is not just a failure but a demolition. The sanctuary does not collapse; it hollows out, leaving a shell that looks like the angel but is driven by something else.\n\nThe symptoms of a Sanctuary Break progress in stages:\n\n• **Stage 1 — The Hollow (Weeks 1–4):** The angel feels empty. Not sad, not angry — empty. They go through the motions of life but feel nothing. Their Veyn flickers unpredictably. They avoid people who remind them of the person they betrayed.\n\n• **Stage 2 — The Fog (Months 1–6):** The angel's memories begin to blur. They forget details — the face of the person they betrayed, the words of their Vow, the sound of their own name being called. Their Veyn becomes erratic, surging and draining without warning. They become irritable, paranoid, and prone to sudden violence.\n\n• **Stage 3 — The Hunger (Months 6–18):** The corrupted Veyn in the void begins to demand feeding. The angel discovers they can drain Veyn from others through proximity or touch — not gracefully, not with control, but with a raw, desperate hunger that frightens them. They begin to seek out Veyn sources: ley lines, Veyn-rich locations, and eventually other beings. Their personality continues to degrade. They lose empathy. They lose the ability to feel guilt.\n\n• **Stage 4 — The Hollowing (18+ Months):** The corrupted Veyn has consumed enough of the angel's will that the person they were is gone. What remains is a Veyn-hungry entity that wears the angel's body and uses their remaining power for destruction. The Hollowed do not think strategically; they consume. They are drawn to concentrations of Veyn — battlefields, Altars, ley line intersections — and they feed until they are stopped or until there is nothing left to feed on.\n\nThe Hollowed are not demons. They are not undead. They are what happens when an angel's inner sanctuary is demolished and something hungry moves into the ruins. They are the most dangerous beings in the world — not because they are powerful (though they are), but because they were once trusted. A Hollowed angel retains enough of their former abilities to be devastating, and enough of their former appearance to be recognized. The person who loved them, fought beside them, or followed them sees a familiar face — and by the time they realize what has changed, it is too late.\n\nThe only way to stop a Hollowed is to destroy them completely — body and Veyn both. Exorcism does not work (there is no spirit to banish; the corrupted Veyn IS the entity). Holy purification slows them but does not stop them. The only reliable method is to channel enough Veyn to overload the corrupted void, which requires either a Divine Weapon or a combined assault by multiple high-rank fighters.\n\n---\n\n## WHY THE SANCTUARY BREAK MATTERS\n\nThe Sanctuary Break is the theological consequence of the Vow system's greatest flaw: the Vow is supposed to be unbreakable. Angels are taught that a well-kept Vow is the foundation of their power and their identity — for an angel has no soul but the Vow, and to lose it is to lose the self. Breaking it through betrayal does not just strip them of power; it removes the structural support that keeps their spiritual architecture intact. The void that forms is not punishment — it is physics. You cannot remove a load-bearing wall and expect the building to stand.\n\nThis is why angels are so ruthless about Vow enforcement. It is not cruelty; it is mercy. An angel who breaks their Vow through betrayal will become a Hollowed — a monster wearing a face everyone remembers. The Angel Realm would rather execute a Vow-breaker quickly than let them hollow out slowly.\n\nClint Ashborn knows this. He ordered Ordium's execution not just because Ordium broke his Vow by loving a demon, but because Ordium's Vow was specifically about protecting the Angel Realm's integrity. Breaking it through the creation of a hybrid child was not just a personal failure — it was a betrayal of the exact promise Ordium swore to uphold. If Clint had let Ordium live, the Sanctuary Break would have consumed him within a year, and the resulting Hollowed would have been an Aetherblade Lord-level entity rampaging through the Angel Realm.\n\nThis is also why Wener Leger is so dangerous. He broke his Vow through ordinary failure — not betrayal of a specific person, but a general loss of faith. He did not trigger a Sanctuary Break. He remained intact, intelligent, and capable. A Fallen Angel who breaks through betrayal becomes a monster. A Fallen Angel who breaks through doubt becomes Wener Leger — which is arguably worse.",
     "fields": [
       {
         "label": "Cause",
@@ -2100,6 +2100,14 @@
       {
         "label": "Ordium Would Have Hollowed",
         "value": "Ordium's Vow was about protecting the Angel Realm's integrity. Creating a hybrid child was a betrayal of that promise. Clint knew the Sanctuary Break would have consumed Ordium within a year."
+      },
+      {
+        "label": "Veyn Flow",
+        "value": "The broken halo no longer regulates Veyn. Without a correct, even flow, the rank-based regeneration and the Veyn-fed skills of the angel’s former rank stop working — the power remains, but it cannot be channeled cleanly."
+      },
+      {
+        "label": "Healing (Rapid-Mend)",
+        "value": "Fallen Angels are healed by the innate trait of their race type, Rapid-Mend (physical healing at 5x normal speed), not by the Veyn-based regeneration of their old rank. Rapid-Mend does not heal Veyn damage or soul injuries."
       }
     ],
     "tags": [
@@ -2109,7 +2117,7 @@
       "broken halo"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-09-30T18:59:16.116Z"
+    "updatedAt": "2026-10-11T22:24:47.974Z"
   },
   {
     "id": "seed-056",
@@ -2136,7 +2144,7 @@
       },
       {
         "label": "Breaking",
-        "value": "The vow breaks when an angel betrays their own promise — not by disobeying a superior, but by breaking their own word."
+        "value": "The vow breaks when an angel betrays their own promise — not by disobeying a superior, but by breaking their own word. When the vow breaks, the halo shatters and the angel becomes a Fallen Angel: the no-longer-regulated Veyn flow strips away their rank-based regeneration and Veyn-fed skills, leaving them to heal only through the Rapid-Mend trait."
       }
     ],
     "tags": [
@@ -2146,7 +2154,7 @@
       "halo"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T22:24:47.977Z"
   },
   {
     "id": "seed-057",
@@ -2423,7 +2431,7 @@
     "category": "Magic Systems",
     "name": "Holy Energy",
     "subtitle": "The purified form of Veyn",
-    "description": "Holy energy is Veyn purified and brightened into Gold Sigil — the form of Veyn channeled by angels, saints, diviners, paladins, and other holy beings. Where raw Veyn glows a neutral Silver Sigil-blue, holy energy glows Gold Sigil and burns corruption on contact, so it is naturally strong against undead, miasma, and corrupted Veyn while doing little to anything uncorrupted. It is not a separate source of power — it is Veyn refined, drawn from the same world core and bound by the same limits.",
+    "description": "Holy energy is Veyn purified and brightened into Gold Sigil — the form of Veyn channeled by angels, saints, diviners, and other holy beings. Where raw Veyn glows a neutral Silver Sigil-blue, holy energy glows Gold Sigil and burns corruption on contact, so it is naturally strong against undead, miasma, and corrupted Veyn while doing little to anything uncorrupted. It is not a separate source of power — it is Veyn refined, drawn from the same world core and bound by the same limits.",
     "fields": [
       {
         "label": "Color",
@@ -2435,7 +2443,7 @@
       },
       {
         "label": "Used by",
-        "value": "Angels, saints, diviners, paladins, and other holy beings — including the angel half of the hybrid Jaiden Marlock."
+        "value": "Angels, saints, diviners, and other holy beings — including the angel half of the hybrid Jaiden Marlock."
       },
       {
         "label": "Effect",
@@ -2450,7 +2458,7 @@
       "purified"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-068",
@@ -2583,7 +2591,7 @@
     "category": "Magic Systems",
     "name": "Corruption Sickness",
     "subtitle": "What corrupted Veyn does to a human",
-    "description": "When a human comes into contact with corrupted Veyn, it does not kill them at once — it corrupts their own Veyn and slowly kills them over three stages, each worse than the last, like a disease eating through the body. Holy energy is the only thing that can halt or reverse it, and only in the early stages.",
+    "description": "When a human comes into contact with corrupted Veyn, it does not kill them at once — it corrupts their own Veyn and slowly kills them over three stages, each worse than the last, like a disease eating through the body. Holy energy can halt or reverse it in the early stages; beyond that, only Revenant Purification offers any reversal, and even it cannot undo the final stage.",
     "fields": [
       {
         "label": "Stage 1 — The Taint",
@@ -2604,10 +2612,10 @@
       "sickness",
       "human",
       "veyn",
-      "three stages"
+      "corruption stages"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-074",
@@ -2764,7 +2772,7 @@
       },
       {
         "label": "Description",
-        "value": "Universal ranking: D (weakest) to C to B to A to S (strongest). Determined by Veyn capacity, skill mastery, combat effectiveness. Requires training and breakthrough."
+        "value": "Universal ranking: G (weakest) through F, E, D, C, B, A, to S (strongest). Determined by Veyn capacity, skill mastery, combat effectiveness. Requires training and breakthrough."
       }
     ],
     "tags": [
@@ -2774,7 +2782,7 @@
       "level"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-081",
@@ -3212,7 +3220,7 @@
       "adept"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:53.893Z"
   },
   {
     "id": "seed-093",
@@ -3371,7 +3379,7 @@
     "category": "Rune Star Circles",
     "name": "7th Circle Rune Star",
     "subtitle": "Mage Circle 7 — Transcendent",
-    "description": "The seventh and final circle. Seven Rune Stars form a complete constellation — a perfect seal of Veyn that grants the Mage control over the fundamental forces of reality itself. At this circle, the Mage can creation and destruction are the same gesture. They can rewrite history, reshape the world, and touch the domain of gods. Only one being in recorded history has ever reached the 7th Circle, and the world was never the same. The power of a 7th Circle spell is not measured in destruction — it is measured in what ceases to exist. The Rune Star is physically carved into the Mage's heart — each circle is a new sigil burned into the cardiac tissue by Veyn. The process is excruciatingly painful, as the heart is the most sensitive organ in the body and the Veyn must be channeled directly into living flesh. Upgrading is not optional once begun — a half-inscribed Rune Star will destabilize and kill the Mage. Each circle must be completed fully before the next can be attempted. Skipping circles is suicide: the backlash from an incomplete inscription tears through the heart and kills the Mage instantly. This is why Mages must progress step by step, one circle at a time, enduring the agony of each inscription knowing that hesitation or impatience means death.",
+    "description": "The seventh and final circle. Seven Rune Stars form a complete constellation — a perfect seal of Veyn that grants the Mage control over the fundamental forces of reality itself. At this circle, the Mage can creation and destruction can be the same gesture. They can rewrite history, reshape the world, and touch the domain of gods. Only one being in recorded history has ever reached the 7th Circle, and the world was never the same. The power of a 7th Circle spell is not measured in destruction — it is measured in what ceases to exist. The Rune Star is physically carved into the Mage's heart — each circle is a new sigil burned into the cardiac tissue by Veyn. The process is excruciatingly painful, as the heart is the most sensitive organ in the body and the Veyn must be channeled directly into living flesh. Upgrading is not optional once begun — a half-inscribed Rune Star will destabilize and kill the Mage. Each circle must be completed fully before the next can be attempted. Skipping circles is suicide: the backlash from an incomplete inscription tears through the heart and kills the Mage instantly. This is why Mages must progress step by step, one circle at a time, enduring the agony of each inscription knowing that hesitation or impatience means death.",
     "fields": [
       {
         "label": "Circle",
@@ -3407,7 +3415,7 @@
       "legendary"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:53.893Z"
   },
   {
     "id": "seed-098",
@@ -3422,7 +3430,7 @@
       },
       {
         "label": "Description",
-        "value": "18 classes: Blood Alchemist, Beast Tamer, Blacksmith, Rune Scribe, Seer, Exorcist, Broker, Cleric, Medic, Windbow Archer, Golden Knight, Necromancer, Blade Dancer, Berserker, Guardian, Crossbowman, Shadow Blade, Lore Keeper."
+        "value": "19 classes: Mage, Alchemist, Beastmaster, Blacksmith, Enchanter, Diviner, Exorcist, Broker, Saintess, Clergy, Archer, Paladin, Grimtender, Bladesinger, Berserker, Sentinel, Ren Archer, Veilrunner, Shudonkeeper."
       }
     ],
     "tags": [
@@ -3431,7 +3439,7 @@
       "system"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-099",
@@ -4283,7 +4291,7 @@
     "category": "Items",
     "name": "Hermes Robe",
     "subtitle": "20x speed",
-    "description": "It enhances your speed by 20 times.",
+    "description": "It enhances your speed by 20%.",
     "fields": [
       {
         "label": "Type",
@@ -4304,7 +4312,7 @@
       "speed"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-129",
@@ -4681,7 +4689,7 @@
     "category": "Characters",
     "name": "Jaiden Marlock",
     "subtitle": "The first Angel-Demon Hybrid — protagonist of the Half-Made World",
-    "description": "Jaiden Marlock is the first Angel-Demon Hybrid in the world's history — son of Ordium, an Aetherblade Lord Angel, and Lisa, a Bloodward demon. Their forbidden love produced an abomination both realms would destroy, so Lisa gave the child to her maid Sofia with the Auralis Ruby to seal his auras. Sofia fled to the Human Realm, and Jaiden grew up believing himself ordinary.\n\nHe is the subject of the Prophecy of the Half-Made — the being who will stand at the fourth turning and choose \"the seam or the silence.\" Every faction has a plan for him: Clint Ashborn wants him controlled, Tera Morage wants him dead, Ruby Divina wants him as leverage, Wener Leger wants him as a weapon, and Kael von Ashen wants to show him the truth.\n\nJaiden does not know any of this. He is fifteen, living with Sofia, whose awakening at the Sundering Altar has already gone wrong. The story is about him learning what he is, deciding what it means, and choosing what to do with it.\n\n---\n\n## APPEARANCE\n\nNormal Form (sealed by Auralis Ruby):\nJaiden looks fully human — no wings, no horns, no halo. He is a lean, sharp-featured young man of about 15, with dark hair that falls past his ears and grey eyes that occasionally flicker with an inner light he cannot explain. He is of average height but carries himself like someone used to being watched, shoulders slightly hunched, eyes always moving. His most distinctive feature is the Auralis Ruby pendant at his throat — a deep red stone that pulses faintly with a light only he can feel. When the seals strain, the ruby grows warm and his veins glow faintly beneath his skin, alternating between Gold Sigil (angelic) and violet (demonic).\n\nTrue Form (when seals release):\nIn his full hybrid form, he is something no one has ever seen: 3 pure white feathery wings on one half of his body, 3 black feathery wings on the other, 6 horns curling from his forehead, and a halo split in half floating above his head — one half golden and bright, the other half dark and cracked. Both the angelic and demonic auras surround him simultaneously, creating a pressure that makes the air feel heavy. His eyes become heterochromatic: one Gold Sigil, one violet.\n\n---\n\n## PERSONALITY\n\nCore Traits:\n  • Curious — Jaiden asks questions constantly. He wants to understand how things work, why people do what they do, and what he is. This curiosity is his greatest strength and his greatest danger — it leads him to truths that others would prefer stayed hidden.\n  • Stubborn — Once Jaiden decides something matters, he does not let go. This makes him resilient in the face of overwhelming odds but also prone to tunnel vision when he should be adapting.\n  • Compassionate — He cares about people, even people who have no reason to care about him. This is partly nature (his angel half) and partly upbringing (Sofia raised him to be kind). It is also his greatest vulnerability — caring about people gives the world leverage over him.\n  • Self-doubting — Jaiden does not trust his own judgment. He has spent his life being told he is different, hiding his true nature, and relying on others to keep him safe. When the weight of decision falls on him, he hesitates. The story is about him learning to trust himself.\n  • Dry humor — Jaiden copes with fear and confusion through sarcasm. He is not a jokester; his humor is quiet, observational, and often self-deprecating. It is a defense mechanism, and people who know him well can tell when he is afraid by how sharp his wit becomes.\n\nHow Others See Him:\n  • Sofia: The child she raised. She sees the boy he was, not the weapon others want him to be. She is fiercely protective and terrified of the day she cannot protect him anymore.\n  • Bella Rose: His childhood friend. She sees someone who has always been quietly extraordinary — someone who helps without being asked and disappears when the attention gets too heavy. She does not know his secret, but she knows he is hiding something.\n  • Mark Wesley: His loyal friend. Mark sees Jaiden as the person who made him feel like he belonged at the Academy. Mark is uncomplicated and warm, and his friendship is one of the few things that makes Jaiden feel normal.\n  • Carin: His demonic trainer. She sees Lisa in him — the same stubbornness, the same quiet fury — and it both comforts and frightens her. She pushes him hard because she knows the world will push harder.\n  • Kael von Ashen: The last Aelthar sees in Jaiden the possibility that the Sundering can be healed — or the certainty that it will be completed. He treats Jaiden with a mixture of hope and caution that Jaiden finds unsettling.\n  • Clint Ashborn: The Serapharch sees a threat to everything he has built. Jaiden's existence is proof that the Angel Realm's laws are incomplete, and Clint does not tolerate incompleteness.\n  • Ruby Divina: The mortal ruler sees a card to play. She shields Jaiden not from kindness but because he is humanity's insurance policy. She respects him but does not love him — yet.\n  • Wener Leger: The fallen angel sees a weapon. Jaiden's hybrid nature makes him the most dangerous being in the world, and Wener wants to control that danger.\n\n---\n\n## INTERNAL CONFLICTS\n\n1. Identity: \"What am I?\"\nJaiden is neither angel nor demon nor human. He is all three and none of them. Every culture in the world has a place for its people — angels have the Vow, demons have the Pact, humans have the Faith — but Jaiden has no category. He cannot take the Vow (no single promise binds both natures), he cannot make a Pact (demons would reject him as an abomination), and the World Core Faith does not account for beings like him. He must build his own identity from scratch, which is terrifying when you are 15 and the world already wants to define you.\n\n2. Belonging: \"Where do I fit?\"\nJaiden has spent his life hiding. The Auralis Ruby seals his true form, making him look human. He has friends at the Academy — Bella, Mark, Eva — but they do not know what he is. Every relationship he has is built on a lie of omission. When the truth comes out, some people will stand by him. Others will not. The fear of losing the people he loves keeps him hiding, but hiding keeps him from being truly known.\n\n3. Power: \"What can I do with this?\"\nJaiden has more Veyn than any angel or demon his age. He can draw on both holy energy and corrupted Veyn. He can enter forms that no one has ever seen. But power without control is destruction. Every time he releases a seal, the strain passes to the next one. Every time he fights, he risks breaking the Auralis Ruby entirely — and if all five seals break at once, his full hybrid form will manifest whether he wants it to or not. He must learn to control what he is before it controls him.\n\n4. Legacy: \"What did my parents do?\"\nJaiden's parents are dead. Lisa was killed by Licent Varak's men. Ordium was executed by Clint Ashborn's order. They died for loving each other and for creating him. Jaiden carries their legacy — and their enemies. Licent Varak wants him dead because he is proof of Lisa's \"crime.\" Clint Ashborn wants him controlled because he is proof that the Angel Realm's laws are incomplete. Jaiden must decide whether to honor his parents by living quietly or by changing the world they died in.\n\n5. The Ascension: \"Do I reach for godhood?\"\nThe myth of the Failed Ascension says the last being who reached for godhood broke the world into three horrors — the World Eater, the Abyssal Wyrm, and the Void Colossus. Now those three are released, and the only power that can stop them is the same thing the myth forbids: the ascension itself. Jaiden must decide whether to attempt the thing that broke the world, knowing that if he fails, he becomes something worse than the monsters he is trying to stop.\n\n---\n\n## CHARACTER ARC\n\nAct 1 — The Sealed Boy (Beginning)\nJaiden lives with Sofia in the Human Realm. He is fifteen. His awakening at the Sundering Altar has already happened, and it stuttered — two auras where there should have been one. He does not yet understand what he is. The Auralis Ruby keeps his seals intact, but it cracked at the altar, and the crack is still mending. He has always known he is different. The seals sometimes strain. The ruby sometimes grows warm. He has never told anyone.\n\nInciting Incident: At the Academy awakening, the Altar reacts to Jaiden unlike any other student. The Veyn signature it reads is impossible — two conflicting auras, one angelic, one demonic, in the same body. The Altar does not crash, but it stutters. Kael von Ashen, who is watching, goes very still. Bella Rose, standing nearby, feels her own Veyn surge in response — the reflexive surge from the world core, triggered by Jaiden's presence. Something has begun.\n\nAct 2 — The Unraveling (Middle)\nJaiden enters the Academy. He befriends Bella Rose, Mark Wesley, and Eva Aldermere Divina. He trains in his Mage class. He struggles with the fact that his Veyn feels wrong — too much of it, too volatile, as though two competing forces are fighting inside him. The seals on the Auralis Ruby begin to strain. He discovers he can release the first seal temporarily, revealing his halo and two horns — the \"Halo & Horns\" form. The Academy notices. Kael von Ashen takes him aside and tells him the truth about his parentage. Jaiden learns he is the son of Ordium and Lisa, that both are dead, and that he is the subject of an ancient prophecy.\n\nMidpoint Shift: Wener Leger, posing as a swordsmanship teacher, reveals himself to Jaiden as a fallen angel — and tells him that Dark Moon knows what he is. Licent Varak has sent agents to the Academy. The ticking clock begins: Jaiden must master his forms before the fourth turning, because if he cannot control his power, someone else will control it for him.\n\nAct 3 — The Ascension (Endgame)\nThe fourth turning arrives, and the seals fail. The three horrors of the Failed Ascension are released: the World Eater surges in the Core, the Abyssal Wyrm claws toward the surface, and the Void Colossus tears at the realm barrier. Every faction scrambles, and none of it matters — because the only power that can stop three pieces of a ruined god is godhood itself. Jaiden must attempt the ascension: to reach for the World Core’s will and become the thing that holds the world, the very thing the First Ascendant failed to do and broke itself doing. The myth is not a warning he can heed. It is a path he must walk.\n\nResolution: Jaiden walks the path of the Failed Ascension — not to rule, but to save. He reaches for the World Core, and the Core, which once rejected the First Ascendant, does not reject him: because where the First Ascendant reached in hunger, Jaiden reaches in surrender, giving the Core his own will rather than trying to take its place. What happens next is the story’s climax — whether he succeeds where the myth failed, or becomes the fourth horror. The world is saved or unmade by a boy of fifteen who was never supposed to exist, attempting the one thing the world has spent a thousand years begging never to happen again.\n\n---\n\n## RELATIONSHIPS\n\nSofia Marlock (Guardian):\nThe woman who raised him. Jaiden loves Sofia more than anyone in the world. She is the only person who has always known what he is and loved him anyway. When the truth comes out, Sofia is the person he turns to first. She cannot protect him anymore — the world is too big, the enemies too powerful — but she can remind him of who he was before the prophecy, and that is enough to keep him grounded.\n\nBella Rose (Childhood Friend / Love Interest):\nJaiden has been in love with Bella since he was old enough to understand what love was. She does not know his secret, and the fear of her rejection keeps him at arm's length. When she learns the truth, their friendship fractures — not because she hates what he is, but because she hates that he hid it from her. Their relationship rebuilds slowly, forged in the fire of the fourth turning, and becomes something stronger than friendship but different from what Jaiden imagined.\n\nMark Wesley (Best Friend):\nMark is the person who makes Jaiden feel normal. He is warm, loyal, and uncomplicated — everything Jaiden is not. When Mark learns the truth, he does not hesitate: \"You're still my friend. I don't care what you are.\" This simple acceptance is one of the most important moments in Jaiden's arc.\n\nKael von Ashen (Mentor):\nThe last Aelthar is the closest thing Jaiden has to a father figure — and the most complicated. Kael teaches Jaiden about his heritage, the Hidden Realm, and the Aelthar's legacy. But Kael also has his own agenda: he wants the Sundering healed, and he is willing to use Jaiden to do it. Jaiden must learn to trust Kael's wisdom without surrendering his own judgment.\n\nCarin (Demonic Trainer):\nCarin trained Lisa, and now she trains Jaiden. She pushes him hard because she knows what the world will do to someone who is not prepared. She does not coddle him, and Jaiden resents her for it — until he realizes she is the only person teaching him the truth about his demonic half without romanticizing it.\n\nEva Aldermere Divina (Ally):\nRuby Divina's daughter, attending the Academy on her mother's orders. Eva is political, ambitious, and genuinely kind — a combination that Jaiden finds confusing. She becomes his ally because her mother told her to, but she stays his ally because she believes in what he could become.\n\nLicent Varak (Enemy):\nThe man who killed Jaiden's mother. Licent does not hate Jaiden personally — he hates what Jaiden represents: proof that Lisa's \"crime\" produced something powerful, something that validates everything Licent fought to destroy. Licent wants Jaiden dead because Jaiden's existence makes his betrayal of Lisa look like a mistake.\n\nClint Ashborn (Antagonist):\nThe Serapharch ordered Ordium's execution and has spent years trying to ensure no hybrid ever exists. Jaiden is proof that Clint's order failed. Clint does not hate Jaiden — he fears him. A being that carries both Vow and Pact is a theological crisis for the Angel Realm, and Clint will do anything to contain that crisis.\n\nWener Leger (Manipulator):\nThe fallen angel sees Jaiden as the ultimate weapon — a being who can wield both holy and demonic energy. Wener wants to control Jaiden, not kill him. His manipulation is subtle: he tells Jaiden truths that lead to the conclusions Wener wants. The hardest part for Jaiden is that Wener is not entirely wrong — the world IS unfair, the realms ARE broken, and the prophecy IS ambiguous. Jaiden must learn to distinguish between truth and manipulation.\n\nTera Morage (Threat):\nThe Mordrach wants Jaiden dead because he is an abomination — a being that carries both Vow and Pact in one body. Tera sees him as a threat to the natural order that demons depend on. She will send her generals to kill him before the fourth turning.\n\nRuby Divina (Protector / User):\nThe mortal ruler shields Jaiden because he is humanity's leverage. She does not love him — she respects him. When the time comes, she will ask him to choose humanity's interests over his own. Whether he does depends on how much she has earned his trust.\n\n---\n\n## ABILITIES & LIMITATIONS\n\nClass: Mage\nRune Star Circle: 3rd Circle\nPower Level: Artificer\nInherited Skills: Auralis Seal, The Stolen Hour\n\nWhat he can do:\n  • Channel both Holy Energy (angelic) and Corrupted Veyn (demonic) — something no other being can do\n  • Enter 5 distinct forms (sealed by the Auralis Ruby)\n  • In True Hybrid Form, his skills fuse — each Aetherblade Lord skill and each Bloodward skill merge into a single hybrid skill\n  • His Veyn reserves are abnormally large — more than any angel or demon his age\n  • He can sense both holy and corrupted Veyn, giving him awareness that others lack\n\nWhat he cannot do:\n  • Take the Veyn Vow — no single promise binds both natures\n  • Make a Demon Pact — demons would reject him as an abomination\n  • Fully control his forms — each seal release strains the Auralis Ruby\n  • Mix Veyn and Ren — the incompatibility rule would kill him\n  • Trust his own power — every time he uses it, he risks losing control\n\nThe Auralis Ruby:\n  • 5 seals, escalating in strength\n  • 1st seal: weakest, can be released temporarily (Halo & Horns form)\n  • 2nd seal: stronger (Full Angel Form)\n  • 3rd seal: stronger still (Full Demon Form)\n  • 4th seal: very strong (partial hybrid)\n  • 5th seal: the strongest, holding back his full True Hybrid Form\n  • When a seal breaks, strain passes to the next\n  • Broken seals mend over time but never to full strength\n  • If all 5 seals break at once, Jaiden manifests his full form whether he wants to or not",
+    "description": "Jaiden Marlock is the first Angel-Demon Hybrid in the world's history — son of Ordium, an Aetherblade Lord Angel, and Lisa, a Bloodward demon. Their forbidden love produced an abomination both realms would destroy, so Lisa gave the child to her maid Sofia with the Auralis Ruby to seal his auras. Sofia fled to the Human Realm, and Jaiden grew up believing himself ordinary.\n\nHe is the subject of the Prophecy of the Half-Made — the being who will stand at the fourth turning and choose \"the seam or the silence.\" Every faction has a plan for him: Clint Ashborn wants him controlled, Tera Morage wants him dead, Ruby Divina wants him as leverage, Wener Leger wants him as a weapon, and Kael von Ashen wants to show him the truth.\n\nJaiden does not know any of this. He is fifteen, living with Sofia, whose awakening at the Sundering Altar has already gone wrong. The story is about him learning what he is, deciding what it means, and choosing what to do with it.\n\n---\n\n## APPEARANCE\n\nNormal Form (sealed by Auralis Ruby):\nJaiden looks fully human — no wings, no horns, no halo. He is a lean, sharp-featured young man of about 15, with dark hair that falls past his ears and grey eyes that occasionally flicker with an inner light he cannot explain. He is of average height but carries himself like someone used to being watched, shoulders slightly hunched, eyes always moving. His most distinctive feature is the Auralis Ruby pendant at his throat — a deep red stone that pulses faintly with a light only he can feel. When the seals strain, the ruby grows warm and his veins glow faintly beneath his skin, alternating between Gold Sigil (angelic) and violet (demonic).\n\nTrue Form (when seals release):\nIn his full hybrid form, he is something no one has ever seen: 3 pure white feathery wings on one half of his body, 3 black feathery wings on the other, 6 horns curling from his forehead, and a halo split in half floating above his head — one half golden and bright, the other half dark and cracked. Both the angelic and demonic auras surround him simultaneously, creating a pressure that makes the air feel heavy. His eyes become heterochromatic: one Gold Sigil, one violet.\n\n---\n\n## PERSONALITY\n\nCore Traits:\n  • Curious — Jaiden asks questions constantly. He wants to understand how things work, why people do what they do, and what he is. This curiosity is his greatest strength and his greatest danger — it leads him to truths that others would prefer stayed hidden.\n  • Stubborn — Once Jaiden decides something matters, he does not let go. This makes him resilient in the face of overwhelming odds but also prone to tunnel vision when he should be adapting.\n  • Compassionate — He cares about people, even people who have no reason to care about him. This is partly nature (his angel half) and partly upbringing (Sofia raised him to be kind). It is also his greatest vulnerability — caring about people gives the world leverage over him.\n  • Self-doubting — Jaiden does not trust his own judgment. He has spent his life being told he is different, hiding his true nature, and relying on others to keep him safe. When the weight of decision falls on him, he hesitates. The story is about him learning to trust himself.\n  • Dry humor — Jaiden copes with fear and confusion through sarcasm. He is not a jokester; his humor is quiet, observational, and often self-deprecating. It is a defense mechanism, and people who know him well can tell when he is afraid by how sharp his wit becomes.\n\nHow Others See Him:\n  • Sofia: The child she raised. She sees the boy he was, not the weapon others want him to be. She is fiercely protective and terrified of the day she cannot protect him anymore.\n  • Bella Rose: His childhood friend. She sees someone who has always been quietly extraordinary — someone who helps without being asked and disappears when the attention gets too heavy. She does not know his secret, but she knows he is hiding something.\n  • Mark Wesley: His loyal friend. Mark sees Jaiden as the person who made him feel like he belonged at the Academy. Mark is uncomplicated and warm, and his friendship is one of the few things that makes Jaiden feel normal.\n  • Carin: His demonic trainer. She sees Lisa in him — the same stubbornness, the same quiet fury — and it both comforts and frightens her. She pushes him hard because she knows the world will push harder.\n  • Kael von Ashen: The last Aelthar sees in Jaiden the possibility that the Sundering can be healed — or the certainty that it will be completed. He treats Jaiden with a mixture of hope and caution that Jaiden finds unsettling.\n  • Clint Ashborn: The Serapharch sees a threat to everything he has built. Jaiden's existence is proof that the Angel Realm's laws are incomplete, and Clint does not tolerate incompleteness.\n  • Ruby Divina: The mortal ruler sees a card to play. She shields Jaiden not from kindness but because he is humanity's insurance policy. She respects him but does not love him — yet.\n  • Wener Leger: The fallen angel sees a weapon. Jaiden's hybrid nature makes him the most dangerous being in the world, and Wener wants to control that danger.\n\n---\n\n## INTERNAL CONFLICTS\n\n1. Identity: \"What am I?\"\nJaiden is neither angel nor demon nor human. He is all three and none of them. Every culture in the world has a place for its people — angels have the Vow, demons have the Pact, humans have the Faith — but Jaiden has no category. He cannot take the Vow (no single promise binds both natures), he cannot make a Pact (demons would reject him as an abomination), and the World Core Faith does not account for beings like him. He must build his own identity from scratch, which is terrifying when you are 15 and the world already wants to define you.\n\n2. Belonging: \"Where do I fit?\"\nJaiden has spent his life hiding. The Auralis Ruby seals his true form, making him look human. He has friends at the Academy — Bella, Mark, Eva — but they do not know what he is. Every relationship he has is built on a lie of omission. When the truth comes out, some people will stand by him. Others will not. The fear of losing the people he loves keeps him hiding, but hiding keeps him from being truly known.\n\n3. Power: \"What can I do with this?\"\nJaiden has more Veyn than any angel or demon his age. He can draw on both holy energy and corrupted Veyn. He can enter forms that no one has ever seen. But power without control is destruction. Every time he releases a seal, the strain passes to the next one. Every time he fights, he risks breaking the Auralis Ruby entirely — and if all five seals break at once, his full hybrid form will manifest whether he wants it to or not. He must learn to control what he is before it controls him.\n\n4. Legacy: \"What did my parents do?\"\nJaiden's parents are dead. Lisa was killed by Licent Varak's men. Ordium was executed by Clint Ashborn's order. They died for loving each other and for creating him. Jaiden carries their legacy — and their enemies. Licent Varak wants him dead because he is proof of Lisa's \"crime.\" Clint Ashborn wants him controlled because he is proof that the Angel Realm's laws are incomplete. Jaiden must decide whether to honor his parents by living quietly or by changing the world they died in.\n\n5. The Ascension: \"Do I reach for godhood?\"\nThe myth of the Failed Ascension says the last being who reached for godhood broke the world into three horrors — the World Eater, the Abyssal Wyrm, and the Void Colossus. Now those three are released, and the only power that can stop them is the same thing the myth forbids: the ascension itself. Jaiden must decide whether to attempt the thing that broke the world, knowing that if he fails, he becomes something worse than the monsters he is trying to stop.\n\n---\n\n## CHARACTER ARC\n\nAct 1 — The Sealed Boy (Beginning)\nJaiden lives with Sofia in the Human Realm. He is fifteen. His awakening at the Sundering Altar has already happened, and it stuttered — two auras where there should have been one. He does not yet understand what he is. The Auralis Ruby keeps his seals intact, but it cracked at the altar, and the crack is still mending. He has always known he is different. The seals sometimes strain. The ruby sometimes grows warm. He has never told anyone.\n\nInciting Incident: At the Academy awakening, the Altar reacts to Jaiden unlike any other student. The Veyn signature it reads is impossible — two conflicting auras, one angelic, one demonic, in the same body. The Altar does not crash, but it stutters. Kael von Ashen, who is watching, goes very still. Bella Rose, standing nearby, feels her own Veyn surge in response — the reflexive surge from the world core, triggered by Jaiden's presence. Something has begun.\n\nAct 2 — The Unraveling (Middle)\nJaiden enters the Academy. He befriends Bella Rose, Mark Wesley, and Eva Aldermere Divina. He trains in his Mage class. He struggles with the fact that his Veyn feels wrong — too much of it, too volatile, as though two competing forces are fighting inside him. The seals on the Auralis Ruby begin to strain. He discovers he can release the first seal temporarily, revealing his halo and two horns — the \"Halo & Horns\" form. The Academy notices. Kael von Ashen takes him aside and tells him the truth about his parentage. Jaiden learns he is the son of Ordium and Lisa, that both are dead, and that he is the subject of an ancient prophecy.\n\nMidpoint Shift: Wener Leger, posing as a swordsmanship teacher, reveals himself to Jaiden as a fallen angel — and tells him that Dark Moon knows what he is. Licent Varak has sent agents to the Academy. The ticking clock begins: Jaiden must master his forms before the fourth turning, because if he cannot control his power, someone else will control it for him.\n\nAct 3 — The Ascension (Endgame)\nThe fourth turning arrives, and the seals fail. The three horrors of the Failed Ascension are released: the World Eater surges in the Core, the Abyssal Wyrm claws toward the surface, and the Void Colossus tears at the realm barrier. Every faction scrambles, and none of it matters — because the only power that can stop three pieces of a ruined god is godhood itself. Jaiden must attempt the ascension: to reach for the World Core’s will and become the thing that holds the world, the very thing the First Ascendant failed to do and broke itself doing. The myth is not a warning he can heed. It is a path he must walk.\n\nResolution: Jaiden walks the path of the Failed Ascension — not to rule, but to save. He reaches for the World Core, and the Core, which once rejected the First Ascendant, does not reject him: because where the First Ascendant reached in hunger, Jaiden reaches in surrender, giving the Core his own will rather than trying to take its place. What happens next is the story’s climax — whether he succeeds where the myth failed, or becomes the fourth horror. The world is saved or unmade by a boy of fifteen who was never supposed to exist, attempting the one thing the world has spent a thousand years begging never to happen again.\n\n---\n\n## RELATIONSHIPS\n\nSofia Marlock (Guardian):\nThe woman who raised him. Jaiden loves Sofia more than anyone in the world. She is the only person who has always known what he is and loved him anyway. When the truth comes out, Sofia is the person he turns to first. She cannot protect him anymore — the world is too big, the enemies too powerful — but she can remind him of who he was before the prophecy, and that is enough to keep him grounded.\n\nBella Rose (Childhood Friend / Love Interest):\nJaiden has been in love with Bella since he was old enough to understand what love was. She does not know his secret, and the fear of her rejection keeps him at arm's length. When she learns the truth, their friendship fractures — not because she hates what he is, but because she hates that he hid it from her. Their relationship rebuilds slowly, forged in the fire of the fourth turning, and becomes something stronger than friendship but different from what Jaiden imagined.\n\nMark Wesley (Best Friend):\nMark is the person who makes Jaiden feel normal. He is warm, loyal, and uncomplicated — everything Jaiden is not. When Mark learns the truth, he does not hesitate: \"You're still my friend. I don't care what you are.\" This simple acceptance is one of the most important moments in Jaiden's arc.\n\nKael von Ashen (Mentor):\nThe last Aelthar is the closest thing Jaiden has to a father figure — and the most complicated. Kael teaches Jaiden about his heritage, the Hidden Realm, and the Aelthar's legacy. But Kael also has his own agenda: he wants the Sundering healed, and he is willing to use Jaiden to do it. Jaiden must learn to trust Kael's wisdom without surrendering his own judgment.\n\nCarin (Demonic Trainer):\nCarin trained Lisa, and now she trains Jaiden. She pushes him hard because she knows what the world will do to someone who is not prepared. She does not coddle him, and Jaiden resents her for it — until he realizes she is the only person teaching him the truth about his demonic half without romanticizing it.\n\nEva Aldermere Divina (Ally):\nRuby Divina's daughter, attending the Academy on her mother's orders. Eva is political, ambitious, and genuinely kind — a combination that Jaiden finds confusing. She becomes his ally because her mother told her to, but she stays his ally because she believes in what he could become.\n\nLicent Varak (Enemy):\nThe man who killed Jaiden's mother. Licent does not hate Jaiden personally — he hates what Jaiden represents: proof that Lisa's \"crime\" produced something powerful, something that validates everything Licent fought to destroy. Licent wants Jaiden dead because Jaiden's existence makes his betrayal of Lisa look like a mistake.\n\nClint Ashborn (Antagonist):\nThe Serapharch ordered Ordium's execution and has spent years trying to ensure no hybrid ever exists. Jaiden is proof that Clint's order failed. Clint does not hate Jaiden — he fears him. A being that carries both Vow and Pact is a theological crisis for the Angel Realm, and Clint will do anything to contain that crisis.\n\nWener Leger (Manipulator):\nThe fallen angel sees Jaiden as the ultimate weapon — a being who can wield both holy and demonic energy. Wener wants to control Jaiden, not kill him. His manipulation is subtle: he tells Jaiden truths that lead to the conclusions Wener wants. The hardest part for Jaiden is that Wener is not entirely wrong — the world IS unfair, the realms ARE broken, and the prophecy IS ambiguous. Jaiden must learn to distinguish between truth and manipulation.\n\nTera Morage (Threat):\nThe Mordrach wants Jaiden dead because he is an abomination — a being that carries both Vow and Pact in one body. Tera sees him as a threat to the natural order that demons depend on. She will send her generals to kill him before the fourth turning.\n\nRuby Divina (Protector / User):\nThe mortal ruler shields Jaiden because he is humanity's leverage. She does not love him — she respects him. When the time comes, she will ask him to choose humanity's interests over his own. Whether he does depends on how much she has earned his trust.\n\n---\n\n## ABILITIES & LIMITATIONS\n\nClass: Mage\nRune Star Circle: 3rd Circle\nPower Level: Artificer\nInherited Skills: Auralis Seal, The Stolen Hour\n\nWhat he can do:\n  • Channel both Holy Energy (angelic) and Corrupted Veyn (demonic) — something no other being can do\n  • Enter 5 distinct forms (sealed by the Auralis Ruby)\n  • In True Hybrid Form, his skills fuse — each Aetherblade Lord skill and each Bloodward skill merge into a single hybrid skill\n  • His Veyn reserves are abnormally large — more than any angel or demon his age\n  • He can sense both holy and corrupted Veyn, giving him awareness that others lack\n\nWhat he cannot do:\n  • Take the Veyn Vow — no single promise binds both natures\n  • Make a Demon Pact — demons would reject him as an abomination\n  • Fully control his forms — each seal release strains the Auralis Ruby\n  • Mix Veyn and Ren — the incompatibility rule would kill him\n  • Trust his own power — every time he uses it, he risks losing control\n\nThe Auralis Ruby:\n  • 5 seals, escalating in strength\n  • 1st seal → Full Angel Form (Form 2)\n  • 2nd seal → Full Demon Form (Form 3)\n  • 3rd seal → Halo & Horns (Form 4, unstable partial mix)\n  • 4th seal → Deepens hybrid control\n  • 5th seal → True Hybrid Form (Form 5, full manifestation)\n  • When a seal breaks, strain passes to the next\n  • Broken seals mend over time but never to full strength\n  • If all 5 seals break at once, Jaiden manifests his full form whether he wants to or not",
     "fields": [
       {
         "label": "Appearance",
@@ -4751,7 +4759,7 @@
       "main character"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-09-30T14:20:33.464Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-144",
@@ -5128,7 +5136,7 @@
       "betrayal"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-152",
@@ -5253,54 +5261,50 @@
       "normal"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-155",
     "category": "Character Forms",
-    "name": "Jaiden Marlock — Halo & Horns",
-    "subtitle": "Fourth Form of 5 — Jaiden Marlock",
-    "description": "The first seal release. A halo appears above his head and two horns emerge from his forehead, using partial abilities of both an angel and a demon. This is the form Jaiden discovers first — the least dangerous transformation, and the one that teaches him what he truly is. It is also the form that nearly exposes him at the Academy.",
+    "name": "Jaiden Marlock — Chaos Form",
+    "subtitle": "Fourth Form of 5 — Chaos Form",
+    "description": "An unstable blend triggered at the peak of simultaneous angel/demon pressure: form 4 represents chaotic co-activation rather than balanced unification. Wings are incomplete or flicker between states, halo fractures, horns appear asymmetrically, and Veyn flows erratically between holy and corrupted. Skills cannot fully fuse; instead they surge and backlash, producing unpredictable bursts of power. Extremely high strain and low control.",
     "fields": [
       {
         "label": "Seal",
-        "value": "1st seal released — the weakest seal, easiest to break and easiest to restore"
+        "value": "3rd seal break/strain — partial dual activation (unstable)"
       },
       {
         "label": "Visual",
-        "value": "A faint golden halo flickers above his head, uneven and uncertain — not the steady glow of an angel. Two small horns curve from his forehead, dark and smooth, barely more than bumps. His eyes may shift — one flickering Gold Sigil, one violet — but not permanently. His aura is a thin, unstable mix of angelic warmth and demonic chill."
+        "value": "Wings flicker: partially manifested as white and black feathers, unstable and shifting. Halo fractured, half-glowing, half-flickering. Horns asymmetrical. Veins pulse erratically between Gold Sigil and violet."
       },
       {
         "label": "Abilities",
-        "value": "Partial access to both angelic and demonic skills — weaker versions of each. Can channel small amounts of Holy Energy and Corrupted Veyn simultaneously. Angelic Aura (Lumen-level, barely perceptible) and Demonic Aura (Gnash-level, unsettling presence). Can sense both holy and corrupted Veyn in the environment."
+        "value": "Raw, overwhelming power in bursts. Unpredictable surges let skills trigger multiple times or with doubled intensity, but at the cost of backlash. Can overwhelm opponents through sheer chaos, though control is minimal."
       },
       {
         "label": "Aura",
-        "value": "Thin, unstable — a mix of angelic warmth and demonic chill that makes people nearby feel uneasy without knowing why"
+        "value": "Violently fluctuating between holy warmth and demonic chill; causes spatial distortion in small radius."
       },
       {
         "label": "Trigger",
-        "value": "Voluntary release of the 1st seal — Jaiden must consciously choose to let the seal crack. Can also be triggered by extreme emotional stress (fear, anger, desperation) if the seal is already weakened."
+        "value": "Uncontrolled surge when both seals are stressed, or forced partial release; difficult to maintain voluntarily."
       },
       {
         "label": "Cost",
-        "value": "The strain passes to the 2nd seal, weakening it slightly. Jaiden feels a headache and mild nausea. The longer he holds this form, the more the strain accumulates."
+        "value": "Very high and erratic. Backlash damage to self is common."
       },
       {
         "label": "Duration",
-        "value": "Sustainable for minutes to hours depending on seal condition. First time: barely 30 seconds. After training: up to 2 hours."
+        "value": "Moments to seconds unless stabilized immediately."
       },
       {
         "label": "Risk",
-        "value": "If held too long, the 2nd seal may crack prematurely, forcing an uncontrolled transition to Full Angel or Full Demon form. The unstable aura can be detected by anyone with strong Veyn sensitivity — Diviners, high-rank angels, high-rank demons."
+        "value": "High risk of seal cascade and self-injury; aura is easily detectable."
       },
       {
         "label": "Story Role",
-        "value": "The form of revelation — Jaiden first sees himself as he truly is. It is both liberating and terrifying. This form nearly exposes him at the Academy and forces Kael von Ashen to reveal the truth."
-      },
-      {
-        "label": "Lore Connections",
-        "value": "Auralis Ruby seal chain, angelic/demonic aura mixing, Kael von Ashen's observation, Bella Rose's Veyn surge response"
+        "value": "The breaking point: the unstable state before achieving True Hybrid (Form 5) through control."
       }
     ],
     "tags": [
@@ -5309,7 +5313,7 @@
       "halo & horns"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-12T07:57:36.213Z"
   },
   {
     "id": "seed-156",
@@ -5365,7 +5369,7 @@
       "full angel form"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-157",
@@ -5421,14 +5425,14 @@
       "full demon form"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-158",
     "category": "Character Forms",
-    "name": "Jaiden Marlock — True Hybrid Form",
-    "subtitle": "Fifth Form of 5 — Jaiden Marlock",
-    "description": "The fifth and final seal release. 3 pure white feathery wings on one half of his body and 3 black feathery wings on the other, 6 horns, and a halo split in half floating above his head. Both the angelic and demonic auras surround him at the same time. This form has never existed before — no one has ever seen a being that carries both natures simultaneously. It is the form the Prophecy of the Half-Made was written about.",
+    "name": "Jaiden Marlock — True Hybrid",
+    "subtitle": "Fifth Form of 5 — True Hybrid",
+    "description": "Full unification of both natures. 3 white wings + 3 black wings split by side, split halo, heterochromatic eyes, both auras active simultaneously. Angel and demon skills FUSE into hybrid skills. Maximum power but extreme cost, instability, and risk of permanent damage.",
     "fields": [
       {
         "label": "Seal",
@@ -5481,7 +5485,7 @@
       "true hybrid form"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-12T07:31:15.684Z"
   },
   {
     "id": "seed-159",
@@ -5520,11 +5524,11 @@
     "fields": [
       {
         "label": "Type",
-        "value": "Serapharch Ultimate — Holy Augmentation"
+        "value": "Serapharch Active — Memory Reading"
       },
       {
         "label": "Effect",
-        "value": "The angel inscribes a divine decree into reality. All allies within range receive a massive buff: +50% Veyn capacity, +30% damage, immunity to Corrupted Veyn for 60 seconds. Enemies within range are weakened: -30% Veyn regeneration."
+        "value": "Allows memory fragments via contact."
       },
       {
         "label": "Cooldown",
@@ -5545,7 +5549,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-161",
@@ -5560,7 +5564,7 @@
       },
       {
         "label": "Effect",
-        "value": "Grants instinctive danger detection. The angel perceives attacks 0.5 seconds before they happen, allowing automatic evasion of the first hit in any combat encounter."
+        "value": "Enhances senses; reveals hidden auras/Veyn flows. Pierces darkness/illusions/disguises."
       },
       {
         "label": "Cooldown",
@@ -5572,7 +5576,7 @@
       },
       {
         "label": "Rank",
-        "value": "All angel ranks"
+        "value": "Serapharch only"
       }
     ],
     "tags": [
@@ -5581,7 +5585,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-162",
@@ -5596,7 +5600,7 @@
       },
       {
         "label": "Effect",
-        "value": "Reverses time in a localized area by up to 3 seconds. All actions, movements, and Veyn expenditures within the zone are undone. Cannot reverse death or irreversible corruption."
+        "value": "Rewinds user timeline up to 20 seconds; cannot undo death/corruption/irreversible damage."
       },
       {
         "label": "Cooldown",
@@ -5617,7 +5621,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-163",
@@ -5916,7 +5920,7 @@
       },
       {
         "label": "Effect",
-        "value": "Channels the World Core’s energy through a manifested grail. Heals one target to full health, removes all negative status effects, and grants 10 seconds of invulnerability. The angel is incapacitated for 5 seconds after use."
+        "value": "Manifests holy fire sphere; can be shrunk/expanded. Burns corrupted beings."
       },
       {
         "label": "Cooldown",
@@ -5937,7 +5941,7 @@
       "serapharch"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-172",
@@ -6088,7 +6092,7 @@
     "fields": [
       {
         "label": "Type",
-        "value": "Virtue Active — Shield"
+        "value": "Aetherblade Lord Angel Active — Shield"
       },
       {
         "label": "Effect",
@@ -6104,7 +6108,7 @@
       },
       {
         "label": "Rank",
-        "value": "Virtue and above"
+        "value": "Aetherblade Lord Angel only"
       }
     ],
     "tags": [
@@ -6113,7 +6117,7 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:17.588Z"
   },
   {
     "id": "seed-177",
@@ -6124,7 +6128,7 @@
     "fields": [
       {
         "label": "Type",
-        "value": "Virtue Active — Healing"
+        "value": "Aetherblade Lord Angel Active — Healing"
       },
       {
         "label": "Effect",
@@ -6140,7 +6144,7 @@
       },
       {
         "label": "Rank",
-        "value": "Virtue and above"
+        "value": "Aetherblade Lord Angel only"
       }
     ],
     "tags": [
@@ -6149,7 +6153,7 @@
       "aetherblade lord angel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:17.588Z"
   },
   {
     "id": "seed-178",
@@ -6448,7 +6452,7 @@
     "fields": [
       {
         "label": "Type",
-        "value": "Virtue Passive — Environmental"
+        "value": "Lumen Passive — Comfort"
       },
       {
         "label": "Effect",
@@ -6464,7 +6468,7 @@
       },
       {
         "label": "Rank",
-        "value": "Virtue and above"
+        "value": "Lumen only"
       }
     ],
     "tags": [
@@ -6473,7 +6477,7 @@
       "lumen"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:17.588Z"
   },
   {
     "id": "seed-187",
@@ -6908,7 +6912,7 @@
     "fields": [
       {
         "label": "Type",
-        "value": "Bloodward Active — Mind Influence"
+        "value": "Mordrach Active — Mind Influence"
       },
       {
         "label": "Effect",
@@ -6924,7 +6928,7 @@
       },
       {
         "label": "Rank",
-        "value": "Bloodward and above"
+        "value": "Mordrach only"
       }
     ],
     "tags": [
@@ -6933,7 +6937,7 @@
       "mordrach"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:17.588Z"
   },
   {
     "id": "seed-200",
@@ -8547,7 +8551,7 @@
     "category": "Angels",
     "name": "An Angel Breaking the vow",
     "subtitle": "What happens when an angel’s vow shatters",
-    "description": "The vow breaks when an angel betrays their own promise — when they do the one thing they swore to themselves they would never do. It is not a punishment handed down by a superior, but the consequence of their own broken word: the promise that held their Veyn steady lets go, and the halo can no longer hold the channel. It shatters, becoming the broken halo Fallen Angels are known for. The uncontrolled Veyn surging through them at that moment leaves permanent black spotting on the feathers — plain black spots or black cherry spotting, depending on how much Veyn surged through when the promise broke.",
+    "description": "The vow breaks when an angel betrays their own promise — when they do the one thing they swore to themselves they would never do. It is not a punishment handed down by a superior, but the consequence of their own broken word: the promise that held their Veyn steady lets go, and the halo can no longer hold the channel. It shatters, becoming the broken halo Fallen Angels are known for. The uncontrolled Veyn surging through them at that moment leaves permanent black spotting on the feathers — plain black spots or black cherry spotting, depending on how much Veyn surged through when the promise broke. With the regulator gone, the angel also loses the rank-based regeneration and the Veyn-fed skills that ran on that steady flow — a Fallen Angel heals only through the Rapid-Mend trait of their new race type.",
     "fields": [
       {
         "label": "Trigger",
@@ -8555,7 +8559,7 @@
       },
       {
         "label": "Result",
-        "value": "The halo shatters, and the uncontrolled Veyn leaves permanent black or black-cherry spotting on the wings."
+        "value": "The halo shatters, and the uncontrolled Veyn leaves permanent black or black-cherry spotting on the wings. With the halo gone, the rank-based regeneration and the Veyn-fed skills of their former rank stop working; a Fallen Angel now heals only through the innate trait Rapid-Mend."
       }
     ],
     "tags": [
@@ -8566,7 +8570,7 @@
       "breaking"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T22:24:47.977Z"
   },
   {
     "id": "seed-244",
@@ -8619,8 +8623,8 @@
     "id": "seed-246",
     "category": "Titles",
     "name": "First Pillar, Chronous",
-    "subtitle": "Chronos, god of time",
-    "description": "The First Pillar of the Six Pillars of Angels — borne by Ordium, referencing Chronos, god of time.",
+    "subtitle": "Chronous, god of time",
+    "description": "The First Pillar of the Six Pillars of Angels — borne by Ordium, referencing Chronos/Chronous, god of time.",
     "fields": [
       {
         "label": "Held by",
@@ -8634,7 +8638,7 @@
       "ordium"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:22:04.058Z"
   },
   {
     "id": "seed-247",
@@ -9239,8 +9243,8 @@
     "id": "seed-260",
     "category": "Titles",
     "name": "Second Pillar, Helious",
-    "subtitle": "Helios, the all-seeing sun",
-    "description": "The Second Pillar of the Six Pillars of Angels — borne by Cyrion, referencing Helios, the all-seeing sun.",
+    "subtitle": "Helious, the all-seeing sun",
+    "description": "The Second Pillar of the Six Pillars of Angels — borne by Cyrion, referencing Helious, the all-seeing sun.",
     "fields": [
       {
         "label": "Held by",
@@ -9254,14 +9258,14 @@
       "cyrion"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:22:04.058Z"
   },
   {
     "id": "seed-261",
     "category": "Titles",
     "name": "Third Pillar, Areous",
-    "subtitle": "Ares, god of war",
-    "description": "The Third Pillar of the Six Pillars of Angels — borne by Serathiel, referencing Ares, god of war.",
+    "subtitle": "Areous, god of war",
+    "description": "The Third Pillar of the Six Pillars of Angels — borne by Serathiel, referencing Areous, god of war.",
     "fields": [
       {
         "label": "Held by",
@@ -9275,14 +9279,14 @@
       "serathiel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:22:04.058Z"
   },
   {
     "id": "seed-262",
     "category": "Titles",
     "name": "Fourth Pillar, Deimous",
-    "subtitle": "Deimos, dread personified",
-    "description": "The Fourth Pillar of the Six Pillars of Angels — borne by Liora Veyne, referencing Deimos, dread personified.",
+    "subtitle": "Deimous, dread personified",
+    "description": "The Fourth Pillar of the Six Pillars of Angels — borne by Liora Veyne, referencing Deimous, dread personified.",
     "fields": [
       {
         "label": "Held by",
@@ -9296,14 +9300,14 @@
       "liora veyne"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:22:04.058Z"
   },
   {
     "id": "seed-263",
     "category": "Titles",
     "name": "Fifth Pillar, Horkous",
-    "subtitle": "Horkos, god of oaths",
-    "description": "The Fifth Pillar of the Six Pillars of Angels — borne by Thalor Elwin, referencing Horkos, god of oaths.",
+    "subtitle": "Horkous, god of oaths",
+    "description": "The Fifth Pillar of the Six Pillars of Angels — borne by Thalor Elwin, referencing Horkous, god of oaths.",
     "fields": [
       {
         "label": "Held by",
@@ -9317,14 +9321,14 @@
       "thalor elwin"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:22:04.058Z"
   },
   {
     "id": "seed-264",
     "category": "Titles",
     "name": "Sixth Pillar, Argous",
-    "subtitle": "Argus, the hundred-eyed watcher",
-    "description": "The Sixth Pillar of the Six Pillars of Angels — borne by Aranweis, referencing Argus, the hundred-eyed watcher.",
+    "subtitle": "Argous, the hundred-eyed watcher",
+    "description": "The Sixth Pillar of the Six Pillars of Angels — borne by Aranweis, referencing Argous, the hundred-eyed watcher.",
     "fields": [
       {
         "label": "Held by",
@@ -9338,7 +9342,7 @@
       "aranweis"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:22:04.058Z"
   },
   {
     "id": "seed-265",
@@ -10451,7 +10455,7 @@
     "fields": [
       {
         "label": "Type",
-        "value": "Gnash Active — Consumable Enhancement"
+        "value": "Bloodward Active"
       },
       {
         "label": "Effect",
@@ -10467,7 +10471,7 @@
       },
       {
         "label": "Rank",
-        "value": "Gnash"
+        "value": "Bloodward only"
       }
     ],
     "tags": [
@@ -10475,7 +10479,7 @@
       "demon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:36.839Z"
   },
   {
     "id": "seed-297",
@@ -10782,7 +10786,7 @@
       "general"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:22:04.058Z"
   },
   {
     "id": "seed-308",
@@ -10893,7 +10897,7 @@
     "category": "Race Types",
     "name": "Fallen Angels",
     "subtitle": "The broken — cast out for breaking the vow",
-    "description": "The type of angel who broke their own Veyn Vow and lost their halo to it. They keep their wings and power but can never take another vow, leaving their connection to Veyn unstable and unregulated.\n\n---\n\n## THE SANCTUARY BREAK\n\nWhen an angel breaks their Vow through the deliberate betrayal of someone they swore to protect, the break triggers the Sanctuary Break. A void forms in the angel's Veyn channel where the promise used to resonate. Corrupted Veyn seeps into this void over weeks and months, consuming the angel's memories, emotions, and sense of self. The angel progresses through four stages: The Hollow (emptiness), The Fog (memory loss and paranoia), The Hunger (Veyn-draining compulsion), and The Hollowing (complete personality death). The Hollowed retain their former abilities and appearance but are driven by nothing but consumption. They are drawn to concentrations of Veyn and feed until stopped. The only reliable way to destroy a Hollowed is to overload the corrupted void with Veyn — requiring a Divine Weapon or a combined high-rank assault.\n\nNot all Fallen Angels trigger a Sanctuary Break. Those who break their Vow through ordinary failure — weakness, doubt, cowardice — become standard Fallen Angels: damaged but stable, their Veyn unregulated but their mind intact. The Sanctuary Break only occurs through betrayal of a specific sworn obligation.",
+    "description": "The type of angel who broke their own Veyn Vow and lost their halo to it. They keep their wings, rank, and raw power, but can never take another vow, and with the halo gone their Veyn has no regulator — it no longer flows in the correct, even channel. Because of that broken flow, the Veyn-fed regeneration and skills of their former rank stop working. What heals a Fallen Angel instead is their race type’s innate trait, Rapid-Mend, which mends the physical body without any vow or halo.\n\n---\n\n## THE SANCTUARY BREAK\n\nWhen an angel breaks their Vow through the deliberate betrayal of someone they swore to protect, the break triggers the Sanctuary Break. A void forms in the angel's Veyn channel where the promise used to resonate. Corrupted Veyn seeps into this void over weeks and months, consuming the angel's memories, emotions, and sense of self. The angel progresses through four stages: The Hollow (emptiness), The Fog (memory loss and paranoia), The Hunger (Veyn-draining compulsion), and The Hollowing (complete personality death). The Hollowed retain their former abilities and appearance but are driven by nothing but consumption. They are drawn to concentrations of Veyn and feed until stopped. The only reliable way to destroy a Hollowed is to overload the corrupted void with Veyn — requiring a Divine Weapon or a combined high-rank assault.\n\nNot all Fallen Angels trigger a Sanctuary Break. Those who break their Vow through ordinary failure — weakness, doubt, cowardice — become standard Fallen Angels: damaged but stable, their Veyn unregulated but their mind intact. The Sanctuary Break only occurs through betrayal of a specific sworn obligation.",
     "fields": [
       {
         "label": "Appearance",
@@ -10906,6 +10910,10 @@
       {
         "label": "Sanctuary Break",
         "value": "Triggered by betrayal of a sworn obligation. Void forms in Veyn channel; corrupted Veyn seeps in over time, consuming identity. Four stages: Hollow → Fog → Hunger → Hollowing."
+      },
+      {
+        "label": "Loss of Veyn Skills & Regeneration",
+        "value": "A Fallen Angel loses the rank-based regeneration and the Veyn-fed skills they had before falling, because the shattered halo no longer keeps their Veyn flowing correctly. What remains is their race type’s innate trait: Rapid-Mend (physical-wound healing, 5x normal)."
       }
     ],
     "tags": [
@@ -10915,7 +10923,7 @@
       "fallen"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T22:24:47.977Z"
   },
   {
     "id": "seed-312",
@@ -10980,7 +10988,7 @@
     "category": "Innate Abilities",
     "name": "Rapid-Mend",
     "subtitle": "Innate ability",
-    "description": "Their regeneration speeds up in bursts, mending wounds quicker than it should.",
+    "description": "Their regeneration speeds up in bursts, mending wounds quicker than it should. It is the innate trait of the Fallen Angels — a purely physical healing factor, and the thing that keeps a Fallen Angel alive after a broken halo strips away the old Veyn-based regeneration and skills.",
     "fields": [
       {
         "label": "Type",
@@ -10992,7 +11000,11 @@
       },
       {
         "label": "Rarity",
-        "value": "Common among demons, rare among humans"
+        "value": "The innate trait of the Fallen Angels race type (also common among demons)"
+      },
+      {
+        "label": "Fallen Angel Trait",
+        "value": "Rapid-Mend is the innate trait of the Fallen Angels race type. Because Fallen Angels lose the Veyn-fed regeneration and skills of their former rank, Rapid-Mend is what heals them — physical wounds only (not Veyn damage or soul injuries), and it needs no halo or vow."
       }
     ],
     "tags": [
@@ -11002,7 +11014,7 @@
       "fallen agnel"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T22:24:47.977Z"
   },
   {
     "id": "seed-315",
@@ -11286,7 +11298,7 @@
     "category": "Rules & Notes",
     "name": "Innate Abilities",
     "subtitle": "One per race type",
-    "description": "Each race type carries one innate ability, shared by every member of that type regardless of rank. These are distinct from learned skills: they are born into the blood, not trained. The Cherubim are Imperishable, the Malakhim carry Veyn-Regen, and the Fallen Angels carry Rapid-Mend; the Fiends are Sovereign Resilience, the Dregs carry Vitality-Regen, and the Imps carry Veyn-Touch.",
+    "description": "Each race type carries one innate ability, shared by every member of that type regardless of rank. These are distinct from learned skills: they are born into the blood, not trained. The Cherubim are Imperishable, the Malakhim carry Veyn-Regen, and the Fallen Angels carry Rapid-Mend; the Fiends are Sovereign Resilience, the Dregs carry Vitality-Regen, and the Imps carry Veyn-Touch. Because Fallen Angels lose the Veyn-fed regeneration and skills of their former rank when their halo breaks, their trait Rapid-Mend — physical-wound healing — is what heals them after the fall.",
     "fields": [
       {
         "label": "Type",
@@ -11304,7 +11316,7 @@
       "ability"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T22:24:47.977Z"
   },
   {
     "id": "seed-325",
@@ -12871,7 +12883,7 @@
       "crafting"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-12T07:17:27.525Z"
   },
   {
     "id": "seed-391",
@@ -13801,7 +13813,7 @@
       "defensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:23:33.749Z"
   },
   {
     "id": "seed-434",
@@ -13977,7 +13989,7 @@
       "mastery"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:23:33.749Z"
   },
   {
     "id": "seed-442",
@@ -14180,7 +14192,7 @@
       "knowledge"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:23:33.749Z"
   },
   {
     "id": "seed-451",
@@ -14191,7 +14203,7 @@
     "fields": [
       {
         "label": "Type",
-        "value": "Medic Ultimate - Passive Combat Healing"
+        "value": "Clergy Ultimate - Passive Combat Healing"
       },
       {
         "label": "Effect",
@@ -14215,7 +14227,7 @@
       "support"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:23:33.749Z"
   },
   {
     "id": "seed-452",
@@ -14445,7 +14457,7 @@
     "fields": [
       {
         "label": "Effect",
-        "value": "A weapon attack infused with golden light. Deals 200% damage and heals the Knight for 10% of damage dealt."
+        "value": "A weapon attack infused with golden light. Deals 200% damage and heals the Paladin for 10% of damage dealt."
       }
     ],
     "tags": [
@@ -14456,7 +14468,7 @@
       "offensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:05.396Z"
   },
   {
     "id": "seed-463",
@@ -14467,7 +14479,7 @@
     "fields": [
       {
         "label": "Effect",
-        "value": "Creates a golden shield that absorbs damage equal to 100% of the Knight’s max HP. Lasts 15 seconds."
+        "value": "Creates a golden shield that absorbs damage equal to 100% of the Paladin’s max HP. Lasts 15 seconds."
       }
     ],
     "tags": [
@@ -14478,7 +14490,7 @@
       "defensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:05.396Z"
   },
   {
     "id": "seed-464",
@@ -14500,7 +14512,7 @@
       "healing"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:05.396Z"
   },
   {
     "id": "seed-465",
@@ -14522,7 +14534,7 @@
       "support"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:05.396Z"
   },
   {
     "id": "seed-466",
@@ -14544,7 +14556,7 @@
       "offensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:05.396Z"
   },
   {
     "id": "seed-467",
@@ -14566,7 +14578,7 @@
       "healing"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:05.396Z"
   },
   {
     "id": "seed-468",
@@ -14589,7 +14601,7 @@
       "defensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:05.396Z"
   },
   {
     "id": "seed-469",
@@ -14611,7 +14623,7 @@
       "defensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:05.396Z"
   },
   {
     "id": "seed-470",
@@ -14634,7 +14646,7 @@
       "support"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:05.396Z"
   },
   {
     "id": "seed-471",
@@ -14656,7 +14668,7 @@
       "mastery"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:24:05.396Z"
   },
   {
     "id": "seed-472",
@@ -14711,7 +14723,7 @@
     "fields": [
       {
         "label": "Effect",
-        "value": "Creates a shield of bone that absorbs damage equal to 80% of the Necromancer’s max HP."
+        "value": "Creates a shield of bone that absorbs damage equal to 80% of the Grimtender’s max HP."
       }
     ],
     "tags": [
@@ -14722,7 +14734,7 @@
       "defensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-475",
@@ -14733,7 +14745,7 @@
     "fields": [
       {
         "label": "Effect",
-        "value": "Drains life from a corpse, healing the Necromancer for 30% of their max HP."
+        "value": "Drains life from a corpse, healing the Grimtender for 30% of their max HP."
       }
     ],
     "tags": [
@@ -14744,7 +14756,7 @@
       "utility"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-476",
@@ -14766,7 +14778,7 @@
       "offensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-477",
@@ -14789,7 +14801,7 @@
       "combat"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-478",
@@ -14811,7 +14823,7 @@
       "offensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-479",
@@ -14822,7 +14834,7 @@
     "fields": [
       {
         "label": "Effect",
-        "value": "Binds a spirit to the Necromancer’s will. The spirit becomes a permanent minion with full stats."
+        "value": "Binds a spirit to the Grimtender’s will. The spirit becomes a permanent minion with full stats."
       }
     ],
     "tags": [
@@ -14832,7 +14844,7 @@
       "undead"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-480",
@@ -14843,7 +14855,7 @@
     "fields": [
       {
         "label": "Effect",
-        "value": "The Necromancer’s minions gain +50% all stats and become immune to holy damage for 30 seconds."
+        "value": "The Grimtender’s minions gain +50% all stats and become immune to holy damage for 30 seconds."
       }
     ],
     "tags": [
@@ -14853,7 +14865,7 @@
       "mastery"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-481",
@@ -14864,7 +14876,7 @@
     "fields": [
       {
         "label": "Effect",
-        "value": "Ultimate. Steals the soul of a dying enemy, preventing resurrection and adding the soul to the Necromancer’s collection."
+        "value": "Ultimate. Steals the soul of a dying enemy, preventing resurrection and adding the soul to the Grimtender’s collection."
       }
     ],
     "tags": [
@@ -14875,7 +14887,7 @@
       "utility"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-482",
@@ -15330,7 +15342,7 @@
     "fields": [
       {
         "label": "Effect",
-        "value": "Hardens the Guardian’s skin, reducing all damage taken by 30% for 15 seconds."
+        "value": "Hardens the Sentinel’s skin, reducing all damage taken by 30% for 15 seconds."
       }
     ],
     "tags": [
@@ -15341,7 +15353,7 @@
       "defensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-503",
@@ -15363,7 +15375,7 @@
       "defensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-504",
@@ -15374,7 +15386,7 @@
     "fields": [
       {
         "label": "Effect",
-        "value": "The Guardian roots to the ground. Cannot move but gains +50% damage reduction and cannot be knocked back."
+        "value": "The Sentinel roots to the ground. Cannot move but gains +50% damage reduction and cannot be knocked back."
       }
     ],
     "tags": [
@@ -15385,7 +15397,7 @@
       "defensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-505",
@@ -15396,7 +15408,7 @@
     "fields": [
       {
         "label": "Effect",
-        "value": "Taunts all enemies within 20 meters, forcing them to attack the Guardian for 8 seconds."
+        "value": "Taunts all enemies within 20 meters, forcing them to attack the Sentinel for 8 seconds."
       }
     ],
     "tags": [
@@ -15407,7 +15419,7 @@
       "utility"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-506",
@@ -15418,7 +15430,7 @@
     "fields": [
       {
         "label": "Effect",
-        "value": "The Guardian absorbs all damage intended for allies within 10 meters for 5 seconds."
+        "value": "The Sentinel absorbs all damage intended for allies within 10 meters for 5 seconds."
       }
     ],
     "tags": [
@@ -15430,7 +15442,7 @@
       "defensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-507",
@@ -15452,7 +15464,7 @@
       "offensive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-508",
@@ -15475,7 +15487,7 @@
       "support"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-509",
@@ -15498,7 +15510,7 @@
       "support"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-510",
@@ -15509,7 +15521,7 @@
     "fields": [
       {
         "label": "Effect",
-        "value": "When the Guardian drops below 15% HP, they become immovable for 10 seconds. Cannot be moved, stunned, or killed."
+        "value": "When the Sentinel drops below 15% HP, they become immovable for 10 seconds. Cannot be moved, stunned, or killed."
       }
     ],
     "tags": [
@@ -15521,7 +15533,7 @@
       "passive"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-511",
@@ -15532,7 +15544,7 @@
     "fields": [
       {
         "label": "Effect",
-        "value": "Ultimate. The Guardian becomes completely immune to all damage for 5 seconds. Cannot attack during this time."
+        "value": "Ultimate. The Sentinel becomes completely immune to all damage for 5 seconds. Cannot attack during this time."
       }
     ],
     "tags": [
@@ -15543,7 +15555,7 @@
       "mastery"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:39.119Z"
   },
   {
     "id": "seed-512",
@@ -15653,7 +15665,7 @@
       "mobility"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:23:57.182Z"
   },
   {
     "id": "seed-517",
@@ -15943,7 +15955,7 @@
       "utility"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:23:57.182Z"
   },
   {
     "id": "seed-530",
@@ -15987,7 +15999,7 @@
       "mastery"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:23:57.182Z"
   },
   {
     "id": "seed-532",
@@ -16737,7 +16749,7 @@
       "ranks"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-09-30T14:20:33.464Z"
+    "updatedAt": "2026-10-11T23:25:46.975Z"
   },
   {
     "id": "seed-554",
@@ -17659,7 +17671,7 @@
     "category": "Combat Mechanics",
     "name": "Holy & Corrupted Combat",
     "subtitle": "How holy and corrupted Veyn interact in battle",
-    "description": "Holy Energy and Corrupted Veyn (miasma) represent the two extreme forms of Veyn, and they interact in specific ways during combat.\n\nHoly Energy — the purified Gold Sigil form of Veyn used by angels, Saintesses, Exorcists, and Paladins — naturally burns corruption on contact. A holy strike against an undead creature or a miasma-corrupted target deals amplified damage because the purified Veyn actively unravels the corruption. Against uncorrupted targets, holy energy is no more effective than raw Veyn — it is specialized, not universally stronger.\n\nCorrupted Veyn — the dark purple or black form used by demons — harms humans directly and can contaminate holy auras and holy energy. A demon's miasma attack against a human doesn't just damage; it begins corrupting the victim's own Veyn channels, potentially triggering Corruption Sickness if contact is prolonged. Against angels, corrupted Veyn is especially dangerous because it can destabilize their Vow, potentially leading to Fallen Angel transformation.\n\nThe interaction creates a rock-paper-scissors dynamic: Holy beats Corrupted, Corrupted harms humans and destabilizes angels, and raw Veyn is neutral against both. This is why Exorcists exist — they specialize in wielding holy energy specifically to counter corrupted threats. It is also why Vireth, the Fallen Grace, is so dangerous: its corrupted holy blade cuts through both holy and demonic wards equally, treating purified and corrupted Veyn as the same thing to sever.\n\nAgainst neutral targets, all three forms of Veyn deal roughly equal damage — the advantage is purely in type matchups, not raw power.",
+    "description": "Holy Energy and Corrupted Veyn (miasma) represent the two extreme forms of Veyn, and they interact in specific ways during combat.\n\nHoly Energy — the purified Gold Sigil form of Veyn used by angels, Saintesses, Exorcists, and — naturally burns corruption on contact. A holy strike against an undead creature or a miasma-corrupted target deals amplified damage because the purified Veyn actively unravels the corruption. Against uncorrupted targets, holy energy is no more effective than raw Veyn — it is specialized, not universally stronger.\n\nCorrupted Veyn — the dark purple or black form used by demons — harms humans directly and can contaminate holy auras and holy energy. A demon's miasma attack against a human doesn't just damage; it begins corrupting the victim's own Veyn channels, potentially triggering Corruption Sickness if contact is prolonged. Against angels, corrupted Veyn is especially dangerous because it can destabilize their Vow, potentially leading to Fallen Angel transformation.\n\nThe interaction creates a rock-paper-scissors dynamic: Holy beats Corrupted, Corrupted harms humans and destabilizes angels, and raw Veyn is neutral against both. This is why Exorcists exist — they specialize in wielding holy energy specifically to counter corrupted threats. It is also why Vireth, the Fallen Grace, is so dangerous: its corrupted holy blade cuts through both holy and demonic wards equally, treating purified and corrupted Veyn as the same thing to sever.\n\nAgainst neutral targets, all three forms of Veyn deal roughly equal damage — the advantage is purely in type matchups, not raw power.",
     "fields": [
       {
         "label": "Holy vs Corrupted",
@@ -17691,14 +17703,14 @@
       "demon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-577",
     "category": "Combat Mechanics",
     "name": "Grade-Based Combat Power",
     "subtitle": "How the Grade System affects fighting ability",
-    "description": "Every fighter's Grade determines their baseline power, and the gaps between grades are enormous. A single grade difference is manageable; two grade differences is dangerous; three or more is nearly insurmountable.\n\nAt F Grade (the starting point after awakening), a fighter can use basic skills but their Veyn or Ren channels are narrow, their reserves are small, and their physical capabilities are only slightly above a normal person. F Grade fighters can handle common monsters but struggle against anything aggressive.\n\nAt E Grade, the fighter's channels have widened enough to use skills reliably, and their body has been strengthened by Veyn/Ren exposure. They can fight monsters confidently and hold their own against other E-rank fighters.\n\nD Grade is where fighters become truly dangerous. Their channels are wide, their reserves deep, and their physical capabilities far exceed normal humans. A D-rank fighter can destroy small structures and lead groups in battle.\n\nThe jumps become catastrophic above D Grade. A C-rank can destroy buildings. A B-rank can destroy cities. An A-rank is a force of nature. An S-rank is a demigod.\n\nThe practical effect in combat: a B-rank fighter facing an army of D-ranks will win without effort. The D-ranks simply cannot generate enough force to overwhelm the B-rank's defenses, while the B-rank can wipe them out with single attacks. This is why等级 gaps matter so much in the story — when Jaiden faces opponents multiple grades above him, he must use tactics, environment, and creativity rather than raw power.",
+    "description": "Every fighter's Grade determines their baseline power, and the gaps between grades are enormous. A single grade difference is manageable; two grade differences is dangerous; three or more is nearly insurmountable.\n\nAt F Grade (the starting point after awakening), a fighter can use basic skills but their Veyn or Ren channels are narrow, their reserves are small, and their physical capabilities are only slightly above a normal person. F Grade fighters can handle common monsters but struggle against anything aggressive.\n\nAt E Grade, the fighter's channels have widened enough to use skills reliably, and their body has been strengthened by Veyn/Ren exposure. They can fight monsters confidently and hold their own against other E-rank fighters.\n\nD Grade is where fighters become truly dangerous. Their channels are wide, their reserves deep, and their physical capabilities far exceed normal humans. A D-rank fighter can destroy small structures and lead groups in battle.\n\nThe jumps become catastrophic above D Grade. A C-rank can destroy buildings. A B-rank can destroy cities. An A-rank is a force of nature. An S-rank is a demigod.\n\nThe practical effect in combat: a B-rank fighter facing an army of D-ranks will win without effort. The D-ranks simply cannot generate enough force to overwhelm the B-rank's defenses, while the B-rank can wipe them out with single attacks. This is whygrade gaps matter so much in the story — when Jaiden faces opponents multiple grades above him, he must use tactics, environment, and creativity rather than raw power.",
     "fields": [
       {
         "label": "F Grade",
@@ -17741,7 +17753,7 @@
       "fighting"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:25:00.816Z"
   },
   {
     "id": "seed-578",
@@ -18177,7 +18189,7 @@
     "fields": [
       {
         "label": "Current Year",
-        "value": "Approximately 2350 VC (Veyn Calendar)."
+        "value": "Approximately 1999 VC (just before the Fourth Turning)."
       },
       {
         "label": "Calendar System",
@@ -18261,7 +18273,7 @@
       "plot engine"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-09-30T14:20:33.464Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-589",
@@ -20029,11 +20041,11 @@
     "category": "Skill Mechanics",
     "name": "Veyn Skill Activation Guide",
     "subtitle": "How each Veyn-based class activates their skills",
-    "description": "Veyn-based skills follow a three-step activation process: Draw, Shape, Release.\n\nDRAW: The user pulls ambient Veyn into their channels through concentration and intent. This takes 0.5-3 seconds depending on the skill's complexity and the user's grade. F-rank Mages take 2-3 seconds; A-rank Mages take under 0.5 seconds.\n\nSHAPE: The user mentally shapes the drawn Veyn into the desired effect — a bolt, a shield, a healing wave, an enchantment. Shaping requires knowledge of the skill's specific pattern, which is learned through training. Simple shapes (bolts, basic shields) are intuitive; complex shapes (area healing, layered barriers) require years of practice.\n\nRELEASE: The user releases the shaped Veyn in the desired direction or target. Release can be triggered by incantation (verbal command), gesture (hand movement), or thought (mental command at higher ranks). The release point is when the skill actually takes effect.\n\nCooldown: After release, the channels need 1-5 seconds to stabilize before another Draw can begin. During cooldown, the user is vulnerable. Skilled fighters learn to overlap cooldowns — beginning the Draw for the next skill while the previous skill is still resolving.\n\nVeyn Cost: Each skill consumes a portion of the user's Veyn reserves. Basic skills cost 1-5% of reserves; ultimate skills can cost 50% or more. Running out of Veyn mid-combat leaves the user helpless until they can rest and replenish.",
+    "description": "Veyn-based skills follow a three-step activation process: Draw, Shape, Release.\n\nDRAW: The user pulls ambient Veyn into their channels through concentration and intent. This takes 0.5-3 seconds depending on the skill's complexity and the user's grade. Low-Circle Mages take 2-3 seconds; high-Circle Mages take under 0.5 seconds.\n\nSHAPE: The user mentally shapes the drawn Veyn into the desired effect — a bolt, a shield, a healing wave, an enchantment. Shaping requires knowledge of the skill's specific pattern, which is learned through training. Simple shapes (bolts, basic shields) are intuitive; complex shapes (area healing, layered barriers) require years of practice.\n\nRELEASE: The user releases the shaped Veyn in the desired direction or target. Release can be triggered by incantation (verbal command), gesture (hand movement), or thought (mental command at higher ranks). The release point is when the skill actually takes effect.\n\nCooldown: After release, the channels need 1-5 seconds to stabilize before another Draw can begin. During cooldown, the user is vulnerable. Skilled fighters learn to overlap cooldowns — beginning the Draw for the next skill while the previous skill is still resolving.\n\nVeyn Cost: Each skill consumes a portion of the user's Veyn reserves. Basic skills cost 1-5% of reserves; ultimate skills can cost 50% or more. Running out of Veyn mid-combat leaves the user helpless until they can rest and replenish.",
     "fields": [
       {
         "label": "Step 1: Draw",
-        "value": "Pull ambient Veyn into channels — 0.5 to 3 seconds depending on grade"
+        "value": "Pull ambient Veyn into channels — 0.5 to 3 seconds depending on grade (or Rune Star Circle for Mages)"
       },
       {
         "label": "Step 2: Shape",
@@ -20060,7 +20072,7 @@
       "mechanics"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-636",
@@ -20590,7 +20602,7 @@
     "category": "Politics",
     "name": "Political Factions",
     "subtitle": "The power blocs competing for influence",
-    "description": "Several political factions compete for influence across the three realms.\n\nThe Purists (Human Realm): A conservative faction that believes only humans should rule the Human Realm. They oppose angel and demon influence in human affairs and want to close the Realm Gates permanently. Led by Lord Malachar, a noble who lost family to demon raids. The Purists are popular among commoners who fear demonic corruption.\n\nThe Integrationists (Human Realm): A progressive faction that believes all three realms should work together under the Academy's leadership. They support cross-realm trade, cultural exchange, and joint military operations against shared threats. Led by Lady Seraphine, a diplomat who has negotiated trade agreements with both angels and demons.\n\nThe Vow Keepers (Angel Realm): A militant angel faction that believes the angels should reclaim their ancient role as world guardians. They want to reactivate the Shudon and enforce angel law across all three realms. Led by Archangel Veradis, one of the Six Pillars who believes the current peace is weakening the angels.\n\nThe Severed (Angel Realm): A radical faction of former angels who have voluntarily broken their Vows. They believe the Vow system is a form of control and that angels should be free to choose their own path. They operate from hidden bases in the Human Realm.\n\nThe Blood Pack (Demon Realm): A war-band coalition that wants to replace the Mordrach's rule with a council of Bloodwards. They believe the Mordrach has grown too passive and that the Demon Realm should expand aggressively. Led by Bloodward Drakar, who has been quietly building support among mid-rank demons.",
+    "description": "Several political factions compete for influence across the three realms.\n\nThe Purists (Human Realm): A conservative faction that believes only humans should rule the Human Realm. They oppose angel and demon influence in human affairs and want to close the Realm Gates permanently. Led by Lord Malachar, a noble who lost family to demon raids. The Purists are popular among commoners who fear demonic corruption.\n\nThe Integrationists (Human Realm): A progressive faction that believes all three realms should work together under the Academy's leadership. They support cross-realm trade, cultural exchange, and joint military operations against shared threats. Led by Lady Seraphine, a diplomat who has negotiated trade agreements with both angels and demons.\n\nThe Vow Keepers (Angel Realm): A militant angel faction that believes the angels should reclaim their ancient role as world guardians. They want to reactivate the Shudon and enforce angel law across all three realms. Led by Aetherblade Lord Veradis, one of the Six Pillars who believes the current peace is weakening the angels.\n\nThe Severed (Angel Realm): A radical faction of former angels who have voluntarily broken their Vows. They believe the Vow system is a form of control and that angels should be free to choose their own path. They operate from hidden bases in the Human Realm.\n\nThe Blood Pack (Demon Realm): A war-band coalition that wants to replace the Mordrach's rule with a council of Bloodwards. They believe the Mordrach has grown too passive and that the Demon Realm should expand aggressively. Led by Bloodward Drakar, who has been quietly building support among mid-rank demons.",
     "fields": [
       {
         "label": "The Purists",
@@ -20621,7 +20633,7 @@
       "groups"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-648",
@@ -21826,7 +21838,7 @@
     "category": "Culture",
     "name": "Angel Promise Culture",
     "subtitle": "",
-    "description": "Angels do not use money, contracts, or legal systems. Their entire economy and social structure runs on promises. When an Angel makes a promise, it is binding not by law but by Veyn resonance — the promise creates a measurable Veyn bond between the two parties. Breaking a promise causes immediate Veyn destabilization: the breaker experiences physical pain proportional to the promise's significance, their Veyn channeling becomes erratic, and their appearance begins to degrade (wings dim, features sharpen). This biological enforcement means Angels rarely break promises — and when they do, it's a catastrophe. Angels do not distinguish between 'verbal' and 'written' promises; all promises are equally binding.",
+    "description": "angels use the world coin system, contracts, or legal systems. Their entire economy and social structure runs on promises. When an Angel makes a promise, it is binding not by law but by Veyn resonance — the promise creates a measurable Veyn bond between the two parties. Breaking a promise causes immediate Veyn destabilization: the breaker experiences physical pain proportional to the promise's significance, their Veyn channeling becomes erratic, and their appearance begins to degrade (wings dim, features sharpen). This biological enforcement means Angels rarely break promises — and when they do, it's a catastrophe. Angels do not distinguish between 'verbal' and 'written' promises; all promises are equally binding.",
     "fields": [
       {
         "label": "Activation",
@@ -21853,7 +21865,7 @@
       "culture"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-682",
@@ -22302,7 +22314,7 @@
     "category": "Locations",
     "name": "The Obsidian Spires",
     "subtitle": "",
-    "description": "A cluster of 12 massive volcanic towers in the heart of the Demon Realm, rising 2,000 feet from the surrounding lava fields. The Obsidian Spires are the seat of Demon power — the largest Spire houses the Demon Lord's throne room, the Pit (challenge arena), and the Eternal Forge. Each Spire is controlled by a different Demon Clan, and the relative height of each Spire reflects the Clan's current power ranking. The tallest Spire changes ownership as Clans rise and fall. The Spires are connected by bridges of volcanic glass — transparent, allowing the lava fields below to be seen. Falling from a bridge is considered a legitimate challenge outcome.",
+    "description": "A cluster of 12 massive volcanic towers in the heart of the Demon Realm, rising 2,000 feet from the surrounding lava fields. The Obsidian Spires are the seat of Demon power — the largest Spire houses the Mordrach's throne room, the Pit (challenge arena), and the Eternal Forge. Each Spire is controlled by a different Demon Clan, and the relative height of each Spire reflects the Clan's current power ranking. The tallest Spire changes ownership as Clans rise and fall. The Spires are connected by bridges of volcanic glass — transparent, allowing the lava fields below to be seen. Falling from a bridge is considered a legitimate challenge outcome.",
     "fields": [
       {
         "label": "Activation",
@@ -22318,7 +22330,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": "Demon Lords, The Pit, Eternal Forge, Clan hierarchy, Demon challenges"
+        "value": "Mordrachs, The Pit, Eternal Forge, Clan hierarchy, Demon challenges"
       },
       {
         "label": "Subcategory",
@@ -22329,7 +22341,7 @@
       "locations"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-696",
@@ -22682,7 +22694,7 @@
       },
       {
         "label": "Ticking Clock",
-        "value": "The fourth recurrence of the Sundering Prophecy Cycle is approaching (current year ~2300, fourth turning at ~2500). All factions are preparing. The prophecy creates urgency — the Half-Made must be found, controlled, or destroyed before the fourth turning, because once the cycle activates, the outcome may be beyond anyone's control."
+        "value": "The fourth recurrence of the Sundering Prophecy Cycle is approaching (current year ~1999, fourth turning at ~2000). All factions are preparing. The prophecy creates urgency — the Half-Made must be found, controlled, or destroyed before the fourth turning, because once the cycle activates, the outcome may be beyond anyone's control."
       },
       {
         "label": "Connection to World Eater",
@@ -22715,7 +22727,7 @@
       "plot engine"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-09-30T14:20:33.464Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-706",
@@ -23062,7 +23074,7 @@
     "category": "Skill Mechanics",
     "name": "Ren Vitality Budget",
     "subtitle": "",
-    "description": "Ren fighters operate on a Vitality Budget — the total Vitality they can burn before their body begins to fail. Unlike Veyn (which is external energy), Vitality is internal — it IS the user's life force. A Ren fighter's Vitality Budget is determined by: physical condition (healthier = more Vitality), Body Hardening level (better hardening = more efficient Vitality use), emotional control (calm = slower burn), and age (younger = more Vitality). Budget measurements: A fresh Ren fighter has approximately 100 'Burns' of Vitality. Each basic skill costs 2-5 Burns. Each advanced skill costs 10-20 Burns. At 50 Burns remaining, the fighter begins experiencing fatigue and reduced skill effectiveness. At 25 Burns, physical pain and tunnel vision. At 0 Burns, the fighter collapses — and may die if they pushed below their safe minimum (30 Burns).",
+    "description": "Ren fighters operate on a Vitality Budget — the total Vitality they can burn before their body begins to fail. Unlike Veyn (which is external energy), Vitality is internal — it IS the user's life force. A Ren fighter's Vitality Budget is determined by: physical condition (healthier = more Vitality), Body Hardening level (better hardening = more efficient Vitality use), emotional control (calm = slower burn), and age (younger = more Vitality). Budget measurements: A fresh Ren fighter has approximately 100 'Burns' of Vitality. Each basic skill costs 2-5 Burns. Each advanced skill costs 10-20 Burns. At 50 Burns remaining, the fighter begins experiencing fatigue and reduced skill effectiveness. At 25 Burns, physical pain and tunnel vision. At 0 Burns, the fighter collapses — and may die if they pushed below their safe minimum (around 25 Burns).",
     "fields": [
       {
         "label": "Activation",
@@ -23089,7 +23101,7 @@
       "skill mechanics"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-717",
@@ -23225,7 +23237,7 @@
       "combat mechanics"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-721",
@@ -23504,7 +23516,7 @@
     "category": "Architecture",
     "name": "Demon Spire Architecture",
     "subtitle": "",
-    "description": "Demon architecture is carved directly from volcanic rock — the Obsidian Spires, forge complexes, and arena pits are all sculpted from solid stone using Corrupted Veyn-enhanced tools. Demon buildings prioritize function over form: walls are thick (defensive), corridors are wide (army movement), and chambers are large (crowd accommodation). The aesthetic is brutal — sharp angles, exposed stone, and minimal decoration. The exception is the Demon Lord's throne room, which is carved with elaborate reliefs depicting the Clan's history in volcanic glass. Demon architecture is designed to be challenged — walls have grip points for climbing, floors have surfaces for traction during fights, and every room can become an arena.",
+    "description": "Demon architecture is carved directly from volcanic rock — the Obsidian Spires, forge complexes, and arena pits are all sculpted from solid stone using Corrupted Veyn-enhanced tools. Demon buildings prioritize function over form: walls are thick (defensive), corridors are wide (army movement), and chambers are large (crowd accommodation). The aesthetic is brutal — sharp angles, exposed stone, and minimal decoration. The exception is the Mordrach's throne room, which is carved with elaborate reliefs depicting the Clan's history in volcanic glass. Demon architecture is designed to be challenged — walls have grip points for climbing, floors have surfaces for traction during fights, and every room can become an arena.",
     "fields": [
       {
         "label": "Activation",
@@ -23531,7 +23543,7 @@
       "architecture"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-730",
@@ -25134,8 +25146,8 @@
   {
     "id": "seed-777",
     "category": "Angels",
-    "name": "The Five Pillars of Angel Governance",
-    "subtitle": "",
+    "name": "The Six Pillars of Angel Governance",
+    "subtitle": "The six pillars that govern the Angel Realm",
     "description": "Angel society is governed by five Archons — the most powerful and ancient Angels, each responsible for a different aspect of civilization. The Pillar of War (military command), the Pillar of Words (diplomacy and communication), the Pillar of Roots (agriculture and infrastructure), the Pillar of Echoes (the Echo network and internal communication), and the Pillar of Silence (intelligence and security). Each Archon maintains their Pillar independently, but major decisions require consensus of all five. Disagreements are resolved through debate — physical combat between Archons is forbidden (the last time it happened, it destroyed a mountain range).",
     "fields": [
       {
@@ -25163,7 +25175,7 @@
       "angels"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-778",
@@ -27157,7 +27169,7 @@
     "category": "Skill Mechanics",
     "name": "Veyn Channeling Breath Control",
     "subtitle": "",
-    "description": "Advanced Veyn users learn to channel Veyn through breath control — inhaling draws ambient Veyn into the body, holding breath stores it temporarily, and exhaling releases it as a focused burst. Breath-channeling is faster than hand-gesture channeling and allows multitasking (fighting while channeling). The technique requires precise breathing rhythm: 4 seconds inhale, 4 seconds hold, 4 seconds exhale. Disrupting the rhythm (through physical impact, emotional shock, or surprise) causes Veyn release failure. Master users can maintain breath-channeling indefinitely.",
+    "description": "Advanced Veyn users learn to channel Veyn through breath control — inhaling draws ambient Veyn into the body, holding breath stores it temporarily, and exhaling releases it as a focused burst. Breath-channeling is faster than hand-gesture channeling and allows multitasking (fighting while channeling). The technique requires precise breathing rhythm: 4 seconds inhale, 4 seconds hold, 4 seconds exhale. Disrupting the rhythm (through physical impact, emotional shock, or surprise) causes Veyn release failure. Master users can maintain breath-channeling for extended periods — until their Veyn reserves run low.",
     "fields": [
       {
         "label": "Activation",
@@ -27184,7 +27196,7 @@
       "skill mechanics"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-833",
@@ -27735,7 +27747,7 @@
     "category": "Combat Training",
     "name": "Veyn Rhythmic Combat Training",
     "subtitle": "",
-    "description": "A training method that teaches fighters to synchronize their Veyn channeling with rhythmic movement — stepping, striking, and breathing in coordinated patterns that maintain steady Veyn flow. The training uses drum beats: 60 BPM for defensive exercises, 120 BPM for standard combat, and 180 BPM for burst attacks. Fighters who master rhythmic combat can maintain Veyn flow indefinitely during battle, avoiding the exhaustion that comes with erratic channeling. The method was developed by the Academy's Combat Department after studying Angel combat rhythms.",
+    "description": "A training method that teaches fighters to synchronize their Veyn channeling with rhythmic movement — stepping, striking, and breathing in coordinated patterns that maintain steady Veyn flow. The training uses drum beats: 60 BPM for defensive exercises, 120 BPM for standard combat, and 180 BPM for burst attacks. Fighters who master rhythmic combat can maintain Veyn flow for as long as their reserves last during battle, avoiding the exhaustion that comes with erratic channeling. The method was developed by the Academy's Combat Department after studying Angel combat rhythms.",
     "fields": [
       {
         "label": "Activation",
@@ -27762,7 +27774,7 @@
       "combat training"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-850",
@@ -31509,7 +31521,7 @@
     "category": "Combat Training",
     "name": "Veyn Combat Breathing Techniques",
     "subtitle": "",
-    "description": "Advanced breathing methods that synchronize Veyn channeling with physical exertion. The four fundamental techniques: Inward Breath (drawing Veyn into the body during inhalation, building reserves), Held Breath (maintaining Veyn stores while performing actions, maximum efficiency), Outward Breath (releasing Veyn as focused energy during exhalation, attacking), and Cycle Breath (continuous rhythm that sustains Veyn flow indefinitely). Each technique requires months of practice to master. Master fighters can switch between techniques mid-combat without breaking flow.",
+    "description": "Advanced breathing methods that synchronize Veyn channeling with physical exertion. The four fundamental techniques: Inward Breath (drawing Veyn into the body during inhalation, building reserves), Held Breath (maintaining Veyn stores while performing actions, maximum efficiency), Outward Breath (releasing Veyn as focused energy during exhalation, attacking), and Cycle Breath (continuous rhythm that sustains Veyn flow for as long as their reserves last). Each technique requires months of practice to master. Master fighters can switch between techniques mid-combat without breaking flow.",
     "fields": [
       {
         "label": "Activation",
@@ -31536,7 +31548,7 @@
       "combat training"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-961",
@@ -32257,7 +32269,7 @@
     "category": "Arts & Entertainment",
     "name": "The Angel Realm Crystal Music Tradition",
     "subtitle": "",
-    "description": "Angels create music using Crystal instruments — tools that produce specific Veyn frequencies through resonance. Crystal instruments include: Chimes (tuned crystal rods struck with Veyn-imbued mallets), Harps (crystal strings that vibrate at specific frequencies), Drums (hollow Crystal formations that produce deep resonance), and Voices (Angels who channel Veyn through their vocal cords, producing sounds impossible for human vocal apparatus). Crystal Music serves multiple purposes: entertainment, meditation, healing, and communication. The most complex compositions require 50+ musicians and can last for hours.",
+    "description": "Angels create music using ",
     "fields": [
       {
         "label": "Activation",
@@ -32284,7 +32296,7 @@
       "arts & entertainment"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-11T23:26:55.434Z"
   },
   {
     "id": "seed-983",
@@ -33262,7 +33274,7 @@
     "category": "Lore & Myths",
     "name": "The Fourth Turning — Climactic Sequence",
     "subtitle": "The specific events of the story's climax when the Sundering Prophecy Cycle reaches its fourth recurrence",
-    "description": "The Fourth Turning is the climactic sequence of the Half-Made World's story — the moment the Sundering Prophecy Cycle reaches its fourth recurrence (~year 2500 VC) and every thread of the narrative converges on Jaiden Marlock's choice. This is not a single battle but a cascading series of events that unfold over approximately 72 hours, during which the world's fate hangs on a boy who was never supposed to exist.\n\n---\n\n## THE OVERTURE (72 Hours Before the Turning)\n\n### The Tremors Begin\nThree days before the turning, the world starts to feel wrong. Ley lines that have pulsed steady for millennia begin to stutter — not break, but falter, like a heartbeat skipping. Veyn levels across all four realms fluctuate wildly. Healing potions lose potency. Enchantments flicker. Angels report that their halos dim for seconds at a time, then recover. Demons feel their auras constrict. Humans near the Sundering Altar describe a low hum that seems to come from the ground itself.\n\nKael von Ashen is the first to understand what is happening. He has been counting the cycle for centuries. He goes to Jaiden and tells him, without decoration: \"The fourth turning is here. You have three days.\"\n\n### The Factions Mobilize\nEvery faction in the world responds to the tremors — and every faction has a different plan:\n\n• **Clint Ashborn** dispatches the Six Pillars to the Shattered Lands with orders to contain the Half-Made \"by any means necessary.\" He does not want Jaiden dead — he wants Jaiden sealed, imprisoned, and studied. He believes the prophecy can be satisfied by force: if Jaiden cannot choose, the choice becomes irrelevant.\n\n• **Tera Morage** sends Licent Varak and her four Bloodward generals to the Academy. Her orders are simple: kill the hybrid before the turning. She will not allow a being that carries both Vow and Pact to reshape the world's order. If the turning happens, she wants the Half-Made dead before he can act.\n\n• **Ruby Divina** convenes her war council. She knows the turning will determine whether humanity survives free or becomes a vassal. Her plan: protect Jaiden long enough for him to choose humanity's interests, then use the aftermath to cement human independence. She does not care what Jaiden chooses as long as it benefits the Human Realm.\n\n• **Wener Leger** and Dark Moon make their move. Wener has spent years positioning himself as Jaiden's teacher, mentor, and confidant. Now he reveals his true intention: he wants Jaiden to choose \"the seam\" — but a seam stitched by Dark Moon's hand, one that gives Wener control over the mended world. He has spent years collecting allies: Licent Varak, fallen angels, disgraced demons, and now a weapon he believes will win the turning: the Sealed Writings, which he has been hunting for decades.\n\n• **The Seer's Order** sends the Seer herself to the Academy. She carries the Truthstone and the incomplete prophecy translation. She believes the turning can be survived — but only if the missing fragments of the prophecy are found. She tells Jaiden: \"The prophecy does not say 'the seam or the silence.' It says 'the seam or the silence — unless the Half-Made gives what neither side can bear.' The missing words change everything.\"\n\n### Jaiden's State\nJaiden is fifteen. He has trained with Carin and Sofia for years. He has mastered the Halo & Horns form and can sustain Full Angel Form for several minutes. He has not yet reached Full Demon Form or True Hybrid Form — the seals are too strong. The Auralis Ruby pulses constantly now, warm against his throat. He can feel it: something beneath the world is waking up, and it is connected to him.\n\nHe does not want to be the Half-Made. He wants to go back to his room at the Academy, eat breakfast with Mark, and pretend the world is not about to end. But the ruby is warm, and his veins are glowing, and Kael is standing in his doorway with the weight of centuries in his eyes.\n\n---\n\n## PHASE 1: THE SHAKING (Hours 0–24)\n\n### The World Eater Stirs\nAt hour zero, the World Eater — the parasitic consciousness embedded in the world core — surges. It has been feeding slowly for millennia, converting the core's Veyn into null-energy. Now, triggered by the cycle's convergence, it feeds aggressively. The effect is immediate and catastrophic:\n\n• **The Human Realm** experiences the worst Veyn drain in recorded history. Ley lines go dark across entire regions. Healing spells fail mid-cast. Enchanted weapons lose their edge. The Common Sundering Altar, located in the neutral temple between realms, cracks down the middle — a fissure that spreads from the base to the crown, leaking raw Veyn into the air like steam from a wound.\n\n• **The Angel Realm** feels the drain as pain. Angels report that their halos burn, then dim, then burn again — as though the Core is trying to communicate through the only channel it has: their vows. Clint Ashborn's halo, the brightest in the realm, flickers for the first time in centuries. He orders the Six Pillars to march.\n\n• **The Demon Realm** feels the drain as hunger. Demons' auras constrict, their Veyn reserves shrink. Tera Morage, whose power is vast enough to be felt across the realm, goes still. She feels the Core's distress and understands, for the first time, that the Fuel might not be infinite. She accelerates her plan: kill the hybrid, now.\n\n• **The Hidden Realm** — where time moves 10x slower — is shielded from the worst of the drain. But Kael von Ashen, who was born there, feels the Aelthar resonance in his bones. The Shudon, dormant for millennia, begin to vibrate. Not wake — vibrate. The stone guardians of the realm entrances tremble in their alcoves, and the Shattered Lands, where the Aelthar made their last stand, begin to collapse.\n\n### The Abyssal Wyrm's Seal Cracks\nBeneath the world's crust, the Abyssal Wyrm's prison — a cage of world-core Veyn maintained by the Aelthar — cracks. Not breaks, but cracks. The Wyrm is miles long, armored in segments that look like landscapes it has consumed, and its breath nullifies all Veyn in its path. The crack releases a single exhalation: a pulse of null-Veyn that surfaces in the Shattered Lands.\n\nThe effect is terrifying. A zone the size of a city block goes dead. No Veyn, no aura, no magic. Anything inside it — plants, animals, people — is reduced to the physical: no enhanced strength, no healing, no magical defense. A Pallantine ranger caught in the edge of the pulse loses her aura so suddenly that she collapses, her body unable to sustain the Veyn-dependent functions it has relied on since birth. She survives. Barely.\n\nKael tells Jaiden: \"The Wyrm is not awake. It is stirring. If the turning is not resolved, the seal will break completely, and the Wyrm will surface. Its breath will drain the entire realm of Veyn. Not just this realm — all of them.\"\n\n### The Void Colossus Appears\nAt hour twelve, a breach opens in the world barrier between the Human and Angel Realms — not a door, not a gate, but a rupture caused by the Veyn fluctuation tearing at the barrier's seams. The Void Colossus is drawn to it instantly.\n\nIt manifests as a towering humanoid figure of compressed void energy, thirty feet tall, featureless except for two dim points of light where eyes would be. It does not attack anyone. It stands at the breach and begins to pull — not at people, but at the barrier itself, widening the rupture with every sweep of its arms. Spatial distortions ripple outward: areas where distance, gravity, and direction lose meaning for seconds at a time.\n\nThe Six Pillars, en route to the Shattered Lands, encounter the Void Colossus. Cyrion (Second Pillar) engages it with Second Sun — a blast of concentrated Holy Energy that would destroy any physical entity. The blast passes through the Colossus like light through glass. The Colossus does not even acknowledge him. It continues widening the breach.\n\nClint Ashborn receives the report and changes his orders: the Six Pillars are to contain the Colossus by closing the breach, not by fighting the entity. The only way to stop it is to seal the rupture. But sealing it requires more Veyn than any single angel can channel — and the Core is draining.\n\n### Dark Moon's Strike\nWhile the world fractures, Wener Leger makes his move. Dark Moon agents — fallen angels, banished demons, and Licent Varak's personal soldiers — attack Elyndor Academy. Not to destroy it, but to seize it. The Academy houses the Academy Sundering Altar, the most powerful Altar in the world, and Wener believes it can be used to amplify the turning — to force Jaiden's choice on Dark Moon's terms.\n\nThe attack is surgical. Dark Moon agents disable the Academy's wards (Wener taught at the Academy for years; he knows every ward by heart). Licent Varak leads the assault on the dormitories, targeting Jaiden directly. He has waited years for this: the hybrid who proves Lisa's \"crime\" produced something powerful. Killing Jaiden would validate everything Licent fought to destroy.\n\nJaiden fights. He releases the first seal — Halo & Horns form — and engages Licent Varak in the Academy courtyard. It is the first time he has ever fought someone who wants him dead for what he is, not what he has done. Licent is a Bloodward demon, B-rank, experienced and ruthless. Jaiden is fifteen, untrained in real combat, and terrified.\n\nSofia intervenes. She reveals her own combat ability — she was Lisa's personal maid, but she was also Lisa's bodyguard, trained in both angelic and demonic fighting styles. She holds Licent off long enough for Carin to arrive. Carin fights Licent to a standstill (she is Lisa's former trainer, and she knows every Bloodward technique). Licent retreats, but not before shattering the Academy Altar's protective wards.\n\n### Bella Rose's Surge\nDuring the attack, Bella Rose — Jaiden's childhood friend, who has no idea what he is — is caught in the crossfire. A Dark Moon agent targets her specifically: Wener knows that Bella's connection to Jaiden makes her leverage. When the agent's Veyn blast strikes Bella, something happens that no one expects.\n\nBella's own Veyn surges — not in defense, but in reflex. The world core responds to Jaiden's presence with a surge of energy that ripples outward through everyone near him, and Bella, standing closest, absorbs the brunt of it. Her Veyn signature, which was ordinary seconds ago, suddenly reads as something else: a resonance with the World Core itself. She does not gain power. She gains awareness. She can feel the Core's distress — the pain of a sleeping god being drained — and she understands, with a clarity that terrifies her, that the turning is not just about Jaiden. It is about the world.\n\nShe tells Jaiden: \"I can feel it. The Core is waking up. And it's scared.\"\n\n---\n\n## PHASE 2: THE CONVERGENCE (Hours 24–48)\n\n### Jaiden Reaches the Shattered Lands\nThe Seer tells Jaiden that the turning must happen at the place where the worlds were torn — the Shattered Lands, where the Aelthar made their last stand. The prophecy says: \"the Half-Made shall stand where the worlds were torn.\" If he does not go there, the turning will happen without him, and the choice will be made by the world itself — which means the World Eater wins.\n\nJaiden travels to the Shattered Lands with Kael von Ashen, Sofia, Carin, Bella, and Mark. The journey takes them through the Human Realm, which is visibly dying: Veyn-Dead Zones spread across the landscape, ley lines flicker like dying campfires, and the people in the streets look up at the sky with the expression of animals that know a storm is coming.\n\nAlong the way, they are intercepted by:\n\n• **Ruby Divina's forces** — the mortal ruler has sent an escort, not out of kindness but to ensure Jaiden reaches the Shattered Lands alive and remembers who shielded him. She gives Jaiden a message: \"Choose humanity. Not because we deserve it, but because we are the weakest, and the strong do not protect the weak unless they are asked.\"\n\n• **Clint Ashborn's Six Pillars** — they have abandoned the Void Colossus (which continues to widen the breach) and moved to intercept Jaiden. Thalor Elwin (Fifth Pillar, Keeper of the Sundering Altar) speaks to Jaiden privately. He tells him: \"I guarded the Altar for centuries. I watched every child step onto it and emerge with a Vow or a Pact. You will step onto the Shattered Lands and emerge with neither. I do not know what that makes you. But I know the Altar recognized you — it stuttered when you touched it. The Core knows you exist. That matters more than any prophecy.\"\n\n• **Tera Morage's army** — the Mordrach has led her forces personally. She stands on the edge of the Shattered Lands and waits. She does not attack. She watches. She is the only ruler who has ever killed her predecessor, and she understands power better than anyone alive. She tells Licent Varak, who has rejoined her ranks: \"If the hybrid chooses, we act. If he does not choose, we act. The only question is how.\"\n\n### The Sealed Writings\nKael von Ashen tells Jaiden the truth he has been hiding for centuries: the Sealed Writings — the Aelthar's final texts, scattered across the world after the Sundering — contain the missing fragments of the prophecy. The Aelthar wrote the prophecy, but they also wrote the explanation. The explanation says:\n\n\"The seam is not a stitch. The silence is not an end. The Half-Made will give what neither side can bear: the reach. The reach is not a place. The reach is a person. And the person must choose to reach for what the world has forbidden — not because the world demands it, but because the world cannot save itself.\"\n\nThe missing fragments change everything. The choice is not between mending and silence. The choice is between being a weapon and attempting the ascension. Jaiden can use his power to force the realms back together (the seam — what Clint wants), or he can let the World Eater drain the Core (the silence — what the Eater wants), or he can do the thing the myth forbids: reach for godhood, the same ascension the First Ascendant failed to do and broke the world doing.\n\n### The Abyssal Wyrm Breaks Free\nAt hour thirty-six, the Wyrm's seal shatters. The Abyssal Wyrm surfaces in the Shattered Lands — miles of armored, segmented body rising from the earth like a mountain uncoiling. Its first full exhalation drains Veyn from a radius of fifty miles. The Shattered Lands, already a wasteland, becomes a zone of absolute null: no magic, no aura, no Veyn. Everything within the zone is reduced to the physical.\n\nThe Six Pillars engage the Wyrm. Cyrion, Serathiel, Liora, Thalor, and Aranweis attack with everything they have — Holy Energy, Ren-enhanced strikes, artifacts, combined techniques. The Wyrm does not fight back. It does not need to. Its breath nullifies their Veyn mid-cast. Thalor's Altar-Rite, which could seal a lesser entity, fails because the Wyrm has already absorbed the Veyn he channels. Cyrion's Second Sun, which could destroy a castle, dissipates two feet from the Wyrm's hide.\n\nOnly Thalor survives the encounter — barely. He retreats with the knowledge that the Wyrm cannot be fought with Veyn. It must be fought with world-core material: Shudon-grade metal. And the only Shudon-grade weapons in the world are the Divine Weapons — artifacts forged by the Aelthar from the same material as the Shudon themselves.\n\n### Tera Morage Enters the Battle\nThe Mordrach, watching the Wyrm surface, makes a decision that surprises everyone: she attacks it. Not to save the world — Tera Morage does not care about the world — but because the Wyrm's null-Veyn breath threatens the Demon Realm, and she will not allow her realm to be drained. She is the most powerful demon alive, unkillable by anything short of a Divine Weapon, and she fights the Wyrm with the full force of the Mordrach's power.\n\nThe battle is cataclysmic. Tera Morage's attacks — empowered by the Veyn of every Mordrach who came before her — actually wound the Wyrm. She tears a segment of its hide free, revealing the landscape beneath: a frozen tundra it consumed centuries ago. The Wyrm, for the first time in its existence, retaliates. Its null-breath hits Tera directly.\n\nThe effect is devastating. Tera Morage, who has never felt weakness, suddenly feels her Veyn reserves drain to nothing. Her aura — the demonic pressure that makes weaker beings kneel — vanishes. She is still the Mordrach, still powerful, still dangerous, but she is no longer invincible. She realizes, with a fury that shakes the battlefield, that the Wyrm has made her mortal.\n\nShe retreats. She will not admit it, but she is afraid.\n\n### Licent Varak's Betrayal\nDuring the chaos, Licent Varak makes his final move. He has been a Dark Moon agent for years, feeding Wener intelligence and positioning himself to seize power when the turning resolves. Now, with every ruler distracted, he attempts to kill Tera Morage — the one demon who stands between him and the Mordrach's throne.\n\nHe finds Tera weakened, her Veyn drained by the Wyrm. He engages her with everything he has: Blood-Oath, Disinter, Guile — his full demonic arsenal. Tera, weakened but not broken, fights back. The battle between Mordrach and Bloodward general is brutal, personal, and short. Tera wins — barely. She kills Licent Varak with her bare hands, tearing his aura apart with the last of her strength.\n\nBut the cost is severe. Tera Morage, the most powerful demon in history, is now weaker than a Scourge-rank demon. Her Veyn reserves will take decades to recover. She collapses on the battlefield, and for the first time in her reign, she cannot protect her realm.\n\n---\n\n## PHASE 3: THE CHOICE (Hours 48–72)\n\n### Jaiden Reaches the Center\nThe Shattered Lands are a dead zone. No Veyn, no aura, no magic. The Abyssal Wyrm circles the wasteland like a serpent around its prey, its null-breath keeping the zone drained. The Void Colossus continues to widen the breach between realms. The World Eater surges in the Core, feeding faster than ever. The Shudon, dormant for millennia, begin to walk — slowly, ponderously, toward the Shattered Lands, as though called by something only they can hear.\n\nJaiden walks into the dead zone. He has released the first seal — Halo & Horns. The Auralis Ruby pulses against his throat, warm and insistent. He can feel the Wyrm's null-field pulling at his Veyn, draining him. He can feel the Core's distress through Bella's resonance. He can feel every faction watching him, waiting for him to choose.\n\nKael walks beside him to the edge of the dead zone, then stops. \"I cannot go further,\" he says. \"The Aelthar's Veyn is too old. The null-field will consume it. This is yours alone.\"\n\nJaiden walks alone into the center of the Shattered Lands, where the Aelthar made their last stand — where the Sundering tore the world apart. The ground beneath his feet is glass, fused by the Aelthar's final Veyn discharge. The sky above is dark, drained of ambient energy. The only light comes from his halo — faint, uncertain, flickering — and from the Auralis Ruby, which pulses like a heartbeat.\n\nHe stands where the worlds were torn. And he begins to speak.\n\n### The Three Offers\nAs Jaiden reaches the center, three forces converge on him — each offering a version of the choice:\n\n**Clint Ashborn** arrives at the edge of the dead zone with the surviving Six Pillars. He calls out to Jaiden: \"Choose the seam. Stitch the realms back together under angelic order. The Vow is the only binding force strong enough to hold the world. Take the Vow, child. Become what your father was — a promise, kept, that holds reality together.\"\n\n**Wener Leger** emerges from the shadows of the Shattered Lands, carrying the Sealed Writings — the Aelthar's final texts. He calls out: \"Choose the seam — but not Clint's seam. A new seam, stitched by Dark Moon. The Sealed Writings contain the knowledge to reshape the world. I have spent decades gathering them. With your power and my knowledge, we can build a world where no one is cast out, no one is forbidden, no one is killed for loving the wrong person. But I must be the one to guide it.\"\n\n**The World Eater** speaks — not in words, but in pressure. It surges through the Core, and Jaiden feels it: a pulling, a draining, an invitation to let go. To release his Veyn, his aura, his hybrid nature into the Core, where the Eater will consume it and end the cycle forever. No more realms, no more barriers, no more Vow or Pact. Just silence. Just peace. Just the end of a world that was broken from the moment it was made.\n\n### The Prophecy's Truth\nJaiden stands in the center of the dead zone, three offers pressing against him, and he remembers the prophecy's missing words — the ones the Seer found, the ones Kael confirmed from the Sealed Writings:\n\n*\"What was sundered shall not be whole again unless the Half-Made gives what neither side can bear. And what was sealed shall not stay sealed if the Half-Made opens what should stay closed.\"*\n\nHe understands now. The prophecy does not ask him to mend the Sundering. It does not ask him to end the world. It asks him to do what neither side can bear — and what neither side can bear is the ascension. Not a seam stitched by angels. Not a silence brought by the Eater. Not a new order built by Dark Moon. The ascension: the reach for godhood that the myth says broke the world the first time it was attempted.\n\nAnd the answer is the ascension. The myth of the Failed Ascension told of a being who reached for godhood and broke the world into three horrors — the World Eater, the Abyssal Wyrm, and the Void Colossus. Those three are now released. The only power that can stop them is the thing the myth forbids: godhood itself. Jaiden must attempt the ascension — to reach for the World Core’s will — knowing the last one who tried failed, and that the failure created the very monsters he now faces.\n\n### The Attempt\nJaiden makes his choice. He does not grip the Auralis Ruby — he lets it be, the seals still holding, because what he is about to attempt has nothing to do with his hybrid nature and everything to do with the Core. He reaches inward, past his own Veyn, past the second pressure behind the pendant, toward the pulse at the heart of the world, and he reaches for it. The First Ascendant reached in hunger and was broken. Jaiden reaches in surrender — and the Core, which has no mind and no anger, only a will, turns toward him.\n\n### The Choice the World Dreaded\nJaiden stands at the center of the Shattered Lands, between the World Eater’s hunger, the Abyssal Wyrm’s fury, and the Void Colossus’s ruin, and he does what the myth said could not be done twice: he reaches for godhood. Whether he succeeds — or becomes the fourth horror — is the question the entire story has built toward. What the prophecy called \"the seam or the silence\" is revealed to be this: the ascension, the one act the world has spent a thousand years praying never happens again.\n\n### The Cost\nJaiden’s wings hold. His horns hold. His halo holds. He does not lose his hybrid nature — he needs it, all of it, to survive what he is attempting. The cost of the ascension is not his power. It is the certainty that he is walking the exact path that broke the world once before, and that if he fails, the three horrors will be four, and this time there will be no Aelthar left to seal them away.\n\n---\n\n## THE AFTERMATH\n\nWhat happens in the aftermath — whether Jaiden succeeds where the First Ascendant failed, or falls, or becomes something the world has no name for — is the story’s final answer. The three world-ending horrors are the test. The Failed Ascension is the myth. And Jaiden Marlock is the boy who has to decide whether to repeat the mistake that made them, or to prove that this time, reaching for godhood will end differently.",
+    "description": "The Fourth Turning is the climactic sequence of the Half-Made World's story — the moment the Sundering Prophecy Cycle reaches its fourth recurrence (~year 2000 VC) and every thread of the narrative converges on Jaiden Marlock's choice. This is not a single battle but a cascading series of events that unfold over approximately 72 hours, during which the world's fate hangs on a boy who was never supposed to exist.\n\n---\n\n## THE OVERTURE (72 Hours Before the Turning)\n\n### The Tremors Begin\nThree days before the turning, the world starts to feel wrong. Ley lines that have pulsed steady for millennia begin to stutter — not break, but falter, like a heartbeat skipping. Veyn levels across all four realms fluctuate wildly. Healing potions lose potency. Enchantments flicker. Angels report that their halos dim for seconds at a time, then recover. Demons feel their auras constrict. Humans near the Sundering Altar describe a low hum that seems to come from the ground itself.\n\nKael von Ashen is the first to understand what is happening. He has been counting the cycle for centuries. He goes to Jaiden and tells him, without decoration: \"The fourth turning is here. You have three days.\"\n\n### The Factions Mobilize\nEvery faction in the world responds to the tremors — and every faction has a different plan:\n\n• **Clint Ashborn** dispatches the Six Pillars to the Shattered Lands with orders to contain the Half-Made \"by any means necessary.\" He does not want Jaiden dead — he wants Jaiden sealed, imprisoned, and studied. He believes the prophecy can be satisfied by force: if Jaiden cannot choose, the choice becomes irrelevant.\n\n• **Tera Morage** sends Licent Varak and her four Bloodward generals to the Academy. Her orders are simple: kill the hybrid before the turning. She will not allow a being that carries both Vow and Pact to reshape the world's order. If the turning happens, she wants the Half-Made dead before he can act.\n\n• **Ruby Divina** convenes her war council. She knows the turning will determine whether humanity survives free or becomes a vassal. Her plan: protect Jaiden long enough for him to choose humanity's interests, then use the aftermath to cement human independence. She does not care what Jaiden chooses as long as it benefits the Human Realm.\n\n• **Wener Leger** and Dark Moon make their move. Wener has spent years positioning himself as Jaiden's teacher, mentor, and confidant. Now he reveals his true intention: he wants Jaiden to choose \"the seam\" — but a seam stitched by Dark Moon's hand, one that gives Wener control over the mended world. He has spent years collecting allies: Licent Varak, fallen angels, disgraced demons, and now a weapon he believes will win the turning: the Sealed Writings, which he has been hunting for decades.\n\n• **The Seer's Order** sends the Seer herself to the Academy. She carries the Truthstone and the incomplete prophecy translation. She believes the turning can be survived — but only if the missing fragments of the prophecy are found. She tells Jaiden: \"The prophecy does not say 'the seam or the silence.' It says 'the seam or the silence — unless the Half-Made gives what neither side can bear.' The missing words change everything.\"\n\n### Jaiden's State\nJaiden is fifteen. He has trained with Carin and Sofia for years. He has mastered the Halo & Horns form and can sustain Full Angel Form for several minutes. He has not yet reached Full Demon Form or True Hybrid Form — the seals are too strong. The Auralis Ruby pulses constantly now, warm against his throat. He can feel it: something beneath the world is waking up, and it is connected to him.\n\nHe does not want to be the Half-Made. He wants to go back to his room at the Academy, eat breakfast with Mark, and pretend the world is not about to end. But the ruby is warm, and his veins are glowing, and Kael is standing in his doorway with the weight of centuries in his eyes.\n\n---\n\n## PHASE 1: THE SHAKING (Hours 0–24)\n\n### The World Eater Stirs\nAt hour zero, the World Eater — the parasitic consciousness embedded in the world core — surges. It has been feeding slowly for millennia, converting the core's Veyn into null-energy. Now, triggered by the cycle's convergence, it feeds aggressively. The effect is immediate and catastrophic:\n\n• **The Human Realm** experiences the worst Veyn drain in recorded history. Ley lines go dark across entire regions. Healing spells fail mid-cast. Enchanted weapons lose their edge. The Common Sundering Altar, located in the neutral temple between realms, cracks down the middle — a fissure that spreads from the base to the crown, leaking raw Veyn into the air like steam from a wound.\n\n• **The Angel Realm** feels the drain as pain. Angels report that their halos burn, then dim, then burn again — as though the Core is trying to communicate through the only channel it has: their vows. Clint Ashborn's halo, the brightest in the realm, flickers for the first time in centuries. He orders the Six Pillars to march.\n\n• **The Demon Realm** feels the drain as hunger. Demons' auras constrict, their Veyn reserves shrink. Tera Morage, whose power is vast enough to be felt across the realm, goes still. She feels the Core's distress and understands, for the first time, that the Fuel might not be infinite. She accelerates her plan: kill the hybrid, now.\n\n• **The Hidden Realm** — where time moves 10x slower — is shielded from the worst of the drain. But Kael von Ashen, who was born there, feels the Aelthar resonance in his bones. The Shudon, dormant for millennia, begin to vibrate. Not wake — vibrate. The stone guardians of the realm entrances tremble in their alcoves, and the Shattered Lands, where the Aelthar made their last stand, begin to collapse.\n\n### The Abyssal Wyrm's Seal Cracks\nBeneath the world's crust, the Abyssal Wyrm's prison — a cage of world-core Veyn maintained by the Aelthar — cracks. Not breaks, but cracks. The Wyrm is miles long, armored in segments that look like landscapes it has consumed, and its breath nullifies all Veyn in its path. The crack releases a single exhalation: a pulse of null-Veyn that surfaces in the Shattered Lands.\n\nThe effect is terrifying. A zone the size of a city block goes dead. No Veyn, no aura, no magic. Anything inside it — plants, animals, people — is reduced to the physical: no enhanced strength, no healing, no magical defense. A Pallantine ranger caught in the edge of the pulse loses her aura so suddenly that she collapses, her body unable to sustain the Veyn-dependent functions it has relied on since birth. She survives. Barely.\n\nKael tells Jaiden: \"The Wyrm is not awake. It is stirring. If the turning is not resolved, the seal will break completely, and the Wyrm will surface. Its breath will drain the entire realm of Veyn. Not just this realm — all of them.\"\n\n### The Void Colossus Appears\nAt hour twelve, a breach opens in the world barrier between the Human and Angel Realms — not a door, not a gate, but a rupture caused by the Veyn fluctuation tearing at the barrier's seams. The Void Colossus is drawn to it instantly.\n\nIt manifests as a towering humanoid figure of compressed void energy, thirty feet tall, featureless except for two dim points of light where eyes would be. It does not attack anyone. It stands at the breach and begins to pull — not at people, but at the barrier itself, widening the rupture with every sweep of its arms. Spatial distortions ripple outward: areas where distance, gravity, and direction lose meaning for seconds at a time.\n\nThe Six Pillars, en route to the Shattered Lands, encounter the Void Colossus. Cyrion (Second Pillar) engages it with Second Sun — a blast of concentrated Holy Energy that would destroy any physical entity. The blast passes through the Colossus like light through glass. The Colossus does not even acknowledge him. It continues widening the breach.\n\nClint Ashborn receives the report and changes his orders: the Six Pillars are to contain the Colossus by closing the breach, not by fighting the entity. The only way to stop it is to seal the rupture. But sealing it requires more Veyn than any single angel can channel — and the Core is draining.\n\n### Dark Moon's Strike\nWhile the world fractures, Wener Leger makes his move. Dark Moon agents — fallen angels, banished demons, and Licent Varak's personal soldiers — attack Elyndor Academy. Not to destroy it, but to seize it. The Academy houses the Academy Sundering Altar, the most powerful Altar in the world, and Wener believes it can be used to amplify the turning — to force Jaiden's choice on Dark Moon's terms.\n\nThe attack is surgical. Dark Moon agents disable the Academy's wards (Wener taught at the Academy for years; he knows every ward by heart). Licent Varak leads the assault on the dormitories, targeting Jaiden directly. He has waited years for this: the hybrid who proves Lisa's \"crime\" produced something powerful. Killing Jaiden would validate everything Licent fought to destroy.\n\nJaiden fights. He releases the first seal — Halo & Horns form — and engages Licent Varak in the Academy courtyard. It is the first time he has ever fought someone who wants him dead for what he is, not what he has done. Licent is a Bloodward demon, B-rank, experienced and ruthless. Jaiden is fifteen, untrained in real combat, and terrified.\n\nSofia intervenes. She reveals her own combat ability — she was Lisa's personal maid, but she was also Lisa's bodyguard, trained in both angelic and demonic fighting styles. She holds Licent off long enough for Carin to arrive. Carin fights Licent to a standstill (she is Lisa's former trainer, and she knows every Bloodward technique). Licent retreats, but not before shattering the Academy Altar's protective wards.\n\n### Bella Rose's Surge\nDuring the attack, Bella Rose — Jaiden's childhood friend, who has no idea what he is — is caught in the crossfire. A Dark Moon agent targets her specifically: Wener knows that Bella's connection to Jaiden makes her leverage. When the agent's Veyn blast strikes Bella, something happens that no one expects.\n\nBella's own Veyn surges — not in defense, but in reflex. The world core responds to Jaiden's presence with a surge of energy that ripples outward through everyone near him, and Bella, standing closest, absorbs the brunt of it. Her Veyn signature, which was ordinary seconds ago, suddenly reads as something else: a resonance with the World Core itself. She does not gain power. She gains awareness. She can feel the Core's distress — the pain of a sleeping god being drained — and she understands, with a clarity that terrifies her, that the turning is not just about Jaiden. It is about the world.\n\nShe tells Jaiden: \"I can feel it. The Core is waking up. And it's scared.\"\n\n---\n\n## PHASE 2: THE CONVERGENCE (Hours 24–48)\n\n### Jaiden Reaches the Shattered Lands\nThe Seer tells Jaiden that the turning must happen at the place where the worlds were torn — the Shattered Lands, where the Aelthar made their last stand. The prophecy says: \"the Half-Made shall stand where the worlds were torn.\" If he does not go there, the turning will happen without him, and the choice will be made by the world itself — which means the World Eater wins.\n\nJaiden travels to the Shattered Lands with Kael von Ashen, Sofia, Carin, Bella, and Mark. The journey takes them through the Human Realm, which is visibly dying: Veyn-Dead Zones spread across the landscape, ley lines flicker like dying campfires, and the people in the streets look up at the sky with the expression of animals that know a storm is coming.\n\nAlong the way, they are intercepted by:\n\n• **Ruby Divina's forces** — the mortal ruler has sent an escort, not out of kindness but to ensure Jaiden reaches the Shattered Lands alive and remembers who shielded him. She gives Jaiden a message: \"Choose humanity. Not because we deserve it, but because we are the weakest, and the strong do not protect the weak unless they are asked.\"\n\n• **Clint Ashborn's Six Pillars** — they have abandoned the Void Colossus (which continues to widen the breach) and moved to intercept Jaiden. Thalor Elwin (Fifth Pillar, Keeper of the Sundering Altar) speaks to Jaiden privately. He tells him: \"I guarded the Altar for centuries. I watched every child step onto it and emerge with a Vow or a Pact. You will step onto the Shattered Lands and emerge with neither. I do not know what that makes you. But I know the Altar recognized you — it stuttered when you touched it. The Core knows you exist. That matters more than any prophecy.\"\n\n• **Tera Morage's army** — the Mordrach has led her forces personally. She stands on the edge of the Shattered Lands and waits. She does not attack. She watches. She is the only ruler who has ever killed her predecessor, and she understands power better than anyone alive. She tells Licent Varak, who has rejoined her ranks: \"If the hybrid chooses, we act. If he does not choose, we act. The only question is how.\"\n\n### The Sealed Writings\nKael von Ashen tells Jaiden the truth he has been hiding for centuries: the Sealed Writings — the Aelthar's final texts, scattered across the world after the Sundering — contain the missing fragments of the prophecy. The Aelthar wrote the prophecy, but they also wrote the explanation. The explanation says:\n\n\"The seam is not a stitch. The silence is not an end. The Half-Made will give what neither side can bear: the reach. The reach is not a place. The reach is a person. And the person must choose to reach for what the world has forbidden — not because the world demands it, but because the world cannot save itself.\"\n\nThe missing fragments change everything. The choice is not between mending and silence. The choice is between being a weapon and attempting the ascension. Jaiden can use his power to force the realms back together (the seam — what Clint wants), or he can let the World Eater drain the Core (the silence — what the Eater wants), or he can do the thing the myth forbids: reach for godhood, the same ascension the First Ascendant failed to do and broke the world doing.\n\n### The Abyssal Wyrm Breaks Free\nAt hour thirty-six, the Wyrm's seal shatters. The Abyssal Wyrm surfaces in the Shattered Lands — miles of armored, segmented body rising from the earth like a mountain uncoiling. Its first full exhalation drains Veyn from a radius of fifty miles. The Shattered Lands, already a wasteland, becomes a zone of absolute null: no magic, no aura, no Veyn. Everything within the zone is reduced to the physical.\n\nThe Six Pillars engage the Wyrm. Cyrion, Serathiel, Liora, Thalor, and Aranweis attack with everything they have — Holy Energy, Ren-enhanced strikes, artifacts, combined techniques. The Wyrm does not fight back. It does not need to. Its breath nullifies their Veyn mid-cast. Thalor's Altar-Rite, which could seal a lesser entity, fails because the Wyrm has already absorbed the Veyn he channels. Cyrion's Second Sun, which could destroy a castle, dissipates two feet from the Wyrm's hide.\n\nOnly Thalor survives the encounter — barely. He retreats with the knowledge that the Wyrm cannot be fought with Veyn. It must be fought with world-core material: Shudon-grade metal. And the only Shudon-grade weapons in the world are the Divine Weapons — artifacts forged by the Aelthar from the same material as the Shudon themselves.\n\n### Tera Morage Enters the Battle\nThe Mordrach, watching the Wyrm surface, makes a decision that surprises everyone: she attacks it. Not to save the world — Tera Morage does not care about the world — but because the Wyrm's null-Veyn breath threatens the Demon Realm, and she will not allow her realm to be drained. She is the most powerful demon alive, unkillable by anything short of a Divine Weapon, and she fights the Wyrm with the full force of the Mordrach's power.\n\nThe battle is cataclysmic. Tera Morage's attacks — empowered by the Veyn of every Mordrach who came before her — actually wound the Wyrm. She tears a segment of its hide free, revealing the landscape beneath: a frozen tundra it consumed centuries ago. The Wyrm, for the first time in its existence, retaliates. Its null-breath hits Tera directly.\n\nThe effect is devastating. Tera Morage, who has never felt weakness, suddenly feels her Veyn reserves drain to nothing. Her aura — the demonic pressure that makes weaker beings kneel — vanishes. She is still the Mordrach, still powerful, still dangerous, but she is no longer invincible. She realizes, with a fury that shakes the battlefield, that the Wyrm has made her mortal.\n\nShe retreats. She will not admit it, but she is afraid.\n\n### Licent Varak's Betrayal\nDuring the chaos, Licent Varak makes his final move. He has been a Dark Moon agent for years, feeding Wener intelligence and positioning himself to seize power when the turning resolves. Now, with every ruler distracted, he attempts to kill Tera Morage — the one demon who stands between him and the Mordrach's throne.\n\nHe finds Tera weakened, her Veyn drained by the Wyrm. He engages her with everything he has: Blood-Oath, Disinter, Guile — his full demonic arsenal. Tera, weakened but not broken, fights back. The battle between Mordrach and Bloodward general is brutal, personal, and short. Tera wins — barely. She kills Licent Varak with her bare hands, tearing his aura apart with the last of her strength.\n\nBut the cost is severe. Tera Morage, the most powerful demon in history, is now weaker than a Scourge-rank demon. Her Veyn reserves will take decades to recover. She collapses on the battlefield, and for the first time in her reign, she cannot protect her realm.\n\n---\n\n## PHASE 3: THE CHOICE (Hours 48–72)\n\n### Jaiden Reaches the Center\nThe Shattered Lands are a dead zone. No Veyn, no aura, no magic. The Abyssal Wyrm circles the wasteland like a serpent around its prey, its null-breath keeping the zone drained. The Void Colossus continues to widen the breach between realms. The World Eater surges in the Core, feeding faster than ever. The Shudon, dormant for millennia, begin to walk — slowly, ponderously, toward the Shattered Lands, as though called by something only they can hear.\n\nJaiden walks into the dead zone. He has released the first seal — Halo & Horns. The Auralis Ruby pulses against his throat, warm and insistent. He can feel the Wyrm's null-field pulling at his Veyn, draining him. He can feel the Core's distress through Bella's resonance. He can feel every faction watching him, waiting for him to choose.\n\nKael walks beside him to the edge of the dead zone, then stops. \"I cannot go further,\" he says. \"The Aelthar's Veyn is too old. The null-field will consume it. This is yours alone.\"\n\nJaiden walks alone into the center of the Shattered Lands, where the Aelthar made their last stand — where the Sundering tore the world apart. The ground beneath his feet is glass, fused by the Aelthar's final Veyn discharge. The sky above is dark, drained of ambient energy. The only light comes from his halo — faint, uncertain, flickering — and from the Auralis Ruby, which pulses like a heartbeat.\n\nHe stands where the worlds were torn. And he begins to speak.\n\n### The Three Offers\nAs Jaiden reaches the center, three forces converge on him — each offering a version of the choice:\n\n**Clint Ashborn** arrives at the edge of the dead zone with the surviving Six Pillars. He calls out to Jaiden: \"Choose the seam. Stitch the realms back together under angelic order. The Vow is the only binding force strong enough to hold the world. Take the Vow, child. Become what your father was — a promise, kept, that holds reality together.\"\n\n**Wener Leger** emerges from the shadows of the Shattered Lands, carrying the Sealed Writings — the Aelthar's final texts. He calls out: \"Choose the seam — but not Clint's seam. A new seam, stitched by Dark Moon. The Sealed Writings contain the knowledge to reshape the world. I have spent decades gathering them. With your power and my knowledge, we can build a world where no one is cast out, no one is forbidden, no one is killed for loving the wrong person. But I must be the one to guide it.\"\n\n**The World Eater** speaks — not in words, but in pressure. It surges through the Core, and Jaiden feels it: a pulling, a draining, an invitation to let go. To release his Veyn, his aura, his hybrid nature into the Core, where the Eater will consume it and end the cycle forever. No more realms, no more barriers, no more Vow or Pact. Just silence. Just peace. Just the end of a world that was broken from the moment it was made.\n\n### The Prophecy's Truth\nJaiden stands in the center of the dead zone, three offers pressing against him, and he remembers the prophecy's missing words — the ones the Seer found, the ones Kael confirmed from the Sealed Writings:\n\n*\"What was sundered shall not be whole again unless the Half-Made gives what neither side can bear. And what was sealed shall not stay sealed if the Half-Made opens what should stay closed.\"*\n\nHe understands now. The prophecy does not ask him to mend the Sundering. It does not ask him to end the world. It asks him to do what neither side can bear — and what neither side can bear is the ascension. Not a seam stitched by angels. Not a silence brought by the Eater. Not a new order built by Dark Moon. The ascension: the reach for godhood that the myth says broke the world the first time it was attempted.\n\nAnd the answer is the ascension. The myth of the Failed Ascension told of a being who reached for godhood and broke the world into three horrors — the World Eater, the Abyssal Wyrm, and the Void Colossus. Those three are now released. The only power that can stop them is the thing the myth forbids: godhood itself. Jaiden must attempt the ascension — to reach for the World Core’s will — knowing the last one who tried failed, and that the failure created the very monsters he now faces.\n\n### The Attempt\nJaiden makes his choice. He does not grip the Auralis Ruby — he lets it be, the seals still holding, because what he is about to attempt has nothing to do with his hybrid nature and everything to do with the Core. He reaches inward, past his own Veyn, past the second pressure behind the pendant, toward the pulse at the heart of the world, and he reaches for it. The First Ascendant reached in hunger and was broken. Jaiden reaches in surrender — and the Core, which has no mind and no anger, only a will, turns toward him.\n\n### The Choice the World Dreaded\nJaiden stands at the center of the Shattered Lands, between the World Eater’s hunger, the Abyssal Wyrm’s fury, and the Void Colossus’s ruin, and he does what the myth said could not be done twice: he reaches for godhood. Whether he succeeds — or becomes the fourth horror — is the question the entire story has built toward. What the prophecy called \"the seam or the silence\" is revealed to be this: the ascension, the one act the world has spent a thousand years praying never happens again.\n\n### The Cost\nJaiden’s wings hold. His horns hold. His halo holds. He does not lose his hybrid nature — he needs it, all of it, to survive what he is attempting. The cost of the ascension is not his power. It is the certainty that he is walking the exact path that broke the world once before, and that if he fails, the three horrors will be four, and this time there will be no Aelthar left to seal them away.\n\n---\n\n## THE AFTERMATH\n\nWhat happens in the aftermath — whether Jaiden succeeds where the First Ascendant failed, or falls, or becomes something the world has no name for — is the story’s final answer. The three world-ending horrors are the test. The Failed Ascension is the myth. And Jaiden Marlock is the boy who has to decide whether to repeat the mistake that made them, or to prove that this time, reaching for godhood will end differently.",
     "fields": [
       {
         "label": "Duration",
@@ -33346,7 +33358,7 @@
       "dark moon"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-09-30T14:20:33.464Z"
+    "updatedAt": "2026-10-11T23:38:26.642Z"
   },
   {
     "id": "seed-1013",
