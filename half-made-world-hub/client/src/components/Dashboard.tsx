@@ -35,35 +35,64 @@ export function Dashboard({
 
   return (
     <div className="dashboard">
-      <section className="hero">
-        <p className="hero-eyebrow">The World So Far</p>
-        <h2 className="hero-title">
-          Welcome to the <span className="grad">Half-Made World</span>
-        </h2>
-        <p className="hero-text">
-          Four realms, angel and demon ranks, divine weapons, and a hundred threads of lore — all of it
-          seeded from your reference document. Browse the archive, or forge something new.
-        </p>
-        <div className="hero-stats">
-          <div className="stat">
-            <span className="stat-num">{total}</span>
-            <span className="stat-label">Entries</span>
+      <div className="dash-top">
+        <section className="hero">
+          <div className="hero-copy">
+            <p className="hero-eyebrow">The World So Far</p>
+            <h2 className="hero-title">
+              Welcome to the <span className="grad">Half-Made World</span>
+            </h2>
+            <p className="hero-text">
+              Four realms, angel and demon ranks, divine weapons, and a hundred threads of lore — all of it
+              seeded from your reference document. Browse the archive, or forge something new.
+            </p>
           </div>
-          <div className="stat">
-            <span className="stat-num">{categories.length}</span>
-            <span className="stat-label">Categories</span>
-          </div>
-        </div>
+          {onAdd && (
+            <div className="hero-side">
+              <button className="btn btn-primary" onClick={onAdd}>
+                <i className="fa-solid fa-plus" style={{ fontSize: 11 }} /> New entry
+              </button>
+            </div>
+          )}
+        </section>
 
-        {onAdd && (
-          <button className="btn btn-primary" onClick={onAdd}>
-            <i className="fa-solid fa-plus" style={{ fontSize: 12 }} /> Add your first new entry
-          </button>
-        )}
+        <aside className="dash-rail">
+          <section className="panel">
+            <h3 className="section-title">At a Glance</h3>
+            <div className="stat-list">
+              <div className="stat">
+                <span className="stat-num">{total}</span>
+                <span className="stat-label">Entries</span>
+              </div>
+              <div className="stat">
+                <span className="stat-num">{categories.length}</span>
+                <span className="stat-label">Categories</span>
+              </div>
+              <div className="stat">
+                <span className="stat-num">{tags.length}</span>
+                <span className="stat-label">Tags</span>
+              </div>
+            </div>
+          </section>
 
-      </section>
+          {recent.length > 0 && (
+            <section className="panel">
+              <h3 className="section-title">Recently Viewed</h3>
+              <div className="recent-list">
+                {recent.map((r) => (
+                  <button key={r.id} className="recent-item" onClick={() => onOpenEntry(r.name)}>
+                    <span className="recent-dot" style={{ background: categoryColor(r.category) }} />
+                    <span className="recent-name">{r.name}</span>
+                    {r.subtitle && <span className="recent-sub">{r.subtitle}</span>}
+                  </button>
+                ))}
+              </div>
+            </section>
+          )}
+        </aside>
+      </div>
 
-      <section className="dashboard-section">
+      <section className="panel">
         <h3 className="section-title">Browse by Category</h3>
         <div className="tile-grid">
           {categories.map((cat) => {
@@ -76,8 +105,8 @@ export function Dashboard({
                 style={{ '--tile': color } as CSSProperties}
                 onClick={() => onSelectCategory(cat.name)}
               >
-                <span className="tile-count">{cat.count}</span>
                 <span className="tile-name">{cat.name}</span>
+                <span className="tile-count">{cat.count}</span>
               </button>
             );
           })}
@@ -85,23 +114,24 @@ export function Dashboard({
       </section>
 
       {tags.length > 0 && (
-        <section className="dashboard-section">
-          <h3 className="section-title">Tag Cloud</h3>
-          <p className="section-hint">Search tags, or click one to filter the archive.</p>
-          <input
-            type="search"
-            className="input tag-search"
-            placeholder="Search tags…"
-            value={tagQuery}
-            onChange={(e) => setTagQuery(e.target.value)}
-          />
+        <section className="panel">
+          <div className="panel-head">
+            <h3 className="section-title">Tag Cloud</h3>
+            <input
+              type="search"
+              className="input tag-search"
+              placeholder="Search tags…"
+              value={tagQuery}
+              onChange={(e) => setTagQuery(e.target.value)}
+            />
+          </div>
           {filteredTags.length === 0 ? (
             <p className="section-hint">No tags match &ldquo;{tagQuery.trim()}&rdquo;.</p>
           ) : (
             <div className="tag-cloud">
               {filteredTags.map((tag) => {
                 const max = tags[0].count || 1;
-                const size = 0.85 + Math.min(0.65, (tag.count / max) * 0.65);
+                const size = 0.78 + Math.min(0.42, (tag.count / max) * 0.42);
                 return (
                   <button
                     key={tag.name}
@@ -117,21 +147,6 @@ export function Dashboard({
               })}
             </div>
           )}
-        </section>
-      )}
-
-      {recent.length > 0 && (
-        <section className="dashboard-section">
-          <h3 className="section-title">Recently Viewed</h3>
-          <div className="recent-list">
-            {recent.map((r) => (
-              <button key={r.id} className="recent-item" onClick={() => onOpenEntry(r.name)}>
-                <span className="recent-dot" style={{ background: categoryColor(r.category) }} />
-                <span className="recent-name">{r.name}</span>
-                {r.subtitle && <span className="recent-sub">{r.subtitle}</span>}
-              </button>
-            ))}
-          </div>
         </section>
       )}
     </div>
