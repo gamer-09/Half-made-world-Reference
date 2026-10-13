@@ -1,3 +1,4 @@
+import type { CSSProperties } from 'react';
 import type { ConnectionInfo, Entry } from '../types';
 import { categoryColor } from '../theme';
 import { DescriptionRenderer } from './DescriptionRenderer';
@@ -13,48 +14,57 @@ interface EntryDetailProps {
 export function EntryDetail({ entry, connections, onEdit, onDelete, onOpenEntry }: EntryDetailProps) {
   const accent = categoryColor(entry.category);
   return (
-    <div className="detail">
-      <div className="detail-head">
+    <div className="detail" style={{ '--accent': accent } as CSSProperties}>
+      <header className="detail-hero">
         <span
           className="chip"
           style={{ color: accent, borderColor: `${accent}55`, background: `${accent}14` }}
         >
+          <span className="chip-dot" style={{ background: accent }} />
           {entry.category}
         </span>
         <span className="detail-updated">
           Updated {new Date(entry.updatedAt).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' })}
         </span>
-      </div>
+      </header>
 
-      <h2 className="detail-name">{entry.name}</h2>
-      {entry.subtitle && <p className="detail-subtitle">{entry.subtitle}</p>}
+      <div className="detail-title-block">
+        <h2 className="detail-name">{entry.name}</h2>
+        {entry.subtitle && <p className="detail-subtitle">{entry.subtitle}</p>}
+      </div>
 
       <DescriptionRenderer text={entry.description} />
 
       {entry.fields.length > 0 && (
-        <dl className="detail-fields">
-          {entry.fields.map((field, i) => (
-            <div className="detail-field" key={`${field.label}-${i}`}>
-              <dt>{field.label}</dt>
-              <dd>{field.value}</dd>
-            </div>
-          ))}
-        </dl>
+        <section className="detail-section">
+          <h3 className="detail-section-title">Details</h3>
+          <dl className="detail-fields">
+            {entry.fields.map((field, i) => (
+              <div className="detail-field" key={`${field.label}-${i}`}>
+                <dt>{field.label}</dt>
+                <dd>{field.value}</dd>
+              </div>
+            ))}
+          </dl>
+        </section>
       )}
 
       {entry.tags.length > 0 && (
-        <div className="detail-tags">
-          {entry.tags.map((tag) => (
-            <span key={tag} className="tag">
-              {tag}
-            </span>
-          ))}
-        </div>
+        <section className="detail-section">
+          <h3 className="detail-section-title">Tags</h3>
+          <div className="detail-tags">
+            {entry.tags.map((tag) => (
+              <span key={tag} className="tag">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </section>
       )}
 
       {connections.length > 0 && (
-        <div className="detail-connections">
-          <h3 className="detail-connections-title">
+        <section className="detail-section">
+          <h3 className="detail-section-title">
             Connections <span className="conn-count">{connections.length}</span>
           </h3>
           <div className="conn-list">
@@ -73,7 +83,7 @@ export function EntryDetail({ entry, connections, onEdit, onDelete, onOpenEntry 
               </div>
             ))}
           </div>
-        </div>
+        </section>
       )}
 
       {onEdit && (

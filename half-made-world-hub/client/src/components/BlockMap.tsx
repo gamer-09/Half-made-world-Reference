@@ -1,74 +1,29 @@
-import { useCallback, useMemo, useState } from 'react';
+import { useCallback, useMemo, useState, type CSSProperties } from 'react';
 import type { Entry, StoryLink } from '../types';
 import { categoryColor } from '../theme';
-import { storyLinkType } from '../storyLinkTypes';
 
 /**
- * Block Chain Map — geography as realm panels with item cards.
+ * Block Chain Map — geography as realm blocks with linked item blocks.
  *
- * Each realm is a visible panel with a colored header.
- * Items inside are compact cards with clear text.
- * Everything is readable at a glance — no zooming needed.
+ * The four Realms are the top-level blocks. Every entry that has a
+ * containment link (located in / lives in / home of / part of) is chained
+ * to the realm nearest to it, so the whole geography shows up instead of
+ * collapsing into cycles.
  */
 
 const CONTAINMENT_TYPES = new Set(['located in', 'lives in', 'home of', 'part of']);
-const PARENT_PRIORITY = ['located in', 'lives in', 'home of', 'part of'];
+const OTHER_REALM = 'Other Regions';
 
-interface TreeNode {
+interface MapItem {
   name: string;
   entry: Entry | null;
-  children: TreeNode[];
-  size: number;
-  parentName: string | null;
-  parentType: string | null;
+  depth: number;
 }
 
-function buildTree(entries: Entry[], storyLinks: StoryLink[]): TreeNode {
-  const byName = new Map(entries.map((e) => [e.name, e]));
-  const participating = new Set<string>();
-  for (const e of entries) if (e.category === 'Realms') participating.add(e.name);
-  const containment = storyLinks.filter((l) => CONTAINMENT_TYPES.has(l.type));
-  for (const l of containment) {
-    if (byName.has(l.source)) participating.add(l.source);
-    if (byName.has(l.target)) participating.add(l.target);
-  }
-  const parentOf = new Map<string, string>();
-  const typeOf = new Map<string, string>();
-  const ordered = [...containment].sort((a, b) => PARENT_PRIORITY.indexOf(a.type) - PARENT_PRIORITY.indexOf(b.type));
-  for (const l of ordered) {
-    if (l.source === l.target) continue;
-    if (!participating.has(l.source) || !participating.has(l.target)) continue;
-    if (!parentOf.has(l.source)) { parentOf.set(l.source, l.target); typeOf.set(l.source, l.type); }
-  }
-  const childrenOf = new Map<string, string[]>();
-  for (const [child, parent] of parentOf) {
-    const list = childrenOf.get(parent) ?? [];
-    list.push(child);
-    childrenOf.set(parent, list);
-  }
-  const nodeMap = new Map<string, TreeNode>();
-  const build = (name: string, seen: Set<string>): TreeNode => {
-    const existing = nodeMap.get(name);
-    if (existing) return existing;
-    const node: TreeNode = { name, entry: byName.get(name) ?? null, children: [], size: 1, parentName: null, parentType: null };
-    nodeMap.set(name, node);
-    for (const kid of childrenOf.get(name) ?? []) {
-      if (seen.has(kid)) continue;
-      const nextSeen = new Set(seen); nextSeen.add(kid);
-      const child = build(kid, nextSeen);
-      child.parentName = name; child.parentType = typeOf.get(kid) ?? null;
-      node.children.push(child);
-    }
-    return node;
-  };
-  const roots = [...participating].filter((n) => !parentOf.has(n));
-  const world: TreeNode = { name: 'The World', entry: null, children: [], size: 1, parentName: null, parentType: null };
-  for (const r of roots) world.children.push(build(r, new Set([r])));
-  const measure = (n: TreeNode): number => { let s = n.children.length ? 0 : 1; for (const c of n.children) s += measure(c); n.size = s || 1; return s || 1; };
-  measure(world);
-  const sortRec = (n: TreeNode) => { n.children.sort((a, b) => b.size - a.size); n.children.forEach(sortRec); };
-  sortRec(world);
-  return world;
+interface RealmPanel {
+  name: string;
+  color: string;
+  items: MapItem[];
 }
 
 function hashOf(name: string): string {
@@ -77,97 +32,151 @@ function hashOf(name: string): string {
   return (h >>> 0).toString(16).padStart(8, '0').slice(0, 6);
 }
 
+function buildPanels(entries: Entry[], storyLinks: StoryLink[]): RealmPanel[] {
+  const byName = new Map(entries.map((e) => [e.name, e]));
+  const realms = entries.filter((e) => e.category === 'Realms');
+  const realmNames = new Set(realms.map((r) => r.name));
+
+  // undirected adjacency over containment links (direction in the data is
+  // inconsistent, so treat containment as a mutual relationship)
+  const adj = new Map<string, Set<string>>();
+  const link = (a: string, b: string) => {
+    if (!adj.has(a)) adj.set(a, new Set());
+    adj.get(a)!.add(b);
+  };
+  for (const l of storyLinks) {
+    if (!CONTAINMENT_TYPES.has(l.type) || l.source === l.target) continue;
+    if (!byName.has(l.source) || !byName.has(l.target)) continue;
+    link(l.source, l.target);
+    link(l.target, l.source);
+  }
+
+  // multi-source BFS from every realm: each entry is claimed by the realm
+  // it is fewest steps from, so no entry is lost to a cycle.
+  const depth = new Map<string, number>();
+  const owner = new Map<string, string>();
+  const queue: string[] = [];
+  for (const r of realms) { depth.set(r.name, 0); owner.set(r.name, r.name); queue.push(r.name); }
+  for (let qi = 0; qi < queue.length; qi += 1) {
+    const n = queue[qi];
+    const d = depth.get(n)!;
+    for (const m of adj.get(n) ?? []) {
+      if (depth.has(m)) continue;
+      depth.set(m, d + 1);
+      owner.set(m, owner.get(n)!);
+      queue.push(m);
+    }
+  }
+
+  const groups = new Map<string, MapItem[]>();
+  for (const r of realms) groups.set(r.name, []);
+  const others: MapItem[] = [];
+  for (const [name, d] of depth) {
+    if (realmNames.has(name)) continue;
+    const item: MapItem = { name, entry: byName.get(name) ?? null, depth: d };
+    const o = owner.get(name)!;
+    if (groups.has(o)) groups.get(o)!.push(item);
+    else others.push(item);
+  }
+
+  const panels: RealmPanel[] = realms.map((r) => ({
+    name: r.name,
+    color: categoryColor(r.category),
+    items: (groups.get(r.name) ?? []).sort((a, b) => a.depth - b.depth || a.name.localeCompare(b.name)),
+  }));
+
+  if (others.length) {
+    others.sort((a, b) => a.depth - b.depth || a.name.localeCompare(b.name));
+    panels.push({ name: OTHER_REALM, color: '#8a8f9c', items: others });
+  }
+
+  return panels.sort((a, b) => b.items.length - a.items.length);
+}
+
 interface BlockMapProps {
   entries: Entry[];
   storyLinks: StoryLink[];
   onNodeClick: (entry: Entry) => void;
 }
 
-interface RealmPanel {
-  name: string;
-  color: string;
-  items: TreeNode[];
-}
-
 export function BlockMap({ entries, storyLinks, onNodeClick }: BlockMapProps) {
-  const tree = useMemo(() => buildTree(entries, storyLinks), [entries, storyLinks]);
-  const [hoverId, setHoverId] = useState<string | null>(null);
+  const panels = useMemo(() => buildPanels(entries, storyLinks), [entries, storyLinks]);
   const [expandedRealm, setExpandedRealm] = useState<string | null>(null);
 
-  // Build realm panels from tree
-  const panels = useMemo<RealmPanel[]>(() => {
-    return tree.children.map((child) => {
-      const items: TreeNode[] = [];
-      const walk = (n: TreeNode) => {
-        if (n.children.length === 0) items.push(n);
-        else for (const c of n.children) walk(c);
-      };
-      walk(child);
-      const entry = child.entry;
-      return {
-        name: child.name,
-        color: entry ? categoryColor(entry.category) : '#e2c044',
-        items,
-      };
-    });
-  }, [tree]);
-
   const totalItems = panels.reduce((s, p) => s + p.items.length, 0);
-  const totalLinks = panels.reduce((s, p) => s + p.items.filter((i) => i.parentType).length, 0) + panels.length;
+  const totalLinks = useMemo(
+    () => storyLinks.filter((l) => CONTAINMENT_TYPES.has(l.type)).length,
+    [storyLinks],
+  );
 
-  const handleCardClick = useCallback((node: TreeNode) => {
-    if (node.entry) onNodeClick(node.entry);
+  const handleCardClick = useCallback((item: MapItem) => {
+    if (item.entry) onNodeClick(item.entry);
   }, [onNodeClick]);
 
   return (
-    <div className="blockmap-panels">
+    <div className="blockmap">
       <div className="blockmap-bar">
         <div className="blockmap-stats">
-          <span className="blockmap-stat"><span className="blockmap-stat-dot genesis-dot" /> {panels.length} realm{panels.length === 1 ? '' : 's'}</span>
-          <span className="blockmap-stat"><span className="blockmap-stat-dot" /> {totalItems} block{totalItems === 1 ? '' : 's'}</span>
-          <span className="blockmap-stat"><span className="blockmap-stat-dot chain-dot" /> {totalLinks} link{totalLinks === 1 ? '' : 's'}</span>
+          <span className="blockmap-stat">
+            <span className="blockmap-dot" style={{ background: '#c8a876' }} />
+            <b>{panels.length}</b> realm{panels.length === 1 ? '' : 's'}
+          </span>
+          <span className="blockmap-stat">
+            <span className="blockmap-dot" style={{ background: '#8fb27a' }} />
+            <b>{totalItems}</b> block{totalItems === 1 ? '' : 's'}
+          </span>
+          <span className="blockmap-stat">
+            <span className="blockmap-dot" style={{ background: '#9a6fd6' }} />
+            <b>{totalLinks}</b> link{totalLinks === 1 ? '' : 's'}
+          </span>
         </div>
+        <p className="blockmap-hint">Click a realm to collapse it · click a block to open its entry</p>
       </div>
 
       <div className="blockmap-grid">
         {panels.map((panel) => {
           const isExpanded = expandedRealm === panel.name || expandedRealm === null;
           return (
-            <div key={panel.name} className="realm-panel">
-              {/* Realm header */}
-              <div
-                className="realm-panel-header"
-                style={{ background: panel.color, cursor: 'pointer' }}
+            <article
+              key={panel.name}
+              className={`realm-panel${isExpanded ? ' open' : ''}`}
+              style={{ '--c': panel.color } as CSSProperties}
+            >
+              <button
+                className="realm-head"
                 onClick={() => setExpandedRealm(expandedRealm === panel.name ? null : panel.name)}
+                aria-expanded={isExpanded}
               >
-                <span className="realm-panel-name">{panel.name}</span>
-                <span className="realm-panel-count">{panel.items.length} items</span>
-              </div>
+                <span className="realm-swatch" />
+                <span className="realm-name">{panel.name}</span>
+                <span className="realm-count">{panel.items.length}</span>
+                <span className="realm-chevron">▾</span>
+              </button>
 
-              {/* Item cards grid */}
               {isExpanded && (
-                <div className="realm-panel-body">
+                <div className="realm-body">
                   {panel.items.map((item) => {
-                    const isHovered = hoverId === item.name;
                     const catColor = item.entry ? categoryColor(item.entry.category) : panel.color;
                     return (
-                      <div
+                      <button
                         key={item.name}
-                        className={`item-card${isHovered ? ' hovered' : ''}`}
-                        style={{ borderLeftColor: catColor }}
-                        onPointerEnter={() => setHoverId(item.name)}
-                        onPointerLeave={() => setHoverId(null)}
+                        className={`block-item${item.depth > 1 ? ' nested' : ''}`}
+                        style={{ '--cc': catColor } as CSSProperties}
                         onClick={() => handleCardClick(item)}
                         title={item.entry?.subtitle || item.name}
                       >
-                        <span className="item-card-name">{item.name}</span>
-                        <span className="item-card-hash">0x{hashOf(item.name)}</span>
-                      </div>
+                        <span className="block-item-dot" />
+                        <span className="block-item-main">
+                          <span className="block-item-name">{item.name}</span>
+                          {item.entry?.subtitle && <span className="block-item-sub">{item.entry.subtitle}</span>}
+                        </span>
+                        <span className="block-item-hash">0x{hashOf(item.name)}</span>
+                      </button>
                     );
                   })}
                 </div>
               )}
-            </div>
+            </article>
           );
         })}
       </div>

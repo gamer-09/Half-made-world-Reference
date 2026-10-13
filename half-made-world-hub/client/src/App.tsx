@@ -25,6 +25,7 @@ import { Modal } from './components/Modal';
 import { RELATIONSHIP_TYPES, relationshipType } from './relationshipTypes';
 import { STORY_LINK_TYPES, storyLinkType } from './storyLinkTypes';
 import { findCharacter } from './nameMatch';
+import { categoryColor } from './theme';
 
 const canEdit = import.meta.env.DEV;
 
@@ -684,7 +685,7 @@ export default function App() {
       </main>
 
       {selected && (
-        <Modal key={selected.id} onClose={() => setSelected(null)}>
+        <Modal key={selected.id} onClose={() => setSelected(null)} accent={categoryColor(selected.category)}>
           <EntryDetail
             entry={selected}
             connections={connections}
