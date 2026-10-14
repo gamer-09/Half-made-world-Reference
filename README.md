@@ -13,11 +13,11 @@ have to live buried in a single document again.
 - **`Half_made world ideas.docx`** — the original source document. Everything in the hub was seeded
   from this file; it remains here as the canonical starting reference.
 
-The archive holds **542 entries across 29 categories** — Demon/Angel/Class/Hybrid Skills, Titles,
+The archive holds **1033 entries across 57 categories** — Demon/Angel/Class/Hybrid Skills, Titles,
 Rules & Notes, Characters, Classes, Class Progression, Grade System, Rune Star Circles, Monsters,
-Locations, Items, Magic Systems, Realms, Coins, Clan, and more — all browsable, searchable, and
-editable through the UI. **24 characters**, **712 story links**, and **49 relationships** tie it
-all together.
+Locations, Items, Magic Systems, Realms, Coins, Clan, Economy, Organizations, Calendar, Combat
+Mechanics, Laws & Justice, Academy, and many more — all browsable, searchable, and editable through
+the UI. **26 characters**, **4625 story links**, and **64 relationships** tie it all together.
 
 ## Quick start
 
@@ -64,7 +64,7 @@ Relationships persist in `server/data/relationships.json`.
 ## Story Web
 
 A **Story Web** page shows the *whole story* as one interactive map — every realm, location,
-monster, being, rank, item, artifact, character, and plot thread as a node, connected by **712**
+monster, being, rank, item, artifact, character, and plot thread as a node, connected by **4625**
 colored, arrowed links like `located in`, `guards`, `rules`, `kills`, `sealed in`, `crafted by`, and
 `story of`. Character relationship links are merged in too.
 
@@ -87,6 +87,14 @@ hierarchy.
 - **Scroll** to zoom, **drag** to pan, **hover** to trace a chain, **click** a block to open its
   entry, **Esc** to fit the whole map to screen.
 
+## Query Chat (AI)
+
+A **Query Chat** view lets you ask the archive plain-language questions. It first reduces the
+question to a search term, surfaces matching entries, and — when a key is configured — answers
+using Groq (`openai/gpt-oss-20b`) via the server's `/api/ai/answer` and `/api/ai/explore` routes.
+Set `GROQ_API_KEY` in the server environment to enable the AI answers; the archive search works
+without a key.
+
 ## World systems (as captured in the archive)
 
 - **Ranks & roles** — angel and demon rank (Serapharch↔Lumen, Mordrach↔Gnash) measures *power*, not
@@ -95,14 +103,15 @@ hierarchy.
   Evolution Quests. Max level is 100.
 - **Rune Star Circles (1–7)** — Mages progress by inscribing Rune Stars into their heart instead of
   using the Grade system; each circle maps to a rough Grade equivalent (1st≈F … 7th≈S).
-- **Classes (19)** — Veyn and Ren classes, each with 10 class-skills and a 7-tier progression
+- **Classes (20)** — Veyn and Ren classes, each with 10 class-skills and a 7-tier progression
   ladder. Angels/demons learn max 5 class-skills; humans learn all. Veyn & Ren can't mix (Smithing
   is the sole exception; angels/demons may unlock a Ren Organ at the cost of all Veyn).
 - **Magic** — Veyn (neutral) → Holy Energy (angels/saints) and Corrupted Veyn (demons); Ren → Auric
   Ren (paladins).
 - **Currency** — Sigils: 100 silver = 1 gold, 1,000 gold = 1 platinum.
-- **Reference document** — `Half_made world ideas.docx` is regenerated from `world.json` (the source
-  of truth) so it always mirrors the archive exactly.
+- **Reference document** — `Half_made world ideas.docx` is the original source the archive was
+  transcribed from. The live `server/data/*.json` files are the source of truth; the bundled seed
+  data is synced from them with `npm run seeds:sync` (or verified with `npm run seeds:check`).
 
 ## API reference
 
@@ -116,6 +125,7 @@ hierarchy.
 | PUT | `/api/entries/:id` | Update an entry |
 | DELETE | `/api/entries/:id` | Delete an entry |
 | GET | `/api/categories` | Category names + entry counts |
+| DELETE | `/api/categories/:name` | Delete a category and cascade-remove its entries, relationships, and story links |
 | POST | `/api/reset` | Reset entries, relationships, and story links back to their original seeds |
 
 **Relationships**
@@ -130,3 +140,11 @@ hierarchy.
 **Story links**
 
 Same CRUD shape as relationships, under `/api/story-links`.
+
+**Search & AI**
+
+| Method | Route | Description |
+| --- | --- | --- |
+| GET | `/api/search` | Full-text search across the archive (`?q=…`) |
+| POST | `/api/ai/answer` | Answer a natural-language question from the archive contents (Groq) |
+| POST | `/api/ai/explore` | AI-guided exploration/discovery across the archive (Groq) |
