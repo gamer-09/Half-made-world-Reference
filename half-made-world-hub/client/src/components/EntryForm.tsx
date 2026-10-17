@@ -58,10 +58,14 @@ export function EntryForm({ categories, existingNames, editing, onSave, onCancel
       setError('Write a description — this is the heart of the entry.');
       return;
     }
-    const tags = tagsText
-      .split(',')
-      .map((t) => t.trim())
-      .filter(Boolean);
+    const tags = Array.from(
+      new Set(
+        tagsText
+          .split(',')
+          .map((t) => t.trim().toLowerCase())
+          .filter(Boolean),
+      ),
+    );
     setSaving(true);
     onSave({
       category: chosenCategory,
