@@ -6,6 +6,9 @@ export const CATEGORY_COLORS: Record<string, string> = {
   Locations: '#c8a876',
   'Hidden Realm': '#7f8fa3',
 
+  // ── Tears in the world ──
+  Rifts: '#b06bd6',
+
   // ── People ──
   Characters: '#c8a876',
   Humans: '#c8a876',
