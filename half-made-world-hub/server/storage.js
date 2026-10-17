@@ -3,6 +3,7 @@ const path = require('path');
 const seed = require('./seed');
 const relSeed = require('./seed-relationships');
 const linkSeed = require('./seed-story-links');
+const { scheduleSync } = require('./pipeline');
 
 const DATA_DIR = path.join(__dirname, 'data');
 const DATA_FILE = path.join(DATA_DIR, 'world.json');
@@ -42,6 +43,7 @@ function loadWorld() {
 function saveWorld(world) {
   ensureDataFile();
   fs.writeFileSync(DATA_FILE, JSON.stringify(world, null, 2), 'utf-8');
+  scheduleSync('entries updated');
 }
 
 function resetWorld() {
@@ -58,6 +60,7 @@ function loadRelationships() {
 function saveRelationships(list) {
   ensureDataFile();
   fs.writeFileSync(REL_FILE, JSON.stringify(list, null, 2), 'utf-8');
+  scheduleSync('relationships updated');
 }
 
 function resetRelationships() {
@@ -74,6 +77,7 @@ function loadStoryLinks() {
 function saveStoryLinks(list) {
   ensureDataFile();
   fs.writeFileSync(LINK_FILE, JSON.stringify(list, null, 2), 'utf-8');
+  scheduleSync('story links updated');
 }
 
 function resetStoryLinks() {
