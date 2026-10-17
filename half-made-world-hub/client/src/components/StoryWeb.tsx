@@ -5,23 +5,15 @@ import { storyLinkType } from '../storyLinkTypes';
 import { findCharacter } from '../nameMatch';
 import { categoryColor } from '../theme';
 
-// ── Layout constants ───────────────────────────────────────────────────
-// Column-based layout: each category is a vertical column, scrollable.
-const NODE_R = 14;
+// ── Brain-web layout ───────────────────────────────────────────────────
+// Nodes are entries (plus any referenced names). A force simulation seeds
+// each category as a "lobe" on a ring, then lets repulsion + link springs +
+// a gentle pull toward each lobe's home arrange them into an organic web.
+// A uniform spatial grid keeps repulsion near O(n) so ~1000 nodes stay fast.
 const PICKER_KEY = 'hmw-web-hidden-categories';
 
-// Column layout
-const COL_PAD_LEFT = 20;
-const COL_WIDTH = 140;       // width per category column
-const NODE_ROW_H = 46;       // vertical space per node
-const COL_HEADER_H = 30;
-const COL_PAD_Y = 8;
-const COL_GAP = 16;          // gap between columns
-const EDGE_CURVE = 0.25;     // edge curvature strength
-
-// Category ordering — world columns left (geography, people, story),
-// systems in the middle, life/culture on the right. Categories not listed
-// here are appended alphabetically after the known ones.
+// Category ordering used to sort the legend / filter chips. Categories not
+// listed here are appended alphabetically after the known ones.
 const CATEGORY_ORDER = [
   // Geography
   'Realms', 'Locations', 'Hidden Realm',
@@ -52,16 +44,12 @@ interface WebEdge {
   id: string; kind: 'story' | 'relationship';
   source: string; target: string; type: string;
   label: string; description: string; color: string; dashed: boolean;
+  bend: number;
 }
 
 interface Geom {
   ax: number; ay: number; bx: number; by: number;
   mx: number; my: number; curvedPath: string;
-}
-
-interface ColInfo {
-  category: string; x: number; y: number;
-  width: number; height: number; color: string; nodeCount: number;
 }
 
 interface StoryWebProps {
@@ -74,58 +62,38 @@ interface StoryWebProps {
   onDeleteRel?: (rel: Relationship) => void;
 }
 
-// ── Column-based layout ────────────────────────────────────────────────
-// Each category = one vertical column. Columns flow left-to-right.
-// Nodes stack vertically within each column. Wide = scrollable.
-function columnLayout(
-  displayNodes: { name: string; category: string }[],
-): { positions: Positions; size: { width: number; height: number }; columns: ColInfo[] } {
-  const groups = new Map<string, { name: string; category: string }[]>();
-  for (const n of displayNodes) {
-    const list = groups.get(n.category) ?? [];
-    list.push(n);
-    groups.set(n.category, list);
+// ── Helpers ────────────────────────────────────────────────────────────
+
+function hashStr(s: string): number {
+  let h = 2166136261;
+  for (let i = 0; i < s.length; i += 1) {
+    h ^= s.charCodeAt(i);
+    h = Math.imul(h, 16777619);
   }
+  return h >>> 0;
+}
 
-  const known = CATEGORY_ORDER.filter((c) => groups.has(c));
-  const extra = [...groups.keys()].filter((c) => !CATEGORY_ORDER.includes(c)).sort();
-  const catOrder = [...known, ...extra];
+// Node radius grows with connection count so hubs stand out (brain-like).
+function radiusFor(deg: number): number {
+  return 5 + Math.min(10, Math.sqrt(deg) * 2.1);
+}
 
-  const positions: Positions = {};
-  const columns: ColInfo[] = [];
-  let curX = COL_PAD_LEFT;
-  let maxHeight = 0;
-
-  for (const cat of catOrder) {
-    const nodes = groups.get(cat) ?? [];
-    if (nodes.length === 0) continue;
-
-    const rows = nodes.length;
-    const colH = COL_HEADER_H + COL_PAD_Y * 2 + rows * NODE_ROW_H;
-
-    columns.push({
-      category: cat, x: curX, y: 0,
-      width: COL_WIDTH, height: colH,
-      color: categoryColor(cat), nodeCount: nodes.length,
-    });
-
-    // Place nodes vertically in column
-    const startY = COL_HEADER_H + COL_PAD_Y;
-    for (let i = 0; i < nodes.length; i++) {
-      positions[nodes[i].name] = {
-        x: curX + COL_WIDTH / 2,
-        y: startY + i * NODE_ROW_H + NODE_R + 2,
-      };
-    }
-
-    maxHeight = Math.max(maxHeight, colH);
-    curX += COL_WIDTH + COL_GAP;
-  }
-
-  const totalWidth = curX + COL_PAD_LEFT;
-  const totalHeight = maxHeight + 60; // bottom padding
-
-  return { positions, size: { width: totalWidth, height: totalHeight }, columns };
+// A gentle organic curve between two points. `shorten` pulls the endpoints in
+// so arrowheads stay clear of the node circles.
+function curvePath(a: Pos, b: Pos, bend: number, shorten: number): Geom {
+  const dx = b.x - a.x;
+  const dy = b.y - a.y;
+  const dist = Math.hypot(dx, dy) || 1;
+  const ux = dx / dist;
+  const uy = dy / dist;
+  const sx = a.x + ux * shorten;
+  const sy = a.y + uy * shorten;
+  const ex = b.x - ux * (shorten + 2);
+  const ey = b.y - uy * (shorten + 2);
+  const off = bend * dist * 0.12;
+  const mx = (sx + ex) / 2 - uy * off;
+  const my = (sy + ey) / 2 + ux * off;
+  return { ax: sx, ay: sy, bx: ex, by: ey, mx, my, curvedPath: `M ${sx} ${sy} Q ${mx} ${my} ${ex} ${ey}` };
 }
 
 function truncate(name: string, max = 18): string {
@@ -146,9 +114,160 @@ function loadHiddenFromStorage(): Set<string> {
   return new Set();
 }
 
+// ── Force-directed "brain web" layout ──────────────────────────────────
+function brainLayout(
+  displayNodes: { name: string; category: string }[],
+  edges: WebEdge[],
+  degree: Map<string, number>,
+  nonce: number,
+): { positions: Positions; size: { width: number; height: number } } {
+  const n = displayNodes.length;
+  if (n === 0) return { positions: {}, size: { width: 900, height: 640 } };
+
+  const groups = new Map<string, number[]>();
+  displayNodes.forEach((nd, i) => {
+    const g = groups.get(nd.category);
+    if (g) g.push(i); else groups.set(nd.category, [i]);
+  });
+
+  const cats = [...groups.keys()].sort();
+  const R = Math.max(340, Math.sqrt(n) * 48);
+  const pos: Pos[] = new Array(n);
+  const home: Pos[] = new Array(n);
+  const rot = nonce * 0.37;
+
+  cats.forEach((cat, ci) => {
+    const angle = (2 * Math.PI * ci) / cats.length + rot;
+    const cx = Math.cos(angle) * R;
+    const cy = Math.sin(angle) * R;
+    const members = groups.get(cat)!;
+    const spread = 24 + Math.sqrt(members.length) * 15;
+    members.forEach((idx, j) => {
+      const a = (2 * Math.PI * j) / members.length + ci * 0.7 + rot;
+      const rr = spread * Math.sqrt((j + 0.5) / members.length);
+      pos[idx] = { x: cx + Math.cos(a) * rr, y: cy + Math.sin(a) * rr };
+      home[idx] = { x: cx, y: cy };
+    });
+  });
+
+  const idxByName = new Map(displayNodes.map((nd, i) => [nd.name, i]));
+  const links: [number, number][] = [];
+  for (const e of edges) {
+    const a = idxByName.get(e.source);
+    const b = idxByName.get(e.target);
+    if (a !== undefined && b !== undefined && a !== b) links.push([a, b]);
+  }
+
+  const degArr = displayNodes.map((nd) => degree.get(nd.name) ?? 0);
+
+  const k = 56;
+  const cell = k * 1.7;
+  const cutoff = cell * 1.45;
+  const cutoff2 = cutoff * cutoff;
+
+  const disp: Pos[] = new Array(n);
+  const iterations = n > 700 ? 130 : n > 320 ? 200 : 300;
+
+  for (let iter = 0; iter < iterations; iter += 1) {
+    for (let i = 0; i < n; i += 1) disp[i] = { x: 0, y: 0 };
+
+    // Pairwise repulsion, resolved through a uniform grid.
+    const grid = new Map<number, number[]>();
+    for (let i = 0; i < n; i += 1) {
+      const gx = Math.floor(pos[i].x / cell);
+      const gy = Math.floor(pos[i].y / cell);
+      const key = (gx + 4000) * 100000 + (gy + 4000);
+      const bucket = grid.get(key);
+      if (bucket) bucket.push(i); else grid.set(key, [i]);
+    }
+    for (let i = 0; i < n; i += 1) {
+      const gx = Math.floor(pos[i].x / cell);
+      const gy = Math.floor(pos[i].y / cell);
+      for (let ox = -1; ox <= 1; ox += 1) {
+        for (let oy = -1; oy <= 1; oy += 1) {
+          const bucket = grid.get((gx + ox + 4000) * 100000 + (gy + oy + 4000));
+          if (!bucket) continue;
+          for (const j of bucket) {
+            if (j <= i) continue;
+            let dx = pos[i].x - pos[j].x;
+            let dy = pos[i].y - pos[j].y;
+            let d2 = dx * dx + dy * dy;
+            if (d2 > cutoff2) continue;
+            if (d2 < 0.01) {
+              const ang = ((hashStr(displayNodes[i].name) + j) % 628) / 100;
+              dx = Math.cos(ang); dy = Math.sin(ang); d2 = 1;
+            }
+            const d = Math.sqrt(d2);
+            const f = (k * k) / d2;
+            const ux = dx / d;
+            const uy = dy / d;
+            disp[i].x += ux * f; disp[i].y += uy * f;
+            disp[j].x -= ux * f; disp[j].y -= uy * f;
+          }
+        }
+      }
+    }
+
+    // Link springs pull connected entries toward a comfortable distance.
+    for (const [a, b] of links) {
+      const dx = pos[b].x - pos[a].x;
+      const dy = pos[b].y - pos[a].y;
+      const d = Math.sqrt(dx * dx + dy * dy) || 1;
+      const f = (d - k) * 0.08;
+      const ux = dx / d;
+      const uy = dy / d;
+      disp[a].x += ux * f; disp[a].y += uy * f;
+      disp[b].x -= ux * f; disp[b].y -= uy * f;
+    }
+
+    // Keep lobes near home; pull the whole web gently toward the centre.
+    for (let i = 0; i < n; i += 1) {
+      disp[i].x += (home[i].x - pos[i].x) * 0.018;
+      disp[i].y += (home[i].y - pos[i].y) * 0.018;
+      const c = 0.0009 * (1 + Math.min(degArr[i], 20) * 0.15);
+      disp[i].x -= pos[i].x * c;
+      disp[i].y -= pos[i].y * c;
+    }
+
+    // Move each node by its accumulated force, capped by a cooling temperature.
+    const temp = 9 * (1 - iter / iterations) + 0.4;
+    for (let i = 0; i < n; i += 1) {
+      const sx = disp[i].x;
+      const sy = disp[i].y;
+      const len = Math.sqrt(sx * sx + sy * sy);
+      if (len > 0.0001) {
+        const step = Math.min(len, temp);
+        pos[i].x += (sx / len) * step;
+        pos[i].y += (sy / len) * step;
+      }
+    }
+  }
+
+  // Normalise into the positive quadrant and measure the bounding box.
+  let minX = Infinity, minY = Infinity, maxX = -Infinity, maxY = -Infinity;
+  for (const p of pos) {
+    if (p.x < minX) minX = p.x;
+    if (p.y < minY) minY = p.y;
+    if (p.x > maxX) maxX = p.x;
+    if (p.y > maxY) maxY = p.y;
+  }
+  const pad = 80;
+  const positions: Positions = {};
+  for (let i = 0; i < n; i += 1) {
+    positions[displayNodes[i].name] = { x: pos[i].x - minX + pad, y: pos[i].y - minY + pad };
+  }
+  return {
+    positions,
+    size: {
+      width: Math.max(900, maxX - minX + pad * 2),
+      height: Math.max(640, maxY - minY + pad * 2),
+    },
+  };
+}
+
 // ── Memoized SVG node ─────────────────────────────────────────────────
 interface WebNodeProps {
-  name: string; category: string; x: number; y: number;
+  name: string; category: string; x: number; y: number; r: number;
   opacity: number; active: boolean; focused: boolean; hovered: boolean;
   focusMode: boolean; hasEntry: boolean; showLabel: boolean;
   onPointerEnter: (name: string) => void; onPointerLeave: () => void;
@@ -158,13 +277,10 @@ interface WebNodeProps {
 }
 
 const WebNode = memo(function WebNode({
-  name, category, x, y, opacity, active, focused, hovered, focusMode,
+  name, category, x, y, r, opacity, active, focused, hovered, focusMode,
   hasEntry, showLabel, onPointerEnter, onPointerLeave, onPointerDown, onClick, onLabelClick,
 }: WebNodeProps) {
-  const isChar = category === 'Characters';
-  const isOther = category === 'Other';
-  const stroke = isOther ? '#7f8fa3' : categoryColor(category);
-  const fill = isOther ? '#101420' : `${stroke}2b`;
+  const color = category === 'Other' ? '#7f8fa3' : categoryColor(category);
 
   return (
     <g
@@ -176,25 +292,28 @@ const WebNode = memo(function WebNode({
       onPointerDown={(e) => onPointerDown(e, name)}
       onClick={(e) => onClick(e, name)}
     >
-      {hovered && !focused && (
-        <circle cx={x} cy={y} r={NODE_R + 5} fill="transparent" stroke={stroke} strokeWidth="1.5" strokeDasharray="3 3" />
-      )}
-      {focused && (
-        <circle cx={x} cy={y} r={NODE_R + 8} fill="transparent" stroke={stroke} strokeWidth="2" opacity="0.9" />
+      {active && <circle cx={x} cy={y} r={r + 5} fill={color} opacity={0.14} />}
+      {(hovered || focused) && (
+        <circle
+          cx={x} cy={y} r={r + 5} fill="none" stroke={color}
+          strokeWidth={focused ? 1.6 : 1} opacity={focused ? 0.7 : 0.45}
+        />
       )}
       <circle
-        cx={x} cy={y} r={NODE_R} fill={fill} stroke={stroke}
-        strokeWidth={focused ? 2.5 : isChar ? 2 : isOther ? 1 : 1.5}
-        strokeDasharray={isOther ? '3 3' : undefined}
-        style={{ filter: active ? `drop-shadow(0 0 6px ${stroke}88)` : undefined }}
+        cx={x} cy={y} r={r}
+        fill={active ? `${color}55` : `${color}22`}
+        stroke={color} strokeWidth={active ? 1.6 : 1}
       />
-      <text x={x} y={y + 4.5} textAnchor="middle" className="map-node-initial" fill={isOther ? '#7f8fa3' : stroke} style={{ fontSize: 11 }}>
+      <text
+        x={x} y={y + 4} textAnchor="middle" className="map-node-initial" fill={color}
+        style={{ fontSize: Math.max(8, Math.min(11, r)) }}
+      >
         {name.charAt(0).toUpperCase()}
       </text>
       {showLabel && (
         <text
-          x={x} y={y + NODE_R + 14} textAnchor="middle" className="map-node-label"
-          style={{ fontSize: 10, cursor: name.length > 18 ? 'help' : 'default' }}
+          x={x} y={y + r + 13} textAnchor="middle" className="map-node-label"
+          style={{ fontSize: 11, cursor: name.length > 18 ? 'help' : 'default' }}
           onPointerDown={(e) => { e.stopPropagation(); }}
           onClick={(e) => { e.stopPropagation(); onLabelClick(e, name); }}
         >
@@ -205,74 +324,47 @@ const WebNode = memo(function WebNode({
   );
 });
 
-// ── Memoized SVG edge (curved bezier) ─────────────────────────────────
+// ── Memoized highlighted edge ─────────────────────────────────────────
 interface WebEdgeProps {
-  id: string; active: boolean;
-  path: string;
+  id: string; path: string;
   color: string; dashed: boolean; strokeWidth: number; opacity: number;
   showLabel: boolean; labelX: number; labelY: number; labelText: string; labelWidth: number;
   onPointerEnter: (id: string) => void; onPointerLeave: () => void; onClick: (id: string) => void;
 }
 
 const WebEdge = memo(function WebEdge({
-  id, active, path, color, dashed, strokeWidth, opacity,
+  id, path, color, dashed, strokeWidth, opacity,
   showLabel, labelX, labelY, labelText, labelWidth,
   onPointerEnter, onPointerLeave, onClick,
 }: WebEdgeProps) {
   return (
     <g
-      className={`map-edge${active ? ' active' : ''}`}
+      className="map-edge"
       opacity={opacity}
       onPointerEnter={() => onPointerEnter(id)}
       onPointerLeave={onPointerLeave}
       onClick={(ev) => { ev.stopPropagation(); onClick(id); }}
     >
       <path
-        d={path}
-        fill="none" stroke={color} strokeWidth={strokeWidth}
+        d={path} fill="none" stroke={color} strokeWidth={strokeWidth}
         strokeDasharray={dashed ? '6 5' : undefined}
         markerEnd={`url(#warrow-${color.replace('#', '')})`}
       />
       <path d={path} fill="none" stroke="transparent" strokeWidth={14} style={{ cursor: 'pointer' }} />
       {showLabel && (
         <g pointerEvents="none">
-          <rect x={labelX - labelWidth / 2} y={labelY - 24} width={labelWidth} height={18} rx={9}
-            fill="rgba(7, 11, 22, 0.93)" stroke={color} strokeOpacity={0.6} />
-          <text x={labelX} y={labelY - 11} textAnchor="middle" className="map-edge-label" fill={color} style={{ fontSize: 10 }}>
+          <rect
+            x={labelX - labelWidth / 2} y={labelY - 24} width={labelWidth} height={18} rx={9}
+            fill="rgba(7, 11, 22, 0.93)" stroke={color} strokeOpacity={0.6}
+          />
+          <text
+            x={labelX} y={labelY - 11} textAnchor="middle" className="map-edge-label"
+            fill={color} style={{ fontSize: 10 }}
+          >
             {labelText}
           </text>
         </g>
       )}
-    </g>
-  );
-});
-
-// ── Column header ──────────────────────────────────────────────────────
-const ColHeader = memo(function ColHeader({ col }: { col: ColInfo }) {
-  return (
-    <g>
-      <rect
-        x={col.x + 2} y={0} width={col.width - 4} height={col.height}
-        rx={6} fill={`${col.color}08`} stroke={`${col.color}20`} strokeWidth={1}
-      />
-      <rect
-        x={col.x + 2} y={0} width={col.width - 4} height={COL_HEADER_H}
-        rx={6} fill={`${col.color}18`} stroke={`${col.color}30`} strokeWidth={1}
-      />
-      <text
-        x={col.x + col.width / 2} y={COL_HEADER_H - 9}
-        textAnchor="middle" fill={col.color}
-        style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.4px', textTransform: 'uppercase' }}
-      >
-        {col.category}
-      </text>
-      <text
-        x={col.x + col.width / 2} y={COL_HEADER_H - 1}
-        textAnchor="middle" fill={`${col.color}88`}
-        style={{ fontSize: 8, fontWeight: 400 }}
-      >
-        {col.nodeCount} nodes
-      </text>
     </g>
   );
 });
@@ -325,8 +417,7 @@ export function StoryWeb({
   const positionsRef = useRef<Positions>({});
 
   const [positions, setPositions] = useState<Positions>({});
-  const [mapSize, setMapSize] = useState({ width: 3200, height: 1200 });
-  const [columns, setColumns] = useState<ColInfo[]>([]);
+  const [mapSize, setMapSize] = useState({ width: 1400, height: 900 });
   const [hoverId, setHoverId] = useState<string | null>(null);
   const [hoverEdge, setHoverEdge] = useState<string | null>(null);
   const [selectedEdge, setSelectedEdge] = useState<WebEdge | null>(null);
@@ -340,20 +431,8 @@ export function StoryWeb({
   const [focusDepth, setFocusDepth] = useState(1);
   const [typeFilter, setTypeFilter] = useState<string | null>(null);
   const [popup, setPopup] = useState<{ name: string; x: number; y: number } | null>(null);
+  const [nonce, setNonce] = useState(0);
 
-  // Keyboard: Esc exits focus or popup
-  useEffect(() => {
-    const onKey = (e: KeyboardEvent) => {
-      if (e.key === 'Escape') {
-        if (popup) { setPopup(null); return; }
-        if (focusMode) { setFocusNode(null); setFocusMode(false); }
-      }
-    };
-    window.addEventListener('keydown', onKey);
-    return () => window.removeEventListener('keydown', onKey);
-  }, [focusMode, popup]);
-
-  // Convert client coords to SVG coords
   const toSvg = useCallback((clientX: number, clientY: number): Pos => {
     const svg = svgRef.current;
     if (!svg) return { x: 0, y: 0 };
@@ -383,23 +462,27 @@ export function StoryWeb({
   // ---- build normalized nodes + edges ----
   const { nodes, edges } = useMemo(() => {
     const nodeMap = new Map<string, string>();
-    for (const e of entries) nodeMap.set(e.name, e.category === 'Characters' ? 'Characters' : e.category);
+    for (const e of entries) nodeMap.set(e.name, e.category);
 
     const rawEdges: WebEdge[] = [];
     for (const s of storyLinks) {
       const type = storyLinkType(s.type);
       rawEdges.push({
-        id: s.id, kind: 'story', source: resolve(s.source), target: resolve(s.target),
-        type: s.type, label: s.label, description: s.description,
+        id: s.id, kind: 'story',
+        source: resolve(s.source), target: resolve(s.target), type: s.type,
+        label: s.label, description: s.description,
         color: s.color || type.color, dashed: !!type.dashed,
+        bend: (hashStr(`${s.source}|${s.target}`) & 1) === 0 ? 1 : -1,
       });
     }
     for (const r of relationships) {
       const type = relationshipType(r.type);
       rawEdges.push({
-        id: r.id, kind: 'relationship', source: resolve(r.source), target: resolve(r.target),
-        type: r.type, label: r.label, description: r.description,
+        id: r.id, kind: 'relationship',
+        source: resolve(r.source), target: resolve(r.target), type: r.type,
+        label: r.label, description: r.description,
         color: r.color || type.color, dashed: !!type.dashed,
+        bend: (hashStr(`${r.source}|${r.target}`) & 1) === 0 ? 1 : -1,
       });
     }
 
@@ -425,30 +508,29 @@ export function StoryWeb({
     () => edges.filter((e) => visibleNames.has(e.source) && visibleNames.has(e.target)),
     [edges, visibleNames]);
 
-  // ---- focus mode ----
+  // ---- focus mode: only a node and its neighbourhood ----
   const focusSet = useMemo(() => {
     const set = new Set<string>();
     if (!focusNode) return set;
     set.add(focusNode);
     let frontier = [focusNode];
-    for (let hop = 0; hop < focusDepth; hop += 1) {
+    for (let d = 0; d < focusDepth; d += 1) {
       const next: string[] = [];
       for (const name of frontier) {
-        for (const e of edges) {
-          const other = e.source === name ? e.target : e.target === name ? e.source : null;
-          if (other && !set.has(other)) { set.add(other); next.push(other); }
+        for (const e of visibleEdges) {
+          if (e.source === name && !set.has(e.target)) { set.add(e.target); next.push(e.target); }
+          else if (e.target === name && !set.has(e.source)) { set.add(e.source); next.push(e.source); }
         }
       }
       frontier = next;
       if (!frontier.length) break;
     }
     return set;
-  }, [focusNode, focusDepth, edges]);
+  }, [focusNode, focusDepth, visibleEdges]);
 
-  const displayNodes = useMemo(() => {
-    if (focusMode && focusNode) return nodes.filter((n) => focusSet.has(n.name));
-    return visibleNodes;
-  }, [focusMode, focusNode, focusSet, nodes, visibleNodes]);
+  const displayNodes = useMemo(
+    () => (focusMode && focusNode ? visibleNodes.filter((n) => focusSet.has(n.name)) : visibleNodes),
+    [focusMode, focusNode, focusSet, visibleNodes]);
 
   const displayNames = useMemo(() => new Set(displayNodes.map((n) => n.name)), [displayNodes]);
 
@@ -456,23 +538,22 @@ export function StoryWeb({
     () => edges.filter((e) => displayNames.has(e.source) && displayNames.has(e.target)),
     [edges, displayNames]);
 
-  // ---- node degree: how many edges each node has (for edge filtering) ----
-  const nodeDegree = useMemo(() => {
+  // ---- degree (connection count): drives node size + hub labels ----
+  const degree = useMemo(() => {
     const map = new Map<string, number>();
-    for (const e of displayEdges) {
+    for (const e of edges) {
       map.set(e.source, (map.get(e.source) ?? 0) + 1);
       map.set(e.target, (map.get(e.target) ?? 0) + 1);
     }
     return map;
-  }, [displayEdges]);
+  }, [edges]);
 
-  // ---- column layout ----
+  // ---- (re)compute the layout whenever the node set or shuffle changes ----
   useEffect(() => {
-    const { positions: newPos, size, columns: newCols } = columnLayout(displayNodes);
-    setPositions(newPos);
+    const { positions: next, size } = brainLayout(displayNodes, displayEdges, degree, nonce);
+    setPositions(next);
     setMapSize(size);
-    setColumns(newCols);
-  }, [displayNodes]); // eslint-disable-line react-hooks/exhaustive-deps
+  }, [displayNodes, displayEdges, degree, nonce]); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => { setSelectedEdge(null); }, [relationships, storyLinks]);
 
@@ -493,6 +574,8 @@ export function StoryWeb({
     if (focusNode && !nodes.some((n) => n.name === focusNode)) setFocusNode(null);
   }, [nodes, focusNode]);
 
+  useEffect(() => { positionsRef.current = positions; }, [positions]);
+
   // ---- node dragging ----
   useEffect(() => {
     if (!dragging) return;
@@ -500,9 +583,7 @@ export function StoryWeb({
       const drag = dragRef.current;
       if (!drag) return;
       const p = toSvg(e.clientX, e.clientY);
-      if (!drag.moved && Math.hypot(p.x - drag.startX, p.y - drag.startY) > 4) {
-        drag.moved = true;
-      }
+      if (!drag.moved && Math.hypot(p.x - drag.startX, p.y - drag.startY) > 4) drag.moved = true;
       setPositions((prev) => ({
         ...prev,
         [drag.id]: { x: p.x - drag.dx, y: p.y - drag.dy },
@@ -514,28 +595,20 @@ export function StoryWeb({
     return () => { window.removeEventListener('pointermove', onMove); window.removeEventListener('pointerup', onUp); };
   }, [dragging, toSvg]);
 
-  const startDrag = useCallback(
-    (e: React.PointerEvent, id: string) => {
-      e.stopPropagation();
-      const p = toSvg(e.clientX, e.clientY);
-      const cur = positionsRef.current[id] ?? { x: mapSize.width / 2, y: mapSize.height / 2 };
-      dragRef.current = { id, dx: p.x - cur.x, dy: p.y - cur.y, moved: false, startX: p.x, startY: p.y };
-      setSelectedEdge(null);
-      setDragging(id);
-    },
-    [toSvg, mapSize],
-  );
-
-  useEffect(() => { positionsRef.current = positions; }, [positions]);
+  const startDrag = useCallback((e: React.PointerEvent, id: string) => {
+    e.stopPropagation();
+    const p = toSvg(e.clientX, e.clientY);
+    const cur = positionsRef.current[id] ?? { x: mapSize.width / 2, y: mapSize.height / 2 };
+    dragRef.current = { id, dx: p.x - cur.x, dy: p.y - cur.y, moved: false, startX: p.x, startY: p.y };
+    setSelectedEdge(null);
+    setDragging(id);
+  }, [toSvg, mapSize]);
 
   // ---- handlers ----
   const handleEdgePointerEnter = useCallback((id: string) => setHoverEdge(id), []);
   const handleEdgePointerLeave = useCallback(() => setHoverEdge(null), []);
   const handleEdgeClick = useCallback((id: string) => {
-    setSelectedEdge((cur) => {
-      if (cur?.id === id) return null;
-      return displayEdges.find((e) => e.id === id) ?? cur;
-    });
+    setSelectedEdge((cur) => (cur?.id === id ? null : displayEdges.find((e) => e.id === id) ?? cur));
   }, [displayEdges]);
 
   const handleNodePointerEnter = useCallback((name: string) => setHoverId(name), []);
@@ -552,165 +625,144 @@ export function StoryWeb({
 
   const handleLabelClick = useCallback((e: React.MouseEvent, name: string) => {
     e.stopPropagation();
-    const rect = containerRef.current?.getBoundingClientRect();
-    if (!rect) return;
-    const svgEl = svgRef.current;
-    if (!svgEl) return;
-    // Convert SVG position to screen position
-    const pos = positions[name];
-    if (!pos) return;
-    const ctm = svgEl.getScreenCTM();
+    const p = positionsRef.current[name];
+    const svg = svgRef.current;
+    const container = containerRef.current;
+    if (!p || !svg || !container) return;
+    const ctm = svg.getScreenCTM();
     if (!ctm) return;
-    const screenX = pos.x * ctm.a + ctm.e - rect.left;
-    const screenY = pos.y * ctm.d + ctm.f - rect.top;
-    setPopup({ name, x: Math.min(screenX, rect.width - 200), y: screenY });
-  }, [positions]);
+    const rect = container.getBoundingClientRect();
+    const screenX = ctm.a * p.x + ctm.c * p.y + ctm.e;
+    const screenY = ctm.b * p.x + ctm.d * p.y + ctm.f;
+    setPopup({
+      name,
+      x: screenX - rect.left + container.scrollLeft,
+      y: screenY - rect.top + container.scrollTop,
+    });
+  }, []);
 
-  // ---- edge geometry (curved bezier between columns) ----
-  const edgeGeom = useMemo(() => {
-    const groups = new Map<string, { a: string; b: string; ids: string[] }>();
-    for (const e of displayEdges) {
-      const key = [e.source, e.target].sort().join('\u0000');
-      const g = groups.get(key) ?? {
-        a: e.source < e.target ? e.source : e.target,
-        b: e.source < e.target ? e.target : e.source,
-        ids: [],
-      };
-      g.ids.push(e.id);
-      groups.set(key, g);
+  // ---- active (highlighted) edges ----
+  const activeIds = useMemo(() => {
+    const ids = new Set<string>();
+    if (selectedEdge) ids.add(selectedEdge.id);
+    if (hoverEdge) ids.add(hoverEdge);
+    if (hoverId) {
+      for (const e of displayEdges) if (e.source === hoverId || e.target === hoverId) ids.add(e.id);
     }
-    const map = new Map<string, Geom>();
+    if (typeFilter) {
+      for (const e of displayEdges) if (edgeLabelText(e) === typeFilter) ids.add(e.id);
+    }
+    return ids;
+  }, [selectedEdge, hoverEdge, hoverId, typeFilter, displayEdges]);
+
+  const activeEdges = useMemo(
+    () => displayEdges.filter((e) => activeIds.has(e.id)),
+    [displayEdges, activeIds]);
+
+  // ---- faint "fibre" layer: every connection, grouped by colour ----
+  const fiberPaths = useMemo(() => {
+    const byColor = new Map<string, string[]>();
     for (const e of displayEdges) {
-      const key = [e.source, e.target].sort().join('\u0000');
-      const g = groups.get(key);
-      const ids = g?.ids ?? [e.id];
-      const index = ids.indexOf(e.id);
-      const spread = (index - (ids.length - 1) / 2) * 18;
-
-      const a = positions[e.source] ?? { x: mapSize.width / 2, y: mapSize.height / 2 };
-      const b = positions[e.target] ?? { x: mapSize.width / 2, y: mapSize.height / 2 };
-
+      const a = positions[e.source];
+      const b = positions[e.target];
+      if (!a || !b) continue;
       const dx = b.x - a.x;
       const dy = b.y - a.y;
-      const dist = Math.sqrt(dx * dx + dy * dy) || 1;
+      const dist = Math.hypot(dx, dy) || 1;
+      const off = e.bend * dist * 0.12;
+      const mx = (a.x + b.x) / 2 - (dy / dist) * off;
+      const my = (a.y + b.y) / 2 + (dx / dist) * off;
+      const d = `M ${a.x} ${a.y} Q ${mx} ${my} ${b.x} ${b.y}`;
+      const list = byColor.get(e.color);
+      if (list) list.push(d); else byColor.set(e.color, [d]);
+    }
+    return [...byColor.entries()];
+  }, [displayEdges, positions]);
 
-      // Offset perpendicular for multi-edge parallelism
-      const nx = (-dy / dist) * spread;
-      const ny = (dx / dist) * spread;
-
-      const ax = a.x + nx;
-      const ay = a.y + ny;
-      const bx = b.x + nx;
-      const by = b.y + ny;
-
-      // Shorten to avoid overlap with node circles
-      const ux = (bx - ax) / dist;
-      const uy = (by - ay) / dist;
-      const sx = ax + ux * (NODE_R + 4);
-      const sy = ay + uy * (NODE_R + 4);
-      const ex = bx - ux * (NODE_R + 8);
-      const ey = by - uy * (NODE_R + 8);
-
-      // Bezier curve: control point perpendicular to midpoint
-      const mx = (sx + ex) / 2;
-      const my = (sy + ey) / 2;
-      const perpX = -uy * dist * EDGE_CURVE;
-      const perpY = ux * dist * EDGE_CURVE;
-      const cx = mx + perpX;
-      const cy = my + perpY;
-
-      const path = `M ${sx} ${sy} Q ${cx} ${cy} ${ex} ${ey}`;
-
-      map.set(e.id, {
-        ax: sx, ay: sy, bx: ex, by: ey,
-        mx: cx, my: cy, curvedPath: path,
-      });
+  const edgeGeom = useMemo(() => {
+    const map = new Map<string, Geom>();
+    for (const e of activeEdges) {
+      const a = positions[e.source];
+      const b = positions[e.target];
+      if (!a || !b) continue;
+      map.set(e.id, curvePath(a, b, e.bend, radiusFor(degree.get(e.source) ?? 0) + 4));
     }
     return map;
-  }, [displayEdges, positions, mapSize]);
+  }, [activeEdges, positions, degree]);
 
-  const activeEdgeIds = useMemo(() => {
-    if (selectedEdge) return new Set([selectedEdge.id]);
-    const set = new Set<string>();
-    if (hoverEdge) set.add(hoverEdge);
-    else if (hoverId) {
-      for (const e of displayEdges) {
-        if (e.source === hoverId || e.target === hoverId) set.add(e.id);
-      }
-    }
-    return set;
-  }, [selectedEdge, hoverEdge, hoverId, displayEdges]);
-
-  // Edge labels (collision-resolved)
-  const edgeLabels = useMemo(() => {
-    const out = new Map<string, { x: number; y: number }>();
-    const placed: { x1: number; y1: number; x2: number; y2: number }[] = [];
-    for (const e of displayEdges) {
-      if (!activeEdgeIds.has(e.id)) continue;
-      if (typeFilter && edgeLabelText(e) !== typeFilter) continue;
-      const g = edgeGeom.get(e.id);
-      if (!g) continue;
-      const text = edgeLabelText(e);
-      const w = text.length * 5.5 + 14;
-      // Place at midpoint of curve
-      const spots = [
-        { x: g.mx, y: g.my - 16 },
-        { x: g.mx, y: g.my + 10 },
-        { x: (g.ax + g.mx) / 2, y: (g.ay + g.my) / 2 - 12 },
-      ];
-      const pill = (x: number, y: number) => ({ x1: x - w / 2, y1: y - 14, x2: x + w / 2, y2: y + 4 });
-      const chosen = spots.find((s) => !placed.some((p) => boxesIntersect(pill(s.x, s.y), p))) ?? spots[0];
-      out.set(e.id, chosen);
-      placed.push(pill(chosen.x, chosen.y));
-    }
-    return out;
-  }, [displayEdges, activeEdgeIds, edgeGeom, typeFilter]);
-
-  // Node labels
-  const degree = useMemo(() => {
-    const map = new Map<string, number>();
-    for (const e of edges) {
-      map.set(e.source, (map.get(e.source) ?? 0) + 1);
-      map.set(e.target, (map.get(e.target) ?? 0) + 1);
-    }
-    return map;
-  }, [edges]);
-
-  const nodeLabels = useMemo(() => {
-    const shown = new Set<string>();
-    const placed: { x1: number; y1: number; x2: number; y2: number }[] = [];
-    const order = [...displayNodes].sort((a, b) => {
-      const pa = a.category === 'Characters' ? 1 : 0;
-      const pb = b.category === 'Characters' ? 1 : 0;
-      if (pa !== pb) return pb - pa;
-      return (degree.get(b.name) ?? 0) - (degree.get(a.name) ?? 0);
-    });
-    for (const n of order) {
-      const pos = positions[n.name];
-      if (!pos) continue;
-      const label = truncate(n.name);
-      const w = label.length * 5.5 + 4;
-      const box = { x1: pos.x - w / 2, y1: pos.y + NODE_R + 3, x2: pos.x + w / 2, y2: pos.y + NODE_R + 18 };
-      if (!placed.some((p) => boxesIntersect(box, p))) {
-        shown.add(n.name);
-        placed.push(box);
-      }
-    }
-    if (hoverId) shown.add(hoverId);
-    if (focusMode && focusNode) shown.add(focusNode);
-    return shown;
-  }, [displayNodes, positions, degree, hoverId, focusMode, focusNode]);
-
+  // ---- labels ----
   function boxesIntersect(a: { x1: number; y1: number; x2: number; y2: number }, b: { x1: number; y1: number; x2: number; y2: number }): boolean {
     return a.x1 < b.x2 && a.x2 > b.x1 && a.y1 < b.y2 && a.y2 > b.y1;
   }
 
+  const hubNames = useMemo(() => {
+    const max = displayNodes.length > 400 ? 26 : 42;
+    const out: string[] = [];
+    for (const nd of [...displayNodes].sort((a, b) => (degree.get(b.name) ?? 0) - (degree.get(a.name) ?? 0))) {
+      if ((degree.get(nd.name) ?? 0) <= 0) break;
+      out.push(nd.name);
+      if (out.length >= max) break;
+    }
+    return out;
+  }, [displayNodes, degree]);
+
+  const nodeLabels = useMemo(() => {
+    const shown = new Set<string>();
+    const placed: { x1: number; y1: number; x2: number; y2: number }[] = [];
+    const cands = new Set<string>(hubNames);
+    if (hoverId) cands.add(hoverId);
+    if (focusNode) cands.add(focusNode);
+    if (selectedEdge) { cands.add(selectedEdge.source); cands.add(selectedEdge.target); }
+    for (const name of cands) {
+      const p = positions[name];
+      if (!p) continue;
+      const r = radiusFor(degree.get(name) ?? 0);
+      const w = truncate(name).length * 5.5 + 4;
+      const box = { x1: p.x - w / 2, y1: p.y + r + 3, x2: p.x + w / 2, y2: p.y + r + 18 };
+      if (!placed.some((q) => boxesIntersect(box, q))) {
+        shown.add(name);
+        placed.push(box);
+      }
+    }
+    return shown;
+  }, [hubNames, positions, hoverId, focusNode, selectedEdge, degree]);
+
+  const edgeLabels = useMemo(() => {
+    const out = new Map<string, { x: number; y: number }>();
+    const placed: { x1: number; y1: number; x2: number; y2: number }[] = [];
+    for (const e of activeEdges) {
+      const g = edgeGeom.get(e.id);
+      if (!g) continue;
+      const w = edgeLabelText(e).length * 5.5 + 8;
+      const box = { x1: g.mx - w / 2, y1: g.my - 24, x2: g.mx + w / 2, y2: g.my - 6 };
+      if (placed.some((q) => boxesIntersect(box, q))) continue;
+      out.set(e.id, { x: g.mx, y: g.my });
+      placed.push(box);
+    }
+    return out;
+  }, [activeEdges, edgeGeom]);
+
   const markerColors = useMemo(() => {
     const set = new Set<string>();
-    for (const e of displayEdges) set.add(e.color);
+    for (const e of activeEdges) set.add(e.color);
     return [...set];
-  }, [displayEdges]);
+  }, [activeEdges]);
 
+  // ---- hover/selection neighbourhood ----
+  const neighborNames = useMemo(() => {
+    const set = new Set<string>();
+    if (!hoverId && !selectedEdge) return set;
+    const anchors = new Set<string>();
+    if (hoverId) anchors.add(hoverId);
+    if (selectedEdge) { anchors.add(selectedEdge.source); anchors.add(selectedEdge.target); }
+    for (const e of displayEdges) {
+      if (anchors.has(e.source)) set.add(e.target);
+      if (anchors.has(e.target)) set.add(e.source);
+    }
+    return set;
+  }, [hoverId, selectedEdge, displayEdges]);
+
+  // ---- type-filter helpers ----
   const filteredNodeSet = useMemo(() => {
     if (!typeFilter) return null;
     const set = new Set<string>();
@@ -722,9 +774,9 @@ export function StoryWeb({
 
   const filteredEdgesCount = useMemo(() => {
     if (!typeFilter) return 0;
-    let n = 0;
-    for (const e of displayEdges) if (edgeLabelText(e) === typeFilter) n += 1;
-    return n;
+    let count = 0;
+    for (const e of displayEdges) if (edgeLabelText(e) === typeFilter) count += 1;
+    return count;
   }, [typeFilter, displayEdges]);
 
   const usedTypes = useMemo(() => {
@@ -739,9 +791,9 @@ export function StoryWeb({
   }, [displayEdges]);
 
   const presentCategories = useMemo(() => {
-    const set = new Set(nodes.map((n) => n.category));
-    const known = CATEGORY_ORDER.filter((c) => set.has(c));
-    const extra = [...set].filter((c) => !CATEGORY_ORDER.includes(c)).sort();
+    const present = new Set(nodes.map((n) => n.category));
+    const known = CATEGORY_ORDER.filter((c) => present.has(c));
+    const extra = [...present].filter((c) => !CATEGORY_ORDER.includes(c)).sort();
     return [...known, ...extra];
   }, [nodes]);
 
@@ -752,15 +804,10 @@ export function StoryWeb({
   }, [nodes]);
 
   useEffect(() => {
-    if (presentCategories.length === 0) return;
-    setHiddenCategories((prev) => {
-      const stale = [...prev].filter((c) => !presentCategories.includes(c));
-      if (stale.length === 0) return prev;
-      const next = new Set(prev);
-      for (const c of stale) next.delete(c);
-      return next;
-    });
-  }, [presentCategories]);
+    const present = new Set(presentCategories);
+    if ([...hiddenCategories].every((c) => present.has(c))) return;
+    setHiddenCategories((prev) => new Set([...prev].filter((c) => present.has(c))));
+  }, [presentCategories]); // eslint-disable-line react-hooks/exhaustive-deps
 
   const toggleCategory = (cat: string) => {
     if (hiddenCategories.has(cat)) setHiddenNodes(new Set());
@@ -771,36 +818,13 @@ export function StoryWeb({
     });
     setSelectedEdge(null);
   };
-
-  const showOnly = (cat: string) => {
-    setHiddenCategories(new Set(presentCategories.filter((c) => c !== cat)));
-    setHiddenNodes(new Set());
-    setSelectedEdge(null);
-  };
-
+  const showOnly = (cat: string) => { setHiddenCategories(new Set(presentCategories.filter((c) => c !== cat))); setHiddenNodes(new Set()); setSelectedEdge(null); };
   const showAll = () => { setHiddenCategories(new Set()); setHiddenNodes(new Set()); setSelectedEdge(null); };
   const hideAll = () => { setHiddenCategories(new Set(presentCategories)); setHiddenNodes(new Set()); setSelectedEdge(null); };
-
-  const toggleFocusMode = () => {
-    setFocusMode((m) => !m);
-    setFocusNode(null);
-    setSelectedEdge(null);
-  };
-
-  // Dim everything when hovering/selecting — only connected nodes stay bright
-  const hoveredNeighborNames = useMemo(() => {
-    const set = new Set<string>();
-    if (!hoverId && !selectedEdge) return set;
-    const anchor = hoverId ?? selectedEdge?.source ?? selectedEdge?.target;
-    if (!anchor) return set;
-    for (const e of displayEdges) {
-      if (e.source === anchor) set.add(e.target);
-      if (e.target === anchor) set.add(e.source);
-    }
-    return set;
-  }, [hoverId, selectedEdge, displayEdges]);
+  const toggleFocusMode = () => { setFocusMode((m) => !m); setFocusNode(null); setSelectedEdge(null); };
 
   const dim = hoverId !== null || selectedEdge !== null;
+  const fiberOpacity = dim ? 0.05 : typeFilter ? 0.06 : 0.14;
 
   const selectedStory = selectedEdge?.kind === 'story' ? storyLinks.find((s) => s.id === selectedEdge.id) : undefined;
   const selectedRel = selectedEdge?.kind === 'relationship' ? relationships.find((r) => r.id === selectedEdge.id) : undefined;
@@ -809,9 +833,13 @@ export function StoryWeb({
     <div className="map-view">
       <div className="map-toolbar">
         <p className="map-hint">
-          The whole story web — {displayNodes.length} nodes · {displayEdges.length} links · {columns.length} categories
+          Brain web — {displayNodes.length} nodes · {displayEdges.length} links · {presentCategories.length - hiddenCategories.size} categories
         </p>
-        <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>          <button
+        <div style={{ display: 'flex', gap: 8, alignItems: 'center', flexWrap: 'wrap' }}>
+          <button className="btn btn-secondary btn-sm" onClick={() => setNonce((v) => v + 1)} title="Shuffle the layout">
+            ⟳ Re-layout
+          </button>
+          <button
             className={`btn btn-sm ${focusMode ? 'btn-primary' : 'btn-secondary'}`}
             onClick={toggleFocusMode}
             title="Focus mode — click a node to explore only its connections"
@@ -828,27 +856,23 @@ export function StoryWeb({
 
       <div className="web-filters">
         <button
-          className={`filter-chip control${pickerOpen ? ' on' : ''}`}
-          onClick={() => setPickerOpen((o) => !o)}
-          title="Open the category picker"
+          className={`filter-chip${pickerOpen ? ' on' : ''}`}
+          onClick={() => setPickerOpen((v) => !v)}
         >
-          🎛 Pick categories
+          ☰ Categories
         </button>
         {presentCategories.map((cat) => {
-          const hidden = hiddenCategories.has(cat);
+          const visible = !hiddenCategories.has(cat);
           const count = categoryCounts.get(cat) ?? 0;
           return (
             <button
               key={cat}
-              className={`filter-chip${hidden ? ' off' : ''}`}
+              className={`filter-chip${visible ? ' on' : ''}`}
               onClick={() => toggleCategory(cat)}
               onDoubleClick={() => showOnly(cat)}
-              style={{ '--chip': categoryColor(cat) } as React.CSSProperties}
-              title={hidden
-                ? `${cat} — hidden, click to show · double-click to show only this`
-                : `${cat} — visible, click to hide · double-click to show only this`}
+              title="Click to toggle · double-click to show only this category"
             >
-              <span className="filter-dot" />
+              <span className="filter-dot" style={{ background: categoryColor(cat) }} />
               {cat}
               <span className="chip-count">{count}</span>
             </button>
@@ -913,11 +937,7 @@ export function StoryWeb({
         </div>
       )}
 
-      <div
-        ref={containerRef}
-        className="map-container web-container"
-        style={{ position: 'relative', overflow: 'auto' }}
-      >
+      <div ref={containerRef} className="map-container web-container" style={{ position: 'relative', overflow: 'auto' }}>
         <svg
           ref={svgRef}
           className="map-svg"
@@ -938,42 +958,30 @@ export function StoryWeb({
             ))}
           </defs>
 
-          {/* Column backgrounds */}
-          {columns.map((col) => (
-            <ColHeader key={`col-${col.category}`} col={col} />
+          {/* Faint fibre layer — every connection, grouped by colour */}
+          {fiberPaths.map(([color, ds]) => (
+            <path
+              key={color}
+              d={ds.join(' ')}
+              fill="none" stroke={color} strokeWidth={1}
+              strokeLinecap="round" opacity={fiberOpacity}
+            />
           ))}
 
-          {/* Edges — only rendered when hovering/selecting a node AND both endpoints have connections */}
-          {displayEdges.map((e) => {
+          {activeEdges.map((e) => {
             const g = edgeGeom.get(e.id);
             if (!g) return null;
-            const connectedToHover = hoverId ? (e.source === hoverId || e.target === hoverId) : false;
-            const connectedToSelected = selectedEdge ? (e.source === selectedEdge.source || e.source === selectedEdge.target || e.target === selectedEdge.source || e.target === selectedEdge.target) : false;
-            // Both endpoints must have at least 1 connection each
-            const sourceDegree = nodeDegree.get(e.source) ?? 0;
-            const targetDegree = nodeDegree.get(e.target) ?? 0;
-            const bothConnected = sourceDegree >= 1 && targetDegree >= 1;
-            // Show edge only if hovering/selecting AND both endpoints are connected
-            const isVisible = (connectedToHover || connectedToSelected) && bothConnected;
-            // Completely skip rendering hidden edges — no arrowheads, no ghost lines
-            if (!isVisible) return null;
-            const matchesFilter = typeFilter ? edgeLabelText(e) === typeFilter : true;
-            if (typeFilter && !matchesFilter) return null;
             const lp = edgeLabels.get(e.id);
-            const showLabel = !!lp;
             const labelText = edgeLabelText(e);
             return (
               <WebEdge
                 key={`${e.kind}-${e.id}`}
-                id={e.id} active={true}
+                id={e.id}
                 path={g.curvedPath}
                 color={e.color} dashed={e.dashed}
-                strokeWidth={2.5}
-                opacity={1}
-                showLabel={showLabel}
-                labelX={lp ? lp.x : g.mx} labelY={lp ? lp.y : g.my}
-                labelText={showLabel ? labelText : ''}
-                labelWidth={showLabel ? labelText.length * 5.5 + 14 : 0}
+                strokeWidth={2.2} opacity={1}
+                showLabel={!!lp} labelX={lp?.x ?? g.mx} labelY={lp?.y ?? g.my}
+                labelText={labelText} labelWidth={labelText.length * 5.5 + 14}
                 onPointerEnter={handleEdgePointerEnter}
                 onPointerLeave={handleEdgePointerLeave}
                 onClick={handleEdgeClick}
@@ -981,23 +989,23 @@ export function StoryWeb({
             );
           })}
 
-          {/* Nodes */}
           {displayNodes.map((node) => {
             const pos = positions[node.name];
             if (!pos) return null;
-            const hovered = hoverId === node.name;
-            const focused = focusMode && focusNode === node.name;
-            const isConnected = hoveredNeighborNames.has(node.name);
-            const active = hovered || focused || isConnected || (selectedEdge ? selectedEdge.source === node.name || selectedEdge.target === node.name : false);
-            const filteredOut = typeFilter ? !(filteredNodeSet?.has(node.name) ?? false) : false;
-            const opacity = typeFilter && filteredOut ? 0 : (dim && !active ? 0 : 1);
+            const deg = degree.get(node.name) ?? 0;
+            const isHovered = hoverId === node.name;
+            const isFocused = focusNode === node.name;
+            const isAnchor = !!selectedEdge && (selectedEdge.source === node.name || selectedEdge.target === node.name);
+            const active = isHovered || isFocused || isAnchor || neighborNames.has(node.name);
+            const filteredOut = typeFilter ? !filteredNodeSet?.has(node.name) : false;
+            const opacity = filteredOut ? 0 : (dim && !active ? 0 : 1);
             return (
               <WebNode
                 key={node.name}
                 name={node.name} category={node.category}
-                x={pos.x} y={pos.y}
-                opacity={opacity} active={active} focused={focused}
-                hovered={hovered} focusMode={focusMode}
+                x={pos.x} y={pos.y} r={radiusFor(deg)}
+                opacity={opacity} active={active} focused={isFocused}
+                hovered={isHovered} focusMode={focusMode}
                 hasEntry={!!entryByName.get(node.name.toLowerCase())}
                 showLabel={nodeLabels.has(node.name)}
                 onPointerEnter={handleNodePointerEnter}
@@ -1010,7 +1018,6 @@ export function StoryWeb({
           })}
         </svg>
 
-        {/* Name popup */}
         {popup && (
           <NamePopup name={popup.name} x={popup.x} y={popup.y} onClose={() => setPopup(null)} />
         )}
@@ -1027,19 +1034,24 @@ export function StoryWeb({
               <strong>{selectedEdge.source}</strong> → <strong>{selectedEdge.target}</strong>
             </p>
             {selectedEdge.description && <p className="map-edge-desc">{selectedEdge.description}</p>}
-            {onEditStory && onDeleteStory && (
+            {onEditStory && onDeleteStory && selectedStory && (
               <div className="map-edge-actions">
-                {selectedEdge.kind === 'story' ? (
-                  <>
-                    <button className="btn btn-secondary btn-sm" onClick={() => selectedStory && onEditStory?.(selectedStory)}>✎ Edit</button>
-                    <button className="btn btn-danger btn-sm" onClick={() => selectedStory && onDeleteStory?.(selectedStory)}>🗑 Delete</button>
-                  </>
-                ) : (
-                  <>
-                    <button className="btn btn-secondary btn-sm" onClick={() => selectedRel && onEditRel?.(selectedRel)}>✎ Edit</button>
-                    <button className="btn btn-danger btn-sm" onClick={() => selectedRel && onDeleteRel?.(selectedRel)}>🗑 Delete</button>
-                  </>
-                )}
+                <button className="btn btn-secondary btn-sm" onClick={() => onEditStory?.(selectedStory)}>
+                  <i className="fa-solid fa-pen" style={{ fontSize: 11 }} /> Edit
+                </button>
+                <button className="btn btn-danger btn-sm" onClick={() => onDeleteStory?.(selectedStory)}>
+                  <i className="fa-solid fa-trash" style={{ fontSize: 11 }} /> Delete
+                </button>
+              </div>
+            )}
+            {onEditRel && onDeleteRel && selectedRel && (
+              <div className="map-edge-actions">
+                <button className="btn btn-secondary btn-sm" onClick={() => onEditRel?.(selectedRel)}>
+                  <i className="fa-solid fa-pen" style={{ fontSize: 11 }} /> Edit
+                </button>
+                <button className="btn btn-danger btn-sm" onClick={() => onDeleteRel?.(selectedRel)}>
+                  <i className="fa-solid fa-trash" style={{ fontSize: 11 }} /> Delete
+                </button>
               </div>
             )}
           </div>
@@ -1047,13 +1059,13 @@ export function StoryWeb({
       </div>
 
       <div className="map-legend">
-        <span className="legend-title">Link types</span>
+        <span className="legend-title">Legend</span>
         {usedTypes.map(([label, info]) => (
           <button
             key={label}
             className={`legend-item legend-filter-btn${typeFilter === label ? ' active' : ''}`}
             onClick={() => setTypeFilter((cur) => (cur === label ? null : label))}
-            title={typeFilter === label ? 'Click to show all link types' : `Highlight only "${label}" links`}
+            title={typeFilter === label ? 'Clear this link-type filter' : `Show only "${label}" connections`}
           >
             <span className="legend-dot" style={{ background: info.color }} />
             {label}
@@ -1061,15 +1073,14 @@ export function StoryWeb({
           </button>
         ))}
         {typeFilter && (
-          <button className="legend-item legend-filter-btn all" onClick={() => setTypeFilter(null)} title="Show all link types">
-            ✕ Clear filter
-          </button>
+          <button className="legend-item legend-filter-btn reset" onClick={() => setTypeFilter(null)}>✕ Clear</button>
         )}
       </div>
+
       <div className="map-legend web-category-legend">
         <span className="legend-title">Node colors</span>
         {presentCategories.map((cat) => (
-          <span key={cat} className="legend-item">
+          <span key={cat} className="legend-item" style={{ opacity: hiddenCategories.has(cat) ? 0.35 : 1 }}>
             <span className="legend-dot" style={{ background: categoryColor(cat) }} />
             {cat}
             <span className="legend-count">{categoryCounts.get(cat) ?? 0}</span>
