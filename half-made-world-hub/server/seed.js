@@ -130,7 +130,7 @@ module.exports = [
       { label: "Why It’s Sentient", value: "The river is composed of the dead. It reacts violently to seekers because the souls remember the sword and want it buried. The Sirens, shaped by the corruption, lure people in because the sword wants sacrifices." },
       { label: "Lore Connections", value: "Vireth’s Five Eyes, The Vengeful Souls of the Sentient River, Soul-Sight, Sirens" },
     ],
-    ["river", "sentient", "sirens", "vireth", "vengeful souls", "corruption"],
+    ["river", "sentient", "siren", "vireth", "vengeful souls", "corruption"],
   ),
   e(
     "Locations",
@@ -273,7 +273,7 @@ module.exports = [
       { label: "Hostile", value: "Hostile — attack travelers using fire whip and shapeshifting ambush tactics" },
       { label: "Threat Level", value: "High — shapeshifting makes ambush unpredictable; fire whip burns through standard armor" },
     ],
-    ["harpy", "harpies", "umbrage", "shapeshift"],
+    ["harpy", "umbrage", "shapeshift"],
   ),
   e(
     "Monsters",
@@ -400,7 +400,7 @@ module.exports = [
       { label: "Notable", value: "Surprisingly good at crafting and repurposing stolen materials" },
       { label: "Weakness", value: "Panic in the face of fire; scatter immediately" },
     ],
-    ["goblin", "goblins", "pack", "traps", "umbrage"],
+    ["goblin", "pack", "traps", "umbrage"],
   ),
   e(
     "Monsters",
@@ -416,7 +416,7 @@ module.exports = [
       { label: "Notable", value: "Respect strength; can be recruited if defeated in ritual combat" },
       { label: "Society", value: "War-band structure led by the strongest; leadership through combat" },
     ],
-    ["orc", "orcs", "warrior", "strength", "umbrage", "demon realm"],
+    ["orc", "warrior", "strength", "umbrage", "demon realm"],
   ),
   e(
     "Monsters",
@@ -434,23 +434,29 @@ module.exports = [
     ],
     ["abyssal wyrm", "ancient", "realm devouring", "sealed", "catastrophic", "op"],
   ),
+
+  // ============================================================ RIFTS
   e(
-    "Monsters",
+    "Rifts",
     "World Eater",
-    "Parasitic entity that feeds on the world core itself",
-    "Not a creature born of Veyn but something that exists outside it — a parasitic consciousness that embeds itself in the world core and slowly drains its power over centuries. The World Eater does not have a physical form in the traditional sense; it manifests as a spreading darkness within the core's energy, a corruption that converts pure world-core Veyn into a form that is neither raw, holy, nor corrupted but simply null — an absence of magical energy that cannot be used by anything. The only reason the world still functions is that the World Eater feeds slowly and the core replenishes faster than it drains, but this balance is not guaranteed. The Aelthar discovered the World Eater's existence and it was one of the reasons they created the Hidden Realm — partly as an escape, partly as a way to redirect the World Eater's feeding away from the main core. The Shudon were originally built not just as realm guardians but as core regulators, designed to detect and suppress the World Eater's spread. If the Shudon remain inactive for too long, the World Eater's drain will accelerate beyond the core's ability to replenish, and the world will begin to die from the inside out.",
+    "The rift-origin — a creature draining the world core",
+    "Not a creature born of Veyn but something that exists outside it — a parasitic consciousness that embedded itself in the world core and has been draining it ever since. It has no body in the ordinary sense; it manifests as a spreading darkness within the core’s energy, a corruption that converts pure world-core Veyn into a form that is neither raw, holy, nor corrupted but simply null — an absence of magical energy that nothing can use. That null is the dead note every rift carries, and it is the World Eater’s signature.\n\nEvery rift is the World Eater showing through. Where its feeding eats the world thin, the fabric of reality comes apart, and the tears it opens are the rifts. Neither the rifts nor the monsters that pour through them existed before it — the Ossk and everything that followed came with the World Eater, carried into the world on the same tearing. It is what brought the rifts and the monsters along with it; the rifts are only the door it opened, and they stay open while it feeds.\n\nThe world still stands only because the World Eater feeds slowly and the core replenishes faster than it drains — a balance that is not guaranteed. The Aelthar discovered it, and it was one of the reasons they created the Hidden Realm: partly as an escape, partly to redirect the feeding away from the main core. The Shudon were built not only as realm guardians but as core regulators, made to detect and suppress its spread. If the Shudon stay inactive for too long, the drain outpaces the core’s replenishment — the rifts widen, and the world begins to die from the inside out.",
     [
-      { label: "Appearance", value: "Not a physical creature in the traditional sense, it manifests as a spreading darkness within the world core's energy, a corruption that converts pure Veyn into null-Veyn. It has no body to see or touch." },
-      { label: "Location", value: "Embedded within the world core — no physical location" },
-      { label: "Threat Level", value: "Existential — world-ending parasite; only the Shudon can detect and suppress it" },
-      { label: "Nature", value: "Parasitic consciousness, not a physical creature" },
+      { label: "Type", value: "Rift — origin entity (a rift creature, not an Ossk)" },
+      { label: "Nature", value: "Parasitic consciousness from outside Veyn — the root cause of every rift" },
+      { label: "Location", value: "Embedded in the world core; its drain surfaces in the world as rifts — no physical body to find" },
+      { label: "Rift Rank", value: "Beyond the registry — Primordial (SS); no bounty is ever posted" },
+      { label: "Threat Level", value: "Existential — world-ending; only the Shudon can detect and suppress it" },
       { label: "Detection", value: "Only the Shudon can detect and suppress its spread" },
-      { label: "Notable", value: "Its null-Veyn conversion cannot be reversed — only slowed" },
-      { label: "Hostile", value: "Hostile to all life — drains the world core that sustains every realm" },
+      { label: "Notable", value: "Its null conversion (Null Energy) cannot be reversed — only slowed" },
+      { label: "Hostile", value: "Hostile to all life — it opens the rifts and drains the Veyn that sustains every realm" },
       { label: "Realm", value: "Embedded in the world core — affects all realms equally" },
+      { label: "Lore Connections", value: "Rifts — Overview, The Ossk, Null Energy, The World Barrier, The First Tear, Void Colossus, The World Core" },
     ],
-    ["world eater", "parasite", "world core", "existential", "aelthar", "op"],
+    ["rift", "world eater", "parasite", "world core", "origin", "primordial", "aelthar", "existential", "op"],
   ),
+
+  // ============================================================ MONSTERS
   e(
     "Monsters",
     "Void Colossus",
@@ -514,7 +520,7 @@ module.exports = [
       { label: "Notable", value: "Their songs carry world-core Veyn traces; blubber is extremely valuable" },
       { label: "Harvest", value: "Pallantine Elves skyride on Griffens to carefully harvest blubber under strict quotas" },
     ],
-    ["skywhale", "skywhales", "gentle", "floating", "friendly", "blubber", "veyn"],
+    ["skywhale", "gentle", "floating", "friendly", "blubber", "veyn"],
   ),
   e(
     "Monsters",
@@ -530,7 +536,7 @@ module.exports = [
       { label: "Nature", value: "Veyn shaped by collective positive intent into a guidance pattern" },
       { label: "Notable", value: "Cannot be captured or controlled; dissipate if contained" },
     ],
-    ["lightwisp", "lightwisps", "guiding", "friendly", "veyn", "lost", "safe"],
+    ["lightwisp", "guiding", "friendly", "veyn", "lost", "safe"],
   ),
   e(
     "Monsters",
@@ -546,7 +552,7 @@ module.exports = [
       { label: "Nature", value: "Earth elementals drawn to Veyn disruption; repair and maintain the land" },
       { label: "Notable", value: "Cannot be tamed; study subject for Shudonkeepers researching world-core maintenance" },
     ],
-    ["stonetender", "stonetenders", "earth", "elemental", "friendly", "repair", "land"],
+    ["stonetender", "earth", "elemental", "friendly", "repair", "land"],
   ),
   e(
     "Monsters",
@@ -563,7 +569,7 @@ module.exports = [
       { label: "Notable", value: "Cannot cure physical illness or magical corruption — purely psychological healing" },
       { label: "Taboo", value: "Harming one causes ambient Veyn to darken for weeks; universally considered wrong" },
     ],
-    ["dreamweaver", "dreamweavers", "dream", "healing", "trauma", "moth", "friendly", "spirit"],
+    ["dreamweaver", "dream", "healing", "trauma", "moth", "friendly", "spirit"],
   ),
   e(
     "Monsters",
@@ -611,7 +617,7 @@ module.exports = [
       { label: "Nature", value: "Extensions of the Sentient River's awareness — not independent spirits" },
       { label: "Weakness", value: "Demonstrating pure intent pacifies the river; fighting outside the river weakens them" },
     ],
-    ["tidecaller", "tidecallers", "water", "spirit", "sentient river", "vireth"],
+    ["tidecaller", "water", "spirit", "sentient river", "vireth"],
   ),
   e(
     "Monsters",
@@ -661,7 +667,7 @@ module.exports = [
       { label: "Weakness", value: "Any burst of strong willpower or magical energy disperses them easily" },
       { label: "Notable", value: "Victims are fully aware but lose the will to resist — a waking coma of apathy" },
     ],
-    ["gloomveil", "specter", "specters", "shadow", "despair", "isolation", "spirit", "lethmoor"],
+    ["gloomveil", "specter", "shadow", "despair", "isolation", "spirit", "lethmoor"],
   ),
 
   // ============================================================ BEINGS
@@ -738,18 +744,18 @@ module.exports = [
     ],
     ["seer", "healer", "truthstone"],
   ),
-
-  // ============================================================ ANGELS
   e(
-    "Angels",
+    "Beings",
     "Angels (Overview)",
     "Four ranks — power, not profession",
     "There are four ranks of angels: Serapharch, Aetherblade Lord Angel, Virtue, and Lumen. They have pure white feathery wings and a glowing halo on top of their heads. The number of wings indicates their rank — the higher the rank, the more wings they have — and the appearance of their halo changes by rank too: the higher the rank, the more powerful and bright they look, while lower-rank halos glow very dimly. A rank measures how much Veyn an angel holds, not what they do for a living. Only some angels join the army; most are ordinary civilians — craftsmen, merchants, scholars, and workers — who simply happen to hold their rank. Angels of any rank can leave the Angel Realm and live in the Human Realm as normal citizens, hiding their true nature behind Dawnveil.\n\nWhen an angel has used up all the Holy Energy they hold (the type of Veyn angels use), their halo starts dimming out little by little until its brightness is completely gone — which means their Veyn has finished. A fully dimmed angel cannot use their skills or magic that rely on Veyn, and can only rely on their innate trait instead — unless they were using Ren, which does not rely on Veyn.",
     [
       { label: "Note", value: "Both demons and angels can retract or hide their wings if they want. Abilities learnt can be passed down to offspring, though not all the time." },
     ],
-    ["angel", "ranks", "wings", "halo"],
+    ["angel", "rank", "wings", "halo"],
   ),
+
+  // ============================================================ ANGELS
   e(
     "Angels",
     "Serapharch",
@@ -836,9 +842,9 @@ module.exports = [
     ["angel", "vow", "veyn", "halo"],
   ),
 
-  // ============================================================ DEMONS
+  // ============================================================ BEINGS
   e(
-    "Demons",
+    "Beings",
     "Demons (Overview)",
     "Four ranks — power, not profession",
     "There are four ranks of demons: Mordrach, Bloodward, Scourge, and Gnash. They have horns on their forehead and feathery black wings. The number of horns and wings both indicate their rank — the higher the rank, the more horns and wings they have. They always have a demonic aura around them. A rank measures how much power a demon holds, not what they do for a living. Only some demons join the army; most are ordinary civilians — laborers, traders, craftsmen, and workers — who simply happen to hold their rank. Demons of any rank can leave the Demon Realm and live in the Human Realm as normal citizens, hiding their true nature behind Duskveil. Note: a rank can be passed down to an offspring, though not all the time, so they would have to work their way up the ranks.\n\nTheir horns are not just a rank display — the horns hold all the Corrupted Veyn a demon can ever use. The horns store the corrupted Veyn and act as the conduit through which demons channel it into their skills and magic. When a demon completely runs out of Veyn, the color of their horns goes pitch black, meaning there is no more Veyn left to use. A fully black-horned demon cannot use their race skills or class skills (all of which rely on Veyn) and can only rely on their innate trait instead — unless they were using Ren, which does not rely on Veyn.",
@@ -847,8 +853,10 @@ module.exports = [
       { label: "Duskveil", value: "Innate to all demons. Lets them blend into any society, hiding their true form and aura. The higher the rank, the more effective the disguise and the less power it costs; the lower the rank, the weaker the disguise and the more it cuts into their true strength." },
       { label: "Six Fingers", value: "The Demon Realm's six generals are known as the Six Fingers — Bloodward-rank demons who bear titles named after the deadly sins (Pride, Greed, Lust, Sloth, Gluttony, Wrath). They mirror the Angel Realm's Six Pillars, which are named after Greek gods." },
     ],
-    ["demon", "ranks", "horns", "wings", "six fingers", "fingers"],
+    ["demon", "rank", "horns", "wings", "six fingers", "finger"],
   ),
+
+  // ============================================================ DEMONS
   e(
     "Demons",
     "Mordrach",
@@ -896,7 +904,7 @@ module.exports = [
       { label: "Skills", value: "Binding Contract, Veyn Decomposition (Gnash), Instinctive Bargaining, Demonic Aura (Gnash), Duskveil (Gnash) — each skill has its own entry in the Angel Skills / Demon Skills categories." },
       { label: "Type", value: "Dregs" },
     ],
-    ["demon", "gnash", "rank 4", "contracts"],
+    ["demon", "gnash", "rank 4", "contract"],
   ),
   e(
     "Demons",
@@ -1058,7 +1066,7 @@ module.exports = [
     [
       { label: "Cross-class", value: "Learning skills from a class other than your own is extremely difficult for humans — most never manage it and stick to what the altar gave them." },
     ],
-    ["classes", "skills", "limits"],
+    ["class", "skill", "limit"],
   ),
   e(
     "Rules & Notes",
@@ -1091,7 +1099,7 @@ module.exports = [
       { label: "Type", value: "World Mechanic - Lineage" },
       { label: "Description", value: "Angels/demons inherit rank potential from parents. Serapharch child can reach Serapharch. Gnash child limited to Scourge. Humans inherit class affinity but not grade." },
     ],
-    ["inheritance", "rank", "abilities"],
+    ["inheritance", "rank", "ability"],
   ),
   e(
     "Rules & Notes",
@@ -1367,7 +1375,7 @@ module.exports = [
       { label: "Type", value: "World Mechanic - Practitioner Types" },
       { label: "Description", value: "19 classes: Mage, Alchemist, Beastmaster, Blacksmith, Enchanter, Diviner, Exorcist, Broker, Saintess, Clergy, Archer, Paladin, Grimtender, Bladesinger, Berserker, Sentinel, Ren Archer, Veilrunner, Shudonkeeper." },
     ],
-    ["class", "classes", "system"],
+    ["class", "system"],
   ),
   e(
     "Classes",
@@ -1379,7 +1387,7 @@ module.exports = [
       { label: "Skills", value: "Piercing Lance, Glass Bastion, Echo Sense, Elemental Brand, Leechfield, Skyvault, Repulse, Bloodthread, Shiftstate, Absolute Flow — each skill has its own entry in the Class Skills category." },
       { label: "Rune Star Circles", value: "1st -> 2nd -> 3rd -> 4th -> 5th -> 6th -> 7th -- each circle is exponentially more powerful. Mages do not use the standard Grade system." },
     ],
-    ["class", "mage", "veyn", "skills"],
+    ["class", "mage", "veyn", "skill"],
   ),
   e(
     "Classes",
@@ -1391,7 +1399,7 @@ module.exports = [
       { label: "Skills", value: "Toniccraft, Nightbrew, Shattervial, Trueassay, Overcharge, Multiplier, Cleansebrew, Mattershift, Hastybrew, Mythic Draught — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "alchemist", "potions", "skills"],
+    ["class", "alchemist", "potion", "skill"],
   ),
   e(
     "Classes",
@@ -1403,7 +1411,7 @@ module.exports = [
       { label: "Skills", value: "Heartbind, Thoughtlink, Pack Order, Beast Eye, Feral Rush, Fleshguard, Twin Fang, Lifeshare, Blood Ascension, Alpha Will — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "beastmaster", "ren", "skills"],
+    ["class", "beastmaster", "ren", "skill"],
   ),
   e(
     "Classes",
@@ -1416,7 +1424,7 @@ module.exports = [
       { label: "Skills", value: "Hammerborn, Star Temper, Vital Edge, Crimson Forge, True Edge, Aegis Craft, Soulseal, Reforge, Mythforge, Bloodalloy — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "smith", "forge", "blood-forging", "skills"],
+    ["class", "smith", "forge", "blood-forging", "skill"],
   ),
   e(
     "Classes",
@@ -1428,7 +1436,7 @@ module.exports = [
       { label: "Skills", value: "Sparkbind, Deepbind, Runeread, Unweave, Heighten, Overlay, Guardseal, Wrathseal, Living Rune, Newscript — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "enchanter", "veyn", "skills"],
+    ["class", "enchanter", "veyn", "skill"],
   ),
   e(
     "Classes",
@@ -1442,7 +1450,7 @@ module.exports = [
       { label: "Skills", value: "Clear Sight, Far Sight, Past Echo, Liebreak, Flowsense, Soulgaze, Deep Vision, Mindlock, Bond Sight, Allsight — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "diviner", "true-sight", "holy", "skills"],
+    ["class", "diviner", "true-sight", "holy", "skill"],
   ),
   e(
     "Classes",
@@ -1454,7 +1462,7 @@ module.exports = [
       { label: "Skills", value: "Whitefire, Fallen Bind, Miasma Break, Stillflow, Expulsion Rite, Holy Bastion, Purge Strike, Mass Cleanse, Spirit Drive, Eternal Seal — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "exorcist", "corrupted", "fallen angel", "skills"],
+    ["class", "exorcist", "corrupted", "fallen angel", "skill"],
   ),
   e(
     "Classes",
@@ -1466,7 +1474,7 @@ module.exports = [
       { label: "Skills", value: "Balance, Bindword, Loophole, Contract Break, Silver Sigil Tongue, Falsesense, Backlash Guard, Web, Pressure, Ironword — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "broker", "contracts", "gnash", "skills"],
+    ["class", "broker", "contract", "gnash", "skill"],
   ),
   e(
     "Classes",
@@ -1478,7 +1486,7 @@ module.exports = [
       { label: "Skills", value: "Light Mend, Radiant Aegis, Holy Purge, Burning Guard, Judgment Blow, Blessing, Sacred Ground, Reveal Light, Holy Precision, Divine Act — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "saintess", "holy", "healing", "skills"],
+    ["class", "saintess", "holy", "healing", "skill"],
   ),
   e(
     "Classes",
@@ -1490,7 +1498,7 @@ module.exports = [
       { label: "Skills", value: "Soft Heal, Deep Heal, Recovery Rite, Protect Field, Lifebloom, Healing Ground, Calm Light, Life Restore, Special Cure, Healer's Hand — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "clergy", "veyn", "skills"],
+    ["class", "clergy", "veyn", "skill"],
   ),
   e(
     "Classes",
@@ -1502,7 +1510,7 @@ module.exports = [
       { label: "Skills", value: "Spell Arrow, Sunder Arrow, Burst Arrow, Homing Bolt, Skyfall, Quiver Wall, Final Arrow, Grace Arrow, Perfect Shot, Arrowcraft — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "archer", "arrows", "veyn", "skills"],
+    ["class", "archer", "arrows", "veyn", "skill"],
   ),
   e(
     "Classes",
@@ -1514,7 +1522,7 @@ module.exports = [
       { label: "Skills", value: "Golden Strike, Dawn Shield, Auric Mend, Courage Aura, Final Judgment, Sacred Touch, Holy Ground, Guardian Seal, Oath Power, Radiant Champion — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "paladin", "holy", "knight", "skills"],
+    ["class", "paladin", "holy", "knight", "skill"],
   ),
   e(
     "Classes",
@@ -1526,7 +1534,7 @@ module.exports = [
       { label: "Skills", value: "Awaken, Dead Order, Bone Guard, Grave Drain, Death Pulse, Bone Legion, Bone Spear, Soul Bind, Grave Lord, Soul Take — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "grimtender", "undead", "reanimate", "skills"],
+    ["class", "grimtender", "undead", "reanimate", "skill"],
   ),
   e(
     "Classes",
@@ -1538,7 +1546,7 @@ module.exports = [
       { label: "Skills", value: "Wide Cut, Blood Edge, Blade Dance, Return Cut, Wind Step, Ghost Cut, Storm of Blades, Perfect Form, Sword Song, Flawless Edge — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "bladesinger", "ren", "sword", "skills"],
+    ["class", "bladesinger", "ren", "sword", "skill"],
   ),
   e(
     "Classes",
@@ -1550,7 +1558,7 @@ module.exports = [
       { label: "Skills", value: "Blood Rage, Battle Roar, Killing Blow, All-In, Never Fall, Mad Rampage, Rage Burst, Bone Break, Final Rage, War Cry — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "berserker", "ren", "skills"],
+    ["class", "berserker", "ren", "skill"],
   ),
   e(
     "Classes",
@@ -1562,7 +1570,7 @@ module.exports = [
       { label: "Skills", value: "Iron Skin, Stone Wall, Rooted Stance, Challenge, Stand Firm, Shield Crash, Shared Guard, Protect Ally, Final Stand, Unbreakable — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "sentinel", "ren", "defense", "skills"],
+    ["class", "sentinel", "ren", "defense", "skill"],
   ),
   e(
     "Classes",
@@ -1574,7 +1582,7 @@ module.exports = [
       { label: "Skills", value: "Power Bolt, Heavy Draw, Quick Volley, Armor Break, Gale Step, Far Shot, Arrow Storm, Sidestep, Sharp Eye, Arrow Master — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "archer", "ren", "skills"],
+    ["class", "archer", "ren", "skill"],
   ),
   e(
     "Classes",
@@ -1586,7 +1594,7 @@ module.exports = [
       { label: "Skills", value: "Shadow Move, No Sound, Death from Behind, Smoke Screen, Phantom Dodge, Poison Blade, Lock Touch, Face Shift, Disappear, Living Shadow — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "veilrunner", "stealth", "ren", "skills"],
+    ["class", "veilrunner", "stealth", "ren", "skill"],
   ),
   e(
     "Classes",
@@ -1613,7 +1621,7 @@ module.exports = [
       { label: "Awakening Age", value: "Every person undergoes awakening at age 15" },
       { label: "Why the Academy matters", value: "The Academy is the gatekeeper to magical ability for the entire world — it holds the only reliable way to awaken magic" },
     ],
-    ["rules", "sundering altar", "academy", "awakening", "magic system"],
+    ["rule", "sundering altar", "academy", "awakening", "magic system"],
   ),
   e(
     "Rules & Notes",
@@ -1629,7 +1637,7 @@ module.exports = [
       { label: "Rule 4", value: "7th Circle cannot be self-inscribed — must be given by the world core" },
       { label: "Why Mages are rare", value: "The pain and danger of inscription means few have the will to progress" },
     ],
-    ["rules", "mage", "rune star", "magic system", "progression"],
+    ["rule", "mage", "rune star", "magic system", "progression"],
   ),
 
   // ============================================================ ITEMS
@@ -1876,15 +1884,16 @@ module.exports = [
     "Artifacts",
     "Auralis Ruby",
     "The pendant that sealed the MC’s forms",
-    "A pendant crafted by the MC’s mom (Lisa), who then gave it to Sofia. The pendant has 5 seals to seal the MC’s 5 forms, and the seals are not equal — each seal is stronger than the one before it, so the 1st seal is the weakest and the 5th is the strongest. It seals both of his auras (angelic and demonic), which makes him look human. When a seal breaks, the strain it was holding does not vanish — it passes to the next seal. If that next seal is pushed past its own limit, it will break or weaken in turn. A broken seal can mend over time, but never back to full strength, and a weakened seal cracks more easily the next time it is tested.",
+    "A pendant crafted by the MC’s mom (Lisa), who then gave it to Sofia. The pendant has 5 seals to seal the MC’s 5 forms, and the seals are not equal — each seal is stronger than the one before it, so the 1st seal is the weakest and the 5th is the strongest. It seals both of his auras (angelic and demonic), which makes him look human. When a seal breaks, the strain it was holding does not vanish — it passes to the next seal. If that next seal is pushed past its own limit, it will break or weaken in turn. A broken seal can mend over time, but never back to full strength, and a weakened seal cracks more easily the next time it is tested.\n\nSeal releases are permanent. Once a seal is released it can never be re-sealed or reversed — not by Jaiden, not by Sofia, not by anyone. Each released nature is his permanently, and because both natures remain his, he can switch freely between his angel and his demon even while he is in his 4th (Chaos) form.",
     [
       { label: "Crafted by", value: "Lisa, a Bloodward demon" },
       { label: "Keeper", value: "Sofia" },
       { label: "Seal Strength", value: "The 5 seals escalate in strength — 1st is weakest, 5th is strongest. Each is stronger than the one before it." },
       { label: "Break Chain", value: "When a seal breaks, its strain passes to the next seal; if that seal is pushed past its limit, it breaks or weakens too." },
       { label: "Recovery", value: "A broken seal mends over time, but never to full strength — and a weakened seal breaks more easily afterward." },
+      { label: "Release Permanence", value: "Each seal release is permanent and irreversible — it can never be re-sealed by Jaiden or anyone else. Once released, the corresponding nature is his forever, and he can switch freely between angel and demon even while in his 4th (Chaos) form." },
     ],
-    ["artifact", "pendant", "ruby", "jaiden", "seals"],
+    ["artifact", "pendant", "ruby", "jaiden", "seal"],
   ),
   e(
     "Artifacts",
@@ -1894,7 +1903,7 @@ module.exports = [
     [
       { label: "Ingredients", value: "Blood of a siren, Lucent Stone, blood of a Veilborn, a hay doll on a stick" },
     ],
-    ["artifact", "totem", "monsters"],
+    ["artifact", "totem", "monster"],
   ),
 
   // ============================================================ CHARACTERS
@@ -2043,7 +2052,7 @@ module.exports = [
     "Plot",
     "Lisa’s Plot",
     "A forbidden love, a hidden child, and a death sentence",
-    "Lisa — Jaiden’s biological mother, a demon who gave up her child to protect him. Her story is one of sacrifice, guilt, and the price of defying divine law.",
+    "Lisa — Jaiden Marlock’s biological mother, a demon who gave up her child to protect him. At a time when rifts were beginning to widen — the outward sign of the World Eater’s slow drain on the world core — the existence of a demon–angel hybrid threatened to be weaponised by those looking to exploit growing realm instability. Choosing sacrifice over exposing Jaiden to that, Lisa defied the laws of both realms. Her story is one of guilt, protection, and the price paid to keep a child safe while the world itself began to unravel.",
     [
       { label: "The Vow Break", value: "Lisa was a Bloodward-rank demon stationed in the Human Realm on a covert mission. She fell in love with Ordium, an Aetherblade Lord Angel. When she became pregnant, the Demon Pact she was bound by was broken — not through betrayal, but through love. She did not trigger a Sanctuary Break because the break was not through deliberate betrayal of someone she swore to protect. Instead, she became a Fallen Angel with full sanity intact." },
       { label: "The Sacrifice", value: "Lisa gave Jaiden to her personal maid, Sofia Marlock, and sent them both to the Human Realm. She sealed his hybrid auras with the Auralis Ruby so he would appear human. Sofia raised him as her own in the Human Realm, hiding his true nature. Lisa stayed behind in the Demon Realm, knowing that if anyone discovered his hybrid nature, both he and she would be hunted." },
@@ -2057,7 +2066,7 @@ module.exports = [
     "Plot",
     "Licent Varak’s Plot",
     "Jealousy that cost Lisa her life",
-    "Licent Varak — Tera Morage’s second-in-command, secretly working with Dark Moon. His arc is one of ambition, betrayal, and death.",
+    "Licent Varak — Tera Morage’s second-in-command, secretly working with Dark Moon. As rifts grew more frequent and the Ossk poured through in greater numbers, he saw the spreading instability as an opportunity to seize power for himself. Playing both sides while the Demon Realm scrambled to contain breach surges, his ambition drove him to betrayal. His arc is one of opportunism, fractured loyalty, and the cost of trying to climb to power while an existential threat goes unaddressed.",
     [
       { label: "Rise to Power", value: "Licent is a Bloodward-rank demon who rose through Tera Morage’s ranks through cunning and ruthless efficiency. He is the second most powerful demon in the realm. He genuinely believes he should rule — Tera is too rigid, too honor-bound, too predictable. He wants to modernize the demon realm through trade and alliances, not just warfare." },
       { label: "Dark Moon Alliance (Books 1-8)", value: "Wener Leger approached Licent years ago with a deal: Dark Moon helps Licent seize the Mordrach throne, in exchange for control of the demon military after the Fourth Turning. Bound by a Demon Pact. Licent feeds Wener intelligence about demon movements and angel vulnerabilities. He does not know Wener plans to discard him." },
@@ -2071,7 +2080,7 @@ module.exports = [
     "Plot",
     "Ordium’s Plot",
     "Love at first sight — left unfinished",
-    "The tragedy of Ordium — Jaiden’s biological father, an angel who fell in love with a demon. His story is told through flashbacks and the consequences he left behind.",
+    "The tragedy of Ordium — Jaiden Marlock’s biological father, an angel who fell in love with a demon. Their union occurred against a world already fraying under the World Eater’s drain, as widening rifts and the looming reality of realm collapse bred fear and fanaticism across all three realms. That fear turned love into a crime. Told largely through flashbacks, Ordium’s story is one of defiance, consequence, and the cruelty of a world more willing to punish a forbidden bond than confront the parasitic threat slowly killing its core.",
     [
       { label: "Backstory", value: "Ordium was an Aetherblade Lord Angel, the First Pillar who left the Angel Realm for love. He was tasked with defending the Angel Realm. Instead, he fell in love with Lisa, a Bloodward-rank demon on a covert mission. Their affair produced Jaiden — a hybrid. When the Angel hierarchy discovered Lisa’s pregnancy, Ordium was captured and executed by Clint Ashborn personally." },
       { label: "The Flashback Arc (Books 2, 5, 8)", value: "Ordium’s story is told in fragmented flashbacks triggered by Jaiden discovering his demonic side. Each flashback reveals more: his genuine love for Lisa, his horror at what the angel hierarchy does, his attempt to defect, his final moments before execution. The flashbacks parallel Jaiden’s own struggles with dual nature." },
@@ -2105,7 +2114,7 @@ module.exports = [
     "Character Forms",
     "Jaiden Marlock — Chaos Form",
     "Fourth Form of 5 — Chaos Form",
-    "An unstable blend triggered at the peak of simultaneous angel/demon pressure: form 4 represents chaotic co-activation rather than balanced unification. Wings are incomplete or flicker between states, halo fractures, horns appear asymmetrically, and Veyn flows erratically between holy and corrupted. Skills cannot fully fuse; instead they surge and backlash, producing unpredictable bursts of power. Extremely high strain and low control.",
+    "An unstable blend triggered at the peak of simultaneous angel/demon pressure: form 4 represents chaotic co-activation rather than balanced unification. Wings are incomplete or flicker between states, halo fractures, horns appear asymmetrically, and Veyn flows erratically between holy and corrupted. Skills cannot fully fuse; instead they surge and backlash, producing unpredictable bursts of power. Extremely high strain and low control.\n\nThe 4th form is the halo-and-horns form — formerly called the Witch form, renamed the Chaos form. It is the most violent of all his forms. Unlike the 5th form, it does not fuse his angel and demon skills into a single race skill; it leaves them as separate race skills, and this is the source of its instability — his skills, and the two races inside him, are trying to fuse into one but cannot. The 4th seal, once released, is permanent like the others — Jaiden cannot re-seal it, and even within this form he can still switch freely between his angel and demon natures.",
     [
       { label: "Seal", value: "3rd seal break/strain — partial dual activation (unstable)" },
       { label: "Visual", value: "Wings flicker: partially manifested as white and black feathers, unstable and shifting. Halo fractured, half-glowing, half-flickering. Horns asymmetrical. Veins pulse erratically between Gold Sigil and violet." },
@@ -2116,8 +2125,11 @@ module.exports = [
       { label: "Duration", value: "Moments to seconds unless stabilized immediately." },
       { label: "Risk", value: "High risk of seal cascade and self-injury; aura is easily detectable." },
       { label: "Story Role", value: "The breaking point: the unstable state before achieving True Hybrid (Form 5) through control." },
+      { label: "Former Name", value: "Witch form — renamed to Chaos form" },
+      { label: "Skill Fusion", value: "None — unlike the 5th form, the 4th does not fuse angel and demon skills into one. It leaves them as separate race skills, which is why the form is unstable." },
+      { label: "Violence", value: "The most violent of all his forms." },
     ],
-    ["jaiden", "form", "halo & horns"],
+    ["jaiden", "form", "halo & horns", "chaos form", "4th form"],
   ),
   e(
     "Character Forms",
@@ -2161,7 +2173,7 @@ module.exports = [
     "Character Forms",
     "Jaiden Marlock — True Hybrid",
     "Fifth Form of 5 — True Hybrid",
-    "Full unification of both natures. 3 white wings + 3 black wings split by side, split halo, heterochromatic eyes, both auras active simultaneously. Angel and demon skills FUSE into hybrid skills. Maximum power but extreme cost, instability, and risk of permanent damage.",
+    "Full unification of both natures. 3 white wings + 3 black wings split by side, split halo, heterochromatic eyes, both auras active simultaneously. Angel and demon skills FUSE into hybrid skills. Maximum power but extreme cost, instability, and risk of permanent damage. Unlike the 4th (Chaos) form — which leaves his angel and demon skills as separate race skills — the 5th form combines every skill into one single race skill.",
     [
       { label: "Seal", value: "5th seal released — the strongest seal, the final barrier. Once broken, it cannot be restored by normal means." },
       { label: "Visual", value: "3 pure white feathery wings on his left side, glowing with Holy Energy. 3 black feathery wings on his right side, shimmering with Corrupted Veyn. 6 horns curling from his forehead — the left 3 smooth and golden-tipped, the right 3 jagged and dark. A halo split in half floats above his head: the left half is a solid ring of golden light (angelic), the right half is a cracked ring of dark violet energy (demonic). His eyes are heterochromatic — left eye Gold Sigil, right eye violet. Both auras surround him simultaneously, creating a pressure that makes the air feel heavy and the light flicker. He looks like a god of two natures, neither fully light nor fully dark." },
@@ -2174,6 +2186,7 @@ module.exports = [
       { label: "Risk", value: "The Ruby may shatter entirely if the form is held too long, making the transformation permanent and irreversible. His body may not survive the strain — the incompatibility between Holy Energy and Corrupted Veyn could tear his Veyn channels apart. Even if he survives, prolonged use could leave him unable to use any form ever again. And every person who witnesses this form becomes a potential threat — the political fallout of a being like this existing is incalculable." },
       { label: "Story Role", value: "The form of truth — this is what Jaiden really is. Not angel, not demon, not human, but all three. It is the form the prophecy describes, the form every faction fears, and the form Jaiden must learn to control before the fourth turning. It is also the form he must ultimately sacrifice — not because it is evil, but because the only way to mend the Sundering is to give up what makes him unique." },
       { label: "Lore Connections", value: "Prophecy of the Half-Made, Hybrid Fusion, Hybrid Skills, Sundering Prophecy Cycle, World Core response, Auralis Ruby destruction, fourth turning, mending vs silence choice" },
+      { label: "Contrast with 4th Form", value: "The 4th (Chaos) form leaves his angel and demon skills separate; the 5th form fuses them all into one single race skill." },
     ],
     ["jaiden", "form", "true hybrid form"],
   ),
@@ -2369,6 +2382,7 @@ module.exports = [
       { label: "Cooldown", value: "8 seconds" },
       { label: "Grade Requirement", value: "A-Grade or above" },
       { label: "Rank", value: "Aetherblade Lord and above" },
+      { label: "Blink / Realm Limit", value: "A blink-type short-range teleport used by both angels and demons. It can only move the user within the realm they are already in — it cannot cross the world barrier." },
     ],
     ["skill", "angel", "serapharch"],
   ),
@@ -2466,6 +2480,7 @@ module.exports = [
       { label: "Cooldown", value: "6 seconds" },
       { label: "Grade Requirement", value: "B-Grade or above" },
       { label: "Rank", value: "Virtue and above" },
+      { label: "Blink / Realm Limit", value: "A blink-type short-range teleport used by both angels and demons. It can only move the user within the realm they are already in — it cannot cross the world barrier." },
     ],
     ["skill", "angel", "aetherblade lord angel"],
   ),
@@ -2753,7 +2768,7 @@ module.exports = [
     "Demon Skills",
     "Soul-Sight",
     "Mordrach skill",
-    "Allows the user to see the flow of a target’s soul, effectively predicting the direction and timing of their next attack. This ability does not work on angels of any rank — angels have no soul. What an angel carries instead is a spiritual body, the holy form bound to their Vow, and Soul-Sight can only perceive souls, so an angel’s spiritual body is invisible to it. Demons can never read an angel’s soul, because there is nothing there to read. Against a hybrid in his sealed form, Soul-Sight breaks in a way no demon can explain: it flickers — half a soul and half a spiritual body held at once, a thing held to be impossible. But when the hybrid takes a single form, the flicker stops. In his full demon form his soul reads as a clean half-demon soul, and in his full angel form as a clean half-spiritual-body; only in the sealed form, where both halves coexist, does the sight stutter on and off. Even that single-form reading is a riddle, though: the soul is only half, and any demon who sees it must ask why a demon’s soul is incomplete — a question with no good answer.",
+    "Allows the user to see the flow of a target’s soul, effectively predicting the direction and timing of their next attack. This ability does not work on angels of any rank — angels have no soul. What an angel carries instead is a spiritual body, the holy form bound to their Vow, and Soul-Sight can only perceive souls, so an angel’s spiritual body is invisible to it. Demons can never read an angel’s soul, because there is nothing there to read. Against a hybrid in his sealed form, Soul-Sight breaks in a way no demon can explain: it flickers — half a soul and half a spiritual body held at once, a thing held to be impossible. But when the hybrid takes a single form, the flicker stops. In his full demon form his soul reads as a clean half-demon soul, and in his full angel form as a clean half-spiritual-body; only in the sealed form, where both halves coexist, does the sight stutter on and off. Even that single-form reading is a riddle, though: the soul is only half, and any demon who sees it must ask why a demon’s soul is incomplete — a question with no good answer.\n\nThe MC's own Soul-Sight behaves differently in each of his forms, because it is his angel half that empowers it. In his normal (sealed) form it stutters, perceiving both halves at once. In his Full Angel form it does not work at all — there is nothing for it to read. In his Full Demon form he can perceive souls only, and spiritual bodies are invisible to him. It works fully — reading both souls and spiritual bodies — only in his Chaos (4th) form and his True Hybrid (5th) form.",
     [
       { label: "Type", value: "Bloodward Active — Detection" },
       { label: "Effect", value: "The demon perceives the soul of any being within 50 meters — unless that being is an angel, who has a spiritual body instead of a soul, and so cannot be read. A hybrid flickers only in his sealed form (both halves at once); in full demon form he reads as a clean half-demon soul, in full angel form as a clean half-spiritual-body." },
@@ -2761,10 +2776,11 @@ module.exports = [
       { label: "Grade Requirement", value: "A-Grade or above" },
       { label: "Rank", value: "Bloodward and above" },
       { label: "Standard Scope", value: "Standard demon Soul Sight ONLY perceives the soul's movement — predicting the direction and timing of physical attacks. It cannot detect corruption spreading or spiritual influence. A demon with Soul Sight can dodge an incoming strike but cannot see the sword's corruption eating away at their soul." },
-      { label: "MC Enhancement", value: "The MC's Soul Sight is significantly more powerful due to his angel half. His enhanced version perceives: (1) Soul movement for attack prediction, (2) Corruption spreading in real time, (3) Spiritual nature of beings, (4) Vireth's influence reaching toward him like a hand. He watches the sword's corruption try to bend his will and actively fights it off through vigilance." },
+      { label: "MC Enhancement", value: "The MC's Soul Sight is significantly more powerful due to his angel half. His enhanced version perceives: (1) Soul movement for attack prediction, (2) Corruption spreading in real time, (3) Spiritual nature of beings, (4) Vireth's influence reaching toward him like a hand. He watches the sword's corruption try to bend his will and actively fights it off through vigilance. This full perception depends on his form — see 'MC — Form Behaviour' — and is only fully available in his Chaos (4th) and True Hybrid (5th) forms." },
       { label: "Demon vs MC Experience", value: "DEMON WIELDING VIRETH: Soul Sight predicts attacks but CANNOT see corruption. They experience: whispering grows louder, moral compass blurs, veins darken, aura shifts, blackouts occur, eventually full possession. They fight blind — stronger in combat but losing themselves. Jaiden Wielding Vireth: Soul Sight lets him see corruption approaching in real time. He watches the sword's influence like watching a hand reach for his throat. He can resist because he can see it coming. He keeps the other eyes closed through vigilance, not strength." },
       { label: "Vireth Counter-Mechanics", value: "Each eye opening = corruption deepening. Jaiden's Soul Sight counters by: (1) Seeing the sword's whispers before they take hold, (2) Watching his moral compass blur and actively resisting, (3) Observing corruption spread through his veins and fighting it, (4) Detecting the sword attempting to override his will. Without Soul Sight, a wielder experiences these effects passively — they happen TO them. With Soul Sight, Jaiden experiences them actively — he watches and chooses to resist." },
       { label: "Why Demons Cannot Survive Vireth", value: "Even if a demon possessed Soul Sight, they cannot survive Vireth because: (1) Soul Sight only predicts physical attacks, not corruption, (2) The sword's divine nature counters demonic regeneration, (3) Corruption overwhelms demon souls faster than angel-touched souls, (4) Without Jaiden's angelic resistance, the sword's whispers eventually break any will. The MC's angel half provides the spiritual anchor that lets him resist what would consume any demon." },
+      { label: "MC — Form Behaviour", value: "The MC's Soul-Sight is empowered by his angel half, so it changes with his form. Normal (sealed) — stutters, perceiving both halves at once. Full Angel (2nd) — does not work at all; nothing is perceived. Full Demon (3rd) — souls only; spiritual bodies are invisible. Chaos (4th) and True Hybrid (5th) — works fully, perceiving both souls and spiritual bodies." },
     ],
     ["skill", "demon", "mordrach"],
   ),
@@ -3294,7 +3310,7 @@ module.exports = [
     "Plot",
     "Jaiden Marlock Plot",
     "Plot for Mc",
-    "The central storyline following Jaiden Marlock from sealed hybrid boy to the boy who attempts the ascension the myth forbids. Three-act structure spanning the full14-book arc.",
+    "The central arc following Jaiden Marlock from a sealed hybrid boy to one caught in the world’s unraveling. The growing rift surges aren’t random — every rift is the World Eater showing through, its drain on the world core tearing reality open while the Ossk pour through. With the Shudon strained trying to suppress its spread, and the Hidden Realm created in part to redirect that feeding, Jaiden learns the forbidden ascension myth exists against the backdrop of an existential threat. Torn between paths that risk accelerating the core drain and ones that confront its root cause, his arc pits personal identity against the survival of all realms, with the sealed Abyssal Wyrm looming as a reminder of what else waits if the world breaks further.",
     [
       { label: "Act 1 — The Sealed Boy (Books 1-3)", value: "Jaiden arrives at Elyndor Academy at age 14, disguised as a normal human. The Auralis Ruby suppresses his hybrid nature. He meets Bella Rose (first real friend), Mark Wesley (loyal companion), and Sofia Marlock (adoptive sister/mentor). First Veyn Storm at the Academy forces his sealed power to leak — Clint Ashborn notices. Wener Leger begins positioning himself as Jaiden mentor. The Ruby first seal cracks during a training spar, revealing a faint halo and horns for the first time." },
       { label: "Act 2 — The Unraveling (Books 4-9)", value: "Jaiden discovers his hybrid nature and the Prophecy of the Half-Made. Kael von Ashen becomes his secret tutor. The Sealed Writings begin calling to him. Dark Moon escalates — Licent Varak reports to Tera Morage about the hybrid. Ruby Divina sees Jaiden as a political asset. The Academy tournament arc: Jaiden forced to reveal Halo & Horns form publicly. Clint attempts to recruit him; Wener tries to manipulate him. Jaiden struggles with dual-channel Veyn — mastering both angelic and demonic skills simultaneously. Third seal breaks during the Demon Realm crisis." },
@@ -3305,13 +3321,13 @@ module.exports = [
       { label: "Story Relevance", value: "The narrative engine — every faction agenda revolves around Jaiden. His choices determine whether the world is mended or destroyed." },
       { label: "Lore Connections", value: "Prophecy of the Half-Made, Auralis Ruby, Sealed Writings, Fourth Turning, World Eater, Shudon, all five Character Forms, Hybrid Fusion." },
     ],
-    ["protagonist", "plot", "Jaiden"],
+    ["protagonist", "plot", "jaiden"],
   ),
   e(
     "Plot",
     "Ruby Divina’s Plot",
     "The mortal ruler’s gambit",
-    "Ruby Divina — the Human Realm ruler, a political mastermind who sees Jaiden as the key to humanity’s supremacy. Her arc moves from ally to antagonist to reluctant partner.",
+    "Ruby Divina — the Human Realm ruler, a political mastermind who sees Jaiden Marlock as the key to humanity’s supremacy. As rift outbreaks grow more severe and the World Eater’s drain becomes harder to conceal from the public, the pressure to secure power intensifies. Pragmatic to a fault, she shifts from cautious ally to antagonist to reluctant partner depending on what she believes will keep the Human Realm from being swallowed by the widening tears. Her arc is one of realpolitik colliding with an existential threat no amount of political leverage can bargain away.",
     [
       { label: "The Political Game", value: "Ruby rules the Human Realm through intelligence networks and Broker connections. She learned of the hybrid Jaiden through her spy network and has been watching him since birth. She does not care about the prophecy — she cares about leverage. A hybrid means humanity can negotiate with both angels and demons from a position of strength." },
       { label: "Her Offer (Book 4)", value: "Ruby approaches Jaiden at the Academy with a deal: she will protect him from both angel and demon hunters if he pledges fealty to the Human Realm. She offers resources, training, and political cover. The price: he must act as humanity’s ambassador to the other realms. Jaiden refuses — he will not be a pawn. This puts them at odds." },
@@ -3325,7 +3341,7 @@ module.exports = [
     "Plot",
     "Clint Ashborn’s Plot",
     "The immaculate tyrant",
-    "Clint Ashborn — the Serapharch who executed Ordium and now hunts the hybrid. His arc is one of guilt, duty, and the cost of blind obedience.",
+    "Clint Ashborn — the Serapharch who executed Ordium and now hunts the hybrid. Bound by duty to preserve order in the Angel Realm, he watches rifts widen and breach response strain under pressure while the World Eater’s existence remains a truth known to few. Haunted by guilt over Ordium, his pursuit of Jaiden is shaped by fear of further destabilisation in a realm already stretched thin trying to contain what it can’t fully close. His arc is one of guilt, rigid duty, and the cost of obedience when the true enemy is not a hybrid, but the parasitic force slowly killing the world core.",
     [
       { label: "The Execution (Flashback)", value: "Clint personally executed Ordium on orders from the Angel hierarchy. He believed he was doing justice — a demon who seduced an angel and created an abomination. But the execution haunted him. He saw Ordium’s face in his dreams for years. When he discovered Jaiden exists, the guilt intensified." },
       { label: "The Hunt (Books 1-6)", value: "Clint initially hunts Jaiden to eliminate the hybrid threat. He sends the Six Pillars to the Academy. But as he observes Jaiden — his kindness, his struggle, his humanity — Clint begins to doubt. He sees Lisa in Jaiden’s eyes. He sees Ordium’s defiance. He begins to question whether the Angel hierarchy was wrong." },
@@ -3339,7 +3355,7 @@ module.exports = [
     "Plot",
     "Wener Leger’s Plot",
     "The patient tyrant",
-    "Wener Leger — the Fallen Angel who leads Dark Moon. His arc is one of ambition, manipulation, and the collapse of a master plan.",
+    "Wener Leger — the Fallen Angel who leads Dark Moon. Amid rising rift surges caused by the World Eater’s drain, he exploits fear and desperation, drawing disillusioned beings to his cause while the Ossk spill through ever-wider tears. A master manipulator, he leverages the looming Abyssal Wyrm and growing instability to advance his ambitions, even as the world edges closer to collapse. His arc is one of calculated ambition, ruthless manipulation, and the collapse of grand designs in the face of a threat far larger than any faction.",
     [
       { label: "The Fall (Flashback)", value: "Wener fell not through weakness or doubt, but through deliberate ambition. He was a Virtue-rank angel who believed the hierarchy was corrupt and stagnant. He broke his Vow intentionally — not through betrayal of a specific person, but through a cold rejection of the system itself. He fell cleanly: black-spotted wings, broken halo, full sanity. He founded Dark Moon within a decade." },
       { label: "The Seven-Stage Plan (Books 1-10)", value: "Wener has been executing a 7-stage plan for years: infiltrate all realms, destabilize cross-realm relations, acquire the hybrid, seize the Academy Altar, control the Fourth Turning, replace rulers with puppets, and consolidate invisible power. He is the most patient and dangerous antagonist because he does not want to destroy the world — he wants to own it." },
@@ -3353,7 +3369,7 @@ module.exports = [
     "Plot",
     "Tera Morage’s Plot",
     "The tyrant whose one mercy was a death sentence",
-    "Tera Morage — the Mordrach demon ruler, a warlord who united the 60 Clans. Her arc is one of power, betrayal, and the cost of ruling through fear.",
+    "Tera Morage — the Mordrach demon ruler who united the sixty Clans. Holding the Demon Realm together becomes increasingly difficult as rift breaches multiply and the World Eater’s feeding pours null energy into the world, weakening the Veyn her armies rely on. With the Hidden Realm partly redirecting that drain and the Shudon struggling to suppress its spread, Tera must weigh conquest against survival. Her arc is one of iron-fisted rule, betrayal from within, and the cost of ruling through fear when the true enemy is the parasite embedded in the world core itself.",
     [
       { label: "The Unification Wars (Flashback)", value: "Tera rose to power through 15 years of brutal warfare, uniting 60 Demon Clans into 20 under her iron fist. She killed or imprisoned every rival. Her method: absolute strength, absolute loyalty, absolute fear. She built the Obsidian Spires as a monument to demon unity — and a warning to defiers." },
       { label: "The Licent Problem (Books 1-8)", value: "Tera’s second-in-command, Licent Varak, is secretly working with Dark Moon. She suspects but cannot prove it. She keeps him close to monitor him. When Licent reports about the hybrid Jaiden, Tera sees opportunity — a weapon against the angels. She sends agents to the Academy to observe, not capture." },
@@ -3422,9 +3438,9 @@ module.exports = [
     "Titles",
     "First Pillar, Chronous",
     "Chronous, god of time",
-    "The First Pillar of the Six Pillars of Angels — borne by Ordium, referencing Chronos/Chronous, god of time.",
+    "The First Pillar of the Six Pillars of Angels — was borne by Ordium until his execution, referencing Chronos/Chronous, god of time.",
     [
-      { label: "Held by", value: "Ordium" },
+      { label: "Held by", value: "Ordium (executed — seat vacant)" },
     ],
     ["title", "angel", "pillar", "ordium"],
   ),
@@ -3737,6 +3753,7 @@ module.exports = [
       { label: "Cooldown", value: "20 seconds" },
       { label: "Grade Requirement", value: "B-Grade or above" },
       { label: "Rank", value: "Scourge and above" },
+      { label: "Blink / Realm Limit", value: "A blink-type short-range teleport used by both angels and demons. It can only move the user within the realm they are already in — it cannot cross the world barrier." },
     ],
     ["skill", "demon", "bloodward"],
   ),
@@ -3807,6 +3824,7 @@ module.exports = [
       { label: "Cooldown", value: "15 seconds" },
       { label: "Grade Requirement", value: "B-Grade or above" },
       { label: "Rank", value: "Bloodward and above" },
+      { label: "Blink / Realm Limit", value: "A blink-type short-range teleport used by both angels and demons. It can only move the user within the realm they are already in — it cannot cross the world barrier." },
     ],
     ["skill", "demon", "bloodward"],
   ),
@@ -4261,13 +4279,13 @@ module.exports = [
       { label: "Type", value: "World Mechanic - Named Abilities" },
       { label: "Description", value: "Unique skills from specific titles/positions. Cannot be learned - earned through achievement or bestowed by authority." },
     ],
-    ["title", "skills", "title skills"],
+    ["title", "skill", "title skills"],
   ),
   e(
     "Rules & Notes",
     "The Six Pillars of Angels",
     "The six generals of the Angel Realm",
-    "The Angel Realm’s six generals are known as the Six Pillars, ranked First through Sixth. The First Pillar is Chronous, held by Ordium; the Second through Sixth are Helious, Areous, Deimous, Horkous, and Argous. Each pillar bears a title, its own skills, and a duty — from guarding the Sundering Altar to standing as the Serapharch’s personal guard.",
+    "The Angel Realm’s six generals are known as the Six Pillars, ranked First through Sixth. The First Pillar is Chronous — it was held by Ordium until his execution; the Second through Sixth are Helious, Areous, Deimous, Horkous, and Argous. Each pillar bears a title, its own skills, and a duty — from guarding the Sundering Altar to standing as the Serapharch’s personal guard.",
     [
       { label: "Type", value: "World Mechanic - Angel Elite" },
       { label: "Description", value: "Six most powerful Aetherblade Lords under Clint Ashborn. Chronous (Time), Helious (Light), Areous (Fire), Deimous (Shadow), Horkous (Gravity), Argous (Steel)." },
@@ -4327,7 +4345,7 @@ module.exports = [
       { label: "Sanctuary Break", value: "Triggered by betrayal of a sworn obligation. Void forms in Veyn channel; corrupted Veyn seeps in over time, consuming identity. Four stages: Hollow → Fog → Hunger → Hollowing." },
       { label: "Loss of Veyn Skills & Regeneration", value: "A Fallen Angel loses the rank-based regeneration and the Veyn-fed skills they had before falling, because the shattered halo no longer keeps their Veyn flowing correctly. What remains is their race type’s innate trait: Rapid-Mend (physical-wound healing, 5x normal)." },
     ],
-    ["race", "angel", "fallen angels", "fallen"],
+    ["race", "angel", "fallen angel", "fallen"],
   ),
 
   // ============================================================ INNATE ABILITIES
@@ -4341,7 +4359,7 @@ module.exports = [
       { label: "Effect", value: "The being cannot be killed by conventional means. When reduced to 0 HP, they enter a 10-second stasis and regenerate to 30% HP. Can only trigger once per hour. Does not protect against soul destruction or Veyn annihilation." },
       { label: "Rarity", value: "Extremely rare — found in Aelthar remnants and ancient beings" },
     ],
-    ["innate", "ability", "angel", "Cherubim"],
+    ["innate", "ability", "angel", "cherubim"],
   ),
   e(
     "Innate Abilities",
@@ -4353,7 +4371,7 @@ module.exports = [
       { label: "Effect", value: "Passively regenerates Veyn at 2% of max capacity per second. This is 4x faster than normal regeneration. Cannot be suppressed or drained below 0." },
       { label: "Rarity", value: "Common among high-ranking angels and demons" },
     ],
-    ["innate", "ability", "angel", "Malakhim"],
+    ["innate", "ability", "angel", "malakhim"],
   ),
   e(
     "Innate Abilities",
@@ -4410,7 +4428,7 @@ module.exports = [
       { label: "Eyes", value: "Sharp, alert, with a flicker of amusement even in danger, unlike a Dreg's flat hostility." },
       { label: "Presence", value: "Their aura doesn't press down the way a Fiend's or Dreg's does, it unsettles more subtly, a playful-cruel undertone that makes people uneasy without knowing exactly why." },
     ],
-    ["race", "demon", "imps", "imp"],
+    ["race", "demon", "imp"],
   ),
 
   // ============================================================ INNATE ABILITIES
@@ -4478,12 +4496,13 @@ module.exports = [
     "Rules & Notes",
     "Race Types",
     "Species, separate from rank",
-    "Beyond their rank, every angel and demon belongs to a race type — a kind of being, not a position. The angels have three types: the Cherubim (the throne-guardian apex), the Malakhim (the common true angels), and the Fallen Angels (the vow-breakers). The demons have three: the Fiends (the apex), the Dregs (the common demons), and the Imps (the impish few set apart from the ordinary line). Race type and rank are independent — a Serapharch and a Lumen are both angels, but at different ranks of the same kind.",
+    "Beyond their rank, every angel and demon belongs to a race type — a kind of being, not a position. The angels have three types: the Cherubim (the throne-guardian apex), the Malakhim (the common true angels), and the Fallen Angels (the vow-breakers). The demons have three: the Fiends (the apex), the Dregs (the common demons), and the Imps (the impish few set apart from the ordinary line). Race type and rank are independent — a Serapharch and a Lumen are both angels, but at different ranks of the same kind. The four great races of the world are Angels, Demons, Elves, and Humans.",
     [
       { label: "Type", value: "World Mechanic - Species" },
       { label: "Description", value: "Humans, Angels (4 ranks), Demons (4 ranks), Elves (2 types), Aelthar (extinct), Soulgrub (parasitic), Grubsworn (demonic humans), plus monsters and beings." },
+      { label: "World Races", value: "Angels, Demons, Elves, Humans — alongside the extinct Aelthar, the parasitic Soulgrub, and Grubsworn demonic humans." },
     ],
-    ["race", "race type", "species", "angels", "demons"],
+    ["race", "race type", "species", "angel", "demon"],
   ),
   e(
     "Rules & Notes",
@@ -4516,6 +4535,28 @@ module.exports = [
       { label: "The Vow", value: "A hybrid cannot take the Veyn Vow — no single promise can bind two natures. The Angel Realm would still demand it, and would reject him when he cannot give it." },
     ],
     ["hybrid", "angel", "demon", "jaiden", "race"],
+  ),
+  e(
+    "Rules & Notes",
+    "MC Instability — Equilibrium & Fray",
+    "The MC's limit — he cannot lean on one nature, and power frays him",
+    "Jaiden’s power has no seal-level punishment — his releases are permanent and cannot be reversed. So his limit is not taken from him; it is built into what he is. Two linked effects govern how much he can use his power, and for how long.\n\nEQUILIBRIUM. His angel and demon natures must stay balanced. If he leans on one side too long, the other half begins to starve. Overuse of angelic power starves the demon half — a dark tremor sets in, violet flickers at his veins, cold surges run through him, and his demonic skills start to fire without command, letting corruption creep in even with no source. Overuse of demonic power starves the angel half — holy warmth drains away, his halo light dims even outside his forms, his holy skills refuse or misfire, and a hollow numbness takes hold. The only cure is balanced use of both sides, or rest in his normal form. He can never live as only an angel or only a demon.\n\nFRAY. Every transformation, and every skill used, raises a running measure of fray — and higher forms raise it faster. Fray never fully resets; residue always remains, so it climbs across the story. As fray rises, control slips: at first his forms bleed into one another (a horn showing in his normal form, a wing flickering, his eyes shifting colour unbidden); higher, the unstable Chaos (4th) form surfaces uninvited and his skills surge and backlash; at the top, the Chaos form leaks out entirely and he risks lashing out at allies as much as enemies.\n\nTogether these are his true limit. He is not strong all the time — he is strong in short, heavy bursts, and every burst of power brings him closer to losing himself and to hurting the people he protects.",
+    [
+      { label: "Type", value: "World Mechanic - Jaiden-Unique Limit" },
+      { label: "Overview", value: "Because his releases are permanent and cannot be reversed, his limit is built into what he is rather than taken from him. Two linked effects — Equilibrium and Fray — govern how long and how hard he can use his power." },
+      { label: "Equilibrium", value: "His angel and demon natures must stay balanced. Leaning on one side starves the other, forcing him to alternate or rest instead of fighting as a single nature." },
+      { label: "Demon-Starved (angel overused)", value: "Dark tremor, violet flicker at the veins, cold surges, demonic skills firing without command, and corruption creeping in with no source." },
+      { label: "Angel-Starved (demon overused)", value: "Holy warmth drains away, halo light dims even out of form, holy skills refuse or misfire, and a hollow numbness takes hold." },
+      { label: "Fray", value: "A running measure raised by every transformation and every skill used — higher forms raise it faster. It never fully resets; residue remains, so it climbs across the story." },
+      { label: "Fray - Low", value: "No visible effect." },
+      { label: "Fray - Medium", value: "Control slips — his forms bleed into one another: a horn in normal form, a flickering wing, eyes shifting colour unbidden." },
+      { label: "Fray - High", value: "The unstable Chaos (4th) form surfaces uninvited; his skills surge and backlash; risk of lashing out at allies." },
+      { label: "Fray - Max", value: "Full loss of control — the two natures fight to fuse violently; he becomes a danger to everyone, himself included." },
+      { label: "Recovery", value: "Rest and balanced use of both natures lower fray and restore equilibrium, but residue remains — it never returns fully to zero." },
+      { label: "Story Role", value: "The reason he must end fights fast and can never truly relax into his power. The stronger he fights, the closer he comes to losing himself — and the more he risks the people he protects." },
+      { label: "Lore Connections", value: "Auralis Ruby (permanent releases), Chaos Form (unstable overflow), True Hybrid (highest fray), Veyn & Ren Incompatibility, Corruption Sickness, Veyn Depletion, The Hybrid." },
+    ],
+    ["jaiden", "mc", "hybrid", "limit", "disadvantage", "instability", "equilibrium", "fray", "mc limit", "rule"],
   ),
   e(
     "Rules & Notes",
@@ -4566,6 +4607,7 @@ module.exports = [
     [
       { label: "Type", value: "World Mechanic - Extinct Race" },
       { label: "Description", value: "Original world rulers. Created Shudon, discovered World Eater, wrote Sealed Writings. Wiped out in Sundering. Only Kael von Ashen survives." },
+      { label: "Lore Connections", value: "World Curse (rune collar), Shudon, World Barrier, Hidden Realm wandering portal, Ethereal Potion, Kael von Ashen (Headmaster), Sealed Writings, World Eater." },
     ],
     ["aelthar", "extinct", "race", "hidden realm"],
   ),
@@ -4611,7 +4653,7 @@ module.exports = [
       { label: "Type", value: "World Mechanic - Energy States" },
       { label: "Description", value: "1) Pure Veyn (natural), 2) Holy Energy (purified through Vow), 3) Corrupted Veyn (tainted by Eater). All from World Core. Balance determines stability." },
     ],
-    ["veyn", "holy energy", "corrupted veyn", "humans", "angels", "demons"],
+    ["veyn", "holy energy", "corrupted veyn", "human", "angel", "demon"],
   ),
   e(
     "Rules & Notes",
@@ -6530,6 +6572,7 @@ module.exports = [
     "Uses Ren to move silently and quickly through dim light and shadows, becoming hard to track. At its most basic, the move reduces sound and allows passage through shadows without detection. The user appears as a fleeting dark shape.",
     [
       { label: "Effect", value: "Teleports 10 meters through shadows. Cannot be seen during the teleport." },
+      { label: "Blink / Realm Limit", value: "A blink-type short-range teleport used by both angels and demons. It can only move the user within the realm they are already in — it cannot cross the world barrier." },
     ],
     ["skill", "class", "veilrunner", "ren", "mobility"],
   ),
@@ -6739,7 +6782,7 @@ module.exports = [
       { label: "Elixir Lord", value: "Legendary-rank potions, handles dragon heart and Grimbough leaves independently" },
       { label: "Grand Alchemist", value: "Can brew the Ethereal Potion, creates entirely new formulas, master of all alchemical arts" },
     ],
-    ["progression", "alchemist", "class", "ranks"],
+    ["progression", "alchemist", "class", "rank"],
   ),
   e(
     "Class Progression",
@@ -6771,7 +6814,7 @@ module.exports = [
       { label: "Mythic Forger", value: "Creates legendary-grade weapons, works with rare materials impossible for lesser smiths" },
       { label: "Grand Forger", value: "Can mix angel and demon blood, creates Divine-tier weapons, masters all forging disciplines" },
     ],
-    ["progression", "smith", "class", "tiers"],
+    ["progression", "smith", "class", "tier"],
   ),
   e(
     "Class Progression",
@@ -6787,7 +6830,7 @@ module.exports = [
       { label: "Rune Sage", value: "Develops new enchantment patterns, creates adaptive enchantments" },
       { label: "Rune Transcendent", value: "Creates enchantments that respond to threats and evolve over time, pioneers new magical forms" },
     ],
-    ["progression", "enchanter", "class", "grades"],
+    ["progression", "enchanter", "class", "grade"],
   ),
   e(
     "Class Progression",
@@ -6803,7 +6846,7 @@ module.exports = [
       { label: "Prophet", value: "Reliable future sight, perceives bonds between people, performs complex rituals" },
       { label: "Fatesight", value: "Combines all divination effects, perceives the interconnected web of all living things" },
     ],
-    ["progression", "diviner", "class", "levels"],
+    ["progression", "diviner", "class", "level"],
   ),
   e(
     "Class Progression",
@@ -6835,7 +6878,7 @@ module.exports = [
       { label: "Grand Arbiter", value: "Handles ruler-level disputes, creates contracts that bind entire organizations" },
       { label: "Iron Sovereign", value: "Creates near-unbreakable contracts, enforces penalties across all three realms, mediates between the Four Rulers" },
     ],
-    ["progression", "broker", "class", "ranks"],
+    ["progression", "broker", "class", "rank"],
   ),
   e(
     "Class Progression",
@@ -6867,7 +6910,7 @@ module.exports = [
       { label: "Saint Healer", value: "Restores lost limbs with rare components, pulls people back from death's edge" },
       { label: "Life Weaver", value: "Creates entirely new healing techniques, masters all healing disciplines, legendary healing" },
     ],
-    ["progression", "clergy", "class", "ranks"],
+    ["progression", "clergy", "class", "rank"],
   ),
   e(
     "Class Progression",
@@ -6883,7 +6926,7 @@ module.exports = [
       { label: "Void Archer", value: "Arrows that pierce through dimensions, reality-bending enchantments" },
       { label: "Trueshot", value: "Creates entirely new magical ammunition, perfect accuracy at any range, arrows that never miss" },
     ],
-    ["progression", "archer", "class", "tiers"],
+    ["progression", "archer", "class", "tier"],
   ),
   e(
     "Class Progression",
@@ -6915,7 +6958,7 @@ module.exports = [
       { label: "Grave Lord", value: "Permanent undead army, harvests souls for later use, commands elite undead" },
       { label: "Death Sovereign", value: "Controls multiple powerful undead simultaneously, maintains permanent undead guard, harvests residual essence" },
     ],
-    ["progression", "grimtender", "class", "ranks"],
+    ["progression", "grimtender", "class", "rank"],
   ),
   e(
     "Class Progression",
@@ -6963,7 +7006,7 @@ module.exports = [
       { label: "Immortal Guardian", value: "Wide-area defensive bastion, takes drastically reduced damage" },
       { label: "Eternal Sentinel", value: "Becomes immovable wall, protects large zone, inspires allies to fight harder" },
     ],
-    ["progression", "sentinel", "class", "ranks"],
+    ["progression", "sentinel", "class", "rank"],
   ),
   e(
     "Class Progression",
@@ -6994,7 +7037,7 @@ module.exports = [
       { label: "Shadow Lord", value: "Permanent shadow integration, strikes without detection, leaves no trace" },
       { label: "Living Shadow", value: "One with shadows, near-perfect stealth at full speed, vanishes indefinitely" },
     ],
-    ["progression", "veilrunner", "class", "tiers"],
+    ["progression", "veilrunner", "class", "tier"],
   ),
   e(
     "Class Progression",
@@ -7047,7 +7090,7 @@ module.exports = [
       { label: "Mithril", value: "The rarest rank — a handful of living legends. Only they may take the guild’s unlisted, highest-risk contracts." },
       { label: "Guildmaster", value: "A single, unique rank held by Varen Ashtail. Leads the guild and has the final word on every job, price, and dispute." },
     ],
-    ["clan", "guild", "ranks", "silver concord"],
+    ["clan", "guild", "rank", "silver concord"],
   ),
   e(
     "Clan",
@@ -7064,6 +7107,30 @@ module.exports = [
       { label: "Guild Vault", value: "Secure storage for valuable contract items, rare ingredients, and guild funds" },
     ],
     ["clan", "guild", "facilities", "silver concord"],
+  ),
+  e(
+    "Clan",
+    "Silver Concord — Rift Hunts",
+    "The guild trade in rifts — the Ossk, the hush, and the harvest",
+    "Rifts are tears in the world — thin places where reality has come apart, and the only roads the Ossk have into it. They open without warning and do not close on their own. Where a rift opens, the Ossk seed through: spore-things that root into land, beast, and flesh and grow into a hive. Adventurers take Concord commissions to root a Seeding out, kill its Root-Queen before she matures, and seal the tear — harvesting the Ossk dead for a material no smith can otherwise forge. It is the guild’s most dangerous trade and its most valuable one.\n\nNot every rift is equal. The Silver Concord ranks each one by how far the Ossk inside have spread, from D (Low) through C, B, A, and S (Extreme) to SS (Hell). A D-rank rift is a handful of Seed-nodes in a field — a job for a Copper. An SS-rank rift is a wound that has been open for centuries, guarded by an invasion that predates the Concord entirely. The rank sets the bounty, the recommended party, and the guild’s cut.\n\nThe real clock is the Root-Queen. While she is immature, the hive is a Seeding — a rooting, spreading nuisance that can be burned out. Once she matures it becomes a Bloom: a stronghold, a widening rift, and a growing zone of the hush where no Veyn works at all. A rift left to Bloom does not stay a rift; it becomes a second wave. The Concord treats every approaching maturity as a deadline, and a Seeding that Blooms on a member’s watch is a failure the guild records by name.\n\nThe guild’s role is threefold: it registers and ranks rifts as they are found, it commissions the members allowed to hunt them, and it takes a share of every bounty and every Ossk body recovered. No member enters a registered rift without a commission, and the guild’s ironclad rule applies here more than anywhere: cleanly sealed, or not at all.",
+    [
+      { label: "Type", value: "Guild trade — rift hunts, Ossk containment, and material harvest" },
+      { label: "What Rifts Are", value: "Tears in the world and the Ossk’s only roads into it. Each spawns a Seeding that grows toward a Bloom" },
+      { label: "Rift Ranks", value: "D (Low) → C (Middle) → B (Upper) → A (High) → S (Extreme) → SS (Hell)" },
+      { label: "D — Low", value: "A fresh Seeding — Seed-nodes rooted in one place, no Root-Queen yet. A job for Copper/Bronze. Small bounty" },
+      { label: "C — Middle", value: "An established Seeding — Drudges, Harvesters, and a spreading hush. Requires a trained party" },
+      { label: "B — Upper", value: "A Seeding nearing Bloom — a Weaver lattice forming, Stalkers active. A Bloom here threatens a town" },
+      { label: "A — High", value: "A matured Bloom — full castes, a living Root-Queen, a spreading Veyn-dead zone. Elite expeditions only" },
+      { label: "S — Extreme", value: "A Bloom that has widened its rift and begun a second wave. A realm-level crisis" },
+      { label: "SS — Hell", value: "An ancient rift — the First Tear and its kin. Contained, never truly cleared. Mithril hands only" },
+      { label: "The Ossk", value: "An invasive hive species from outside the world. Not of Veyn — they drain it, raising a hush where no magic works" },
+      { label: "The Clock", value: "The Root-Queen’s maturity. A Seeding can be burned out; a Bloom cannot. Miss the deadline and the rift becomes a second wave" },
+      { label: "Hunting & Income", value: "Hunters take the posted bounty and harvest the Ossk dead — hush-chitin, nerve-thread, seed-cores, root-resin. The Concord takes a cut of both" },
+      { label: "Guild Role", value: "Registers and ranks rifts, commissions members to hunt them, and takes a share of every bounty and body recovered" },
+      { label: "Rules", value: "1. No member enters a registered rift without a commission. 2. No bounty is paid on an uncleared Seeding. 3. A Seeding that Blooms on your watch is a guild failure. 4. All Ossk material is declared and the guild’s cut paid before it leaves the hall" },
+      { label: "Lore Connections", value: "Rifts — Overview, The Ossk, Ossk Castes, Rift Materials, Seeding & Blooming, Clearing a Rift & Rewards, The World Barrier, Threat Level Classification" },
+    ],
+    ["clan", "guild", "silver concord", "rift", "ossk", "hunt", "invasion"],
   ),
 
   // ============================================================ CHARACTERS
@@ -7209,7 +7276,7 @@ module.exports = [
       { label: "The fact", value: "Humans find it difficult to learn skills from classes other than their own, so they stick to the class the altar assigned them." },
       { label: "Why", value: "The body’s Veyn is shaped to its class at awakening; forcing a foreign discipline is slow, painful, and usually fails." },
     ],
-    ["class", "skills", "altar", "human", "cross-class"],
+    ["class", "skill", "altar", "human", "cross-class"],
   ),
 
   // ============================================================ COMBAT MECHANICS
@@ -7225,7 +7292,7 @@ module.exports = [
       { label: "Focus", value: "Clear intent — without purpose, Veyn scatters harmlessly" },
       { label: "Faster Activation", value: "Higher-grade fighters develop sharper intent, activating skills faster" },
     ],
-    ["combat", "skills", "activation", "mechanics", "how-to"],
+    ["combat", "skill", "activation", "mechanic", "how-to"],
   ),
   e(
     "Combat Mechanics",
@@ -7286,7 +7353,7 @@ module.exports = [
       { label: "S Grade", value: "Demigod — nearing godhood, incomprehensible to mortals" },
       { label: "Gap Rule", value: "1 grade difference = manageable, 2 = dangerous, 3+ = nearly insurmountable" },
     ],
-    ["combat", "grade", "power", "levels", "fighting"],
+    ["combat", "grade", "power", "level", "fighting"],
   ),
   e(
     "Combat Mechanics",
@@ -7301,7 +7368,7 @@ module.exports = [
       { label: "Smithing", value: "Forge tools channel both Veyn and Ren during creation, but the finished weapon is mundane metal" },
       { label: "Weapon Quality", value: "A well-forged weapon matters enormously — poor weapons break under Veyn/Ren channeling" },
     ],
-    ["combat", "weapons", "classes", "equipment", "fighting"],
+    ["combat", "weapon", "class", "equipment", "fighting"],
   ),
 
   // ============================================================ ECONOMY
@@ -7317,7 +7384,7 @@ module.exports = [
       { label: "Exchange Rates", value: "1 ps = 1,000 gs = 100,000 ss. Older records may mention an obsolete copper tier (cc/sc/gc/pc 10:1 system) — that system is retired; all prices today are quoted in Sigils." },
       { label: "Black Market Premium", value: "Corrupted items, smuggled goods, and illegal services command 2-5x normal prices." },
     ],
-    ["economy", "currency", "coins", "money", "trade"],
+    ["economy", "currency", "coin", "money", "trade"],
   ),
   e(
     "Economy",
@@ -7383,7 +7450,7 @@ module.exports = [
       { label: "Neutrality", value: "Brokers who take sides lose certification — makes the Guild trusted across all realms" },
       { label: "Offices", value: "Located in every major city across all three realms" },
     ],
-    ["organizations", "guild", "broker", "contracts", "trade"],
+    ["organization", "guild", "broker", "contract", "trade"],
   ),
   e(
     "Organizations",
@@ -7397,7 +7464,7 @@ module.exports = [
       { label: "Peace Enforcement", value: "Academy neutrality prevents open war — attacking the Academy cuts off magic for everyone" },
       { label: "Six Pillars", value: "Six Aetherblade Lord Angels commanding the Angel Army — the elite military leadership" },
     ],
-    ["organizations", "military", "army", "forces", "war"],
+    ["organization", "military", "army", "forces", "war"],
   ),
   e(
     "Organizations",
@@ -7411,7 +7478,7 @@ module.exports = [
       { label: "Scouts", value: "Locate and watch candidates for future Healer positions" },
       { label: "Threat", value: "If the Truthstone fell to malicious hands, future Healers could be killed before awakening" },
     ],
-    ["organizations", "seer", "healer", "order", "secret"],
+    ["organization", "seer", "healer", "order", "secret"],
   ),
   e(
     "Organizations",
@@ -7426,7 +7493,7 @@ module.exports = [
       { label: "Forest Laws", value: "No unauthorized logging, no hunting protected species, no disturbing Thornweald trees" },
       { label: "Enforcement", value: "Warning, permanent escort out, or withdrawal of protection for repeat offenders" },
     ],
-    ["organizations", "pallantine", "rangers", "forest", "elves"],
+    ["organization", "pallantine", "rangers", "forest", "elves"],
   ),
 
   // ============================================================ CALENDAR
@@ -7486,7 +7553,7 @@ module.exports = [
       { label: "Day of Sundering", value: "Most significant — commemorates Hidden Realm creation; ceremonies at all Altars" },
       { label: "Renewal Feast", value: "Year's end — debts forgiven, feuds set aside, everyone feasts regardless of rank" },
     ],
-    ["calendar", "festivals", "holidays", "celebrations", "culture"],
+    ["calendar", "festivals", "holidays", "celebration", "culture"],
   ),
 
   // ============================================================ TRAVEL
@@ -7494,7 +7561,7 @@ module.exports = [
     "Travel",
     "Realm Travel Methods",
     "How people move between the three main realms",
-    "Travel between the three main realms follows established paths through the world barrier — the invisible boundary that separates the realms and prevents casual crossing.\n\nThe primary method of realm crossing is through the Realm Gates — large, permanent stone arches located at the borders of each realm. There are three Realm Gates: one at the Human Realm border, one at the Angel Realm border, and one at the Demon Realm border. Each is guarded by a Shudon (currently inactive, which is why the gates function without obstruction).\n\nWhen the Shudon are active, the gates will require authorization to pass — anyone bearing the world curse mark will be attacked, and unauthorized crossing will be blocked. For now, anyone can walk through, though the transition is disorienting: a brief flash of Veyn distortion, a sensation of falling, and then you're in the next realm.\n\nThe Hidden Realm cannot be reached through Realm Gates. Its only entrance is the wandering portal, which moves every leap year by drawing in ambient Veyn until it can relocate. Predicting where the portal will appear requires sensing Veyn density — someone with a strong enough sense of Veyn density could theoretically predict roughly where it might appear next.\n\nWithin each realm, travel follows standard medieval methods: roads, horses, Griffens (for Pallantine Elves), and on foot. The Sunward Road between the Human and Angel Realms is well-maintained and safe. The Thorn Road between the Human and Demon Realms is dangerous and requires hired guards.",
+    "Travel between the three main realms follows established paths through the world barrier — the invisible boundary that separates the realms and prevents casual crossing.\n\nThe primary method of realm crossing is through the Realm Gates — large, permanent stone arches located at the borders of each realm. There are three Realm Gates: one at the Human Realm border, one at the Angel Realm border, and one at the Demon Realm border. Each is guarded by a Shudon (currently inactive, which is why the gates function without obstruction).\n\nWhen the Shudon are active, the gates will require authorization to pass — anyone bearing the world curse mark will be attacked, and unauthorized crossing will be blocked. For now, anyone can walk through, though the transition is disorienting: a brief flash of Veyn distortion, a sensation of falling, and then you're in the next realm.\n\nThe Hidden Realm cannot be reached through Realm Gates. Its only entrance is the wandering portal, which moves every leap year by drawing in ambient Veyn until it can relocate. Predicting where the portal will appear requires sensing Veyn density — someone with a strong enough sense of Veyn density could theoretically predict roughly where it might appear next.\n\nWithin each realm, travel follows standard medieval methods: roads, horses, Griffens (for Pallantine Elves), and on foot. The Sunward Road between the Human and Angel Realms is well-maintained and safe. The Thorn Road between the Human and Demon Realms is dangerous and requires hired guards.\n\nTeleportation cannot cross realms. Blink-type skills — Swiftstep and Warpstep for angels, Traitor’s Step and Lover’s Step for demons, and Ren-based moves like Shadow Move — can only move a user within the realm they already occupy. No teleport can pass the world barrier; crossing between realms is possible only through the Realm Gates (or, for the Hidden Realm, the wandering portal).",
     [
       { label: "Realm Gates", value: "Permanent stone arches at realm borders — currently unguarded (Shudon inactive)" },
       { label: "Gate Transition", value: "Brief Veyn distortion, sensation of falling, then arrival in the next realm" },
@@ -7502,6 +7569,7 @@ module.exports = [
       { label: "Hidden Realm", value: "Only reachable via the wandering portal — moves every leap year" },
       { label: "Portal Prediction", value: "Requires sensing Veyn density — those with strong Veyn sense can predict location" },
       { label: "Internal Travel", value: "Roads, horses, Griffens, foot — standard medieval methods within each realm" },
+      { label: "Teleport Limitation", value: "Teleport/blink skills work only within the realm the user is already in. They cannot cross the world barrier — realm crossing requires the Realm Gates (or the Hidden Realm’s wandering portal)." },
     ],
     ["travel", "realm", "gates", "crossing", "transportation"],
   ),
@@ -7518,7 +7586,7 @@ module.exports = [
       { label: "Angel Waystations", value: "Stone shelters with beds and supplies along major routes, maintained by Lumen volunteers" },
       { label: "Demon Realm", value: "No inns, no taverns — you sleep where you stop, or you don't sleep" },
     ],
-    ["travel", "roads", "infrastructure", "inns", "paths"],
+    ["travel", "roads", "infrastructure", "inn", "paths"],
   ),
   e(
     "Travel",
@@ -7547,7 +7615,7 @@ module.exports = [
       { label: "Demon Realm", value: "Nothing — sleep in the wild, caves, or trusted homes; Gnash shelter costs Gold Sigils and favors" },
       { label: "Hidden Realm", value: "No permanent lodging — time-slowed environment reduces need; Wanderer offers shelter at a price" },
     ],
-    ["travel", "lodging", "inns", "rest", "accommodation"],
+    ["travel", "lodging", "inn", "rest", "accommodation"],
   ),
 
   // ============================================================ LAWS & JUSTICE
@@ -7618,7 +7686,7 @@ module.exports = [
       { label: "Bounty System", value: "Magistrate-issued warrants — posted in taverns, amounts vary by criminal grade" },
       { label: "Demon Realm", value: "No restrictions — anyone can hire a Gnash to kill" },
     ],
-    ["laws", "assassination", "bounty", "contracts", "killing"],
+    ["laws", "assassination", "bounty", "contract", "killing"],
   ),
 
   // ============================================================ RELIGION
@@ -7989,7 +8057,7 @@ module.exports = [
       { label: "Elven Whisper", value: "Soft melodic tongue — can communicate up to a mile using Veyn modulation" },
       { label: "Aelthar Tongue", value: "Ancient, nearly extinct — speaking it aloud produces powerful Veyn resonance" },
     ],
-    ["languages", "speaking", "writing", "tongue", "script"],
+    ["language", "speaking", "writing", "tongue", "script"],
   ),
   e(
     "Languages",
@@ -8006,19 +8074,6 @@ module.exports = [
   ),
 
   // ============================================================ ARTS & ENTERTAINMENT
-  e(
-    "Arts & Entertainment",
-    "Music & Performance",
-    "What people listen to and watch",
-    "Music and performance vary by realm and class.\n\nHuman Realm music is rich and diverse. Tavern songs tell stories of heroes and monsters. Court musicians play delicate string compositions for nobles. Street performers play percussion and wind instruments in market squares. The most valued musical tradition is 'Veyn Singing' — a technique where the singer channels Veyn through their voice, creating harmonics that can soothe, strengthen, or even heal listeners. Veyn Singing is practiced by trained musicians and is considered both art and mild magic.\n\nAngel Realm music is entirely vocal — angels do not use instruments. Angel choirs produce layered harmonics that can stabilize Veyn across entire cities. The most sacred angel music is the 'Vow Chant' — a communal singing of the Vow incantation that creates a field of pure, steady Veyn around the singers. Angels consider instrumental music crude.\n\nDemon Realm music is rhythmic and aggressive — war drums, bone flutes, and throat singing. Demons do not perform for entertainment; their music is purely functional, used to coordinate military movements and intimidate enemies. The exception is Gnash traders who have adopted human music as part of their Duskveil disguise.\n\nTheatrical performances exist primarily in the Human Realm. Troupes of actors travel between towns performing morality plays, historical dramas, and comedies. The most popular plays tell stories of the Aelthar and the Sundering, though the details are often dramatized beyond recognition.",
-    [
-      { label: "Human Veyn Singing", value: "Channeling Veyn through voice — soothes, strengthens, heals listeners" },
-      { label: "Angel Choirs", value: "Vocal-only harmonics stabilize Veyn across cities; Vow Chant creates pure Veyn fields" },
-      { label: "Demon Music", value: "War drums, bone flutes — purely functional for coordination and intimidation" },
-      { label: "Human Theater", value: "Traveling troupes perform morality plays, historical dramas, comedies" },
-    ],
-    ["arts", "music", "performance", "entertainment", "theater"],
-  ),
   e(
     "Arts & Entertainment",
     "Games & Recreation",
@@ -8072,7 +8127,7 @@ module.exports = [
       { label: "Operating Method", value: "Hidden offices in taverns/markets — sources and buyers never revealed" },
       { label: "The Ledger", value: "Most famous broker — sells to all three realms simultaneously; identity unknown" },
     ],
-    ["intelligence", "information", "broker", "secrets", "espionage"],
+    ["intelligence", "information", "broker", "secret", "espionage"],
   ),
 
   // ============================================================ PRISONS
@@ -8160,7 +8215,7 @@ module.exports = [
       { label: "Cooldown", value: "1-5 seconds between casts — user is vulnerable during stabilization" },
       { label: "Veyn Cost", value: "Basic 1-5% reserves; ultimates 50%+ — running out leaves user helpless" },
     ],
-    ["skill", "activation", "veyn", "casting", "mechanics"],
+    ["skill", "activation", "veyn", "casting", "mechanic"],
   ),
   e(
     "Skill Mechanics",
@@ -8174,7 +8229,7 @@ module.exports = [
       { label: "Exhaustion", value: "Vitality depletion causes collapse — must rest hours or days to recover" },
       { label: "Self-Damage", value: "Overuse causes torn muscles, burst vessels, organ failure at extreme levels" },
     ],
-    ["skill", "activation", "ren", "combat", "mechanics"],
+    ["skill", "activation", "ren", "combat", "mechanic"],
   ),
   e(
     "Skill Mechanics",
@@ -8267,7 +8322,7 @@ module.exports = [
       { label: "Soul Sight Connection", value: "Jaiden can see every soul in the river — every name, every face, every person consumed by the sword. He sees them reaching for him, trapped in the corrupted water." },
       { label: "Story Function", value: "It is a graveyard. This reframes the Sentient River from 'dangerous location' to 'crime scene.'" },
     ],
-    ["vireth", "sentient river", "vengeful souls", "corruption", "sirens"],
+    ["vireth", "sentient river", "vengeful souls", "corruption", "siren"],
   ),
   e(
     "Lore & Myths",
@@ -8297,7 +8352,7 @@ module.exports = [
       { label: "Divine Weapons", value: "Vireth, Virastra, Solvane — user-bound, cannot be bought, only found" },
       { label: "Named Weapons", value: "Unique artifacts with histories — Aerendrel, Liework's Crown, etc." },
     ],
-    ["equipment", "weapons", "catalog", "swords", "arms"],
+    ["equipment", "weapon", "catalog", "sword", "arms"],
   ),
   e(
     "Equipment",
@@ -8325,7 +8380,7 @@ module.exports = [
       { label: "Mapping Stones", value: "Record Veyn signature of location — magical GPS for returning to exact spots" },
       { label: "Echo Crystals", value: "Record and replay sounds — up to one hour of audio storage" },
     ],
-    ["equipment", "tools", "utility", "adventuring", "items"],
+    ["equipment", "tools", "utility", "adventuring", "item"],
   ),
 
   // ============================================================ DAILY LIFE
@@ -8363,11 +8418,11 @@ module.exports = [
     "Politics",
     "Political Factions",
     "The power blocs competing for influence",
-    "Several political factions compete for influence across the three realms.\n\nThe Purists (Human Realm): A conservative faction that believes only humans should rule the Human Realm. They oppose angel and demon influence in human affairs and want to close the Realm Gates permanently. Led by Lord Malachar, a noble who lost family to demon raids. The Purists are popular among commoners who fear demonic corruption.\n\nThe Integrationists (Human Realm): A progressive faction that believes all three realms should work together under the Academy's leadership. They support cross-realm trade, cultural exchange, and joint military operations against shared threats. Led by Lady Seraphine, a diplomat who has negotiated trade agreements with both angels and demons.\n\nThe Vow Keepers (Angel Realm): A militant angel faction that believes the angels should reclaim their ancient role as world guardians. They want to reactivate the Shudon and enforce angel law across all three realms. Led by Aetherblade Lord Veradis, one of the Six Pillars who believes the current peace is weakening the angels.\n\nThe Severed (Angel Realm): A radical faction of former angels who have voluntarily broken their Vows. They believe the Vow system is a form of control and that angels should be free to choose their own path. They operate from hidden bases in the Human Realm.\n\nThe Blood Pack (Demon Realm): A war-band coalition that wants to replace the Mordrach's rule with a council of Bloodwards. They believe the Mordrach has grown too passive and that the Demon Realm should expand aggressively. Led by Bloodward Drakar, who has been quietly building support among mid-rank demons.",
+    "Several political factions compete for influence across the three realms.\n\nThe Purists (Human Realm): A conservative faction that believes only humans should rule the Human Realm. They oppose angel and demon influence in human affairs and want to close the Realm Gates permanently. Led by Lord Malachar, a noble who lost family to demon raids. The Purists are popular among commoners who fear demonic corruption.\n\nThe Integrationists (Human Realm): A progressive faction that believes all three realms should work together under the Academy's leadership. They support cross-realm trade, cultural exchange, and joint military operations against shared threats. Led by Lady Seraphine, a diplomat who has negotiated trade agreements with both angels and demons.\n\nThe Vow Keepers (Angel Realm): A militant angel faction that believes the angels should reclaim their ancient role as world guardians. They want to reactivate the Shudon and enforce angel law across all three realms. Led by Aetherblade Lord Veradis, a senior Aetherblade Lord who believes the current peace is weakening the angels.\n\nThe Severed (Angel Realm): A radical faction of former angels who have voluntarily broken their Vows. They believe the Vow system is a form of control and that angels should be free to choose their own path. They operate from hidden bases in the Human Realm.\n\nThe Blood Pack (Demon Realm): A war-band coalition that wants to replace the Mordrach's rule with a council of Bloodwards. They believe the Mordrach has grown too passive and that the Demon Realm should expand aggressively. Led by Bloodward Drakar, who has been quietly building support among mid-rank demons.",
     [
       { label: "The Purists", value: "Human conservatives — close Realm Gates, no angel/demon influence; led by Lord Malachar" },
       { label: "The Integrationists", value: "Human progressives — cross-realm cooperation under Academy; led by Lady Seraphine" },
-      { label: "The Vow Keepers", value: "Angel militants — reactivate Shudon, enforce angel law; led by Archangel Veradis" },
+      { label: "The Vow Keepers", value: "Angel militants — reactivate Shudon, enforce angel law; led by Aetherblade Lord Veradis" },
       { label: "The Severed", value: "Voluntary Fallen Angels — Vow system is control; hidden bases in Human Realm" },
       { label: "The Blood Pack", value: "Demon coalition — replace Mordrach with Bloodward council; led by Bloodward Drakar" },
     ],
@@ -8459,7 +8514,7 @@ module.exports = [
       { label: "Umbrage Resources", value: "Corrupted materials — Blackthorn, Ironvine, corrupted Veyn crystals" },
       { label: "Ebonspire Trees", value: "Near dragon nests — bark and leaves for Ethereal Potion and Rejuvenating Elixir" },
     ],
-    ["resources", "mining", "materials", "metals", "veyn stones"],
+    ["resources", "mining", "materials", "metals", "veyn stone"],
   ),
 
   // ============================================================ MEDICAL
@@ -8475,7 +8530,7 @@ module.exports = [
       { label: "Botched Brews", value: "Explosions, poisoning, corrupted Veyn release — every Alchemist has scars" },
       { label: "Key Ingredients", value: "Veyn Stones, Manticore venom, Chimera blood, pixie dust, Ebonspire bark" },
     ],
-    ["medical", "alchemy", "potions", "brewing", "crafting"],
+    ["medical", "alchemy", "potion", "brewing", "crafting"],
   ),
 
   // ============================================================ MONSTERS
@@ -8491,7 +8546,7 @@ module.exports = [
       { label: "Monster Harvesting", value: "Dragon hearts, Manticore venom, Basilisk eyes — economic incentive for hunting" },
       { label: "Population Dynamics", value: "Too much hunting collapses species; too little leads to overpopulation" },
     ],
-    ["monsters", "ecology", "ecosystem", "food chain", "nature"],
+    ["monster", "ecology", "ecosystem", "food chain", "nature"],
   ),
   e(
     "Monsters",
@@ -8505,7 +8560,7 @@ module.exports = [
       { label: "Passive", value: "Pixies, Fairies, Lightwisps — flee or ignore; harming has consequences" },
       { label: "Corrupted", value: "Werewolves — driven by compulsion, attack anything in range" },
     ],
-    ["monsters", "behavior", "hunting", "defense", "patterns"],
+    ["monster", "behavior", "hunting", "defense", "patterns"],
   ),
 
   // ============================================================ ACADEMY
@@ -8565,7 +8620,7 @@ module.exports = [
       { label: "Paladin Training", value: "Dual combat + healing — longest training, 5-7 years before combat-ready" },
       { label: "Veilrunner Training", value: "Stealth courses, lock-picking, silent movement — final test: undetected infiltration" },
     ],
-    ["combat", "training", "methods", "learning", "practice"],
+    ["combat", "training", "method", "learning", "practice"],
   ),
   e(
     "Combat Training",
@@ -8847,7 +8902,7 @@ module.exports = [
       { label: "Lore Connections", value: "Pallantine Forest, Griffen mounts, Three-strike enforcement, Anti-corruption duties" },
       { label: "Subcategory", value: "Training Pipeline" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ INTELLIGENCE
@@ -8953,7 +9008,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon Realm military, Corrupted Veyn creatures, Demon infantry units, Animal companionship ethics" },
       { label: "Subcategory", value: "Domesticated Creatures" },
     ],
-    ["monsters"],
+    ["monster"],
   ),
 
   // ============================================================ BEINGS
@@ -8985,7 +9040,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel flight, Angel Veyn channeling, Cross-realm transport, Angel military deployment" },
       { label: "Subcategory", value: "Mounts & Transport" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ RESOURCES
@@ -9059,7 +9114,7 @@ module.exports = [
       { label: "Lore Connections", value: "Pallantine Rangers, Griffen bonding, Ranger's Roost, Underdark ruins" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
   e(
     "Locations",
@@ -9073,7 +9128,7 @@ module.exports = [
       { label: "Lore Connections", value: "The Sundering, Realm Gates, Corrupted Veyn rivers, Temporal anomalies, Human-Demon barrier" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
   e(
     "Locations",
@@ -9087,7 +9142,7 @@ module.exports = [
       { label: "Lore Connections", value: "Mordrachs, The Pit, Eternal Forge, Clan hierarchy, Demon challenges" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
   e(
     "Locations",
@@ -9101,7 +9156,7 @@ module.exports = [
       { label: "Lore Connections", value: "Hidden Realm defense, Seer's Order, Veyn Rise/Ebb cycle, Realm Gates, Veil passage points" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
 
   // ============================================================ DAILY LIFE
@@ -9133,7 +9188,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel promise system, Veyn reservoir, Angel fading, Cross-racial perception" },
       { label: "Subcategory", value: "Life Cycle" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ DEMONS
@@ -9149,7 +9204,7 @@ module.exports = [
       { label: "Lore Connections", value: "Corruption Progression, Corrupted Veyn effects, Demon power levels, Demon social hierarchy" },
       { label: "Subcategory", value: "Life Cycle" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ HIDDEN REALM
@@ -9181,7 +9236,7 @@ module.exports = [
       { label: "Lore Connections", value: "Seer's Order Memory Vaults, Veyn Crystals, Broker contract preservation, Academy teaching methods" },
       { label: "Subcategory", value: "Information" },
     ],
-    ["magic systems"],
+    ["magic system"],
   ),
 
   // ============================================================ ANGELS
@@ -9197,7 +9252,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel society, Echo network, Angel lie detection, Angel rebels" },
       { label: "Subcategory", value: "Knowledge System" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ ACADEMY
@@ -9229,7 +9284,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon culture, Memory Chains, Demon social status, Oral history accuracy" },
       { label: "Subcategory", value: "Knowledge System" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ LORE & MYTHS
@@ -9383,7 +9438,7 @@ module.exports = [
     "Rules & Notes",
     "Threat Level Classification",
     "",
-    "A standardized system for assessing threats, used by all three realms. Threat Levels: **Level 1 — Nuisance** (corrupted animals, minor Veyn disturbances, petty criminals). A single D-grade fighter can handle it. **Level 2 — Danger** (Veyn beasts, organized criminals, small Corrupted Veyn outbreaks). Requires a C-grade fighter or small team. **Level 3 — Serious** (powerful monsters, enemy squads, significant Corrupted Veyn contamination). Requires B-grade fighters. **Level 4 — Crisis** (enemy commanders, massive Corrupted events, realm-level threats). Requires A-grade fighters and coordinated response. **Level 5 — Catastrophic** (Demon Lords, Angel Archons, Aelthar-class entities). Requires S-grade fighters or multiple A-grade teams. **Level 6 — Existential** (the Sundering recurring, realm collapse, Aelthar resurrection). Requires alliance of all realms.",
+    "A standardized system for assessing threats, used by all three realms. Threat Levels: **Level 1 — Nuisance** (corrupted animals, minor Veyn disturbances, petty criminals). A single D-grade fighter can handle it. **Level 2 — Danger** (Veyn beasts, organized criminals, small Corrupted Veyn outbreaks). Requires a C-grade fighter or small team. **Level 3 — Serious** (powerful monsters, enemy squads, significant Corrupted Veyn contamination). Requires B-grade fighters. **Level 4 — Crisis** (enemy commanders, massive Corrupted events, realm-level threats). Requires A-grade fighters and coordinated response. **Level 5 — Catastrophic** (Demon Lords, Angel Pillars, Aelthar-class entities). Requires S-grade fighters or multiple A-grade teams. **Level 6 — Existential** (the Sundering recurring, realm collapse, Aelthar resurrection). Requires alliance of all realms.",
     [
       { label: "Activation", value: "Passive classification system." },
       { label: "Usage", value: "Threat Levels guide military response, resource allocation, and character power expectations. A character who regularly handles Level 4 threats is established as extremely powerful. A character facing Level 6 threats is at the story's climax." },
@@ -9437,7 +9492,7 @@ module.exports = [
       { label: "Lore Connections", value: "Corrupted Veyn, Demon diplomacy, Pact-breaking consequences, Demon trade" },
       { label: "Subcategory", value: "Contract Magic" },
     ],
-    ["magic systems"],
+    ["magic system"],
   ),
 
   // ============================================================ RULES & NOTES
@@ -9469,7 +9524,7 @@ module.exports = [
       { label: "Lore Connections", value: "Broker's Guild, Veyn-seal contracts, Social enforcement, Human commerce" },
       { label: "Subcategory", value: "Contract Magic" },
     ],
-    ["magic systems"],
+    ["magic system"],
   ),
 
   // ============================================================ COMBAT MECHANICS
@@ -9517,7 +9572,7 @@ module.exports = [
       { label: "Lore Connections", value: "Revenants, Holy and Corrupted Veyn equilibrium, Purification side effects, Scarcity of Revenants" },
       { label: "Subcategory", value: "Anti-Corruption" },
     ],
-    ["magic systems"],
+    ["magic system"],
   ),
 
   // ============================================================ SKILL MECHANICS
@@ -9597,7 +9652,7 @@ module.exports = [
       { label: "Lore Connections", value: "Holy Energy, Clergy members, Self-sacrifice compulsion, Moral complexity, Holy vs. Corrupted opposition" },
       { label: "Subcategory", value: "Psychological Effects" },
     ],
-    ["magic systems"],
+    ["magic system"],
   ),
 
   // ============================================================ ARCHITECTURE
@@ -9723,15 +9778,15 @@ module.exports = [
     "Angels",
     "Angel Resonance Communication",
     "",
-    "Angels communicate over long distances through Veyn Resonance — channeling their voice through ambient Veyn to reach another Angel anywhere in the same realm. Range is approximately 500 miles for average Angels, unlimited for Archons. Only works between Angels, requires concentration, and can be intercepted by anyone with Veyn sensitivity. Resonance Communication is instantaneous regardless of distance.",
+    "Angels communicate over long distances through Veyn Resonance — channeling their voice through ambient Veyn to reach another Angel anywhere in the same realm. Range is approximately 500 miles for average Angels, unlimited for the Six Pillars. Only works between Angels, requires concentration, and can be intercepted by anyone with Veyn sensitivity. Resonance Communication is instantaneous regardless of distance.",
     [
       { label: "Activation", value: "Active channeling — the sender must deliberately initiate and maintain the connection." },
       { label: "Usage", value: "Angel Resonance Communication makes their military and diplomatic operations extremely efficient. Orders reach troops instantly. Intelligence is shared in real-time." },
       { label: "Story Relevance", value: "Angel communication provides a counterpoint to Human Swiftwings — instant vs. days. This speed advantage creates strategic tension in cross-realm conflicts." },
-      { label: "Lore Connections", value: "Angel military efficiency, Veyn Resonance, Archon abilities" },
+      { label: "Lore Connections", value: "Angel military efficiency, Veyn Resonance, Pillar abilities" },
       { label: "Subcategory", value: "Communication" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ DEMONS
@@ -9747,7 +9802,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon military, Corrupted Veyn flames, Cross-realm communication" },
       { label: "Subcategory", value: "Communication" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ ACADEMY
@@ -9827,7 +9882,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel society, Crystal Gardens, Diplomatic gestures" },
       { label: "Subcategory", value: "Food Production" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ DEMONS
@@ -9843,7 +9898,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon social hierarchy, Feasting culture, Status displays" },
       { label: "Subcategory", value: "Food Production" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ HIDDEN REALM
@@ -9907,7 +9962,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel military, Celestial Steeds, Coordinated strikes, Aerial warfare" },
       { label: "Subcategory", value: "Military Tactics" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
   e(
     "Organizations",
@@ -9921,7 +9976,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon military, Hellhound scouts, Warbeast support, Corrupted Veyn psychological warfare" },
       { label: "Subcategory", value: "Military Tactics" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
   e(
     "Organizations",
@@ -9935,7 +9990,7 @@ module.exports = [
       { label: "Lore Connections", value: "Human military, Combined arms, Role flexibility, Adaptive tactics" },
       { label: "Subcategory", value: "Military Tactics" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ INTELLIGENCE
@@ -10013,7 +10068,7 @@ module.exports = [
       { label: "Lore Connections", value: "Veyn Storms, Emergency response, Realm-specific protocols, Demon raid opportunities" },
       { label: "Subcategory", value: "Emergency Response" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
   e(
     "Organizations",
@@ -10027,7 +10082,7 @@ module.exports = [
       { label: "Lore Connections", value: "Realm Gates, Cross-realm security, Act of war, Emergency lockdown" },
       { label: "Subcategory", value: "Emergency Response" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ MEDICAL
@@ -10117,7 +10172,7 @@ module.exports = [
       { label: "Lore Connections", value: "The Wanderer merchant, Restoration Potions, Veyn Crystals, Rare item economy" },
       { label: "Subcategory", value: "Vendor Stock" },
     ],
-    ["items"],
+    ["item"],
   ),
 
   // ============================================================ TRAVEL
@@ -10181,7 +10236,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon Lords, Court hierarchy, Demon politics, Pit rules" },
       { label: "Subcategory", value: "Government" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ ANGELS
@@ -10197,7 +10252,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel diplomacy, Embassy infrastructure, Cross-racial interaction, Jurisdictional law" },
       { label: "Subcategory", value: "Diplomacy" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ ECONOMY
@@ -10319,7 +10374,7 @@ module.exports = [
       { label: "Lore Connections", value: "Elyndor Academy, Great Archive, Mirror Network, Training grounds, Garden of Memory" },
       { label: "Subcategory", value: "Institution" },
     ],
-    ["locations"],
+    ["location"],
   ),
 
   // ============================================================ EQUIPMENT
@@ -10351,7 +10406,7 @@ module.exports = [
       { label: "Lore Connections", value: "Corrupted Veyn defense, Clergy crafting, Holy Energy, Ward maintenance" },
       { label: "Subcategory", value: "Defensive Equipment" },
     ],
-    ["items"],
+    ["item"],
   ),
 
   // ============================================================ ANGELS
@@ -10359,15 +10414,15 @@ module.exports = [
     "Angels",
     "The Six Pillars of Angel Governance",
     "The six pillars that govern the Angel Realm",
-    "Angel society is governed by five Archons — the most powerful and ancient Angels, each responsible for a different aspect of civilization. The Pillar of War (military command), the Pillar of Words (diplomacy and communication), the Pillar of Roots (agriculture and infrastructure), the Pillar of Echoes (the Echo network and internal communication), and the Pillar of Silence (intelligence and security). Each Archon maintains their Pillar independently, but major decisions require consensus of all five. Disagreements are resolved through debate — physical combat between Archons is forbidden (the last time it happened, it destroyed a mountain range).",
+    "Angel society is commanded by the Six Pillars — the six Aetherblade Lord Angels who serve as the highest-ranking military and political officers beneath the Serapharch. Ranked First through Sixth, each Pillar commands a section of the Angel Army and oversees a district of the Angel Realm: the First Pillar, Chronous (borne by Ordium until his execution); the Second, Helious (Cyrion); the Third, Areous (Serathiel); the Fourth, Deimous (Liora Veyne); the Fifth, Horkous (Thalor Elwin); and the Sixth, Argous (Aranweis), the Serapharch's personal guard. Major decisions require consensus of the Pillars; disagreement is settled by debate — open combat between Pillars is forbidden (the last time it happened, it destroyed a mountain range).",
     [
       { label: "Activation", value: "Passive — governmental structure." },
-      { label: "Usage", value: "The Five Pillars provide the Angel Realm's command structure. Each Archon commands thousands of Angels and controls vast resources." },
-      { label: "Story Relevance", value: "The Pillars create internal Angel politics — not all Archons agree, and their disagreements have massive consequences." },
-      { label: "Lore Connections", value: "Angel Archons, Angel governance, Five Pillars, Angel political structure" },
+      { label: "Usage", value: "The Six Pillars provide the Angel Realm's command structure. Each Pillar commands thousands of Angels and controls vast resources." },
+      { label: "Story Relevance", value: "The Pillars create internal Angel politics — not all Pillars agree, and their disagreements have massive consequences." },
+      { label: "Lore Connections", value: "The Six Pillars of Angels, Angel Class Hierarchy, Realm Armies, Serapharch, Angel Army, Angel political structure" },
       { label: "Subcategory", value: "Government" },
     ],
-    ["angels"],
+    ["angel", "six pillars", "governance"],
   ),
 
   // ============================================================ HUMANS
@@ -10383,7 +10438,7 @@ module.exports = [
       { label: "Lore Connections", value: "Human Crown, Advisory Council, Succession law, Broken Crown Rebellion" },
       { label: "Subcategory", value: "Government" },
     ],
-    ["humans"],
+    ["human"],
   ),
 
   // ============================================================ LOCATIONS
@@ -10399,7 +10454,7 @@ module.exports = [
       { label: "Lore Connections", value: "Pallantine Forest, Greatheart Oak, Corrupted Veyn beasts, Aelthar ruins, Ranger patrols" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
 
   // ============================================================ MONSTERS
@@ -10415,7 +10470,7 @@ module.exports = [
       { label: "Lore Connections", value: "Corrupted Veyn, Corruption stages, Environmental hazards, Anti-Corruption measures" },
       { label: "Subcategory", value: "Corrupted Creatures" },
     ],
-    ["monsters"],
+    ["monster"],
   ),
   e(
     "Monsters",
@@ -10482,7 +10537,7 @@ module.exports = [
       { label: "Lore Connections", value: "Broker's Guild, Contract enforcement, Legal system, Law enforcement" },
       { label: "Subcategory", value: "Law Enforcement" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ ANGELS
@@ -10490,15 +10545,15 @@ module.exports = [
     "Angels",
     "Angel Veil Sensitivity",
     "",
-    "Angels have a unique sensitivity to dimensional boundaries — they can sense the Veil between realms without special training. This sensitivity allows them to: detect nearby Veil Tears before they open, sense when the Veil is thinning (during Veyn Rise), and identify individuals who have recently passed through a Veil. The sensitivity is strongest in Archons, who can predict Veil Tears hours in advance. Angel Veil Sensitivity is one reason the Angel Realm is so interested in the Hidden Realm — they can feel it pressing against the Veil, like a heartbeat against a wall.",
+    "Angels have a unique sensitivity to dimensional boundaries — they can sense the Veil between realms without special training. This sensitivity allows them to: detect nearby Veil Tears before they open, sense when the Veil is thinning (during Veyn Rise), and identify individuals who have recently passed through a Veil. The sensitivity is strongest in the Six Pillars, who can predict Veil Tears hours in advance. Angel Veil Sensitivity is one reason the Angel Realm is so interested in the Hidden Realm — they can feel it pressing against the Veil, like a heartbeat against a wall.",
     [
       { label: "Activation", value: "Passive — innate Angel ability." },
       { label: "Usage", value: "Veil Sensitivity makes Angels valuable allies for the Seer's Order and dangerous enemies for the Hidden Realm. An Angel near the Veil Boundary can detect Hidden Realm activity." },
       { label: "Story Relevance", value: "Angel Veil Sensitivity creates tension — the Hidden Realm's secrecy is compromised by Angels who can feel them." },
-      { label: "Lore Connections", value: "Hidden Realm Veil, Seer's Order, Angel Archons, Veil Tears detection" },
+      { label: "Lore Connections", value: "Hidden Realm Veil, Seer's Order, Angel Pillars, Veil Tears detection" },
       { label: "Subcategory", value: "Magical Ability" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ ACADEMY
@@ -10530,7 +10585,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon Realm geography, Eternal Forge, Corrupted Veyn protection, Transportation" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
 
   // ============================================================ COMBAT MECHANICS
@@ -10578,7 +10633,7 @@ module.exports = [
       { label: "Lore Connections", value: "Corrupted Veyn, Unification Wars, Exile communities, Environmental devastation" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
 
   // ============================================================ ACADEMY
@@ -10642,7 +10697,7 @@ module.exports = [
       { label: "Lore Connections", value: "Veyn Crystal weapons, Explosive weapons, Veyn-Dead Zones, Military weapons" },
       { label: "Subcategory", value: "Weaponry" },
     ],
-    ["items"],
+    ["item"],
   ),
 
   // ============================================================ ANGELS
@@ -10658,7 +10713,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel promises, Angel community, Veyn bonds, Cascading failure" },
       { label: "Subcategory", value: "Social Mechanics" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ SKILL MECHANICS
@@ -10690,7 +10745,7 @@ module.exports = [
       { label: "Lore Connections", value: "Ether Forest, Corrupted creatures, Boundary gradient, Dangerous ecosystem" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
 
   // ============================================================ TRAVEL
@@ -10738,7 +10793,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon Pact Mechanics, Corrupted Veyn, Demon alliances, Loyalty pledges" },
       { label: "Subcategory", value: "Social Mechanics" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ ACADEMY
@@ -10770,7 +10825,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel physiology, Promise burden, Angel emotional indicators, Wing discipline" },
       { label: "Subcategory", value: "Physical Traits" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ CLAN
@@ -10802,7 +10857,7 @@ module.exports = [
       { label: "Lore Connections", value: "Veyn Crystals, Recharge Stations, Crystal economy, Equipment maintenance" },
       { label: "Subcategory", value: "Equipment" },
     ],
-    ["items"],
+    ["item"],
   ),
 
   // ============================================================ LORE & MYTHS
@@ -10898,7 +10953,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel Echo, Angel privacy, Echo-Block Angels, Angel suspicion" },
       { label: "Subcategory", value: "Social Mechanics" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ DEMONS
@@ -10914,7 +10969,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon Clans, Clan Ironheart, Demon craft, Corrupted Veyn enchantment" },
       { label: "Subcategory", value: "Cultural Event" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ CALENDAR
@@ -10946,7 +11001,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon challenges, Pit rules, Demon social hierarchy, Arena combat" },
       { label: "Subcategory", value: "Institution" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ HIDDEN REALM
@@ -11010,7 +11065,7 @@ module.exports = [
       { label: "Lore Connections", value: "Broker's Guild, Contract enforcement, Legal system, Dispute resolution" },
       { label: "Subcategory", value: "Legal System" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ DEMONS
@@ -11026,7 +11081,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon Clans, Demon social hierarchy, Ronin status, Mark of Shame" },
       { label: "Subcategory", value: "Social Status" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ MEDICAL
@@ -11074,7 +11129,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel Promise Culture, Promise chains, Veyn burden, Angel society" },
       { label: "Subcategory", value: "Magical Phenomenon" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ NATURE
@@ -11170,7 +11225,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel diplomacy, Angel promises, Cross-realm relations, Diplomatic protocol" },
       { label: "Subcategory", value: "Social Customs" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ DEMONS
@@ -11186,7 +11241,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon challenges, Pit rules, Victory rituals, Clan honor" },
       { label: "Subcategory", value: "Cultural Event" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ MEDICAL
@@ -11250,7 +11305,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel Echo, Angel community, Memory sharing, Social bonding" },
       { label: "Subcategory", value: "Cultural Event" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ ACADEMY
@@ -11282,7 +11337,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon society, Economic system, Prisoner treatment, Social mobility" },
       { label: "Subcategory", value: "Economic System" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ SKILL MECHANICS
@@ -11314,7 +11369,7 @@ module.exports = [
       { label: "Lore Connections", value: "The Sundering, Aelthar energy, Strategic locations, Echo Storms" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
 
   // ============================================================ ORGANIZATIONS
@@ -11330,7 +11385,7 @@ module.exports = [
       { label: "Lore Connections", value: "Broker's Guild, Contract enforcement, Ethics Board, Professional standards" },
       { label: "Subcategory", value: "Legal Framework" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ ARCHITECTURE
@@ -11362,7 +11417,7 @@ module.exports = [
       { label: "Lore Connections", value: "Human military, Trade routes, Crown Advisory Council, Piracy deterrence" },
       { label: "Subcategory", value: "Military" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ MEDICAL
@@ -11394,7 +11449,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon Clans, Demon warriors, Annual events, Combat tradition" },
       { label: "Subcategory", value: "Cultural Event" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ ACADEMY
@@ -11458,7 +11513,7 @@ module.exports = [
       { label: "Lore Connections", value: "Human geography, Trade routes, River commerce, Engineering history" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
 
   // ============================================================ ANGELS
@@ -11474,7 +11529,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel economy, Crystal Trees, Veyn Flux, Harvesting cycles" },
       { label: "Subcategory", value: "Agriculture" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ DEMONS
@@ -11490,7 +11545,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon arenas, Gambling economy, Grand Pit tournament, Combat entertainment" },
       { label: "Subcategory", value: "Economic System" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ ACADEMY
@@ -11538,7 +11593,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon biology, Corrupted Veyn resistance, Born Corrupted, Innate abilities" },
       { label: "Subcategory", value: "Biological Effect" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ INTELLIGENCE
@@ -11586,7 +11641,7 @@ module.exports = [
       { label: "Lore Connections", value: "Veyn Storms, Corrupted Veyn, Holy Energy, Visual perception" },
       { label: "Subcategory", value: "Phenomenon" },
     ],
-    ["magic systems"],
+    ["magic system"],
   ),
 
   // ============================================================ LOCATIONS
@@ -11602,7 +11657,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel Realm, Crystal formations, Angel history, Memory Resonance" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
   e(
     "Locations",
@@ -11616,7 +11671,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon Realm, Eternal Forge, Demonic Iron, Corrupted Veyn" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
   e(
     "Locations",
@@ -11630,7 +11685,7 @@ module.exports = [
       { label: "Lore Connections", value: "Veyn Crystal mining, Underground ecosystems, Cave-dwelling creatures, Mining economy" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
 
   // ============================================================ ACADEMY
@@ -11708,7 +11763,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel Realm, Crystal Trees, Crystal Gardeners, Sunveil Silk, Veyn production" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
 
   // ============================================================ HIDDEN REALM
@@ -11804,7 +11859,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel society, Veyn Memory Storage, Memory Keepers, Angel education" },
       { label: "Subcategory", value: "Institution" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ CALENDAR
@@ -11836,7 +11891,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon crafts, Corrupted Veyn weapons, Eternal Forge, Clan Ironheart" },
       { label: "Subcategory", value: "Cultural System" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ ORGANIZATIONS
@@ -11852,7 +11907,7 @@ module.exports = [
       { label: "Lore Connections", value: "Human military, Corrupted Veyn outbreak, Emergency protocols, General of the Realm" },
       { label: "Subcategory", value: "Military" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ ANGELS
@@ -11868,7 +11923,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel Realm, Veyn Flux, Dimensional stability, Angel astronomy" },
       { label: "Subcategory", value: "Cultural Practice" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ HIDDEN REALM
@@ -12012,7 +12067,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon crafts, Eternal Forge, Corrupted Veyn weapons, Demon education" },
       { label: "Subcategory", value: "Education" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ ORGANIZATIONS
@@ -12028,7 +12083,7 @@ module.exports = [
       { label: "Lore Connections", value: "Human military, Shudon Waterways, Trade enforcement, Anti-smuggling" },
       { label: "Subcategory", value: "Military" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ ECONOMY
@@ -12108,7 +12163,7 @@ module.exports = [
       { label: "Lore Connections", value: "Crystal Trees, Angel culture, Crystal Gardeners, Veyn communication" },
       { label: "Subcategory", value: "Cultural Practice" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ DEMONS
@@ -12124,7 +12179,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon economy, Volcanic agriculture, Ember Rice, Food import dependence" },
       { label: "Subcategory", value: "Agriculture" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ ARCHITECTURE
@@ -12156,7 +12211,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon Pit, Demon challenges, Clan neutrality, Demon governance" },
       { label: "Subcategory", value: "Institution" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ TRAVEL
@@ -12204,7 +12259,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon Lord, Clan obligations, Demon military, Political power" },
       { label: "Subcategory", value: "Economic System" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ TRAVEL
@@ -12236,7 +12291,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel agriculture, Crystal Trees, Angel economy, Crystal Gardeners" },
       { label: "Subcategory", value: "Agriculture" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ COMBAT TRAINING
@@ -12284,7 +12339,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel culture, Crystal Trees, Echo network, Community bonding" },
       { label: "Subcategory", value: "Cultural Event" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ COMBAT TRAINING
@@ -12364,7 +12419,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon labor, Eternal Forge, Forge workers, Demon infrastructure" },
       { label: "Subcategory", value: "Location" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ TRAVEL
@@ -12412,7 +12467,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel promises, Angel society, Pillars of governance, Promise enforcement" },
       { label: "Subcategory", value: "Institution" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ RESOURCES
@@ -12476,7 +12531,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon challenges, Pit combat, Demon social hierarchy, Competitive culture" },
       { label: "Subcategory", value: "Cultural System" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ MEDICAL
@@ -12588,7 +12643,7 @@ module.exports = [
       { label: "Lore Connections", value: "Crystal Trees, Angel history, Veyn research, Memory storage" },
       { label: "Subcategory", value: "Advanced Technique" },
     ],
-    ["magic systems"],
+    ["magic system"],
   ),
 
   // ============================================================ LOCATIONS
@@ -12604,7 +12659,7 @@ module.exports = [
       { label: "Lore Connections", value: "Human civilization, Crown governance, Broker's Guild, Elyndor Academy" },
       { label: "Subcategory", value: "Location" },
     ],
-    ["locations"],
+    ["location"],
   ),
 
   // ============================================================ CALENDAR
@@ -12700,7 +12755,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel magic, Crystal Trees, Angel architecture, Crystal technology" },
       { label: "Subcategory", value: "Advanced Technique" },
     ],
-    ["magic systems"],
+    ["magic system"],
   ),
 
   // ============================================================ DEMONS
@@ -12716,7 +12771,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon challenges, Pit rules, Cultural rituals, Demon combat" },
       { label: "Subcategory", value: "Cultural Event" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ MILITARY
@@ -12828,7 +12883,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel promises, Angel society, Social accountability, Diplomatic protocol" },
       { label: "Subcategory", value: "Cultural Practice" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ DEMONS
@@ -12844,7 +12899,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon Clans, Forge traditions, Blood oaths, Knowledge preservation" },
       { label: "Subcategory", value: "Cultural System" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ ORGANIZATIONS
@@ -12860,7 +12915,7 @@ module.exports = [
       { label: "Lore Connections", value: "Human institutions, Broker's Guild, Professional certification, Trade regulation" },
       { label: "Subcategory", value: "Institution" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ MEDICAL
@@ -12908,7 +12963,7 @@ module.exports = [
       { label: "Lore Connections", value: "Human government, Emergency protocols, Military authority, Crisis management" },
       { label: "Subcategory", value: "Government" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ HIDDEN REALM
@@ -12940,7 +12995,7 @@ module.exports = [
       { label: "Lore Connections", value: "Crystal Trees, Crystal Gardeners, Angel agriculture, Community engagement" },
       { label: "Subcategory", value: "Cultural Practice" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ DEMONS
@@ -12956,7 +13011,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon crafts, Eternal Forge, Clan Ironheart, Corrupted Veyn weapons" },
       { label: "Subcategory", value: "Cultural Event" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ TRAVEL
@@ -13052,7 +13107,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon crafts, Eternal Forge, Weapon innovation, Clan prestige" },
       { label: "Subcategory", value: "Cultural Event" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ MEDICAL
@@ -13132,7 +13187,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel magic, Veyn Memory Storage, Crystal technology, Historical education" },
       { label: "Subcategory", value: "Advanced Technique" },
     ],
-    ["magic systems"],
+    ["magic system"],
   ),
 
   // ============================================================ RESOURCES
@@ -13180,7 +13235,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel Echo, Veyn phenomena, Historical memory, Angel culture" },
       { label: "Subcategory", value: "Phenomenon" },
     ],
-    ["magic systems"],
+    ["magic system"],
   ),
 
   // ============================================================ DEMONS
@@ -13196,7 +13251,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon crafts, Eternal Forge, Clan politics, Industrial governance" },
       { label: "Subcategory", value: "Institution" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ ORGANIZATIONS
@@ -13212,7 +13267,7 @@ module.exports = [
       { label: "Lore Connections", value: "Human emergency preparedness, Civil defense, Evacuation routes, Crisis management" },
       { label: "Subcategory", value: "Military" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ RESOURCES
@@ -13276,7 +13331,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon crafts, Blood oaths, Knowledge preservation, Clan advantages" },
       { label: "Subcategory", value: "Cultural Practice" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ LAWS & JUSTICE
@@ -13308,7 +13363,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel Realm, Veyn healing, Crystal deposits, Sacred locations" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
 
   // ============================================================ DEMONS
@@ -13324,7 +13379,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon warriors, Corrupted Veyn weapons, Clan traditions, Martial heritage" },
       { label: "Subcategory", value: "Cultural System" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ COMBAT TRAINING
@@ -13402,7 +13457,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel Realm, Crystal Trees, Natural defense, Angel Rangers" },
       { label: "Subcategory", value: "Geography" },
     ],
-    ["locations"],
+    ["location"],
   ),
 
   // ============================================================ CHARACTERS
@@ -13418,7 +13473,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon culture, Forge traditions, Gender dynamics, Clan prestige" },
       { label: "Subcategory", value: "Character Archetype" },
     ],
-    ["characters"],
+    ["character"],
   ),
 
   // ============================================================ MILITARY
@@ -13466,7 +13521,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon society, Forge workers, Communal living, Clan bonding" },
       { label: "Subcategory", value: "Social System" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ ECONOMY
@@ -13514,7 +13569,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon society, Forge workers, Communal living, Emotional bonds" },
       { label: "Subcategory", value: "Social System" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ MEDICAL
@@ -13546,7 +13601,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel technology, Veyn Memory Storage, Historical documentation, Crystal technology" },
       { label: "Subcategory", value: "Technology" },
     ],
-    ["magic systems"],
+    ["magic system"],
   ),
 
   // ============================================================ RESOURCES
@@ -13594,7 +13649,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel crafts, Crystal Shaping, Angel economy, Artistic expression" },
       { label: "Subcategory", value: "Institution" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ ECONOMY
@@ -13754,7 +13809,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon crafts, Forge history, Clan traditions, Memorial culture" },
       { label: "Subcategory", value: "Cultural Artifact" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ MILITARY
@@ -13802,7 +13857,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel agriculture, Crystal Trees, Crystal Gardeners, Long-term research" },
       { label: "Subcategory", value: "Agriculture" },
     ],
-    ["angels"],
+    ["angel"],
   ),
 
   // ============================================================ RESOURCES
@@ -13866,7 +13921,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon crafts, Forge traditions, Ceremonial culture, Legacy preservation" },
       { label: "Subcategory", value: "Cultural System" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ ORGANIZATIONS
@@ -13882,7 +13937,7 @@ module.exports = [
       { label: "Lore Connections", value: "Human emergency response, Pallantine Rangers, Clergy healing, Academy coordination" },
       { label: "Subcategory", value: "Emergency Response" },
     ],
-    ["organizations"],
+    ["organization"],
   ),
 
   // ============================================================ MAGIC SYSTEMS
@@ -13898,7 +13953,7 @@ module.exports = [
       { label: "Lore Connections", value: "Angel magic, Veyn barriers, Meditation techniques, Civil War origins" },
       { label: "Subcategory", value: "Advanced Technique" },
     ],
-    ["magic systems"],
+    ["magic system"],
   ),
 
   // ============================================================ MEDICAL
@@ -14010,7 +14065,7 @@ module.exports = [
       { label: "Lore Connections", value: "Demon politics, Forge Master, Political challenge, Craft competition" },
       { label: "Subcategory", value: "Political System" },
     ],
-    ["demons"],
+    ["demon"],
   ),
 
   // ============================================================ MILITARY
@@ -14120,7 +14175,7 @@ module.exports = [
       { label: "Realm Gates", value: "Three permanent stone arches — one at each realm border. Guarded by Shudon (currently inactive). Human-Angel gate is safe; Human-Demon gate is dangerous." },
       { label: "Roads", value: "Sunward Road (Human-Angel, safe, patrolled), Thorn Road (Human-Demon, dangerous, requires guards). Angel roads glow at night. Demon realm has almost no roads." },
     ],
-    ["map", "geography", "realms", "locations", "travel"],
+    ["map", "geography", "realm", "location", "travel"],
   ),
 
   // ============================================================ LORE & MYTHS
@@ -14217,7 +14272,7 @@ module.exports = [
       { label: "What it is", value: "A holy form bound to the Veyn Vow — what an angel has in place of a soul." },
       { label: "Consequence", value: "No soul-reading ability (like Soul-Sight) can perceive an angel, and no soul-binding Pact can hold one." },
     ],
-    ["spiritual body", "angel", "soul", "vow", "soul-sight"],
+    ["spiritual body", "angel", "soul", "vow", "soul sight"],
   ),
 
   // ============================================================ LORE & MYTHS
@@ -14248,7 +14303,7 @@ module.exports = [
       { label: "Steps", value: "2) Drink the potion and empty the self. 3) Burn the heart and sever all seals. 5) Offer — or take." },
       { label: "The Law", value: "Godhood cannot be grasped, only accepted. Every aspirant has reached in hunger and been broken." },
     ],
-    ["ascension", "godhood", "method", "materials", "items", "steps", "shattered lands", "world core", "ley lines", "failed ascension"],
+    ["ascension", "godhood", "method", "materials", "item", "steps", "shattered lands", "world core", "ley lines", "failed ascension"],
   ),
 
   // ============================================================ LORE & MYTHS
@@ -14270,13 +14325,13 @@ module.exports = [
     "Magic Systems",
     "Null Energy",
     "The parasitic anti-magic of the World Eater",
-    "Null Energy is a corrupted form of world-core Veyn, generated by the World Eater. Unlike raw, holy, or corrupted Veyn, which are different 'flavors' of energy, Null Energy is an 'absence' of energy. It is fundamentally superior to normal Veyn in terms of raw destructive and suppressive power because it does not interact with magic—it erases it. When Null Energy hits a magical shield or spell, it doesn't push against it; it cancels it out, leaving a void where the magic once was. This makes it the only force capable of truly neutralizing the most powerful Aetherblade or Bloodward techniques. However, it cannot be 'cast' or 'shaped' like normal magic; it is a force of erosion and erasure.",
+    "Null Energy is a corrupted form of world-core Veyn, generated by the World Eater. Unlike raw, holy, or corrupted Veyn, which are different 'flavors' of energy, Null Energy is an 'absence' of energy. It is fundamentally superior to normal Veyn in terms of raw destructive and suppressive power because it does not interact with magic—it erases it — destroying and consuming the magic rather than pushing it aside. When Null Energy hits a magical shield or spell, it doesn't push against it; it cancels it out, leaving a void where the magic once was. This makes it the only force capable of truly neutralizing the most powerful Aetherblade or Bloodward techniques. However, it cannot be 'cast' or 'shaped' like normal magic; it is a force of erosion and erasure.",
     [
       { label: "Source", value: "Generated by the World Eater's digestion of the World Core." },
-      { label: "Primary Effect", value: "Veyn Nullification: Completely erases active magic and drains latent Veyn reserves upon contact." },
+      { label: "Primary Effect", value: "Veyn Nullification: Destroys and consumes active magic — erasing it outright and draining latent Veyn reserves upon contact." },
       { label: "Relative Strength", value: "Superior to standard Veyn in suppressive capacity; it ignores most magical defenses by treating them as non-existent." },
     ],
-    ["null-energy", "world-eater", "anti-magic", "erasure"],
+    ["null-energy", "world eater", "anti-magic", "erasure", "rift"],
   ),
 
   // ============================================================ HYBRID SKILLS
@@ -14361,7 +14416,7 @@ module.exports = [
       { label: "Boosted By", value: "Ren Vitality Budget, Vitality Surge skill, Vitality-Regen innate" },
       { label: "Heavy Users", value: "Berserker class, Scourge demons" },
     ],
-    ["Magic", "Life Force", "Stamina", "Fundamental Force", "Veyn", "Ren"],
+    ["magic", "life force", "stamina", "fundamental force", "veyn", "ren"],
   ),
 
   // ============================================================ RULES & NOTES
@@ -14371,7 +14426,7 @@ module.exports = [
     "an unbroken promise",
     "It is a promise that when an angel makes can and must never be broken when said the person who said it would be determined to the very end till the promise is accomplished but can be canceled by a slight break on their halo which can be healed by",
     [],
-    ["angels", "rules&notes"],
+    ["angel", "rules & notes"],
   ),
 
   // ============================================================ DEMONS
@@ -14386,7 +14441,7 @@ module.exports = [
       { label: "Fallback", value: "Innate trait only (or Ren, which does not rely on Veyn)" },
       { label: "Angel Mirror", value: "An angel’s halo dims little by little until dark when their Holy Energy is spent — same innate-trait fallback" },
     ],
-    ["demons", "horns", "corrupted veyn", "vey", "storage", "conduit", "depletion", "rank", "magic system"],
+    ["demon", "horns", "corrupted veyn", "vey", "storage", "conduit", "depletion", "rank", "magic system"],
   ),
 
   // ============================================================ MAGIC SYSTEMS
@@ -14401,7 +14456,7 @@ module.exports = [
       { label: "Effect", value: "Cannot use race skills or class skills (all rely on Veyn)" },
       { label: "Fallback", value: "Innate trait only — unless using Ren, which does not rely on Veyn" },
     ],
-    ["vey", "veyn", "depletion", "depleted", "runs out", "empty", "dimming", "halo", "horns", "pitch black", "innate trait", "ren", "magic system", "angels", "demons", "holy energy", "corrupted veyn"],
+    ["vey", "veyn", "depletion", "depleted", "runs out", "empty", "dimming", "halo", "horns", "pitch black", "innate trait", "ren", "magic system", "angel", "demon", "holy energy", "corrupted veyn"],
   ),
   e(
     "Magic Systems",
@@ -14416,6 +14471,497 @@ module.exports = [
       { label: "Boosts", value: "Veyn-Regen innate ability (replenishes faster than it drains); Blessing class skill (increases ally Veyn recovery)" },
       { label: "Growth Bonus", value: "Fully finishing Veyn and letting it recover is the only way to grow Veyn capacity" },
     ],
-    ["veyn", "recovery", "recover", "replenish", "refill", "recharge", "restore", "horns", "halo", "colour", "color", "brightness", "ambient veyn", "rest", "sleep", "depleted", "regen", "magic system", "demons", "angels"],
+    ["veyn", "recovery", "replenish", "refill", "recharge", "restore", "horns", "halo", "color", "brightness", "ambient veyn", "rest", "sleep", "depleted", "regen", "magic system", "demon", "angel"],
+  ),
+
+  // ============================================================ RIFTS
+  e(
+    "Rifts",
+    "Rifts — Overview",
+    "Tears in the world — the Ossk’s only road in",
+    "Rifts are tears in the world — thin places where the fabric of reality has come apart, and the only roads the Ossk have into it. They open without warning and do not close on their own, because every rift is the World Eater showing through: a tear that opens where its feeding on the world core eats the world thin, and stays open while the drain continues. Most cluster near the old weak points left by the Sundering, where the world was already patched and never fully healed.\n\nA rift is not a place so much as a wound with something on the other side. Through it, the Ossk seed — spore-things that drift out and root into land, beast, and flesh, growing into a hive. Left alone, a rift goes from a handful of rooted Seeds to a Seeding that spreads the hush, and finally to a Bloom: a breeding stronghold with castes, a Root-Queen, and a widening tear. At that point the rift is no longer a problem to clear; it is an invasion to survive.\n\nThe Silver Concord ranks every known rift from D (Low) to SS (Hell) and posts a bounty and a commission on each. The rank tracks how far the Ossk inside have spread, not how big the tear is — a small rift that has sat undisturbed for a century is the deadliest thing a hunter will ever meet.",
+    [
+      { label: "Type", value: "World feature — tear in reality; Ossk incursion point" },
+      { label: "Origin", value: "The World Eater’s drain on the world core — tears open where the feeding eats deepest, clustering at Sundering weak points; a few are older than the barrier itself" },
+      { label: "Lifecycle", value: "Tear opens → Seeds root → Seeding spreads the hush → Root-Queen matures → Bloom → second wave" },
+      { label: "Ranks", value: "D (Low) → C (Middle) → B (Upper) → A (High) → S (Extreme) → SS (Hell)" },
+      { label: "The Hush", value: "The zone of dead Veyn the Ossk create as they feed. Suppresses all magic near a Seeding or Bloom" },
+      { label: "Managed By", value: "Silver Concord — registers, ranks, and commissions every known rift" },
+      { label: "Danger", value: "A rift left to Bloom widens and begins a second wave. Severity scales with rank — a field at D, a realm-level invasion at SS" },
+      { label: "Lore Connections", value: "The Ossk, Ossk Castes, Rift Materials, Seeding & Blooming, Clearing a Rift & Rewards, Silver Concord — Rift Hunts, The World Barrier, Veyn-Dead Zones, World Eater" },
+    ],
+    ["rift", "overview", "ossk", "invasion", "sundering", "world eater"],
+  ),
+  e(
+    "Rifts",
+    "The Ossk",
+    "An invasive hive from outside the world — not of Veyn",
+    "The Ossk are not from any realm, and not from the planet. They come from outside the world — the same void the World Barrier holds back and the Void Colossus patrols — but where those are cosmic, the Ossk are alive: they breed, spread, and can be burned. Scholars who study them argue they are not invaders at all but a species doing what every invasive species does — finding a new place and remaking it into more of itself.\n\nWhat makes them unlike anything native is what they are made of. The world runs on Veyn; the Ossk are not made of it, and more than that, they consume it. Their living tissue nullifies magic on contact, and in numbers they raise the hush — a spreading zone where Veyn runs thin and then dies. A hunter who relies on magic near a mature hive is a hunter standing in a dead zone.\n\nThey have no language, no names, and no individuality as the world understands it. Their name — Ossk — is not theirs; it is the closest a human or angel tongue can come to the resonance of a hive’s collective drone. They reproduce by seeding, grow by harvesting the world’s Veyn, and coordinate through nerve-castes. Kill the right nerve and a region of the hive goes blind; kill the Root-Queen and the Bloom dies with her.",
+    [
+      { label: "Type", value: "Alien hive species — invasive, extra-worldly" },
+      { label: "Origin", value: "Outside the world, beyond the World Barrier — not any realm, not the planet" },
+      { label: "Nature", value: "Living, breedable, and killable — a species, not a cosmic entity" },
+      { label: "Composition", value: "Not of Veyn. Their tissue nullifies magic; in numbers they create the hush" },
+      { label: "Name", value: "“Ossk” is the world’s best approximation of a hive’s collective resonance, not a word the Ossk use" },
+      { label: "Reproduction", value: "By seeding — spore-things that root and grow into a hive" },
+      { label: "Coordination", value: "Nerve-castes and a Root-Queen. Kill a nerve and its region collapses; kill the Root-Queen and the Bloom dies" },
+      { label: "Weaknesses", value: "Steel, fire, and force. Veyn magic is weak near them, so hunters fight with what survives the hush" },
+      { label: "Lore Connections", value: "Ossk Castes, Rift Materials, Seeding & Blooming, The World Barrier, Null Energy, Veyn-Dead Zones, Void Colossus" },
+    ],
+    ["rift", "ossk", "species", "invasion", "hush", "null"],
+  ),
+  e(
+    "Rifts",
+    "Ossk Castes",
+    "The hive has one body — and it comes in forms",
+    "The Ossk are a single colony wearing many shapes. Each caste is a role grown to fit: a Seed to travel, a Drudge to build, a Harvester to feed, a Stalker to kill, a Weaver to raise the hive’s structures, a Nerve to think, and a Root-Queen to be the heart of it all. A hunter who can read which castes are present can read how old a Seeding is and how close it is to Blooming.\n\nSeveral castes are dangerous, but only two decide whether a hunt is won. A nerve-caste is the hive’s local mind — take it out and every Ossk it commanded goes feral and aimless for a time, which is often the difference between fighting a swarm and fighting a mob. The Root-Queen is the hive’s heart; kill her and the Bloom rots from the center, even if the tear remains open.",
+    [
+      { label: "Seed", value: "A fist-sized spore that drifts through a rift and roots into soil, beast, or flesh. The origin of every Ossk. Harmless alone" },
+      { label: "Drudge", value: "Slow, countless, mindless. Digs the seam, carries, and expands the hive’s ground" },
+      { label: "Harvester", value: "Drains Veyn from the land and feeds it — nullified — to the hive. Harvesters are what raise the hush" },
+      { label: "Stalker", value: "Fast, silent, and made to kill. Guards the hive’s edge and hunts anything that approaches a Seeding" },
+      { label: "Weaver", value: "Spins the grey lattice — the hive’s walls, tunnels, and Bloom-structures. Light as bone, dead to magic" },
+      { label: "Nerve", value: "A mobile synapse that commands a region of the hive. Kill it and that region loses cohesion and turns feral" },
+      { label: "Root-Queen", value: "The heart of a Bloom. Roots at the seam’s center, breeds, and anchors the growing tear. Her maturity turns a Seeding into a Bloom" },
+      { label: "Reading a Hive", value: "Seeds alone = fresh. Drudges + Harvesters = established Seeding. Weavers + Stalkers = nearing Bloom. A Queen = Bloom" },
+      { label: "Castes by Rank", value: "D: Seeds and a few Drudges. C: + Harvesters and the first Stalkers. B: + Weavers, common Stalkers, and the first Nerves. A: full castes and a Root-Queen. S: full castes, many Nerves, a matured Queen. SS: castes the registry has no entry for" },
+      { label: "Lore Connections", value: "The Ossk, Seeding & Blooming, Clearing a Rift & Rewards, Rift Materials" },
+    ],
+    ["rift", "ossk", "castes", "hive", "invasion"],
+  ),
+  e(
+    "Rifts",
+    "Rift Materials",
+    "What an Ossk body is worth — and why",
+    "An Ossk body is a material no smith can otherwise forge. Because the Ossk nullify magic, what is harvested from them dampens it too — and in a world that fights with Veyn, that makes hush-chitin, nerve-thread, and seed-cores worth more than gold to anyone who expects to face a mage. The Concord’s hunters are as much harvesters as fighters; a cleanly sealed rift is a harvest.\n\nEvery material has its own trade: what it is cut from, what it is good for, and what is made of it. The trade is tightly ruled. Ossk material is volatile in the wrong hands and forbidden to sell raw to anyone uncertified — a seed-core in a thief’s pocket is a theft waiting to happen. All of it is declared at the guild hall and the Concord takes its cut before anything leaves the building. Material taken from an Ossk still drawing breath spoils within the hour, so a hunter has to finish the kill and the harvest before the body goes quiet.",
+    [
+      { label: "Hush-Chitin", value: "Cut from — Ossk hide and body plates. Good for — dampening Veyn on contact. Made into — hush-plate mail, hush-shields, bracers, greaves, and the plate an anti-mage wears" },
+      { label: "Nerve-Thread", value: "Cut from — nerve-castes. Good for — suppressing Veyn rather than channelling it. Made into — anti-magic collars, cuffs, binding cords, and restraint manacles for captured casters" },
+      { label: "Seed-Core", value: "Cut from — the kernel inside a Seed. Good for — nullifying a spell, a channel, or a poison. Made into — null-powder, dampening draughts, and thrown charges that quiet a room’s magic" },
+      { label: "Root-Resin", value: "Cut from — a Root-Queen. Good for — nullification in salve or venom form. Made into — nullifying salves, blade-venoms against casters, and the sealing paste that quiets an anchor" },
+      { label: "Grey Lattice", value: "Cut from — Weaver-spun structure. Good for — strength with zero Veyn signature. Made into — shield frames, staff-hafts, scaffolding, and the walls of a cell built to hold a mage" },
+      { label: "Harvester Gland", value: "Cut from — Harvester castes. Good for — draining Veyn. Made into — hush-wards, Veyn-dampening lamps, and the rift-anchors that keep a sealed tear quiet" },
+      { label: "Stalker Tendon", value: "Cut from — Stalker castes. Good for — tension that ignores wards. Made into — bowstrings and crossbow prods that carry true through a hush" },
+      { label: "Rule of Spoilage", value: "Material from a living Ossk spoils within the hour. Kill first, then harvest" },
+      { label: "Harvesting", value: "Kill first, then harvest — material from a living Ossk spoils within the hour. Work fast and clean: cut what you came for, declare it at the guild hall, and let the Concord take its cut before anything leaves the building. Raw Ossk material may not be sold to the uncertified" },
+      { label: "Regulation", value: "Selling raw Ossk material to the uncertified is illegal. All of it is declared at the guild hall, and the Concord takes its cut first" },
+      { label: "Lore Connections", value: "Ossk Castes, Clearing a Rift & Rewards, Price Guide, Mining & Raw Materials, Null Energy" },
+    ],
+    ["rift", "materials", "ossk", "harvest", "resources", "hush"],
+  ),
+  e(
+    "Rifts",
+    "Seeding & Blooming",
+    "How a rift grows — and what happens if it is not cleared",
+    "A rift does not stay a rift. It goes through stages, and the Concord’s whole trade is built around reading them. It begins as a Seeding: Seeds drift through the tear and root, Drudges and Harvesters spread the hush, and the hive grows — but there is no Root-Queen yet, and a Seeding can still be burned out. Then the Queen matures, the Weaver lattice closes around the seam, and the rift becomes a Bloom: a stronghold with a heart, a widening tear, and castes it can send outward.\n\nThe Bloom is the point of no return. A Bloom harvests the land around it into a Veyn-dead zone, and once its rift has widened enough it stops being a place and becomes a direction — a second wave of Ossk pours out with nothing to seed behind them but land already dead. The Concord calls that moment a broodfall, and a region that suffers one does not recover for a generation.\n\nThis is why every commission is run on a clock. The window is the Root-Queen’s maturity; the guild posts it, and the guild does not forgive a missed one.",
+    [
+      { label: "1 — The Tear", value: "A rift opens, usually at a Sundering weak point. Seeds drift through and root" },
+      { label: "Seeding", value: "A rooted, spreading hive without a Root-Queen. Drudges expand it, Harvesters raise the hush. Burnable — this is the window" },
+      { label: "Root-Queen Matures", value: "The turning point. Once she matures, the hive can no longer be simply cleared" },
+      { label: "Bloom", value: "A breeding stronghold — full castes, grey-lattice walls, a widening tear, a spreading Veyn-dead zone" },
+      { label: "The Hush", value: "Grows with the hive. Near a Bloom, Veyn fails entirely; hunters fight on steel and nerve" },
+      { label: "Broodfall", value: "A Bloom widens its rift far enough to send a second wave outward. The final stage — an invasion, not a hunt" },
+      { label: "The Window", value: "The Concord’s deadline is the Root-Queen’s maturity. Miss it and a Seeding becomes a Bloom on your watch" },
+      { label: "Lore Connections", value: "Rifts — Overview, The Ossk, Ossk Castes, Clearing a Rift & Rewards, Silver Concord — Rift Hunts, Veyn-Dead Zones" },
+    ],
+    ["rift", "lifecycle", "seeding", "bloom", "ossk", "outbreak"],
+  ),
+  e(
+    "Rifts",
+    "Clearing a Rift & Rewards",
+    "What clearing takes — and what a hunter is paid",
+    "Clearing a rift is not one act but four, and a party that skips one leaves a Seeding behind to Bloom. First, break the hush: hunt down the Harvester castes, or no magic the party brought will work. Second, burn the roots: find and destroy the rooted Seeds and the grey lattice, or the hive regrows from what was left. Third, kill the Root-Queen — if one exists — because a Bloom with its heart intact will simply heal. Fourth, seal the tear: close the rift itself, or the Ossk will only seed back through it.\n\nSealing is the part no member is allowed to improvise. A rift that is only half-sealed slides open again within a season, and the guild counts a half-seal as a failure. Only a certified sealer, a Shudonkeeper’s rite, or the Concord’s own anchors close a rift for good — which is why every commission carries a sealer or an anchor-kit.\n\nThe reward is the bounty and the harvest. Bounty is set by rank and paid only on a cleanly sealed rift; harvest is everything the party can carry out of an Ossk body and declare at the hall. Rank advances on clean seals, not kill counts — a member who kills a thousand Ossk and leaves the tear open is going backward.",
+    [
+      { label: "Step 1 — Break the Hush", value: "Kill the Harvester castes. Until they are dead, Veyn magic fails and the party fights on steel alone" },
+      { label: "Step 2 — Burn the Roots", value: "Destroy the rooted Seeds and the grey lattice, or the hive regrows from what remains" },
+      { label: "Step 3 — Kill the Root-Queen", value: "If a Bloom has one. A Bloom whose Queen lives will heal its wounds and keep breeding" },
+      { label: "Step 4 — Seal the Tear", value: "Close the rift itself. Half-seals slide open within a season and count as failure. Only certified methods seal for good" },
+      { label: "The Clock", value: "Every commission sets a deadline at the Root-Queen’s maturity. Overrun it and a Seeding Blooms on the party’s watch" },
+      { label: "Party Makeup", value: "Scaled to rank — small fast groups for D/C Seedings; full expeditions with a sealer, anchors, and a supply line for A/S" },
+      { label: "Bounty", value: "Set by rank; paid only on a cleanly sealed rift" },
+      { label: "Harvest", value: "Hush-chitin, nerve-thread, seed-cores, root-resin, grey lattice — declared at the hall, Concord cut taken first" },
+      { label: "Advancement", value: "Rank rises on clean seals, not kills. An open tear cancels the achievement" },
+      { label: "Failure", value: "A missed deadline or a half-seal: the Seeding Blooms, and the Concord records every member on the commission by name" },
+      { label: "Lore Connections", value: "Seeding & Blooming, Ossk Castes, Rift Materials, Silver Concord — Rift Hunts, Shudonkeeper, Threat Level Classification" },
+    ],
+    ["rift", "clearing", "rewards", "bounty", "seal", "ossk"],
+  ),
+  e(
+    "Rifts",
+    "Known Rifts",
+    "The Concord registry — every documented tear",
+    "Every rift the Silver Concord finds is registered, ranked, and posted. The registry is a living document: rifts are added when they open, re-ranked as the Ossk spread inside them, and struck through when they are cleanly sealed — or, more often than the guild cares to admit, marked with a line through the hunters’ names when they are not.\n\nA few entries are famous enough to be known by name outside the guild. A few are kept on a sealed list, accessible only to Mithril hands, because posting a bounty on a rift that has been open for centuries would draw exactly the kind of confidence that gets people killed.",
+    [
+      { label: "The Quiet Meadow", value: "D (Low) — Human Realm — a fresh Seeding in a field" },
+      { label: "The Rooted Village", value: "C (Middle) — Human Realm — a Seeding that took a mining town" },
+      { label: "The Salt Wound", value: "C (Middle) — Human Realm coast — a Seeding in a drowned shore" },
+      { label: "The Whisper Sink", value: "B (Upper) — Demon Realm quarry — a Seeding nearing Bloom" },
+      { label: "The Grey Bloom", value: "A (High) — Demon Realm basin — a matured Bloom" },
+      { label: "The Second Mouth", value: "S (Extreme) — The Shattered Lands — a widened rift and its second wave" },
+      { label: "The First Tear", value: "SS (Hell) — location sealed — an ancient rift, contained not cleared" },
+      { label: "The Far Hive", value: "SS (Hell) — location sealed — Primordial Rift, permanently open, contained not cleared" },
+      { label: "Monster Rule", value: "Every rift monster matches its rift’s rank, and no strain is found outside its own rift type" },
+      { label: "Sealed List", value: "The oldest rifts are registered but not posted. Access is restricted to Mithril members and the Guildmaster" },
+      { label: "Registry Rule", value: "No member may enter a registered rift without a commission. Unregistered rifts found by members must be reported at once" },
+      { label: "Lore Connections", value: "Rifts — Overview, Clearing a Rift & Rewards, Silver Concord — Rift Hunts, The Sealing of Vireth, The Shattered Lands" },
+    ],
+    ["rift", "known rifts", "registry", "silver concord"],
+  ),
+  e(
+    "Rifts",
+    "The Quiet Meadow",
+    "D (Low) — a fresh Seeding in a field",
+    "The Quiet Meadow is the most-cleared rift on the registry — the first commission every Copper is sent to, and a rift that opens and is sealed again roughly once a season. It appears in a farm field in the Human Realm as nothing more than a shimmer and a wrongness in the air, and seeds a handful of Seed-nodes into the soil around the mouth. There is no Root-Queen, no grey lattice, and only a thin hush — barely enough to dull a novice’s first spell.\n\nIt is called the Quiet Meadow because of what it does to sound. The hush deadens the field so completely that birds avoid it and the wind has nothing to move. That silence is the only sign a fresh rift leaves, and it is the first thing the Concord teaches its members to notice. The commission pays little, but a clean seal here is a Copper’s first step toward Bronze.",
+    [
+      { label: "Rank", value: "D (Low)" },
+      { label: "Type", value: "Field Rift" },
+      { label: "Realm", value: "Human Realm" },
+      { label: "Stage", value: "Fresh Seeding — no Root-Queen, no lattice" },
+      { label: "Monsters", value: "Blight-Sower (D), Field Drudges, Seed-nodes" },
+      { label: "Castes Present", value: "Seeds and a few Drudges (rank-appropriate — D holds no higher castes)" },
+      { label: "Inside", value: "The mouth is a faint vertical shimmer hanging over the field. Through it the pocket is a shallow, grey-dusted copy of the meadow — grass gone ash-grey, the sky a flat nothing, and no sound but your own. Seed-nodes sit in rows where the plough turned them" },
+      { label: "The Hush", value: "Thin — dulls magic nearby but does not yet kill it" },
+      { label: "Bounty", value: "Low; the guild’s standing first commission" },
+      { label: "Status", value: "Active — cleaned out and reseeded on a rotation" },
+      { label: "Note", value: "The silence is the tell. Learn it here or learn it somewhere it matters" },
+    ],
+    ["rift", "known rifts", "d-rank", "human realm", "seeding"],
+  ),
+  e(
+    "Rifts",
+    "The Rooted Village",
+    "C (Middle) — the Seeding that took a town",
+    "The Rooted Village was, until recently, a mining town. Then a rift opened in the shaft beneath it, and the Ossk seeded upward through the mine into the streets. The town is still standing, but it is no longer a town — grey lattice has fused the houses into walls, Harvesters have spread the hush across the whole valley, and Drudges work the mine for something the surface never saw. The miners are gone; some of them came back out of the shaft as Stalkers.\n\nIt is a C-rank commission because the hive has no Root-Queen yet — but it is the Concord’s standing warning about the middle rank. A Seeding with a whole town to feed on grows fast, and the hunters sent to the Rooted Village are told plainly: the window is short, the hush is deep, and the sealer rides with you, because this one is close to Blooming.",
+    [
+      { label: "Rank", value: "C (Middle)" },
+      { label: "Type", value: "Delved Rift" },
+      { label: "Realm", value: "Human Realm" },
+      { label: "Stage", value: "Established Seeding — nearing Bloom" },
+      { label: "Monsters", value: "Stoneborer (C), Drudges, first Stalkers" },
+      { label: "Castes Present", value: "Seeds, Drudges, Harvesters, and the first Stalkers" },
+      { label: "Inside", value: "The mouth gapes at the bottom of the mine shaft; inside, the town hangs remade — streets fused into grey-lattice corridors, houses grown into honeycomb cells, and a hush so deep that a shout dies at the lips. The mine below goes deeper than the town ever dug" },
+      { label: "The Hush", value: "Deep — Veyn fails across the valley; the party fights on steel" },
+      { label: "Bounty", value: "Standard C-rank schedule" },
+      { label: "Status", value: "Active — cleared on a forced rotation" },
+      { label: "Warning", value: "A whole town to feed on. Short window before it Blooms" },
+    ],
+    ["rift", "known rifts", "c-rank", "human realm", "seeding"],
+  ),
+  e(
+    "Rifts",
+    "The Grey Bloom",
+    "A (High) — a matured Bloom in the Demon Realm",
+    "The Grey Bloom is a matured hive — the Concord’s clearest record of what a Seeding becomes when it is left alone. It sits in a dead basin in the Demon Realm, a sprawling grey lattice fused over a rift that has been widening for years. At its center roots a living Root-Queen, and around her the hive runs its slow work: Harvesters grinding the last Veyn out of the basin, Weavers reaching the lattice toward the ridge, Stalkers patrolling an edge that moves a little further out every season.\n\nIt is an A-rank expedition, not a hunt. The hush over the basin is total — no magic crosses the ridge line, so parties go in on steel, alchemy, and nerve. Killing the Queen does not close the rift; it only stops the Bloom from breeding long enough for a sealer to reach the seam. The Concord has cleared the Grey Bloom twice and it has rooted again both times, which is why the registry keeps its entry open.",
+    [
+      { label: "Rank", value: "A (High)" },
+      { label: "Type", value: "Hollow Rift" },
+      { label: "Realm", value: "Demon Realm" },
+      { label: "Stage", value: "Matured Bloom — living Root-Queen" },
+      { label: "Monsters", value: "Hollow Stalker (A), Nerves, Root-Queen" },
+      { label: "Castes Present", value: "Full castes — Drudges, Harvesters, Stalkers, Weavers, Nerves, and a Root-Queen" },
+      { label: "Inside", value: "The mouth is a horizon-wide seam in the basin floor; inside, the Bloom is a city of grey lattice — galleries, vats, and Weaver spires, all in total hush. At the center roots the Queen, ringed by Nerves" },
+      { label: "The Hush", value: "Total — no magic crosses the basin; expeditions go in on steel and nerve" },
+      { label: "Bounty", value: "Elite — one of the largest standing A-rank postings" },
+      { label: "Status", value: "Active — cleared twice, rooted again both times" },
+      { label: "Note", value: "Killing the Queen does not close the rift. It only buys time for the sealer" },
+    ],
+    ["rift", "known rifts", "a-rank", "demon realm", "bloom"],
+  ),
+  e(
+    "Rifts",
+    "The First Tear",
+    "SS (Hell) — the oldest rift in the registry",
+    "The First Tear is the oldest rift on record, and the reason the Concord keeps a sealed list at all. It sits at a Sundering Barrier Point, and the guild’s oldest ledgers claim it was already open when the World Barrier was raised — that the Ossk found their way in before the world was ever whole. Nothing official confirms it. Nothing about the First Tear is official; its registry entry stays open, and no bounty on it has ever been posted.\n\nIts rift gapes in cycles, once every few generations, and each time it opens the Ossk come through a little further than before. The land around it has been Veyn-dead for longer than anyone keeps records, and the Concord does not call the work there a clear — it calls it a containment. Only Mithril hands and the Guildmaster are ever told where it is.",
+    [
+      { label: "Rank", value: "SS (Hell)" },
+      { label: "Type", value: "Primordial Rift" },
+      { label: "Realm", value: "A Sundering Barrier Point (location sealed by the Concord)" },
+      { label: "Stage", value: "Ancient rift — cycles open each generation; never cleared" },
+      { label: "Monsters", value: "Firstborn Choir (SS); castes unregistered" },
+      { label: "Castes Present", value: "Unknown in full — expeditions report castes the registry has no entry for" },
+      { label: "Inside", value: "No expedition has mapped it. What returns describes a country of grey — a deadland that runs on past where the eye can follow, and structures that answer to no caste in the registry" },
+      { label: "The Hush", value: "Permanent — the region has been Veyn-dead for longer than any record" },
+      { label: "Bounty", value: "None. The entry is sealed — containment only, Mithril hands only" },
+      { label: "Status", value: "Contained, never cleared. Registry entry kept open" },
+      { label: "Lore Connections", value: "The World Barrier, The Sundering Barrier Points, The Ossk, Seeding & Blooming" },
+    ],
+    ["rift", "known rifts", "s-rank", "ss-rank", "sealed list", "ancient"],
+  ),
+  e(
+    "Rifts",
+    "The Salt Wound",
+    "C (Middle) — a Seeding in a drowned coast",
+    "The Salt Wound opened beneath a fishing coast, and the sea has been helping the Ossk ever since. The rift sits in a tidal cave below the tideline — at low water the mouth is a black seam on the cave floor, and at high water the Ossk seed out with the tide. Harvesters have spread the hush across the shallows, so the water has gone silent: no gulls, no fish, nothing but grey. It is a C-rank commission, but the Concord rates the Salt Wound by the water as much as by the hive, and only members who can fight submerged take it.",
+    [
+      { label: "Rank", value: "C (Middle)" },
+      { label: "Type", value: "Drowned Rift" },
+      { label: "Realm", value: "Human Realm — coast" },
+      { label: "Stage", value: "Established Seeding — no Root-Queen yet" },
+      { label: "Monsters", value: "Tidewalker (C), Drudges, Harvesters" },
+      { label: "Castes Present", value: "Seeds, Drudges, Harvesters, and Stalkers" },
+      { label: "Inside", value: "A drowned mine of black water and grey lattice barnacled to the walls, lit by nothing. Drudges work the flooded galleries, and Stalkers move through the dark faster than a swimmer can turn" },
+      { label: "The Hush", value: "Deep in the shallows — the sea itself has gone quiet" },
+      { label: "Bounty", value: "Standard C-rank schedule, with a water-hazard premium" },
+      { label: "Status", value: "Active — cleared on a tide-timed rotation" },
+      { label: "Hazard", value: "Tidal seeding and submerged fighting; the hive seeds out with every high tide until the tear is sealed" },
+    ],
+    ["rift", "known rifts", "c-rank", "human realm", "coast", "seeding"],
+  ),
+  e(
+    "Rifts",
+    "The Whisper Sink",
+    "B (Upper) — a Seeding nearing Bloom in a stone quarry",
+    "The Whisper Sink was a quarry until its floor opened. The rift sits at the bottom of the pit, and the Ossk have seeded up the worked stone onto the terraces above. It takes its name from the sound the first Nerve-castes make — a low, constant whisper that carries up the pit and is the surest sign a hive is close to Blooming. Weavers have begun raising grey-lattice galleries along the terraces, and the Stalkers use the quarry switchbacks as kill-lanes.\n\nIt is a B-rank commission and a warning in one. This hive has Nerves, which means a party can cripple whole regions of it at a stroke — or lose everything by cutting the wrong nexus first. The Concord keeps it on a short rotation and sends a sealer with every team.",
+    [
+      { label: "Rank", value: "B (Upper)" },
+      { label: "Type", value: "Delved Rift" },
+      { label: "Realm", value: "Demon Realm — worked quarry" },
+      { label: "Stage", value: "Seeding nearing Bloom — Weaver lattice forming, Nerves active" },
+      { label: "Monsters", value: "Stoneborer (C), Pit-Mother (B), Weavers, first Nerves" },
+      { label: "Castes Present", value: "Seeds, Drudges, Harvesters, Stalkers, Weavers, and the first Nerves" },
+      { label: "Inside", value: "Grey lattice climbs the quarry terraces like scaffolding; galleries open off the switchbacks, and the whisper is everywhere — in the stone and in the skull. The deepest galleries are pure Weaver-work: smooth, silent, seamless" },
+      { label: "The Hush", value: "Deep — Veyn thins all the way up the pit rim" },
+      { label: "Bounty", value: "High; among the larger standing B-rank postings" },
+      { label: "Status", value: "Active — nearing Bloom, kept on a short rotation" },
+      { label: "Warning", value: "Nerves present — cut the wrong nexus and the wrong region turns feral" },
+    ],
+    ["rift", "known rifts", "b-rank", "demon realm", "quarry", "seeding"],
+  ),
+  e(
+    "Rifts",
+    "The Second Mouth",
+    "S (Extreme) — a widened rift and its second wave",
+    "The Second Mouth opened in the Shattered Lands and has been growing for a decade. Its rift is wide enough that hunters do not enter a dungeon so much as a deadland: the first wave seeded and Bloomed, the Root-Queen matured, and the rift widened until a second wave could pass straight through into open country. A Bloom sends Seeds outward; a rift this wide sends the hive itself.\n\nThe Concord posts no open bounty here — it posts a containment. Hold the line, thin the wave, and keep the Second Mouth from reaching the river that feeds the frontier towns. Killing a Root-Queen resets a Bloom; against a widened rift it only buys a season.",
+    [
+      { label: "Rank", value: "S (Extreme)" },
+      { label: "Type", value: "Hollow Rift" },
+      { label: "Realm", value: "The Shattered Lands" },
+      { label: "Stage", value: "Widened rift — second wave ongoing" },
+      { label: "Monsters", value: "Hollow Stalker (A), Grey Sovereign (S), Root-Queen" },
+      { label: "Castes Present", value: "Full castes, many Nerves, a matured Root-Queen, and castes beyond the registry" },
+      { label: "Inside", value: "Beyond the mouth there is no pocket — only a country of grey that runs past where the eye can follow. No floor that holds, no fixed horizon, and Ossk in numbers no expedition has ever counted" },
+      { label: "The Hush", value: "Absolute — the region is a Veyn-dead zone that grows with the rift" },
+      { label: "Bounty", value: "Containment contract only — no clear bounty is posted" },
+      { label: "Status", value: "Active — contained, never cleared. Second wave ongoing" },
+      { label: "Lore Connections", value: "The Shattered Lands, The First Tear, Seeding & Blooming, Threat Level Classification" },
+    ],
+    ["rift", "known rifts", "s-rank", "shattered lands", "bloom", "second wave"],
+  ),
+  e(
+    "Rifts",
+    "Rift Types",
+    "Five kinds of tear — and what each breeds",
+    "No two rifts look alike from the inside, but the Concord has sorted every one it has registered into five types, set by the ground the tear opened in. The type decides how the hive builds, how it hunts, and — most importantly — which strains of Ossk it breeds. A monster found in one type is not found in another; the Ossk adapt their bodies to the place they are eating.\n\nField rifts are the shallow, quiet tears that open on open ground. Delved rifts open into worked stone — mines, quarries, cellars. Drowned rifts open into water. Hollow rifts open into dead land and grow widest and worst. Primordial rifts are the ancient wounds at the world’s barrier points, and they breed things the registry has never fully named.",
+    [
+      { label: "Field Rift", value: "Opened on open ground. Shallow, quiet, sparse. Rank D–C. Breeds Blight-Sowers and Field Drudges. The Quiet Meadow" },
+      { label: "Delved Rift", value: "Opened into mines, quarries, and worked stone. The hive builds into the existing tunnels. C–B. Breeds Stoneborers and Pit-Mothers" },
+      { label: "Drowned Rift", value: "Opened in water or on a coast. Flooded galleries; seeds out with the tide. C–B. Breeds Tidewalkers and Drownmaws" },
+      { label: "Hollow Rift", value: "Opened in deadlands, basins, and the Shattered Lands. Wide, spreading, total hush. A–S. Breeds Hollow Stalkers and Grey Sovereigns" },
+      { label: "Primordial Rift", value: "Ancient tears at barrier points, open since before the barrier. SS. Never cleared, only contained. Breeds Firstborn Choir and Nameless Queens" },
+      { label: "Rule of Exclusivity", value: "A strain bred to one type is not found in any other. Reading a rift’s type tells a hunter exactly what it is about to fight" },
+      { label: "Lore Connections", value: "Rift Monsters, Rifts — Overview, The Ossk, Ossk Castes, The World Barrier" },
+    ],
+    ["rift", "types", "ossk", "monster", "bestiary"],
+  ),
+  e(
+    "Rifts",
+    "Rift Monsters",
+    "The Ossk strains — one type, one rank, one monster",
+    "What a rift breeds depends on where it opened. The Ossk grow a body to fit the ground they are eating, so every rift type has its own strains — and each strain belongs to that type alone. A hunter who has learned the bestiary can read a rift’s type from the first monster they meet.\n\nRank and monster move together. A Field rift breeds only Blight-Sowers and Drudges; a Delved rift adds Stoneborers and, once it nears Blooming, a Pit-Mother. The Hollow rifts breed the apex strains, and the Primordial tears breed the oldest ones — the Firstborn Choir and the Nameless Queens, which nothing under SS should ever be sent against.",
+    [
+      { label: "Blight-Sower", value: "Field Rift — D (Low)" },
+      { label: "Stoneborer", value: "Delved Rift — C (Middle)" },
+      { label: "Pit-Mother", value: "Delved Rift — B (Upper)" },
+      { label: "Tidewalker", value: "Drowned Rift — C (Middle)" },
+      { label: "Drownmaw", value: "Drowned Rift — B (Upper)" },
+      { label: "Hollow Stalker", value: "Hollow Rift — A (High)" },
+      { label: "Grey Sovereign", value: "Hollow Rift — S (Extreme)" },
+      { label: "Firstborn Choir", value: "Primordial Rift — SS (Hell)" },
+      { label: "Nameless Queen", value: "Primordial Rift — SS (Hell)" },
+      { label: "Rule of Exclusivity", value: "Each strain is exclusive to its rift type. No overlap" },
+      { label: "Lore Connections", value: "Rift Types, Ossk Castes, Seeding & Blooming, Clearing a Rift & Rewards" },
+    ],
+    ["rift", "monster", "bestiary", "ossk", "strains"],
+  ),
+  e(
+    "Rifts",
+    "Blight-Sower",
+    "Field Rift — D (Low)",
+    "The Blight-Sower is the lowest monster a rift breeds and the first thing a new hunter learns to kill. It is a slow, six-legged carrier with a row of Seed-nodes embedded in its back, and it does nothing but walk the ground around a Field rift, sowing one Seed at every step. It cannot fight — it does not try. Its only trick is that it bursts into a cloud of choking spores when it dies, and if it is not killed before it finishes its circuit, a D-rank Field rift becomes a C-rank one overnight.\n\nThe Concord pairs every Blight-Sower with a warning to its Coppers: the quiet ones matter most. A fresh rift left alone for a week may only have a few of them working, and a whole field planted before anyone notices.",
+    [
+      { label: "Rift Type", value: "Field Rift (exclusive — not found in any other type)" },
+      { label: "Rank", value: "D (Low)" },
+      { label: "Role", value: "Seed-bearer" },
+      { label: "Threat", value: "Negligible in a fight — dangerous only for what it plants" },
+      { label: "Abilities", value: "Sows Seed-nodes as it walks; bursts into a mild spore-cloud on death" },
+      { label: "Materials", value: "Seed-cores (rich), blight-hide" },
+      { label: "Harvest", value: "Seed-cores (3–6, cut from the spine while the body still twitches) → null-powder and dampening draughts. Blight-hide (peeled and cured) → hush-linings, gloves, cheap hush-plate. Spore-sac (cut free intact — do not burst it) → blinding charges and field blight-wards. Ten-minute job; the hide tears if the kill is messy" },
+      { label: "Found In", value: "Field rifts — The Quiet Meadow" },
+      { label: "Note", value: "Kill it before it finishes its circuit, or a D becomes a C" },
+    ],
+    ["rift", "monster", "ossk", "field", "d-rank"],
+  ),
+  e(
+    "Rifts",
+    "Stoneborer",
+    "Delved Rift — C (Middle)",
+    "The Stoneborer is what a Delved rift grows out of a Drudge to eat stone. It is a pale, segmented borer that tunnels through worked rock and mine walls, leaving a smooth-grooved passage behind it and collapsing the tunnel a few paces later. Parties sent into a Delved rift die to Stoneborers more than to any other strain — not because a borer is deadly alone, but because it decides where the party can go and where the ceiling comes down.\n\nA borer fights by ambush: it waits in a wall at the height of a man’s throat and strikes when the tunnel narrows. Its chitin is heavy — heavy enough that most blades turn — and its bile etches steel.",
+    [
+      { label: "Rift Type", value: "Delved Rift (exclusive — not found in any other type)" },
+      { label: "Rank", value: "C (Middle)" },
+      { label: "Role", value: "Drudge/Stalker hybrid" },
+      { label: "Threat", value: "High — ambusher and tunnel-collapser" },
+      { label: "Abilities", value: "Burrows through worked stone; collapses tunnels; ambushes at chokepoints" },
+      { label: "Materials", value: "Hush-chitin (heavy grade), borer-bile" },
+      { label: "Harvest", value: "Hush-chitin, heavy grade (chiselled off the back plates) → hush-plate mail, shield faces. Borer-bile (drawn into clay — never metal — from the mouth-sac) → stone-cutting, etching, dissolving anti-mage traps. Borer mandibles (pulled and kept dry) → pick-heads and stone augers. Drain the bile first or it eats the carcass before you finish" },
+      { label: "Found In", value: "Delved rifts — The Rooted Village, The Whisper Sink" },
+      { label: "Note", value: "It chooses where the party can walk — and where the ceiling drops" },
+    ],
+    ["rift", "monster", "ossk", "delved", "c-rank"],
+  ),
+  e(
+    "Rifts",
+    "Pit-Mother",
+    "Delved Rift — B (Upper)",
+    "The Pit-Mother is the breeder that marks a Delved rift on the edge of Blooming — not a Root-Queen, but close enough that a party can mistake one for the other. She roots in the deepest gallery, bloats against the wall, and spawns Drudges without end; killing her slows the hive, but the rift is not cleared until the seam is sealed. She calls Stalkers when she is threatened, and she does not move — she does not need to.\n\nA Delved rift with a Pit-Mother is a B-rank commission because of the count, not the Queen: while she lives, the party is fighting a hive that grows faster than it can be killed.",
+    [
+      { label: "Rift Type", value: "Delved Rift (exclusive — not found in any other type)" },
+      { label: "Rank", value: "B (Upper)" },
+      { label: "Role", value: "Local breeder — a near-Queen" },
+      { label: "Threat", value: "Very high — endless spawning" },
+      { label: "Abilities", value: "Spawns Drudges endlessly; roots in place; calls Stalkers; do not mistake her for a Root-Queen" },
+      { label: "Materials", value: "Root-resin (lesser), Harvester gland" },
+      { label: "Harvest", value: "Root-resin, lesser (bled from the rooting tendrils into sealed vessels) → nullifying salves and sealing paste. Harvester gland (excised before the body goes quiet) → hush-wards, Veyn-dampening lamps, rift-anchors. Drudge-seed clutch (unspawned sacs) → surrendered to the guild for study; selling a live clutch is what gets poachers hanged" },
+      { label: "Found In", value: "Delved rifts — The Whisper Sink" },
+      { label: "Note", value: "Killing her slows the hive; it does not seal the rift" },
+    ],
+    ["rift", "monster", "ossk", "delved", "b-rank"],
+  ),
+  e(
+    "Rifts",
+    "Tidewalker",
+    "Drowned Rift — C (Middle)",
+    "The Tidewalker is the Stalker a Drowned rift grows for water. Long-limbed and grey, it moves through the shallows faster than it can on land and seeds out with the flood tide, so a coast can fall to a Drowned rift without a single hunter seeing it happen. It hunts anything that enters the water, drags it under, and leaves it rooted.\n\nIts advantages vanish on dry ground, which is the only mercy a party gets: fight it at low tide, on the sand, or not at all.",
+    [
+      { label: "Rift Type", value: "Drowned Rift (exclusive — not found in any other type)" },
+      { label: "Rank", value: "C (Middle)" },
+      { label: "Role", value: "Stalker" },
+      { label: "Threat", value: "High in water — weak on dry ground" },
+      { label: "Abilities", value: "Fast swimming; drags prey under; seeds with the flood tide" },
+      { label: "Materials", value: "Stalker tendon (water-cured), Hush-chitin" },
+      { label: "Harvest", value: "Stalker tendon, water-cured (the long leg cords, harvested wet) → bowstrings and crossbow prods that carry true through a hush. Hush-chitin, light (scraped and oiled) → hush-leather and waterproofing. Gill-nodes (cut from the throat) → water-breathing draughts and dive-wards. Cure the tendon in brine before it dries or it snaps" },
+      { label: "Found In", value: "Drowned rifts — The Salt Wound" },
+      { label: "Note", value: "Fight it at low tide, on the sand, or not at all" },
+    ],
+    ["rift", "monster", "ossk", "drowned", "c-rank"],
+  ),
+  e(
+    "Rifts",
+    "Drownmaw",
+    "Drowned Rift — B (Upper)",
+    "The Drownmaw is the heavy of a Drowned rift — a vast, jawed strain that nests in flooded galleries and swallows a swimmer whole. Its body is one long filter: it drains Veyn from the water around it, which is why the shallows around a Drowned rift go silent before anyone sees a single Ossk. It is armored enough that spears skid, and it does not chase — it waits where the current brings food to it.\n\nThe Concord rates a Drowned rift with a Drownmaw at B rather than C for one reason: a party must kill it in its own element.",
+    [
+      { label: "Rift Type", value: "Drowned Rift (exclusive — not found in any other type)" },
+      { label: "Rank", value: "B (Upper)" },
+      { label: "Role", value: "Heavy / harvester-filter" },
+      { label: "Threat", value: "Very high — engulf and armor" },
+      { label: "Abilities", value: "Engulfs swimmers; filters Veyn from water (raises the hush); heavy armor" },
+      { label: "Materials", value: "Harvester gland (large), Drownmaw plate" },
+      { label: "Harvest", value: "Harvester gland, large (excised under water and kept submerged) → hush-wards, lamps, rift-anchors. Drownmaw plate (crowbarred off in a barge-works) → heavy hush-plate, ship-armor, shield bosses. Filter-membrane (peeled from the throat) → water-purifiers and hush-buoys. Maw-teeth and jaw (sawn out) → tools, weapons, and sprung traps" },
+      { label: "Found In", value: "Drowned rifts — The Salt Wound" },
+      { label: "Note", value: "It does not chase. It waits where the current brings it food" },
+    ],
+    ["rift", "monster", "ossk", "drowned", "b-rank"],
+  ),
+  e(
+    "Rifts",
+    "Hollow Stalker",
+    "Hollow Rift — A (High)",
+    "The Hollow Stalker is the apex hunter of a Hollow rift — tall, gaunt, and wrapped in the hush it carries. Inside a deadland it cannot be found by Veyn-sense at all, because there is nothing there to sense with; it moves in a silence so complete that a party hears its own heartbeat before it hears the Stalker, and by then it is already close.\n\nIt is named for the Hollow rifts it belongs to — deadlands and basins and the Shattered Lands — and it is found nowhere else. A party entering an A-rank Hollow rift is warned that the Stalker does not ambush so much as arrive.",
+    [
+      { label: "Rift Type", value: "Hollow Rift (exclusive — not found in any other type)" },
+      { label: "Rank", value: "A (High)" },
+      { label: "Role", value: "Apex hunter" },
+      { label: "Threat", value: "Extreme — undetectable in the hush" },
+      { label: "Abilities", value: "Invisible to Veyn-sense in a deadland; silent movement; fast" },
+      { label: "Materials", value: "Nerve-thread (fine), Hollow chitin" },
+      { label: "Harvest", value: "Nerve-thread, fine (pulled from the spine while fresh and kept dry — it frays as the body cools) → anti-magic collars, cuffs, binding cords, restraint manacles. Hollow chitin (stripped) → hush-cloaks, stealth-mail, silent boots. Hush-veil gland (cut from behind the eyes) → silence-charms and stealth wards. Must be harvested inside the hush or it loses its quiet" },
+      { label: "Found In", value: "Hollow rifts — The Grey Bloom, The Second Mouth" },
+      { label: "Note", value: "It does not ambush. It arrives" },
+    ],
+    ["rift", "monster", "ossk", "hollow", "a-rank"],
+  ),
+  e(
+    "Rifts",
+    "Grey Sovereign",
+    "Hollow Rift — S (Extreme)",
+    "The Grey Sovereign is a nerve-caste grown vast — a thinking thing the size of a house that commands every Ossk for miles of a Hollow hive. It is not a Queen and does not breed; it thinks, and it dies hard. Kill it and the region it commanded turns feral at a stroke; but reaching it means crossing the whole hive it is ordering to stop you.\n\nIts call is a resonance that passes through stone and flesh alike and deadens Veyn as it goes, so a party senses the Sovereign’s command as a pressure in the teeth before they ever see it.",
+    [
+      { label: "Rift Type", value: "Hollow Rift (exclusive — not found in any other type)" },
+      { label: "Rank", value: "S (Extreme)" },
+      { label: "Role", value: "Nerve-king — regional commander" },
+      { label: "Threat", value: "Severe — commands a region and fights on its own" },
+      { label: "Abilities", value: "Commands miles of hive; resonant scream that stuns Veyn; regenerates" },
+      { label: "Materials", value: "Nerve-thread (prime), Sovereign nucleus" },
+      { label: "Harvest", value: "Nerve-thread, prime (miles of it, spooled while fresh) → the finest anti-magic binding in the world. Sovereign nucleus (the command organ, cut out and sealed in a null-vessel or it keeps commanding) → hush-ward hearts and regional dampening. Voice-node (the resonant organ) → a sovereign horn that can loose a hush-scream. Harvest fast — once it is dead its hive goes feral and swarms the body" },
+      { label: "Found In", value: "Hollow rifts — The Second Mouth, The Grey Bloom" },
+      { label: "Note", value: "Kill it and its region goes feral. Reach it first" },
+    ],
+    ["rift", "monster", "ossk", "hollow", "s-rank"],
+  ),
+  e(
+    "Rifts",
+    "Firstborn Choir",
+    "Primordial Rift — SS (Hell)",
+    "The Firstborn Choir is the strain the Ossk brought with them when the world still had no name for the outside. It is not one creature; it is a resonance given many bodies at once — hundreds of voices in one will, all of them speaking the same dead note. It does not hunt, because it does not need to: wherever it moves, it seeds a region into a Seeding faster than any hive could, and the hush follows it like a shadow. Kill its bodies and it simply speaks through the ones that remain.\n\nA Primordial rift is rated SS because of the Choir. The Concord has never recorded a clean clear of a Primordial rift, only containments, and the Firstborn Choir is the reason why.",
+    [
+      { label: "Rift Type", value: "Primordial Rift (exclusive — not found in any other type)" },
+      { label: "Rank", value: "SS (Hell)" },
+      { label: "Role", value: "Collective — the original strain" },
+      { label: "Threat", value: "Existential — mass seeding, absolute hush" },
+      { label: "Abilities", value: "Collective will (not an individual); mass seeding; absolute hush aura; regrows from any survivors" },
+      { label: "Materials", value: "Firstborn resonance-core (priceless), prime nerve-thread" },
+      { label: "Harvest", value: "Firstborn resonance-core (one per voice — priceless) → barrier anchors and the strongest warding artifacts; claimed by the Concord, never sold. Prime nerve-thread (as a Sovereign, but rarer) → the highest grade of binding. Choir bodies regrow and relink, so the harvest must be total — leave one voice and the Choir speaks again. Nothing leaves without the Guildmaster’s seal" },
+      { label: "Found In", value: "Primordial rifts — The First Tear, The Far Hive" },
+      { label: "Note", value: "It does not hunt. It overwrites" },
+    ],
+    ["rift", "monster", "ossk", "primordial", "ss-rank"],
+  ),
+  e(
+    "Rifts",
+    "Nameless Queen",
+    "Primordial Rift — SS (Hell)",
+    "The Nameless Queen is a Root-Queen from before names — an Ossk heart that has been rooted so long through a Primordial tear that she is less a creature than a piece of the land with a will. She does not breed quickly, because she does not need to: what she has rooted is already everywhere, on both sides of the tear, and killing her body does not kill what she has grown into.\n\nShe is the only strain that commands a Firstborn Choir, and the reason the Concord keeps two Primordial rifts on a sealed list rather than a bounty board. A Nameless Queen cannot be killed while her tear is open — only kept asleep, and only by Mithril hands.",
+    [
+      { label: "Rift Type", value: "Primordial Rift (exclusive — not found in any other type)" },
+      { label: "Rank", value: "SS (Hell)" },
+      { label: "Role", value: "Root-Queen (primordial)" },
+      { label: "Threat", value: "Existential — commands Firstborn; rooted across realms" },
+      { label: "Abilities", value: "Rooted through the tear into the land itself; commands a Firstborn Choir; near-unkillable while the tear is open" },
+      { label: "Materials", value: "Root-resin (primordial), Queen-core" },
+      { label: "Harvest", value: "Queen-core (the rooted heart) → the greatest barrier-sealing works and the craft that keeps other tears asleep. Root-resin, primordial (bled from the roots) → sealing paste for anchors and the salves that quiet a rift. Rooted mass (the tissue grown into the land) → mostly destroyed, never carried. Cannot be harvested while her tear is open — Mithril ritual only, and only after the binding holds" },
+      { label: "Found In", value: "Primordial rifts — The Far Hive" },
+      { label: "Note", value: "Cannot be killed while her tear is open — only kept asleep" },
+    ],
+    ["rift", "monster", "ossk", "primordial", "ss-rank"],
+  ),
+  e(
+    "Rifts",
+    "The Far Hive",
+    "SS (Hell) — the tear closest to the Ossk’s side",
+    "The Far Hive is the second of the Concord’s two registered Primordial rifts, and the one it understands least. Where the First Tear is old, the Far Hive is loud — a rift that the Ossk’s collective resonance crosses so strongly that hunters near it feel the hum in their bones for weeks afterward, waking and sleeping. It sits at an unlisted barrier point, and unlike the First Tear its rift does not cycle open and shut. It has never closed.\n\nWhat comes through it is a standing invasion held back by an old Aelthar working that no living party understands. The Far Hive is the only place a Nameless Queen is confirmed to root, and the only place a Firstborn Choir has been seen in full. The Concord does not post a bounty. It keeps a watch roster — a rotating posting of Mithril hands who keep the old binding asleep, and a standing order: do not wake it.",
+    [
+      { label: "Rank", value: "SS (Hell)" },
+      { label: "Rift Type", value: "Primordial Rift" },
+      { label: "Realm", value: "A barrier point (location sealed by the Concord)" },
+      { label: "Stage", value: "Permanently open — the tear has never closed" },
+      { label: "Monsters", value: "Firstborn Choir (SS), Nameless Queen (SS)" },
+      { label: "Inside", value: "A country of grey that runs to a flat, soundless horizon, with Ossk structures that answer to no caste in the registry. The hush is total, and the resonance of the Hive is a pressure in the teeth" },
+      { label: "The Hush", value: "Absolute — Veyn-dead for as far as expeditions have gone" },
+      { label: "Bounty", value: "None. The entry is sealed — a standing containment watch, Mithril hands only" },
+      { label: "Status", value: "Contained, never cleared. Kept asleep by an Aelthar-era binding" },
+      { label: "Lore Connections", value: "The First Tear, Firstborn Choir, Nameless Queen, The World Barrier, The Ossk" },
+    ],
+    ["rift", "known rifts", "ss-rank", "primordial", "sealed list"],
   ),
 ];
