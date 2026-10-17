@@ -492,6 +492,41 @@ body {
   flex-wrap: wrap;
 }
 
+.lofi-toggle { gap: 7px; }
+.lofi-toggle.on { color: var(--text); }
+
+.lofi-eq {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  height: 12px;
+}
+
+.lofi-eq i {
+  width: 2px;
+  height: 4px;
+  border-radius: 1px;
+  background: currentColor;
+  opacity: 0.5;
+}
+
+.lofi-toggle.on .lofi-eq i {
+  opacity: 1;
+  animation: lofiEq 1.1s ease-in-out infinite;
+}
+
+.lofi-toggle.on .lofi-eq i:nth-child(2) { animation-delay: 0.18s; }
+.lofi-toggle.on .lofi-eq i:nth-child(3) { animation-delay: 0.36s; }
+
+@keyframes lofiEq {
+  0%, 100% { height: 3px; }
+  50% { height: 12px; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .lofi-toggle.on .lofi-eq i { animation: none; height: 7px; }
+}
+
 .view-transition { animation: viewIn 0.32s ease both; }
 
 .view-fill {

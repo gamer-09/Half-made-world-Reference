@@ -12,6 +12,7 @@ import type {
 import { Sidebar, type ViewMode } from './components/Sidebar';
 import { QueryChatRoom } from './components/QueryChatRoom';
 import { BackdropMotion } from './components/BackdropMotion';
+import { LofiPlayer } from './components/LofiPlayer';
 import { useArchive } from './hooks/useArchive';
 import * as liveApi from './api';
 import { Dashboard } from './components/Dashboard';
@@ -543,6 +544,7 @@ export default function App() {
             </p>
           </div>
           <div className="header-actions">
+            <LofiPlayer />
             {!isMapView && !isWebView && activeCategory !== 'All' && canEdit && (
               <button
                 className="btn btn-danger btn-sm"
