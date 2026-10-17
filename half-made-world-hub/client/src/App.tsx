@@ -11,6 +11,7 @@ import type {
 } from './types';
 import { Sidebar, type ViewMode } from './components/Sidebar';
 import { QueryChatRoom } from './components/QueryChatRoom';
+import { BackdropMotion } from './components/BackdropMotion';
 import { useArchive } from './hooks/useArchive';
 import * as liveApi from './api';
 import { Dashboard } from './components/Dashboard';
@@ -499,6 +500,7 @@ export default function App() {
   return (
     <div className="app">
       <div className="bg-aurora" aria-hidden="true" />
+      <BackdropMotion />
       <Sidebar
         categories={categories}
         total={entries.length}
