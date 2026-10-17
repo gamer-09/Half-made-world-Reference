@@ -280,104 +280,224 @@ function buildSnippet(text, q) {
   return `${prefix}${text.slice(start, end)}${suffix}`;
 }
 
+// A keyword matches a field when its stemmed token is in the field's token
+// set, or (for multi-word keywords like "main character") appears literally.
+function kwIn(kw, textLower, stems) {
+  return kw.includes(' ') ? textLower.includes(kw) : stems.has(kw);
+}
+
+// Tokenize a field into raw AND stemmed words so plural/singular and
+// punctuation variants all match ("Angels" -> angel, "abilities" -> ability).
+function tokenStems(text) {
+  const set = new Set();
+  for (const w of String(text || '').toLowerCase().split(/[^a-z0-9]+/)) {
+    if (!w) continue;
+    set.add(w);
+    set.add(stem(w));
+  }
+  return set;
+}
+
 app.get('/api/search', (req, res) => {
   const q = String(req.query.q || '').trim().toLowerCase();
-  if (!q) return res.json({ entries: [], relationships: [], storyLinks: [], query: q });
+  if (!q) return res.json({ entries: [], relationships: [], storyLinks: [], query: q, keywords: [] });
+
+  // Keyword lookup rather than literal substring search — "Who betrayed
+  // Lisa?" tokenizes to [betrayed, lisa] and matches any field containing
+  // those words, not the exact sentence.
+  const keywords = extractKeywords(q);
+  if (!keywords.length) return res.json({ entries: [], relationships: [], storyLinks: [], query: q, keywords: [] });
+  // The whole query with stop words removed — a literal phrase hit (e.g.
+  // "umbrage forest" in a name) outranks single-keyword noise.
+  const phrase = q.split(/\s+/).filter((w) => !STOPWORDS.has(w)).join(' ');
 
   const world = loadWorld();
   const rels = loadRelationships();
   const links = loadStoryLinks();
 
   const matchingEntries = world
-    .filter((e) =>
-      e.name.toLowerCase().includes(q) ||
-      (e.subtitle || '').toLowerCase().includes(q) ||
-      e.description.toLowerCase().includes(q) ||
-      (e.tags || []).some((t) => t.toLowerCase().includes(q)) ||
-      (e.fields || []).some((f) => f.label.toLowerCase().includes(q) || f.value.toLowerCase().includes(q)),
-    )
-    .map((e) => ({
-      id: e.id,
-      category: e.category,
-      name: e.name,
-      subtitle: e.subtitle || '',
-      description: e.description,
-      fields: e.fields,
-      tags: e.tags,
-      createdAt: e.createdAt,
-      updatedAt: e.updatedAt,
-      matchIn: [
-        ...(e.name.toLowerCase().includes(q) ? [{ field: 'name', snippet: e.name }] : []),
-        ...(e.subtitle && e.subtitle.toLowerCase().includes(q) ? [{ field: 'subtitle', snippet: e.subtitle }] : []),
-        ...(e.description.toLowerCase().includes(q) ? [{ field: 'description', snippet: buildSnippet(e.description, q) }] : []),
-        ...((e.tags || []).filter((t) => t.toLowerCase().includes(q)).map((t) => ({ field: 'tags', snippet: t }))),
-        ...(e.fields || [])
-          .filter((f) => f.label.toLowerCase().includes(q) || f.value.toLowerCase().includes(q))
-          .map((f) => ({ field: 'field', snippet: `${f.label}: ${f.value}` })),
-      ],
-    }));
+    .map((e) => {
+      const name = e.name.toLowerCase();
+      const sub = (e.subtitle || '').toLowerCase();
+      const cat = (e.category || '').toLowerCase();
+      const desc = e.description.toLowerCase();
+      const nameStems = tokenStems(e.name);
+      const catStems = tokenStems(e.category);
+      const subStems = tokenStems(e.subtitle);
+      const descStems = tokenStems(e.description);
+      const tagInfo = (e.tags || []).map((t) => ({ t, stems: tokenStems(t) }));
+      const fieldInfo = (e.fields || []).map((f) => ({ f, stems: tokenStems(`${f.label} ${f.value}`) }));
+      let score = 0;
+      let catHit = false;
+      const matched = new Set();
+      const matchIn = [];
+      const pushHit = (field, snippet) => {
+        if (!snippet || matchIn.length >= 8) return;
+        if (matchIn.some((h) => h.field === field && h.snippet === snippet)) return;
+        matchIn.push({ field, snippet });
+      };
+      for (const kw of keywords) {
+        let hit = false;
+        // Name is the strongest signal — the user may have typed the entry name.
+        if (kwIn(kw, name, nameStems)) {
+          score += name === kw ? 30 : 15;
+          hit = true;
+          pushHit('name', e.name);
+        }
+        if (kwIn(kw, cat, catStems)) {
+          score += 2;
+          hit = true;
+          catHit = true;
+          pushHit('category', e.category);
+        }
+        if (kwIn(kw, sub, subStems)) {
+          score += 3;
+          hit = true;
+          pushHit('subtitle', e.subtitle);
+        }
+        // Tags are curated keywords — a tag hit is a good signal.
+        const tagHit = tagInfo.find((ti) => kwIn(kw, ti.t.toLowerCase(), ti.stems));
+        if (tagHit) {
+          score += 6;
+          hit = true;
+          pushHit('tags', tagHit.t);
+        }
+        if (kwIn(kw, desc, descStems)) {
+          score += 3;
+          hit = true;
+          pushHit('description', buildSnippet(e.description, kw));
+        }
+        const fieldHit =
+          kw.length > 2 && fieldInfo.find((fi) => kwIn(kw, `${fi.f.label} ${fi.f.value}`.toLowerCase(), fi.stems));
+        if (fieldHit) {
+          score += 3;
+          hit = true;
+          pushHit('field', `${fieldHit.f.label}: ${buildSnippet(fieldHit.f.value, kw)}`);
+        }
+        if (hit) matched.add(kw);
+      }
+      if (phrase.includes(' ')) {
+        if (name.includes(phrase)) {
+          score += 40;
+          pushHit('name', e.name);
+        } else if (desc.includes(phrase)) {
+          score += 15;
+          pushHit('description', buildSnippet(e.description, phrase));
+        }
+      }
+      // A category hit means the question is about a whole taxonomy (e.g.
+      // "which race…" -> the Race Types category). Lift every entry in that
+      // category so the full set surfaces, not just the one that repeated the
+      // keyword.
+      if (catHit) score += 20;
+      // Entries that touch several aspects of the question are more relevant
+      // than ones that merely repeat a single common word.
+      if (matched.size > 1) score += matched.size * 8;
+      // Overview entries summarize their whole category — what "what is X" needs.
+      if (name.includes('overview')) score += 8;
+      return {
+        score,
+        entry: {
+          id: e.id,
+          category: e.category,
+          name: e.name,
+          subtitle: e.subtitle || '',
+          description: e.description,
+          fields: e.fields,
+          tags: e.tags,
+          createdAt: e.createdAt,
+          updatedAt: e.updatedAt,
+          matchIn,
+        },
+      };
+    })
+    // matchIn is only populated by real keyword/phrase hits — this keeps
+    // the overview +8 bonus from surfacing entries that matched nothing.
+    .filter((s) => s.entry.matchIn.length > 0)
+    .sort((a, b) => b.score - a.score)
+    .map((s) => s.entry);
+
+  // Relationships and story links share the same shape and matching rules.
+  const scoreLinkLike = (item) => {
+    const texts = {
+      source: item.source.toLowerCase(),
+      target: item.target.toLowerCase(),
+      type: (item.type || '').toLowerCase(),
+      label: (item.label || '').toLowerCase(),
+      description: (item.description || '').toLowerCase(),
+    };
+    const stems = {
+      source: tokenStems(item.source),
+      target: tokenStems(item.target),
+      type: tokenStems(item.type),
+      label: tokenStems(item.label),
+      description: tokenStems(item.description),
+    };
+    const weights = { source: 5, target: 5, type: 3, label: 3, description: 3 };
+    let score = 0;
+    const matched = new Set();
+    const matchIn = [];
+    const pushHit = (field, snippet) => {
+      if (!snippet || matchIn.length >= 6) return;
+      if (matchIn.some((h) => h.field === field && h.snippet === snippet)) return;
+      matchIn.push({ field, snippet });
+    };
+    for (const kw of keywords) {
+      let hit = false;
+      for (const field of Object.keys(texts)) {
+        if (!texts[field] || !kwIn(kw, texts[field], stems[field])) continue;
+        score += weights[field];
+        hit = true;
+        pushHit(field, field === 'description' ? buildSnippet(item.description, kw) : item[field]);
+      }
+      if (hit) matched.add(kw);
+    }
+    if (matched.size > 1) score += matched.size * 4;
+    return { score, item, matchIn };
+  };
+
+  const toLinkMatch = (r, matchIn) => ({
+    id: r.id,
+    source: r.source,
+    target: r.target,
+    type: r.type,
+    label: r.label || '',
+    description: r.description || '',
+    color: r.color,
+    createdAt: r.createdAt,
+    updatedAt: r.updatedAt,
+    matchIn,
+  });
 
   const matchingRels = rels
-    .filter(
-      (r) =>
-        r.source.toLowerCase().includes(q) ||
-        r.target.toLowerCase().includes(q) ||
-        (r.type || '').toLowerCase().includes(q) ||
-        (r.label || '').toLowerCase().includes(q) ||
-        (r.description || '').toLowerCase().includes(q),
-    )
-    .map((r) => ({
-      id: r.id,
-      source: r.source,
-      target: r.target,
-      type: r.type,
-      label: r.label || '',
-      description: r.description || '',
-      color: r.color,
-      createdAt: r.createdAt,
-      updatedAt: r.updatedAt,
-      matchIn: [
-        ...(r.source.toLowerCase().includes(q) ? [{ field: 'source', snippet: r.source }] : []),
-        ...(r.target.toLowerCase().includes(q) ? [{ field: 'target', snippet: r.target }] : []),
-        ...((r.type || '').toLowerCase().includes(q) ? [{ field: 'type', snippet: r.type }] : []),
-        ...((r.label || '').toLowerCase().includes(q) ? [{ field: 'label', snippet: r.label }] : []),
-        ...(r.description && r.description.toLowerCase().includes(q)
-          ? [{ field: 'description', snippet: buildSnippet(r.description, q) }]
-          : []),
-      ],
-    }));
+    .map((r) => scoreLinkLike(r))
+    .filter((s) => s.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map((s) => toLinkMatch(s.item, s.matchIn));
 
   const matchingLinks = links
-    .filter(
-      (l) =>
-        l.source.toLowerCase().includes(q) ||
-        l.target.toLowerCase().includes(q) ||
-        (l.type || '').toLowerCase().includes(q) ||
-        (l.label || '').toLowerCase().includes(q) ||
-        (l.description || '').toLowerCase().includes(q),
-    )
-    .map((l) => ({
-      id: l.id,
-      source: l.source,
-      target: l.target,
-      type: l.type,
-      label: l.label || '',
-      description: l.description || '',
-      color: l.color,
-      createdAt: l.createdAt,
-      updatedAt: l.updatedAt,
-      matchIn: [
-        ...(l.source.toLowerCase().includes(q) ? [{ field: 'source', snippet: l.source }] : []),
-        ...(l.target.toLowerCase().includes(q) ? [{ field: 'target', snippet: l.target }] : []),
-        ...((l.type || '').toLowerCase().includes(q) ? [{ field: 'type', snippet: l.type }] : []),
-        ...((l.label || '').toLowerCase().includes(q) ? [{ field: 'label', snippet: l.label }] : []),
-        ...(l.description && l.description.toLowerCase().includes(q)
-          ? [{ field: 'description', snippet: buildSnippet(l.description, q) }]
-          : []),
-      ],
-    }));
+    .map((l) => scoreLinkLike(l))
+    .filter((s) => s.score > 0)
+    .sort((a, b) => b.score - a.score)
+    .map((s) => toLinkMatch(s.item, s.matchIn));
 
-  res.json({ entries: matchingEntries, relationships: matchingRels, storyLinks: matchingLinks, query: q });
+  // Broad keyword queries (synonym expansions especially) can match most of
+  // the archive — cap what's returned for rendering, but report the real
+  // totals so the answer can say "showing the top N of M".
+  const totals = {
+    entries: matchingEntries.length,
+    relationships: matchingRels.length,
+    storyLinks: matchingLinks.length,
+  };
+
+  res.json({
+    entries: matchingEntries.slice(0, 50),
+    relationships: matchingRels.slice(0, 25),
+    storyLinks: matchingLinks.slice(0, 30),
+    query: q,
+    keywords,
+    totals,
+  });
 });
 
 // --- AI answer (Groq) ------------------------------------------------------
@@ -505,7 +625,8 @@ ${context}
 - Only use facts from the ARCHIVE DATA above.
 - Cite which entry, relationship, or story link the information comes from.
 - If the ARCHIVE DATA is empty or nothing matches the question, do NOT just say "nothing matches." Instead, briefly explain what the archive contains in general (how many entries, what categories exist, what kinds of things are documented) and suggest what kinds of terms might find results — for example, try a character name, a place name, or a category. Do not invent facts about the world, but it is fine to describe the shape and scope of the archive itself.
-- Keep the answer focused and not too long.`;
+- If the ARCHIVE DATA holds related facts but no explicit record that answers the question (e.g. a ranking, a "strongest", a title nobody is given), do NOT refuse. Reason from the documented facts and give your best judgment, clearly labelled as your own conclusion, not canon — e.g. "The archive never ranks them, but by its own logic X is the strongest because…". Name the specific facts you reasoned from and never invent facts to support the judgment.
+- If a table would help (e.g. comparing several things), use valid GitHub-flavoured markdown: a header row, a separator row like | --- | --- |, then one row per item. Keep tables narrow (2–4 columns). Do not use HTML tags (<br>, <br/>, etc.) — use plain text.`;
 
   try {
     const answer = await askGroq(prompt);
@@ -524,30 +645,80 @@ const STOPWORDS = new Set([
   'i', 'my', 'we', 'you', 'your', 'he', 'she', 'they', 'its', 'his', 'her', 'their',
   'be', 'been', 'being', 'have', 'has', 'had', 'from', 'by', 'at', 'as', 'if', 'into', 'not', 'please',
   'long', 'ago', 'far', 'much', 'many', 'get', 'got', 'use', 'used', 'there', 'here',
+  'which', 'whose', 'whom', 'most', 'kinds', 'kind',
 ]);
 
 function extractKeywords(question) {
   const words = String(question || '')
     .toLowerCase()
+    // Drop filler phrases like "in order" so "order" doesn't match every
+    // description that says "in order to" (or hijack "strongest in order").
+    .replace(/\bin order\b/g, ' ')
     .replace(/[?!,;:'"()]/g, ' ')
     .split(/\s+/)
     .filter(Boolean);
   const kept = words.filter((w) => !STOPWORDS.has(w));
-  // Expand shorthand terms ("mc") so curated tags like "main character" match.
-  const expanded = new Set(kept);
+  // Expand shorthand terms ("mc") and stem singular/plural so a question like
+  // "what do angels eat" still matches an entry named "Angel Sustenance".
+  const expanded = new Set();
+  const add = (term) => {
+    if (!term || STOPWORDS.has(term)) return;
+    expanded.add(term);
+    const st = stem(term);
+    if (st && !STOPWORDS.has(st)) expanded.add(st);
+    // Multi-word terms also match on their component words.
+    if (term.includes(' ')) {
+      for (const part of term.split(' ')) add(part);
+    }
+  };
   for (const w of kept) {
-    for (const syn of KEYWORD_SYNONYMS[w] || []) expanded.add(syn);
+    add(w);
+    for (const syn of KEYWORD_SYNONYMS[w] || []) add(syn);
   }
   return [...expanded];
+}
+
+// Lightweight singular stem so plural/singular tag and name variants match
+// (angels -> angel, abilities -> ability, classes -> class).
+function stem(w) {
+  const s = String(w).toLowerCase();
+  if (s.endsWith('ies') && s.length > 4) return s.slice(0, -3) + 'y';
+  if (s.endsWith('sses')) return s.slice(0, -2);
+  if (s.endsWith('s') && !s.endsWith('ss') && s.length > 3) return s.slice(0, -1);
+  return s;
 }
 
 // Shorthand/vague terms users type, expanded so keyword matching still finds
 // entries tagged with the full term (e.g. "mc" -> entries tagged "main character").
 const KEYWORD_SYNONYMS = {
+  // "strongest"/"apex" are the archive's own vocabulary for top-tier races
+  // (Cherubim and Fiends are tagged "apex"), so expand between them.
+  strongest: ['apex', 'supreme'],
+  stronger: ['apex'],
+  apex: ['strongest', 'supreme'],
   mc: ['main character', 'protagonist'],
   'main character': ['mc', 'protagonist'],
   protagonist: ['mc', 'main character'],
   hero: ['protagonist', 'main character'],
+  eat: ['food', 'meal', 'cuisine', 'diet', 'sustenance', 'drink', 'feast', 'nourishment', 'hunger'],
+  eats: ['eat', 'food', 'meal', 'cuisine', 'diet'],
+  eating: ['eat', 'food', 'meal', 'cuisine', 'diet'],
+  food: ['eat', 'meal', 'cuisine', 'diet', 'sustenance'],
+  meal: ['eat', 'food', 'cuisine'],
+  cuisine: ['eat', 'food', 'meal'],
+  diet: ['eat', 'food', 'sustenance'],
+  sustenance: ['eat', 'food', 'diet'],
+  drink: ['eat', 'food', 'beverage'],
+  fight: ['combat', 'battle', 'war', 'weapon'],
+  combat: ['fight', 'battle', 'war'],
+  battle: ['fight', 'combat', 'war'],
+  war: ['fight', 'combat', 'battle'],
+  magic: ['veyn', 'spell', 'caster'],
+  death: ['die', 'dead', 'funeral', 'burial'],
+  die: ['death', 'dead'],
+  money: ['currency', 'coin', 'price', 'gold', 'silver', 'economy'],
+  currency: ['money', 'coin', 'gold', 'silver'],
+  price: ['money', 'cost', 'coin', 'currency'],
 };
 
 // Compact index of EVERY entry in the archive, grouped by category (~5k
@@ -601,31 +772,60 @@ function broadSearch(question) {
   const rels = loadRelationships();
   const links = loadStoryLinks();
 
-  const escapeRe = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
-const wordRes = new Map(keywords.map((kw) => [kw, new RegExp("\\b" + escapeRe(kw) + "\\b")]));
-const scoredEntries = world
+  // Tokenize a field into a set of raw AND stemmed words so plural/singular
+  // and punctuation variants all match ("Angels" -> angel, "abilities" -> ability).
+  const tokenStems = (text) => {
+    const set = new Set();
+    for (const w of String(text || '').toLowerCase().split(/[^a-z0-9]+/)) {
+      if (!w) continue;
+      set.add(w);
+      set.add(stem(w));
+    }
+    return set;
+  };
+
+  const scoredEntries = world
     .map((e) => {
       const name = e.name.toLowerCase();
-      const cat = (e.category || '').toLowerCase();
-      let score = 0;
-      const tags = (e.tags || []).map((t) => String(t).toLowerCase());
-      const desc = (e.description || '').toLowerCase();
-      for (const kw of keywords) {
-        // Name is the strongest signal — the user may have typed the entry name.
-        if (name === kw) score += 30;
-        else if (wordRes.get(kw).test(name)) score += 15;
-        else if (name.includes(kw)) score += 6;
-        if (cat.includes(kw)) score += 2;
-        if (e.subtitle && e.subtitle.toLowerCase().includes(kw)) score += 3;
-        // Tags are curated keywords — an exact tag hit is a good signal.
-        if (tags.some((t) => t === kw)) score += 6;
-        else if (tags.some((t) => t.includes(kw))) score += 3;
-        if (desc.includes(kw)) score += 3;
+      const nameStems = tokenStems(e.name);
+      const catStems = tokenStems(e.category);
+      const subStems = tokenStems(e.subtitle);
+      const descStems = tokenStems(e.description);
+      const tagStems = new Set();
+      for (const t of e.tags || []) for (const s of tokenStems(t)) tagStems.add(s);
+      const fieldStems = new Set();
+      for (const f of e.fields || []) {
+        for (const s of tokenStems(f.label)) fieldStems.add(s);
+        for (const s of tokenStems(f.value)) fieldStems.add(s);
       }
+      let score = 0;
+      const matched = new Set();
+      let catHit = false;
+      for (const kw of keywords) {
+        let hit = false;
+        // Name is the strongest signal — the user may have typed the entry name.
+        if (name === kw) { score += 30; hit = true; }
+        else if (nameStems.has(kw)) { score += 15; hit = true; }
+        if (catStems.has(kw)) { score += 2; hit = true; catHit = true; }
+        if (subStems.has(kw)) { score += 3; hit = true; }
+        // Tags are curated keywords — a tag hit is a good signal.
+        if (tagStems.has(kw)) { score += 6; hit = true; }
+        if (descStems.has(kw)) { score += 3; hit = true; }
+        if (kw.length > 2 && fieldStems.has(kw)) { score += 3; hit = true; }
+        if (hit) matched.add(kw);
+      }
+      // A category hit means the question is about a whole taxonomy (e.g.
+      // "which race…" -> the Race Types category). Lift every entry in that
+      // category so the full set surfaces, not just the one that repeated the
+      // keyword.
+      if (catHit) score += 20;
+      // Entries that touch several aspects of the question are more relevant
+      // than ones that merely repeat a single common word.
+      if (matched.size > 1) score += matched.size * 8;
       // Overview entries summarize their whole category — what "what is X" needs.
       if (name.includes('overview')) score += 8;
       // Boost character entries when the question hints at a person.
-      if (cat === 'characters' && (keywords.includes('who') || keywords.includes('mc') || keywords.includes('character') || keywords.includes('main'))) {
+      if ((e.category || '').toLowerCase() === 'characters' && (keywords.includes('who') || keywords.includes('mc') || keywords.includes('character') || keywords.includes('main'))) {
         score += 2;
       }
       return { entry: e, score };
@@ -684,8 +884,9 @@ app.post('/api/ai/explore', async (req, res) => {
   // free-tier token limit instead of blowing past it on broad matches.
   // Details for the closest matches, PLUS a full index of every entry name
   // in the archive — the AI sees the whole world, not just keyword hits.
-  const context = buildArchiveContext(results, 6000);
-  const archiveIndex = buildArchiveIndex();  const prompt = `You are an explorer of a worldbuilding archive. You are given TWO things: (1) a FULL INDEX of every entry in the archive (names only, grouped by category) and (2) DETAILED SEARCH RESULTS for the entries most relevant to the question. Use the index to spot entries the search results missed — if an entry name in the index looks relevant but has no details below, reason from its name and category, and name it in your answer as a lead. Answer the user's question using this data.
+  const context = buildArchiveContext(results, 9000);
+  const archiveIndex = buildArchiveIndex();
+  const prompt = `You are an explorer of a worldbuilding archive. You are given TWO things: (1) a FULL INDEX of every entry in the archive (names only, grouped by category) and (2) DETAILED SEARCH RESULTS for the entries most relevant to the question. Use the index to spot entries the search results missed — if an entry name in the index looks relevant but has no details below, reason from its name and category, and name it in your answer as a lead. Answer the user's question using this data.
 
 If the question is vague (e.g. "who is the mc"), interpret it in the most useful way based on what's in the data — look for main characters, protagonists, key figures, etc.
 
@@ -699,12 +900,16 @@ If the question is vague (e.g. "who is the mc"), interpret it in the most useful
 ${context}
 
 === RULES ===
-- Answer in a clear, conversational tone.- Only use facts from the INDEX and SEARCH RESULTS above.
+- Answer in a clear, conversational tone.
+- Only use facts from the INDEX and SEARCH RESULTS above.
 - Cite which entry, relationship, or story link the information comes from.
 - Do NOT stitch facts from different entries into new cause-and-effect the archive never states (e.g. don't turn "Veyn returns to the core when a demon dies" into "running out of Veyn kills a demon"). If two entries touch the question, present each fact separately and say the archive does not link them.
 - Quote numbers, prices, and exchange rates EXACTLY as the archive states them. Never approximate, round, or invent numeric values — if the archive says 100 Silver = 1 Gold, never say "roughly 10".
+- If the archive contains no explicit record that answers the question (no ranking, no stated "strongest", no title anyone is given), do NOT simply say there is no record. Reason from the documented facts and give a best-judgment answer, clearly labelled as your own conclusion, not canon — e.g. "There is no direct record, but by the archive's own logic X is the strongest because…". Name the specific entries/facts you reasoned from. Never invent facts to support the judgment.
+- When judging strength, power, or rank, weigh each candidate by its DOCUMENTED feats and abilities (e.g. what it can destroy, survive, or create) — not by its current status. An extinct or fallen race may have been the most powerful; "extinct" is not a weakness. When the question is about a whole category (e.g. races), cover EVERY entry listed under that category in the index, not just the ones the search surfaced.
 - If you genuinely cannot find anything relevant, say so plainly and point to the closest entries by name.
-- Keep the answer focused and under 150 words.`;
+- Keep the answer focused (roughly 150 words; a ranking or list may run a little longer if needed).
+- If a table would help (e.g. comparing several things), use valid GitHub-flavoured markdown: a header row, a separator row like | --- | --- |, then one row per item. Keep tables narrow (2–4 columns). Do not use HTML tags (<br>, <br/>, etc.) — use plain text.`;
 
   try {
     const answer = await askGroq(prompt, 900);

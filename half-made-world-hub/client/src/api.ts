@@ -153,6 +153,8 @@ export interface SearchResult {
   relationships: SearchMatch[];
   storyLinks: SearchMatch[];
   query: string;
+  keywords?: string[];
+  totals?: { entries: number; relationships: number; storyLinks: number };
 }
 
 export async function queryArchive(q: string): Promise<SearchResult> {

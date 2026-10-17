@@ -609,7 +609,7 @@ export default function App() {
             onDeleteRel={canEdit ? handleDeleteRel : undefined}
           />
         ) : isChatView ? (
-          <QueryChatRoom />
+          <QueryChatRoom onOpenEntry={openEntryByName} entryNames={allEntryNames} />
         ) : isMapView ? (
           relationships.length === 0 ? (
             <div className="empty-state">

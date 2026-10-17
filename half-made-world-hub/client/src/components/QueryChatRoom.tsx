@@ -1,5 +1,5 @@
-import { useState, useCallback, useEffect, useRef } from 'react';
-import { queryArchive, askAi, askAiExplore } from '../api';
+import { useState, useCallback, useEffect, useMemo, useRef } from 'react';
+import { queryArchive, askAiExplore } from '../api';
 import type { SearchResult, SearchMatch } from '../api';
 import { categoryColor } from '../theme';
 
@@ -9,9 +9,14 @@ interface ChatMessage {
   results?: SearchResult;
 }
 
-// Reduce a natural-language question to a search term that actually
-// matches the archive. Strips question words, articles, and common
-// stop words so "Who is Ordium?" becomes "Ordium".
+interface QueryChatRoomProps {
+  onOpenEntry?: (name: string) => void;
+  entryNames?: string[];
+}
+
+// Reduce a natural-language question to a short readable term for narration
+// (e.g. "Who is Ordium?" -> "ordium"). The server does the real matching;
+// this is only used to word the answer text.
 function extractQuery(question: string): string {
   let q = question.trim().toLowerCase();
 
@@ -47,75 +52,106 @@ function excerpt(text: string, maxLen = 240): string {
   return cut.replace(/\s\S*$/, '') + '…';
 }
 
+// Mirrors the server's stem() so queried plurals match entry-name words.
+function stemWord(w: string): string {
+  if (w.endsWith('ies') && w.length > 4) return w.slice(0, -3) + 'y';
+  if (w.endsWith('sses')) return w.slice(0, -2);
+  if (w.endsWith('s') && !w.endsWith('ss') && w.length > 3) return w.slice(0, -1);
+  return w;
+}
+
+// True when the entry name IS the searched term ("Ordium"), or every
+// significant word of the name was searched ("The Umbrage Forest").
+function nameMatches(name: string, kwSet: Set<string>, display: string): boolean {
+  const n = name.toLowerCase();
+  if (n === display.toLowerCase() || kwSet.has(n)) return true;
+  const words = n
+    .split(/[^a-z0-9]+/)
+    .filter((w) => w.length > 1 && !['the', 'and', 'for', 'with', 'of', 'in', 'on', 'to'].includes(w));
+  if (words.length < 2) return false;
+  return words.every((w) => kwSet.has(w) || kwSet.has(stemWord(w)));
+}
+
+// Build the answer from the search results directly — Query mode never
+// depends on the AI.
 function assistantText(result: SearchResult, originalQuestion: string): string {
-  const q = result.query;
+  const display = extractQuery(originalQuestion);
+  const kwSet = new Set((result.keywords || []).map((s) => s.toLowerCase()));
   const entries = result.entries;
   const rels = result.relationships;
   const links = result.storyLinks;
   const total = entries.length + rels.length + links.length;
 
   if (total === 0) {
-    return `I don't have anything in the archive that answers "${originalQuestion}". Nothing written in the archive matches that.`;
+    return `Nothing in the archive matches "${display}". Try a character or place name (for example "Ordium" or "Umbrage Forest") or fewer words — or switch to Explore mode and ask in natural language.`;
   }
 
-  // --- Name-like query → lead with the matching entry ---
-  const nameMatch = entries.find(
-    (e) => e.name && e.name.toLowerCase() === q.toLowerCase(),
-  );
+  // --- Exact (or near-exact) name hit → lead with the matching entry ---
+  const nameMatch = entries.find((e) => e.name && nameMatches(e.name, kwSet, display));
   if (nameMatch) {
     const desc = firstMatchDescription(nameMatch);
-    const summary = desc ? excerpt(desc) : `No description written yet for ${nameMatch.name}.`;
-    const cat = nameMatch.category;
-    const parts: string[] = [`${nameMatch.name} is in the **${cat}** category. ${summary}`];
-    const extra = buildExtra(nameMatch, q);
+    const summary = desc ? excerpt(desc, 320) : `No description written yet for ${nameMatch.name}.`;
+    const parts: string[] = [`**${nameMatch.name}** is in the **${nameMatch.category}** category. ${summary}`];
+    const extra = buildExtra(nameMatch, display);
     if (extra) parts.push(extra);
-    return parts.join(' ');
+    const involving = [...rels, ...links].filter(
+      (r) => r.source === nameMatch.name || r.target === nameMatch.name,
+    );
+    if (involving.length) {
+      parts.push(`Matches involving ${nameMatch.name}:`);
+      for (const r of involving.slice(0, 5)) {
+        parts.push(`- ${r.source} ${r.label ? `(${r.label}) ` : ''}${r.type} ${r.target}.`);
+      }
+      if (involving.length > 5) parts.push(`- …and ${involving.length - 5} more.`);
+    }
+    const others = entries.filter((e) => e !== nameMatch);
+    if (others.length) {
+      const shown = others.slice(0, 4).map((e) => e.name);
+      parts.push(`Other matching entries: ${shown.join(', ')}${others.length > 4 ? ', …' : ''}`);
+    }
+    return parts.join('\n');
   }
 
-  // --- "who X" / relationship-style query ---
-  const whoQuery = /(who|what|where|when|why|how)\b/i.test(q);
-  if (whoQuery && (rels.length > 0 || links.length > 0)) {
-    const sentences: string[] = [];
-    if (rels.length > 0) {
-      sentences.push(`I found ${rels.length} relationship${rels.length === 1 ? '' : 's'} that involve ${q}:`);
-      for (const r of rels.slice(0, 4)) {
-        sentences.push(`- ${r.source} ${r.label ? `(${r.label}) ` : ''}${r.type} ${r.target}.`);
-      }
-      if (rels.length > 4) sentences.push(`- …and ${rels.length - 4} more relationship${rels.length - 4 === 1 ? '' : 's'}.`);
-    }
-    if (links.length > 0) {
-      sentences.push(`I also found ${links.length} story link${links.length === 1 ? '' : 's'}:`);
-      for (const l of links.slice(0, 4)) {
-        sentences.push(`- ${l.source} ${l.label ? `(${l.label}) ` : ''}${l.type} ${l.target}.`);
-      }
-      if (links.length > 4) sentences.push(`- …and ${links.length - 4} more story link${links.length - 4 === 1 ? '' : 's'}.`);
-    }
-    if (entries.length > 0) {
-      const entryNames = entries.map((e) => e.name).join(', ');
-      sentences.push(`${entries.length} entr${entries.length === 1 ? 'y' : 'ies'} also mention "${q}": ${entryNames}.`);
-    }
-    return sentences.join('\n');
-  }
-
-  // --- General search: narrate what was found ---
+  // --- No exact name hit → narrate what matched, best first ---
+  const totals = result.totals;
   const parts: string[] = [];
   if (entries.length > 0) {
-    const names = entries.map((e) => e.name).join(', ');
-    parts.push(`${entries.length} entr${entries.length === 1 ? 'y' : 'ies'} mention "${q}": ${names}.`);
-    const withDesc = entries.find((e) => firstMatchDescription(e));
-    if (withDesc) {
-      parts.push(`On ${withDesc.name}, the archive says: ${excerpt(firstMatchDescription(withDesc), 300)}.`);
+    const t = totals?.entries ?? entries.length;
+    const note = t > entries.length ? ` — showing the top ${entries.length}` : '';
+    parts.push(`${t} ${t === 1 ? 'entry matches' : 'entries match'} "${display}"${note}:`);
+    for (const e of entries.slice(0, 5)) {
+      const d = firstMatchDescription(e);
+      parts.push(`- **${e.name}**${d ? ` — ${excerpt(d, 160)}` : ''}`);
+    }
+    if (entries.length > 5) {
+      parts.push(
+        t > entries.length
+          ? `…and ${t - 5} more in total.`
+          : `…and ${entries.length - 5} more — see the full matches below.`,
+      );
     }
   }
   if (rels.length > 0) {
-    const sample = rels.slice(0, 3);
-    parts.push(`${rels.length} relationship${rels.length === 1 ? '' : 's'} reference "${q}". ${sample.map((r) => `${r.source} ${r.type} ${r.target}.`).join(' ')}`);
-    if (rels.length > 3) parts.push(`…and ${rels.length - 3} more.`);
+    const t = totals?.relationships ?? rels.length;
+    const note = t > rels.length ? ` — showing the top ${rels.length}` : '';
+    parts.push(`${t} relationship${t === 1 ? '' : 's'}${note}:`);
+    for (const r of rels.slice(0, 4)) {
+      parts.push(`- ${r.source} ${r.label ? `(${r.label}) ` : ''}${r.type} ${r.target}.`);
+    }
+    if (rels.length > 4) {
+      parts.push(t > rels.length ? `- …and ${t - 4} more in total.` : `- …and ${rels.length - 4} more below.`);
+    }
   }
   if (links.length > 0) {
-    const sample = links.slice(0, 3);
-    parts.push(`${links.length} story link${links.length === 1 ? '' : 's'}: ${sample.map((l) => `${l.source} ${l.type} ${l.target}.`).join(' ')}`);
-    if (links.length > 3) parts.push(`…and ${links.length - 3} more.`);
+    const t = totals?.storyLinks ?? links.length;
+    const note = t > links.length ? ` — showing the top ${links.length}` : '';
+    parts.push(`${t} story link${t === 1 ? '' : 's'}${note}:`);
+    for (const l of links.slice(0, 4)) {
+      parts.push(`- ${l.source} ${l.label ? `(${l.label}) ` : ''}${l.type} ${l.target}.`);
+    }
+    if (links.length > 4) {
+      parts.push(t > links.length ? `- …and ${t - 4} more in total.` : `- …and ${links.length - 4} more below.`);
+    }
   }
   return parts.join('\n');
 }
@@ -140,13 +176,260 @@ function formatDate(iso?: string): string {
   return new Date(iso).toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
 }
 
-export function QueryChatRoom() {
+function escapeRe(s: string): string {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+}
+
+// --- GFM table helpers -----------------------------------------------------
+
+// Split a table row into trimmed cells, tolerating optional leading/trailing
+// border pipes ("| a | b |" and "a | b" both parse the same).
+function splitTableRow(line: string): string[] {
+  let s = line.trim();
+  if (s.startsWith('|')) s = s.slice(1);
+  if (s.endsWith('|')) s = s.slice(0, -1);
+  return s.split('|').map((c) => c.trim());
+}
+
+// The "|---|:--:|--:|" separator that makes a table a table (not just a
+// paragraph that happens to contain a pipe).
+function isTableDelimiterRow(line: string): boolean {
+  if (!line.includes('|') || !line.includes('-')) return false;
+  const cells = splitTableRow(line);
+  return cells.length > 0 && cells.every((c) => /^:?-{1,}:?$/.test(c));
+}
+
+type ColAlign = 'left' | 'center' | 'right' | undefined;
+function tableAlignments(delimiter: string): ColAlign[] {
+  return splitTableRow(delimiter).map((c) => {
+    const left = c.startsWith(':');
+    const right = c.endsWith(':');
+    if (left && right) return 'center';
+    if (right) return 'right';
+    if (left) return 'left';
+    return undefined;
+  });
+}
+
+// Wrap known entry names in a clickable link so the reader can jump to the
+// source entry. Longest names first so nested names match greedily.
+function renderNames(
+  text: string,
+  onOpenEntry: ((name: string) => void) | undefined,
+  nameRe: RegExp | null,
+): React.ReactNode[] {
+  if (!nameRe || !onOpenEntry || !text) return [text];
+  const parts = text.split(nameRe);
+  return parts.map((part, i) =>
+    i % 2 === 1 && part ? (
+      <button type="button" key={`n${i}`} className="chat-inline-link" onClick={() => onOpenEntry(part)}>
+        {part}
+      </button>
+    ) : (
+      part
+    ),
+  );
+}
+
+// Inline markdown: **bold**, *italic* / _italic_, `code`, plus entry-name links.
+function renderInline(
+  text: string,
+  onOpenEntry: ((name: string) => void) | undefined,
+  nameRe: RegExp | null,
+): React.ReactNode[] {
+  // Models sometimes emit <br> inside table cells for line breaks; honour it
+  // instead of printing the tag. Split on it and join with real breaks.
+  const segments = text.split(/<br\s*\/?>/gi);
+  if (segments.length === 1) return renderInlineMd(text, onOpenEntry, nameRe);
+  const out: React.ReactNode[] = [];
+  segments.forEach((seg, i) => {
+    if (i > 0) out.push(<br key={`br${i}`} />);
+    out.push(...renderInlineMd(seg, onOpenEntry, nameRe));
+  });
+  return out;
+}
+
+function renderInlineMd(
+  text: string,
+  onOpenEntry: ((name: string) => void) | undefined,
+  nameRe: RegExp | null,
+): React.ReactNode[] {
+  const out: React.ReactNode[] = [];
+  const mdRe = /(\*\*[^*]+\*\*|\*[^*]+\*|_[^_]+_|`[^`]+`)/g;
+  let last = 0;
+  let idx = 0;
+  let m: RegExpExecArray | null;
+  while ((m = mdRe.exec(text)) !== null) {
+    if (m.index > last) out.push(...renderNames(text.slice(last, m.index), onOpenEntry, nameRe));
+    const tok = m[0];
+    if (tok.startsWith('**')) {
+      out.push(<strong key={idx++}>{renderNames(tok.slice(2, -2), onOpenEntry, nameRe)}</strong>);
+    } else if (tok.startsWith('`')) {
+      out.push(
+        <code key={idx++} className="chat-md-code">
+          {tok.slice(1, -1)}
+        </code>,
+      );
+    } else {
+      out.push(<em key={idx++}>{renderNames(tok.slice(1, -1), onOpenEntry, nameRe)}</em>);
+    }
+    last = m.index + tok.length;
+  }
+  if (last < text.length) out.push(...renderNames(text.slice(last), onOpenEntry, nameRe));
+  return out;
+}
+
+// Block-level markdown: headings, bullet/numbered lists, tables, paragraphs.
+export function Markdown({
+  text,
+  onOpenEntry,
+  nameRe,
+}: {
+  text: string;
+  onOpenEntry?: (name: string) => void;
+  nameRe: RegExp | null;
+}) {
+  const nodes: React.ReactNode[] = [];
+  const lines = text.replace(/\r\n/g, '\n').split('\n');
+  let key = 0;
+  let i = 0;
+  const isListItem = (l: string) => /^\s*([-*]|\d+[.)])\s+/.test(l);
+  const isHeading = (l: string) => /^#{1,6}\s+/.test(l);
+  // A GFM table is a row line immediately followed by a |---| delimiter row.
+  const startsTable = (idx: number) =>
+    lines[idx].includes('|') && idx + 1 < lines.length && isTableDelimiterRow(lines[idx + 1]);
+
+  while (i < lines.length) {
+    const line = lines[i];
+
+    const h = /^(#{1,6})\s+(.*)$/.exec(line);
+    if (h) {
+      const level = Math.min(h[1].length + 2, 6);
+      const Tag = `h${level}` as React.ElementType;
+      nodes.push(
+        <Tag key={key++} className="chat-md-h">
+          {renderInline(h[2], onOpenEntry, nameRe)}
+        </Tag>,
+      );
+      i += 1;
+      continue;
+    }
+
+    if (/^\s*[-*]\s+/.test(line)) {
+      const items: string[] = [];
+      while (i < lines.length && /^\s*[-*]\s+/.test(lines[i])) {
+        items.push(lines[i].replace(/^\s*[-*]\s+/, ''));
+        i++;
+      }
+      nodes.push(
+        <ul key={key++} className="chat-md-list">
+          {items.map((it, j) => (
+            <li key={j}>{renderInline(it, onOpenEntry, nameRe)}</li>
+          ))}
+        </ul>,
+      );
+      continue;
+    }
+
+    if (/^\s*\d+[.)]\s+/.test(line)) {
+      const items: string[] = [];
+      while (i < lines.length && /^\s*\d+[.)]\s+/.test(lines[i])) {
+        items.push(lines[i].replace(/^\s*\d+[.)]\s+/, ''));
+        i++;
+      }
+      nodes.push(
+        <ol key={key++} className="chat-md-list">
+          {items.map((it, j) => (
+            <li key={j}>{renderInline(it, onOpenEntry, nameRe)}</li>
+          ))}
+        </ol>,
+      );
+      continue;
+    }
+
+    if (startsTable(i)) {
+      const header = splitTableRow(line);
+      const aligns = tableAlignments(lines[i + 1]);
+      i += 2;
+      const rows: string[][] = [];
+      while (i < lines.length && lines[i].trim() !== '' && lines[i].includes('|')) {
+        rows.push(splitTableRow(lines[i]));
+        i += 1;
+      }
+      const alignStyle = (ci: number): React.CSSProperties =>
+        aligns[ci] ? { textAlign: aligns[ci] } : {};
+      nodes.push(
+        <div key={key++} className="chat-md-table-wrap">
+          <table className="chat-md-table">
+            <thead>
+              <tr>
+                {header.map((cell, ci) => (
+                  <th key={ci} style={alignStyle(ci)}>
+                    {renderInline(cell, onOpenEntry, nameRe)}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {rows.map((row, ri) => (
+                <tr key={ri}>
+                  {header.map((_, ci) => (
+                    <td key={ci} style={alignStyle(ci)}>
+                      {renderInline(row[ci] ?? '', onOpenEntry, nameRe)}
+                    </td>
+                  ))}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>,
+      );
+      continue;
+    }
+
+    if (line.trim() === '') {
+      i++;
+      continue;
+    }
+
+    const para: string[] = [];
+    while (
+      i < lines.length &&
+      lines[i].trim() !== '' &&
+      !isListItem(lines[i]) &&
+      !isHeading(lines[i]) &&
+      !startsTable(i)
+    ) {
+      para.push(lines[i]);
+      i++;
+    }
+    nodes.push(
+      <p key={key++} className="chat-md-p">
+        {renderInline(para.join(' '), onOpenEntry, nameRe)}
+      </p>,
+    );
+  }
+
+  return <div className="chat-md">{nodes}</div>;
+}
+
+export function QueryChatRoom({ onOpenEntry, entryNames = [] }: QueryChatRoomProps) {
   const [messages, setMessages] = useState<ChatMessage[]>([]);
   const [input, setInput] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [mode, setMode] = useState<'query' | 'explore'>('query');
   const inputRef = useRef<HTMLTextAreaElement>(null);
+
+  const nameRe = useMemo(() => {
+    const names = [...new Set(entryNames.filter(Boolean))].sort((a, b) => b.length - a.length);
+    if (!names.length) return null;
+    try {
+      return new RegExp('(?<![A-Za-z0-9])(' + names.map(escapeRe).join('|') + ')(?![A-Za-z0-9])', 'gi');
+    } catch {
+      return null;
+    }
+  }, [entryNames]);
 
   const send = useCallback(async () => {
     const text = input.trim();
@@ -167,46 +450,25 @@ export function QueryChatRoom() {
           answer = ai.answer;
         } catch (aiErr) {
           const msg = aiErr instanceof Error ? aiErr.message : String(aiErr);
-          if (msg.includes('not configured') || msg.includes('GROQ_API_KEY')) {
-            answer = `The AI isn't configured yet — add your GROQ_API_KEY to the server's .env file.`;
-          } else {
-            answer = `The AI ran into an issue: ${msg}`;
+          const preface =
+            msg.includes('not configured') || msg.includes('GROQ_API_KEY')
+              ? "The AI isn't configured yet — add your GROQ_API_KEY to the server's .env file. Here's what the archive found on its own:"
+              : `The AI ran into an issue (${msg}). Here's what the archive found on its own:`;
+          // Fall back to the plain keyword lookup so the question still gets
+          // an answer built from archive data.
+          try {
+            const searchResult = await queryArchive(text);
+            results = searchResult;
+            answer = `${preface}\n\n${assistantText(searchResult, text)}`;
+          } catch {
+            answer = preface;
           }
         }
       } else {
-        // Query mode: search first, then ask the AI about the results.
-        const query = extractQuery(text);
-        const searchResult = await queryArchive(query);
+        // Query mode: a direct keyword lookup over the archive — no AI involved.
+        const searchResult = await queryArchive(text);
         results = searchResult;
-        const hasData = searchResult.entries.length || searchResult.relationships.length || searchResult.storyLinks.length;
-        if (!hasData) {
-          // Nothing matched the literal search — still ask the AI so it can
-          // explain what's missing or suggest what the user might mean.
-          try {
-            const ai = await askAi(text, searchResult);
-            answer = ai.answer;
-          } catch (aiErr) {
-            const msg = aiErr instanceof Error ? aiErr.message : String(aiErr);
-            if (msg.includes('not configured') || msg.includes('GROQ_API_KEY')) {
-              answer = `The AI isn't configured yet — add your GROQ_API_KEY to the server's .env file.`;
-            } else {
-              answer = `I searched the archive for "${query}" but found nothing. Try a different term — for example, if you meant a character try their name, or describe what you're looking for.`;
-            }
-          }
-        } else {
-          try {
-            const ai = await askAi(text, searchResult);
-            answer = ai.answer;
-          } catch (aiErr) {
-            const msg = aiErr instanceof Error ? aiErr.message : String(aiErr);
-            if (msg.includes('not configured') || msg.includes('GROQ_API_KEY')) {
-              answer = `The AI isn't configured yet — add your GROQ_API_KEY to the server's .env file. In the meantime, here's what the archive says:`;
-            } else {
-              answer = `The AI ran into an issue (${msg}), so here's what the archive says instead:`;
-            }
-            answer += '\n\n' + assistantText(searchResult, text);
-          }
-        }
+        answer = assistantText(searchResult, text);
       }
 
       const assistant: ChatMessage = { role: 'assistant', text: answer, results };
@@ -242,6 +504,13 @@ export function QueryChatRoom() {
     if (scrollRef.current) scrollRef.current.scrollTop = scrollRef.current.scrollHeight;
   }, [messages]);
 
+  const clear = useCallback(() => {
+    setMessages([]);
+    setError('');
+    setInput('');
+    inputRef.current?.focus();
+  }, []);
+
   const handleKeyDown = (e: React.KeyboardEvent<HTMLTextAreaElement>) => {
     if (e.key === 'Enter' && !e.shiftKey) {
       e.preventDefault();
@@ -254,26 +523,36 @@ export function QueryChatRoom() {
       <header className="chat-header">
         <div className="chat-header-row">
           <h2 className="chat-title">Query the Archive</h2>
-          <div className="chat-mode-toggle">
+          <div className="chat-header-actions">
+            <div className="chat-mode-toggle">
+              <button
+                className={`mode-btn${mode === 'query' ? ' active' : ''}`}
+                onClick={() => setMode('query')}
+                title="Search the archive directly — keyword lookup, no AI involved"
+              >
+                Query
+              </button>
+              <button
+                className={`mode-btn${mode === 'explore' ? ' active' : ''}`}
+                onClick={() => setMode('explore')}
+                title="Give the AI the full archive and let it find answers on its own"
+              >
+                Explore
+              </button>
+            </div>
             <button
-              className={`mode-btn${mode === 'query' ? ' active' : ''}`}
-              onClick={() => setMode('query')}
-              title="Search the archive first, then ask the AI about what it found"
+              className="chat-clear-btn"
+              onClick={clear}
+              disabled={!messages.length && !error}
+              title="Clear the conversation"
             >
-              Query
-            </button>
-            <button
-              className={`mode-btn${mode === 'explore' ? ' active' : ''}`}
-              onClick={() => setMode('explore')}
-              title="Give the AI the full archive and let it find answers on its own"
-            >
-              Explore
+              Clear
             </button>
           </div>
         </div>
         <p className="chat-sub">
           {mode === 'query'
-            ? 'Ask questions about anything written in the world. The archive only knows what has been put into it.'
+            ? 'Search the archive directly — a keyword lookup over everything written in it, no AI involved. The archive only knows what has been put into it.'
             : 'The AI reads the entire archive and finds answers on its own — great for vague questions like "who is the mc".'}
         </p>
       </header>
@@ -307,9 +586,13 @@ export function QueryChatRoom() {
         {messages.map((m, i) => (
           <div key={i} className={`chat-msg chat-msg--${m.role}`}>
             <div className="chat-msg-bubble">
-              <p className="chat-msg-text">{m.text}</p>
+              {m.role === 'assistant' ? (
+                <Markdown text={m.text} onOpenEntry={onOpenEntry} nameRe={nameRe} />
+              ) : (
+                <p className="chat-msg-text">{m.text}</p>
+              )}
               {m.role === 'assistant' && m.results && (
-                <ChatResultList results={m.results} mode={mode} />
+                <ChatResultList results={m.results} mode={mode} onOpenEntry={onOpenEntry} />
               )}
             </div>
           </div>
@@ -351,7 +634,15 @@ export function QueryChatRoom() {
 
 // --- Results display ---
 
-function ChatResultList({ results, mode }: { results: SearchResult; mode: 'query' | 'explore' }) {
+function ChatResultList({
+  results,
+  mode,
+  onOpenEntry,
+}: {
+  results: SearchResult;
+  mode: 'query' | 'explore';
+  onOpenEntry?: (name: string) => void;
+}) {
   if (mode === 'explore') {
     // Explore mode: the AI answer already cites specific entries and
     // relationships in its text. Show a compact "mentioned in the answer"
@@ -374,7 +665,7 @@ function ChatResultList({ results, mode }: { results: SearchResult; mode: 'query
           </div>
           <div className="chat-result-items">
             {matchedNames.map((e) => (
-              <ChatResultItem key={e.id} match={e} color={categoryColor(e.category || '')} />
+              <ChatResultItem key={e.id} match={e} color={categoryColor(e.category || '')} onOpenEntry={onOpenEntry} />
             ))}
           </div>
         </div>
@@ -410,7 +701,7 @@ function ChatResultList({ results, mode }: { results: SearchResult; mode: 'query
           </div>
           <div className="chat-result-items">
             {keyEntries.map((e) => (
-              <ChatResultItem key={e.id} match={e} color={categoryColor(e.category || '')} />
+              <ChatResultItem key={e.id} match={e} color={categoryColor(e.category || '')} onOpenEntry={onOpenEntry} />
             ))}
           </div>
         </div>
@@ -424,7 +715,7 @@ function ChatResultList({ results, mode }: { results: SearchResult; mode: 'query
           </div>
           <div className="chat-result-items">
             {otherEntries.map((e) => (
-              <ChatResultItem key={e.id} match={e} color={categoryColor(e.category || '')} />
+              <ChatResultItem key={e.id} match={e} color={categoryColor(e.category || '')} onOpenEntry={onOpenEntry} />
             ))}
           </div>
         </div>
@@ -438,7 +729,7 @@ function ChatResultList({ results, mode }: { results: SearchResult; mode: 'query
           </div>
           <div className="chat-result-items">
             {results.relationships.map((r) => (
-              <RelationshipItem key={r.id} rel={r} />
+              <RelationshipItem key={r.id} rel={r} onOpenEntry={onOpenEntry} />
             ))}
           </div>
         </div>
@@ -452,7 +743,7 @@ function ChatResultList({ results, mode }: { results: SearchResult; mode: 'query
           </div>
           <div className="chat-result-items">
             {results.storyLinks.map((l) => (
-              <StoryLinkItem key={l.id} link={l} />
+              <StoryLinkItem key={l.id} link={l} onOpenEntry={onOpenEntry} />
             ))}
           </div>
         </div>
@@ -461,73 +752,88 @@ function ChatResultList({ results, mode }: { results: SearchResult; mode: 'query
   );
 }
 
-function ChatResultItem({ match, color }: { match: SearchMatch; color: string }) {
+function ChatResultItem({
+  match,
+  color,
+  onOpenEntry,
+}: {
+  match: SearchMatch;
+  color: string;
+  onOpenEntry?: (name: string) => void;
+}) {
   const accent = match.category ? categoryColor(match.category) : color;
+  const clickable = !!onOpenEntry && !!match.name;
+  // One short summary instead of the whole entry: the description (excerpted),
+  // falling back to the matched description snippet or the subtitle.
+  const summary = excerpt(firstMatchDescription(match) || match.subtitle || '', 200);
 
   return (
-    <div className="chat-result-item">
+    <div
+      className={`chat-result-item${clickable ? ' chat-result-item--link' : ''}`}
+      role={clickable ? 'button' : undefined}
+      tabIndex={clickable ? 0 : undefined}
+      onClick={clickable ? () => onOpenEntry!(match.name!) : undefined}
+      onKeyDown={
+        clickable
+          ? (e) => {
+              if (e.key === 'Enter' || e.key === ' ') {
+                e.preventDefault();
+                onOpenEntry!(match.name!);
+              }
+            }
+          : undefined
+      }
+    >
       <div className="chat-result-item-head">
         {match.category && (
           <span className="chip" style={{ color: accent, borderColor: `${accent}55`, background: `${accent}14` }}>
             {match.category}
           </span>
         )}
-        {match.name && (
-          <span className="chat-result-name" style={{ color: accent }}>
-            {match.name}
-          </span>
-        )}
-        {match.source && (
-          <span className="chat-result-link">
-            {match.source} → {match.target}
-          </span>
-        )}
+        {match.name && <NameLink name={match.name} color={accent} onOpenEntry={onOpenEntry} />}
         {match.createdAt && <span className="chat-result-date">{formatDate(match.createdAt)}</span>}
+        {clickable && <span className="chat-result-open">Open ↗</span>}
       </div>
 
-      {match.matchIn.length > 0 && (
-        <ul className="chat-match-list">
-          {match.matchIn.map((hit, i) => (
-            <li key={i} className="chat-match">
-              <span className="chat-match-field">{hit.field}</span>
-              <span className="chat-match-snippet">{hit.snippet}</span>
-            </li>
-          ))}
-        </ul>
-      )}
-
-      {match.fields && match.fields.length > 0 && (
-        <dl className="chat-fields">
-          {match.fields.map((f, i) => (
-            <div className="chat-field" key={i}>
-              <dt>{f.label}</dt>
-              <dd>{f.value}</dd>
-            </div>
-          ))}
-        </dl>
-      )}
-
-      {match.tags && match.tags.length > 0 && (
-        <div className="chat-tags">
-          {match.tags.map((t) => (
-            <span key={t} className="tag">{t}</span>
-          ))}
-        </div>
-      )}
+      {summary && <p className="chat-rel-desc">{summary}</p>}
     </div>
   );
 }
 
-function RelationshipItem({ rel }: { rel: SearchMatch }) {
+function NameLink({
+  name,
+  color,
+  onOpenEntry,
+}: {
+  name: string;
+  color: string;
+  onOpenEntry?: (n: string) => void;
+}) {
+  if (!onOpenEntry) {
+    return (
+      <span className="chat-result-name" style={{ color }}>
+        {name}
+      </span>
+    );
+  }
+  return (
+    <button
+      type="button"
+      className="chat-result-name chat-result-name--link"
+      style={{ color }}
+      onClick={() => onOpenEntry(name)}
+    >
+      {name}
+    </button>
+  );
+}
+
+function RelationshipItem({ rel, onOpenEntry }: { rel: SearchMatch; onOpenEntry?: (n: string) => void }) {
   const color = categoryColor('Characters');
   return (
     <div className="chat-result-item relationship">
       <div className="chat-result-item-head">
-        {rel.source && (
-          <span className="chat-result-name" style={{ color }}>
-            {rel.source}
-          </span>
-        )}
+        {rel.source && <NameLink name={rel.source} color={color} onOpenEntry={onOpenEntry} />}
         {rel.label && (
           <span className="chat-rel-label">{rel.label}</span>
         )}
@@ -536,11 +842,7 @@ function RelationshipItem({ rel }: { rel: SearchMatch }) {
             {rel.type}
           </span>
         )}
-        {rel.target && (
-          <span className="chat-result-name" style={{ color }}>
-            {rel.target}
-          </span>
-        )}
+        {rel.target && <NameLink name={rel.target} color={color} onOpenEntry={onOpenEntry} />}
         {rel.createdAt && <span className="chat-result-date">{formatDate(rel.createdAt)}</span>}
       </div>
       {rel.description && (
@@ -550,16 +852,12 @@ function RelationshipItem({ rel }: { rel: SearchMatch }) {
   );
 }
 
-function StoryLinkItem({ link }: { link: SearchMatch }) {
+function StoryLinkItem({ link, onOpenEntry }: { link: SearchMatch; onOpenEntry?: (n: string) => void }) {
   const color = categoryColor('Characters');
   return (
     <div className="chat-result-item story-link">
       <div className="chat-result-item-head">
-        {link.source && (
-          <span className="chat-result-name" style={{ color }}>
-            {link.source}
-          </span>
-        )}
+        {link.source && <NameLink name={link.source} color={color} onOpenEntry={onOpenEntry} />}
         {link.label && (
           <span className="chat-rel-label">{link.label}</span>
         )}
@@ -568,11 +866,7 @@ function StoryLinkItem({ link }: { link: SearchMatch }) {
             {link.type}
           </span>
         )}
-        {link.target && (
-          <span className="chat-result-name" style={{ color }}>
-            {link.target}
-          </span>
-        )}
+        {link.target && <NameLink name={link.target} color={color} onOpenEntry={onOpenEntry} />}
         {link.createdAt && <span className="chat-result-date">{formatDate(link.createdAt)}</span>}
       </div>
       {link.description && (
