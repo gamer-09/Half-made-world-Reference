@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useMemo, useRef } from 'react';
-import { queryArchive, askAiExplore } from '../api';
+import { queryArchive, askAiExplore, viewOnlyBuild } from '../api';
 import type { SearchResult, SearchMatch } from '../api';
 import { categoryColor } from '../theme';
 
@@ -450,8 +450,9 @@ export function QueryChatRoom({ onOpenEntry, entryNames = [] }: QueryChatRoomPro
           answer = ai.answer;
         } catch (aiErr) {
           const msg = aiErr instanceof Error ? aiErr.message : String(aiErr);
-          const preface =
-            msg.includes('not configured') || msg.includes('GROQ_API_KEY')
+          const preface = viewOnlyBuild
+            ? "The AI explorer needs the local server, so it isn't available in this view-only build. Here's what the archive found on its own:"
+            : msg.includes('not configured') || msg.includes('GROQ_API_KEY')
               ? "The AI isn't configured yet — add your GROQ_API_KEY to the server's .env file. Here's what the archive found on its own:"
               : `The AI ran into an issue (${msg}). Here's what the archive found on its own:`;
           // Fall back to the plain keyword lookup so the question still gets

@@ -7,6 +7,13 @@ import type {
   StoryLink,
   StoryLinkInput,
 } from './types';
+import { getSnapshot } from './snapshot';
+import { searchArchive } from './search';
+
+// The GitHub Pages (view-only) build ships without the Node server: archive
+// search runs in the browser over the bundled snapshot, and the Groq-backed AI
+// endpoints are unavailable.
+export const viewOnlyBuild = !import.meta.env.DEV;
 
 async function handle<T>(res: Response): Promise<T> {
   if (!res.ok) {
@@ -158,6 +165,13 @@ export interface SearchResult {
 }
 
 export async function queryArchive(q: string): Promise<SearchResult> {
+  // The dev server exposes /api/search; the view-only build has no server, so
+  // the same keyword search runs in the browser over the bundled snapshot.
+  if (viewOnlyBuild) {
+    const data = getSnapshot();
+    if (!data) throw new Error('The archive is still loading — try again in a moment.');
+    return searchArchive(q, data);
+  }
   const qs = new URLSearchParams({ q });
   const res = await fetch(`/api/search?${qs.toString()}`);
   return handle<SearchResult>(res);
@@ -179,6 +193,9 @@ export async function askAi(question: string, searchResult: SearchResult): Promi
 
 // --- AI explore: the AI searches the full archive on its own ---
 export async function askAiExplore(question: string): Promise<AiAnswerResponse> {
+  if (viewOnlyBuild) {
+    throw new Error('The AI explorer needs the local server and is not available in the view-only build.');
+  }
   const res = await fetch('/api/ai/explore', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
