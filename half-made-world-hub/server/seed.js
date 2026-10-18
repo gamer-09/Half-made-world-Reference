@@ -13988,9 +13988,9 @@ module.exports = [
     [
       { label: "The Ascendant", value: "An unnamed being who tried to merge with the World Core and become its will." },
       { label: "The failure", value: "The Core rejected it, and the failure split it into three world-ending horrors." },
-      { label: "The three", value: "World Eater (the Ascendant’s hunger), Abyssal Wyrm (its fury), Void Colossus (its cast-off body)." },
+      { label: "The three", value: "Abyssal Wyrm (the Ascendant’s fury), Void Colossus (its cast-off body), World Eater (its hunger)." },
       { label: "The warning", value: "Godhood is not to be grasped — the last one who tried broke the world." },
-      { label: "The three great catastrophes", value: "Counted from the first seal to fail: the Abyssal Wyrm (1st), the Void Colossus (2nd), and the World Eater (3rd) — the last a rift creature that was never sealed but lives inside the World Core. See The Three Great Catastrophes." },
+      { label: "The three great catastrophes", value: "Counted from the first seal to fail: the Abyssal Wyrm (1st), the Void Colossus (2nd), and the World Eater (3rd) — the last never sealed by the Aelthar but contained by the Shudon while it feeds on the World Core. See The Three Great Catastrophes." },
     ],
     ["myth", "godhood", "ascension", "world eater", "abyssal wyrm", "void colossus", "world core"],
   ),
