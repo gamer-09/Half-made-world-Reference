@@ -455,6 +455,7 @@ module.exports = [
       { label: "Realm", value: "Embedded in the world core — affects all realms equally" },
       { label: "Lore Connections", value: "Rifts — Overview, The Ossk, Null Energy, The World Barrier, The First Tear, Void Colossus, The World Core" },
       { label: "Catastrophe", value: "The 3rd of the world’s three great catastrophes (after the Abyssal Wyrm and the Void Colossus) — and the only one that was never sealed, because it lives inside the World Core as a rift creature." },
+      { label: "Containment", value: "Never sealed by the Aelthar. The Shudon contain it while it feeds on the World Core." },
     ],
     ["rift", "world eater", "parasite", "world core", "origin", "primordial", "aelthar", "existential", "op"],
   ),
