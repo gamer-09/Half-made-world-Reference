@@ -7200,16 +7200,6 @@
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
   {
-    "id": "link-auto-1044",
-    "source": "Realm Armies",
-    "target": "Demon Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "Realm Armies operates in Demon Realm.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
     "id": "link-auto-1045",
     "source": "The Seer's Order",
     "target": "Human Realm",
@@ -7780,26 +7770,6 @@
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
   {
-    "id": "link-auto-1103",
-    "source": "Political Factions",
-    "target": "Angel Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "Political Factions is part of Angel Realm politics.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
-    "id": "link-auto-1104",
-    "source": "Realm Relations",
-    "target": "Hidden Realm (Shadow Realm)",
-    "type": "part of",
-    "label": "Part of",
-    "description": "Realm Relations is part of Hidden Realm (Shadow Realm) politics.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
     "id": "link-auto-1105",
     "source": "Banking & Financial Systems",
     "target": "Human Realm",
@@ -7826,16 +7796,6 @@
     "type": "part of",
     "label": "Part of",
     "description": "The Black Market Economy is part of the Hidden Realm (Shadow Realm) economy.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
-    "id": "link-auto-1108",
-    "source": "Agricultural Systems",
-    "target": "Hidden Realm (Shadow Realm)",
-    "type": "found in",
-    "label": "Found in",
-    "description": "Agricultural Systems is found in Hidden Realm (Shadow Realm).",
     "createdAt": "2026-08-23T22:56:19.420Z",
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
@@ -8370,46 +8330,6 @@
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
   {
-    "id": "link-auto-1162",
-    "source": "The Iron Covenant",
-    "target": "Demon Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "The Iron Covenant is part of Demon Realm politics.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
-    "id": "link-auto-1163",
-    "source": "The Veil Seekers",
-    "target": "Hidden Realm (Shadow Realm)",
-    "type": "part of",
-    "label": "Part of",
-    "description": "The Veil Seekers is part of Hidden Realm (Shadow Realm) politics.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
-    "id": "link-auto-1164",
-    "source": "The Renewal Circle",
-    "target": "Hidden Realm (Shadow Realm)",
-    "type": "part of",
-    "label": "Part of",
-    "description": "The Renewal Circle is part of Hidden Realm (Shadow Realm) politics.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
-    "id": "link-auto-1165",
-    "source": "The Shadow Clans",
-    "target": "Demon Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "The Shadow Clans is part of Demon Realm politics.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
     "id": "link-auto-1166",
     "source": "Veyn Capacity Limits",
     "target": "Veyn",
@@ -8577,7 +8497,7 @@
     "label": "Located in",
     "description": "Veyn-Dead Zones is found in the Human Realm.",
     "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
+    "updatedAt": "2026-10-18T21:33:35.834Z"
   },
   {
     "id": "link-auto-1183",
@@ -8660,16 +8580,6 @@
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
   {
-    "id": "link-auto-1191",
-    "source": "Veyn-Enhanced Agriculture",
-    "target": "Human Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "Veyn-Enhanced Agriculture is part of daily life.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
     "id": "link-auto-1192",
     "source": "Angel Sustenance",
     "target": "Angel Realm",
@@ -8716,36 +8626,6 @@
     "type": "part of",
     "label": "Part of",
     "description": "Debt and Debt Bondage is part of the Angel Realm economy.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
-    "id": "link-auto-1197",
-    "source": "Angel Rapid Deployment",
-    "target": "Human Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "Angel Rapid Deployment operates in Human Realm.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
-    "id": "link-auto-1198",
-    "source": "Demon Swarm Tactics",
-    "target": "Human Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "Demon Swarm Tactics operates in Human Realm.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
-    "id": "link-auto-1199",
-    "source": "Human Combined Arms",
-    "target": "Human Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "Human Combined Arms operates in Human Realm.",
     "createdAt": "2026-08-23T22:56:19.420Z",
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
@@ -9280,16 +9160,6 @@
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
   {
-    "id": "link-auto-1254",
-    "source": "The Human Agricultural Calendar",
-    "target": "Human Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "The Human Agricultural Calendar is part of the world calendar.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
     "id": "link-auto-1255",
     "source": "The Demon Arena System",
     "target": "Demon Realm",
@@ -9536,16 +9406,6 @@
     "type": "part of",
     "label": "Part of",
     "description": "Angel Realm Architecture Decay is found in Human Realm.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
-    "id": "link-auto-1280",
-    "source": "The Human Merchant Navy",
-    "target": "Human Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "The Human Merchant Navy operates in Human Realm.",
     "createdAt": "2026-08-23T22:56:19.420Z",
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
@@ -9960,16 +9820,6 @@
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
   {
-    "id": "link-auto-1322",
-    "source": "The Human Realm River Patrol",
-    "target": "Human Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "The Human Realm River Patrol operates in Human Realm.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
     "id": "link-auto-1323",
     "source": "Veyn Crystal Classification System",
     "target": "Human Realm",
@@ -10050,16 +9900,6 @@
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
   {
-    "id": "link-auto-1331",
-    "source": "The Human Realm Watchtower Network",
-    "target": "Human Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "The Human Realm Watchtower Network is part of Human Realm travel.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
     "id": "link-auto-1332",
     "source": "Angel Realm Storm Shelters",
     "target": "Angel Realm",
@@ -10086,16 +9926,6 @@
     "type": "part of",
     "label": "Part of",
     "description": "The Human Realm Road Maintenance is part of Human Realm travel.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
-    "id": "link-auto-1335",
-    "source": "Angel Realm Crystal Farming",
-    "target": "Angel Realm",
-    "type": "lives in",
-    "label": "Lives in",
-    "description": "Angel Realm Crystal Farming resides in the Angel Realm.",
     "createdAt": "2026-08-23T22:56:19.420Z",
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
@@ -10270,16 +10100,6 @@
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
   {
-    "id": "link-auto-1353",
-    "source": "The Human Realm Siege Warfare",
-    "target": "Human Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "The Human Realm Siege Warfare is a combat training practice.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
     "id": "link-auto-1354",
     "source": "The Hidden Realm Community Fire",
     "target": "Hidden Realm (Shadow Realm)",
@@ -10296,16 +10116,6 @@
     "type": "part of",
     "label": "Part of",
     "description": "The Academy Veyn Detection Training is part of Elyndor Academy.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
-    "id": "link-auto-1356",
-    "source": "The Demon Realm Ash Soil Agriculture",
-    "target": "Demon Realm",
-    "type": "found in",
-    "label": "Found in",
-    "description": "The Demon Realm Ash Soil Agriculture is found in Demon Realm.",
     "createdAt": "2026-08-23T22:56:19.420Z",
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
@@ -10576,16 +10386,6 @@
     "type": "part of",
     "label": "Part of",
     "description": "The Demon Realm Corrupted Veyn Inhalation is part of the medical system.",
-    "createdAt": "2026-08-23T22:56:19.420Z",
-    "updatedAt": "2026-08-23T22:56:19.420Z"
-  },
-  {
-    "id": "link-auto-1384",
-    "source": "The Human Realm Seasonal Agriculture Rotation",
-    "target": "Human Realm",
-    "type": "part of",
-    "label": "Part of",
-    "description": "The Human Realm Seasonal Agriculture Rotation is part of daily life.",
     "createdAt": "2026-08-23T22:56:19.420Z",
     "updatedAt": "2026-08-23T22:56:19.420Z"
   },
@@ -13450,16 +13250,6 @@
     "updatedAt": "2026-08-24T01:26:28.447Z"
   },
   {
-    "id": "link-core-srt6rzmsmt6k263j",
-    "source": "The Shadow Clans",
-    "target": "Hidden Realm (Shadow Realm)",
-    "type": "located in",
-    "label": "Located in",
-    "description": "The Shadow Clans operate in the Hidden Realm",
-    "createdAt": "2026-08-24T01:26:28.447Z",
-    "updatedAt": "2026-08-24T01:26:28.447Z"
-  },
-  {
     "id": "link-core-0k9287fvmt6k263j",
     "source": "Affinity & Awakening",
     "target": "Veyn",
@@ -14100,86 +13890,6 @@
     "updatedAt": "2026-08-24T01:26:28.451Z"
   },
   {
-    "id": "link-core-f1ma2wyymt6k263n",
-    "source": "Political Factions",
-    "target": "Human Realm",
-    "type": "operates in",
-    "label": "Operates in",
-    "description": "Political Factions operate in the Human Realm",
-    "createdAt": "2026-08-24T01:26:28.451Z",
-    "updatedAt": "2026-08-24T01:26:28.451Z"
-  },
-  {
-    "id": "link-core-vhdecl8cmt6k263n",
-    "source": "Realm Relations",
-    "target": "Human Realm",
-    "type": "involves",
-    "label": "Involves",
-    "description": "Realm Relations involve all three realms",
-    "createdAt": "2026-08-24T01:26:28.451Z",
-    "updatedAt": "2026-08-24T01:26:28.451Z"
-  },
-  {
-    "id": "link-core-j8fj70tfmt6k263n",
-    "source": "Realm Relations",
-    "target": "Angel Realm",
-    "type": "involves",
-    "label": "Involves",
-    "description": "Realm Relations involve all three realms",
-    "createdAt": "2026-08-24T01:26:28.451Z",
-    "updatedAt": "2026-08-24T01:26:28.451Z"
-  },
-  {
-    "id": "link-core-eu1cgsdqmt6k263n",
-    "source": "Realm Relations",
-    "target": "Demon Realm",
-    "type": "involves",
-    "label": "Involves",
-    "description": "Realm Relations involve all three realms",
-    "createdAt": "2026-08-24T01:26:28.451Z",
-    "updatedAt": "2026-08-24T01:26:28.451Z"
-  },
-  {
-    "id": "link-core-ncra7rhjmt6k263n",
-    "source": "The Iron Covenant",
-    "target": "Human Realm",
-    "type": "operates in",
-    "label": "Operates in",
-    "description": "The Iron Covenant operates in the Human Realm",
-    "createdAt": "2026-08-24T01:26:28.451Z",
-    "updatedAt": "2026-08-24T01:26:28.451Z"
-  },
-  {
-    "id": "link-core-pm7p4cnpmt6k263n",
-    "source": "The Veil Seekers",
-    "target": "Hidden Realm (Shadow Realm)",
-    "type": "operates in",
-    "label": "Operates in",
-    "description": "The Veil Seekers seek the Hidden Realm",
-    "createdAt": "2026-08-24T01:26:28.451Z",
-    "updatedAt": "2026-08-24T01:26:28.451Z"
-  },
-  {
-    "id": "link-core-wrivqlhbmt6k263n",
-    "source": "The Renewal Circle",
-    "target": "Angel Realm",
-    "type": "operates in",
-    "label": "Operates in",
-    "description": "The Renewal Circle operates in the Angel Realm",
-    "createdAt": "2026-08-24T01:26:28.451Z",
-    "updatedAt": "2026-08-24T01:26:28.451Z"
-  },
-  {
-    "id": "link-core-8cdvczwkmt6k263n",
-    "source": "The Shadow Clans",
-    "target": "Hidden Realm (Shadow Realm)",
-    "type": "operates in",
-    "label": "Operates in",
-    "description": "The Shadow Clans operate in the Hidden Realm",
-    "createdAt": "2026-08-24T01:26:28.451Z",
-    "updatedAt": "2026-08-24T01:26:28.451Z"
-  },
-  {
     "id": "link-core-o998ri8pmt6k263n",
     "source": "Inter-Realm Trade Agreements",
     "target": "Human Realm",
@@ -14377,7 +14087,7 @@
     "label": "Found in",
     "description": "Veyn-Dead Zones exist in the Human Realm",
     "createdAt": "2026-08-24T01:26:28.453Z",
-    "updatedAt": "2026-08-24T01:26:28.453Z"
+    "updatedAt": "2026-10-18T21:33:35.834Z"
   },
   {
     "id": "link-core-z2kk45b0mt6k263p",
@@ -14700,66 +14410,6 @@
     "updatedAt": "2026-08-24T01:26:28.454Z"
   },
   {
-    "id": "link-core-pelx4tn2mt6k263r",
-    "source": "Realm Armies",
-    "target": "Human Realm",
-    "type": "includes",
-    "label": "Includes",
-    "description": "Realm Armies include Human military forces",
-    "createdAt": "2026-08-24T01:26:28.455Z",
-    "updatedAt": "2026-08-24T01:26:28.455Z"
-  },
-  {
-    "id": "link-core-my5id03imt6k263r",
-    "source": "Realm Armies",
-    "target": "Angel Realm",
-    "type": "includes",
-    "label": "Includes",
-    "description": "Realm Armies include Angel military forces",
-    "createdAt": "2026-08-24T01:26:28.455Z",
-    "updatedAt": "2026-08-24T01:26:28.455Z"
-  },
-  {
-    "id": "link-core-ls28e9k5mt6k263r",
-    "source": "Realm Armies",
-    "target": "Demon Realm",
-    "type": "includes",
-    "label": "Includes",
-    "description": "Realm Armies include Demon military forces",
-    "createdAt": "2026-08-24T01:26:28.455Z",
-    "updatedAt": "2026-08-24T01:26:28.455Z"
-  },
-  {
-    "id": "link-core-6zxfuvvzmt6k263r",
-    "source": "Angel Rapid Deployment",
-    "target": "Angel Realm",
-    "type": "operates in",
-    "label": "Operates in",
-    "description": "Angel Rapid Deployment is used by Angel armies",
-    "createdAt": "2026-08-24T01:26:28.455Z",
-    "updatedAt": "2026-08-24T01:26:28.455Z"
-  },
-  {
-    "id": "link-core-t0ffr0nemt6k263r",
-    "source": "Demon Swarm Tactics",
-    "target": "Demon Realm",
-    "type": "operates in",
-    "label": "Operates in",
-    "description": "Demon Swarm Tactics are used by Demon armies",
-    "createdAt": "2026-08-24T01:26:28.455Z",
-    "updatedAt": "2026-08-24T01:26:28.455Z"
-  },
-  {
-    "id": "link-core-ss2kw8e6mt6k263r",
-    "source": "Human Combined Arms",
-    "target": "Human Realm",
-    "type": "operates in",
-    "label": "Operates in",
-    "description": "Human Combined Arms tactics are used by Human armies",
-    "createdAt": "2026-08-24T01:26:28.455Z",
-    "updatedAt": "2026-08-24T01:26:28.455Z"
-  },
-  {
     "id": "link-core-ll0mictxmt6k263r",
     "source": "Veyn Storm Emergency Protocols",
     "target": "Human Realm",
@@ -14786,16 +14436,6 @@
     "type": "operates in",
     "label": "Operates in",
     "description": "Emergency Mobilization protects the Human Realm",
-    "createdAt": "2026-08-24T01:26:28.455Z",
-    "updatedAt": "2026-08-24T01:26:28.455Z"
-  },
-  {
-    "id": "link-core-x2qhs5stmt6k263r",
-    "source": "The Human Realm Siege Warfare",
-    "target": "Human Realm",
-    "type": "practiced in",
-    "label": "Practiced in",
-    "description": "Siege Warfare is practiced in the Human Realm",
     "createdAt": "2026-08-24T01:26:28.455Z",
     "updatedAt": "2026-08-24T01:26:28.455Z"
   },
@@ -15010,16 +14650,6 @@
     "updatedAt": "2026-08-24T01:26:28.457Z"
   },
   {
-    "id": "link-core-pxylxm18mt6k263t",
-    "source": "The Human Realm Watchtower Network",
-    "target": "Human Realm",
-    "type": "operates in",
-    "label": "Operates in",
-    "description": "Watchtower Network guards the Human Realm",
-    "createdAt": "2026-08-24T01:26:28.457Z",
-    "updatedAt": "2026-08-24T01:26:28.457Z"
-  },
-  {
     "id": "link-core-c5y0qetemt6k263t",
     "source": "The Human Realm Navigation System",
     "target": "Human Realm",
@@ -15036,16 +14666,6 @@
     "type": "operates in",
     "label": "Operates in",
     "description": "Road Maintenance keeps Human Realm roads passable",
-    "createdAt": "2026-08-24T01:26:28.457Z",
-    "updatedAt": "2026-08-24T01:26:28.457Z"
-  },
-  {
-    "id": "link-core-kyl0oqv1mt6k263t",
-    "source": "The Human Realm River Patrol",
-    "target": "Human Realm",
-    "type": "operates in",
-    "label": "Operates in",
-    "description": "River Patrol guards Human Realm waterways",
     "createdAt": "2026-08-24T01:26:28.457Z",
     "updatedAt": "2026-08-24T01:26:28.457Z"
   },
@@ -20461,17 +20081,6 @@
     "updatedAt": "2026-09-01T22:38:32.475Z"
   },
   {
-    "id": "b3ce32ba-3248-42f3-b512-a3b1a8422184",
-    "source": "Demon Realm",
-    "target": "Realm Armies",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.475Z",
-    "updatedAt": "2026-09-01T22:38:32.475Z"
-  },
-  {
     "id": "ce1f3cc9-5d14-4b36-9e60-1e68cc43c9e6",
     "source": "Human Realm",
     "target": "The Seer's Order",
@@ -21066,28 +20675,6 @@
     "updatedAt": "2026-09-01T22:38:32.476Z"
   },
   {
-    "id": "1bdfa89b-f289-4d37-abba-91668b2868bb",
-    "source": "Angel Realm",
-    "target": "Political Factions",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.476Z",
-    "updatedAt": "2026-09-01T22:38:32.476Z"
-  },
-  {
-    "id": "98f628dd-cb09-4a1d-9188-6b1535614405",
-    "source": "Hidden Realm (Shadow Realm)",
-    "target": "Realm Relations",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.476Z",
-    "updatedAt": "2026-09-01T22:38:32.476Z"
-  },
-  {
     "id": "d9c28b87-208a-4b71-9992-41ee3aca5e62",
     "source": "Human Realm",
     "target": "Banking & Financial Systems",
@@ -21115,17 +20702,6 @@
     "target": "The Black Market Economy",
     "type": "includes",
     "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.476Z",
-    "updatedAt": "2026-09-01T22:38:32.476Z"
-  },
-  {
-    "id": "d6fd5df1-0a27-4fc9-9128-be4f43602c1c",
-    "source": "Hidden Realm (Shadow Realm)",
-    "target": "Agricultural Systems",
-    "type": "contains",
-    "label": "contains",
     "description": "",
     "color": "",
     "createdAt": "2026-09-01T22:38:32.476Z",
@@ -21704,50 +21280,6 @@
     "updatedAt": "2026-09-01T22:38:32.478Z"
   },
   {
-    "id": "2516d59a-34d5-48b5-9677-4d646bd13b31",
-    "source": "Demon Realm",
-    "target": "The Iron Covenant",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.479Z",
-    "updatedAt": "2026-09-01T22:38:32.479Z"
-  },
-  {
-    "id": "d3f546dc-7cf1-4013-a3c7-c09002c6abb5",
-    "source": "Hidden Realm (Shadow Realm)",
-    "target": "The Veil Seekers",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.479Z",
-    "updatedAt": "2026-09-01T22:38:32.479Z"
-  },
-  {
-    "id": "1ce28a6c-dc81-4f60-8458-2d7416f335ba",
-    "source": "Hidden Realm (Shadow Realm)",
-    "target": "The Renewal Circle",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.479Z",
-    "updatedAt": "2026-09-01T22:38:32.479Z"
-  },
-  {
-    "id": "66f6ba5d-41a9-4365-92ba-c93c057bbab2",
-    "source": "Demon Realm",
-    "target": "The Shadow Clans",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.479Z",
-    "updatedAt": "2026-09-01T22:38:32.479Z"
-  },
-  {
     "id": "3a421a04-bb52-45e2-a3db-e6f0164ff186",
     "source": "Human Realm",
     "target": "Corruption Resistance Training",
@@ -21833,7 +21365,7 @@
     "description": "",
     "color": "",
     "createdAt": "2026-09-01T22:38:32.479Z",
-    "updatedAt": "2026-09-01T22:38:32.479Z"
+    "updatedAt": "2026-10-18T21:33:35.834Z"
   },
   {
     "id": "bdd2b011-7bc1-415c-9e91-075a8cfca5bb",
@@ -21924,17 +21456,6 @@
     "updatedAt": "2026-09-01T22:38:32.479Z"
   },
   {
-    "id": "0600ef53-c60f-40b4-8086-746a00dcf2b5",
-    "source": "Human Realm",
-    "target": "Veyn-Enhanced Agriculture",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.479Z",
-    "updatedAt": "2026-09-01T22:38:32.479Z"
-  },
-  {
     "id": "b8fa9e97-bc62-420a-85c2-398675114a76",
     "source": "Angel Realm",
     "target": "Angel Sustenance",
@@ -21977,39 +21498,6 @@
     "color": "",
     "createdAt": "2026-09-01T22:38:32.479Z",
     "updatedAt": "2026-09-01T22:38:32.479Z"
-  },
-  {
-    "id": "22a69a34-5da2-4fcc-bb26-e33863b99351",
-    "source": "Human Realm",
-    "target": "Angel Rapid Deployment",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.479Z",
-    "updatedAt": "2026-09-01T22:38:32.479Z"
-  },
-  {
-    "id": "d22178ca-98e9-4f61-8025-bf7369dc4dcd",
-    "source": "Human Realm",
-    "target": "Demon Swarm Tactics",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.479Z",
-    "updatedAt": "2026-09-01T22:38:32.479Z"
-  },
-  {
-    "id": "b69ec299-2d5f-4385-af4d-52b4f0b90c8c",
-    "source": "Human Realm",
-    "target": "Human Combined Arms",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.480Z",
-    "updatedAt": "2026-09-01T22:38:32.480Z"
   },
   {
     "id": "e320000a-9642-482b-948d-7c2fb5fac035",
@@ -22573,17 +22061,6 @@
     "updatedAt": "2026-09-01T22:38:32.483Z"
   },
   {
-    "id": "e411a678-5ae5-48a1-a638-e3f5d5e055b6",
-    "source": "Human Realm",
-    "target": "The Human Agricultural Calendar",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.483Z",
-    "updatedAt": "2026-09-01T22:38:32.483Z"
-  },
-  {
     "id": "910c54bd-b749-43b5-b2df-c35edd9f0e1a",
     "source": "Demon Realm",
     "target": "The Demon Arena System",
@@ -22845,17 +22322,6 @@
     "description": "",
     "color": "",
     "createdAt": "2026-09-01T22:38:32.483Z",
-    "updatedAt": "2026-09-01T22:38:32.484Z"
-  },
-  {
-    "id": "79485f2a-8420-4db5-81b9-5e43c24cbf5e",
-    "source": "Human Realm",
-    "target": "The Human Merchant Navy",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.484Z",
     "updatedAt": "2026-09-01T22:38:32.484Z"
   },
   {
@@ -23299,17 +22765,6 @@
     "updatedAt": "2026-09-01T22:38:32.485Z"
   },
   {
-    "id": "3e09b0b4-4d79-48bb-8550-55828a33c3b7",
-    "source": "Human Realm",
-    "target": "The Human Realm River Patrol",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.485Z",
-    "updatedAt": "2026-09-01T22:38:32.485Z"
-  },
-  {
     "id": "c88b6d22-9ba8-47b7-ae85-e00040ba629c",
     "source": "Human Realm",
     "target": "Veyn Crystal Classification System",
@@ -23398,17 +22853,6 @@
     "updatedAt": "2026-09-01T22:38:32.485Z"
   },
   {
-    "id": "eae4f49a-6eae-4c63-9f5d-f28c18aca5ed",
-    "source": "Human Realm",
-    "target": "The Human Realm Watchtower Network",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.485Z",
-    "updatedAt": "2026-09-01T22:38:32.485Z"
-  },
-  {
     "id": "11af1029-faed-4535-aa63-128ac573802d",
     "source": "Angel Realm",
     "target": "Angel Realm Storm Shelters",
@@ -23436,17 +22880,6 @@
     "target": "The Human Realm Road Maintenance",
     "type": "includes",
     "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.485Z",
-    "updatedAt": "2026-09-01T22:38:32.485Z"
-  },
-  {
-    "id": "1c26ea0e-1c44-4e83-b7f5-360d89c36659",
-    "source": "Angel Realm",
-    "target": "Angel Realm Crystal Farming",
-    "type": "home of",
-    "label": "home of",
     "description": "",
     "color": "",
     "createdAt": "2026-09-01T22:38:32.485Z",
@@ -23640,17 +23073,6 @@
     "updatedAt": "2026-09-01T22:38:32.486Z"
   },
   {
-    "id": "7a4d8a2c-a9e8-457a-b7b3-751e4ba9fca5",
-    "source": "Human Realm",
-    "target": "The Human Realm Siege Warfare",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.486Z",
-    "updatedAt": "2026-09-01T22:38:32.486Z"
-  },
-  {
     "id": "4972dbdd-9dd6-4372-a765-fb7eb3bd6b68",
     "source": "Hidden Realm (Shadow Realm)",
     "target": "The Hidden Realm Community Fire",
@@ -23667,17 +23089,6 @@
     "target": "The Academy Veyn Detection Training",
     "type": "includes",
     "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.486Z",
-    "updatedAt": "2026-09-01T22:38:32.486Z"
-  },
-  {
-    "id": "7cfade23-9965-486f-b29a-a1bd26a7684a",
-    "source": "Demon Realm",
-    "target": "The Demon Realm Ash Soil Agriculture",
-    "type": "contains",
-    "label": "contains",
     "description": "",
     "color": "",
     "createdAt": "2026-09-01T22:38:32.486Z",
@@ -23940,17 +23351,6 @@
     "id": "84246822-608d-47bd-bbd9-366b89bf4f56",
     "source": "Human Realm",
     "target": "The Demon Realm Corrupted Veyn Inhalation",
-    "type": "includes",
-    "label": "includes",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.486Z",
-    "updatedAt": "2026-09-01T22:38:32.486Z"
-  },
-  {
-    "id": "d1f3ca56-2c53-4d26-8c89-71f89f129af1",
-    "source": "Human Realm",
-    "target": "The Human Realm Seasonal Agriculture Rotation",
     "type": "includes",
     "label": "includes",
     "description": "",
@@ -25400,17 +24800,6 @@
     "updatedAt": "2026-09-01T22:38:32.489Z"
   },
   {
-    "id": "6630c5e0-cacc-4efa-a975-27eb5319abd0",
-    "source": "Hidden Realm (Shadow Realm)",
-    "target": "The Shadow Clans",
-    "type": "contains",
-    "label": "contains",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.489Z",
-    "updatedAt": "2026-09-01T22:38:32.489Z"
-  },
-  {
     "id": "3db3c338-8275-4089-8c3a-156b2bcec59d",
     "source": "Classes",
     "target": "Class Skill Limits",
@@ -25647,61 +25036,6 @@
     "target": "Temples & Sacred Sites",
     "type": "part of",
     "label": "part of",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.490Z",
-    "updatedAt": "2026-09-01T22:38:32.490Z"
-  },
-  {
-    "id": "9021dd6d-cb0e-4fdb-9270-d66eda63c68a",
-    "source": "Human Realm",
-    "target": "Political Factions",
-    "type": "operates (inverse)",
-    "label": "operates (inverse)",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.490Z",
-    "updatedAt": "2026-09-01T22:38:32.490Z"
-  },
-  {
-    "id": "dc16dc82-dae7-4660-bce6-5f7c8888683c",
-    "source": "Human Realm",
-    "target": "The Iron Covenant",
-    "type": "operates (inverse)",
-    "label": "operates (inverse)",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.490Z",
-    "updatedAt": "2026-09-01T22:38:32.490Z"
-  },
-  {
-    "id": "fe8c8b2d-b71a-458e-9018-ec8a52eee5c5",
-    "source": "Hidden Realm (Shadow Realm)",
-    "target": "The Veil Seekers",
-    "type": "operates (inverse)",
-    "label": "operates (inverse)",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.490Z",
-    "updatedAt": "2026-09-01T22:38:32.490Z"
-  },
-  {
-    "id": "819e8049-2765-4c42-859c-dc04bc9311fa",
-    "source": "Angel Realm",
-    "target": "The Renewal Circle",
-    "type": "operates (inverse)",
-    "label": "operates (inverse)",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.490Z",
-    "updatedAt": "2026-09-01T22:38:32.490Z"
-  },
-  {
-    "id": "8aa9bcfe-6c28-4c27-9334-a3f3377f73eb",
-    "source": "Hidden Realm (Shadow Realm)",
-    "target": "The Shadow Clans",
-    "type": "operates (inverse)",
-    "label": "operates (inverse)",
     "description": "",
     "color": "",
     "createdAt": "2026-09-01T22:38:32.490Z",
@@ -26038,72 +25372,6 @@
     "updatedAt": "2026-09-01T22:38:32.490Z"
   },
   {
-    "id": "cab43f9a-8630-4aa1-9907-ff04917409f5",
-    "source": "Human Realm",
-    "target": "Realm Armies",
-    "type": "part of",
-    "label": "part of",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.490Z",
-    "updatedAt": "2026-09-01T22:38:32.490Z"
-  },
-  {
-    "id": "eec8ae19-9df4-4f50-9708-e38d3ca245c1",
-    "source": "Angel Realm",
-    "target": "Realm Armies",
-    "type": "part of",
-    "label": "part of",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.490Z",
-    "updatedAt": "2026-09-01T22:38:32.490Z"
-  },
-  {
-    "id": "8e9991e8-310c-453d-bcf9-23584b458336",
-    "source": "Demon Realm",
-    "target": "Realm Armies",
-    "type": "part of",
-    "label": "part of",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.490Z",
-    "updatedAt": "2026-09-01T22:38:32.490Z"
-  },
-  {
-    "id": "4d7c2676-ee92-46da-872e-dba1cad5d2c0",
-    "source": "Angel Realm",
-    "target": "Angel Rapid Deployment",
-    "type": "operates (inverse)",
-    "label": "operates (inverse)",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.490Z",
-    "updatedAt": "2026-09-01T22:38:32.490Z"
-  },
-  {
-    "id": "9611e938-ddc2-4a7b-b808-e45eaeb2c489",
-    "source": "Demon Realm",
-    "target": "Demon Swarm Tactics",
-    "type": "operates (inverse)",
-    "label": "operates (inverse)",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.490Z",
-    "updatedAt": "2026-09-01T22:38:32.490Z"
-  },
-  {
-    "id": "0668d2d6-a840-44cd-931d-afa082858df7",
-    "source": "Human Realm",
-    "target": "Human Combined Arms",
-    "type": "operates (inverse)",
-    "label": "operates (inverse)",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.491Z",
-    "updatedAt": "2026-09-01T22:38:32.491Z"
-  },
-  {
     "id": "f06d5914-ff63-4af9-a0ee-70935c0ffc52",
     "source": "Human Realm",
     "target": "The Human Realm Emergency Mobilization",
@@ -26258,17 +25526,6 @@
     "updatedAt": "2026-09-01T22:38:32.491Z"
   },
   {
-    "id": "ec144f58-d17d-4c5c-bda9-5eb8fb872142",
-    "source": "Human Realm",
-    "target": "The Human Realm Watchtower Network",
-    "type": "operates (inverse)",
-    "label": "operates (inverse)",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.491Z",
-    "updatedAt": "2026-09-01T22:38:32.491Z"
-  },
-  {
     "id": "26030329-01a3-46b2-a1b6-15f1b7f6a8b8",
     "source": "Human Realm",
     "target": "The Human Realm Navigation System",
@@ -26283,17 +25540,6 @@
     "id": "1cecc738-30a2-499e-bd12-95379057faa7",
     "source": "Human Realm",
     "target": "The Human Realm Road Maintenance",
-    "type": "operates (inverse)",
-    "label": "operates (inverse)",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.491Z",
-    "updatedAt": "2026-09-01T22:38:32.491Z"
-  },
-  {
-    "id": "bedba879-8aa2-4ab4-8885-789a45330bd4",
-    "source": "Human Realm",
-    "target": "The Human Realm River Patrol",
     "type": "operates (inverse)",
     "label": "operates (inverse)",
     "description": "",
@@ -34841,56 +34087,6 @@
     "updatedAt": "2026-09-01T00:00:00.000Z"
   },
   {
-    "id": "link-gen-4028",
-    "source": "Virtue",
-    "target": "Realm Armies",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Angel Army field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4029",
-    "source": "Bloodward",
-    "target": "Realm Armies",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Demon Army field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4030",
-    "source": "Scourge",
-    "target": "Realm Armies",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Demon Army field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4031",
-    "source": "Clergy",
-    "target": "Realm Armies",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Human Army field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4032",
-    "source": "Aetherblade Lord Angel",
-    "target": "Realm Armies",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Six Pillars field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
     "id": "link-gen-4033",
     "source": "Healers",
     "target": "The Seer's Order",
@@ -36541,56 +35737,6 @@
     "updatedAt": "2026-09-01T00:00:00.000Z"
   },
   {
-    "id": "link-gen-4247",
-    "source": "Shudon",
-    "target": "Political Factions",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via The Vow Keepers field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4248",
-    "source": "Fallen Angel",
-    "target": "Political Factions",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via The Severed field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4249",
-    "source": "Fallen Angels",
-    "target": "Political Factions",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via The Severed field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4250",
-    "source": "Mordrach",
-    "target": "Political Factions",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via The Blood Pack field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4251",
-    "source": "Bloodward",
-    "target": "Political Factions",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via The Blood Pack field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
     "id": "link-gen-4252",
     "source": "Veilrunner",
     "target": "Banking & Financial Systems",
@@ -36677,36 +35823,6 @@
     "type": "related to",
     "label": "Related to",
     "description": "Linked via The Masked Coin field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4261",
-    "source": "Ether Forest",
-    "target": "Agricultural Systems",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Human Farmlands field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4262",
-    "source": "Veyn",
-    "target": "Agricultural Systems",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Human Farmlands field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4263",
-    "source": "Mage",
-    "target": "Agricultural Systems",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Veyn Farming field",
     "createdAt": "2026-09-01T00:00:00.000Z",
     "updatedAt": "2026-09-01T00:00:00.000Z"
   },
@@ -38261,56 +37377,6 @@
     "updatedAt": "2026-09-01T00:00:00.000Z"
   },
   {
-    "id": "link-gen-4501",
-    "source": "Veyn",
-    "target": "The Iron Covenant",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Usage field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4502",
-    "source": "Broker",
-    "target": "The Iron Covenant",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Lore Connections field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4503",
-    "source": "Aelthar",
-    "target": "The Veil Seekers",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Lore Connections field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4504",
-    "source": "Ren",
-    "target": "The Renewal Circle",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Usage field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4506",
-    "source": "Aelthar",
-    "target": "The Renewal Circle",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Lore Connections field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
     "id": "link-gen-4507",
     "source": "Grade System",
     "target": "Threat Level Classification",
@@ -38718,7 +37784,7 @@
     "label": "Related to",
     "description": "Linked via Activation field",
     "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
+    "updatedAt": "2026-10-18T21:33:35.834Z"
   },
   {
     "id": "link-gen-4579",
@@ -38728,7 +37794,7 @@
     "label": "Related to",
     "description": "Linked via Usage field",
     "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
+    "updatedAt": "2026-10-18T21:33:35.834Z"
   },
   {
     "id": "link-gen-4580",
@@ -38738,7 +37804,7 @@
     "label": "Related to",
     "description": "Linked via Usage field",
     "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
+    "updatedAt": "2026-10-18T21:33:35.834Z"
   },
   {
     "id": "link-gen-4584",
@@ -38901,16 +37967,6 @@
     "updatedAt": "2026-09-01T00:00:00.000Z"
   },
   {
-    "id": "link-gen-4607",
-    "source": "Veyn",
-    "target": "Veyn-Enhanced Agriculture",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Activation field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
     "id": "link-gen-4609",
     "source": "Demon Realm",
     "target": "Amplification Chains",
@@ -38934,26 +37990,6 @@
     "id": "link-gen-4611",
     "source": "Broker",
     "target": "Debt and Debt Bondage",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Lore Connections field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4612",
-    "source": "Veyn",
-    "target": "Demon Swarm Tactics",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Lore Connections field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4613",
-    "source": "Corrupted Veyn",
-    "target": "Demon Swarm Tactics",
     "type": "related to",
     "label": "Related to",
     "description": "Linked via Lore Connections field",
@@ -39648,7 +38684,7 @@
     "label": "Related to",
     "description": "Linked via Lore Connections field",
     "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
+    "updatedAt": "2026-10-18T21:33:35.834Z"
   },
   {
     "id": "link-gen-4717",
@@ -39874,16 +38910,6 @@
     "id": "link-gen-4748",
     "source": "Corrupted Veyn",
     "target": "The Forge Master's Challenge",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Lore Connections field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4749",
-    "source": "Veyn",
-    "target": "The Human Agricultural Calendar",
     "type": "related to",
     "label": "Related to",
     "description": "Linked via Lore Connections field",
@@ -40591,16 +39617,6 @@
     "updatedAt": "2026-09-01T00:00:00.000Z"
   },
   {
-    "id": "link-gen-4839",
-    "source": "Shudon",
-    "target": "The Human Realm River Patrol",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Lore Connections field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
     "id": "link-gen-4840",
     "source": "Veyn",
     "target": "Veyn Crystal Classification System",
@@ -40794,16 +39810,6 @@
     "id": "link-gen-4863",
     "source": "Clergy",
     "target": "The Human Realm Emergency Medicine Corps",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Lore Connections field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-4864",
-    "source": "Veyn",
-    "target": "The Human Realm Siege Warfare",
     "type": "related to",
     "label": "Related to",
     "description": "Linked via Lore Connections field",
@@ -42213,22 +41219,22 @@
   {
     "id": "link-gen-5063",
     "source": "Abyssal Wyrm",
-    "target": "The Dead Zone",
+    "target": "Veyn-Dead Zones",
     "type": "related to",
     "label": "Related to",
     "description": "Linked via Primary Cause field",
     "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
+    "updatedAt": "2026-10-18T21:33:35.834Z"
   },
   {
     "id": "link-gen-5064",
     "source": "Void Colossus",
-    "target": "The Dead Zone",
+    "target": "Veyn-Dead Zones",
     "type": "related to",
     "label": "Related to",
     "description": "Linked via Primary Cause field",
     "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
+    "updatedAt": "2026-10-18T21:33:35.834Z"
   },
   {
     "id": "link-gen-5065",
@@ -43729,5 +42735,55 @@
     "description": "The rifts — and the Ossk monsters that pour through them — came with the World Eater; it is what opened their way into the world.",
     "createdAt": "2026-10-17T16:32:57.895Z",
     "updatedAt": "2026-10-17T16:32:57.895Z"
+  },
+  {
+    "id": "link-tgc-1",
+    "source": "Abyssal Wyrm",
+    "target": "The Three Great Catastrophes",
+    "type": "part of",
+    "label": "Part of",
+    "description": "The Abyssal Wyrm is the 1st of the world’s three great catastrophes.",
+    "createdAt": "2026-10-18T21:33:35.834Z",
+    "updatedAt": "2026-10-18T21:33:35.834Z"
+  },
+  {
+    "id": "link-tgc-2",
+    "source": "Void Colossus",
+    "target": "The Three Great Catastrophes",
+    "type": "part of",
+    "label": "Part of",
+    "description": "The Void Colossus is the 2nd of the world’s three great catastrophes.",
+    "createdAt": "2026-10-18T21:33:35.834Z",
+    "updatedAt": "2026-10-18T21:33:35.834Z"
+  },
+  {
+    "id": "link-tgc-3",
+    "source": "World Eater",
+    "target": "The Three Great Catastrophes",
+    "type": "part of",
+    "label": "Part of",
+    "description": "The World Eater is the 3rd of the world’s three great catastrophes, and a rift creature.",
+    "createdAt": "2026-10-18T21:33:35.834Z",
+    "updatedAt": "2026-10-18T21:33:35.834Z"
+  },
+  {
+    "id": "link-tgc-4",
+    "source": "The Three Great Catastrophes",
+    "target": "The Failed Ascension",
+    "type": "related to",
+    "label": "Related to",
+    "description": "The three great catastrophes are the broken remains of the First Ascendant.",
+    "createdAt": "2026-10-18T21:33:35.834Z",
+    "updatedAt": "2026-10-18T21:33:35.834Z"
+  },
+  {
+    "id": "link-tgc-5",
+    "source": "Veyn-Dead Zones",
+    "target": "World Eater",
+    "type": "related to",
+    "label": "Related to",
+    "description": "The World Eater’s null is among the causes of permanent Veyn-Dead Zones.",
+    "createdAt": "2026-10-18T21:33:35.834Z",
+    "updatedAt": "2026-10-18T21:33:35.834Z"
   }
 ]
