@@ -1759,7 +1759,7 @@
     "category": "Beings",
     "name": "Shudon",
     "subtitle": "The stone golem guardians of the realm entrances",
-    "description": "They are highly intelligent stone golems that are skilled in combat. They are made from the core of the world to protect the realms from collapse, though they have been inactive for a long time. The entrances to the three main realms — the Human, Angel, and Demon Realms — are each guarded by a Shudon. The Hidden Realm is not guarded by them; its only entrance is the wandering portal.",
+    "description": "They are highly intelligent stone golems made from the core of the world. The World Core’s will shaped them to help guard and stabilize the realms. The entrances to the three main realms — the Human, Angel, and Demon Realms — are each guarded by a Shudon. The Hidden Realm is not guarded by them; its only entrance is the wandering portal.",
     "fields": [
       {
         "label": "Appearance",
@@ -1779,7 +1779,7 @@
       },
       {
         "label": "Control",
-        "value": "They act out the will of the world core"
+        "value": "They act out the will of the World Core."
       },
       {
         "label": "Hostile",
