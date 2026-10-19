@@ -11,6 +11,7 @@ import type {
 } from './types';
 import { Sidebar, type ViewMode } from './components/Sidebar';
 import { QueryChatRoom } from './components/QueryChatRoom';
+import { PlanningRoom } from './components/PlanningRoom';
 import { BackdropMotion } from './components/BackdropMotion';
 import { LofiPlayer } from './components/LofiPlayer';
 import { useArchive } from './hooks/useArchive';
@@ -158,6 +159,8 @@ export default function App() {
         setView('blocks');
       } else if (e.key === '5') {
         setView('chat');
+      } else if (e.key === '6' && canEdit) {
+        setView('planning');
       }
     };
     window.addEventListener('keydown', onKey);
@@ -494,9 +497,20 @@ export default function App() {
   const isMapView = view === 'map';
   const isWebView = view === 'web';
   const isBlocksView = view === 'blocks';
+  const isPlanningView = view === 'planning' && canEdit;
   const showDashboard = view === 'browse' && activeCategory === 'All' && search.trim() === '' && !activeTag;
 
-  const viewKey = isChatView ? 'chat' : isBlocksView ? 'blocks' : isWebView ? 'web' : isMapView ? 'map' : `browse-${activeCategory}`;
+  const viewKey = isPlanningView
+    ? 'planning'
+    : isChatView
+      ? 'chat'
+      : isBlocksView
+        ? 'blocks'
+        : isWebView
+          ? 'web'
+          : isMapView
+            ? 'map'
+            : `browse-${activeCategory}`;
 
   return (
     <div className="app">
@@ -516,14 +530,25 @@ export default function App() {
         onOpenWeb={() => setView('web')}
         onOpenBlocks={() => setView('blocks')}
         onOpenChat={() => setView('chat')}
+        onOpenPlanning={canEdit ? () => setView('planning') : undefined}
       />
 
       <main className="main">
         <header className="main-header">
           <div className="main-header-text">
             <h2 className="main-title">
-              {isBlocksView ? 'Block Chain Map' : isWebView ? 'Story Web' : isMapView ? 'Relationship Map' : activeCategory === 'All' ? 'All Entries' : activeCategory}
-              {!isMapView && !isWebView && !isBlocksView && (
+              {isPlanningView
+                ? 'Planning'
+                : isBlocksView
+                  ? 'Block Chain Map'
+                  : isWebView
+                    ? 'Story Web'
+                    : isMapView
+                      ? 'Relationship Map'
+                      : activeCategory === 'All'
+                        ? 'All Entries'
+                        : activeCategory}
+              {!isMapView && !isWebView && !isBlocksView && !isPlanningView && (
                 <span className="main-count">{filtered.length}</span>
               )}
               {!canEdit && !isMapView && !isWebView && !isBlocksView && (
@@ -531,7 +556,9 @@ export default function App() {
               )}
             </h2>
             <p className="main-sub">
-              {isBlocksView
+              {isPlanningView
+                ? 'Draft new characters, places, and sections with the AI — nothing is saved to the archive'
+                : isBlocksView
                   ? 'The world’s geography as a chain — every place linked to what contains it'
                   : isWebView
                     ? 'The whole world at a glance — every realm, monster, artifact, and thread'
@@ -540,12 +567,12 @@ export default function App() {
                       : activeCategory === 'All'
                         ? 'Everything in the archive'
                         : `Entries in ${activeCategory}`}
-              {!isMapView && !isWebView && !isBlocksView && search.trim() && ` · matching “${search.trim()}”`}
+              {!isMapView && !isWebView && !isBlocksView && !isPlanningView && search.trim() && ` · matching “${search.trim()}”`}
             </p>
           </div>
           <div className="header-actions">
             <LofiPlayer />
-            {!isMapView && !isWebView && activeCategory !== 'All' && canEdit && (
+            {!isMapView && !isWebView && !isBlocksView && !isPlanningView && activeCategory !== 'All' && canEdit && (
               <button
                 className="btn btn-danger btn-sm"
                 onClick={() => handleDeleteCategory(activeCategory)}
@@ -580,7 +607,7 @@ export default function App() {
           </div>
         </header>
 
-        <div className={`view-transition${isBlocksView ? ' view-fill' : ''}`} key={viewKey}>
+        <div className={`view-transition${isBlocksView || isPlanningView ? ' view-fill' : ''}`} key={viewKey}>
         {loading ? (
           <div className="loading">
             <span className="loading-orb" aria-hidden="true" />
@@ -594,6 +621,8 @@ export default function App() {
               Retry
             </button>
           </div>
+        ) : isPlanningView ? (
+          <PlanningRoom onOpenEntry={openEntryByName} />
         ) : isBlocksView ? (
           <BlockMap entries={entries} storyLinks={storyLinks} onNodeClick={setSelected} />
         ) : isWebView ? (

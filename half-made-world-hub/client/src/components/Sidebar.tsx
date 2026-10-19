@@ -2,7 +2,7 @@ import type { Ref } from 'react';
 import type { CategoryInfo } from '../types';
 import { categoryColor } from '../theme';
 
-export type ViewMode = 'browse' | 'map' | 'web' | 'blocks' | 'chat';
+export type ViewMode = 'browse' | 'map' | 'web' | 'blocks' | 'chat' | 'planning';
 
 interface SidebarProps {
   categories: CategoryInfo[];
@@ -18,6 +18,8 @@ interface SidebarProps {
   onOpenWeb: () => void;
   onOpenBlocks: () => void;
   onOpenChat: () => void;
+  // Local-dev only: omitted (and the button hidden) in the view-only build.
+  onOpenPlanning?: () => void;
 }
 
 export function Sidebar({
@@ -34,6 +36,7 @@ export function Sidebar({
   onOpenWeb,
   onOpenBlocks,
   onOpenChat,
+  onOpenPlanning,
 }: SidebarProps) {
   return (
     <aside className="sidebar">
@@ -103,6 +106,18 @@ export function Sidebar({
         <i className="fa-solid fa-message" style={{ fontSize: 14, color: view === 'chat' ? '#c8a876' : 'currentColor' }} />
         Query Chat
       </button>
+
+      {onOpenPlanning && (
+        <button
+          className={`nav-map-btn${view === 'planning' ? ' active' : ''}`}
+          onClick={onOpenPlanning}
+          title="Local only — plan new characters, places, races, and sections with the AI"
+        >
+          <i className="fa-solid fa-compass-drafting" style={{ fontSize: 14, color: view === 'planning' ? '#c8a876' : 'currentColor' }} />
+          Planning
+          <span className="nav-dev-tag">dev</span>
+        </button>
+      )}
 
       <label className="search-wrap">
         <span className="search-icon" aria-hidden="true">

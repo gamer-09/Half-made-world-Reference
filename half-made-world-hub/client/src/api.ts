@@ -15,10 +15,25 @@ import { searchArchive } from './search';
 // endpoints are unavailable.
 export const viewOnlyBuild = !import.meta.env.DEV;
 
+// Thrown when the AI is rate-limited; carries the seconds until it works again
+// so the UI can show a countdown.
+export class AiRateLimitError extends Error {
+  readonly retryAfterSeconds: number;
+  constructor(message: string, retryAfterSeconds: number) {
+    super(message);
+    this.name = 'AiRateLimitError';
+    this.retryAfterSeconds = retryAfterSeconds;
+  }
+}
+
 async function handle<T>(res: Response): Promise<T> {
   if (!res.ok) {
     const data = await res.json().catch(() => null);
-    throw new Error(data?.error || `Request failed (${res.status})`);
+    const message = data?.error || `Request failed (${res.status})`;
+    if (res.status === 429 && typeof data?.retryAfterSeconds === 'number') {
+      throw new AiRateLimitError(message, data.retryAfterSeconds);
+    }
+    throw new Error(message);
   }
   return res.json() as Promise<T>;
 }
@@ -192,14 +207,83 @@ export async function askAi(question: string, searchResult: SearchResult): Promi
 }
 
 // --- AI explore: the AI searches the full archive on its own ---
-export async function askAiExplore(question: string): Promise<AiAnswerResponse> {
+export interface ChatTurn {
+  role: 'user' | 'assistant';
+  text: string;
+}
+
+export async function askAiExplore(question: string, history: ChatTurn[] = []): Promise<AiAnswerResponse> {
   if (viewOnlyBuild) {
     throw new Error('The AI explorer needs the local server and is not available in the view-only build.');
   }
   const res = await fetch('/api/ai/explore', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ question }),
+    body: JSON.stringify({ question, history }),
   });
   return handle<AiAnswerResponse>(res);
+}
+
+// --- AI planning (local dev only) ------------------------------------------
+// Drafts a brand-new character/place/race/section for the world. Plans are
+// ephemeral: they are never written to the archive, only shown in the dev UI.
+export interface PlanQuestion {
+  id: string;
+  question: string;
+  why?: string;
+}
+
+export interface PlanSection {
+  heading: string;
+  points: string[];
+}
+
+export interface PlanDraft {
+  thinking: string;
+  title: string;
+  summary: string;
+  sections: PlanSection[];
+  questions: PlanQuestion[];
+  sources: string[];
+  risks: string[];
+  // True when the planner asked its questions first and has no draft yet — the
+  // plan is written only after the user answers (or skips).
+  needsInput?: boolean;
+  // opencode session ids this plan created on disk (empty for the HTTP backend).
+  sessions?: string[];
+}
+
+export interface PlanAnswer {
+  question: string;
+  answer: string;
+}
+
+export interface PlanRequest {
+  request: string;
+  answers?: PlanAnswer[];
+}
+
+export async function plan(payload: PlanRequest): Promise<PlanDraft> {
+  if (viewOnlyBuild) {
+    throw new Error('The planner needs the local server and is not available in the view-only build.');
+  }
+  const res = await fetch('/api/ai/plan', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  });
+  return handle<PlanDraft>(res);
+}
+
+// Delete the opencode session file(s) a plan created on disk. Returns the ids
+// that were actually removed.
+export async function deletePlanSessions(sessions: string[]): Promise<string[]> {
+  if (viewOnlyBuild) return [];
+  const res = await fetch('/api/ai/plan/session/delete', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ sessions }),
+  });
+  const data = await handle<{ deleted?: string[] }>(res);
+  return data.deleted ?? [];
 }

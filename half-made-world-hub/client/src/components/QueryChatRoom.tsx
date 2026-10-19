@@ -1,5 +1,5 @@
 import { useState, useCallback, useEffect, useMemo, useRef } from 'react';
-import { queryArchive, askAiExplore, viewOnlyBuild } from '../api';
+import { queryArchive, askAiExplore, viewOnlyBuild, AiRateLimitError } from '../api';
 import type { SearchResult, SearchMatch } from '../api';
 import { categoryColor } from '../theme';
 
@@ -42,6 +42,16 @@ function firstMatchDescription(match: SearchMatch): string {
     if (hit.field === 'description' && hit.snippet) return hit.snippet;
   }
   return '';
+}
+
+// Seconds -> m:ss (or h:mm:ss for the daily limit), for the rate-limit timer.
+export function formatCountdown(totalSeconds: number): string {
+  const total = Math.max(0, Math.floor(totalSeconds));
+  const h = Math.floor(total / 3600);
+  const m = Math.floor((total % 3600) / 60);
+  const s = total % 60;
+  const pad = (n: number) => String(n).padStart(2, '0');
+  return h > 0 ? `${h}:${pad(m)}:${pad(s)}` : `${m}:${pad(s)}`;
 }
 
 function excerpt(text: string, maxLen = 240): string {
@@ -419,7 +429,18 @@ export function QueryChatRoom({ onOpenEntry, entryNames = [] }: QueryChatRoomPro
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [mode, setMode] = useState<'query' | 'explore'>('query');
+  // Set when the AI is rate-limited: counts down to when Explore works again,
+  // and remembers the question so it can be retried in one click.
+  const [limitInfo, setLimitInfo] = useState<{ secondsLeft: number; question: string } | null>(null);
   const inputRef = useRef<HTMLTextAreaElement>(null);
+
+  useEffect(() => {
+    if (!limitInfo || limitInfo.secondsLeft <= 0) return;
+    const id = window.setInterval(() => {
+      setLimitInfo((prev) => (prev && prev.secondsLeft > 0 ? { ...prev, secondsLeft: prev.secondsLeft - 1 } : prev));
+    }, 1000);
+    return () => window.clearInterval(id);
+  }, [limitInfo?.secondsLeft ?? 0]);
 
   const nameRe = useMemo(() => {
     const names = [...new Set(entryNames.filter(Boolean))].sort((a, b) => b.length - a.length);
@@ -431,8 +452,8 @@ export function QueryChatRoom({ onOpenEntry, entryNames = [] }: QueryChatRoomPro
     }
   }, [entryNames]);
 
-  const send = useCallback(async () => {
-    const text = input.trim();
+  const send = useCallback(async (overrideText?: string) => {
+    const text = (overrideText ?? input).trim();
     if (!text || loading) return;
     setInput('');
     setError('');
@@ -445,16 +466,25 @@ export function QueryChatRoom({ onOpenEntry, entryNames = [] }: QueryChatRoomPro
 
       if (mode === 'explore') {
         // Explore mode: the AI searches the whole archive on its own.
+        // Prior turns go along so follow-ups resolve against the conversation.
+        const history = messages.map((m) => ({ role: m.role, text: m.text }));
         try {
-          const ai = await askAiExplore(text);
+          const ai = await askAiExplore(text, history);
           answer = ai.answer;
+          setLimitInfo(null);
         } catch (aiErr) {
           const msg = aiErr instanceof Error ? aiErr.message : String(aiErr);
+          // Rate limit hit: show a countdown until the AI can be used again.
+          if (aiErr instanceof AiRateLimitError) {
+            setLimitInfo({ secondsLeft: Math.ceil(aiErr.retryAfterSeconds), question: text });
+          }
           const preface = viewOnlyBuild
             ? "The AI explorer needs the local server, so it isn't available in this view-only build. Here's what the archive found on its own:"
             : msg.includes('not configured') || msg.includes('GROQ_API_KEY')
               ? "The AI isn't configured yet — add your GROQ_API_KEY to the server's .env file. Here's what the archive found on its own:"
-              : `The AI ran into an issue (${msg}). Here's what the archive found on its own:`;
+              : aiErr instanceof AiRateLimitError
+                ? "The AI's token limit is maxed out — the timer below shows when it can be used again. Here's what the archive found on its own:"
+                : `The AI ran into an issue (${msg}). Here's what the archive found on its own:`;
           // Fall back to the plain keyword lookup so the question still gets
           // an answer built from archive data.
           try {
@@ -480,7 +510,7 @@ export function QueryChatRoom({ onOpenEntry, entryNames = [] }: QueryChatRoomPro
     } finally {
       setLoading(false);
     }
-  }, [input, loading]);
+  }, [input, loading, messages]);
 
   useEffect(() => {
     if (!inputRef.current) return;
@@ -509,6 +539,7 @@ export function QueryChatRoom({ onOpenEntry, entryNames = [] }: QueryChatRoomPro
     setMessages([]);
     setError('');
     setInput('');
+    setLimitInfo(null);
     inputRef.current?.focus();
   }, []);
 
@@ -615,6 +646,39 @@ export function QueryChatRoom({ onOpenEntry, entryNames = [] }: QueryChatRoomPro
         {error && <div className="chat-error">{error}</div>}
       </div>
 
+      {limitInfo && (
+        <div className={`chat-limit${limitInfo.secondsLeft <= 0 ? ' chat-limit--ready' : ''}`}>
+          {limitInfo.secondsLeft > 0 ? (
+            <span className="chat-limit-text">
+              AI token limit reached — Explore can be used again in{' '}
+              <strong className="chat-limit-clock">{formatCountdown(limitInfo.secondsLeft)}</strong>
+            </span>
+          ) : (
+            <span className="chat-limit-text">
+              AI limit reset — Explore is ready again.
+              <button
+                className="btn btn-primary chat-limit-retry"
+                onClick={() => {
+                  const q = limitInfo.question;
+                  setLimitInfo(null);
+                  send(q);
+                }}
+              >
+                Retry
+              </button>
+            </span>
+          )}
+          <button
+            className="chat-limit-dismiss"
+            onClick={() => setLimitInfo(null)}
+            title="Hide this notice"
+            aria-label="Dismiss"
+          >
+            ×
+          </button>
+        </div>
+      )}
+
       <div className="chat-input-row">
         <textarea
           ref={inputRef}
@@ -625,7 +689,7 @@ export function QueryChatRoom({ onOpenEntry, entryNames = [] }: QueryChatRoomPro
           onKeyDown={handleKeyDown}
           rows={1}
         />
-        <button className="btn btn-primary" onClick={send} disabled={loading || !input.trim()}>
+        <button className="btn btn-primary" onClick={() => send()} disabled={loading || !input.trim()}>
           {loading ? '…' : 'Ask'}
         </button>
       </div>

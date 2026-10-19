@@ -2,8 +2,9 @@ const express = require('express');
 require('dotenv').config({ path: require('path').resolve(__dirname, '..', '.env') });
 const cors = require('cors');
 const crypto = require('crypto');
-const Groq = require('groq-sdk');
+const { spawn } = require('child_process');
 const {
+
   loadWorld,
   saveWorld,
   resetWorld,
@@ -500,20 +501,150 @@ app.get('/api/search', (req, res) => {
   });
 });
 
-// --- AI answer (Groq) ------------------------------------------------------
-const groq = new Groq({ apiKey: process.env.GROQ_API_KEY || '' });
+// --- AI backend (any OpenAI-compatible chat-completions endpoint) -----------
+// Groq is the default, but the server talks plain OpenAI-compatible HTTP, so
+// AI_BASE_URL / AI_MODEL / AI_API_KEY can point at anything: a local Ollama or
+// LM Studio server (no rate limits at all), OpenRouter, a Groq proxy, etc.
+const AI_BASE_URL = (process.env.AI_BASE_URL || 'https://api.groq.com/openai/v1').replace(/\/+$/, '');
+const AI_MODEL = process.env.AI_MODEL || 'openai/gpt-oss-20b';
+const AI_API_KEY = process.env.AI_API_KEY || process.env.GROQ_API_KEY || '';
+// AI_PROVIDER=opencode drives the opencode CLI installed on this machine
+// (`opencode run --format json`) instead of an HTTP chat-completions endpoint.
+// This uses whatever model/auth opencode is already configured with — no API
+// key needed here.
+const AI_PROVIDER = (process.env.AI_PROVIDER || '').toLowerCase();
+const AI_IS_OPENCODE = AI_PROVIDER === 'opencode';
+const OPENCODE_BIN = process.env.OPENCODE_BIN || resolveOpencodeBin();
+// opencode's own model spec ("provider/model"), e.g. "opencode/big-pickle".
+// Blank = whatever opencode is configured/defaults to. Note this is NOT the
+// AI_MODEL value — that's an HTTP provider's model id (e.g. an OpenRouter
+// model) and opencode would reject it.
+const OPENCODE_MODEL = process.env.OPENCODE_MODEL || '';
+// When a headless opencode call fails (its free Zen tier 403s outside the app),
+// fall back to the HTTP backend instead of failing the request. Set
+// OPENCODE_FALLBACK=false to make opencode the only path.
+const OPENCODE_FALLBACK = process.env.OPENCODE_FALLBACK !== 'false';
+
+// Prefer the real opencode executable over the .cmd/.ps1 npm shims: spawning
+// the shim with a shell on Windows stops forwarding stdin reliably, which
+// matters because the planner pipes a ~150KB prompt in.
+function resolveOpencodeBin() {
+  if (process.platform !== 'win32') return 'opencode';
+  const candidates = [
+    require('path').join(process.env.APPDATA || '', 'npm', 'node_modules', 'opencode-ai', 'bin', 'opencode.exe'),
+    require('path').join(process.env.USERPROFILE || '', '.opencode', 'bin', 'opencode.exe'),
+  ];
+  for (const c of candidates) {
+    try {
+      if (require('fs').existsSync(c)) return c;
+    } catch {
+      /* ignore */
+    }
+  }
+  return 'opencode';
+}
+// 'reasoning_effort' is a Groq/gpt-oss field; only send it where it is accepted.
+const AI_SEND_REASONING = /groq\.com/i.test(AI_BASE_URL) || process.env.AI_REASONING === 'true';
+// JSON mode (response_format) is on by default; disable it for endpoints that reject it.
+const AI_JSON_MODE = process.env.AI_JSON_MODE !== 'false';
+// OpenRouter can route across several models in order, so a free model that is
+// rate-limited upstream falls through to the next instead of failing the plan.
+// Comma-separated, primary first. Ignored by non-OpenRouter endpoints.
+const AI_FALLBACK_MODELS = (process.env.AI_FALLBACK_MODELS || '')
+  .split(',')
+  .map((s) => s.trim())
+  .filter(Boolean);
+const AI_IS_OPENROUTER = /openrouter\.ai/i.test(AI_BASE_URL);
+
+function aiConfigured() {
+  // opencode needs no key — it uses the CLI's own auth.
+  return AI_IS_OPENCODE || Boolean(AI_API_KEY);
+}
 
 // Groq's free tier caps requests at ~8000 tokens per minute, so keep the
 // archive context well under that (~1 token ≈ 4 chars).
 const AI_CONTEXT_CHAR_BUDGET = 16000;
+// The planner reads the WHOLE archive so it understands the world's general
+// shape (not just keyword matches). OpenRouter models allow ~1M tokens and the
+// full digest is ~160k tokens, so it fits; on a small-context backend set
+// AI_FULL_CONTEXT_BUDGET lower (or 0 to disable) to fall back to keyword matches.
+const AI_FULL_CONTEXT_BUDGET = Number(process.env.AI_FULL_CONTEXT_BUDGET ?? 700000);
 const AI_DESC_LIMIT = 800;
 const AI_FIELD_LIMIT = 300;
 const AI_SUBTITLE_LIMIT = 200;
+
+// Per-entry caps for the full digest: short enough that all ~1000 entries fit,
+// long enough that each one conveys what it is and the facts a new entry must
+// respect.
+const DIGEST_DESC_LIMIT = 220;
+const DIGEST_FIELD_LIMIT = 120;
+const DIGEST_SUBTITLE_LIMIT = 120;
+const DIGEST_FIELDS_PER_ENTRY = 8;
 
 function truncateForBudget(text, max) {
   const s = String(text || '').replace(/\s+/g, ' ').trim();
   if (s.length <= max) return s;
   return s.slice(0, Math.max(0, max - 1)).replace(/\s+\S*$/, '') + '…';
+}
+
+// A compact digest of EVERY entry — grouped by category, one line each with its
+// subtitle, a trimmed description, and its most important field values. This
+// gives the planner general knowledge of the whole world (what exists, how
+// things are described, what fields they use) rather than only the handful of
+// entries that happen to match the request's keywords.
+function buildArchiveDigest(budget = AI_FULL_CONTEXT_BUDGET) {
+  if (!budget || budget <= 0) return '';
+  const world = loadWorld();
+  const byCat = new Map();
+  for (const e of world) {
+    const cat = e.category || 'Uncategorized';
+    if (!byCat.has(cat)) byCat.set(cat, []);
+    byCat.get(cat).push(e);
+  }
+
+  const lines = ['=== FULL ARCHIVE (every entry, for general knowledge) ==='];
+  let used = lines[0].length;
+  let included = 0;
+  let omitted = 0;
+
+  const addLine = (line) => {
+    if (used + line.length + 1 > budget) return false;
+    lines.push(line);
+    used += line.length + 1;
+    return true;
+  };
+
+  const cats = [...byCat.keys()].sort((a, b) => a.localeCompare(b));
+  for (const cat of cats) {
+    const entries = byCat.get(cat);
+    if (!addLine(`## ${cat} (${entries.length})`)) {
+      omitted += entries.length;
+      continue;
+    }
+    for (const e of entries) {
+      const parts = [e.name];
+      if (e.subtitle) parts.push('— ' + truncateForBudget(e.subtitle, DIGEST_SUBTITLE_LIMIT));
+      const head = '- ' + parts.join(' ');
+      if (!addLine(head)) {
+        omitted += 1;
+        continue;
+      }
+      if (e.description) {
+        addLine('    ' + truncateForBudget(e.description, DIGEST_DESC_LIMIT));
+      }
+      let shown = 0;
+      for (const f of e.fields || []) {
+        if (shown >= DIGEST_FIELDS_PER_ENTRY) break;
+        if (addLine(`    ${f.label}: ${truncateForBudget(f.value, DIGEST_FIELD_LIMIT)}`)) shown += 1;
+      }
+      included += 1;
+    }
+  }
+
+  if (omitted) {
+    lines.push(`(digest trimmed: ${included} entries shown, ${omitted} omitted to fit the budget)`);
+  }
+  return lines.join('\n');
 }
 
 // Renders archive data into prompt lines while staying inside the char
@@ -570,34 +701,413 @@ function buildArchiveContext(data, budget = AI_CONTEXT_CHAR_BUDGET) {
   return lines.join('\n');
 }
 
-// Shared Groq call: low reasoning effort keeps gpt-oss-20b from burning the
-// completion budget on hidden reasoning before it writes the answer.
-async function askGroq(prompt, maxTokens = 1024) {
-  const chat = await groq.chat.completions.create({
-    messages: [{ role: 'user', content: prompt }],
-    model: 'openai/gpt-oss-20b',
-    max_tokens: maxTokens,
-    temperature: 0.2,
-    reasoning_effort: 'low',
+// Shared model call. Reasoning effort is kept low by default so a reasoning
+// model doesn't burn the completion budget on hidden reasoning before it
+// writes the answer — Explore uses 'high' (with a bigger max_tokens and a
+// smaller context) so it checks facts against the archive instead of assuming.
+// OpenRouter free models get rate-limited upstream unpredictably, so keep a
+// chain of models and try the next one when the current one is unavailable.
+const AI_MODELS = [...new Set([AI_MODEL, ...AI_FALLBACK_MODELS])];
+// OpenRouter reasoning models can be told to skip hidden reasoning; some
+// require it and are retried without the flag.
+const AI_REASONING_OFF = /openrouter\.ai/i.test(AI_BASE_URL) && process.env.AI_REASONING !== 'true';
+
+// Run the locally installed opencode CLI headlessly and return its text answer.
+// `opencode run --format json` streams one JSON event per line; the assistant's
+// reply is the concatenation of the "text" parts. This uses opencode's own
+// configured provider/model/auth, so no HTTP endpoint or API key is involved.
+//
+// Each call spins up a fresh opencode session on disk. `sessionSink`, when set,
+// collects those ids so the plan handler can report (and later delete) the
+// sessions a single plan created.
+let opencodeSessionSink = null;
+function askOpencode(prompt) {
+  return new Promise((resolve, reject) => {
+    const args = ['run', '--format', 'json'];
+    if (OPENCODE_MODEL) args.push('--model', OPENCODE_MODEL);
+    // The prompt goes on stdin, not argv: the planner's full-archive context is
+    // hundreds of KB and would blow past Windows' command-line length limit.
+    // A real .exe needs no shell; only fall back to a shell for a bare name
+    // (e.g. a shim on PATH).
+    const useShell = !/\.exe$/i.test(OPENCODE_BIN);
+
+    let child;
+    try {
+      child = spawn(OPENCODE_BIN, args, {
+        shell: useShell,
+        windowsHide: true,
+        env: process.env,
+      });
+    } catch (err) {
+      const e = new Error(`Could not start the opencode CLI (${err.message}).`);
+      e.status = 0;
+      return reject(e);
+    }
+
+    let stdout = '';
+    let stderr = '';
+    let done = false;
+    let sawFinish = false;
+    const finish = () => {
+      if (done) return;
+      done = true;
+      clearTimeout(timer);
+
+      const parsed = extractOpencodeText(stdout);
+      if (opencodeSessionSink && parsed.sessionID && !opencodeSessionSink.includes(parsed.sessionID)) {
+        opencodeSessionSink.push(parsed.sessionID);
+      }
+      if (parsed.text.trim()) return resolve(parsed.text);
+
+      const detail = (stderr || stdout).trim().slice(0, 400);
+      const e = new Error(
+        `The opencode CLI returned no answer${detail ? ` (${detail})` : ''}.`,
+      );
+      e.status = 0;
+      e.empty = true;
+      reject(e);
+    };
+
+    const timer = setTimeout(() => {
+      if (done) return;
+      done = true;
+      try {
+        child.kill();
+      } catch {
+        /* ignore */
+      }
+      const e = new Error('The local opencode CLI took too long to respond (over 240s).');
+      e.status = 0;
+      reject(e);
+    }, 240000);
+
+    child.stdout.on('data', (d) => {
+      stdout += d.toString();
+      // The stream's last line is the step_finish event; the process may linger
+      // (open server/plugins), so stop waiting for exit once the answer is in.
+      if (!sawFinish && stdout.includes('"type":"step_finish"')) {
+        sawFinish = true;
+        finish();
+        try {
+          child.kill();
+        } catch {
+          /* ignore */
+        }
+      }
+    });
+    child.stderr.on('data', (d) => {
+      stderr += d.toString();
+    });
+    child.on('error', (err) => {
+      if (done) return;
+      done = true;
+      clearTimeout(timer);
+      const e = new Error(`Could not run the opencode CLI at "${OPENCODE_BIN}" (${err.message}).`);
+      e.status = 0;
+      reject(e);
+    });
+    child.on('close', () => finish());
+
+    // Feed the prompt and close stdin so opencode knows the message is complete.
+    // Wait for the write to flush (backpressure) before ending.
+    child.stdin.on('error', () => {
+      /* a killed process can EPIPE the stdin — the close handler reports it */
+    });
+    if (!child.stdin.write(prompt)) {
+      child.stdin.once('drain', () => child.stdin.end());
+    } else {
+      child.stdin.end();
+    }
   });
-  if (chat.usage) {
-    console.log(`[ai] tokens: prompt=${chat.usage.prompt_tokens} completion=${chat.usage.completion_tokens}`);
+}
+
+// Delete an opencode session from disk (`opencode session delete <id>`).
+function runOpencodeSessionDelete(sessionID) {
+  return new Promise((resolve, reject) => {
+    const useShell = !/\.exe$/i.test(OPENCODE_BIN);
+    let child;
+    try {
+      child = spawn(OPENCODE_BIN, ['session', 'delete', sessionID], {
+        shell: useShell,
+        windowsHide: true,
+        env: process.env,
+      });
+    } catch (err) {
+      return reject(new Error(`Could not start the opencode CLI (${err.message}).`));
+    }
+    let stderr = '';
+    const timer = setTimeout(() => {
+      try {
+        child.kill();
+      } catch {
+        /* ignore */
+      }
+      reject(new Error('The opencode CLI took too long to delete the session.'));
+    }, 30000);
+    child.stderr.on('data', (d) => {
+      stderr += d.toString();
+    });
+    child.on('error', (err) => {
+      clearTimeout(timer);
+      reject(new Error(`Could not run the opencode CLI (${err.message}).`));
+    });
+    child.on('close', (code) => {
+      clearTimeout(timer);
+      if (code === 0) return resolve();
+      reject(new Error(stderr.trim().slice(0, 200) || `opencode exited with code ${code}.`));
+    });
+  });
+}
+
+// Parse the newline-delimited JSON event stream from `opencode run --format json`
+// and join the assistant's text parts. Also surfaces the session id (every event
+// carries it) so callers can track the sessions a run creates. Falls back to the
+// raw stdout if the output isn't the expected event stream.
+function extractOpencodeText(stdout) {
+  const parts = [];
+  let sessionID = '';
+  for (const line of String(stdout).split('\n')) {
+    const s = line.trim();
+    if (!s || s[0] !== '{') continue;
+    let ev;
+    try {
+      ev = JSON.parse(s);
+    } catch {
+      continue;
+    }
+    if (!sessionID && typeof ev?.sessionID === 'string') sessionID = ev.sessionID;
+    if (ev?.type === 'text' && typeof ev.part?.text === 'string') parts.push(ev.part.text);
   }
-  const answer = chat.choices?.[0]?.message?.content || '';
+  const text = parts.length ? parts.join('') : String(stdout).trim();
+  return { text, sessionID };
+}
+
+// One call to one specific model.
+async function askModel(model, prompt, maxTokens, reasoningEffort, extra, reasoningOff) {
+  const body = {
+    model,
+    messages: [{ role: 'user', content: prompt }],
+    temperature: 0.2,
+    max_tokens: maxTokens,
+    ...(extra || {}),
+  };
+  if (AI_SEND_REASONING && reasoningEffort) body.reasoning_effort = reasoningEffort;
+  if (reasoningOff) body.reasoning = { enabled: false };
+
+  let res;
+  const controller = new AbortController();
+  const timer = setTimeout(() => controller.abort(), 90000);
+  try {
+    res = await fetch(`${AI_BASE_URL}/chat/completions`, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        Authorization: `Bearer ${AI_API_KEY}`,
+      },
+      body: JSON.stringify(body),
+      signal: controller.signal,
+    });
+  } catch (err) {
+    const e = new Error(
+      err.name === 'AbortError'
+        ? `The AI endpoint at ${AI_BASE_URL} took too long to respond.`
+        : `Could not reach the AI endpoint at ${AI_BASE_URL} (${err.message}).`,
+    );
+    e.status = 0;
+    throw e;
+  } finally {
+    clearTimeout(timer);
+  }
+
+  const text = await res.text();
+  let data = null;
+  try {
+    data = JSON.parse(text);
+  } catch {
+    /* non-JSON body (e.g. an HTML gateway error) */
+  }
+
+  if (!res.ok) {
+    const message =
+      data?.error?.message || (text && text.slice(0, 400)) || `The AI endpoint returned ${res.status}.`;
+    const err = new Error(message);
+    err.status = res.status;
+    if (data?.error?.code) err.code = data.error.code;
+    throw err;
+  }
+
+  if (data?.usage) {
+    console.log(
+      `[ai] ${model} tokens: prompt=${data.usage.prompt_tokens} completion=${data.usage.completion_tokens}`,
+    );
+  }
+  const answer = data?.choices?.[0]?.message?.content || '';
   if (!answer.trim()) {
-    throw new Error('The AI returned an empty answer — try rephrasing the question.');
+    const used = data?.usage?.completion_tokens;
+    const reason = used ? `it spent all ${used} completion tokens on reasoning` : 'it returned nothing';
+    const e = new Error(`The AI returned an empty answer (${reason}) — try again or rephrase the request.`);
+    e.empty = true;
+    throw e;
   }
   return answer;
+}
+
+// Try each model in the chain: free models fail often (upstream 429s, empty
+// answers from a reasoning model), so a dead model just moves to the next one.
+async function askGroq(prompt, maxTokens = 1024, reasoningEffort = 'low', extra = {}) {
+  // opencode drives its own provider/model, so there is nothing to fall back
+  // through here — just hand the prompt to the local CLI.
+  if (AI_IS_OPENCODE) return askOpencode(prompt);
+
+  let lastErr = null;
+  for (let i = 0; i < AI_MODELS.length; i++) {
+    const model = AI_MODELS[i];
+    const more = i < AI_MODELS.length - 1;
+    if (AI_REASONING_OFF) {
+      try {
+        return await askModel(model, prompt, maxTokens, reasoningEffort, extra, true);
+      } catch (err) {
+        lastErr = err;
+        // A model that insists on reasoning refuses the flag — retry it without.
+        if (!/reasoning is mandatory/i.test(err.message || '')) {
+          if (more) continue;
+          throw err;
+        }
+      }
+    }
+    try {
+      return await askModel(model, prompt, maxTokens, reasoningEffort, extra, false);
+    } catch (err) {
+      lastErr = err;
+      if (more) continue;
+      throw err;
+    }
+  }
+  throw lastErr || new Error('No AI models are configured.');
+}
+
+// Groq's free tier allows ~8000 tokens per minute and 200k per day; one
+// high-reasoning call can use most of the minute on its own, so immediate
+// follow-ups are often rejected — the tokens free up within a minute, so
+// wait and retry instead of failing. (The daily cap can't be waited out in
+// seconds, so that fails fast.)
+//
+// Auto-drop policy: each effort gets a bounded completion budget. If a call
+// burns its whole budget on hidden reasoning without writing an answer, or
+// gets rejected as too large for the rate limit, reasoning drops to 'medium'
+// (which needs far fewer tokens) instead of burning the budget again.
+const RATE_LIMIT_RETEST_MS = 65000;
+const MAX_AI_ATTEMPTS = 4;
+const COMPLETION_BUDGET = { high: 6000, medium: 4000, low: 3000 };
+function isRateLimit(err) {
+  const status = err?.status || 0;
+  return status === 413 || status === 429 || /rate_limit_exceeded|tokens per minute|too large/i.test(err.message || '');
+}
+function isDailyLimit(err) {
+  return /tokens per day|TPD/i.test(err.message || '');
+}
+// Groq reports reset windows as durations ("1h30m19.008s", "45.2s") in the
+// error message and/or the x-ratelimit-reset-* headers. Turn whichever we
+// can find into seconds so the client can show a live countdown.
+function durationToSeconds(raw) {
+  if (raw == null) return null;
+  // Strip sentence punctuation the message regex may have swept in.
+  const s = String(raw).trim().replace(/^[.\s]+|[.\s]+$/g, '');
+  if (!s) return null;
+  if (/^\d+(\.\d+)?$/.test(s)) return parseFloat(s);
+  const m = /^(?:(\d+)h)?(?:(\d+)m)?(?:(\d+(?:\.\d+)?)s)?$/i.exec(s);
+  if (!m || (!m[1] && !m[2] && !m[3])) return null;
+  return Number(m[1] || 0) * 3600 + Number(m[2] || 0) * 60 + Number(m[3] || 0);
+}
+function parseRetryAfterSeconds(err) {
+  const fromMessage = /try again in ([0-9hms.]+)/i.exec(err.message || '');
+  const messageSeconds = fromMessage ? durationToSeconds(fromMessage[1]) : null;
+  let headerSeconds = null;
+  const headers = err.headers;
+  if (headers && typeof headers.get === 'function') {
+    for (const name of ['x-ratelimit-reset-tokens', 'x-ratelimit-reset-requests', 'retry-after']) {
+      const parsed = durationToSeconds(headers.get(name));
+      if (parsed != null) {
+        headerSeconds = parsed;
+        break;
+      }
+    }
+  }
+  const candidates = [messageSeconds, headerSeconds].filter((n) => n != null && n > 0);
+  if (candidates.length) return Math.ceil(Math.max(...candidates));
+  return isDailyLimit(err) ? 3600 : RATE_LIMIT_RETEST_MS / 1000;
+}
+function dropEffort(effort) {
+  return effort === 'high' ? 'medium' : effort === 'medium' ? 'low' : null;
+}
+async function askGroqResilient(prompt, reasoningEffort, maxTokensOverride, extra) {
+  // opencode drives its own provider/model. Its free Zen tier is only usable
+  // from inside the interactive app, so headless calls can 403 — when that (or
+  // any other failure) happens and a key is present, fall through to the HTTP
+  // backend so the planner stays usable.
+  if (AI_IS_OPENCODE) {
+    try {
+      return await askOpencode(prompt);
+    } catch (err) {
+      if (!OPENCODE_FALLBACK || !AI_API_KEY) throw err;
+      console.warn(`[ai] opencode failed (${err.message}) — falling back to ${AI_MODELS[0]}`);
+    }
+  }
+
+  let effort = reasoningEffort;
+  // A caller can hand a specific budget (e.g. the planner needs a lower
+  // reasoning effort but enough completion room to write a whole JSON plan).
+  let maxTokens = maxTokensOverride || COMPLETION_BUDGET[effort];
+  for (let attempt = 1; attempt <= MAX_AI_ATTEMPTS; attempt++) {
+    try {
+      return await askGroq(prompt, maxTokens, effort, extra);
+    } catch (err) {
+      if (isDailyLimit(err)) throw err;
+      // Too many tokens spent on reasoning with no answer — drop a level.
+      if (/empty answer/.test(err.message || '')) {
+        const next = dropEffort(effort);
+        if (!next) throw err;
+        console.log(`[ai] burned ${maxTokens} tokens on reasoning with no answer — dropping effort ${effort} -> ${next}`);
+        effort = next;
+        maxTokens = COMPLETION_BUDGET[effort];
+        continue;
+      }
+      if (isRateLimit(err) && attempt < MAX_AI_ATTEMPTS) {
+        // "Request too large" means this call is too heavy for the free
+        // tier's window — shrink it (lower reasoning = smaller completion)
+        // rather than waiting to send the same oversized request again.
+        const next = effort === 'high' ? dropEffort(effort) : null;
+        if (next) {
+          console.log(`[ai] rate limited — request too large at effort=${effort}, dropping to ${next} and waiting ${RATE_LIMIT_RETEST_MS / 1000}s`);
+          effort = next;
+          maxTokens = COMPLETION_BUDGET[effort];
+        } else {
+          console.log(`[ai] rate limited (free Groq tier) — waiting ${RATE_LIMIT_RETEST_MS / 1000}s and retrying`);
+        }
+        await new Promise((resolve) => setTimeout(resolve, RATE_LIMIT_RETEST_MS));
+        continue;
+      }
+      throw err;
+    }
+  }
+  throw new Error('The AI kept hitting its usage limit — wait a minute and try again.');
 }
 
 function sendAiError(res, tag, err) {
   console.error(`[ai] Groq ${tag} error:`, err.message);
   const status = err?.status || 0;
   if (status === 401) {
-    return res.status(500).json({ error: 'The AI API key was rejected. Check GROQ_API_KEY on the server.' });
+    return res.status(500).json({ error: 'The AI API key was rejected. Check AI_API_KEY (or GROQ_API_KEY) on the server.' });
   }
   if (status === 413 || status === 429 || /rate_limit_exceeded|tokens per minute|too large/i.test(err.message || '')) {
-    return res.status(429).json({ error: 'The AI hit its usage limit (free Groq tier). Wait a minute and try again.' });
+    const daily = isDailyLimit(err);
+    return res.status(429).json({
+      error: daily
+        ? "The AI's daily token budget is used up (free Groq tier) — it resets after a few hours. Try again later."
+        : 'The AI hit its usage limit (free Groq tier). Wait a minute and try again.',
+      retryAfterSeconds: parseRetryAfterSeconds(err),
+      limit: daily ? 'day' : 'minute',
+    });
   }
   res.status(500).json({ error: 'AI request failed: ' + (err.message || 'unknown error') });
 }
@@ -607,8 +1117,10 @@ app.post('/api/ai/answer', async (req, res) => {
   if (!question || typeof question !== 'string') {
     return res.status(400).json({ error: 'A question is required.' });
   }
-  if (!process.env.GROQ_API_KEY) {
-    return res.status(500).json({ error: 'AI is not configured. Set GROQ_API_KEY on the server.' });
+  if (!aiConfigured()) {
+    return res
+      .status(500)
+      .json({ error: 'AI is not configured. Set AI_API_KEY (or GROQ_API_KEY) on the server.' });
   }
 
   const context = buildArchiveContext(searchResult || {});
@@ -868,29 +1380,71 @@ function broadSearch(question) {
   return { entries: scoredEntries, relationships: scoredRels, storyLinks: scoredLinks };
 }
 
+// Keeps only recent, well-formed conversation turns (newest first, within a
+// total char cap) so follow-up questions resolve against what was asked
+// without pushing the prompt past Groq's free-tier token limit.
+const AI_HISTORY_MAX_TURNS = 8;
+const AI_HISTORY_CHAR_BUDGET = 1500;
+function sanitizeHistory(raw) {
+  if (!Array.isArray(raw)) return [];
+  const turns = [];
+  for (const t of raw) {
+    if (!t || (t.role !== 'user' && t.role !== 'assistant')) continue;
+    if (typeof t.text !== 'string' || !t.text.trim()) continue;
+    turns.push({ role: t.role, text: truncateForBudget(t.text, 400) });
+    if (turns.length >= AI_HISTORY_MAX_TURNS) break;
+  }
+  // Drop the oldest turns first when over the total budget.
+  let used = 0;
+  const kept = [];
+  for (let i = turns.length - 1; i >= 0; i--) {
+    used += turns[i].text.length;
+    if (used > AI_HISTORY_CHAR_BUDGET) break;
+    kept.unshift(turns[i]);
+  }
+  return kept;
+}
+
 app.post('/api/ai/explore', async (req, res) => {
   const { question } = req.body || {};
   if (!question || typeof question !== 'string') {
     return res.status(400).json({ error: 'A question is required.' });
   }
-  if (!process.env.GROQ_API_KEY) {
-    return res.status(500).json({ error: 'AI is not configured. Set GROQ_API_KEY on the server.' });
+  if (!aiConfigured()) {
+    return res
+      .status(500)
+      .json({ error: 'AI is not configured. Set AI_API_KEY (or GROQ_API_KEY) on the server.' });
   }
+
+  // Recent conversation turns so follow-ups ("what about their diet?")
+  // resolve against what was actually asked — capped so the prompt stays
+  // inside Groq's free-tier token limit.
+  const history = sanitizeHistory(req.body.history);
+  // Follow-up questions often drop the subject ("and their powers?"), so
+  // search using the current question plus the previous user turn.
+  const priorUser = [...history].reverse().find((t) => t.role === 'user');
+  const searchText = priorUser ? priorUser.text + ' ' + question : question;
 
   // Broad keyword search across the whole archive — wider than query mode so
   // vague questions like "who is the mc" still find relevant entries.
-  const results = broadSearch(question);
-  // Budget-aware context: keeps names/categories/descriptions within the
-  // free-tier token limit instead of blowing past it on broad matches.
-  // Details for the closest matches, PLUS a full index of every entry name
-  // in the archive — the AI sees the whole world, not just keyword hits.
-  const context = buildArchiveContext(results, 9000);
-  const archiveIndex = buildArchiveIndex();
-  const prompt = `You are an explorer of a worldbuilding archive. You are given TWO things: (1) a FULL INDEX of every entry in the archive (names only, grouped by category) and (2) DETAILED SEARCH RESULTS for the entries most relevant to the question. Use the index to spot entries the search results missed — if an entry name in the index looks relevant but has no details below, reason from its name and category, and name it in your answer as a lead. Answer the user's question using this data.
+  const results = broadSearch(searchText);
+  // Budget-aware context: details for the closest matches, PLUS a full index
+  // of every entry name in the archive — the AI sees the whole world, not
+  // just keyword hits. Budgets are kept tighter than the free-tier token cap
+  // allows so 'high' reasoning has room to run: reasoning tokens count
+  // against the same per-minute limit as the prompt and completion.
+  const context = buildArchiveContext(results, 8000);
+  const archiveIndex = buildArchiveIndex(13000);
+  const historyBlock = history.length
+    ? '=== CONVERSATION SO FAR ===\n\n' +
+      history.map((t) => (t.role === 'user' ? 'User: ' : 'Assistant: ') + t.text).join('\n') +
+      '\n\n'
+    : '';
+  const prompt = `You are an explorer of a worldbuilding archive. You are given: (1) the CONVERSATION SO FAR (if any), (2) a FULL INDEX of every entry in the archive (names only, grouped by category) and (3) DETAILED SEARCH RESULTS for the entries most relevant to the question. Use the index to spot entries the search results missed — if an entry name in the index looks relevant but has no details below, mention it as a lead by name only, never as a fact about the entry. Answer the user's question using this data.
 
 If the question is vague (e.g. "who is the mc"), interpret it in the most useful way based on what's in the data — look for main characters, protagonists, key figures, etc.
 
-=== QUESTION ===
+${historyBlock}=== QUESTION ===
 ${question}
 
 === FULL ARCHIVE INDEX (every entry, grouped by category) ===
@@ -901,22 +1455,501 @@ If the question is vague (e.g. "who is the mc"), interpret it in the most useful
 
 === RULES ===
 - Answer in a clear, conversational tone.
-- Only use facts from the INDEX and SEARCH RESULTS above.
+- Only use facts from the CONVERSATION, INDEX, and SEARCH RESULTS above.
+- The FULL ARCHIVE INDEX contains names only. Treat every name in it as a lead to check, never as a fact about the entry. State something as fact only if it appears in SEARCH RESULTS (or was already established in CONVERSATION). When an index name has no details, say so and present it as a lead, not as an answer.
+- If the question refers back to earlier in the conversation (an entry, a person, "it", "they", "that"), resolve the reference from CONVERSATION SO FAR first. Several archive entries can share words in their names or descriptions — make sure you are discussing the same entry the user asked about, and if it is ambiguous, name which entry you are using.
 - Cite which entry, relationship, or story link the information comes from.
+- Before stating any fact, check the SEARCH RESULTS (or CONVERSATION) text actually says it. If the text does not say it, do not state it as fact — never fill a gap with an assumption or knowledge from outside the data. A reasoned conclusion is allowed only when every step is a quoted fact and the conclusion is clearly labelled as your own, not canon (see the best-judgment rule below). Uncertainty is better than a confident wrong fact.
+- Attribute precisely: every ability, field, or fact belongs to the exact entry it is written under. Overview entries often list several items in one line — attach each item only to the name it is explicitly paired with (e.g. if an overview says "the Malakhim carry Veyn-Regen", Veyn-Regen belongs to the Malakhim alone). If an entry does not state a fact about itself, do NOT borrow it from a sibling, a list, or another entry — say the entry does not list it instead.
+- If an entry's own detail fields contradict each other, or two entries contradict each other on the same point, call it out explicitly: quote both sides, name both entries, and say the archive is inconsistent — do not silently pick one.
 - Do NOT stitch facts from different entries into new cause-and-effect the archive never states (e.g. don't turn "Veyn returns to the core when a demon dies" into "running out of Veyn kills a demon"). If two entries touch the question, present each fact separately and say the archive does not link them.
 - Quote numbers, prices, and exchange rates EXACTLY as the archive states them. Never approximate, round, or invent numeric values — if the archive says 100 Silver = 1 Gold, never say "roughly 10".
-- If the archive contains no explicit record that answers the question (no ranking, no stated "strongest", no title anyone is given), do NOT simply say there is no record. Reason from the documented facts and give a best-judgment answer, clearly labelled as your own conclusion, not canon — e.g. "There is no direct record, but by the archive's own logic X is the strongest because…". Name the specific entries/facts you reasoned from. Never invent facts to support the judgment.
+- If SEARCH RESULTS contain no explicit record that answers the question (no ranking, no stated "strongest", no title anyone is given) but DO contain documented facts about the subject, do NOT simply say there is no record. Reason from those documented facts and give a best-judgment answer, clearly labelled as your own conclusion, not canon — e.g. "There is no direct record, but by the archive's own logic X is the strongest because…". Name the specific entries/facts you reasoned from. Never invent facts to support the judgment. If instead nothing in the data concerns the question at all, say so plainly — do not force an answer out of unrelated entries.
 - When judging strength, power, or rank, weigh each candidate by its DOCUMENTED feats and abilities (e.g. what it can destroy, survive, or create) — not by its current status. An extinct or fallen race may have been the most powerful; "extinct" is not a weakness. When the question is about a whole category (e.g. races), cover EVERY entry listed under that category in the index, not just the ones the search surfaced.
 - If you genuinely cannot find anything relevant, say so plainly and point to the closest entries by name.
-- Keep the answer focused (roughly 150 words; a ranking or list may run a little longer if needed).
-- If a table would help (e.g. comparing several things), use valid GitHub-flavoured markdown: a header row, a separator row like | --- | --- |, then one row per item. Keep tables narrow (2–4 columns). Do not use HTML tags (<br>, <br/>, etc.) — use plain text.`;
+- Keep the answer focused (roughly 150 words; a ranking or list may run a little longer if needed). Answers are cut off if they run long, so stop before hitting the limit — do not enumerate the whole archive unless the user explicitly asks for a full list.
+- If a table would help (e.g. comparing several things), use valid GitHub-flavoured markdown: a header row, a separator row like | --- | --- |, then one row per item. Keep tables narrow (2–4 columns) and short (max ~8 rows) unless the user asks for more. Do not use HTML tags (<br>, <br/>, etc.) — use plain text.`;
 
   try {
-    const answer = await askGroq(prompt, 900);
+    // Starts at 'high' reasoning; askGroqResilient auto-drops to medium/low
+    // if a single call burns too many tokens without answering or exceeds
+    // the free tier's rate limit.
+    const answer = await askGroqResilient(prompt, 'high');
     res.json({ answer });
   } catch (err) {
     sendAiError(res, 'explore', err);
   }
+});
+
+// --- AI planning (local development only) ---------------------------------
+// The planner drafts NEW things for the world (a character, a place, a race, a
+// faction, an item, an event — even a whole category/section) using the
+// archive's own conventions, so a draft fits what is already written. Nothing
+// it produces is ever saved: drafts are ephemeral and shown only in the local
+// dev UI. Where a detail is the user's call rather than something the archive
+// answers, the planner asks instead of inventing it.
+
+// JSON mode guarantees syntactically valid JSON where the endpoint supports it
+// (the model still reasons first, which is why the resilience wrapper can drop
+// a level if it burns the whole budget thinking).
+const JSON_MODE = AI_JSON_MODE ? { response_format: { type: 'json_object' } } : {};
+
+// Models often wrap JSON in prose or code fences; pull the object back out.
+function parseAiJson(text) {
+  const raw = String(text || '').trim();
+  if (!raw) return null;
+  const fenced = raw.replace(/^```(?:json)?\s*/i, '').replace(/```\s*$/, '').trim();
+  for (const candidate of [fenced, raw]) {
+    try {
+      return JSON.parse(candidate);
+    } catch {
+      /* try the next shape */
+    }
+  }
+  const start = raw.indexOf('{');
+  const end = raw.lastIndexOf('}');
+  if (start !== -1 && end > start) {
+    try {
+      return JSON.parse(raw.slice(start, end + 1));
+    } catch {
+      /* give up */
+    }
+  }
+  return null;
+}
+
+function stringList(value, limit) {
+  if (!Array.isArray(value)) return [];
+  return value
+    .map((v) => (typeof v === 'string' ? v.trim() : ''))
+    .filter(Boolean)
+    .slice(0, limit);
+}
+
+// Models sometimes pad "empty" list fields with a literal "None"/"N/A".
+function isPlaceholder(value) {
+  return /^(none|n\/?a|nil|nothing|no concerns?|\(none\)|-)$/i.test(value.trim());
+}
+
+// What each category actually holds: entry count, the field labels its entries
+// use (most common first), and every existing name — so a draft follows the
+// world's own shape and never collides with a name already in use.
+function collectCategoryStats() {
+  const stats = new Map();
+  for (const e of loadWorld()) {
+    const cat = e.category || 'Uncategorized';
+    let s = stats.get(cat);
+    if (!s) {
+      s = { count: 0, labels: new Map(), names: [] };
+      stats.set(cat, s);
+    }
+    s.count += 1;
+    if (e.name) s.names.push(e.name);
+    for (const f of e.fields || []) {
+      const label = String(f.label || '').trim();
+      if (label) s.labels.set(label, (s.labels.get(label) || 0) + 1);
+    }
+  }
+  return stats;
+}
+
+function topLabels(labels, limit = 14) {
+  return [...labels.entries()]
+    .sort((a, b) => b[1] - a[1])
+    .slice(0, limit)
+    .map(([label, n]) => `${label} (${n})`)
+    .join(', ');
+}
+
+function buildStructureSummary(stats) {
+  return [...stats.entries()]
+    .sort((a, b) => a[0].localeCompare(b[0]))
+    .map(([cat, s]) => `${cat} (${s.count})`)
+    .join(', ');
+}
+
+// The model names a category loosely ("character", "races"); map that onto the
+// archive's real category name so the right conventions are used.
+function resolvePlanningCategory(kind, stats) {
+  const wanted = String(kind || '').trim().toLowerCase();
+  if (!wanted) return null;
+  for (const name of stats.keys()) if (name.toLowerCase() === wanted) return name;
+  for (const name of stats.keys()) {
+    const l = name.toLowerCase();
+    if (l.includes(wanted) || wanted.includes(l)) return name;
+  }
+  return null;
+}
+
+// Collapse a word to a comparable key: lowercase, letters/digits only, and no
+// trailing plural "s" ("Races" -> "race").
+function normalizeKey(word) {
+  return String(word || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '')
+    .replace(/s$/, '');
+}
+
+// Common worldbuilding nouns that don't share letters with their archive
+// category name (a "city" is a Location, a "faction" an Organization). Used
+// only to steer the FIELD CONVENTIONS hint; the model may override it.
+const CATEGORY_HINTS = [
+  [/\b(?:city|cities|town|village|place|location|region|land|map|area|ruin|dungeon|forest|realm|plane|world)\b/i, 'Locations'],
+  [/\b(?:faction|organization|organisation|guild|order|group|clan|army|military|company|sect)\b/i, 'Organizations'],
+  [/\b(?:item|weapon|armou?r|equipment|artifact|artefact|relic)\b/i, 'Items'],
+  [/\b(?:religio?n|god|deity|faith|worship|church|cult)\b/i, 'Religion'],
+  [/\b(?:event|festival|holiday|calendar|date|era|age)\b/i, 'Calendar'],
+  [/\b(?:race|species|people|folk)\b/i, 'Race Types'],
+  [/\b(?:skill|ability|abilities|spell|technique|magic|power)\b/i, 'Class Skills'],
+  [/\b(?:char(?:acter)?s?|person|hero|villain|protagonist|antagonist|npc|figure)\b/i, 'Characters'],
+  [/\b(?:monster|beast|creature)\b/i, 'Monsters'],
+  [/\b(?:law|laws|justice|crime|punish|rule)\b/i, 'Laws & Justice'],
+  [/\b(?:culture|custom|tradition|etiquette)\b/i, 'Culture'],
+  [/\b(?:economy|money|coin|trade|market|currency|price|cost)\b/i, 'Economy'],
+];
+
+// Work out which archive category a request is about WITHOUT spending an AI
+// call: match the words the user typed against the category names, then against
+// the synonym hints. Returning null is fine — the model still sees the full
+// ARCHIVE STRUCTURE and picks the right conventions itself.
+function pickPlanningCategory(request, stats) {
+  const cats = [...stats.keys()];
+  const lower = String(request || '').toLowerCase();
+  const wordKeys = new Set(
+    lower
+      .split(/[^a-z0-9]+/)
+      .map(normalizeKey)
+      .filter(Boolean),
+  );
+
+  // 1. An exact category name (plural-insensitive) in the request text.
+  for (const name of cats) {
+    const key = normalizeKey(name);
+    if (key && wordKeys.has(key)) return name;
+  }
+
+  // 2. A category name that shares a meaningful word with the request
+  //    ("race" -> "Race Types", "character" -> "Characters").
+  for (const name of cats) {
+    const key = normalizeKey(name);
+    if (!key) continue;
+    for (const w of wordKeys) {
+      if (w.length >= 4 && (key.startsWith(w) || key.includes(w))) return name;
+    }
+  }
+
+  // 3. A synonym hint whose target category exists in the archive.
+  for (const [re, target] of CATEGORY_HINTS) {
+    if (re.test(lower) && stats.has(target)) return target;
+  }
+
+  return null;
+}
+
+function buildPlanningContext({ kind, results, stats, full = true }) {
+  const lines = [];
+  lines.push('ARCHIVE STRUCTURE (categories and entry counts):');
+  lines.push(buildStructureSummary(stats));
+  lines.push('');
+
+  const category = resolvePlanningCategory(kind, stats);
+  if (category) {
+    const s = stats.get(category);
+    lines.push(`FIELD CONVENTIONS FOR "${category}" (labels its entries use, with counts):`);
+    lines.push(topLabels(s.labels) || '(no fields written yet)');
+    lines.push('');
+    lines.push(`EXISTING "${category}" NAMES (never reuse these): ${truncateForBudget(s.names.join(', '), 700)}`);
+    lines.push('');
+  }
+
+  // The whole archive gives the planner general knowledge of the world — worth
+  // its size when drafting. The triage pass only decides what to ask, so it
+  // skips the digest and keeps the call cheap.
+  if (full) {
+    const digest = buildArchiveDigest();
+    if (digest) {
+      lines.push(digest);
+      lines.push('');
+    }
+  }
+
+  // Then the entries most relevant to this request, in full detail.
+  lines.push('RELATED ENTRIES (closest matches for this request, full detail):');
+  lines.push(buildArchiveContext(results, 3600));
+  return lines.join('\n');
+}
+
+function normalizePlan(data, request) {
+  const rawSections = Array.isArray(data?.sections)
+    ? data.sections
+        .map((s) => ({
+          heading: String(s?.heading || '').trim(),
+          points: stringList(s?.points, 12),
+        }))
+        .filter((s) => s.heading && s.points.length)
+    : [];
+
+  // Safety net: the model is told never to leave "[OPEN — …]" / "[NEW NAME]"
+  // style placeholders in a draft, but small models do it anyway. Pull those
+  // brackets out of the text and surface them as questions instead, so an open
+  // decision can never sit in the plan disguised as content.
+  const bracketQuestions = [];
+  const cleanPoints = (points) =>
+    points
+      .map((p) => {
+        // Only treat token-style brackets as placeholders ("[OPEN — …]",
+        // "[NEW NAME]", "[TBD]"), never legitimate brackets inside prose.
+        const found = [...p.matchAll(/\[([A-Z][^\]]{1,120})\]/g)].map((m) => m[1].trim());
+        for (const inner of found) {
+          if (!inner) continue;
+          const bare = inner.replace(/^(open|tbd|to decide)\s*[—:-]\s*/i, '').trim();
+          bracketQuestions.push(
+            bare ? `Decide: ${bare}` : 'Fill in a detail you left open in the draft',
+          );
+        }
+        return p
+          .replace(/\s*\[[A-Z][^\]]{1,120}\]/g, '')
+          .replace(/^([A-Za-z ]{2,30}):\s*$/, '')
+          .replace(/\s{2,}/g, ' ')
+          .trim();
+      })
+      .filter(Boolean);
+
+  const sections = rawSections
+    .map((s) => ({ heading: s.heading, points: cleanPoints(s.points) }))
+    .filter((s) => s.points.length);
+
+  let questions = Array.isArray(data?.questions)
+    ? data.questions
+        .map((q, i) => ({
+          id: String(q?.id || `q${i + 1}`),
+          question: String(q?.question || '').trim(),
+          why: String(q?.why || '').trim(),
+        }))
+        .filter((q) => q.question)
+        .slice(0, 4)
+    : [];
+  // Fold in any placeholder we had to strip, so it still reaches the user.
+  for (const bq of bracketQuestions) {
+    if (questions.length >= 4) break;
+    if (questions.some((q) => q.question.toLowerCase() === bq.toLowerCase())) continue;
+    questions.push({ id: `bq${questions.length + 1}`, question: bq, why: 'Left open in the draft' });
+  }
+
+  const summary = String(data?.summary || '').trim();
+  if (!summary && !sections.length) {
+    console.error('[ai] unparseable draft raw:', String(data?._raw || '').slice(0, 1200));
+    throw new Error('The planner returned an unreadable draft — try again or rephrase the request.');
+  }
+  return {
+    thinking: String(data?.thinking || '').trim(),
+    title: String(data?.title || '').trim() || truncateForBudget(request, 80),
+    summary,
+    sections,
+    questions,
+    sources: stringList(data?.sources, 12).filter((s) => !isPlaceholder(s)),
+    risks: stringList(data?.risks, 6).filter((r) => !isPlaceholder(r)),
+  };
+}
+
+// Reads the triage step's verdict: whether the model wants the user's decisions
+// first, plus the questions themselves. It only counts as "needs input" when
+// there are actually questions to ask.
+function normalizeTriage(data) {
+  const questions = (Array.isArray(data?.questions) ? data.questions : [])
+    .map((q, i) => ({
+      id: typeof q?.id === 'string' && q.id.trim() ? q.id.trim() : `q${i + 1}`,
+      question: typeof q?.question === 'string' ? q.question.trim() : '',
+      why: typeof q?.why === 'string' ? q.why.trim() : '',
+    }))
+    .filter((q) => q.question)
+    .slice(0, 4);
+  const thinking = typeof data?.thinking === 'string' ? data.thinking.trim() : '';
+  // Any question at all means the user should be consulted before drafting —
+  // the model's own "needsInput" flag is advisory only (it sometimes says false
+  // while still listing questions, which is exactly the "already planned it"
+  // behaviour we don't want).
+  const needsInput = questions.length > 0;
+  return { needsInput, thinking, questions: needsInput ? questions : [] };
+}
+
+// Planning happens in two steps so the user's answers actually shape the draft:
+//   1. Triage — the model decides whether it can draft right away or needs the
+//      user's own decisions first. If it needs them, we return the questions
+//      ALONE and draft nothing, so nothing is "already planned" before the
+//      answers arrive.
+//   2. Draft — once the user has answered (or waived) the questions, the model
+//      writes the full plan with those decisions fixed.
+// Everything except the model calls (structure, conventions, matching entries)
+// is resolved locally, so each step is one small request.
+app.post('/api/ai/plan', async (req, res) => {
+  const request = truncateForBudget(req.body?.request, 600);
+  if (!request) {
+    return res.status(400).json({ error: 'Describe what you want to plan.' });
+  }
+  if (!aiConfigured()) {
+    return res
+      .status(500)
+      .json({ error: 'AI is not configured. Set AI_API_KEY (or GROQ_API_KEY) on the server.' });
+  }
+
+  // Decisions the user made, fed back in on the second pass. They are fixed
+  // inputs, so the draft must honour them. Their presence (even an empty list)
+  // means "the user has already had the questions" — skip triage and draft.
+  const answersProvided = Array.isArray(req.body?.answers);
+  const answers = (answersProvided ? req.body.answers : [])
+    .map((a) => ({
+      question: typeof a?.question === 'string' ? a.question.trim() : '',
+      answer: typeof a?.answer === 'string' ? a.answer.trim() : '',
+    }))
+    .filter((a) => a.question && a.answer)
+    .slice(0, 4);
+  const answersBlock = answers.length
+    ? '=== DECISIONS THE USER ALREADY MADE (treat as fixed) ===\n' +
+      answers
+        .map((a) => `- ${truncateForBudget(a.question, 140)} → ${truncateForBudget(a.answer, 240)}`)
+        .join('\n') +
+      '\n\n'
+    : '';
+
+  const stats = collectCategoryStats();
+  const results = broadSearch(request);
+  const category = pickPlanningCategory(request, stats);
+  const context = buildPlanningContext({ kind: category, results, stats });
+  // Triage only decides what to ask, so it reads a lighter context (no full
+  // archive digest) — much cheaper, and it still sees conventions + names.
+  const triageContext = buildPlanningContext({ kind: category, results, stats, full: false });
+  const kindBlock = category
+    ? `=== LIKELY CATEGORY ===\nThis plan most resembles "${category}" — its field conventions and existing names are in the context below. If ARCHIVE STRUCTURE lists a category that fits better, follow that one's style instead (say which in "thinking").\n\n`
+    : '=== LIKELY CATEGORY ===\nNo category obviously fits — use ARCHIVE STRUCTURE to pick the closest style, or treat this as a brand-new section and say so in "thinking".\n\n';
+
+  const triagePrompt = `You are the planning assistant for a worldbuilding archive. The user wants to add something NEW:
+
+"${request}"
+
+Work through this before you answer:
+1. WHAT IS IT? Say in your head what kind of thing this is (a character, a place, an item, a race, a faction, an event…).
+2. WHICH CATEGORY? Decide which archive category it belongs to, using ARCHIVE STRUCTURE below. If it straddles two categories, pick the closest and say which in your thinking.
+3. WHAT'S ALREADY SETTLED, AND WHAT'S OPEN? Read the conventions and existing entries below. For each detail: if the archive settles it, it is NOT a question. If the archive is silent AND it is the user's creative call, it IS a question. Never ask about a fact you can read below.
+4. ASK THE OPEN DECISIONS THAT WOULD ACTUALLY CHANGE THE DRAFT — the creative calls only the user can make: motive, tone, name, power level, scope, or which existing entries it ties to.
+
+Ask whenever even ONE such decision exists — and for a vague creative request (e.g. "an evil character", "a new race", "a city") you MUST ask, so the draft can be built smartly around the answers. Return no questions only when the request is already specific about what it is, its role, and how it fits into the world.
+
+Return ONLY JSON (no prose, no code fences):
+{
+  "thinking": "1-2 sentences: what this is, which category it fits, and the open decisions you need from the user",
+  "questions": [ { "id": "q1", "question": "under 20 words — open-ended, no suggested answers", "why": "a few words" } ]
+}
+Ask 2-4 questions whenever any decision would shape the draft; use "questions": [] only when the request is already specific enough to draft well as-is.
+
+${kindBlock}=== ARCHIVE CONTEXT ===
+${triageContext}`;
+
+  const prompt = `You are the planning assistant for a worldbuilding archive. The user wants to add something NEW — a character, place, race, faction, item, event, relationship, or a whole category. Work the plan the same way every time, step by step. Nothing you write is saved: this is a draft for the user to react to.
+
+STEP 1 — WHAT IS IT, AND WHICH CATEGORY? Decide what kind of thing this is, then which archive category it belongs to (use ARCHIVE STRUCTURE below; the LIKELY CATEGORY line is a hint you may override — say which you chose in "thinking").
+STEP 2 — HOW DOES THAT CATEGORY READ? Follow the category's FIELD CONVENTIONS: build the draft from the fields/sections entries in that category actually have, in the same spirit, tone, scale, and vocabulary. An entry that uses labels the world never uses is wrong.
+STEP 3 — CHECK THE NEIGHBOURS AND THE EDGES. Look for a name collision (never reuse a name from EXISTING NAMES) and for how it fits: does it slot into the existing web cleanly, or clash with something established?
+STEP 4 — SEPARATE CANON FROM OPEN DECISIONS. For each detail: KNOWN = the archive settles it → use it and cite the source; OPEN = the archive is silent and it is the user's creative call → do not invent it, ask (see STEP 5). Never quietly decide something and write it as established.
+STEP 5 — ASK ONLY THE DECISIONS THAT WOULD CHANGE THE DRAFT. Usually 2-4, and only genuinely new ones; never repeat anything under DECISIONS THE USER ALREADY MADE, and normally use [] once the user has answered.
+STEP 6 — DRAFT IT IN THE CATEGORY'S SHAPE. Use only facts from the archive (STEP 4), honour the user's answers, and keep open things open.
+STEP 7 — FLAG THE RISKS AND THE SOURCES. Name real conflicts with existing entries and gaps the user still needs to decide ("risks"), and list each existing entry you drew a fact from ("sources").
+
+Return ONLY JSON (no prose, no code fences):
+{
+  "thinking": "2-4 first-person sentences: what this is, which category you chose, how the category reads, and how you handled it",
+  "title": "short title for this plan",
+  "summary": "2-3 sentences describing the draft",
+  "sections": [ { "heading": "…", "points": ["…", "…"] } ],
+  "questions": [ { "id": "q1", "question": "under 20 words — open-ended, no suggested answers", "why": "…" } ],
+  "sources": ["names of existing entries you took facts from"],
+  "risks": ["the entry it may conflict with, or the gap to decide"]
+}
+
+HOW TO DRAFT:
+- Follow the category's FIELD CONVENTIONS: give the draft the fields/sections entries in that category actually have, in the same spirit. Keep the archive's tone, scale, and vocabulary.
+- Facts about the existing world must come ONLY from RELATED ENTRIES; list each entry you used in "sources". Never invent existing canon.
+- Never decide, as if it were canon, anything the archive does not answer and the user has not answered. Leave it open or ask about it in "questions". Never present a guess as established.
+- Attribute precisely: a detail belongs to the entry it is written under — never borrow one from a sibling entry or an overview list.
+- "questions" is ONLY for a genuinely NEW decision you could not have asked earlier; once the user has answered their questions you normally use []. Ask at most 4, only where an answer really changes the draft, each under 20 words, and never repeat anything under DECISIONS THE USER ALREADY MADE.
+- "risks" names concrete conflicts with existing entries or gaps the user should decide; use [] if none.
+- Keep the draft compact: at most 6 sections, at most 5 points each, each point one line.
+- This plan is for something NEW: give it its own new name. Never reuse a name from the EXISTING NAMES list, and never write invented facts onto an existing entry — if the user seems to want an existing entry extended instead, say so in "risks" and leave the decision to them.
+- The draft MUST include the new entry's name as its own point under the first section, formatted exactly "Name: <the name>" (matching how existing entries show a Name). If the user asked you to pick the name, or gave no name, INVENT a fitting new name yourself and put it there — never leave the name blank and never ask the user for it. A monster draft with no "Name:" line is wrong.
+- NEVER write a placeholder into the draft. No "[NEW NAME]", no "[OPEN — …]", no "[user to describe]", no "[TBD]", no blank "…". If you do not know a value because the archive is silent and the user has not decided it, do NOT leave a bracket in the text — either (a) leave that detail out entirely, or (b) ask about it in "questions". A bracket in the final draft is always wrong.
+- Every value you commit in a section (a name, a Realm, a Location, a Threat Level…) must be either a real fact from RELATED ENTRIES or something the user stated in DECISIONS. If neither, it belongs in "questions", not as an invented answer.
+- If the user's own decision text corrects your assumption (e.g. they say a thing is not a realm but part of a forest), follow the user's correction exactly and use it in the draft; never keep the assumption you had.
+- Never claim anything was added to the archive; this is a proposal only.
+- "risks" must name real concerns only — never write "None"; use [] when there is nothing.
+
+=== THE USER'S REQUEST ===
+${request}
+
+${answersBlock}=== ARCHIVE CONTEXT ===
+${context}`;
+
+  try {
+    // Collect the opencode session ids this request creates (triage + draft),
+    // so the client can offer to delete them. Harmless for the HTTP backend,
+    // which creates no sessions.
+    const planSessions = [];
+    opencodeSessionSink = planSessions;
+
+    // Step 1 — triage: only on the very first pass (no answers sent yet). If
+    // the model needs the user's decisions, return the questions alone and
+    // draft nothing, so nothing is "already planned" before the user answers.
+    if (!answersProvided) {
+      const triageRaw = await askGroqResilient(triagePrompt, 'low', 900, JSON_MODE);
+      const triage = normalizeTriage(parseAiJson(triageRaw));
+      if (triage.needsInput) {
+        return res.json({
+          needsInput: true,
+          thinking: triage.thinking,
+          title: '',
+          summary: '',
+          sections: [],
+          questions: triage.questions,
+          sources: [],
+          risks: [],
+          sessions: planSessions,
+        });
+      }
+    }
+
+    // Step 2 — draft: the model both reasons about the world and emits the
+    // whole JSON plan. Reasoning stays 'low' (the archive context does the
+    // heavy lifting) while the JSON gets plenty of room to land.
+    const raw = await askGroqResilient(prompt, 'low', 3000, JSON_MODE);
+    const plan = normalizePlan({ ...parseAiJson(raw), _raw: raw }, request);
+    res.json({ ...plan, needsInput: false, sessions: planSessions });
+  } catch (err) {
+    sendAiError(res, 'plan', err);
+  } finally {
+    opencodeSessionSink = null;
+  }
+});
+
+// Delete the opencode session(s) a plan created on disk. The planner is
+// stateless, so this simply shells out to `opencode session delete <id>` for
+// each id the client reports. Only meaningful for the opencode backend.
+app.post('/api/ai/plan/session/delete', async (req, res) => {
+  if (!AI_IS_OPENCODE) {
+    return res.json({ deleted: [] });
+  }
+  const ids = (Array.isArray(req.body?.sessions) ? req.body.sessions : [])
+    .filter((s) => typeof s === 'string' && /^[A-Za-z0-9_-]+$/.test(s))
+    .slice(0, 20);
+  const deleted = [];
+  const failed = [];
+  for (const id of ids) {
+    try {
+      await runOpencodeSessionDelete(id);
+      deleted.push(id);
+    } catch (err) {
+      failed.push({ id, error: err.message });
+    }
+  }
+  res.json({ deleted, failed });
 });
 
 if (require.main === module) {
@@ -926,4 +1959,4 @@ if (require.main === module) {
 }
 
 // Exported for tests/debug tooling (requiring this module does not start the server).
-module.exports = { extractKeywords, broadSearch, buildArchiveContext, buildArchiveIndex };
+module.exports = { extractKeywords, broadSearch, buildArchiveContext, buildArchiveIndex, parseRetryAfterSeconds, durationToSeconds, parseAiJson, collectCategoryStats, resolvePlanningCategory, pickPlanningCategory, buildPlanningContext, normalizePlan, normalizeTriage };
