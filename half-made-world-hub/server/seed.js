@@ -7226,7 +7226,7 @@ module.exports = [
     "Angels and demons are born to Veyn — their aura, halo or miasma, and every innate skill run on it — and Ren, the inner energy drawn from a body’s own Vitality, does not come naturally to them. But it is not impossible. An angel or demon can unlock a Ren Organ: a channel within the body that lets them draw on their own Vitality and use Ren the way a human or swordsman does. The cost is absolute — while the Ren Organ is open, the user cannot touch any form of Veyn at all. The moment Veyn and Ren meet inside the same body, the incompatibility rule applies and can kill them. This means an angel or demon who walks the Ren path must fight without their aura, their halo or miasma, and every innate Veyn skill they were born with, until they close the organ and return to Veyn.",
     [
       { label: "Unlock", value: "An angel or demon can unlock a Ren Organ to channel Ren from their own Vitality." },
-      { label: "Cost", value: "While the organ is open, the user cannot touch any form of Veyn — not even their own aura or innate skills." },
+      { label: "Cost", value: "While the Ren Organ is open, the user cannot touch any form of Veyn — not even their own aura or innate skills. If an angel or demon has cut their Veyn Channels, the damage is too severe for their Veyn Channels to reopen; once the Ren path is taken via severing, they cannot return to Veyn." },
       { label: "Rule", value: "Mixing Veyn and Ren in one body applies the incompatibility rule and can kill." },
     ],
     ["ren organ", "ren", "veyn", "angel", "demon", "incompatibility"],
