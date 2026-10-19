@@ -17,6 +17,8 @@ _This is the view-only archive hosted on GitHub Pages. It is generated automatic
 
 This build is read-only. There are no add, edit, or delete controls — the “Add Entry”, “Add Relationship”, “Add Link”, edit, and delete buttons are removed from the view-only build. Keyboard shortcuts for adding entries are also disabled, and any attempt to use them shows a toast informing you that this is a view-only build.
 
+The **Planning Room** (an AI view that drafts new entries) is also local-dev only — its nav button, keyboard shortcut, and view are entirely absent from this build, so it is not reachable here.
+
 ## How it stays in sync with the world data
 
 The deployed app loads a snapshot bundled at build time from these files:
@@ -59,11 +61,14 @@ This runs the snapshot prebuild step first, then builds the Vite production bund
 
 ## AI integration
 
-The `/api/ai/answer` endpoint uses Groq to answer questions based on archive search results. The model is configured in `server/index.js`.
+The **Query Chat** view answers questions through the server's `/api/ai/answer` and `/api/ai/explore` endpoints. The server talks to any OpenAI-compatible chat-completions endpoint, chosen by environment variables (see `.env.example`):
 
-As of the last update, the active model is **`openai/gpt-oss-20b`**.
+- **Local `opencode` CLI** — `AI_PROVIDER=opencode` drives the `opencode` binary on your machine; no API key needed. It uses whatever model and auth opencode itself is configured with.
+- **Any HTTP provider** — set `AI_BASE_URL`, `AI_MODEL`, and `AI_API_KEY` (Groq is the default; OpenRouter and local Ollama/LM Studio also work). `AI_FALLBACK_MODELS` tries extra models when a free one is rate-limited.
 
-The previously used model (`llama-3.1-8b-instant`) was deprecated by Groq on **August 16, 2026** and is no longer available. If the AI stops working in the future, check the [Groq model deprecation page](https://console.groq.com/docs/deprecations) for the current replacement.
+The earlier fixed model (`llama-3.1-8b-instant`, then `openai/gpt-oss-20b` on Groq) is no longer hard-wired — the active model is whatever `AI_MODEL` (or opencode) is set to. If a Groq model stops working, check the [Groq model deprecation page](https://console.groq.com/docs/deprecations) for the current replacement.
+
+The **Planning Room** — a local-dev-only view that drafts brand-new entries into the archive — uses the same backend through `/api/ai/plan`, and is not available in this read-only build.
 
 ## Data format
 

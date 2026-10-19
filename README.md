@@ -91,9 +91,43 @@ hierarchy.
 
 A **Query Chat** view lets you ask the archive plain-language questions. It first reduces the
 question to a search term, surfaces matching entries, and — when a key is configured — answers
-using Groq (`openai/gpt-oss-20b`) via the server's `/api/ai/answer` and `/api/ai/explore` routes.
-Set `GROQ_API_KEY` in the server environment to enable the AI answers; the archive search works
+using the server's `/api/ai/answer` and `/api/ai/explore` routes. Set `AI_API_KEY` (or
+`GROQ_API_KEY`) in the server environment to enable the AI answers; the archive search works
 without a key.
+
+## Planning Room (AI, local dev only)
+
+A **Planning Room** view drafts *new* entries — characters, places, races, monsters, factions,
+items, even whole new categories — that fit the world already written. It reads the whole archive
+(its structure, field conventions, and every existing entry) so new material matches the archive's
+tone and canon.
+
+The flow is questions-first: the planner asks the open creative decisions it needs (motive, tone,
+name, scope, which existing entries it ties to), then writes a full draft once you answer — or
+draft it its own way. Drafts are **never saved**: they are ephemeral proposals shown only in the
+local dev UI, and where a detail is your call rather than something the archive answers, the
+planner asks instead of inventing it.
+
+Planning is **gated to local development** (`import.meta.env.DEV`): the nav button, shortcut `6`,
+and the view itself are absent from the deployed read-only build.
+
+### Choosing the AI backend
+
+The server talks to any OpenAI-compatible chat-completions endpoint, configured via environment
+variables (see `.env.example`):
+
+- **Local `opencode` CLI** — set `AI_PROVIDER=opencode` to drive the `opencode` binary already
+  installed on your machine (`opencode run --format json`). It uses whatever model/auth opencode is
+  configured with, so no API key is needed here. `OPENCODE_MODEL` pins a model; `OPENCODE_BIN`
+  overrides the binary path. Because opencode's free tier only works from inside the interactive
+  app, headless calls may fail — the server then falls back to the HTTP backend below unless
+  `OPENCODE_FALLBACK=false`.
+- **Any HTTP provider** — set `AI_BASE_URL`, `AI_MODEL`, and `AI_API_KEY` (Groq is the default;
+  OpenRouter and local Ollama/LM Studio all work). `AI_FALLBACK_MODELS` tries additional models in
+  order when a free model is rate-limited.
+
+The full-archive digest the planner reads is bounded by `AI_FULL_CONTEXT_BUDGET` (default
+`700000` characters; set `0` to fall back to keyword matches only).
 
 ## World systems (as captured in the archive)
 
@@ -146,5 +180,7 @@ Same CRUD shape as relationships, under `/api/story-links`.
 | Method | Route | Description |
 | --- | --- | --- |
 | GET | `/api/search` | Full-text search across the archive (`?q=…`) |
-| POST | `/api/ai/answer` | Answer a natural-language question from the archive contents (Groq) |
-| POST | `/api/ai/explore` | AI-guided exploration/discovery across the archive (Groq) |
+| POST | `/api/ai/answer` | Answer a natural-language question from the archive contents |
+| POST | `/api/ai/explore` | AI-guided exploration/discovery across the archive |
+| POST | `/api/ai/plan` | Draft a new entry that fits the archive (questions-first; local dev only) |
+| POST | `/api/ai/plan/session/delete` | Delete the temporary AI session file(s) a plan created on disk |
