@@ -2689,7 +2689,7 @@
     "category": "Rules & Notes",
     "name": "Veyn & Ren Incompatibility",
     "subtitle": "You can never hold both",
-    "description": "Joining magic and Bladesinger is not possible since Veyn and Ren are not compatible; you can’t have Ren and Veyn together in your body since it can kill you due to their extreme incompatibility. The one exception is Smithing — a Smith may draw on both during the forge, but can never learn any skill outside Smithing and the forging of weapons. Angels and demons can unlock a Ren Organ to channel Ren, but the same rule applies: while the organ is open they cannot touch any Veyn, or the incompatibility kills them.",
+    "description": "Joining magic and Bladesinger is not possible since Veyn and Ren are not compatible; you can’t have Ren and Veyn together in your body since it can kill you due to their extreme incompatibility. The one exception is Smithing — a Smith may draw on both during the forge, but can never learn any skill outside Smithing and the forging of weapons. Angels and demons can unlock a Ren Organ to channel Ren, but the same rule applies: while the organ is open they cannot touch any Veyn, or the incompatibility kills them.\n\nThere is a single way across the line. A being born with Veyn Channels also carries one dormant Ren Channel, and it opens only when the Veyn Channels are cut away. That is the only route from Veyn to Ren: the Veyn is destroyed for good, the dormant channel opens in its place, and because the two can never coexist the choice is absolute. A person who crosses this way must reclass from their Veyn class into a Ren class.",
     "fields": [
       {
         "label": "Type",
@@ -2698,6 +2698,10 @@
       {
         "label": "Description",
         "value": "Holy Energy and Corrupted Veyn cannot coexist without a stabilizer. Using both causes Saturation Sickness. Only Hybrid form channels both without harm."
+      },
+      {
+        "label": "Crossing Over",
+        "value": "A Veyn-born person can cut their Veyn Channels to open the dormant Ren Channel and become a Ren user — but the Veyn is lost forever, and the switch requires a reclass. See Cross-Class Skills."
       }
     ],
     "tags": [
@@ -2706,7 +2710,7 @@
       "incompatible"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-19T00:00:00.000Z"
   },
   {
     "id": "seed-077",
@@ -17772,7 +17776,7 @@
     "category": "Rules & Notes",
     "name": "Cross-Class Skills",
     "subtitle": "Why most people stick to what the altar gave them",
-    "description": "Every awakened person is assigned one class at the Sundering Altar, and that class is where their path begins. Humans, unlike angels and demons, can in theory learn the skills of any class — but in the world as it is, learning a skill outside your own class is extremely difficult. The body’s Veyn is shaped to its class at awakening, and forcing it to learn a foreign discipline is slow, painful, and usually fails. Most humans who try give up. So in this era of the world, people stick to what the altar gave them — not because they are forbidden to reach for more, but because the effort is rarely worth it.",
+    "description": "Every awakened person is assigned one class at the Sundering Altar, and that class is where their path begins. Humans, unlike angels and demons, can in theory learn the skills of any class — but in the world as it is, learning a skill outside your own class is extremely difficult. The body’s Veyn is shaped to its class at awakening, and forcing it to learn a foreign discipline is slow, painful, and usually fails. Most humans who try give up. So in this era of the world, people stick to what the altar gave them — not because they are forbidden to reach for more, but because the effort is rarely worth it.\n\nThere is one swap the body itself can make: trading Veyn for Ren. A being born with Veyn Channels carries a dormant Ren Channel, opened by cutting the Veyn away (see Veyn Channels). A person who makes that trade must reclass, because the class they held was a Veyn-based one — they are officially reassigned to a Ren class that matches their new energy. If, by contrast, a person's class is already Ren-based, no reclass is needed: cutting the Veyn changes the energy they can use, not the class they belong to.",
     "fields": [
       {
         "label": "The fact",
@@ -17781,6 +17785,14 @@
       {
         "label": "Why",
         "value": "The body’s Veyn is shaped to its class at awakening; forcing a foreign discipline is slow, painful, and usually fails."
+      },
+      {
+        "label": "Veyn-to-Ren Switch",
+        "value": "Trading Veyn for Ren means cutting the Veyn Channels to open the dormant Ren Channel; because the old class was Veyn-based, the person must reclass into a Ren class."
+      },
+      {
+        "label": "When No Reclass Is Needed",
+        "value": "If a person's class is already Ren-based, cutting the Veyn Channels requires no reclass."
       }
     ],
     "tags": [
@@ -17791,7 +17803,7 @@
       "cross-class"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-19T00:00:00.000Z"
   },
   {
     "id": "seed-573",
@@ -20074,11 +20086,15 @@
     "category": "Prisons",
     "name": "Channel Severing",
     "subtitle": "The magical equivalent of the death penalty",
-    "description": "Channel Severing is the most feared punishment in the Half-Made World — worse than death for any fighter.\n\nChannel Severing permanently destroys a person's Veyn or Ren channels — the internal pathways that allow them to use magic. Once severed, the channels cannot regenerate. The person becomes permanently unable to use any magical abilities, effectively reducing them to G-rank (no Veyn connection).\n\nThe process is performed by high-rank Exorcists using the Rite of Severance — a brutal procedure that involves channeling holy energy directly into the victim's channels, burning them from the inside out. The victim is conscious throughout the process and can feel their magic dying. The pain is described as 'having your soul burned away piece by piece.'\n\nChannel Severing is reserved for the most serious crimes: murder, treason, forced Veyn tampering, and contract fraud. It is considered a more merciful alternative to death because the person lives, but it is widely regarded as crueler — a fighter without their magic is a person without their identity.\n\nSome criminals prefer death to Channel Severing. The Academy has been known to offer Channel Severing as an alternative to execution for students who commit capital offenses, which has led to ethical debates about whether it is truly more merciful.",
+    "description": "Channel Severing is the most feared punishment in the Half-Made World — worse than death for any fighter.\n\nChannel Severing permanently destroys a person's Veyn or Ren channels — the internal pathways that allow them to use magic. Once severed, the channels cannot regenerate. The person becomes permanently unable to use any magical abilities, effectively reducing them to G-rank (no Veyn connection).\n\nThe Rite is thorough: because every Veyn-born body also carries a dormant Ren Channel (see Veyn Channels), a punitive severing burns that channel away along with the Veyn, leaving the victim no path to Ren either. Whether the target channels Veyn or Ren, the sentence is total — the victim is left with no magic of any kind, exactly as intended.\n\nThe process is performed by high-rank Exorcists using the Rite of Severance — a brutal procedure that involves channeling holy energy directly into the victim's channels, burning them from the inside out. The victim is conscious throughout the process and can feel their magic dying. The pain is described as 'having your soul burned away piece by piece.'\n\nChannel Severing is reserved for the most serious crimes: murder, treason, forced Veyn tampering, and contract fraud. It is considered a more merciful alternative to death because the person lives, but it is widely regarded as crueler — a fighter without their magic is a person without their identity.\n\nSome criminals prefer death to Channel Severing. The Academy has been known to offer Channel Severing as an alternative to execution for students who commit capital offenses, which has led to ethical debates about whether it is truly more merciful.",
     "fields": [
       {
         "label": "What It Does",
         "value": "Permanently destroys Veyn or Ren channels — reduces to G-rank, no magic ever again"
+      },
+      {
+        "label": "Dormant Ren Channel",
+        "value": "Punitive severing burns the dormant Ren Channel as well, closing any path to Ren — the victim is left with no magic at all."
       },
       {
         "label": "The Process",
@@ -20105,7 +20121,7 @@
       "penalty"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-19T00:00:00.000Z"
   },
   {
     "id": "seed-632",
@@ -32730,7 +32746,7 @@
     "category": "Magic Systems",
     "name": "Veyn Channels",
     "subtitle": "The internal pathways through which Veyn flows in the body",
-    "description": "Veyn Channels are the internal pathways within a being's body through which Veyn flows — the conduits that connect a person's latent Veyn to the external Veyn in the world around them. Before awakening at the Sundering Altar, these channels are dormant and undeveloped. The altar opens them for the first time, allowing Veyn to flow through the body and be shaped into magic. The width, density, and number of Veyn Channels a person has determines how much Veyn they can hold and how powerful their magic can become. Angels have naturally wider and more developed channels, which is why they can channel more Veyn than humans. Demons have channels that naturally corrupt Veyn into miasma as it passes through them. Fallen Angels have unstable channels — the vow break damaged them, making Veyn flow in bursts rather than steady streams. The Auralis Ruby works by sealing Jaiden's Veyn Channels, preventing his angelic and demonic auras from manifesting.",
+    "description": "Veyn Channels are the internal pathways within a being's body through which Veyn flows — the conduits that connect a person's latent Veyn to the external Veyn in the world around them. Before awakening at the Sundering Altar, these channels are dormant and undeveloped. The altar opens them for the first time, allowing Veyn to flow through the body and be shaped into magic. The width, density, and number of Veyn Channels a person has determines how much Veyn they can hold and how powerful their magic can become. Angels have naturally wider and more developed channels, which is why they can channel more Veyn than humans. Demons have channels that naturally corrupt Veyn into miasma as it passes through them. Fallen Angels have unstable channels — the vow break damaged them, making Veyn flow in bursts rather than steady streams. The Auralis Ruby works by sealing Jaiden's Veyn Channels, preventing his angelic and demonic auras from manifesting.\n\nNot every being is born with Veyn Channels. Some are born with Ren Channels instead — they channel Ren from birth and never touch Veyn. And anyone born with Veyn Channels — of any race — also carries a single dormant Ren Channel hidden beneath them, which opens only if the Veyn Channels are cut away. This is how a Veyn-born person can turn to Ren: cut the Veyn, and the dormant Ren Channel opens in its place. (Some can also open a Ren Organ to reach Ren without severing their Veyn — see The Ren Organ.)",
     "fields": [
       {
         "label": "Nature",
@@ -32755,6 +32771,18 @@
       {
         "label": "Auralis Ruby",
         "value": "Works by sealing Jaiden's Veyn Channels, preventing his auras from manifesting."
+      },
+      {
+        "label": "Ren Channels",
+        "value": "Some beings are born with Ren Channels rather than Veyn Channels — they channel Ren naturally from birth and never use Veyn. This occurs across races. For angels and demons, being born with only Ren Channels is especially cruel: without Veyn Channels, they cannot wield the innate Veyn-based race skills that define their nature (aura/halo/miasma). They are still brought to the Sundering Altar at age 15, where their affinity is revealed as a Ren class — they begin using Ren only at that point."
+      },
+      {
+        "label": "Dormant Ren Channel",
+        "value": "Every being born with Veyn Channels — of any race — also carries one dormant Ren Channel; it opens only when the Veyn Channels are cut away."
+      },
+      {
+        "label": "Turning to Ren",
+        "value": "Cutting the Veyn Channels opens the dormant Ren Channel — the path from Veyn to Ren. Such a switch requires a reclass (see Cross-Class Skills)."
       }
     ],
     "tags": [
@@ -32766,7 +32794,7 @@
       "magic system"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-09-30T14:20:33.464Z"
+    "updatedAt": "2026-10-19T00:00:00.000Z"
   },
   {
     "id": "seed-1011",
@@ -35071,7 +35099,7 @@
     "category": "Characters",
     "name": "Mara Quill",
     "subtitle": "The Veynless Sentinel — Jaiden's bare-fisted rival",
-    "description": "Mara Quill is a second-year student at Elyndor Academy and a Sentinel who channels no Veyn at all. She presents as a commoner — a scrappy bare-fisted brawler from nowhere — and that is exactly what she wants everyone to believe. The truth is House Elystren: an old Inscribed-elite line of Enchanter Rune-masters seated at Elystren Vale. Mara was born with High Veyn sensitivity and raised as the family's Veyn prodigy and most valuable asset. When Lord Halden Elystren betrothed her to House Amberly to seal a rival-house alliance, she refused — she did not want the marriage, and she would not be sold like a ledger entry. Her father would not be denied by words alone, so she chose the one refusal he could not undo: because Veyn and Ren cannot coexist in one body, she gave up her Veyn to take up Ren instead. She performed a Rite of Severance on herself, burning her Veyn channels to ash rather than become a marriage piece. The house disowned her and struck her name from the ledger. What no one expected, least of all her, was that with the Veyn gone a born talent for Ren surfaced underneath it. She forced the near-impossible human affinity shift, re-classed as a Sentinel, and proved as much a prodigy at Ren as she had been at Veyn. She took the name 'Quill' and buried Elystren. Mara fights for the joy of it — a delight in combat that borders on appetite. She brawls bare-fisted, hardening her body with Vitality, and grows stronger the more she is hurt through her signature technique, Blood Debt. Her flaw is the same as her gift: the fight she loves pushes her Vitality past its safe minimum, and one day it may kill her. She is Jaiden Marlock's rival at the Academy, though she pays him little mind until a school event shows her he may be the only one who can push her.",
+    "description": "Mara Quill is a second-year student at Elyndor Academy and a Sentinel who channels no Veyn at all. She presents as a commoner — a scrappy bare-fisted brawler from nowhere — and that is exactly what she wants everyone to believe. The truth is House Elystren: an old Inscribed-elite line of Enchanter Rune-masters seated at Elystren Vale. Mara was born with High Veyn sensitivity and raised as the family's Veyn prodigy and most valuable asset. When Lord Halden Elystren betrothed her to House Amberly to seal a rival-house alliance, she refused — she did not want the marriage, and she would not be sold like a ledger entry. Her father would not be denied by words alone, so she chose the one refusal he could not undo: because Veyn and Ren cannot coexist in one body, she gave up her Veyn to take up Ren instead. She performed a Rite of Severance on herself, burning her Veyn channels to ash rather than become a marriage piece. The house disowned her and struck her name from the ledger. Every Veyn-born body also carries a dormant Ren channel, and with her Veyn burned away that channel opened in its place — the one road by which a Veyn-born prodigy could become anything else. Because her old class had been a Veyn one, the switch meant a reclass; she forced the near-impossible human affinity shift, re-classed as a Sentinel, and proved as much a prodigy at Ren as she had been at Veyn. She took the name 'Quill' and buried Elystren. Mara fights for the joy of it — a delight in combat that borders on appetite. She brawls bare-fisted, hardening her body with Vitality, and grows stronger the more she is hurt through her signature technique, Blood Debt. Her flaw is the same as her gift: the fight she loves pushes her Vitality past its safe minimum, and one day it may kill her. She is Jaiden Marlock's rival at the Academy, though she pays him little mind until a school event shows her he may be the only one who can push her.",
     "fields": [
       {
         "label": "Class",
@@ -35107,7 +35135,7 @@
       },
       {
         "label": "Unusual Trait",
-        "value": "A born talent for Ren, surfaced only after she severed her Veyn"
+        "value": "A dormant Ren channel — carried by every Veyn-born body — that opened only after she severed her Veyn"
       },
       {
         "label": "Family",
@@ -35116,6 +35144,10 @@
       {
         "label": "Severing",
         "value": "Self-inflicted Rite of Severance — she burned out her own Veyn channels to refuse the House Amberly marriage; because Veyn and Ren cannot coexist, choosing Ren ended her Veyn for good"
+      },
+      {
+        "label": "Reclass",
+        "value": "Veyn class → Sentinel; switching from Veyn to Ren requires a reclass"
       },
       {
         "label": "Background",
@@ -35155,7 +35187,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": "Elyndor Academy, Sentinel, Ren, Vitality, House Elystren, Channel Severing, The Veyn Sensitivity Spectrum, Human Class Hierarchy, Marriage Customs, Jaiden Marlock"
+        "value": "Elyndor Academy, Sentinel, Ren, Vitality, House Elystren, Channel Severing, Veyn Channels, Cross-Class Skills, The Veyn Sensitivity Spectrum, Human Class Hierarchy, Marriage Customs, Jaiden Marlock"
       }
     ],
     "tags": [
@@ -35331,6 +35363,51 @@
       "noble tier",
       "military",
       "angel realm"
+    ],
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "seed-7191",
+    "category": "Class Progression",
+    "name": "Mage — Rune Star Circles",
+    "subtitle": "Mage progression system",
+    "description": "The Mage is the one class that does not advance through the standard Grade system. Instead, Mages climb the Rune Star — seven circles, each a sigil physically carved into the heart by Veyn, and each exponentially more powerful than the last. The circles are: Initiate → Adept → Artificer → Warden → Archmage → Sovereign → Transcendent. At Initiate, a Mage inscribes their first Rune Star and casts simple bolts, shields, and basic elemental effects. At Transcendent, they command the fundamental forces of reality itself, able to rewrite history and reshape the world. The rules are absolute: an inscribed circle must be fully completed before the next is attempted — a half-inscribed Rune Star destabilizes and kills the Mage, and skipping circles causes instant death from backlash. The 7th Circle cannot be self-inscribed; it must be given by the world core.",
+    "fields": [
+      {
+        "label": "Initiate",
+        "value": "1st Circle — inscribes the first Rune Star; simple bolts, shields, and basic elemental effects; low Veyn cost"
+      },
+      {
+        "label": "Adept",
+        "value": "2nd Circle — a second sigil layered over the first; lances pierce armor, casts grow faster and more precise"
+      },
+      {
+        "label": "Artificer",
+        "value": "3rd Circle — three Rune Stars form a stable Veyn circuit; sustained spells, storms, and siege-level barriers; the first dramatic leap"
+      },
+      {
+        "label": "Warden",
+        "value": "4th Circle — four Rune Stars in a diamond form a self-sustaining Veyn loop; regenerates mid-combat and casts city-leveling spells"
+      },
+      {
+        "label": "Archmage",
+        "value": "5th Circle — five in a pentagram resonate with the world core; reshapes terrain, creates pocket dimensions, strikes with disaster-level force"
+      },
+      {
+        "label": "Sovereign",
+        "value": "6th Circle — six form a hexagonal seal binding the soul to Veyn; casts without incantation or conscious thought, unmakes cities, peers across realms"
+      },
+      {
+        "label": "Transcendent",
+        "value": "7th Circle — seven form a complete constellation granting control over reality's fundamental forces; cannot be self-inscribed, only given by the world core"
+      }
+    ],
+    "tags": [
+      "progression",
+      "mage",
+      "class",
+      "circles"
     ],
     "createdAt": "2026-10-19T00:00:00.000Z",
     "updatedAt": "2026-10-19T00:00:00.000Z"
