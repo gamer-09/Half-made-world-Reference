@@ -71,7 +71,7 @@ module.exports = [
   r("Clint Ashborn", "Aurelion", "ruler of", "Ruler of", "Clint Ashborn rules Aurelion, the kingdom of the Angel Realm."),
   r("Tera Morage", "Vorath", "ruler of", "Ruler of", "Tera Morage rules Vorath, the kingdom of the Demon Realm."),
   r("Eva Aldermere Divina", "Ruby Divina", "child of", "Child of", "She is the daughter to Ruby Divina"),
-  r("Bella Rose", "Jaiden Marlock", "friend of", "Friend of", "she is the childhood friend of jaiden"),
+  r("Bella Ruven", "Jaiden Marlock", "friend of", "Friend of", "she is the childhood friend of jaiden"),
   r("Mark Wesley", "Jaiden Marlock", "friend of", "Friend of", "he later became friends with jaiden"),
   r("Aldric Malgrave", "Kael von Ashen", "hunted", "Hunted", "He hunted the Aelthar to extinction — Kael von Ashen is the one survivor he never caught."),
   r("Lisa", "Jaiden Marlock", "parent of", "parent of", ""),
@@ -86,6 +86,7 @@ module.exports = [
   r("Jaiden Marlock", "Ruby Divina", "knows", "Knows", "She has known of the hybrid hiding in her realm from the beginning."),
   r("Lisa", "Tera Morage", "friend of", "Friend of", "The one demon Tera trusted enough to keep close — and the one mercy she ever allowed."),
   r("Ruby Divina", "Eva Aldermere Divina", "parent of", "parent of", ""),
-  r("Jaiden Marlock", "Bella Rose", "friend of", "Friend of", "she is the childhood friend of jaiden"),
+  r("Jaiden Marlock", "Bella Ruven", "friend of", "Friend of", "she is the childhood friend of jaiden"),
   r("Jaiden Marlock", "Mark Wesley", "friend of", "Friend of", "he later became friends with jaiden"),
+  r("Mara Quill", "Jaiden Marlock", "rivals with", "Rivals with", "Mara is Jaiden's rival at Elyndor Academy."),
 ];

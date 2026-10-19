@@ -2882,16 +2882,16 @@
   {
     "id": "link-seed-427",
     "source": "Aerendrel, the Skybound Wrath",
-    "target": "Bella Rose",
+    "target": "Bella Ruven",
     "type": "owned by",
     "label": "Owned by",
-    "description": "Found by Jaiden in the chamber beneath Lethmoor’s throne chair, and later given to Bella Rose.",
+    "description": "Found by Jaiden in the chamber beneath Lethmoor’s throne chair, and later given to Bella Ruven.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
   {
     "id": "link-seed-428",
-    "source": "Bella Rose",
+    "source": "Bella Ruven",
     "target": "Malakhim",
     "type": "part of",
     "label": "Part of",
@@ -2901,7 +2901,7 @@
   },
   {
     "id": "link-seed-429",
-    "source": "Bella Rose",
+    "source": "Bella Ruven",
     "target": "Archer",
     "type": "class of",
     "label": "Class of",
@@ -2941,7 +2941,7 @@
   },
   {
     "id": "link-seed-434",
-    "source": "Bella Rose",
+    "source": "Bella Ruven",
     "target": "Elyndor Academy",
     "type": "Goes to",
     "label": "Goes to",
@@ -6342,10 +6342,10 @@
   {
     "id": "link-seed-956",
     "source": "The World Core",
-    "target": "Bella Rose",
+    "target": "Bella Ruven",
     "type": "blessed",
     "label": "Blessed",
-    "description": "The world core's will reflexively blessed Bella Rose with extra holy energy the night Jaiden was born.",
+    "description": "The world core's will reflexively blessed Bella Ruven with extra holy energy the night Jaiden was born.",
     "createdAt": "2026-08-12T00:00:00.000Z",
     "updatedAt": "2026-08-12T00:00:00.000Z"
   },
@@ -11301,11 +11301,11 @@
   },
   {
     "id": "link-core-vwioezqmmt6k2634",
-    "source": "Bella Rose",
+    "source": "Bella Ruven",
     "target": "Human Realm",
     "type": "lives in",
     "label": "Lives in",
-    "description": "Bella Rose lives in the Human Realm",
+    "description": "Bella Ruven lives in the Human Realm",
     "createdAt": "2026-08-24T01:26:28.432Z",
     "updatedAt": "2026-08-24T01:26:28.432Z"
   },
@@ -18146,7 +18146,7 @@
   },
   {
     "id": "7fdc16bd-ac0b-4b09-af37-61956f792af3",
-    "source": "Bella Rose",
+    "source": "Bella Ruven",
     "target": "Aerendrel, the Skybound Wrath",
     "type": "owner of",
     "label": "owner of",
@@ -18158,7 +18158,7 @@
   {
     "id": "ab0caca4-5976-4f75-9131-607663ecfe0a",
     "source": "Malakhim",
-    "target": "Bella Rose",
+    "target": "Bella Ruven",
     "type": "includes",
     "label": "includes",
     "description": "",
@@ -24010,7 +24010,7 @@
   {
     "id": "9590c38e-79c9-487d-8be5-328ba68cbabf",
     "source": "Human Realm",
-    "target": "Bella Rose",
+    "target": "Bella Ruven",
     "type": "home of",
     "label": "home of",
     "description": "",
@@ -28328,7 +28328,7 @@
   },
   {
     "id": "link-gen-3300",
-    "source": "Bella Rose",
+    "source": "Bella Ruven",
     "target": "Jaiden Marlock",
     "type": "related to",
     "label": "Related to",
@@ -30668,7 +30668,7 @@
   },
   {
     "id": "link-gen-3612",
-    "source": "Bella Rose",
+    "source": "Bella Ruven",
     "target": "Jaiden Marlock Plot",
     "type": "related to",
     "label": "Related to",
@@ -40788,7 +40788,7 @@
   },
   {
     "id": "link-gen-5011",
-    "source": "Bella Rose",
+    "source": "Bella Ruven",
     "target": "The Fourth Turning — Climactic Sequence",
     "type": "related to",
     "label": "Related to",
@@ -42785,5 +42785,225 @@
     "description": "The World Eater’s null is among the causes of permanent Veyn-Dead Zones.",
     "createdAt": "2026-10-18T21:33:35.834Z",
     "updatedAt": "2026-10-18T21:33:35.834Z"
+  },
+  {
+    "id": "link-mara-1",
+    "source": "Mara Quill",
+    "target": "Elyndor Academy",
+    "type": "studies",
+    "label": "Studies",
+    "description": "Mara Quill is a second-year student at Elyndor Academy.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-mara-2",
+    "source": "Mara Quill",
+    "target": "Sentinel",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Mara re-classed as a Sentinel after severing her Veyn.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-mara-3",
+    "source": "Mara Quill",
+    "target": "Ren",
+    "type": "uses",
+    "label": "Uses",
+    "description": "Mara channels Ren — pure Vitality — with no Veyn at all.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-mara-4",
+    "source": "Mara Quill",
+    "target": "Vitality",
+    "type": "uses",
+    "label": "Uses",
+    "description": "Her Ren runs on her own Vitality.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-mara-5",
+    "source": "Mara Quill",
+    "target": "Jaiden Marlock",
+    "type": "rivals with",
+    "label": "Rivals with",
+    "description": "Mara is Jaiden's rival at the Academy.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-mara-6",
+    "source": "Mara Quill",
+    "target": "House Elystren",
+    "type": "fled from",
+    "label": "Fled from",
+    "description": "House Elystren disowned her and struck her from the ledger.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-mara-7",
+    "source": "Mara Quill",
+    "target": "Channel Severing",
+    "type": "related to",
+    "label": "Related to",
+    "description": "She performed a Rite of Severance on herself.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-mara-8",
+    "source": "Mara Quill",
+    "target": "The Veyn Sensitivity Spectrum",
+    "type": "related to",
+    "label": "Related to",
+    "description": "She was born High and severed herself.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-mara-9",
+    "source": "Mara Quill",
+    "target": "Human Class Hierarchy",
+    "type": "member of",
+    "label": "Member of",
+    "description": "She is the disowned daughter of an Inscribed-elite house.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-mara-10",
+    "source": "Mara Quill",
+    "target": "Marriage Customs",
+    "type": "related to",
+    "label": "Related to",
+    "description": "She refused a family-arranged marriage alliance.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-mara-11",
+    "source": "House Elystren",
+    "target": "Enchanter",
+    "type": "tradition of",
+    "label": "Tradition of",
+    "description": "House Elystren is an Enchanter Rune-master lineage.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-mara-12",
+    "source": "House Elystren",
+    "target": "Human Class Hierarchy",
+    "type": "part of",
+    "label": "Part of",
+    "description": "House Elystren belongs to the Inscribed elite.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-mara-13",
+    "source": "Mara Quill's Plot",
+    "target": "Mara Quill",
+    "type": "protagonist of",
+    "label": "Protagonist of",
+    "description": "Mara Quill's plot follows Mara Quill.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-ruven-1",
+    "source": "Bella Ruven",
+    "target": "The Line of Ruven",
+    "type": "member of",
+    "label": "Member of",
+    "description": "Bella is of the noble Aetherblade line of Ruven.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-ruven-2",
+    "source": "Bella Ruven",
+    "target": "Aetherblade Lord Angel",
+    "type": "rank of",
+    "label": "Rank of",
+    "description": "Bella holds the rank of Aetherblade Lord.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-ruven-3",
+    "source": "Bella Ruven",
+    "target": "Angel Embassy System",
+    "type": "born in",
+    "label": "Born in",
+    "description": "She was born at an Angel embassy in the Human Realm.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-ruven-4",
+    "source": "Bella Ruven",
+    "target": "Angel Class Hierarchy",
+    "type": "member of",
+    "label": "Member of",
+    "description": "Her line belongs to the Angel Noble Tier.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-ruven-5",
+    "source": "The Line of Ruven",
+    "target": "Angel Class Hierarchy",
+    "type": "part of",
+    "label": "Part of",
+    "description": "The Line of Ruven belongs to the Noble Tier.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-ruven-6",
+    "source": "The Line of Ruven",
+    "target": "Aetherblade Lord Angel",
+    "type": "related to",
+    "label": "Related to",
+    "description": "The line is composed of Aetherblade Lords.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-ruven-7",
+    "source": "The Line of Ruven",
+    "target": "The Six Pillars of Angel Governance",
+    "type": "serves",
+    "label": "Serves",
+    "description": "The line serves under the Six Pillars.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-ruven-8",
+    "source": "The Line of Ruven",
+    "target": "Malakhim",
+    "type": "part of",
+    "label": "Part of",
+    "description": "Its members are Malakhim angels.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-ruven-9",
+    "source": "The Line of Ruven",
+    "target": "Bella Ruven",
+    "type": "includes",
+    "label": "Includes",
+    "description": "The line includes Bella Ruven, sponsored at Elyndor Academy.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
   }
 ]

@@ -476,7 +476,7 @@
   },
   {
     "id": "34c6420c-3b4f-4fa1-8dd3-588e084f9e1b",
-    "source": "Bella Rose",
+    "source": "Bella Ruven",
     "target": "Jaiden Marlock",
     "type": "friend of",
     "label": "Friend of",
@@ -641,7 +641,7 @@
   {
     "id": "3267590e-24d7-46e5-9393-079d12d5ee3e",
     "source": "Jaiden Marlock",
-    "target": "Bella Rose",
+    "target": "Bella Ruven",
     "type": "friend of",
     "label": "Friend of",
     "description": "she is the childhood friend of jaiden",
@@ -659,5 +659,15 @@
     "color": "",
     "createdAt": "2026-09-01T22:38:32.498Z",
     "updatedAt": "2026-09-01T22:38:32.498Z"
+  },
+  {
+    "id": "5eef127f-2c5d-48b1-aa8c-4c5eeb538aaf",
+    "source": "Mara Quill",
+    "target": "Jaiden Marlock",
+    "type": "rivals with",
+    "label": "Rivals with",
+    "description": "Mara is Jaiden's rival at Elyndor Academy.",
+    "createdAt": "2026-10-19T00:00:00.000Z",
+    "updatedAt": "2026-10-19T00:00:00.000Z"
   }
 ]
