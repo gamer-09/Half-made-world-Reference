@@ -17,7 +17,7 @@ The archive holds **1088 entries across 57 categories** — Demon/Angel/Class/Hy
 Rules & Notes, Characters, Classes, Class Progression, Grade System, Rune Star Circles, Monsters,
 Rifts, Locations, Items, Magic Systems, Realms, Coins, Clan, Economy, Organizations, Calendar, Combat
 Mechanics, Laws & Justice, Academy, and many more — all browsable, searchable, and editable through
-the UI. **28 characters**, **4305 story links**, and **81 relationships** tie it all together.
+the UI. **28 characters**, **4365 story links**, and **81 relationships** tie it all together.
 
 ## Quick start
 
@@ -64,7 +64,7 @@ Relationships persist in `server/data/relationships.json`.
 ## Story Web
 
 A **Story Web** page shows the *whole story* as one interactive map — every realm, location,
-monster, being, rank, item, artifact, character, and plot thread as a node, connected by **4305**
+monster, being, rank, item, artifact, character, and plot thread as a node, connected by **4365**
 colored, arrowed links like `located in`, `guards`, `rules`, `kills`, `sealed in`, `crafted by`, and
 `story of`. Character relationship links are merged in too.
 

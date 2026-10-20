@@ -1083,31 +1083,31 @@
     "id": "link-seed-200",
     "source": "Griffen",
     "target": "Pallantine",
-    "type": "Used by",
+    "type": "used by",
     "label": "Used by",
     "description": "they are used by Pallantine as a form of transportation",
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-20T19:30:44.433Z"
   },
   {
     "id": "link-seed-201",
     "source": "Veyn & Ren Incompatibility",
     "target": "Veyn",
-    "type": "Can't",
+    "type": "incompatible with",
     "label": "Can't",
     "description": "They are incompatible and has a high probability of killing that person that tries",
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-20T19:30:44.433Z"
   },
   {
     "id": "link-seed-202",
     "source": "Veyn & Ren Incompatibility",
     "target": "Ren",
-    "type": "Can't",
+    "type": "incompatible with",
     "label": "Can't",
     "description": "Not compatible with Veyn and due to this it can cause death",
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-20T19:30:44.433Z"
   },
   {
     "id": "link-seed-203",
@@ -1133,21 +1133,21 @@
     "id": "link-seed-205",
     "source": "The Hidden Realm Portal",
     "target": "Concentrated Veyn",
-    "type": "Used by",
+    "type": "used by",
     "label": "Used by",
     "description": "They suck the concentrate Veyn to stabilize then use the remaining to move to the next area once it has finished all the concentrated Veyn in the area it was before",
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-20T19:30:44.433Z"
   },
   {
     "id": "link-seed-206",
     "source": "The Hidden Realm Portal",
     "target": "Hidden Realm (Shadow Realm)",
-    "type": "About",
+    "type": "about",
     "label": "About",
     "description": "information about the portal for the hidden realm",
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-20T19:30:44.433Z"
   },
   {
     "id": "link-seed-207",
@@ -1163,11 +1163,11 @@
     "id": "link-seed-208",
     "source": "Ring of Foundation",
     "target": "Veyn",
-    "type": "Used by",
+    "type": "used by",
     "label": "Used by",
     "description": "stores veyn inside it",
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-20T19:30:44.433Z"
   },
   {
     "id": "link-seed-209",
@@ -41257,36 +41257,6 @@
     "updatedAt": "2026-09-01T00:00:00.000Z"
   },
   {
-    "id": "link-gen-5067",
-    "source": "Veyn",
-    "target": "Hybrid Void-Sustenance",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Mechanism field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-5069",
-    "source": "Ren",
-    "target": "Hybrid Void-Sustenance",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Result field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
-    "id": "link-gen-5070",
-    "source": "Mage",
-    "target": "Hybrid Void-Sustenance",
-    "type": "related to",
-    "label": "Related to",
-    "description": "Linked via Result field",
-    "createdAt": "2026-09-01T00:00:00.000Z",
-    "updatedAt": "2026-09-01T00:00:00.000Z"
-  },
-  {
     "id": "link-gen-5071",
     "source": "Healers",
     "target": "Ambient Veyn",
@@ -43965,5 +43935,635 @@
     "description": "The null-trace a rejection bleeds is the same nothingness the null-breakers use.",
     "createdAt": "2026-10-20T00:00:00.000Z",
     "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-orphan-9000",
+    "source": "Holy vs Corrupted — Rank Dominance",
+    "target": "Holy Energy and Corrupted Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9001",
+    "source": "Holy vs Corrupted — Rank Dominance",
+    "target": "Grade-Based Combat Power",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9002",
+    "source": "Holy vs Corrupted — Rank Dominance",
+    "target": "Rank and Role",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9003",
+    "source": "Holy vs Corrupted — Rank Dominance",
+    "target": "Holy & Corrupted Combat",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9004",
+    "source": "Holy vs Corrupted — Rank Dominance",
+    "target": "Veyn Recovery",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9005",
+    "source": "Holy vs Corrupted — Rank Dominance",
+    "target": "Polar Collapse",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9006",
+    "source": "Silver Concord — Rift Hunts",
+    "target": "Rifts — Overview",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9007",
+    "source": "Silver Concord — Rift Hunts",
+    "target": "The Ossk",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9008",
+    "source": "Silver Concord — Rift Hunts",
+    "target": "Ossk Castes",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9009",
+    "source": "Silver Concord — Rift Hunts",
+    "target": "Rift Materials",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9010",
+    "source": "Silver Concord — Rift Hunts",
+    "target": "Seeding & Blooming",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9011",
+    "source": "Silver Concord — Rift Hunts",
+    "target": "Clearing a Rift & Rewards",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9012",
+    "source": "Silver Concord — Rift Hunts",
+    "target": "The World Barrier",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9013",
+    "source": "Silver Concord — Rift Hunts",
+    "target": "Threat Level Classification",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9014",
+    "source": "Hollowlight",
+    "target": "Rift Materials",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9015",
+    "source": "Hollowlight",
+    "target": "Veyn-Dead Zones",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9016",
+    "source": "Hollowlight",
+    "target": "The Ossk",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9017",
+    "source": "Hollowlight",
+    "target": "The Hybrid Resonance Seal",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9018",
+    "source": "Hollowlight",
+    "target": "Enchanter",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9019",
+    "source": "Hollowlight",
+    "target": "Null Energy",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9020",
+    "source": "Hollowlight",
+    "target": "Hush-Ward",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9021",
+    "source": "Hollowlight",
+    "target": "Hush-Ward Heart",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9022",
+    "source": "Hollowlight",
+    "target": "Null-Breaker Focus",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9023",
+    "source": "Deafcoin",
+    "target": "Rift Materials",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9024",
+    "source": "Deafcoin",
+    "target": "Hollowlight",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9025",
+    "source": "Deafcoin",
+    "target": "Veyn-Dead Zones",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9026",
+    "source": "Deafcoin",
+    "target": "Enchanter",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9027",
+    "source": "Deafcoin",
+    "target": "Pocket-Lining",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9028",
+    "source": "Deafcoin",
+    "target": "Null-Breaker Focus",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9029",
+    "source": "Deafcoin",
+    "target": "Hush-Ward",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9030",
+    "source": "Polar Collapse",
+    "target": "Twilight Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9031",
+    "source": "Polar Collapse",
+    "target": "Holy Energy and Corrupted Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9032",
+    "source": "Polar Collapse",
+    "target": "Hybrid Fusion",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9033",
+    "source": "Polar Collapse",
+    "target": "Jaiden Marlock",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9034",
+    "source": "Polar Collapse",
+    "target": "Holy vs Corrupted — Rank Dominance",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9035",
+    "source": "Polar Collapse",
+    "target": "The Hybrid Resonance Seal",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Lore Connections field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9036",
+    "source": "Dawnveil (Lumen)",
+    "target": "Duskveil",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Ranked variant of Duskveil",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9037",
+    "source": "Dawnveil (Lumen)",
+    "target": "Holy Energy",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Effect field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9038",
+    "source": "Berserk (Mordrach)",
+    "target": "Berserk",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Ranked variant of Berserk",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9039",
+    "source": "Berserk (Mordrach)",
+    "target": "Corrupted Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Effect field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9040",
+    "source": "Berserk (Scourge)",
+    "target": "Berserk",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Ranked variant of Berserk",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9041",
+    "source": "Berserk (Scourge)",
+    "target": "Corrupted Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Effect field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9042",
+    "source": "Rend Claws",
+    "target": "Scourge",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Scourge-rank demon skill.",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:39:07.333Z"
+  },
+  {
+    "id": "link-orphan-9043",
+    "source": "Rend Claws",
+    "target": "Corrupted Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Effect field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9044",
+    "source": "Demonic Aura (Scourge)",
+    "target": "Demonic Aura",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Ranked variant of Demonic Aura",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9045",
+    "source": "Demonic Aura (Scourge)",
+    "target": "Corrupted Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Effect field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9046",
+    "source": "Duskveil (Scourge)",
+    "target": "Duskveil",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Ranked variant of Duskveil",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9047",
+    "source": "Duskveil (Scourge)",
+    "target": "Corrupted Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Effect field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9048",
+    "source": "Demonic Aura (Gnash)",
+    "target": "Demonic Aura",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Ranked variant of Demonic Aura",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9049",
+    "source": "Demonic Aura (Gnash)",
+    "target": "Corrupted Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Effect field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9050",
+    "source": "Duskveil (Gnash)",
+    "target": "Duskveil",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Ranked variant of Duskveil",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9051",
+    "source": "Duskveil (Gnash)",
+    "target": "Corrupted Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Linked via Effect field",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9052",
+    "source": "Jaiden Marlock — Chaos Form",
+    "target": "Jaiden Marlock",
+    "type": "has form",
+    "label": "Has form",
+    "description": "One of Jaiden Marlock’s forms.",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9053",
+    "source": "Jaiden Marlock — Chaos Form",
+    "target": "Jaiden Marlock — True Hybrid",
+    "type": "related to",
+    "label": "Related to",
+    "description": "The unstable fourth form versus the balanced true hybrid form.",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9054",
+    "source": "Awaken Theory",
+    "target": "Shudonkeeper",
+    "type": "skill of",
+    "label": "Skill of",
+    "description": "A Shudonkeeper class skill.",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9055",
+    "source": "Awaken Theory",
+    "target": "Shudon",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Theory toward reactivating the Shudon.",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9056",
+    "source": "Veyn Recovery",
+    "target": "Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Veyn recovery restores spent Veyn.",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9057",
+    "source": "Veyn Depletion",
+    "target": "Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Veyn depletion is the running out of Veyn.",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9058",
+    "source": "Veyn Depletion",
+    "target": "Veyn Recovery",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Depletion and its recovery are opposite ends of the same mechanic.",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9059",
+    "source": "Veyn Recovery",
+    "target": "Ambient Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Recovery draws ambient Veyn from the world.",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9060",
+    "source": "Mage — Rune Star Circles",
+    "target": "Veyn",
+    "type": "class of",
+    "label": "Class of",
+    "description": "Mages channel Veyn.",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9061",
+    "source": "Mage — Rune Star Circles",
+    "target": "Mage",
+    "type": "about",
+    "label": "About",
+    "description": "The Mage class progression.",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-orphan-9062",
+    "source": "Mage — Rune Star Circles",
+    "target": "Grade System",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Mages advance by Rune Star Circles instead of the standard Grade system.",
+    "createdAt": "2026-10-20T19:32:49.585Z",
+    "updatedAt": "2026-10-20T19:32:49.585Z"
   }
 ]
