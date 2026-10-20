@@ -2,7 +2,7 @@ import type { Ref } from 'react';
 import type { CategoryInfo } from '../types';
 import { categoryColor } from '../theme';
 
-export type ViewMode = 'browse' | 'map' | 'web' | 'blocks' | 'chat' | 'planning';
+export type ViewMode = 'browse' | 'map' | 'web' | 'blocks' | 'chat' | 'planning' | 'canon' | 'weave';
 
 interface SidebarProps {
   categories: CategoryInfo[];
@@ -20,6 +20,8 @@ interface SidebarProps {
   onOpenChat: () => void;
   // Local-dev only: omitted (and the button hidden) in the view-only build.
   onOpenPlanning?: () => void;
+  onOpenCanon?: () => void;
+  onOpenWeave?: () => void;
 }
 
 export function Sidebar({
@@ -37,6 +39,8 @@ export function Sidebar({
   onOpenBlocks,
   onOpenChat,
   onOpenPlanning,
+  onOpenCanon,
+  onOpenWeave,
 }: SidebarProps) {
   return (
     <aside className="sidebar">
@@ -115,6 +119,30 @@ export function Sidebar({
         >
           <i className="fa-solid fa-compass-drafting" style={{ fontSize: 14, color: view === 'planning' ? '#c8a876' : 'currentColor' }} />
           Planning
+          <span className="nav-dev-tag">dev</span>
+        </button>
+      )}
+
+      {onOpenCanon && (
+        <button
+          className={`nav-map-btn${view === 'canon' ? ' active' : ''}`}
+          onClick={onOpenCanon}
+          title="Local only — audit the archive for contradictions, broken links, gaps and drift"
+        >
+          <i className="fa-solid fa-shield-halved" style={{ fontSize: 14, color: view === 'canon' ? '#c8a876' : 'currentColor' }} />
+          Canon Guard
+          <span className="nav-dev-tag">dev</span>
+        </button>
+      )}
+
+      {onOpenWeave && (
+        <button
+          className={`nav-map-btn${view === 'weave' ? ' active' : ''}`}
+          onClick={onOpenWeave}
+          title="Local only — explore the timeline, the constellation, and the Lore Oracle"
+        >
+          <i className="fa-solid fa-wand-sparkles" style={{ fontSize: 14, color: view === 'weave' ? '#c8a876' : 'currentColor' }} />
+          Weave
           <span className="nav-dev-tag">dev</span>
         </button>
       )}

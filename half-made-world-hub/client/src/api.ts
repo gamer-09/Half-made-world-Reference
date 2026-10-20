@@ -287,3 +287,32 @@ export async function deletePlanSessions(sessions: string[]): Promise<string[]> 
   const data = await handle<{ deleted?: string[] }>(res);
   return data.deleted ?? [];
 }
+
+// --- Canon Guard (local dev only) ------------------------------------------
+// Runs the archive's consistency rules on the server. With a `draft` it lints
+// that entry's neighbourhood (live feedback while editing); without one it
+// audits the whole archive.
+import type { CanonFinding, CanonLintResult } from './types';
+export type { CanonFinding, CanonLintResult };
+
+export interface CanonDraft {
+  id?: string;
+  name: string;
+  category: string;
+  subtitle: string;
+  description: string;
+  fields: Field[];
+  tags: string[];
+}
+
+export async function lintCanon(draft?: CanonDraft): Promise<CanonLintResult> {
+  if (viewOnlyBuild) {
+    throw new Error('Canon Guard needs the local server and is not available in the view-only build.');
+  }
+  const res = await fetch('/api/canon/lint', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(draft ? { draft } : {}),
+  });
+  return handle<CanonLintResult>(res);
+}

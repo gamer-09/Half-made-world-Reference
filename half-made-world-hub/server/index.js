@@ -15,6 +15,7 @@ const {
   saveStoryLinks,
   resetStoryLinks,
 } = require('./storage');
+const { lintArchive, lintEntry } = require('./canon-rules');
 
 const app = express();
 app.use(cors());
@@ -1941,6 +1942,40 @@ app.post('/api/ai/plan/session/delete', async (req, res) => {
     }
   }
   res.json({ deleted, failed });
+});
+
+// --- Canon Guard (local dev only) -----------------------------------------
+// Report-only consistency check over the archive. With a `draft` entry it
+// lints that entry's neighbourhood (live feedback while editing); without one
+// it audits the whole archive. Never writes anything.
+app.post('/api/canon/lint', (req, res) => {
+  try {
+    const world = loadWorld();
+    const links = loadStoryLinks();
+    const rels = loadRelationships();
+    const draft = req.body && typeof req.body.draft === 'object' ? req.body.draft : null;
+
+    if (draft) {
+      const entry = {
+        id: typeof draft.id === 'string' && draft.id ? draft.id : 'draft',
+        category: String(draft.category || ''),
+        name: String(draft.name || ''),
+        subtitle: String(draft.subtitle || ''),
+        description: String(draft.description || ''),
+        fields: cleanFields(draft.fields),
+        tags: cleanTags(draft.tags),
+        createdAt: now(),
+        updatedAt: now(),
+      };
+      const findings = lintEntry({ world, links, rels, entry });
+      return res.json({ findings, scopedTo: entry.name, total: world.length });
+    }
+
+    const findings = lintArchive({ world, links, rels });
+    res.json({ findings, scopedTo: null, total: world.length });
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
 });
 
 if (require.main === module) {
