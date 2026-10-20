@@ -43005,5 +43005,855 @@
     "description": "The line includes Bella Ruven, sponsored at Elyndor Academy.",
     "createdAt": "2026-10-19T00:00:00.000Z",
     "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-1",
+    "source": "Vasric Kaine’s Plot",
+    "target": "Vasric Kaine",
+    "type": "story of",
+    "label": "Story of",
+    "description": "The plot of the weapon that outgrew the hand that made it.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-2",
+    "source": "Vasric Kaine’s Plot",
+    "target": "Jaiden Marlock",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Vasric turns Dark Moon's whole apparatus toward capturing the born hybrid, alive.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-3",
+    "source": "Vasric Kaine’s Plot",
+    "target": "Wener Leger",
+    "type": "story of",
+    "label": "Story of",
+    "description": "Vasric corners the man who made him and makes him a pawn.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-4",
+    "source": "Vasric Kaine’s Plot",
+    "target": "Dark Moon",
+    "type": "story of",
+    "label": "Story of",
+    "description": "The project that was meant to serve Dark Moon instead seizes it.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-5",
+    "source": "Vasric Kaine’s Plot",
+    "target": "Licent Varak",
+    "type": "story of",
+    "label": "Story of",
+    "description": "A fellow product of Dark Moon's reach — small where Vasric is broken.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-6",
+    "source": "Vasric Kaine’s Plot",
+    "target": "The Second Hybrid Project",
+    "type": "story of",
+    "label": "Story of",
+    "description": "The program that manufactured Vasric and lost everything to him.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-7",
+    "source": "Vasric Kaine",
+    "target": "Dark Moon",
+    "type": "seized",
+    "label": "Seized",
+    "description": "Vasric took Dark Moon by force and bent its surviving operatives to his service.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-8",
+    "source": "Vasric Kaine",
+    "target": "The Second Hybrid Project",
+    "type": "product of",
+    "label": "Product of",
+    "description": "He is the project's only survivor and its final verdict.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-9",
+    "source": "Vasric Kaine",
+    "target": "Wener Leger",
+    "type": "overthrew",
+    "label": "Overthrew",
+    "description": "He tore apart Dark Moon's inner circle and made its architect his pawn.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-10",
+    "source": "Vasric Kaine",
+    "target": "Jaiden Marlock",
+    "type": "hunts",
+    "label": "Hunts",
+    "description": "He does not want Jaiden dead — he wants the stability Jaiden's fusion carries.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-11",
+    "source": "Vasric Kaine",
+    "target": "Veyn-Dead Zones",
+    "type": "produces",
+    "label": "Produces",
+    "description": "His broken fusion bleeds out as a cracked null-trace — a small dead zone walking on two legs.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-12",
+    "source": "Vasric Kaine",
+    "target": "Twilight Veyn",
+    "type": "failed imitation of",
+    "label": "Failed imitation of",
+    "description": "His Holy Energy and Corrupted Veyn refused to fuse the way they fused in Jaiden.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-13",
+    "source": "Vasric Kaine",
+    "target": "The Fourth Turning — Climactic Sequence",
+    "type": "arrives at",
+    "label": "Arrives at",
+    "description": "He reaches the Fourth Turning not as a faction but as a wrecking ball with a need.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-14",
+    "source": "The Second Hybrid Project",
+    "target": "Dark Moon",
+    "type": "program of",
+    "label": "Program of",
+    "description": "Dark Moon's covert answer to a problem patience could not solve.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-15",
+    "source": "The Second Hybrid Project",
+    "target": "Wener Leger",
+    "type": "founded by",
+    "label": "Founded by",
+    "description": "Wener founded the project after failing to acquire the born hybrid.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-16",
+    "source": "The Second Hybrid Project",
+    "target": "Vasric Kaine",
+    "type": "produced",
+    "label": "Produced",
+    "description": "Vasric is its only product and its final verdict.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-17",
+    "source": "Jaiden Marlock",
+    "target": "Vasric Kaine",
+    "type": "hunted by",
+    "label": "Hunted by",
+    "description": "Vasric hunts Jaiden for the stability his own broken fusion lacks.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-18",
+    "source": "Wener Leger",
+    "target": "Vasric Kaine",
+    "type": "pawn of",
+    "label": "Pawn of",
+    "description": "The patient tyrant now answers to his own failed experiment.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-19",
+    "source": "Dark Moon",
+    "target": "Vasric Kaine",
+    "type": "seized by",
+    "label": "Seized by",
+    "description": "The organization was taken by the experiment it created.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-20",
+    "source": "Anti-Magic Collar",
+    "target": "Hollow Stalker",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Anti-Magic Collar is crafted from materials harvested from the Rift monsters (see Hollow Stalker).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-21",
+    "source": "Anti-Magic Collar",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Anti-Magic Collar is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-22",
+    "source": "Anti-Magic Cuffs",
+    "target": "Hollow Stalker",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Anti-Magic Cuffs is crafted from materials harvested from the Rift monsters (see Hollow Stalker).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-23",
+    "source": "Anti-Magic Cuffs",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Anti-Magic Cuffs is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-24",
+    "source": "Restraint Manacles",
+    "target": "Hollow Stalker",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Restraint Manacles is crafted from materials harvested from the Rift monsters (see Hollow Stalker).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-25",
+    "source": "Restraint Manacles",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Restraint Manacles is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-26",
+    "source": "Binding Cords",
+    "target": "Hollow Stalker",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Binding Cords is crafted from materials harvested from the Rift monsters (see Hollow Stalker).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-27",
+    "source": "Binding Cords",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Binding Cords is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-28",
+    "source": "Hush-Cloak",
+    "target": "Hollow Stalker",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Cloak is crafted from materials harvested from the Rift monsters (see Hollow Stalker).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-29",
+    "source": "Hush-Cloak",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Cloak is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-30",
+    "source": "Stealth-Mail",
+    "target": "Hollow Stalker",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Stealth-Mail is crafted from materials harvested from the Rift monsters (see Hollow Stalker).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-31",
+    "source": "Stealth-Mail",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Stealth-Mail is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-32",
+    "source": "Silent Boots",
+    "target": "Hollow Stalker",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Silent Boots is crafted from materials harvested from the Rift monsters (see Hollow Stalker).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-33",
+    "source": "Silent Boots",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Silent Boots is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-34",
+    "source": "Hush-Plate Mail",
+    "target": "Stoneborer",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Plate Mail is crafted from materials harvested from the Rift monsters (see Stoneborer).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-35",
+    "source": "Hush-Plate Mail",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Plate Mail is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-36",
+    "source": "Hush-Plate",
+    "target": "Stoneborer",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Plate is crafted from materials harvested from the Rift monsters (see Stoneborer).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-37",
+    "source": "Hush-Plate",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Plate is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-38",
+    "source": "Shield Faces",
+    "target": "Stoneborer",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Shield Faces is crafted from materials harvested from the Rift monsters (see Stoneborer).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-39",
+    "source": "Shield Faces",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Shield Faces is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-40",
+    "source": "Hush-Ward",
+    "target": "Rift Materials",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Ward is crafted from materials harvested from the Rift monsters (see Rift Materials).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-41",
+    "source": "Hush-Ward",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Ward is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-42",
+    "source": "Veyn-Dampening Lamp",
+    "target": "Rift Materials",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Veyn-Dampening Lamp is crafted from materials harvested from the Rift monsters (see Rift Materials).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-43",
+    "source": "Veyn-Dampening Lamp",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Veyn-Dampening Lamp is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-44",
+    "source": "Rift-Anchor",
+    "target": "Rift Materials",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Rift-Anchor is crafted from materials harvested from the Rift monsters (see Rift Materials).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-45",
+    "source": "Rift-Anchor",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Rift-Anchor is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-46",
+    "source": "Hush-Ward Heart",
+    "target": "Grey Sovereign",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Ward Heart is crafted from materials harvested from the Rift monsters (see Grey Sovereign).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-47",
+    "source": "Hush-Ward Heart",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Ward Heart is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-48",
+    "source": "Sovereign Horn",
+    "target": "Grey Sovereign",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Sovereign Horn is crafted from materials harvested from the Rift monsters (see Grey Sovereign).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-49",
+    "source": "Sovereign Horn",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Sovereign Horn is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-50",
+    "source": "Barrier Anchor",
+    "target": "Firstborn Choir",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Barrier Anchor is crafted from materials harvested from the Rift monsters (see Firstborn Choir).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-51",
+    "source": "Barrier Anchor",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Barrier Anchor is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-52",
+    "source": "Sealing Paste",
+    "target": "Pit-Mother",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Sealing Paste is crafted from materials harvested from the Rift monsters (see Pit-Mother).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-53",
+    "source": "Sealing Paste",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Sealing Paste is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-54",
+    "source": "Nullifying Salve",
+    "target": "Pit-Mother",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Nullifying Salve is crafted from materials harvested from the Rift monsters (see Pit-Mother).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-55",
+    "source": "Nullifying Salve",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Nullifying Salve is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-56",
+    "source": "Blinding Charge",
+    "target": "Blight-Sower",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Blinding Charge is crafted from materials harvested from the Rift monsters (see Blight-Sower).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-57",
+    "source": "Blinding Charge",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Blinding Charge is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-58",
+    "source": "Blight-Ward",
+    "target": "Blight-Sower",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Blight-Ward is crafted from materials harvested from the Rift monsters (see Blight-Sower).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-59",
+    "source": "Blight-Ward",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Blight-Ward is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-60",
+    "source": "Hush-Lining",
+    "target": "Blight-Sower",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Lining is crafted from materials harvested from the Rift monsters (see Blight-Sower).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-61",
+    "source": "Hush-Lining",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Lining is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-62",
+    "source": "Pocket-Lining",
+    "target": "Blight-Sower",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Pocket-Lining is crafted from materials harvested from the Rift monsters (see Blight-Sower).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-63",
+    "source": "Pocket-Lining",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Pocket-Lining is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-64",
+    "source": "Null-Breaker Focus",
+    "target": "Rift Materials",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Null-Breaker Focus is crafted from materials harvested from the Rift monsters (see Rift Materials).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-65",
+    "source": "Null-Breaker Focus",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Null-Breaker Focus is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-66",
+    "source": "Stalker Bowstring",
+    "target": "Tidewalker",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Stalker Bowstring is crafted from materials harvested from the Rift monsters (see Tidewalker).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-67",
+    "source": "Stalker Bowstring",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Stalker Bowstring is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-68",
+    "source": "Dissolving Anti-Mage Trap",
+    "target": "Stoneborer",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Dissolving Anti-Mage Trap is crafted from materials harvested from the Rift monsters (see Stoneborer).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-69",
+    "source": "Dissolving Anti-Mage Trap",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Dissolving Anti-Mage Trap is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-70",
+    "source": "Hush-Leather",
+    "target": "Tidewalker",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Leather is crafted from materials harvested from the Rift monsters (see Tidewalker).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-71",
+    "source": "Hush-Leather",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Leather is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-72",
+    "source": "Ship-Armor",
+    "target": "Drownmaw",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Ship-Armor is crafted from materials harvested from the Rift monsters (see Drownmaw).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-73",
+    "source": "Ship-Armor",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Ship-Armor is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-74",
+    "source": "Hush-Buoy",
+    "target": "Drownmaw",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Buoy is crafted from materials harvested from the Rift monsters (see Drownmaw).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-75",
+    "source": "Hush-Buoy",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Hush-Buoy is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-76",
+    "source": "Water-Purifier",
+    "target": "Drownmaw",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Water-Purifier is crafted from materials harvested from the Rift monsters (see Drownmaw).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-77",
+    "source": "Water-Purifier",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Water-Purifier is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-78",
+    "source": "Dampening Draught",
+    "target": "Blight-Sower",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Dampening Draught is crafted from materials harvested from the Rift monsters (see Blight-Sower).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-79",
+    "source": "Dampening Draught",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Dampening Draught is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-80",
+    "source": "Null-Powder",
+    "target": "Blight-Sower",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Null-Powder is crafted from materials harvested from the Rift monsters (see Blight-Sower).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-81",
+    "source": "Null-Powder",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Null-Powder is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-82",
+    "source": "Water-Breathing Draught",
+    "target": "Tidewalker",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Water-Breathing Draught is crafted from materials harvested from the Rift monsters (see Tidewalker).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-83",
+    "source": "Water-Breathing Draught",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Water-Breathing Draught is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-84",
+    "source": "Dive-Ward",
+    "target": "Tidewalker",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Dive-Ward is crafted from materials harvested from the Rift monsters (see Tidewalker).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-vasricrift-85",
+    "source": "Dive-Ward",
+    "target": "The Ossk",
+    "type": "crafted from",
+    "label": "Crafted from",
+    "description": "Dive-Ward is crafted from materials harvested from the Rift monsters (see The Ossk).",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
   }
 ]

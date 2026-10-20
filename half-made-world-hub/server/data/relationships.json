@@ -669,5 +669,115 @@
     "description": "Mara is Jaiden's rival at Elyndor Academy.",
     "createdAt": "2026-10-19T00:00:00.000Z",
     "updatedAt": "2026-10-19T00:00:00.000Z"
+  },
+  {
+    "id": "rel-vasric-1",
+    "source": "Vasric Kaine",
+    "target": "Jaiden Marlock",
+    "type": "hunts",
+    "label": "Hunts",
+    "description": "Vasric hunts Jaiden not as an enemy but as a cure — the born hybrid's stable fusion is the only thing he believes can stop his body rejecting itself.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-vasric-2",
+    "source": "Vasric Kaine",
+    "target": "Jaiden Marlock",
+    "type": "mirror of",
+    "label": "Mirror of",
+    "description": "Vasric is the finished version of Jaiden that never was — the failed copy Dark Moon built to imitate the born hybrid.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-vasric-3",
+    "source": "Vasric Kaine",
+    "target": "Wener Leger",
+    "type": "created by",
+    "label": "Created by",
+    "description": "Wener Leger's Second Hybrid Project made Vasric, the sole survivor of a program to manufacture a hybrid.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-vasric-4",
+    "source": "Vasric Kaine",
+    "target": "Wener Leger",
+    "type": "overthrew",
+    "label": "Overthrew",
+    "description": "Within a year of escaping, Vasric did what Wener spent a century failing to do — he took Dark Moon and made its architect his pawn.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-vasric-5",
+    "source": "Vasric Kaine",
+    "target": "Dark Moon",
+    "type": "leads",
+    "label": "Leads",
+    "description": "Vasric seized Dark Moon by force; its surviving operatives serve him because he is stronger than the man who built them.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-vasric-6",
+    "source": "Vasric Kaine",
+    "target": "The Second Hybrid Project",
+    "type": "product of",
+    "label": "Product of",
+    "description": "Vasric is the Second Hybrid Project's only survivor and its final verdict.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-vasric-7",
+    "source": "Wener Leger",
+    "target": "Vasric Kaine",
+    "type": "pawn of",
+    "label": "Pawn of",
+    "description": "The patient tyrant is now the pawn of his own failed experiment, kept alive for his network and a century of planning.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-vasric-8",
+    "source": "The Second Hybrid Project",
+    "target": "Dark Moon",
+    "type": "program of",
+    "label": "Program of",
+    "description": "The project was Dark Moon's answer to a problem patience could not solve: it set out to build a hybrid instead of stealing one.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-vasric-9",
+    "source": "The Second Hybrid Project",
+    "target": "Wener Leger",
+    "type": "founded by",
+    "label": "Founded by",
+    "description": "Wener Leger founded the project after years of failing to acquire the born hybrid.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-vasric-10",
+    "source": "Licent Varak",
+    "target": "Vasric Kaine",
+    "type": "pawn of",
+    "label": "Pawn of",
+    "description": "Licent Varak is a fellow product of Dark Moon's reach — small where Vasric is broken, and now within the reach of the thing Wener could not control.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-vasric-11",
+    "source": "Dark Moon",
+    "target": "Vasric Kaine",
+    "type": "seized by",
+    "label": "Seized by",
+    "description": "Dark Moon's greatest gamble became its worst loss: the experiment not only failed but took the organization with it.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
   }
 ]

@@ -17,7 +17,7 @@ The archive holds **1086 entries across 57 categories** — Demon/Angel/Class/Hy
 Rules & Notes, Characters, Classes, Class Progression, Grade System, Rune Star Circles, Monsters,
 Rifts, Locations, Items, Magic Systems, Realms, Coins, Clan, Economy, Organizations, Calendar, Combat
 Mechanics, Laws & Justice, Academy, and many more — all browsable, searchable, and editable through
-the UI. **27 characters**, **4209 story links**, and **65 relationships** tie it all together.
+the UI. **28 characters**, **4294 story links**, and **76 relationships** tie it all together.
 
 ## Quick start
 
