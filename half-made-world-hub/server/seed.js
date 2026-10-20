@@ -3347,7 +3347,7 @@ module.exports = [
     "Characters",
     "Carin",
     "Female Demon trainer",
-    "she used to serve Lisa and later when she discovered that Lisa had a child with an angel she decided to teach the child about his demon powers. The mc met her when he visited the demon realm",
+    "She used to serve Lisa, and later, when she discovered that Lisa had a child with an angel, she decided to teach the child about his demon powers. The MC met her when he visited the demon realm.",
     [
       { label: "Appearance", value: "Four horns and four wine-purple feathery wings, shorter and less refined than the ranks above. She has the compact, wiry build of someone who trains others rather than commanding armies, with quick eyes that miss nothing." },
       { label: "Rank", value: "Scourge" },
@@ -14079,7 +14079,7 @@ module.exports = [
     "Arts & Entertainment",
     "The Angel Realm Crystal Music Tradition",
     "",
-    "Angels create music using ",
+    "Angels create music using Crystal instruments — tools that produce specific Veyn frequencies through resonance. Crystal instruments include Chimes (tuned crystal rods struck with Veyn-imbued mallets), Harps (crystal strings that vibrate at specific frequencies), Drums (hollow Crystal formations that produce deep resonance), and Voices (Angels who channel Veyn through their vocal cords, producing sounds impossible for human vocal apparatus). Crystal Music serves multiple purposes: entertainment, meditation, healing, and communication. The most complex compositions require 50+ musicians and can last for hours.",
     [
       { label: "Activation", value: "Active — requires Crystal instruments and Veyn channeling." },
       { label: "Usage", value: "Crystal Music provides cultural expression and community bonding." },
@@ -14791,9 +14791,9 @@ module.exports = [
   // ============================================================ RULES & NOTES
   e(
     "Rules & Notes",
-    "Angels promises",
+    "Angel Promises",
     "an unbroken promise",
-    "It is a promise that when an angel makes can and must never be broken when said the person who said it would be determined to the very end till the promise is accomplished but can be canceled by a slight break on their halo which can be healed by",
+    "A promise an angel makes that can and must never be broken. Once spoken, the angel is bound to see it through to the very end until the promise is accomplished. It can only be canceled by a slight break in their halo, which can be healed.",
     [],
     ["angel", "rules & notes"],
   ),

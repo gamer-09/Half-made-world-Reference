@@ -4202,7 +4202,7 @@ module.exports = [
   s("The Six Pillars of Angel Governance", "Angel Realm", "governs", "Governs", "The six pillars form the Angel Realm's governing structure."),
   s("Demon Horns", "Demons (Overview)", "part of", "Part of", "Horns are the storage and conduit of every demon’s Corrupted Veyn."),
   s("Demon Horns", "Corrupted Veyn", "connected to", "Connected to", "Horns store all Corrupted Veyn a demon can use and channel it into skills."),
-  s("Angels promises", "The Angel Veyn Vow", "part of", "Part of", "An unbroken promise tied to the angel Vow and the halo."),
+  s("Angel Promises", "The Angel Veyn Vow", "part of", "Part of", "An unbroken promise tied to the angel Vow and the halo."),
   s("MC Instability — Equilibrium & Fray", "Jaiden Marlock", "affects", "Affects", "The MC cannot lean on one nature — leaning frays him."),
   s("World Eater", "Rifts — Overview", "origin of", "Origin of", "The World Eater is the origin of every rift — its drain on the world core tears the world open, and each rift is a wound it leaves behind."),
   s("World Eater", "The Ossk", "caused", "Caused", "The rifts — and the Ossk monsters that pour through them — came with the World Eater; it is what opened their way into the world."),

@@ -8485,7 +8485,7 @@
     "category": "Characters",
     "name": "Carin",
     "subtitle": "Female Demon trainer",
-    "description": "she used to serve Lisa and later when she discovered that Lisa had a child with an angel she decided to teach the child about his demon powers. The mc met her when he visited the demon realm",
+    "description": "She used to serve Lisa, and later, when she discovered that Lisa had a child with an angel, she decided to teach the child about his demon powers. The MC met her when he visited the demon realm.",
     "fields": [
       {
         "label": "Appearance",
@@ -8523,7 +8523,7 @@
       "character"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-20T19:15:02.751Z"
   },
   {
     "id": "seed-237",
@@ -33740,7 +33740,7 @@
     "category": "Arts & Entertainment",
     "name": "The Angel Realm Crystal Music Tradition",
     "subtitle": "",
-    "description": "Angels create music using ",
+    "description": "Angels create music using Crystal instruments — tools that produce specific Veyn frequencies through resonance. Crystal instruments include Chimes (tuned crystal rods struck with Veyn-imbued mallets), Harps (crystal strings that vibrate at specific frequencies), Drums (hollow Crystal formations that produce deep resonance), and Voices (Angels who channel Veyn through their vocal cords, producing sounds impossible for human vocal apparatus). Crystal Music serves multiple purposes: entertainment, meditation, healing, and communication. The most complex compositions require 50+ musicians and can last for hours.",
     "fields": [
       {
         "label": "Activation",
@@ -33767,7 +33767,7 @@
       "arts & entertainment"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-10-11T23:26:55.434Z"
+    "updatedAt": "2026-10-20T19:15:02.751Z"
   },
   {
     "id": "seed-983",
@@ -35449,16 +35449,16 @@
   {
     "id": "94544234-da44-42e0-ba83-78133d76d69b",
     "category": "Rules & Notes",
-    "name": "Angels promises",
+    "name": "Angel Promises",
     "subtitle": "an unbroken promise",
-    "description": "It is a promise that when an angel makes can and must never be broken when said the person who said it would be determined to the very end till the promise is accomplished but can be canceled by a slight break on their halo which can be healed by",
+    "description": "A promise an angel makes that can and must never be broken. Once spoken, the angel is bound to see it through to the very end until the promise is accomplished. It can only be canceled by a slight break in their halo, which can be healed.",
     "fields": [],
     "tags": [
       "angel",
       "rules & notes"
     ],
     "createdAt": "2026-09-28T16:54:04.383Z",
-    "updatedAt": "2026-09-28T16:54:04.383Z"
+    "updatedAt": "2026-10-20T19:15:02.751Z"
   },
   {
     "id": "seed-horns-001",
