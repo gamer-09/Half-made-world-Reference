@@ -25352,6 +25352,1820 @@
     "updatedAt": "2026-10-20T00:00:00.000Z"
   },
   {
+    "id": "seed-7201",
+    "category": "Items",
+    "name": "Anti-Magic Collar",
+    "subtitle": "A nerve-thread restraint that suppresses Veyn through the throat",
+    "description": "An Anti-Magic Collar is a band of fine nerve-thread harvested from a Hollow Stalker, woven around a rigid core and locked at the throat. Because raw Ossk nerve-thread suppresses Veyn rather than channelling it, any being wearing one has their Veyn pulled quiet — a caster becomes a person again, unable to draw or release power while the collar holds. It is the ritual restraint of the rift trade: the way a captured Ossk-touched mage, a blood-crazed demon, or a prisoner in the Holding Cells is made safe to move. A collar does not kill and does not harm the wearer on its own; it simply closes the door to Veyn and keeps it closed until the correct key — a reversal of the same craft that made it — opens the clasp. Left on too long, a caster's reserves recede like any unused muscle, and the Concord warns that a being severed from Veyn is only ever quiet, not tamed.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Restraint — Veyn suppression / anti-magic restraint"
+      },
+      {
+        "label": "Made From",
+        "value": "Fine nerve-thread (Hollow Stalker spine, harvested fresh and kept dry) over a rigid core, closed with a reversed-craft clasp"
+      },
+      {
+        "label": "Effect",
+        "value": "Suppresses the wearer's Veyn — no drawing or releasing power while worn. Cancels magic, not Vitality; a Ren user is unaffected"
+      },
+      {
+        "label": "Limits",
+        "value": "Suppresses the wearer only; does not harm them. Long wear recedes the wearer's reserves. Removed only by the maker's reversal-key"
+      },
+      {
+        "label": "Grade",
+        "value": "Thread grade and weave set the strength of the suppression (fine thread for a person; prime thread for a being who must be absolutely held)"
+      },
+      {
+        "label": "Regulation",
+        "value": "Controlled like a weapon by the Concord and by every prison authority; an uncertified collar is contraband on the same shelf as a blood-forged blade"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Restraint"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Hollow Stalker",
+          "Anti-Magic Cuffs",
+          "Restraint Manacles",
+          "Binding Cords",
+          "The Holding Cells"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "restraint",
+      "anti-magic",
+      "veyn-suppression",
+      "ossk",
+      "hollow stalker",
+      "manacle",
+      "collar"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7202",
+    "category": "Items",
+    "name": "Anti-Magic Cuffs",
+    "subtitle": "Nerve-thread wrist restraints that hold a caster quiet",
+    "description": "Anti-Magic Cuffs are a pair of nerve-thread bands locked at the wrists, the wrist-borne sibling of the Anti-Magic Collar. Fine Hollow Stalker thread suppresses the wearer's Veyn, so a bound caster cannot open a hand or a channel — the cheapest, most portable way to hold someone who might otherwise burn their way free. Cuffs are the field restraint of rift-hunt teams and escort parties: lighter and faster to apply than a collar, used when the prisoner must walk and be seen rather than be locked in a cell. They fail earlier than a collar — well-made cuffs hold a strong mage, but a determined one with grade-thread cuffs of their own can fray the weave at the clasp. The Concord pairs them with a collar when the prisoner matters and the escort cannot afford a mistake.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Restraint — Veyn suppression / anti-magic restraint"
+      },
+      {
+        "label": "Made From",
+        "value": "Fine nerve-thread (Hollow Stalker spine) wound into two locked wrist bands"
+      },
+      {
+        "label": "Effect",
+        "value": "Suppresses the wearer's Veyn while both cuffs hold — no casting. Cancels magic, not Vitality"
+      },
+      {
+        "label": "Limits",
+        "value": "Portable and quick to apply, but weaker than a collar; a strong caster can work the clasp loose over time. Pair with a collar for important prisoners"
+      },
+      {
+        "label": "Regulation",
+        "value": "Concord-controlled restraint; carried on every licensed rift commission"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Restraint"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Hollow Stalker",
+          "Anti-Magic Collar",
+          "Restraint Manacles",
+          "Binding Cords"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "restraint",
+      "anti-magic",
+      "veyn-suppression",
+      "ossk",
+      "hollow stalker",
+      "cuffs"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7203",
+    "category": "Items",
+    "name": "Restraint Manacles",
+    "subtitle": "Heavy nerve-thread shackles for the strongest prisoners",
+    "description": "Restraint Manacles are the heavy end of the nerve-thread restraint trade: thick shackle-plates lined with woven thread, built to hold a being the lighter cuffs and collars were never meant to hold — a Bloodward demon, a hybrid in a bad hour, a thing dragged out of a Bloom that is not quite dead. The suppression scale is the same as any nerve-thread restraint, but the manacles use more thread, tighter weave, and a reinforced clasp that a determined wearer cannot work loose. They are slow and heavy to apply and mostly reserved for prison use and for moving something the Concord will not name in writing. As with all nerve-thread restraints, they close the door to Veyn and nothing else — a prisoner in manacles is bound by metal and by craft, not by pain, and a Ren user walks free within them.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Restraint — heavy Veyn suppression / anti-magic restraint"
+      },
+      {
+        "label": "Made From",
+        "value": "Thick nerve-thread weave over shackle-plates with a reinforced clasp"
+      },
+      {
+        "label": "Effect",
+        "value": "Strong suppression of the wearer's Veyn — no casting while locked. Cancels magic, not Vitality"
+      },
+      {
+        "label": "Limits",
+        "value": "Heavy and slow to apply; reserved for high-threat prisoners. Still no effect on Ren/Vitality"
+      },
+      {
+        "label": "Regulation",
+        "value": "Prison and Concord use only; not issued on ordinary hunts"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Restraint"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Hollow Stalker",
+          "Anti-Magic Collar",
+          "Anti-Magic Cuffs",
+          "The Holding Cells"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "restraint",
+      "anti-magic",
+      "veyn-suppression",
+      "ossk",
+      "hollow stalker",
+      "manacles",
+      "shackles"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7204",
+    "category": "Items",
+    "name": "Binding Cords",
+    "subtitle": "Nerve-thread line that ties a caster's power shut",
+    "description": "Binding Cords are nerve-thread spun into a flexible line — the crude, adaptable restraint of the rift trade. Wrapped around a limb, a throat, or a whole body, the cords suppress the Veyn of whatever they touch, so a prisoner can be trussed rather than fit with ironwork. They are the tool of the field: used to bind a stunned Stalker's nerve-cluster, to secure a caster before the collar is found, or to hold a suspect who is not yet important enough for manacles. Cords weaken fastest of all the nerve-thread restraints — the weave frays, and once the thread goes dull it stops suppressing and becomes only rope. Hunters carry them by the coil and replace them every season.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Restraint — flexible Veyn suppression / anti-magic restraint"
+      },
+      {
+        "label": "Made From",
+        "value": "Nerve-thread (Hollow Stalker spine) spun into a flexible line"
+      },
+      {
+        "label": "Effect",
+        "value": "Suppresses Veyn in whatever it is wrapped around. Cancels magic, not Vitality"
+      },
+      {
+        "label": "Limits",
+        "value": "Weakest and fastest-wearing of the nerve-thread restraints; dull thread stops suppressing and is just rope"
+      },
+      {
+        "label": "Regulation",
+        "value": "Standard field restraint on licensed commissions"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Restraint"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Hollow Stalker",
+          "Anti-Magic Collar",
+          "Anti-Magic Cuffs",
+          "Restraint Manacles"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "restraint",
+      "anti-magic",
+      "veyn-suppression",
+      "ossk",
+      "hollow stalker",
+      "cords"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7205",
+    "category": "Items",
+    "name": "Hush-Cloak",
+    "subtitle": "A cloak of hollow chitin that hides its wearer from the hush's own senses",
+    "description": "A Hush-Cloak is cut from hollow chitin — the thin, grey shell stripped from a Hollow Stalker — and worn as a hooded cloak. Hollow chitin carries the dead-quiet of the hush it came from, so a wearer wrapped in it gives off no Veyn signature to read: to an Ossk, to a caster scanning the dark, and above all to the hush itself, the wearer is simply part of the grey. It is the standard stealth gear of teams working a Hollow Rift, where seeing the enemy is easy and being seen by the hive is fatal. The cloak hides presence, not sound or scent — a hunter in a Hush-Cloak still has to keep quiet — and the chitin holds its quiet only while it is cared for. Cracked, soaked, or left in living land too long, the shell stops reading as dead and the wearer lights up again.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Stealth equipment — presence-hiding"
+      },
+      {
+        "label": "Made From",
+        "value": "Hollow chitin (Hollow Stalker), stripped and shaped into a hooded cloak"
+      },
+      {
+        "label": "Effect",
+        "value": "Hides the wearer's Veyn signature from Ossk, casters, and the hush's own awareness while intact"
+      },
+      {
+        "label": "Limits",
+        "value": "Hides presence only — not sound or scent. Loses the effect once cracked, soaked, or kept too long out of the hush"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Stealth gear"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Hollow Stalker",
+          "Stealth-Mail",
+          "Silent Boots",
+          "Seeding & Blooming"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "stealth",
+      "ossk",
+      "hollow chitin",
+      "cloak",
+      "presence"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7206",
+    "category": "Items",
+    "name": "Stealth-Mail",
+    "subtitle": "Light hollow-chitin body armor that muffles the wearer's presence",
+    "description": "Stealth-Mail is hollow chitin worked into flexible, overlapping scales — armor built for silence rather than stopping a blow. It deadens the wearer's Veyn signature the way a Hush-Cloak does, but worn over the body so it can be combined with normal gear, and it mutes the small sounds a body makes: the clink of buckles, the scrape of plate, the creak of a belt. It is not combat armor — a good strike goes through it — and its value is entirely in not being found. Teams moving through a Bloom's outer galleries wear stealth-mail under the hush-cloak; the two together make a hunter almost indistinguishable from the grey, which is as close to invisible as anything gets inside a rift.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Stealth equipment — light armor"
+      },
+      {
+        "label": "Made From",
+        "value": "Hollow chitin (Hollow Stalker), worked into overlapping flexible scales"
+      },
+      {
+        "label": "Effect",
+        "value": "Deadens Veyn signature and mutes the body's small sounds while worn"
+      },
+      {
+        "label": "Limits",
+        "value": "Not protective — a solid blow passes through. Presence and sound only"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Stealth gear"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Hollow Stalker",
+          "Hush-Cloak",
+          "Silent Boots"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "stealth",
+      "ossk",
+      "hollow chitin",
+      "mail",
+      "armor"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7207",
+    "category": "Items",
+    "name": "Silent Boots",
+    "subtitle": "Hush-leather footwear that swallows the wearer's step",
+    "description": "Silent Boots are soled with hollow chitin and lined with cured hush-leather, built so a footfall makes no sound on stone, lattice, or the fused streets inside a Bloom. Inside a hush, sound is the first thing that betrays a hunter — the hive hears a wrong footstep long before it sees a light — and Silent Boots are the cheap, unglamorous item that keeps teams alive. They do nothing on their own against a watchful cast; they simply ensure the hunter cannot be heard before they are seen. The soles wear out faster than any other piece of stealth gear, since chitin worked thin enough to be silent is also thin enough to grind away.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Stealth equipment — footwear"
+      },
+      {
+        "label": "Made From",
+        "value": "Hollow chitin soles lined with cured hush-leather"
+      },
+      {
+        "label": "Effect",
+        "value": "Silences the wearer's footsteps on stone and lattice"
+      },
+      {
+        "label": "Limits",
+        "value": "Sound only — no hiding of presence or scent. Soles grind away quickly"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Stealth gear"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Hollow Stalker",
+          "Hush-Cloak",
+          "Stealth-Mail"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "stealth",
+      "ossk",
+      "hollow chitin",
+      "boots",
+      "quiet"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7208",
+    "category": "Items",
+    "name": "Hush-Plate Mail",
+    "subtitle": "Heavy chitin armor that turns steel and carries the hush with it",
+    "description": "Hush-Plate Mail is heavy-grade hush-chitin chiselled from a Stoneborer's back plates and fitted into armor. It is true combat armor — the hardest material a rift hunter can wear without magic — and the one piece of Ossk gear that fights in both directions: it stops steel and bolt the way plate should, and because hush-chitin carries the hush, a wearer inside it is harder for the hive and for a scanning caster to read. It is heavy, it is loud in the wrong hands, and it is expensive because heavy chitin only comes off a Stoneborer that died clean. Rift-hunt teams that expect open fighting in a hush wear hush-plate over quieter layers; a full harness is the mark of a professional.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Armor — heavy chitin combat plate"
+      },
+      {
+        "label": "Made From",
+        "value": "Heavy-grade hush-chitin (Stoneborer back plates), fitted into a harness"
+      },
+      {
+        "label": "Effect",
+        "value": "Stops steel and bolt like plate; carries the hush, making the wearer harder to read by hive and casters"
+      },
+      {
+        "label": "Limits",
+        "value": "Heavy and costly; heavy chitin only comes from a clean Stoneborer kill"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Armor"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Stoneborer",
+          "Hush-Plate",
+          "Shield Faces",
+          "Ship-Armor"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "armor",
+      "ossk",
+      "hush-chitin",
+      "plate",
+      "stoneborer"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7209",
+    "category": "Items",
+    "name": "Hush-Plate",
+    "subtitle": "Raw chitin plate stock waiting to be worked into armor",
+    "description": "Hush-Plate is heavy-grade hush-chitin as it comes off the carcass — flat, grey, dense plate stock traded and stockpiled before it is shaped into mail, shield faces, or ship-armor. It is a material as much as an item: a smith buys hush-plate by the sheet the way an ordinary armorer buys steel, and pays by the grade and the cleanliness of the kill. Cracked or blood-soaked plate stocks poorly and carries the hush weakly; good plate is grey and dry, chiselled clean, and worth real coin at the Concord hall. Most of what a rift yields in cover value passes through Hush-Plate stock before it becomes anything a hunter can wear.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Material — chitin plate stock"
+      },
+      {
+        "label": "Made From",
+        "value": "Heavy-grade hush-chitin (Stoneborer back plates), chiselled off and dried"
+      },
+      {
+        "label": "Effect",
+        "value": "Fed into Hush-Plate Mail, Shield Faces, and Ship-Armor; carries the hush once worked"
+      },
+      {
+        "label": "Limits",
+        "value": "Raw stock — no use until worked. Cracked or bloody plate carries the hush weakly"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Material"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Stoneborer",
+          "Hush-Plate Mail",
+          "Shield Faces",
+          "Clearing a Rift & Rewards"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "material",
+      "ossk",
+      "hush-chitin",
+      "plate",
+      "stock"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7210",
+    "category": "Items",
+    "name": "Shield Faces",
+    "subtitle": "Hush-chitin shield plates that blunt both blow and spell",
+    "description": "Shield Faces are heavy hush-chitin worked into the face of a shield. A rift hunter carrying one gets the ordinary protection of a good shield plus the quiet of the material: spells cast at the bearer have a harder time finding purchase through hush-chitin, and the hive reads the bearer less clearly. It is the defensive counterpart to Hush-Plate Mail, issued to the front line of a team clearing a Seeding before it can Bloom. A shield face is only as good as its plate — thin or cracked chitin gives no protection and no quiet — and the material is heavy enough that most bearers carry a smaller shield than they otherwise would.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Armor — shield component"
+      },
+      {
+        "label": "Made From",
+        "value": "Heavy hush-chitin (Stoneborer) worked into a shield face"
+      },
+      {
+        "label": "Effect",
+        "value": "Blocks blows like a normal shield; carries the hush so spells find the bearer less easily"
+      },
+      {
+        "label": "Limits",
+        "value": "Only as good as its plate; thin or cracked chitin protects and quiets poorly"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Armor"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Stoneborer",
+          "Hush-Plate Mail",
+          "Hush-Plate"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "armor",
+      "ossk",
+      "hush-chitin",
+      "shield",
+      "stoneborer"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7211",
+    "category": "Items",
+    "name": "Hush-Ward",
+    "subtitle": "A fixed field that dampens Veyn over a place",
+    "description": "A Hush-Ward is a Harvester gland — raw, not reversed — set into stone or timber to drain the Veyn from around it. Where a Hollowlight reopens a pocket so casters can work, a Hush-Ward does the opposite: it holds a stretch of ground quiet, suppressing magic inside its reach the way a Veyn-Dead Zone does naturally. Prisons mount them over cell blocks, vaults over their strongrooms, and rift-hunters anchor them at a campsite to keep a Bloom's hush from creeping closer overnight. A Hush-Ward is never reversed — reversed, the same gland becomes a Hollowlight — and so every one is a permanent, deliberate dead patch in living land, which is why most settlements will not allow them inside the walls.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Field equipment — static Veyn suppression"
+      },
+      {
+        "label": "Made From",
+        "value": "A raw Harvester gland (Ossk) set into stone or timber"
+      },
+      {
+        "label": "Effect",
+        "value": "Dampens Veyn across an area — suppresses magic inside its reach, like a small dead zone"
+      },
+      {
+        "label": "Limits",
+        "value": "Fixed, not portable. Reversed, the same gland is a Hollowlight. Unwelcome inside settlements"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Anti-magic field"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Harvester gland",
+          "Veyn-Dampening Lamp",
+          "Rift-Anchor",
+          "Veyn-Dead Zones",
+          "Hollowlight"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "anti-magic",
+      "veyn-suppression",
+      "ossk",
+      "harvester gland",
+      "ward",
+      "field"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7212",
+    "category": "Items",
+    "name": "Veyn-Dampening Lamp",
+    "subtitle": "A lamp that pours quiet instead of light",
+    "description": "A Veyn-Dampening Lamp is a sealed Harvester gland mounted on a haft and turned on a room the way a lantern is turned on the dark — except it casts not light but stillness. Within its cone, Veyn goes quiet: a mage cannot cast, a trap cannot fire, a cursed object stops muttering. Prisons, courts, and the more paranoid noble houses hang them over doorways; rift-hunters bring the portable kind to hold a hush-line while they rest. The lamp needs no fuel and no light to work, but a gland goes dark over the years and must be replaced, and a lamp left running in a small room is a slow way to sever a caster who has to sit inside it.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Field equipment — portable Veyn suppression"
+      },
+      {
+        "label": "Made From",
+        "value": "A sealed Harvester gland on a haft"
+      },
+      {
+        "label": "Effect",
+        "value": "Suppresses Veyn in a directed cone or room — no casting, no trap-firing, no cursed-object activity inside"
+      },
+      {
+        "label": "Limits",
+        "value": "Fixed reach; the gland fades over years and must be replaced. Long exposure recedes a caster's reserves"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Anti-magic field"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Harvester gland",
+          "Hush-Ward",
+          "Rift-Anchor",
+          "Veyn-Dead Zones"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "anti-magic",
+      "veyn-suppression",
+      "ossk",
+      "harvester gland",
+      "lamp"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7213",
+    "category": "Items",
+    "name": "Rift-Anchor",
+    "subtitle": "A gland-driven stake that holds a pocket of quiet",
+    "description": "A Rift-Anchor is a raw Harvester gland driven into the ground on an iron stake to freeze the hush-line where a hunt party wants it. It does not open a pocket and does not clear a zone; it simply pins the boundary of a dead stretch in place, so a clearing operation or a rest camp can hold the hush at arm's length instead of letting it creep. Sealing crews drive a ring of anchors around a rift mouth before they begin their work, buying a stable, quiet perimeter in which to set the seal. The gland lasts only days before it fades, and an anchor is left behind, not carried back — a spent gland is dead weight and a small dead patch in the ground.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Field equipment — static hush-line control"
+      },
+      {
+        "label": "Made From",
+        "value": "A raw Harvester gland on an iron stake"
+      },
+      {
+        "label": "Effect",
+        "value": "Pins the boundary of a hush/dead patch in place; holds a stable perimeter for sealing or resting"
+      },
+      {
+        "label": "Limits",
+        "value": "Lasts days before fading; left behind, not recovered"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Anti-magic field"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Harvester gland",
+          "Hush-Ward",
+          "Veyn-Dampening Lamp",
+          "Clearing a Rift & Rewards"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "anti-magic",
+      "ossk",
+      "harvester gland",
+      "anchor",
+      "sealing"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7214",
+    "category": "Items",
+    "name": "Hush-Ward Heart",
+    "subtitle": "The command organ of a Grey Sovereign, turned to clear a battlefield of null",
+    "description": "A Hush-Ward Heart is the Sovereign nucleus cut from a dead Grey Sovereign and sealed in a null-vessel so it stops commanding — because even out of the body a nucleus will try to run a hive, and a nucleus left loose will do exactly that. Reversed by a Master Enchanter, the heart becomes the largest portable dampening a hunter can carry: driven into the ground, it clears null out of a whole battlefield at once, reopening enough of the field for a party of casters to fight in it. It is an S-rank harvest and priced accordingly — a Hush-Ward Heart is the difference between a party that fights a Sovereign's war as casters and a party that fights it on steel alone. The vessel that holds it is as valuable as the organ, and losing the seal is how a cleared field becomes a hive's field again.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Reversed Ossk focus — regional null-breaker heart"
+      },
+      {
+        "label": "Made From",
+        "value": "The Sovereign nucleus of a dead Grey Sovereign, sealed in a null-vessel and reversed"
+      },
+      {
+        "label": "Effect",
+        "value": "Clears null over a wide area at once — reopens a battlefield for massed casting"
+      },
+      {
+        "label": "Limits",
+        "value": "Must stay sealed or the nucleus commands a hive again. Enormous and immobile once set; S-rank value"
+      },
+      {
+        "label": "Grade",
+        "value": "Sovereign-grade. Only a Master Enchanter can reverse and reseal the nucleus"
+      },
+      {
+        "label": "Regulation",
+        "value": "Concord-listed like a siege engine; a working Heart is never sold openly"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Null-breaker"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Grey Sovereign",
+          "Sovereign Horn",
+          "Hollowlight",
+          "Null Energy",
+          "Enchanter"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "null-breaker",
+      "ossk",
+      "grey sovereign",
+      "nucleus",
+      "anti-magic",
+      "battlefield"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7215",
+    "category": "Items",
+    "name": "Sovereign Horn",
+    "subtitle": "A resonant organ that looses a hush-scream",
+    "description": "A Sovereign Horn is the voice-node cut from a Grey Sovereign's head and cured — the organ that let the Sovereign call across its whole hive. Worked into a horn, it does the one thing no other rift item does: it projects the hush outward as a weapon. A blast of the Sovereign Horn looses a hush-scream, a moving wave of dead Veyn that leaves a trail of suppressed magic behind it and staggers casters and Ossk alike who hear it. The Concord regulates it exactly as it regulates the Heart, because a Horn carried into a Seeding can shove the hush-line back faster than an anchor line is set — and carried into a town, it can silence a street. It is propaganda and weapon and siren all at once, and the few that exist are known by name.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Offensive Ossk focus — projected hush"
+      },
+      {
+        "label": "Made From",
+        "value": "The voice-node of a Grey Sovereign, cut and cured"
+      },
+      {
+        "label": "Effect",
+        "value": "Looses a hush-scream — a moving wave of suppressed Veyn that silences magic in its path and staggers those who hear it"
+      },
+      {
+        "label": "Limits",
+        "value": "Each sounding taxes the organ; overuse cracks it. Regulated like the Hush-Ward Heart"
+      },
+      {
+        "label": "Grade",
+        "value": "Sovereign-grade; among the rarest rift items known"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Weaponry"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Grey Sovereign",
+          "Hush-Ward Heart",
+          "Seeding & Blooming",
+          "Veyn-Dead Zones"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "weapon",
+      "ossk",
+      "grey sovereign",
+      "voice-node",
+      "hush-scream",
+      "horn"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7216",
+    "category": "Items",
+    "name": "Barrier Anchor",
+    "subtitle": "A resonance-core artifact that holds a tear shut",
+    "description": "A Barrier Anchor is built around a Firstborn resonance-core — one voice harvested from a Firstborn Choir, priceless, and claimed by the Concord rather than sold. Reversed and set, an anchor does the greatest warding work in the world: it pins a rift-tear shut so it cannot widen, holds the Sundering barrier where it is thinnest, and keeps the oldest tears asleep. Every barrier point in every realm is watched over a standing anchor line, and the Concord would sooner lose a city than one anchor. A core cannot be bought for any coin; barrier anchors are issued, not traded, and only the Guildmaster's seal releases one. Leave a single voice of a Firstborn Choir unharvested and the Choir speaks again — the anchors are the reason that matters.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Warding artifact — barrier seal"
+      },
+      {
+        "label": "Made From",
+        "value": "A Firstborn resonance-core (one voice of a Firstborn Choir), reversed and set"
+      },
+      {
+        "label": "Effect",
+        "value": "Pins a rift-tear shut, holds the Sundering barrier at its thinnest points, keeps ancient tears asleep"
+      },
+      {
+        "label": "Limits",
+        "value": "Cannot be bought — claimed by the Concord. One core, one voice; the harvest must be total or the Choir rebuilds"
+      },
+      {
+        "label": "Grade",
+        "value": "Primordial-grade; priceless"
+      },
+      {
+        "label": "Regulation",
+        "value": "Issued by Guildmaster's seal only; never traded"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Warding artifact"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Firstborn Choir",
+          "The Sundering Barrier Points",
+          "The World Barrier",
+          "The First Tear"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "ward",
+      "ossk",
+      "firstborn choir",
+      "resonance-core",
+      "barrier",
+      "anchor"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7217",
+    "category": "Items",
+    "name": "Sealing Paste",
+    "subtitle": "Root-resin worked into a compound that quiets a rift",
+    "description": "Sealing Paste is root-resin — bled from the rooting tendrils of a Pit-Mother or a Nameless Queen — worked with binding agents into a compound that quiets an open rift. Painted over and driven into a tear or a spreading hive edge, the paste stills the Veyn around it, holding a wound in the world closed long enough for a Barrier Anchor or a sealing ritual to bite. The lesser paste from a Pit-Mother's resin seals a village-sized tear; the primordial paste from a Nameless Queen's roots fixes a kingdom-sized pocket and is the craft that keeps the oldest tears asleep. A sealing crew's paste is the most precious thing it carries, and a crew that runs out mid-seal is a crew that watches the rift breathe back open.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Material — sealing compound"
+      },
+      {
+        "label": "Made From",
+        "value": "Root-resin (Pit-Mother or Nameless Queen), worked with binding agents"
+      },
+      {
+        "label": "Effect",
+        "value": "Quiets and holds an open tear or hive edge closed so a seal can set"
+      },
+      {
+        "label": "Limits",
+        "value": "Holds, does not close on its own — needs an anchor or ritual. Primordial paste is kingdom-grade and irreplaceable"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Material"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Pit-Mother",
+          "Nameless Queen",
+          "Nullifying Salve",
+          "Barrier Anchor",
+          "Clearing a Rift & Rewards"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "material",
+      "ossk",
+      "root-resin",
+      "sealing",
+      "pit-mother",
+      "nameless queen"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7218",
+    "category": "Items",
+    "name": "Nullifying Salve",
+    "subtitle": "A resin balm that quiets Ossk corruption on flesh",
+    "description": "A Nullifying Salve is root-resin bled from a Pit-Mother's tendrils and rendered into a balm. Spread on a wound made by an Ossk — where grey-lattice spores or the hush's touch has started to take root — it quiets the corruption before it can spread, the field medicine of every rift expedition. It does not heal the wound and it does not replace a Clergy's cleansing; it buys time, holding the grey back long enough for a proper healer. A salve that has gone thick or separated has lost its quiet and should be thrown away, not used. Rift medics carry it the way ordinary medics carry clean bandage: cheap, unglamorous, and the difference between a scratch and a death.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Medical — resin balm"
+      },
+      {
+        "label": "Made From",
+        "value": "Root-resin (Pit-Mother), rendered into a salve"
+      },
+      {
+        "label": "Effect",
+        "value": "Quiets Ossk corruption taking root in a wound, holding it back until proper cleansing"
+      },
+      {
+        "label": "Limits",
+        "value": "Buys time only — does not heal or purify. Spoiled salve is useless"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Medical"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Pit-Mother",
+          "Sealing Paste",
+          "Medical",
+          "Seeding & Blooming"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "medical",
+      "ossk",
+      "root-resin",
+      "salve",
+      "pit-mother"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7219",
+    "category": "Items",
+    "name": "Blinding Charge",
+    "subtitle": "A spore-sac flash that stuns a hive and unroots a Seeding edge",
+    "description": "A Blinding Charge is an intact spore-sac peeled from a Blight-Sower — cut free without bursting it, because a burst sac is a dead sac — and kept sealed until it is thrown. When it breaks, it looses a flash of blight-spores that blinds and staggers anything caught in it, Ossk included, and leaves the ground around it briefly hostile to new rooting. Field teams use charges to break contact with a Seeding's edge, to stun a Stalker mid-lunge, or to buy the seconds needed to set an anchor. The sac is fragile and the harvest is ten minutes of delicate work; a careless hunter carries a satchel of charges that will not survive the walk, let alone the fight.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Weaponry — thrown blinding charge"
+      },
+      {
+        "label": "Made From",
+        "value": "An intact spore-sac (Blight-Sower), cut free unburst and kept sealed"
+      },
+      {
+        "label": "Effect",
+        "value": "Bursts into blinding blight-spores — blinds and staggers those caught; briefly hostile to new rooting"
+      },
+      {
+        "label": "Limits",
+        "value": "Fragile and single-use; a burst sac is a dead sac, so carry is delicate"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Weaponry"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Blight-Sower",
+          "Blight-Ward",
+          "Seeding & Blooming"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "weapon",
+      "ossk",
+      "blight-sower",
+      "spore-sac",
+      "charges"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7220",
+    "category": "Items",
+    "name": "Blight-Ward",
+    "subtitle": "A field charm that keeps a Seeding from taking root",
+    "description": "A Blight-Ward is built from a Blight-Sower's blight-hide and spore-craft, set around a campsite or a threshold to stop a Seeding from putting down roots where the party sleeps. Where a Hush-Ward suppresses magic and a Rift-Anchor pins a hush-line, a Blight-Ward does something narrower and just as vital: it makes the ground itself unwelcoming to blight-spores, so a hunt party can rest beside an active rift without waking to grey lattice under the bedroll. It is cheap, rough, and made in quantity by every field team that has learned to sleep near a Bloom. A ward does not stop an Ossk and does not stop the hush — it only keeps the earth from being seeded.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Field equipment — anti-seeding ward"
+      },
+      {
+        "label": "Made From",
+        "value": "Blight-hide and spore-craft (Blight-Sower), set around a perimeter"
+      },
+      {
+        "label": "Effect",
+        "value": "Makes ground around it hostile to blight-spores — stops new rooting at a campsite or threshold"
+      },
+      {
+        "label": "Limits",
+        "value": "Does not stop Ossk or the hush; keeps the earth from being seeded only"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Anti-magic field"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Blight-Sower",
+          "Blinding Charge",
+          "Hush-Ward",
+          "Seeding & Blooming"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "ward",
+      "ossk",
+      "blight-sower",
+      "blight-hide",
+      "seeding"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7221",
+    "category": "Items",
+    "name": "Hush-Lining",
+    "subtitle": "Hide lining that deadens a cloak or pack against detection",
+    "description": "Hush-Lining is blight-hide peeled from a Blight-Sower, cured, and sewn into the inner face of a cloak, pack, or boot — a cheap, portable layer that deadens whatever it lines against the senses of a hush. It is the poor hunter's version of a Hush-Cloak: a full cloak of hollow chitin is expensive and rare, but a hush-lining can be fitted to any ordinary garment and gives a lesser version of the same gift, enough to blur the wearer's presence at the edges of a hush without making them truly quiet. Linings wear through and must be resewn, and a good one is worth more than the cloak it lines — which is why experienced hunters buy the lining first and the cloak second.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Stealth equipment — lining material"
+      },
+      {
+        "label": "Made From",
+        "value": "Blight-hide (Blight-Sower), peeled, cured, and sewn into a garment's inner face"
+      },
+      {
+        "label": "Effect",
+        "value": "Deadens whatever it lines against a hush's senses — a lesser, portable version of a Hush-Cloak"
+      },
+      {
+        "label": "Limits",
+        "value": "Lesser than full hollow-chitin gear; wears through and must be resewn. Hides presence poorly at close range"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Stealth gear"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Blight-Sower",
+          "Hush-Cloak",
+          "Pocket-Lining",
+          "Stealth-Mail"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "stealth",
+      "ossk",
+      "blight-sower",
+      "blight-hide",
+      "lining",
+      "cloak"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7222",
+    "category": "Items",
+    "name": "Pocket-Lining",
+    "subtitle": "A reversed hide lining that opens a small personal pocket",
+    "description": "A Pocket-Lining is blight-hide reversed by an Enchanter and sewn into a cloak or pack so its bearer carries a small bubble of living magic with them — a pocket the size of a pack in which ambient Veyn flows again. It is the travel-grade cousin of the Deafcoin: fixed to a garment rather than struck on a chain, larger than a personal bubble but not a party's clearing, and worn by the people who cross dead ground by trade — couriers, smugglers, and the occasional mage who would rather not die on steel in a hush. Like every reversed focus it is a place to cast, not a supply; the wearer still spends only what they carried. A good Pocket-Lining lasts years, and it is the single most valuable thing most carriers of it own.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Reversed Ossk focus — travel-grade null-breaker"
+      },
+      {
+        "label": "Made From",
+        "value": "Blight-hide (Blight-Sower), reversed and sewn into a cloak or pack lining"
+      },
+      {
+        "label": "Effect",
+        "value": "Opens a small personal pocket where ambient Veyn flows — lets the bearer cast from carried Veyn in a dead/hush zone"
+      },
+      {
+        "label": "Limits",
+        "value": "A place to cast, not a supply. Larger than a Deafcoin, smaller than a Hollowlight pocket"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Null-breaker"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Blight-Sower",
+          "Hush-Lining",
+          "Deafcoin",
+          "Hollowlight",
+          "Veyn-Dead Zones"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "null-breaker",
+      "ossk",
+      "blight-sower",
+      "blight-hide",
+      "lining",
+      "pocket"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7223",
+    "category": "Items",
+    "name": "Null-Breaker Focus",
+    "subtitle": "The general class of reversed Ossk items that reopen magic in a dead zone",
+    "description": "A Null-Breaker Focus is any reversed Ossk organ or thread set in a housing and turned so it drinks Null Energy instead of Veyn. It is less a single item than the whole family the rift trade is built on: a reversed Harvester gland (a Hollowlight), a reversed seed-core (a Deafcoin), a reversed hide lining (a Pocket-Lining), a reversed nerve-thread winding, or a reversed Sovereign or Firstborn core. What every focus shares is a single trick — reopen a pocket where ambient Veyn moves again, so a caster can work inside a hush or a dead zone from the Veyn they carried in. None of them supply new Veyn; all of them are places to cast, and the Concord treats the whole class as a controlled good for exactly that reason. A hybrid needs no focus at all; everyone else who wants to cast in dead ground buys into this trade.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Reversed Ossk focus — the general class"
+      },
+      {
+        "label": "Made From",
+        "value": "Any reversed Ossk organ or thread in a housing — Harvester gland, seed-core, blight-hide, nerve-thread, Sovereign or Firstborn core"
+      },
+      {
+        "label": "Effect",
+        "value": "Reopens a pocket where ambient Veyn flows, letting a caster work in a hush or dead zone from carried Veyn"
+      },
+      {
+        "label": "Limits",
+        "value": "A place to cast, not a supply — never replenishes Veyn. Pocket size and throughput scale with material and craft grade"
+      },
+      {
+        "label": "Notable Kinds",
+        "value": "Hollowlight (gland), Deafcoin (seed-core), Pocket-Lining (hide), nerve-thread windings, Hush-Ward Heart (Sovereign), Barrier Anchor (Firstborn)"
+      },
+      {
+        "label": "Regulation",
+        "value": "Controlled good; sold only to certified parties and Concord commissions"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Null-breaker"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Hollowlight",
+          "Deafcoin",
+          "Pocket-Lining",
+          "Hush-Ward Heart",
+          "Barrier Anchor",
+          "Enchanter",
+          "Veyn-Dead Zones",
+          "Null Energy"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "null-breaker",
+      "ossk",
+      "enchanter",
+      "category",
+      "anti-magic",
+      "dead-zone"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7224",
+    "category": "Items",
+    "name": "Stalker Bowstring",
+    "subtitle": "A water-cured tendon string that carries true through a hush",
+    "description": "A Stalker Bowstring is spun from the long leg cords of a Tidewalker — a drowned-rift Stalker — harvested wet and cured in brine. Tendon from the drowned Stalkers holds a springiness that ordinary gut cannot, and a bowstrung with it throws an arrow flat, fast, and true even inside a hush, where most ranged gear and all magic fail. Since a hunt inside a deep hush is fought on steel and nerve, the bowstring is the archer's whole contribution to the fight, and every team that fights Ossk at range carries spares. The cord must be kept brined: dry it out and it goes brittle and snaps at the worst moment. The same tendon works for crossbow prods, and a propped crossbow with a Stalker string is the closest thing a hunter gets to artillery inside a dead zone.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Equipment — ranged weapon component"
+      },
+      {
+        "label": "Made From",
+        "value": "Water-cured stalker tendon (Tidewalker leg cords), harvested wet and brined"
+      },
+      {
+        "label": "Effect",
+        "value": "Bowstring / crossbow prod that throws true through a hush where magic and normal ranged gear fail"
+      },
+      {
+        "label": "Limits",
+        "value": "Must stay brined — dried tendon goes brittle and snaps"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Weaponry"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Tidewalker",
+          "Dissolving Anti-Mage Trap",
+          "Seeding & Blooming"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "weapon",
+      "ossk",
+      "tidewalker",
+      "tendon",
+      "bowstring"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7225",
+    "category": "Items",
+    "name": "Dissolving Anti-Mage Trap",
+    "subtitle": "Borer-bile charged to eat through wards, locks, and flesh",
+    "description": "A Dissolving Anti-Mage Trap is borer-bile — drawn from a Stoneborer's mouth-sac into clay, never metal, because the bile eats metal — set as a trap or a thrown charge. Left as a sprung trap, it dissolves the hinges of a warded door, the rune-channel of an anti-mage ward, or the floor beneath a pursuing caster; thrown, it eats through armor and flesh alike. Rift hunters use it against the one class of threat they cannot solve with steel, and the more inventive use it against Ossk-touched wards that would otherwise pin a team in place. The bile must be carried in clay, drawn fresh, and used within the season. A hunter who stores it in a flask is a hunter who will one day open a pouch onto their own hand.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Weaponry — corrosive trap / charge"
+      },
+      {
+        "label": "Made From",
+        "value": "Borer-bile (Stoneborer mouth-sac), drawn into clay"
+      },
+      {
+        "label": "Effect",
+        "value": "Dissolves metal, rune-channels, ward work, armor, and flesh — the current answer to warded doors and Ossk-touched traps"
+      },
+      {
+        "label": "Limits",
+        "value": "Must be clay-carried (eats metal), drawn fresh, used within the season"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Weaponry"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Stoneborer",
+          "Stalker Bowstring",
+          "Anti-Magic Collar"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "weapon",
+      "ossk",
+      "stoneborer",
+      "borer-bile",
+      "trap",
+      "corrosive"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7226",
+    "category": "Items",
+    "name": "Hush-Leather",
+    "subtitle": "Oiled chitin-leather that keeps gear quiet and waterproof",
+    "description": "Hush-Leather is light hush-chitin scraped thin, oiled, and worked soft so it can be cut and stitched like ordinary hide. It is a utility material rather than a finished piece: it lines boots and cloaks, straps packs shut, wraps gear that would otherwise clink, and waterproofs what would otherwise soak. Because it carries the hush even thinned, anything wrapped or lined in hush-leather reads a little quieter to the senses of an Ossk, which makes it the default soft goods of the rift trade. It is cheap, it is made in quantity wherever chitin is harvested, and every hunter's kit has some — the least glamorous harvest in the whole registry.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Material — worked chitin-leather"
+      },
+      {
+        "label": "Made From",
+        "value": "Light hush-chitin (Tidewalker or general harvest), scraped, oiled, and softened"
+      },
+      {
+        "label": "Effect",
+        "value": "Utility leather that quiets and waterproofs gear; carries a faint hush when worn"
+      },
+      {
+        "label": "Limits",
+        "value": "Rough and short-lived; a soft good, not armor"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Material"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Tidewalker",
+          "Silent Boots",
+          "Hush-Lining",
+          "Clearing a Rift & Rewards"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "material",
+      "ossk",
+      "hush-chitin",
+      "leather",
+      "utility"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7227",
+    "category": "Items",
+    "name": "Ship-Armor",
+    "subtitle": "Heavy chitin plating that carries a ship through a hush",
+    "description": "Ship-Armor is Drownmaw plate — the thick shell crowbarred off a drowned-rift Drownmaw in a barge-works — fitted to the hull of a vessel that has to cross dead or hush-choked water. Sea-borne rifts seed out with every tide, and a ship that must run a drowned coast needs a hull that both turns what the water throws at it and reads quiet enough to slip past the hive's notice. Ship-Armor does both, and it is the reason the Concord's drowned-rift rotations can clear The Salt Wound at all. It is expensive, heavy, and bespoke to each hull, and a ship-armored vessel is the pride and the insurance of its crew.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Armor — naval hull plating"
+      },
+      {
+        "label": "Made From",
+        "value": "Drownmaw plate (Drownmaw shell), crowbarred off and fitted"
+      },
+      {
+        "label": "Effect",
+        "value": "Protects a hull from Ossk and sea alike; carries the hush so a ship reads quiet passing a drowned rift"
+      },
+      {
+        "label": "Limits",
+        "value": "Heavy, costly, bespoke per hull"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Armor"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Drownmaw",
+          "Hush-Plate Mail",
+          "The Salt Wound",
+          "Clearing a Rift & Rewards"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "armor",
+      "ossk",
+      "drownmaw",
+      "ship",
+      "hull"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7228",
+    "category": "Items",
+    "name": "Hush-Buoy",
+    "subtitle": "A filter-membrane float that holds a quiet channel for boats",
+    "description": "A Hush-Buoy is a float built over a Drownmaw's filter-membrane, moored to mark and hold a channel through drowned, hush-choked water. The membrane carries the hush with it, and a line of buoys gives a boat a lane the hive reads as grey — quiet water inside a dead or seeded coast. Drowned-rift crews set them ahead of a run and pull them after, because a buoy left moored is a buoy the hive finds and takes. It is unglamorous sea gear, but no one clears a drowned rift without a buoy line, and the crews that work The Salt Wound treat a lost buoy as a lost limb.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Field equipment — naval navigation"
+      },
+      {
+        "label": "Made From",
+        "value": "A Drownmaw filter-membrane over a float body"
+      },
+      {
+        "label": "Effect",
+        "value": "Marks and holds a quiet channel through drowned/hush water — a lane the hive reads as grey"
+      },
+      {
+        "label": "Limits",
+        "value": "Must be recovered after a run or the hive takes it; marker only, holds no pocket for casting"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Field gear"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Drownmaw",
+          "Ship-Armor",
+          "The Salt Wound",
+          "Water-Purifier"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "field-gear",
+      "ossk",
+      "drownmaw",
+      "membrane",
+      "buoy"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7229",
+    "category": "Items",
+    "name": "Water-Purifier",
+    "subtitle": "A membrane filter that makes drowned-rift water drinkable",
+    "description": "A Water-Purifier is built from a Drownmaw's filter-membrane, peeled from the throat and set in a frame so water can be drawn through it. Beyond its quiet, the membrane filters water clean of the spore and blight that make drowned-rift water poison, which is what keeps a crew alive on a long rotation at a flooded rift. It is plain survival gear, sold beside ordinary canteens, and its only Ossk property is the material it is made from — hunters use it without thinking twice. A torn membrane passes spore and must be replaced; a good purifier lasts a full season on a working coast.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Medical / survival — water filter"
+      },
+      {
+        "label": "Made From",
+        "value": "A Drownmaw filter-membrane (throat) set in a frame"
+      },
+      {
+        "label": "Effect",
+        "value": "Filters spore and blight out of drowned-rift water, making it drinkable"
+      },
+      {
+        "label": "Limits",
+        "value": "A torn membrane passes spore; replace each season. Survival gear, not a combat item"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Medical"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Drownmaw",
+          "Hush-Buoy",
+          "Medical",
+          "The Salt Wound"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "medical",
+      "ossk",
+      "drownmaw",
+      "membrane",
+      "water"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7230",
+    "category": "Items",
+    "name": "Dampening Draught",
+    "subtitle": "A blight-seed dose that quiets Veyn inside the drinker",
+    "description": "A Dampening Draught is made from Blight-Sower seed-cores ground and suspended in a carrying liquid — a dose that quiets the Veyn inside whoever drinks it. It is the restraint trade's portable alternative to ironwork: a prisoner who must be moved without a collar, a witness who must not cast, a captured caster handed over in a border town with no prison to hold them. The draught suppresses Veyn from within for a span of hours, then wears off. It is not gentle — taken in quantity it sickens the drinker, and a wrongly measured dose is a slow, painful quiet — and so it is used sparingly and always with the Concord's knowledge. It cancels magic, not Vitality; a Ren user shrugs it off.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Consumable — suppressant draught"
+      },
+      {
+        "label": "Made From",
+        "value": "Blight-Sower seed-cores ground into a carrying liquid"
+      },
+      {
+        "label": "Effect",
+        "value": "Suppresses the drinker's Veyn from within for hours. Cancels magic, not Vitality"
+      },
+      {
+        "label": "Limits",
+        "value": "Temporary; overdose sickens. Not gentle — dosed sparingly"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Consumable"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Blight-Sower",
+          "Null-Powder",
+          "Anti-Magic Collar",
+          "Veyn-Dampening Lamp"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "consumable",
+      "ossk",
+      "blight-sower",
+      "seed-core",
+      "suppressant"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7231",
+    "category": "Items",
+    "name": "Null-Powder",
+    "subtitle": "Ground seed-core dust that spreads a temporary hush",
+    "description": "Null-Powder is Blight-Sower seed-cores ground fine and kept dry — a dust that, scattered or blown across ground, spreads a temporary hush wherever it settles. A handful thrown across a doorway quiets a room; a bag scattered across a hall quiets a building; blown into a wound or a mechanism, it can stop a trap or a curse mid-fire. It is the crude field version of a Hush-Ward, used by hunters who need a hush now and an anchor later, and by people with worse intentions — a pouch of null-powder tossed into a contest of casters ends the contest. No reversed material, just ground Ossk organ; cheap, short-lived, and scattered on the wind.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Consumable — spreading suppressant"
+      },
+      {
+        "label": "Made From",
+        "value": "Blight-Sower seed-cores, ground fine and kept dry"
+      },
+      {
+        "label": "Effect",
+        "value": "Scattered or blown, spreads a temporary hush over whatever it settles on"
+      },
+      {
+        "label": "Limits",
+        "value": "Short-lived; scatters on the wind; crude compared to a Hush-Ward"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Consumable"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Blight-Sower",
+          "Dampening Draught",
+          "Hush-Ward",
+          "Veyn-Dead Zones"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "consumable",
+      "ossk",
+      "blight-sower",
+      "seed-core",
+      "powder"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7232",
+    "category": "Items",
+    "name": "Water-Breathing Draught",
+    "subtitle": "A gill-node brew that lets a hunter work below the waterline",
+    "description": "A Water-Breathing Draught is made from the gill-nodes cut from a Tidewalker's throat, steeped into a liquid. Drunk before a dive, it lets a hunter breathe water for a stretch of minutes — the whole reason a drowned rift can be cleared at all, since the fighting there is beneath the surface and no mage can cast a breath inside the hush. It is a consumable and always brewed fresh, since the gill-node loses its gift within days of harvest. A drinker gets roughly an eighth of an hour; the exact span depends on the strength of the nodes and the brew, and every drowned-rift rotation keeps a brewer on the payroll for exactly this.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Consumable — dive draught"
+      },
+      {
+        "label": "Made From",
+        "value": "Gill-nodes (Tidewalker throat), steeped fresh"
+      },
+      {
+        "label": "Effect",
+        "value": "Lets the drinker breathe water for a short span — the only way to fight below the waterline in a hush"
+      },
+      {
+        "label": "Limits",
+        "value": "Minutes only; brewed fresh as the nodes lose the gift within days"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Consumable"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Tidewalker",
+          "Dive-Ward",
+          "The Salt Wound",
+          "Water-Purifier"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "consumable",
+      "ossk",
+      "tidewalker",
+      "gill-node",
+      "dive"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
+    "id": "seed-7233",
+    "category": "Items",
+    "name": "Dive-Ward",
+    "subtitle": "A bound gill-node charm that holds a pocket of breathable air",
+    "description": "A Dive-Ward is a gill-node sealed in a charm and bound against the bearer so that, unlike a drunk draught, it holds a slow pocket of breathable water-magic around the head rather than being consumed. It is the more expensive, repeatable diver's tool: a settled charm that works for a season and can be passed between crew members mid-rotation, where a draught works once. Dive-Wards matter most at a flooded rift where the fighting runs long — the draught is for a quick strike, the ward is for a working shift. It must stay bound and dry-kept between dives, and a cracked seal leaks its pocket away.",
+    "fields": [
+      {
+        "label": "Type",
+        "value": "Equipment — dive charm"
+      },
+      {
+        "label": "Made From",
+        "value": "A gill-node (Tidewalker) sealed in a bound charm"
+      },
+      {
+        "label": "Effect",
+        "value": "Holds a small pocket of breathable water-magic around the bearer's head — repeatable, unlike a draught"
+      },
+      {
+        "label": "Limits",
+        "value": "Must stay sealed and dry-kept; a cracked seal leaks the pocket. Lasts about a season"
+      },
+      {
+        "label": "Subcategory",
+        "value": "Field gear"
+      },
+      {
+        "label": "Lore Connections",
+        "value": [
+          "Rift Materials",
+          "Rift Monsters",
+          "The Ossk",
+          "Ossk Castes",
+          "Tidewalker",
+          "Water-Breathing Draught",
+          "The Salt Wound"
+        ]
+      }
+    ],
+    "tags": [
+      "item",
+      "item",
+      "field-gear",
+      "ossk",
+      "tidewalker",
+      "gill-node",
+      "dive"
+    ],
+    "createdAt": "2026-10-20T12:07:38.311Z",
+    "updatedAt": "2026-10-20T12:07:38.311Z"
+  },
+  {
     "id": "seed-777",
     "category": "Angels",
     "name": "The Six Pillars of Angel Governance",
@@ -34276,7 +36090,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": "Ossk Castes, Clearing a Rift & Rewards, Price Guide, Mining & Raw Materials, Null Energy, Veyn-Dead Zones, Enchanter, Enchanter — Rune Mastery Grades, The Demon Realm Weapon Grading"
+        "value": "Ossk Castes, Clearing a Rift & Rewards, Price Guide, Mining & Raw Materials, Null Energy, Veyn-Dead Zones, Enchanter, Enchanter — Rune Mastery Grades, The Demon Realm Weapon Grading, Null-Breaker Focus, Hush-Ward, Veyn-Dampening Lamp, Rift-Anchor."
       },
       {
         "label": "Reversing (“Null-Breaker” Grade)",
@@ -35067,6 +36881,10 @@
       {
         "label": "Note",
         "value": "Kill it before it finishes its circuit, or a D becomes a C"
+      },
+      {
+        "label": "Crafted From It",
+        "value": "Blinding Charge, Blight-Ward, Hush-Lining, Pocket-Lining, Dampening Draught, Null-Powder"
       }
     ],
     "tags": [
@@ -35077,7 +36895,7 @@
       "d-rank"
     ],
     "createdAt": "2026-10-16T00:00:00.000Z",
-    "updatedAt": "2026-10-16T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:08:49.854Z"
   },
   {
     "id": "seed-7178",
@@ -35121,6 +36939,10 @@
       {
         "label": "Note",
         "value": "It chooses where the party can walk — and where the ceiling drops"
+      },
+      {
+        "label": "Crafted From It",
+        "value": "Hush-Plate Mail, Hush-Plate, Shield Faces, Dissolving Anti-Mage Trap"
       }
     ],
     "tags": [
@@ -35131,7 +36953,7 @@
       "c-rank"
     ],
     "createdAt": "2026-10-16T00:00:00.000Z",
-    "updatedAt": "2026-10-16T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:08:49.854Z"
   },
   {
     "id": "seed-7179",
@@ -35175,6 +36997,10 @@
       {
         "label": "Note",
         "value": "Killing her slows the hive; it does not seal the rift"
+      },
+      {
+        "label": "Crafted From It",
+        "value": "Sealing Paste, Nullifying Salve"
       }
     ],
     "tags": [
@@ -35185,7 +37011,7 @@
       "b-rank"
     ],
     "createdAt": "2026-10-16T00:00:00.000Z",
-    "updatedAt": "2026-10-16T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:08:49.854Z"
   },
   {
     "id": "seed-7180",
@@ -35229,6 +37055,10 @@
       {
         "label": "Note",
         "value": "Fight it at low tide, on the sand, or not at all"
+      },
+      {
+        "label": "Crafted From It",
+        "value": "Stalker Bowstring, Hush-Leather, Water-Breathing Draught, Dive-Ward"
       }
     ],
     "tags": [
@@ -35239,7 +37069,7 @@
       "c-rank"
     ],
     "createdAt": "2026-10-16T00:00:00.000Z",
-    "updatedAt": "2026-10-16T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:08:49.854Z"
   },
   {
     "id": "seed-7181",
@@ -35283,6 +37113,10 @@
       {
         "label": "Note",
         "value": "It does not chase. It waits where the current brings it food"
+      },
+      {
+        "label": "Crafted From It",
+        "value": "Ship-Armor, Hush-Buoy, Water-Purifier"
       }
     ],
     "tags": [
@@ -35293,7 +37127,7 @@
       "b-rank"
     ],
     "createdAt": "2026-10-16T00:00:00.000Z",
-    "updatedAt": "2026-10-16T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:08:49.854Z"
   },
   {
     "id": "seed-7182",
@@ -35337,6 +37171,10 @@
       {
         "label": "Note",
         "value": "It does not ambush. It arrives"
+      },
+      {
+        "label": "Crafted From It",
+        "value": "Anti-Magic Collar, Anti-Magic Cuffs, Restraint Manacles, Binding Cords, Hush-Cloak, Stealth-Mail, Silent Boots, Null-Breaker Focus"
       }
     ],
     "tags": [
@@ -35347,7 +37185,7 @@
       "a-rank"
     ],
     "createdAt": "2026-10-16T00:00:00.000Z",
-    "updatedAt": "2026-10-16T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:08:49.854Z"
   },
   {
     "id": "seed-7183",
@@ -35391,6 +37229,10 @@
       {
         "label": "Note",
         "value": "Kill it and its region goes feral. Reach it first"
+      },
+      {
+        "label": "Crafted From It",
+        "value": "Hush-Ward Heart, Sovereign Horn"
       }
     ],
     "tags": [
@@ -35401,7 +37243,7 @@
       "s-rank"
     ],
     "createdAt": "2026-10-16T00:00:00.000Z",
-    "updatedAt": "2026-10-16T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:08:49.854Z"
   },
   {
     "id": "seed-7184",
@@ -35445,6 +37287,10 @@
       {
         "label": "Note",
         "value": "It does not hunt. It overwrites"
+      },
+      {
+        "label": "Crafted From It",
+        "value": "Barrier Anchor"
       }
     ],
     "tags": [
@@ -35455,7 +37301,7 @@
       "ss-rank"
     ],
     "createdAt": "2026-10-16T00:00:00.000Z",
-    "updatedAt": "2026-10-16T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:08:49.854Z"
   },
   {
     "id": "seed-7185",
