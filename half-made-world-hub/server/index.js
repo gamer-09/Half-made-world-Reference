@@ -508,22 +508,20 @@ app.get('/api/search', (req, res) => {
 const AI_BASE_URL = (process.env.AI_BASE_URL || 'https://api.groq.com/openai/v1').replace(/\/+$/, '');
 const AI_MODEL = process.env.AI_MODEL || 'openai/gpt-oss-20b';
 const AI_API_KEY = process.env.AI_API_KEY || process.env.GROQ_API_KEY || '';
-// AI_PROVIDER=opencode drives the opencode CLI installed on this machine
-// (`opencode run --format json`) instead of an HTTP chat-completions endpoint.
-// This uses whatever model/auth opencode is already configured with — no API
-// key needed here.
-const AI_PROVIDER = (process.env.AI_PROVIDER || '').toLowerCase();
-const AI_IS_OPENCODE = AI_PROVIDER === 'opencode';
+// The AI features are split across two fixed backends:
+//   • Explore / answer (Query Chat) → ALWAYS the HTTP chat-completions endpoint
+//     (Groq by default) — never the opencode CLI.
+//   • Planner (/api/ai/plan)        → ALWAYS the local opencode CLI
+//     (`opencode run --format json`) — never the HTTP backend.
+// AI_PROVIDER no longer switches between them; the routing is hard-wired per
+// route. opencode uses whatever model/auth it is already configured with, so no
+// API key is needed for the planner.
 const OPENCODE_BIN = process.env.OPENCODE_BIN || resolveOpencodeBin();
 // opencode's own model spec ("provider/model"), e.g. "opencode/big-pickle".
 // Blank = whatever opencode is configured/defaults to. Note this is NOT the
 // AI_MODEL value — that's an HTTP provider's model id (e.g. an OpenRouter
 // model) and opencode would reject it.
 const OPENCODE_MODEL = process.env.OPENCODE_MODEL || '';
-// When a headless opencode call fails (its free Zen tier 403s outside the app),
-// fall back to the HTTP backend instead of failing the request. Set
-// OPENCODE_FALLBACK=false to make opencode the only path.
-const OPENCODE_FALLBACK = process.env.OPENCODE_FALLBACK !== 'false';
 
 // Prefer the real opencode executable over the .cmd/.ps1 npm shims: spawning
 // the shim with a shell on Windows stops forwarding stdin reliably, which
@@ -557,8 +555,14 @@ const AI_FALLBACK_MODELS = (process.env.AI_FALLBACK_MODELS || '')
 const AI_IS_OPENROUTER = /openrouter\.ai/i.test(AI_BASE_URL);
 
 function aiConfigured() {
-  // opencode needs no key — it uses the CLI's own auth.
-  return AI_IS_OPENCODE || Boolean(AI_API_KEY);
+  // Explore / answer always use the HTTP backend, which needs a key.
+  return Boolean(AI_API_KEY);
+}
+
+// The planner always uses the local opencode CLI — it needs no key, only a
+// resolvable binary.
+function plannerConfigured() {
+  return Boolean(OPENCODE_BIN);
 }
 
 // Groq's free tier caps requests at ~8000 tokens per minute, so keep the
@@ -954,11 +958,9 @@ async function askModel(model, prompt, maxTokens, reasoningEffort, extra, reason
 
 // Try each model in the chain: free models fail often (upstream 429s, empty
 // answers from a reasoning model), so a dead model just moves to the next one.
+// This is the HTTP (Groq/OpenAI-compatible) path only — the planner's opencode
+// backend is called directly, never through here.
 async function askGroq(prompt, maxTokens = 1024, reasoningEffort = 'low', extra = {}) {
-  // opencode drives its own provider/model, so there is nothing to fall back
-  // through here — just hand the prompt to the local CLI.
-  if (AI_IS_OPENCODE) return askOpencode(prompt);
-
   let lastErr = null;
   for (let i = 0; i < AI_MODELS.length; i++) {
     const model = AI_MODELS[i];
@@ -1041,19 +1043,6 @@ function dropEffort(effort) {
   return effort === 'high' ? 'medium' : effort === 'medium' ? 'low' : null;
 }
 async function askGroqResilient(prompt, reasoningEffort, maxTokensOverride, extra) {
-  // opencode drives its own provider/model. Its free Zen tier is only usable
-  // from inside the interactive app, so headless calls can 403 — when that (or
-  // any other failure) happens and a key is present, fall through to the HTTP
-  // backend so the planner stays usable.
-  if (AI_IS_OPENCODE) {
-    try {
-      return await askOpencode(prompt);
-    } catch (err) {
-      if (!OPENCODE_FALLBACK || !AI_API_KEY) throw err;
-      console.warn(`[ai] opencode failed (${err.message}) — falling back to ${AI_MODELS[0]}`);
-    }
-  }
-
   let effort = reasoningEffort;
   // A caller can hand a specific budget (e.g. the planner needs a lower
   // reasoning effort but enough completion room to write a whole JSON plan).
@@ -1787,10 +1776,11 @@ app.post('/api/ai/plan', async (req, res) => {
   if (!request) {
     return res.status(400).json({ error: 'Describe what you want to plan.' });
   }
-  if (!aiConfigured()) {
-    return res
-      .status(500)
-      .json({ error: 'AI is not configured. Set AI_API_KEY (or GROQ_API_KEY) on the server.' });
+  if (!plannerConfigured()) {
+    return res.status(500).json({
+      error:
+        'The planner uses the local opencode CLI, which was not found. Install opencode or set OPENCODE_BIN to its path.',
+    });
   }
 
   // Decisions the user made, fed back in on the second pass. They are fixed
@@ -1899,7 +1889,7 @@ ${context}`;
     // the model needs the user's decisions, return the questions alone and
     // draft nothing, so nothing is "already planned" before the user answers.
     if (!answersProvided) {
-      const triageRaw = await askGroqResilient(triagePrompt, 'low', 900, JSON_MODE);
+      const triageRaw = await askOpencode(triagePrompt);
       const triage = normalizeTriage(parseAiJson(triageRaw));
       if (triage.needsInput) {
         return res.json({
@@ -1917,9 +1907,9 @@ ${context}`;
     }
 
     // Step 2 — draft: the model both reasons about the world and emits the
-    // whole JSON plan. Reasoning stays 'low' (the archive context does the
-    // heavy lifting) while the JSON gets plenty of room to land.
-    const raw = await askGroqResilient(prompt, 'low', 3000, JSON_MODE);
+    // whole JSON plan. opencode uses its own configured model (the planner is
+    // opencode-only — there is no HTTP fallback).
+    const raw = await askOpencode(prompt);
     const plan = normalizePlan({ ...parseAiJson(raw), _raw: raw }, request);
     res.json({ ...plan, needsInput: false, sessions: planSessions });
   } catch (err) {
@@ -1933,7 +1923,7 @@ ${context}`;
 // stateless, so this simply shells out to `opencode session delete <id>` for
 // each id the client reports. Only meaningful for the opencode backend.
 app.post('/api/ai/plan/session/delete', async (req, res) => {
-  if (!AI_IS_OPENCODE) {
+  if (!plannerConfigured()) {
     return res.json({ deleted: [] });
   }
   const ids = (Array.isArray(req.body?.sessions) ? req.body.sessions : [])

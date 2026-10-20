@@ -13,7 +13,7 @@ have to live buried in a single document again.
 - **`Half_made world ideas.docx`** — the original source document. Everything in the hub was seeded
   from this file; it remains here as the canonical starting reference.
 
-The archive holds **1050 entries across 57 categories** — Demon/Angel/Class/Hybrid Skills, Titles,
+The archive holds **1053 entries across 57 categories** — Demon/Angel/Class/Hybrid Skills, Titles,
 Rules & Notes, Characters, Classes, Class Progression, Grade System, Rune Star Circles, Monsters,
 Rifts, Locations, Items, Magic Systems, Realms, Coins, Clan, Economy, Organizations, Calendar, Combat
 Mechanics, Laws & Justice, Academy, and many more — all browsable, searchable, and editable through
@@ -89,11 +89,11 @@ hierarchy.
 
 ## Query Chat (AI)
 
-A **Query Chat** view lets you ask the archive plain-language questions. It first reduces the
-question to a search term, surfaces matching entries, and — when a key is configured — answers
-using the server's `/api/ai/answer` and `/api/ai/explore` routes. Set `AI_API_KEY` (or
-`GROQ_API_KEY`) in the server environment to enable the AI answers; the archive search works
-without a key.
+A **Query Chat** view lets you ask the archive plain-language questions. Its **query mode** is a
+local keyword lookup — no AI is involved, and it works without any key. Its **explore mode** is
+Groq-backed: it sends the whole archive to the server's `/api/ai/explore` route to have the AI find
+the answer itself. Explore **always uses the HTTP (Groq) backend** and requires `AI_API_KEY` (or
+`GROQ_API_KEY`) in the server environment; without a key, explore falls back to the local lookup.
 
 ## Planning Room (AI, local dev only)
 
@@ -113,18 +113,21 @@ and the view itself are absent from the deployed read-only build.
 
 ### Choosing the AI backend
 
-The server talks to any OpenAI-compatible chat-completions endpoint, configured via environment
-variables (see `.env.example`):
+The AI features use **two separate backends**, and each is wired to a fixed one:
 
-- **Local `opencode` CLI** — set `AI_PROVIDER=opencode` to drive the `opencode` binary already
-  installed on your machine (`opencode run --format json`). It uses whatever model/auth opencode is
-  configured with, so no API key is needed here. `OPENCODE_MODEL` pins a model; `OPENCODE_BIN`
-  overrides the binary path. Because opencode's free tier only works from inside the interactive
-  app, headless calls may fail — the server then falls back to the HTTP backend below unless
-  `OPENCODE_FALLBACK=false`.
-- **Any HTTP provider** — set `AI_BASE_URL`, `AI_MODEL`, and `AI_API_KEY` (Groq is the default;
-  OpenRouter and local Ollama/LM Studio all work). `AI_FALLBACK_MODELS` tries additional models in
-  order when a free model is rate-limited.
+- **Explore (Query Chat)** — always the **HTTP backend**, by default Groq. Set `AI_API_KEY` (or
+  `GROQ_API_KEY`) to enable it. `AI_BASE_URL` / `AI_MODEL` point at any OpenAI-compatible
+  chat-completions endpoint (Groq is the default; OpenRouter and local Ollama/LM Studio all work),
+  and `AI_FALLBACK_MODELS` tries additional models in order when a free model is rate-limited.
+  Explore never uses the opencode CLI.
+- **Planning Room** — always the **local `opencode` CLI** (set nothing beyond having opencode
+  installed; `opencode run --format json` drives it). It uses whatever model/auth opencode is
+  configured with, so no API key is needed. `OPENCODE_MODEL` pins a model and `OPENCODE_BIN`
+  overrides the binary path. The planner does **not** fall back to HTTP — if the opencode CLI
+  fails, the plan request fails.
+
+`AI_PROVIDER` is no longer needed to switch between them: explore is always HTTP and the planner is
+always opencode. The only relevant knobs are the keys above and the optional opencode overrides.
 
 The full-archive digest the planner reads is bounded by `AI_FULL_CONTEXT_BUDGET` (default
 `700000` characters; set `0` to fall back to keyword matches only).

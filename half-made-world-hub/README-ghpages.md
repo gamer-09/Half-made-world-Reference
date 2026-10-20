@@ -61,14 +61,13 @@ This runs the snapshot prebuild step first, then builds the Vite production bund
 
 ## AI integration
 
-The **Query Chat** view answers questions through the server's `/api/ai/answer` and `/api/ai/explore` endpoints. The server talks to any OpenAI-compatible chat-completions endpoint, chosen by environment variables (see `.env.example`):
+The **Query Chat** view answers questions through the server's `/api/ai/answer` and `/api/ai/explore` endpoints. Its `query` mode is a local keyword lookup with no AI at all; its `explore` mode is **always HTTP** and talks to any OpenAI-compatible chat-completions endpoint, chosen by environment variables (see `.env.example`):
 
-- **Local `opencode` CLI** — `AI_PROVIDER=opencode` drives the `opencode` binary on your machine; no API key needed. It uses whatever model and auth opencode itself is configured with.
-- **Any HTTP provider** — set `AI_BASE_URL`, `AI_MODEL`, and `AI_API_KEY` (Groq is the default; OpenRouter and local Ollama/LM Studio also work). `AI_FALLBACK_MODELS` tries extra models when a free one is rate-limited.
+- **HTTP provider (Explore)** — set `AI_BASE_URL`, `AI_MODEL`, and `AI_API_KEY` (Groq is the default; OpenRouter and local Ollama/LM Studio also work). `AI_FALLBACK_MODELS` tries extra models when a free one is rate-limited. Explore never uses the opencode CLI.
 
-The earlier fixed model (`llama-3.1-8b-instant`, then `openai/gpt-oss-20b` on Groq) is no longer hard-wired — the active model is whatever `AI_MODEL` (or opencode) is set to. If a Groq model stops working, check the [Groq model deprecation page](https://console.groq.com/docs/deprecations) for the current replacement.
+The earlier fixed model (`llama-3.1-8b-instant`, then `openai/gpt-oss-20b` on Groq) is no longer hard-wired — the active model is whatever `AI_MODEL` is set to. If a Groq model stops working, check the [Groq model deprecation page](https://console.groq.com/docs/deprecations) for the current replacement.
 
-The **Planning Room** — a local-dev-only view that drafts brand-new entries into the archive — uses the same backend through `/api/ai/plan`, and is not available in this read-only build.
+The **Planning Room** — a local-dev-only view that drafts brand-new entries into the archive — uses a **separate, fixed backend**: the local `opencode` CLI (set `OPENCODE_MODEL` / `OPENCODE_BIN` as needed; no API key required). It never falls back to HTTP. It is not available in this read-only build.
 
 ## Data format
 
