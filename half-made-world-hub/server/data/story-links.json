@@ -43855,5 +43855,115 @@
     "description": "Dive-Ward is crafted from materials harvested from the Rift monsters (see The Ossk).",
     "createdAt": "2026-10-20T00:00:00.000Z",
     "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-rejection-1",
+    "source": "The Rejection",
+    "target": "Birth race",
+    "type": "derives from",
+    "label": "Derives from",
+    "description": "The Rejection is the outcome Birth race warns of — what a forced hybrid becomes.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-rejection-2",
+    "source": "The Rejection",
+    "target": "The Hybrid",
+    "type": "inverse of",
+    "label": "Inverse of",
+    "description": "A rejection is the inverse of a born hybrid: no fusion, no stabilizing whole, no Equilibrium.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-rejection-3",
+    "source": "The Rejection",
+    "target": "Hybrid Fusion",
+    "type": "excludes",
+    "label": "Excludes",
+    "description": "A rejection can never reach Twilight Veyn — the two natures never fuse in the first place.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-rejection-4",
+    "source": "The Rejection",
+    "target": "Twilight Veyn",
+    "type": "cannot reach",
+    "label": "Cannot reach",
+    "description": "Twilight Veyn only exists where a fusion actually took; a rejection has none.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-rejection-5",
+    "source": "The Rejection",
+    "target": "MC Instability — Equilibrium & Fray",
+    "type": "contrasts with",
+    "label": "Contrasts with",
+    "description": "A born hybrid can be stabilized by balance; a rejection has nothing fused and no Equilibrium to restore.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-rejection-6",
+    "source": "The Rejection",
+    "target": "Veyn & Ren Incompatibility",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Like Veyn and Ren, opposed natures forced into one body destroy it.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-rejection-7",
+    "source": "Vasric Kaine",
+    "target": "The Rejection",
+    "type": "example of",
+    "label": "Example of",
+    "description": "Vasric Kaine is the only rejection to survive long enough to act.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-rejection-8",
+    "source": "The Second Hybrid Project",
+    "target": "The Rejection",
+    "type": "produced",
+    "label": "Produced",
+    "description": "The project could only ever produce rejections — never a hybrid.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-rejection-9",
+    "source": "Dark Moon",
+    "target": "The Rejection",
+    "type": "doomed by",
+    "label": "Doomed by",
+    "description": "Dark Moon gambled against a rule it could not beat and was left holding a rejection.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-rejection-10",
+    "source": "The Rejection",
+    "target": "Veyn-Dead Zones",
+    "type": "produces",
+    "label": "Produces",
+    "description": "A rejection that survives bleeds out a cracked null-trace — a small dead zone around the body.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "link-rejection-11",
+    "source": "The Rejection",
+    "target": "Null Energy",
+    "type": "related to",
+    "label": "Related to",
+    "description": "The null-trace a rejection bleeds is the same nothingness the null-breakers use.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
   }
 ]

@@ -100,4 +100,9 @@ module.exports = [
   r("The Second Hybrid Project", "Wener Leger", "founded by", "Founded by", "Wener Leger founded the project after years of failing to acquire the born hybrid."),
   r("Licent Varak", "Vasric Kaine", "pawn of", "Pawn of", "Licent Varak is a fellow product of Dark Moon's reach — small where Vasric is broken, and now within the reach of the thing Wener could not control."),
   r("Dark Moon", "Vasric Kaine", "seized by", "Seized by", "Dark Moon's greatest gamble became its worst loss: the experiment not only failed but took the organization with it."),
+  r("Vasric Kaine", "The Rejection", "is an example of", "Example of", "Vasric is the only rejection to survive past the window Birth race sets, held together by artificial sustenance."),
+  r("The Rejection", "Birth race", "explains", "Explains", "The Rejection is what happens when the only rule that makes a hybrid — a compatible birth — is defied."),
+  r("The Rejection", "The Hybrid", "is the inverse of", "Inverse of", "Born versus forced: a hybrid fuses, a rejection never does."),
+  r("Dark Moon", "The Rejection", "created", "Created", "Dark Moon's Second Hybrid Project produced the world's only known rejection."),
+  r("Wener Leger", "Jaiden Marlock", "discovered", "Discovered", "Wener deduced a hybrid might exist from Licent's old report, then confirmed Jaiden at the Academy Veyn Storm."),
 ];

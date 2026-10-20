@@ -779,5 +779,55 @@
     "description": "Dark Moon's greatest gamble became its worst loss: the experiment not only failed but took the organization with it.",
     "createdAt": "2026-10-20T00:00:00.000Z",
     "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-rejection-1",
+    "source": "Vasric Kaine",
+    "target": "The Rejection",
+    "type": "is an example of",
+    "label": "Example of",
+    "description": "Vasric is the only rejection to survive past the window Birth race sets, held together by artificial sustenance.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-rejection-2",
+    "source": "The Rejection",
+    "target": "Birth race",
+    "type": "explains",
+    "label": "Explains",
+    "description": "The Rejection is what happens when the only rule that makes a hybrid — a compatible birth — is defied.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-rejection-3",
+    "source": "The Rejection",
+    "target": "The Hybrid",
+    "type": "is the inverse of",
+    "label": "Inverse of",
+    "description": "Born versus forced: a hybrid fuses, a rejection never does.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-rejection-4",
+    "source": "Dark Moon",
+    "target": "The Rejection",
+    "type": "created",
+    "label": "Created",
+    "description": "Dark Moon's Second Hybrid Project produced the world's only known rejection.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
+  },
+  {
+    "id": "rel-rejection-5",
+    "source": "Wener Leger",
+    "target": "Jaiden Marlock",
+    "type": "discovered",
+    "label": "Discovered",
+    "description": "Wener deduced a hybrid might exist from Licent's old report, then confirmed Jaiden at the Academy Veyn Storm.",
+    "createdAt": "2026-10-20T00:00:00.000Z",
+    "updatedAt": "2026-10-20T00:00:00.000Z"
   }
 ]
