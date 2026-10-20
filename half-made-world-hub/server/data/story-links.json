@@ -44565,5 +44565,225 @@
     "description": "Mages advance by Rune Star Circles instead of the standard Grade system.",
     "createdAt": "2026-10-20T19:32:49.585Z",
     "updatedAt": "2026-10-20T19:32:49.585Z"
+  },
+  {
+    "id": "link-seed-4366",
+    "source": "Crystal Trees",
+    "target": "Angel Realm",
+    "type": "located in",
+    "label": "Located in",
+    "description": "Crystal Trees grow throughout the Angel Realm, covering roughly 30% of its landmass.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4367",
+    "source": "Angel Realm",
+    "target": "Crystal Trees",
+    "type": "contains",
+    "label": "Contains",
+    "description": "The Angel Realm’s forests, gardens, and Barrier Forest are built from Crystal Trees.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4368",
+    "source": "The Angel Realm Crystal Forests",
+    "target": "Crystal Trees",
+    "type": "composed of",
+    "label": "Composed of",
+    "description": "The Crystal Forests are, at their base, forests of Crystal Trees.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4369",
+    "source": "Crystal Trees",
+    "target": "Raw Veyn Crystals",
+    "type": "produces",
+    "label": "Produces",
+    "description": "A single Crystal Tree can produce one high-grade Veyn Crystal per decade.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4370",
+    "source": "Crystal Trees",
+    "target": "Sunveil Silk",
+    "type": "produces",
+    "label": "Produces",
+    "description": "Sunveil Silk is produced by moths that feed on Crystal Tree sap.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4371",
+    "source": "Crystal Trees",
+    "target": "Veyn",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Crystal Trees absorb and release Veyn in a natural cycle, producing ambient Veyn.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4372",
+    "source": "Angel Crystal Harmony Mining",
+    "target": "Crystal Trees",
+    "type": "harvested by",
+    "label": "Harvested by",
+    "description": "Angels harvest Veyn Crystals through a symbiotic, non-destructive bond with Crystal Trees.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4373",
+    "source": "Angel Crystal Harmony Mining",
+    "target": "Crystal Trees",
+    "type": "grows in",
+    "label": "Grows in",
+    "description": "Angel Crystal Harmony channels Veyn into Crystal Trees, which grow crystal formations over decades.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4374",
+    "source": "The Angel Realm Crystal Barrier Forest",
+    "target": "Crystal Trees",
+    "type": "composed of",
+    "label": "Composed of",
+    "description": "The Barrier Forest is a dense wall of closely packed Crystal Trees.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4375",
+    "source": "The Angel Realm Crystal Singing",
+    "target": "Crystal Trees",
+    "type": "related to",
+    "label": "Related to",
+    "description": "Angels communicate with Crystal Trees through harmonic Crystal Singing.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4376",
+    "source": "The Angel Realm Crystal Seed Exchange",
+    "target": "Crystal Trees",
+    "type": "relates to",
+    "label": "Relates to",
+    "description": "Crystal Seeds are dormant formations planted to grow new Crystal Trees.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4377",
+    "source": "Raw Veyn Crystals",
+    "target": "Crystal Trees",
+    "type": "harvested by",
+    "label": "Harvested by",
+    "description": "The highest-grade Veyn Crystals are grown within Crystal Trees rather than mined.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4378",
+    "source": "The Eternal Forge",
+    "target": "The Obsidian Spires",
+    "type": "located in",
+    "label": "Located in",
+    "description": "The Eternal Forge burns within the largest of the Obsidian Spires.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4379",
+    "source": "The Obsidian Spires",
+    "target": "The Eternal Forge",
+    "type": "contains",
+    "label": "Contains",
+    "description": "The largest Spire houses the Mordrach’s throne room, the Pit, and the Eternal Forge.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4380",
+    "source": "The Eternal Forge",
+    "target": "Demon Realm",
+    "type": "located in",
+    "label": "Located in",
+    "description": "The Eternal Forge is the industrial heart of the Demon Realm.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4381",
+    "source": "Demon Realm",
+    "target": "The Eternal Forge",
+    "type": "contains",
+    "label": "Contains",
+    "description": "The Demon Realm centers its metalworking industry on the Eternal Forge.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4382",
+    "source": "The Eternal Forge",
+    "target": "Demonic Iron",
+    "type": "produces",
+    "label": "Produces",
+    "description": "The Eternal Forge smelts Demonic Iron at the temperature of a star’s core.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4383",
+    "source": "Demon Realm Volcanic Forge Industry",
+    "target": "The Eternal Forge",
+    "type": "centered on",
+    "label": "Centered on",
+    "description": "The Demon Realm’s primary industry is centered on the Eternal Forge.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4384",
+    "source": "The Eternal Forge",
+    "target": "Corrupted Veyn",
+    "type": "powered by",
+    "label": "Powered by",
+    "description": "Corrupted Veyn generators provide precise temperature control for the Forge.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4385",
+    "source": "The Stoneheart Clan",
+    "target": "The Eternal Forge",
+    "type": "guards",
+    "label": "Guards",
+    "description": "The Stoneheart Clan holds the primary entrance to the Eternal Forge.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4386",
+    "source": "The Demon Realm Forge Master Council",
+    "target": "The Eternal Forge",
+    "type": "governs",
+    "label": "Governs",
+    "description": "The Forge Master Council can revoke a Clan’s right to use the Eternal Forge.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
+  },
+  {
+    "id": "link-seed-4387",
+    "source": "The Eternal Forge",
+    "target": "Demon Realm Forge Temperature Regulation",
+    "type": "requires",
+    "label": "Requires",
+    "description": "The Eternal Forge’s temperature must be constantly regulated.",
+    "createdAt": "2026-08-12T00:00:00.000Z",
+    "updatedAt": "2026-08-12T00:00:00.000Z"
   }
 ]
