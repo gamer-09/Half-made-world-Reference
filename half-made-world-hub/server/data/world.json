@@ -25285,7 +25285,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": "Rift Materials, Veyn-Dead Zones, The Ossk, The Hybrid Resonance Seal, Enchanter, Null Energy"
+        "value": "Rift Materials,Veyn-Dead Zones,The Ossk,The Hybrid Resonance Seal,Enchanter,Null Energy,Hush-Ward,Hush-Ward Heart,Null-Breaker Focus"
       },
       {
         "label": "Innate Counterpart",
@@ -25302,7 +25302,7 @@
       "reversed"
     ],
     "createdAt": "2026-10-20T00:00:00.000Z",
-    "updatedAt": "2026-10-20T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:31:14.712Z"
   },
   {
     "id": "seed-7193",
@@ -25333,7 +25333,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": "Rift Materials, Hollowlight, Veyn-Dead Zones, Enchanter"
+        "value": "Rift Materials,Hollowlight,Veyn-Dead Zones,Enchanter,Pocket-Lining,Null-Breaker Focus,Hush-Ward"
       },
       {
         "label": "Innate Counterpart",
@@ -25349,7 +25349,7 @@
       "charm"
     ],
     "createdAt": "2026-10-20T00:00:00.000Z",
-    "updatedAt": "2026-10-20T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:31:14.712Z"
   },
   {
     "id": "seed-7201",
@@ -25934,17 +25934,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Harvester gland",
-          "Veyn-Dampening Lamp",
-          "Rift-Anchor",
-          "Veyn-Dead Zones",
-          "Hollowlight"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Harvester Gland,Veyn-Dampening Lamp,Rift-Anchor,Veyn-Dead Zones,Hollowlight"
       }
     ],
     "tags": [
@@ -25958,7 +25948,7 @@
       "field"
     ],
     "createdAt": "2026-10-20T12:07:38.311Z",
-    "updatedAt": "2026-10-20T12:07:38.311Z"
+    "updatedAt": "2026-10-20T12:29:51.857Z"
   },
   {
     "id": "seed-7212",
@@ -25989,16 +25979,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Harvester gland",
-          "Hush-Ward",
-          "Rift-Anchor",
-          "Veyn-Dead Zones"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Harvester Gland,Hush-Ward,Rift-Anchor,Veyn-Dead Zones"
       }
     ],
     "tags": [
@@ -26011,7 +25992,7 @@
       "lamp"
     ],
     "createdAt": "2026-10-20T12:07:38.311Z",
-    "updatedAt": "2026-10-20T12:07:38.311Z"
+    "updatedAt": "2026-10-20T12:29:51.857Z"
   },
   {
     "id": "seed-7213",
@@ -26042,16 +26023,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Harvester gland",
-          "Hush-Ward",
-          "Veyn-Dampening Lamp",
-          "Clearing a Rift & Rewards"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Harvester Gland,Hush-Ward,Veyn-Dampening Lamp,Clearing a Rift & Rewards"
       }
     ],
     "tags": [
@@ -26064,7 +26036,7 @@
       "sealing"
     ],
     "createdAt": "2026-10-20T12:07:38.311Z",
-    "updatedAt": "2026-10-20T12:07:38.311Z"
+    "updatedAt": "2026-10-20T12:29:51.857Z"
   },
   {
     "id": "seed-7214",
@@ -26333,16 +26305,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Pit-Mother",
-          "Sealing Paste",
-          "Medical",
-          "Seeding & Blooming"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Pit-Mother,Sealing Paste,Healers,Healing Potion,Seeding & Blooming"
       }
     ],
     "tags": [
@@ -26355,7 +26318,7 @@
       "pit-mother"
     ],
     "createdAt": "2026-10-20T12:07:38.311Z",
-    "updatedAt": "2026-10-20T12:07:38.311Z"
+    "updatedAt": "2026-10-20T12:29:51.857Z"
   },
   {
     "id": "seed-7219",
@@ -26930,16 +26893,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Drownmaw",
-          "Hush-Buoy",
-          "Medical",
-          "The Salt Wound"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Drownmaw,Hush-Buoy,Healers,Healing Potion,The Salt Wound"
       }
     ],
     "tags": [
@@ -26952,7 +26906,7 @@
       "water"
     ],
     "createdAt": "2026-10-20T12:07:38.311Z",
-    "updatedAt": "2026-10-20T12:07:38.311Z"
+    "updatedAt": "2026-10-20T12:29:51.857Z"
   },
   {
     "id": "seed-7230",
@@ -29209,7 +29163,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": "The Sundering, Aelthar energy, Strategic locations, Echo Storms"
+        "value": "The Sundering,Aelthar energy,Strategic locations,Echo Storms,Barrier Anchor"
       },
       {
         "label": "Subcategory",
@@ -29220,7 +29174,7 @@
       "location"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:31:14.712Z"
   },
   {
     "id": "seed-834",
@@ -35972,7 +35926,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": "Ossk Castes, Rift Materials, Seeding & Blooming, The World Barrier, Null Energy, Veyn-Dead Zones, Void Colossus"
+        "value": "Ossk Castes,Rift Materials,Seeding & Blooming,The World Barrier,Null Energy,Veyn-Dead Zones,Void Colossus,Anti-Magic Collar,Hush-Cloak,Hush-Plate,Stealth-Mail,Null-Breaker Focus"
       }
     ],
     "tags": [
@@ -35985,7 +35939,7 @@
       "null-breaker"
     ],
     "createdAt": "2026-10-16T00:00:00.000Z",
-    "updatedAt": "2026-10-16T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:31:14.712Z"
   },
   {
     "id": "seed-7163",
@@ -36090,7 +36044,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": "Ossk Castes, Clearing a Rift & Rewards, Price Guide, Mining & Raw Materials, Null Energy, Veyn-Dead Zones, Enchanter, Enchanter — Rune Mastery Grades, The Demon Realm Weapon Grading, Null-Breaker Focus, Hush-Ward, Veyn-Dampening Lamp, Rift-Anchor."
+        "value": "Ossk Castes,Clearing a Rift & Rewards,Price Guide,Mining & Raw Materials,Null Energy,Veyn-Dead Zones,Enchanter,Enchanter — Rune Mastery Grades,The Demon Realm Weapon Grading,Null-Breaker Focus,Hush-Ward,Veyn-Dampening Lamp,Rift-Anchor"
       },
       {
         "label": "Reversing (“Null-Breaker” Grade)",
@@ -36112,7 +36066,7 @@
       "enchanter"
     ],
     "createdAt": "2026-10-16T00:00:00.000Z",
-    "updatedAt": "2026-10-16T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:31:55.333Z"
   },
   {
     "id": "seed-7165",
@@ -36151,7 +36105,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": "Rifts — Overview, The Ossk, Ossk Castes, Clearing a Rift & Rewards, Silver Concord — Rift Hunts, Veyn-Dead Zones"
+        "value": "Rifts — Overview,The Ossk,Ossk Castes,Clearing a Rift & Rewards,Silver Concord — Rift Hunts,Veyn-Dead Zones,Nullifying Salve,Sealing Paste,Blight-Ward,Blinding Charge,Hush-Ward"
       }
     ],
     "tags": [
@@ -36163,7 +36117,7 @@
       "outbreak"
     ],
     "createdAt": "2026-10-16T00:00:00.000Z",
-    "updatedAt": "2026-10-16T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:31:14.712Z"
   },
   {
     "id": "seed-7166",
@@ -36214,7 +36168,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": "Seeding & Blooming, Ossk Castes, Rift Materials, Silver Concord — Rift Hunts, Shudonkeeper, Threat Level Classification, Enchanter"
+        "value": "Seeding & Blooming,Ossk Castes,Rift Materials,Silver Concord — Rift Hunts,Shudonkeeper,Threat Level Classification,Enchanter,Hush-Plate,Rift-Anchor,Ship-Armor,Sealing Paste,Hush-Ward Heart"
       }
     ],
     "tags": [
@@ -36226,7 +36180,7 @@
       "ossk"
     ],
     "createdAt": "2026-10-16T00:00:00.000Z",
-    "updatedAt": "2026-10-16T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:31:14.712Z"
   },
   {
     "id": "seed-7167",
@@ -36826,7 +36780,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": "Rift Types, Ossk Castes, Seeding & Blooming, Clearing a Rift & Rewards"
+        "value": "Rift Types,Ossk Castes,Seeding & Blooming,Clearing a Rift & Rewards,Hush-Plate Mail,Anti-Magic Collar,Nullifying Salve,Ship-Armor,Stalker Bowstring"
       }
     ],
     "tags": [
@@ -36837,7 +36791,7 @@
       "strains"
     ],
     "createdAt": "2026-10-16T00:00:00.000Z",
-    "updatedAt": "2026-10-16T00:00:00.000Z"
+    "updatedAt": "2026-10-20T12:31:14.712Z"
   },
   {
     "id": "seed-7177",
