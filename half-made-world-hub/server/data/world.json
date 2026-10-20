@@ -25388,17 +25388,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Hollow Stalker",
-          "Anti-Magic Cuffs",
-          "Restraint Manacles",
-          "Binding Cords",
-          "The Holding Cells"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Hollow Stalker,Anti-Magic Cuffs,Restraint Manacles,Binding Cords,The Holding Cells"
       }
     ],
     "tags": [
@@ -25448,16 +25438,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Hollow Stalker",
-          "Anti-Magic Collar",
-          "Restraint Manacles",
-          "Binding Cords"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Hollow Stalker,Anti-Magic Collar,Restraint Manacles,Binding Cords"
       }
     ],
     "tags": [
@@ -25506,16 +25487,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Hollow Stalker",
-          "Anti-Magic Collar",
-          "Anti-Magic Cuffs",
-          "The Holding Cells"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Hollow Stalker,Anti-Magic Collar,Anti-Magic Cuffs,The Holding Cells"
       }
     ],
     "tags": [
@@ -25565,16 +25537,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Hollow Stalker",
-          "Anti-Magic Collar",
-          "Anti-Magic Cuffs",
-          "Restraint Manacles"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Hollow Stalker,Anti-Magic Collar,Anti-Magic Cuffs,Restraint Manacles"
       }
     ],
     "tags": [
@@ -25619,16 +25582,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Hollow Stalker",
-          "Stealth-Mail",
-          "Silent Boots",
-          "Seeding & Blooming"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Hollow Stalker,Stealth-Mail,Silent Boots,Seeding & Blooming"
       }
     ],
     "tags": [
@@ -25672,15 +25626,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Hollow Stalker",
-          "Hush-Cloak",
-          "Silent Boots"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Hollow Stalker,Hush-Cloak,Silent Boots"
       }
     ],
     "tags": [
@@ -25724,15 +25670,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Hollow Stalker",
-          "Hush-Cloak",
-          "Stealth-Mail"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Hollow Stalker,Hush-Cloak,Stealth-Mail"
       }
     ],
     "tags": [
@@ -25776,16 +25714,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Stoneborer",
-          "Hush-Plate",
-          "Shield Faces",
-          "Ship-Armor"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Stoneborer,Hush-Plate,Shield Faces,Ship-Armor"
       }
     ],
     "tags": [
@@ -25829,16 +25758,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Stoneborer",
-          "Hush-Plate Mail",
-          "Shield Faces",
-          "Clearing a Rift & Rewards"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Stoneborer,Hush-Plate Mail,Shield Faces,Clearing a Rift & Rewards"
       }
     ],
     "tags": [
@@ -25882,15 +25802,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Stoneborer",
-          "Hush-Plate Mail",
-          "Hush-Plate"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Stoneborer,Hush-Plate Mail,Hush-Plate"
       }
     ],
     "tags": [
@@ -26075,17 +25987,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Grey Sovereign",
-          "Sovereign Horn",
-          "Hollowlight",
-          "Null Energy",
-          "Enchanter"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Grey Sovereign,Sovereign Horn,Hollowlight,Null Energy,Enchanter"
       }
     ],
     "tags": [
@@ -26134,16 +26036,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Grey Sovereign",
-          "Hush-Ward Heart",
-          "Seeding & Blooming",
-          "Veyn-Dead Zones"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Grey Sovereign,Hush-Ward Heart,Seeding & Blooming,Veyn-Dead Zones"
       }
     ],
     "tags": [
@@ -26196,16 +26089,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Firstborn Choir",
-          "The Sundering Barrier Points",
-          "The World Barrier",
-          "The First Tear"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Firstborn Choir,The Sundering Barrier Points,The World Barrier,The First Tear"
       }
     ],
     "tags": [
@@ -26250,17 +26134,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Pit-Mother",
-          "Nameless Queen",
-          "Nullifying Salve",
-          "Barrier Anchor",
-          "Clearing a Rift & Rewards"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Pit-Mother,Nameless Queen,Nullifying Salve,Barrier Anchor,Clearing a Rift & Rewards"
       }
     ],
     "tags": [
@@ -26349,15 +26223,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Blight-Sower",
-          "Blight-Ward",
-          "Seeding & Blooming"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Blight-Sower,Blight-Ward,Seeding & Blooming"
       }
     ],
     "tags": [
@@ -26401,16 +26267,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Blight-Sower",
-          "Blinding Charge",
-          "Hush-Ward",
-          "Seeding & Blooming"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Blight-Sower,Blinding Charge,Hush-Ward,Seeding & Blooming"
       }
     ],
     "tags": [
@@ -26454,16 +26311,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Blight-Sower",
-          "Hush-Cloak",
-          "Pocket-Lining",
-          "Stealth-Mail"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Blight-Sower,Hush-Cloak,Pocket-Lining,Stealth-Mail"
       }
     ],
     "tags": [
@@ -26508,17 +26356,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Blight-Sower",
-          "Hush-Lining",
-          "Deafcoin",
-          "Hollowlight",
-          "Veyn-Dead Zones"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Blight-Sower,Hush-Lining,Deafcoin,Hollowlight,Veyn-Dead Zones"
       }
     ],
     "tags": [
@@ -26571,20 +26409,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Hollowlight",
-          "Deafcoin",
-          "Pocket-Lining",
-          "Hush-Ward Heart",
-          "Barrier Anchor",
-          "Enchanter",
-          "Veyn-Dead Zones",
-          "Null Energy"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Hollowlight,Deafcoin,Pocket-Lining,Hush-Ward Heart,Barrier Anchor,Enchanter,Veyn-Dead Zones,Null Energy"
       }
     ],
     "tags": [
@@ -26629,15 +26454,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Tidewalker",
-          "Dissolving Anti-Mage Trap",
-          "Seeding & Blooming"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Tidewalker,Dissolving Anti-Mage Trap,Seeding & Blooming"
       }
     ],
     "tags": [
@@ -26681,15 +26498,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Stoneborer",
-          "Stalker Bowstring",
-          "Anti-Magic Collar"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Stoneborer,Stalker Bowstring,Anti-Magic Collar"
       }
     ],
     "tags": [
@@ -26734,16 +26543,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Tidewalker",
-          "Silent Boots",
-          "Hush-Lining",
-          "Clearing a Rift & Rewards"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Tidewalker,Silent Boots,Hush-Lining,Clearing a Rift & Rewards"
       }
     ],
     "tags": [
@@ -26787,16 +26587,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Drownmaw",
-          "Hush-Plate Mail",
-          "The Salt Wound",
-          "Clearing a Rift & Rewards"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Drownmaw,Hush-Plate Mail,The Salt Wound,Clearing a Rift & Rewards"
       }
     ],
     "tags": [
@@ -26840,16 +26631,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Drownmaw",
-          "Ship-Armor",
-          "The Salt Wound",
-          "Water-Purifier"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Drownmaw,Ship-Armor,The Salt Wound,Water-Purifier"
       }
     ],
     "tags": [
@@ -26937,16 +26719,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Blight-Sower",
-          "Null-Powder",
-          "Anti-Magic Collar",
-          "Veyn-Dampening Lamp"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Blight-Sower,Null-Powder,Anti-Magic Collar,Veyn-Dampening Lamp"
       }
     ],
     "tags": [
@@ -26990,16 +26763,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Blight-Sower",
-          "Dampening Draught",
-          "Hush-Ward",
-          "Veyn-Dead Zones"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Blight-Sower,Dampening Draught,Hush-Ward,Veyn-Dead Zones"
       }
     ],
     "tags": [
@@ -27043,16 +26807,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Tidewalker",
-          "Dive-Ward",
-          "The Salt Wound",
-          "Water-Purifier"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Tidewalker,Dive-Ward,The Salt Wound,Water-Purifier"
       }
     ],
     "tags": [
@@ -27096,15 +26851,7 @@
       },
       {
         "label": "Lore Connections",
-        "value": [
-          "Rift Materials",
-          "Rift Monsters",
-          "The Ossk",
-          "Ossk Castes",
-          "Tidewalker",
-          "Water-Breathing Draught",
-          "The Salt Wound"
-        ]
+        "value": "Rift Materials,Rift Monsters,The Ossk,Ossk Castes,Tidewalker,Water-Breathing Draught,The Salt Wound"
       }
     ],
     "tags": [

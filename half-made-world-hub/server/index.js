@@ -271,7 +271,8 @@ app.post('/api/reset', (req, res) => {
 
 // --- Archive search (chat-room style) -------------------------------------
 function buildSnippet(text, q) {
-  if (!text || !q) return text;
+  if (text == null || !q) return text;
+  text = Array.isArray(text) ? text.join(', ') : String(text);
   const idx = text.toLowerCase().indexOf(q);
   if (idx === -1) return text;
   const start = Math.max(0, idx - 80);
