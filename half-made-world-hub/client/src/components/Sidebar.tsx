@@ -2,7 +2,7 @@ import type { Ref } from 'react';
 import type { CategoryInfo } from '../types';
 import { categoryColor } from '../theme';
 
-export type ViewMode = 'browse' | 'map' | 'web' | 'blocks' | 'chat' | 'planning' | 'canon' | 'weave';
+export type ViewMode = 'browse' | 'map' | 'web' | 'blocks' | 'chat' | 'planning' | 'canon' | 'weave' | 'flavor';
 
 interface SidebarProps {
   categories: CategoryInfo[];
@@ -22,6 +22,7 @@ interface SidebarProps {
   onOpenPlanning?: () => void;
   onOpenCanon?: () => void;
   onOpenWeave?: () => void;
+  onOpenFlavor?: () => void;
 }
 
 export function Sidebar({
@@ -41,6 +42,7 @@ export function Sidebar({
   onOpenPlanning,
   onOpenCanon,
   onOpenWeave,
+  onOpenFlavor,
 }: SidebarProps) {
   return (
     <aside className="sidebar">
@@ -143,6 +145,18 @@ export function Sidebar({
         >
           <i className="fa-solid fa-wand-sparkles" style={{ fontSize: 14, color: view === 'weave' ? '#c8a876' : 'currentColor' }} />
           Weave
+          <span className="nav-dev-tag">dev</span>
+        </button>
+      )}
+
+      {onOpenFlavor && (
+        <button
+          className={`nav-map-btn${view === 'flavor' ? ' active' : ''}`}
+          onClick={onOpenFlavor}
+          title="Local only — get flavor words for an action, or enrich a scene with more life"
+        >
+          <i className="fa-solid fa-feather-pointed" style={{ fontSize: 14, color: view === 'flavor' ? '#c8a876' : 'currentColor' }} />
+          Flavor Finder
           <span className="nav-dev-tag">dev</span>
         </button>
       )}

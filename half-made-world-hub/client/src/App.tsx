@@ -25,6 +25,7 @@ import { StoryWeb } from './components/StoryWeb';
 import { BlockMap } from './components/BlockMap';
 import { CanonGuard } from './components/CanonGuard';
 import { WeaveExplorer } from './components/WeaveExplorer';
+import { FlavorFinder } from './components/FlavorFinder';
 import { LinkForm } from './components/LinkForm';
 import { Modal } from './components/Modal';
 import { RELATIONSHIP_TYPES, relationshipType } from './relationshipTypes';
@@ -167,6 +168,8 @@ export default function App() {
         setView('canon');
       } else if (e.key === '8' && canEdit) {
         setView('weave');
+      } else if (e.key === '9' && canEdit) {
+        setView('flavor');
       }
     };
     window.addEventListener('keydown', onKey);
@@ -506,9 +509,12 @@ export default function App() {
   const isPlanningView = view === 'planning' && canEdit;
   const isCanonView = view === 'canon' && canEdit;
   const isWeaveView = view === 'weave' && canEdit;
+  const isFlavorView = view === 'flavor' && canEdit;
   const showDashboard = view === 'browse' && activeCategory === 'All' && search.trim() === '' && !activeTag;
 
-  const viewKey = isWeaveView
+  const viewKey = isFlavorView
+    ? 'flavor'
+    : isWeaveView
     ? 'weave'
     : isCanonView
     ? 'canon'
@@ -545,13 +551,16 @@ export default function App() {
         onOpenPlanning={canEdit ? () => setView('planning') : undefined}
         onOpenCanon={canEdit ? () => setView('canon') : undefined}
         onOpenWeave={canEdit ? () => setView('weave') : undefined}
+        onOpenFlavor={canEdit ? () => setView('flavor') : undefined}
       />
 
       <main className="main">
         <header className="main-header">
           <div className="main-header-text">
             <h2 className="main-title">
-              {isWeaveView
+              {isFlavorView
+                ? 'Flavor Finder'
+                : isWeaveView
                 ? 'Weave'
                 : isCanonView
                 ? 'Canon Guard'
@@ -566,7 +575,7 @@ export default function App() {
                       : activeCategory === 'All'
                         ? 'All Entries'
                         : activeCategory}
-              {!isMapView && !isWebView && !isBlocksView && !isPlanningView && !isCanonView && !isWeaveView && (
+              {!isMapView && !isWebView && !isBlocksView && !isPlanningView && !isCanonView && !isWeaveView && !isFlavorView && (
                 <span className="main-count">{filtered.length}</span>
               )}
               {!canEdit && !isMapView && !isWebView && !isBlocksView && (
@@ -574,7 +583,9 @@ export default function App() {
               )}
             </h2>
             <p className="main-sub">
-              {isWeaveView
+              {isFlavorView
+                ? 'Get one- or two-word flavor descriptors, or rewrite a scene with more life'
+                : isWeaveView
                 ? 'Timeline, constellation, and the Lore Oracle — a playful way through the archive'
                 : isCanonView
                 ? 'Report-only consistency check — contradictions, broken links, gaps, drift, and more'
@@ -589,7 +600,7 @@ export default function App() {
                       : activeCategory === 'All'
                         ? 'Everything in the archive'
                         : `Entries in ${activeCategory}`}
-              {!isMapView && !isWebView && !isBlocksView && !isPlanningView && !isCanonView && !isWeaveView && search.trim() && ` · matching “${search.trim()}”`}
+              {!isMapView && !isWebView && !isBlocksView && !isPlanningView && !isCanonView && !isWeaveView && !isFlavorView && search.trim() && ` · matching “${search.trim()}”`}
             </p>
           </div>
           <div className="header-actions">
@@ -629,7 +640,7 @@ export default function App() {
           </div>
         </header>
 
-        <div className={`view-transition${isBlocksView || isPlanningView || isCanonView || isWeaveView ? ' view-fill' : ''}`} key={viewKey}>
+        <div className={`view-transition${isBlocksView || isPlanningView || isCanonView || isWeaveView || isFlavorView ? ' view-fill' : ''}`} key={viewKey}>
         {loading ? (
           <div className="loading">
             <span className="loading-orb" aria-hidden="true" />
@@ -643,6 +654,8 @@ export default function App() {
               Retry
             </button>
           </div>
+        ) : isFlavorView ? (
+          <FlavorFinder />
         ) : isWeaveView ? (
           <WeaveExplorer
             entries={entries}

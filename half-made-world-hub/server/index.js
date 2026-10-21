@@ -1978,6 +1978,103 @@ app.post('/api/canon/lint', (req, res) => {
   }
 });
 
+// --- Flavor Finder (local dev only) ---------------------------------------
+// Two modes, both pure AI (no archive data, nothing written):
+//   mode "descriptors" (default): a word/phrase/action -> evocative one- or
+//     two-word descriptors a novelist might reach for.
+//   mode "scene": a scene -> the same scene rewritten with more flavor.
+// Reuses the Query Chat HTTP backend.
+app.post('/api/ai/flavor', async (req, res) => {
+  const mode = req.body?.mode === 'scene' ? 'scene' : 'descriptors';
+  const maxLen = mode === 'scene' ? 4000 : 200;
+  const subject = truncateForBudget(req.body?.subject, maxLen);
+  if (!subject) {
+    return res.status(400).json({
+      error:
+        mode === 'scene'
+          ? 'Paste a scene to enrich.'
+          : 'Give it a word, phrase, or action to describe.',
+    });
+  }
+  if (!aiConfigured()) {
+    return res.status(500).json({
+      error: 'AI is not configured. Set AI_API_KEY (or GROQ_API_KEY) on the server.',
+    });
+  }
+
+  try {
+    if (mode === 'scene') {
+      const prompt = `You are a line editor for a novelist writing dark fantasy prose. Rewrite the scene below so it reads with more flavor and life — vivid, specific, sensory — while keeping every fact, action, character, and line of dialogue exactly as written. Enrich the prose; never change what happens.
+
+=== SCENE ===
+${subject}
+
+=== RULES ===
+- Return the revised scene in "scene": same events, same facts, same dialogue. Add texture and rhythm, do not invent new plot.
+- Make it more interesting: stronger verbs, concrete images, varied sentence length, restraint over purple excess.
+- Do NOT add a title, headings, notes, or commentary inside "scene" — just the prose.
+- Keep the same point of view and tense as the input.
+- List the notable one- or two-word flavor choices you used in "descriptors" (up to 12), and one short line in "note" on what you changed.
+
+Return ONLY JSON (no prose, no code fences):
+{
+  "scene": "the full rewritten scene",
+  "descriptors": ["one or two words", "..."],
+  "note": "one short line"
+}`;
+      const raw = await askGroq(prompt, 1600);
+      const parsed = parseAiJson(raw);
+      const scene = typeof parsed?.scene === 'string' && parsed.scene.trim() ? parsed.scene.trim() : '';
+      const descriptors = (Array.isArray(parsed?.descriptors) ? parsed.descriptors : [])
+        .map((d) => String(d || '').trim())
+        .filter((d) => d && d.split(/\s+/).length <= 2)
+        .slice(0, 12);
+      return res.json({
+        subject,
+        mode,
+        scene,
+        descriptors,
+        note: typeof parsed?.note === 'string' ? parsed.note.trim() : '',
+        raw: scene ? '' : String(raw || '').trim(),
+      });
+    }
+
+    const prompt = `You are a thesaurus for a novelist writing dark fantasy prose. Given a word, phrase, or action, return evocative one- or two-word descriptors that would add flavor to a sentence — how a writer might render it rather than name it plainly.
+
+=== SUBJECT ===
+"${subject}"
+
+=== RULES ===
+- Return the single best 6-12 descriptors, each ONE or TWO words only, no sentences.
+- Favour vivid, concrete, slightly unusual choices over plain synonyms (e.g. "walked slowly" -> "lumbered, shuffled, crept, drifted, trudged"). Mix movement, mood, and texture.
+- Every descriptor must plausibly apply to the subject — a phrase describing a way of doing it, or a mood/quality it carries. No filler, no duplicates, no near-duplicates.
+- If the subject is a noun/thing, offer words that describe how it looks, feels, moves, or what it evokes. If it is an action, offer adverbs and verbs.
+- Never invent a proper noun or a fact about any world.
+
+Return ONLY JSON (no prose, no code fences):
+{
+  "descriptors": ["one or two words", "..."],
+  "note": "one short line on how these read, optional"
+}`;
+    const raw = await askGroq(prompt);
+    const parsed = parseAiJson(raw);
+    const descriptors = (Array.isArray(parsed?.descriptors) ? parsed.descriptors : [])
+      .map((d) => String(d || '').trim())
+      .filter((d) => d && d.split(/\s+/).length <= 2)
+      .slice(0, 16);
+    res.json({
+      subject,
+      mode,
+      scene: '',
+      descriptors,
+      note: typeof parsed?.note === 'string' ? parsed.note.trim() : '',
+      raw: descriptors.length ? '' : String(raw || '').trim(),
+    });
+  } catch (err) {
+    sendAiError(res, 'flavor', err);
+  }
+});
+
 if (require.main === module) {
   app.listen(PORT, () => {
     console.log(`[half-made-world] server listening on http://localhost:${PORT}`);

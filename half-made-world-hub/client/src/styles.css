@@ -3370,3 +3370,107 @@ select.input {
   .weave-body { grid-template-columns: 1fr; }
   .weave-side { overflow: visible; }
 }
+
+/* ============ Flavor Finder (dev-only) ============ */
+.flavor-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  padding: var(--sp-5);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--panel);
+}
+
+.flavor-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+  color: var(--muted-2);
+}
+
+.flavor-input,
+.flavor-textarea {
+  width: 100%;
+  padding: 11px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--panel-2);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 14px;
+}
+
+.flavor-input:focus,
+.flavor-textarea:focus {
+  outline: none;
+  border-color: var(--line-strong);
+  background: var(--panel-3);
+}
+
+.flavor-textarea { resize: vertical; line-height: 1.6; min-height: 140px; }
+
+.flavor-examples { display: flex; flex-wrap: wrap; gap: 6px; }
+
+.flavor-actions { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 2px; }
+
+.flavor-result {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  padding: var(--sp-5);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--panel);
+}
+
+.flavor-result-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+}
+
+.flavor-result-head .section-title { margin: 0; }
+
+.flavor-chips { display: flex; flex-wrap: wrap; gap: 8px; }
+
+.flavor-chip {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 7px 14px;
+  border: 1px solid var(--line-strong);
+  border-radius: 999px;
+  background: rgba(200, 168, 118, 0.08);
+  color: var(--brass);
+  font-family: var(--font-head);
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  cursor: pointer;
+  transition: background 0.16s, color 0.16s, border-color 0.16s;
+}
+
+.flavor-chip:hover { background: rgba(200, 168, 118, 0.18); color: var(--text); }
+.flavor-chip-check { font-size: 11px; }
+
+.flavor-note {
+  margin: 0;
+  font-size: 12.5px;
+  font-style: italic;
+  color: var(--muted);
+}
+
+.flavor-scene {
+  padding: var(--sp-4);
+  border: 1px solid var(--line-soft);
+  border-radius: var(--r-sm);
+  background: var(--panel-2);
+  font-family: var(--font-body);
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--text);
+  white-space: pre-wrap;
+}
