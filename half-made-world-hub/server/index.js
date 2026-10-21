@@ -507,9 +507,13 @@ app.get('/api/search', (req, res) => {
 // Groq is the default, but the server talks plain OpenAI-compatible HTTP, so
 // AI_BASE_URL / AI_MODEL / AI_API_KEY can point at anything: a local Ollama or
 // LM Studio server (no rate limits at all), OpenRouter, a Groq proxy, etc.
-const AI_BASE_URL = (process.env.AI_BASE_URL || 'https://api.groq.com/openai/v1').replace(/\/+$/, '');
-const AI_MODEL = process.env.AI_MODEL || 'openai/gpt-oss-20b';
-const AI_API_KEY = process.env.AI_API_KEY || process.env.GROQ_API_KEY || '';
+//
+// A SECOND provider can be configured as a fallback (see the provider chain
+// below). When the primary cannot answer — its free tier is rate-limited, the
+// endpoint is down, a model returns nothing — the fallback is tried before the
+// request fails. The fallback is OpenRouter by default and only joins the
+// chain when it has an API key of its own, so a server with a single key
+// behaves exactly as it did before.
 // The AI features are split across two fixed backends:
 //   • Explore / answer (Query Chat) → ALWAYS the HTTP chat-completions endpoint
 //     (Groq by default) — never the opencode CLI.
@@ -552,22 +556,87 @@ function resolveOpencodeBin() {
   }
   return 'opencode';
 }
-// 'reasoning_effort' is a Groq/gpt-oss field; only send it where it is accepted.
-const AI_SEND_REASONING = /groq\.com/i.test(AI_BASE_URL) || process.env.AI_REASONING === 'true';
+// --- HTTP providers --------------------------------------------------------
+// A provider is one OpenAI-compatible endpoint, its own API key, and its own
+// chain of models to try on it.
+function splitList(raw) {
+  return String(raw || '')
+    .split(',')
+    .map((s) => s.trim())
+    .filter(Boolean);
+}
+
+// A friendly name for the UI and the logs.
+function providerLabel(baseUrl) {
+  const host = String(baseUrl || '')
+    .replace(/^https?:\/\//, '')
+    .split('/')[0]
+    .toLowerCase();
+  if (host.includes('groq')) return 'Groq';
+  if (host.includes('openrouter')) return 'OpenRouter';
+  if (host.includes('ollama')) return 'Ollama';
+  if (!host || host.startsWith('localhost') || host.startsWith('127.0.0.1')) return 'Local model';
+  return host;
+}
+
+function makeProvider({ name, baseUrl, apiKey, models }) {
+  const url = String(baseUrl || '').replace(/\/+$/, '');
+  return {
+    name,
+    label: providerLabel(url),
+    baseUrl: url,
+    apiKey: apiKey || '',
+    models: [...new Set(models.filter(Boolean))],
+    // 'reasoning_effort' is a Groq/gpt-oss field; only send it where it is accepted.
+    sendReasoning: /groq\.com/i.test(url) || process.env.AI_REASONING === 'true',
+    // OpenRouter reasoning models can be told to skip hidden reasoning; some
+    // require it and are retried without the flag.
+    reasoningOff: /openrouter\.ai/i.test(url) && process.env.AI_REASONING !== 'true',
+  };
+}
+
+// The primary provider — the one everything has always used. The extra models
+// in AI_FALLBACK_MODELS are tried on this same endpoint.
+const AI_PRIMARY = makeProvider({
+  name: 'primary',
+  baseUrl: process.env.AI_BASE_URL || 'https://api.groq.com/openai/v1',
+  apiKey: process.env.AI_API_KEY || process.env.GROQ_API_KEY || '',
+  models: [process.env.AI_MODEL || 'openai/gpt-oss-20b', ...splitList(process.env.AI_FALLBACK_MODELS)],
+});
+
+// The fallback provider — a second endpoint tried when the primary cannot
+// answer. OpenRouter by default; point it anywhere with AI_FALLBACK_BASE_URL.
+const AI_FALLBACK = makeProvider({
+  name: 'fallback',
+  baseUrl: process.env.AI_FALLBACK_BASE_URL || 'https://openrouter.ai/api/v1',
+  apiKey: process.env.AI_FALLBACK_API_KEY || process.env.OPENROUTER_API_KEY || '',
+  models: [
+    process.env.AI_FALLBACK_MODEL || 'nvidia/nemotron-3-ultra-550b-a55b:free',
+    ...splitList(process.env.AI_FALLBACK_MODEL_CHAIN),
+  ],
+});
+
+// The provider chain, in order. A provider joins it only when it has a key and
+// at least one model. The fallback is skipped when it is the same endpoint AND
+// the same key as the primary — that case is already covered by the primary's
+// own model chain.
+function buildProviderChain(primary, fallback) {
+  return [primary, fallback].filter(
+    (p) =>
+      p.apiKey &&
+      p.models.length &&
+      !(p === fallback && p.baseUrl === primary.baseUrl && p.apiKey === primary.apiKey),
+  );
+}
+
+const AI_PROVIDERS = buildProviderChain(AI_PRIMARY, AI_FALLBACK);
+
 // JSON mode (response_format) is on by default; disable it for endpoints that reject it.
 const AI_JSON_MODE = process.env.AI_JSON_MODE !== 'false';
-// OpenRouter can route across several models in order, so a free model that is
-// rate-limited upstream falls through to the next instead of failing the plan.
-// Comma-separated, primary first. Ignored by non-OpenRouter endpoints.
-const AI_FALLBACK_MODELS = (process.env.AI_FALLBACK_MODELS || '')
-  .split(',')
-  .map((s) => s.trim())
-  .filter(Boolean);
-const AI_IS_OPENROUTER = /openrouter\.ai/i.test(AI_BASE_URL);
 
 function aiConfigured() {
-  // Explore / answer always use the HTTP backend, which needs a key.
-  return Boolean(AI_API_KEY);
+  // Explore / answer / Flavor Finder always use the HTTP backend, which needs a key.
+  return AI_PROVIDERS.length > 0;
 }
 
 // The planner always uses the local opencode CLI — it needs no key, only a
@@ -731,12 +800,9 @@ function buildArchiveContext(data, budget = AI_CONTEXT_CHAR_BUDGET) {
 // model doesn't burn the completion budget on hidden reasoning before it
 // writes the answer — Explore uses 'high' (with a bigger max_tokens and a
 // smaller context) so it checks facts against the archive instead of assuming.
-// OpenRouter free models get rate-limited upstream unpredictably, so keep a
-// chain of models and try the next one when the current one is unavailable.
-const AI_MODELS = [...new Set([AI_MODEL, ...AI_FALLBACK_MODELS])];
-// OpenRouter reasoning models can be told to skip hidden reasoning; some
-// require it and are retried without the flag.
-const AI_REASONING_OFF = /openrouter\.ai/i.test(AI_BASE_URL) && process.env.AI_REASONING !== 'true';
+// Each provider carries its own model chain, so a free model that is
+// rate-limited upstream falls through to the next one on that provider, and a
+// provider that cannot answer at all falls through to the next provider.
 
 // Run the locally installed opencode CLI headlessly and return its text answer.
 // `opencode run --format json` streams one JSON event per line; the assistant's
@@ -945,8 +1011,8 @@ function extractOpencodeText(stdout) {
   return { text: raw, sessionID };
 }
 
-// One call to one specific model.
-async function askModel(model, prompt, maxTokens, reasoningEffort, extra, reasoningOff) {
+// One call to one specific model on one specific provider.
+async function askModel(provider, model, prompt, maxTokens, reasoningEffort, extra, reasoningOff) {
   const body = {
     model,
     messages: [{ role: 'user', content: prompt }],
@@ -954,18 +1020,18 @@ async function askModel(model, prompt, maxTokens, reasoningEffort, extra, reason
     max_tokens: maxTokens,
     ...(extra || {}),
   };
-  if (AI_SEND_REASONING && reasoningEffort) body.reasoning_effort = reasoningEffort;
+  if (provider.sendReasoning && reasoningEffort) body.reasoning_effort = reasoningEffort;
   if (reasoningOff) body.reasoning = { enabled: false };
 
   let res;
   const controller = new AbortController();
   const timer = setTimeout(() => controller.abort(), 90000);
   try {
-    res = await fetch(`${AI_BASE_URL}/chat/completions`, {
+    res = await fetch(`${provider.baseUrl}/chat/completions`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
-        Authorization: `Bearer ${AI_API_KEY}`,
+        Authorization: `Bearer ${provider.apiKey}`,
       },
       body: JSON.stringify(body),
       signal: controller.signal,
@@ -973,8 +1039,8 @@ async function askModel(model, prompt, maxTokens, reasoningEffort, extra, reason
   } catch (err) {
     const e = new Error(
       err.name === 'AbortError'
-        ? `The AI endpoint at ${AI_BASE_URL} took too long to respond.`
-        : `Could not reach the AI endpoint at ${AI_BASE_URL} (${err.message}).`,
+        ? `The AI endpoint at ${provider.baseUrl} took too long to respond.`
+        : `Could not reach the AI endpoint at ${provider.baseUrl} (${err.message}).`,
     );
     e.status = 0;
     throw e;
@@ -1015,36 +1081,50 @@ async function askModel(model, prompt, maxTokens, reasoningEffort, extra, reason
   return answer;
 }
 
-// Try each model in the chain: free models fail often (upstream 429s, empty
-// answers from a reasoning model), so a dead model just moves to the next one.
-// This is the HTTP (Groq/OpenAI-compatible) path only — the planner's opencode
-// backend is called directly, never through here.
-async function askGroq(prompt, maxTokens = 1024, reasoningEffort = 'low', extra = {}) {
+// Walk the provider chain: for each provider, try its models in order. Free
+// models fail often (upstream 429s, empty answers from a reasoning model) and
+// a free tier gets rate-limited, so a dead model just moves to the next one,
+// and a dead provider just moves to the next provider (the fallback).
+//
+// This is the HTTP path only — the planner's opencode backend is called
+// directly, never through here.
+async function askHttp(prompt, maxTokens = 1024, reasoningEffort = 'low', extra = {}, providers = AI_PROVIDERS) {
   let lastErr = null;
-  for (let i = 0; i < AI_MODELS.length; i++) {
-    const model = AI_MODELS[i];
-    const more = i < AI_MODELS.length - 1;
-    if (AI_REASONING_OFF) {
-      try {
-        return await askModel(model, prompt, maxTokens, reasoningEffort, extra, true);
-      } catch (err) {
-        lastErr = err;
-        // A model that insists on reasoning refuses the flag — retry it without.
-        if (!/reasoning is mandatory/i.test(err.message || '')) {
-          if (more) continue;
-          throw err;
+  for (const provider of providers) {
+    for (let i = 0; i < provider.models.length; i++) {
+      const model = provider.models[i];
+      const more = i < provider.models.length - 1;
+      if (provider.reasoningOff) {
+        try {
+          const answer = await askModel(provider, model, prompt, maxTokens, reasoningEffort, extra, true);
+          return { answer, provider, model };
+        } catch (err) {
+          lastErr = err;
+          // A model that insists on reasoning refuses the flag — retry it without.
+          if (!/reasoning is mandatory/i.test(err.message || '')) {
+            if (more) continue;
+            break; // this provider is out of models — try the next provider
+          }
         }
       }
-    }
-    try {
-      return await askModel(model, prompt, maxTokens, reasoningEffort, extra, false);
-    } catch (err) {
-      lastErr = err;
-      if (more) continue;
-      throw err;
+      try {
+        const answer = await askModel(provider, model, prompt, maxTokens, reasoningEffort, extra, false);
+        return { answer, provider, model };
+      } catch (err) {
+        lastErr = err;
+        if (more) continue;
+        break; // this provider is out of models — try the next provider
+      }
     }
   }
   throw lastErr || new Error('No AI models are configured.');
+}
+
+// Which provider/model answered, for the UI. A fallback answer should be
+// visible as such instead of looking exactly like the usual one.
+function providerInfo(result) {
+  if (!result || !result.provider) return null;
+  return { name: result.provider.name, label: result.provider.label, model: result.model || '' };
 }
 
 // Groq's free tier allows ~8000 tokens per minute and 200k per day; one
@@ -1101,14 +1181,18 @@ function parseRetryAfterSeconds(err) {
 function dropEffort(effort) {
   return effort === 'high' ? 'medium' : effort === 'medium' ? 'low' : null;
 }
-async function askGroqResilient(prompt, reasoningEffort, maxTokensOverride, extra) {
+// The same walk, but resilient: a rate-limited call waits out the window and
+// retries instead of failing the request. The provider chain is tried first,
+// so a rate-limited primary moves on to the fallback provider immediately —
+// there is no reason to wait when another provider could answer right now.
+async function askHttpResilient(prompt, reasoningEffort, maxTokensOverride, extra) {
   let effort = reasoningEffort;
   // A caller can hand a specific budget (e.g. the planner needs a lower
   // reasoning effort but enough completion room to write a whole JSON plan).
   let maxTokens = maxTokensOverride || COMPLETION_BUDGET[effort];
   for (let attempt = 1; attempt <= MAX_AI_ATTEMPTS; attempt++) {
     try {
-      return await askGroq(prompt, maxTokens, effort, extra);
+      return await askHttp(prompt, maxTokens, effort, extra);
     } catch (err) {
       if (isDailyLimit(err)) throw err;
       // Too many tokens spent on reasoning with no answer — drop a level.
@@ -1142,17 +1226,19 @@ async function askGroqResilient(prompt, reasoningEffort, maxTokensOverride, extr
 }
 
 function sendAiError(res, tag, err) {
-  console.error(`[ai] Groq ${tag} error:`, err.message);
+  console.error(`[ai] ${tag} error:`, err.message);
   const status = err?.status || 0;
   if (status === 401) {
-    return res.status(500).json({ error: 'The AI API key was rejected. Check AI_API_KEY (or GROQ_API_KEY) on the server.' });
+    return res
+      .status(500)
+      .json({ error: 'The AI API key was rejected. Check AI_API_KEY (or GROQ_API_KEY) on the server.' });
   }
   if (status === 413 || status === 429 || /rate_limit_exceeded|tokens per minute|too large/i.test(err.message || '')) {
     const daily = isDailyLimit(err);
     return res.status(429).json({
       error: daily
-        ? "The AI's daily token budget is used up (free Groq tier) — it resets after a few hours. Try again later."
-        : 'The AI hit its usage limit (free Groq tier). Wait a minute and try again.',
+        ? "The AI's daily token budget is used up (free tier) — it resets after a few hours. Try again later."
+        : 'The AI hit its usage limit (free tier). Wait a minute and try again.',
       retryAfterSeconds: parseRetryAfterSeconds(err),
       limit: daily ? 'day' : 'minute',
     });
@@ -1200,7 +1286,7 @@ ${context}
 - If a table would help (e.g. comparing several things), use valid GitHub-flavoured markdown: a header row, a separator row like | --- | --- |, then one row per item. Keep tables narrow (2–4 columns). Do not use HTML tags (<br>, <br/>, etc.) — use plain text.`;
 
   try {
-    const answer = await askGroq(prompt);
+    const { answer } = await askHttp(prompt);
     res.json({ answer });
   } catch (err) {
     sendAiError(res, 'answer', err);
@@ -1530,10 +1616,10 @@ ${historyBlock}=== QUESTION ===
 - If a table would help (e.g. comparing several things), use valid GitHub-flavoured markdown: a header row, a separator row like | --- | --- |, then one row per item. Keep tables narrow (2–4 columns) and short (max ~8 rows) unless the user asks for more. Do not use HTML tags (<br>, <br/>, etc.) — use plain text.`;
 
   try {
-    // Starts at 'high' reasoning; askGroqResilient auto-drops to medium/low
+    // Starts at 'high' reasoning; askHttpResilient auto-drops to medium/low
     // if a single call burns too many tokens without answering or exceeds
     // the free tier's rate limit.
-    const answer = await askGroqResilient(prompt, 'high');
+    const { answer } = await askHttpResilient(prompt, 'high');
     res.json({ answer });
   } catch (err) {
     sendAiError(res, 'explore', err);
@@ -2132,7 +2218,8 @@ Rules:
 - Prefer section breaks, soft transitions, clear POV boundaries over "time passes". Handle cases like two people talking while MC absent, switching to side scene, cutting back to MC.
 - Return ONLY JSON, no prose, no code fences.`;
 
-      const raw = await askGroq(prompt, 1600);
+      const result = await askHttp(prompt, 1600);
+      const raw = result.answer;
       const parsed = parseAiJson(raw) || {};
       const advice = typeof parsed.advice === 'string' ? parsed.advice.trim() : '';
       const suggestions = Array.isArray(parsed.suggestions)
@@ -2149,7 +2236,7 @@ Rules:
       }
       const scene = typeof parsed.scene === 'string' ? parsed.scene.trim() : '';
       const note = typeof parsed.note === 'string' ? parsed.note.trim() : '';
-      return res.json({ subject, mode: 'craft', advice, suggestions, design, scene, note, raw: (advice || scene) ? '' : String(raw || '').trim() });
+      return res.json({ subject, mode: 'craft', advice, suggestions, design, scene, note, raw: (advice || scene) ? '' : String(raw || '').trim(), provider: providerInfo(result) });
     }
 
     if (mode === 'scene') {
@@ -2171,7 +2258,8 @@ Return ONLY JSON (no prose, no code fences):
   "descriptors": ["one or two words", "..."],
   "note": "one short line"
 }`;
-      const raw = await askGroq(prompt, 1600);
+      const result = await askHttp(prompt, 1600);
+      const raw = result.answer;
       const parsed = parseAiJson(raw);
       const scene = typeof parsed?.scene === 'string' && parsed.scene.trim() ? parsed.scene.trim() : '';
       const descriptors = (Array.isArray(parsed?.descriptors) ? parsed.descriptors : [])
@@ -2185,6 +2273,7 @@ Return ONLY JSON (no prose, no code fences):
         descriptors,
         note: typeof parsed?.note === 'string' ? parsed.note.trim() : '',
         raw: scene ? '' : String(raw || '').trim(),
+        provider: providerInfo(result),
       });
     }
 
@@ -2229,7 +2318,8 @@ Return ONLY JSON (no prose, no code fences):
   "descriptors": ["one or two words", "..."],
   "note": "one short line on how these read, optional"
 }`;
-    const raw = await askGroq(prompt);
+    const result = await askHttp(prompt);
+    const raw = result.answer;
     const parsed = parseAiJson(raw);
     // Drop repeats and near-repeats ("crunch" / "crunching" / "crunch-grind"),
     // which read as sloppy when they land in the same list.
@@ -2248,6 +2338,7 @@ Return ONLY JSON (no prose, no code fences):
       descriptors,
       note: typeof parsed?.note === 'string' ? parsed.note.trim() : '',
       raw: descriptors.length ? '' : String(raw || '').trim(),
+      provider: providerInfo(result),
     });
   } catch (err) {
     sendAiError(res, 'flavor', err);
@@ -2261,4 +2352,4 @@ if (require.main === module) {
 }
 
 // Exported for tests/debug tooling (requiring this module does not start the server).
-module.exports = { extractKeywords, broadSearch, buildArchiveContext, buildArchiveIndex, parseRetryAfterSeconds, durationToSeconds, parseAiJson, collectCategoryStats, resolvePlanningCategory, pickPlanningCategory, buildPlanningContext, normalizePlan, normalizeTriage };
+module.exports = { extractKeywords, broadSearch, buildArchiveContext, buildArchiveIndex, parseRetryAfterSeconds, durationToSeconds, parseAiJson, collectCategoryStats, resolvePlanningCategory, pickPlanningCategory, buildPlanningContext, normalizePlan, normalizeTriage, splitList, providerLabel, makeProvider, buildProviderChain, askHttp };

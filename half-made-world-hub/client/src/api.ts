@@ -355,6 +355,15 @@ export interface FlavorDesign {
   notes?: string;
 }
 
+export interface FlavorProvider {
+  // 'primary' or 'fallback' — which provider in the chain answered.
+  name: string;
+  // Friendly provider name, e.g. 'Groq' or 'OpenRouter'.
+  label: string;
+  // The model id that produced the answer.
+  model: string;
+}
+
 export interface FlavorResult {
   subject: string;
   mode: FlavorMode;
@@ -367,6 +376,8 @@ export interface FlavorResult {
   advice?: string;
   suggestions?: string[];
   design?: FlavorDesign;
+  // Which provider/model answered. Present when the server could tell.
+  provider?: FlavorProvider;
 }
 
 export async function findFlavor(

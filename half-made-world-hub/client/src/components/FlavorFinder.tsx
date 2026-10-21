@@ -269,6 +269,14 @@ export function FlavorFinder() {
 
         {error && <div className="chat-error">{error}</div>}
 
+        {result?.provider && (
+          <p className="flavor-provider">
+            Answered by <strong>{result.provider.label}</strong>
+            {result.provider.model ? ` · ${result.provider.model}` : ''}
+            {result.provider.name === 'fallback' ? ' — the primary provider could not answer.' : ''}
+          </p>
+        )}
+
         {busy && !result && (
           <div className="loading">
             <span className="loading-orb" aria-hidden="true" />

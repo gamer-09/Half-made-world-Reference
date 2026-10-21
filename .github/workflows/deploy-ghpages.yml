@@ -34,6 +34,10 @@ jobs:
         run: npm test
         working-directory: half-made-world-hub/client
 
+      - name: Run server tests
+        run: npm run test:server
+        working-directory: half-made-world-hub
+
       - name: Check seeds are in sync with data
         run: node server/sync-seeds.js --check
         working-directory: half-made-world-hub
