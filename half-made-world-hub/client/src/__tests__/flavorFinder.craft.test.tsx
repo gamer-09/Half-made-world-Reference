@@ -67,4 +67,55 @@ describe('FlavorFinder — craft response without descriptors', () => {
 
     await waitFor(() => expect(screen.getByText(/returned nothing usable/)).toBeTruthy());
   });
+
+  it('renders sound words for a sound source', async () => {
+    fetchMock.mockResolvedValue(
+      okJson({
+        subject: 'a door slamming',
+        mode: 'sound',
+        scene: '',
+        note: 'heavy and final',
+        raw: '',
+        descriptors: ['boom', 'thud', 'clack'],
+      }),
+    );
+
+    render(<FlavorFinder />);
+
+    fireEvent.click(screen.getByText('Sounds'));
+    fireEvent.change(screen.getByLabelText('Sound you want to hear'), {
+      target: { value: 'a door slamming' },
+    });
+    fireEvent.click(screen.getByText('Find sound words'));
+
+    await waitFor(() => expect(screen.getByText('Sound words for “a door slamming”')).toBeTruthy());
+    expect(screen.getByText('boom')).toBeTruthy();
+    expect(screen.getByText('heavy and final')).toBeTruthy();
+  });
+
+  it('shows a flavored line of prose when the sound comes with one', async () => {
+    fetchMock.mockResolvedValue(
+      okJson({
+        subject: 'a door slamming',
+        mode: 'sound',
+        note: '',
+        raw: '',
+        descriptors: ['bang', 'clatter'],
+        scene: 'The front door bangs shut, a flat crack that rattles the glasses.',
+      }),
+    );
+
+    render(<FlavorFinder />);
+
+    fireEvent.click(screen.getByText('Sounds'));
+    fireEvent.change(screen.getByLabelText('Sound you want to hear'), {
+      target: { value: 'a door slamming' },
+    });
+    fireEvent.click(screen.getByText('Find sound words'));
+
+    await waitFor(() => expect(screen.getByText('How it reads')).toBeTruthy());
+    expect(
+      screen.getByText('The front door bangs shut, a flat crack that rattles the glasses.'),
+    ).toBeTruthy();
+  });
 });

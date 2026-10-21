@@ -340,9 +340,11 @@ export async function lintCanon(draft?: CanonDraft): Promise<CanonLintResult> {
 }
 
 // --- Flavor Finder (local dev only) ---------------------------------------
-// Suggests one- or two-word descriptors for a word, phrase, or action, and can
-// rewrite a whole scene with more flavor. Scene Craft helps with POV/scenery/transition changes.
-export type FlavorMode = 'descriptors' | 'scene' | 'craft';
+// Suggests one- or two-word descriptors for a word, phrase, or action, the
+// sound words for a sound source ("door slamming" -> boom, thud, clack), and
+// can rewrite a whole scene with more flavor. Scene Craft helps with
+// POV/scenery/transition changes.
+export type FlavorMode = 'descriptors' | 'scene' | 'craft' | 'sound';
 
 export interface FlavorDesign {
   title?: string;
@@ -367,14 +369,18 @@ export interface FlavorResult {
   design?: FlavorDesign;
 }
 
-export async function findFlavor(subject: string, mode: FlavorMode = 'descriptors'): Promise<FlavorResult> {
+export async function findFlavor(
+  subject: string,
+  mode: FlavorMode = 'descriptors',
+  flavor = false,
+): Promise<FlavorResult> {
   if (viewOnlyBuild) {
     throw new Error('Flavor Finder needs the local server and is not available in the view-only build.');
   }
   const res = await fetch('/api/ai/flavor', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify({ subject, mode }),
+    body: JSON.stringify({ subject, mode, ...(flavor ? { flavor: true } : {}) }),
   });
   return handle<FlavorResult>(res);
 }

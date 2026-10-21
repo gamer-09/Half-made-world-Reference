@@ -14,6 +14,14 @@ const EXAMPLES: Record<FlavorMode, string[]> = {
     'the forest at night',
   ],
   scene: [],
+  sound: [
+    'a door slamming',
+    'flowing water',
+    'a sword drawn from a sheath',
+    'a campfire crackling',
+    'wind in the trees',
+    'a horse galloping on gravel',
+  ],
   craft: [
     'How do I cut from the MC to another character mid-scene?',
     'Two characters talk while the MC is elsewhere — how do I come back to the MC?',
@@ -27,24 +35,28 @@ const MODE_LABELS: Record<FlavorMode, string> = {
   descriptors: 'Descriptors',
   scene: 'Enrich a scene',
   craft: 'Scene craft',
+  sound: 'Sounds',
 };
 
 const MODE_INPUT_LABEL: Record<FlavorMode, string> = {
   descriptors: 'Word, phrase, or action',
   scene: 'Paste your scene',
   craft: 'What do you want help with?',
+  sound: 'Sound you want to hear',
 };
 
 const MODE_BUTTON: Record<FlavorMode, { icon: string; text: string }> = {
   descriptors: { icon: 'fa-solid fa-book', text: 'Find flavor words' },
   scene: { icon: 'fa-solid fa-wand-magic-sparkles', text: 'Enrich scene' },
   craft: { icon: 'fa-solid fa-compass-drafting', text: 'Craft the scene' },
+  sound: { icon: 'fa-solid fa-volume-high', text: 'Find sound words' },
 };
 
 const LOADING_TEXT: Record<FlavorMode, string> = {
   descriptors: 'Searching for the right words…',
   scene: 'Rewriting your scene…',
   craft: 'Working out the transition…',
+  sound: 'Listening for the right sound…',
 };
 
 export function FlavorFinder() {
@@ -54,6 +66,7 @@ export function FlavorFinder() {
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
   const [copied, setCopied] = useState('');
+  const [flavor, setFlavor] = useState(false);
   const [limitInfo, setLimitInfo] = useState<number | null>(null);
   const timerRef = useRef<number | null>(null);
 
@@ -73,7 +86,7 @@ export function FlavorFinder() {
   }, []);
 
   const run = useCallback(
-    async (text: string, runMode: FlavorMode) => {
+    async (text: string, runMode: FlavorMode, wantFlavor = false) => {
       const clean = text.trim();
       if (!clean || busy) return;
       setBusy(true);
@@ -81,7 +94,7 @@ export function FlavorFinder() {
       setResult(null);
       setCopied('');
       try {
-        const data = await findFlavor(clean, runMode);
+        const data = await findFlavor(clean, runMode, wantFlavor);
         setResult(data);
       } catch (err) {
         if (err instanceof AiRateLimitError) {
@@ -131,8 +144,9 @@ export function FlavorFinder() {
         </div>
         <p className="plan-sub">
           Give it a word, phrase, or action and get one‑ or two‑word descriptors a novelist would reach
-          for — paste a whole scene and get it rewritten with more flavor, or ask how to handle a POV
-          change, a scenery change, or getting back to the MC. Nothing is saved; this is a drafting aid.
+          for — ask for a sound and get the sound words of it, paste a whole scene and get it rewritten
+          with more flavor, or ask how to handle a POV change, a scenery change, or getting back to the
+          MC. Nothing is saved; this is a drafting aid.
         </p>
       </div>
 
@@ -144,10 +158,7 @@ export function FlavorFinder() {
               className={`view-toggle-btn${mode === m ? ' active' : ''}`}
               onClick={() => switchMode(m)}
             >
-              <i
-                className={m === 'descriptors' ? 'fa-solid fa-book' : m === 'scene' ? 'fa-solid fa-scroll' : 'fa-solid fa-compass-drafting'}
-                style={{ fontSize: 12 }}
-              />{' '}
+              <i className={MODE_BUTTON[m].icon} style={{ fontSize: 12 }} />{' '}
               {MODE_LABELS[m]}
             </button>
           ))}
@@ -157,19 +168,23 @@ export function FlavorFinder() {
           className="flavor-form"
           onSubmit={(e) => {
             e.preventDefault();
-            run(subject, mode);
+            run(subject, mode, mode === 'sound' && flavor);
           }}
         >
           <label className="flavor-label" htmlFor="flavor-input">
             {MODE_INPUT_LABEL[mode]}
           </label>
-          {mode === 'descriptors' ? (
+          {mode === 'descriptors' || mode === 'sound' ? (
             <input
               id="flavor-input"
               className="flavor-input"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
-              placeholder="e.g. walked slowly, a cold room, she was angry"
+              placeholder={
+                mode === 'sound'
+                  ? 'e.g. a door slamming, flowing water, a sword drawn from a sheath'
+                  : 'e.g. walked slowly, a cold room, she was angry'
+              }
             />
           ) : (
             <textarea
@@ -198,6 +213,20 @@ export function FlavorFinder() {
                   {ex}
                 </button>
               ))}
+            </div>
+          )}
+
+          {mode === 'sound' && (
+            <div className="flavor-examples">
+              <button
+                type="button"
+                className={`filter-chip${flavor ? ' on' : ''}`}
+                onClick={() => setFlavor((f) => !f)}
+                title="Also write the sound as a line of novelistic prose"
+              >
+                <i className="fa-solid fa-wand-magic-sparkles" style={{ fontSize: 11, marginRight: 6 }} />
+                Add a flavored line
+              </button>
             </div>
           )}
 
@@ -336,7 +365,11 @@ export function FlavorFinder() {
           <section className="flavor-result">
             <div className="flavor-result-head">
               <h3 className="section-title">
-                {mode === 'scene' ? 'Flavor used' : `Descriptors for “${result.subject}”`}
+                {mode === 'scene'
+                  ? 'Flavor used'
+                  : mode === 'sound'
+                    ? `Sound words for “${result.subject}”`
+                    : `Descriptors for “${result.subject}”`}
               </h3>
               <button
                 className="btn btn-secondary btn-sm"
@@ -365,9 +398,11 @@ export function FlavorFinder() {
         {result && result.scene && (
           <section className="flavor-result">
             <div className="flavor-result-head">
-              <h3 className="section-title">{craft ? 'Example scene' : 'Enriched scene'}</h3>
+              <h3 className="section-title">
+                {craft ? 'Example scene' : mode === 'sound' ? 'How it reads' : 'Enriched scene'}
+              </h3>
               <button className="btn btn-secondary btn-sm" onClick={() => copy(result.scene, 'scene')}>
-                {copied === 'scene' ? '✓ Copied' : 'Copy scene'}
+                {copied === 'scene' ? '✓ Copied' : mode === 'sound' ? 'Copy' : 'Copy scene'}
               </button>
             </div>
             <div className="flavor-scene">{result.scene}</div>

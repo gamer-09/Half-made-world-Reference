@@ -2063,14 +2063,22 @@ app.post('/api/canon/lint', (req, res) => {
 });
 
 // --- Flavor Finder (local dev only) ---------------------------------------
-// Two modes, both pure AI (no archive data, nothing written):
+// Three modes, all pure AI (no archive data, nothing written):
 //   mode "descriptors" (default): a word/phrase/action -> evocative one- or
 //     two-word descriptors a novelist might reach for.
+//   mode "sound": a sound source -> the sound words for it ("boom", "thud").
 //   mode "scene": a scene -> the same scene rewritten with more flavor.
 // Reuses the Query Chat HTTP backend.
 app.post('/api/ai/flavor', async (req, res) => {
   const rawMode = typeof req.body?.mode === 'string' ? req.body.mode.trim().toLowerCase() : 'descriptors';
-  const mode = rawMode === 'scene' ? 'scene' : rawMode === 'craft' || rawMode === 'advice' || rawMode === 'design' ? 'craft' : 'descriptors';
+  const mode =
+    rawMode === 'scene'
+      ? 'scene'
+      : rawMode === 'craft' || rawMode === 'advice' || rawMode === 'design'
+        ? 'craft'
+        : rawMode === 'sound' || rawMode === 'sounds'
+          ? 'sound'
+          : 'descriptors';
   const maxLen = mode === 'scene' ? 4000 : mode === 'craft' ? 8000 : 200;
   const subject = truncateForBudget(req.body?.subject, maxLen);
   if (!subject) {
@@ -2080,7 +2088,9 @@ app.post('/api/ai/flavor', async (req, res) => {
           ? 'Paste a scene to enrich.'
           : mode === 'craft'
             ? 'Describe the transition you want help with (POV, scene change, cutting between characters, returning to MC).'
-            : 'Give it a word, phrase, or action to describe.',
+            : mode === 'sound'
+              ? 'Give it a sound to name — a door slamming, flowing water, a sword drawn.'
+              : 'Give it a word, phrase, or action to describe.',
     });
   }
   if (!aiConfigured()) {
@@ -2090,6 +2100,7 @@ app.post('/api/ai/flavor', async (req, res) => {
   }
 
   try {
+    const wantFlavor = mode === 'sound' && req.body?.flavor === true;
     if (mode === 'craft') {
       const prompt = `You are a pragmatic fiction writing coach focused on scene transitions, POV changes, and cutting between characters.
 
@@ -2177,7 +2188,31 @@ Return ONLY JSON (no prose, no code fences):
       });
     }
 
-    const prompt = `You are a thesaurus for a novelist writing dark fantasy prose. Given a word, phrase, or action, return evocative one- or two-word descriptors that would add flavor to a sentence — how a writer might render it rather than name it plainly.
+    const soundMode = mode === 'sound';
+    const prompt = soundMode
+      ? `You are a line editor compiling the sound vocabulary of published fiction. Given a sound, return the words novelists actually set on the page for it — the ones you meet in a printed novel, not in a sound-effects catalogue or a physics textbook.
+
+=== SUBJECT ===
+"${subject}"
+
+=== RULES ===
+- Return 10-12 words, each ONE or TWO words only, no sentences.
+- Order them from the plainest to the rarest: the first two or three are what any reader would predict, the last ones are the words that make a reader look up. The rare half matters most.
+- The register you want: clack, clunk, jangle, whump, creak, clatter. These show the register only — do NOT return them unless they genuinely fit the subject.
+- Mix the kinds writers use: onomatopoeia typed on the page, sound verbs turned into nouns ("a rattle", "a hum", "a creak"), and blunt one-word impacts.
+- Spread the list: the dull one and the sharp one, the close one and the one fading away, the single hit and the continuous one.
+- Never repeat a word, and never give a near-duplicate of one already given.
+- Every word must be something a reader's ear could pick up — not an emotion, not a judgement, not a state.
+${wantFlavor ? '- "scene": 2-4 sentences of novelistic prose that renders this sound in a scene — the character hears it, and the sound carries the weight, distance and mood of the moment. Show it, do not explain it. No commentary inside the prose.' : '- "scene": leave it empty.'}
+- No multi-word descriptions, no "the sound of", no explanations, no facts about any world.
+
+Return ONLY JSON (no prose, no code fences):
+{
+  "descriptors": ["one or two words", "..."],
+  "note": "one short line on the character of the sound and how these read, optional",
+  "scene": "${wantFlavor ? '2-4 sentences of novelistic prose' : 'leave this empty'}"
+}`
+      : `You are a thesaurus for a novelist writing dark fantasy prose. Given a word, phrase, or action, return evocative one- or two-word descriptors that would add flavor to a sentence — how a writer might render it rather than name it plainly.
 
 === SUBJECT ===
 "${subject}"
@@ -2196,14 +2231,20 @@ Return ONLY JSON (no prose, no code fences):
 }`;
     const raw = await askGroq(prompt);
     const parsed = parseAiJson(raw);
-    const descriptors = (Array.isArray(parsed?.descriptors) ? parsed.descriptors : [])
-      .map((d) => String(d || '').trim())
-      .filter((d) => d && d.split(/\s+/).length <= 2)
-      .slice(0, 16);
+    // Drop repeats and near-repeats ("crunch" / "crunching" / "crunch-grind"),
+    // which read as sloppy when they land in the same list.
+    const descriptors = [];
+    for (const d of Array.isArray(parsed?.descriptors) ? parsed.descriptors : []) {
+      const word = String(d || '').trim();
+      if (!word || word.split(/\s+/).length > 2) continue;
+      if (descriptors.some((k) => k === word || k.startsWith(word) || word.startsWith(k))) continue;
+      descriptors.push(word);
+      if (descriptors.length >= 16) break;
+    }
     res.json({
       subject,
       mode,
-      scene: '',
+      scene: soundMode && typeof parsed?.scene === 'string' ? parsed.scene.trim() : '',
       descriptors,
       note: typeof parsed?.note === 'string' ? parsed.note.trim() : '',
       raw: descriptors.length ? '' : String(raw || '').trim(),

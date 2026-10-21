@@ -92,6 +92,43 @@ describe('findFlavor', () => {
     expect(result.descriptors).toBeUndefined();
   });
 
+  it('passes sound mode through and returns sound words', async () => {
+    const payload: FlavorResult = {
+      subject: 'a door slamming',
+      mode: 'sound',
+      scene: '',
+      descriptors: ['boom', 'thud', 'clack'],
+      note: '',
+      raw: '',
+    };
+    fetchMock.mockResolvedValue(okJson(payload));
+
+    const result = await findFlavor('a door slamming', 'sound');
+
+    const [, init] = fetchMock.mock.calls[0];
+    expect(JSON.parse(init.body)).toEqual({ subject: 'a door slamming', mode: 'sound' });
+    expect(result.descriptors).toEqual(['boom', 'thud', 'clack']);
+  });
+
+  it('asks for a flavored line only when it is wanted', async () => {
+    fetchMock.mockResolvedValue(
+      okJson({ subject: 'a door slamming', mode: 'sound', scene: '', descriptors: ['bang'], note: '', raw: '' }),
+    );
+
+    await findFlavor('a door slamming', 'sound');
+    expect(JSON.parse(fetchMock.mock.calls[0][1].body)).toEqual({
+      subject: 'a door slamming',
+      mode: 'sound',
+    });
+
+    await findFlavor('a door slamming', 'sound', true);
+    expect(JSON.parse(fetchMock.mock.calls[1][1].body)).toEqual({
+      subject: 'a door slamming',
+      mode: 'sound',
+      flavor: true,
+    });
+  });
+
   it('surfaces a 429 as AiRateLimitError with the countdown', async () => {
     fetchMock.mockResolvedValue({
       ok: false,
