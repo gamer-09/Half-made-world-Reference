@@ -27,15 +27,40 @@ npm run install:all   # installs server + client
 npm run dev            # server on :5001, client on :5173
 ```
 
-Open http://localhost:5173. The first run seeds `server/data/world.json` from the reference
-document; every edit after that is made and saved through the UI itself.
+Open http://localhost:5173. On the first run the server writes `server/data/*.json` from the
+bundled seeds, which were transcribed from the reference document; every edit after that is made
+and saved through the UI itself.
 
 | Command | What it does |
 | --- | --- |
 | `npm run dev` | Starts server + client dev servers |
-| `npm run build` | Typechecks and builds the client |
+| `npm run build` | Syncs the seeds, then typechecks and builds the client |
 | `npm start` | Starts only the server (serves API) |
 | `npm run install:all` | Installs dependencies for server and client |
+| `npm run snapshot` | Rebuilds `client/public/snapshot.json` from `server/data/*.json` |
+| `npm run sync:all` | Regenerates the seed files *and* the client snapshot from the live data |
+| `npm run seeds:sync` | Regenerates the seed files only |
+| `npm run seeds:check` | Exits non-zero if the seed files are out of sync with the data (used by CI) |
+| `npm test --prefix client` | Runs the client unit tests (Vitest) |
+
+## Keyboard shortcuts
+
+| Key | Action |
+| --- | --- |
+| `/` | Focus the search box |
+| `n` | Add an entry (local dev only — the deployed build shows a "view-only" toast) |
+| `1` – `5` | Browse · Relationship Map · Story Web · Block Map · Query Chat |
+| `6` – `9` | Planning · Canon Guard · Weave · Flavor Finder (local dev only) |
+
+## Interface notes
+
+- The backdrop is a real 3D world — a slowly turning planet lit by one sun, so the terminator
+  sweeps across the three realms and the Hidden Realm where they meet, over a shader-driven
+  aurora sky. It is rendered with three.js and degrades to a static gradient if the canvas
+  cannot start.
+- A lo-fi player sits in the header; it is on by default and remembers your choice.
+- The archive keeps a "recently opened" list in `localStorage`, and the search box matches
+  names, subtitles, descriptions, tags, and field values.
 
 ## Data model
 
@@ -95,6 +120,50 @@ Groq-backed: it sends the whole archive to the server's `/api/ai/explore` route 
 the answer itself. Explore **always uses the HTTP (Groq) backend** and requires `AI_API_KEY` (or
 `GROQ_API_KEY`) in the server environment; without a key, explore falls back to the local lookup.
 
+## Canon Guard (local dev only)
+
+A **Canon Guard** view audits the archive for internal consistency and reports what it finds.
+It is **report-only** — it never writes to the archive. The rules it runs:
+
+| Rule | What it catches |
+| --- | --- |
+| `CONTRADICTION` | Conflicting "first / only" claims about a unique thing |
+| `BROKEN-REF` | Story-link or relationship endpoints that resolve to no entry |
+| `DUPLICATE` | Two entries sharing a name |
+| `DRIFT` | Near-identical entry names (typo / casing / spacing variants) |
+| `GAP` | Truncated or empty descriptions |
+| `META` | Meta-commentary or placeholder language in canon text |
+| `ORPHAN` | An entry with no story link in either direction |
+| `SUGGESTED-LINK` | An entry named in the text that has an entry of its own but no link to it |
+
+Findings can be acknowledged so a re-run keeps them dismissed, and each finding links straight to
+the entry it concerns. Passing a `draft` entry to `/api/canon/lint` scopes the audit to that
+entry's neighbourhood instead of the whole archive.
+
+## Weave (local dev only)
+
+**Weave** is a playful way through the archive with three panels:
+
+- **Timeline Explorer** — the world's eras (the Age of the Aelthar, the Sundering, the First and
+  Second Turnings, the Academy Era, and the rest), each with the events that define it.
+- **Constellation** — the archive as a 2D graph; nodes are entries, sized by how well connected
+  they are, with story links solid and relationships dashed. Switch between the current era and
+  the whole archive.
+- **Lore Oracle** — draws a random entry from the era and opens it.
+
+## Flavor Finder (local dev only)
+
+**Flavor Finder** is a small writing tool with four modes, all pure AI — no archive data is sent
+and nothing is written:
+
+- **Descriptors** — a word, phrase, or action in, evocative one- or two-word descriptors out.
+- **Enrich a scene** — paste a scene, get the same scene rewritten with more life.
+- **Scene craft** — ask how to handle a transition, a time jump, or a POV change.
+- **Sounds** — a sound source in, the sound words for it out ("boom", "thud").
+
+It reuses the same HTTP backend as Query Chat's explore mode, so it needs `AI_API_KEY` (or
+`GROQ_API_KEY`).
+
 ## Planning Room (AI, local dev only)
 
 A **Planning Room** view drafts *new* entries — characters, places, races, monsters, factions,
@@ -111,26 +180,37 @@ planner asks instead of inventing it.
 Planning is **gated to local development** (`import.meta.env.DEV`): the nav button, shortcut `6`,
 and the view itself are absent from the deployed read-only build.
 
+> **The planner is currently switched off.** `AI_PLANNER_ENABLED` defaults to `false`, because the
+> opencode run over the whole archive is not dependable yet — it can run for minutes and then answer
+> with prose instead of the requested JSON. The view is still there and shows a "switched off"
+> panel. Set `AI_PLANNER_ENABLED=true` in `.env` to bring it back; the implementation is
+> untouched.
+
 ### Choosing the AI backend
 
 The AI features use **two separate backends**, and each is wired to a fixed one:
 
-- **Explore (Query Chat)** — always the **HTTP backend**, by default Groq. Set `AI_API_KEY` (or
-  `GROQ_API_KEY`) to enable it. `AI_BASE_URL` / `AI_MODEL` point at any OpenAI-compatible
-  chat-completions endpoint (Groq is the default; OpenRouter and local Ollama/LM Studio all work),
-  and `AI_FALLBACK_MODELS` tries additional models in order when a free model is rate-limited.
-  Explore never uses the opencode CLI.
+- **Explore (Query Chat) and Flavor Finder** — always the **HTTP backend**, by default Groq. Set
+  `AI_API_KEY` (or `GROQ_API_KEY`) to enable it. `AI_BASE_URL` / `AI_MODEL` point at any
+  OpenAI-compatible chat-completions endpoint (Groq is the default; OpenRouter and local
+  Ollama/LM Studio all work), and `AI_FALLBACK_MODELS` tries additional models in order when a
+  free model is rate-limited. These never use the opencode CLI.
 - **Planning Room** — always the **local `opencode` CLI** (set nothing beyond having opencode
   installed; `opencode run --format json` drives it). It uses whatever model/auth opencode is
-  configured with, so no API key is needed. `OPENCODE_MODEL` pins a model and `OPENCODE_BIN`
-  overrides the binary path. The planner does **not** fall back to HTTP — if the opencode CLI
-  fails, the plan request fails.
+  configured with, so no API key is needed. `OPENCODE_MODEL` pins a model, `OPENCODE_BIN`
+  overrides the binary path, `OPENCODE_AGENT` picks the agent (default `plan`), and
+  `OPENCODE_TIMEOUT_MS` caps one CLI call. The planner does **not** fall back to HTTP — if the
+  opencode CLI fails, the plan request fails.
 
 `AI_PROVIDER` is no longer needed to switch between them: explore is always HTTP and the planner is
 always opencode. The only relevant knobs are the keys above and the optional opencode overrides.
 
 The full-archive digest the planner reads is bounded by `AI_FULL_CONTEXT_BUDGET` (default
-`700000` characters; set `0` to fall back to keyword matches only).
+`150000` characters; set `0` to fall back to keyword matches only).
+
+Two optional toggles apply to the HTTP backend only: `AI_REASONING=true` sends `reasoning_effort`
+(Groq and gpt-oss models only), and `AI_JSON_MODE=false` disables JSON response mode. See
+`.env.example` for the full list.
 
 ## World systems (as captured in the archive)
 
@@ -140,7 +220,7 @@ The full-archive digest the planner reads is bounded by `AI_FULL_CONTEXT_BUDGET`
   Evolution Quests. Max level is 100.
 - **Rune Star Circles (1–7)** — Mages progress by inscribing Rune Stars into their heart instead of
   using the Grade system; each circle maps to a rough Grade equivalent (1st≈F … 7th≈S).
-- **Classes (20)** — Veyn and Ren classes, each with 10 class-skills and a 7-tier progression
+- **Classes (19)** — Veyn and Ren classes, each with 10 class-skills and a 7-tier progression
   ladder. Angels/demons learn max 5 class-skills; humans learn all. Veyn & Ren can't mix (Smithing
   is the sole exception; angels/demons may unlock a Ren Organ at the cost of all Veyn).
 - **Magic** — Veyn (neutral) → Holy Energy (angels/saints) and Corrupted Veyn (demons); Ren → Auric
@@ -185,5 +265,18 @@ Same CRUD shape as relationships, under `/api/story-links`.
 | GET | `/api/search` | Full-text search across the archive (`?q=…`) |
 | POST | `/api/ai/answer` | Answer a natural-language question from the archive contents |
 | POST | `/api/ai/explore` | AI-guided exploration/discovery across the archive |
+| POST | `/api/ai/flavor` | Flavor Finder — descriptors, scene rewrite, scene craft, or sound words |
 | POST | `/api/ai/plan` | Draft a new entry that fits the archive (questions-first; local dev only) |
 | POST | `/api/ai/plan/session/delete` | Delete the temporary AI session file(s) a plan created on disk |
+| GET | `/api/ai/status` | Which AI features are live right now (planner enabled / configured) |
+| POST | `/api/canon/lint` | Canon Guard — findings for the whole archive, or for one draft entry |
+
+## Tests and CI
+
+The client has a Vitest suite (`npm test --prefix client`) covering the search index, the
+description renderer and markdown tables, the canon rules, the Flavor Finder, and the Weave eras.
+
+Every push to `main` runs the GitHub Actions workflow in `.github/workflows/deploy-ghpages.yml`:
+it installs the client dependencies, runs the unit tests, checks that the seed files still match
+`server/data/*.json` (`npm run seeds:check`), builds the client, and deploys `client/dist` to
+GitHub Pages. The same workflow is what keeps the live archive in step with the committed data.

@@ -19,6 +19,10 @@ This build is read-only. There are no add, edit, or delete controls — the “A
 
 The **Planning Room** (an AI view that drafts new entries) is also local-dev only — its nav button, keyboard shortcut, and view are entirely absent from this build, so it is not reachable here.
 
+The same is true of the three other dev-only views: **Canon Guard** (the consistency audit), **Weave** (the timeline / constellation / Lore Oracle explorer), and **Flavor Finder** (the writing tool). Their nav buttons, keyboard shortcuts (`6`–`9`), and views are all absent here.
+
+Note that the **Query Chat** view *is* present in this build, but only its `query` mode works — it is a local keyword lookup that needs no server. `explore` mode talks to `/api/ai/explore`, which does not exist on GitHub Pages, so the app falls back to the local lookup and says so.
+
 ## How it stays in sync with the world data
 
 The deployed app loads a snapshot bundled at build time from these files:
@@ -28,6 +32,8 @@ The deployed app loads a snapshot bundled at build time from these files:
 - `server/data/story-links.json` — story links
 
 The build runs a prebuild step (`scripts/build-snapshot.mjs`) that combines those three files into `client/public/snapshot.json`, which the built app fetches as `/snapshot.json`. On pushes to `main`, GitHub Actions rebuilds the client from source and deploys the result to GitHub Pages, so the online archive always reflects the latest committed data in `server/data/`.
+
+Before building, the same workflow runs the client unit tests and checks that the bundled seed files still match `server/data/*.json` (`npm run seeds:check`) — so a deploy only goes out if the data and its seeds agree.
 
 ## Editing the world locally
 
@@ -57,7 +63,7 @@ This writes `client/public/snapshot.json` from the current `server/data/*.json`.
 npm run build
 ```
 
-This runs the snapshot prebuild step first, then builds the Vite production bundle into `client/dist/`. The `client/dist/` folder is what gets deployed to GitHub Pages. It is also git-ignored.
+This syncs the seed files and the snapshot from `server/data/*.json`, typechecks the client (`tsc --noEmit`), then builds the Vite production bundle into `client/dist/`. The `client/dist/` folder is what gets deployed to GitHub Pages. It is also git-ignored.
 
 ## AI integration
 
@@ -65,9 +71,13 @@ The **Query Chat** view answers questions through the server's `/api/ai/answer` 
 
 - **HTTP provider (Explore)** — set `AI_BASE_URL`, `AI_MODEL`, and `AI_API_KEY` (Groq is the default; OpenRouter and local Ollama/LM Studio also work). `AI_FALLBACK_MODELS` tries extra models when a free one is rate-limited. Explore never uses the opencode CLI.
 
-The earlier fixed model (`llama-3.1-8b-instant`, then `openai/gpt-oss-20b` on Groq) is no longer hard-wired — the active model is whatever `AI_MODEL` is set to. If a Groq model stops working, check the [Groq model deprecation page](https://console.groq.com/docs/deprecations) for the current replacement.
+The earlier fixed model (`llama-3.1-8b-instant`, then `openai/gpt-oss-20b` on Groq) is no longer hard-wired — the active model is whatever `AI_MODEL` is set to, and it defaults to `openai/gpt-oss-20b` when the variable is unset. If a Groq model stops working, check the [Groq model deprecation page](https://console.groq.com/docs/deprecations) for the current replacement.
 
 The **Planning Room** — a local-dev-only view that drafts brand-new entries into the archive — uses a **separate, fixed backend**: the local `opencode` CLI (set `OPENCODE_MODEL` / `OPENCODE_BIN` as needed; no API key required). It never falls back to HTTP. It is not available in this read-only build.
+
+The planner is also **switched off by default** (`AI_PLANNER_ENABLED=false`), because the opencode run over the whole archive is not dependable yet — it can run for minutes and then answer with prose instead of the requested JSON. The implementation is untouched; set `AI_PLANNER_ENABLED=true` in `.env` to bring it back.
+
+The **Flavor Finder** (also local-dev only) reuses the same HTTP backend as Explore, through `/api/ai/flavor`. **Canon Guard** uses no AI at all — it is a deterministic rule pass over the data (`/api/canon/lint`).
 
 ## Data format
 
