@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import './styles.css';
 // Unique cache-bust token for 2026-09-07T09:32:00Z
 
@@ -15,7 +16,9 @@ if (!rootEl) {
   try {
     ReactDOM.createRoot(rootEl).render(
       <React.StrictMode>
-        <App />
+        <ErrorBoundary label="app">
+          <App />
+        </ErrorBoundary>
       </React.StrictMode>,
     );
   } catch (err) {

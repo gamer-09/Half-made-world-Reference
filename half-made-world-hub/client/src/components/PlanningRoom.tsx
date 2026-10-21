@@ -1,5 +1,5 @@
 import { useCallback, useEffect, useState } from 'react';
-import { plan, deletePlanSessions, AiRateLimitError } from '../api';
+import { plan, deletePlanSessions, fetchAiStatus, AiRateLimitError } from '../api';
 import type { PlanAnswer, PlanDraft, PlanQuestion } from '../api';
 import { Modal } from './Modal';
 import { formatCountdown } from './QueryChatRoom';
@@ -49,6 +49,22 @@ export function PlanningRoom({ onOpenEntry }: PlanningRoomProps) {
   const [sessions, setSessions] = useState<string[]>([]);
   const [clearing, setClearing] = useState(false);
   const [cleared, setCleared] = useState(false);
+  // The planner is switched off on the server while it is reworked; ask the
+  // server once on mount so the room can say so instead of failing mid-run.
+  const [plannerOn, setPlannerOn] = useState(true);
+  const [plannerChecked, setPlannerChecked] = useState(false);
+
+  useEffect(() => {
+    let alive = true;
+    fetchAiStatus().then((status) => {
+      if (!alive) return;
+      setPlannerOn(status.plannerEnabled);
+      setPlannerChecked(true);
+    });
+    return () => {
+      alive = false;
+    };
+  }, []);
 
   // Down-tick the rate-limit countdown once per second.
   useEffect(() => {
@@ -63,6 +79,10 @@ export function PlanningRoom({ onOpenEntry }: PlanningRoomProps) {
     async (text: string, givenAnswers: PlanAnswer[] | null) => {
       const clean = text.trim();
       if (!clean || busy) return;
+      if (!plannerOn) {
+        setError('The planner is switched off for now.');
+        return;
+      }
       setSubmitted(clean);
       setError('');
       setOpen(true);
@@ -87,7 +107,7 @@ export function PlanningRoom({ onOpenEntry }: PlanningRoomProps) {
         setBusy(false);
       }
     },
-    [busy],
+    [busy, plannerOn],
   );
 
   const send = useCallback(() => run(request, null), [run, request]);
@@ -160,7 +180,18 @@ export function PlanningRoom({ onOpenEntry }: PlanningRoomProps) {
       </div>
 
       <div className="plan-scroll">
-        {!draft && !busy && (
+        {plannerChecked && !plannerOn && (
+          <div className="plan-offline">
+            <p className="plan-offline-title">The planner is switched off for now</p>
+            <p className="plan-offline-text">
+              It is being reworked — the archive, Flavor Finder, Canon Guard and Explore all keep
+              working as usual. Everything the planner needs is still in place and will come back
+              here.
+            </p>
+          </div>
+        )}
+
+        {!draft && !busy && plannerOn && (
           <div className="plan-examples">
             <p>Try one of these, or write your own:</p>
             <div className="plan-example-list">
@@ -345,7 +376,9 @@ export function PlanningRoom({ onOpenEntry }: PlanningRoomProps) {
       <div className="chat-input-row">
         <textarea
           className="chat-input"
-          placeholder="What do you want to plan? (e.g. an evil character)"
+          placeholder={
+            plannerOn ? 'What do you want to plan? (e.g. an evil character)' : 'The planner is off'
+          }
           value={request}
           onChange={(e) => setRequest(e.target.value)}
           onKeyDown={(e) => {
@@ -355,13 +388,13 @@ export function PlanningRoom({ onOpenEntry }: PlanningRoomProps) {
             }
           }}
           rows={1}
-          disabled={busy}
+          disabled={busy || !plannerOn}
         />
         <button
           type="button"
           className="btn btn-primary"
           onClick={send}
-          disabled={busy || !request.trim()}
+          disabled={busy || !request.trim() || !plannerOn}
         >
           {busy ? 'Planning…' : 'Plan it'}
         </button>

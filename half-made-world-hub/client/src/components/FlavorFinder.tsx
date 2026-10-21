@@ -3,15 +3,49 @@ import { findFlavor, AiRateLimitError } from '../api';
 import type { FlavorMode, FlavorResult } from '../api';
 import { formatCountdown } from './QueryChatRoom';
 
-const EXAMPLES = [
-  'walked slowly',
-  'a cold room',
-  'she was angry',
-  'the sword cut the air',
-  'raining hard',
-  'he laughed',
-  'the forest at night',
-];
+const EXAMPLES: Record<FlavorMode, string[]> = {
+  descriptors: [
+    'walked slowly',
+    'a cold room',
+    'she was angry',
+    'the sword cut the air',
+    'raining hard',
+    'he laughed',
+    'the forest at night',
+  ],
+  scene: [],
+  craft: [
+    'How do I cut from the MC to another character mid-scene?',
+    'Two characters talk while the MC is elsewhere — how do I come back to the MC?',
+    'How do I change scenery without losing the thread?',
+    'How do I end one POV and open the next without a jarring jump?',
+    'How do I show a time jump without writing "hours later"?',
+  ],
+};
+
+const MODE_LABELS: Record<FlavorMode, string> = {
+  descriptors: 'Descriptors',
+  scene: 'Enrich a scene',
+  craft: 'Scene craft',
+};
+
+const MODE_INPUT_LABEL: Record<FlavorMode, string> = {
+  descriptors: 'Word, phrase, or action',
+  scene: 'Paste your scene',
+  craft: 'What do you want help with?',
+};
+
+const MODE_BUTTON: Record<FlavorMode, { icon: string; text: string }> = {
+  descriptors: { icon: 'fa-solid fa-book', text: 'Find flavor words' },
+  scene: { icon: 'fa-solid fa-wand-magic-sparkles', text: 'Enrich scene' },
+  craft: { icon: 'fa-solid fa-compass-drafting', text: 'Craft the scene' },
+};
+
+const LOADING_TEXT: Record<FlavorMode, string> = {
+  descriptors: 'Searching for the right words…',
+  scene: 'Rewriting your scene…',
+  craft: 'Working out the transition…',
+};
 
 export function FlavorFinder() {
   const [mode, setMode] = useState<FlavorMode>('descriptors');
@@ -82,6 +116,8 @@ export function FlavorFinder() {
   };
 
   const ready = limitInfo === null;
+  const craft = mode === 'craft';
+  const design = result?.design;
 
   return (
     <div className="plan-room">
@@ -95,25 +131,26 @@ export function FlavorFinder() {
         </div>
         <p className="plan-sub">
           Give it a word, phrase, or action and get one‑ or two‑word descriptors a novelist would reach
-          for — or paste a whole scene and get it rewritten with more flavor. Nothing is saved; this is
-          a drafting aid.
+          for — paste a whole scene and get it rewritten with more flavor, or ask how to handle a POV
+          change, a scenery change, or getting back to the MC. Nothing is saved; this is a drafting aid.
         </p>
       </div>
 
       <div className="plan-scroll">
         <div className="chat-mode-toggle" style={{ alignSelf: 'flex-start' }}>
-          <button
-            className={`view-toggle-btn${mode === 'descriptors' ? ' active' : ''}`}
-            onClick={() => switchMode('descriptors')}
-          >
-            <i className="fa-solid fa-book" style={{ fontSize: 12 }} /> Descriptors
-          </button>
-          <button
-            className={`view-toggle-btn${mode === 'scene' ? ' active' : ''}`}
-            onClick={() => switchMode('scene')}
-          >
-            <i className="fa-solid fa-scroll" style={{ fontSize: 12 }} /> Enrich a scene
-          </button>
+          {(Object.keys(MODE_LABELS) as FlavorMode[]).map((m) => (
+            <button
+              key={m}
+              className={`view-toggle-btn${mode === m ? ' active' : ''}`}
+              onClick={() => switchMode(m)}
+            >
+              <i
+                className={m === 'descriptors' ? 'fa-solid fa-book' : m === 'scene' ? 'fa-solid fa-scroll' : 'fa-solid fa-compass-drafting'}
+                style={{ fontSize: 12 }}
+              />{' '}
+              {MODE_LABELS[m]}
+            </button>
+          ))}
         </div>
 
         <form
@@ -124,18 +161,9 @@ export function FlavorFinder() {
           }}
         >
           <label className="flavor-label" htmlFor="flavor-input">
-            {mode === 'scene' ? 'Paste your scene' : 'Word, phrase, or action'}
+            {MODE_INPUT_LABEL[mode]}
           </label>
-          {mode === 'scene' ? (
-            <textarea
-              id="flavor-input"
-              className="flavor-textarea"
-              value={subject}
-              onChange={(e) => setSubject(e.target.value)}
-              placeholder="Paste a scene or paragraph — events, dialogue and all. It comes back with the same story, more flavor."
-              rows={9}
-            />
-          ) : (
+          {mode === 'descriptors' ? (
             <input
               id="flavor-input"
               className="flavor-input"
@@ -143,11 +171,24 @@ export function FlavorFinder() {
               onChange={(e) => setSubject(e.target.value)}
               placeholder="e.g. walked slowly, a cold room, she was angry"
             />
+          ) : (
+            <textarea
+              id="flavor-input"
+              className="flavor-textarea"
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
+              placeholder={
+                craft
+                  ? 'e.g. Two characters are talking to each other; once that scene is done we go back to the MC. How should I write that change of POV?'
+                  : 'Paste a scene or paragraph — events, dialogue and all. It comes back with the same story, more flavor.'
+              }
+              rows={craft ? 5 : 9}
+            />
           )}
 
-          {mode === 'descriptors' && !subject.trim() && (
+          {!subject.trim() && EXAMPLES[mode].length > 0 && (
             <div className="flavor-examples">
-              {EXAMPLES.map((ex) => (
+              {EXAMPLES[mode].map((ex) => (
                 <button
                   key={ex}
                   type="button"
@@ -166,13 +207,9 @@ export function FlavorFinder() {
                 <>
                   <span className="loading-orb" aria-hidden="true" /> Working…
                 </>
-              ) : mode === 'scene' ? (
-                <>
-                  <i className="fa-solid fa-wand-magic-sparkles" style={{ fontSize: 12 }} /> Enrich scene
-                </>
               ) : (
                 <>
-                  <i className="fa-solid fa-feather-pointed" style={{ fontSize: 12 }} /> Find flavor words
+                  <i className={MODE_BUTTON[mode].icon} style={{ fontSize: 12 }} /> {MODE_BUTTON[mode].text}
                 </>
               )}
             </button>
@@ -206,11 +243,96 @@ export function FlavorFinder() {
         {busy && !result && (
           <div className="loading">
             <span className="loading-orb" aria-hidden="true" />
-            <p>{mode === 'scene' ? 'Rewriting your scene…' : 'Searching for the right words…'}</p>
+            <p>{LOADING_TEXT[mode]}</p>
           </div>
         )}
 
-        {result && result.descriptors.length > 0 && (
+        {craft && result && (result.advice || result.suggestions?.length || design) && (
+          <section className="flavor-result">
+            <div className="flavor-result-head">
+              <h3 className="section-title">How to write it</h3>
+              <button
+                className="btn btn-secondary btn-sm"
+                onClick={() =>
+                  copy(
+                    [
+                      result.advice,
+                      result.suggestions?.length ? `Suggestions:\n${result.suggestions.map((s) => `- ${s}`).join('\n')}` : '',
+                      design?.title ? `Design: ${design.title}` : '',
+                      design?.goal ? `Goal: ${design.goal}` : '',
+                      design?.steps?.length ? `Steps:\n${design.steps.map((s) => `- ${s}`).join('\n')}` : '',
+                      design?.cues?.length ? `Cues:\n${design.cues.map((s) => `- ${s}`).join('\n')}` : '',
+                      design?.pitfalls?.length ? `Pitfalls:\n${design.pitfalls.map((s) => `- ${s}`).join('\n')}` : '',
+                      design?.notes ? `Notes: ${design.notes}` : '',
+                    ]
+                      .filter(Boolean)
+                      .join('\n\n'),
+                    'craft',
+                  )
+                }
+              >
+                {copied === 'craft' ? '✓ Copied' : 'Copy all'}
+              </button>
+            </div>
+
+            {result.advice && <p className="flavor-advice">{result.advice}</p>}
+
+            {result.suggestions && result.suggestions.length > 0 && (
+              <div className="flavor-block">
+                <h4 className="flavor-subhead">Suggestions</h4>
+                <ul className="flavor-list">
+                  {result.suggestions.map((s) => (
+                    <li key={s}>{s}</li>
+                  ))}
+                </ul>
+              </div>
+            )}
+
+            {design && (design.title || design.goal || design.steps?.length || design.cues?.length || design.pitfalls?.length || design.notes) && (
+              <div className="flavor-block flavor-design">
+                <h4 className="flavor-subhead">{design.title || 'Design'}</h4>
+                {design.goal && <p className="flavor-design-goal">{design.goal}</p>}
+
+                {design.steps && design.steps.length > 0 && (
+                  <div className="flavor-design-block">
+                    <span className="flavor-design-label">Steps</span>
+                    <ol className="flavor-list">
+                      {design.steps.map((s) => (
+                        <li key={s}>{s}</li>
+                      ))}
+                    </ol>
+                  </div>
+                )}
+
+                {design.cues && design.cues.length > 0 && (
+                  <div className="flavor-design-block">
+                    <span className="flavor-design-label">Cues</span>
+                    <ul className="flavor-list">
+                      {design.cues.map((s) => (
+                        <li key={s}>{s}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {design.pitfalls && design.pitfalls.length > 0 && (
+                  <div className="flavor-design-block">
+                    <span className="flavor-design-label">Pitfalls</span>
+                    <ul className="flavor-list">
+                      {design.pitfalls.map((s) => (
+                        <li key={s}>{s}</li>
+                      ))}
+                    </ul>
+                  </div>
+                )}
+
+                {design.notes && <p className="flavor-note">{design.notes}</p>}
+              </div>
+            )}
+          </section>
+        )}
+
+        {result && (result.descriptors?.length ?? 0) > 0 && (
           <section className="flavor-result">
             <div className="flavor-result-head">
               <h3 className="section-title">
@@ -218,13 +340,13 @@ export function FlavorFinder() {
               </h3>
               <button
                 className="btn btn-secondary btn-sm"
-                onClick={() => copy(result.descriptors.join(', '), 'desc')}
+                onClick={() => copy((result.descriptors ?? []).join(', '), 'desc')}
               >
                 {copied === 'desc' ? '✓ Copied' : 'Copy all'}
               </button>
             </div>
             <div className="flavor-chips">
-              {result.descriptors.map((d) => (
+              {(result.descriptors ?? []).map((d) => (
                 <button
                   key={d}
                   className="flavor-chip"
@@ -243,7 +365,7 @@ export function FlavorFinder() {
         {result && result.scene && (
           <section className="flavor-result">
             <div className="flavor-result-head">
-              <h3 className="section-title">Enriched scene</h3>
+              <h3 className="section-title">{craft ? 'Example scene' : 'Enriched scene'}</h3>
               <button className="btn btn-secondary btn-sm" onClick={() => copy(result.scene, 'scene')}>
                 {copied === 'scene' ? '✓ Copied' : 'Copy scene'}
               </button>
@@ -252,7 +374,10 @@ export function FlavorFinder() {
           </section>
         )}
 
-        {result && !result.descriptors.length && !result.scene && (
+        {result && !(result.descriptors?.length ?? 0) && !result.scene && !craft && (
+          <div className="chat-error">The AI returned nothing usable — try rephrasing.</div>
+        )}
+        {craft && result && !result.advice && !result.suggestions?.length && !result.scene && (
           <div className="chat-error">The AI returned nothing usable — try rephrasing.</div>
         )}
       </div>

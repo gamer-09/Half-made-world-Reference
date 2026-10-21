@@ -524,6 +524,15 @@ const OPENCODE_BIN = process.env.OPENCODE_BIN || resolveOpencodeBin();
 // AI_MODEL value — that's an HTTP provider's model id (e.g. an OpenRouter
 // model) and opencode would reject it.
 const OPENCODE_MODEL = process.env.OPENCODE_MODEL || '';
+// Which opencode agent the planner runs as. "plan" is opencode's read-only
+// agent: the planner only ever needs to answer with JSON, and a read-only
+// agent cannot touch the archive while it is thinking. Set OPENCODE_AGENT to
+// an empty value to use opencode's default agent instead; if the configured
+// agent does not exist, the planner falls back to the default one.
+const OPENCODE_AGENT = (process.env.OPENCODE_AGENT ?? 'plan').trim();
+// How long one opencode CLI call may take. The prompt carries a slice of the
+// whole archive, so a slow model can take minutes; the default is generous.
+const OPENCODE_TIMEOUT_MS = Number(process.env.OPENCODE_TIMEOUT_MS ?? 480000);
 
 // Prefer the real opencode executable over the .cmd/.ps1 npm shims: spawning
 // the shim with a shell on Windows stops forwarding stdin reliably, which
@@ -567,14 +576,25 @@ function plannerConfigured() {
   return Boolean(OPENCODE_BIN);
 }
 
+// Master switch for the Planning Room. It is OFF for now: the opencode CLI
+// run over the archive context is not dependable yet (it can run for minutes
+// and then answer with prose instead of the JSON the planner asks for).
+// The planner's implementation is untouched — set AI_PLANNER_ENABLED=true to
+// bring it back.
+const AI_PLANNER_ENABLED = process.env.AI_PLANNER_ENABLED === 'true';
+
 // Groq's free tier caps requests at ~8000 tokens per minute, so keep the
 // archive context well under that (~1 token ≈ 4 chars).
 const AI_CONTEXT_CHAR_BUDGET = 16000;
 // The planner reads the WHOLE archive so it understands the world's general
-// shape (not just keyword matches). OpenRouter models allow ~1M tokens and the
-// full digest is ~160k tokens, so it fits; on a small-context backend set
-// AI_FULL_CONTEXT_BUDGET lower (or 0 to disable) to fall back to keyword matches.
-const AI_FULL_CONTEXT_BUDGET = Number(process.env.AI_FULL_CONTEXT_BUDGET ?? 700000);
+// shape (not just keyword matches). The default is deliberately modest: the
+// archive digest runs ~285k chars for the full 1090 entries, and pushing that
+// much text through the opencode CLI takes minutes (and blows past the CLI
+// timeout) even though the extra text adds little. 150k chars (~37k tokens)
+// still gives the model a broad view of the world. Raise it with
+// AI_FULL_CONTEXT_BUDGET if you have a fast model and a bigger budget; set 0
+// to drop the digest and fall back to keyword matches only.
+const AI_FULL_CONTEXT_BUDGET = Number(process.env.AI_FULL_CONTEXT_BUDGET ?? 150000);
 const AI_DESC_LIMIT = 800;
 const AI_FIELD_LIMIT = 300;
 const AI_SUBTITLE_LIMIT = 200;
@@ -727,9 +747,10 @@ const AI_REASONING_OFF = /openrouter\.ai/i.test(AI_BASE_URL) && process.env.AI_R
 // collects those ids so the plan handler can report (and later delete) the
 // sessions a single plan created.
 let opencodeSessionSink = null;
-function askOpencode(prompt) {
+function askOpencode(prompt, agent = OPENCODE_AGENT) {
   return new Promise((resolve, reject) => {
     const args = ['run', '--format', 'json'];
+    if (agent) args.push('--agent', agent);
     if (OPENCODE_MODEL) args.push('--model', OPENCODE_MODEL);
     // The prompt goes on stdin, not argv: the planner's full-archive context is
     // hundreds of KB and would blow past Windows' command-line length limit.
@@ -753,11 +774,12 @@ function askOpencode(prompt) {
     let stdout = '';
     let stderr = '';
     let done = false;
-    let sawFinish = false;
+    let lingerTimer = null;
     const finish = () => {
       if (done) return;
       done = true;
       clearTimeout(timer);
+      if (lingerTimer) clearTimeout(lingerTimer);
 
       const parsed = extractOpencodeText(stdout);
       if (opencodeSessionSink && parsed.sessionID && !opencodeSessionSink.includes(parsed.sessionID)) {
@@ -782,24 +804,33 @@ function askOpencode(prompt) {
       } catch {
         /* ignore */
       }
-      const e = new Error('The local opencode CLI took too long to respond (over 240s).');
+      const secs = Math.round(OPENCODE_TIMEOUT_MS / 1000);
+      const e = new Error(
+        `The local opencode CLI took too long to respond (over ${secs}s). ` +
+          'Lower AI_FULL_CONTEXT_BUDGET to shrink the prompt, or raise OPENCODE_TIMEOUT_MS.',
+      );
       e.status = 0;
       reject(e);
-    }, 240000);
+    }, OPENCODE_TIMEOUT_MS);
 
     child.stdout.on('data', (d) => {
       stdout += d.toString();
-      // The stream's last line is the step_finish event; the process may linger
-      // (open server/plugins), so stop waiting for exit once the answer is in.
-      if (!sawFinish && stdout.includes('"type":"step_finish"')) {
-        sawFinish = true;
-        finish();
+      // Do NOT stop at the first step_finish: a run can span several steps
+      // (the agent narrates, calls a tool, then answers) and the answer only
+      // arrives with the last message. The CLI exits on its own right after
+      // its final step_finish; the safety net below only covers a process
+      // that hangs after finishing.
+      if (lingerTimer || done) return;
+      if (!stdout.includes('"type":"step_finish"')) return;
+      lingerTimer = setTimeout(() => {
+        if (done) return;
         try {
           child.kill();
         } catch {
           /* ignore */
         }
-      }
+        finish();
+      }, 30000);
     });
     child.stderr.on('data', (d) => {
       stderr += d.toString();
@@ -825,6 +856,17 @@ function askOpencode(prompt) {
       child.stdin.end();
     }
   });
+}
+
+// Run the CLI, and if opencode rejects the requested agent, retry once with
+// its default agent so a missing/renamed agent never breaks the planner.
+async function askOpencodeWithFallback(prompt) {
+  try {
+    return await askOpencode(prompt);
+  } catch (err) {
+    if (!OPENCODE_AGENT || !/agent/i.test(err.message || '')) throw err;
+    return askOpencode(prompt, '');
+  }
 }
 
 // Delete an opencode session from disk (`opencode session delete <id>`).
@@ -869,9 +911,15 @@ function runOpencodeSessionDelete(sessionID) {
 // and join the assistant's text parts. Also surfaces the session id (every event
 // carries it) so callers can track the sessions a run creates. Falls back to the
 // raw stdout if the output isn't the expected event stream.
+//
+// A run can span several messages: an agent may narrate what it is about to do
+// ("I'll start by...") in one message, call a tool, and answer in the next one.
+// Only the LAST message is the answer, so the text is grouped by message id and
+// the final group wins.
 function extractOpencodeText(stdout) {
-  const parts = [];
+  const groups = new Map();
   let sessionID = '';
+  let order = 0;
   for (const line of String(stdout).split('\n')) {
     const s = line.trim();
     if (!s || s[0] !== '{') continue;
@@ -882,10 +930,19 @@ function extractOpencodeText(stdout) {
       continue;
     }
     if (!sessionID && typeof ev?.sessionID === 'string') sessionID = ev.sessionID;
-    if (ev?.type === 'text' && typeof ev.part?.text === 'string') parts.push(ev.part.text);
+    if (ev?.type === 'text' && typeof ev.part?.text === 'string') {
+      const key = ev.part.messageID || `__part_${order}`;
+      if (!groups.has(key)) groups.set(key, { seq: order++, text: '' });
+      groups.get(key).text += ev.part.text;
+    }
   }
-  const text = parts.length ? parts.join('') : String(stdout).trim();
-  return { text, sessionID };
+  const all = [...groups.values()].sort((a, b) => a.seq - b.seq);
+  const allText = all.map((g) => g.text).join('');
+  const lastText = all.length ? all[all.length - 1].text : '';
+  const text = lastText.trim() ? lastText : allText;
+  if (text) return { text, sessionID };
+  const raw = String(stdout).trim();
+  return { text: raw, sessionID };
 }
 
 // One call to one specific model.
@@ -1102,6 +1159,17 @@ function sendAiError(res, tag, err) {
   }
   res.status(500).json({ error: 'AI request failed: ' + (err.message || 'unknown error') });
 }
+
+// Which AI features are live right now. The client uses this to show the
+// Planning Room as switched off instead of letting the user start a run that
+// cannot finish.
+app.get('/api/ai/status', (req, res) => {
+  res.json({
+    plannerEnabled: AI_PLANNER_ENABLED,
+    plannerConfigured: plannerConfigured(),
+    answerEnabled: aiConfigured(),
+  });
+});
 
 app.post('/api/ai/answer', async (req, res) => {
   const { question, searchResult } = req.body || {};
@@ -1773,7 +1841,19 @@ function normalizeTriage(data) {
 //      writes the full plan with those decisions fixed.
 // Everything except the model calls (structure, conventions, matching entries)
 // is resolved locally, so each step is one small request.
+//
+// STATUS: the planner is currently switched OFF (AI_PLANNER_ENABLED=false) —
+// the opencode CLI run is not reliable yet (it can run for minutes on the full
+// archive context and then answer with prose instead of the requested JSON).
+// The whole implementation below is kept intact and stays one env flag away
+// from being switched back on.
 app.post('/api/ai/plan', async (req, res) => {
+  if (!AI_PLANNER_ENABLED) {
+    return res.status(503).json({
+      error:
+        'The planner is temporarily switched off while it is being reworked. Everything else in the archive still works.',
+    });
+  }
   const request = truncateForBudget(req.body?.request, 600);
   if (!request) {
     return res.status(400).json({ error: 'Describe what you want to plan.' });
@@ -1834,6 +1914,8 @@ Return ONLY JSON (no prose, no code fences):
 }
 Ask 2-4 questions whenever any decision would shape the draft; use "questions": [] only when the request is already specific enough to draft well as-is.
 
+Do not call any tools, do not read any files, do not describe a plan — answer immediately with the JSON object and nothing else.
+
 ${kindBlock}=== ARCHIVE CONTEXT ===
 ${triageContext}`;
 
@@ -1874,6 +1956,8 @@ HOW TO DRAFT:
 - Never claim anything was added to the archive; this is a proposal only.
 - "risks" must name real concerns only — never write "None"; use [] when there is nothing.
 
+Do not call any tools, do not read any files, do not describe a plan — answer immediately with the JSON object and nothing else.
+
 === THE USER'S REQUEST ===
 ${request}
 
@@ -1891,7 +1975,7 @@ ${context}`;
     // the model needs the user's decisions, return the questions alone and
     // draft nothing, so nothing is "already planned" before the user answers.
     if (!answersProvided) {
-      const triageRaw = await askOpencode(triagePrompt);
+      const triageRaw = await askOpencodeWithFallback(triagePrompt);
       const triage = normalizeTriage(parseAiJson(triageRaw));
       if (triage.needsInput) {
         return res.json({
@@ -1911,7 +1995,7 @@ ${context}`;
     // Step 2 — draft: the model both reasons about the world and emits the
     // whole JSON plan. opencode uses its own configured model (the planner is
     // opencode-only — there is no HTTP fallback).
-    const raw = await askOpencode(prompt);
+    const raw = await askOpencodeWithFallback(prompt);
     const plan = normalizePlan({ ...parseAiJson(raw), _raw: raw }, request);
     res.json({ ...plan, needsInput: false, sessions: planSessions });
   } catch (err) {
@@ -1985,15 +2069,18 @@ app.post('/api/canon/lint', (req, res) => {
 //   mode "scene": a scene -> the same scene rewritten with more flavor.
 // Reuses the Query Chat HTTP backend.
 app.post('/api/ai/flavor', async (req, res) => {
-  const mode = req.body?.mode === 'scene' ? 'scene' : 'descriptors';
-  const maxLen = mode === 'scene' ? 4000 : 200;
+  const rawMode = typeof req.body?.mode === 'string' ? req.body.mode.trim().toLowerCase() : 'descriptors';
+  const mode = rawMode === 'scene' ? 'scene' : rawMode === 'craft' || rawMode === 'advice' || rawMode === 'design' ? 'craft' : 'descriptors';
+  const maxLen = mode === 'scene' ? 4000 : mode === 'craft' ? 8000 : 200;
   const subject = truncateForBudget(req.body?.subject, maxLen);
   if (!subject) {
     return res.status(400).json({
       error:
         mode === 'scene'
           ? 'Paste a scene to enrich.'
-          : 'Give it a word, phrase, or action to describe.',
+          : mode === 'craft'
+            ? 'Describe the transition you want help with (POV, scene change, cutting between characters, returning to MC).'
+            : 'Give it a word, phrase, or action to describe.',
     });
   }
   if (!aiConfigured()) {
@@ -2003,6 +2090,57 @@ app.post('/api/ai/flavor', async (req, res) => {
   }
 
   try {
+    if (mode === 'craft') {
+      const prompt = `You are a pragmatic fiction writing coach focused on scene transitions, POV changes, and cutting between characters.
+
+User question/request:
+${subject}
+
+Return ONLY valid JSON with this exact shape:
+{
+  "advice": "...",
+  "suggestions": ["..."],
+  "design": {
+    "title": "...",
+    "goal": "...",
+    "steps": ["..."],
+    "cues": ["..."],
+    "pitfalls": ["..."],
+    "notes": "..."
+  },
+  "scene": "...",
+  "note": "..."
+}
+
+Rules:
+- advice: 2-4 sentences of direct, actionable advice tailored to this exact request.
+- suggestions: 3-6 short, concrete ideas (each 4-12 words). Prioritize the cleanest approach for returning to the MC.
+- design: give a concrete plan. steps ordered. cues = sensory/time/dialogue cues to signal the shift. pitfalls to avoid. notes = extra guidance.
+- scene: write a short original example scene (150-400 words) demonstrating the exact transition. Show leaving the MC, show the other POV/scene if requested, and show returning to the MC. Clean prose, no meta commentary inside scene text.
+- note: 1 short sentence.
+- Prefer section breaks, soft transitions, clear POV boundaries over "time passes". Handle cases like two people talking while MC absent, switching to side scene, cutting back to MC.
+- Return ONLY JSON, no prose, no code fences.`;
+
+      const raw = await askGroq(prompt, 1600);
+      const parsed = parseAiJson(raw) || {};
+      const advice = typeof parsed.advice === 'string' ? parsed.advice.trim() : '';
+      const suggestions = Array.isArray(parsed.suggestions)
+        ? parsed.suggestions.map((s) => String(s || '').trim()).filter((s) => s && s.length >= 3).slice(0, 6)
+        : [];
+      const design = parsed.design && typeof parsed.design === 'object' ? parsed.design : {};
+      if (design && typeof design === 'object') {
+        if (Array.isArray(design.steps)) design.steps = design.steps.map((s) => String(s || '').trim()).filter(Boolean).slice(0, 8);
+        if (Array.isArray(design.cues)) design.cues = design.cues.map((s) => String(s || '').trim()).filter(Boolean).slice(0, 8);
+        if (Array.isArray(design.pitfalls)) design.pitfalls = design.pitfalls.map((s) => String(s || '').trim()).filter(Boolean).slice(0, 8);
+        if (typeof design.title !== 'string') design.title = '';
+        if (typeof design.goal !== 'string') design.goal = '';
+        if (typeof design.notes !== 'string') design.notes = '';
+      }
+      const scene = typeof parsed.scene === 'string' ? parsed.scene.trim() : '';
+      const note = typeof parsed.note === 'string' ? parsed.note.trim() : '';
+      return res.json({ subject, mode: 'craft', advice, suggestions, design, scene, note, raw: (advice || scene) ? '' : String(raw || '').trim() });
+    }
+
     if (mode === 'scene') {
       const prompt = `You are a line editor for a novelist writing dark fantasy prose. Rewrite the scene below so it reads with more flavor and life — vivid, specific, sensory — while keeping every fact, action, character, and line of dialogue exactly as written. Enrich the prose; never change what happens.
 

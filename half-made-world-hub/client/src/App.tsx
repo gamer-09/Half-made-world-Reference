@@ -26,6 +26,7 @@ import { BlockMap } from './components/BlockMap';
 import { CanonGuard } from './components/CanonGuard';
 import { WeaveExplorer } from './components/WeaveExplorer';
 import { FlavorFinder } from './components/FlavorFinder';
+import { ErrorBoundary } from './components/ErrorBoundary';
 import { LinkForm } from './components/LinkForm';
 import { Modal } from './components/Modal';
 import { RELATIONSHIP_TYPES, relationshipType } from './relationshipTypes';
@@ -655,7 +656,9 @@ export default function App() {
             </button>
           </div>
         ) : isFlavorView ? (
-          <FlavorFinder />
+          <ErrorBoundary label="Flavor Finder">
+            <FlavorFinder />
+          </ErrorBoundary>
         ) : isWeaveView ? (
           <WeaveExplorer
             entries={entries}

@@ -258,6 +258,28 @@ export interface PlanAnswer {
   answer: string;
 }
 
+// Which AI features the local server currently offers. The Planning Room reads
+// this so it can show itself as switched off instead of starting a run that
+// cannot finish.
+export interface AiStatus {
+  plannerEnabled: boolean;
+  plannerConfigured: boolean;
+  answerEnabled: boolean;
+}
+
+export async function fetchAiStatus(): Promise<AiStatus> {
+  if (viewOnlyBuild) {
+    return { plannerEnabled: false, plannerConfigured: false, answerEnabled: false };
+  }
+  try {
+    const res = await fetch('/api/ai/status');
+    if (!res.ok) throw new Error('status unavailable');
+    return (await res.json()) as AiStatus;
+  } catch {
+    return { plannerEnabled: false, plannerConfigured: false, answerEnabled: false };
+  }
+}
+
 export interface PlanRequest {
   request: string;
   answers?: PlanAnswer[];
@@ -319,16 +341,30 @@ export async function lintCanon(draft?: CanonDraft): Promise<CanonLintResult> {
 
 // --- Flavor Finder (local dev only) ---------------------------------------
 // Suggests one- or two-word descriptors for a word, phrase, or action, and can
-// rewrite a whole scene with more flavor. Nothing is saved to the archive.
-export type FlavorMode = 'descriptors' | 'scene';
+// rewrite a whole scene with more flavor. Scene Craft helps with POV/scenery/transition changes.
+export type FlavorMode = 'descriptors' | 'scene' | 'craft';
+
+export interface FlavorDesign {
+  title?: string;
+  goal?: string;
+  steps?: string[];
+  cues?: string[];
+  pitfalls?: string[];
+  notes?: string;
+}
 
 export interface FlavorResult {
   subject: string;
   mode: FlavorMode;
   scene: string;
-  descriptors: string[];
+  // Craft responses carry advice/suggestions/design instead of descriptors, so
+  // every field here is optional — the UI must never assume one is present.
+  descriptors?: string[];
   note: string;
   raw: string;
+  advice?: string;
+  suggestions?: string[];
+  design?: FlavorDesign;
 }
 
 export async function findFlavor(subject: string, mode: FlavorMode = 'descriptors'): Promise<FlavorResult> {

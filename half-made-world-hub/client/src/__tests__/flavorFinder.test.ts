@@ -2,7 +2,7 @@ import { describe, it, expect, beforeEach, afterEach, vi } from 'vitest';
 import { findFlavor } from '../api';
 import type { FlavorResult } from '../api';
 
-const originalFetch = global.fetch;
+const originalFetch = globalThis.fetch;
 
 function okJson(body: unknown): Response {
   return {
@@ -17,11 +17,11 @@ describe('findFlavor', () => {
 
   beforeEach(() => {
     fetchMock = vi.fn();
-    global.fetch = fetchMock as unknown as typeof fetch;
+    globalThis.fetch = fetchMock as unknown as typeof fetch;
   });
 
   afterEach(() => {
-    global.fetch = originalFetch;
+    globalThis.fetch = originalFetch;
   });
 
   it('posts the subject and mode, defaulting to descriptors', async () => {
@@ -55,6 +55,41 @@ describe('findFlavor', () => {
 
     const [, init] = fetchMock.mock.calls[0];
     expect(JSON.parse(init.body)).toEqual({ subject: 'x', mode: 'scene' });
+  });
+
+  it('passes craft mode through and returns advice, suggestions and a design', async () => {
+    // The craft response has NO "descriptors" key at all — the UI must not
+    // assume it is there (reading it unguarded used to blank the whole page).
+    const payload = {
+      subject: 'how do I get back to the MC?',
+      mode: 'craft',
+      scene: 'The room was empty...',
+      note: 'a short line',
+      raw: '',
+      advice: 'Use a section break.',
+      suggestions: ['Section break before the cut'],
+      design: {
+        title: 'POV handoff',
+        goal: 'Return to the MC cleanly',
+        steps: ['Break', 'Re-enter'],
+        cues: ['A door closing'],
+        pitfalls: ['Head-hopping'],
+        notes: 'Keep the side scene short',
+      },
+    } as unknown as FlavorResult;
+    fetchMock.mockResolvedValue(okJson(payload));
+
+    const result = await findFlavor('how do I get back to the MC?', 'craft');
+
+    const [, init] = fetchMock.mock.calls[0];
+    expect(JSON.parse(init.body)).toEqual({
+      subject: 'how do I get back to the MC?',
+      mode: 'craft',
+    });
+    expect(result.advice).toBe('Use a section break.');
+    expect(result.suggestions).toEqual(['Section break before the cut']);
+    expect(result.design?.steps).toEqual(['Break', 'Re-enter']);
+    expect(result.descriptors).toBeUndefined();
   });
 
   it('surfaces a 429 as AiRateLimitError with the countdown', async () => {
