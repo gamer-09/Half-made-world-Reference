@@ -1,12 +1,21 @@
 import { useEffect, useRef } from 'react';
 import * as THREE from 'three';
 
+import { createWorldPlanet, PLANET_DISTANCE, PLANET_FOV, type WorldPlanet } from '../backdrop/planet';
+
 /*
- * Live backdrop: a slow-drifting aurora / nebula sky. A full-screen fragment
- * shader warps layered value noise into flowing ribbons of teal, violet and
- * brass over deep ink, with sparse twinkling stars. The field eases with the
- * pointer and scroll for a sense of depth, and time keeps it in constant,
- * gentle motion. Honours prefers-reduced-motion by rendering one frame.
+ * Live backdrop: a slow-drifting aurora / nebula sky, with the Half-Made
+ * World itself turning above it.
+ *
+ * The sky is a full-screen fragment shader that warps layered value noise
+ * into flowing ribbons of teal, violet and brass over deep ink, with sparse
+ * twinkling stars. The field eases with the pointer and scroll for a sense of
+ * depth, and time keeps it in constant, gentle motion.
+ *
+ * The world is a real sphere mesh with generated surface maps, lit by one
+ * sun so the terminator sweeps across the three realms and the Hidden Realm
+ * in the middle of their meeting. It turns on its own tilted axis - a day
+ * and a night, not a spin - and drifts slightly with the pointer.
  *
  * The canvas is created inside the effect and appended to the host so each
  * mount gets a fresh context (safe under React StrictMode's double-invoke),
@@ -99,7 +108,9 @@ void main() {
   star *= 0.5 + 0.5 * sin(t * 1.6 + rnd * 60.0);
   col += vec3(0.70, 0.77, 0.90) * star * 0.65;
 
-  // Soft vignette keeps the manuscript readable over the sky.
+  // The world itself is drawn as a real sphere in front of this sky, so the
+  // sky only needs to sit behind it: a touch of depth where the planet will
+  // be, and the vignette that keeps the manuscript readable.
   float vig = smoothstep(1.30, 0.30, length(p * vec2(1.0, 0.85)));
   col *= mix(0.5, 1.0, vig);
 
@@ -131,6 +142,7 @@ export function BackdropMotion() {
     let geometry: THREE.BufferGeometry | null = null;
     let material: THREE.ShaderMaterial | null = null;
     let canvasEl: HTMLCanvasElement | null = null;
+    let planet: WorldPlanet | null = null;
     let raf = 0;
     let disposed = false;
     let resize = () => {};
@@ -176,7 +188,14 @@ export function BackdropMotion() {
 
       const scene = new THREE.Scene();
       const mesh = new THREE.Mesh(geometry, material);
+      mesh.renderOrder = -1;
+      mesh.frustumCulled = false;
       scene.add(mesh);
+
+      // The world: a real sphere, turning on its own axis, lit by one sun.
+      planet = createWorldPlanet();
+      scene.add(planet.root, planet.sun, planet.sun.target);
+      scene.add(new THREE.AmbientLight(0x2b3a52, 0.45));
 
       renderer = new THREE.WebGLRenderer({
         canvas,
@@ -186,7 +205,27 @@ export function BackdropMotion() {
       });
       renderer.setClearColor(0x000000, 0);
 
-      const camera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+      // The camera looks straight at the world; the view is offset to place
+      // it in the upper right of the frame, so the painted map on the globe
+      // always faces us the way the atlas drew it.
+      const camera = new THREE.PerspectiveCamera(PLANET_FOV, 1, 0.1, 200);
+      camera.position.set(0, 0, PLANET_DISTANCE);
+      camera.lookAt(0, 0, 0);
+
+      const applyView = () => {
+        const w = window.innerWidth;
+        const h = Math.max(window.innerHeight, 1);
+        camera.aspect = w / h;
+        camera.setViewOffset(
+          w,
+          h,
+          -0.28 * w + eased.x * 14,
+          0.16 * h + eased.y * 10,
+          w,
+          h
+        );
+        camera.updateProjectionMatrix();
+      };
 
       resize = () => {
         if (!renderer || !material) return;
@@ -195,6 +234,7 @@ export function BackdropMotion() {
         renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 1.25));
         renderer.setSize(w, h, false);
         material.uniforms.uResolution.value.set(w, h);
+        applyView();
       };
       resize();
 
@@ -202,17 +242,20 @@ export function BackdropMotion() {
       window.addEventListener('scroll', onScroll, { passive: true });
       window.addEventListener('resize', resize);
 
-      const clock = new THREE.Clock();
+      const startedAt = performance.now();
 
       const renderFrame = () => {
         if (disposed || !renderer || !material) return;
-        const t = clock.getElapsedTime();
+        const t = (performance.now() - startedAt) / 1000;
         material.uniforms.uTime.value = t;
 
         eased.x += (pointer.x - eased.x) * 0.04;
         eased.y += (pointer.y - eased.y) * 0.04;
         material.uniforms.uPointer.value.set(eased.x, eased.y);
         material.uniforms.uScroll.value = Math.min(scrollY, 4000);
+
+        planet?.update(t);
+        applyView();
 
         renderer.render(scene, camera);
         raf = requestAnimationFrame(renderFrame);
@@ -234,6 +277,7 @@ export function BackdropMotion() {
       removeListeners();
       if (geometry) geometry.dispose();
       if (material) material.dispose();
+      if (planet) planet.dispose();
       if (renderer) {
         renderer.dispose();
         renderer.forceContextLoss();
