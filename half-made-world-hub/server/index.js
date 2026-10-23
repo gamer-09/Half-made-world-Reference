@@ -1086,9 +1086,13 @@ async function askModel(provider, model, prompt, maxTokens, reasoningEffort, ext
 // a free tier gets rate-limited, so a dead model just moves to the next one,
 // and a dead provider just moves to the next provider (the fallback).
 //
+// An optional `validate` can reject a successful answer as unusable (e.g. the
+// model returned prose that could not be parsed into the requested shape) —
+// in that case the next provider/model is tried instead of failing the request.
+//
 // This is the HTTP path only — the planner's opencode backend is called
 // directly, never through here.
-async function askHttp(prompt, maxTokens = 1024, reasoningEffort = 'low', extra = {}, providers = AI_PROVIDERS) {
+async function askHttp(prompt, maxTokens = 1024, reasoningEffort = 'low', extra = {}, providers = AI_PROVIDERS, validate = null) {
   let lastErr = null;
   for (const provider of providers) {
     for (let i = 0; i < provider.models.length; i++) {
@@ -1097,6 +1101,15 @@ async function askHttp(prompt, maxTokens = 1024, reasoningEffort = 'low', extra 
       if (provider.reasoningOff) {
         try {
           const answer = await askModel(provider, model, prompt, maxTokens, reasoningEffort, extra, true);
+          if (typeof validate === 'function') {
+            try {
+              if (!validate(answer)) throw new Error('The AI returned an unusable answer.');
+            } catch (err) {
+              if (err && err.message === 'The AI returned an unusable answer.') throw err;
+              // If the validator throws for other reasons, treat as unusable too.
+              throw new Error('The AI returned an unusable answer.');
+            }
+          }
           return { answer, provider, model };
         } catch (err) {
           lastErr = err;
@@ -1109,6 +1122,14 @@ async function askHttp(prompt, maxTokens = 1024, reasoningEffort = 'low', extra 
       }
       try {
         const answer = await askModel(provider, model, prompt, maxTokens, reasoningEffort, extra, false);
+        if (typeof validate === 'function') {
+          try {
+            if (!validate(answer)) throw new Error('The AI returned an unusable answer.');
+          } catch (err) {
+            if (err && err.message === 'The AI returned an unusable answer.') throw err;
+            throw new Error('The AI returned an unusable answer.');
+          }
+        }
         return { answer, provider, model };
       } catch (err) {
         lastErr = err;
@@ -2258,7 +2279,18 @@ Return ONLY JSON (no prose, no code fences):
   "descriptors": ["one or two words", "..."],
   "note": "one short line"
 }`;
-      const result = await askHttp(prompt, 1600);
+      const result = await askHttp(
+        prompt,
+        1600,
+        'low',
+        {},
+        AI_PROVIDERS,
+        (raw) => {
+          const p = parseAiJson(raw);
+          const scene = typeof p?.scene === 'string' ? p.scene.trim() : '';
+          return Boolean(scene);
+        },
+      );
       const raw = result.answer;
       const parsed = parseAiJson(raw);
       const scene = typeof parsed?.scene === 'string' && parsed.scene.trim() ? parsed.scene.trim() : '';
