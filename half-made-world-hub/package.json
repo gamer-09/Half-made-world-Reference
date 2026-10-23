@@ -9,7 +9,7 @@
     "sync:all": "node server/pipeline.js",
     "seeds:sync": "node server/sync-seeds.js",
     "seeds:check": "node server/sync-seeds.js --check",
-    "test:server": "node --test server/__tests__",
+    "test:server": "node --test server/__tests__/*.test.js",
     "predev": "node server/sync-seeds.js",
     "prestart": "node server/sync-seeds.js",
     "dev": "concurrently -n server,client -c blue,green \"npm run dev --prefix server\" \"npm run dev --prefix client\"",
