@@ -2881,23 +2881,7 @@
     "fields": [
       {
         "label": "Role",
-        "value": "Evolution period — progressing through grades D to C"
-      },
-      {
-        "label": "Grade Period",
-        "value": "Early evolution within grade"
-      },
-      {
-        "label": "Grade Progression",
-        "value": "Mid evolution within grade"
-      },
-      {
-        "label": "Grade Peak",
-        "value": "Early evolution within grade"
-      },
-      {
-        "label": "Grade Maximum",
-        "value": "Grade advancement threshold"
+        "value": "Evolution period — progressing from E to D"
       }
     ],
     "tags": [
@@ -2918,23 +2902,7 @@
     "fields": [
       {
         "label": "Role",
-        "value": "30 - 44"
-      },
-      {
-        "label": "Grade Period",
-        "value": "Early C Grade territory"
-      },
-      {
-        "label": "Grade Progression",
-        "value": "Mid C Grade territory"
-      },
-      {
-        "label": "Grade Peak",
-        "value": "Mid C Grade territory"
-      },
-      {
-        "label": "Grade Maximum",
-        "value": "Mid C Grade territory"
+        "value": "D Grade — competent fighters with realm-scale influence"
       },
       {
         "label": "Average Lifespan",
@@ -2966,22 +2934,6 @@
         "value": "C Grade — elite power and structure destruction"
       },
       {
-        "label": "Grade Period",
-        "value": "C Grade early elite period"
-      },
-      {
-        "label": "Grade Progression",
-        "value": "C Grade mid elite period"
-      },
-      {
-        "label": "Grade Peak",
-        "value": "B Grade early apex period"
-      },
-      {
-        "label": "Grade Maximum",
-        "value": "B Grade mid apex period"
-      },
-      {
         "label": "Average Lifespan",
         "value": "~10,000 years"
       },
@@ -3011,22 +2963,6 @@
         "value": "B Grade — vast power, can wipe out armies"
       },
       {
-        "label": "Grade Period",
-        "value": "B Grade early apex period"
-      },
-      {
-        "label": "Grade Progression",
-        "value": "B Grade mid apex period"
-      },
-      {
-        "label": "Grade Peak",
-        "value": "B Grade peak period"
-      },
-      {
-        "label": "Grade Maximum",
-        "value": "A Grade late legendary period"
-      },
-      {
         "label": "Max Lifespan",
         "value": "100,000+ years"
       }
@@ -3052,22 +2988,6 @@
         "value": "A Grade — forces of nature, legends in their own time"
       },
       {
-        "label": "Grade Period",
-        "value": "A Grade early legendary period"
-      },
-      {
-        "label": "Grade Progression",
-        "value": "A Grade mid legendary period"
-      },
-      {
-        "label": "Grade Peak",
-        "value": "A Grade late legendary period"
-      },
-      {
-        "label": "Grade Maximum",
-        "value": "S Grade early demigod territory"
-      },
-      {
         "label": "Max Lifespan",
         "value": "1,000,000+ years"
       }
@@ -3091,22 +3011,6 @@
       {
         "label": "Role",
         "value": "S Grade — demigod pinnacle, nearing godhood"
-      },
-      {
-        "label": "Grade Period",
-        "value": "S Grade early demigod territory"
-      },
-      {
-        "label": "Grade Progression",
-        "value": "S Grade mid demigod period"
-      },
-      {
-        "label": "Grade Peak",
-        "value": "S Grade late demigod period"
-      },
-      {
-        "label": "Grade Maximum",
-        "value": "S Grade maximum attainment"
       },
       {
         "label": "Note",
@@ -34527,15 +34431,15 @@
     "category": "Magic Systems",
     "name": "The System",
     "subtitle": "The universal framework that governs power, growth, and advancement",
-    "description": "The System is the invisible framework that overlays the world, governing how power is measured, how beings grow, and how they advance. It assigns every awakened being a Grade (from G through S), tracks their level within that Grade, and issues Evolution Quests when they reach the peak of a rank. The System also manages the Rune Star circles for Mages, the Wall that blocks advancement, and the progress markers within each Grade. No one knows who or what created the System — it simply exists, as fundamental to the world as Veyn itself. Some believe it was created by the Aelthar before their extinction; others think it emerged naturally from the world core. The System communicates through a silent internal interface that only the individual can perceive, displaying their stats, quests, and notifications.",
+    "description": "The System is the invisible framework that overlays the world, governing how power is measured, how beings grow, and how they advance. It assigns every awakened being a Grade (from G through S) and issues Evolution Quests when they reach the peak of a grade. The System also manages the Rune Star circles for Mages and the Wall that blocks advancement. No one knows who or what created the System — it simply exists, as fundamental to the world as Veyn itself. Some believe it was created by the Aelthar before their extinction; others think it emerged naturally from the world core. The System communicates through a silent internal interface that only the individual can perceive, displaying their stats, quests, and notifications.",
     "fields": [
       {
         "label": "Function",
-        "value": "Tracks grades, levels, evolution quests, and skill mastery for every awakened being."
+        "value": "Tracks grades, evolution quests, and skill mastery for every awakened being."
       },
       {
         "label": "Grades",
-        "value": "G (mortal) → F → E → D → C → B → A → S (demigod). Each grade has progress markers."
+        "value": "G (mortal) → F → E → D → C → B → A → S (demigod). A grade is a single step — it is not subdivided into levels."
       },
       {
         "label": "Interface",
