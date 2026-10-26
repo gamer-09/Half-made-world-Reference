@@ -1125,7 +1125,7 @@ module.exports = [
     "Grade System",
     "Grade System",
     "The universal power scale",
-    "Every awakened being is measured by a Grade, from G (never exposed to Veyn) through F, E, D, C, B, A, to S (demigod). Grades run from level 0 to 100, each with Early, Mid, Late, and Peak sub-stages, a Wall at the peak of each grade, and an Evolution Quest to advance. Mages are the exception — they progress through Rune Star Circles instead.",
+    "Every awakened being is measured by a Grade, from G (never exposed to Veyn) through F, E, D, C, B, A, to S (demigod). Grades each have an Evolution Quest to advance, and Mages progress through Rune Star Circles instead.",
     [
       { label: "Type", value: "World Mechanic - Power Ranking" },
       { label: "Description", value: "Universal ranking: G (weakest) through F, E, D, C, B, A, to S (strongest). Determined by Veyn capacity, skill mastery, combat effectiveness. Requires training and breakthrough." },
@@ -1135,7 +1135,7 @@ module.exports = [
   e(
     "Grade System",
     "G Grade",
-    "Mortal Grade — Level 0-9",
+    "Mortal Grade",
     "The starting grade assigned to beings who were never exposed to Veyn before gaining access to the System. This usually means those born in uninitiated worlds before integration. Any being born after System integration is assigned F Grade at minimum. G Grade beings have no sub-stages and cannot advance through normal means — they must first be exposed to Veyn.",
     [
       { label: "Level Range", value: "0 - 9" },
@@ -1406,7 +1406,7 @@ module.exports = [
       { label: "Skills", value: "Toniccraft, Nightbrew, Shattervial, Trueassay, Overcharge, Multiplier, Cleansebrew, Mattershift, Hastybrew, Mythic Draught — each skill has its own entry in the Class Skills category." },
       { label: "Grade Progression", value: "F → E → D → C → B → A → S — each grade has sub-stages: Early, Mid, Late, Peak (except F Grade which has none)." },
     ],
-    ["class", "alchemist", "potion", "skill"],
+    ["class", "alchemist", "potion", "skill", "veyn"],
   ),
   e(
     "Classes",
