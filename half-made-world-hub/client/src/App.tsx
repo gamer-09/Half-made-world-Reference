@@ -14,6 +14,7 @@ import { QueryChatRoom } from './components/QueryChatRoom';
 import { PlanningRoom } from './components/PlanningRoom';
 import { BackdropMotion } from './components/BackdropMotion';
 import { LofiPlayer } from './components/LofiPlayer';
+import { SoundToggle } from './components/SoundToggle';
 import { useArchive } from './hooks/useArchive';
 import * as liveApi from './api';
 import { Dashboard } from './components/Dashboard';
@@ -605,6 +606,7 @@ export default function App() {
             </p>
           </div>
           <div className="header-actions">
+            <SoundToggle />
             <LofiPlayer />
             {!isMapView && !isWebView && !isBlocksView && !isPlanningView && !isCanonView && activeCategory !== 'All' && canEdit && (
               <button

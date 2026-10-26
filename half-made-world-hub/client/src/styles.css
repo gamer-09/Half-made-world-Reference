@@ -500,6 +500,10 @@ body {
 .lofi-toggle { gap: 7px; }
 .lofi-toggle.on { color: var(--text); }
 
+.sfx-toggle { gap: 7px; }
+.sfx-toggle.on { color: var(--text); }
+.sfx-toggle:not(.on) i { opacity: 0.55; }
+
 .lofi-eq {
   display: inline-flex;
   align-items: flex-end;
