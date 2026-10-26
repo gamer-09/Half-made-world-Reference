@@ -4922,10 +4922,6 @@
       {
         "label": "Grade",
         "value": "A Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Mid"
       }
     ],
     "tags": [
@@ -5033,10 +5029,6 @@
       {
         "label": "Grade",
         "value": "C Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Peak"
       }
     ],
     "tags": [
@@ -5087,10 +5079,6 @@
       {
         "label": "Grade",
         "value": "B Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Late"
       }
     ],
     "tags": [
@@ -5121,10 +5109,6 @@
       {
         "label": "Grade",
         "value": "B Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Peak"
       }
     ],
     "tags": [
@@ -8283,10 +8267,6 @@
       {
         "label": "Grade",
         "value": "S Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Peak"
       }
     ],
     "tags": [
@@ -8511,10 +8491,6 @@
       {
         "label": "Grade",
         "value": "C Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Early"
       }
     ],
     "tags": [
@@ -8820,10 +8796,6 @@
         "value": "A Grade"
       },
       {
-        "label": "Sub-stage",
-        "value": "Mid"
-      },
-      {
         "label": "How He Learned of the Hybrid",
         "value": "Wener learned a hybrid might exist long before he ever saw one. Licent Varak reported Lisa's affair with the angel Ordium to Tera Morage — believing he had exposed a traitor and closed the matter, never knowing a child had survived it. Wener had been watching Lisa for years and kept the part Licent threw away: if the demon and the angel had a child, and the child lived, then a hybrid existed. The First Veyn Storm at Elyndor Academy years later confirmed which boy it was. Only then did Wener move — first to acquire Jaiden and make him a weapon, and when that failed, to build his own."
       }
@@ -8969,10 +8941,6 @@
       {
         "label": "Grade",
         "value": "B Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Mid"
       }
     ],
     "tags": [
@@ -9021,10 +8989,6 @@
       {
         "label": "Grade",
         "value": "B Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Mid"
       }
     ],
     "tags": [
@@ -9129,10 +9093,6 @@
       {
         "label": "Grade",
         "value": "B Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Late"
       }
     ],
     "tags": [
@@ -9185,10 +9145,6 @@
       {
         "label": "Grade",
         "value": "A Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Late"
       }
     ],
     "tags": [
@@ -9244,10 +9200,6 @@
       {
         "label": "Grade",
         "value": "A Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Late"
       }
     ],
     "tags": [
@@ -9360,10 +9312,6 @@
         "value": "A Grade"
       },
       {
-        "label": "Sub-stage",
-        "value": "Mid"
-      },
-      {
         "label": "Role",
         "value": "Guardian of the Sundering Altar — officiates the Veyn Vow and helps form each halo."
       }
@@ -9421,10 +9369,6 @@
       {
         "label": "Grade",
         "value": "A Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Early"
       }
     ],
     "tags": [
@@ -17733,10 +17677,6 @@
       {
         "label": "Reputation",
         "value": "Known as 'The Silver Sigil Tongue' — the most trusted Broker in the Human Realm"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Mid"
       }
     ],
     "tags": [
@@ -17808,11 +17748,7 @@
       },
       {
         "label": "Grade",
-        "value": "E Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Peak"
+        "value": "D Grade"
       },
       {
         "label": "Unusual Trait",
@@ -17854,7 +17790,7 @@
       "noble"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-10-19T00:00:00.000Z"
+    "updatedAt": "2026-10-26T19:37:20.806Z"
   },
   {
     "id": "seed-566",
@@ -17870,10 +17806,6 @@
       {
         "label": "Grade",
         "value": "E Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Late"
       }
     ],
     "tags": [
@@ -37297,10 +37229,6 @@
       {
         "label": "Grade",
         "value": "E Grade"
-      },
-      {
-        "label": "Sub-stage",
-        "value": "Peak"
       },
       {
         "label": "Rank",
