@@ -2170,34 +2170,47 @@ app.post('/api/canon/lint', (req, res) => {
 });
 
 // --- Flavor Finder (local dev only) ---------------------------------------
-// Three modes, all pure AI (no archive data, nothing written):
+// Four modes, all pure AI (no archive data, nothing written):
 //   mode "descriptors" (default): a word/phrase/action -> evocative one- or
 //     two-word descriptors a novelist might reach for.
 //   mode "sound": a sound source -> the sound words for it ("boom", "thud").
 //   mode "scene": a scene -> the same scene rewritten with more flavor.
+//   mode "transform": a scene + instructions -> the same scene reshaped to
+//     order ("turn this into dialogue", "make it shorter", "add interior
+//     monologue"), keeping the story intact.
 // Reuses the Query Chat HTTP backend.
 app.post('/api/ai/flavor', async (req, res) => {
   const rawMode = typeof req.body?.mode === 'string' ? req.body.mode.trim().toLowerCase() : 'descriptors';
   const mode =
     rawMode === 'scene'
       ? 'scene'
-      : rawMode === 'craft' || rawMode === 'advice' || rawMode === 'design'
-        ? 'craft'
-        : rawMode === 'sound' || rawMode === 'sounds'
-          ? 'sound'
-          : 'descriptors';
-  const maxLen = mode === 'scene' ? 4000 : mode === 'craft' ? 8000 : 200;
+      : rawMode === 'transform' || rawMode === 'adjust' || rawMode === 'rewrite' || rawMode === 'convert'
+        ? 'transform'
+        : rawMode === 'craft' || rawMode === 'advice' || rawMode === 'design'
+          ? 'craft'
+          : rawMode === 'sound' || rawMode === 'sounds'
+            ? 'sound'
+            : 'descriptors';
+  const maxLen = mode === 'scene' ? 4000 : mode === 'transform' ? 6000 : mode === 'craft' ? 8000 : 200;
   const subject = truncateForBudget(req.body?.subject, maxLen);
+  const instructions = truncateForBudget(req.body?.instructions, 600);
   if (!subject) {
     return res.status(400).json({
       error:
         mode === 'scene'
           ? 'Paste a scene to enrich.'
-          : mode === 'craft'
-            ? 'Describe the transition you want help with (POV, scene change, cutting between characters, returning to MC).'
-            : mode === 'sound'
-              ? 'Give it a sound to name — a door slamming, flowing water, a sword drawn.'
-              : 'Give it a word, phrase, or action to describe.',
+          : mode === 'transform'
+            ? 'Paste the scene you want to transform.'
+            : mode === 'craft'
+              ? 'Describe the transition you want help with (POV, scene change, cutting between characters, returning to MC).'
+              : mode === 'sound'
+                ? 'Give it a sound to name — a door slamming, flowing water, a sword drawn.'
+                : 'Give it a word, phrase, or action to describe.',
+    });
+  }
+  if (mode === 'transform' && !instructions) {
+    return res.status(400).json({
+      error: 'Tell it how you want the scene changed — turn it into dialogue, make it shorter, add interior monologue, and so on.',
     });
   }
   if (!aiConfigured()) {
@@ -2258,6 +2271,59 @@ Rules:
       const scene = typeof parsed.scene === 'string' ? parsed.scene.trim() : '';
       const note = typeof parsed.note === 'string' ? parsed.note.trim() : '';
       return res.json({ subject, mode: 'craft', advice, suggestions, design, scene, note, raw: (advice || scene) ? '' : String(raw || '').trim(), provider: providerInfo(result) });
+    }
+
+    if (mode === 'transform') {
+      const prompt = `You are a line editor for a novelist writing dark fantasy prose. Reshape the scene below so it fits the change the author asked for, while keeping the story, characters, facts, and any named things intact unless the instructions say otherwise.
+
+=== SCENE ===
+${subject}
+
+=== HOW TO CHANGE IT ===
+${instructions}
+
+=== RULES ===
+- Return the reshaped scene in "scene": apply the requested transformation (for example: convert narration into dialogue, condense a long scene, expand a summary, add interior monologue, change tense or POV) and keep the same events and characters.
+- Honour the instructions exactly. If they ask for dialogue, put the action into spoken lines; if they ask for brevity, cut without losing the story; if they ask for something else, do that.
+- Do NOT invent new plot or new characters that the instructions did not ask for.
+- Do NOT add a title, headings, notes, or commentary inside "scene" — just the prose.
+- List the notable changes you made in "descriptors" (up to 12 short phrases), and one short line in "note" on what you did.
+
+Return ONLY JSON (no prose, no code fences):
+{
+  "scene": "the full transformed scene",
+  "descriptors": ["short phrase", "..."],
+  "note": "one short line"
+}`;
+      const result = await askHttp(
+        prompt,
+        2000,
+        'low',
+        {},
+        AI_PROVIDERS,
+        (raw) => {
+          const p = parseAiJson(raw);
+          const scene = typeof p?.scene === 'string' ? p.scene.trim() : '';
+          return Boolean(scene);
+        },
+      );
+      const raw = result.answer;
+      const parsed = parseAiJson(raw);
+      const scene = typeof parsed?.scene === 'string' && parsed.scene.trim() ? parsed.scene.trim() : '';
+      const descriptors = (Array.isArray(parsed?.descriptors) ? parsed.descriptors : [])
+        .map((d) => String(d || '').trim())
+        .filter(Boolean)
+        .slice(0, 12);
+      return res.json({
+        subject,
+        mode,
+        instructions,
+        scene,
+        descriptors,
+        note: typeof parsed?.note === 'string' ? parsed.note.trim() : '',
+        raw: scene ? '' : String(raw || '').trim(),
+        provider: providerInfo(result),
+      });
     }
 
     if (mode === 'scene') {

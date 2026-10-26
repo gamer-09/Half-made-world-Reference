@@ -14,6 +14,7 @@ const EXAMPLES: Record<FlavorMode, string[]> = {
     'the forest at night',
   ],
   scene: [],
+  transform: [],
   sound: [
     'a door slamming',
     'flowing water',
@@ -31,9 +32,19 @@ const EXAMPLES: Record<FlavorMode, string[]> = {
   ],
 };
 
+const TRANSFORM_EXAMPLES = [
+  'Turn it into dialogue',
+  'Make it shorter and sharper',
+  'Add interior monologue',
+  'Summarise it in one paragraph',
+  'Rewrite it in first person',
+  'Break it into beats',
+];
+
 const MODE_LABELS: Record<FlavorMode, string> = {
   descriptors: 'Descriptors',
   scene: 'Enrich a scene',
+  transform: 'Transform a scene',
   craft: 'Scene craft',
   sound: 'Sounds',
 };
@@ -41,6 +52,7 @@ const MODE_LABELS: Record<FlavorMode, string> = {
 const MODE_INPUT_LABEL: Record<FlavorMode, string> = {
   descriptors: 'Word, phrase, or action',
   scene: 'Paste your scene',
+  transform: 'Paste your scene',
   craft: 'What do you want help with?',
   sound: 'Sound you want to hear',
 };
@@ -48,6 +60,7 @@ const MODE_INPUT_LABEL: Record<FlavorMode, string> = {
 const MODE_BUTTON: Record<FlavorMode, { icon: string; text: string }> = {
   descriptors: { icon: 'fa-solid fa-book', text: 'Find flavor words' },
   scene: { icon: 'fa-solid fa-wand-magic-sparkles', text: 'Enrich scene' },
+  transform: { icon: 'fa-solid fa-right-left', text: 'Transform scene' },
   craft: { icon: 'fa-solid fa-compass-drafting', text: 'Craft the scene' },
   sound: { icon: 'fa-solid fa-volume-high', text: 'Find sound words' },
 };
@@ -55,6 +68,7 @@ const MODE_BUTTON: Record<FlavorMode, { icon: string; text: string }> = {
 const LOADING_TEXT: Record<FlavorMode, string> = {
   descriptors: 'Searching for the right words…',
   scene: 'Rewriting your scene…',
+  transform: 'Transforming your scene…',
   craft: 'Working out the transition…',
   sound: 'Listening for the right sound…',
 };
@@ -62,6 +76,7 @@ const LOADING_TEXT: Record<FlavorMode, string> = {
 export function FlavorFinder() {
   const [mode, setMode] = useState<FlavorMode>('descriptors');
   const [subject, setSubject] = useState('');
+  const [instructions, setInstructions] = useState('');
   const [result, setResult] = useState<FlavorResult | null>(null);
   const [busy, setBusy] = useState(false);
   const [error, setError] = useState('');
@@ -89,12 +104,18 @@ export function FlavorFinder() {
     async (text: string, runMode: FlavorMode, wantFlavor = false) => {
       const clean = text.trim();
       if (!clean || busy) return;
+      if (runMode === 'transform' && !instructions.trim()) {
+        setError('Tell it how you want the scene changed — turn it into dialogue, make it shorter, add interior monologue, and so on.');
+        setResult(null);
+        setCopied('');
+        return;
+      }
       setBusy(true);
       setError('');
       setResult(null);
       setCopied('');
       try {
-        const data = await findFlavor(clean, runMode, wantFlavor);
+        const data = await findFlavor(clean, runMode, wantFlavor, runMode === 'transform' ? instructions : undefined);
         setResult(data);
       } catch (err) {
         if (err instanceof AiRateLimitError) {
@@ -107,7 +128,7 @@ export function FlavorFinder() {
         setBusy(false);
       }
     },
-    [busy, startCountdown],
+    [busy, startCountdown, instructions],
   );
 
   const copy = useCallback(async (text: string, what: string) => {
@@ -130,6 +151,7 @@ export function FlavorFinder() {
 
   const ready = limitInfo === null;
   const craft = mode === 'craft';
+  const transform = mode === 'transform';
   const design = result?.design;
 
   return (
@@ -145,8 +167,9 @@ export function FlavorFinder() {
         <p className="plan-sub">
           Give it a word, phrase, or action and get one‑ or two‑word descriptors a novelist would reach
           for — ask for a sound and get the sound words of it, paste a whole scene and get it rewritten
-          with more flavor, or ask how to handle a POV change, a scenery change, or getting back to the
-          MC. Nothing is saved; this is a drafting aid.
+          with more flavor or transformed to fit your instructions (dialogue, shorter, etc.), or ask how
+          to handle a POV change, a scenery change, or getting back to the MC. Nothing is saved; this is
+          a drafting aid.
         </p>
       </div>
 
@@ -195,10 +218,42 @@ export function FlavorFinder() {
               placeholder={
                 craft
                   ? 'e.g. Two characters are talking to each other; once that scene is done we go back to the MC. How should I write that change of POV?'
-                  : 'Paste a scene or paragraph — events, dialogue and all. It comes back with the same story, more flavor.'
+                  : transform
+                    ? 'Paste a scene or paragraph — events, dialogue and all. It will be reshaped to fit your instructions below.'
+                    : 'Paste a scene or paragraph — events, dialogue and all. It comes back with the same story, more flavor.'
               }
               rows={craft ? 5 : 9}
             />
+          )}
+
+          {transform && (
+            <>
+              <label className="flavor-label" htmlFor="flavor-instructions">
+                How do you want it changed?
+              </label>
+              <textarea
+                id="flavor-instructions"
+                className="flavor-textarea"
+                value={instructions}
+                onChange={(e) => setInstructions(e.target.value)}
+                placeholder="e.g. Turn this into dialogue. Make it shorter and sharper. Add interior monologue. Break it into beats."
+                rows={3}
+              />
+              {!instructions.trim() && (
+                <div className="flavor-examples">
+                  {TRANSFORM_EXAMPLES.map((ex) => (
+                    <button
+                      key={ex}
+                      type="button"
+                      className="filter-chip"
+                      onClick={() => setInstructions(ex)}
+                    >
+                      {ex}
+                    </button>
+                  ))}
+                </div>
+              )}
+            </>
           )}
 
           {!subject.trim() && EXAMPLES[mode].length > 0 && (
@@ -231,7 +286,11 @@ export function FlavorFinder() {
           )}
 
           <div className="flavor-actions">
-            <button className="btn btn-primary" type="submit" disabled={busy || !subject.trim() || !ready}>
+            <button
+              className="btn btn-primary"
+              type="submit"
+              disabled={busy || !subject.trim() || !ready || (transform && !instructions.trim())}
+            >
               {busy ? (
                 <>
                   <span className="loading-orb" aria-hidden="true" /> Working…
@@ -242,12 +301,13 @@ export function FlavorFinder() {
                 </>
               )}
             </button>
-            {subject.trim() && (
+                {subject.trim() && (
               <button
                 type="button"
                 className="btn btn-secondary"
                 onClick={() => {
                   setSubject('');
+                  setInstructions('');
                   setResult(null);
                   setError('');
                   setCopied('');
@@ -375,9 +435,11 @@ export function FlavorFinder() {
               <h3 className="section-title">
                 {mode === 'scene'
                   ? 'Flavor used'
-                  : mode === 'sound'
-                    ? `Sound words for “${result.subject}”`
-                    : `Descriptors for “${result.subject}”`}
+                  : mode === 'transform'
+                    ? 'Changes'
+                    : mode === 'sound'
+                      ? `Sound words for “${result.subject}”`
+                      : `Descriptors for “${result.subject}”`}
               </h3>
               <button
                 className="btn btn-secondary btn-sm"
@@ -407,7 +469,7 @@ export function FlavorFinder() {
           <section className="flavor-result">
             <div className="flavor-result-head">
               <h3 className="section-title">
-                {craft ? 'Example scene' : mode === 'sound' ? 'How it reads' : 'Enriched scene'}
+                {craft ? 'Example scene' : mode === 'sound' ? 'How it reads' : mode === 'transform' ? 'Transformed scene' : 'Enriched scene'}
               </h3>
               <button className="btn btn-secondary btn-sm" onClick={() => copy(result.scene, 'scene')}>
                 {copied === 'scene' ? '✓ Copied' : mode === 'sound' ? 'Copy' : 'Copy scene'}
@@ -417,11 +479,14 @@ export function FlavorFinder() {
           </section>
         )}
 
-        {result && !(result.descriptors?.length ?? 0) && !result.scene && !craft && (
+        {result && !(result.descriptors?.length ?? 0) && !result.scene && !craft && !transform && (
           <div className="chat-error">The AI returned nothing usable — try rephrasing.</div>
         )}
         {craft && result && !result.advice && !result.suggestions?.length && !result.scene && (
           <div className="chat-error">The AI returned nothing usable — try rephrasing.</div>
+        )}
+        {transform && result && !result.scene && (
+          <div className="chat-error">The AI returned nothing usable — try rephrasing or be more specific with your instructions.</div>
         )}
       </div>
     </div>
