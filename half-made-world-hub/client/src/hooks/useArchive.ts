@@ -1,6 +1,6 @@
 import { useCallback, useEffect, useState } from 'react';
 import type { Entry, Relationship, StoryLink } from '../types';
-import { loadSnapshot } from '../snapshot';
+import { invalidateSnapshot, loadSnapshot } from '../snapshot';
 
 export type ArchiveMode = 'loading' | 'ready';
 
@@ -26,7 +26,12 @@ export function useArchive() {
   const [state, setState] = useState<ArchiveState>(emptyState);
 
   const load = useCallback(async () => {
-    setState((s) => ({ ...s, mode: 'loading', error: '' }));
+    // Every load is a real refresh: writes go through this hook, so a cached
+    // archive would make a saved edit look like it did not stick.
+    invalidateSnapshot();
+    // Keep the current view on screen while refetching; only show the loading
+    // state when there is nothing to show yet.
+    setState((s) => ({ ...s, mode: s.entries.length ? s.mode : 'loading', error: '' }));
     try {
       const data = await loadSnapshot();
       setState({

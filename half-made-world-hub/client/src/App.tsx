@@ -135,6 +135,14 @@ export default function App() {
     });
   }, [selected]);
 
+  // Saving refetches the archive, but the open detail view still points at the
+  // old object. Swap in the fresh copy so edits show the moment they are saved.
+  useEffect(() => {
+    if (!selected) return;
+    const fresh = entries.find((e) => e.id === selected.id);
+    if (fresh && fresh !== selected) setSelected(fresh);
+  }, [entries, selected]);
+
   // Keyboard shortcuts: / focuses search, n adds an entry, 1/2/3/4 switch views.
   useEffect(() => {
     const onKey = (e: KeyboardEvent) => {

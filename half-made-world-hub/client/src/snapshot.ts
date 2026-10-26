@@ -8,14 +8,19 @@ export type SnapshotData = {
 
 let cached: SnapshotData | null = null;
 
+/** Drop the in-memory copy so the next loadSnapshot() refetches. */
+export function invalidateSnapshot() {
+  cached = null;
+}
+
 export async function loadSnapshot(): Promise<SnapshotData> {
   if (cached) return cached;
 
   // Try the live server first (dev mode with the Node API running).
   try {
-    const entries = await fetch('/api/entries').then((r) => r.json());
-    const relationships = await fetch('/api/relationships').then((r) => r.json());
-    const storyLinks = await fetch('/api/story-links').then((r) => r.json());
+    const entries = await fetch('/api/entries', { cache: 'no-store' }).then((r) => r.json());
+    const relationships = await fetch('/api/relationships', { cache: 'no-store' }).then((r) => r.json());
+    const storyLinks = await fetch('/api/story-links', { cache: 'no-store' }).then((r) => r.json());
     if (entries?.length && relationships?.length && storyLinks?.length) {
       cached = { entries, relationships, storyLinks };
       return cached;
