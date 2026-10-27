@@ -4898,10 +4898,11 @@
       "angel",
       "chronous",
       "pillar",
-      "general"
+      "general",
+      "first pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-27T12:55:55.617Z"
   },
   {
     "id": "seed-146",
@@ -8802,10 +8803,11 @@
       "title",
       "angel",
       "pillar",
-      "ordium"
+      "ordium",
+      "first pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-10-17T19:20:42.391Z"
+    "updatedAt": "2026-10-27T12:52:35.680Z"
   },
   {
     "id": "seed-247",
@@ -9057,10 +9059,11 @@
       "general",
       "aetherblade lord angel",
       "helious",
-      "pillar"
+      "pillar",
+      "second pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-27T12:56:47.049Z"
   },
   {
     "id": "seed-252",
@@ -9112,10 +9115,11 @@
       "general",
       "aetherblade lord angel",
       "areous",
-      "pillar"
+      "pillar",
+      "third pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-27T12:59:42.533Z"
   },
   {
     "id": "seed-253",
@@ -9154,7 +9158,7 @@
       },
       {
         "label": "Rune Star Circle",
-        "value": "4th Circle Rune Star"
+        "value": "6th Circle Rune Star"
       },
       {
         "label": "Power Level",
@@ -9167,10 +9171,11 @@
       "general",
       "aetherblade lord angel",
       "deimous",
-      "pillar"
+      "pillar",
+      "fourth pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-27T13:01:03.431Z"
   },
   {
     "id": "seed-254",
@@ -9226,10 +9231,11 @@
       "general",
       "aetherblade lord angel",
       "horkous",
-      "pillar"
+      "pillar",
+      "fifth pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-27T13:03:24.409Z"
   },
   {
     "id": "seed-255",
@@ -9281,10 +9287,11 @@
       "general",
       "aetherblade lord angel",
       "argous",
-      "pillar"
+      "pillar",
+      "sixth pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-10-27T13:04:17.670Z"
   },
   {
     "id": "seed-256",
@@ -9394,10 +9401,11 @@
       "title",
       "angel",
       "pillar",
-      "cyrion"
+      "cyrion",
+      "second pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-10-11T23:22:04.058Z"
+    "updatedAt": "2026-10-27T12:54:13.657Z"
   },
   {
     "id": "seed-261",
@@ -9415,10 +9423,11 @@
       "title",
       "angel",
       "pillar",
-      "serathiel"
+      "serathiel",
+      "third pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-10-11T23:22:04.058Z"
+    "updatedAt": "2026-10-27T12:53:48.887Z"
   },
   {
     "id": "seed-262",
@@ -9436,10 +9445,11 @@
       "title",
       "angel",
       "pillar",
-      "liora veyne"
+      "liora veyne",
+      "fourth pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-10-11T23:22:04.058Z"
+    "updatedAt": "2026-10-27T13:01:38.016Z"
   },
   {
     "id": "seed-263",
@@ -9457,10 +9467,11 @@
       "title",
       "angel",
       "pillar",
-      "thalor elwin"
+      "thalor elwin",
+      "fifth pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-10-11T23:22:04.058Z"
+    "updatedAt": "2026-10-27T12:54:35.638Z"
   },
   {
     "id": "seed-264",
@@ -9478,10 +9489,11 @@
       "title",
       "angel",
       "pillar",
-      "aranweis"
+      "aranweis",
+      "sixth pillar"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-10-11T23:22:04.058Z"
+    "updatedAt": "2026-10-27T12:53:25.009Z"
   },
   {
     "id": "seed-265",
@@ -17694,7 +17706,7 @@
       "noble"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-10-26T19:37:20.806Z"
+    "updatedAt": "2026-10-27T13:25:50.686Z"
   },
   {
     "id": "seed-566",
