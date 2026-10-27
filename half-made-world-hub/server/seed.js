@@ -1974,7 +1974,7 @@ module.exports = [
       { label: "Rune Star Circle", value: "5th Circle Rune Star" },
       { label: "Power Level", value: "Archmage" },
     ],
-    ["character", "ordium", "father", "angel", "chronous", "pillar", "general"],
+    ["character", "ordium", "father", "angel", "chronous", "pillar", "general", "first pillar"],
   ),
   e(
     "Characters",
@@ -3487,7 +3487,7 @@ module.exports = [
     [
       { label: "Held by", value: "Ordium (executed — seat vacant)" },
     ],
-    ["title", "angel", "pillar", "ordium"],
+    ["title", "angel", "pillar", "ordium", "first pillar"],
   ),
 
   // ============================================================ CHARACTERS
@@ -3573,7 +3573,7 @@ module.exports = [
       { label: "Class", value: "Archer" },
       { label: "Grade", value: "A Grade" },
     ],
-    ["character", "angel", "general", "aetherblade lord angel", "helious", "pillar"],
+    ["character", "angel", "general", "aetherblade lord angel", "helious", "pillar", "second pillar"],
   ),
   e(
     "Characters",
@@ -3591,7 +3591,7 @@ module.exports = [
       { label: "Ren Organ", value: "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open." },
       { label: "Grade", value: "A Grade" },
     ],
-    ["character", "angel", "general", "aetherblade lord angel", "areous", "pillar"],
+    ["character", "angel", "general", "aetherblade lord angel", "areous", "pillar", "third pillar"],
   ),
   e(
     "Characters",
@@ -3606,10 +3606,10 @@ module.exports = [
       { label: "Skills", value: "Dread-Herald, Unheralded, Dreadweight" },
       { label: "Race", value: "Malakhim" },
       { label: "Class", value: "Mage" },
-      { label: "Rune Star Circle", value: "4th Circle Rune Star" },
+      { label: "Rune Star Circle", value: "6th Circle Rune Star" },
       { label: "Power Level", value: "Warden" },
     ],
-    ["character", "angel", "general", "aetherblade lord angel", "deimous", "pillar"],
+    ["character", "angel", "general", "aetherblade lord angel", "deimous", "pillar", "fourth pillar"],
   ),
   e(
     "Characters",
@@ -3628,7 +3628,7 @@ module.exports = [
       { label: "Grade", value: "A Grade" },
       { label: "Role", value: "Guardian of the Sundering Altar — officiates the Veyn Vow and helps form each halo." },
     ],
-    ["character", "angel", "general", "aetherblade lord angel", "horkous", "pillar"],
+    ["character", "angel", "general", "aetherblade lord angel", "horkous", "pillar", "fifth pillar"],
   ),
   e(
     "Characters",
@@ -3646,7 +3646,7 @@ module.exports = [
       { label: "Ren Organ", value: "Yes — unlocked the Ren Organ; cannot touch Veyn while it is open." },
       { label: "Grade", value: "A Grade" },
     ],
-    ["character", "angel", "general", "aetherblade lord angel", "argous", "pillar"],
+    ["character", "angel", "general", "aetherblade lord angel", "argous", "pillar", "sixth pillar"],
   ),
 
   // ============================================================ TITLES
@@ -3698,7 +3698,7 @@ module.exports = [
     [
       { label: "Held by", value: "Cyrion" },
     ],
-    ["title", "angel", "pillar", "cyrion"],
+    ["title", "angel", "pillar", "cyrion", "second pillar"],
   ),
   e(
     "Titles",
@@ -3708,7 +3708,7 @@ module.exports = [
     [
       { label: "Held by", value: "Serathiel" },
     ],
-    ["title", "angel", "pillar", "serathiel"],
+    ["title", "angel", "pillar", "serathiel", "third pillar"],
   ),
   e(
     "Titles",
@@ -3718,7 +3718,7 @@ module.exports = [
     [
       { label: "Held by", value: "Liora Veyne" },
     ],
-    ["title", "angel", "pillar", "liora veyne"],
+    ["title", "angel", "pillar", "liora veyne", "fourth pillar"],
   ),
   e(
     "Titles",
@@ -3728,7 +3728,7 @@ module.exports = [
     [
       { label: "Held by", value: "Thalor Elwin" },
     ],
-    ["title", "angel", "pillar", "thalor elwin"],
+    ["title", "angel", "pillar", "thalor elwin", "fifth pillar"],
   ),
   e(
     "Titles",
@@ -3738,7 +3738,7 @@ module.exports = [
     [
       { label: "Held by", value: "Aranweis" },
     ],
-    ["title", "angel", "pillar", "aranweis"],
+    ["title", "angel", "pillar", "aranweis", "sixth pillar"],
   ),
   e(
     "Titles",
