@@ -2,7 +2,18 @@ import type { Ref } from 'react';
 import type { CategoryInfo } from '../types';
 import { categoryColor } from '../theme';
 
-export type ViewMode = 'browse' | 'map' | 'web' | 'blocks' | 'chat' | 'planning' | 'canon' | 'weave' | 'flavor';
+export type ViewMode =
+  | 'browse'
+  | 'map'
+  | 'web'
+  | 'blocks'
+  | 'chat'
+  | 'planning'
+  | 'canon'
+  | 'weave'
+  | 'flavor'
+  | 'academy'
+  | 'guild';
 
 interface SidebarProps {
   categories: CategoryInfo[];
@@ -18,6 +29,8 @@ interface SidebarProps {
   onOpenWeb: () => void;
   onOpenBlocks: () => void;
   onOpenChat: () => void;
+  onOpenAcademy: () => void;
+  onOpenGuild: () => void;
   // Local-dev only: omitted (and the button hidden) in the view-only build.
   onOpenPlanning?: () => void;
   onOpenCanon?: () => void;
@@ -39,6 +52,8 @@ export function Sidebar({
   onOpenWeb,
   onOpenBlocks,
   onOpenChat,
+  onOpenAcademy,
+  onOpenGuild,
   onOpenPlanning,
   onOpenCanon,
   onOpenWeave,
@@ -102,6 +117,24 @@ export function Sidebar({
       >
         <i className="fa-solid fa-cubes" style={{ fontSize: 14, color: view === 'blocks' ? '#c8a876' : 'currentColor' }} />
         Block Chain Map
+      </button>
+
+      <button
+        className={`nav-map-btn${view === 'academy' ? ' active' : ''}`}
+        onClick={onOpenAcademy}
+        title="Everything about Elyndor Academy, threaded together"
+      >
+        <i className="fa-solid fa-school" style={{ fontSize: 14, color: view === 'academy' ? '#c8a876' : 'currentColor' }} />
+        Academy
+      </button>
+
+      <button
+        className={`nav-map-btn${view === 'guild' ? ' active' : ''}`}
+        onClick={onOpenGuild}
+        title="Every guild in the world, pinned to its own board"
+      >
+        <i className="fa-solid fa-handshake" style={{ fontSize: 14, color: view === 'guild' ? '#c8a876' : 'currentColor' }} />
+        Guilds
       </button>
 
       <button

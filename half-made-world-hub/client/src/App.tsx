@@ -27,6 +27,9 @@ import { BlockMap } from './components/BlockMap';
 import { CanonGuard } from './components/CanonGuard';
 import { WeaveExplorer } from './components/WeaveExplorer';
 import { FlavorFinder } from './components/FlavorFinder';
+import { DossierThread } from './components/DossierThread';
+import { BulletinBoard } from './components/BulletinBoard';
+import { ACADEMY_DOSSIER, GUILD_DOSSIER } from './dossiers';
 import { ErrorBoundary } from './components/ErrorBoundary';
 import { LinkForm } from './components/LinkForm';
 import { Modal } from './components/Modal';
@@ -516,13 +519,20 @@ export default function App() {
   const isMapView = view === 'map';
   const isWebView = view === 'web';
   const isBlocksView = view === 'blocks';
+  const isAcademyView = view === 'academy';
+  const isGuildView = view === 'guild';
+  const isDossierView = isAcademyView || isGuildView;
   const isPlanningView = view === 'planning' && canEdit;
   const isCanonView = view === 'canon' && canEdit;
   const isWeaveView = view === 'weave' && canEdit;
   const isFlavorView = view === 'flavor' && canEdit;
   const showDashboard = view === 'browse' && activeCategory === 'All' && search.trim() === '' && !activeTag;
 
-  const viewKey = isFlavorView
+  const viewKey = isAcademyView
+    ? 'academy'
+    : isGuildView
+    ? 'guild'
+    : isFlavorView
     ? 'flavor'
     : isWeaveView
     ? 'weave'
@@ -558,6 +568,8 @@ export default function App() {
         onOpenWeb={() => setView('web')}
         onOpenBlocks={() => setView('blocks')}
         onOpenChat={() => setView('chat')}
+        onOpenAcademy={() => setView('academy')}
+        onOpenGuild={() => setView('guild')}
         onOpenPlanning={canEdit ? () => setView('planning') : undefined}
         onOpenCanon={canEdit ? () => setView('canon') : undefined}
         onOpenWeave={canEdit ? () => setView('weave') : undefined}
@@ -568,7 +580,11 @@ export default function App() {
         <header className="main-header">
           <div className="main-header-text">
             <h2 className="main-title">
-              {isFlavorView
+              {isAcademyView
+                ? 'Academy — Elyndor'
+                : isGuildView
+                ? 'Guilds'
+                : isFlavorView
                 ? 'Flavor Finder'
                 : isWeaveView
                 ? 'Weave'
@@ -585,7 +601,7 @@ export default function App() {
                       : activeCategory === 'All'
                         ? 'All Entries'
                         : activeCategory}
-              {!isMapView && !isWebView && !isBlocksView && !isPlanningView && !isCanonView && !isWeaveView && !isFlavorView && (
+              {!isMapView && !isWebView && !isBlocksView && !isPlanningView && !isCanonView && !isWeaveView && !isFlavorView && !isDossierView && (
                 <span className="main-count">{filtered.length}</span>
               )}
               {!canEdit && !isMapView && !isWebView && !isBlocksView && (
@@ -593,7 +609,11 @@ export default function App() {
               )}
             </h2>
             <p className="main-sub">
-              {isFlavorView
+              {isAcademyView
+                ? 'Everything the archive holds about Elyndor Academy, threaded together'
+                : isGuildView
+                ? 'Every guild in the world, pinned to its own board'
+                : isFlavorView
                 ? 'Get one- or two-word flavor descriptors, or rewrite a scene with more life'
                 : isWeaveView
                 ? 'Timeline, constellation, and the Lore Oracle — a playful way through the archive'
@@ -610,13 +630,13 @@ export default function App() {
                       : activeCategory === 'All'
                         ? 'Everything in the archive'
                         : `Entries in ${activeCategory}`}
-              {!isMapView && !isWebView && !isBlocksView && !isPlanningView && !isCanonView && !isWeaveView && !isFlavorView && search.trim() && ` · matching “${search.trim()}”`}
+              {!isMapView && !isWebView && !isBlocksView && !isPlanningView && !isCanonView && !isWeaveView && !isFlavorView && !isDossierView && search.trim() && ` · matching “${search.trim()}”`}
             </p>
           </div>
           <div className="header-actions">
             <SoundToggle />
             <LofiPlayer />
-            {!isMapView && !isWebView && !isBlocksView && !isPlanningView && !isCanonView && activeCategory !== 'All' && canEdit && (
+            {!isMapView && !isWebView && !isBlocksView && !isPlanningView && !isCanonView && !isDossierView && activeCategory !== 'All' && canEdit && (
               <button
                 className="btn btn-danger btn-sm"
                 onClick={() => handleDeleteCategory(activeCategory)}
@@ -651,7 +671,7 @@ export default function App() {
           </div>
         </header>
 
-        <div className={`view-transition${isBlocksView || isPlanningView || isCanonView || isWeaveView || isFlavorView ? ' view-fill' : ''}`} key={viewKey}>
+        <div className={`view-transition${isBlocksView || isPlanningView || isCanonView || isWeaveView || isFlavorView || isDossierView ? ' view-fill' : ''}`} key={viewKey}>
         {loading ? (
           <div className="loading">
             <span className="loading-orb" aria-hidden="true" />
@@ -665,6 +685,24 @@ export default function App() {
               Retry
             </button>
           </div>
+        ) : isAcademyView ? (
+          <DossierThread
+            dossier={ACADEMY_DOSSIER}
+            entries={entries}
+            storyLinks={storyLinks}
+            relationships={relationships}
+            resolveName={resolveName}
+            onOpenEntry={openEntryByName}
+          />
+        ) : isGuildView ? (
+          <BulletinBoard
+            dossier={GUILD_DOSSIER}
+            entries={entries}
+            storyLinks={storyLinks}
+            relationships={relationships}
+            resolveName={resolveName}
+            onOpenEntry={openEntryByName}
+          />
         ) : isFlavorView ? (
           <ErrorBoundary label="Flavor Finder">
             <FlavorFinder />
