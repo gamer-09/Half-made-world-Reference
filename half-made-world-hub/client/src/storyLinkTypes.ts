@@ -25,7 +25,12 @@ const FAMILY_COLORS = {
 
 // Exact-match styling for the most common and most important types.
 export const STORY_LINK_TYPES: Record<string, StoryLinkType> = {
-  // generic association — the workhorse type (1996 links)
+  // provenance: the target entry names the source entry inside one of its fields
+  // (1,528 links). Distinct from an authored relation — nothing is being claimed
+  // beyond "this name appears in that entry's <field>".
+  'mentioned in': { label: 'Mentioned in', color: FAMILY_COLORS.relation },
+
+  // generic association — reserved for authored links that are genuinely vague
   'related to': { label: 'Related to', color: FAMILY_COLORS.relation },
   'relates to': { label: 'Relates to', color: FAMILY_COLORS.relation },
   'connected to': { label: 'Connected to', color: FAMILY_COLORS.relation },
