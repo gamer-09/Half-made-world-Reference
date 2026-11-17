@@ -13,11 +13,11 @@ have to live buried in a single document again.
 - **`Half_made world ideas.docx`** — the original source document. Everything in the hub was seeded
   from this file; it remains here as the canonical starting reference.
 
-The archive holds **1090 entries across 57 categories** — Demon/Angel/Class/Hybrid Skills, Titles,
+The archive holds **1105 entries across 58 categories** — Demon/Angel/Class/Hybrid Skills, Titles,
 Rules & Notes, Characters, Classes, Class Progression, Grade System, Rune Star Circles, Monsters,
 Rifts, Locations, Items, Magic Systems, Realms, Coins, Clan, Economy, Organizations, Calendar, Combat
 Mechanics, Laws & Justice, Academy, and many more — all browsable, searchable, and editable through
-the UI. **28 characters**, **4387 story links**, and **81 relationships** tie it all together.
+the UI. **28 characters**, **4394 story links**, and **81 relationships** tie it all together.
 
 ## Quick start
 

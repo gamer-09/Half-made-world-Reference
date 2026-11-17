@@ -62,7 +62,7 @@ module.exports = [
   r("Thalor Elwin", "Ordium", "knows", "Knows", "Saw Ordium’s vow fraying and said nothing."),
   r("Licent Varak", "Tera Morage", "serves", "Serves", "A Bloodward general serving under Tera Morage."),
   r("Ruby Divina", "Jaiden Marlock", "knows", "Knows", "She has known of the hybrid hiding in her realm from the beginning."),
-  r("Wener Leger", "Clint Ashborn", "opposes", "Opposes", "Dark Moon’s leader stands against the angelic order Clint upholds."),
+  r("Wener Leger", "Clint Ashborn", "opposes", "Opposes", "Dark Moon’s fallen founder stands against the angelic order Clint upholds."),
   r("Wener Leger", "Jaiden Marlock", "watches", "Watches", "He watches the first hybrid the way a collector watches a rare weapon."),
   r("Tera Morage", "Lisa", "friend of", "Friend of", "The one demon Tera trusted enough to keep close — and the one mercy she ever allowed."),
   r("Tera Morage", "Licent Varak", "unaware of", "Unaware of", "She does not see that her own second right-hand is plotting her death with Dark Moon."),

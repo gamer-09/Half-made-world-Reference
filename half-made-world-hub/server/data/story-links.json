@@ -11142,12 +11142,12 @@
   {
     "id": "link-fix-1460",
     "source": "The Broken Crown Rebellion",
-    "target": "Angel Realm",
+    "target": "Human Realm",
     "type": "about",
     "label": "About",
-    "description": "The Broken Crown Rebellion relates to Angel Realm history.",
+    "description": "The Broken Crown Rebellion was a Human Realm coup attempt.",
     "createdAt": "2026-08-23T22:57:24.119Z",
-    "updatedAt": "2026-08-23T22:57:24.119Z"
+    "updatedAt": "2026-11-17T00:00:00.000Z"
   },
   {
     "id": "link-fix-1461",
@@ -11782,12 +11782,12 @@
   {
     "id": "link-core-lpxtufu8mt6k2639",
     "source": "Vireth, the Fallen Grace",
-    "target": "Clint Ashborn",
+    "target": "Aelthar",
     "type": "wielded by",
     "label": "Wielded by",
-    "description": "Vireth was wielded by Clint Ashborn before the fall",
+    "description": "Vireth was wielded by the greatest Aelthar warrior before the fall",
     "createdAt": "2026-08-24T01:26:28.437Z",
-    "updatedAt": "2026-08-24T01:26:28.437Z"
+    "updatedAt": "2026-11-17T00:00:00.000Z"
   },
   {
     "id": "link-core-u4h6d5fdmt6k2639",
@@ -12782,12 +12782,12 @@
   {
     "id": "link-core-w60yo3k2mt6k263g",
     "source": "The Sealing of Vireth",
-    "target": "Clint Ashborn",
+    "target": "Aelthar",
     "type": "performed by",
     "label": "Performed by",
-    "description": "Clint Ashborn was involved in sealing Vireth",
+    "description": "The Aelthar sealed Vireth in the Sentient River under two seals",
     "createdAt": "2026-08-24T01:26:28.444Z",
-    "updatedAt": "2026-08-24T01:26:28.444Z"
+    "updatedAt": "2026-11-17T00:00:00.000Z"
   },
   {
     "id": "link-core-1223iwvomt6k263g",
@@ -12832,12 +12832,12 @@
   {
     "id": "link-core-vt0d4jhzmt6k263g",
     "source": "The Broken Crown Rebellion",
-    "target": "Ruby Divina",
+    "target": "The Human Crown Succession",
     "type": "involves",
     "label": "Involves",
-    "description": "Ruby Divina was involved in the Broken Crown Rebellion",
+    "description": "The Broken Crown Rebellion reshaped the Human Crown's succession law.",
     "createdAt": "2026-08-24T01:26:28.444Z",
-    "updatedAt": "2026-08-24T01:26:28.444Z"
+    "updatedAt": "2026-11-17T00:00:00.000Z"
   },
   {
     "id": "link-core-ns973ek6mt6k263g",
@@ -24223,12 +24223,12 @@
     "id": "52708e8b-5ed8-48fc-a113-d51f317685de",
     "source": "Clint Ashborn",
     "target": "Vireth, the Fallen Grace",
-    "type": "wields",
-    "label": "wields",
-    "description": "",
+    "type": "knows of",
+    "label": "knows of",
+    "description": "Clint never wielded Vireth and never knew it personally — he saw only a record left by his father, which described it as a holy sword",
     "color": "",
     "createdAt": "2026-09-01T22:38:32.488Z",
-    "updatedAt": "2026-09-01T22:38:32.488Z"
+    "updatedAt": "2026-11-17T00:00:00.000Z"
   },
   {
     "id": "5cd35589-2c2f-4250-b308-8b3fbf453d7e",
