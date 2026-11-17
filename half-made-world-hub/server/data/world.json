@@ -18290,7 +18290,7 @@
     "category": "Characters",
     "name": "Aldric Malgrave",
     "subtitle": "The Former King of the Human Realm",
-    "description": "Aldric Malgrave was the ruler of the Human Realm before the Divina line, and the man whose fear ended a race. He looked on the Aelthar — the ancient realm-makers who could shape and tear reality itself — and saw not a people but a threat to his crown, and he hunted them to extinction. His persecution drove the survivors to tear open the Hidden Realm as a refuge, an act so violent it nearly unmade the world and forced the world core’s will to raise the barrier that split the realms apart. He caught every one of them but one — Kael von Ashen, the sole survivor who would become Headmaster of Elyndor Academy — and that single failure is the thread the whole story hangs from.",
+    "description": "Aldric Malgrave was the ruler of the Human Realm before the Divina line, and the man whose fear finished a race. He looked on the Aelthar — the ancient realm-makers who could shape and tear reality itself — and saw not a people but a threat to his crown. By his time the Aelthar were already broken: the Sundering had killed most of them, and the survivors still outside the Hidden Realm were trying to get in. Aldric hunted those survivors across the Human Realm and drove the last of them through the wandering portal into the Hidden Realm — the realm the Aelthar themselves had torn open centuries earlier to redirect the World Eater, an act that nearly unmade the world and forced the world core’s will to raise the barrier that split the realms apart. He caught every one of them but one — Kael von Ashen, the sole survivor who would become Headmaster of Elyndor Academy — and that single failure is the thread the whole story hangs from.",
     "fields": [
       {
         "label": "Race",
@@ -18306,7 +18306,7 @@
       },
       {
         "label": "Crime",
-        "value": "Exterminated the Aelthar race; set in motion the near-destruction of the world."
+        "value": "Exterminated the surviving Aelthar after the Sundering; only Kael von Ashen escaped him."
       }
     ],
     "tags": [
@@ -18320,7 +18320,7 @@
       "villain"
     ],
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-11-17T00:00:00.000Z"
   },
   {
     "id": "seed-571",
@@ -20937,7 +20937,7 @@
     "category": "Lore & Myths",
     "name": "The Creation of the World",
     "subtitle": "How the world came to be according to the World Core Faith",
-    "description": "According to the World Core Faith, the world began as a single point of infinite Veyn — a compressed seed of magical energy that contained everything that would ever exist. The seed cracked open, and the Veyn spilled outward, forming the physical world — land, water, sky, and life.\n\nThe world core remained at the center, still dreaming, still generating Veyn. Everything in the world — every person, every creature, every tree and stone — is made of Veyn shaped by the core's dreams. When the core dreams of life, living things grow. When the core dreams of death, living things end.\n\nThe first beings were the Aelthar — beings of pure Veyn who could shape reality with their thoughts. The World Core made the Shudon to maintain the world while it slept. The Aelthar discovered the World Eater — the First Ascendant's hunger, left behind when the Core rejected the Ascendant's attempt to merge with it, after the world was made and before the Sundering. It had embedded itself in the core and was slowly draining it, its feeding tearing the first rifts open and letting the Ossk, things from outside the world, come through. The more it feeds, the more rifts open. The Aelthar created the Hidden Realm to redirect its feeding.\n\nWhen the Hidden Realm was created, the resulting Veyn disruption split the world into three realms and nearly destroyed everything. The Aelthar were wiped out in the catastrophe. Their Echoes still fight on the battlefield where they fell.\n\nThe core continued to dream. New beings emerged — humans, angels, demons, elves. The Sundering Altars were built to help these new beings access the Veyn that had always been inside them. And the world continued, fragile and half-made, waiting for the core to finally wake up.",
+    "description": "According to the World Core Faith, the world began as a single point of infinite Veyn — a compressed seed of magical energy that contained everything that would ever exist. The seed cracked open, and the Veyn spilled outward, forming the physical world — land, water, sky, and life.\n\nThe world core remained at the center, still dreaming, still generating Veyn. Everything in the world — every person, every creature, every tree and stone — is made of Veyn shaped by the core's dreams. When the core dreams of life, living things grow. When the core dreams of death, living things end.\n\nThe first beings were the Aelthar — beings of pure Veyn who could shape reality with their thoughts. The World Core made the Shudon to maintain the world while it slept. The Aelthar discovered the World Eater — the First Ascendant's hunger, left behind when the Core rejected the Ascendant's attempt to merge with it, after the world was made and before the Sundering. It had embedded itself in the core and was slowly draining it, its feeding tearing the first rifts open and letting the Ossk, things from outside the world, come through. The more it feeds, the more rifts open. The Aelthar created the Hidden Realm to redirect its feeding.\n\nWhen the Hidden Realm was created, the resulting Veyn disruption split the world into three realms and nearly destroyed everything, and most of the Aelthar died in the backlash. The survivors who had not reached the Hidden Realm were hunted down in the centuries that followed by the Human Realm ruler who feared them, and that genocide finished the race. Their Echoes still fight on the battlefield where they fell.\n\nThe core continued to dream. New beings emerged — humans, angels, demons, elves. The Sundering Altars were built to help these new beings access the Veyn that had always been inside them. And the world continued, fragile and half-made, waiting for the core to finally wake up.",
     "fields": [
       {
         "label": "The Seed",
@@ -20953,7 +20953,7 @@
       },
       {
         "label": "The Sundering",
-        "value": "Hidden Realm creation split the world into three realms — Aelthar destroyed"
+        "value": "Hidden Realm creation split the world into three realms — most Aelthar died in the backlash, the survivors were hunted down later"
       },
       {
         "label": "The Dream",
@@ -25387,7 +25387,7 @@
     "category": "Lore & Myths",
     "name": "The Demon Unification Wars",
     "subtitle": "",
-    "description": "Approximately 400 years ago, the current Demon Lord's predecessor united the Demon Clans through a series of brutal wars. Before unification, Demons fought each other as much as other races. The Unification Wars lasted 15 years and eliminated or absorbed 40 of the 60 existing Clans. The surviving 20 Clans form the current Demon power structure. The wars completed the Obsidian Spires and confirmed them as the Demon capital, established the Pit as the formal challenge system, and formed the Great Clans as the political units. The wars also established the Demon military doctrine — overwhelming force, since unification was achieved through conquest, not diplomacy.",
+    "description": "Approximately 400 years ago, Tera Morage — the Mordrach who still rules the Demon Realm — united the Demon Clans through a series of brutal wars. Before unification, Demons fought each other as much as other races. The Unification Wars lasted 15 years and eliminated or absorbed 40 of the 60 existing Clans. The surviving 20 Clans form the current Demon power structure. The wars completed the Obsidian Spires and confirmed them as the Demon capital, established the Pit as the formal challenge system, and formed the Great Clans as the political units. The wars also established the Demon military doctrine — overwhelming force, since unification was achieved through conquest, not diplomacy.",
     "fields": [
       {
         "label": "Activation",

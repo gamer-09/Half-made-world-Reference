@@ -6165,9 +6165,9 @@
     "target": "Hidden Realm (Shadow Realm)",
     "type": "created",
     "label": "Created",
-    "description": "The Aelthar tore open the Hidden Realm as a hiding place from the former Human Realm ruler.",
+    "description": "The Aelthar tore open the Hidden Realm to redirect the World Eater’s feeding.",
     "createdAt": "2026-08-12T00:00:00.000Z",
-    "updatedAt": "2026-08-12T00:00:00.000Z"
+    "updatedAt": "2026-11-17T00:00:00.000Z"
   },
   {
     "id": "link-seed-937",
@@ -7033,21 +7033,21 @@
     "id": "f1e7df57-67f7-4476-9794-31f0ea4d3276",
     "source": "Aldric Malgrave",
     "target": "Hidden Realm (Shadow Realm)",
-    "type": "causes",
-    "label": "Causes",
-    "description": "His persecution forced the Aelthar to tear open the Hidden Realm to escape.",
+    "type": "drives into",
+    "label": "Drives into",
+    "description": "His persecution drove the surviving Aelthar to flee through the wandering portal into the Hidden Realm.",
     "createdAt": "2026-08-19T23:14:09.527Z",
-    "updatedAt": "2026-08-19T23:14:09.527Z"
+    "updatedAt": "2026-11-17T00:00:00.000Z"
   },
   {
     "id": "c0ac822b-1703-4b2e-bb75-ec7e0452b757",
     "source": "Aldric Malgrave",
-    "target": "The World Barrier",
-    "type": "causes",
-    "label": "Causes",
-    "description": "The near-destruction his hunt set in motion forced the world core’s will to raise the barrier.",
+    "target": "Kael von Ashen",
+    "type": "failed to catch",
+    "label": "Failed to catch",
+    "description": "The one Aelthar he never caught — Kael von Ashen, last of the race.",
     "createdAt": "2026-08-19T23:14:09.527Z",
-    "updatedAt": "2026-08-19T23:14:09.527Z"
+    "updatedAt": "2026-11-17T00:00:00.000Z"
   },
   {
     "id": "a993cc5c-d95e-459c-a3fe-4454e4e77ca5",
@@ -19965,24 +19965,24 @@
   {
     "id": "75bc68a7-c38a-47e2-9ad6-098463c18618",
     "source": "Hidden Realm (Shadow Realm)",
-    "target": "Aldric Malgrave",
-    "type": "caused by",
-    "label": "caused by",
-    "description": "",
+    "target": "Aelthar",
+    "type": "created by",
+    "label": "Created by",
+    "description": "The Aelthar tore it open to draw the World Eater’s feeding away from the main core.",
     "color": "",
     "createdAt": "2026-09-01T22:38:32.475Z",
-    "updatedAt": "2026-09-01T22:38:32.475Z"
+    "updatedAt": "2026-11-17T00:00:00.000Z"
   },
   {
     "id": "00cb6569-7f2d-4d65-9202-049f9f8b7b91",
     "source": "The World Barrier",
-    "target": "Aldric Malgrave",
+    "target": "Hidden Realm (Shadow Realm)",
     "type": "caused by",
     "label": "caused by",
-    "description": "",
+    "description": "The barrier was raised to stop the destruction the Hidden Realm’s creation had begun.",
     "color": "",
     "createdAt": "2026-09-01T22:38:32.475Z",
-    "updatedAt": "2026-09-01T22:38:32.475Z"
+    "updatedAt": "2026-11-17T00:00:00.000Z"
   },
   {
     "id": "16af7ccd-acf3-4e3e-99e8-848a5c74eb56",

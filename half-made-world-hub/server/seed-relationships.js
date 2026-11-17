@@ -73,7 +73,7 @@ module.exports = [
   r("Eva Aldermere Divina", "Ruby Divina", "child of", "Child of", "She is the daughter to Ruby Divina"),
   r("Bella Ruven", "Jaiden Marlock", "friend of", "Friend of", "she is the childhood friend of jaiden"),
   r("Mark Wesley", "Jaiden Marlock", "friend of", "Friend of", "he later became friends with jaiden"),
-  r("Aldric Malgrave", "Kael von Ashen", "hunted", "Hunted", "He hunted the Aelthar to extinction — Kael von Ashen is the one survivor he never caught."),
+  r("Aldric Malgrave", "Kael von Ashen", "hunted", "Hunted", "He hunted the surviving Aelthar to extinction after the Sundering — Kael von Ashen is the one he never caught."),
   r("Lisa", "Jaiden Marlock", "parent of", "parent of", ""),
   r("Ordium", "Jaiden Marlock", "parent of", "parent of", ""),
   r("Lisa", "Licent Varak", "rival of", "Rival of", "Always hated Lisa for being stronger than him and holding the top Bloodward position; constantly looked for a way to take her power and rank away."),
