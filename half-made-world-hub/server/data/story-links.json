@@ -12930,26 +12930,6 @@
     "updatedAt": "2026-08-24T01:26:28.445Z"
   },
   {
-    "id": "link-core-5vga6elhmt6k263h",
-    "source": "Shudon",
-    "target": "Hidden Realm (Shadow Realm)",
-    "type": "guards",
-    "label": "Guards",
-    "description": "Shudon guards the Hidden Realm portal",
-    "createdAt": "2026-08-24T01:26:28.445Z",
-    "updatedAt": "2026-08-24T01:26:28.445Z"
-  },
-  {
-    "id": "link-core-smjcxy7pmt6k263h",
-    "source": "Shudon",
-    "target": "The Hidden Realm Portal",
-    "type": "guards",
-    "label": "Guards",
-    "description": "Shudon guards the portal to the Hidden Realm",
-    "createdAt": "2026-08-24T01:26:28.445Z",
-    "updatedAt": "2026-08-24T01:26:28.445Z"
-  },
-  {
     "id": "link-core-vstnf6cqmt6k263h",
     "source": "Leviathan",
     "target": "Hidden Realm (Shadow Realm)",
@@ -13296,16 +13276,6 @@
     "type": "describes",
     "label": "Describes",
     "description": "The Hidden Realm Portal describes access to the Hidden Realm",
-    "createdAt": "2026-08-24T01:26:28.447Z",
-    "updatedAt": "2026-08-24T01:26:28.447Z"
-  },
-  {
-    "id": "link-core-oe4xm2mamt6k263j",
-    "source": "The Hidden Realm Portal",
-    "target": "Shudon",
-    "type": "guarded by",
-    "label": "Guarded by",
-    "description": "The Hidden Realm Portal is guarded by Shudon",
     "createdAt": "2026-08-24T01:26:28.447Z",
     "updatedAt": "2026-08-24T01:26:28.447Z"
   },
@@ -24533,17 +24503,6 @@
     "target": "The Seer",
     "type": "home of",
     "label": "home of",
-    "description": "",
-    "color": "",
-    "createdAt": "2026-09-01T22:38:32.489Z",
-    "updatedAt": "2026-09-01T22:38:32.489Z"
-  },
-  {
-    "id": "95ef6b52-3703-4e98-96db-669765ca0e58",
-    "source": "Hidden Realm (Shadow Realm)",
-    "target": "Shudon",
-    "type": "guarded by",
-    "label": "guarded by",
     "description": "",
     "color": "",
     "createdAt": "2026-09-01T22:38:32.489Z",
